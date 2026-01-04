@@ -1,12 +1,12 @@
 # Netlify Configuration for Protein Empire Sites
-# This file should be copied to each site's deployment directory
+# This configuration is used for the highprotein.recipes indexer site
 
 [build]
-  # Build command (if using a build step)
-  # command = "npm run build"
+  # Build command for the indexer site
+  command = "node scripts/build-indexer.js"
   
-  # Directory to deploy
-  publish = "dist"
+  # Directory to deploy (full path from repo root)
+  publish = "apps/highprotein.recipes/dist"
   
   # Functions directory
   functions = "netlify/functions"
