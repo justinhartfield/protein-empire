@@ -425,12 +425,18 @@ ${recipes.map(recipe => `
     <div>
       <h3 class="section-title">Ingredients</h3>
       <ul class="ingredient-list">
-        ${recipe.ingredients.map(ing => `
-          <li>
-            <span>${ing.name}</span>
-            <span class="ingredient-amount">${ing.amount}g</span>
-          </li>
-        `).join('')}
+        ${recipe.ingredients.map(ing => {
+          // Handle both string and object ingredients
+          if (typeof ing === 'string') {
+            return `<li><span>${ing}</span></li>`;
+          }
+          return `
+            <li>
+              <span>${ing.name}</span>
+              <span class="ingredient-amount">${ing.amount}g</span>
+            </li>
+          `;
+        }).join('')}
       </ul>
     </div>
     

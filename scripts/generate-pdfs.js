@@ -38,7 +38,8 @@ async function generatePDFsForSite(domain) {
     return false;
   }
   
-  const allRecipes = JSON.parse(fs.readFileSync(recipesFile, 'utf-8'));
+  const recipesData = JSON.parse(fs.readFileSync(recipesFile, 'utf-8'));
+  const allRecipes = Array.isArray(recipesData) ? recipesData : (recipesData.recipes || []);
   
   // Load packs
   const packsFile = path.join(dataDir, 'packs.json');
@@ -61,12 +62,25 @@ async function generatePDFsForSite(domain) {
       continue;
     }
     
+    // Normalize recipes to have nutrition object
+    const normalizedRecipes = packRecipes.map(r => ({
+      ...r,
+      nutrition: r.nutrition || {
+        protein: r.protein,
+        calories: r.calories,
+        carbs: r.carbs,
+        fat: r.fat,
+        fiber: r.fiber,
+        sugar: r.sugar
+      }
+    }));
+    
     const outputPath = path.join(outputDir, `${domain.replace(/\./g, '-')}-${pack.slug}.pdf`);
     
     await generatePDF({
       site,
       pack,
-      recipes: packRecipes,
+      recipes: normalizedRecipes,
       outputPath
     });
   }
