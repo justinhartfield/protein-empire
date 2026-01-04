@@ -6,6 +6,62 @@
  */
 
 export const sites = {
+  'highprotein.recipes': {
+    name: 'HighProtein.Recipes',
+    domain: 'highprotein.recipes',
+    title: 'HighProtein.Recipes | The Ultimate High-Protein Recipe Index',
+    tagline: 'Your gateway to 300+ macro-verified high-protein recipes',
+    description: 'Discover the best high-protein recipes across 12 specialized sites. From cookies to pizza, pancakes to pudding - find your perfect macro-friendly treat.',
+    foodType: 'recipes',
+    foodTypePlural: 'recipes',
+    brandColor: '#f59e0b',
+    accentColor: '#10b981',
+    logo: '/images/logo.png',
+    favicon: '/images/favicon.png',
+    socialImage: '/images/social-share.png',
+    ga4Id: '',
+    status: 'ready',
+    isIndexer: true,
+    // Hero ingredients for ingredient tag collections
+    heroIngredients: [
+      { name: 'Protein Powder', slug: 'protein-powder' },
+      { name: 'Banana', slug: 'banana' },
+      { name: 'Peanut Butter', slug: 'peanut-butter' },
+      { name: 'Chia Seeds', slug: 'chia' },
+      { name: 'Cottage Cheese', slug: 'cottage-cheese' },
+      { name: 'Greek Yogurt', slug: 'greek-yogurt' },
+      { name: 'Oats', slug: 'oats' }
+    ],
+    // Flavor tags for cross-linking
+    flavorTags: [
+      { name: 'Chocolate', slug: 'chocolate' },
+      { name: 'Peanut Butter', slug: 'peanut-butter' },
+      { name: 'Banana', slug: 'banana' },
+      { name: 'Pumpkin', slug: 'pumpkin' },
+      { name: 'Cookies & Cream', slug: 'cookies-and-cream' }
+    ],
+    // Diet variants
+    dietTags: [
+      { name: 'Gluten-Free', slug: 'gluten-free' },
+      { name: 'Vegan', slug: 'vegan' },
+      { name: 'Keto', slug: 'keto' },
+      { name: 'Sugar-Free', slug: 'sugar-free' }
+    ],
+    // Main navigation categories
+    navCategories: [
+      { name: 'Breakfast', slug: 'breakfast', items: ['pancakes', 'oatmeal', 'muffins'] },
+      { name: 'Desserts', slug: 'desserts', items: ['cookies', 'brownies', 'cheesecake', 'pudding', 'donuts'] },
+      { name: 'Snacks', slug: 'snacks', items: ['bites', 'bars'] },
+      { name: 'Savory', slug: 'savory', items: ['pizza', 'bread'] }
+    ],
+    // Special filters
+    specialFilters: [
+      { name: 'No-Bake', slug: 'no-bake' },
+      { name: 'Quick & Easy', slug: 'quick' },
+      { name: 'High Protein (30g+)', slug: 'high-protein' }
+    ]
+  },
+
   'proteinmuffins.com': {
     name: 'ProteinMuffins',
     domain: 'proteinmuffins.com',
@@ -211,6 +267,22 @@ export const sites = {
   }
 };
 
+// Empire sites (all 12 individual recipe sites)
+export const empireSites = [
+  { domain: 'proteinmuffins.com', name: 'Muffins', foodType: 'muffins', category: 'breakfast' },
+  { domain: 'proteincookies.co', name: 'Cookies', foodType: 'cookies', category: 'desserts' },
+  { domain: 'proteinpancakes.co', name: 'Pancakes', foodType: 'pancakes', category: 'breakfast' },
+  { domain: 'proteinbrownies.co', name: 'Brownies', foodType: 'brownies', category: 'desserts' },
+  { domain: 'protein-bread.com', name: 'Bread', foodType: 'bread', category: 'savory' },
+  { domain: 'proteinbars.co', name: 'Bars', foodType: 'bars', category: 'snacks' },
+  { domain: 'proteinbites.co', name: 'Bites', foodType: 'bites', category: 'snacks' },
+  { domain: 'proteindonuts.co', name: 'Donuts', foodType: 'donuts', category: 'desserts' },
+  { domain: 'proteinoatmeal.co', name: 'Oatmeal', foodType: 'oatmeal', category: 'breakfast' },
+  { domain: 'proteincheesecake.co', name: 'Cheesecake', foodType: 'cheesecake', category: 'desserts' },
+  { domain: 'proteinpizzas.co', name: 'Pizza', foodType: 'pizza', category: 'savory' },
+  { domain: 'proteinpudding.co', name: 'Pudding', foodType: 'pudding', category: 'desserts' }
+];
+
 /**
  * Get site configuration by domain
  */
@@ -230,6 +302,13 @@ export function getSitesByStatus(status) {
  */
 export function getAllDomains() {
   return Object.keys(sites);
+}
+
+/**
+ * Get empire sites (individual recipe sites, not indexer)
+ */
+export function getEmpireSites() {
+  return empireSites;
 }
 
 export default sites;

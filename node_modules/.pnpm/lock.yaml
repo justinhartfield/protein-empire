@@ -12,7 +12,7 @@ importers:
         specifier: ^17.2.3
         version: 17.2.3
       ejs:
-        specifier: ^3.1.9
+        specifier: ^3.1.10
         version: 3.1.10
       gray-matter:
         specifier: ^4.0.3
