@@ -1,0 +1,64 @@
+# Netlify Configuration for Protein Empire Sites
+# This file should be copied to each site's deployment directory
+
+[build]
+  # Build command (if using a build step)
+  # command = "npm run build"
+  
+  # Directory to deploy
+  publish = "dist"
+  
+  # Functions directory
+  functions = "netlify/functions"
+
+[build.environment]
+  # Node version for functions
+  NODE_VERSION = "18"
+
+# Redirect /api/* to Netlify Functions
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+
+# SPA fallback (if needed)
+# [[redirects]]
+#   from = "/*"
+#   to = "/index.html"
+#   status = 200
+
+# Headers for security and caching
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/recipe_images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.pdf"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+# Environment variables are set in Netlify UI or via CLI
+# Required for each site:
+# - SENDGRID_API_KEY (shared)
+# - SENDGRID_LIST_ID (unique per site)
+# - SENDGRID_FROM_EMAIL (unique per site)
+# - SITE_NAME (unique per site)

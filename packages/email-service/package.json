@@ -1,0 +1,24 @@
+{
+  "name": "@protein-empire/email-service",
+  "version": "1.0.0",
+  "description": "Shared email service for the Protein Empire - SendGrid integration for subscriptions and transactional emails",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "scripts": {
+    "test": "node --test src/*.test.js"
+  },
+  "keywords": [
+    "email",
+    "sendgrid",
+    "protein-empire"
+  ],
+  "author": "Protein Empire",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@sendgrid/client": "^8.1.0",
+    "@sendgrid/mail": "^8.1.0"
+  }
+}
