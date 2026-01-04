@@ -1,0 +1,140 @@
+name: Build and Deploy Sites
+
+on:
+  # Trigger on push to main branch
+  push:
+    branches: [main]
+    paths:
+      - 'data/**'
+      - 'packages/**'
+      - 'scripts/**'
+  
+  # Trigger via webhook (from Strapi)
+  repository_dispatch:
+    types: [strapi-content-update]
+  
+  # Manual trigger
+  workflow_dispatch:
+    inputs:
+      site:
+        description: 'Site to build (leave empty for all)'
+        required: false
+        default: ''
+
+env:
+  NODE_VERSION: '20'
+  STRAPI_URL: ${{ secrets.STRAPI_URL }}
+  STRAPI_API_TOKEN: ${{ secrets.STRAPI_API_TOKEN }}
+
+jobs:
+  # Determine which sites to build
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      sites: ${{ steps.set-sites.outputs.sites }}
+    steps:
+      - name: Set sites to build
+        id: set-sites
+        run: |
+          if [ -n "${{ github.event.inputs.site }}" ]; then
+            # Manual trigger with specific site
+            echo "sites=[\"${{ github.event.inputs.site }}\"]" >> $GITHUB_OUTPUT
+          elif [ -n "${{ github.event.client_payload.site }}" ]; then
+            # Webhook trigger with specific site
+            echo "sites=[\"${{ github.event.client_payload.site }}\"]" >> $GITHUB_OUTPUT
+          else
+            # Build all sites
+            echo 'sites=["proteincookies.co","proteinmuffins.com","proteinpancakes.co","proteinbrownies.co","protein-bread.com","proteinbars.co","proteinbites.co","proteindonuts.co","proteinoatmeal.co","proteincheesecake.co","proteinpizzas.co","proteinpudding.co"]' >> $GITHUB_OUTPUT
+          fi
+
+  # Build each site
+  build:
+    needs: prepare
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        site: ${{ fromJson(needs.prepare.outputs.sites) }}
+      fail-fast: false
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+      
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      
+      - name: Install dependencies
+        run: pnpm install
+      
+      - name: Build site
+        run: |
+          if [ -n "$STRAPI_URL" ] && [ -n "$STRAPI_API_TOKEN" ]; then
+            echo "Building from Strapi CMS..."
+            node scripts/build-from-strapi.js ${{ matrix.site }}
+          else
+            echo "Building from local JSON..."
+            node scripts/build-site.js ${{ matrix.site }}
+          fi
+      
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-${{ matrix.site }}
+          path: apps/${{ matrix.site }}/dist
+          retention-days: 1
+
+  # Deploy to Netlify
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        site: ${{ fromJson(needs.prepare.outputs.sites) }}
+      fail-fast: false
+    
+    steps:
+      - name: Download build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: build-${{ matrix.site }}
+          path: dist
+      
+      - name: Get Netlify site ID
+        id: netlify-site
+        run: |
+          # Map domain to Netlify site ID (set these in repository secrets)
+          SITE_KEY=$(echo "${{ matrix.site }}" | tr '.' '_' | tr '-' '_' | tr '[:lower:]' '[:upper:]')
+          SITE_ID_VAR="NETLIFY_SITE_ID_${SITE_KEY}"
+          echo "site_id=${!SITE_ID_VAR:-}" >> $GITHUB_OUTPUT
+      
+      - name: Deploy to Netlify
+        if: steps.netlify-site.outputs.site_id != ''
+        uses: nwtgck/actions-netlify@v2.0
+        with:
+          publish-dir: './dist'
+          production-deploy: true
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ steps.netlify-site.outputs.site_id }}
+
+  # Notify on completion
+  notify:
+    needs: [prepare, build, deploy]
+    runs-on: ubuntu-latest
+    if: always()
+    steps:
+      - name: Summary
+        run: |
+          echo "## Build Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Sites built: ${{ needs.prepare.outputs.sites }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Build status: ${{ needs.build.result }}" >> $GITHUB_STEP_SUMMARY
+          echo "Deploy status: ${{ needs.deploy.result }}" >> $GITHUB_STEP_SUMMARY
