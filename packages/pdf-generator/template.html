@@ -383,7 +383,11 @@
       <h3 class="section-title">Instructions</h3>
       <ol class="instruction-list">
         {% for step in recipe.instructions %}
+        {% if step is mapping %}
+        <li>{{ step.text }}</li>
+        {% else %}
         <li>{{ step }}</li>
+        {% endif %}
         {% endfor %}
       </ol>
     </div>
