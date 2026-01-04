@@ -1,0 +1,13 @@
+{
+  "name": "@protein-empire/ingredients",
+  "version": "1.0.0",
+  "description": "Universal ingredient database and substitution engine for the Protein Empire",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./data": "./ingredients-data.js",
+    "./substitution": "./recipe-substitution.js",
+    "./browser": "./browser-bundle.js"
+  }
+}

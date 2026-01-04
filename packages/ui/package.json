@@ -1,0 +1,11 @@
+{
+  "name": "@protein-empire/ui",
+  "version": "1.0.0",
+  "description": "Shared UI components and templates for the Protein Empire",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./templates/*": "./templates/*"
+  }
+}

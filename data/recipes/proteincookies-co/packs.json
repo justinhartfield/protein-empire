@@ -1,0 +1,76 @@
+[
+  {
+    "slug": "starter",
+    "title": "Starter Pack",
+    "description": "5 essential protein cookie recipes to get you started. Perfect for beginners!",
+    "icon": "🍪",
+    "recipes": [
+      "chocolate-chip-protein-cookies",
+      "peanut-butter-protein-cookies",
+      "no-bake-protein-cookies",
+      "oatmeal-raisin-protein-cookies",
+      "double-chocolate-protein-cookies"
+    ]
+  },
+  {
+    "slug": "no-bake",
+    "title": "No-Bake Pack",
+    "description": "Quick protein cookies that require no oven. Ready in minutes!",
+    "icon": "❄️",
+    "recipes": [
+      "no-bake-protein-cookies",
+      "protein-cookie-dough-bites",
+      "banana-oat-protein-cookies"
+    ]
+  },
+  {
+    "slug": "peanut-butter",
+    "title": "Peanut Butter Lovers Pack",
+    "description": "For those who can't get enough peanut butter in their protein cookies.",
+    "icon": "🥜",
+    "recipes": [
+      "peanut-butter-protein-cookies",
+      "chocolate-peanut-butter-protein-cookies",
+      "no-bake-protein-cookies",
+      "monster-protein-cookies"
+    ]
+  },
+  {
+    "slug": "holiday",
+    "title": "Holiday Cookie Pack",
+    "description": "Festive protein cookies for the holiday season.",
+    "icon": "🎄",
+    "recipes": [
+      "snickerdoodle-protein-cookies",
+      "gingerbread-protein-cookies",
+      "pumpkin-spice-protein-cookies",
+      "birthday-cake-protein-cookies",
+      "red-velvet-protein-cookies"
+    ]
+  },
+  {
+    "slug": "kids",
+    "title": "Kids' Lunchbox Pack",
+    "description": "Kid-approved protein cookies that are perfect for school lunches.",
+    "icon": "🎒",
+    "recipes": [
+      "protein-cookies-for-kids",
+      "chocolate-chip-protein-cookies",
+      "banana-oat-protein-cookies",
+      "birthday-cake-protein-cookies"
+    ]
+  },
+  {
+    "slug": "high-protein",
+    "title": "25g+ Muscle Pack",
+    "description": "Maximum protein cookies for serious gains. 25g+ protein per serving.",
+    "icon": "💪",
+    "recipes": [
+      "high-protein-cookies-30g",
+      "cottage-cheese-protein-cookies",
+      "greek-yogurt-protein-cookies",
+      "chocolate-peanut-butter-protein-cookies",
+      "double-chocolate-protein-cookies"
+    ]
+  }
+]

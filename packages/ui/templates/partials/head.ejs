@@ -1,0 +1,91 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title><%= pageTitle %> | <%= site.name %></title>
+
+<!-- SEO Meta Tags -->
+<meta name="description" content="<%= pageDescription %>">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://<%= site.domain %><%= canonicalPath %>">
+
+<!-- Open Graph / Social Sharing -->
+<meta property="og:type" content="<%= ogType || 'website' %>">
+<meta property="og:site_name" content="<%= site.name %>">
+<meta property="og:title" content="<%= pageTitle %>">
+<meta property="og:description" content="<%= pageDescription %>">
+<meta property="og:image" content="https://<%= site.domain %><%= ogImage || site.socialImage %>">
+<meta property="og:url" content="https://<%= site.domain %><%= canonicalPath %>">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="<%= pageTitle %>">
+<meta name="twitter:description" content="<%= pageDescription %>">
+<meta name="twitter:image" content="https://<%= site.domain %><%= ogImage || site.socialImage %>">
+
+<!-- Theme & Favicon -->
+<meta name="theme-color" content="<%= site.brandColor %>">
+<link rel="icon" type="image/png" href="<%= site.favicon %>">
+<link rel="apple-touch-icon" href="<%= site.favicon %>">
+
+<!-- Performance: DNS Prefetch & Preconnect -->
+<link rel="dns-prefetch" href="//cdn.tailwindcss.com">
+<link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<% if (preloadImage) { %>
+<!-- Performance: Preload LCP Image -->
+<link rel="preload" as="image" href="<%= preloadImage %>">
+<% } %>
+
+<!-- Scripts -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+<% if (includeIngredients) { %>
+<!-- Ingredient Substitution System -->
+<script src="/js/ingredients-bundle.js"></script>
+<% } %>
+
+<!-- Tailwind Config -->
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                fontFamily: {
+                    'anton': ['Anton', 'sans-serif'],
+                    'sans': ['Inter', 'sans-serif'],
+                },
+                colors: {
+                    brand: {
+                        50: '#fffbeb',
+                        100: '#fef3c7',
+                        500: '<%= site.brandColor %>',
+                        600: '#d97706',
+                        900: '#451a03',
+                    },
+                    accent: {
+                        500: '<%= site.accentColor %>',
+                    }
+                }
+            }
+        }
+    }
+</script>
+
+<style>
+    [x-cloak] { display: none !important; }
+</style>
+
+<% if (site.ga4Id) { %>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=<%= site.ga4Id %>"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '<%= site.ga4Id %>');
+</script>
+<% } %>

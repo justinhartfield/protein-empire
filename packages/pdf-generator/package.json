@@ -1,0 +1,13 @@
+{
+  "name": "@protein-empire/pdf-generator",
+  "version": "1.0.0",
+  "description": "Automated PDF recipe pack generator for the Protein Empire",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "generate": "node index.js"
+  },
+  "dependencies": {
+    "puppeteer": "^21.7.0"
+  }
+}

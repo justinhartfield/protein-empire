@@ -1,0 +1,39 @@
+{
+  "name": "protein-empire",
+  "version": "1.0.0",
+  "description": "The Protein Empire - A network of macro-verified protein recipe websites",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-all.js",
+    "build:site": "node scripts/build-site.js",
+    "generate:pdfs": "node scripts/generate-pdfs.js",
+    "dev": "node scripts/dev-server.js",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "keywords": [
+    "protein",
+    "recipes",
+    "fitness",
+    "baking",
+    "macros"
+  ],
+  "author": "Protein Empire",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "prettier": "^3.2.0"
+  },
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "gray-matter": "^4.0.3",
+    "marked": "^11.1.0",
+    "puppeteer": "^21.7.0",
+    "sharp": "^0.33.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "@protein-empire/config",
+  "version": "1.0.0",
+  "description": "Shared configuration for the Protein Empire",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./sites": "./sites.js",
+    "./tailwind": "./tailwind.config.js",
+    "./categories": "./categories.js"
+  }
+}

@@ -1,0 +1,54 @@
+<nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/80 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <!-- Logo -->
+            <a href="/" class="flex items-center gap-2">
+                <img src="<%= site.logo %>" alt="<%= site.name %>" class="h-10 w-10 rounded-full">
+                <span class="font-anton text-xl text-slate-900 tracking-tight uppercase"><%= site.name %></span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center gap-6">
+                <a href="/#recipes" class="text-slate-600 hover:text-slate-900 font-medium transition-colors">Recipes</a>
+                <a href="/#categories" class="text-slate-600 hover:text-slate-900 font-medium transition-colors">Categories</a>
+                <a href="/#packs" class="text-slate-600 hover:text-slate-900 font-medium transition-colors">Recipe Packs</a>
+                <a href="/pack-starter.html" class="bg-brand-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-brand-600 transition-colors">
+                    Starter Pack (Free)
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button 
+                x-data="{ open: false }"
+                @click="open = !open; $dispatch('toggle-mobile-menu', { open })"
+                class="md:hidden p-2 text-slate-600 hover:text-slate-900"
+                aria-label="Toggle menu"
+            >
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div 
+        x-data="{ open: false }"
+        @toggle-mobile-menu.window="open = $event.detail.open"
+        x-show="open"
+        x-cloak
+        class="md:hidden bg-white border-b border-slate-200"
+    >
+        <div class="px-4 py-4 space-y-3">
+            <a href="/#recipes" class="block text-slate-600 hover:text-slate-900 font-medium">Recipes</a>
+            <a href="/#categories" class="block text-slate-600 hover:text-slate-900 font-medium">Categories</a>
+            <a href="/#packs" class="block text-slate-600 hover:text-slate-900 font-medium">Recipe Packs</a>
+            <a href="/pack-starter.html" class="block bg-brand-500 text-white px-4 py-2 rounded-lg font-semibold text-center">
+                Starter Pack (Free)
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!-- Spacer for fixed nav -->
+<div class="h-16"></div>

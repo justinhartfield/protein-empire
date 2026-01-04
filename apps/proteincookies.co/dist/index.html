@@ -1,0 +1,1136 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ProteinCookies.com | The Hub for Macro-Verified Cookie Recipes | ProteinCookies</title>
+
+<!-- SEO Meta Tags -->
+<meta name="description" content="Macro-verified protein cookie recipes with USDA nutrition data. 25+ recipes measured in grams for precise macros. Free recipe packs and printable cards.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://proteincookies.co/">
+
+<!-- Open Graph / Social Sharing -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ProteinCookies">
+<meta property="og:title" content="ProteinCookies.com | The Hub for Macro-Verified Cookie Recipes">
+<meta property="og:description" content="Macro-verified protein cookie recipes with USDA nutrition data. 25+ recipes measured in grams for precise macros. Free recipe packs and printable cards.">
+<meta property="og:image" content="https://proteincookies.co/images/social-share.png">
+<meta property="og:url" content="https://proteincookies.co/">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ProteinCookies.com | The Hub for Macro-Verified Cookie Recipes">
+<meta name="twitter:description" content="Macro-verified protein cookie recipes with USDA nutrition data. 25+ recipes measured in grams for precise macros. Free recipe packs and printable cards.">
+<meta name="twitter:image" content="https://proteincookies.co/images/social-share.png">
+
+<!-- Theme & Favicon -->
+<meta name="theme-color" content="#f59e0b">
+<link rel="icon" type="image/png" href="/images/favicon.png">
+<link rel="apple-touch-icon" href="/images/favicon.png">
+
+<!-- Performance: DNS Prefetch & Preconnect -->
+<link rel="dns-prefetch" href="//cdn.tailwindcss.com">
+<link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+
+<!-- Performance: Preload LCP Image -->
+<link rel="preload" as="image" href="/recipe_images/chocolate-chip-protein-cookies.png">
+
+
+<!-- Scripts -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+
+
+<!-- Tailwind Config -->
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                fontFamily: {
+                    'anton': ['Anton', 'sans-serif'],
+                    'sans': ['Inter', 'sans-serif'],
+                },
+                colors: {
+                    brand: {
+                        50: '#fffbeb',
+                        100: '#fef3c7',
+                        500: '#f59e0b',
+                        600: '#d97706',
+                        900: '#451a03',
+                    },
+                    accent: {
+                        500: '#10b981',
+                    }
+                }
+            }
+        }
+    }
+</script>
+
+<style>
+    [x-cloak] { display: none !important; }
+</style>
+
+
+
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans antialiased">
+
+<nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/80 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <!-- Logo -->
+            <a href="/" class="flex items-center gap-2">
+                <img src="/images/logo.png" alt="ProteinCookies" class="h-10 w-10 rounded-full">
+                <span class="font-anton text-xl text-slate-900 tracking-tight uppercase">ProteinCookies</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center gap-6">
+                <a href="/#recipes" class="text-slate-600 hover:text-slate-900 font-medium transition-colors">Recipes</a>
+                <a href="/#categories" class="text-slate-600 hover:text-slate-900 font-medium transition-colors">Categories</a>
+                <a href="/#packs" class="text-slate-600 hover:text-slate-900 font-medium transition-colors">Recipe Packs</a>
+                <a href="/pack-starter.html" class="bg-brand-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-brand-600 transition-colors">
+                    Starter Pack (Free)
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button 
+                x-data="{ open: false }"
+                @click="open = !open; $dispatch('toggle-mobile-menu', { open })"
+                class="md:hidden p-2 text-slate-600 hover:text-slate-900"
+                aria-label="Toggle menu"
+            >
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div 
+        x-data="{ open: false }"
+        @toggle-mobile-menu.window="open = $event.detail.open"
+        x-show="open"
+        x-cloak
+        class="md:hidden bg-white border-b border-slate-200"
+    >
+        <div class="px-4 py-4 space-y-3">
+            <a href="/#recipes" class="block text-slate-600 hover:text-slate-900 font-medium">Recipes</a>
+            <a href="/#categories" class="block text-slate-600 hover:text-slate-900 font-medium">Categories</a>
+            <a href="/#packs" class="block text-slate-600 hover:text-slate-900 font-medium">Recipe Packs</a>
+            <a href="/pack-starter.html" class="block bg-brand-500 text-white px-4 py-2 rounded-lg font-semibold text-center">
+                Starter Pack (Free)
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!-- Spacer for fixed nav -->
+<div class="h-16"></div>
+
+
+<!-- Hero Section -->
+<section class="relative bg-slate-900 text-white py-20 overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-to-br from-brand-600/20 to-transparent"></div>
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <span class="inline-block bg-brand-500 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
+      25+ Macro-Verified Recipes
+    </span>
+    <h1 class="font-anton text-4xl md:text-6xl tracking-tight uppercase mb-4">
+      The Hub for Protein<br>Cookies
+    </h1>
+    <p class="text-xl text-slate-300 max-w-2xl mx-auto mb-8">
+      Macro-verified protein cookie recipes with precise nutrition data. Every recipe measured in grams for precise macros.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="#recipes" class="bg-brand-500 text-white px-8 py-3 rounded-xl font-semibold hover:bg-brand-600 transition-colors">
+        Browse Recipes
+      </a>
+      <a href="/pack-starter.html" class="bg-white/10 text-white px-8 py-3 rounded-xl font-semibold hover:bg-white/20 transition-colors border border-white/20">
+        Get Free Starter Pack
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Recipes Section -->
+<section id="recipes" class="py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="font-anton text-3xl text-center mb-8 uppercase">All Recipes</h2>
+    
+    <!-- Category Filter -->
+    <div id="categories" class="flex flex-wrap justify-center gap-2 mb-8">
+      
+        <a href="/category-all.html" class="px-4 py-2 rounded-full text-sm font-medium bg-white border border-slate-200 hover:border-brand-500 hover:text-brand-600 transition-colors">
+          All Recipes
+        </a>
+      
+        <a href="/category-high-protein.html" class="px-4 py-2 rounded-full text-sm font-medium bg-white border border-slate-200 hover:border-brand-500 hover:text-brand-600 transition-colors">
+          High Protein
+        </a>
+      
+        <a href="/category-quick.html" class="px-4 py-2 rounded-full text-sm font-medium bg-white border border-slate-200 hover:border-brand-500 hover:text-brand-600 transition-colors">
+          Quick &amp; Easy
+        </a>
+      
+        <a href="/category-gluten-free.html" class="px-4 py-2 rounded-full text-sm font-medium bg-white border border-slate-200 hover:border-brand-500 hover:text-brand-600 transition-colors">
+          Gluten-Free
+        </a>
+      
+        <a href="/category-vegan.html" class="px-4 py-2 rounded-full text-sm font-medium bg-white border border-slate-200 hover:border-brand-500 hover:text-brand-600 transition-colors">
+          Vegan
+        </a>
+      
+        <a href="/category-kids.html" class="px-4 py-2 rounded-full text-sm font-medium bg-white border border-slate-200 hover:border-brand-500 hover:text-brand-600 transition-colors">
+          Kids
+        </a>
+      
+        <a href="/category-seasonal.html" class="px-4 py-2 rounded-full text-sm font-medium bg-white border border-slate-200 hover:border-brand-500 hover:text-brand-600 transition-colors">
+          Seasonal
+        </a>
+      
+        <a href="/category-classic.html" class="px-4 py-2 rounded-full text-sm font-medium bg-white border border-slate-200 hover:border-brand-500 hover:text-brand-600 transition-colors">
+          Classic
+        </a>
+      
+        <a href="/category-chocolate.html" class="px-4 py-2 rounded-full text-sm font-medium bg-white border border-slate-200 hover:border-brand-500 hover:text-brand-600 transition-colors">
+          Chocolate &amp; Sweet
+        </a>
+      
+        <a href="/category-no-bake.html" class="px-4 py-2 rounded-full text-sm font-medium bg-white border border-slate-200 hover:border-brand-500 hover:text-brand-600 transition-colors">
+          No-Bake
+        </a>
+      
+    </div>
+    
+    <!-- Recipe Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      
+        <a href="/chocolate-chip-protein-cookies.html" class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <div class="relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/chocolate-chip-protein-cookies.png" 
+            alt="Chocolate Chip Protein Cookies"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            21g
+        </div>
+    </div>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+            Chocolate Chip Protein Cookies
+        </h3>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>165 cal</span>
+            <span>•</span>
+            <span>22m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+    </div>
+</a>
+
+      
+        <a href="/peanut-butter-protein-cookies.html" class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <div class="relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/peanut-butter-protein-cookies.png" 
+            alt="Peanut Butter Protein Cookies"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            24g
+        </div>
+    </div>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+            Peanut Butter Protein Cookies
+        </h3>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>185 cal</span>
+            <span>•</span>
+            <span>18m</span>
+            <span>•</span>
+            <span>Beginner</span>
+        </div>
+    </div>
+</a>
+
+      
+        <a href="/no-bake-protein-cookies.html" class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <div class="relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/no-bake-protein-cookies.png" 
+            alt="No-Bake Protein Cookies"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            18g
+        </div>
+    </div>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+            No-Bake Protein Cookies
+        </h3>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>155 cal</span>
+            <span>•</span>
+            <span>15m</span>
+            <span>•</span>
+            <span>Beginner</span>
+        </div>
+    </div>
+</a>
+
+      
+        <a href="/oatmeal-raisin-protein-cookies.html" class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <div class="relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/oatmeal-raisin-protein-cookies.png" 
+            alt="Oatmeal Raisin Protein Cookies"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            19g
+        </div>
+    </div>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+            Oatmeal Raisin Protein Cookies
+        </h3>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>170 cal</span>
+            <span>•</span>
+            <span>26m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+    </div>
+</a>
+
+      
+        <a href="/double-chocolate-protein-cookies.html" class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <div class="relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/double-chocolate-protein-cookies.png" 
+            alt="Double Chocolate Protein Cookies"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            22g
+        </div>
+    </div>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+            Double Chocolate Protein Cookies
+        </h3>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>175 cal</span>
+            <span>•</span>
+            <span>22m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+    </div>
+</a>
+
+      
+        <a href="/snickerdoodle-protein-cookies.html" class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <div class="relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/snickerdoodle-protein-cookies.png" 
+            alt="Snickerdoodle Protein Cookies"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            20g
+        </div>
+    </div>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+            Snickerdoodle Protein Cookies
+        </h3>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>160 cal</span>
+            <span>•</span>
+            <span>22m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+    </div>
+</a>
+
+      
+        <a href="/birthday-cake-protein-cookies.html" class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <div class="relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/birthday-cake-protein-cookies.png" 
+            alt="Birthday Cake Protein Cookies"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            19g
+        </div>
+    </div>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+            Birthday Cake Protein Cookies
+        </h3>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>165 cal</span>
+            <span>•</span>
+            <span>20m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+    </div>
+</a>
+
+      
+        <a href="/vegan-protein-cookies.html" class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <div class="relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/vegan-protein-cookies.png" 
+            alt="Vegan Protein Cookies"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            17g
+        </div>
+    </div>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+            Vegan Protein Cookies
+        </h3>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>160 cal</span>
+            <span>•</span>
+            <span>27m</span>
+            <span>•</span>
+            <span>Medium</span>
+        </div>
+    </div>
+</a>
+
+      
+        <a href="/gluten-free-protein-cookies.html" class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <div class="relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/gluten-free-protein-cookies.png" 
+            alt="Gluten-Free Protein Cookies"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            20g
+        </div>
+    </div>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+            Gluten-Free Protein Cookies
+        </h3>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>170 cal</span>
+            <span>•</span>
+            <span>22m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+    </div>
+</a>
+
+      
+        <a href="/protein-cookie-dough-bites.html" class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <div class="relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/protein-cookie-dough-bites.png" 
+            alt="Protein Cookie Dough Bites"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            15g
+        </div>
+    </div>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+            Protein Cookie Dough Bites
+        </h3>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>140 cal</span>
+            <span>•</span>
+            <span>15m</span>
+            <span>•</span>
+            <span>Beginner</span>
+        </div>
+    </div>
+</a>
+
+      
+        <a href="/white-chocolate-macadamia-protein-cookies.html" class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <div class="relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/white-chocolate-macadamia-protein-cookies.png" 
+            alt="White Chocolate Macadamia Protein Cookies"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            18g
+        </div>
+    </div>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+            White Chocolate Macadamia Protein Cookies
+        </h3>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>180 cal</span>
+            <span>•</span>
+            <span>24m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+    </div>
+</a>
+
+      
+        <a href="/protein-cookies-for-kids.html" class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <div class="relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/protein-cookies-for-kids.png" 
+            alt="Protein Cookies for Kids"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            12g
+        </div>
+    </div>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+            Protein Cookies for Kids
+        </h3>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>130 cal</span>
+            <span>•</span>
+            <span>20m</span>
+            <span>•</span>
+            <span>Beginner</span>
+        </div>
+    </div>
+</a>
+
+      
+        <a href="/cottage-cheese-protein-cookies.html" class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <div class="relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/cottage-cheese-protein-cookies.png" 
+            alt="Cottage Cheese Protein Cookies"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            23g
+        </div>
+    </div>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+            Cottage Cheese Protein Cookies
+        </h3>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>155 cal</span>
+            <span>•</span>
+            <span>24m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+    </div>
+</a>
+
+      
+        <a href="/greek-yogurt-protein-cookies.html" class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <div class="relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/greek-yogurt-protein-cookies.png" 
+            alt="Greek Yogurt Protein Cookies"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            21g
+        </div>
+    </div>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+            Greek Yogurt Protein Cookies
+        </h3>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>150 cal</span>
+            <span>•</span>
+            <span>22m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+    </div>
+</a>
+
+      
+        <a href="/almond-flour-protein-cookies.html" class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <div class="relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/almond-flour-protein-cookies.png" 
+            alt="Almond Flour Protein Cookies"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            19g
+        </div>
+    </div>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+            Almond Flour Protein Cookies
+        </h3>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>175 cal</span>
+            <span>•</span>
+            <span>22m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+    </div>
+</a>
+
+      
+        <a href="/pumpkin-spice-protein-cookies.html" class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <div class="relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/pumpkin-spice-protein-cookies.png" 
+            alt="Pumpkin Spice Protein Cookies"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            18g
+        </div>
+    </div>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+            Pumpkin Spice Protein Cookies
+        </h3>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>145 cal</span>
+            <span>•</span>
+            <span>26m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+    </div>
+</a>
+
+      
+        <a href="/lemon-protein-cookies.html" class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <div class="relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/lemon-protein-cookies.png" 
+            alt="Lemon Protein Cookies"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            17g
+        </div>
+    </div>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+            Lemon Protein Cookies
+        </h3>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>150 cal</span>
+            <span>•</span>
+            <span>22m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+    </div>
+</a>
+
+      
+        <a href="/monster-protein-cookies.html" class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <div class="relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/monster-protein-cookies.png" 
+            alt="Monster Protein Cookies"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            20g
+        </div>
+    </div>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+            Monster Protein Cookies
+        </h3>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>195 cal</span>
+            <span>•</span>
+            <span>24m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+    </div>
+</a>
+
+      
+        <a href="/high-protein-cookies-30g.html" class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <div class="relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/high-protein-cookies-30g.png" 
+            alt="High Protein Cookies (30g)"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            30g
+        </div>
+    </div>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+            High Protein Cookies (30g)
+        </h3>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>220 cal</span>
+            <span>•</span>
+            <span>22m</span>
+            <span>•</span>
+            <span>Medium</span>
+        </div>
+    </div>
+</a>
+
+      
+        <a href="/chocolate-peanut-butter-protein-cookies.html" class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <div class="relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/chocolate-peanut-butter-protein-cookies.png" 
+            alt="Chocolate Peanut Butter Protein Cookies"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            22g
+        </div>
+    </div>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+            Chocolate Peanut Butter Protein Cookies
+        </h3>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>185 cal</span>
+            <span>•</span>
+            <span>24m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+    </div>
+</a>
+
+      
+        <a href="/banana-protein-cookies.html" class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <div class="relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/banana-protein-cookies.png" 
+            alt="Banana Protein Cookies"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            16g
+        </div>
+    </div>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+            Banana Protein Cookies
+        </h3>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>140 cal</span>
+            <span>•</span>
+            <span>22m</span>
+            <span>•</span>
+            <span>Beginner</span>
+        </div>
+    </div>
+</a>
+
+      
+        <a href="/sugar-free-protein-cookies.html" class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <div class="relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/sugar-free-protein-cookies.png" 
+            alt="Sugar-Free Protein Cookies"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            19g
+        </div>
+    </div>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+            Sugar-Free Protein Cookies
+        </h3>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>145 cal</span>
+            <span>•</span>
+            <span>22m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+    </div>
+</a>
+
+      
+        <a href="/thin-crispy-protein-cookies.html" class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <div class="relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/thin-crispy-protein-cookies.png" 
+            alt="Thin &amp; Crispy Protein Cookies"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            15g
+        </div>
+    </div>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+            Thin &amp; Crispy Protein Cookies
+        </h3>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>135 cal</span>
+            <span>•</span>
+            <span>24m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+    </div>
+</a>
+
+      
+        <a href="/red-velvet-protein-cookies.html" class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <div class="relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/red-velvet-protein-cookies.png" 
+            alt="Red Velvet Protein Cookies"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            18g
+        </div>
+    </div>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+            Red Velvet Protein Cookies
+        </h3>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>165 cal</span>
+            <span>•</span>
+            <span>25m</span>
+            <span>•</span>
+            <span>Medium</span>
+        </div>
+    </div>
+</a>
+
+      
+        <a href="/gingerbread-protein-cookies.html" class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <div class="relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/gingerbread-protein-cookies.png" 
+            alt="Gingerbread Protein Cookies"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            17g
+        </div>
+    </div>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+            Gingerbread Protein Cookies
+        </h3>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>150 cal</span>
+            <span>•</span>
+            <span>25m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+    </div>
+</a>
+
+      
+    </div>
+  </div>
+</section>
+
+<!-- Starter Pack CTA -->
+<section class="py-16 bg-brand-50">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <span class="inline-block bg-brand-500 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
+      Free Download
+    </span>
+    <h2 class="font-anton text-3xl uppercase mb-4">Get the Starter Pack</h2>
+    <p class="text-slate-600 mb-8">
+      5 essential protein cookies recipes in a printable PDF. Includes shopping list, nutrition facts, and pro tips.
+    </p>
+    <a href="/pack-starter.html" class="inline-flex items-center gap-2 bg-brand-500 text-white px-8 py-3 rounded-xl font-semibold hover:bg-brand-600 transition-colors">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+      </svg>
+      Download Free PDF
+    </a>
+  </div>
+</section>
+
+<!-- More Packs -->
+
+<section id="packs" class="py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="font-anton text-3xl text-center mb-4 uppercase">More Recipe Packs</h2>
+    <p class="text-center text-slate-600 mb-8">Curated collections for every goal and preference.</p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+        <a href="/pack-no-bake.html" class="block bg-white rounded-2xl p-6 border border-slate-200 hover:border-brand-500 hover:shadow-lg transition-all">
+          <span class="text-3xl mb-4 block">❄️</span>
+          <h3 class="font-semibold text-lg mb-2">No-Bake Pack</h3>
+          <p class="text-slate-600 text-sm">Quick protein cookies that require no oven. Ready in minutes!</p>
+        </a>
+      
+        <a href="/pack-peanut-butter.html" class="block bg-white rounded-2xl p-6 border border-slate-200 hover:border-brand-500 hover:shadow-lg transition-all">
+          <span class="text-3xl mb-4 block">🥜</span>
+          <h3 class="font-semibold text-lg mb-2">Peanut Butter Lovers Pack</h3>
+          <p class="text-slate-600 text-sm">For those who can&#39;t get enough peanut butter in their protein cookies.</p>
+        </a>
+      
+        <a href="/pack-holiday.html" class="block bg-white rounded-2xl p-6 border border-slate-200 hover:border-brand-500 hover:shadow-lg transition-all">
+          <span class="text-3xl mb-4 block">🎄</span>
+          <h3 class="font-semibold text-lg mb-2">Holiday Cookie Pack</h3>
+          <p class="text-slate-600 text-sm">Festive protein cookies for the holiday season.</p>
+        </a>
+      
+        <a href="/pack-kids.html" class="block bg-white rounded-2xl p-6 border border-slate-200 hover:border-brand-500 hover:shadow-lg transition-all">
+          <span class="text-3xl mb-4 block">🎒</span>
+          <h3 class="font-semibold text-lg mb-2">Kids&#39; Lunchbox Pack</h3>
+          <p class="text-slate-600 text-sm">Kid-approved protein cookies that are perfect for school lunches.</p>
+        </a>
+      
+        <a href="/pack-high-protein.html" class="block bg-white rounded-2xl p-6 border border-slate-200 hover:border-brand-500 hover:shadow-lg transition-all">
+          <span class="text-3xl mb-4 block">💪</span>
+          <h3 class="font-semibold text-lg mb-2">25g+ Muscle Pack</h3>
+          <p class="text-slate-600 text-sm">Maximum protein cookies for serious gains. 25g+ protein per serving.</p>
+        </a>
+      
+    </div>
+  </div>
+</section>
+
+
+<footer class="bg-slate-900 text-white py-12 mt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- Brand -->
+            <div class="col-span-1">
+                <div class="flex items-center gap-2 mb-4">
+                    <img src="/images/logo.png" alt="ProteinCookies" class="h-10 w-10 rounded-full">
+                    <span class="font-anton text-xl tracking-tight uppercase">ProteinCookies</span>
+                </div>
+                <p class="text-slate-400 text-sm">
+                    Macro-verified protein cookies recipes with precise nutrition data.
+                </p>
+            </div>
+
+            <!-- Recipes -->
+            <div>
+                <h4 class="font-semibold mb-4">Recipes</h4>
+                <ul class="space-y-2 text-slate-400 text-sm">
+                    <li><a href="/category-all.html" class="hover:text-white transition-colors">All Recipes</a></li>
+                    <li><a href="/category-classic.html" class="hover:text-white transition-colors">Classic</a></li>
+                    <li><a href="/category-high-protein.html" class="hover:text-white transition-colors">High Protein</a></li>
+                    <li><a href="/category-quick.html" class="hover:text-white transition-colors">Quick & Easy</a></li>
+                </ul>
+            </div>
+
+            <!-- Recipe Packs -->
+            <div>
+                <h4 class="font-semibold mb-4">Recipe Packs</h4>
+                <ul class="space-y-2 text-slate-400 text-sm">
+                    <li><a href="/pack-starter.html" class="hover:text-white transition-colors">Starter Pack (Free)</a></li>
+                    <li><a href="/pack-no-bake.html" class="hover:text-white transition-colors">No-Bake Pack</a></li>
+                    <li><a href="/pack-high-protein.html" class="hover:text-white transition-colors">High Protein Pack</a></li>
+                </ul>
+            </div>
+
+            <!-- Legal -->
+            <div>
+                <h4 class="font-semibold mb-4">Legal</h4>
+                <ul class="space-y-2 text-slate-400 text-sm">
+                    <li><a href="/privacy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                    <li><a href="/terms.html" class="hover:text-white transition-colors">Terms of Use</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Empire Links -->
+        <div class="mt-12 pt-8 border-t border-slate-800">
+            <p class="text-slate-500 text-sm text-center mb-4">Part of the Protein Empire</p>
+            <div class="flex flex-wrap justify-center gap-4 text-slate-400 text-sm">
+                <a href="https://proteinmuffins.com" class="hover:text-white transition-colors">Muffins</a>
+                <a href="https://proteincookies.co" class="hover:text-white transition-colors">Cookies</a>
+                <a href="https://proteinpancakes.co" class="hover:text-white transition-colors">Pancakes</a>
+                <a href="https://proteinbrownies.co" class="hover:text-white transition-colors">Brownies</a>
+                <a href="https://protein-bread.com" class="hover:text-white transition-colors">Bread</a>
+                <a href="https://proteinbars.co" class="hover:text-white transition-colors">Bars</a>
+                <a href="https://proteinbites.co" class="hover:text-white transition-colors">Bites</a>
+                <a href="https://proteindonuts.co" class="hover:text-white transition-colors">Donuts</a>
+                <a href="https://proteinoatmeal.co" class="hover:text-white transition-colors">Oatmeal</a>
+                <a href="https://proteincheesecake.co" class="hover:text-white transition-colors">Cheesecake</a>
+                <a href="https://proteinpizzas.co" class="hover:text-white transition-colors">Pizza</a>
+                <a href="https://proteinpudding.co" class="hover:text-white transition-colors">Pudding</a>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="mt-8 text-center text-slate-500 text-sm">
+            <p>&copy; 2026 ProteinCookies. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
