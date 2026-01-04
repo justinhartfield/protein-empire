@@ -26,6 +26,7 @@
     "prettier": "^3.2.0"
   },
   "dependencies": {
+    "dotenv": "^17.2.3",
     "ejs": "^3.1.9",
     "gray-matter": "^4.0.3",
     "marked": "^11.1.0",
