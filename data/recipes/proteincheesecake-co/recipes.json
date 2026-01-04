@@ -1,0 +1,1532 @@
+[
+  {
+    "id": 1,
+    "slug": "classic-vanilla-bean-cheesecake",
+    "title": "Classic Vanilla Bean Cheesecake",
+    "description": "A timeless, creamy vanilla bean cheesecake with a protein-packed punch.",
+    "protein": 22,
+    "calories": 180,
+    "carbs": 15,
+    "fat": 7,
+    "fiber": 1,
+    "sugar": 6,
+    "servingSize": "1 slice",
+    "yield": "12 servings",
+    "prepTime": "15",
+    "cookTime": "45",
+    "totalTime": "60",
+    "difficulty": "Medium",
+    "category": "Cheesecake",
+    "tags": [
+      "Classic",
+      "Vanilla"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "classic-vanilla-bean-cheesecake.png",
+    "ingredients": [
+      "240g cream cheese",
+      "120g plain Greek yogurt",
+      "60g vanilla whey protein",
+      "2 large eggs",
+      "1 tsp vanilla extract",
+      "100g almond flour for crust"
+    ],
+    "instructions": [
+      {
+        "step": "Preheat Oven",
+        "text": "Preheat your oven to 160\u00b0C (325\u00b0F)."
+      },
+      {
+        "step": "Make Crust",
+        "text": "Mix almond flour with a little melted butter and press into the bottom of a springform pan."
+      },
+      {
+        "step": "Mix Filling",
+        "text": "In a large bowl, beat the cream cheese until smooth. Add the Greek yogurt, vanilla whey protein, eggs, and vanilla extract. Mix until just combined."
+      },
+      {
+        "step": "Pour and Bake",
+        "text": "Pour the filling over the crust and bake for 45 minutes, or until the center is almost set."
+      },
+      {
+        "step": "Cool",
+        "text": "Let the cheesecake cool completely in the oven with the door ajar. Then, refrigerate for at least 4 hours."
+      },
+      {
+        "step": "Serve",
+        "text": "Slice and serve your delicious protein cheesecake."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "no-bake-chocolate-cheesecake",
+    "title": "No-Bake Chocolate Cheesecake",
+    "description": "A rich and decadent no-bake chocolate cheesecake that's surprisingly high in protein.",
+    "protein": 25,
+    "calories": 220,
+    "carbs": 18,
+    "fat": 10,
+    "fiber": 3,
+    "sugar": 8,
+    "servingSize": "1 slice",
+    "yield": "10 servings",
+    "prepTime": "20",
+    "cookTime": "0",
+    "totalTime": "20",
+    "difficulty": "Easy",
+    "category": "No-Bake Cheesecake",
+    "tags": [
+      "Chocolate",
+      "No-Bake"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "no-bake-chocolate-cheesecake.png",
+    "ingredients": [
+      "300g cream cheese",
+      "150g plain Greek yogurt",
+      "90g chocolate whey protein",
+      "50g unsweetened cocoa powder",
+      "100g almond flour for crust",
+      "50g melted coconut oil"
+    ],
+    "instructions": [
+      {
+        "step": "Make Crust",
+        "text": "Combine almond flour and melted coconut oil. Press into the bottom of a springform pan."
+      },
+      {
+        "step": "Mix Filling",
+        "text": "Beat cream cheese until smooth. Mix in Greek yogurt, chocolate whey protein, and cocoa powder until well combined."
+      },
+      {
+        "step": "Pour",
+        "text": "Pour the filling over the crust and spread evenly."
+      },
+      {
+        "step": "Chill",
+        "text": "Refrigerate for at least 6 hours, or until firm."
+      },
+      {
+        "step": "Garnish",
+        "text": "Garnish with chocolate shavings or berries before serving."
+      },
+      {
+        "step": "Serve",
+        "text": "Slice and enjoy your no-bake protein cheesecake."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "strawberry-swirl-cheesecake",
+    "title": "Strawberry Swirl Cheesecake",
+    "description": "A beautiful and delicious strawberry swirl cheesecake with a protein boost.",
+    "protein": 20,
+    "calories": 190,
+    "carbs": 16,
+    "fat": 8,
+    "fiber": 2,
+    "sugar": 7,
+    "servingSize": "1 slice",
+    "yield": "12 servings",
+    "prepTime": "20",
+    "cookTime": "50",
+    "totalTime": "70",
+    "difficulty": "Medium",
+    "category": "Cheesecake",
+    "tags": [
+      "Strawberry",
+      "Fruit"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "strawberry-swirl-cheesecake.png",
+    "ingredients": [
+      "240g cream cheese",
+      "120g plain Greek yogurt",
+      "60g vanilla whey protein",
+      "2 large eggs",
+      "100g fresh strawberries, pureed",
+      "100g almond flour for crust"
+    ],
+    "instructions": [
+      {
+        "step": "Preheat Oven",
+        "text": "Preheat your oven to 160\u00b0C (325\u00b0F)."
+      },
+      {
+        "step": "Make Crust",
+        "text": "Mix almond flour with a little melted butter and press into the bottom of a springform pan."
+      },
+      {
+        "step": "Mix Filling",
+        "text": "Beat the cream cheese until smooth. Add the Greek yogurt, vanilla whey protein, and eggs. Mix until just combined."
+      },
+      {
+        "step": "Swirl",
+        "text": "Pour half the filling into the pan. Dollop with strawberry puree and then top with the remaining filling. Swirl with a knife."
+      },
+      {
+        "step": "Bake",
+        "text": "Bake for 50 minutes, or until the center is almost set."
+      },
+      {
+        "step": "Cool and Chill",
+        "text": "Let the cheesecake cool completely, then refrigerate for at least 4 hours before serving."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "lemon-blueberry-cheesecake-minis",
+    "title": "Lemon Blueberry Cheesecake Minis",
+    "description": "Zesty and sweet lemon blueberry cheesecake minis, perfect for portion control.",
+    "protein": 18,
+    "calories": 150,
+    "carbs": 12,
+    "fat": 7,
+    "fiber": 2,
+    "sugar": 5,
+    "servingSize": "1 mini cheesecake",
+    "yield": "12 servings",
+    "prepTime": "15",
+    "cookTime": "25",
+    "totalTime": "40",
+    "difficulty": "Easy",
+    "category": "Mini Cheesecake",
+    "tags": [
+      "Lemon",
+      "Blueberry",
+      "Mini"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "lemon-blueberry-cheesecake-minis.png",
+    "ingredients": [
+      "200g cream cheese",
+      "100g plain Greek yogurt",
+      "50g vanilla whey protein",
+      "1 large egg",
+      "1 lemon, zested and juiced",
+      "50g fresh blueberries"
+    ],
+    "instructions": [
+      {
+        "step": "Preheat Oven",
+        "text": "Preheat your oven to 175\u00b0C (350\u00b0F) and line a muffin tin with paper liners."
+      },
+      {
+        "step": "Mix Filling",
+        "text": "Beat cream cheese until smooth. Mix in Greek yogurt, vanilla whey protein, egg, lemon zest, and lemon juice."
+      },
+      {
+        "step": "Fold in Blueberries",
+        "text": "Gently fold in the fresh blueberries."
+      },
+      {
+        "step": "Fill and Bake",
+        "text": "Divide the mixture evenly among the muffin cups and bake for 25 minutes."
+      },
+      {
+        "step": "Cool",
+        "text": "Let the mini cheesecakes cool completely before refrigerating."
+      },
+      {
+        "step": "Serve",
+        "text": "Serve chilled."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "slug": "single-serving-peanut-butter-cheesecake",
+    "title": "Single-Serving Peanut Butter Cheesecake",
+    "description": "A quick and easy single-serving peanut butter cheesecake for one.",
+    "protein": 28,
+    "calories": 250,
+    "carbs": 10,
+    "fat": 15,
+    "fiber": 3,
+    "sugar": 4,
+    "servingSize": "1 serving",
+    "yield": "1 serving",
+    "prepTime": "10",
+    "cookTime": "0",
+    "totalTime": "10",
+    "difficulty": "Easy",
+    "category": "Single Serving",
+    "tags": [
+      "Peanut Butter",
+      "Single Serving",
+      "No-Bake"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "single-serving-peanut-butter-cheesecake.png",
+    "ingredients": [
+      "60g cream cheese",
+      "30g plain Greek yogurt",
+      "30g vanilla whey protein",
+      "30g peanut butter",
+      "1 tbsp powdered sweetener"
+    ],
+    "instructions": [
+      {
+        "step": "Mix",
+        "text": "In a small bowl, mix all ingredients until smooth and creamy."
+      },
+      {
+        "step": "Chill",
+        "text": "Refrigerate for at least 30 minutes to firm up."
+      },
+      {
+        "step": "Garnish",
+        "text": "Top with a sprinkle of crushed peanuts or a drizzle of melted chocolate."
+      },
+      {
+        "step": "Serve",
+        "text": "Enjoy your single-serving protein cheesecake."
+      },
+      {
+        "step": "Variations",
+        "text": "Try with almond butter or cashew butter for a different flavor."
+      },
+      {
+        "step": "Storage",
+        "text": "This can be stored in the refrigerator for up to 2 days."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "slug": "funfetti-cheesecake-dip",
+    "title": "Funfetti Cheesecake Dip",
+    "description": "A fun and festive funfetti cheesecake dip, perfect for parties.",
+    "protein": 15,
+    "calories": 140,
+    "carbs": 12,
+    "fat": 6,
+    "fiber": 1,
+    "sugar": 8,
+    "servingSize": "2 tbsp",
+    "yield": "16 servings",
+    "prepTime": "10",
+    "cookTime": "0",
+    "totalTime": "10",
+    "difficulty": "Easy",
+    "category": "Dessert Dip",
+    "tags": [
+      "Funfetti",
+      "Dip",
+      "Party"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "funfetti-cheesecake-dip.png",
+    "ingredients": [
+      "240g cream cheese",
+      "120g plain Greek yogurt",
+      "60g vanilla whey protein",
+      "50g powdered sweetener",
+      "30g rainbow sprinkles"
+    ],
+    "instructions": [
+      {
+        "step": "Mix",
+        "text": "In a medium bowl, beat the cream cheese until smooth."
+      },
+      {
+        "step": "Combine",
+        "text": "Add the Greek yogurt, vanilla whey protein, and powdered sweetener. Mix until well combined."
+      },
+      {
+        "step": "Fold in Sprinkles",
+        "text": "Gently fold in the rainbow sprinkles."
+      },
+      {
+        "step": "Chill",
+        "text": "Refrigerate for at least 30 minutes before serving."
+      },
+      {
+        "step": "Serve",
+        "text": "Serve with fruit, graham crackers, or pretzels for dipping."
+      },
+      {
+        "step": "Storage",
+        "text": "Store in an airtight container in the refrigerator for up to 3 days."
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "slug": "pumpkin-spice-cheesecake",
+    "title": "Pumpkin Spice Cheesecake",
+    "description": "A seasonal favorite, this pumpkin spice cheesecake is full of fall flavor and protein.",
+    "protein": 24,
+    "calories": 200,
+    "carbs": 18,
+    "fat": 9,
+    "fiber": 3,
+    "sugar": 7,
+    "servingSize": "1 slice",
+    "yield": "12 servings",
+    "prepTime": "15",
+    "cookTime": "55",
+    "totalTime": "70",
+    "difficulty": "Medium",
+    "category": "Cheesecake",
+    "tags": [
+      "Pumpkin",
+      "Seasonal",
+      "Spice"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "pumpkin-spice-cheesecake.png",
+    "ingredients": [
+      "240g cream cheese",
+      "120g pumpkin puree",
+      "60g vanilla whey protein",
+      "2 large eggs",
+      "1 tsp pumpkin pie spice",
+      "100g almond flour for crust"
+    ],
+    "instructions": [
+      {
+        "step": "Preheat Oven",
+        "text": "Preheat your oven to 160\u00b0C (325\u00b0F)."
+      },
+      {
+        "step": "Make Crust",
+        "text": "Mix almond flour with a little melted butter and press into the bottom of a springform pan."
+      },
+      {
+        "step": "Mix Filling",
+        "text": "Beat the cream cheese until smooth. Add the pumpkin puree, vanilla whey protein, eggs, and pumpkin pie spice. Mix until just combined."
+      },
+      {
+        "step": "Pour and Bake",
+        "text": "Pour the filling over the crust and bake for 55 minutes, or until the center is almost set."
+      },
+      {
+        "step": "Cool",
+        "text": "Let the cheesecake cool completely in the oven with the door ajar. Then, refrigerate for at least 4 hours."
+      },
+      {
+        "step": "Serve",
+        "text": "Slice and serve your delicious pumpkin spice protein cheesecake."
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "slug": "key-lime-cheesecake",
+    "title": "Key Lime Cheesecake",
+    "description": "A tangy and refreshing key lime cheesecake with a protein-packed twist.",
+    "protein": 21,
+    "calories": 185,
+    "carbs": 16,
+    "fat": 8,
+    "fiber": 1,
+    "sugar": 6,
+    "servingSize": "1 slice",
+    "yield": "12 servings",
+    "prepTime": "15",
+    "cookTime": "45",
+    "totalTime": "60",
+    "difficulty": "Medium",
+    "category": "Cheesecake",
+    "tags": [
+      "Key Lime",
+      "Citrus",
+      "Fruit"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "key-lime-cheesecake.png",
+    "ingredients": [
+      "240g cream cheese",
+      "120g plain Greek yogurt",
+      "60g vanilla whey protein",
+      "2 large eggs",
+      "120ml key lime juice",
+      "100g almond flour for crust"
+    ],
+    "instructions": [
+      {
+        "step": "Preheat Oven",
+        "text": "Preheat your oven to 160\u00b0C (325\u00b0F)."
+      },
+      {
+        "step": "Make Crust",
+        "text": "Mix almond flour with a little melted butter and press into the bottom of a springform pan."
+      },
+      {
+        "step": "Mix Filling",
+        "text": "In a large bowl, beat the cream cheese until smooth. Add the Greek yogurt, vanilla whey protein, eggs, and key lime juice. Mix until just combined."
+      },
+      {
+        "step": "Pour and Bake",
+        "text": "Pour the filling over the crust and bake for 45 minutes, or until the center is almost set."
+      },
+      {
+        "step": "Cool",
+        "text": "Let the cheesecake cool completely in the oven with the door ajar. Then, refrigerate for at least 4 hours."
+      },
+      {
+        "step": "Serve",
+        "text": "Garnish with lime zest and whipped cream before serving."
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "slug": "caramel-pecan-cheesecake",
+    "title": "Caramel Pecan Cheesecake",
+    "description": "A decadent caramel pecan cheesecake that's loaded with protein.",
+    "protein": 26,
+    "calories": 240,
+    "carbs": 15,
+    "fat": 14,
+    "fiber": 2,
+    "sugar": 7,
+    "servingSize": "1 slice",
+    "yield": "12 servings",
+    "prepTime": "20",
+    "cookTime": "50",
+    "totalTime": "70",
+    "difficulty": "Medium",
+    "category": "Cheesecake",
+    "tags": [
+      "Caramel",
+      "Pecan",
+      "Nutty"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "caramel-pecan-cheesecake.png",
+    "ingredients": [
+      "240g cream cheese",
+      "120g plain Greek yogurt",
+      "60g vanilla whey protein",
+      "2 large eggs",
+      "50g chopped pecans",
+      "50g sugar-free caramel sauce"
+    ],
+    "instructions": [
+      {
+        "step": "Preheat Oven",
+        "text": "Preheat your oven to 160\u00b0C (325\u00b0F)."
+      },
+      {
+        "step": "Make Crust",
+        "text": "Create a crust with almond flour and press it into a springform pan."
+      },
+      {
+        "step": "Mix Filling",
+        "text": "Beat cream cheese until smooth. Mix in Greek yogurt, whey protein, and eggs."
+      },
+      {
+        "step": "Assemble",
+        "text": "Pour filling into the crust. Swirl in the caramel sauce and sprinkle with pecans."
+      },
+      {
+        "step": "Bake",
+        "text": "Bake for 50 minutes until the center is almost set."
+      },
+      {
+        "step": "Cool and Serve",
+        "text": "Cool completely, then chill. Drizzle with more caramel sauce before serving."
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "slug": "mint-chocolate-chip-cheesecake",
+    "title": "Mint Chocolate Chip Cheesecake",
+    "description": "A refreshing mint chocolate chip cheesecake with a protein boost.",
+    "protein": 23,
+    "calories": 210,
+    "carbs": 17,
+    "fat": 11,
+    "fiber": 2,
+    "sugar": 8,
+    "servingSize": "1 slice",
+    "yield": "12 servings",
+    "prepTime": "15",
+    "cookTime": "50",
+    "totalTime": "65",
+    "difficulty": "Medium",
+    "category": "Cheesecake",
+    "tags": [
+      "Mint",
+      "Chocolate Chip"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "mint-chocolate-chip-cheesecake.png",
+    "ingredients": [
+      "240g cream cheese",
+      "120g plain Greek yogurt",
+      "60g vanilla whey protein",
+      "2 large eggs",
+      "1 tsp peppermint extract",
+      "50g sugar-free chocolate chips"
+    ],
+    "instructions": [
+      {
+        "step": "Preheat Oven",
+        "text": "Preheat your oven to 160\u00b0C (325\u00b0F)."
+      },
+      {
+        "step": "Make Crust",
+        "text": "Prepare an almond flour crust and press it into a springform pan."
+      },
+      {
+        "step": "Mix Filling",
+        "text": "Beat cream cheese until smooth. Mix in Greek yogurt, whey protein, eggs, and peppermint extract."
+      },
+      {
+        "step": "Add Chocolate Chips",
+        "text": "Fold in the sugar-free chocolate chips."
+      },
+      {
+        "step": "Bake",
+        "text": "Pour into the crust and bake for 50 minutes."
+      },
+      {
+        "step": "Cool and Chill",
+        "text": "Cool completely before refrigerating for at least 4 hours."
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "slug": "raspberry-white-chocolate-cheesecake",
+    "title": "Raspberry White Chocolate Cheesecake",
+    "description": "An elegant raspberry white chocolate cheesecake that's high in protein.",
+    "protein": 22,
+    "calories": 200,
+    "carbs": 16,
+    "fat": 10,
+    "fiber": 2,
+    "sugar": 9,
+    "servingSize": "1 slice",
+    "yield": "12 servings",
+    "prepTime": "20",
+    "cookTime": "50",
+    "totalTime": "70",
+    "difficulty": "Medium",
+    "category": "Cheesecake",
+    "tags": [
+      "Raspberry",
+      "White Chocolate",
+      "Fruit"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "raspberry-white-chocolate-cheesecake.png",
+    "ingredients": [
+      "240g cream cheese",
+      "120g plain Greek yogurt",
+      "60g vanilla whey protein",
+      "2 large eggs",
+      "50g sugar-free white chocolate, melted",
+      "50g fresh raspberries"
+    ],
+    "instructions": [
+      {
+        "step": "Preheat Oven",
+        "text": "Preheat your oven to 160\u00b0C (325\u00b0F)."
+      },
+      {
+        "step": "Make Crust",
+        "text": "Prepare a crust and press it into a springform pan."
+      },
+      {
+        "step": "Mix Filling",
+        "text": "Beat cream cheese until smooth. Mix in Greek yogurt, whey protein, and eggs."
+      },
+      {
+        "step": "Add White Chocolate",
+        "text": "Stir in the melted sugar-free white chocolate."
+      },
+      {
+        "step": "Assemble and Bake",
+        "text": "Pour filling into the crust, top with raspberries, and bake for 50 minutes."
+      },
+      {
+        "step": "Cool and Serve",
+        "text": "Cool completely, then chill. Garnish with more raspberries before serving."
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "slug": "cookies-and-cream-cheesecake",
+    "title": "Cookies and Cream Cheesecake",
+    "description": "A classic cookies and cream cheesecake, now with a protein-packed upgrade.",
+    "protein": 25,
+    "calories": 230,
+    "carbs": 18,
+    "fat": 12,
+    "fiber": 1,
+    "sugar": 8,
+    "servingSize": "1 slice",
+    "yield": "12 servings",
+    "prepTime": "15",
+    "cookTime": "50",
+    "totalTime": "65",
+    "difficulty": "Medium",
+    "category": "Cheesecake",
+    "tags": [
+      "Cookies and Cream",
+      "Oreo"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "cookies-and-cream-cheesecake.png",
+    "ingredients": [
+      "240g cream cheese",
+      "120g plain Greek yogurt",
+      "60g vanilla whey protein",
+      "2 large eggs",
+      "8 crushed protein sandwich cookies"
+    ],
+    "instructions": [
+      {
+        "step": "Preheat Oven",
+        "text": "Preheat your oven to 160\u00b0C (325\u00b0F)."
+      },
+      {
+        "step": "Make Crust",
+        "text": "Use some of the crushed cookies to make a crust."
+      },
+      {
+        "step": "Mix Filling",
+        "text": "Beat cream cheese until smooth. Mix in Greek yogurt, whey protein, and eggs."
+      },
+      {
+        "step": "Add Cookies",
+        "text": "Fold in the remaining crushed cookies."
+      },
+      {
+        "step": "Bake",
+        "text": "Pour into the crust and bake for 50 minutes."
+      },
+      {
+        "step": "Cool and Chill",
+        "text": "Cool completely before refrigerating for at least 4 hours."
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "slug": "s-mores-cheesecake-dip",
+    "title": "S'mores Cheesecake Dip",
+    "description": "A gooey and delicious s'mores cheesecake dip, perfect for sharing.",
+    "protein": 16,
+    "calories": 150,
+    "carbs": 14,
+    "fat": 7,
+    "fiber": 1,
+    "sugar": 9,
+    "servingSize": "2 tbsp",
+    "yield": "16 servings",
+    "prepTime": "10",
+    "cookTime": "5",
+    "totalTime": "15",
+    "difficulty": "Easy",
+    "category": "Dessert Dip",
+    "tags": [
+      "S'mores",
+      "Dip",
+      "Party"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "s-mores-cheesecake-dip.png",
+    "ingredients": [
+      "240g cream cheese",
+      "120g plain Greek yogurt",
+      "60g vanilla whey protein",
+      "50g mini marshmallows",
+      "50g sugar-free chocolate chips"
+    ],
+    "instructions": [
+      {
+        "step": "Mix",
+        "text": "In a medium bowl, beat the cream cheese until smooth."
+      },
+      {
+        "step": "Combine",
+        "text": "Add the Greek yogurt and vanilla whey protein. Mix until well combined."
+      },
+      {
+        "step": "Layer",
+        "text": "Spread the mixture in an oven-safe dish. Top with chocolate chips and marshmallows."
+      },
+      {
+        "step": "Broil",
+        "text": "Broil for 3-5 minutes, or until the marshmallows are golden brown."
+      },
+      {
+        "step": "Serve",
+        "text": "Serve immediately with graham crackers for dipping."
+      },
+      {
+        "step": "Caution",
+        "text": "The dish will be hot, so handle with care."
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "slug": "red-velvet-cheesecake",
+    "title": "Red Velvet Cheesecake",
+    "description": "A stunning red velvet cheesecake with a protein-rich cream cheese filling.",
+    "protein": 24,
+    "calories": 220,
+    "carbs": 18,
+    "fat": 11,
+    "fiber": 2,
+    "sugar": 8,
+    "servingSize": "1 slice",
+    "yield": "12 servings",
+    "prepTime": "20",
+    "cookTime": "55",
+    "totalTime": "75",
+    "difficulty": "Hard",
+    "category": "Cheesecake",
+    "tags": [
+      "Red Velvet",
+      "Chocolate"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "red-velvet-cheesecake.png",
+    "ingredients": [
+      "240g cream cheese",
+      "120g plain Greek yogurt",
+      "60g vanilla whey protein",
+      "2 large eggs",
+      "2 tbsp unsweetened cocoa powder",
+      "1 tbsp red food coloring"
+    ],
+    "instructions": [
+      {
+        "step": "Preheat Oven",
+        "text": "Preheat your oven to 160\u00b0C (325\u00b0F)."
+      },
+      {
+        "step": "Make Crust",
+        "text": "Prepare a chocolate-flavored crust and press it into a springform pan."
+      },
+      {
+        "step": "Mix Filling",
+        "text": "Beat cream cheese until smooth. Mix in Greek yogurt, whey protein, eggs, cocoa powder, and red food coloring."
+      },
+      {
+        "step": "Bake",
+        "text": "Pour into the crust and bake for 55 minutes."
+      },
+      {
+        "step": "Cool",
+        "text": "Cool completely before refrigerating."
+      },
+      {
+        "step": "Frost",
+        "text": "Top with a protein cream cheese frosting before serving."
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "slug": "matcha-green-tea-cheesecake",
+    "title": "Matcha Green Tea Cheesecake",
+    "description": "An earthy and delicious matcha green tea cheesecake with a protein boost.",
+    "protein": 22,
+    "calories": 190,
+    "carbs": 15,
+    "fat": 9,
+    "fiber": 2,
+    "sugar": 6,
+    "servingSize": "1 slice",
+    "yield": "12 servings",
+    "prepTime": "15",
+    "cookTime": "45",
+    "totalTime": "60",
+    "difficulty": "Medium",
+    "category": "Cheesecake",
+    "tags": [
+      "Matcha",
+      "Green Tea"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "matcha-green-tea-cheesecake.png",
+    "ingredients": [
+      "240g cream cheese",
+      "120g plain Greek yogurt",
+      "60g vanilla whey protein",
+      "2 large eggs",
+      "2 tbsp matcha powder"
+    ],
+    "instructions": [
+      {
+        "step": "Preheat Oven",
+        "text": "Preheat your oven to 160\u00b0C (325\u00b0F)."
+      },
+      {
+        "step": "Make Crust",
+        "text": "Prepare a simple crust and press it into a springform pan."
+      },
+      {
+        "step": "Mix Filling",
+        "text": "Beat cream cheese until smooth. Mix in Greek yogurt, whey protein, eggs, and matcha powder."
+      },
+      {
+        "step": "Bake",
+        "text": "Pour into the crust and bake for 45 minutes."
+      },
+      {
+        "step": "Cool and Chill",
+        "text": "Cool completely before refrigerating for at least 4 hours."
+      },
+      {
+        "step": "Serve",
+        "text": "Dust with extra matcha powder before serving."
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "slug": "no-bake-oreo-cheesecake-bites",
+    "title": "No-Bake Oreo Cheesecake Bites",
+    "description": "Bite-sized no-bake Oreo cheesecakes, perfect for a quick and easy dessert.",
+    "protein": 17,
+    "calories": 160,
+    "carbs": 13,
+    "fat": 8,
+    "fiber": 1,
+    "sugar": 7,
+    "servingSize": "1 bite",
+    "yield": "16 servings",
+    "prepTime": "15",
+    "cookTime": "0",
+    "totalTime": "15",
+    "difficulty": "Easy",
+    "category": "Mini Cheesecake",
+    "tags": [
+      "Oreo",
+      "No-Bake",
+      "Mini"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "no-bake-oreo-cheesecake-bites.png",
+    "ingredients": [
+      "200g cream cheese",
+      "100g plain Greek yogurt",
+      "50g vanilla whey protein",
+      "6 crushed protein sandwich cookies"
+    ],
+    "instructions": [
+      {
+        "step": "Mix",
+        "text": "Beat cream cheese until smooth. Mix in Greek yogurt and whey protein."
+      },
+      {
+        "step": "Add Cookies",
+        "text": "Fold in the crushed cookies."
+      },
+      {
+        "step": "Form Bites",
+        "text": "Roll the mixture into bite-sized balls."
+      },
+      {
+        "step": "Chill",
+        "text": "Refrigerate for at least 1 hour to firm up."
+      },
+      {
+        "step": "Coat",
+        "text": "Roll the bites in extra crushed cookies for a coating."
+      },
+      {
+        "step": "Serve",
+        "text": "Serve chilled."
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "slug": "single-serving-chocolate-cheesecake",
+    "title": "Single-Serving Chocolate Cheesecake",
+    "description": "A rich and creamy single-serving chocolate cheesecake for a guilt-free indulgence.",
+    "protein": 26,
+    "calories": 230,
+    "carbs": 12,
+    "fat": 13,
+    "fiber": 3,
+    "sugar": 5,
+    "servingSize": "1 serving",
+    "yield": "1 serving",
+    "prepTime": "10",
+    "cookTime": "0",
+    "totalTime": "10",
+    "difficulty": "Easy",
+    "category": "Single Serving",
+    "tags": [
+      "Chocolate",
+      "Single Serving",
+      "No-Bake"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "single-serving-chocolate-cheesecake.png",
+    "ingredients": [
+      "60g cream cheese",
+      "30g plain Greek yogurt",
+      "30g chocolate whey protein",
+      "1 tbsp unsweetened cocoa powder"
+    ],
+    "instructions": [
+      {
+        "step": "Mix",
+        "text": "In a small bowl, mix all ingredients until smooth and creamy."
+      },
+      {
+        "step": "Chill",
+        "text": "Refrigerate for at least 30 minutes to firm up."
+      },
+      {
+        "step": "Garnish",
+        "text": "Top with a few chocolate chips or a dusting of cocoa powder."
+      },
+      {
+        "step": "Serve",
+        "text": "Enjoy your single-serving protein cheesecake."
+      },
+      {
+        "step": "Variations",
+        "text": "Add a drop of peppermint extract for a mint-chocolate flavor."
+      },
+      {
+        "step": "Storage",
+        "text": "This can be stored in the refrigerator for up to 2 days."
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "slug": "brownie-batter-dip",
+    "title": "Brownie Batter Dip",
+    "description": "A decadent and protein-packed brownie batter dip that tastes just like the real thing.",
+    "protein": 18,
+    "calories": 160,
+    "carbs": 15,
+    "fat": 7,
+    "fiber": 2,
+    "sugar": 8,
+    "servingSize": "2 tbsp",
+    "yield": "16 servings",
+    "prepTime": "10",
+    "cookTime": "0",
+    "totalTime": "10",
+    "difficulty": "Easy",
+    "category": "Dessert Dip",
+    "tags": [
+      "Brownie",
+      "Dip",
+      "Chocolate"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "brownie-batter-dip.png",
+    "ingredients": [
+      "240g cream cheese",
+      "120g plain Greek yogurt",
+      "60g chocolate whey protein",
+      "30g unsweetened cocoa powder",
+      "50g powdered sweetener"
+    ],
+    "instructions": [
+      {
+        "step": "Mix",
+        "text": "In a medium bowl, beat the cream cheese until smooth."
+      },
+      {
+        "step": "Combine",
+        "text": "Add the Greek yogurt, chocolate whey protein, cocoa powder, and powdered sweetener. Mix until well combined."
+      },
+      {
+        "step": "Chill",
+        "text": "Refrigerate for at least 30 minutes before serving."
+      },
+      {
+        "step": "Serve",
+        "text": "Serve with fruit, pretzels, or graham crackers for dipping."
+      },
+      {
+        "step": "Garnish",
+        "text": "Top with a few mini chocolate chips before serving."
+      },
+      {
+        "step": "Storage",
+        "text": "Store in an airtight container in the refrigerator for up to 3 days."
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "slug": "gingerbread-cheesecake",
+    "title": "Gingerbread Cheesecake",
+    "description": "A festive gingerbread cheesecake, perfect for the holidays.",
+    "protein": 23,
+    "calories": 210,
+    "carbs": 18,
+    "fat": 10,
+    "fiber": 2,
+    "sugar": 8,
+    "servingSize": "1 slice",
+    "yield": "12 servings",
+    "prepTime": "15",
+    "cookTime": "55",
+    "totalTime": "70",
+    "difficulty": "Medium",
+    "category": "Cheesecake",
+    "tags": [
+      "Gingerbread",
+      "Seasonal",
+      "Holiday"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "gingerbread-cheesecake.png",
+    "ingredients": [
+      "240g cream cheese",
+      "120g plain Greek yogurt",
+      "60g vanilla whey protein",
+      "2 large eggs",
+      "2 tsp ground ginger",
+      "1 tsp ground cinnamon"
+    ],
+    "instructions": [
+      {
+        "step": "Preheat Oven",
+        "text": "Preheat your oven to 160\u00b0C (325\u00b0F)."
+      },
+      {
+        "step": "Make Crust",
+        "text": "Prepare a crust and press it into a springform pan."
+      },
+      {
+        "step": "Mix Filling",
+        "text": "Beat cream cheese until smooth. Mix in Greek yogurt, whey protein, eggs, ginger, and cinnamon."
+      },
+      {
+        "step": "Bake",
+        "text": "Pour into the crust and bake for 55 minutes."
+      },
+      {
+        "step": "Cool",
+        "text": "Cool completely before refrigerating."
+      },
+      {
+        "step": "Serve",
+        "text": "Garnish with a sprinkle of cinnamon before serving."
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "slug": "no-bake-lemon-cheesecake",
+    "title": "No-Bake Lemon Cheesecake",
+    "description": "A light and refreshing no-bake lemon cheesecake with a protein kick.",
+    "protein": 20,
+    "calories": 180,
+    "carbs": 15,
+    "fat": 8,
+    "fiber": 1,
+    "sugar": 7,
+    "servingSize": "1 slice",
+    "yield": "10 servings",
+    "prepTime": "20",
+    "cookTime": "0",
+    "totalTime": "20",
+    "difficulty": "Easy",
+    "category": "No-Bake Cheesecake",
+    "tags": [
+      "Lemon",
+      "No-Bake",
+      "Citrus"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "no-bake-lemon-cheesecake.png",
+    "ingredients": [
+      "300g cream cheese",
+      "150g plain Greek yogurt",
+      "90g vanilla whey protein",
+      "1 lemon, zested and juiced",
+      "100g almond flour for crust",
+      "50g melted coconut oil"
+    ],
+    "instructions": [
+      {
+        "step": "Make Crust",
+        "text": "Combine almond flour and melted coconut oil. Press into the bottom of a springform pan."
+      },
+      {
+        "step": "Mix Filling",
+        "text": "Beat cream cheese until smooth. Mix in Greek yogurt, vanilla whey protein, lemon zest, and lemon juice until well combined."
+      },
+      {
+        "step": "Pour",
+        "text": "Pour the filling over the crust and spread evenly."
+      },
+      {
+        "step": "Chill",
+        "text": "Refrigerate for at least 6 hours, or until firm."
+      },
+      {
+        "step": "Garnish",
+        "text": "Garnish with lemon slices before serving."
+      },
+      {
+        "step": "Serve",
+        "text": "Slice and enjoy your no-bake protein cheesecake."
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "slug": "chocolate-hazelnut-cheesecake",
+    "title": "Chocolate Hazelnut Cheesecake",
+    "description": "A rich and nutty chocolate hazelnut cheesecake, packed with protein.",
+    "protein": 27,
+    "calories": 260,
+    "carbs": 16,
+    "fat": 16,
+    "fiber": 3,
+    "sugar": 8,
+    "servingSize": "1 slice",
+    "yield": "12 servings",
+    "prepTime": "15",
+    "cookTime": "50",
+    "totalTime": "65",
+    "difficulty": "Medium",
+    "category": "Cheesecake",
+    "tags": [
+      "Chocolate",
+      "Hazelnut",
+      "Nutty"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "chocolate-hazelnut-cheesecake.png",
+    "ingredients": [
+      "240g cream cheese",
+      "120g plain Greek yogurt",
+      "60g chocolate whey protein",
+      "2 large eggs",
+      "50g chocolate hazelnut spread",
+      "50g chopped hazelnuts"
+    ],
+    "instructions": [
+      {
+        "step": "Preheat Oven",
+        "text": "Preheat your oven to 160\u00b0C (325\u00b0F)."
+      },
+      {
+        "step": "Make Crust",
+        "text": "Prepare a crust and press it into a springform pan."
+      },
+      {
+        "step": "Mix Filling",
+        "text": "Beat cream cheese until smooth. Mix in Greek yogurt, whey protein, and eggs."
+      },
+      {
+        "step": "Add Hazelnut Spread",
+        "text": "Stir in the chocolate hazelnut spread."
+      },
+      {
+        "step": "Assemble and Bake",
+        "text": "Pour filling into the crust, sprinkle with hazelnuts, and bake for 50 minutes."
+      },
+      {
+        "step": "Cool and Serve",
+        "text": "Cool completely, then chill. Garnish with more hazelnuts before serving."
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "slug": "single-serving-strawberry-cheesecake",
+    "title": "Single-Serving Strawberry Cheesecake",
+    "description": "A fresh and fruity single-serving strawberry cheesecake.",
+    "protein": 24,
+    "calories": 200,
+    "carbs": 14,
+    "fat": 9,
+    "fiber": 2,
+    "sugar": 7,
+    "servingSize": "1 serving",
+    "yield": "1 serving",
+    "prepTime": "10",
+    "cookTime": "0",
+    "totalTime": "10",
+    "difficulty": "Easy",
+    "category": "Single Serving",
+    "tags": [
+      "Strawberry",
+      "Single Serving",
+      "No-Bake"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "single-serving-strawberry-cheesecake.png",
+    "ingredients": [
+      "60g cream cheese",
+      "30g plain Greek yogurt",
+      "30g vanilla whey protein",
+      "30g fresh strawberries, mashed"
+    ],
+    "instructions": [
+      {
+        "step": "Mix",
+        "text": "In a small bowl, mix all ingredients until smooth and creamy."
+      },
+      {
+        "step": "Chill",
+        "text": "Refrigerate for at least 30 minutes to firm up."
+      },
+      {
+        "step": "Garnish",
+        "text": "Top with a fresh strawberry slice."
+      },
+      {
+        "step": "Serve",
+        "text": "Enjoy your single-serving protein cheesecake."
+      },
+      {
+        "step": "Variations",
+        "text": "Try with other berries like raspberries or blueberries."
+      },
+      {
+        "step": "Storage",
+        "text": "This can be stored in the refrigerator for up to 2 days."
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "slug": "cookie-dough-cheesecake-dip",
+    "title": "Cookie Dough Cheesecake Dip",
+    "description": "A safe-to-eat cookie dough cheesecake dip that's high in protein.",
+    "protein": 19,
+    "calories": 170,
+    "carbs": 16,
+    "fat": 8,
+    "fiber": 1,
+    "sugar": 9,
+    "servingSize": "2 tbsp",
+    "yield": "16 servings",
+    "prepTime": "15",
+    "cookTime": "0",
+    "totalTime": "15",
+    "difficulty": "Easy",
+    "category": "Dessert Dip",
+    "tags": [
+      "Cookie Dough",
+      "Dip",
+      "Party"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "cookie-dough-cheesecake-dip.png",
+    "ingredients": [
+      "240g cream cheese",
+      "120g plain Greek yogurt",
+      "60g vanilla whey protein",
+      "50g almond flour",
+      "50g mini chocolate chips"
+    ],
+    "instructions": [
+      {
+        "step": "Mix",
+        "text": "In a medium bowl, beat the cream cheese until smooth."
+      },
+      {
+        "step": "Combine",
+        "text": "Add the Greek yogurt, vanilla whey protein, and almond flour. Mix until well combined."
+      },
+      {
+        "step": "Fold in Chocolate Chips",
+        "text": "Gently fold in the mini chocolate chips."
+      },
+      {
+        "step": "Chill",
+        "text": "Refrigerate for at least 30 minutes before serving."
+      },
+      {
+        "step": "Serve",
+        "text": "Serve with fruit, pretzels, or graham crackers for dipping."
+      },
+      {
+        "step": "Storage",
+        "text": "Store in an airtight container in the refrigerator for up to 3 days."
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "slug": "eggnog-cheesecake",
+    "title": "Eggnog Cheesecake",
+    "description": "A creamy and festive eggnog cheesecake for the holiday season.",
+    "protein": 22,
+    "calories": 200,
+    "carbs": 17,
+    "fat": 10,
+    "fiber": 1,
+    "sugar": 8,
+    "servingSize": "1 slice",
+    "yield": "12 servings",
+    "prepTime": "15",
+    "cookTime": "55",
+    "totalTime": "70",
+    "difficulty": "Medium",
+    "category": "Cheesecake",
+    "tags": [
+      "Eggnog",
+      "Seasonal",
+      "Holiday"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "eggnog-cheesecake.png",
+    "ingredients": [
+      "240g cream cheese",
+      "120g plain Greek yogurt",
+      "60g vanilla whey protein",
+      "2 large eggs",
+      "120ml eggnog",
+      "1/2 tsp nutmeg"
+    ],
+    "instructions": [
+      {
+        "step": "Preheat Oven",
+        "text": "Preheat your oven to 160\u00b0C (325\u00b0F)."
+      },
+      {
+        "step": "Make Crust",
+        "text": "Prepare a crust and press it into a springform pan."
+      },
+      {
+        "step": "Mix Filling",
+        "text": "Beat cream cheese until smooth. Mix in Greek yogurt, whey protein, eggs, eggnog, and nutmeg."
+      },
+      {
+        "step": "Bake",
+        "text": "Pour into the crust and bake for 55 minutes."
+      },
+      {
+        "step": "Cool",
+        "text": "Cool completely before refrigerating."
+      },
+      {
+        "step": "Serve",
+        "text": "Garnish with a sprinkle of nutmeg before serving."
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "slug": "tiramisu-cheesecake",
+    "title": "Tiramisu Cheesecake",
+    "description": "A coffee-flavored tiramisu cheesecake with a protein-packed twist.",
+    "protein": 24,
+    "calories": 220,
+    "carbs": 16,
+    "fat": 12,
+    "fiber": 1,
+    "sugar": 7,
+    "servingSize": "1 slice",
+    "yield": "12 servings",
+    "prepTime": "20",
+    "cookTime": "50",
+    "totalTime": "70",
+    "difficulty": "Medium",
+    "category": "Cheesecake",
+    "tags": [
+      "Tiramisu",
+      "Coffee",
+      "Chocolate"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "tiramisu-cheesecake.png",
+    "ingredients": [
+      "240g cream cheese",
+      "120g plain Greek yogurt",
+      "60g vanilla whey protein",
+      "2 large eggs",
+      "2 shots of espresso, cooled",
+      "1 tbsp unsweetened cocoa powder"
+    ],
+    "instructions": [
+      {
+        "step": "Preheat Oven",
+        "text": "Preheat your oven to 160\u00b0C (325\u00b0F)."
+      },
+      {
+        "step": "Make Crust",
+        "text": "Prepare a chocolate crust and press it into a springform pan."
+      },
+      {
+        "step": "Mix Filling",
+        "text": "Beat cream cheese until smooth. Mix in Greek yogurt, whey protein, eggs, and cooled espresso."
+      },
+      {
+        "step": "Bake",
+        "text": "Pour into the crust and bake for 50 minutes."
+      },
+      {
+        "step": "Cool",
+        "text": "Cool completely before refrigerating."
+      },
+      {
+        "step": "Serve",
+        "text": "Dust with cocoa powder before serving."
+      }
+    ]
+  }
+]

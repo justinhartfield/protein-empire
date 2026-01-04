@@ -1,0 +1,1485 @@
+[
+  {
+    "id": 1,
+    "slug": "classic-whey-protein-pancakes",
+    "title": "Classic Whey Protein Pancakes",
+    "description": "A timeless recipe for fluffy, high-protein pancakes made with whey protein, perfect for a post-workout breakfast or a healthy start to your day.",
+    "protein": 25,
+    "calories": 180,
+    "carbs": 15,
+    "fat": 5,
+    "fiber": 3,
+    "sugar": 4,
+    "servingSize": "1 serving",
+    "yield": "4 pancakes",
+    "prepTime": "5",
+    "cookTime": "10",
+    "totalTime": "15",
+    "difficulty": "Easy",
+    "category": "Pancakes",
+    "tags": [
+      "classic",
+      "whey",
+      "high-protein"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "classic-whey-protein-pancakes.png",
+    "ingredients": [
+      "30g vanilla whey protein powder",
+      "30g oat flour",
+      "1 large egg",
+      "120ml unsweetened almond milk",
+      "1 tsp baking powder",
+      "1/2 tsp cinnamon",
+      "1 tsp vanilla extract"
+    ],
+    "instructions": [
+      {
+        "step": "Mix Dry Ingredients",
+        "text": "In a medium bowl, whisk together the whey protein powder, oat flour, baking powder, and cinnamon."
+      },
+      {
+        "step": "Mix Wet Ingredients",
+        "text": "In a separate small bowl, whisk the egg, almond milk, and vanilla extract."
+      },
+      {
+        "step": "Combine Wet and Dry",
+        "text": "Pour the wet ingredients into the dry ingredients and stir until just combined. Do not overmix."
+      },
+      {
+        "step": "Cook Pancakes",
+        "text": "Heat a lightly oiled griddle or non-stick skillet over medium heat. Pour or scoop the batter onto the griddle, using approximately 1/4 cup for each pancake."
+      },
+      {
+        "step": "Flip and Serve",
+        "text": "Cook for 2-3 minutes per side, or until golden brown. Serve immediately with your favorite toppings."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "chocolate-casein-pancakes",
+    "title": "Chocolate Casein Pancakes",
+    "description": "Indulge in these rich and decadent chocolate pancakes, made with slow-digesting casein protein to keep you full and satisfied.",
+    "protein": 22,
+    "calories": 200,
+    "carbs": 18,
+    "fat": 7,
+    "fiber": 4,
+    "sugar": 6,
+    "servingSize": "1 serving",
+    "yield": "4 pancakes",
+    "prepTime": "5",
+    "cookTime": "10",
+    "totalTime": "15",
+    "difficulty": "Easy",
+    "category": "Pancakes",
+    "tags": [
+      "chocolate",
+      "casein",
+      "dessert"
+    ],
+    "methods": [
+      "casein"
+    ],
+    "image": "chocolate-casein-pancakes.png",
+    "ingredients": [
+      "30g chocolate casein protein powder",
+      "30g whole wheat flour",
+      "1 tbsp unsweetened cocoa powder",
+      "1 large egg",
+      "120ml milk of choice",
+      "1 tsp baking powder",
+      "1 tbsp sweetener of choice"
+    ],
+    "instructions": [
+      {
+        "step": "Combine Dry Ingredients",
+        "text": "In a mixing bowl, combine the casein protein powder, whole wheat flour, cocoa powder, baking powder, and sweetener."
+      },
+      {
+        "step": "Combine Wet Ingredients",
+        "text": "In a separate bowl, whisk together the egg and milk."
+      },
+      {
+        "step": "Mix Batter",
+        "text": "Add the wet ingredients to the dry ingredients and stir until a smooth batter forms."
+      },
+      {
+        "step": "Cook",
+        "text": "Heat a non-stick skillet over medium heat and lightly grease it. Pour about 1/4 cup of batter per pancake and cook for 2-3 minutes per side."
+      },
+      {
+        "step": "Serve",
+        "text": "Serve warm with fresh berries, yogurt, or a drizzle of maple syrup."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "blueberry-vegan-protein-pancakes",
+    "title": "Blueberry Vegan Protein Pancakes",
+    "description": "A delicious and plant-based pancake recipe packed with protein and bursting with juicy blueberries.",
+    "protein": 18,
+    "calories": 190,
+    "carbs": 22,
+    "fat": 5,
+    "fiber": 5,
+    "sugar": 8,
+    "servingSize": "1 serving",
+    "yield": "4 pancakes",
+    "prepTime": "5",
+    "cookTime": "12",
+    "totalTime": "17",
+    "difficulty": "Easy",
+    "category": "Pancakes",
+    "tags": [
+      "vegan",
+      "blueberry",
+      "plant-based"
+    ],
+    "methods": [
+      "vegan"
+    ],
+    "image": "blueberry-vegan-protein-pancakes.png",
+    "ingredients": [
+      "30g vanilla vegan protein powder",
+      "40g rolled oats",
+      "1/2 ripe banana, mashed",
+      "120ml unsweetened almond milk",
+      "1 tsp baking powder",
+      "1/2 tsp vanilla extract",
+      "50g fresh or frozen blueberries"
+    ],
+    "instructions": [
+      {
+        "step": "Blend Ingredients",
+        "text": "In a blender, combine the vegan protein powder, rolled oats, mashed banana, almond milk, baking powder, and vanilla extract. Blend until smooth."
+      },
+      {
+        "step": "Add Blueberries",
+        "text": "Gently fold the blueberries into the pancake batter."
+      },
+      {
+        "step": "Cook Pancakes",
+        "text": "Heat a non-stick skillet over medium heat. Pour about 1/4 cup of batter per pancake."
+      },
+      {
+        "step": "Flip",
+        "text": "Cook for 2-3 minutes on each side, until golden brown and cooked through."
+      },
+      {
+        "step": "Serve",
+        "text": "Serve the pancakes warm with a dollop of coconut yogurt and a sprinkle of cinnamon."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "savory-herb-and-cheese-pancakes",
+    "title": "Savory Herb and Cheese Pancakes",
+    "description": "A savory twist on traditional pancakes, these are packed with protein, herbs, and cheese for a satisfying and flavorful meal.",
+    "protein": 28,
+    "calories": 220,
+    "carbs": 10,
+    "fat": 12,
+    "fiber": 2,
+    "sugar": 3,
+    "servingSize": "1 serving",
+    "yield": "3 pancakes",
+    "prepTime": "10",
+    "cookTime": "10",
+    "totalTime": "20",
+    "difficulty": "Easy",
+    "category": "Pancakes",
+    "tags": [
+      "savory",
+      "cheese",
+      "high-protein"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "savory-herb-and-cheese-pancakes.png",
+    "ingredients": [
+      "40g unflavored whey protein powder",
+      "2 large eggs",
+      "30g almond flour",
+      "60ml water or milk",
+      "30g shredded cheddar cheese",
+      "1 tbsp chopped fresh chives",
+      "1/2 tsp garlic powder",
+      "Salt and pepper to taste"
+    ],
+    "instructions": [
+      {
+        "step": "Whisk Ingredients",
+        "text": "In a bowl, whisk together the unflavored whey protein powder, eggs, almond flour, water, garlic powder, salt, and pepper until smooth."
+      },
+      {
+        "step": "Add Cheese and Herbs",
+        "text": "Stir in the shredded cheddar cheese and chopped chives."
+      },
+      {
+        "step": "Cook",
+        "text": "Heat a lightly oiled skillet over medium heat. Pour about 1/3 of the batter to form a pancake."
+      },
+      {
+        "step": "Flip and Cook",
+        "text": "Cook for 2-3 minutes per side, until golden brown and the cheese is melted."
+      },
+      {
+        "step": "Serve",
+        "text": "Serve warm on their own or with a side of sour cream or Greek yogurt."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "slug": "banana-bread-protein-pancakes",
+    "title": "Banana Bread Protein Pancakes",
+    "description": "Enjoy the comforting flavors of banana bread in a high-protein pancake form. A healthy and delicious way to start your day!",
+    "protein": 20,
+    "calories": 210,
+    "carbs": 25,
+    "fat": 5,
+    "fiber": 4,
+    "sugar": 10,
+    "servingSize": "1 serving",
+    "yield": "4 pancakes",
+    "prepTime": "5",
+    "cookTime": "10",
+    "totalTime": "15",
+    "difficulty": "Easy",
+    "category": "Pancakes",
+    "tags": [
+      "banana",
+      "breakfast",
+      "comfort-food"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "banana-bread-protein-pancakes.png",
+    "ingredients": [
+      "30g vanilla whey protein powder",
+      "30g oat flour",
+      "1/2 ripe banana, mashed",
+      "1 large egg",
+      "60ml unsweetened almond milk",
+      "1/2 tsp baking powder",
+      "1/2 tsp cinnamon",
+      "Pinch of nutmeg"
+    ],
+    "instructions": [
+      {
+        "step": "Mix Dry Ingredients",
+        "text": "In a medium bowl, combine the whey protein powder, oat flour, baking powder, cinnamon, and nutmeg."
+      },
+      {
+        "step": "Mix Wet Ingredients",
+        "text": "In a separate bowl, whisk together the mashed banana, egg, and almond milk."
+      },
+      {
+        "step": "Combine Batters",
+        "text": "Pour the wet ingredients into the dry ingredients and stir until just combined."
+      },
+      {
+        "step": "Cook",
+        "text": "Heat a non-stick skillet over medium heat. Pour 1/4 cup of batter per pancake and cook for 2-3 minutes per side."
+      },
+      {
+        "step": "Serve",
+        "text": "Serve warm with sliced bananas, a drizzle of honey, and chopped walnuts."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "slug": "lemon-ricotta-protein-crepes",
+    "title": "Lemon Ricotta Protein Crepes",
+    "description": "Light and delicate crepes filled with a creamy, high-protein lemon ricotta filling. A sophisticated and healthy breakfast or dessert.",
+    "protein": 20,
+    "calories": 230,
+    "carbs": 15,
+    "fat": 12,
+    "fiber": 1,
+    "sugar": 8,
+    "servingSize": "2 crepes",
+    "yield": "6 crepes",
+    "prepTime": "10",
+    "cookTime": "15",
+    "totalTime": "25",
+    "difficulty": "Medium",
+    "category": "Crepes",
+    "tags": [
+      "lemon",
+      "ricotta",
+      "crepes",
+      "dessert"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "lemon-ricotta-protein-crepes.png",
+    "ingredients": [
+      "60g all-purpose flour",
+      "30g vanilla whey protein powder",
+      "2 large eggs",
+      "240ml milk",
+      "1 tbsp melted butter",
+      "240g ricotta cheese",
+      "30g powdered sweetener",
+      "1 lemon, zested and juiced"
+    ],
+    "instructions": [
+      {
+        "step": "Make Crepe Batter",
+        "text": "In a blender, combine flour, protein powder, eggs, milk, and melted butter. Blend until smooth. Let the batter rest for 10 minutes."
+      },
+      {
+        "step": "Cook Crepes",
+        "text": "Heat a non-stick skillet over medium heat. Pour a thin layer of batter and swirl to coat the bottom of the pan. Cook for 1-2 minutes per side, until lightly golden."
+      },
+      {
+        "step": "Make Filling",
+        "text": "In a bowl, mix together the ricotta cheese, powdered sweetener, lemon zest, and lemon juice until well combined."
+      },
+      {
+        "step": "Fill Crepes",
+        "text": "Spread a few tablespoons of the ricotta filling onto each crepe and fold into quarters."
+      },
+      {
+        "step": "Serve",
+        "text": "Serve immediately, garnished with extra lemon zest and a dusting of powdered sweetener."
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "slug": "cinnamon-roll-protein-waffles",
+    "title": "Cinnamon Roll Protein Waffles",
+    "description": "All the flavor of a warm cinnamon roll packed into a crispy, high-protein waffle. Drizzled with a sweet cream cheese glaze.",
+    "protein": 26,
+    "calories": 280,
+    "carbs": 25,
+    "fat": 12,
+    "fiber": 3,
+    "sugar": 12,
+    "servingSize": "1 waffle",
+    "yield": "4 waffles",
+    "prepTime": "10",
+    "cookTime": "15",
+    "totalTime": "25",
+    "difficulty": "Easy",
+    "category": "Waffles",
+    "tags": [
+      "cinnamon-roll",
+      "waffles",
+      "dessert-for-breakfast"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "cinnamon-roll-protein-waffles.png",
+    "ingredients": [
+      "60g oat flour",
+      "30g vanilla whey protein powder",
+      "1 egg",
+      "120ml unsweetened almond milk",
+      "1 tsp baking powder",
+      "1 tsp cinnamon",
+      "For the swirl: 1 tbsp melted butter, 1 tbsp brown sugar substitute, 1/2 tsp cinnamon",
+      "For the glaze: 60g cream cheese, 30ml milk, 1 tbsp powdered sweetener"
+    ],
+    "instructions": [
+      {
+        "step": "Make Waffle Batter",
+        "text": "Preheat your waffle iron. In a bowl, mix together oat flour, protein powder, egg, almond milk, baking powder, and cinnamon until just combined."
+      },
+      {
+        "step": "Make Cinnamon Swirl",
+        "text": "In a small bowl, mix together the melted butter, brown sugar substitute, and cinnamon for the swirl."
+      },
+      {
+        "step": "Cook Waffles",
+        "text": "Pour batter into the preheated waffle iron. Drizzle the cinnamon swirl mixture over the batter. Cook according to waffle iron instructions."
+      },
+      {
+        "step": "Make Glaze",
+        "text": "While the waffles are cooking, whisk together the cream cheese, milk, and powdered sweetener until smooth."
+      },
+      {
+        "step": "Serve",
+        "text": "Once the waffles are cooked, drizzle with the cream cheese glaze and serve immediately."
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "slug": "red-velvet-protein-pancakes",
+    "title": "Red Velvet Protein Pancakes",
+    "description": "A stunning stack of red velvet pancakes with a hint of cocoa, topped with a cream cheese glaze. A healthy indulgence!",
+    "protein": 24,
+    "calories": 250,
+    "carbs": 20,
+    "fat": 10,
+    "fiber": 4,
+    "sugar": 9,
+    "servingSize": "1 serving",
+    "yield": "4 pancakes",
+    "prepTime": "10",
+    "cookTime": "10",
+    "totalTime": "20",
+    "difficulty": "Easy",
+    "category": "Pancakes",
+    "tags": [
+      "red-velvet",
+      "chocolate",
+      "dessert"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "red-velvet-protein-pancakes.png",
+    "ingredients": [
+      "30g vanilla or chocolate whey protein",
+      "30g all-purpose flour",
+      "1 tbsp cocoa powder",
+      "1 egg",
+      "120ml buttermilk",
+      "1 tsp baking powder",
+      "1/2 tsp white vinegar",
+      "Red food coloring",
+      "60g cream cheese, softened",
+      "30ml milk",
+      "1 tbsp powdered sweetener"
+    ],
+    "instructions": [
+      {
+        "step": "Prepare Batter",
+        "text": "In a bowl, whisk together the protein powder, flour, cocoa powder, and baking powder. In a separate bowl, whisk the egg, buttermilk, and vinegar. Add wet to dry and mix until just combined. Stir in a few drops of red food coloring."
+      },
+      {
+        "step": "Cook Pancakes",
+        "text": "Heat a lightly oiled griddle over medium heat. Pour 1/4 cup of batter per pancake and cook for 2-3 minutes per side."
+      },
+      {
+        "step": "Make Glaze",
+        "text": "While pancakes cook, beat the cream cheese, milk, and powdered sweetener together until smooth and creamy."
+      },
+      {
+        "step": "Stack and Drizzle",
+        "text": "Stack the pancakes on a plate."
+      },
+      {
+        "step": "Serve",
+        "text": "Drizzle generously with the cream cheese glaze before serving."
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "slug": "pumpkin-spice-protein-waffles",
+    "title": "Pumpkin Spice Protein Waffles",
+    "description": "Embrace autumn with these warm and spicy pumpkin protein waffles. They're a cozy and nutritious breakfast treat.",
+    "protein": 22,
+    "calories": 240,
+    "carbs": 22,
+    "fat": 9,
+    "fiber": 5,
+    "sugar": 7,
+    "servingSize": "1 waffle",
+    "yield": "4 waffles",
+    "prepTime": "10",
+    "cookTime": "15",
+    "totalTime": "25",
+    "difficulty": "Easy",
+    "category": "Waffles",
+    "tags": [
+      "pumpkin",
+      "spice",
+      "waffles",
+      "fall"
+    ],
+    "methods": [
+      "whey",
+      "casein"
+    ],
+    "image": "pumpkin-spice-protein-waffles.png",
+    "ingredients": [
+      "40g vanilla protein powder (whey or casein blend)",
+      "40g whole wheat flour",
+      "60g pumpkin puree",
+      "1 egg",
+      "120ml unsweetened almond milk",
+      "1 tsp pumpkin pie spice",
+      "1 tsp baking powder",
+      "1 tbsp maple syrup or sweetener"
+    ],
+    "instructions": [
+      {
+        "step": "Preheat Waffle Iron",
+        "text": "Preheat your waffle iron to a medium-high setting."
+      },
+      {
+        "step": "Mix Dry Ingredients",
+        "text": "In a large bowl, whisk together the protein powder, flour, pumpkin pie spice, and baking powder."
+      },
+      {
+        "step": "Mix Wet Ingredients",
+        "text": "In a separate bowl, whisk together the pumpkin puree, egg, almond milk, and maple syrup."
+      },
+      {
+        "step": "Combine and Cook",
+        "text": "Pour the wet ingredients into the dry and mix until just combined. Pour the batter into the preheated waffle iron and cook until golden and crisp."
+      },
+      {
+        "step": "Serve",
+        "text": "Serve warm with a dollop of Greek yogurt, a sprinkle of cinnamon, and a drizzle of maple syrup."
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "slug": "chocolate-chip-protein-pancakes",
+    "title": "Chocolate Chip Protein Pancakes",
+    "description": "A classic breakfast favorite gets a healthy, high-protein makeover. These fluffy pancakes are loaded with chocolate chips.",
+    "protein": 25,
+    "calories": 260,
+    "carbs": 22,
+    "fat": 10,
+    "fiber": 4,
+    "sugar": 10,
+    "servingSize": "1 serving",
+    "yield": "4 pancakes",
+    "prepTime": "5",
+    "cookTime": "10",
+    "totalTime": "15",
+    "difficulty": "Easy",
+    "category": "Pancakes",
+    "tags": [
+      "chocolate-chip",
+      "classic",
+      "high-protein"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "chocolate-chip-protein-pancakes.png",
+    "ingredients": [
+      "30g vanilla whey protein powder",
+      "30g oat flour",
+      "1 large egg",
+      "120ml milk of choice",
+      "1 tsp baking powder",
+      "30g dark chocolate chips"
+    ],
+    "instructions": [
+      {
+        "step": "Mix Batter",
+        "text": "In a bowl, whisk together the protein powder, oat flour, egg, milk, and baking powder until a smooth batter forms."
+      },
+      {
+        "step": "Add Chocolate Chips",
+        "text": "Gently fold in the dark chocolate chips."
+      },
+      {
+        "step": "Heat Skillet",
+        "text": "Heat a non-stick skillet or griddle over medium heat and lightly grease it."
+      },
+      {
+        "step": "Cook Pancakes",
+        "text": "Pour about 1/4 cup of batter per pancake and cook for 2-3 minutes per side, until golden brown and cooked through."
+      },
+      {
+        "step": "Serve",
+        "text": "Serve warm with your favorite toppings, like fresh fruit or a drizzle of sugar-free syrup."
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "slug": "strawberry-shortcake-protein-pancakes",
+    "title": "Strawberry Shortcake Protein Pancakes",
+    "description": "A healthy twist on a classic dessert! These protein pancakes are layered with fresh strawberries and a dollop of Greek yogurt.",
+    "protein": 22,
+    "calories": 240,
+    "carbs": 25,
+    "fat": 7,
+    "fiber": 5,
+    "sugar": 12,
+    "servingSize": "1 serving",
+    "yield": "4 pancakes",
+    "prepTime": "10",
+    "cookTime": "10",
+    "totalTime": "20",
+    "difficulty": "Easy",
+    "category": "Pancakes",
+    "tags": [
+      "strawberry",
+      "dessert",
+      "summer"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "strawberry-shortcake-protein-pancakes.png",
+    "ingredients": [
+      "30g vanilla whey protein powder",
+      "30g oat flour",
+      "1 egg",
+      "120ml almond milk",
+      "1 tsp baking powder",
+      "100g fresh strawberries, sliced",
+      "60g Greek yogurt"
+    ],
+    "instructions": [
+      {
+        "step": "Make Batter",
+        "text": "In a bowl, mix together protein powder, oat flour, egg, almond milk, and baking powder."
+      },
+      {
+        "step": "Cook Pancakes",
+        "text": "Heat a non-stick skillet over medium heat. Pour 1/4 cup of batter per pancake and cook for 2-3 minutes per side."
+      },
+      {
+        "step": "Prepare Topping",
+        "text": "While the pancakes are cooking, slice the strawberries."
+      },
+      {
+        "step": "Assemble",
+        "text": "Once the pancakes are cooked, stack them on a plate, layering with sliced strawberries and a dollop of Greek yogurt between each pancake."
+      },
+      {
+        "step": "Serve",
+        "text": "Serve immediately for a delicious and healthy breakfast."
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "slug": "double-chocolate-protein-waffles",
+    "title": "Double Chocolate Protein Waffles",
+    "description": "Intensely chocolatey and packed with protein, these waffles are a dream come true for any chocolate lover. Made with both cocoa powder and chocolate chips.",
+    "protein": 28,
+    "calories": 300,
+    "carbs": 25,
+    "fat": 14,
+    "fiber": 6,
+    "sugar": 10,
+    "servingSize": "1 waffle",
+    "yield": "4 waffles",
+    "prepTime": "10",
+    "cookTime": "15",
+    "totalTime": "25",
+    "difficulty": "Easy",
+    "category": "Waffles",
+    "tags": [
+      "chocolate",
+      "waffles",
+      "indulgent"
+    ],
+    "methods": [
+      "casein",
+      "whey"
+    ],
+    "image": "double-chocolate-protein-waffles.png",
+    "ingredients": [
+      "30g chocolate protein powder (whey or casein)",
+      "30g whole wheat flour",
+      "2 tbsp unsweetened cocoa powder",
+      "1 egg",
+      "120ml milk",
+      "1 tsp baking powder",
+      "30g dark chocolate chips"
+    ],
+    "instructions": [
+      {
+        "step": "Preheat Waffle Iron",
+        "text": "Preheat your waffle iron to a medium-high setting."
+      },
+      {
+        "step": "Mix Batter",
+        "text": "In a bowl, whisk together the protein powder, flour, cocoa powder, egg, milk, and baking powder until smooth."
+      },
+      {
+        "step": "Add Chocolate Chips",
+        "text": "Fold in the dark chocolate chips."
+      },
+      {
+        "step": "Cook Waffles",
+        "text": "Pour the batter into the preheated waffle iron and cook until golden and crisp."
+      },
+      {
+        "step": "Serve",
+        "text": "Serve warm with a sprinkle of extra chocolate chips and a drizzle of chocolate syrup."
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "slug": "matcha-green-tea-protein-crepes",
+    "title": "Matcha Green Tea Protein Crepes",
+    "description": "Elegant and earthy, these matcha green tea crepes are filled with a sweet and creamy protein filling. A unique and healthy treat.",
+    "protein": 20,
+    "calories": 220,
+    "carbs": 18,
+    "fat": 10,
+    "fiber": 3,
+    "sugar": 8,
+    "servingSize": "2 crepes",
+    "yield": "6 crepes",
+    "prepTime": "10",
+    "cookTime": "15",
+    "totalTime": "25",
+    "difficulty": "Medium",
+    "category": "Crepes",
+    "tags": [
+      "matcha",
+      "green-tea",
+      "crepes",
+      "unique"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "matcha-green-tea-protein-crepes.png",
+    "ingredients": [
+      "60g all-purpose flour",
+      "30g vanilla whey protein powder",
+      "1 tbsp matcha powder",
+      "2 eggs",
+      "240ml milk",
+      "1 tbsp melted butter",
+      "240g Greek yogurt",
+      "30g honey or maple syrup"
+    ],
+    "instructions": [
+      {
+        "step": "Make Crepe Batter",
+        "text": "In a blender, combine flour, protein powder, matcha powder, eggs, milk, and melted butter. Blend until smooth and let it rest for 10 minutes."
+      },
+      {
+        "step": "Cook Crepes",
+        "text": "Heat a non-stick skillet over medium heat. Pour a thin layer of batter and swirl to coat the pan. Cook for 1-2 minutes per side."
+      },
+      {
+        "step": "Make Filling",
+        "text": "In a bowl, mix together the Greek yogurt and honey until well combined."
+      },
+      {
+        "step": "Fill Crepes",
+        "text": "Spread a few tablespoons of the yogurt filling onto each crepe and fold."
+      },
+      {
+        "step": "Serve",
+        "text": "Serve immediately, garnished with a dusting of matcha powder."
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "slug": "apple-cinnamon-protein-pancakes",
+    "title": "Apple Cinnamon Protein Pancakes",
+    "description": "Warm and comforting, these pancakes are filled with tender apple pieces and spiced with cinnamon. A perfect autumn breakfast.",
+    "protein": 23,
+    "calories": 250,
+    "carbs": 28,
+    "fat": 7,
+    "fiber": 5,
+    "sugar": 14,
+    "servingSize": "1 serving",
+    "yield": "4 pancakes",
+    "prepTime": "10",
+    "cookTime": "12",
+    "totalTime": "22",
+    "difficulty": "Easy",
+    "category": "Pancakes",
+    "tags": [
+      "apple",
+      "cinnamon",
+      "fall",
+      "comfort-food"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "apple-cinnamon-protein-pancakes.png",
+    "ingredients": [
+      "30g vanilla whey protein powder",
+      "40g oat flour",
+      "1 egg",
+      "120ml apple cider or milk",
+      "1 tsp baking powder",
+      "1 tsp cinnamon",
+      "1/2 apple, finely chopped"
+    ],
+    "instructions": [
+      {
+        "step": "Mix Dry Ingredients",
+        "text": "In a bowl, whisk together the protein powder, oat flour, baking powder, and cinnamon."
+      },
+      {
+        "step": "Mix Wet Ingredients",
+        "text": "In a separate bowl, whisk the egg and apple cider. Stir in the chopped apple."
+      },
+      {
+        "step": "Combine",
+        "text": "Add the wet ingredients to the dry and stir until just combined."
+      },
+      {
+        "step": "Cook",
+        "text": "Heat a non-stick skillet over medium heat. Pour 1/4 cup of batter per pancake and cook for 2-3 minutes per side, until golden and the apple is tender."
+      },
+      {
+        "step": "Serve",
+        "text": "Serve warm with a drizzle of maple syrup and a sprinkle of extra cinnamon."
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "slug": "belgian-protein-waffles",
+    "title": "Belgian Protein Waffles",
+    "description": "Light, crispy, and deep-pocketed Belgian waffles with a protein-packed punch. The perfect canvas for your favorite toppings.",
+    "protein": 25,
+    "calories": 270,
+    "carbs": 20,
+    "fat": 12,
+    "fiber": 3,
+    "sugar": 6,
+    "servingSize": "1 waffle",
+    "yield": "4 waffles",
+    "prepTime": "10",
+    "cookTime": "15",
+    "totalTime": "25",
+    "difficulty": "Easy",
+    "category": "Waffles",
+    "tags": [
+      "belgian-waffle",
+      "classic",
+      "crispy"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "belgian-protein-waffles.png",
+    "ingredients": [
+      "60g all-purpose flour",
+      "30g vanilla whey protein powder",
+      "2 eggs, separated",
+      "180ml milk",
+      "2 tbsp melted butter",
+      "1 tsp baking powder",
+      "Pinch of salt"
+    ],
+    "instructions": [
+      {
+        "step": "Preheat Waffle Iron",
+        "text": "Preheat your Belgian waffle iron."
+      },
+      {
+        "step": "Mix Batter",
+        "text": "In a large bowl, whisk together flour, protein powder, baking powder, and salt. In a separate bowl, whisk the egg yolks, milk, and melted butter. Pour the wet into the dry and mix until just combined."
+      },
+      {
+        "step": "Beat Egg Whites",
+        "text": "In another bowl, beat the egg whites until stiff peaks form."
+      },
+      {
+        "step": "Fold and Cook",
+        "text": "Gently fold the beaten egg whites into the batter. Pour the batter into the preheated waffle iron and cook until golden brown and crisp."
+      },
+      {
+        "step": "Serve",
+        "text": "Serve immediately with fresh fruit, whipped cream, or syrup."
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "slug": "peanut-butter-cup-protein-pancakes",
+    "title": "Peanut Butter Cup Protein Pancakes",
+    "description": "A decadent and protein-rich breakfast that tastes like a peanut butter cup. Fluffy chocolate pancakes with a creamy peanut butter swirl.",
+    "protein": 28,
+    "calories": 320,
+    "carbs": 25,
+    "fat": 16,
+    "fiber": 5,
+    "sugar": 9,
+    "servingSize": "1 serving",
+    "yield": "4 pancakes",
+    "prepTime": "10",
+    "cookTime": "10",
+    "totalTime": "20",
+    "difficulty": "Easy",
+    "category": "Pancakes",
+    "tags": [
+      "peanut-butter",
+      "chocolate",
+      "dessert"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "peanut-butter-cup-protein-pancakes.png",
+    "ingredients": [
+      "30g chocolate whey protein powder",
+      "30g oat flour",
+      "1 tbsp cocoa powder",
+      "1 egg",
+      "120ml almond milk",
+      "1 tsp baking powder",
+      "30g peanut butter"
+    ],
+    "instructions": [
+      {
+        "step": "Make Batter",
+        "text": "In a bowl, mix together protein powder, oat flour, cocoa powder, egg, almond milk, and baking powder."
+      },
+      {
+        "step": "Cook Pancakes",
+        "text": "Heat a non-stick skillet over medium heat. Pour 1/4 cup of batter per pancake."
+      },
+      {
+        "step": "Add Peanut Butter",
+        "text": "Once bubbles start to form on the surface of the pancake, add a spoonful of peanut butter to the center of each pancake."
+      },
+      {
+        "step": "Flip and Cook",
+        "text": "Flip the pancakes and cook for another 1-2 minutes, until the peanut butter is warm and melted."
+      },
+      {
+        "step": "Serve",
+        "text": "Serve immediately with a drizzle of melted peanut butter and chocolate chips."
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "slug": "carrot-cake-protein-waffles",
+    "title": "Carrot Cake Protein Waffles",
+    "description": "All the flavors of carrot cake in a healthy, protein-packed waffle. Complete with a cream cheese glaze.",
+    "protein": 25,
+    "calories": 280,
+    "carbs": 28,
+    "fat": 12,
+    "fiber": 6,
+    "sugar": 12,
+    "servingSize": "1 waffle",
+    "yield": "4 waffles",
+    "prepTime": "10",
+    "cookTime": "15",
+    "totalTime": "25",
+    "difficulty": "Easy",
+    "category": "Waffles",
+    "tags": [
+      "carrot-cake",
+      "waffles",
+      "dessert-for-breakfast"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "carrot-cake-protein-waffles.png",
+    "ingredients": [
+      "60g oat flour",
+      "30g vanilla whey protein powder",
+      "1 egg",
+      "120ml unsweetened almond milk",
+      "60g grated carrots",
+      "1 tsp baking powder",
+      "1 tsp cinnamon",
+      "1/2 tsp nutmeg",
+      "60g cream cheese, softened",
+      "30ml milk",
+      "1 tbsp powdered sweetener"
+    ],
+    "instructions": [
+      {
+        "step": "Preheat Waffle Iron",
+        "text": "Preheat your waffle iron."
+      },
+      {
+        "step": "Mix Batter",
+        "text": "In a bowl, mix together oat flour, protein powder, egg, almond milk, grated carrots, baking powder, cinnamon, and nutmeg."
+      },
+      {
+        "step": "Cook Waffles",
+        "text": "Pour batter into the preheated waffle iron and cook until golden and crisp."
+      },
+      {
+        "step": "Make Glaze",
+        "text": "While the waffles are cooking, whisk together the cream cheese, milk, and powdered sweetener until smooth."
+      },
+      {
+        "step": "Serve",
+        "text": "Drizzle the waffles with the cream cheese glaze and top with chopped walnuts or pecans."
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "slug": "savory-spinach-and-feta-protein-crepes",
+    "title": "Savory Spinach and Feta Protein Crepes",
+    "description": "A delicious and savory crepe filled with spinach, feta cheese, and a high-protein batter. Perfect for a light lunch or brunch.",
+    "protein": 25,
+    "calories": 260,
+    "carbs": 15,
+    "fat": 14,
+    "fiber": 3,
+    "sugar": 4,
+    "servingSize": "2 crepes",
+    "yield": "6 crepes",
+    "prepTime": "10",
+    "cookTime": "15",
+    "totalTime": "25",
+    "difficulty": "Medium",
+    "category": "Crepes",
+    "tags": [
+      "savory",
+      "spinach",
+      "feta",
+      "crepes"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "savory-spinach-and-feta-protein-crepes.png",
+    "ingredients": [
+      "60g all-purpose flour",
+      "30g unflavored whey protein powder",
+      "2 eggs",
+      "240ml milk",
+      "1 tbsp melted butter",
+      "120g fresh spinach, wilted",
+      "60g feta cheese, crumbled",
+      "Salt and pepper to taste"
+    ],
+    "instructions": [
+      {
+        "step": "Make Crepe Batter",
+        "text": "In a blender, combine flour, protein powder, eggs, milk, and melted butter. Blend until smooth and let it rest for 10 minutes."
+      },
+      {
+        "step": "Cook Crepes",
+        "text": "Heat a non-stick skillet over medium heat. Pour a thin layer of batter and swirl to coat the pan. Cook for 1-2 minutes per side."
+      },
+      {
+        "step": "Prepare Filling",
+        "text": "In a bowl, combine the wilted spinach and crumbled feta cheese. Season with salt and pepper to taste."
+      },
+      {
+        "step": "Fill Crepes",
+        "text": "Spread the spinach and feta filling onto each crepe and fold."
+      },
+      {
+        "step": "Serve",
+        "text": "Serve immediately, garnished with a sprinkle of fresh herbs."
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "slug": "lemon-poppy-seed-protein-pancakes",
+    "title": "Lemon Poppy Seed Protein Pancakes",
+    "description": "Bright and zesty, these pancakes are bursting with lemon flavor and a delightful crunch from poppy seeds. A refreshing and healthy breakfast.",
+    "protein": 24,
+    "calories": 250,
+    "carbs": 22,
+    "fat": 10,
+    "fiber": 4,
+    "sugar": 8,
+    "servingSize": "1 serving",
+    "yield": "4 pancakes",
+    "prepTime": "10",
+    "cookTime": "10",
+    "totalTime": "20",
+    "difficulty": "Easy",
+    "category": "Pancakes",
+    "tags": [
+      "lemon",
+      "poppy-seed",
+      "refreshing"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "lemon-poppy-seed-protein-pancakes.png",
+    "ingredients": [
+      "30g vanilla whey protein powder",
+      "30g oat flour",
+      "1 egg",
+      "120ml almond milk",
+      "1 tbsp poppy seeds",
+      "1 lemon, zested and juiced",
+      "1 tsp baking powder"
+    ],
+    "instructions": [
+      {
+        "step": "Mix Batter",
+        "text": "In a bowl, whisk together the protein powder, oat flour, egg, almond milk, poppy seeds, lemon zest, lemon juice, and baking powder."
+      },
+      {
+        "step": "Cook Pancakes",
+        "text": "Heat a non-stick skillet over medium heat. Pour 1/4 cup of batter per pancake and cook for 2-3 minutes per side."
+      },
+      {
+        "step": "Make Glaze",
+        "text": "For an optional glaze, mix a little powdered sweetener with a squeeze of lemon juice."
+      },
+      {
+        "step": "Serve",
+        "text": "Serve the pancakes warm, with a drizzle of the lemon glaze and some extra lemon zest."
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "slug": "coffee-infused-protein-waffles",
+    "title": "Coffee-Infused Protein Waffles",
+    "description": "Get your caffeine and protein fix in one delicious breakfast! These waffles are infused with real coffee for a rich and robust flavor.",
+    "protein": 26,
+    "calories": 280,
+    "carbs": 22,
+    "fat": 12,
+    "fiber": 4,
+    "sugar": 7,
+    "servingSize": "1 waffle",
+    "yield": "4 waffles",
+    "prepTime": "10",
+    "cookTime": "15",
+    "totalTime": "25",
+    "difficulty": "Easy",
+    "category": "Waffles",
+    "tags": [
+      "coffee",
+      "waffles",
+      "caffeine"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "coffee-infused-protein-waffles.png",
+    "ingredients": [
+      "60g oat flour",
+      "30g chocolate or vanilla whey protein powder",
+      "1 egg",
+      "120ml brewed coffee, chilled",
+      "1 tsp baking powder",
+      "1 tbsp sweetener of choice"
+    ],
+    "instructions": [
+      {
+        "step": "Preheat Waffle Iron",
+        "text": "Preheat your waffle iron."
+      },
+      {
+        "step": "Mix Batter",
+        "text": "In a bowl, whisk together the oat flour, protein powder, egg, chilled coffee, baking powder, and sweetener."
+      },
+      {
+        "step": "Cook Waffles",
+        "text": "Pour the batter into the preheated waffle iron and cook until golden and crisp."
+      },
+      {
+        "step": "Serve",
+        "text": "Serve warm with a dollop of Greek yogurt and a dusting of cocoa powder."
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "slug": "german-chocolate-protein-pancakes",
+    "title": "German Chocolate Protein Pancakes",
+    "description": "A decadent and delicious pancake recipe inspired by German chocolate cake. Rich chocolate pancakes topped with a coconut-pecan topping.",
+    "protein": 28,
+    "calories": 350,
+    "carbs": 28,
+    "fat": 18,
+    "fiber": 7,
+    "sugar": 15,
+    "servingSize": "1 serving",
+    "yield": "4 pancakes",
+    "prepTime": "10",
+    "cookTime": "15",
+    "totalTime": "25",
+    "difficulty": "Medium",
+    "category": "Pancakes",
+    "tags": [
+      "german-chocolate",
+      "coconut",
+      "pecan",
+      "dessert"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "german-chocolate-protein-pancakes.png",
+    "ingredients": [
+      "30g chocolate whey protein powder",
+      "30g oat flour",
+      "1 tbsp cocoa powder",
+      "1 egg",
+      "120ml almond milk",
+      "1 tsp baking powder",
+      "For the topping: 30g chopped pecans, 30g shredded coconut, 30ml maple syrup, 30ml coconut milk"
+    ],
+    "instructions": [
+      {
+        "step": "Make Pancake Batter",
+        "text": "In a bowl, mix together protein powder, oat flour, cocoa powder, egg, almond milk, and baking powder."
+      },
+      {
+        "step": "Cook Pancakes",
+        "text": "Heat a non-stick skillet over medium heat. Pour 1/4 cup of batter per pancake and cook for 2-3 minutes per side."
+      },
+      {
+        "step": "Make Topping",
+        "text": "While the pancakes are cooking, combine the pecans, coconut, maple syrup, and coconut milk in a small saucepan. Cook over low heat until warmed through."
+      },
+      {
+        "step": "Serve",
+        "text": "Top the pancakes with the warm coconut-pecan topping."
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "slug": "churro-protein-waffles",
+    "title": "Churro Protein Waffles",
+    "description": "Crispy on the outside, fluffy on the inside, and coated in cinnamon-sugar. These protein waffles taste just like a classic churro.",
+    "protein": 25,
+    "calories": 300,
+    "carbs": 30,
+    "fat": 12,
+    "fiber": 4,
+    "sugar": 12,
+    "servingSize": "1 waffle",
+    "yield": "4 waffles",
+    "prepTime": "10",
+    "cookTime": "15",
+    "totalTime": "25",
+    "difficulty": "Easy",
+    "category": "Waffles",
+    "tags": [
+      "churro",
+      "cinnamon",
+      "dessert"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "churro-protein-waffles.png",
+    "ingredients": [
+      "60g oat flour",
+      "30g vanilla whey protein powder",
+      "1 egg",
+      "120ml almond milk",
+      "1 tsp baking powder",
+      "For the coating: 2 tbsp melted butter, 2 tbsp sugar substitute, 1 tsp cinnamon"
+    ],
+    "instructions": [
+      {
+        "step": "Preheat Waffle Iron",
+        "text": "Preheat your waffle iron."
+      },
+      {
+        "step": "Mix Batter",
+        "text": "In a bowl, mix together oat flour, protein powder, egg, almond milk, and baking powder."
+      },
+      {
+        "step": "Cook Waffles",
+        "text": "Pour batter into the preheated waffle iron and cook until golden and crisp."
+      },
+      {
+        "step": "Coat Waffles",
+        "text": "While the waffles are still warm, brush them with melted butter and sprinkle with a mixture of sugar substitute and cinnamon."
+      },
+      {
+        "step": "Serve",
+        "text": "Serve immediately with a side of chocolate dipping sauce or caramel."
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "slug": "berries-and-cream-protein-crepes",
+    "title": "Berries and Cream Protein Crepes",
+    "description": "Delicate crepes filled with a sweet cream filling and topped with a medley of fresh berries. A light and elegant high-protein breakfast.",
+    "protein": 22,
+    "calories": 250,
+    "carbs": 20,
+    "fat": 12,
+    "fiber": 4,
+    "sugar": 12,
+    "servingSize": "2 crepes",
+    "yield": "6 crepes",
+    "prepTime": "10",
+    "cookTime": "15",
+    "totalTime": "25",
+    "difficulty": "Medium",
+    "category": "Crepes",
+    "tags": [
+      "berries",
+      "cream",
+      "crepes",
+      "summer"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "berries-and-cream-protein-crepes.png",
+    "ingredients": [
+      "60g all-purpose flour",
+      "30g vanilla whey protein powder",
+      "2 eggs",
+      "240ml milk",
+      "1 tbsp melted butter",
+      "240g cream cheese, softened",
+      "30g powdered sweetener",
+      "1 tsp vanilla extract",
+      "150g mixed berries"
+    ],
+    "instructions": [
+      {
+        "step": "Make Crepe Batter",
+        "text": "In a blender, combine flour, protein powder, eggs, milk, and melted butter. Blend until smooth and let it rest for 10 minutes."
+      },
+      {
+        "step": "Cook Crepes",
+        "text": "Heat a non-stick skillet over medium heat. Pour a thin layer of batter and swirl to coat the pan. Cook for 1-2 minutes per side."
+      },
+      {
+        "step": "Make Cream Filling",
+        "text": "In a bowl, beat the cream cheese, powdered sweetener, and vanilla extract until smooth and creamy."
+      },
+      {
+        "step": "Fill Crepes",
+        "text": "Spread the cream cheese filling onto each crepe and top with a spoonful of mixed berries before folding."
+      },
+      {
+        "step": "Serve",
+        "text": "Serve immediately, garnished with extra berries and a dusting of powdered sweetener."
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "slug": "samoa-inspired-protein-pancakes",
+    "title": "Samoa-Inspired Protein Pancakes",
+    "description": "A pancake tribute to the famous Girl Scout cookie! Chocolate pancakes topped with a caramel, coconut, and chocolate drizzle.",
+    "protein": 27,
+    "calories": 340,
+    "carbs": 30,
+    "fat": 16,
+    "fiber": 6,
+    "sugar": 16,
+    "servingSize": "1 serving",
+    "yield": "4 pancakes",
+    "prepTime": "10",
+    "cookTime": "10",
+    "totalTime": "20",
+    "difficulty": "Medium",
+    "category": "Pancakes",
+    "tags": [
+      "samoa-cookie",
+      "chocolate",
+      "coconut",
+      "caramel"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "samoa-inspired-protein-pancakes.png",
+    "ingredients": [
+      "30g chocolate whey protein powder",
+      "30g oat flour",
+      "1 egg",
+      "120ml almond milk",
+      "1 tsp baking powder",
+      "For the topping: 30g toasted coconut, 30ml sugar-free caramel sauce, 15g melted dark chocolate"
+    ],
+    "instructions": [
+      {
+        "step": "Make Batter",
+        "text": "In a bowl, mix together protein powder, oat flour, egg, almond milk, and baking powder."
+      },
+      {
+        "step": "Cook Pancakes",
+        "text": "Heat a non-stick skillet over medium heat. Pour 1/4 cup of batter per pancake and cook for 2-3 minutes per side."
+      },
+      {
+        "step": "Assemble Topping",
+        "text": "Once pancakes are cooked, top them with toasted coconut."
+      },
+      {
+        "step": "Drizzle and Serve",
+        "text": "Drizzle with caramel sauce and melted dark chocolate before serving."
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "slug": "birthday-cake-protein-waffles",
+    "title": "Birthday Cake Protein Waffles",
+    "description": "Celebrate any day with these fun and festive birthday cake protein waffles, complete with sprinkles and a sweet glaze.",
+    "protein": 26,
+    "calories": 290,
+    "carbs": 28,
+    "fat": 12,
+    "fiber": 3,
+    "sugar": 14,
+    "servingSize": "1 waffle",
+    "yield": "4 waffles",
+    "prepTime": "10",
+    "cookTime": "15",
+    "totalTime": "25",
+    "difficulty": "Easy",
+    "category": "Waffles",
+    "tags": [
+      "birthday-cake",
+      "sprinkles",
+      "celebration"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "birthday-cake-protein-waffles.png",
+    "ingredients": [
+      "60g oat flour",
+      "30g vanilla whey protein powder",
+      "1 egg",
+      "120ml almond milk",
+      "1 tsp baking powder",
+      "1 tsp vanilla extract",
+      "2 tbsp rainbow sprinkles",
+      "For the glaze: 60g powdered sweetener, 30ml milk"
+    ],
+    "instructions": [
+      {
+        "step": "Preheat Waffle Iron",
+        "text": "Preheat your waffle iron."
+      },
+      {
+        "step": "Mix Batter",
+        "text": "In a bowl, mix together oat flour, protein powder, egg, almond milk, baking powder, and vanilla extract. Gently fold in the sprinkles."
+      },
+      {
+        "step": "Cook Waffles",
+        "text": "Pour batter into the preheated waffle iron and cook until golden and crisp."
+      },
+      {
+        "step": "Make Glaze",
+        "text": "While the waffles are cooking, whisk together the powdered sweetener and milk to create a glaze."
+      },
+      {
+        "step": "Serve",
+        "text": "Drizzle the glaze over the warm waffles and top with extra sprinkles."
+      }
+    ]
+  }
+]

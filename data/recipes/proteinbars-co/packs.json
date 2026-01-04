@@ -1,0 +1,75 @@
+[
+  {
+    "slug": "no-bake-starter",
+    "title": "No-Bake Starter",
+    "description": "A collection of easy, no-bake protein bars that are perfect for beginners.",
+    "icon": "\ud83e\udd63",
+    "recipes": [
+      "no-bake-chocolate-peanut-butter-bars",
+      "no-bake-cashew-coconut-bars",
+      "no-bake-key-lime-pie-bars",
+      "no-bake-birthday-cake-bars",
+      "no-bake-matcha-coconut-bars"
+    ]
+  },
+  {
+    "slug": "candy-bar-copycats",
+    "title": "Candy Bar Copycats",
+    "description": "All the flavor of your favorite candy bars, but packed with protein.",
+    "icon": "\ud83c\udf6b",
+    "recipes": [
+      "candy-bar-copycat-snickers",
+      "candy-bar-copycat-twix",
+      "candy-bar-copycat-almond-mound",
+      "candy-bar-copycat-butterfinger"
+    ]
+  },
+  {
+    "slug": "vegan-collection",
+    "title": "Vegan Collection",
+    "description": "A selection of delicious and satisfying plant-based protein bars.",
+    "icon": "\ud83c\udf31",
+    "recipes": [
+      "vegan-almond-joy-bars",
+      "vegan-chocolate-chip-cookie-dough-bars",
+      "vegan-peanut-butter-jelly-bars",
+      "vegan-double-chocolate-bars"
+    ]
+  },
+  {
+    "slug": "nut-free-pack",
+    "title": "Nut-Free Pack",
+    "description": "Enjoy these delicious and safe protein bars, completely free of nuts.",
+    "icon": "\ud83e\udd5c",
+    "recipes": [
+      "nut-free-sunbutter-bars",
+      "nut-free-chocolate-seed-bars",
+      "nut-free-apple-cinnamon-bars",
+      "nut-free-vanilla-funfetti-bars"
+    ]
+  },
+  {
+    "slug": "high-protein-pack",
+    "title": "High-Protein Pack",
+    "description": "Maximize your protein intake with these bars, each packed with over 20g of protein.",
+    "icon": "\ud83d\udcaa",
+    "recipes": [
+      "high-protein-chocolate-brownie-bars",
+      "high-protein-lemon-bars",
+      "high-protein-samoa-bars",
+      "high-protein-red-velvet-bars"
+    ]
+  },
+  {
+    "slug": "meal-prep-bars",
+    "title": "Meal Prep Bars",
+    "description": "Save time and stay on track with these easy-to-make meal prep protein bars.",
+    "icon": "\ud83d\uddd3\ufe0f",
+    "recipes": [
+      "meal-prep-oat-and-honey-bars",
+      "meal-prep-berry-breakfast-bars",
+      "meal-prep-banana-bread-bars",
+      "meal-prep-pumpkin-spice-bars"
+    ]
+  }
+]

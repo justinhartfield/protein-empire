@@ -1,0 +1,75 @@
+[
+  {
+    "slug": "dough-pack",
+    "title": "Dough Pack",
+    "description": "A collection of our best protein pizza dough recipes.",
+    "icon": "\ud83c\udf55",
+    "recipes": [
+      "classic-protein-pizza-crust",
+      "recipe-slug-2",
+      "recipe-slug-3",
+      "recipe-slug-4"
+    ]
+  },
+  {
+    "slug": "pizza-night-classics",
+    "title": "Pizza Night Classics",
+    "description": "All the classics for your next pizza night.",
+    "icon": "\ud83c\udf89",
+    "recipes": [
+      "recipe-slug-5",
+      "recipe-slug-6",
+      "recipe-slug-7",
+      "recipe-slug-8"
+    ]
+  },
+  {
+    "slug": "veggie-crust",
+    "title": "Veggie Crust",
+    "description": "Healthy and delicious veggie-based pizza crusts.",
+    "icon": "\ud83e\udd66",
+    "recipes": [
+      "recipe-slug-9",
+      "recipe-slug-10",
+      "recipe-slug-11",
+      "recipe-slug-12"
+    ]
+  },
+  {
+    "slug": "keto-crusts",
+    "title": "Keto Crusts",
+    "description": "Low-carb and keto-friendly pizza crusts.",
+    "icon": "\ud83e\udd51",
+    "recipes": [
+      "recipe-slug-13",
+      "recipe-slug-14",
+      "recipe-slug-15",
+      "recipe-slug-16"
+    ]
+  },
+  {
+    "slug": "creative-pizzas",
+    "title": "Creative Pizzas",
+    "description": "Unique and creative pizza recipes to try.",
+    "icon": "\ud83c\udfa8",
+    "recipes": [
+      "recipe-slug-17",
+      "recipe-slug-18",
+      "recipe-slug-19",
+      "recipe-slug-20"
+    ]
+  },
+  {
+    "slug": "quick-flatbreads",
+    "title": "Quick Flatbreads",
+    "description": "Easy and quick flatbread recipes.",
+    "icon": "\ud83c\udfc3",
+    "recipes": [
+      "recipe-slug-21",
+      "recipe-slug-22",
+      "recipe-slug-23",
+      "recipe-slug-24",
+      "recipe-slug-25"
+    ]
+  }
+]

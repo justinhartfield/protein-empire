@@ -1,0 +1,1554 @@
+[
+  {
+    "id": 1,
+    "slug": "no-bake-chocolate-peanut-butter-bars",
+    "title": "No-Bake Chocolate Peanut Butter Bars",
+    "description": "A classic no-bake bar with a rich chocolate and peanut butter flavor, packed with 22g of protein.",
+    "protein": 22,
+    "calories": 250,
+    "carbs": 20,
+    "fat": 15,
+    "fiber": 5,
+    "sugar": 8,
+    "servingSize": "1 bar",
+    "yield": "12 bars",
+    "prepTime": "15",
+    "cookTime": "0",
+    "totalTime": "15",
+    "difficulty": "Easy",
+    "category": "No-Bake",
+    "tags": [
+      "no-bake",
+      "peanut butter",
+      "chocolate"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "no-bake-chocolate-peanut-butter-bars.png",
+    "ingredients": [
+      "240g creamy peanut butter",
+      "120g honey",
+      "120g vanilla whey protein powder",
+      "90g rolled oats",
+      "60g dark chocolate chips"
+    ],
+    "instructions": [
+      {
+        "step": "Prepare the pan",
+        "text": "Line an 8x8 inch pan with parchment paper."
+      },
+      {
+        "step": "Mix wet ingredients",
+        "text": "In a large bowl, mix together the peanut butter and honey until well combined."
+      },
+      {
+        "step": "Add dry ingredients",
+        "text": "Add the protein powder and rolled oats to the bowl and mix until a thick dough forms."
+      },
+      {
+        "step": "Press into pan",
+        "text": "Press the dough evenly into the prepared pan."
+      },
+      {
+        "step": "Melt chocolate",
+        "text": "Melt the dark chocolate chips in the microwave in 30-second intervals, stirring until smooth."
+      },
+      {
+        "step": "Top and chill",
+        "text": "Pour the melted chocolate over the dough and spread evenly. Refrigerate for at least 30 minutes before cutting into bars."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "candy-bar-copycat-snickers",
+    "title": "Candy Bar Copycat: Protein Snickers",
+    "description": "A healthier, high-protein version of the classic Snickers bar with 18g of protein.",
+    "protein": 18,
+    "calories": 280,
+    "carbs": 25,
+    "fat": 18,
+    "fiber": 4,
+    "sugar": 15,
+    "servingSize": "1 bar",
+    "yield": "10 bars",
+    "prepTime": "20",
+    "cookTime": "5",
+    "totalTime": "25",
+    "difficulty": "Medium",
+    "category": "Candy Bar Copycat",
+    "tags": [
+      "snickers",
+      "candy bar",
+      "caramel"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "candy-bar-copycat-snickers.png",
+    "ingredients": [
+      "120g almond flour",
+      "60g vanilla whey protein powder",
+      "60g powdered peanut butter",
+      "60g sugar-free caramel sauce",
+      "50g roasted peanuts",
+      "100g dark chocolate chips"
+    ],
+    "instructions": [
+      {
+        "step": "Make the nougat layer",
+        "text": "In a bowl, combine almond flour, protein powder, and powdered peanut butter. Add a little water at a time until a dough forms. Press into a lined loaf pan."
+      },
+      {
+        "step": "Add the caramel layer",
+        "text": "Spread the sugar-free caramel sauce over the nougat layer."
+      },
+      {
+        "step": "Add peanuts",
+        "text": "Sprinkle the roasted peanuts over the caramel layer."
+      },
+      {
+        "step": "Chill",
+        "text": "Place the pan in the freezer for 30 minutes to set."
+      },
+      {
+        "step": "Melt chocolate",
+        "text": "Melt the dark chocolate chips in the microwave."
+      },
+      {
+        "step": "Coat the bars",
+        "text": "Cut the chilled mixture into bars and dip each bar in the melted chocolate. Place on a parchment-lined plate and refrigerate until the chocolate is set."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "vegan-almond-joy-bars",
+    "title": "Vegan Almond Joy Protein Bars",
+    "description": "A delicious vegan protein bar inspired by Almond Joy, with 15g of plant-based protein.",
+    "protein": 15,
+    "calories": 220,
+    "carbs": 18,
+    "fat": 14,
+    "fiber": 6,
+    "sugar": 7,
+    "servingSize": "1 bar",
+    "yield": "12 bars",
+    "prepTime": "15",
+    "cookTime": "0",
+    "totalTime": "15",
+    "difficulty": "Easy",
+    "category": "Vegan",
+    "tags": [
+      "vegan",
+      "almond joy",
+      "coconut"
+    ],
+    "methods": [
+      "plant-based"
+    ],
+    "image": "vegan-almond-joy-bars.png",
+    "ingredients": [
+      "150g shredded coconut",
+      "120g vanilla plant-based protein powder",
+      "80g coconut oil, melted",
+      "60g maple syrup",
+      "24 whole almonds",
+      "100g vegan dark chocolate chips"
+    ],
+    "instructions": [
+      {
+        "step": "Mix the base",
+        "text": "In a bowl, combine the shredded coconut, protein powder, melted coconut oil, and maple syrup. Mix until well combined."
+      },
+      {
+        "step": "Press into pan",
+        "text": "Press the mixture into a lined 8x8 inch pan."
+      },
+      {
+        "step": "Add almonds",
+        "text": "Press two whole almonds into the top of each future bar location."
+      },
+      {
+        "step": "Chill",
+        "text": "Refrigerate for 20 minutes to firm up."
+      },
+      {
+        "step": "Melt chocolate",
+        "text": "Melt the vegan dark chocolate chips in the microwave."
+      },
+      {
+        "step": "Top with chocolate",
+        "text": "Drizzle the melted chocolate over the bars and refrigerate until set. Cut into 12 bars."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "nut-free-sunbutter-bars",
+    "title": "Nut-Free Sunbutter Protein Bars",
+    "description": "A safe and delicious protein bar for those with nut allergies, made with sunflower seed butter and providing 16g of protein.",
+    "protein": 16,
+    "calories": 230,
+    "carbs": 22,
+    "fat": 13,
+    "fiber": 5,
+    "sugar": 9,
+    "servingSize": "1 bar",
+    "yield": "12 bars",
+    "prepTime": "10",
+    "cookTime": "0",
+    "totalTime": "10",
+    "difficulty": "Easy",
+    "category": "Nut-Free",
+    "tags": [
+      "nut-free",
+      "sunflower seed butter",
+      "no-bake"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "nut-free-sunbutter-bars.png",
+    "ingredients": [
+      "240g sunflower seed butter",
+      "120g honey",
+      "120g vanilla whey protein powder",
+      "90g rolled oats",
+      "60g sunflower seeds"
+    ],
+    "instructions": [
+      {
+        "step": "Prepare the pan",
+        "text": "Line an 8x8 inch pan with parchment paper."
+      },
+      {
+        "step": "Mix wet ingredients",
+        "text": "In a large bowl, mix together the sunflower seed butter and honey."
+      },
+      {
+        "step": "Add dry ingredients",
+        "text": "Add the protein powder and rolled oats, and mix until a dough forms."
+      },
+      {
+        "step": "Press into pan",
+        "text": "Press the dough evenly into the prepared pan."
+      },
+      {
+        "step": "Top with seeds",
+        "text": "Sprinkle the sunflower seeds on top and press them in gently."
+      },
+      {
+        "step": "Chill and cut",
+        "text": "Refrigerate for at least 30 minutes before cutting into 12 bars."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "slug": "high-protein-chocolate-brownie-bars",
+    "title": "High-Protein Chocolate Brownie Bars",
+    "description": "Fudgy, chocolatey, and packed with 25g of protein, these brownie bars are the ultimate healthy indulgence.",
+    "protein": 25,
+    "calories": 200,
+    "carbs": 15,
+    "fat": 8,
+    "fiber": 7,
+    "sugar": 2,
+    "servingSize": "1 bar",
+    "yield": "12 bars",
+    "prepTime": "10",
+    "cookTime": "20",
+    "totalTime": "30",
+    "difficulty": "Easy",
+    "category": "High-Protein",
+    "tags": [
+      "high-protein",
+      "brownie",
+      "chocolate"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "high-protein-chocolate-brownie-bars.png",
+    "ingredients": [
+      "1 can (425g) black beans, rinsed and drained",
+      "120g chocolate whey protein powder",
+      "60g unsweetened cocoa powder",
+      "60g erythritol",
+      "2 large eggs",
+      "60g unsweetened applesauce",
+      "1 teaspoon baking powder",
+      "50g sugar-free chocolate chips"
+    ],
+    "instructions": [
+      {
+        "step": "Preheat oven and prepare pan",
+        "text": "Preheat your oven to 175\u00b0C (350\u00b0F) and line an 8x8 inch pan with parchment paper."
+      },
+      {
+        "step": "Blend ingredients",
+        "text": "In a food processor, blend the black beans, protein powder, cocoa powder, erythritol, eggs, and applesauce until smooth."
+      },
+      {
+        "step": "Add baking powder",
+        "text": "Add the baking powder and pulse a few times to combine."
+      },
+      {
+        "step": "Stir in chocolate chips",
+        "text": "Pour the batter into a bowl and stir in the sugar-free chocolate chips."
+      },
+      {
+        "step": "Bake",
+        "text": "Pour the batter into the prepared pan and bake for 18-20 minutes, or until a toothpick inserted into the center comes out clean."
+      },
+      {
+        "step": "Cool and cut",
+        "text": "Let the brownie cool completely before cutting into 12 bars."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "slug": "meal-prep-oat-and-honey-bars",
+    "title": "Meal Prep Oat and Honey Protein Bars",
+    "description": "Easy to make and perfect for meal prep, these oat and honey bars offer 20g of protein per serving.",
+    "protein": 20,
+    "calories": 240,
+    "carbs": 28,
+    "fat": 10,
+    "fiber": 4,
+    "sugar": 12,
+    "servingSize": "1 bar",
+    "yield": "12 bars",
+    "prepTime": "10",
+    "cookTime": "15",
+    "totalTime": "25",
+    "difficulty": "Easy",
+    "category": "Meal Prep",
+    "tags": [
+      "meal prep",
+      "oats",
+      "honey"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "meal-prep-oat-and-honey-bars.png",
+    "ingredients": [
+      "180g rolled oats",
+      "120g vanilla whey protein powder",
+      "120g almond butter",
+      "80g honey",
+      "60ml milk",
+      "50g chopped nuts"
+    ],
+    "instructions": [
+      {
+        "step": "Preheat oven and prepare pan",
+        "text": "Preheat your oven to 175\u00b0C (350\u00b0F) and line an 8x8 inch pan with parchment paper."
+      },
+      {
+        "step": "Mix dry ingredients",
+        "text": "In a large bowl, combine the rolled oats and protein powder."
+      },
+      {
+        "step": "Mix wet ingredients",
+        "text": "In a separate bowl, whisk together the almond butter, honey, and milk."
+      },
+      {
+        "step": "Combine wet and dry",
+        "text": "Pour the wet ingredients into the dry ingredients and mix until well combined. Stir in the chopped nuts."
+      },
+      {
+        "step": "Bake",
+        "text": "Press the mixture into the prepared pan and bake for 15 minutes."
+      },
+      {
+        "step": "Cool and cut",
+        "text": "Let the bars cool completely before cutting into 12 bars."
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "slug": "no-bake-cashew-coconut-bars",
+    "title": "No-Bake Cashew Coconut Protein Bars",
+    "description": "Creamy cashew butter and coconut come together in these simple no-bake bars with 18g of protein.",
+    "protein": 18,
+    "calories": 260,
+    "carbs": 20,
+    "fat": 16,
+    "fiber": 5,
+    "sugar": 9,
+    "servingSize": "1 bar",
+    "yield": "12 bars",
+    "prepTime": "15",
+    "cookTime": "0",
+    "totalTime": "15",
+    "difficulty": "Easy",
+    "category": "No-Bake",
+    "tags": [
+      "no-bake",
+      "cashew",
+      "coconut"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "no-bake-cashew-coconut-bars.png",
+    "ingredients": [
+      "240g cashew butter",
+      "120g vanilla whey protein powder",
+      "90g shredded coconut",
+      "80g maple syrup",
+      "60g coconut flour"
+    ],
+    "instructions": [
+      {
+        "step": "Prepare the pan",
+        "text": "Line an 8x8 inch pan with parchment paper."
+      },
+      {
+        "step": "Mix ingredients",
+        "text": "In a large bowl, combine all ingredients and mix until a thick dough forms."
+      },
+      {
+        "step": "Press into pan",
+        "text": "Press the dough evenly into the prepared pan."
+      },
+      {
+        "step": "Chill",
+        "text": "Refrigerate for at least 1 hour to set."
+      },
+      {
+        "step": "Cut into bars",
+        "text": "Cut into 12 bars and store in the refrigerator."
+      },
+      {
+        "step": "Optional topping",
+        "text": "For extra flavor, drizzle with melted white chocolate before chilling."
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "slug": "candy-bar-copycat-twix",
+    "title": "Candy Bar Copycat: Protein Twix",
+    "description": "A three-layered protein bar that tastes just like a Twix, but with 17g of protein.",
+    "protein": 17,
+    "calories": 270,
+    "carbs": 22,
+    "fat": 17,
+    "fiber": 3,
+    "sugar": 14,
+    "servingSize": "1 bar",
+    "yield": "12 bars",
+    "prepTime": "25",
+    "cookTime": "10",
+    "totalTime": "35",
+    "difficulty": "Medium",
+    "category": "Candy Bar Copycat",
+    "tags": [
+      "twix",
+      "candy bar",
+      "caramel"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "candy-bar-copycat-twix.png",
+    "ingredients": [
+      "120g almond flour",
+      "60g vanilla whey protein powder",
+      "60g coconut oil, melted",
+      "120g sugar-free caramel sauce",
+      "150g dark chocolate chips"
+    ],
+    "instructions": [
+      {
+        "step": "Make the shortbread layer",
+        "text": "In a bowl, combine the almond flour, protein powder, and melted coconut oil. Press into a lined loaf pan and bake at 175\u00b0C (350\u00b0F) for 10 minutes."
+      },
+      {
+        "step": "Cool the base",
+        "text": "Let the shortbread layer cool completely."
+      },
+      {
+        "step": "Add the caramel layer",
+        "text": "Pour the sugar-free caramel sauce over the cooled shortbread layer."
+      },
+      {
+        "step": "Freeze",
+        "text": "Place the pan in the freezer for 30-60 minutes, until the caramel is firm."
+      },
+      {
+        "step": "Melt chocolate",
+        "text": "Melt the dark chocolate chips in the microwave."
+      },
+      {
+        "step": "Coat the bars",
+        "text": "Cut the chilled mixture into bars and dip each bar in the melted chocolate. Place on a parchment-lined plate and refrigerate until the chocolate is set."
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "slug": "vegan-chocolate-chip-cookie-dough-bars",
+    "title": "Vegan Chocolate Chip Cookie Dough Protein Bars",
+    "description": "Safe-to-eat raw cookie dough bars that are vegan and packed with 16g of protein.",
+    "protein": 16,
+    "calories": 250,
+    "carbs": 24,
+    "fat": 14,
+    "fiber": 5,
+    "sugar": 10,
+    "servingSize": "1 bar",
+    "yield": "12 bars",
+    "prepTime": "15",
+    "cookTime": "0",
+    "totalTime": "15",
+    "difficulty": "Easy",
+    "category": "Vegan",
+    "tags": [
+      "vegan",
+      "cookie dough",
+      "no-bake"
+    ],
+    "methods": [
+      "plant-based"
+    ],
+    "image": "vegan-chocolate-chip-cookie-dough-bars.png",
+    "ingredients": [
+      "1 can (425g) chickpeas, rinsed and drained",
+      "120g vanilla plant-based protein powder",
+      "120g cashew butter",
+      "60g maple syrup",
+      "1 teaspoon vanilla extract",
+      "80g vegan chocolate chips"
+    ],
+    "instructions": [
+      {
+        "step": "Blend ingredients",
+        "text": "In a food processor, blend the chickpeas, protein powder, cashew butter, maple syrup, and vanilla extract until smooth."
+      },
+      {
+        "step": "Stir in chocolate chips",
+        "text": "Transfer the dough to a bowl and stir in the vegan chocolate chips."
+      },
+      {
+        "step": "Press into pan",
+        "text": "Press the dough into a lined 8x8 inch pan."
+      },
+      {
+        "step": "Chill",
+        "text": "Refrigerate for at least 30 minutes."
+      },
+      {
+        "step": "Cut and serve",
+        "text": "Cut into 12 bars and store in the refrigerator."
+      },
+      {
+        "step": "Enjoy",
+        "text": "Enjoy a healthy and delicious cookie dough treat."
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "slug": "nut-free-chocolate-seed-bars",
+    "title": "Nut-Free Chocolate Seed Protein Bars",
+    "description": "A crunchy, chocolatey, and nut-free protein bar made with a blend of seeds, providing 17g of protein.",
+    "protein": 17,
+    "calories": 240,
+    "carbs": 20,
+    "fat": 14,
+    "fiber": 6,
+    "sugar": 8,
+    "servingSize": "1 bar",
+    "yield": "12 bars",
+    "prepTime": "10",
+    "cookTime": "0",
+    "totalTime": "10",
+    "difficulty": "Easy",
+    "category": "Nut-Free",
+    "tags": [
+      "nut-free",
+      "seeds",
+      "chocolate"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "nut-free-chocolate-seed-bars.png",
+    "ingredients": [
+      "120g sunflower seed butter",
+      "80g honey",
+      "120g chocolate whey protein powder",
+      "50g pumpkin seeds",
+      "50g sunflower seeds",
+      "30g chia seeds"
+    ],
+    "instructions": [
+      {
+        "step": "Prepare the pan",
+        "text": "Line an 8x8 inch pan with parchment paper."
+      },
+      {
+        "step": "Mix wet ingredients",
+        "text": "In a large bowl, mix together the sunflower seed butter and honey."
+      },
+      {
+        "step": "Add dry ingredients",
+        "text": "Add the protein powder and all the seeds. Mix until well combined."
+      },
+      {
+        "step": "Press into pan",
+        "text": "Press the mixture evenly into the prepared pan."
+      },
+      {
+        "step": "Chill",
+        "text": "Refrigerate for at least 30 minutes."
+      },
+      {
+        "step": "Cut and enjoy",
+        "text": "Cut into 12 bars and store in the refrigerator for a quick and healthy snack."
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "slug": "high-protein-lemon-bars",
+    "title": "High-Protein Lemon Bars",
+    "description": "A refreshing and tangy lemon bar with a protein-packed crust and a sweet, gooey filling, offering 19g of protein.",
+    "protein": 19,
+    "calories": 220,
+    "carbs": 18,
+    "fat": 12,
+    "fiber": 3,
+    "sugar": 10,
+    "servingSize": "1 bar",
+    "yield": "16 bars",
+    "prepTime": "15",
+    "cookTime": "25",
+    "totalTime": "40",
+    "difficulty": "Medium",
+    "category": "High-Protein",
+    "tags": [
+      "high-protein",
+      "lemon",
+      "dessert"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "high-protein-lemon-bars.png",
+    "ingredients": [
+      "120g almond flour",
+      "60g vanilla whey protein powder",
+      "60g coconut oil, melted",
+      "3 large eggs",
+      "180g erythritol",
+      "80ml fresh lemon juice",
+      "30g coconut flour",
+      "Zest of 2 lemons"
+    ],
+    "instructions": [
+      {
+        "step": "Preheat oven and prepare pan",
+        "text": "Preheat your oven to 175\u00b0C (350\u00b0F) and line an 8x8 inch pan with parchment paper."
+      },
+      {
+        "step": "Make the crust",
+        "text": "In a bowl, combine the almond flour, protein powder, and melted coconut oil. Press into the prepared pan and bake for 10 minutes."
+      },
+      {
+        "step": "Make the filling",
+        "text": "In another bowl, whisk together the eggs, erythritol, lemon juice, coconut flour, and lemon zest until smooth."
+      },
+      {
+        "step": "Bake the filling",
+        "text": "Pour the filling over the hot crust and bake for another 15-20 minutes, or until the filling is set."
+      },
+      {
+        "step": "Cool",
+        "text": "Let the bars cool completely in the pan."
+      },
+      {
+        "step": "Chill and cut",
+        "text": "Refrigerate for at least 2 hours before cutting into 16 bars."
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "slug": "meal-prep-berry-breakfast-bars",
+    "title": "Meal Prep Berry Breakfast Bars",
+    "description": "A perfect grab-and-go breakfast bar filled with mixed berries and providing 18g of protein.",
+    "protein": 18,
+    "calories": 230,
+    "carbs": 25,
+    "fat": 11,
+    "fiber": 6,
+    "sugar": 10,
+    "servingSize": "1 bar",
+    "yield": "12 bars",
+    "prepTime": "10",
+    "cookTime": "20",
+    "totalTime": "30",
+    "difficulty": "Easy",
+    "category": "Meal Prep",
+    "tags": [
+      "meal prep",
+      "breakfast",
+      "berries"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "meal-prep-berry-breakfast-bars.png",
+    "ingredients": [
+      "180g rolled oats",
+      "120g vanilla whey protein powder",
+      "2 large eggs",
+      "120g unsweetened applesauce",
+      "60g honey",
+      "150g mixed berries (fresh or frozen)"
+    ],
+    "instructions": [
+      {
+        "step": "Preheat oven and prepare pan",
+        "text": "Preheat your oven to 175\u00b0C (350\u00b0F) and line an 8x8 inch pan with parchment paper."
+      },
+      {
+        "step": "Mix ingredients",
+        "text": "In a large bowl, combine the rolled oats, protein powder, eggs, applesauce, and honey. Mix until well combined."
+      },
+      {
+        "step": "Fold in berries",
+        "text": "Gently fold in the mixed berries."
+      },
+      {
+        "step": "Bake",
+        "text": "Pour the mixture into the prepared pan and bake for 20 minutes, or until golden brown."
+      },
+      {
+        "step": "Cool",
+        "text": "Let the bars cool completely in the pan."
+      },
+      {
+        "step": "Cut and store",
+        "text": "Cut into 12 bars and store in an airtight container in the refrigerator."
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "slug": "no-bake-key-lime-pie-bars",
+    "title": "No-Bake Key Lime Pie Bars",
+    "description": "A taste of the tropics in a healthy, no-bake protein bar with 16g of protein.",
+    "protein": 16,
+    "calories": 240,
+    "carbs": 20,
+    "fat": 15,
+    "fiber": 4,
+    "sugar": 11,
+    "servingSize": "1 bar",
+    "yield": "12 bars",
+    "prepTime": "20",
+    "cookTime": "0",
+    "totalTime": "20",
+    "difficulty": "Easy",
+    "category": "No-Bake",
+    "tags": [
+      "no-bake",
+      "key lime",
+      "dessert"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "no-bake-key-lime-pie-bars.png",
+    "ingredients": [
+      "120g almond flour",
+      "60g vanilla whey protein powder",
+      "60g coconut oil, melted",
+      "240g cream cheese, softened",
+      "80g erythritol",
+      "60ml key lime juice",
+      "Zest of 2 key limes"
+    ],
+    "instructions": [
+      {
+        "step": "Make the crust",
+        "text": "In a bowl, combine the almond flour, protein powder, and melted coconut oil. Press into a lined 8x8 inch pan."
+      },
+      {
+        "step": "Make the filling",
+        "text": "In a separate bowl, beat the cream cheese, erythritol, key lime juice, and key lime zest until smooth and creamy."
+      },
+      {
+        "step": "Combine",
+        "text": "Spread the filling evenly over the crust."
+      },
+      {
+        "step": "Chill",
+        "text": "Refrigerate for at least 4 hours, or until the filling is firm."
+      },
+      {
+        "step": "Cut and serve",
+        "text": "Cut into 12 bars and serve chilled."
+      },
+      {
+        "step": "Garnish",
+        "text": "Garnish with extra lime zest or a dollop of whipped cream."
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "slug": "candy-bar-copycat-almond-mound",
+    "title": "Candy Bar Copycat: Almond Mound",
+    "description": "A simple, three-ingredient protein bar that tastes like an Almond Joy, but healthier and with 20g of protein.",
+    "protein": 20,
+    "calories": 280,
+    "carbs": 15,
+    "fat": 20,
+    "fiber": 7,
+    "sugar": 5,
+    "servingSize": "1 bar",
+    "yield": "10 bars",
+    "prepTime": "10",
+    "cookTime": "0",
+    "totalTime": "10",
+    "difficulty": "Easy",
+    "category": "Candy Bar Copycat",
+    "tags": [
+      "almond mound",
+      "candy bar",
+      "coconut"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "candy-bar-copycat-almond-mound.png",
+    "ingredients": [
+      "150g shredded coconut",
+      "120g vanilla whey protein powder",
+      "120g coconut cream",
+      "20 whole almonds",
+      "100g dark chocolate chips"
+    ],
+    "instructions": [
+      {
+        "step": "Mix the base",
+        "text": "In a bowl, combine the shredded coconut, protein powder, and coconut cream. Mix until a sticky dough forms."
+      },
+      {
+        "step": "Form bars",
+        "text": "Shape the dough into 10 bars and press two almonds onto the top of each bar."
+      },
+      {
+        "step": "Freeze",
+        "text": "Place the bars on a parchment-lined plate and freeze for 15 minutes."
+      },
+      {
+        "step": "Melt chocolate",
+        "text": "Melt the dark chocolate chips in the microwave."
+      },
+      {
+        "step": "Coat bars",
+        "text": "Dip each bar in the melted chocolate, ensuring it is fully coated."
+      },
+      {
+        "step": "Chill and serve",
+        "text": "Refrigerate until the chocolate is set, then serve."
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "slug": "vegan-peanut-butter-jelly-bars",
+    "title": "Vegan Peanut Butter & Jelly Protein Bars",
+    "description": "A nostalgic and delicious vegan protein bar with a classic peanut butter and jelly flavor, containing 17g of protein.",
+    "protein": 17,
+    "calories": 260,
+    "carbs": 25,
+    "fat": 14,
+    "fiber": 5,
+    "sugar": 12,
+    "servingSize": "1 bar",
+    "yield": "12 bars",
+    "prepTime": "15",
+    "cookTime": "0",
+    "totalTime": "15",
+    "difficulty": "Easy",
+    "category": "Vegan",
+    "tags": [
+      "vegan",
+      "peanut butter",
+      "jelly",
+      "no-bake"
+    ],
+    "methods": [
+      "plant-based"
+    ],
+    "image": "vegan-peanut-butter-jelly-bars.png",
+    "ingredients": [
+      "240g creamy peanut butter",
+      "120g vanilla plant-based protein powder",
+      "90g rolled oats",
+      "60g maple syrup",
+      "80g sugar-free raspberry jam"
+    ],
+    "instructions": [
+      {
+        "step": "Make the peanut butter layer",
+        "text": "In a bowl, combine the peanut butter, protein powder, rolled oats, and maple syrup. Mix until a dough forms."
+      },
+      {
+        "step": "Press into pan",
+        "text": "Press two-thirds of the dough into a lined 8x8 inch pan."
+      },
+      {
+        "step": "Add the jelly layer",
+        "text": "Spread the raspberry jam evenly over the peanut butter layer."
+      },
+      {
+        "step": "Add the topping",
+        "text": "Crumble the remaining dough over the jam layer."
+      },
+      {
+        "step": "Chill",
+        "text": "Refrigerate for at least 30 minutes."
+      },
+      {
+        "step": "Cut and enjoy",
+        "text": "Cut into 12 bars and enjoy the classic PB&J flavor."
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "slug": "nut-free-apple-cinnamon-bars",
+    "title": "Nut-Free Apple Cinnamon Protein Bars",
+    "description": "A warm and comforting nut-free protein bar with the classic flavors of apple and cinnamon, providing 16g of protein.",
+    "protein": 16,
+    "calories": 220,
+    "carbs": 26,
+    "fat": 9,
+    "fiber": 5,
+    "sugar": 12,
+    "servingSize": "1 bar",
+    "yield": "12 bars",
+    "prepTime": "10",
+    "cookTime": "20",
+    "totalTime": "30",
+    "difficulty": "Easy",
+    "category": "Nut-Free",
+    "tags": [
+      "nut-free",
+      "apple",
+      "cinnamon",
+      "breakfast"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "nut-free-apple-cinnamon-bars.png",
+    "ingredients": [
+      "180g rolled oats",
+      "120g vanilla whey protein powder",
+      "120g unsweetened applesauce",
+      "1 large egg",
+      "60g honey",
+      "1 teaspoon cinnamon",
+      "1 medium apple, finely chopped"
+    ],
+    "instructions": [
+      {
+        "step": "Preheat oven and prepare pan",
+        "text": "Preheat your oven to 175\u00b0C (350\u00b0F) and line an 8x8 inch pan with parchment paper."
+      },
+      {
+        "step": "Mix ingredients",
+        "text": "In a large bowl, combine the rolled oats, protein powder, applesauce, egg, honey, and cinnamon. Mix until well combined."
+      },
+      {
+        "step": "Fold in apple",
+        "text": "Gently fold in the chopped apple."
+      },
+      {
+        "step": "Bake",
+        "text": "Pour the mixture into the prepared pan and bake for 20 minutes."
+      },
+      {
+        "step": "Cool",
+        "text": "Let the bars cool completely in the pan."
+      },
+      {
+        "step": "Cut and store",
+        "text": "Cut into 12 bars and store in an airtight container."
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "slug": "high-protein-samoa-bars",
+    "title": "High-Protein Samoa Bars",
+    "description": "A healthier take on the classic Girl Scout cookie, these Samoa bars are packed with 20g of protein.",
+    "protein": 20,
+    "calories": 280,
+    "carbs": 22,
+    "fat": 18,
+    "fiber": 6,
+    "sugar": 12,
+    "servingSize": "1 bar",
+    "yield": "12 bars",
+    "prepTime": "20",
+    "cookTime": "10",
+    "totalTime": "30",
+    "difficulty": "Medium",
+    "category": "High-Protein",
+    "tags": [
+      "samoa",
+      "coconut",
+      "caramel",
+      "chocolate"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "high-protein-samoa-bars.png",
+    "ingredients": [
+      "120g almond flour",
+      "60g vanilla whey protein powder",
+      "60g coconut oil, melted",
+      "120g sugar-free caramel sauce",
+      "90g toasted shredded coconut",
+      "100g dark chocolate chips"
+    ],
+    "instructions": [
+      {
+        "step": "Make the shortbread base",
+        "text": "In a bowl, combine the almond flour, protein powder, and melted coconut oil. Press into a lined 8x8 inch pan and bake at 175\u00b0C (350\u00b0F) for 10 minutes."
+      },
+      {
+        "step": "Cool the base",
+        "text": "Let the base cool completely."
+      },
+      {
+        "step": "Make the topping",
+        "text": "In a bowl, combine the caramel sauce and toasted coconut."
+      },
+      {
+        "step": "Spread topping",
+        "text": "Spread the caramel coconut mixture over the cooled base."
+      },
+      {
+        "step": "Drizzle with chocolate",
+        "text": "Melt the dark chocolate chips and drizzle over the top."
+      },
+      {
+        "step": "Chill and cut",
+        "text": "Refrigerate for at least 1 hour before cutting into 12 bars."
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "slug": "meal-prep-banana-bread-bars",
+    "title": "Meal Prep Banana Bread Protein Bars",
+    "description": "The taste of banana bread in a convenient, protein-packed bar with 19g of protein.",
+    "protein": 19,
+    "calories": 240,
+    "carbs": 26,
+    "fat": 11,
+    "fiber": 5,
+    "sugar": 11,
+    "servingSize": "1 bar",
+    "yield": "12 bars",
+    "prepTime": "10",
+    "cookTime": "20",
+    "totalTime": "30",
+    "difficulty": "Easy",
+    "category": "Meal Prep",
+    "tags": [
+      "meal prep",
+      "banana bread",
+      "breakfast"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "meal-prep-banana-bread-bars.png",
+    "ingredients": [
+      "2 ripe bananas, mashed",
+      "120g vanilla whey protein powder",
+      "180g rolled oats",
+      "2 large eggs",
+      "60g honey",
+      "50g chopped walnuts"
+    ],
+    "instructions": [
+      {
+        "step": "Preheat oven and prepare pan",
+        "text": "Preheat your oven to 175\u00b0C (350\u00b0F) and line an 8x8 inch pan with parchment paper."
+      },
+      {
+        "step": "Mix ingredients",
+        "text": "In a large bowl, combine the mashed bananas, protein powder, rolled oats, eggs, and honey. Mix until well combined."
+      },
+      {
+        "step": "Stir in walnuts",
+        "text": "Stir in the chopped walnuts."
+      },
+      {
+        "step": "Bake",
+        "text": "Pour the mixture into the prepared pan and bake for 20 minutes."
+      },
+      {
+        "step": "Cool",
+        "text": "Let the bars cool completely in the pan."
+      },
+      {
+        "step": "Cut and store",
+        "text": "Cut into 12 bars and store in the refrigerator."
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "slug": "no-bake-birthday-cake-bars",
+    "title": "No-Bake Birthday Cake Protein Bars",
+    "description": "A festive and fun birthday cake flavored protein bar with 20g of protein, and no baking required.",
+    "protein": 20,
+    "calories": 250,
+    "carbs": 22,
+    "fat": 14,
+    "fiber": 3,
+    "sugar": 10,
+    "servingSize": "1 bar",
+    "yield": "12 bars",
+    "prepTime": "15",
+    "cookTime": "0",
+    "totalTime": "15",
+    "difficulty": "Easy",
+    "category": "No-Bake",
+    "tags": [
+      "no-bake",
+      "birthday cake",
+      "sprinkles"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "no-bake-birthday-cake-bars.png",
+    "ingredients": [
+      "240g cashew butter",
+      "120g vanilla whey protein powder",
+      "60g maple syrup",
+      "1 teaspoon vanilla extract",
+      "30g rainbow sprinkles"
+    ],
+    "instructions": [
+      {
+        "step": "Prepare the pan",
+        "text": "Line an 8x8 inch pan with parchment paper."
+      },
+      {
+        "step": "Mix ingredients",
+        "text": "In a large bowl, combine the cashew butter, protein powder, maple syrup, and vanilla extract. Mix until a dough forms."
+      },
+      {
+        "step": "Stir in sprinkles",
+        "text": "Gently fold in the rainbow sprinkles."
+      },
+      {
+        "step": "Press into pan",
+        "text": "Press the dough evenly into the prepared pan."
+      },
+      {
+        "step": "Chill",
+        "text": "Refrigerate for at least 30 minutes."
+      },
+      {
+        "step": "Cut and serve",
+        "text": "Cut into 12 bars and enjoy the celebration."
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "slug": "candy-bar-copycat-butterfinger",
+    "title": "Candy Bar Copycat: Protein Butterfinger",
+    "description": "A crunchy, peanut buttery Butterfinger copycat with a healthy twist and 18g of protein.",
+    "protein": 18,
+    "calories": 270,
+    "carbs": 24,
+    "fat": 16,
+    "fiber": 4,
+    "sugar": 13,
+    "servingSize": "1 bar",
+    "yield": "12 bars",
+    "prepTime": "20",
+    "cookTime": "5",
+    "totalTime": "25",
+    "difficulty": "Medium",
+    "category": "Candy Bar Copycat",
+    "tags": [
+      "butterfinger",
+      "candy bar",
+      "peanut butter"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "candy-bar-copycat-butterfinger.png",
+    "ingredients": [
+      "120g peanut butter",
+      "80g honey",
+      "60g vanilla whey protein powder",
+      "90g cornflakes, crushed",
+      "150g dark chocolate chips"
+    ],
+    "instructions": [
+      {
+        "step": "Make the filling",
+        "text": "In a saucepan, heat the peanut butter and honey over low heat until melted and smooth. Remove from heat and stir in the protein powder and crushed cornflakes."
+      },
+      {
+        "step": "Press into pan",
+        "text": "Press the mixture into a lined loaf pan."
+      },
+      {
+        "step": "Chill",
+        "text": "Refrigerate for 30 minutes to set."
+      },
+      {
+        "step": "Melt chocolate",
+        "text": "Melt the dark chocolate chips in the microwave."
+      },
+      {
+        "step": "Cut and coat",
+        "text": "Cut the chilled mixture into bars and dip each bar in the melted chocolate."
+      },
+      {
+        "step": "Set and serve",
+        "text": "Place on a parchment-lined plate and refrigerate until the chocolate is set."
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "slug": "vegan-double-chocolate-bars",
+    "title": "Vegan Double Chocolate Protein Bars",
+    "description": "Intensely chocolatey, vegan, and packed with 18g of plant-based protein.",
+    "protein": 18,
+    "calories": 260,
+    "carbs": 22,
+    "fat": 16,
+    "fiber": 7,
+    "sugar": 9,
+    "servingSize": "1 bar",
+    "yield": "12 bars",
+    "prepTime": "15",
+    "cookTime": "0",
+    "totalTime": "15",
+    "difficulty": "Easy",
+    "category": "Vegan",
+    "tags": [
+      "vegan",
+      "chocolate",
+      "no-bake"
+    ],
+    "methods": [
+      "plant-based"
+    ],
+    "image": "vegan-double-chocolate-bars.png",
+    "ingredients": [
+      "240g almond butter",
+      "120g chocolate plant-based protein powder",
+      "60g unsweetened cocoa powder",
+      "80g maple syrup",
+      "50g vegan chocolate chips"
+    ],
+    "instructions": [
+      {
+        "step": "Prepare the pan",
+        "text": "Line an 8x8 inch pan with parchment paper."
+      },
+      {
+        "step": "Mix ingredients",
+        "text": "In a large bowl, combine the almond butter, protein powder, cocoa powder, and maple syrup. Mix until a thick dough forms."
+      },
+      {
+        "step": "Stir in chocolate chips",
+        "text": "Fold in the vegan chocolate chips."
+      },
+      {
+        "step": "Press into pan",
+        "text": "Press the dough evenly into the prepared pan."
+      },
+      {
+        "step": "Chill",
+        "text": "Refrigerate for at least 30 minutes."
+      },
+      {
+        "step": "Cut and enjoy",
+        "text": "Cut into 12 bars and enjoy a rich, chocolatey treat."
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "slug": "nut-free-vanilla-funfetti-bars",
+    "title": "Nut-Free Vanilla Funfetti Protein Bars",
+    "description": "A fun and festive nut-free protein bar with a vanilla cake batter flavor and colorful sprinkles, containing 17g of protein.",
+    "protein": 17,
+    "calories": 230,
+    "carbs": 24,
+    "fat": 11,
+    "fiber": 4,
+    "sugar": 11,
+    "servingSize": "1 bar",
+    "yield": "12 bars",
+    "prepTime": "10",
+    "cookTime": "0",
+    "totalTime": "10",
+    "difficulty": "Easy",
+    "category": "Nut-Free",
+    "tags": [
+      "nut-free",
+      "vanilla",
+      "funfetti",
+      "no-bake"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "nut-free-vanilla-funfetti-bars.png",
+    "ingredients": [
+      "240g sunflower seed butter",
+      "120g vanilla whey protein powder",
+      "60g honey",
+      "1 teaspoon vanilla extract",
+      "30g rainbow sprinkles"
+    ],
+    "instructions": [
+      {
+        "step": "Prepare the pan",
+        "text": "Line an 8x8 inch pan with parchment paper."
+      },
+      {
+        "step": "Mix ingredients",
+        "text": "In a large bowl, combine the sunflower seed butter, protein powder, honey, and vanilla extract. Mix until a dough forms."
+      },
+      {
+        "step": "Fold in sprinkles",
+        "text": "Gently fold in the rainbow sprinkles."
+      },
+      {
+        "step": "Press into pan",
+        "text": "Press the dough evenly into the prepared pan."
+      },
+      {
+        "step": "Chill",
+        "text": "Refrigerate for at least 30 minutes."
+      },
+      {
+        "step": "Cut and serve",
+        "text": "Cut into 12 bars and enjoy the funfetti flavor."
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "slug": "high-protein-red-velvet-bars",
+    "title": "High-Protein Red Velvet Bars",
+    "description": "A decadent red velvet protein bar with a cream cheese frosting, offering 22g of protein.",
+    "protein": 22,
+    "calories": 270,
+    "carbs": 20,
+    "fat": 16,
+    "fiber": 5,
+    "sugar": 8,
+    "servingSize": "1 bar",
+    "yield": "12 bars",
+    "prepTime": "15",
+    "cookTime": "20",
+    "totalTime": "35",
+    "difficulty": "Medium",
+    "category": "High-Protein",
+    "tags": [
+      "high-protein",
+      "red velvet",
+      "dessert"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "high-protein-red-velvet-bars.png",
+    "ingredients": [
+      "1 can (425g) beets, pureed",
+      "120g vanilla whey protein powder",
+      "60g unsweetened cocoa powder",
+      "60g erythritol",
+      "2 large eggs",
+      "60g unsweetened applesauce",
+      "1 teaspoon vanilla extract",
+      "120g cream cheese, softened",
+      "30g powdered erythritol"
+    ],
+    "instructions": [
+      {
+        "step": "Preheat oven and prepare pan",
+        "text": "Preheat your oven to 175\u00b0C (350\u00b0F) and line an 8x8 inch pan with parchment paper."
+      },
+      {
+        "step": "Make the batter",
+        "text": "In a food processor, blend the pureed beets, protein powder, cocoa powder, erythritol, eggs, applesauce, and vanilla extract until smooth."
+      },
+      {
+        "step": "Bake",
+        "text": "Pour the batter into the prepared pan and bake for 18-20 minutes."
+      },
+      {
+        "step": "Cool",
+        "text": "Let the bars cool completely."
+      },
+      {
+        "step": "Make the frosting",
+        "text": "In a bowl, beat the cream cheese and powdered erythritol until smooth and creamy."
+      },
+      {
+        "step": "Frost and serve",
+        "text": "Spread the frosting over the cooled bars, cut into 12 pieces, and serve."
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "slug": "meal-prep-pumpkin-spice-bars",
+    "title": "Meal Prep Pumpkin Spice Protein Bars",
+    "description": "A seasonal favorite, these pumpkin spice protein bars are perfect for meal prep and contain 18g of protein.",
+    "protein": 18,
+    "calories": 230,
+    "carbs": 24,
+    "fat": 11,
+    "fiber": 6,
+    "sugar": 10,
+    "servingSize": "1 bar",
+    "yield": "12 bars",
+    "prepTime": "10",
+    "cookTime": "20",
+    "totalTime": "30",
+    "difficulty": "Easy",
+    "category": "Meal Prep",
+    "tags": [
+      "meal prep",
+      "pumpkin spice",
+      "seasonal"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "meal-prep-pumpkin-spice-bars.png",
+    "ingredients": [
+      "240g pumpkin puree",
+      "120g vanilla whey protein powder",
+      "180g rolled oats",
+      "2 large eggs",
+      "60g maple syrup",
+      "1 teaspoon pumpkin pie spice"
+    ],
+    "instructions": [
+      {
+        "step": "Preheat oven and prepare pan",
+        "text": "Preheat your oven to 175\u00b0C (350\u00b0F) and line an 8x8 inch pan with parchment paper."
+      },
+      {
+        "step": "Mix ingredients",
+        "text": "In a large bowl, combine the pumpkin puree, protein powder, rolled oats, eggs, maple syrup, and pumpkin pie spice. Mix until well combined."
+      },
+      {
+        "step": "Bake",
+        "text": "Pour the mixture into the prepared pan and bake for 20 minutes."
+      },
+      {
+        "step": "Cool",
+        "text": "Let the bars cool completely in the pan."
+      },
+      {
+        "step": "Cut and store",
+        "text": "Cut into 12 bars and store in the refrigerator."
+      },
+      {
+        "step": "Enjoy",
+        "text": "Enjoy a taste of fall in a healthy protein bar."
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "slug": "no-bake-matcha-coconut-bars",
+    "title": "No-Bake Matcha Coconut Protein Bars",
+    "description": "A vibrant and energizing no-bake protein bar with the earthy flavor of matcha and the sweetness of coconut, offering 17g of protein.",
+    "protein": 17,
+    "calories": 250,
+    "carbs": 20,
+    "fat": 16,
+    "fiber": 5,
+    "sugar": 9,
+    "servingSize": "1 bar",
+    "yield": "12 bars",
+    "prepTime": "15",
+    "cookTime": "0",
+    "totalTime": "15",
+    "difficulty": "Easy",
+    "category": "No-Bake",
+    "tags": [
+      "no-bake",
+      "matcha",
+      "coconut"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "no-bake-matcha-coconut-bars.png",
+    "ingredients": [
+      "240g cashew butter",
+      "120g vanilla whey protein powder",
+      "30g matcha powder",
+      "90g shredded coconut",
+      "80g maple syrup"
+    ],
+    "instructions": [
+      {
+        "step": "Prepare the pan",
+        "text": "Line an 8x8 inch pan with parchment paper."
+      },
+      {
+        "step": "Mix ingredients",
+        "text": "In a large bowl, combine the cashew butter, protein powder, matcha powder, shredded coconut, and maple syrup. Mix until a thick dough forms."
+      },
+      {
+        "step": "Press into pan",
+        "text": "Press the dough evenly into the prepared pan."
+      },
+      {
+        "step": "Chill",
+        "text": "Refrigerate for at least 1 hour to set."
+      },
+      {
+        "step": "Cut into bars",
+        "text": "Cut into 12 bars and store in the refrigerator."
+      },
+      {
+        "step": "Enjoy",
+        "text": "Enjoy a unique and healthy protein bar."
+      }
+    ]
+  }
+]

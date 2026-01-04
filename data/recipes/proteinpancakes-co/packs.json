@@ -1,0 +1,75 @@
+[
+  {
+    "slug": "weekend-brunch",
+    "title": "Weekend Brunch",
+    "description": "A collection of our most indulgent and impressive breakfast recipes, perfect for a leisurely weekend brunch.",
+    "icon": "\ud83e\udd5e",
+    "recipes": [
+      "belgian-protein-waffles",
+      "lemon-ricotta-protein-crepes",
+      "cinnamon-roll-protein-waffles",
+      "red-velvet-protein-pancakes",
+      "german-chocolate-protein-pancakes"
+    ]
+  },
+  {
+    "slug": "quick-and-easy",
+    "title": "Quick & Easy",
+    "description": "Short on time? These simple and speedy recipes will have you enjoying a high-protein breakfast in 15 minutes or less.",
+    "icon": "\u23f1\ufe0f",
+    "recipes": [
+      "classic-whey-protein-pancakes",
+      "chocolate-casein-pancakes",
+      "banana-bread-protein-pancakes",
+      "chocolate-chip-protein-pancakes"
+    ]
+  },
+  {
+    "slug": "savory-breakfast",
+    "title": "Savory Breakfast",
+    "description": "Not a fan of sweet breakfasts? This pack is for you! Enjoy a variety of savory pancakes and crepes.",
+    "icon": "\ud83c\udf73",
+    "recipes": [
+      "savory-herb-and-cheese-pancakes",
+      "savory-spinach-and-feta-protein-crepes"
+    ]
+  },
+  {
+    "slug": "waffle-lovers",
+    "title": "Waffle Lovers",
+    "description": "A collection of our best and most creative protein waffle recipes, from classic to decadent.",
+    "icon": "\ud83e\uddc7",
+    "recipes": [
+      "belgian-protein-waffles",
+      "cinnamon-roll-protein-waffles",
+      "pumpkin-spice-protein-waffles",
+      "double-chocolate-protein-waffles",
+      "carrot-cake-protein-waffles"
+    ]
+  },
+  {
+    "slug": "crepe-collection",
+    "title": "Crepe Collection",
+    "description": "Explore the delicate and delicious world of high-protein crepes with this collection of sweet and savory recipes.",
+    "icon": "\ud83c\uddeb\ud83c\uddf7",
+    "recipes": [
+      "lemon-ricotta-protein-crepes",
+      "matcha-green-tea-protein-crepes",
+      "savory-spinach-and-feta-protein-crepes",
+      "berries-and-cream-protein-crepes"
+    ]
+  },
+  {
+    "slug": "high-protein-stack",
+    "title": "High-Protein Stack",
+    "description": "Maximize your protein intake with this collection of our highest-protein pancake and waffle recipes.",
+    "icon": "\ud83d\udcaa",
+    "recipes": [
+      "savory-herb-and-cheese-pancakes",
+      "double-chocolate-protein-waffles",
+      "peanut-butter-cup-protein-pancakes",
+      "german-chocolate-protein-pancakes",
+      "churro-protein-waffles"
+    ]
+  }
+]

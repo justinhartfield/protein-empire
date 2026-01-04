@@ -1,0 +1,1422 @@
+[
+  {
+    "id": 1,
+    "slug": "classic-chocolate-protein-pudding",
+    "title": "Classic Chocolate Protein Pudding",
+    "description": "A rich and creamy chocolate pudding packed with 25g of protein. The perfect guilt-free dessert to satisfy your sweet tooth.",
+    "protein": 25,
+    "calories": 200,
+    "carbs": 15,
+    "fat": 5,
+    "fiber": 3,
+    "sugar": 6,
+    "servingSize": "1 serving",
+    "yield": "4 servings",
+    "prepTime": "5",
+    "cookTime": "0",
+    "totalTime": "5",
+    "difficulty": "Easy",
+    "category": "Pudding",
+    "tags": [
+      "chocolate",
+      "high-protein",
+      "dessert"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "classic-chocolate-protein-pudding.png",
+    "ingredients": [
+      "60g chocolate whey protein powder",
+      "240g plain Greek yogurt",
+      "60ml unsweetened almond milk",
+      "15g unsweetened cocoa powder",
+      "5g stevia or other sweetener to taste"
+    ],
+    "instructions": [
+      {
+        "step": "Combine Ingredients",
+        "text": "In a medium bowl, whisk together the protein powder, Greek yogurt, almond milk, cocoa powder, and sweetener."
+      },
+      {
+        "step": "Mix Until Smooth",
+        "text": "Continue whisking until the mixture is completely smooth and no lumps remain."
+      },
+      {
+        "step": "Chill",
+        "text": "Cover the bowl and refrigerate for at least 30 minutes to allow the pudding to set."
+      },
+      {
+        "step": "Serve",
+        "text": "Divide the pudding into four servings and enjoy."
+      },
+      {
+        "step": "Garnish",
+        "text": "Optionally, top with a dollop of whipped cream or some fresh berries before serving."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "vanilla-bean-protein-mousse",
+    "title": "Vanilla Bean Protein Mousse",
+    "description": "A light and airy vanilla bean mousse with 22g of protein. This elegant dessert is surprisingly easy to make.",
+    "protein": 22,
+    "calories": 180,
+    "carbs": 12,
+    "fat": 6,
+    "fiber": 1,
+    "sugar": 7,
+    "servingSize": "1 serving",
+    "yield": "4 servings",
+    "prepTime": "10",
+    "cookTime": "0",
+    "totalTime": "10",
+    "difficulty": "Easy",
+    "category": "Mousse",
+    "tags": [
+      "vanilla",
+      "high-protein",
+      "light"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "vanilla-bean-protein-mousse.png",
+    "ingredients": [
+      "60g vanilla whey protein powder",
+      "240g silken tofu, drained",
+      "60ml unsweetened almond milk",
+      "1 tsp vanilla bean paste",
+      "5g stevia or other sweetener to taste"
+    ],
+    "instructions": [
+      {
+        "step": "Blend Ingredients",
+        "text": "In a blender, combine the protein powder, silken tofu, almond milk, vanilla bean paste, and sweetener."
+      },
+      {
+        "step": "Blend Until Smooth",
+        "text": "Blend on high until the mixture is completely smooth and creamy."
+      },
+      {
+        "step": "Chill",
+        "text": "Pour the mousse into individual serving dishes and refrigerate for at least 1 hour to set."
+      },
+      {
+        "step": "Serve",
+        "text": "Serve chilled, garnished with fresh fruit or a sprinkle of cinnamon."
+      },
+      {
+        "step": "Storage",
+        "text": "Store any leftover mousse in an airtight container in the refrigerator for up to 3 days."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "chocolate-chia-protein-pudding",
+    "title": "Chocolate Chia Protein Pudding",
+    "description": "A decadent and healthy chocolate chia pudding with 20g of protein. Perfect for a quick breakfast or a healthy dessert.",
+    "protein": 20,
+    "calories": 250,
+    "carbs": 20,
+    "fat": 12,
+    "fiber": 10,
+    "sugar": 2,
+    "servingSize": "1 serving",
+    "yield": "2 servings",
+    "prepTime": "5",
+    "cookTime": "0",
+    "totalTime": "5",
+    "difficulty": "Easy",
+    "category": "Chia Pudding",
+    "tags": [
+      "chocolate",
+      "chia",
+      "high-protein",
+      "vegan"
+    ],
+    "methods": [
+      "plant-based"
+    ],
+    "image": "chocolate-chia-protein-pudding.png",
+    "ingredients": [
+      "60g chocolate plant-based protein powder",
+      "45g chia seeds",
+      "360ml unsweetened almond milk",
+      "15g unsweetened cocoa powder",
+      "5g maple syrup or other sweetener to taste"
+    ],
+    "instructions": [
+      {
+        "step": "Combine Dry Ingredients",
+        "text": "In a bowl or jar, whisk together the protein powder, chia seeds, and cocoa powder."
+      },
+      {
+        "step": "Add Wet Ingredients",
+        "text": "Pour in the almond milk and sweetener, and whisk until well combined."
+      },
+      {
+        "step": "Chill and Set",
+        "text": "Cover and refrigerate for at least 4 hours or overnight, until the pudding has thickened."
+      },
+      {
+        "step": "Stir and Serve",
+        "text": "Stir the pudding well before serving. If it's too thick, add a splash of almond milk."
+      },
+      {
+        "step": "Garnish",
+        "text": "Top with your favorite toppings, such as fresh berries, nuts, or seeds."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "strawberry-parfait-protein-pudding",
+    "title": "Strawberry Parfait Protein Pudding",
+    "description": "A beautiful and delicious strawberry parfait with layers of protein pudding and fresh strawberries. Contains 18g of protein.",
+    "protein": 18,
+    "calories": 190,
+    "carbs": 18,
+    "fat": 5,
+    "fiber": 4,
+    "sugar": 10,
+    "servingSize": "1 parfait",
+    "yield": "2 parfaits",
+    "prepTime": "15",
+    "cookTime": "0",
+    "totalTime": "15",
+    "difficulty": "Easy",
+    "category": "Parfait",
+    "tags": [
+      "strawberry",
+      "parfait",
+      "high-protein"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "strawberry-parfait-protein-pudding.png",
+    "ingredients": [
+      "60g vanilla whey protein powder",
+      "240g plain Greek yogurt",
+      "60ml unsweetened almond milk",
+      "150g fresh strawberries, sliced",
+      "30g granola"
+    ],
+    "instructions": [
+      {
+        "step": "Make the Pudding",
+        "text": "In a bowl, whisk together the protein powder, Greek yogurt, and almond milk until smooth."
+      },
+      {
+        "step": "Layer the Parfait",
+        "text": "In two glasses, create layers starting with a spoonful of the protein pudding."
+      },
+      {
+        "step": "Add Strawberries",
+        "text": "Add a layer of sliced strawberries on top of the pudding."
+      },
+      {
+        "step": "Repeat Layers",
+        "text": "Repeat the layers of pudding and strawberries until the glasses are full."
+      },
+      {
+        "step": "Top and Serve",
+        "text": "Top each parfait with a sprinkle of granola and a few more strawberry slices before serving."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "slug": "lemon-raspberry-protein-mousse",
+    "title": "Lemon Raspberry Protein Mousse",
+    "description": "A refreshing and tangy lemon raspberry mousse with 24g of protein. A light and fluffy dessert for any occasion.",
+    "protein": 24,
+    "calories": 210,
+    "carbs": 14,
+    "fat": 7,
+    "fiber": 3,
+    "sugar": 8,
+    "servingSize": "1 serving",
+    "yield": "4 servings",
+    "prepTime": "10",
+    "cookTime": "0",
+    "totalTime": "10",
+    "difficulty": "Easy",
+    "category": "Mousse",
+    "tags": [
+      "lemon",
+      "raspberry",
+      "high-protein"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "lemon-raspberry-protein-mousse.png",
+    "ingredients": [
+      "60g vanilla whey protein powder",
+      "240g cottage cheese",
+      "60ml unsweetened almond milk",
+      "30ml fresh lemon juice",
+      "1 tsp lemon zest",
+      "100g fresh raspberries"
+    ],
+    "instructions": [
+      {
+        "step": "Blend Ingredients",
+        "text": "In a blender, combine the protein powder, cottage cheese, almond milk, lemon juice, and lemon zest."
+      },
+      {
+        "step": "Blend Until Smooth",
+        "text": "Blend on high until the mixture is completely smooth and creamy."
+      },
+      {
+        "step": "Fold in Raspberries",
+        "text": "Gently fold in the fresh raspberries, leaving some for garnish."
+      },
+      {
+        "step": "Chill",
+        "text": "Pour the mousse into individual serving dishes and refrigerate for at least 1 hour to set."
+      },
+      {
+        "step": "Garnish and Serve",
+        "text": "Garnish with a few fresh raspberries and a sprinkle of lemon zest before serving."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "slug": "peanut-butter-cup-protein-pudding",
+    "title": "Peanut Butter Cup Protein Pudding",
+    "description": "A creamy and indulgent peanut butter cup protein pudding with 28g of protein. Tastes just like the candy!",
+    "protein": 28,
+    "calories": 280,
+    "carbs": 15,
+    "fat": 15,
+    "fiber": 4,
+    "sugar": 5,
+    "servingSize": "1 serving",
+    "yield": "2 servings",
+    "prepTime": "5",
+    "cookTime": "0",
+    "totalTime": "5",
+    "difficulty": "Easy",
+    "category": "Pudding",
+    "tags": [
+      "peanut butter",
+      "chocolate",
+      "high-protein"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "peanut-butter-cup-protein-pudding.png",
+    "ingredients": [
+      "60g chocolate whey protein powder",
+      "30g powdered peanut butter",
+      "240g plain Greek yogurt",
+      "60ml unsweetened almond milk",
+      "5g stevia or other sweetener to taste"
+    ],
+    "instructions": [
+      {
+        "step": "Combine Ingredients",
+        "text": "In a bowl, whisk together the protein powder, powdered peanut butter, Greek yogurt, almond milk, and sweetener."
+      },
+      {
+        "step": "Mix Until Smooth",
+        "text": "Continue whisking until the mixture is completely smooth and no lumps remain."
+      },
+      {
+        "step": "Chill",
+        "text": "Cover and refrigerate for at least 30 minutes to allow the pudding to set."
+      },
+      {
+        "step": "Serve",
+        "text": "Divide the pudding into two servings and enjoy."
+      },
+      {
+        "step": "Garnish",
+        "text": "Top with a sprinkle of chopped peanuts or a mini peanut butter cup."
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "slug": "matcha-chia-protein-pudding",
+    "title": "Matcha Chia Protein Pudding",
+    "description": "A vibrant and earthy matcha chia pudding with 18g of protein. A healthy and energizing start to your day.",
+    "protein": 18,
+    "calories": 220,
+    "carbs": 18,
+    "fat": 10,
+    "fiber": 9,
+    "sugar": 3,
+    "servingSize": "1 serving",
+    "yield": "2 servings",
+    "prepTime": "5",
+    "cookTime": "0",
+    "totalTime": "5",
+    "difficulty": "Easy",
+    "category": "Chia Pudding",
+    "tags": [
+      "matcha",
+      "chia",
+      "high-protein",
+      "vegan"
+    ],
+    "methods": [
+      "plant-based"
+    ],
+    "image": "matcha-chia-protein-pudding.png",
+    "ingredients": [
+      "45g vanilla plant-based protein powder",
+      "45g chia seeds",
+      "360ml unsweetened almond milk",
+      "5g matcha powder",
+      "5g maple syrup or other sweetener to taste"
+    ],
+    "instructions": [
+      {
+        "step": "Combine Dry Ingredients",
+        "text": "In a bowl or jar, whisk together the protein powder, chia seeds, and matcha powder."
+      },
+      {
+        "step": "Add Wet Ingredients",
+        "text": "Pour in the almond milk and sweetener, and whisk until well combined."
+      },
+      {
+        "step": "Chill and Set",
+        "text": "Cover and refrigerate for at least 4 hours or overnight, until the pudding has thickened."
+      },
+      {
+        "step": "Stir and Serve",
+        "text": "Stir the pudding well before serving. If it's too thick, add a splash of almond milk."
+      },
+      {
+        "step": "Garnish",
+        "text": "Top with fresh berries or a sprinkle of coconut flakes."
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "slug": "cookies-and-cream-protein-pudding",
+    "title": "Cookies and Cream Protein Pudding",
+    "description": "A delicious cookies and cream protein pudding with 26g of protein. A healthier take on a classic flavor.",
+    "protein": 26,
+    "calories": 230,
+    "carbs": 18,
+    "fat": 6,
+    "fiber": 2,
+    "sugar": 8,
+    "servingSize": "1 serving",
+    "yield": "2 servings",
+    "prepTime": "5",
+    "cookTime": "0",
+    "totalTime": "5",
+    "difficulty": "Easy",
+    "category": "Pudding",
+    "tags": [
+      "cookies and cream",
+      "high-protein"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "cookies-and-cream-protein-pudding.png",
+    "ingredients": [
+      "60g cookies and cream whey protein powder",
+      "240g plain Greek yogurt",
+      "60ml unsweetened almond milk",
+      "2 chocolate sandwich cookies, crushed"
+    ],
+    "instructions": [
+      {
+        "step": "Combine Ingredients",
+        "text": "In a bowl, whisk together the protein powder, Greek yogurt, and almond milk until smooth."
+      },
+      {
+        "step": "Fold in Cookies",
+        "text": "Gently fold in the crushed chocolate sandwich cookies, reserving some for topping."
+      },
+      {
+        "step": "Chill",
+        "text": "Cover and refrigerate for at least 30 minutes to allow the pudding to set."
+      },
+      {
+        "step": "Serve",
+        "text": "Divide the pudding into two servings."
+      },
+      {
+        "step": "Garnish",
+        "text": "Top with the remaining crushed cookies before serving."
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "slug": "blueberry-parfait-protein-pudding",
+    "title": "Blueberry Parfait Protein Pudding",
+    "description": "A delightful blueberry parfait with layers of creamy protein pudding and juicy blueberries. Contains 20g of protein.",
+    "protein": 20,
+    "calories": 200,
+    "carbs": 20,
+    "fat": 5,
+    "fiber": 4,
+    "sugar": 12,
+    "servingSize": "1 parfait",
+    "yield": "2 parfaits",
+    "prepTime": "15",
+    "cookTime": "0",
+    "totalTime": "15",
+    "difficulty": "Easy",
+    "category": "Parfait",
+    "tags": [
+      "blueberry",
+      "parfait",
+      "high-protein"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "blueberry-parfait-protein-pudding.png",
+    "ingredients": [
+      "60g vanilla whey protein powder",
+      "240g plain Greek yogurt",
+      "60ml unsweetened almond milk",
+      "150g fresh blueberries",
+      "30g crushed almonds"
+    ],
+    "instructions": [
+      {
+        "step": "Make the Pudding",
+        "text": "In a bowl, whisk together the protein powder, Greek yogurt, and almond milk until smooth."
+      },
+      {
+        "step": "Layer the Parfait",
+        "text": "In two glasses, create layers starting with a spoonful of the protein pudding."
+      },
+      {
+        "step": "Add Blueberries",
+        "text": "Add a layer of fresh blueberries on top of the pudding."
+      },
+      {
+        "step": "Repeat Layers",
+        "text": "Repeat the layers of pudding and blueberries until the glasses are full."
+      },
+      {
+        "step": "Top and Serve",
+        "text": "Top each parfait with a sprinkle of crushed almonds and a few more blueberries before serving."
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "slug": "chocolate-avocado-protein-mousse",
+    "title": "Chocolate Avocado Protein Mousse",
+    "description": "A surprisingly rich and creamy chocolate mousse made with avocado and 18g of protein. A healthy and decadent treat.",
+    "protein": 18,
+    "calories": 280,
+    "carbs": 20,
+    "fat": 18,
+    "fiber": 10,
+    "sugar": 5,
+    "servingSize": "1 serving",
+    "yield": "2 servings",
+    "prepTime": "10",
+    "cookTime": "0",
+    "totalTime": "10",
+    "difficulty": "Easy",
+    "category": "Mousse",
+    "tags": [
+      "chocolate",
+      "avocado",
+      "high-protein",
+      "vegan"
+    ],
+    "methods": [
+      "plant-based"
+    ],
+    "image": "chocolate-avocado-protein-mousse.png",
+    "ingredients": [
+      "45g chocolate plant-based protein powder",
+      "1 ripe avocado",
+      "60ml unsweetened almond milk",
+      "30g unsweetened cocoa powder",
+      "10g maple syrup or other sweetener to taste"
+    ],
+    "instructions": [
+      {
+        "step": "Blend Ingredients",
+        "text": "In a blender, combine the protein powder, avocado, almond milk, cocoa powder, and sweetener."
+      },
+      {
+        "step": "Blend Until Smooth",
+        "text": "Blend on high until the mixture is completely smooth and creamy."
+      },
+      {
+        "step": "Chill",
+        "text": "Pour the mousse into individual serving dishes and refrigerate for at least 1 hour to set."
+      },
+      {
+        "step": "Serve",
+        "text": "Serve chilled, garnished with chocolate shavings or fresh berries."
+      },
+      {
+        "step": "Storage",
+        "text": "Store any leftover mousse in an airtight container in the refrigerator for up to 2 days."
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "slug": "quick-vanilla-protein-pudding",
+    "title": "Quick Vanilla Protein Pudding",
+    "description": "A simple and quick vanilla protein pudding with 25g of protein. Ready in just 5 minutes!",
+    "protein": 25,
+    "calories": 180,
+    "carbs": 12,
+    "fat": 4,
+    "fiber": 1,
+    "sugar": 7,
+    "servingSize": "1 serving",
+    "yield": "2 servings",
+    "prepTime": "5",
+    "cookTime": "0",
+    "totalTime": "5",
+    "difficulty": "Easy",
+    "category": "Pudding",
+    "tags": [
+      "vanilla",
+      "quick",
+      "high-protein"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "quick-vanilla-protein-pudding.png",
+    "ingredients": [
+      "60g vanilla whey protein powder",
+      "240g plain Greek yogurt",
+      "60ml unsweetened almond milk",
+      "1 tsp vanilla extract",
+      "5g stevia or other sweetener to taste"
+    ],
+    "instructions": [
+      {
+        "step": "Combine Ingredients",
+        "text": "In a bowl, whisk together the protein powder, Greek yogurt, almond milk, vanilla extract, and sweetener."
+      },
+      {
+        "step": "Mix Until Smooth",
+        "text": "Continue whisking until the mixture is completely smooth and no lumps remain."
+      },
+      {
+        "step": "Serve Immediately",
+        "text": "This pudding can be served immediately, or chilled for a thicker consistency."
+      },
+      {
+        "step": "Garnish",
+        "text": "Top with your favorite fruit or a sprinkle of cinnamon."
+      },
+      {
+        "step": "Enjoy",
+        "text": "Enjoy this quick and easy protein-packed snack anytime."
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "slug": "mango-chia-protein-pudding",
+    "title": "Mango Chia Protein Pudding",
+    "description": "A tropical and refreshing mango chia pudding with 16g of protein. A taste of summer in a jar.",
+    "protein": 16,
+    "calories": 240,
+    "carbs": 25,
+    "fat": 10,
+    "fiber": 8,
+    "sugar": 15,
+    "servingSize": "1 serving",
+    "yield": "2 servings",
+    "prepTime": "10",
+    "cookTime": "0",
+    "totalTime": "10",
+    "difficulty": "Easy",
+    "category": "Chia Pudding",
+    "tags": [
+      "mango",
+      "chia",
+      "high-protein",
+      "vegan"
+    ],
+    "methods": [
+      "plant-based"
+    ],
+    "image": "mango-chia-protein-pudding.png",
+    "ingredients": [
+      "45g vanilla plant-based protein powder",
+      "45g chia seeds",
+      "240ml coconut milk",
+      "150g ripe mango, pureed"
+    ],
+    "instructions": [
+      {
+        "step": "Combine Ingredients",
+        "text": "In a bowl or jar, whisk together the protein powder, chia seeds, and coconut milk."
+      },
+      {
+        "step": "Add Mango",
+        "text": "Stir in the pureed mango until well combined."
+      },
+      {
+        "step": "Chill and Set",
+        "text": "Cover and refrigerate for at least 4 hours or overnight, until the pudding has thickened."
+      },
+      {
+        "step": "Stir and Serve",
+        "text": "Stir the pudding well before serving. If it's too thick, add a splash of coconut milk."
+      },
+      {
+        "step": "Garnish",
+        "text": "Top with fresh mango chunks and a sprinkle of toasted coconut."
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "slug": "caramel-protein-pudding",
+    "title": "Caramel Protein Pudding",
+    "description": "A sweet and creamy caramel protein pudding with 24g of protein. A decadent dessert without the guilt.",
+    "protein": 24,
+    "calories": 220,
+    "carbs": 16,
+    "fat": 6,
+    "fiber": 1,
+    "sugar": 9,
+    "servingSize": "1 serving",
+    "yield": "2 servings",
+    "prepTime": "5",
+    "cookTime": "0",
+    "totalTime": "5",
+    "difficulty": "Easy",
+    "category": "Pudding",
+    "tags": [
+      "caramel",
+      "high-protein"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "caramel-protein-pudding.png",
+    "ingredients": [
+      "60g salted caramel whey protein powder",
+      "240g plain Greek yogurt",
+      "60ml unsweetened almond milk",
+      "5g sugar-free caramel syrup"
+    ],
+    "instructions": [
+      {
+        "step": "Combine Ingredients",
+        "text": "In a bowl, whisk together the protein powder, Greek yogurt, almond milk, and caramel syrup."
+      },
+      {
+        "step": "Mix Until Smooth",
+        "text": "Continue whisking until the mixture is completely smooth and no lumps remain."
+      },
+      {
+        "step": "Chill",
+        "text": "Cover and refrigerate for at least 30 minutes to allow the pudding to set."
+      },
+      {
+        "step": "Serve",
+        "text": "Divide the pudding into two servings."
+      },
+      {
+        "step": "Garnish",
+        "text": "Drizzle with a little extra caramel syrup before serving."
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "slug": "raspberry-chia-protein-pudding",
+    "title": "Raspberry Chia Protein Pudding",
+    "description": "A vibrant and delicious raspberry chia pudding with 17g of protein. A perfect make-ahead breakfast.",
+    "protein": 17,
+    "calories": 230,
+    "carbs": 22,
+    "fat": 10,
+    "fiber": 10,
+    "sugar": 8,
+    "servingSize": "1 serving",
+    "yield": "2 servings",
+    "prepTime": "10",
+    "cookTime": "0",
+    "totalTime": "10",
+    "difficulty": "Easy",
+    "category": "Chia Pudding",
+    "tags": [
+      "raspberry",
+      "chia",
+      "high-protein",
+      "vegan"
+    ],
+    "methods": [
+      "plant-based"
+    ],
+    "image": "raspberry-chia-protein-pudding.png",
+    "ingredients": [
+      "45g vanilla plant-based protein powder",
+      "45g chia seeds",
+      "360ml unsweetened almond milk",
+      "100g fresh or frozen raspberries, mashed"
+    ],
+    "instructions": [
+      {
+        "step": "Combine Ingredients",
+        "text": "In a bowl or jar, whisk together the protein powder, chia seeds, and almond milk."
+      },
+      {
+        "step": "Add Raspberries",
+        "text": "Stir in the mashed raspberries until well combined."
+      },
+      {
+        "step": "Chill and Set",
+        "text": "Cover and refrigerate for at least 4 hours or overnight, until the pudding has thickened."
+      },
+      {
+        "step": "Stir and Serve",
+        "text": "Stir the pudding well before serving."
+      },
+      {
+        "step": "Garnish",
+        "text": "Top with a few whole raspberries and a sprinkle of seeds."
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "slug": "banana-cream-protein-pudding",
+    "title": "Banana Cream Protein Pudding",
+    "description": "A creamy and satisfying banana cream protein pudding with 22g of protein. A healthy twist on a classic dessert.",
+    "protein": 22,
+    "calories": 210,
+    "carbs": 20,
+    "fat": 5,
+    "fiber": 3,
+    "sugar": 12,
+    "servingSize": "1 serving",
+    "yield": "2 servings",
+    "prepTime": "5",
+    "cookTime": "0",
+    "totalTime": "5",
+    "difficulty": "Easy",
+    "category": "Pudding",
+    "tags": [
+      "banana",
+      "high-protein"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "banana-cream-protein-pudding.png",
+    "ingredients": [
+      "60g vanilla whey protein powder",
+      "1 ripe banana, mashed",
+      "180g plain Greek yogurt",
+      "60ml unsweetened almond milk"
+    ],
+    "instructions": [
+      {
+        "step": "Combine Ingredients",
+        "text": "In a bowl, whisk together the protein powder, mashed banana, Greek yogurt, and almond milk."
+      },
+      {
+        "step": "Mix Until Smooth",
+        "text": "Continue whisking until the mixture is completely smooth and no lumps remain."
+      },
+      {
+        "step": "Chill",
+        "text": "Cover and refrigerate for at least 30 minutes to allow the pudding to set."
+      },
+      {
+        "step": "Serve",
+        "text": "Divide the pudding into two servings."
+      },
+      {
+        "step": "Garnish",
+        "text": "Top with a few banana slices and a sprinkle of cinnamon."
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "slug": "coffee-protein-mousse",
+    "title": "Coffee Protein Mousse",
+    "description": "A rich and energizing coffee protein mousse with 23g of protein. The perfect afternoon pick-me-up.",
+    "protein": 23,
+    "calories": 190,
+    "carbs": 10,
+    "fat": 7,
+    "fiber": 1,
+    "sugar": 5,
+    "servingSize": "1 serving",
+    "yield": "2 servings",
+    "prepTime": "10",
+    "cookTime": "0",
+    "totalTime": "10",
+    "difficulty": "Easy",
+    "category": "Mousse",
+    "tags": [
+      "coffee",
+      "high-protein"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "coffee-protein-mousse.png",
+    "ingredients": [
+      "60g vanilla or chocolate whey protein powder",
+      "240g silken tofu, drained",
+      "60ml strong brewed coffee, chilled",
+      "5g stevia or other sweetener to taste"
+    ],
+    "instructions": [
+      {
+        "step": "Blend Ingredients",
+        "text": "In a blender, combine the protein powder, silken tofu, chilled coffee, and sweetener."
+      },
+      {
+        "step": "Blend Until Smooth",
+        "text": "Blend on high until the mixture is completely smooth and creamy."
+      },
+      {
+        "step": "Chill",
+        "text": "Pour the mousse into individual serving dishes and refrigerate for at least 1 hour to set."
+      },
+      {
+        "step": "Serve",
+        "text": "Serve chilled, garnished with a sprinkle of cocoa powder or a coffee bean."
+      },
+      {
+        "step": "Storage",
+        "text": "Store any leftover mousse in an airtight container in the refrigerator for up to 3 days."
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "slug": "peach-parfait-protein-pudding",
+    "title": "Peach Parfait Protein Pudding",
+    "description": "A summery peach parfait with layers of protein pudding and fresh peaches. Contains 19g of protein.",
+    "protein": 19,
+    "calories": 200,
+    "carbs": 22,
+    "fat": 4,
+    "fiber": 3,
+    "sugar": 15,
+    "servingSize": "1 parfait",
+    "yield": "2 parfaits",
+    "prepTime": "15",
+    "cookTime": "0",
+    "totalTime": "15",
+    "difficulty": "Easy",
+    "category": "Parfait",
+    "tags": [
+      "peach",
+      "parfait",
+      "high-protein"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "peach-parfait-protein-pudding.png",
+    "ingredients": [
+      "60g vanilla whey protein powder",
+      "240g plain Greek yogurt",
+      "60ml unsweetened almond milk",
+      "1 ripe peach, diced",
+      "30g granola"
+    ],
+    "instructions": [
+      {
+        "step": "Make the Pudding",
+        "text": "In a bowl, whisk together the protein powder, Greek yogurt, and almond milk until smooth."
+      },
+      {
+        "step": "Layer the Parfait",
+        "text": "In two glasses, create layers starting with a spoonful of the protein pudding."
+      },
+      {
+        "step": "Add Peaches",
+        "text": "Add a layer of diced peaches on top of the pudding."
+      },
+      {
+        "step": "Repeat Layers",
+        "text": "Repeat the layers of pudding and peaches until the glasses are full."
+      },
+      {
+        "step": "Top and Serve",
+        "text": "Top each parfait with a sprinkle of granola and a few more peach slices before serving."
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "slug": "mint-chocolate-protein-pudding",
+    "title": "Mint Chocolate Protein Pudding",
+    "description": "A refreshing and decadent mint chocolate protein pudding with 25g of protein. Tastes like a thin mint cookie!",
+    "protein": 25,
+    "calories": 210,
+    "carbs": 15,
+    "fat": 6,
+    "fiber": 3,
+    "sugar": 6,
+    "servingSize": "1 serving",
+    "yield": "2 servings",
+    "prepTime": "5",
+    "cookTime": "0",
+    "totalTime": "5",
+    "difficulty": "Easy",
+    "category": "Pudding",
+    "tags": [
+      "mint",
+      "chocolate",
+      "high-protein"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "mint-chocolate-protein-pudding.png",
+    "ingredients": [
+      "60g chocolate whey protein powder",
+      "240g plain Greek yogurt",
+      "60ml unsweetened almond milk",
+      "1/4 tsp peppermint extract",
+      "5g stevia or other sweetener to taste"
+    ],
+    "instructions": [
+      {
+        "step": "Combine Ingredients",
+        "text": "In a bowl, whisk together the protein powder, Greek yogurt, almond milk, peppermint extract, and sweetener."
+      },
+      {
+        "step": "Mix Until Smooth",
+        "text": "Continue whisking until the mixture is completely smooth and no lumps remain."
+      },
+      {
+        "step": "Chill",
+        "text": "Cover and refrigerate for at least 30 minutes to allow the pudding to set."
+      },
+      {
+        "step": "Serve",
+        "text": "Divide the pudding into two servings."
+      },
+      {
+        "step": "Garnish",
+        "text": "Top with a sprinkle of chocolate chips or a fresh mint leaf."
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "slug": "coconut-cream-protein-pudding",
+    "title": "Coconut Cream Protein Pudding",
+    "description": "A tropical and creamy coconut cream protein pudding with 20g of protein. A taste of the islands in a bowl.",
+    "protein": 20,
+    "calories": 250,
+    "carbs": 15,
+    "fat": 15,
+    "fiber": 5,
+    "sugar": 5,
+    "servingSize": "1 serving",
+    "yield": "2 servings",
+    "prepTime": "5",
+    "cookTime": "0",
+    "totalTime": "5",
+    "difficulty": "Easy",
+    "category": "Pudding",
+    "tags": [
+      "coconut",
+      "high-protein",
+      "vegan"
+    ],
+    "methods": [
+      "plant-based"
+    ],
+    "image": "coconut-cream-protein-pudding.png",
+    "ingredients": [
+      "60g vanilla plant-based protein powder",
+      "240ml full-fat coconut milk",
+      "15g shredded coconut",
+      "5g stevia or other sweetener to taste"
+    ],
+    "instructions": [
+      {
+        "step": "Combine Ingredients",
+        "text": "In a bowl, whisk together the protein powder, coconut milk, shredded coconut, and sweetener."
+      },
+      {
+        "step": "Mix Until Smooth",
+        "text": "Continue whisking until the mixture is completely smooth and no lumps remain."
+      },
+      {
+        "step": "Chill",
+        "text": "Cover and refrigerate for at least 1 hour to allow the pudding to thicken."
+      },
+      {
+        "step": "Serve",
+        "text": "Divide the pudding into two servings."
+      },
+      {
+        "step": "Garnish",
+        "text": "Top with toasted coconut flakes and fresh fruit."
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "slug": "pumpkin-spice-protein-pudding",
+    "title": "Pumpkin Spice Protein Pudding",
+    "description": "A festive and flavorful pumpkin spice protein pudding with 22g of protein. Perfect for the fall season.",
+    "protein": 22,
+    "calories": 200,
+    "carbs": 18,
+    "fat": 5,
+    "fiber": 4,
+    "sugar": 8,
+    "servingSize": "1 serving",
+    "yield": "2 servings",
+    "prepTime": "5",
+    "cookTime": "0",
+    "totalTime": "5",
+    "difficulty": "Easy",
+    "category": "Pudding",
+    "tags": [
+      "pumpkin",
+      "spice",
+      "high-protein"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "pumpkin-spice-protein-pudding.png",
+    "ingredients": [
+      "60g vanilla whey protein powder",
+      "120g pumpkin puree",
+      "180g plain Greek yogurt",
+      "1 tsp pumpkin pie spice",
+      "5g stevia or other sweetener to taste"
+    ],
+    "instructions": [
+      {
+        "step": "Combine Ingredients",
+        "text": "In a bowl, whisk together the protein powder, pumpkin puree, Greek yogurt, pumpkin pie spice, and sweetener."
+      },
+      {
+        "step": "Mix Until Smooth",
+        "text": "Continue whisking until the mixture is completely smooth and no lumps remain."
+      },
+      {
+        "step": "Chill",
+        "text": "Cover and refrigerate for at least 30 minutes to allow the pudding to set."
+      },
+      {
+        "step": "Serve",
+        "text": "Divide the pudding into two servings."
+      },
+      {
+        "step": "Garnish",
+        "text": "Top with a sprinkle of cinnamon or a dollop of whipped cream."
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "slug": "double-chocolate-protein-mousse",
+    "title": "Double Chocolate Protein Mousse",
+    "description": "An intensely rich and chocolatey mousse with 26g of protein. A chocolate lover's dream come true.",
+    "protein": 26,
+    "calories": 250,
+    "carbs": 18,
+    "fat": 10,
+    "fiber": 5,
+    "sugar": 6,
+    "servingSize": "1 serving",
+    "yield": "2 servings",
+    "prepTime": "10",
+    "cookTime": "0",
+    "totalTime": "10",
+    "difficulty": "Easy",
+    "category": "Mousse",
+    "tags": [
+      "chocolate",
+      "high-protein"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "double-chocolate-protein-mousse.png",
+    "ingredients": [
+      "60g chocolate whey protein powder",
+      "240g silken tofu, drained",
+      "30g unsweetened cocoa powder",
+      "60ml unsweetened almond milk",
+      "5g stevia or other sweetener to taste"
+    ],
+    "instructions": [
+      {
+        "step": "Blend Ingredients",
+        "text": "In a blender, combine the protein powder, silken tofu, cocoa powder, almond milk, and sweetener."
+      },
+      {
+        "step": "Blend Until Smooth",
+        "text": "Blend on high until the mixture is completely smooth and creamy."
+      },
+      {
+        "step": "Chill",
+        "text": "Pour the mousse into individual serving dishes and refrigerate for at least 1 hour to set."
+      },
+      {
+        "step": "Serve",
+        "text": "Serve chilled, garnished with chocolate shavings or fresh berries."
+      },
+      {
+        "step": "Storage",
+        "text": "Store any leftover mousse in an airtight container in the refrigerator for up to 3 days."
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "slug": "mixed-berry-chia-protein-pudding",
+    "title": "Mixed Berry Chia Protein Pudding",
+    "description": "A colorful and antioxidant-rich mixed berry chia pudding with 18g of protein. A healthy and delicious breakfast or snack.",
+    "protein": 18,
+    "calories": 240,
+    "carbs": 24,
+    "fat": 10,
+    "fiber": 11,
+    "sugar": 10,
+    "servingSize": "1 serving",
+    "yield": "2 servings",
+    "prepTime": "10",
+    "cookTime": "0",
+    "totalTime": "10",
+    "difficulty": "Easy",
+    "category": "Chia Pudding",
+    "tags": [
+      "berry",
+      "chia",
+      "high-protein",
+      "vegan"
+    ],
+    "methods": [
+      "plant-based"
+    ],
+    "image": "mixed-berry-chia-protein-pudding.png",
+    "ingredients": [
+      "45g vanilla plant-based protein powder",
+      "45g chia seeds",
+      "360ml unsweetened almond milk",
+      "150g mixed berries (fresh or frozen)"
+    ],
+    "instructions": [
+      {
+        "step": "Combine Ingredients",
+        "text": "In a bowl or jar, whisk together the protein powder, chia seeds, and almond milk."
+      },
+      {
+        "step": "Add Berries",
+        "text": "Gently stir in the mixed berries."
+      },
+      {
+        "step": "Chill and Set",
+        "text": "Cover and refrigerate for at least 4 hours or overnight, until the pudding has thickened."
+      },
+      {
+        "step": "Stir and Serve",
+        "text": "Stir the pudding well before serving."
+      },
+      {
+        "step": "Garnish",
+        "text": "Top with extra berries and a sprinkle of granola."
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "slug": "key-lime-protein-pudding",
+    "title": "Key Lime Protein Pudding",
+    "description": "A tangy and refreshing key lime protein pudding with 23g of protein. A taste of the tropics in every bite.",
+    "protein": 23,
+    "calories": 200,
+    "carbs": 15,
+    "fat": 6,
+    "fiber": 1,
+    "sugar": 8,
+    "servingSize": "1 serving",
+    "yield": "2 servings",
+    "prepTime": "5",
+    "cookTime": "0",
+    "totalTime": "5",
+    "difficulty": "Easy",
+    "category": "Pudding",
+    "tags": [
+      "key lime",
+      "high-protein"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "key-lime-protein-pudding.png",
+    "ingredients": [
+      "60g vanilla whey protein powder",
+      "240g plain Greek yogurt",
+      "60ml unsweetened almond milk",
+      "30ml key lime juice",
+      "1 tsp lime zest",
+      "5g stevia or other sweetener to taste"
+    ],
+    "instructions": [
+      {
+        "step": "Combine Ingredients",
+        "text": "In a bowl, whisk together the protein powder, Greek yogurt, almond milk, key lime juice, lime zest, and sweetener."
+      },
+      {
+        "step": "Mix Until Smooth",
+        "text": "Continue whisking until the mixture is completely smooth and no lumps remain."
+      },
+      {
+        "step": "Chill",
+        "text": "Cover and refrigerate for at least 30 minutes to allow the pudding to set."
+      },
+      {
+        "step": "Serve",
+        "text": "Divide the pudding into two servings."
+      },
+      {
+        "step": "Garnish",
+        "text": "Top with a sprinkle of lime zest and a dollop of whipped cream."
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "slug": "chocolate-hazelnut-protein-pudding",
+    "title": "Chocolate Hazelnut Protein Pudding",
+    "description": "A rich and nutty chocolate hazelnut protein pudding with 27g of protein. A healthy version of your favorite spread.",
+    "protein": 27,
+    "calories": 260,
+    "carbs": 16,
+    "fat": 12,
+    "fiber": 4,
+    "sugar": 7,
+    "servingSize": "1 serving",
+    "yield": "2 servings",
+    "prepTime": "5",
+    "cookTime": "0",
+    "totalTime": "5",
+    "difficulty": "Easy",
+    "category": "Pudding",
+    "tags": [
+      "chocolate",
+      "hazelnut",
+      "high-protein"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "chocolate-hazelnut-protein-pudding.png",
+    "ingredients": [
+      "60g chocolate whey protein powder",
+      "240g plain Greek yogurt",
+      "60ml unsweetened almond milk",
+      "15g hazelnut butter",
+      "5g stevia or other sweetener to taste"
+    ],
+    "instructions": [
+      {
+        "step": "Combine Ingredients",
+        "text": "In a bowl, whisk together the protein powder, Greek yogurt, almond milk, hazelnut butter, and sweetener."
+      },
+      {
+        "step": "Mix Until Smooth",
+        "text": "Continue whisking until the mixture is completely smooth and no lumps remain."
+      },
+      {
+        "step": "Chill",
+        "text": "Cover and refrigerate for at least 30 minutes to allow the pudding to set."
+      },
+      {
+        "step": "Serve",
+        "text": "Divide the pudding into two servings."
+      },
+      {
+        "step": "Garnish",
+        "text": "Top with chopped hazelnuts and a drizzle of melted chocolate."
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "slug": "black-forest-parfait-protein-pudding",
+    "title": "Black Forest Parfait Protein Pudding",
+    "description": "A decadent black forest parfait with layers of chocolate protein pudding, cherries, and whipped cream. Contains 22g of protein.",
+    "protein": 22,
+    "calories": 240,
+    "carbs": 25,
+    "fat": 7,
+    "fiber": 4,
+    "sugar": 15,
+    "servingSize": "1 parfait",
+    "yield": "2 parfaits",
+    "prepTime": "15",
+    "cookTime": "0",
+    "totalTime": "15",
+    "difficulty": "Easy",
+    "category": "Parfait",
+    "tags": [
+      "chocolate",
+      "cherry",
+      "parfait",
+      "high-protein"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "black-forest-parfait-protein-pudding.png",
+    "ingredients": [
+      "60g chocolate whey protein powder",
+      "240g plain Greek yogurt",
+      "60ml unsweetened almond milk",
+      "150g pitted cherries, halved",
+      "30g whipped cream"
+    ],
+    "instructions": [
+      {
+        "step": "Make the Pudding",
+        "text": "In a bowl, whisk together the protein powder, Greek yogurt, and almond milk until smooth."
+      },
+      {
+        "step": "Layer the Parfait",
+        "text": "In two glasses, create layers starting with a spoonful of the chocolate protein pudding."
+      },
+      {
+        "step": "Add Cherries",
+        "text": "Add a layer of halved cherries on top of the pudding."
+      },
+      {
+        "step": "Repeat Layers",
+        "text": "Repeat the layers of pudding and cherries until the glasses are full."
+      },
+      {
+        "step": "Top and Serve",
+        "text": "Top each parfait with a dollop of whipped cream and a few more cherries before serving."
+      }
+    ]
+  }
+]

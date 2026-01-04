@@ -1,0 +1,80 @@
+[
+  {
+    "slug": "banana-bread-pack",
+    "title": "Banana Bread Pack",
+    "description": "A collection of our best protein-packed banana bread recipes.",
+    "icon": "🍌",
+    "recipes": [
+      "protein-banana-bread",
+      "high-protein-banana-bread",
+      "protein-banana-bread-recipe",
+      "protein-powder-banana-bread",
+      "healthy-protein-banana-bread"
+    ]
+  },
+  {
+    "slug": "quick-bread-collection",
+    "title": "Quick Bread Collection",
+    "description": "Delicious and easy-to-make protein quick breads for any occasion.",
+    "icon": "🍞",
+    "recipes": [
+      "protein-pumpkin-bread",
+      "protein-zucchini-bread",
+      "protein-cloud-bread",
+      "high-protein-pumpkin-bread",
+      "apple-cinnamon-protein-bread"
+    ]
+  },
+  {
+    "slug": "bagel-box-pack",
+    "title": "Bagel Box Pack",
+    "description": "A variety of protein bagels to start your day right.",
+    "icon": "🥯",
+    "recipes": [
+      "protein-bagels",
+      "cinnamon-raisin-protein-bagels",
+      "everything-protein-bagels",
+      "protein-bagels",
+      "cinnamon-raisin-protein-bagels"
+    ]
+  },
+  {
+    "slug": "savory-bread-pack",
+    "title": "Savory Bread Pack",
+    "description": "Flavorful and savory protein breads perfect for any meal.",
+    "icon": "🌿",
+    "recipes": [
+      "savory-herb-protein-bread",
+      "cheese-and-chive-protein-bread",
+      "savory-herb-protein-bread",
+      "cheese-and-chive-protein-bread",
+      "savory-herb-protein-bread"
+    ]
+  },
+  {
+    "slug": "sweet-bread-pack",
+    "title": "Sweet Bread Pack",
+    "description": "Indulge your sweet tooth with these delicious protein-packed sweet breads.",
+    "icon": "✨",
+    "recipes": [
+      "cinnamon-swirl-protein-bread",
+      "lemon-blueberry-protein-bread",
+      "cinnamon-swirl-protein-bread",
+      "lemon-blueberry-protein-bread",
+      "cinnamon-swirl-protein-bread"
+    ]
+  },
+  {
+    "slug": "sandwich-bread-pack",
+    "title": "Sandwich Bread Pack",
+    "description": "The perfect protein sandwich breads for your favorite fillings.",
+    "icon": "🥪",
+    "recipes": [
+      "high-protein-bread",
+      "whole-wheat-protein-sandwich-bread",
+      "multigrain-protein-sandwich-bread",
+      "high-protein-bread",
+      "whole-wheat-protein-sandwich-bread"
+    ]
+  }
+]

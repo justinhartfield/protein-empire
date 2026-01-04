@@ -1,0 +1,79 @@
+[
+  {
+    "slug": "chocolate-lovers",
+    "title": "Chocolate Lovers",
+    "description": "A collection of our richest and most decadent chocolate protein puddings.",
+    "icon": "\ud83c\udf6b",
+    "recipes": [
+      "classic-chocolate-protein-pudding",
+      "chocolate-chia-protein-pudding",
+      "peanut-butter-cup-protein-pudding",
+      "double-chocolate-protein-mousse",
+      "chocolate-hazelnut-protein-pudding"
+    ]
+  },
+  {
+    "slug": "chia-starter",
+    "title": "Chia Starter",
+    "description": "Everything you need to get started with delicious and healthy protein-packed chia puddings.",
+    "icon": "\ud83c\udf31",
+    "recipes": [
+      "chocolate-chia-protein-pudding",
+      "matcha-chia-protein-pudding",
+      "mango-chia-protein-pudding",
+      "raspberry-chia-protein-pudding",
+      "mixed-berry-chia-protein-pudding"
+    ]
+  },
+  {
+    "slug": "creamy-dreamy",
+    "title": "Creamy Dreamy",
+    "description": "Indulge in our creamiest and most satisfying protein puddings and mousses.",
+    "icon": "\ud83c\udf66",
+    "recipes": [
+      "classic-chocolate-protein-pudding",
+      "vanilla-bean-protein-mousse",
+      "banana-cream-protein-pudding",
+      "coconut-cream-protein-pudding",
+      "caramel-protein-pudding"
+    ]
+  },
+  {
+    "slug": "quick-puddings",
+    "title": "Quick Puddings",
+    "description": "Delicious protein puddings that are ready in 5 minutes or less.",
+    "icon": "\u23f1\ufe0f",
+    "recipes": [
+      "quick-vanilla-protein-pudding",
+      "classic-chocolate-protein-pudding",
+      "peanut-butter-cup-protein-pudding",
+      "caramel-protein-pudding",
+      "mint-chocolate-protein-pudding"
+    ]
+  },
+  {
+    "slug": "mousse-collection",
+    "title": "Mousse Collection",
+    "description": "A collection of our light, airy, and protein-packed mousses.",
+    "icon": "\u2601\ufe0f",
+    "recipes": [
+      "vanilla-bean-protein-mousse",
+      "lemon-raspberry-protein-mousse",
+      "chocolate-avocado-protein-mousse",
+      "coffee-protein-mousse",
+      "double-chocolate-protein-mousse"
+    ]
+  },
+  {
+    "slug": "parfait-pack",
+    "title": "Parfait Pack",
+    "description": "Beautiful and delicious layered parfaits that are packed with protein.",
+    "icon": "\ud83c\udf53",
+    "recipes": [
+      "strawberry-parfait-protein-pudding",
+      "blueberry-parfait-protein-pudding",
+      "peach-parfait-protein-pudding",
+      "black-forest-parfait-protein-pudding"
+    ]
+  }
+]

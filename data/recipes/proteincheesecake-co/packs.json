@@ -1,0 +1,69 @@
+[
+  {
+    "slug": "classics-pack",
+    "title": "Classics Pack",
+    "description": "A collection of timeless cheesecake classics.",
+    "icon": "\ud83c\udf70",
+    "recipes": [
+      "classic-vanilla-bean-cheesecake",
+      "strawberry-swirl-cheesecake",
+      "key-lime-cheesecake",
+      "cookies-and-cream-cheesecake"
+    ]
+  },
+  {
+    "slug": "no-bake-collection",
+    "title": "No-Bake Collection",
+    "description": "Deliciously simple no-bake cheesecakes for any occasion.",
+    "icon": "\ud83e\uddca",
+    "recipes": [
+      "no-bake-chocolate-cheesecake",
+      "no-bake-lemon-cheesecake",
+      "no-bake-oreo-cheesecake-bites"
+    ]
+  },
+  {
+    "slug": "dessert-dip-party",
+    "title": "Dessert Dip Party",
+    "description": "A variety of sweet and creamy cheesecake dips, perfect for parties.",
+    "icon": "\ud83c\udf89",
+    "recipes": [
+      "funfetti-cheesecake-dip",
+      "s-mores-cheesecake-dip",
+      "brownie-batter-dip",
+      "cookie-dough-cheesecake-dip"
+    ]
+  },
+  {
+    "slug": "mini-cheesecakes",
+    "title": "Mini Cheesecakes",
+    "description": "Perfectly portioned mini cheesecakes for a guilt-free treat.",
+    "icon": "\ud83e\uddc1",
+    "recipes": [
+      "lemon-blueberry-cheesecake-minis",
+      "no-bake-oreo-cheesecake-bites"
+    ]
+  },
+  {
+    "slug": "seasonal-flavors",
+    "title": "Seasonal Flavors",
+    "description": "Enjoy the taste of the season with these festive cheesecakes.",
+    "icon": "\ud83c\udf42",
+    "recipes": [
+      "pumpkin-spice-cheesecake",
+      "gingerbread-cheesecake",
+      "eggnog-cheesecake"
+    ]
+  },
+  {
+    "slug": "single-serving",
+    "title": "Single Serving",
+    "description": "Quick and easy single-serving cheesecakes for one.",
+    "icon": "\ud83e\uddd1",
+    "recipes": [
+      "single-serving-peanut-butter-cheesecake",
+      "single-serving-chocolate-cheesecake",
+      "single-serving-strawberry-cheesecake"
+    ]
+  }
+]

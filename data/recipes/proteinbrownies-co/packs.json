@@ -1,0 +1,80 @@
+[
+  {
+    "slug": "fudgy-favorites-pack",
+    "title": "Fudgy Favorites Pack",
+    "description": "A collection of our five most fudgy and decadent protein brownie recipes.",
+    "icon": "🍫",
+    "recipes": [
+      "fudgy-protein-brownies",
+      "high-protein-brownies",
+      "black-bean-protein-brownies",
+      "avocado-protein-brownies",
+      "keto-protein-brownies"
+    ]
+  },
+  {
+    "slug": "blondie-collection",
+    "title": "Blondie Collection",
+    "description": "A delightful assortment of five protein-packed blondie recipes.",
+    "icon": "👱‍♀️",
+    "recipes": [
+      "protein-blondies",
+      "peanut-butter-protein-brownies",
+      "banana-protein-brownies",
+      "pumpkin-protein-brownies",
+      "whey-protein-brownies-recipe"
+    ]
+  },
+  {
+    "slug": "secretly-healthy-pack",
+    "title": "Secretly Healthy Pack",
+    "description": "Five delicious protein brownie recipes made with hidden veggies like black beans, sweet potato, avocado, zucchini, and pumpkin.",
+    "icon": "🤫",
+    "recipes": [
+      "sweet-potato-protein-brownies",
+      "black-bean-protein-brownies",
+      "avocado-protein-brownies",
+      "zucchini-protein-brownies",
+      "pumpkin-protein-brownies"
+    ]
+  },
+  {
+    "slug": "chocolate-lovers-pack",
+    "title": "Chocolate Lovers Pack",
+    "description": "An intense chocolate experience with five of our most chocolatey protein brownie recipes.",
+    "icon": "❤️",
+    "recipes": [
+      "chocolate-protein-brownies",
+      "mint-chocolate-protein-brownies",
+      "raspberry-swirl-protein-brownies",
+      "espresso-protein-brownies",
+      "double-chocolate-protein-brownies"
+    ]
+  },
+  {
+    "slug": "no-bake-bars-pack",
+    "title": "No-Bake Bars Pack",
+    "description": "Five quick and easy no-bake protein bar recipes for when you need a healthy treat in a hurry.",
+    "icon": "🏃‍♀️",
+    "recipes": [
+      "no-bake-protein-brownie-bars",
+      "classic-protein-brownies-recipe",
+      "healthy-protein-brownies",
+      "low-calorie-protein-brownies",
+      "vegan-protein-brownies"
+    ]
+  },
+  {
+    "slug": "single-serving-pack",
+    "title": "Single Serving Pack",
+    "description": "Five single-serving protein brownie recipes that you can make in the microwave in minutes.",
+    "icon": "☕️",
+    "recipes": [
+      "single-serving-protein-brownie",
+      "cottage-cheese-protein-brownies",
+      "greek-yogurt-protein-brownies",
+      "protein-powder-brownies",
+      "whey-protein-brownies-recipe"
+    ]
+  }
+]

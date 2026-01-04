@@ -1,0 +1,76 @@
+[
+  {
+    "slug": "chocolate-lovers",
+    "title": "Chocolate Lovers",
+    "description": "A collection of our most decadent and chocolatey protein bites.",
+    "icon": "\ud83c\udf6b",
+    "recipes": [
+      "chocolate-coconut-energy-bites",
+      "recipe-slug-3",
+      "recipe-slug-4",
+      "recipe-slug-5"
+    ]
+  },
+  {
+    "slug": "fruit-pack",
+    "title": "Fruit Pack",
+    "description": "Enjoy the natural sweetness of fruit in these delicious and healthy protein bites.",
+    "icon": "\ud83c\udf53",
+    "recipes": [
+      "apricot-almond-protein-bites",
+      "recipe-slug-6",
+      "recipe-slug-7",
+      "recipe-slug-8",
+      "recipe-slug-9"
+    ]
+  },
+  {
+    "slug": "holiday-bites",
+    "title": "Holiday Bites",
+    "description": "Festive and flavorful protein bites perfect for holiday gatherings.",
+    "icon": "\ud83c\udf84",
+    "recipes": [
+      "recipe-slug-10",
+      "recipe-slug-11",
+      "recipe-slug-12",
+      "recipe-slug-13"
+    ]
+  },
+  {
+    "slug": "nut-free-bites",
+    "title": "Nut-Free Bites",
+    "description": "Allergy-friendly protein bites made without any nuts.",
+    "icon": "\ud83e\udd5c",
+    "recipes": [
+      "recipe-slug-14",
+      "recipe-slug-15",
+      "recipe-slug-16",
+      "recipe-slug-17",
+      "recipe-slug-18"
+    ]
+  },
+  {
+    "slug": "quick-energy",
+    "title": "Quick Energy",
+    "description": "Get a quick and healthy energy boost with these protein-packed bites.",
+    "icon": "\u26a1\ufe0f",
+    "recipes": [
+      "recipe-slug-19",
+      "recipe-slug-20",
+      "recipe-slug-21",
+      "recipe-slug-22"
+    ]
+  },
+  {
+    "slug": "kids-favorites",
+    "title": "Kids Favorites",
+    "description": "Fun and tasty protein bites that your kids will love.",
+    "icon": "\ud83d\udc76",
+    "recipes": [
+      "recipe-slug-23",
+      "recipe-slug-24",
+      "recipe-slug-25",
+      "chocolate-coconut-energy-bites"
+    ]
+  }
+]

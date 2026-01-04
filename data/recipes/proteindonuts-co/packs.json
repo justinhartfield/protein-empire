@@ -1,0 +1,70 @@
+[
+  {
+    "slug": "glazed-classics",
+    "title": "Glazed Classics",
+    "description": "A collection of our most popular glazed protein donuts.",
+    "icon": "\ud83c\udf69",
+    "recipes": [
+      "classic-glazed-protein-donuts",
+      "chocolate-frosted-protein-donuts",
+      "strawberry-frosted-protein-donuts",
+      "vanilla-bean-protein-donuts"
+    ]
+  },
+  {
+    "slug": "bakery-box",
+    "title": "Bakery Box",
+    "description": "A variety pack of our best-selling bakery-style protein donuts.",
+    "icon": "\ud83e\uddc1",
+    "recipes": [
+      "cinnamon-sugar-protein-donuts",
+      "blueberry-protein-donuts",
+      "red-velvet-protein-donuts",
+      "lemon-poppy-seed-protein-donuts",
+      "maple-bacon-protein-donuts"
+    ]
+  },
+  {
+    "slug": "holiday-donuts",
+    "title": "Holiday Donuts",
+    "description": "Get festive with our seasonal holiday protein donuts.",
+    "icon": "\ud83c\udf84",
+    "recipes": [
+      "pumpkin-spice-protein-donuts",
+      "gingerbread-protein-donuts",
+      "apple-cider-protein-donuts"
+    ]
+  },
+  {
+    "slug": "filled-donuts",
+    "title": "Filled Donuts",
+    "description": "A delicious collection of our cream and jelly-filled protein donuts.",
+    "icon": "\ud83c\udf89",
+    "recipes": [
+      "boston-cream-protein-donuts",
+      "jelly-filled-protein-donuts"
+    ]
+  },
+  {
+    "slug": "frosted-collection",
+    "title": "Frosted Collection",
+    "description": "A colorful assortment of our beautifully frosted protein donuts.",
+    "icon": "\ud83c\udfa8",
+    "recipes": [
+      "chocolate-frosted-protein-donuts",
+      "strawberry-frosted-protein-donuts",
+      "cookies-and-cream-protein-donuts",
+      "pistachio-protein-donuts",
+      "matcha-protein-donuts"
+    ]
+  },
+  {
+    "slug": "air-fryer-pack",
+    "title": "Air-Fryer Pack",
+    "description": "Quick, easy, and delicious protein donuts made in your air fryer.",
+    "icon": "\ud83d\udca8",
+    "recipes": [
+      "air-fryer-protein-donuts"
+    ]
+  }
+]
