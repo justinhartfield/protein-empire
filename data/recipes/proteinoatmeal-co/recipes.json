@@ -1,1344 +1,604 @@
-[
-  {
-    "id": 1,
-    "slug": "classic-vanilla-overnight-oats",
-    "title": "Classic Vanilla Overnight Oats",
-    "description": "A simple and delicious high-protein start to your day. Packed with 25g of protein!",
-    "protein": 25,
-    "calories": 350,
-    "carbs": 40,
-    "fat": 12,
-    "fiber": 8,
-    "sugar": 10,
-    "servingSize": "1 jar",
-    "yield": "1 serving",
-    "prepTime": "5",
-    "cookTime": "0",
-    "totalTime": "5",
-    "difficulty": "Easy",
-    "category": "Overnight Oats",
-    "tags": [
-      "vanilla",
-      "classic",
-      "quick"
-    ],
-    "methods": [
-      "whey"
-    ],
-    "image": "classic-vanilla-overnight-oats.png",
-    "ingredients": [
-      "80g rolled oats",
-      "30g vanilla whey protein powder",
-      "15g chia seeds",
-      "240ml unsweetened almond milk",
-      "5ml vanilla extract",
-      "Sweetener to taste"
-    ],
-    "instructions": [
-      {
-        "step": "Combine Dry Ingredients",
-        "text": "In a jar or bowl, mix together the rolled oats, vanilla whey protein powder, and chia seeds."
-      },
-      {
-        "step": "Add Wet Ingredients",
-        "text": "Pour in the unsweetened almond milk and vanilla extract."
-      },
-      {
-        "step": "Mix and Sweeten",
-        "text": "Stir everything together until well combined. Add sweetener to your desired taste."
-      },
-      {
-        "step": "Refrigerate",
-        "text": "Cover the container and refrigerate for at least 4 hours, or overnight."
-      },
-      {
-        "step": "Serve",
-        "text": "Stir before serving and add your favorite toppings like berries or nuts."
-      }
-    ]
-  },
-  {
-    "id": 2,
-    "slug": "chocolate-peanut-butter-baked-oatmeal",
-    "title": "Chocolate Peanut Butter Baked Oatmeal",
-    "description": "A decadent and protein-packed baked oatmeal with 28g of protein per serving.",
-    "protein": 28,
-    "calories": 420,
-    "carbs": 45,
-    "fat": 18,
-    "fiber": 10,
-    "sugar": 12,
-    "servingSize": "1 square",
-    "yield": "6 servings",
-    "prepTime": "10",
-    "cookTime": "25",
-    "totalTime": "35",
-    "difficulty": "Easy",
-    "category": "Baked Oatmeal",
-    "tags": [
-      "chocolate",
-      "peanut butter",
-      "baked"
-    ],
-    "methods": [
-      "whey"
-    ],
-    "image": "chocolate-peanut-butter-baked-oatmeal.png",
-    "ingredients": [
-      "160g rolled oats",
-      "60g chocolate whey protein powder",
-      "30g peanut butter powder",
-      "10g unsweetened cocoa powder",
-      "5g baking powder",
-      "240ml unsweetened almond milk",
-      "1 large egg",
-      "60g natural peanut butter",
-      "30g chocolate chips"
-    ],
-    "instructions": [
-      {
-        "step": "Preheat Oven",
-        "text": "Preheat your oven to 180\u00b0C (350\u00b0F) and grease a baking dish."
-      },
-      {
-        "step": "Mix Dry Ingredients",
-        "text": "In a large bowl, combine the rolled oats, chocolate whey protein, peanut butter powder, cocoa powder, and baking powder."
-      },
-      {
-        "step": "Mix Wet Ingredients",
-        "text": "In a separate bowl, whisk together the almond milk and egg. Then, stir in the natural peanut butter."
-      },
-      {
-        "step": "Combine and Bake",
-        "text": "Pour the wet ingredients into the dry ingredients and mix until just combined. Fold in the chocolate chips."
-      },
-      {
-        "step": "Bake",
-        "text": "Pour the mixture into the prepared baking dish and bake for 20-25 minutes, or until set."
-      },
-      {
-        "step": "Cool and Serve",
-        "text": "Let it cool slightly before cutting into squares and serving."
-      }
-    ]
-  },
-  {
-    "id": 3,
-    "slug": "recipe-slug-3",
-    "title": "Recipe Title 3",
-    "description": "Description for recipe 3 with protein amount and key selling points",
-    "protein": 23,
-    "calories": 315,
-    "carbs": 33,
-    "fat": 13,
-    "fiber": 5,
-    "sugar": 9,
-    "servingSize": "1 serving",
-    "yield": "1 serving",
-    "prepTime": "10",
-    "cookTime": "15",
-    "totalTime": "25",
-    "difficulty": "Medium",
-    "category": "Baked Oatmeal",
-    "tags": [
-      "tag3",
-      "tag4"
-    ],
-    "methods": [
-      "whey"
-    ],
-    "image": "recipe-slug-3.png",
-    "ingredients": [
-      "100g ingredient 3",
-      "50g ingredient 4"
-    ],
-    "instructions": [
-      {
-        "step": "Step 1",
-        "text": "Detailed instructions for step 1"
-      },
-      {
-        "step": "Step 2",
-        "text": "Detailed instructions for step 2"
-      },
-      {
-        "step": "Step 3",
-        "text": "Detailed instructions for step 3"
-      },
-      {
-        "step": "Step 4",
-        "text": "Detailed instructions for step 4"
-      },
-      {
-        "step": "Step 5",
-        "text": "Detailed instructions for step 5"
-      }
-    ]
-  },
-  {
-    "id": 4,
-    "slug": "recipe-slug-4",
-    "title": "Recipe Title 4",
-    "description": "Description for recipe 4 with protein amount and key selling points",
-    "protein": 24,
-    "calories": 320,
-    "carbs": 34,
-    "fat": 10,
-    "fiber": 6,
-    "sugar": 8,
-    "servingSize": "1 serving",
-    "yield": "1 serving",
-    "prepTime": "10",
-    "cookTime": "15",
-    "totalTime": "25",
-    "difficulty": "Medium",
-    "category": "Overnight Oats",
-    "tags": [
-      "tag4",
-      "tag5"
-    ],
-    "methods": [
-      "whey"
-    ],
-    "image": "recipe-slug-4.png",
-    "ingredients": [
-      "100g ingredient 4",
-      "50g ingredient 5"
-    ],
-    "instructions": [
-      {
-        "step": "Step 1",
-        "text": "Detailed instructions for step 1"
-      },
-      {
-        "step": "Step 2",
-        "text": "Detailed instructions for step 2"
-      },
-      {
-        "step": "Step 3",
-        "text": "Detailed instructions for step 3"
-      },
-      {
-        "step": "Step 4",
-        "text": "Detailed instructions for step 4"
-      },
-      {
-        "step": "Step 5",
-        "text": "Detailed instructions for step 5"
-      }
-    ]
-  },
-  {
-    "id": 5,
-    "slug": "recipe-slug-5",
-    "title": "Recipe Title 5",
-    "description": "Description for recipe 5 with protein amount and key selling points",
-    "protein": 20,
-    "calories": 325,
-    "carbs": 35,
-    "fat": 11,
-    "fiber": 7,
-    "sugar": 9,
-    "servingSize": "1 serving",
-    "yield": "1 serving",
-    "prepTime": "10",
-    "cookTime": "15",
-    "totalTime": "25",
-    "difficulty": "Medium",
-    "category": "Baked Oatmeal",
-    "tags": [
-      "tag5",
-      "tag6"
-    ],
-    "methods": [
-      "whey"
-    ],
-    "image": "recipe-slug-5.png",
-    "ingredients": [
-      "100g ingredient 5",
-      "50g ingredient 6"
-    ],
-    "instructions": [
-      {
-        "step": "Step 1",
-        "text": "Detailed instructions for step 1"
-      },
-      {
-        "step": "Step 2",
-        "text": "Detailed instructions for step 2"
-      },
-      {
-        "step": "Step 3",
-        "text": "Detailed instructions for step 3"
-      },
-      {
-        "step": "Step 4",
-        "text": "Detailed instructions for step 4"
-      },
-      {
-        "step": "Step 5",
-        "text": "Detailed instructions for step 5"
-      }
-    ]
-  },
-  {
-    "id": 6,
-    "slug": "recipe-slug-6",
-    "title": "Recipe Title 6",
-    "description": "Description for recipe 6 with protein amount and key selling points",
-    "protein": 21,
-    "calories": 330,
-    "carbs": 36,
-    "fat": 12,
-    "fiber": 5,
-    "sugar": 8,
-    "servingSize": "1 serving",
-    "yield": "1 serving",
-    "prepTime": "10",
-    "cookTime": "15",
-    "totalTime": "25",
-    "difficulty": "Medium",
-    "category": "Overnight Oats",
-    "tags": [
-      "tag6",
-      "tag7"
-    ],
-    "methods": [
-      "whey"
-    ],
-    "image": "recipe-slug-6.png",
-    "ingredients": [
-      "100g ingredient 6",
-      "50g ingredient 7"
-    ],
-    "instructions": [
-      {
-        "step": "Step 1",
-        "text": "Detailed instructions for step 1"
-      },
-      {
-        "step": "Step 2",
-        "text": "Detailed instructions for step 2"
-      },
-      {
-        "step": "Step 3",
-        "text": "Detailed instructions for step 3"
-      },
-      {
-        "step": "Step 4",
-        "text": "Detailed instructions for step 4"
-      },
-      {
-        "step": "Step 5",
-        "text": "Detailed instructions for step 5"
-      }
-    ]
-  },
-  {
-    "id": 7,
-    "slug": "recipe-slug-7",
-    "title": "Recipe Title 7",
-    "description": "Description for recipe 7 with protein amount and key selling points",
-    "protein": 22,
-    "calories": 335,
-    "carbs": 37,
-    "fat": 13,
-    "fiber": 6,
-    "sugar": 9,
-    "servingSize": "1 serving",
-    "yield": "1 serving",
-    "prepTime": "10",
-    "cookTime": "15",
-    "totalTime": "25",
-    "difficulty": "Medium",
-    "category": "Baked Oatmeal",
-    "tags": [
-      "tag7",
-      "tag8"
-    ],
-    "methods": [
-      "whey"
-    ],
-    "image": "recipe-slug-7.png",
-    "ingredients": [
-      "100g ingredient 7",
-      "50g ingredient 8"
-    ],
-    "instructions": [
-      {
-        "step": "Step 1",
-        "text": "Detailed instructions for step 1"
-      },
-      {
-        "step": "Step 2",
-        "text": "Detailed instructions for step 2"
-      },
-      {
-        "step": "Step 3",
-        "text": "Detailed instructions for step 3"
-      },
-      {
-        "step": "Step 4",
-        "text": "Detailed instructions for step 4"
-      },
-      {
-        "step": "Step 5",
-        "text": "Detailed instructions for step 5"
-      }
-    ]
-  },
-  {
-    "id": 8,
-    "slug": "recipe-slug-8",
-    "title": "Recipe Title 8",
-    "description": "Description for recipe 8 with protein amount and key selling points",
-    "protein": 23,
-    "calories": 340,
-    "carbs": 38,
-    "fat": 10,
-    "fiber": 7,
-    "sugar": 8,
-    "servingSize": "1 serving",
-    "yield": "1 serving",
-    "prepTime": "10",
-    "cookTime": "15",
-    "totalTime": "25",
-    "difficulty": "Medium",
-    "category": "Overnight Oats",
-    "tags": [
-      "tag8",
-      "tag9"
-    ],
-    "methods": [
-      "whey"
-    ],
-    "image": "recipe-slug-8.png",
-    "ingredients": [
-      "100g ingredient 8",
-      "50g ingredient 9"
-    ],
-    "instructions": [
-      {
-        "step": "Step 1",
-        "text": "Detailed instructions for step 1"
-      },
-      {
-        "step": "Step 2",
-        "text": "Detailed instructions for step 2"
-      },
-      {
-        "step": "Step 3",
-        "text": "Detailed instructions for step 3"
-      },
-      {
-        "step": "Step 4",
-        "text": "Detailed instructions for step 4"
-      },
-      {
-        "step": "Step 5",
-        "text": "Detailed instructions for step 5"
-      }
-    ]
-  },
-  {
-    "id": 9,
-    "slug": "recipe-slug-9",
-    "title": "Recipe Title 9",
-    "description": "Description for recipe 9 with protein amount and key selling points",
-    "protein": 24,
-    "calories": 345,
-    "carbs": 39,
-    "fat": 11,
-    "fiber": 5,
-    "sugar": 9,
-    "servingSize": "1 serving",
-    "yield": "1 serving",
-    "prepTime": "10",
-    "cookTime": "15",
-    "totalTime": "25",
-    "difficulty": "Medium",
-    "category": "Baked Oatmeal",
-    "tags": [
-      "tag9",
-      "tag10"
-    ],
-    "methods": [
-      "whey"
-    ],
-    "image": "recipe-slug-9.png",
-    "ingredients": [
-      "100g ingredient 9",
-      "50g ingredient 10"
-    ],
-    "instructions": [
-      {
-        "step": "Step 1",
-        "text": "Detailed instructions for step 1"
-      },
-      {
-        "step": "Step 2",
-        "text": "Detailed instructions for step 2"
-      },
-      {
-        "step": "Step 3",
-        "text": "Detailed instructions for step 3"
-      },
-      {
-        "step": "Step 4",
-        "text": "Detailed instructions for step 4"
-      },
-      {
-        "step": "Step 5",
-        "text": "Detailed instructions for step 5"
-      }
-    ]
-  },
-  {
-    "id": 10,
-    "slug": "recipe-slug-10",
-    "title": "Recipe Title 10",
-    "description": "Description for recipe 10 with protein amount and key selling points",
-    "protein": 20,
-    "calories": 350,
-    "carbs": 40,
-    "fat": 12,
-    "fiber": 6,
-    "sugar": 8,
-    "servingSize": "1 serving",
-    "yield": "1 serving",
-    "prepTime": "10",
-    "cookTime": "15",
-    "totalTime": "25",
-    "difficulty": "Medium",
-    "category": "Overnight Oats",
-    "tags": [
-      "tag10",
-      "tag11"
-    ],
-    "methods": [
-      "whey"
-    ],
-    "image": "recipe-slug-10.png",
-    "ingredients": [
-      "100g ingredient 10",
-      "50g ingredient 11"
-    ],
-    "instructions": [
-      {
-        "step": "Step 1",
-        "text": "Detailed instructions for step 1"
-      },
-      {
-        "step": "Step 2",
-        "text": "Detailed instructions for step 2"
-      },
-      {
-        "step": "Step 3",
-        "text": "Detailed instructions for step 3"
-      },
-      {
-        "step": "Step 4",
-        "text": "Detailed instructions for step 4"
-      },
-      {
-        "step": "Step 5",
-        "text": "Detailed instructions for step 5"
-      }
-    ]
-  },
-  {
-    "id": 11,
-    "slug": "recipe-slug-11",
-    "title": "Recipe Title 11",
-    "description": "Description for recipe 11 with protein amount and key selling points",
-    "protein": 21,
-    "calories": 355,
-    "carbs": 41,
-    "fat": 13,
-    "fiber": 7,
-    "sugar": 9,
-    "servingSize": "1 serving",
-    "yield": "1 serving",
-    "prepTime": "10",
-    "cookTime": "15",
-    "totalTime": "25",
-    "difficulty": "Medium",
-    "category": "Baked Oatmeal",
-    "tags": [
-      "tag11",
-      "tag12"
-    ],
-    "methods": [
-      "whey"
-    ],
-    "image": "recipe-slug-11.png",
-    "ingredients": [
-      "100g ingredient 11",
-      "50g ingredient 12"
-    ],
-    "instructions": [
-      {
-        "step": "Step 1",
-        "text": "Detailed instructions for step 1"
-      },
-      {
-        "step": "Step 2",
-        "text": "Detailed instructions for step 2"
-      },
-      {
-        "step": "Step 3",
-        "text": "Detailed instructions for step 3"
-      },
-      {
-        "step": "Step 4",
-        "text": "Detailed instructions for step 4"
-      },
-      {
-        "step": "Step 5",
-        "text": "Detailed instructions for step 5"
-      }
-    ]
-  },
-  {
-    "id": 12,
-    "slug": "recipe-slug-12",
-    "title": "Recipe Title 12",
-    "description": "Description for recipe 12 with protein amount and key selling points",
-    "protein": 22,
-    "calories": 360,
-    "carbs": 42,
-    "fat": 10,
-    "fiber": 5,
-    "sugar": 8,
-    "servingSize": "1 serving",
-    "yield": "1 serving",
-    "prepTime": "10",
-    "cookTime": "15",
-    "totalTime": "25",
-    "difficulty": "Medium",
-    "category": "Overnight Oats",
-    "tags": [
-      "tag12",
-      "tag13"
-    ],
-    "methods": [
-      "whey"
-    ],
-    "image": "recipe-slug-12.png",
-    "ingredients": [
-      "100g ingredient 12",
-      "50g ingredient 13"
-    ],
-    "instructions": [
-      {
-        "step": "Step 1",
-        "text": "Detailed instructions for step 1"
-      },
-      {
-        "step": "Step 2",
-        "text": "Detailed instructions for step 2"
-      },
-      {
-        "step": "Step 3",
-        "text": "Detailed instructions for step 3"
-      },
-      {
-        "step": "Step 4",
-        "text": "Detailed instructions for step 4"
-      },
-      {
-        "step": "Step 5",
-        "text": "Detailed instructions for step 5"
-      }
-    ]
-  },
-  {
-    "id": 13,
-    "slug": "recipe-slug-13",
-    "title": "Recipe Title 13",
-    "description": "Description for recipe 13 with protein amount and key selling points",
-    "protein": 23,
-    "calories": 365,
-    "carbs": 43,
-    "fat": 11,
-    "fiber": 6,
-    "sugar": 9,
-    "servingSize": "1 serving",
-    "yield": "1 serving",
-    "prepTime": "10",
-    "cookTime": "15",
-    "totalTime": "25",
-    "difficulty": "Medium",
-    "category": "Baked Oatmeal",
-    "tags": [
-      "tag13",
-      "tag14"
-    ],
-    "methods": [
-      "whey"
-    ],
-    "image": "recipe-slug-13.png",
-    "ingredients": [
-      "100g ingredient 13",
-      "50g ingredient 14"
-    ],
-    "instructions": [
-      {
-        "step": "Step 1",
-        "text": "Detailed instructions for step 1"
-      },
-      {
-        "step": "Step 2",
-        "text": "Detailed instructions for step 2"
-      },
-      {
-        "step": "Step 3",
-        "text": "Detailed instructions for step 3"
-      },
-      {
-        "step": "Step 4",
-        "text": "Detailed instructions for step 4"
-      },
-      {
-        "step": "Step 5",
-        "text": "Detailed instructions for step 5"
-      }
-    ]
-  },
-  {
-    "id": 14,
-    "slug": "recipe-slug-14",
-    "title": "Recipe Title 14",
-    "description": "Description for recipe 14 with protein amount and key selling points",
-    "protein": 24,
-    "calories": 370,
-    "carbs": 44,
-    "fat": 12,
-    "fiber": 7,
-    "sugar": 8,
-    "servingSize": "1 serving",
-    "yield": "1 serving",
-    "prepTime": "10",
-    "cookTime": "15",
-    "totalTime": "25",
-    "difficulty": "Medium",
-    "category": "Overnight Oats",
-    "tags": [
-      "tag14",
-      "tag15"
-    ],
-    "methods": [
-      "whey"
-    ],
-    "image": "recipe-slug-14.png",
-    "ingredients": [
-      "100g ingredient 14",
-      "50g ingredient 15"
-    ],
-    "instructions": [
-      {
-        "step": "Step 1",
-        "text": "Detailed instructions for step 1"
-      },
-      {
-        "step": "Step 2",
-        "text": "Detailed instructions for step 2"
-      },
-      {
-        "step": "Step 3",
-        "text": "Detailed instructions for step 3"
-      },
-      {
-        "step": "Step 4",
-        "text": "Detailed instructions for step 4"
-      },
-      {
-        "step": "Step 5",
-        "text": "Detailed instructions for step 5"
-      }
-    ]
-  },
-  {
-    "id": 15,
-    "slug": "recipe-slug-15",
-    "title": "Recipe Title 15",
-    "description": "Description for recipe 15 with protein amount and key selling points",
-    "protein": 20,
-    "calories": 375,
-    "carbs": 45,
-    "fat": 13,
-    "fiber": 5,
-    "sugar": 9,
-    "servingSize": "1 serving",
-    "yield": "1 serving",
-    "prepTime": "10",
-    "cookTime": "15",
-    "totalTime": "25",
-    "difficulty": "Medium",
-    "category": "Baked Oatmeal",
-    "tags": [
-      "tag15",
-      "tag16"
-    ],
-    "methods": [
-      "whey"
-    ],
-    "image": "recipe-slug-15.png",
-    "ingredients": [
-      "100g ingredient 15",
-      "50g ingredient 16"
-    ],
-    "instructions": [
-      {
-        "step": "Step 1",
-        "text": "Detailed instructions for step 1"
-      },
-      {
-        "step": "Step 2",
-        "text": "Detailed instructions for step 2"
-      },
-      {
-        "step": "Step 3",
-        "text": "Detailed instructions for step 3"
-      },
-      {
-        "step": "Step 4",
-        "text": "Detailed instructions for step 4"
-      },
-      {
-        "step": "Step 5",
-        "text": "Detailed instructions for step 5"
-      }
-    ]
-  },
-  {
-    "id": 16,
-    "slug": "recipe-slug-16",
-    "title": "Recipe Title 16",
-    "description": "Description for recipe 16 with protein amount and key selling points",
-    "protein": 21,
-    "calories": 380,
-    "carbs": 46,
-    "fat": 10,
-    "fiber": 6,
-    "sugar": 8,
-    "servingSize": "1 serving",
-    "yield": "1 serving",
-    "prepTime": "10",
-    "cookTime": "15",
-    "totalTime": "25",
-    "difficulty": "Medium",
-    "category": "Overnight Oats",
-    "tags": [
-      "tag16",
-      "tag17"
-    ],
-    "methods": [
-      "whey"
-    ],
-    "image": "recipe-slug-16.png",
-    "ingredients": [
-      "100g ingredient 16",
-      "50g ingredient 17"
-    ],
-    "instructions": [
-      {
-        "step": "Step 1",
-        "text": "Detailed instructions for step 1"
-      },
-      {
-        "step": "Step 2",
-        "text": "Detailed instructions for step 2"
-      },
-      {
-        "step": "Step 3",
-        "text": "Detailed instructions for step 3"
-      },
-      {
-        "step": "Step 4",
-        "text": "Detailed instructions for step 4"
-      },
-      {
-        "step": "Step 5",
-        "text": "Detailed instructions for step 5"
-      }
-    ]
-  },
-  {
-    "id": 17,
-    "slug": "recipe-slug-17",
-    "title": "Recipe Title 17",
-    "description": "Description for recipe 17 with protein amount and key selling points",
-    "protein": 22,
-    "calories": 385,
-    "carbs": 47,
-    "fat": 11,
-    "fiber": 7,
-    "sugar": 9,
-    "servingSize": "1 serving",
-    "yield": "1 serving",
-    "prepTime": "10",
-    "cookTime": "15",
-    "totalTime": "25",
-    "difficulty": "Medium",
-    "category": "Baked Oatmeal",
-    "tags": [
-      "tag17",
-      "tag18"
-    ],
-    "methods": [
-      "whey"
-    ],
-    "image": "recipe-slug-17.png",
-    "ingredients": [
-      "100g ingredient 17",
-      "50g ingredient 18"
-    ],
-    "instructions": [
-      {
-        "step": "Step 1",
-        "text": "Detailed instructions for step 1"
-      },
-      {
-        "step": "Step 2",
-        "text": "Detailed instructions for step 2"
-      },
-      {
-        "step": "Step 3",
-        "text": "Detailed instructions for step 3"
-      },
-      {
-        "step": "Step 4",
-        "text": "Detailed instructions for step 4"
-      },
-      {
-        "step": "Step 5",
-        "text": "Detailed instructions for step 5"
-      }
-    ]
-  },
-  {
-    "id": 18,
-    "slug": "recipe-slug-18",
-    "title": "Recipe Title 18",
-    "description": "Description for recipe 18 with protein amount and key selling points",
-    "protein": 23,
-    "calories": 390,
-    "carbs": 48,
-    "fat": 12,
-    "fiber": 5,
-    "sugar": 8,
-    "servingSize": "1 serving",
-    "yield": "1 serving",
-    "prepTime": "10",
-    "cookTime": "15",
-    "totalTime": "25",
-    "difficulty": "Medium",
-    "category": "Overnight Oats",
-    "tags": [
-      "tag18",
-      "tag19"
-    ],
-    "methods": [
-      "whey"
-    ],
-    "image": "recipe-slug-18.png",
-    "ingredients": [
-      "100g ingredient 18",
-      "50g ingredient 19"
-    ],
-    "instructions": [
-      {
-        "step": "Step 1",
-        "text": "Detailed instructions for step 1"
-      },
-      {
-        "step": "Step 2",
-        "text": "Detailed instructions for step 2"
-      },
-      {
-        "step": "Step 3",
-        "text": "Detailed instructions for step 3"
-      },
-      {
-        "step": "Step 4",
-        "text": "Detailed instructions for step 4"
-      },
-      {
-        "step": "Step 5",
-        "text": "Detailed instructions for step 5"
-      }
-    ]
-  },
-  {
-    "id": 19,
-    "slug": "recipe-slug-19",
-    "title": "Recipe Title 19",
-    "description": "Description for recipe 19 with protein amount and key selling points",
-    "protein": 24,
-    "calories": 395,
-    "carbs": 49,
-    "fat": 13,
-    "fiber": 6,
-    "sugar": 9,
-    "servingSize": "1 serving",
-    "yield": "1 serving",
-    "prepTime": "10",
-    "cookTime": "15",
-    "totalTime": "25",
-    "difficulty": "Medium",
-    "category": "Baked Oatmeal",
-    "tags": [
-      "tag19",
-      "tag20"
-    ],
-    "methods": [
-      "whey"
-    ],
-    "image": "recipe-slug-19.png",
-    "ingredients": [
-      "100g ingredient 19",
-      "50g ingredient 20"
-    ],
-    "instructions": [
-      {
-        "step": "Step 1",
-        "text": "Detailed instructions for step 1"
-      },
-      {
-        "step": "Step 2",
-        "text": "Detailed instructions for step 2"
-      },
-      {
-        "step": "Step 3",
-        "text": "Detailed instructions for step 3"
-      },
-      {
-        "step": "Step 4",
-        "text": "Detailed instructions for step 4"
-      },
-      {
-        "step": "Step 5",
-        "text": "Detailed instructions for step 5"
-      }
-    ]
-  },
-  {
-    "id": 20,
-    "slug": "recipe-slug-20",
-    "title": "Recipe Title 20",
-    "description": "Description for recipe 20 with protein amount and key selling points",
-    "protein": 20,
-    "calories": 400,
-    "carbs": 50,
-    "fat": 10,
-    "fiber": 7,
-    "sugar": 8,
-    "servingSize": "1 serving",
-    "yield": "1 serving",
-    "prepTime": "10",
-    "cookTime": "15",
-    "totalTime": "25",
-    "difficulty": "Medium",
-    "category": "Overnight Oats",
-    "tags": [
-      "tag20",
-      "tag21"
-    ],
-    "methods": [
-      "whey"
-    ],
-    "image": "recipe-slug-20.png",
-    "ingredients": [
-      "100g ingredient 20",
-      "50g ingredient 21"
-    ],
-    "instructions": [
-      {
-        "step": "Step 1",
-        "text": "Detailed instructions for step 1"
-      },
-      {
-        "step": "Step 2",
-        "text": "Detailed instructions for step 2"
-      },
-      {
-        "step": "Step 3",
-        "text": "Detailed instructions for step 3"
-      },
-      {
-        "step": "Step 4",
-        "text": "Detailed instructions for step 4"
-      },
-      {
-        "step": "Step 5",
-        "text": "Detailed instructions for step 5"
-      }
-    ]
-  },
-  {
-    "id": 21,
-    "slug": "recipe-slug-21",
-    "title": "Recipe Title 21",
-    "description": "Description for recipe 21 with protein amount and key selling points",
-    "protein": 21,
-    "calories": 405,
-    "carbs": 51,
-    "fat": 11,
-    "fiber": 5,
-    "sugar": 9,
-    "servingSize": "1 serving",
-    "yield": "1 serving",
-    "prepTime": "10",
-    "cookTime": "15",
-    "totalTime": "25",
-    "difficulty": "Medium",
-    "category": "Baked Oatmeal",
-    "tags": [
-      "tag21",
-      "tag22"
-    ],
-    "methods": [
-      "whey"
-    ],
-    "image": "recipe-slug-21.png",
-    "ingredients": [
-      "100g ingredient 21",
-      "50g ingredient 22"
-    ],
-    "instructions": [
-      {
-        "step": "Step 1",
-        "text": "Detailed instructions for step 1"
-      },
-      {
-        "step": "Step 2",
-        "text": "Detailed instructions for step 2"
-      },
-      {
-        "step": "Step 3",
-        "text": "Detailed instructions for step 3"
-      },
-      {
-        "step": "Step 4",
-        "text": "Detailed instructions for step 4"
-      },
-      {
-        "step": "Step 5",
-        "text": "Detailed instructions for step 5"
-      }
-    ]
-  },
-  {
-    "id": 22,
-    "slug": "recipe-slug-22",
-    "title": "Recipe Title 22",
-    "description": "Description for recipe 22 with protein amount and key selling points",
-    "protein": 22,
-    "calories": 410,
-    "carbs": 52,
-    "fat": 12,
-    "fiber": 6,
-    "sugar": 8,
-    "servingSize": "1 serving",
-    "yield": "1 serving",
-    "prepTime": "10",
-    "cookTime": "15",
-    "totalTime": "25",
-    "difficulty": "Medium",
-    "category": "Overnight Oats",
-    "tags": [
-      "tag22",
-      "tag23"
-    ],
-    "methods": [
-      "whey"
-    ],
-    "image": "recipe-slug-22.png",
-    "ingredients": [
-      "100g ingredient 22",
-      "50g ingredient 23"
-    ],
-    "instructions": [
-      {
-        "step": "Step 1",
-        "text": "Detailed instructions for step 1"
-      },
-      {
-        "step": "Step 2",
-        "text": "Detailed instructions for step 2"
-      },
-      {
-        "step": "Step 3",
-        "text": "Detailed instructions for step 3"
-      },
-      {
-        "step": "Step 4",
-        "text": "Detailed instructions for step 4"
-      },
-      {
-        "step": "Step 5",
-        "text": "Detailed instructions for step 5"
-      }
-    ]
-  },
-  {
-    "id": 23,
-    "slug": "recipe-slug-23",
-    "title": "Recipe Title 23",
-    "description": "Description for recipe 23 with protein amount and key selling points",
-    "protein": 23,
-    "calories": 415,
-    "carbs": 53,
-    "fat": 13,
-    "fiber": 7,
-    "sugar": 9,
-    "servingSize": "1 serving",
-    "yield": "1 serving",
-    "prepTime": "10",
-    "cookTime": "15",
-    "totalTime": "25",
-    "difficulty": "Medium",
-    "category": "Baked Oatmeal",
-    "tags": [
-      "tag23",
-      "tag24"
-    ],
-    "methods": [
-      "whey"
-    ],
-    "image": "recipe-slug-23.png",
-    "ingredients": [
-      "100g ingredient 23",
-      "50g ingredient 24"
-    ],
-    "instructions": [
-      {
-        "step": "Step 1",
-        "text": "Detailed instructions for step 1"
-      },
-      {
-        "step": "Step 2",
-        "text": "Detailed instructions for step 2"
-      },
-      {
-        "step": "Step 3",
-        "text": "Detailed instructions for step 3"
-      },
-      {
-        "step": "Step 4",
-        "text": "Detailed instructions for step 4"
-      },
-      {
-        "step": "Step 5",
-        "text": "Detailed instructions for step 5"
-      }
-    ]
-  },
-  {
-    "id": 24,
-    "slug": "recipe-slug-24",
-    "title": "Recipe Title 24",
-    "description": "Description for recipe 24 with protein amount and key selling points",
-    "protein": 24,
-    "calories": 420,
-    "carbs": 54,
-    "fat": 10,
-    "fiber": 5,
-    "sugar": 8,
-    "servingSize": "1 serving",
-    "yield": "1 serving",
-    "prepTime": "10",
-    "cookTime": "15",
-    "totalTime": "25",
-    "difficulty": "Medium",
-    "category": "Overnight Oats",
-    "tags": [
-      "tag24",
-      "tag25"
-    ],
-    "methods": [
-      "whey"
-    ],
-    "image": "recipe-slug-24.png",
-    "ingredients": [
-      "100g ingredient 24",
-      "50g ingredient 25"
-    ],
-    "instructions": [
-      {
-        "step": "Step 1",
-        "text": "Detailed instructions for step 1"
-      },
-      {
-        "step": "Step 2",
-        "text": "Detailed instructions for step 2"
-      },
-      {
-        "step": "Step 3",
-        "text": "Detailed instructions for step 3"
-      },
-      {
-        "step": "Step 4",
-        "text": "Detailed instructions for step 4"
-      },
-      {
-        "step": "Step 5",
-        "text": "Detailed instructions for step 5"
-      }
-    ]
-  },
-  {
-    "id": 25,
-    "slug": "recipe-slug-25",
-    "title": "Recipe Title 25",
-    "description": "Description for recipe 25 with protein amount and key selling points",
-    "protein": 20,
-    "calories": 425,
-    "carbs": 55,
-    "fat": 11,
-    "fiber": 6,
-    "sugar": 9,
-    "servingSize": "1 serving",
-    "yield": "1 serving",
-    "prepTime": "10",
-    "cookTime": "15",
-    "totalTime": "25",
-    "difficulty": "Medium",
-    "category": "Baked Oatmeal",
-    "tags": [
-      "tag25",
-      "tag26"
-    ],
-    "methods": [
-      "whey"
-    ],
-    "image": "recipe-slug-25.png",
-    "ingredients": [
-      "100g ingredient 25",
-      "50g ingredient 26"
-    ],
-    "instructions": [
-      {
-        "step": "Step 1",
-        "text": "Detailed instructions for step 1"
-      },
-      {
-        "step": "Step 2",
-        "text": "Detailed instructions for step 2"
-      },
-      {
-        "step": "Step 3",
-        "text": "Detailed instructions for step 3"
-      },
-      {
-        "step": "Step 4",
-        "text": "Detailed instructions for step 4"
-      },
-      {
-        "step": "Step 5",
-        "text": "Detailed instructions for step 5"
-      }
-    ]
-  }
-]
+{
+  "recipes": [
+    {
+      "id": 1,
+      "slug": "high-protein-oatmeal",
+      "title": "High Protein Oatmeal",
+      "description": "Classic high protein oatmeal with 28g protein per bowl. The perfect muscle-building breakfast to start your day.",
+      "protein": 28,
+      "calories": 380,
+      "carbs": 45,
+      "fat": 10,
+      "fiber": 6,
+      "sugar": 8,
+      "servingSize": "1 bowl",
+      "yield": "1 serving",
+      "prepTime": "5",
+      "cookTime": "5",
+      "totalTime": "10",
+      "difficulty": "Easy",
+      "category": "Classic",
+      "tags": ["high protein", "classic", "breakfast"],
+      "methods": ["whey"],
+      "image": "high-protein-oatmeal.png",
+      "ingredients": ["80g rolled oats", "240ml milk", "30g vanilla whey protein powder", "15g almond butter", "1 medium banana, sliced", "5g honey"],
+      "instructions": [{"step": "Cook Oats", "text": "Combine oats and milk in a pot. Cook over medium heat for 3-4 minutes, stirring occasionally."}, {"step": "Cool Slightly", "text": "Remove from heat and let cool for 1 minute to prevent protein from clumping."}, {"step": "Add Protein", "text": "Stir in the protein powder until fully incorporated."}, {"step": "Top", "text": "Add almond butter, sliced banana, and drizzle with honey."}, {"step": "Serve", "text": "Enjoy immediately while warm."}]
+    },
+    {
+      "id": 2,
+      "slug": "protein-oatmeal-recipe",
+      "title": "Protein Oatmeal Recipe",
+      "description": "The ultimate protein oatmeal recipe with 25g protein. Creamy, filling, and perfect for meal prep.",
+      "protein": 25,
+      "calories": 350,
+      "carbs": 42,
+      "fat": 9,
+      "fiber": 5,
+      "sugar": 10,
+      "servingSize": "1 bowl",
+      "yield": "1 serving",
+      "prepTime": "5",
+      "cookTime": "5",
+      "totalTime": "10",
+      "difficulty": "Beginner",
+      "category": "Classic",
+      "tags": ["recipe", "easy", "creamy"],
+      "methods": ["whey"],
+      "image": "protein-oatmeal-recipe.png",
+      "ingredients": ["80g rolled oats", "200ml water", "60ml milk", "30g chocolate whey protein powder", "15g peanut butter", "10g dark chocolate chips"],
+      "instructions": [{"step": "Boil Water", "text": "Bring water and milk to a simmer in a small pot."}, {"step": "Add Oats", "text": "Stir in oats and cook for 4 minutes until creamy."}, {"step": "Mix Protein", "text": "Remove from heat, wait 1 minute, then stir in protein powder."}, {"step": "Add Toppings", "text": "Top with peanut butter and chocolate chips."}, {"step": "Serve", "text": "Eat immediately for best texture."}]
+    },
+    {
+      "id": 3,
+      "slug": "protein-powder-in-oatmeal",
+      "title": "Protein Powder in Oatmeal",
+      "description": "Learn how to add protein powder to oatmeal perfectly. 26g protein with no clumps guaranteed.",
+      "protein": 26,
+      "calories": 340,
+      "carbs": 40,
+      "fat": 8,
+      "fiber": 5,
+      "sugar": 6,
+      "servingSize": "1 bowl",
+      "yield": "1 serving",
+      "prepTime": "3",
+      "cookTime": "5",
+      "totalTime": "8",
+      "difficulty": "Beginner",
+      "category": "Tips",
+      "tags": ["protein powder", "tips", "technique"],
+      "methods": ["whey"],
+      "image": "protein-powder-in-oatmeal.png",
+      "ingredients": ["80g rolled oats", "240ml milk", "30g vanilla whey protein powder", "5g cinnamon", "15g walnuts, chopped"],
+      "instructions": [{"step": "Cook Oats", "text": "Cook oats in milk over medium heat for 4 minutes."}, {"step": "Cool Down", "text": "Remove from heat and let sit for 2 minutes - this is crucial!"}, {"step": "Add Protein", "text": "Slowly stir in protein powder, mixing continuously to prevent clumps."}, {"step": "Season", "text": "Add cinnamon and stir well."}, {"step": "Top", "text": "Sprinkle with walnuts and serve."}]
+    },
+    {
+      "id": 4,
+      "slug": "oatmeal-with-protein-powder",
+      "title": "Oatmeal with Protein Powder",
+      "description": "Fluffy oatmeal with protein powder that tastes amazing. 24g protein for sustained energy.",
+      "protein": 24,
+      "calories": 360,
+      "carbs": 44,
+      "fat": 9,
+      "fiber": 6,
+      "sugar": 12,
+      "servingSize": "1 bowl",
+      "yield": "1 serving",
+      "prepTime": "5",
+      "cookTime": "5",
+      "totalTime": "10",
+      "difficulty": "Easy",
+      "category": "Classic",
+      "tags": ["fluffy", "protein powder", "energy"],
+      "methods": ["whey"],
+      "image": "oatmeal-with-protein-powder.png",
+      "ingredients": ["80g rolled oats", "240ml almond milk", "30g vanilla whey protein powder", "100g mixed berries", "10g maple syrup", "5g chia seeds"],
+      "instructions": [{"step": "Prepare", "text": "Heat almond milk in a pot until simmering."}, {"step": "Cook", "text": "Add oats and cook for 4 minutes, stirring frequently."}, {"step": "Rest", "text": "Remove from heat and let cool 1-2 minutes."}, {"step": "Protein", "text": "Fold in protein powder gently."}, {"step": "Finish", "text": "Top with berries, maple syrup, and chia seeds."}]
+    },
+    {
+      "id": 5,
+      "slug": "high-protein-oatmeal-recipe",
+      "title": "High Protein Oatmeal Recipe",
+      "description": "Maximize your protein intake with this 30g protein oatmeal recipe. Perfect for athletes and fitness enthusiasts.",
+      "protein": 30,
+      "calories": 420,
+      "carbs": 48,
+      "fat": 12,
+      "fiber": 7,
+      "sugar": 10,
+      "servingSize": "1 bowl",
+      "yield": "1 serving",
+      "prepTime": "5",
+      "cookTime": "5",
+      "totalTime": "10",
+      "difficulty": "Easy",
+      "category": "High Protein",
+      "tags": ["high protein", "athlete", "muscle building"],
+      "methods": ["whey"],
+      "image": "high-protein-oatmeal-recipe.png",
+      "ingredients": ["100g rolled oats", "240ml milk", "35g vanilla whey protein powder", "30g Greek yogurt", "20g almond butter", "1 medium banana"],
+      "instructions": [{"step": "Cook Oats", "text": "Cook oats in milk for 4-5 minutes until thick."}, {"step": "Cool", "text": "Let cool for 2 minutes off heat."}, {"step": "Add Protein", "text": "Stir in protein powder and Greek yogurt."}, {"step": "Top", "text": "Add almond butter and sliced banana."}, {"step": "Enjoy", "text": "Serve immediately for best texture."}]
+    },
+    {
+      "id": 6,
+      "slug": "high-protein-baked-oatmeal",
+      "title": "High Protein Baked Oatmeal",
+      "description": "Meal prep friendly baked oatmeal with 22g protein per serving. Make once, eat all week.",
+      "protein": 22,
+      "calories": 320,
+      "carbs": 38,
+      "fat": 10,
+      "fiber": 5,
+      "sugar": 12,
+      "servingSize": "1 square",
+      "yield": "6 servings",
+      "prepTime": "10",
+      "cookTime": "35",
+      "totalTime": "45",
+      "difficulty": "Medium",
+      "category": "Baked",
+      "tags": ["baked", "meal prep", "make ahead"],
+      "methods": ["whey"],
+      "image": "high-protein-baked-oatmeal.png",
+      "ingredients": ["240g rolled oats", "90g vanilla whey protein powder", "480ml milk", "2 eggs", "60g maple syrup", "10g baking powder", "5g cinnamon", "150g blueberries"],
+      "instructions": [{"step": "Preheat", "text": "Preheat oven to 350°F (175°C). Grease a 9x9 baking dish."}, {"step": "Mix Dry", "text": "Combine oats, protein powder, baking powder, and cinnamon."}, {"step": "Mix Wet", "text": "Whisk milk, eggs, and maple syrup together."}, {"step": "Combine", "text": "Pour wet into dry, mix well. Fold in blueberries."}, {"step": "Bake", "text": "Pour into dish and bake 35 minutes until golden. Cut into 6 squares."}]
+    },
+    {
+      "id": 7,
+      "slug": "protein-baked-oatmeal",
+      "title": "Protein Baked Oatmeal",
+      "description": "Soft and chewy protein baked oatmeal. 20g protein per slice with a cake-like texture.",
+      "protein": 20,
+      "calories": 290,
+      "carbs": 35,
+      "fat": 8,
+      "fiber": 4,
+      "sugar": 10,
+      "servingSize": "1 slice",
+      "yield": "8 servings",
+      "prepTime": "10",
+      "cookTime": "30",
+      "totalTime": "40",
+      "difficulty": "Easy",
+      "category": "Baked",
+      "tags": ["baked", "soft", "cake-like"],
+      "methods": ["whey"],
+      "image": "protein-baked-oatmeal.png",
+      "ingredients": ["200g rolled oats", "80g chocolate whey protein powder", "480ml almond milk", "2 eggs", "60g honey", "60g peanut butter", "5g baking powder"],
+      "instructions": [{"step": "Prep", "text": "Preheat oven to 350°F. Line a 9x13 pan with parchment."}, {"step": "Blend", "text": "Blend all ingredients except 40g oats until smooth."}, {"step": "Fold", "text": "Stir in remaining oats for texture."}, {"step": "Bake", "text": "Pour into pan and bake 30 minutes."}, {"step": "Cool", "text": "Let cool 10 minutes before slicing into 8 pieces."}]
+    },
+    {
+      "id": 8,
+      "slug": "protein-oatmeal-cookies",
+      "title": "Protein Oatmeal Cookies",
+      "description": "Soft protein oatmeal cookies you can eat for breakfast. 12g protein per cookie.",
+      "protein": 12,
+      "calories": 180,
+      "carbs": 22,
+      "fat": 6,
+      "fiber": 3,
+      "sugar": 8,
+      "servingSize": "1 cookie",
+      "yield": "12 cookies",
+      "prepTime": "10",
+      "cookTime": "12",
+      "totalTime": "22",
+      "difficulty": "Easy",
+      "category": "Cookies",
+      "tags": ["cookies", "breakfast", "portable"],
+      "methods": ["whey"],
+      "image": "protein-oatmeal-cookies.png",
+      "ingredients": ["150g rolled oats", "60g vanilla whey protein powder", "2 ripe bananas, mashed", "60g peanut butter", "60g chocolate chips", "5ml vanilla extract"],
+      "instructions": [{"step": "Preheat", "text": "Preheat oven to 350°F. Line baking sheet with parchment."}, {"step": "Mix", "text": "Mash bananas, add peanut butter and vanilla. Mix well."}, {"step": "Add Dry", "text": "Stir in oats and protein powder."}, {"step": "Fold", "text": "Add chocolate chips."}, {"step": "Bake", "text": "Scoop 12 cookies onto sheet. Bake 12 minutes until edges are golden."}]
+    },
+    {
+      "id": 9,
+      "slug": "oatmeal-protein-bars",
+      "title": "Oatmeal Protein Bars",
+      "description": "No-bake oatmeal protein bars for on-the-go fuel. 15g protein per bar.",
+      "protein": 15,
+      "calories": 220,
+      "carbs": 26,
+      "fat": 9,
+      "fiber": 4,
+      "sugar": 10,
+      "servingSize": "1 bar",
+      "yield": "10 bars",
+      "prepTime": "15",
+      "cookTime": "0",
+      "totalTime": "75",
+      "difficulty": "Easy",
+      "category": "Bars",
+      "tags": ["bars", "no-bake", "portable"],
+      "methods": ["whey"],
+      "image": "oatmeal-protein-bars.png",
+      "ingredients": ["200g rolled oats", "90g vanilla whey protein powder", "180g peanut butter", "120g honey", "60g chocolate chips", "60ml almond milk"],
+      "instructions": [{"step": "Mix Wet", "text": "Warm peanut butter and honey together until smooth."}, {"step": "Combine", "text": "Mix oats and protein powder in a large bowl."}, {"step": "Pour", "text": "Add wet mixture and milk. Stir until combined."}, {"step": "Add Chips", "text": "Fold in chocolate chips."}, {"step": "Set", "text": "Press into 9x9 pan. Refrigerate 1 hour. Cut into 10 bars."}]
+    },
+    {
+      "id": 10,
+      "slug": "overnight-protein-oats",
+      "title": "Overnight Protein Oats",
+      "description": "Prep the night before for grab-and-go protein oats. 23g protein with zero morning effort.",
+      "protein": 23,
+      "calories": 340,
+      "carbs": 40,
+      "fat": 10,
+      "fiber": 6,
+      "sugar": 12,
+      "servingSize": "1 jar",
+      "yield": "1 serving",
+      "prepTime": "5",
+      "cookTime": "0",
+      "totalTime": "485",
+      "difficulty": "Beginner",
+      "category": "Overnight",
+      "tags": ["overnight", "meal prep", "cold"],
+      "methods": ["whey"],
+      "image": "overnight-protein-oats.png",
+      "ingredients": ["80g rolled oats", "30g vanilla whey protein powder", "200ml milk", "100g Greek yogurt", "15g chia seeds", "15g maple syrup", "100g strawberries"],
+      "instructions": [{"step": "Combine", "text": "Mix oats, protein powder, milk, yogurt, chia seeds, and maple syrup in a jar."}, {"step": "Stir", "text": "Mix well to prevent protein clumps."}, {"step": "Refrigerate", "text": "Cover and refrigerate overnight (at least 8 hours)."}, {"step": "Top", "text": "In the morning, top with fresh strawberries."}, {"step": "Eat", "text": "Enjoy cold or microwave for 1 minute if you prefer warm."}]
+    },
+    {
+      "id": 11,
+      "slug": "chocolate-protein-oatmeal",
+      "title": "Chocolate Protein Oatmeal",
+      "description": "Decadent chocolate protein oatmeal that tastes like dessert. 25g protein for chocolate lovers.",
+      "protein": 25,
+      "calories": 380,
+      "carbs": 46,
+      "fat": 11,
+      "fiber": 6,
+      "sugar": 14,
+      "servingSize": "1 bowl",
+      "yield": "1 serving",
+      "prepTime": "5",
+      "cookTime": "5",
+      "totalTime": "10",
+      "difficulty": "Easy",
+      "category": "Chocolate",
+      "tags": ["chocolate", "dessert", "indulgent"],
+      "methods": ["whey"],
+      "image": "chocolate-protein-oatmeal.png",
+      "ingredients": ["80g rolled oats", "240ml chocolate almond milk", "30g chocolate whey protein powder", "15g unsweetened cocoa powder", "20g dark chocolate chips", "1 banana, sliced"],
+      "instructions": [{"step": "Cook", "text": "Cook oats in chocolate almond milk for 4 minutes."}, {"step": "Add Cocoa", "text": "Stir in cocoa powder while cooking."}, {"step": "Cool", "text": "Remove from heat, let cool 2 minutes."}, {"step": "Protein", "text": "Mix in protein powder until smooth."}, {"step": "Top", "text": "Add chocolate chips and banana slices."}]
+    },
+    {
+      "id": 12,
+      "slug": "peanut-butter-protein-oatmeal",
+      "title": "Peanut Butter Protein Oatmeal",
+      "description": "Creamy peanut butter protein oatmeal. 27g protein with rich nutty flavor.",
+      "protein": 27,
+      "calories": 420,
+      "carbs": 44,
+      "fat": 15,
+      "fiber": 6,
+      "sugar": 10,
+      "servingSize": "1 bowl",
+      "yield": "1 serving",
+      "prepTime": "5",
+      "cookTime": "5",
+      "totalTime": "10",
+      "difficulty": "Easy",
+      "category": "Nut Butter",
+      "tags": ["peanut butter", "creamy", "filling"],
+      "methods": ["whey"],
+      "image": "peanut-butter-protein-oatmeal.png",
+      "ingredients": ["80g rolled oats", "240ml milk", "30g vanilla whey protein powder", "32g peanut butter", "1 banana, sliced", "10g honey"],
+      "instructions": [{"step": "Cook Oats", "text": "Cook oats in milk until creamy, about 4 minutes."}, {"step": "Add PB", "text": "Stir in peanut butter while still warm."}, {"step": "Cool", "text": "Let cool 1-2 minutes."}, {"step": "Protein", "text": "Mix in protein powder."}, {"step": "Serve", "text": "Top with banana and drizzle with honey."}]
+    },
+    {
+      "id": 13,
+      "slug": "banana-protein-oatmeal",
+      "title": "Banana Protein Oatmeal",
+      "description": "Natural sweetness from banana in this protein oatmeal. 24g protein with no added sugar needed.",
+      "protein": 24,
+      "calories": 350,
+      "carbs": 48,
+      "fat": 8,
+      "fiber": 6,
+      "sugar": 16,
+      "servingSize": "1 bowl",
+      "yield": "1 serving",
+      "prepTime": "5",
+      "cookTime": "5",
+      "totalTime": "10",
+      "difficulty": "Beginner",
+      "category": "Fruit",
+      "tags": ["banana", "natural", "no sugar added"],
+      "methods": ["whey"],
+      "image": "banana-protein-oatmeal.png",
+      "ingredients": ["80g rolled oats", "240ml milk", "1 ripe banana, mashed", "30g vanilla whey protein powder", "5g cinnamon", "15g walnuts"],
+      "instructions": [{"step": "Mash", "text": "Mash banana in the pot before adding other ingredients."}, {"step": "Cook", "text": "Add oats, milk, and cinnamon. Cook 4 minutes."}, {"step": "Cool", "text": "Remove from heat, cool 1 minute."}, {"step": "Protein", "text": "Stir in protein powder."}, {"step": "Top", "text": "Sprinkle with walnuts and extra banana slices if desired."}]
+    },
+    {
+      "id": 14,
+      "slug": "apple-cinnamon-protein-oatmeal",
+      "title": "Apple Cinnamon Protein Oatmeal",
+      "description": "Warm apple cinnamon protein oatmeal like apple pie for breakfast. 23g protein.",
+      "protein": 23,
+      "calories": 360,
+      "carbs": 50,
+      "fat": 8,
+      "fiber": 7,
+      "sugar": 18,
+      "servingSize": "1 bowl",
+      "yield": "1 serving",
+      "prepTime": "5",
+      "cookTime": "8",
+      "totalTime": "13",
+      "difficulty": "Easy",
+      "category": "Fruit",
+      "tags": ["apple", "cinnamon", "fall"],
+      "methods": ["whey"],
+      "image": "apple-cinnamon-protein-oatmeal.png",
+      "ingredients": ["80g rolled oats", "240ml milk", "1 medium apple, diced", "30g vanilla whey protein powder", "5g cinnamon", "15g maple syrup", "15g pecans"],
+      "instructions": [{"step": "Cook Apple", "text": "Sauté diced apple with cinnamon for 2 minutes."}, {"step": "Add Oats", "text": "Add oats and milk, cook 4-5 minutes."}, {"step": "Cool", "text": "Remove from heat, let cool 1 minute."}, {"step": "Protein", "text": "Stir in protein powder."}, {"step": "Finish", "text": "Drizzle with maple syrup and top with pecans."}]
+    },
+    {
+      "id": 15,
+      "slug": "blueberry-protein-oatmeal",
+      "title": "Blueberry Protein Oatmeal",
+      "description": "Antioxidant-rich blueberry protein oatmeal. 24g protein with burst of berry flavor.",
+      "protein": 24,
+      "calories": 340,
+      "carbs": 44,
+      "fat": 8,
+      "fiber": 6,
+      "sugar": 14,
+      "servingSize": "1 bowl",
+      "yield": "1 serving",
+      "prepTime": "5",
+      "cookTime": "5",
+      "totalTime": "10",
+      "difficulty": "Easy",
+      "category": "Fruit",
+      "tags": ["blueberry", "antioxidant", "berry"],
+      "methods": ["whey"],
+      "image": "blueberry-protein-oatmeal.png",
+      "ingredients": ["80g rolled oats", "240ml milk", "100g blueberries", "30g vanilla whey protein powder", "15g almond butter", "10g honey"],
+      "instructions": [{"step": "Cook", "text": "Cook oats in milk with half the blueberries for 4 minutes."}, {"step": "Mash", "text": "Mash the cooked blueberries into the oats."}, {"step": "Cool", "text": "Let cool 1-2 minutes."}, {"step": "Protein", "text": "Stir in protein powder."}, {"step": "Top", "text": "Add remaining blueberries, almond butter, and honey."}]
+    },
+    {
+      "id": 16,
+      "slug": "pumpkin-protein-oatmeal",
+      "title": "Pumpkin Protein Oatmeal",
+      "description": "Fall-inspired pumpkin protein oatmeal. 25g protein with warm pumpkin spice flavor.",
+      "protein": 25,
+      "calories": 370,
+      "carbs": 48,
+      "fat": 9,
+      "fiber": 7,
+      "sugar": 12,
+      "servingSize": "1 bowl",
+      "yield": "1 serving",
+      "prepTime": "5",
+      "cookTime": "5",
+      "totalTime": "10",
+      "difficulty": "Easy",
+      "category": "Seasonal",
+      "tags": ["pumpkin", "fall", "seasonal"],
+      "methods": ["whey"],
+      "image": "pumpkin-protein-oatmeal.png",
+      "ingredients": ["80g rolled oats", "240ml milk", "60g pumpkin puree", "30g vanilla whey protein powder", "5g pumpkin pie spice", "15g maple syrup", "15g pecans"],
+      "instructions": [{"step": "Cook", "text": "Cook oats in milk with pumpkin puree and spice for 4 minutes."}, {"step": "Cool", "text": "Remove from heat, let cool 1 minute."}, {"step": "Protein", "text": "Stir in protein powder until smooth."}, {"step": "Top", "text": "Drizzle with maple syrup and add pecans."}, {"step": "Serve", "text": "Enjoy warm."}]
+    },
+    {
+      "id": 17,
+      "slug": "vanilla-protein-oatmeal",
+      "title": "Vanilla Protein Oatmeal",
+      "description": "Simple vanilla protein oatmeal as a perfect base recipe. 24g protein to customize your way.",
+      "protein": 24,
+      "calories": 320,
+      "carbs": 40,
+      "fat": 8,
+      "fiber": 5,
+      "sugar": 8,
+      "servingSize": "1 bowl",
+      "yield": "1 serving",
+      "prepTime": "5",
+      "cookTime": "5",
+      "totalTime": "10",
+      "difficulty": "Beginner",
+      "category": "Classic",
+      "tags": ["vanilla", "base recipe", "customizable"],
+      "methods": ["whey"],
+      "image": "vanilla-protein-oatmeal.png",
+      "ingredients": ["80g rolled oats", "240ml milk", "30g vanilla whey protein powder", "5ml vanilla extract", "10g honey", "Toppings of choice"],
+      "instructions": [{"step": "Cook", "text": "Cook oats in milk with vanilla extract for 4 minutes."}, {"step": "Cool", "text": "Let cool 1-2 minutes off heat."}, {"step": "Protein", "text": "Stir in protein powder."}, {"step": "Sweeten", "text": "Add honey and mix."}, {"step": "Customize", "text": "Add your favorite toppings - fruit, nuts, or chocolate."}]
+    },
+    {
+      "id": 18,
+      "slug": "strawberry-protein-oatmeal",
+      "title": "Strawberry Protein Oatmeal",
+      "description": "Fresh strawberry protein oatmeal bursting with berry flavor. 23g protein.",
+      "protein": 23,
+      "calories": 330,
+      "carbs": 42,
+      "fat": 8,
+      "fiber": 6,
+      "sugar": 14,
+      "servingSize": "1 bowl",
+      "yield": "1 serving",
+      "prepTime": "5",
+      "cookTime": "5",
+      "totalTime": "10",
+      "difficulty": "Easy",
+      "category": "Fruit",
+      "tags": ["strawberry", "fresh", "berry"],
+      "methods": ["whey"],
+      "image": "strawberry-protein-oatmeal.png",
+      "ingredients": ["80g rolled oats", "240ml milk", "100g strawberries, sliced", "30g strawberry or vanilla whey protein powder", "15g almond butter", "5g honey"],
+      "instructions": [{"step": "Cook", "text": "Cook oats in milk for 4 minutes."}, {"step": "Cool", "text": "Remove from heat, let cool 1 minute."}, {"step": "Protein", "text": "Stir in protein powder."}, {"step": "Top", "text": "Add fresh strawberries and almond butter."}, {"step": "Finish", "text": "Drizzle with honey."}]
+    },
+    {
+      "id": 19,
+      "slug": "savory-protein-oatmeal",
+      "title": "Savory Protein Oatmeal",
+      "description": "Savory protein oatmeal for those who don't like sweet breakfasts. 28g protein.",
+      "protein": 28,
+      "calories": 380,
+      "carbs": 38,
+      "fat": 14,
+      "fiber": 5,
+      "sugar": 2,
+      "servingSize": "1 bowl",
+      "yield": "1 serving",
+      "prepTime": "5",
+      "cookTime": "10",
+      "totalTime": "15",
+      "difficulty": "Medium",
+      "category": "Savory",
+      "tags": ["savory", "eggs", "cheese"],
+      "methods": ["egg"],
+      "image": "savory-protein-oatmeal.png",
+      "ingredients": ["80g rolled oats", "240ml water or broth", "1 egg", "30g shredded cheddar cheese", "2g salt", "1g black pepper", "30g spinach", "1 egg for topping"],
+      "instructions": [{"step": "Cook Oats", "text": "Cook oats in water or broth for 3 minutes."}, {"step": "Add Egg", "text": "Crack one egg into oats, stir vigorously to create creamy texture."}, {"step": "Season", "text": "Add salt, pepper, and spinach. Cook 2 more minutes."}, {"step": "Cheese", "text": "Stir in shredded cheese until melted."}, {"step": "Top", "text": "Fry remaining egg and place on top."}]
+    },
+    {
+      "id": 20,
+      "slug": "maple-pecan-protein-oatmeal",
+      "title": "Maple Pecan Protein Oatmeal",
+      "description": "Indulgent maple pecan protein oatmeal. 24g protein with buttery pecan crunch.",
+      "protein": 24,
+      "calories": 400,
+      "carbs": 46,
+      "fat": 14,
+      "fiber": 5,
+      "sugar": 16,
+      "servingSize": "1 bowl",
+      "yield": "1 serving",
+      "prepTime": "5",
+      "cookTime": "5",
+      "totalTime": "10",
+      "difficulty": "Easy",
+      "category": "Indulgent",
+      "tags": ["maple", "pecan", "indulgent"],
+      "methods": ["whey"],
+      "image": "maple-pecan-protein-oatmeal.png",
+      "ingredients": ["80g rolled oats", "240ml milk", "30g vanilla whey protein powder", "20g maple syrup", "30g pecans, chopped", "5g butter"],
+      "instructions": [{"step": "Toast Pecans", "text": "Toast pecans in butter for 2 minutes until fragrant."}, {"step": "Cook Oats", "text": "Cook oats in milk for 4 minutes."}, {"step": "Cool", "text": "Let cool 1 minute."}, {"step": "Protein", "text": "Stir in protein powder."}, {"step": "Finish", "text": "Top with toasted pecans and drizzle with maple syrup."}]
+    },
+    {
+      "id": 21,
+      "slug": "coconut-protein-oatmeal",
+      "title": "Coconut Protein Oatmeal",
+      "description": "Tropical coconut protein oatmeal. 22g protein with island vibes.",
+      "protein": 22,
+      "calories": 360,
+      "carbs": 42,
+      "fat": 12,
+      "fiber": 6,
+      "sugar": 12,
+      "servingSize": "1 bowl",
+      "yield": "1 serving",
+      "prepTime": "5",
+      "cookTime": "5",
+      "totalTime": "10",
+      "difficulty": "Easy",
+      "category": "Tropical",
+      "tags": ["coconut", "tropical", "island"],
+      "methods": ["whey"],
+      "image": "coconut-protein-oatmeal.png",
+      "ingredients": ["80g rolled oats", "200ml coconut milk", "30g vanilla whey protein powder", "20g shredded coconut", "100g mango, diced", "10g honey"],
+      "instructions": [{"step": "Cook", "text": "Cook oats in coconut milk for 4 minutes."}, {"step": "Cool", "text": "Let cool 1-2 minutes."}, {"step": "Protein", "text": "Stir in protein powder."}, {"step": "Top", "text": "Add shredded coconut and diced mango."}, {"step": "Finish", "text": "Drizzle with honey."}]
+    },
+    {
+      "id": 22,
+      "slug": "coffee-protein-oatmeal",
+      "title": "Coffee Protein Oatmeal",
+      "description": "Wake up with coffee protein oatmeal. 24g protein plus caffeine boost.",
+      "protein": 24,
+      "calories": 340,
+      "carbs": 40,
+      "fat": 10,
+      "fiber": 5,
+      "sugar": 10,
+      "servingSize": "1 bowl",
+      "yield": "1 serving",
+      "prepTime": "5",
+      "cookTime": "5",
+      "totalTime": "10",
+      "difficulty": "Easy",
+      "category": "Coffee",
+      "tags": ["coffee", "caffeine", "morning"],
+      "methods": ["whey"],
+      "image": "coffee-protein-oatmeal.png",
+      "ingredients": ["80g rolled oats", "180ml brewed coffee", "60ml milk", "30g vanilla whey protein powder", "15g almond butter", "10g maple syrup", "10g dark chocolate chips"],
+      "instructions": [{"step": "Brew", "text": "Use freshly brewed coffee, cooled slightly."}, {"step": "Cook", "text": "Cook oats in coffee and milk for 4 minutes."}, {"step": "Cool", "text": "Let cool 2 minutes."}, {"step": "Protein", "text": "Stir in protein powder."}, {"step": "Top", "text": "Add almond butter, maple syrup, and chocolate chips."}]
+    },
+    {
+      "id": 23,
+      "slug": "carrot-cake-protein-oatmeal",
+      "title": "Carrot Cake Protein Oatmeal",
+      "description": "Carrot cake flavored protein oatmeal. 23g protein that tastes like dessert.",
+      "protein": 23,
+      "calories": 370,
+      "carbs": 48,
+      "fat": 10,
+      "fiber": 6,
+      "sugar": 16,
+      "servingSize": "1 bowl",
+      "yield": "1 serving",
+      "prepTime": "5",
+      "cookTime": "5",
+      "totalTime": "10",
+      "difficulty": "Easy",
+      "category": "Dessert",
+      "tags": ["carrot cake", "dessert", "spiced"],
+      "methods": ["whey"],
+      "image": "carrot-cake-protein-oatmeal.png",
+      "ingredients": ["80g rolled oats", "240ml milk", "50g shredded carrots", "30g vanilla whey protein powder", "5g cinnamon", "2g nutmeg", "20g raisins", "15g cream cheese"],
+      "instructions": [{"step": "Cook", "text": "Cook oats in milk with carrots and spices for 5 minutes."}, {"step": "Cool", "text": "Let cool 1-2 minutes."}, {"step": "Protein", "text": "Stir in protein powder."}, {"step": "Add Raisins", "text": "Fold in raisins."}, {"step": "Top", "text": "Add a dollop of cream cheese on top."}]
+    },
+    {
+      "id": 24,
+      "slug": "almond-butter-protein-oatmeal",
+      "title": "Almond Butter Protein Oatmeal",
+      "description": "Smooth almond butter protein oatmeal. 26g protein with healthy fats.",
+      "protein": 26,
+      "calories": 400,
+      "carbs": 42,
+      "fat": 14,
+      "fiber": 6,
+      "sugar": 10,
+      "servingSize": "1 bowl",
+      "yield": "1 serving",
+      "prepTime": "5",
+      "cookTime": "5",
+      "totalTime": "10",
+      "difficulty": "Easy",
+      "category": "Nut Butter",
+      "tags": ["almond butter", "healthy fats", "filling"],
+      "methods": ["whey"],
+      "image": "almond-butter-protein-oatmeal.png",
+      "ingredients": ["80g rolled oats", "240ml almond milk", "30g vanilla whey protein powder", "32g almond butter", "1 banana, sliced", "10g sliced almonds"],
+      "instructions": [{"step": "Cook", "text": "Cook oats in almond milk for 4 minutes."}, {"step": "Add Butter", "text": "Stir in almond butter while warm."}, {"step": "Cool", "text": "Let cool 1 minute."}, {"step": "Protein", "text": "Mix in protein powder."}, {"step": "Top", "text": "Add banana slices and sliced almonds."}]
+    },
+    {
+      "id": 25,
+      "slug": "mixed-berry-protein-oatmeal",
+      "title": "Mixed Berry Protein Oatmeal",
+      "description": "Colorful mixed berry protein oatmeal. 24g protein with antioxidant-rich berries.",
+      "protein": 24,
+      "calories": 350,
+      "carbs": 46,
+      "fat": 8,
+      "fiber": 7,
+      "sugar": 16,
+      "servingSize": "1 bowl",
+      "yield": "1 serving",
+      "prepTime": "5",
+      "cookTime": "5",
+      "totalTime": "10",
+      "difficulty": "Easy",
+      "category": "Fruit",
+      "tags": ["mixed berry", "antioxidant", "colorful"],
+      "methods": ["whey"],
+      "image": "mixed-berry-protein-oatmeal.png",
+      "ingredients": ["80g rolled oats", "240ml milk", "100g mixed berries (strawberries, blueberries, raspberries)", "30g vanilla whey protein powder", "15g honey", "10g chia seeds"],
+      "instructions": [{"step": "Cook", "text": "Cook oats in milk with half the berries for 4 minutes."}, {"step": "Mash", "text": "Lightly mash the cooked berries."}, {"step": "Cool", "text": "Let cool 1-2 minutes."}, {"step": "Protein", "text": "Stir in protein powder."}, {"step": "Top", "text": "Add remaining fresh berries, honey, and chia seeds."}]
+    }
+  ]
+}

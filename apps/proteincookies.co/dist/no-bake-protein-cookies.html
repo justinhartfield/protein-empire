@@ -1,567 +1,319 @@
-
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>No-Bake Protein Cookies (Macro-Verified) | ProteinCookies</title>
-
-<!-- SEO Meta Tags -->
-<meta name="description" content="Quick and easy no-bake protein cookies ready in just 15 minutes. Perfect for meal prep with 18g protein and a fudgy, chewy texture.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://proteincookies.co/no-bake-protein-cookies.html">
-
-<!-- Open Graph / Social Sharing -->
-<meta property="og:type" content="article">
-<meta property="og:site_name" content="ProteinCookies">
-<meta property="og:title" content="No-Bake Protein Cookies (Macro-Verified) | ProteinCookies">
-<meta property="og:description" content="Quick and easy no-bake protein cookies ready in just 15 minutes. Perfect for meal prep with 18g protein and a fudgy, chewy texture.">
-<meta property="og:image" content="https://proteincookies.co/recipe_images/no-bake-protein-cookies.png">
-<meta property="og:url" content="https://proteincookies.co/no-bake-protein-cookies.html">
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="No-Bake Protein Cookies (Macro-Verified) | ProteinCookies">
-<meta name="twitter:description" content="Quick and easy no-bake protein cookies ready in just 15 minutes. Perfect for meal prep with 18g protein and a fudgy, chewy texture.">
-<meta name="twitter:image" content="https://proteincookies.co/recipe_images/no-bake-protein-cookies.png">
-
-<!-- Theme & Favicon -->
-<meta name="theme-color" content="#f59e0b">
-<link rel="icon" type="image/png" href="/images/favicon.png">
-<link rel="apple-touch-icon" href="/images/favicon.png">
-
-<!-- Performance: DNS Prefetch & Preconnect -->
-<link rel="dns-prefetch" href="//cdn.tailwindcss.com">
-<link rel="dns-prefetch" href="//cdn.jsdelivr.net">
-
-<!-- Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-
-<!-- Performance: Preload LCP Image -->
-<link rel="preload" as="image" href="/recipe_images/no-bake-protein-cookies.png">
-
-
-<!-- Scripts -->
-<script src="https://cdn.tailwindcss.com"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-
-
-<!-- Ingredient Substitution System -->
-<script src="/js/ingredients-bundle.js"></script>
-
-
-<!-- Tailwind Config -->
-<script>
-    tailwind.config = {
-        theme: {
-            extend: {
-                fontFamily: {
-                    'anton': ['Anton', 'sans-serif'],
-                    'sans': ['Inter', 'sans-serif'],
-                },
-                colors: {
-                    brand: {
-                        50: '#fffbeb',
-                        100: '#fef3c7',
-                        500: '#f59e0b',
-                        600: '#d97706',
-                        900: '#451a03',
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No-Bake Protein Cookies | ProteinCookies.com</title>
+    
+    <meta name="description" content="Quick and easy no-bake protein cookies ready in just 15 minutes. Perfect for meal prep with 18g protein and a fudgy, chewy texture.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://proteincookies.co/no-bake-protein-cookies.html">
+    
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="No-Bake Protein Cookies | ProteinCookies.com">
+    <meta property="og:description" content="Quick and easy no-bake protein cookies ready in just 15 minutes. Perfect for meal prep with 18g protein and a fudgy, chewy texture.">
+    <meta property="og:image" content="https://proteincookies.co/recipe_images/no-bake-protein-cookies.png">
+    <meta property="og:url" content="https://proteincookies.co/no-bake-protein-cookies.html">
+    
+    <meta name="theme-color" content="#f59e0b">
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Recipe",
+      "name": "No-Bake Protein Cookies",
+      "description": "Quick and easy no-bake protein cookies ready in just 15 minutes. Perfect for meal prep with 18g protein and a fudgy, chewy texture.",
+      "image": "https://proteincookies.co/recipe_images/no-bake-protein-cookies.png",
+      "author": {"@type": "Organization", "name": "ProteinCookies.com"},
+      "prepTime": "PT10M",
+      "cookTime": "PT0M",
+      "totalTime": "PT15M",
+      "recipeYield": "12 cookies",
+      "recipeCategory": "Cookies",
+      "recipeCuisine": "American",
+      "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "155 calories",
+        "proteinContent": "18g",
+        "carbohydrateContent": "16g",
+        "fatContent": "6g",
+        "fiberContent": "3g",
+        "sugarContent": "6g"
+      },
+      "recipeIngredient": ["90g rolled oats", "60g chocolate whey protein powder", "128g natural peanut butter", "80g honey or maple syrup", "30g unsweetened cocoa powder", "60ml almond milk", "3g vanilla extract"],
+      "recipeInstructions": [{"@type": "HowToStep", "name": "Mix Base", "text": "In a large bowl, combine the oats, protein powder, and cocoa powder. Stir to combine."}, {"@type": "HowToStep", "name": "Add Wet Ingredients", "text": "Add the peanut butter, honey, almond milk, and vanilla extract. Mix until a thick, sticky dough forms."}, {"@type": "HowToStep", "name": "Adjust Consistency", "text": "If the mixture is too dry, add more almond milk 1 tablespoon at a time. If too wet, add more oats."}, {"@type": "HowToStep", "name": "Shape Cookies", "text": "Using wet hands, roll the mixture into 12 balls and flatten into cookie shapes on a parchment-lined tray."}, {"@type": "HowToStep", "name": "Chill", "text": "Refrigerate for at least 30 minutes until firm. Store in the refrigerator for up to 1 week."}]
+    }
+    </script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'anton': ['Anton', 'sans-serif'],
+                        'sans': ['Inter', 'sans-serif'],
                     },
-                    accent: {
-                        500: '#10b981',
+                    colors: {
+                        brand: {
+                            50: '#fffbeb',
+                            100: '#fef3c7',
+                            500: '#f59e0b',
+                            600: '#f59e0b',
+                            900: '#451a03',
+                        },
+                        accent: {
+                            500: '#10b981',
+                        }
                     }
                 }
             }
         }
-    }
-</script>
-
-<style>
-    [x-cloak] { display: none !important; }
-    .glass-nav {
-        background: rgba(255, 255, 255, 0.8);
-        backdrop-filter: blur(12px);
-        -webkit-backdrop-filter: blur(12px);
-    }
-    .anton-text {
-        font-family: 'Anton', sans-serif;
-        letter-spacing: 0.05em;
-    }
-    .recipe-card:hover .recipe-overlay { opacity: 1; }
-    .recipe-shadow { box-shadow: 0 20px 50px -12px rgba(0, 0, 0, 0.1); }
-</style>
-
-
-<!-- Recipe Schema (matching ProteinMuffins.com) -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org/",
-  "@type": "Recipe",
-  "name": "No-Bake Protein Cookies",
-  "image": ["https://proteincookies.co/recipe_images/no-bake-protein-cookies.png"],
-  "description": "Quick and easy no-bake protein cookies ready in just 15 minutes. Perfect for meal prep with 18g protein and a fudgy, chewy texture.",
-  "keywords": "protein cookies, Quick, No-Bake, Quick, Meal Prep",
-  "author": {
-    "@type": "Organization",
-    "name": "ProteinCookies",
-    "url": "https://proteincookies.co"
-  },
-  "prepTime": "PT10M",
-  "cookTime": "PT20M",
-  "totalTime": "PT15M",
-  "recipeYield": "12 cookies",
-  "nutrition": {
-    "@type": "NutritionInformation",
-    "calories": "155 kcal",
-    "proteinContent": "18g",
-    "fatContent": "6g",
-    "carbohydrateContent": "16g",
-    "fiberContent": "3g",
-    "sugarContent": "6g",
-    "servingSize": "1 cookies"
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.7",
-    "ratingCount": "250",
-    "bestRating": "5",
-    "worstRating": "1"
-  },
-  "datePublished": "2026-01-01",
-  "recipeCategory": "Quick &amp; Easy",
-  "recipeCuisine": "American",
-  "recipeIngredient": [&#34;90g rolled oats&#34;, &#34;60g chocolate whey protein powder&#34;, &#34;128g natural peanut butter&#34;, &#34;80g honey or maple syrup&#34;, &#34;30g unsweetened cocoa powder&#34;, &#34;0g 60ml almond milk&#34;, &#34;3g vanilla extract&#34;],
-  "recipeInstructions": [
-    
-    {
-      "@type": "HowToStep",
-      "name": "Step 1",
-      "text": "In a large bowl, combine the oats, protein powder, and cocoa powder. Stir to combine."
-    },
-    
-    {
-      "@type": "HowToStep",
-      "name": "Step 2",
-      "text": "Add the peanut butter, honey, almond milk, and vanilla extract. Mix until a thick, sticky dough forms."
-    },
-    
-    {
-      "@type": "HowToStep",
-      "name": "Step 3",
-      "text": "If the mixture is too dry, add more almond milk 1 tablespoon at a time. If too wet, add more oats."
-    },
-    
-    {
-      "@type": "HowToStep",
-      "name": "Step 4",
-      "text": "Using wet hands, roll the mixture into 12 balls and flatten into cookie shapes on a parchment-lined tray."
-    },
-    
-    {
-      "@type": "HowToStep",
-      "name": "Step 5",
-      "text": "Refrigerate for at least 30 minutes until firm. Store in the refrigerator for up to 1 week."
-    }
-    
-  ]
-}
-</script>
-
-<!-- Breadcrumb Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://proteincookies.co/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Quick &amp; Easy",
-      "item": "https://proteincookies.co/category-quick.html"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "No-Bake Protein Cookies"
-    }
-  ]
-}
-</script>
+    </script>
+    <style>
+        .anton-text { font-family: 'Anton', sans-serif; letter-spacing: 0.05em; }
+        .glass-nav { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); }
+    </style>
 </head>
-<body class="min-h-screen flex flex-col bg-slate-50 text-slate-900 font-sans">
 
-
-<!-- Top Navigation (matching ProteinMuffins.com) -->
-<header class="sticky top-0 z-50 glass-nav border-b border-slate-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center h-20">
-            <div class="flex items-center">
-                <a href="/" class="flex items-center">
-                    <img src="/images/logo.png" alt="ProteinCookies" class="h-12 w-12 rounded-lg mr-3">
-                    <span class="anton-text text-2xl text-slate-900 tracking-wider uppercase">PROTEINCOOKIES</span>
+<body class="min-h-screen bg-slate-50 text-slate-900 font-sans">
+    <!-- Navigation -->
+    <nav class="glass-nav fixed top-0 left-0 right-0 z-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="/" class="flex items-center space-x-3">
+                    <span class="text-4xl">🍪</span>
+                    <span class="anton-text text-2xl" style="color: #f59e0b">PROTEINCOOKIES</span>
                 </a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/" class="text-slate-600 hover:text-brand-600 font-semibold text-sm uppercase tracking-wider">Recipes</a>
+                    <a href="category-all.html" class="text-slate-600 hover:text-brand-600 font-semibold text-sm uppercase tracking-wider">Categories</a>
+                    <a href="pack-starter.html" class="text-white px-5 py-2.5 rounded-full font-bold text-sm hover:opacity-90 transition" style="background: #f59e0b">STARTER PACK</a>
+                </div>
             </div>
-            <nav class="hidden md:flex space-x-8 items-center">
-                <a href="/#recipes" class="text-slate-600 hover:text-brand-600 font-semibold text-sm uppercase tracking-wider">Recipes</a>
-                <a href="/#categories" class="text-slate-600 hover:text-brand-600 font-semibold text-sm uppercase tracking-wider">Categories</a>
-                <a href="/#packs" class="text-slate-600 hover:text-brand-600 font-semibold text-sm uppercase tracking-wider">Recipe Packs</a>
-                <a href="/pack-starter.html" class="bg-brand-600 text-white px-5 py-2.5 rounded-full font-bold text-sm hover:bg-brand-900 transition shadow-lg shadow-brand-500/30">STARTER PACK (FREE)</a>
-            </nav>
-            <div class="md:hidden" x-data="{ open: false }">
-                <button @click="open = !open" class="text-slate-900 focus:outline-none">
-                    <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </div>
+    </nav>
+
+    <main class="pt-20">
+        <!-- Breadcrumb -->
+        <div class="bg-white border-b border-slate-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+                <nav class="flex text-sm text-slate-500">
+                    <a href="/" class="hover:text-brand-600">Home</a>
+                    <span class="mx-2">/</span>
+                    <a href="category-quick.html" class="hover:text-brand-600">Quick</a>
+                    <span class="mx-2">/</span>
+                    <span class="text-slate-900">No-Bake Protein Cookies</span>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Recipe Header -->
+        <section class="bg-white py-8 lg:py-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-8 lg:gap-12">
+                    <!-- Image -->
+                    <div class="relative">
+                        <div class="w-full aspect-square bg-gradient-to-br from-slate-100 to-slate-200 rounded-2xl shadow-xl flex items-center justify-center">
+                            <span class="text-9xl">🍪</span>
+                        </div>
+                        <span class="absolute top-4 left-4 text-white px-4 py-2 rounded-full font-bold text-lg shadow-lg" style="background: #f59e0b">18g PROTEIN</span>
+                    </div>
+                    
+                    <!-- Info -->
+                    <div>
+                        <span class="inline-block px-3 py-1 text-xs font-bold uppercase tracking-wider rounded-full mb-4" style="background: #f59e0b20; color: #f59e0b">Quick</span>
+                        <h1 class="anton-text text-4xl lg:text-5xl text-slate-900 mb-4">NO-BAKE PROTEIN COOKIES</h1>
+                        <p class="text-slate-600 text-lg mb-8">Quick and easy no-bake protein cookies ready in just 15 minutes. Perfect for meal prep with 18g protein and a fudgy, chewy texture.</p>
+                        
+                        <!-- Quick Stats -->
+                        <div class="grid grid-cols-4 gap-4 mb-8">
+                            <div class="text-center p-4 bg-slate-100 rounded-xl">
+                                <div class="text-2xl font-bold" style="color: #f59e0b">18g</div>
+                                <div class="text-xs text-slate-500 uppercase">Protein</div>
+                            </div>
+                            <div class="text-center p-4 bg-slate-100 rounded-xl">
+                                <div class="text-2xl font-bold text-slate-900">155</div>
+                                <div class="text-xs text-slate-500 uppercase">Calories</div>
+                            </div>
+                            <div class="text-center p-4 bg-slate-100 rounded-xl">
+                                <div class="text-2xl font-bold text-slate-900">15m</div>
+                                <div class="text-xs text-slate-500 uppercase">Total Time</div>
+                            </div>
+                            <div class="text-center p-4 bg-slate-100 rounded-xl">
+                                <div class="text-2xl font-bold text-slate-900">12</div>
+                                <div class="text-xs text-slate-500 uppercase">Yield</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Full Nutrition -->
+                        <div class="bg-slate-100 rounded-xl p-6">
+                            <h3 class="font-bold text-slate-900 mb-4">Nutrition per 1 cookie</h3>
+                            <div class="grid grid-cols-3 gap-4 text-sm">
+                                <div class="flex justify-between"><span class="text-slate-500">Carbs</span><span class="font-semibold">16g</span></div>
+                                <div class="flex justify-between"><span class="text-slate-500">Fat</span><span class="font-semibold">6g</span></div>
+                                <div class="flex justify-between"><span class="text-slate-500">Fiber</span><span class="font-semibold">3g</span></div>
+                                <div class="flex justify-between"><span class="text-slate-500">Sugar</span><span class="font-semibold">6g</span></div>
+                                <div class="flex justify-between"><span class="text-slate-500">Difficulty</span><span class="font-semibold">Beginner</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recipe Content -->
+        <section class="py-12 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-3 gap-8">
+                    <!-- Ingredients -->
+                    <div class="lg:col-span-1">
+                        <div class="bg-white rounded-2xl p-6 shadow-md sticky top-28">
+                            <h2 class="anton-text text-2xl text-slate-900 mb-6">INGREDIENTS</h2>
+                            <ul class="space-y-3">
+                                <li class="flex items-start gap-3"><span class="w-2 h-2 rounded-full mt-2 flex-shrink-0" style="background: #f59e0b"></span><span class="text-slate-700">90g rolled oats</span></li>
+                                <li class="flex items-start gap-3"><span class="w-2 h-2 rounded-full mt-2 flex-shrink-0" style="background: #f59e0b"></span><span class="text-slate-700">60g chocolate whey protein powder</span></li>
+                                <li class="flex items-start gap-3"><span class="w-2 h-2 rounded-full mt-2 flex-shrink-0" style="background: #f59e0b"></span><span class="text-slate-700">128g natural peanut butter</span></li>
+                                <li class="flex items-start gap-3"><span class="w-2 h-2 rounded-full mt-2 flex-shrink-0" style="background: #f59e0b"></span><span class="text-slate-700">80g honey or maple syrup</span></li>
+                                <li class="flex items-start gap-3"><span class="w-2 h-2 rounded-full mt-2 flex-shrink-0" style="background: #f59e0b"></span><span class="text-slate-700">30g unsweetened cocoa powder</span></li>
+                                <li class="flex items-start gap-3"><span class="w-2 h-2 rounded-full mt-2 flex-shrink-0" style="background: #f59e0b"></span><span class="text-slate-700">60ml almond milk</span></li>
+                                <li class="flex items-start gap-3"><span class="w-2 h-2 rounded-full mt-2 flex-shrink-0" style="background: #f59e0b"></span><span class="text-slate-700">3g vanilla extract</span></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Instructions -->
+                    <div class="lg:col-span-2">
+                        <div class="bg-white rounded-2xl p-6 lg:p-8 shadow-md">
+                            <h2 class="anton-text text-2xl text-slate-900 mb-6">INSTRUCTIONS</h2>
+                            <div class="space-y-6">
+                                <div class="flex gap-4">
+                                    <div class="w-10 h-10 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0" style="background: #f59e0b">1</div>
+                                    <div>
+                                        <h3 class="font-bold text-slate-900 mb-1">Mix Base</h3>
+                                        <p class="text-slate-600">In a large bowl, combine the oats, protein powder, and cocoa powder. Stir to combine.</p>
+                                    </div>
+                                </div>
+                                <div class="flex gap-4">
+                                    <div class="w-10 h-10 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0" style="background: #f59e0b">2</div>
+                                    <div>
+                                        <h3 class="font-bold text-slate-900 mb-1">Add Wet Ingredients</h3>
+                                        <p class="text-slate-600">Add the peanut butter, honey, almond milk, and vanilla extract. Mix until a thick, sticky dough forms.</p>
+                                    </div>
+                                </div>
+                                <div class="flex gap-4">
+                                    <div class="w-10 h-10 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0" style="background: #f59e0b">3</div>
+                                    <div>
+                                        <h3 class="font-bold text-slate-900 mb-1">Adjust Consistency</h3>
+                                        <p class="text-slate-600">If the mixture is too dry, add more almond milk 1 tablespoon at a time. If too wet, add more oats.</p>
+                                    </div>
+                                </div>
+                                <div class="flex gap-4">
+                                    <div class="w-10 h-10 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0" style="background: #f59e0b">4</div>
+                                    <div>
+                                        <h3 class="font-bold text-slate-900 mb-1">Shape Cookies</h3>
+                                        <p class="text-slate-600">Using wet hands, roll the mixture into 12 balls and flatten into cookie shapes on a parchment-lined tray.</p>
+                                    </div>
+                                </div>
+                                <div class="flex gap-4">
+                                    <div class="w-10 h-10 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0" style="background: #f59e0b">5</div>
+                                    <div>
+                                        <h3 class="font-bold text-slate-900 mb-1">Chill</h3>
+                                        <p class="text-slate-600">Refrigerate for at least 30 minutes until firm. Store in the refrigerator for up to 1 week.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        
+                        <!-- Pro Tips -->
+                        <div class="bg-white rounded-2xl p-6 lg:p-8 shadow-md mt-8">
+                            <h2 class="anton-text text-2xl text-slate-900 mb-6">PRO TIPS</h2>
+                            <div class="space-y-4">
+                                <div class="flex gap-3 p-4 bg-slate-50 rounded-xl">
+                                    <span class="text-xl">💡</span>
+                                    <p class="text-slate-600">Store in an airtight container at room temperature for up to 5 days.</p>
+                                </div>
+                                <div class="flex gap-3 p-4 bg-slate-50 rounded-xl">
+                                    <span class="text-xl">💡</span>
+                                    <p class="text-slate-600">For best results, use a kitchen scale to measure ingredients in grams.</p>
+                                </div>
+                                <div class="flex gap-3 p-4 bg-slate-50 rounded-xl">
+                                    <span class="text-xl">💡</span>
+                                    <p class="text-slate-600">Let cool completely before storing to prevent sogginess.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related Recipes -->
+        <section class="py-12 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="anton-text text-3xl text-slate-900 mb-8">MORE COOKIES RECIPES</h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <a href="sugar-free-protein-cookies.html" class="group bg-slate-50 rounded-2xl overflow-hidden hover:shadow-lg transition">
+                        <div class="aspect-video bg-gradient-to-br from-slate-100 to-slate-200 flex items-center justify-center">
+                            <span class="text-6xl">🍪</span>
+                        </div>
+                        <div class="p-4">
+                            <span class="text-xs font-bold uppercase" style="color: #f59e0b">19g Protein</span>
+                            <h3 class="font-bold text-slate-900 group-hover:text-brand-600 transition">Sugar-Free Protein Cookies</h3>
+                        </div>
+                    </a>
+                    <a href="snickerdoodle-protein-cookies.html" class="group bg-slate-50 rounded-2xl overflow-hidden hover:shadow-lg transition">
+                        <div class="aspect-video bg-gradient-to-br from-slate-100 to-slate-200 flex items-center justify-center">
+                            <span class="text-6xl">🍪</span>
+                        </div>
+                        <div class="p-4">
+                            <span class="text-xs font-bold uppercase" style="color: #f59e0b">20g Protein</span>
+                            <h3 class="font-bold text-slate-900 group-hover:text-brand-600 transition">Snickerdoodle Protein Cookies</h3>
+                        </div>
+                    </a>
+                    <a href="gluten-free-protein-cookies.html" class="group bg-slate-50 rounded-2xl overflow-hidden hover:shadow-lg transition">
+                        <div class="aspect-video bg-gradient-to-br from-slate-100 to-slate-200 flex items-center justify-center">
+                            <span class="text-6xl">🍪</span>
+                        </div>
+                        <div class="p-4">
+                            <span class="text-xs font-bold uppercase" style="color: #f59e0b">20g Protein</span>
+                            <h3 class="font-bold text-slate-900 group-hover:text-brand-600 transition">Gluten-Free Protein Cookies</h3>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="py-12" style="background: #f59e0b">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="anton-text text-3xl text-white mb-4">WANT MORE RECIPES?</h2>
+                <p class="text-white/80 mb-6">Get the Starter Pack with 5 essential protein cookies recipes.</p>
+                <a href="pack-starter.html" class="inline-flex items-center gap-2 bg-white px-8 py-4 rounded-xl font-bold hover:bg-slate-50 transition" style="color: #f59e0b">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
                     </svg>
-                </button>
-                <!-- Mobile Menu -->
-                <div x-show="open" x-cloak class="absolute top-20 left-0 right-0 bg-white border-b border-slate-100 p-6 space-y-4 shadow-xl">
-                    <a href="/#recipes" class="block text-xl anton-text text-slate-900">RECIPES</a>
-                    <a href="/#categories" class="block text-xl anton-text text-slate-900">CATEGORIES</a>
-                    <a href="/#packs" class="block text-xl anton-text text-slate-900">RECIPE PACKS</a>
-                    <a href="/pack-starter.html" class="block text-center w-full bg-brand-600 text-white py-4 rounded-xl font-bold anton-text text-lg">GET STARTER PACK</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
-
-
-<main class="flex-grow">
-    <!-- Recipe Header / Hero (matching ProteinMuffins.com) -->
-    <section class="bg-white pt-10 pb-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- Breadcrumbs -->
-            <nav class="flex items-center space-x-2 text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-6">
-                <a href="/" class="hover:text-brand-600 transition">Home</a>
-                <span>/</span>
-                <a href="/category-quick.html" class="hover:text-brand-600 transition">Quick &amp; Easy</a>
-                <span>/</span>
-                <span class="text-slate-900">No-Bake Protein Cookies</span>
-            </nav>
-
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-                <!-- Gallery Area -->
-                <div class="space-y-4">
-                    <div class="rounded-[2.5rem] overflow-hidden aspect-[4/5] lg:aspect-square relative group recipe-shadow">
-                        <img src="/recipe_images/no-bake-protein-cookies.png" alt="No-Bake Protein Cookies" class="w-full h-full object-cover" width="800" height="800">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
-                        <div class="absolute bottom-6 left-6 flex space-x-2">
-                            <span class="bg-white/90 backdrop-blur px-4 py-2 rounded-2xl text-[10px] font-bold anton-text tracking-widest">MACRO-VERIFIED</span>
-                            <span class="bg-brand-600 text-white px-4 py-2 rounded-2xl text-[10px] font-bold anton-text tracking-widest">18G PROTEIN</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Recipe Summary Area -->
-                <div>
-                    <h1 class="anton-text text-4xl lg:text-6xl text-slate-900 leading-[0.9] mb-6 uppercase">
-                        NO-BAKE PROTEIN COOKIES<br>
-                        <span class="text-brand-500">(MACRO-VERIFIED)</span>
-                    </h1>
-
-                    <!-- Stats Bar (matching ProteinMuffins.com) -->
-                    <div class="grid grid-cols-3 md:grid-cols-5 gap-4 py-8 border-y border-slate-100 my-8">
-                        <div class="text-center md:border-r border-slate-100">
-                            <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Protein</p>
-                            <p class="anton-text text-3xl text-brand-600 leading-none">18G</p>
-                        </div>
-                        <div class="text-center md:border-r border-slate-100">
-                            <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Calories</p>
-                            <p class="anton-text text-3xl text-slate-900 leading-none">155</p>
-                        </div>
-                        <div class="text-center md:border-r border-slate-100">
-                            <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Prep Time</p>
-                            <p class="anton-text text-3xl text-slate-900 leading-none">10M</p>
-                        </div>
-                        <div class="text-center md:border-r border-slate-100">
-                            <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Bake Time</p>
-                            <p class="anton-text text-3xl text-slate-900 leading-none">20M</p>
-                        </div>
-                        <div class="text-center hidden md:block">
-                            <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Yield</p>
-                            <p class="anton-text text-3xl text-slate-900 leading-none">12</p>
-                        </div>
-                    </div>
-
-                    <p class="text-slate-500 text-lg leading-relaxed mb-8">
-                        Quick and easy no-bake protein cookies ready in just 15 minutes. Perfect for meal prep with 18g protein and a fudgy, chewy texture. All nutrition data is verified using <a href="https://fdc.nal.usda.gov/" target="_blank" rel="noopener noreferrer" class="text-brand-600 hover:text-brand-700 font-semibold">USDA FoodData Central</a> for accuracy.
-                    </p>
-
-                    <!-- CTA Links -->
-                    <div class="flex flex-wrap gap-4 items-center">
-                        <a href="#recipe" class="bg-slate-900 text-white px-8 py-4 rounded-2xl font-bold anton-text text-lg hover:bg-slate-800 transition shadow-xl tracking-widest">
-                            JUMP TO RECIPE
-                        </a>
-                        <div class="flex items-center space-x-4">
-                            <button class="w-12 h-12 rounded-2xl border border-slate-200 flex items-center justify-center hover:bg-slate-50 transition text-slate-500" title="Share">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"></path>
-                                </svg>
-                            </button>
-                            <button onclick="window.print()" class="w-12 h-12 rounded-2xl border border-slate-200 flex items-center justify-center hover:bg-slate-50 transition text-slate-500" title="Print">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Recipe Content -->
-    <section id="recipe" class="py-16 scroll-mt-32">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-5 gap-12">
-                <!-- Ingredients (2 cols) -->
-                <div class="md:col-span-2">
-                    <h2 class="anton-text text-2xl uppercase mb-6 tracking-wider">INGREDIENTS</h2>
-                    <div class="bg-white rounded-2xl p-6 border border-slate-200 recipe-shadow">
-                        <ul class="space-y-4">
-                            
-                                <li class="flex justify-between items-center py-2 border-b border-slate-100 last:border-0">
-                                    <span class="text-slate-700">rolled oats</span>
-                                    <span class="font-mono text-slate-500 bg-slate-50 px-3 py-1 rounded-lg text-sm">90g</span>
-                                </li>
-                            
-                                <li class="flex justify-between items-center py-2 border-b border-slate-100 last:border-0">
-                                    <span class="text-slate-700">chocolate whey protein powder</span>
-                                    <span class="font-mono text-slate-500 bg-slate-50 px-3 py-1 rounded-lg text-sm">60g</span>
-                                </li>
-                            
-                                <li class="flex justify-between items-center py-2 border-b border-slate-100 last:border-0">
-                                    <span class="text-slate-700">natural peanut butter</span>
-                                    <span class="font-mono text-slate-500 bg-slate-50 px-3 py-1 rounded-lg text-sm">128g</span>
-                                </li>
-                            
-                                <li class="flex justify-between items-center py-2 border-b border-slate-100 last:border-0">
-                                    <span class="text-slate-700">honey or maple syrup</span>
-                                    <span class="font-mono text-slate-500 bg-slate-50 px-3 py-1 rounded-lg text-sm">80g</span>
-                                </li>
-                            
-                                <li class="flex justify-between items-center py-2 border-b border-slate-100 last:border-0">
-                                    <span class="text-slate-700">unsweetened cocoa powder</span>
-                                    <span class="font-mono text-slate-500 bg-slate-50 px-3 py-1 rounded-lg text-sm">30g</span>
-                                </li>
-                            
-                                <li class="flex justify-between items-center py-2 border-b border-slate-100 last:border-0">
-                                    <span class="text-slate-700">60ml almond milk</span>
-                                    <span class="font-mono text-slate-500 bg-slate-50 px-3 py-1 rounded-lg text-sm">0g</span>
-                                </li>
-                            
-                                <li class="flex justify-between items-center py-2 border-b border-slate-100 last:border-0">
-                                    <span class="text-slate-700">vanilla extract</span>
-                                    <span class="font-mono text-slate-500 bg-slate-50 px-3 py-1 rounded-lg text-sm">3g</span>
-                                </li>
-                            
-                        </ul>
-                    </div>
-                    
-                    <!-- Nutrition Card -->
-                    <div class="mt-6 bg-brand-50 rounded-2xl p-6 border border-brand-100">
-                        <h3 class="anton-text text-lg uppercase mb-4 tracking-wider">NUTRITION PER COOKIES</h3>
-                        <div class="grid grid-cols-2 gap-4">
-                            <div class="text-center">
-                                <p class="anton-text text-2xl text-brand-600">18g</p>
-                                <p class="text-xs text-slate-500 uppercase">Protein</p>
-                            </div>
-                            <div class="text-center">
-                                <p class="anton-text text-2xl text-slate-900">155</p>
-                                <p class="text-xs text-slate-500 uppercase">Calories</p>
-                            </div>
-                            <div class="text-center">
-                                <p class="anton-text text-2xl text-slate-900">16g</p>
-                                <p class="text-xs text-slate-500 uppercase">Carbs</p>
-                            </div>
-                            <div class="text-center">
-                                <p class="anton-text text-2xl text-slate-900">6g</p>
-                                <p class="text-xs text-slate-500 uppercase">Fat</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Instructions (3 cols) -->
-                <div class="md:col-span-3">
-                    <h2 class="anton-text text-2xl uppercase mb-6 tracking-wider">INSTRUCTIONS</h2>
-                    <div class="space-y-6">
-                        
-                            <div class="flex gap-4">
-                                <div class="flex-shrink-0 w-10 h-10 bg-brand-500 text-white rounded-full flex items-center justify-center font-bold anton-text text-lg">
-                                    1
-                                </div>
-                                <div class="pt-2">
-                                    <p class="text-slate-700 leading-relaxed">In a large bowl, combine the oats, protein powder, and cocoa powder. Stir to combine.</p>
-                                </div>
-                            </div>
-                        
-                            <div class="flex gap-4">
-                                <div class="flex-shrink-0 w-10 h-10 bg-brand-500 text-white rounded-full flex items-center justify-center font-bold anton-text text-lg">
-                                    2
-                                </div>
-                                <div class="pt-2">
-                                    <p class="text-slate-700 leading-relaxed">Add the peanut butter, honey, almond milk, and vanilla extract. Mix until a thick, sticky dough forms.</p>
-                                </div>
-                            </div>
-                        
-                            <div class="flex gap-4">
-                                <div class="flex-shrink-0 w-10 h-10 bg-brand-500 text-white rounded-full flex items-center justify-center font-bold anton-text text-lg">
-                                    3
-                                </div>
-                                <div class="pt-2">
-                                    <p class="text-slate-700 leading-relaxed">If the mixture is too dry, add more almond milk 1 tablespoon at a time. If too wet, add more oats.</p>
-                                </div>
-                            </div>
-                        
-                            <div class="flex gap-4">
-                                <div class="flex-shrink-0 w-10 h-10 bg-brand-500 text-white rounded-full flex items-center justify-center font-bold anton-text text-lg">
-                                    4
-                                </div>
-                                <div class="pt-2">
-                                    <p class="text-slate-700 leading-relaxed">Using wet hands, roll the mixture into 12 balls and flatten into cookie shapes on a parchment-lined tray.</p>
-                                </div>
-                            </div>
-                        
-                            <div class="flex gap-4">
-                                <div class="flex-shrink-0 w-10 h-10 bg-brand-500 text-white rounded-full flex items-center justify-center font-bold anton-text text-lg">
-                                    5
-                                </div>
-                                <div class="pt-2">
-                                    <p class="text-slate-700 leading-relaxed">Refrigerate for at least 30 minutes until firm. Store in the refrigerator for up to 1 week.</p>
-                                </div>
-                            </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Related Recipes -->
-    
-    <section class="py-16 bg-slate-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="anton-text text-3xl text-center mb-10 uppercase tracking-wider">YOU MIGHT ALSO LIKE</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                
-                    
-<!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/protein-cookie-dough-bites.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
-    <div class="relative aspect-square overflow-hidden">
-        <img src="/recipe_images/protein-cookie-dough-bites.png" alt="Protein Cookie Dough Bites" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-3 py-1 rounded-lg shadow-lg">
-            15g
-        </div>
-        <div class="recipe-overlay absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition-opacity duration-300"></div>
-    </div>
-    <div class="p-4">
-        <h3 class="font-semibold text-slate-900 mb-1 group-hover:text-brand-600 transition-colors">Protein Cookie Dough Bites</h3>
-        <p class="text-sm text-slate-500">140 cal • 15m • Beginner</p>
-    </div>
-</a>
-
-                
-            </div>
-        </div>
-    </section>
-    
-
-    <!-- CTA Banner -->
-    <section class="py-16 bg-brand-500">
-        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="anton-text text-3xl text-white uppercase mb-4 tracking-wider">WANT MORE RECIPES?</h2>
-            <p class="text-white/80 mb-8">Get our free starter pack with 5 essential protein cookies recipes.</p>
-            <a href="/pack-starter.html" class="inline-flex items-center gap-3 bg-white text-brand-600 px-8 py-4 rounded-2xl font-bold anton-text text-lg hover:bg-slate-100 transition-colors shadow-xl tracking-wider">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
-                </svg>
-                GET FREE STARTER PACK
-            </a>
-        </div>
-    </section>
-</main>
-
-
-<!-- Footer (matching ProteinMuffins.com) -->
-<footer class="bg-slate-900 text-white py-16">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
-            <!-- Brand -->
-            <div class="md:col-span-1">
-                <a href="/" class="flex items-center mb-4">
-                    <img src="/images/logo.png" alt="ProteinCookies" class="h-12 w-12 rounded-lg mr-3">
-                    <span class="anton-text text-xl tracking-wider">PROTEINCOOKIES</span>
+                    DOWNLOAD FREE PDF
                 </a>
-                <p class="text-slate-400 text-sm">Macro-verified protein cookie recipes with precise nutrition data</p>
             </div>
-            
-            <!-- Quick Links -->
-            <div>
-                <h4 class="anton-text text-sm tracking-wider mb-4">RECIPES</h4>
-                <ul class="space-y-2 text-slate-400 text-sm">
-                    <li><a href="/category-all.html" class="hover:text-white transition">All Recipes</a></li>
-                    <li><a href="/category-classic.html" class="hover:text-white transition">Classic</a></li>
-                    <li><a href="/category-high-protein.html" class="hover:text-white transition">High Protein</a></li>
-                    <li><a href="/category-quick.html" class="hover:text-white transition">Quick & Easy</a></li>
-                </ul>
-            </div>
-            
-            <!-- Recipe Packs -->
-            <div>
-                <h4 class="anton-text text-sm tracking-wider mb-4">RECIPE PACKS</h4>
-                <ul class="space-y-2 text-slate-400 text-sm">
-                    <li><a href="/pack-starter.html" class="hover:text-white transition">Starter Pack (Free)</a></li>
-                    <li><a href="/pack-no-bake.html" class="hover:text-white transition">No-Bake Pack</a></li>
-                    <li><a href="/pack-high-protein.html" class="hover:text-white transition">High Protein Pack</a></li>
-                </ul>
-            </div>
-            
-            <!-- Legal -->
-            <div>
-                <h4 class="anton-text text-sm tracking-wider mb-4">LEGAL</h4>
-                <ul class="space-y-2 text-slate-400 text-sm">
-                    <li><a href="/privacy.html" class="hover:text-white transition">Privacy Policy</a></li>
-                    <li><a href="/terms.html" class="hover:text-white transition">Terms of Use</a></li>
-                </ul>
-            </div>
-        </div>
-        
-        <!-- Empire Links -->
-        <div class="mt-12 pt-8 border-t border-slate-800">
-            <p class="text-slate-500 text-xs text-center mb-4">Part of the Protein Recipe Empire</p>
-            <div class="flex flex-wrap justify-center gap-4 text-xs text-slate-500">
-                <a href="https://proteinmuffins.com" class="hover:text-white transition">Muffins</a>
-                <a href="https://proteincookies.co" class="hover:text-white transition">Cookies</a>
-                <a href="https://proteinpancakes.co" class="hover:text-white transition">Pancakes</a>
-                <a href="https://proteinbrownies.co" class="hover:text-white transition">Brownies</a>
-                <a href="https://protein-bread.com" class="hover:text-white transition">Bread</a>
-                <a href="https://proteinbars.co" class="hover:text-white transition">Bars</a>
-                <a href="https://proteinbites.co" class="hover:text-white transition">Bites</a>
-                <a href="https://proteindonuts.co" class="hover:text-white transition">Donuts</a>
-                <a href="https://proteinoatmeal.co" class="hover:text-white transition">Oatmeal</a>
-                <a href="https://proteincheesecake.co" class="hover:text-white transition">Cheesecake</a>
-                <a href="https://proteinpizzas.co" class="hover:text-white transition">Pizza</a>
-                <a href="https://proteinpudding.co" class="hover:text-white transition">Pudding</a>
-            </div>
-        </div>
-        
-        <div class="mt-8 text-center text-slate-500 text-xs">
-            <p>&copy; 2026 ProteinCookies. All recipes macro-verified using USDA FoodData Central.</p>
-        </div>
-    </div>
-</footer>
+        </section>
+    </main>
 
-
+    <footer class="bg-slate-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-slate-400 text-sm">&copy; 2026 ProteinCookies.com. All rights reserved.</p>
+            <p class="text-slate-500 text-xs mt-2">Nutrition data verified using USDA FoodData Central.</p>
+        </div>
+    </footer>
 </body>
 </html>
