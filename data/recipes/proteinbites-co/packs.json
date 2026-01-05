@@ -1,9 +1,22 @@
 [
   {
+    "slug": "starter",
+    "title": "Starter Pack",
+    "description": "5 essential protein bite recipes to get you started. Perfect for beginners!",
+    "icon": "🍪",
+    "recipes": [
+      "peanut-butter-protein-balls",
+      "chocolate-protein-balls",
+      "no-bake-protein-balls",
+      "oatmeal-protein-balls",
+      "easy-protein-balls"
+    ]
+  },
+  {
     "slug": "chocolate-lovers",
     "title": "Chocolate Lovers",
     "description": "A collection of our most decadent and chocolatey protein bites.",
-    "icon": "\ud83c\udf6b",
+    "icon": "🍫",
     "recipes": [
       "chocolate-coconut-energy-bites",
       "recipe-slug-3",
@@ -15,7 +28,7 @@
     "slug": "fruit-pack",
     "title": "Fruit Pack",
     "description": "Enjoy the natural sweetness of fruit in these delicious and healthy protein bites.",
-    "icon": "\ud83c\udf53",
+    "icon": "🍓",
     "recipes": [
       "apricot-almond-protein-bites",
       "recipe-slug-6",
@@ -28,7 +41,7 @@
     "slug": "holiday-bites",
     "title": "Holiday Bites",
     "description": "Festive and flavorful protein bites perfect for holiday gatherings.",
-    "icon": "\ud83c\udf84",
+    "icon": "🎄",
     "recipes": [
       "recipe-slug-10",
       "recipe-slug-11",
@@ -40,7 +53,7 @@
     "slug": "nut-free-bites",
     "title": "Nut-Free Bites",
     "description": "Allergy-friendly protein bites made without any nuts.",
-    "icon": "\ud83e\udd5c",
+    "icon": "🥜",
     "recipes": [
       "recipe-slug-14",
       "recipe-slug-15",
@@ -53,7 +66,7 @@
     "slug": "quick-energy",
     "title": "Quick Energy",
     "description": "Get a quick and healthy energy boost with these protein-packed bites.",
-    "icon": "\u26a1\ufe0f",
+    "icon": "⚡️",
     "recipes": [
       "recipe-slug-19",
       "recipe-slug-20",
@@ -65,7 +78,7 @@
     "slug": "kids-favorites",
     "title": "Kids Favorites",
     "description": "Fun and tasty protein bites that your kids will love.",
-    "icon": "\ud83d\udc76",
+    "icon": "👶",
     "recipes": [
       "recipe-slug-23",
       "recipe-slug-24",
@@ -77,7 +90,7 @@
     "slug": "gluten-free-dairy-free",
     "title": "Gluten-Free & Dairy-Free",
     "description": "A collection of our best gluten-free and dairy-free recipes, perfect for those with dietary restrictions.",
-    "icon": "\ud83e\udd6c",
+    "icon": "🥬",
     "recipes": [
       "gluten-free-sunflower-seed-protein-bites",
       "dairy-free-tahini-date-protein-bites"
@@ -87,7 +100,7 @@
     "slug": "gluten-free-dairy-free",
     "title": "Gluten-Free & Dairy-Free",
     "description": "A collection of our best gluten-free and dairy-free recipes, perfect for those with dietary restrictions.",
-    "icon": "\ud83e\udd6c",
+    "icon": "🥬",
     "recipes": [
       "gluten-free-sunflower-seed-protein-bites",
       "dairy-free-tahini-date-protein-bites"

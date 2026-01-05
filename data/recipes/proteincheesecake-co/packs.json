@@ -1,9 +1,22 @@
 [
   {
+    "slug": "starter",
+    "title": "Starter Pack",
+    "description": "5 essential protein cheesecake recipes to get you started. Perfect for beginners!",
+    "icon": "🍰",
+    "recipes": [
+      "classic-vanilla-bean-cheesecake",
+      "no-bake-chocolate-cheesecake",
+      "strawberry-swirl-cheesecake",
+      "lemon-blueberry-cheesecake-minis",
+      "key-lime-cheesecake"
+    ]
+  },
+  {
     "slug": "classics-pack",
     "title": "Classics Pack",
     "description": "A collection of timeless cheesecake classics.",
-    "icon": "\ud83c\udf70",
+    "icon": "🍰",
     "recipes": [
       "classic-vanilla-bean-cheesecake",
       "strawberry-swirl-cheesecake",
@@ -15,7 +28,7 @@
     "slug": "no-bake-collection",
     "title": "No-Bake Collection",
     "description": "Deliciously simple no-bake cheesecakes for any occasion.",
-    "icon": "\ud83e\uddca",
+    "icon": "🧊",
     "recipes": [
       "no-bake-chocolate-cheesecake",
       "no-bake-lemon-cheesecake",
@@ -26,7 +39,7 @@
     "slug": "dessert-dip-party",
     "title": "Dessert Dip Party",
     "description": "A variety of sweet and creamy cheesecake dips, perfect for parties.",
-    "icon": "\ud83c\udf89",
+    "icon": "🎉",
     "recipes": [
       "funfetti-cheesecake-dip",
       "s-mores-cheesecake-dip",
@@ -38,7 +51,7 @@
     "slug": "mini-cheesecakes",
     "title": "Mini Cheesecakes",
     "description": "Perfectly portioned mini cheesecakes for a guilt-free treat.",
-    "icon": "\ud83e\uddc1",
+    "icon": "🧁",
     "recipes": [
       "lemon-blueberry-cheesecake-minis",
       "no-bake-oreo-cheesecake-bites"
@@ -48,7 +61,7 @@
     "slug": "seasonal-flavors",
     "title": "Seasonal Flavors",
     "description": "Enjoy the taste of the season with these festive cheesecakes.",
-    "icon": "\ud83c\udf42",
+    "icon": "🍂",
     "recipes": [
       "pumpkin-spice-cheesecake",
       "gingerbread-cheesecake",
@@ -59,7 +72,7 @@
     "slug": "single-serving",
     "title": "Single Serving",
     "description": "Quick and easy single-serving cheesecakes for one.",
-    "icon": "\ud83e\uddd1",
+    "icon": "🧑",
     "recipes": [
       "single-serving-peanut-butter-cheesecake",
       "single-serving-chocolate-cheesecake",
@@ -70,7 +83,7 @@
     "slug": "gluten-free-dairy-free",
     "title": "Gluten-Free & Dairy-Free",
     "description": "A collection of our best gluten-free and dairy-free recipes, perfect for those with dietary restrictions.",
-    "icon": "\ud83e\udd6c",
+    "icon": "🥬",
     "recipes": [
       "gluten-free-almond-crust-protein-cheesecake",
       "dairy-free-cashew-protein-cheesecake"

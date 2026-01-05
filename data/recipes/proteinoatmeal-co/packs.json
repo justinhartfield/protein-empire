@@ -1,9 +1,22 @@
 [
   {
+    "slug": "starter",
+    "title": "Starter Pack",
+    "description": "5 essential protein oatmeal recipes to get you started. Perfect for beginners!",
+    "icon": "🥣",
+    "recipes": [
+      "classic-protein-oatmeal",
+      "peanut-butter-protein-oatmeal",
+      "chocolate-protein-oatmeal",
+      "banana-protein-oatmeal",
+      "overnight-protein-oats"
+    ]
+  },
+  {
     "slug": "overnight-starter",
     "title": "Overnight Starter",
     "description": "A collection of our easiest and most delicious overnight oat recipes to get you started.",
-    "icon": "\ud83e\udd63",
+    "icon": "🥣",
     "recipes": [
       "classic-vanilla-overnight-oats",
       "recipe-slug-4",
@@ -16,7 +29,7 @@
     "slug": "baked-oatmeal",
     "title": "Baked Oatmeal",
     "description": "Warm, comforting, and protein-packed baked oatmeal recipes for a satisfying breakfast.",
-    "icon": "\ud83d\udd25",
+    "icon": "🔥",
     "recipes": [
       "chocolate-peanut-butter-baked-oatmeal",
       "recipe-slug-3",
@@ -29,7 +42,7 @@
     "slug": "dessert-breakfast",
     "title": "Dessert for Breakfast",
     "description": "Indulgent yet healthy oatmeal recipes that taste like dessert but are packed with protein.",
-    "icon": "\ud83c\udf70",
+    "icon": "🍰",
     "recipes": [
       "recipe-slug-11",
       "recipe-slug-13",
@@ -41,7 +54,7 @@
     "slug": "savory-oats",
     "title": "Savory Oats",
     "description": "Tired of sweet oatmeal? Try these savory and protein-rich oatmeal recipes for a change.",
-    "icon": "\ud83c\udf73",
+    "icon": "🍳",
     "recipes": [
       "recipe-slug-12",
       "recipe-slug-14",
@@ -53,7 +66,7 @@
     "slug": "meal-prep",
     "title": "Meal Prep",
     "description": "Plan your week with these easy and convenient meal prep oatmeal recipes.",
-    "icon": "\ud83d\uddd3\ufe0f",
+    "icon": "🗓️",
     "recipes": [
       "recipe-slug-19",
       "recipe-slug-21",
@@ -65,7 +78,7 @@
     "slug": "quick-proats",
     "title": "Quick Proats",
     "description": "When you're short on time, these quick and easy protein oatmeal recipes are a lifesaver.",
-    "icon": "\u26a1\ufe0f",
+    "icon": "⚡️",
     "recipes": [
       "recipe-slug-20",
       "recipe-slug-22",
@@ -76,7 +89,7 @@
     "slug": "gluten-free-dairy-free",
     "title": "Gluten-Free & Dairy-Free",
     "description": "A collection of our best gluten-free and dairy-free recipes, perfect for those with dietary restrictions.",
-    "icon": "\ud83e\udd6c",
+    "icon": "🥬",
     "recipes": [
       "gluten-free-certified-oats-protein-oatmeal",
       "dairy-free-coconut-milk-protein-oatmeal"
@@ -86,7 +99,7 @@
     "slug": "gluten-free-dairy-free",
     "title": "Gluten-Free & Dairy-Free",
     "description": "A collection of our best gluten-free and dairy-free recipes, perfect for those with dietary restrictions.",
-    "icon": "\ud83e\udd6c",
+    "icon": "🥬",
     "recipes": [
       "gluten-free-certified-oats-protein-oatmeal",
       "dairy-free-coconut-milk-protein-oatmeal"

@@ -1,9 +1,22 @@
 [
   {
+    "slug": "starter",
+    "title": "Starter Pack",
+    "description": "5 essential protein bread recipes to get you started. Perfect for beginners!",
+    "icon": "🍞",
+    "recipes": [
+      "high-protein-banana-bread-recipe",
+      "high-protein-bread",
+      "protein-banana-bread-recipe",
+      "apple-cinnamon-protein-bread",
+      "lemon-blueberry-protein-bread"
+    ]
+  },
+  {
     "slug": "banana-bread-pack",
     "title": "Banana Bread Pack",
     "description": "A collection of our best protein-packed banana bread recipes.",
-    "icon": "\ud83c\udf4c",
+    "icon": "🍌",
     "recipes": [
       "protein-banana-bread",
       "high-protein-banana-bread",
@@ -16,7 +29,7 @@
     "slug": "quick-bread-collection",
     "title": "Quick Bread Collection",
     "description": "Delicious and easy-to-make protein quick breads for any occasion.",
-    "icon": "\ud83c\udf5e",
+    "icon": "🍞",
     "recipes": [
       "protein-pumpkin-bread",
       "protein-zucchini-bread",
@@ -29,7 +42,7 @@
     "slug": "bagel-box-pack",
     "title": "Bagel Box Pack",
     "description": "A variety of protein bagels to start your day right.",
-    "icon": "\ud83e\udd6f",
+    "icon": "🥯",
     "recipes": [
       "protein-bagels",
       "cinnamon-raisin-protein-bagels",
@@ -42,7 +55,7 @@
     "slug": "savory-bread-pack",
     "title": "Savory Bread Pack",
     "description": "Flavorful and savory protein breads perfect for any meal.",
-    "icon": "\ud83c\udf3f",
+    "icon": "🌿",
     "recipes": [
       "savory-herb-protein-bread",
       "cheese-and-chive-protein-bread",
@@ -55,7 +68,7 @@
     "slug": "sweet-bread-pack",
     "title": "Sweet Bread Pack",
     "description": "Indulge your sweet tooth with these delicious protein-packed sweet breads.",
-    "icon": "\u2728",
+    "icon": "✨",
     "recipes": [
       "cinnamon-swirl-protein-bread",
       "lemon-blueberry-protein-bread",
@@ -68,7 +81,7 @@
     "slug": "sandwich-bread-pack",
     "title": "Sandwich Bread Pack",
     "description": "The perfect protein sandwich breads for your favorite fillings.",
-    "icon": "\ud83e\udd6a",
+    "icon": "🥪",
     "recipes": [
       "high-protein-bread",
       "whole-wheat-protein-sandwich-bread",
@@ -81,7 +94,7 @@
     "slug": "gluten-free-dairy-free",
     "title": "Gluten-Free & Dairy-Free",
     "description": "A collection of our best gluten-free and dairy-free recipes, perfect for those with dietary restrictions.",
-    "icon": "\ud83e\udd6c",
+    "icon": "🥬",
     "recipes": [
       "gluten-free-almond-flour-protein-bread",
       "dairy-free-oat-protein-sandwich-loaf"
@@ -91,7 +104,7 @@
     "slug": "gluten-free-dairy-free",
     "title": "Gluten-Free & Dairy-Free",
     "description": "A collection of our best gluten-free and dairy-free recipes, perfect for those with dietary restrictions.",
-    "icon": "\ud83e\udd6c",
+    "icon": "🥬",
     "recipes": [
       "gluten-free-almond-flour-protein-bread",
       "dairy-free-oat-protein-sandwich-loaf"

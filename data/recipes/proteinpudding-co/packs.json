@@ -1,9 +1,22 @@
 [
   {
+    "slug": "starter",
+    "title": "Starter Pack",
+    "description": "5 essential protein pudding recipes to get you started. Perfect for beginners!",
+    "icon": "🍮",
+    "recipes": [
+      "classic-chocolate-protein-pudding",
+      "quick-vanilla-protein-pudding",
+      "peanut-butter-cup-protein-pudding",
+      "banana-cream-protein-pudding",
+      "coconut-cream-protein-pudding"
+    ]
+  },
+  {
     "slug": "chocolate-lovers",
     "title": "Chocolate Lovers",
     "description": "A collection of our richest and most decadent chocolate protein puddings.",
-    "icon": "\ud83c\udf6b",
+    "icon": "🍫",
     "recipes": [
       "classic-chocolate-protein-pudding",
       "chocolate-chia-protein-pudding",
@@ -16,7 +29,7 @@
     "slug": "chia-starter",
     "title": "Chia Starter",
     "description": "Everything you need to get started with delicious and healthy protein-packed chia puddings.",
-    "icon": "\ud83c\udf31",
+    "icon": "🌱",
     "recipes": [
       "chocolate-chia-protein-pudding",
       "matcha-chia-protein-pudding",
@@ -29,7 +42,7 @@
     "slug": "creamy-dreamy",
     "title": "Creamy Dreamy",
     "description": "Indulge in our creamiest and most satisfying protein puddings and mousses.",
-    "icon": "\ud83c\udf66",
+    "icon": "🍦",
     "recipes": [
       "classic-chocolate-protein-pudding",
       "vanilla-bean-protein-mousse",
@@ -42,7 +55,7 @@
     "slug": "quick-puddings",
     "title": "Quick Puddings",
     "description": "Delicious protein puddings that are ready in 5 minutes or less.",
-    "icon": "\u23f1\ufe0f",
+    "icon": "⏱️",
     "recipes": [
       "quick-vanilla-protein-pudding",
       "classic-chocolate-protein-pudding",
@@ -55,7 +68,7 @@
     "slug": "mousse-collection",
     "title": "Mousse Collection",
     "description": "A collection of our light, airy, and protein-packed mousses.",
-    "icon": "\u2601\ufe0f",
+    "icon": "☁️",
     "recipes": [
       "vanilla-bean-protein-mousse",
       "lemon-raspberry-protein-mousse",
@@ -68,7 +81,7 @@
     "slug": "parfait-pack",
     "title": "Parfait Pack",
     "description": "Beautiful and delicious layered parfaits that are packed with protein.",
-    "icon": "\ud83c\udf53",
+    "icon": "🍓",
     "recipes": [
       "strawberry-parfait-protein-pudding",
       "blueberry-parfait-protein-pudding",
@@ -80,7 +93,7 @@
     "slug": "gluten-free-dairy-free",
     "title": "Gluten-Free & Dairy-Free",
     "description": "A collection of our best gluten-free and dairy-free recipes, perfect for those with dietary restrictions.",
-    "icon": "\ud83e\udd6c",
+    "icon": "🥬",
     "recipes": [
       "gluten-free-chocolate-chia-protein-pudding",
       "dairy-free-vanilla-coconut-protein-pudding"
@@ -90,7 +103,7 @@
     "slug": "gluten-free-dairy-free",
     "title": "Gluten-Free & Dairy-Free",
     "description": "A collection of our best gluten-free and dairy-free recipes, perfect for those with dietary restrictions.",
-    "icon": "\ud83e\udd6c",
+    "icon": "🥬",
     "recipes": [
       "gluten-free-chocolate-chia-protein-pudding",
       "dairy-free-vanilla-coconut-protein-pudding"

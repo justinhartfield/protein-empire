@@ -1,9 +1,22 @@
 [
   {
+    "slug": "starter",
+    "title": "Starter Pack",
+    "description": "5 essential protein pizza recipes to get you started. Perfect for beginners!",
+    "icon": "🍕",
+    "recipes": [
+      "classic-protein-pizza-crust",
+      "chicken-protein-pizza",
+      "margherita-protein-pizza",
+      "pepperoni-protein-pizza",
+      "high-protein-pizza-crust"
+    ]
+  },
+  {
     "slug": "dough-pack",
     "title": "Dough Pack",
     "description": "A collection of our best protein pizza dough recipes.",
-    "icon": "\ud83c\udf55",
+    "icon": "🍕",
     "recipes": [
       "classic-protein-pizza-crust",
       "recipe-slug-2",
@@ -15,7 +28,7 @@
     "slug": "pizza-night-classics",
     "title": "Pizza Night Classics",
     "description": "All the classics for your next pizza night.",
-    "icon": "\ud83c\udf89",
+    "icon": "🎉",
     "recipes": [
       "recipe-slug-5",
       "recipe-slug-6",
@@ -27,7 +40,7 @@
     "slug": "veggie-crust",
     "title": "Veggie Crust",
     "description": "Healthy and delicious veggie-based pizza crusts.",
-    "icon": "\ud83e\udd66",
+    "icon": "🥦",
     "recipes": [
       "recipe-slug-9",
       "recipe-slug-10",
@@ -39,7 +52,7 @@
     "slug": "keto-crusts",
     "title": "Keto Crusts",
     "description": "Low-carb and keto-friendly pizza crusts.",
-    "icon": "\ud83e\udd51",
+    "icon": "🥑",
     "recipes": [
       "recipe-slug-13",
       "recipe-slug-14",
@@ -51,7 +64,7 @@
     "slug": "creative-pizzas",
     "title": "Creative Pizzas",
     "description": "Unique and creative pizza recipes to try.",
-    "icon": "\ud83c\udfa8",
+    "icon": "🎨",
     "recipes": [
       "recipe-slug-17",
       "recipe-slug-18",
@@ -63,7 +76,7 @@
     "slug": "quick-flatbreads",
     "title": "Quick Flatbreads",
     "description": "Easy and quick flatbread recipes.",
-    "icon": "\ud83c\udfc3",
+    "icon": "🏃",
     "recipes": [
       "recipe-slug-21",
       "recipe-slug-22",
@@ -76,7 +89,7 @@
     "slug": "gluten-free-dairy-free",
     "title": "Gluten-Free & Dairy-Free",
     "description": "A collection of our best gluten-free and dairy-free recipes, perfect for those with dietary restrictions.",
-    "icon": "\ud83e\udd6c",
+    "icon": "🥬",
     "recipes": [
       "gluten-free-cauliflower-protein-pizza-crust",
       "dairy-free-chickpea-flour-protein-pizza"
@@ -86,7 +99,7 @@
     "slug": "gluten-free-dairy-free",
     "title": "Gluten-Free & Dairy-Free",
     "description": "A collection of our best gluten-free and dairy-free recipes, perfect for those with dietary restrictions.",
-    "icon": "\ud83e\udd6c",
+    "icon": "🥬",
     "recipes": [
       "gluten-free-cauliflower-protein-pizza-crust",
       "dairy-free-chickpea-flour-protein-pizza"

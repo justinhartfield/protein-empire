@@ -1,9 +1,22 @@
 [
   {
+    "slug": "starter",
+    "title": "Starter Pack",
+    "description": "5 essential protein pancake recipes to get you started. Perfect for beginners!",
+    "icon": "🥞",
+    "recipes": [
+      "classic-protein-pancakes",
+      "banana-protein-pancakes",
+      "chocolate-chip-protein-pancakes",
+      "blueberry-protein-pancakes",
+      "fluffy-protein-pancakes"
+    ]
+  },
+  {
     "slug": "weekend-brunch",
     "title": "Weekend Brunch",
     "description": "A collection of our most indulgent and impressive breakfast recipes, perfect for a leisurely weekend brunch.",
-    "icon": "\ud83e\udd5e",
+    "icon": "🥞",
     "recipes": [
       "belgian-protein-waffles",
       "lemon-ricotta-protein-crepes",
@@ -16,7 +29,7 @@
     "slug": "quick-and-easy",
     "title": "Quick & Easy",
     "description": "Short on time? These simple and speedy recipes will have you enjoying a high-protein breakfast in 15 minutes or less.",
-    "icon": "\u23f1\ufe0f",
+    "icon": "⏱️",
     "recipes": [
       "classic-whey-protein-pancakes",
       "chocolate-casein-pancakes",
@@ -28,7 +41,7 @@
     "slug": "savory-breakfast",
     "title": "Savory Breakfast",
     "description": "Not a fan of sweet breakfasts? This pack is for you! Enjoy a variety of savory pancakes and crepes.",
-    "icon": "\ud83c\udf73",
+    "icon": "🍳",
     "recipes": [
       "savory-herb-and-cheese-pancakes",
       "savory-spinach-and-feta-protein-crepes"
@@ -38,7 +51,7 @@
     "slug": "waffle-lovers",
     "title": "Waffle Lovers",
     "description": "A collection of our best and most creative protein waffle recipes, from classic to decadent.",
-    "icon": "\ud83e\uddc7",
+    "icon": "🧇",
     "recipes": [
       "belgian-protein-waffles",
       "cinnamon-roll-protein-waffles",
@@ -51,7 +64,7 @@
     "slug": "crepe-collection",
     "title": "Crepe Collection",
     "description": "Explore the delicate and delicious world of high-protein crepes with this collection of sweet and savory recipes.",
-    "icon": "\ud83c\uddeb\ud83c\uddf7",
+    "icon": "🇫🇷",
     "recipes": [
       "lemon-ricotta-protein-crepes",
       "matcha-green-tea-protein-crepes",
@@ -63,7 +76,7 @@
     "slug": "high-protein-stack",
     "title": "High-Protein Stack",
     "description": "Maximize your protein intake with this collection of our highest-protein pancake and waffle recipes.",
-    "icon": "\ud83d\udcaa",
+    "icon": "💪",
     "recipes": [
       "savory-herb-and-cheese-pancakes",
       "double-chocolate-protein-waffles",
@@ -76,7 +89,7 @@
     "slug": "gluten-free-dairy-free",
     "title": "Gluten-Free & Dairy-Free",
     "description": "A collection of our best gluten-free and dairy-free recipes, perfect for those with dietary restrictions.",
-    "icon": "\ud83e\udd6c",
+    "icon": "🥬",
     "recipes": [
       "gluten-free-buckwheat-protein-pancakes",
       "dairy-free-banana-oat-protein-pancakes"
@@ -86,7 +99,7 @@
     "slug": "gluten-free-dairy-free",
     "title": "Gluten-Free & Dairy-Free",
     "description": "A collection of our best gluten-free and dairy-free recipes, perfect for those with dietary restrictions.",
-    "icon": "\ud83e\udd6c",
+    "icon": "🥬",
     "recipes": [
       "gluten-free-buckwheat-protein-pancakes",
       "dairy-free-banana-oat-protein-pancakes"

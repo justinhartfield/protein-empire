@@ -1460,7 +1460,7 @@ async function generateCategoryPage(site, category, allRecipes, categories, part
   pageDescription: 'Browse our collection of ' + category.name.toLowerCase() + ' protein ' + site.foodType + ' recipes. All macro-verified with precise nutrition data.',
   canonicalPath: '/category-' + category.slug + '.html',
   ogType: 'website',
-  ogImage: filteredRecipes[0] ? '/recipe_images/' + filteredRecipes[0].slug + '.png' : '/images/logo.png',
+  ogImage: filteredRecipes[0] ? '/recipe_images/' + filteredRecipes[0].slug + '-og.webp' : '/images/logo.webp',
   preloadImage: filteredRecipes[0] ? '/recipe_images/' + filteredRecipes[0].slug + '-medium.webp' : null,
   includeIngredients: false
 }) %>
@@ -1563,7 +1563,7 @@ async function generatePackPage(site, pack, allRecipes, partials, outputDir) {
   pageDescription: pack.description + ' Download our free PDF with ' + packRecipes.length + ' macro-verified recipes.',
   canonicalPath: '/pack-' + pack.slug + '.html',
   ogType: 'website',
-  ogImage: packRecipes[0] ? '/recipe_images/' + packRecipes[0].slug + '.png' : '/images/logo.png',
+  ogImage: packRecipes[0] ? '/recipe_images/' + packRecipes[0].slug + '-og.webp' : '/images/logo.webp',
   preloadImage: null,
   includeIngredients: false
 }) %>

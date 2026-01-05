@@ -1,9 +1,22 @@
 [
   {
+    "slug": "starter",
+    "title": "Starter Pack",
+    "description": "5 essential protein donut recipes to get you started. Perfect for beginners!",
+    "icon": "🍩",
+    "recipes": [
+      "chocolate-protein-donuts",
+      "vanilla-protein-donuts",
+      "baked-protein-donuts",
+      "glazed-protein-donuts",
+      "cinnamon-sugar-protein-donuts"
+    ]
+  },
+  {
     "slug": "glazed-classics",
     "title": "Glazed Classics",
     "description": "A collection of our most popular glazed protein donuts.",
-    "icon": "\ud83c\udf69",
+    "icon": "🍩",
     "recipes": [
       "classic-glazed-protein-donuts",
       "chocolate-frosted-protein-donuts",
@@ -15,7 +28,7 @@
     "slug": "bakery-box",
     "title": "Bakery Box",
     "description": "A variety pack of our best-selling bakery-style protein donuts.",
-    "icon": "\ud83e\uddc1",
+    "icon": "🧁",
     "recipes": [
       "cinnamon-sugar-protein-donuts",
       "blueberry-protein-donuts",
@@ -28,7 +41,7 @@
     "slug": "holiday-donuts",
     "title": "Holiday Donuts",
     "description": "Get festive with our seasonal holiday protein donuts.",
-    "icon": "\ud83c\udf84",
+    "icon": "🎄",
     "recipes": [
       "pumpkin-spice-protein-donuts",
       "gingerbread-protein-donuts",
@@ -39,7 +52,7 @@
     "slug": "filled-donuts",
     "title": "Filled Donuts",
     "description": "A delicious collection of our cream and jelly-filled protein donuts.",
-    "icon": "\ud83c\udf89",
+    "icon": "🎉",
     "recipes": [
       "boston-cream-protein-donuts",
       "jelly-filled-protein-donuts"
@@ -49,7 +62,7 @@
     "slug": "frosted-collection",
     "title": "Frosted Collection",
     "description": "A colorful assortment of our beautifully frosted protein donuts.",
-    "icon": "\ud83c\udfa8",
+    "icon": "🎨",
     "recipes": [
       "chocolate-frosted-protein-donuts",
       "strawberry-frosted-protein-donuts",
@@ -62,7 +75,7 @@
     "slug": "air-fryer-pack",
     "title": "Air-Fryer Pack",
     "description": "Quick, easy, and delicious protein donuts made in your air fryer.",
-    "icon": "\ud83d\udca8",
+    "icon": "💨",
     "recipes": [
       "air-fryer-protein-donuts"
     ]
@@ -71,7 +84,7 @@
     "slug": "gluten-free-dairy-free",
     "title": "Gluten-Free & Dairy-Free",
     "description": "A collection of our best gluten-free and dairy-free recipes, perfect for those with dietary restrictions.",
-    "icon": "\ud83e\udd6c",
+    "icon": "🥬",
     "recipes": [
       "gluten-free-baked-protein-donuts",
       "dairy-free-chocolate-glazed-protein-donuts"
@@ -81,7 +94,7 @@
     "slug": "gluten-free-dairy-free",
     "title": "Gluten-Free & Dairy-Free",
     "description": "A collection of our best gluten-free and dairy-free recipes, perfect for those with dietary restrictions.",
-    "icon": "\ud83e\udd6c",
+    "icon": "🥬",
     "recipes": [
       "gluten-free-baked-protein-donuts",
       "dairy-free-chocolate-glazed-protein-donuts"
