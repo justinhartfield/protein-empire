@@ -1,6 +1,6 @@
 # Protein Empire Analytics Setup Guide
 
-Generated: 2026-01-05T15:43:30.584Z
+Generated: 2026-01-05T16:16:37.540Z
 
 ## Overview
 

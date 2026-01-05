@@ -19,7 +19,7 @@ export const sites = {
     logo: '/images/logo.png',
     favicon: '/images/favicon.png',
     socialImage: '/images/social-share.png',
-    ga4Id: '',
+    ga4Id: 'G-86MYLJ5WDT',
     status: 'ready',
     isIndexer: true,
     // Hero ingredients for ingredient tag collections
@@ -92,7 +92,7 @@ export const sites = {
     logo: '/images/logo.png',
     favicon: '/images/favicon.png',
     socialImage: '/images/social-share.png',
-    ga4Id: '',
+    ga4Id: 'G-4LGR56JYMC',
     status: 'ready'
   },
   
@@ -109,7 +109,7 @@ export const sites = {
     logo: '/images/logo.png',
     favicon: '/images/favicon.png',
     socialImage: '/images/social-share.png',
-    ga4Id: '',
+    ga4Id: 'G-QTR3Z59DM3',
     status: 'planned'
   },
   
@@ -126,7 +126,7 @@ export const sites = {
     logo: '/images/logo.png',
     favicon: '/images/favicon.png',
     socialImage: '/images/social-share.png',
-    ga4Id: '',
+    ga4Id: 'G-XNSVN4G4WW',
     status: 'planned'
   },
   
@@ -143,7 +143,7 @@ export const sites = {
     logo: '/images/logo.png',
     favicon: '/images/favicon.png',
     socialImage: '/images/social-share.png',
-    ga4Id: '',
+    ga4Id: 'G-TJX3PMBKTX',
     status: 'planned'
   },
   
@@ -160,7 +160,7 @@ export const sites = {
     logo: '/images/logo.png',
     favicon: '/images/favicon.png',
     socialImage: '/images/social-share.png',
-    ga4Id: '',
+    ga4Id: 'G-T1F4P3X85Z',
     status: 'planned'
   },
   
@@ -177,7 +177,7 @@ export const sites = {
     logo: '/images/logo.png',
     favicon: '/images/favicon.png',
     socialImage: '/images/social-share.png',
-    ga4Id: '',
+    ga4Id: 'G-7MXP78QYPD',
     status: 'planned'
   },
   
@@ -194,7 +194,7 @@ export const sites = {
     logo: '/images/logo.png',
     favicon: '/images/favicon.png',
     socialImage: '/images/social-share.png',
-    ga4Id: '',
+    ga4Id: 'G-T3EJDJ9Y0J',
     status: 'planned'
   },
   
@@ -211,7 +211,7 @@ export const sites = {
     logo: '/images/logo.png',
     favicon: '/images/favicon.png',
     socialImage: '/images/social-share.png',
-    ga4Id: '',
+    ga4Id: 'G-V8Q26X7XJW',
     status: 'planned'
   },
   
@@ -228,7 +228,7 @@ export const sites = {
     logo: '/images/logo.png',
     favicon: '/images/favicon.png',
     socialImage: '/images/social-share.png',
-    ga4Id: '',
+    ga4Id: 'G-HJ0X1TGXYC',
     status: 'planned'
   },
   
@@ -245,7 +245,7 @@ export const sites = {
     logo: '/images/logo.png',
     favicon: '/images/favicon.png',
     socialImage: '/images/social-share.png',
-    ga4Id: '',
+    ga4Id: 'G-E3DC1JN6N2',
     status: 'planned'
   },
   
@@ -262,7 +262,7 @@ export const sites = {
     logo: '/images/logo.png',
     favicon: '/images/favicon.png',
     socialImage: '/images/social-share.png',
-    ga4Id: '',
+    ga4Id: 'G-KJYVNQJW7F',
     status: 'planned'
   }
 };

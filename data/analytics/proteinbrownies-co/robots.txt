@@ -1,0 +1,15 @@
+# Protein Empire - proteinbrownies.co
+# https://proteinbrownies.co/robots.txt
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://proteinbrownies.co/sitemap.xml
+
+# Crawl-delay (optional, be nice to servers)
+Crawl-delay: 1
+
+# Block admin/api paths if any
+Disallow: /api/
+Disallow: /.netlify/

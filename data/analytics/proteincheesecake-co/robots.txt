@@ -1,0 +1,15 @@
+# Protein Empire - proteincheesecake.co
+# https://proteincheesecake.co/robots.txt
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://proteincheesecake.co/sitemap.xml
+
+# Crawl-delay (optional, be nice to servers)
+Crawl-delay: 1
+
+# Block admin/api paths if any
+Disallow: /api/
+Disallow: /.netlify/
