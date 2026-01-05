@@ -26,7 +26,7 @@
       "methods": [
         "whey"
       ],
-      "image": "classic-protein-bread.png",
+      "image": "protein-banana-bread.png",
       "ingredients": [
         "200g ripe bananas",
         "100g whey protein powder (vanilla or unflavored)",
@@ -92,7 +92,7 @@
       "methods": [
         "casein"
       ],
-      "image": "almond-flour-protein-bread.png",
+      "image": "high-protein-banana-bread.png",
       "ingredients": [
         "220g ripe bananas",
         "120g casein protein powder (chocolate)",
@@ -158,7 +158,7 @@
       "methods": [
         "whey"
       ],
-      "image": "cottage-cheese-protein-bread.png",
+      "image": "protein-banana-bread-recipe.png",
       "ingredients": [
         "180g ripe bananas",
         "90g vanilla whey protein",
@@ -221,7 +221,7 @@
       "methods": [
         "plant-based"
       ],
-      "image": "oat-flour-protein-bread.png",
+      "image": "protein-powder-banana-bread.png",
       "ingredients": [
         "210g ripe bananas",
         "110g plant-based protein powder (vanilla)",
@@ -287,7 +287,7 @@
         "whey",
         "casein"
       ],
-      "image": "greek-yogurt-protein-bread.png",
+      "image": "high-protein-banana-bread-recipe.png",
       "ingredients": [
         "250g ripe bananas",
         "80g whey protein isolate (unflavored)",
@@ -353,7 +353,7 @@
       "methods": [
         "whey"
       ],
-      "image": "banana-protein-bread.png",
+      "image": "protein-pumpkin-bread.png",
       "ingredients": [
         "240g pumpkin puree",
         "100g vanilla whey protein powder",
@@ -417,7 +417,7 @@
       "methods": [
         "whey"
       ],
-      "image": "pumpkin-protein-bread.png",
+      "image": "protein-zucchini-bread.png",
       "ingredients": [
         "200g grated zucchini",
         "100g vanilla whey protein powder",
@@ -482,7 +482,7 @@
       "methods": [
         "egg"
       ],
-      "image": "chocolate-chip-protein-bread.png",
+      "image": "protein-cloud-bread.png",
       "ingredients": [
         "3 large eggs, separated",
         "60g cream cheese, softened",
@@ -542,7 +542,7 @@
       "methods": [
         "whey"
       ],
-      "image": "cinnamon-swirl-protein-bread.png",
+      "image": "protein-bread-recipe.png",
       "ingredients": [
         "120g unflavored whey protein powder",
         "100g oat flour",
@@ -604,7 +604,7 @@
       "methods": [
         "vital wheat gluten"
       ],
-      "image": "zucchini-protein-bread.png",
+      "image": "high-protein-bread.png",
       "ingredients": [
         "150g vital wheat gluten",
         "80g oat fiber",
@@ -666,7 +666,7 @@
       "methods": [
         "whey"
       ],
-      "image": "multigrain-protein-bread.png",
+      "image": "high-protein-pumpkin-bread.png",
       "ingredients": [
         "250g pumpkin puree",
         "120g vanilla whey protein powder",
@@ -793,7 +793,7 @@
       "methods": [
         "whey"
       ],
-      "image": "garlic-herb-protein-bread.png",
+      "image": "savory-herb-protein-bread.png",
       "ingredients": [
         "120g unflavored whey protein powder",
         "100g almond flour",
@@ -920,7 +920,7 @@
       "methods": [
         "vital wheat gluten"
       ],
-      "image": "focaccia-protein-bread.png",
+      "image": "whole-wheat-protein-sandwich-bread.png",
       "ingredients": [
         "200g whole wheat flour",
         "100g vital wheat gluten",
@@ -984,7 +984,7 @@
       "methods": [
         "whey"
       ],
-      "image": "protein-flatbread.png",
+      "image": "healthy-protein-banana-bread.png",
       "ingredients": [
         "200g ripe bananas",
         "100g vanilla whey protein powder",
@@ -1048,7 +1048,7 @@
       "methods": [
         "whey"
       ],
-      "image": "keto-protein-bread.png",
+      "image": "banana-bread-with-protein-powder-recipe.png",
       "ingredients": [
         "220g ripe bananas",
         "120g vanilla whey protein powder",
@@ -1111,7 +1111,7 @@
       "methods": [
         "whey"
       ],
-      "image": "honey-oat-protein-bread.png",
+      "image": "chocolate-chip-protein-zucchini-bread.png",
       "ingredients": [
         "200g grated zucchini",
         "100g chocolate whey protein powder",
@@ -1177,7 +1177,7 @@
       "methods": [
         "greek yogurt"
       ],
-      "image": "protein-bagels.png",
+      "image": "cinnamon-raisin-protein-bagels.png",
       "ingredients": [
         "150g all-purpose flour",
         "100g plain non-fat Greek yogurt",
@@ -1242,7 +1242,7 @@
       "methods": [
         "whey"
       ],
-      "image": "protein-english-muffins.png",
+      "image": "cheese-and-chive-protein-bread.png",
       "ingredients": [
         "120g unflavored whey protein powder",
         "100g almond flour",
@@ -1307,7 +1307,7 @@
       "methods": [
         "whey"
       ],
-      "image": "protein-pita.png",
+      "image": "lemon-blueberry-protein-bread.png",
       "ingredients": [
         "120g vanilla whey protein powder",
         "100g oat flour",
@@ -1371,7 +1371,7 @@
       "methods": [
         "vital wheat gluten"
       ],
-      "image": "protein-biscuits.png",
+      "image": "multigrain-protein-sandwich-bread.png",
       "ingredients": [
         "150g whole wheat flour",
         "100g vital wheat gluten",
@@ -1436,7 +1436,7 @@
       "methods": [
         "whey"
       ],
-      "image": "protein-naan.png",
+      "image": "chocolate-chip-protein-banana-bread.png",
       "ingredients": [
         "200g ripe bananas",
         "100g chocolate whey protein powder",
@@ -1500,7 +1500,7 @@
       "methods": [
         "whey"
       ],
-      "image": "protein-rolls.png",
+      "image": "apple-cinnamon-protein-bread.png",
       "ingredients": [
         "150g grated apple",
         "120g vanilla whey protein powder",
@@ -1564,7 +1564,7 @@
       "methods": [
         "greek yogurt"
       ],
-      "image": "protein-tortillas.png",
+      "image": "everything-protein-bagels.png",
       "ingredients": [
         "150g all-purpose flour",
         "120g plain non-fat Greek yogurt",

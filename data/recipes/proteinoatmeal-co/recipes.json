@@ -26,7 +26,7 @@
       "methods": [
         "whey"
       ],
-      "image": "apple-cinnamon-oatmeal.png",
+      "image": "high-protein-oatmeal.png",
       "ingredients": [
         "80g rolled oats",
         "240ml milk",
@@ -84,7 +84,7 @@
       "methods": [
         "whey"
       ],
-      "image": "banana-nut-oatmeal.png",
+      "image": "protein-oatmeal-recipe.png",
       "ingredients": [
         "80g rolled oats",
         "200ml water",
@@ -142,7 +142,7 @@
       "methods": [
         "whey"
       ],
-      "image": "chocolate-peanut-butter-oatmeal.png",
+      "image": "protein-powder-in-oatmeal.png",
       "ingredients": [
         "80g rolled oats",
         "240ml milk",
@@ -199,7 +199,7 @@
       "methods": [
         "whey"
       ],
-      "image": "classic-protein-oatmeal.png",
+      "image": "oatmeal-with-protein-powder.png",
       "ingredients": [
         "80g rolled oats",
         "240ml almond milk",
@@ -257,7 +257,7 @@
       "methods": [
         "whey"
       ],
-      "image": "blueberry-almond-oatmeal.png",
+      "image": "high-protein-oatmeal-recipe.png",
       "ingredients": [
         "100g rolled oats",
         "240ml milk",
@@ -315,7 +315,7 @@
       "methods": [
         "whey"
       ],
-      "image": "maple-pecan-oatmeal.png",
+      "image": "high-protein-baked-oatmeal.png",
       "ingredients": [
         "240g rolled oats",
         "90g vanilla whey protein powder",
@@ -375,7 +375,7 @@
       "methods": [
         "whey"
       ],
-      "image": "pumpkin-spice-oatmeal.png",
+      "image": "protein-baked-oatmeal.png",
       "ingredients": [
         "200g rolled oats",
         "80g chocolate whey protein powder",
@@ -434,7 +434,7 @@
       "methods": [
         "whey"
       ],
-      "image": "overnight-protein-oats.png",
+      "image": "protein-oatmeal-cookies.png",
       "ingredients": [
         "150g rolled oats",
         "60g vanilla whey protein powder",
@@ -492,7 +492,7 @@
       "methods": [
         "whey"
       ],
-      "image": "strawberry-cream-oatmeal.png",
+      "image": "oatmeal-protein-bars.png",
       "ingredients": [
         "200g rolled oats",
         "90g vanilla whey protein powder",
@@ -609,7 +609,7 @@
       "methods": [
         "whey"
       ],
-      "image": "mocha-oatmeal.png",
+      "image": "chocolate-protein-oatmeal.png",
       "ingredients": [
         "80g rolled oats",
         "240ml chocolate almond milk",
@@ -667,7 +667,7 @@
       "methods": [
         "whey"
       ],
-      "image": "peach-cobbler-oatmeal.png",
+      "image": "peanut-butter-protein-oatmeal.png",
       "ingredients": [
         "80g rolled oats",
         "240ml milk",
@@ -725,7 +725,7 @@
       "methods": [
         "whey"
       ],
-      "image": "carrot-cake-oatmeal.png",
+      "image": "banana-protein-oatmeal.png",
       "ingredients": [
         "80g rolled oats",
         "240ml milk",
@@ -783,7 +783,7 @@
       "methods": [
         "whey"
       ],
-      "image": "cookie-dough-oatmeal.png",
+      "image": "apple-cinnamon-protein-oatmeal.png",
       "ingredients": [
         "80g rolled oats",
         "240ml milk",
@@ -842,7 +842,7 @@
       "methods": [
         "whey"
       ],
-      "image": "raspberry-almond-oatmeal.png",
+      "image": "blueberry-protein-oatmeal.png",
       "ingredients": [
         "80g rolled oats",
         "240ml milk",
@@ -900,7 +900,7 @@
       "methods": [
         "whey"
       ],
-      "image": "snickerdoodle-oatmeal.png",
+      "image": "pumpkin-protein-oatmeal.png",
       "ingredients": [
         "80g rolled oats",
         "240ml milk",
@@ -959,7 +959,7 @@
       "methods": [
         "whey"
       ],
-      "image": "cherry-almond-oatmeal.png",
+      "image": "vanilla-protein-oatmeal.png",
       "ingredients": [
         "80g rolled oats",
         "240ml milk",
@@ -1017,7 +1017,7 @@
       "methods": [
         "whey"
       ],
-      "image": "savory-oatmeal.png",
+      "image": "strawberry-protein-oatmeal.png",
       "ingredients": [
         "80g rolled oats",
         "240ml milk",
@@ -1075,7 +1075,7 @@
       "methods": [
         "egg"
       ],
-      "image": "matcha-oatmeal.png",
+      "image": "savory-protein-oatmeal.png",
       "ingredients": [
         "80g rolled oats",
         "240ml water or broth",
@@ -1135,7 +1135,7 @@
       "methods": [
         "whey"
       ],
-      "image": "baked-oatmeal.png",
+      "image": "maple-pecan-protein-oatmeal.png",
       "ingredients": [
         "80g rolled oats",
         "240ml milk",
@@ -1193,7 +1193,7 @@
       "methods": [
         "whey"
       ],
-      "image": "birthday-cake-oatmeal.png",
+      "image": "coconut-protein-oatmeal.png",
       "ingredients": [
         "80g rolled oats",
         "200ml coconut milk",
@@ -1251,7 +1251,7 @@
       "methods": [
         "whey"
       ],
-      "image": "chocolate-cherry-oatmeal.png",
+      "image": "coffee-protein-oatmeal.png",
       "ingredients": [
         "80g rolled oats",
         "180ml brewed coffee",
@@ -1310,7 +1310,7 @@
       "methods": [
         "whey"
       ],
-      "image": "lemon-blueberry-oatmeal.png",
+      "image": "carrot-cake-protein-oatmeal.png",
       "ingredients": [
         "80g rolled oats",
         "240ml milk",
@@ -1370,7 +1370,7 @@
       "methods": [
         "whey"
       ],
-      "image": "gingerbread-oatmeal.png",
+      "image": "almond-butter-protein-oatmeal.png",
       "ingredients": [
         "80g rolled oats",
         "240ml almond milk",
@@ -1428,7 +1428,7 @@
       "methods": [
         "whey"
       ],
-      "image": "almond-butter-oatmeal.png",
+      "image": "mixed-berry-protein-oatmeal.png",
       "ingredients": [
         "80g rolled oats",
         "240ml milk",

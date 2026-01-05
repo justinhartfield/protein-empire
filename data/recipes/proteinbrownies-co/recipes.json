@@ -26,7 +26,7 @@
       "methods": [
         "whey"
       ],
-      "image": "fudgy-protein-brownies.png",
+      "image": "classic-protein-brownies-recipe.png",
       "ingredients": [
         "120g chocolate whey protein powder",
         "60g almond flour",
@@ -93,7 +93,7 @@
         "whey",
         "casein"
       ],
-      "image": "black-bean-protein-brownies.png",
+      "image": "high-protein-brownies.png",
       "ingredients": [
         "90g chocolate whey protein powder",
         "30g chocolate casein protein powder",
@@ -159,7 +159,7 @@
       "methods": [
         "whey"
       ],
-      "image": "avocado-protein-brownies.png",
+      "image": "protein-powder-brownies.png",
       "ingredients": [
         "120g vanilla whey protein powder",
         "60g all-purpose flour",
@@ -224,7 +224,7 @@
       "methods": [
         "whey"
       ],
-      "image": "peanut-butter-protein-brownies.png",
+      "image": "cottage-cheese-protein-brownies.png",
       "ingredients": [
         "240g low-fat cottage cheese",
         "2 large eggs",
@@ -288,7 +288,7 @@
       "methods": [
         "whey"
       ],
-      "image": "classic-protein-brownies.png",
+      "image": "healthy-protein-brownies.png",
       "ingredients": [
         "120g oat flour",
         "90g chocolate whey protein powder",
@@ -352,7 +352,7 @@
       "methods": [
         "whey"
       ],
-      "image": "salted-caramel-brownies.png",
+      "image": "whey-protein-brownies-recipe.png",
       "ingredients": [
         "120g chocolate whey protein powder",
         "60g almond flour",
@@ -419,7 +419,7 @@
       "methods": [
         "whey"
       ],
-      "image": "red-velvet-brownies.png",
+      "image": "sweet-potato-protein-brownies.png",
       "ingredients": [
         "240g cooked and mashed sweet potato",
         "90g chocolate whey protein powder",
@@ -482,7 +482,7 @@
       "methods": [
         "whey"
       ],
-      "image": "espresso-protein-brownies.png",
+      "image": "chocolate-protein-brownies.png",
       "ingredients": [
         "120g chocolate whey protein powder",
         "60g unsweetened cocoa powder",
@@ -611,7 +611,7 @@
       "methods": [
         "whey"
       ],
-      "image": "walnut-protein-brownies.png",
+      "image": "banana-protein-brownies.png",
       "ingredients": [
         "2 ripe bananas, mashed",
         "2 large eggs",
@@ -674,7 +674,7 @@
       "methods": [
         "plant-based"
       ],
-      "image": "raspberry-brownies.png",
+      "image": "vegan-protein-brownies.png",
       "ingredients": [
         "120g vegan chocolate protein powder",
         "60g almond flour",
@@ -803,7 +803,7 @@
       "methods": [
         "whey"
       ],
-      "image": "cookie-brownies.png",
+      "image": "pumpkin-protein-brownies.png",
       "ingredients": [
         "240g pumpkin puree",
         "2 large eggs",
@@ -867,7 +867,7 @@
       "methods": [
         "whey"
       ],
-      "image": "s'mores-brownies.png",
+      "image": "low-calorie-protein-brownies.png",
       "ingredients": [
         "90g chocolate whey protein powder",
         "45g unsweetened cocoa powder",
@@ -931,7 +931,7 @@
       "methods": [
         "whey"
       ],
-      "image": "cheesecake-brownies.png",
+      "image": "protein-blondies.png",
       "ingredients": [
         "120g vanilla whey protein powder",
         "90g almond flour",
@@ -996,7 +996,7 @@
       "methods": [
         "whey"
       ],
-      "image": "zucchini-brownies.png",
+      "image": "no-bake-protein-brownie-bars.png",
       "ingredients": [
         "120g chocolate whey protein powder",
         "60g almond flour",
@@ -1058,7 +1058,7 @@
       "methods": [
         "whey"
       ],
-      "image": "pumpkin-brownies.png",
+      "image": "single-serving-protein-brownie.png",
       "ingredients": [
         "30g chocolate whey protein powder",
         "15g unsweetened cocoa powder",
@@ -1116,7 +1116,7 @@
       "methods": [
         "whey"
       ],
-      "image": "white-chocolate-brownies.png",
+      "image": "keto-protein-brownies.png",
       "ingredients": [
         "120g chocolate whey protein powder",
         "90g almond flour",
@@ -1180,7 +1180,7 @@
       "methods": [
         "whey"
       ],
-      "image": "triple-chocolate-brownies.png",
+      "image": "greek-yogurt-protein-brownies.png",
       "ingredients": [
         "120g chocolate whey protein powder",
         "60g oat flour",
@@ -1309,7 +1309,7 @@
       "methods": [
         "whey"
       ],
-      "image": "brownie-mug-cake.png",
+      "image": "zucchini-protein-brownies.png",
       "ingredients": [
         "150g shredded zucchini, squeezed of excess moisture",
         "2 large eggs",
@@ -1437,7 +1437,7 @@
       "methods": [
         "whey"
       ],
-      "image": "brownie-bites.png",
+      "image": "mint-chocolate-protein-brownies.png",
       "ingredients": [
         "120g chocolate whey protein powder",
         "60g almond flour",
@@ -1502,7 +1502,7 @@
       "methods": [
         "whey"
       ],
-      "image": "blondie-brownies.png",
+      "image": "raspberry-swirl-protein-brownies.png",
       "ingredients": [
         "120g chocolate whey protein powder",
         "60g oat flour",

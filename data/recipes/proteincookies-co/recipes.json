@@ -18,8 +18,14 @@
       "totalTime": "22",
       "difficulty": "Easy",
       "category": "Classic",
-      "tags": ["Chocolate Chip", "Classic", "Whey"],
-      "methods": ["whey"],
+      "tags": [
+        "Chocolate Chip",
+        "Classic",
+        "Whey"
+      ],
+      "methods": [
+        "whey"
+      ],
       "image": "chocolate-chip-protein-cookies.png",
       "ingredients": [
         "120g oat flour",
@@ -33,12 +39,30 @@
         "60g dark chocolate chips"
       ],
       "instructions": [
-        {"step": "Preheat and Prep", "text": "Preheat your oven to 350°F (175°C). Line a baking sheet with parchment paper or a silicone baking mat."},
-        {"step": "Mix Dry Ingredients", "text": "In a large bowl, whisk together the oat flour, protein powder, baking soda, and salt until well combined."},
-        {"step": "Combine Wet Ingredients", "text": "In a separate bowl, mix the almond butter, maple syrup, egg, and vanilla extract until smooth."},
-        {"step": "Form Dough", "text": "Pour the wet ingredients into the dry and stir until just combined. Fold in the chocolate chips. Do not overmix."},
-        {"step": "Shape and Bake", "text": "Scoop 12 equal portions of dough onto the prepared baking sheet. Flatten slightly with your palm. Bake for 10-12 minutes until edges are golden but centers look slightly underdone."},
-        {"step": "Cool", "text": "Let cookies cool on the baking sheet for 5 minutes before transferring to a wire rack. They will firm up as they cool."}
+        {
+          "step": "Preheat and Prep",
+          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Line a baking sheet with parchment paper or a silicone baking mat."
+        },
+        {
+          "step": "Mix Dry Ingredients",
+          "text": "In a large bowl, whisk together the oat flour, protein powder, baking soda, and salt until well combined."
+        },
+        {
+          "step": "Combine Wet Ingredients",
+          "text": "In a separate bowl, mix the almond butter, maple syrup, egg, and vanilla extract until smooth."
+        },
+        {
+          "step": "Form Dough",
+          "text": "Pour the wet ingredients into the dry and stir until just combined. Fold in the chocolate chips. Do not overmix."
+        },
+        {
+          "step": "Shape and Bake",
+          "text": "Scoop 12 equal portions of dough onto the prepared baking sheet. Flatten slightly with your palm. Bake for 10-12 minutes until edges are golden but centers look slightly underdone."
+        },
+        {
+          "step": "Cool",
+          "text": "Let cookies cool on the baking sheet for 5 minutes before transferring to a wire rack. They will firm up as they cool."
+        }
       ]
     },
     {
@@ -59,8 +83,14 @@
       "totalTime": "18",
       "difficulty": "Beginner",
       "category": "High Protein",
-      "tags": ["Peanut Butter", "Flourless", "25g+"],
-      "methods": ["whey"],
+      "tags": [
+        "Peanut Butter",
+        "Flourless",
+        "25g+"
+      ],
+      "methods": [
+        "whey"
+      ],
       "image": "peanut-butter-protein-cookies.png",
       "ingredients": [
         "256g natural peanut butter",
@@ -71,12 +101,30 @@
         "2g vanilla extract"
       ],
       "instructions": [
-        {"step": "Preheat", "text": "Preheat your oven to 350°F (175°C). Line a baking sheet with parchment paper."},
-        {"step": "Mix Ingredients", "text": "In a large bowl, combine the peanut butter, eggs, sweetener, and vanilla. Mix until smooth."},
-        {"step": "Add Dry", "text": "Add the protein powder and baking soda. Stir until a thick dough forms."},
-        {"step": "Shape", "text": "Roll dough into 12 balls and place on the baking sheet. Use a fork to create the classic crosshatch pattern, pressing down to flatten slightly."},
-        {"step": "Bake", "text": "Bake for 9-10 minutes until edges are set but centers are still soft. Do not overbake."},
-        {"step": "Cool", "text": "Cool on the baking sheet for 10 minutes. Cookies will firm up significantly as they cool."}
+        {
+          "step": "Preheat",
+          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Line a baking sheet with parchment paper."
+        },
+        {
+          "step": "Mix Ingredients",
+          "text": "In a large bowl, combine the peanut butter, eggs, sweetener, and vanilla. Mix until smooth."
+        },
+        {
+          "step": "Add Dry",
+          "text": "Add the protein powder and baking soda. Stir until a thick dough forms."
+        },
+        {
+          "step": "Shape",
+          "text": "Roll dough into 12 balls and place on the baking sheet. Use a fork to create the classic crosshatch pattern, pressing down to flatten slightly."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake for 9-10 minutes until edges are set but centers are still soft. Do not overbake."
+        },
+        {
+          "step": "Cool",
+          "text": "Cool on the baking sheet for 10 minutes. Cookies will firm up significantly as they cool."
+        }
       ]
     },
     {
@@ -97,8 +145,14 @@
       "totalTime": "15",
       "difficulty": "Beginner",
       "category": "Quick",
-      "tags": ["No-Bake", "Quick", "Meal Prep"],
-      "methods": ["noBake"],
+      "tags": [
+        "No-Bake",
+        "Quick",
+        "Meal Prep"
+      ],
+      "methods": [
+        "noBake"
+      ],
       "image": "no-bake-protein-cookies.png",
       "ingredients": [
         "90g rolled oats",
@@ -110,11 +164,26 @@
         "3g vanilla extract"
       ],
       "instructions": [
-        {"step": "Mix Base", "text": "In a large bowl, combine the oats, protein powder, and cocoa powder. Stir to combine."},
-        {"step": "Add Wet Ingredients", "text": "Add the peanut butter, honey, almond milk, and vanilla extract. Mix until a thick, sticky dough forms."},
-        {"step": "Adjust Consistency", "text": "If the mixture is too dry, add more almond milk 1 tablespoon at a time. If too wet, add more oats."},
-        {"step": "Shape Cookies", "text": "Using wet hands, roll the mixture into 12 balls and flatten into cookie shapes on a parchment-lined tray."},
-        {"step": "Chill", "text": "Refrigerate for at least 30 minutes until firm. Store in the refrigerator for up to 1 week."}
+        {
+          "step": "Mix Base",
+          "text": "In a large bowl, combine the oats, protein powder, and cocoa powder. Stir to combine."
+        },
+        {
+          "step": "Add Wet Ingredients",
+          "text": "Add the peanut butter, honey, almond milk, and vanilla extract. Mix until a thick, sticky dough forms."
+        },
+        {
+          "step": "Adjust Consistency",
+          "text": "If the mixture is too dry, add more almond milk 1 tablespoon at a time. If too wet, add more oats."
+        },
+        {
+          "step": "Shape Cookies",
+          "text": "Using wet hands, roll the mixture into 12 balls and flatten into cookie shapes on a parchment-lined tray."
+        },
+        {
+          "step": "Chill",
+          "text": "Refrigerate for at least 30 minutes until firm. Store in the refrigerator for up to 1 week."
+        }
       ]
     },
     {
@@ -135,8 +204,14 @@
       "totalTime": "26",
       "difficulty": "Easy",
       "category": "Classic",
-      "tags": ["Oatmeal", "Raisin", "Fiber"],
-      "methods": ["whey"],
+      "tags": [
+        "Oatmeal",
+        "Raisin",
+        "Fiber"
+      ],
+      "methods": [
+        "whey"
+      ],
       "image": "oatmeal-raisin-protein-cookies.png",
       "ingredients": [
         "120g rolled oats",
@@ -151,12 +226,30 @@
         "60g raisins"
       ],
       "instructions": [
-        {"step": "Preheat", "text": "Preheat your oven to 350°F (175°C). Line a baking sheet with parchment paper."},
-        {"step": "Mix Dry", "text": "In a large bowl, combine oats, oat flour, protein powder, cinnamon, baking soda, and salt."},
-        {"step": "Mix Wet", "text": "In another bowl, whisk together applesauce, maple syrup, and egg."},
-        {"step": "Combine", "text": "Pour wet ingredients into dry and stir until combined. Fold in raisins."},
-        {"step": "Shape and Bake", "text": "Drop rounded tablespoons onto the baking sheet. Bake for 12-14 minutes until edges are golden."},
-        {"step": "Cool", "text": "Cool on baking sheet for 5 minutes before transferring to a wire rack."}
+        {
+          "step": "Preheat",
+          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Line a baking sheet with parchment paper."
+        },
+        {
+          "step": "Mix Dry",
+          "text": "In a large bowl, combine oats, oat flour, protein powder, cinnamon, baking soda, and salt."
+        },
+        {
+          "step": "Mix Wet",
+          "text": "In another bowl, whisk together applesauce, maple syrup, and egg."
+        },
+        {
+          "step": "Combine",
+          "text": "Pour wet ingredients into dry and stir until combined. Fold in raisins."
+        },
+        {
+          "step": "Shape and Bake",
+          "text": "Drop rounded tablespoons onto the baking sheet. Bake for 12-14 minutes until edges are golden."
+        },
+        {
+          "step": "Cool",
+          "text": "Cool on baking sheet for 5 minutes before transferring to a wire rack."
+        }
       ]
     },
     {
@@ -177,8 +270,14 @@
       "totalTime": "22",
       "difficulty": "Easy",
       "category": "Dessert",
-      "tags": ["Chocolate", "Double Chocolate", "Decadent"],
-      "methods": ["whey"],
+      "tags": [
+        "Chocolate",
+        "Double Chocolate",
+        "Decadent"
+      ],
+      "methods": [
+        "whey"
+      ],
       "image": "double-chocolate-protein-cookies.png",
       "ingredients": [
         "90g oat flour",
@@ -192,12 +291,30 @@
         "60g dark chocolate chips"
       ],
       "instructions": [
-        {"step": "Preheat", "text": "Preheat your oven to 350°F (175°C). Line a baking sheet with parchment paper."},
-        {"step": "Mix Dry", "text": "Whisk together oat flour, protein powder, cocoa powder, baking soda, and salt."},
-        {"step": "Mix Wet", "text": "In a separate bowl, combine almond butter, maple syrup, and egg until smooth."},
-        {"step": "Combine", "text": "Add wet to dry and stir until just combined. Fold in chocolate chips."},
-        {"step": "Bake", "text": "Scoop 12 portions onto the baking sheet. Bake for 10-12 minutes until set around edges."},
-        {"step": "Cool", "text": "Cool on baking sheet for 5 minutes. Cookies will be very soft but will firm up."}
+        {
+          "step": "Preheat",
+          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Line a baking sheet with parchment paper."
+        },
+        {
+          "step": "Mix Dry",
+          "text": "Whisk together oat flour, protein powder, cocoa powder, baking soda, and salt."
+        },
+        {
+          "step": "Mix Wet",
+          "text": "In a separate bowl, combine almond butter, maple syrup, and egg until smooth."
+        },
+        {
+          "step": "Combine",
+          "text": "Add wet to dry and stir until just combined. Fold in chocolate chips."
+        },
+        {
+          "step": "Bake",
+          "text": "Scoop 12 portions onto the baking sheet. Bake for 10-12 minutes until set around edges."
+        },
+        {
+          "step": "Cool",
+          "text": "Cool on baking sheet for 5 minutes. Cookies will be very soft but will firm up."
+        }
       ]
     },
     {
@@ -218,8 +335,14 @@
       "totalTime": "22",
       "difficulty": "Easy",
       "category": "Classic",
-      "tags": ["Snickerdoodle", "Cinnamon", "Classic"],
-      "methods": ["whey"],
+      "tags": [
+        "Snickerdoodle",
+        "Cinnamon",
+        "Classic"
+      ],
+      "methods": [
+        "whey"
+      ],
       "image": "snickerdoodle-protein-cookies.png",
       "ingredients": [
         "120g oat flour",
@@ -234,13 +357,34 @@
         "15g cinnamon-sweetener coating (10g sweetener + 5g cinnamon)"
       ],
       "instructions": [
-        {"step": "Preheat", "text": "Preheat your oven to 350°F (175°C). Line a baking sheet with parchment paper."},
-        {"step": "Mix Dry", "text": "Whisk together oat flour, protein powder, cream of tartar, baking soda, and salt."},
-        {"step": "Cream Wet", "text": "In another bowl, beat coconut oil and sweetener until fluffy. Add egg and vanilla, mix well."},
-        {"step": "Combine", "text": "Add dry ingredients to wet and mix until a dough forms."},
-        {"step": "Roll and Coat", "text": "Mix cinnamon and sweetener in a small bowl. Roll dough into 12 balls, then roll each in the cinnamon mixture."},
-        {"step": "Bake", "text": "Place on baking sheet and flatten slightly. Bake for 8-10 minutes until edges are set."},
-        {"step": "Cool", "text": "Cool on baking sheet for 5 minutes before transferring."}
+        {
+          "step": "Preheat",
+          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Line a baking sheet with parchment paper."
+        },
+        {
+          "step": "Mix Dry",
+          "text": "Whisk together oat flour, protein powder, cream of tartar, baking soda, and salt."
+        },
+        {
+          "step": "Cream Wet",
+          "text": "In another bowl, beat coconut oil and sweetener until fluffy. Add egg and vanilla, mix well."
+        },
+        {
+          "step": "Combine",
+          "text": "Add dry ingredients to wet and mix until a dough forms."
+        },
+        {
+          "step": "Roll and Coat",
+          "text": "Mix cinnamon and sweetener in a small bowl. Roll dough into 12 balls, then roll each in the cinnamon mixture."
+        },
+        {
+          "step": "Bake",
+          "text": "Place on baking sheet and flatten slightly. Bake for 8-10 minutes until edges are set."
+        },
+        {
+          "step": "Cool",
+          "text": "Cool on baking sheet for 5 minutes before transferring."
+        }
       ]
     },
     {
@@ -261,8 +405,14 @@
       "totalTime": "20",
       "difficulty": "Easy",
       "category": "Dessert",
-      "tags": ["Birthday Cake", "Funfetti", "Sprinkles"],
-      "methods": ["whey"],
+      "tags": [
+        "Birthday Cake",
+        "Funfetti",
+        "Sprinkles"
+      ],
+      "methods": [
+        "whey"
+      ],
       "image": "birthday-cake-protein-cookies.png",
       "ingredients": [
         "120g oat flour",
@@ -277,13 +427,34 @@
         "40g rainbow sprinkles"
       ],
       "instructions": [
-        {"step": "Preheat", "text": "Preheat your oven to 350°F (175°C). Line a baking sheet with parchment paper."},
-        {"step": "Mix Dry", "text": "Whisk together oat flour, protein powder, baking powder, and salt."},
-        {"step": "Mix Wet", "text": "In another bowl, combine Greek yogurt, maple syrup, coconut oil, vanilla, and butter extract."},
-        {"step": "Combine", "text": "Add wet to dry and mix until combined. Gently fold in sprinkles."},
-        {"step": "Shape", "text": "Scoop 12 portions onto the baking sheet. Flatten slightly."},
-        {"step": "Bake", "text": "Bake for 9-10 minutes until edges are just set. Do not overbake."},
-        {"step": "Decorate", "text": "Press additional sprinkles on top while still warm. Cool completely."}
+        {
+          "step": "Preheat",
+          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Line a baking sheet with parchment paper."
+        },
+        {
+          "step": "Mix Dry",
+          "text": "Whisk together oat flour, protein powder, baking powder, and salt."
+        },
+        {
+          "step": "Mix Wet",
+          "text": "In another bowl, combine Greek yogurt, maple syrup, coconut oil, vanilla, and butter extract."
+        },
+        {
+          "step": "Combine",
+          "text": "Add wet to dry and mix until combined. Gently fold in sprinkles."
+        },
+        {
+          "step": "Shape",
+          "text": "Scoop 12 portions onto the baking sheet. Flatten slightly."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake for 9-10 minutes until edges are just set. Do not overbake."
+        },
+        {
+          "step": "Decorate",
+          "text": "Press additional sprinkles on top while still warm. Cool completely."
+        }
       ]
     },
     {
@@ -304,8 +475,14 @@
       "totalTime": "27",
       "difficulty": "Medium",
       "category": "Vegan",
-      "tags": ["Vegan", "Plant-Based", "Dairy-Free"],
-      "methods": ["vegan"],
+      "tags": [
+        "Vegan",
+        "Plant-Based",
+        "Dairy-Free"
+      ],
+      "methods": [
+        "vegan"
+      ],
       "image": "vegan-protein-cookies.png",
       "ingredients": [
         "120g oat flour",
@@ -319,13 +496,34 @@
         "60g dairy-free chocolate chips"
       ],
       "instructions": [
-        {"step": "Make Flax Eggs", "text": "Mix ground flaxseed with water and let sit for 5 minutes until gel-like."},
-        {"step": "Preheat", "text": "Preheat your oven to 350°F (175°C). Line a baking sheet with parchment paper."},
-        {"step": "Mix Dry", "text": "Whisk together oat flour, protein powder, baking soda, and salt."},
-        {"step": "Mix Wet", "text": "Combine flax eggs, almond butter, maple syrup, and vanilla until smooth."},
-        {"step": "Combine", "text": "Add wet to dry and mix until combined. Fold in chocolate chips."},
-        {"step": "Bake", "text": "Scoop 12 portions onto baking sheet. Bake for 11-12 minutes until edges are golden."},
-        {"step": "Cool", "text": "Cool on baking sheet for 10 minutes before transferring."}
+        {
+          "step": "Make Flax Eggs",
+          "text": "Mix ground flaxseed with water and let sit for 5 minutes until gel-like."
+        },
+        {
+          "step": "Preheat",
+          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Line a baking sheet with parchment paper."
+        },
+        {
+          "step": "Mix Dry",
+          "text": "Whisk together oat flour, protein powder, baking soda, and salt."
+        },
+        {
+          "step": "Mix Wet",
+          "text": "Combine flax eggs, almond butter, maple syrup, and vanilla until smooth."
+        },
+        {
+          "step": "Combine",
+          "text": "Add wet to dry and mix until combined. Fold in chocolate chips."
+        },
+        {
+          "step": "Bake",
+          "text": "Scoop 12 portions onto baking sheet. Bake for 11-12 minutes until edges are golden."
+        },
+        {
+          "step": "Cool",
+          "text": "Cool on baking sheet for 10 minutes before transferring."
+        }
       ]
     },
     {
@@ -346,8 +544,14 @@
       "totalTime": "22",
       "difficulty": "Easy",
       "category": "Gluten-Free",
-      "tags": ["Gluten-Free", "GF", "Celiac-Safe"],
-      "methods": ["whey"],
+      "tags": [
+        "Gluten-Free",
+        "GF",
+        "Celiac-Safe"
+      ],
+      "methods": [
+        "whey"
+      ],
       "image": "gluten-free-protein-cookies.png",
       "ingredients": [
         "90g certified gluten-free oat flour",
@@ -361,13 +565,34 @@
         "5g vanilla extract"
       ],
       "instructions": [
-        {"step": "Preheat", "text": "Preheat your oven to 350°F (175°C). Line a baking sheet with parchment paper."},
-        {"step": "Mix Dry", "text": "Whisk together GF oat flour, almond flour, protein powder, baking soda, and salt."},
-        {"step": "Mix Wet", "text": "Combine almond butter, maple syrup, egg, and vanilla until smooth."},
-        {"step": "Combine", "text": "Add wet to dry and mix until a dough forms."},
-        {"step": "Shape", "text": "Scoop 12 portions onto the baking sheet. Flatten slightly."},
-        {"step": "Bake", "text": "Bake for 10-12 minutes until edges are golden."},
-        {"step": "Cool", "text": "Cool on baking sheet for 5 minutes before transferring."}
+        {
+          "step": "Preheat",
+          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Line a baking sheet with parchment paper."
+        },
+        {
+          "step": "Mix Dry",
+          "text": "Whisk together GF oat flour, almond flour, protein powder, baking soda, and salt."
+        },
+        {
+          "step": "Mix Wet",
+          "text": "Combine almond butter, maple syrup, egg, and vanilla until smooth."
+        },
+        {
+          "step": "Combine",
+          "text": "Add wet to dry and mix until a dough forms."
+        },
+        {
+          "step": "Shape",
+          "text": "Scoop 12 portions onto the baking sheet. Flatten slightly."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake for 10-12 minutes until edges are golden."
+        },
+        {
+          "step": "Cool",
+          "text": "Cool on baking sheet for 5 minutes before transferring."
+        }
       ]
     },
     {
@@ -388,8 +613,14 @@
       "totalTime": "15",
       "difficulty": "Beginner",
       "category": "Quick",
-      "tags": ["Cookie Dough", "No-Bake", "Edible"],
-      "methods": ["noBake"],
+      "tags": [
+        "Cookie Dough",
+        "No-Bake",
+        "Edible"
+      ],
+      "methods": [
+        "noBake"
+      ],
       "image": "protein-cookie-dough-bites.png",
       "ingredients": [
         "120g heat-treated oat flour",
@@ -402,12 +633,30 @@
         "45g mini chocolate chips"
       ],
       "instructions": [
-        {"step": "Heat-Treat Flour", "text": "If not using pre-treated flour, microwave oat flour for 1 minute, stirring halfway, to kill any bacteria."},
-        {"step": "Mix Dry", "text": "In a large bowl, combine oat flour, protein powder, and salt."},
-        {"step": "Add Wet", "text": "Add almond butter, maple syrup, almond milk, and vanilla. Mix until a dough forms."},
-        {"step": "Add Chips", "text": "Fold in mini chocolate chips."},
-        {"step": "Shape", "text": "Roll into 24 small balls. Place on a parchment-lined tray."},
-        {"step": "Chill", "text": "Refrigerate for 30 minutes until firm. Store in the refrigerator for up to 2 weeks."}
+        {
+          "step": "Heat-Treat Flour",
+          "text": "If not using pre-treated flour, microwave oat flour for 1 minute, stirring halfway, to kill any bacteria."
+        },
+        {
+          "step": "Mix Dry",
+          "text": "In a large bowl, combine oat flour, protein powder, and salt."
+        },
+        {
+          "step": "Add Wet",
+          "text": "Add almond butter, maple syrup, almond milk, and vanilla. Mix until a dough forms."
+        },
+        {
+          "step": "Add Chips",
+          "text": "Fold in mini chocolate chips."
+        },
+        {
+          "step": "Shape",
+          "text": "Roll into 24 small balls. Place on a parchment-lined tray."
+        },
+        {
+          "step": "Chill",
+          "text": "Refrigerate for 30 minutes until firm. Store in the refrigerator for up to 2 weeks."
+        }
       ]
     },
     {
@@ -428,8 +677,14 @@
       "totalTime": "24",
       "difficulty": "Easy",
       "category": "Dessert",
-      "tags": ["White Chocolate", "Macadamia", "Bakery-Style"],
-      "methods": ["whey"],
+      "tags": [
+        "White Chocolate",
+        "Macadamia",
+        "Bakery-Style"
+      ],
+      "methods": [
+        "whey"
+      ],
       "image": "white-chocolate-macadamia-protein-cookies.png",
       "ingredients": [
         "120g oat flour",
@@ -444,12 +699,30 @@
         "40g chopped macadamia nuts"
       ],
       "instructions": [
-        {"step": "Preheat", "text": "Preheat your oven to 350°F (175°C). Line a baking sheet with parchment paper."},
-        {"step": "Mix Dry", "text": "Whisk together oat flour, protein powder, baking soda, and salt."},
-        {"step": "Mix Wet", "text": "Combine cashew butter, maple syrup, egg, and vanilla until smooth."},
-        {"step": "Combine", "text": "Add wet to dry and mix. Fold in white chocolate chips and macadamia nuts."},
-        {"step": "Bake", "text": "Scoop 12 portions onto baking sheet. Bake for 10-12 minutes until edges are golden."},
-        {"step": "Cool", "text": "Cool on baking sheet for 5 minutes before transferring."}
+        {
+          "step": "Preheat",
+          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Line a baking sheet with parchment paper."
+        },
+        {
+          "step": "Mix Dry",
+          "text": "Whisk together oat flour, protein powder, baking soda, and salt."
+        },
+        {
+          "step": "Mix Wet",
+          "text": "Combine cashew butter, maple syrup, egg, and vanilla until smooth."
+        },
+        {
+          "step": "Combine",
+          "text": "Add wet to dry and mix. Fold in white chocolate chips and macadamia nuts."
+        },
+        {
+          "step": "Bake",
+          "text": "Scoop 12 portions onto baking sheet. Bake for 10-12 minutes until edges are golden."
+        },
+        {
+          "step": "Cool",
+          "text": "Cool on baking sheet for 5 minutes before transferring."
+        }
       ]
     },
     {
@@ -470,8 +743,14 @@
       "totalTime": "20",
       "difficulty": "Beginner",
       "category": "Kids",
-      "tags": ["Kids", "Lunchbox", "School-Safe"],
-      "methods": ["whey"],
+      "tags": [
+        "Kids",
+        "Lunchbox",
+        "School-Safe"
+      ],
+      "methods": [
+        "whey"
+      ],
       "image": "protein-cookies-for-kids.png",
       "ingredients": [
         "150g oat flour",
@@ -485,13 +764,34 @@
         "45g mini chocolate chips"
       ],
       "instructions": [
-        {"step": "Preheat", "text": "Preheat your oven to 350°F (175°C). Line a baking sheet with parchment paper."},
-        {"step": "Mix Dry", "text": "Whisk together oat flour, protein powder, baking soda, and salt."},
-        {"step": "Mix Wet", "text": "Mash banana until smooth. Add honey, coconut oil, and vanilla. Mix well."},
-        {"step": "Combine", "text": "Add wet to dry and mix until combined. Fold in chocolate chips."},
-        {"step": "Shape", "text": "Scoop 16 small portions onto baking sheet."},
-        {"step": "Bake", "text": "Bake for 9-10 minutes until edges are golden."},
-        {"step": "Cool", "text": "Cool completely before packing in lunchboxes."}
+        {
+          "step": "Preheat",
+          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Line a baking sheet with parchment paper."
+        },
+        {
+          "step": "Mix Dry",
+          "text": "Whisk together oat flour, protein powder, baking soda, and salt."
+        },
+        {
+          "step": "Mix Wet",
+          "text": "Mash banana until smooth. Add honey, coconut oil, and vanilla. Mix well."
+        },
+        {
+          "step": "Combine",
+          "text": "Add wet to dry and mix until combined. Fold in chocolate chips."
+        },
+        {
+          "step": "Shape",
+          "text": "Scoop 16 small portions onto baking sheet."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake for 9-10 minutes until edges are golden."
+        },
+        {
+          "step": "Cool",
+          "text": "Cool completely before packing in lunchboxes."
+        }
       ]
     },
     {
@@ -512,8 +812,15 @@
       "totalTime": "24",
       "difficulty": "Easy",
       "category": "Whole Food",
-      "tags": ["Cottage Cheese", "Soft", "Moist"],
-      "methods": ["noPowder", "blender"],
+      "tags": [
+        "Cottage Cheese",
+        "Soft",
+        "Moist"
+      ],
+      "methods": [
+        "noPowder",
+        "blender"
+      ],
       "image": "cottage-cheese-protein-cookies.png",
       "ingredients": [
         "225g cottage cheese (blended smooth)",
@@ -526,13 +833,34 @@
         "2g salt"
       ],
       "instructions": [
-        {"step": "Blend Cottage Cheese", "text": "Blend cottage cheese until completely smooth with no lumps."},
-        {"step": "Preheat", "text": "Preheat your oven to 350°F (175°C). Line a baking sheet with parchment paper."},
-        {"step": "Mix Wet", "text": "Combine blended cottage cheese, egg, maple syrup, and vanilla."},
-        {"step": "Add Dry", "text": "Add oat flour, protein powder, baking powder, and salt. Mix until combined."},
-        {"step": "Shape", "text": "Scoop 12 portions onto baking sheet. Flatten slightly."},
-        {"step": "Bake", "text": "Bake for 12-14 minutes until edges are set and tops are slightly golden."},
-        {"step": "Cool", "text": "Cool on baking sheet for 5 minutes. These are very soft when warm."}
+        {
+          "step": "Blend Cottage Cheese",
+          "text": "Blend cottage cheese until completely smooth with no lumps."
+        },
+        {
+          "step": "Preheat",
+          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Line a baking sheet with parchment paper."
+        },
+        {
+          "step": "Mix Wet",
+          "text": "Combine blended cottage cheese, egg, maple syrup, and vanilla."
+        },
+        {
+          "step": "Add Dry",
+          "text": "Add oat flour, protein powder, baking powder, and salt. Mix until combined."
+        },
+        {
+          "step": "Shape",
+          "text": "Scoop 12 portions onto baking sheet. Flatten slightly."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake for 12-14 minutes until edges are set and tops are slightly golden."
+        },
+        {
+          "step": "Cool",
+          "text": "Cool on baking sheet for 5 minutes. These are very soft when warm."
+        }
       ]
     },
     {
@@ -553,8 +881,14 @@
       "totalTime": "22",
       "difficulty": "Easy",
       "category": "Whole Food",
-      "tags": ["Greek Yogurt", "Moist", "Light"],
-      "methods": ["noPowder"],
+      "tags": [
+        "Greek Yogurt",
+        "Moist",
+        "Light"
+      ],
+      "methods": [
+        "noPowder"
+      ],
       "image": "greek-yogurt-protein-cookies.png",
       "ingredients": [
         "170g nonfat Greek yogurt",
@@ -568,13 +902,34 @@
         "45g chocolate chips (optional)"
       ],
       "instructions": [
-        {"step": "Preheat", "text": "Preheat your oven to 350°F (175°C). Line a baking sheet with parchment paper."},
-        {"step": "Mix Wet", "text": "Combine Greek yogurt, egg, maple syrup, and vanilla until smooth."},
-        {"step": "Add Dry", "text": "Add oat flour, protein powder, baking powder, and salt. Mix until combined."},
-        {"step": "Add Mix-ins", "text": "Fold in chocolate chips if using."},
-        {"step": "Shape", "text": "Scoop 12 portions onto baking sheet. Flatten slightly."},
-        {"step": "Bake", "text": "Bake for 10-12 minutes until edges are set."},
-        {"step": "Cool", "text": "Cool on baking sheet for 5 minutes before transferring."}
+        {
+          "step": "Preheat",
+          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Line a baking sheet with parchment paper."
+        },
+        {
+          "step": "Mix Wet",
+          "text": "Combine Greek yogurt, egg, maple syrup, and vanilla until smooth."
+        },
+        {
+          "step": "Add Dry",
+          "text": "Add oat flour, protein powder, baking powder, and salt. Mix until combined."
+        },
+        {
+          "step": "Add Mix-ins",
+          "text": "Fold in chocolate chips if using."
+        },
+        {
+          "step": "Shape",
+          "text": "Scoop 12 portions onto baking sheet. Flatten slightly."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake for 10-12 minutes until edges are set."
+        },
+        {
+          "step": "Cool",
+          "text": "Cool on baking sheet for 5 minutes before transferring."
+        }
       ]
     },
     {
@@ -595,8 +950,14 @@
       "totalTime": "22",
       "difficulty": "Easy",
       "category": "Low-Carb",
-      "tags": ["Almond Flour", "Keto", "Low-Carb"],
-      "methods": ["whey"],
+      "tags": [
+        "Almond Flour",
+        "Keto",
+        "Low-Carb"
+      ],
+      "methods": [
+        "whey"
+      ],
       "image": "almond-flour-protein-cookies.png",
       "ingredients": [
         "150g almond flour",
@@ -610,13 +971,34 @@
         "45g sugar-free chocolate chips"
       ],
       "instructions": [
-        {"step": "Preheat", "text": "Preheat your oven to 325°F (165°C). Line a baking sheet with parchment paper."},
-        {"step": "Mix Dry", "text": "Whisk together almond flour, protein powder, baking soda, and salt."},
-        {"step": "Mix Wet", "text": "Combine almond butter, sweetener, egg, and vanilla until smooth."},
-        {"step": "Combine", "text": "Add wet to dry and mix until a dough forms. Fold in chocolate chips."},
-        {"step": "Shape", "text": "Scoop 12 portions onto baking sheet. Flatten to 1/2 inch thick."},
-        {"step": "Bake", "text": "Bake for 10-12 minutes until edges are golden. Watch carefully as almond flour browns quickly."},
-        {"step": "Cool", "text": "Cool on baking sheet for 10 minutes. Cookies will be soft but firm up as they cool."}
+        {
+          "step": "Preheat",
+          "text": "Preheat your oven to 325\u00b0F (165\u00b0C). Line a baking sheet with parchment paper."
+        },
+        {
+          "step": "Mix Dry",
+          "text": "Whisk together almond flour, protein powder, baking soda, and salt."
+        },
+        {
+          "step": "Mix Wet",
+          "text": "Combine almond butter, sweetener, egg, and vanilla until smooth."
+        },
+        {
+          "step": "Combine",
+          "text": "Add wet to dry and mix until a dough forms. Fold in chocolate chips."
+        },
+        {
+          "step": "Shape",
+          "text": "Scoop 12 portions onto baking sheet. Flatten to 1/2 inch thick."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake for 10-12 minutes until edges are golden. Watch carefully as almond flour browns quickly."
+        },
+        {
+          "step": "Cool",
+          "text": "Cool on baking sheet for 10 minutes. Cookies will be soft but firm up as they cool."
+        }
       ]
     },
     {
@@ -637,8 +1019,14 @@
       "totalTime": "26",
       "difficulty": "Easy",
       "category": "Seasonal",
-      "tags": ["Pumpkin", "Fall", "Spiced"],
-      "methods": ["whey"],
+      "tags": [
+        "Pumpkin",
+        "Fall",
+        "Spiced"
+      ],
+      "methods": [
+        "whey"
+      ],
       "image": "pumpkin-spice-protein-cookies.png",
       "ingredients": [
         "120g oat flour",
@@ -653,13 +1041,34 @@
         "5g vanilla extract"
       ],
       "instructions": [
-        {"step": "Preheat", "text": "Preheat your oven to 350°F (175°C). Line a baking sheet with parchment paper."},
-        {"step": "Mix Dry", "text": "Whisk together oat flour, protein powder, pumpkin pie spice, baking powder, and salt."},
-        {"step": "Mix Wet", "text": "Combine pumpkin puree, maple syrup, egg, coconut oil, and vanilla."},
-        {"step": "Combine", "text": "Add wet to dry and mix until just combined. Batter will be thick."},
-        {"step": "Shape", "text": "Scoop 14 portions onto baking sheet. These won't spread much, so flatten slightly."},
-        {"step": "Bake", "text": "Bake for 12-14 minutes until edges are set and tops spring back when touched."},
-        {"step": "Cool", "text": "Cool on baking sheet for 5 minutes before transferring."}
+        {
+          "step": "Preheat",
+          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Line a baking sheet with parchment paper."
+        },
+        {
+          "step": "Mix Dry",
+          "text": "Whisk together oat flour, protein powder, pumpkin pie spice, baking powder, and salt."
+        },
+        {
+          "step": "Mix Wet",
+          "text": "Combine pumpkin puree, maple syrup, egg, coconut oil, and vanilla."
+        },
+        {
+          "step": "Combine",
+          "text": "Add wet to dry and mix until just combined. Batter will be thick."
+        },
+        {
+          "step": "Shape",
+          "text": "Scoop 14 portions onto baking sheet. These won't spread much, so flatten slightly."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake for 12-14 minutes until edges are set and tops spring back when touched."
+        },
+        {
+          "step": "Cool",
+          "text": "Cool on baking sheet for 5 minutes before transferring."
+        }
       ]
     },
     {
@@ -680,8 +1089,14 @@
       "totalTime": "22",
       "difficulty": "Easy",
       "category": "Dessert",
-      "tags": ["Lemon", "Citrus", "Refreshing"],
-      "methods": ["whey"],
+      "tags": [
+        "Lemon",
+        "Citrus",
+        "Refreshing"
+      ],
+      "methods": [
+        "whey"
+      ],
       "image": "lemon-protein-cookies.png",
       "ingredients": [
         "120g oat flour",
@@ -696,13 +1111,34 @@
         "5g vanilla extract"
       ],
       "instructions": [
-        {"step": "Preheat", "text": "Preheat your oven to 350°F (175°C). Line a baking sheet with parchment paper."},
-        {"step": "Mix Dry", "text": "Whisk together oat flour, protein powder, baking powder, and salt."},
-        {"step": "Mix Wet", "text": "Combine Greek yogurt, maple syrup, coconut oil, lemon zest, lemon juice, and vanilla."},
-        {"step": "Combine", "text": "Add wet to dry and mix until just combined."},
-        {"step": "Shape", "text": "Scoop 12 portions onto baking sheet. Flatten slightly."},
-        {"step": "Bake", "text": "Bake for 9-10 minutes until edges are just set. Do not overbake."},
-        {"step": "Cool and Glaze", "text": "Cool completely. Optional: drizzle with a glaze made from powdered sweetener and lemon juice."}
+        {
+          "step": "Preheat",
+          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Line a baking sheet with parchment paper."
+        },
+        {
+          "step": "Mix Dry",
+          "text": "Whisk together oat flour, protein powder, baking powder, and salt."
+        },
+        {
+          "step": "Mix Wet",
+          "text": "Combine Greek yogurt, maple syrup, coconut oil, lemon zest, lemon juice, and vanilla."
+        },
+        {
+          "step": "Combine",
+          "text": "Add wet to dry and mix until just combined."
+        },
+        {
+          "step": "Shape",
+          "text": "Scoop 12 portions onto baking sheet. Flatten slightly."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake for 9-10 minutes until edges are just set. Do not overbake."
+        },
+        {
+          "step": "Cool and Glaze",
+          "text": "Cool completely. Optional: drizzle with a glaze made from powdered sweetener and lemon juice."
+        }
       ]
     },
     {
@@ -723,8 +1159,14 @@
       "totalTime": "24",
       "difficulty": "Easy",
       "category": "Classic",
-      "tags": ["Monster", "Loaded", "Peanut Butter"],
-      "methods": ["whey"],
+      "tags": [
+        "Monster",
+        "Loaded",
+        "Peanut Butter"
+      ],
+      "methods": [
+        "whey"
+      ],
       "image": "monster-protein-cookies.png",
       "ingredients": [
         "90g rolled oats",
@@ -739,13 +1181,34 @@
         "30g M&M candies"
       ],
       "instructions": [
-        {"step": "Preheat", "text": "Preheat your oven to 350°F (175°C). Line a baking sheet with parchment paper."},
-        {"step": "Mix Dry", "text": "Combine oats, protein powder, baking soda, and salt."},
-        {"step": "Mix Wet", "text": "In another bowl, mix peanut butter, maple syrup, egg, and vanilla until smooth."},
-        {"step": "Combine", "text": "Add wet to dry and mix. Fold in chocolate chips and half the M&Ms."},
-        {"step": "Shape", "text": "Scoop 12 portions onto baking sheet. Press remaining M&Ms on top."},
-        {"step": "Bake", "text": "Bake for 10-12 minutes until edges are set."},
-        {"step": "Cool", "text": "Cool on baking sheet for 5 minutes before transferring."}
+        {
+          "step": "Preheat",
+          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Line a baking sheet with parchment paper."
+        },
+        {
+          "step": "Mix Dry",
+          "text": "Combine oats, protein powder, baking soda, and salt."
+        },
+        {
+          "step": "Mix Wet",
+          "text": "In another bowl, mix peanut butter, maple syrup, egg, and vanilla until smooth."
+        },
+        {
+          "step": "Combine",
+          "text": "Add wet to dry and mix. Fold in chocolate chips and half the M&Ms."
+        },
+        {
+          "step": "Shape",
+          "text": "Scoop 12 portions onto baking sheet. Press remaining M&Ms on top."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake for 10-12 minutes until edges are set."
+        },
+        {
+          "step": "Cool",
+          "text": "Cool on baking sheet for 5 minutes before transferring."
+        }
       ]
     },
     {
@@ -766,8 +1229,14 @@
       "totalTime": "22",
       "difficulty": "Medium",
       "category": "High Protein",
-      "tags": ["30g+", "Anabolic", "Maximum Protein"],
-      "methods": ["whey"],
+      "tags": [
+        "30g+",
+        "Anabolic",
+        "Maximum Protein"
+      ],
+      "methods": [
+        "whey"
+      ],
       "image": "high-protein-cookies-30g.png",
       "ingredients": [
         "90g oat flour",
@@ -781,13 +1250,34 @@
         "5g vanilla extract"
       ],
       "instructions": [
-        {"step": "Preheat", "text": "Preheat your oven to 350°F (175°C). Line a baking sheet with parchment paper."},
-        {"step": "Mix Dry", "text": "Whisk together oat flour, whey protein, casein protein, baking soda, and salt."},
-        {"step": "Mix Wet", "text": "Combine Greek yogurt, maple syrup, egg whites, and vanilla until smooth."},
-        {"step": "Combine", "text": "Add wet to dry and mix until a thick batter forms. Let rest 5 minutes."},
-        {"step": "Shape", "text": "Scoop 10 large portions onto baking sheet. Flatten to 3/4 inch thick."},
-        {"step": "Bake", "text": "Bake for 11-12 minutes until edges are set and tops are slightly golden."},
-        {"step": "Cool", "text": "Cool on baking sheet for 10 minutes. These are dense and will firm up significantly."}
+        {
+          "step": "Preheat",
+          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Line a baking sheet with parchment paper."
+        },
+        {
+          "step": "Mix Dry",
+          "text": "Whisk together oat flour, whey protein, casein protein, baking soda, and salt."
+        },
+        {
+          "step": "Mix Wet",
+          "text": "Combine Greek yogurt, maple syrup, egg whites, and vanilla until smooth."
+        },
+        {
+          "step": "Combine",
+          "text": "Add wet to dry and mix until a thick batter forms. Let rest 5 minutes."
+        },
+        {
+          "step": "Shape",
+          "text": "Scoop 10 large portions onto baking sheet. Flatten to 3/4 inch thick."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake for 11-12 minutes until edges are set and tops are slightly golden."
+        },
+        {
+          "step": "Cool",
+          "text": "Cool on baking sheet for 10 minutes. These are dense and will firm up significantly."
+        }
       ]
     },
     {
@@ -808,8 +1298,14 @@
       "totalTime": "24",
       "difficulty": "Easy",
       "category": "Dessert",
-      "tags": ["Chocolate", "Peanut Butter", "Swirl"],
-      "methods": ["whey"],
+      "tags": [
+        "Chocolate",
+        "Peanut Butter",
+        "Swirl"
+      ],
+      "methods": [
+        "whey"
+      ],
       "image": "chocolate-peanut-butter-protein-cookies.png",
       "ingredients": [
         "90g oat flour",
@@ -824,14 +1320,38 @@
         "64g natural peanut butter (for swirl)"
       ],
       "instructions": [
-        {"step": "Preheat", "text": "Preheat your oven to 350°F (175°C). Line a baking sheet with parchment paper."},
-        {"step": "Mix Dry", "text": "Whisk together oat flour, protein powder, cocoa powder, baking soda, and salt."},
-        {"step": "Mix Wet", "text": "Combine almond butter, maple syrup, egg, and vanilla until smooth."},
-        {"step": "Combine", "text": "Add wet to dry and mix until a dough forms."},
-        {"step": "Shape", "text": "Scoop 12 portions onto baking sheet. Make a small indent in each."},
-        {"step": "Add Swirl", "text": "Add 1/2 teaspoon peanut butter to each indent. Use a toothpick to swirl."},
-        {"step": "Bake", "text": "Bake for 10-12 minutes until edges are set."},
-        {"step": "Cool", "text": "Cool on baking sheet for 5 minutes before transferring."}
+        {
+          "step": "Preheat",
+          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Line a baking sheet with parchment paper."
+        },
+        {
+          "step": "Mix Dry",
+          "text": "Whisk together oat flour, protein powder, cocoa powder, baking soda, and salt."
+        },
+        {
+          "step": "Mix Wet",
+          "text": "Combine almond butter, maple syrup, egg, and vanilla until smooth."
+        },
+        {
+          "step": "Combine",
+          "text": "Add wet to dry and mix until a dough forms."
+        },
+        {
+          "step": "Shape",
+          "text": "Scoop 12 portions onto baking sheet. Make a small indent in each."
+        },
+        {
+          "step": "Add Swirl",
+          "text": "Add 1/2 teaspoon peanut butter to each indent. Use a toothpick to swirl."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake for 10-12 minutes until edges are set."
+        },
+        {
+          "step": "Cool",
+          "text": "Cool on baking sheet for 5 minutes before transferring."
+        }
       ]
     },
     {
@@ -852,8 +1372,14 @@
       "totalTime": "22",
       "difficulty": "Beginner",
       "category": "Whole Food",
-      "tags": ["Banana", "Natural", "Low Sugar"],
-      "methods": ["whey"],
+      "tags": [
+        "Banana",
+        "Natural",
+        "Low Sugar"
+      ],
+      "methods": [
+        "whey"
+      ],
       "image": "banana-protein-cookies.png",
       "ingredients": [
         "120g oat flour",
@@ -868,13 +1394,34 @@
         "45g walnuts, chopped (optional)"
       ],
       "instructions": [
-        {"step": "Preheat", "text": "Preheat your oven to 350°F (175°C). Line a baking sheet with parchment paper."},
-        {"step": "Mix Dry", "text": "Whisk together oat flour, protein powder, baking soda, cinnamon, and salt."},
-        {"step": "Mix Wet", "text": "Mash bananas until smooth. Add maple syrup, egg, and vanilla. Mix well."},
-        {"step": "Combine", "text": "Add wet to dry and mix until combined. Fold in walnuts if using."},
-        {"step": "Shape", "text": "Scoop 14 portions onto baking sheet. Flatten slightly."},
-        {"step": "Bake", "text": "Bake for 10-12 minutes until edges are golden."},
-        {"step": "Cool", "text": "Cool on baking sheet for 5 minutes before transferring."}
+        {
+          "step": "Preheat",
+          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Line a baking sheet with parchment paper."
+        },
+        {
+          "step": "Mix Dry",
+          "text": "Whisk together oat flour, protein powder, baking soda, cinnamon, and salt."
+        },
+        {
+          "step": "Mix Wet",
+          "text": "Mash bananas until smooth. Add maple syrup, egg, and vanilla. Mix well."
+        },
+        {
+          "step": "Combine",
+          "text": "Add wet to dry and mix until combined. Fold in walnuts if using."
+        },
+        {
+          "step": "Shape",
+          "text": "Scoop 14 portions onto baking sheet. Flatten slightly."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake for 10-12 minutes until edges are golden."
+        },
+        {
+          "step": "Cool",
+          "text": "Cool on baking sheet for 5 minutes before transferring."
+        }
       ]
     },
     {
@@ -895,8 +1442,14 @@
       "totalTime": "22",
       "difficulty": "Easy",
       "category": "Low-Carb",
-      "tags": ["Sugar-Free", "Diabetic-Friendly", "Keto"],
-      "methods": ["whey"],
+      "tags": [
+        "Sugar-Free",
+        "Diabetic-Friendly",
+        "Keto"
+      ],
+      "methods": [
+        "whey"
+      ],
       "image": "sugar-free-protein-cookies.png",
       "ingredients": [
         "90g almond flour",
@@ -911,13 +1464,34 @@
         "45g sugar-free chocolate chips"
       ],
       "instructions": [
-        {"step": "Preheat", "text": "Preheat your oven to 325°F (165°C). Line a baking sheet with parchment paper."},
-        {"step": "Mix Dry", "text": "Whisk together almond flour, protein powder, oat fiber, baking soda, and salt."},
-        {"step": "Mix Wet", "text": "Combine almond butter, sweetener, egg, and vanilla until smooth."},
-        {"step": "Combine", "text": "Add wet to dry and mix until a dough forms. Fold in chocolate chips."},
-        {"step": "Shape", "text": "Scoop 12 portions onto baking sheet. Flatten to 1/2 inch thick."},
-        {"step": "Bake", "text": "Bake for 10-12 minutes until edges are golden."},
-        {"step": "Cool", "text": "Cool on baking sheet for 10 minutes. These firm up significantly as they cool."}
+        {
+          "step": "Preheat",
+          "text": "Preheat your oven to 325\u00b0F (165\u00b0C). Line a baking sheet with parchment paper."
+        },
+        {
+          "step": "Mix Dry",
+          "text": "Whisk together almond flour, protein powder, oat fiber, baking soda, and salt."
+        },
+        {
+          "step": "Mix Wet",
+          "text": "Combine almond butter, sweetener, egg, and vanilla until smooth."
+        },
+        {
+          "step": "Combine",
+          "text": "Add wet to dry and mix until a dough forms. Fold in chocolate chips."
+        },
+        {
+          "step": "Shape",
+          "text": "Scoop 12 portions onto baking sheet. Flatten to 1/2 inch thick."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake for 10-12 minutes until edges are golden."
+        },
+        {
+          "step": "Cool",
+          "text": "Cool on baking sheet for 10 minutes. These firm up significantly as they cool."
+        }
       ]
     },
     {
@@ -938,8 +1512,14 @@
       "totalTime": "24",
       "difficulty": "Easy",
       "category": "Classic",
-      "tags": ["Thin", "Crispy", "Crunchy"],
-      "methods": ["whey"],
+      "tags": [
+        "Thin",
+        "Crispy",
+        "Crunchy"
+      ],
+      "methods": [
+        "whey"
+      ],
       "image": "thin-crispy-protein-cookies.png",
       "ingredients": [
         "120g oat flour",
@@ -953,13 +1533,34 @@
         "45g chocolate chips"
       ],
       "instructions": [
-        {"step": "Preheat", "text": "Preheat your oven to 350°F (175°C). Line a baking sheet with parchment paper."},
-        {"step": "Mix Dry", "text": "Whisk together oat flour, protein powder, baking soda, and salt."},
-        {"step": "Mix Wet", "text": "Combine melted coconut oil, sweetener, egg, and vanilla until smooth."},
-        {"step": "Combine", "text": "Add wet to dry and mix. Fold in chocolate chips."},
-        {"step": "Shape", "text": "Scoop 16 small portions onto baking sheet, spacing 3 inches apart. Flatten very thin."},
-        {"step": "Bake", "text": "Bake for 12-14 minutes until golden brown throughout."},
-        {"step": "Cool", "text": "Cool on baking sheet completely. Cookies will crisp up as they cool."}
+        {
+          "step": "Preheat",
+          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Line a baking sheet with parchment paper."
+        },
+        {
+          "step": "Mix Dry",
+          "text": "Whisk together oat flour, protein powder, baking soda, and salt."
+        },
+        {
+          "step": "Mix Wet",
+          "text": "Combine melted coconut oil, sweetener, egg, and vanilla until smooth."
+        },
+        {
+          "step": "Combine",
+          "text": "Add wet to dry and mix. Fold in chocolate chips."
+        },
+        {
+          "step": "Shape",
+          "text": "Scoop 16 small portions onto baking sheet, spacing 3 inches apart. Flatten very thin."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake for 12-14 minutes until golden brown throughout."
+        },
+        {
+          "step": "Cool",
+          "text": "Cool on baking sheet completely. Cookies will crisp up as they cool."
+        }
       ]
     },
     {
@@ -980,8 +1581,14 @@
       "totalTime": "25",
       "difficulty": "Medium",
       "category": "Seasonal",
-      "tags": ["Red Velvet", "Valentine", "Cream Cheese"],
-      "methods": ["whey"],
+      "tags": [
+        "Red Velvet",
+        "Valentine",
+        "Cream Cheese"
+      ],
+      "methods": [
+        "whey"
+      ],
       "image": "red-velvet-protein-cookies.png",
       "ingredients": [
         "120g oat flour",
@@ -997,13 +1604,34 @@
         "60g white chocolate chips"
       ],
       "instructions": [
-        {"step": "Preheat", "text": "Preheat your oven to 350°F (175°C). Line a baking sheet with parchment paper."},
-        {"step": "Mix Dry", "text": "Whisk together oat flour, protein powder, cocoa powder, baking powder, and salt."},
-        {"step": "Mix Wet", "text": "Combine Greek yogurt, maple syrup, egg, food coloring, and vanilla."},
-        {"step": "Combine", "text": "Add wet to dry and mix until combined. Fold in white chocolate chips."},
-        {"step": "Shape", "text": "Scoop 12 portions onto baking sheet. Flatten slightly."},
-        {"step": "Bake", "text": "Bake for 9-10 minutes until edges are set."},
-        {"step": "Cool and Frost", "text": "Cool completely. Optional: top with a cream cheese frosting drizzle."}
+        {
+          "step": "Preheat",
+          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Line a baking sheet with parchment paper."
+        },
+        {
+          "step": "Mix Dry",
+          "text": "Whisk together oat flour, protein powder, cocoa powder, baking powder, and salt."
+        },
+        {
+          "step": "Mix Wet",
+          "text": "Combine Greek yogurt, maple syrup, egg, food coloring, and vanilla."
+        },
+        {
+          "step": "Combine",
+          "text": "Add wet to dry and mix until combined. Fold in white chocolate chips."
+        },
+        {
+          "step": "Shape",
+          "text": "Scoop 12 portions onto baking sheet. Flatten slightly."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake for 9-10 minutes until edges are set."
+        },
+        {
+          "step": "Cool and Frost",
+          "text": "Cool completely. Optional: top with a cream cheese frosting drizzle."
+        }
       ]
     },
     {
@@ -1024,8 +1652,14 @@
       "totalTime": "25",
       "difficulty": "Easy",
       "category": "Seasonal",
-      "tags": ["Gingerbread", "Holiday", "Spiced"],
-      "methods": ["whey"],
+      "tags": [
+        "Gingerbread",
+        "Holiday",
+        "Spiced"
+      ],
+      "methods": [
+        "whey"
+      ],
       "image": "gingerbread-protein-cookies.png",
       "ingredients": [
         "120g oat flour",
@@ -1042,14 +1676,38 @@
         "30g coconut oil, melted"
       ],
       "instructions": [
-        {"step": "Preheat", "text": "Preheat your oven to 350°F (175°C). Line a baking sheet with parchment paper."},
-        {"step": "Mix Dry", "text": "Whisk together oat flour, protein powder, ginger, cinnamon, nutmeg, cloves, baking soda, and salt."},
-        {"step": "Mix Wet", "text": "Combine molasses, maple syrup, egg, and melted coconut oil."},
-        {"step": "Combine", "text": "Add wet to dry and mix until a soft dough forms."},
-        {"step": "Chill", "text": "Refrigerate dough for 15 minutes for easier handling."},
-        {"step": "Shape", "text": "Roll into 14 balls and place on baking sheet. Flatten slightly."},
-        {"step": "Bake", "text": "Bake for 9-10 minutes until edges are set but centers are soft."},
-        {"step": "Cool", "text": "Cool on baking sheet for 5 minutes. Optional: decorate with icing."}
+        {
+          "step": "Preheat",
+          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Line a baking sheet with parchment paper."
+        },
+        {
+          "step": "Mix Dry",
+          "text": "Whisk together oat flour, protein powder, ginger, cinnamon, nutmeg, cloves, baking soda, and salt."
+        },
+        {
+          "step": "Mix Wet",
+          "text": "Combine molasses, maple syrup, egg, and melted coconut oil."
+        },
+        {
+          "step": "Combine",
+          "text": "Add wet to dry and mix until a soft dough forms."
+        },
+        {
+          "step": "Chill",
+          "text": "Refrigerate dough for 15 minutes for easier handling."
+        },
+        {
+          "step": "Shape",
+          "text": "Roll into 14 balls and place on baking sheet. Flatten slightly."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake for 9-10 minutes until edges are set but centers are soft."
+        },
+        {
+          "step": "Cool",
+          "text": "Cool on baking sheet for 5 minutes. Optional: decorate with icing."
+        }
       ]
     }
   ]

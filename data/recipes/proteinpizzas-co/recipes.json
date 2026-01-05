@@ -85,7 +85,7 @@
       "methods": [
         "whey"
       ],
-      "image": "cottage-cheese-protein-pizza.png",
+      "image": "high-protein-pizza-crust.png",
       "ingredients": [
         "100g oat flour",
         "80g unflavored whey protein powder",
@@ -144,7 +144,7 @@
       "methods": [
         "whey"
       ],
-      "image": "classic-protein-pizza-crust.png",
+      "image": "protein-pizza-dough.png",
       "ingredients": [
         "100g bread flour",
         "50g unflavored whey protein powder",
@@ -264,7 +264,7 @@
       "methods": [
         "whey"
       ],
-      "image": "cauliflower-protein-pizza.png",
+      "image": "chicken-protein-pizza.png",
       "ingredients": [
         "1 protein pizza crust",
         "60ml pizza sauce",
@@ -381,7 +381,7 @@
       "methods": [
         "whey"
       ],
-      "image": "bbq-chicken-protein-pizza.png",
+      "image": "cauliflower-protein-pizza-crust.png",
       "ingredients": [
         "300g cauliflower, riced",
         "60g unflavored whey protein powder",
@@ -440,7 +440,7 @@
       "methods": [
         "whey"
       ],
-      "image": "keto-protein-pizza-crust.png",
+      "image": "greek-yogurt-protein-pizza-crust.png",
       "ingredients": [
         "150g self-rising flour",
         "150g Greek yogurt",
@@ -556,7 +556,7 @@
       "methods": [
         "whey"
       ],
-      "image": "oat-flour-protein-pizza.png",
+      "image": "margherita-protein-pizza.png",
       "ingredients": [
         "1 protein pizza crust",
         "60ml crushed San Marzano tomatoes",
@@ -1027,7 +1027,7 @@
       "methods": [
         "whey"
       ],
-      "image": "spinach-feta-protein-pizza.png",
+      "image": "protein-pizza-bowl.png",
       "ingredients": [
         "100g ground turkey",
         "60ml pizza sauce",
@@ -1087,7 +1087,7 @@
       "methods": [
         "whey"
       ],
-      "image": "pesto-chicken-protein-pizza.png",
+      "image": "keto-protein-pizza.png",
       "ingredients": [
         "120g shredded mozzarella",
         "30g cream cheese",
@@ -1442,7 +1442,7 @@
       "methods": [
         "whey"
       ],
-      "image": "mushroom-protein-pizza.png",
+      "image": "dessert-protein-pizza.png",
       "ingredients": [
         "100g oat flour",
         "40g vanilla whey protein powder",
