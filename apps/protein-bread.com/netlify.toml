@@ -3,7 +3,7 @@
 
 [build]
   # Build command - runs from the repository root
-  command = "cd ../.. && node scripts/build-site.js protein-bread.com"
+  command = "cd ../.. && pnpm install && node scripts/build-site.js protein-bread.com"
   
   # Publish directory relative to base
   publish = "dist"

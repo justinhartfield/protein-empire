@@ -2,8 +2,11 @@
 # Individual site within the Protein Empire monorepo
 
 [build]
+  # Base directory for the monorepo
+  base = "apps/proteincookies.co"
+  
   # Build command - runs from the repository root
-  command = "cd ../.. && node scripts/build-site.js proteincookies.co"
+  command = "cd ../.. && pnpm install && node scripts/build-site.js proteincookies.co"
   
   # Publish directory relative to base
   publish = "dist"
