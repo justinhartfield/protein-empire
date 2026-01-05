@@ -1192,11 +1192,10 @@ function copyAssets(outputDir) {
   console.log('\n📁 Copying assets...');
   
   const ROOT_DIR_ASSETS = path.resolve(__dirname, '..');
-  
-  // Copy recipe images from proteincookies.co (as sample)
-  const sourceImagesDir = path.join(ROOT_DIR_ASSETS, 'apps/proteincookies.co/dist/recipe_images');
   const targetImagesDir = path.join(outputDir, 'recipe_images');
   
+  // Copy recipe images from proteincookies.co
+  const sourceImagesDir = path.join(ROOT_DIR_ASSETS, 'apps/proteincookies.co/dist/recipe_images');
   if (fs.existsSync(sourceImagesDir)) {
     fs.readdirSync(sourceImagesDir).forEach(file => {
       fs.copyFileSync(
@@ -1204,7 +1203,31 @@ function copyAssets(outputDir) {
         path.join(targetImagesDir, file)
       );
     });
-    console.log('   Copied recipe images');
+    console.log('   Copied proteincookies.co recipe images');
+  }
+  
+  // Copy recipe images from all data/images subdirectories
+  const dataImagesDir = path.join(ROOT_DIR_ASSETS, 'data/images');
+  if (fs.existsSync(dataImagesDir)) {
+    const subdirs = fs.readdirSync(dataImagesDir);
+    subdirs.forEach(subdir => {
+      const subdirPath = path.join(dataImagesDir, subdir);
+      if (fs.statSync(subdirPath).isDirectory()) {
+        fs.readdirSync(subdirPath).forEach(file => {
+          if (file.endsWith('.png') || file.endsWith('.jpg') || file.endsWith('.webp')) {
+            const targetPath = path.join(targetImagesDir, file);
+            // Only copy if file doesn't already exist (avoid overwriting)
+            if (!fs.existsSync(targetPath)) {
+              fs.copyFileSync(
+                path.join(subdirPath, file),
+                targetPath
+              );
+            }
+          }
+        });
+        console.log(`   Copied ${subdir} recipe images`);
+      }
+    });
   }
   
   // Copy logo and other images
