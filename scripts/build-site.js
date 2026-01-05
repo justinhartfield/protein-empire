@@ -580,7 +580,7 @@ function getFooterPartial() {
         </div>
         
         <div class="mt-8 text-center text-slate-500 text-xs">
-            <p>&copy; <%= new Date().getFullYear() %> <%= site.name %>. All recipes macro-verified using USDA FoodData Central.</p>
+            <p>&copy; <%= new Date().getFullYear() %> <a href="https://HighProtein.Recipes" class="hover:text-amber-400 transition-colors">High Protein Recipes</a>. All recipes macro-verified using USDA FoodData Central.</p>
         </div>
     </div>
 </footer>
