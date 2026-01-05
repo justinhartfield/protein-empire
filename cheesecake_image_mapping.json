@@ -1,0 +1,70 @@
+{
+  "site": "proteincheesecake-co",
+  "analysis_date": "2026-01-05",
+  "unique_images_analyzed": {
+    "banana-cream-cheesecake.png": {
+      "actual_content": "Banana cheesecake with banana slices, whipped cream, bananas in background",
+      "should_be_used_for": ["banana-cream-cheesecake"],
+      "currently_also_named": ["classic-vanilla-bean-cheesecake.png"]
+    },
+    "blueberry-swirl-cheesecake.png": {
+      "actual_content": "Blueberry swirl cheesecake with fresh blueberries, purple swirls, mint garnish",
+      "should_be_used_for": ["lemon-blueberry-cheesecake-minis"],
+      "currently_also_named": ["no-bake-chocolate-cheesecake.png"]
+    },
+    "brownie-batter-dip.png": {
+      "actual_content": "MATCHA/GREEN TEA cheesecake - bright green, matcha powder, tea whisk in background",
+      "should_be_used_for": ["matcha-green-tea-cheesecake"],
+      "currently_also_named": ["matcha-cheesecake.png"]
+    },
+    "caramel-apple-cheesecake.png": {
+      "actual_content": "Caramel apple cheesecake with diced apples, caramel drizzle, fall leaves, cinnamon sticks",
+      "should_be_used_for": ["caramel-apple-cheesecake"],
+      "currently_also_named": ["lemon-blueberry-cheesecake-minis.png"]
+    },
+    "cinnamon-roll-cheesecake.png": {
+      "actual_content": "Cinnamon roll cheesecake with swirled cinnamon, cream cheese frosting, pecans, cinnamon rolls in background",
+      "should_be_used_for": ["cinnamon-roll-cheesecake"],
+      "currently_also_named": ["mint-chocolate-chip-cheesecake.png"]
+    },
+    "classic-protein-cheesecake.png": {
+      "actual_content": "Classic plain vanilla cheesecake - white/cream colored, graham cracker crust, mixed berries on side",
+      "should_be_used_for": ["classic-vanilla-bean-cheesecake", "classic-protein-cheesecake"],
+      "currently_also_named": ["cookies-and-cream-cheesecake.png"]
+    },
+    "strawberry-swirl-cheesecake.png": {
+      "actual_content": "Strawberry swirl cheesecake with pink swirls, fresh strawberries",
+      "should_be_used_for": ["strawberry-swirl-cheesecake"],
+      "currently_also_named": []
+    },
+    "key-lime-cheesecake.png": {
+      "actual_content": "Key lime cheesecake - green tinted, limes in background, lime zest",
+      "should_be_used_for": ["key-lime-cheesecake"],
+      "currently_also_named": []
+    },
+    "chocolate-peanut-butter-cheesecake.png": {
+      "actual_content": "Chocolate peanut butter layered cheesecake with PB cup on top, peanut butter jar in background",
+      "should_be_used_for": ["single-serving-peanut-butter-cheesecake", "peanut-butter-cheesecake"],
+      "currently_also_named": ["pumpkin-spice-cheesecake.png"]
+    },
+    "cheesecake-stuffed-strawberries.png": {
+      "actual_content": "Strawberries stuffed with cream cheese filling, chocolate drizzle",
+      "should_be_used_for": ["cheesecake-stuffed-strawberries"],
+      "currently_also_named": ["funfetti-cheesecake-dip.png"]
+    }
+  },
+  "correct_mappings": {
+    "classic-vanilla-bean-cheesecake": "classic-protein-cheesecake.png",
+    "no-bake-chocolate-cheesecake": "NEEDS_NEW_IMAGE",
+    "strawberry-swirl-cheesecake": "strawberry-swirl-cheesecake.png",
+    "lemon-blueberry-cheesecake-minis": "blueberry-swirl-cheesecake.png",
+    "single-serving-peanut-butter-cheesecake": "chocolate-peanut-butter-cheesecake.png",
+    "funfetti-cheesecake-dip": "NEEDS_NEW_IMAGE",
+    "pumpkin-spice-cheesecake": "NEEDS_NEW_IMAGE",
+    "key-lime-cheesecake": "key-lime-cheesecake.png",
+    "mint-chocolate-chip-cheesecake": "NEEDS_NEW_IMAGE",
+    "cookies-and-cream-cheesecake": "NEEDS_NEW_IMAGE",
+    "matcha-green-tea-cheesecake": "brownie-batter-dip.png",
+    "brownie-batter-dip": "NEEDS_NEW_IMAGE"
+  }
+}

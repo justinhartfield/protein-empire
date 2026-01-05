@@ -4,7 +4,7 @@
       "id": 1,
       "slug": "classic-protein-pizza-crust",
       "title": "Classic Protein Pizza Crust",
-      "description": "The ultimate high protein pizza crust with 35g protein per pizza. Crispy outside, chewy inside.",
+      "description": "This high-protein pizza crust delivers an impressive 35 grams of protein per serving, making it an ideal choice for anyone looking to fuel their muscles and stay satisfied longer. With its crispy exterior and delightfully chewy interior, each bite offers a perfect balance of crunch and tenderness, providing a satisfying texture that elevates your pizza experience. Rich in protein and relatively low in calories\u2014around 280 per slice\u2014this crust is not only delicious but also supports your fitness goals, whether you're building muscle or maintaining a balanced diet. Its neutral flavor makes it a versatile base for a variety of toppings, from vibrant vegetables to lean meats or dairy-free cheese, making it suitable for gluten-free or vegan adaptations with simple ingredient swaps. This crust is perfect for post-workout recovery, meal prep, or whenever you're craving a wholesome, satisfying slice. For best results, ensure your oven is fully preheated to achieve that crisp exterior, and consider using a pizza stone or baking sheet for even heat distribution. With its hearty texture and protein-packed profile, this crust will quickly become a staple in your healthy eating arsenal.",
       "protein": 35,
       "calories": 280,
       "carbs": 28,
@@ -57,13 +57,44 @@
           "step": "Par-bake",
           "text": "Bake for 8 minutes, then add toppings and bake 7 more minutes."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "pepperoni-protein-pizza",
+          "title": "Pepperoni Protein Pizza",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "margherita-protein-pizza",
+          "title": "Margherita Protein Pizza",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "high-protein-pizza-crust",
+          "title": "High Protein Pizza Crust",
+          "domain": "proteinpizzas.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "savory-herb-protein-bread",
+          "title": "Savory Herb Protein Bread",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        },
+        {
+          "slug": "classic-whey-protein-pancakes",
+          "title": "Classic Whey Protein Pancakes",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        }
       ]
     },
     {
       "id": 2,
       "slug": "high-protein-pizza-crust",
       "title": "High Protein Pizza Crust",
-      "description": "Maximum protein pizza crust with 42g protein. Perfect for serious athletes.",
+      "description": "This maximum protein pizza crust packs an impressive 42 grams of muscle-building protein per serving, making it an ideal choice for serious athletes and anyone looking to fuel their active lifestyle. Crafted with a blend of high-quality ingredients, this crust offers a satisfying, chewy texture with a subtly crispy edge that pairs perfectly with your favorite toppings. Its rich, savory taste provides a wholesome foundation that complements everything from lean turkey and veggies to plant-based cheeses for vegan options. With only 320 calories per serving, it\u2019s a guilt-free way to indulge in pizza while supporting your fitness goals. This crust is especially perfect for post-workout recovery, meal prepping for busy weeks, or enjoying a nutritious dinner that keeps you energized. For best results, ensure your ingredients are well mixed and baked at the right temperature to achieve a golden, crispy crust every time. Gluten-free options can be created using almond or coconut flour, and vegan alternatives can be made by substituting eggs with flaxseed or chia seed gel. Overall, this high-protein crust is a versatile, delicious way to elevate your pizza game while staying aligned with your dietary and fitness ambitions.",
       "protein": 42,
       "calories": 320,
       "carbs": 24,
@@ -116,13 +147,44 @@
           "step": "Bake",
           "text": "Shape into 12-inch circle, par-bake 8 minutes, add toppings, bake 7 more minutes."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "chicken-protein-pizza",
+          "title": "Chicken Protein Pizza",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "classic-protein-pizza-crust",
+          "title": "Classic Protein Pizza Crust",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "protein-pizza-dough",
+          "title": "Protein Pizza Dough",
+          "domain": "proteinpizzas.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "protein-powder-banana-bread",
+          "title": "Banana Bread with Protein Powder",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        },
+        {
+          "slug": "red-velvet-protein-pancakes",
+          "title": "Red Velvet Protein Pancakes",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        }
       ]
     },
     {
       "id": 3,
       "slug": "protein-pizza-dough",
       "title": "Protein Pizza Dough",
-      "description": "Versatile protein pizza dough you can make ahead. 32g protein with authentic texture.",
+      "description": "This versatile protein pizza dough is perfect for anyone looking to enjoy a satisfying slice while supporting their fitness goals, offering an impressive 32 grams of protein per serving to fuel your day. Made with wholesome ingredients, it boasts an authentic, chewy texture with a lightly crispy crust that pairs beautifully with a variety of toppings, from vibrant veggie medleys to lean meats or plant-based alternatives. Its rich flavor and satisfying bite make it an ideal post-workout meal or a convenient option for meal prep, allowing you to enjoy a nutritious, homemade pizza anytime. The recipe is also adaptable for gluten-free diets by using alternative flours, and vegan options can be achieved with plant-based protein powders and dairy-free cheeses. For the best results, be sure to measure ingredients carefully and pre-bake the crust slightly before adding toppings to ensure it stays crispy. This dough can be made ahead of time, stored in the fridge, and baked fresh when you're craving a hearty, protein-packed slice. Whether you're looking for a meal to refuel after exercise or a smart, satisfying dinner, this pizza dough checks all the boxes for flavor, nutrition, and convenience.",
       "protein": 32,
       "calories": 290,
       "carbs": 30,
@@ -175,13 +237,44 @@
           "step": "Rest",
           "text": "Let rise 30 minutes, then shape and bake at 425\u00b0F for 15 minutes."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "classic-protein-pizza-crust",
+          "title": "Classic Protein Pizza Crust",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "high-protein-pizza-crust",
+          "title": "High Protein Pizza Crust",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "protein-pizza-recipe",
+          "title": "Protein Pizza Recipe",
+          "domain": "proteinpizzas.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "lemon-blueberry-protein-bread",
+          "title": "Lemon Blueberry Protein Bread",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        },
+        {
+          "slug": "savory-herb-and-cheese-pancakes",
+          "title": "Savory Herb and Cheese Pancakes",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        }
       ]
     },
     {
       "id": 4,
       "slug": "protein-pizza-recipe",
       "title": "Protein Pizza Recipe",
-      "description": "Complete protein pizza recipe with crust and toppings. 45g protein per serving.",
+      "description": "This complete protein pizza recipe delivers an impressive 45 grams of muscle-building protein per serving, making it an ideal choice for fueling your active lifestyle. The crust boasts a satisfying combination of crispy edges and a tender, chewy center, perfectly complementing the hearty toppings that burst with flavor. Each bite offers a delicious balance of savory, cheesy goodness with a hint of herbs and spices, while the protein-packed ingredients ensure you stay full and energized longer. Perfect for post-workout recovery or meal prepping for the week, this pizza is both nutritious and versatile. It\u2019s naturally gluten-free if you opt for a cauliflower or alternative grain crust, and vegan options can be easily created by swapping cheese for plant-based versions and choosing vegan protein toppings. For best results, use high-quality lean meats or plant-based proteins, and ensure your toppings are evenly distributed for consistent flavor and texture. Remember to bake until the crust is golden and the cheese is bubbling for that irresistible, oven-fresh appeal. Enjoy this satisfying, nutrient-dense pizza as a delicious way to meet your daily protein needs without sacrificing taste.",
       "protein": 45,
       "calories": 420,
       "carbs": 32,
@@ -236,13 +329,44 @@
           "step": "Finish",
           "text": "Bake 10 more minutes until cheese is bubbly and golden."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "classic-protein-pizza-crust",
+          "title": "Classic Protein Pizza Crust",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "high-protein-pizza-crust",
+          "title": "High Protein Pizza Crust",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "protein-pizza-dough",
+          "title": "Protein Pizza Dough",
+          "domain": "proteinpizzas.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "high-protein-banana-bread-recipe",
+          "title": "Ultimate High-Protein Banana Bread",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        },
+        {
+          "slug": "berries-and-cream-protein-crepes",
+          "title": "Berries and Cream Protein Crepes",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        }
       ]
     },
     {
       "id": 5,
       "slug": "chicken-protein-pizza",
       "title": "Chicken Protein Pizza",
-      "description": "Loaded chicken protein pizza with 52g protein. The ultimate post-workout meal.",
+      "description": "Loaded chicken protein pizza packs an impressive 52 grams of muscle-repairing protein per serving, making it the perfect choice for fueling your post-workout recovery or satisfying your high-protein cravings. The crispy, golden crust provides a satisfying crunch, while the tender, flavorful chicken topping offers a juicy bite with every slice. Melted cheese and zesty toppings create a rich, savory taste that balances indulgence with nutrition, ensuring you get both flavor and macros in every bite. With its balanced macros\u2014high in protein and moderate in carbs\u2014it\u2019s ideal for muscle building, weight management, or simply maintaining a nutrient-dense diet. This pizza is versatile enough for meal prep, allowing you to make ahead and reheat for quick, delicious meals throughout the week. For those with dietary restrictions, it can be easily adapted\u2014gluten-free crust options or vegan cheese and plant-based proteins work well to suit various needs. To get the best results, use freshly cooked, shredded chicken and pre-bake the crust slightly for extra crispness. Enjoy this hearty, satisfying pizza as a rewarding post-workout meal or a nutritious weekend treat that keeps you energized and on track with your fitness goals.",
       "protein": 52,
       "calories": 480,
       "carbs": 34,
@@ -295,13 +419,44 @@
           "step": "Bake",
           "text": "Bake at 425\u00b0F for 10 minutes until cheese is melted."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "high-protein-pizza-crust",
+          "title": "High Protein Pizza Crust",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "bbq-chicken-protein-pizza",
+          "title": "BBQ Chicken Protein Pizza",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "buffalo-chicken-protein-pizza",
+          "title": "Buffalo Chicken Protein Pizza",
+          "domain": "proteinpizzas.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "protein-banana-bread-recipe",
+          "title": "Simple Protein Banana Bread Recipe",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        },
+        {
+          "slug": "berries-and-cream-protein-crepes",
+          "title": "Berries and Cream Protein Crepes",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        }
       ]
     },
     {
       "id": 6,
       "slug": "pepperoni-protein-pizza",
       "title": "Pepperoni Protein Pizza",
-      "description": "Classic pepperoni on a high protein crust. 40g protein per serving.",
+      "description": "Savor the classic appeal of pepperoni on a high-protein crust that delivers an impressive 40 grams of protein per serving, making it an ideal choice for fueling your active lifestyle. The crust boasts a satisfying, chewy texture with just the right crunch, perfectly balancing savory, spicy pepperoni slices that melt in your mouth with each bite. Rich in lean protein and low in unnecessary carbs, this pizza supports muscle recovery and keeps you feeling full longer, making it a great post-workout meal or a nutritious dinner option. Whether you're meal prepping for the week or indulging in a weekend treat, this recipe is versatile and easy to customize\u2014try adding veggies or swapping out the pepperoni for vegan alternatives to suit dietary needs. For best results, use a high-quality protein powder or almond flour in the crust to enhance flavor and texture, and bake until the edges are golden and crispy. Gluten-free options are readily available by choosing gluten-free flours, and vegan versions can be created with plant-based cheese and meat substitutes. With its hearty flavors and wholesome ingredients, this pizza is a guilt-free indulgence that nourishes your body while satisfying your cravings.",
       "protein": 40,
       "calories": 450,
       "carbs": 32,
@@ -353,13 +508,44 @@
           "step": "Bake",
           "text": "Bake 10 minutes. Sprinkle with oregano and red pepper flakes."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "classic-protein-pizza-crust",
+          "title": "Classic Protein Pizza Crust",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "margherita-protein-pizza",
+          "title": "Margherita Protein Pizza",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "high-protein-pizza-crust",
+          "title": "High Protein Pizza Crust",
+          "domain": "proteinpizzas.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "healthy-protein-banana-bread",
+          "title": "Healthy Protein Banana Bread",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        },
+        {
+          "slug": "dairy-free-banana-oat-protein-pancakes",
+          "title": "Dairy-Free Banana Oat Protein Pancakes",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        }
       ]
     },
     {
       "id": 7,
       "slug": "cauliflower-protein-pizza-crust",
       "title": "Cauliflower Protein Pizza Crust",
-      "description": "Low-carb cauliflower protein pizza crust. 28g protein with only 12g net carbs.",
+      "description": "This low-carb cauliflower protein pizza crust delivers an impressive 28 grams of protein per serving, making it a perfect choice for fueling your active lifestyle and supporting muscle recovery. With only 12 grams of net carbs, it aligns beautifully with keto and low-carb diets, allowing you to indulge without guilt. The crust boasts a satisfying texture\u2014crispy on the edges with a tender, slightly chewy center\u2014giving you that authentic pizza experience with a wholesome twist. Its subtle, savory flavor pairs well with a variety of toppings, from fresh veggies to lean proteins and flavorful cheeses, making every bite both delicious and nutritious. Ideal for post-workout meals, meal prepping, or a quick weeknight dinner, this crust is versatile and easy to customize. For gluten-free or vegan options, simply swap out traditional cheese for plant-based alternatives, or add extra herbs and spices to enhance flavor. To achieve the best results, be sure to squeeze out excess moisture from the cauliflower before mixing, and bake until golden and crisp for that perfect pizza crust texture\u2014your taste buds and muscles will thank you!",
       "protein": 28,
       "calories": 220,
       "carbs": 16,
@@ -412,13 +598,44 @@
           "step": "Bake",
           "text": "Bake at 425\u00b0F for 20 minutes until golden, flip halfway. Add toppings and bake 5 more minutes."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "gluten-free-cauliflower-protein-pizza-crust",
+          "title": "Gluten-Free Cauliflower Protein Pizza Crust",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "protein-pizza-bowl",
+          "title": "Protein Pizza Bowl",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "keto-protein-pizza",
+          "title": "Keto Protein Pizza",
+          "domain": "proteinpizzas.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "high-protein-pumpkin-bread",
+          "title": "High Protein Pumpkin Bread",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        },
+        {
+          "slug": "cinnamon-roll-protein-waffles",
+          "title": "Cinnamon Roll Protein Waffles",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        }
       ]
     },
     {
       "id": 8,
       "slug": "greek-yogurt-protein-pizza-crust",
       "title": "Greek Yogurt Protein Pizza Crust",
-      "description": "2-ingredient base Greek yogurt protein pizza crust. 30g protein, incredibly easy.",
+      "description": "This 2-ingredient Greek yogurt protein pizza crust offers an incredibly nutritious and satisfying base, packing a remarkable 30 grams of protein per serving to fuel your muscles and keep you feeling full longer. With its tender, chewy texture and subtly tangy flavor from the Greek yogurt, this crust provides a perfect balance of softness and slight crispness as it bakes. Its simplicity makes it an ideal choice for a quick, wholesome meal\u2014perfect for post-workout recovery or meal prepping for busy weekdays. Whether you top it with your favorite veggies, lean meats, or plant-based alternatives, this versatile crust can be customized to fit gluten-free or vegan diets\u2014simply select your preferred toppings and cheese substitutes. For best results, ensure your Greek yogurt is thick and full-fat for added flavor and structure, and avoid overworking the dough to maintain its light, airy texture. Serve it fresh out of the oven for a delicious, high-protein treat that satisfies both your taste buds and your nutritional goals, making it a go-to for healthy, guilt-free indulgence any time of day.",
       "protein": 30,
       "calories": 260,
       "carbs": 26,
@@ -469,13 +686,44 @@
           "step": "Bake",
           "text": "Par-bake at 425\u00b0F for 8 minutes, add toppings, bake 7 more minutes."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "classic-protein-pizza-crust",
+          "title": "Classic Protein Pizza Crust",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "high-protein-pizza-crust",
+          "title": "High Protein Pizza Crust",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "protein-pizza-dough",
+          "title": "Protein Pizza Dough",
+          "domain": "proteinpizzas.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "protein-zucchini-bread",
+          "title": "Delicious Protein Zucchini Bread",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        },
+        {
+          "slug": "red-velvet-protein-pancakes",
+          "title": "Red Velvet Protein Pancakes",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        }
       ]
     },
     {
       "id": 9,
       "slug": "cottage-cheese-protein-pizza",
       "title": "Cottage Cheese Protein Pizza",
-      "description": "Creamy cottage cheese protein pizza crust. 38g protein with extra calcium.",
+      "description": "This creamy cottage cheese protein pizza crust offers a deliciously satisfying way to fuel your body with 38 grams of high-quality protein per serving, making it an ideal choice for post-workout recovery or a hearty, muscle-supporting meal. Rich in calcium and low in carbs, this crust provides a smooth, velvety texture with a subtly tangy flavor from the cottage cheese that pairs perfectly with your favorite toppings. Its tender yet sturdy bite makes it easy to enjoy by itself or topped with vibrant vegetables, lean meats, or dairy-free cheese for vegan adaptations. The creamy base creates a delightful contrast to crispy edges, offering a satisfying mouthfeel that keeps you coming back for more. This recipe is perfect for meal prep\u2014simply assemble, bake, and store for quick, nutritious meals throughout the week. For best results, use full-fat cottage cheese for added richness, and ensure your oven is well preheated for an evenly cooked, golden crust. Gluten-free options can be achieved by using almond or coconut flour in the crust, and for vegan versions, substitute plant-based cheeses and egg replacers. Whether enjoyed after a workout or as a wholesome dinner, this pizza combines indulgence with nourishing benefits to support your active lifestyle.",
       "protein": 38,
       "calories": 300,
       "carbs": 24,
@@ -528,13 +776,44 @@
           "step": "Top",
           "text": "Add toppings and bake 8 more minutes."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "classic-protein-pizza-crust",
+          "title": "Classic Protein Pizza Crust",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "high-protein-pizza-crust",
+          "title": "High Protein Pizza Crust",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "protein-pizza-dough",
+          "title": "Protein Pizza Dough",
+          "domain": "proteinpizzas.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "cheese-and-chive-protein-bread",
+          "title": "Cheese and Chive Protein Bread",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        },
+        {
+          "slug": "birthday-cake-protein-waffles",
+          "title": "Birthday Cake Protein Waffles",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        }
       ]
     },
     {
       "id": 10,
       "slug": "margherita-protein-pizza",
       "title": "Margherita Protein Pizza",
-      "description": "Classic Margherita on protein crust. 36g protein with fresh basil and tomatoes.",
+      "description": "Enjoy a delicious twist on the classic Margherita with this high-protein protein crust that delivers a satisfying, nutrient-packed slice. Packed with 36 grams of muscle-repairing protein per serving, this pizza makes a perfect post-workout meal or a nutritious anytime treat that keeps you fueled and satisfied. The crispy, golden crust provides a hearty texture, while the fresh basil and juicy tomatoes offer bright, vibrant flavors that balance richness with freshness. Each bite offers a delightful combination of cheesy, savory goodness and wholesome ingredients, making it both indulgent and nourishing. Ideal for meal prepping, this pizza can be assembled ahead of time and baked quickly for a convenient, protein-rich option during busy days. For gluten-sensitive eaters, consider using a gluten-free protein crust to suit your dietary needs; vegan versions can be achieved with plant-based cheese and optional vegan protein sources. To get the best results, use fresh, high-quality ingredients and avoid overloading with toppings to maintain a crisp crust and balanced flavor. Whether enjoyed after a workout or as a satisfying lunch, this Margherita protein pizza is a flavorful way to meet your macros without sacrificing taste.",
       "protein": 36,
       "calories": 380,
       "carbs": 32,
@@ -586,13 +865,44 @@
           "step": "Finish",
           "text": "Top with fresh basil, drizzle with olive oil, season with salt."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "classic-protein-pizza-crust",
+          "title": "Classic Protein Pizza Crust",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "pepperoni-protein-pizza",
+          "title": "Pepperoni Protein Pizza",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "high-protein-pizza-crust",
+          "title": "High Protein Pizza Crust",
+          "domain": "proteinpizzas.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "gluten-free-almond-flour-protein-bread",
+          "title": "Gluten-Free Almond Flour Protein Bread",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        },
+        {
+          "slug": "german-chocolate-protein-pancakes",
+          "title": "German Chocolate Protein Pancakes",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        }
       ]
     },
     {
       "id": 11,
       "slug": "bbq-chicken-protein-pizza",
       "title": "BBQ Chicken Protein Pizza",
-      "description": "Tangy BBQ chicken protein pizza. 48g protein with smoky sweet flavor.",
+      "description": "This tangy BBQ chicken protein pizza delivers an impressive 48 grams of protein per serving, making it an ideal choice for fueling your workouts or supporting muscle recovery. Packed with lean chicken breast and a flavorful smoky-sweet BBQ sauce, it offers a satisfying combination of tender, juicy bites and a crispy, golden crust that provides just the right crunch. The rich, savory flavors are perfectly balanced by a hint of tanginess, creating an irresistible taste experience that keeps you coming back for more. With its high protein content and moderate calories, it's perfect for post-workout refueling or meal prepping for busy weeknights. This recipe can easily be adapted to gluten-free diets by using a cauliflower or gluten-free crust, and vegan options are possible with plant-based chicken and dairy-free cheese. For best results, cook the pizza on a preheated stone or baking sheet to achieve a crisp crust, and brush the edges with a little olive oil for extra golden perfection. Enjoy it fresh from the oven for maximum flavor and texture, or reheat slices for a quick, protein-packed snack anytime.",
       "protein": 48,
       "calories": 460,
       "carbs": 38,
@@ -645,13 +955,44 @@
           "step": "Finish",
           "text": "Top with smoked gouda and fresh cilantro."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "chicken-protein-pizza",
+          "title": "Chicken Protein Pizza",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "buffalo-chicken-protein-pizza",
+          "title": "Buffalo Chicken Protein Pizza",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "pesto-chicken-protein-pizza",
+          "title": "Pesto Chicken Protein Pizza",
+          "domain": "proteinpizzas.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "cinnamon-swirl-protein-bread",
+          "title": "Cinnamon Swirl Protein Bread",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        },
+        {
+          "slug": "dairy-free-banana-oat-protein-pancakes",
+          "title": "Dairy-Free Banana Oat Protein Pancakes",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        }
       ]
     },
     {
       "id": 12,
       "slug": "meat-lovers-protein-pizza",
       "title": "Meat Lovers Protein Pizza",
-      "description": "Ultimate meat lovers protein pizza. 55g protein loaded with meats.",
+      "description": "Indulge in this ultimate meat lovers protein pizza, packed with an impressive 55 grams of high-quality protein per serving to fuel your active lifestyle and support muscle recovery. The combination of savory, crispy meats creates a rich, hearty flavor that\u2019s perfectly balanced with a satisfying, slightly chewy crust and melty cheese\u2014making each bite a delightful explosion of textures. With its bold taste and substantial macros, this pizza is ideal for post-workout recovery, meal prepping for busy weeks, or satisfying a hearty craving without sacrificing your nutritional goals. The recipe can easily be adapted for gluten-free diets by using a gluten-free crust, and vegan modifications are possible with plant-based cheeses and meat alternatives. To achieve the best results, use high-quality meats and ensure your crust is evenly baked for a crisp exterior and tender interior. This pizza is not just a comfort food; it\u2019s a nutritious, protein-packed feast that keeps you energized and satisfied while fitting seamlessly into a balanced diet.",
       "protein": 55,
       "calories": 520,
       "carbs": 32,
@@ -704,13 +1045,44 @@
           "step": "Bake",
           "text": "Bake at 425\u00b0F for 10 minutes until cheese is bubbly."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "supreme-protein-pizza",
+          "title": "Supreme Protein Pizza",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "classic-protein-pizza-crust",
+          "title": "Classic Protein Pizza Crust",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "high-protein-pizza-crust",
+          "title": "High Protein Pizza Crust",
+          "domain": "proteinpizzas.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "protein-banana-bread-recipe",
+          "title": "Simple Protein Banana Bread Recipe",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        },
+        {
+          "slug": "samoa-inspired-protein-pancakes",
+          "title": "Samoa-Inspired Protein Pancakes",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        }
       ]
     },
     {
       "id": 13,
       "slug": "veggie-protein-pizza",
       "title": "Veggie Protein Pizza",
-      "description": "Garden vegetable protein pizza. 32g protein packed with colorful veggies.",
+      "description": "This vibrant veggie protein pizza offers an impressive 32 grams of muscle-building protein per serving, making it an ideal choice for anyone looking to fuel their day or recover after a tough workout. Packed with a colorful medley of fresh vegetables, each bite delivers a satisfying crunch and a burst of natural sweetness, perfectly complemented by a savory, cheesy base. The combination of wholesome ingredients not only boosts your daily vegetable intake but also provides a balanced macro profile with ample fiber and healthy fats. Its crispy crust and gooey, flavorful toppings make it a deliciously satisfying meal that feels indulgent without the guilt. Perfect for meal prep, you can enjoy slices warm or cold, making it versatile for busy schedules. For gluten-free options, simply swap in a cauliflower or almond flour crust, and vegans can replace cheese with plant-based alternatives to keep the protein high and the flavors rich. To get the best results, pre-bake the crust slightly to ensure it stays crispy and layer your veggies generously for maximum flavor and nutrition. Whether enjoyed as a post-workout recovery meal or a wholesome dinner, this veggie protein pizza is sure to satisfy your taste buds while powering your active lifestyle.",
       "protein": 32,
       "calories": 340,
       "carbs": 36,
@@ -764,13 +1136,44 @@
           "step": "Bake",
           "text": "Bake at 425\u00b0F for 10 minutes."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "mushroom-protein-pizza",
+          "title": "Mushroom Protein Pizza",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "classic-protein-pizza-crust",
+          "title": "Classic Protein Pizza Crust",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "high-protein-pizza-crust",
+          "title": "High Protein Pizza Crust",
+          "domain": "proteinpizzas.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "cheese-and-chive-protein-bread",
+          "title": "Cheese and Chive Protein Bread",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        },
+        {
+          "slug": "matcha-green-tea-protein-crepes",
+          "title": "Matcha Green Tea Protein Crepes",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        }
       ]
     },
     {
       "id": 14,
       "slug": "buffalo-chicken-protein-pizza",
       "title": "Buffalo Chicken Protein Pizza",
-      "description": "Spicy buffalo chicken protein pizza. 46g protein with tangy heat.",
+      "description": "Savor each slice of this spicy buffalo chicken protein pizza, packed with an impressive 46 grams of protein per serving to fuel your active lifestyle. The tender, juicy chicken chunks coated in fiery buffalo sauce deliver a satisfying kick with every bite, perfectly complemented by a crispy, golden crust that offers just the right amount of crunch. The tangy heat and bold flavors make this pizza an irresistible treat, while its high-protein content helps support muscle recovery and keep you feeling full longer. Ideal for post-workout refueling or meal prepping for busy weekdays, this pizza combines indulgence with nutrition in every slice. Gluten-free options are easily achievable with a cauliflower or almond flour crust, and vegan versions can be made using plant-based chicken alternatives and dairy-free cheese, without sacrificing flavor or protein. For best results, bake until the crust is golden and the cheese is bubbly, and consider topping with a drizzle of Greek yogurt or a sprinkle of fresh herbs for added freshness. Whether enjoyed hot from the oven or as a leftovers delight, this spicy buffalo chicken protein pizza is a flavorful way to meet your macros without sacrificing taste.",
       "protein": 46,
       "calories": 440,
       "carbs": 32,
@@ -823,13 +1226,44 @@
           "step": "Finish",
           "text": "Top with blue cheese, celery, and ranch drizzle."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "chicken-protein-pizza",
+          "title": "Chicken Protein Pizza",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "bbq-chicken-protein-pizza",
+          "title": "BBQ Chicken Protein Pizza",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "pesto-chicken-protein-pizza",
+          "title": "Pesto Chicken Protein Pizza",
+          "domain": "proteinpizzas.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "whole-wheat-protein-sandwich-bread",
+          "title": "Whole Wheat Protein Sandwich Bread",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        },
+        {
+          "slug": "double-chocolate-protein-waffles",
+          "title": "Double Chocolate Protein Waffles",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        }
       ]
     },
     {
       "id": 15,
       "slug": "breakfast-protein-pizza",
       "title": "Breakfast Protein Pizza",
-      "description": "Start your day with breakfast protein pizza. 42g protein with eggs and bacon.",
+      "description": "Start your day with breakfast protein pizza, a hearty and satisfying meal packed with 42 grams of muscle-loving protein thanks to eggs and crispy bacon. This flavorful breakfast combines a tender, golden crust with creamy eggs and savory bacon, delivering a perfect balance of crispy, soft, and cheesy textures that will keep you energized throughout the morning. The rich, smoky flavors make each bite irresistibly delicious, making it an ideal choice for a post-workout recovery meal or a nourishing start to your busy day. With approximately 420 calories per serving, it\u2019s a satisfying option that aligns well with balanced macros, providing ample protein and healthy fats to fuel your body. For those with dietary preferences, you can easily swap the bacon for plant-based alternatives or use gluten-free crusts to accommodate gluten sensitivities. To achieve the best texture, pre-cook the bacon until crispy and whisk the eggs well before pouring for a smooth, fluffy top. This breakfast pizza is perfect for meal prepping\u2014simply assemble in advance and reheat for a quick, protein-packed breakfast on busy mornings that keeps you full and focused.",
       "protein": 42,
       "calories": 420,
       "carbs": 30,
@@ -882,13 +1316,44 @@
           "step": "Bake",
           "text": "Bake at 400\u00b0F for 12 minutes until eggs are set. Top with bacon and green onions."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "classic-protein-pizza-crust",
+          "title": "Classic Protein Pizza Crust",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "high-protein-pizza-crust",
+          "title": "High Protein Pizza Crust",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "protein-pizza-dough",
+          "title": "Protein Pizza Dough",
+          "domain": "proteinpizzas.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "protein-zucchini-bread",
+          "title": "Delicious Protein Zucchini Bread",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        },
+        {
+          "slug": "cinnamon-roll-protein-waffles",
+          "title": "Cinnamon Roll Protein Waffles",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        }
       ]
     },
     {
       "id": 16,
       "slug": "white-protein-pizza",
       "title": "White Protein Pizza",
-      "description": "Creamy white sauce protein pizza. 38g protein with garlic and ricotta.",
+      "description": "This creamy white sauce protein pizza is a deliciously satisfying way to fuel your day, offering a robust 38 grams of high-quality protein per serving to support muscle recovery and keep you energized. The luscious garlic and ricotta create a rich, velvety sauce that pairs perfectly with a crispy crust, delivering a harmonious blend of creamy, savory, and subtly sweet flavors with every bite. The tender texture of the ricotta melts beautifully into the sauce, while the garlic adds a fragrant, savory kick that elevates the entire dish. Perfect as a post-workout meal or meal prep option, this pizza is both nourishing and indulgent, making it an ideal choice for anyone looking to boost their macros without sacrificing flavor. For those with dietary restrictions, this recipe can be easily made gluten-free with a gluten-free crust, and vegan modifications are simple using plant-based ricotta and dairy-free cheese options. To achieve the best results, spread the sauce evenly over a pre-baked crust and bake until bubbly and golden, ensuring the cheese is perfectly melted and the edges are crisp. Enjoy this protein-packed treat on its own or paired with a fresh side salad for a balanced, satisfying meal that keeps you full and fueled for hours.",
       "protein": 38,
       "calories": 400,
       "carbs": 30,
@@ -941,13 +1406,44 @@
           "step": "Finish",
           "text": "Top with fresh basil."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "classic-protein-pizza-crust",
+          "title": "Classic Protein Pizza Crust",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "high-protein-pizza-crust",
+          "title": "High Protein Pizza Crust",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "protein-pizza-dough",
+          "title": "Protein Pizza Dough",
+          "domain": "proteinpizzas.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "high-protein-banana-bread",
+          "title": "High Protein Banana Bread Recipe",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        },
+        {
+          "slug": "dairy-free-banana-oat-protein-pancakes",
+          "title": "Dairy-Free Banana Oat Protein Pancakes",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        }
       ]
     },
     {
       "id": 17,
       "slug": "hawaiian-protein-pizza",
       "title": "Hawaiian Protein Pizza",
-      "description": "Sweet and savory Hawaiian protein pizza. 38g protein with ham and pineapple.",
+      "description": "Indulge in this sweet and savory Hawaiian protein pizza that packs an impressive 38 grams of muscle-repairing protein per serving, making it an ideal choice for post-workout recovery or a satisfying midday meal. The combination of lean ham and juicy pineapple creates a delightful harmony of smoky, savory notes with bursts of tropical sweetness, all atop a crisp, golden crust that offers a perfect balance of crunch and chewiness. Each bite delivers a rich, flavorful experience with a tender, melt-in-your-mouth texture, complemented by the tangy sweetness of pineapple and the savory goodness of ham. This pizza is not only delicious but also nutrient-dense, providing a well-rounded macro profile with healthy carbs, moderate fats, and high-quality protein to fuel your active lifestyle. Perfect for meal prep, you can enjoy it warm or cold, making it a versatile option for busy days. For those with dietary preferences, this recipe can easily be made gluten-free by using a gluten-free crust, and vegan versions can be achieved by substituting plant-based ham and cheese. To get the best results, use fresh pineapple and lean ham, and pre-bake the crust slightly before adding toppings to ensure a crispy, golden finish that holds up well during baking.",
       "protein": 38,
       "calories": 390,
       "carbs": 38,
@@ -999,13 +1495,44 @@
           "step": "Bake",
           "text": "Bake at 425\u00b0F for 10 minutes. Add jalape\u00f1os if desired."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "classic-protein-pizza-crust",
+          "title": "Classic Protein Pizza Crust",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "high-protein-pizza-crust",
+          "title": "High Protein Pizza Crust",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "protein-pizza-dough",
+          "title": "Protein Pizza Dough",
+          "domain": "proteinpizzas.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "banana-bread-with-protein-powder-recipe",
+          "title": "Easy Banana Bread with Protein Powder",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        },
+        {
+          "slug": "berries-and-cream-protein-crepes",
+          "title": "Berries and Cream Protein Crepes",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        }
       ]
     },
     {
       "id": 18,
       "slug": "protein-pizza-bowl",
       "title": "Protein Pizza Bowl",
-      "description": "Deconstructed protein pizza bowl. 40g protein, no crust needed.",
+      "description": "This deconstructed protein pizza bowl is a deliciously satisfying way to enjoy all the flavors of your favorite pizza without the crust, packing an impressive 40 grams of protein per serving to fuel your day. Crafted with high-quality lean meats, cheese, and fresh veggies, it offers a balanced macro profile\u2014perfect for post-workout recovery or a hearty lunch. The tender, savory ingredients meld together with a delightful contrast of textures: crispy edges from the roasted veggies, gooey melted cheese, and tender bites of seasoned protein create a mouthwatering experience in every spoonful. The rich, cheesy aroma combined with the bold tomato flavors makes it incredibly tempting and comforting. Ideal for meal prep, this bowl stores well and can be quickly reheated, making it a convenient, high-protein option for busy days. It's naturally gluten-free if you choose gluten-free protein sources and cheese, and vegan variations can be easily made with plant-based proteins and dairy-free cheese. For best results, season your ingredients well and assemble the bowl just before serving to preserve the freshness and texture of the toppings. This recipe is perfect for anyone looking to enjoy a flavorful, low-carb meal that boosts muscle recovery and keeps you satisfied.",
       "protein": 40,
       "calories": 380,
       "carbs": 18,
@@ -1059,13 +1586,44 @@
           "step": "Broil",
           "text": "Broil 2 minutes until cheese is melted and bubbly."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "cauliflower-protein-pizza-crust",
+          "title": "Cauliflower Protein Pizza Crust",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "keto-protein-pizza",
+          "title": "Keto Protein Pizza",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "gluten-free-cauliflower-protein-pizza-crust",
+          "title": "Gluten-Free Cauliflower Protein Pizza Crust",
+          "domain": "proteinpizzas.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "protein-powder-banana-bread",
+          "title": "Banana Bread with Protein Powder",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        },
+        {
+          "slug": "double-chocolate-protein-waffles",
+          "title": "Double Chocolate Protein Waffles",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        }
       ]
     },
     {
       "id": 19,
       "slug": "keto-protein-pizza",
       "title": "Keto Protein Pizza",
-      "description": "Ultra low-carb keto protein pizza. 35g protein with only 6g net carbs.",
+      "description": "This ultra-low-carb keto protein pizza delivers a satisfying, high-protein meal with 35 grams of muscle-building goodness and only 6 grams of net carbs per serving, making it perfect for keto followers and low-carb enthusiasts alike. The crust boasts a chewy, slightly crispy texture with a rich, cheesy flavor that complements the savory toppings, creating a perfect balance of indulgence and healthfulness. Packed with high-quality protein, this pizza supports muscle recovery and keeps you feeling full longer, making it an ideal post-workout or meal-prep option. Its flavorful, satisfying bite makes it a great choice for satisfying pizza cravings without the carb overload, and it can be customized with your favorite low-carb toppings or vegan cheese alternatives for different dietary needs. For best results, use a blend of mozzarella and cream cheese in the crust for extra gooeyness, and bake until golden and bubbly. This recipe is versatile enough to serve as a quick weeknight dinner or a make-ahead meal to enjoy throughout the week, helping you stay on track with your fitness and nutrition goals.",
       "protein": 35,
       "calories": 340,
       "carbs": 8,
@@ -1117,13 +1675,44 @@
           "step": "Top",
           "text": "Add toppings and bake 5 more minutes."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "cauliflower-protein-pizza-crust",
+          "title": "Cauliflower Protein Pizza Crust",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "protein-pizza-bowl",
+          "title": "Protein Pizza Bowl",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "gluten-free-cauliflower-protein-pizza-crust",
+          "title": "Gluten-Free Cauliflower Protein Pizza Crust",
+          "domain": "proteinpizzas.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "chocolate-chip-protein-banana-bread",
+          "title": "Chocolate Chip Protein Banana Bread",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        },
+        {
+          "slug": "samoa-inspired-protein-pancakes",
+          "title": "Samoa-Inspired Protein Pancakes",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        }
       ]
     },
     {
       "id": 20,
       "slug": "taco-protein-pizza",
       "title": "Taco Protein Pizza",
-      "description": "Mexican-inspired taco protein pizza. 44g protein with all your taco favorites.",
+      "description": "This Mexican-inspired taco protein pizza delivers an impressive 44 grams of muscle-boosting protein per serving, making it an ideal choice for fueling your active lifestyle. Packed with flavorful taco favorites like seasoned lean meat, zesty salsa, and melted cheese, it boasts a satisfying combination of crispy, golden crust and tender, savory toppings that will keep you coming back for more. The texture offers a delightful contrast\u2014crunchy on the edges with juicy, spicy bites in every slice\u2014while the taste melds smoky, tangy, and cheesy notes for a truly irresistible experience. Perfect as a post-workout meal to replenish glycogen and support muscle recovery, or as a hearty lunch prep to keep your week on track, this pizza is both nourishing and versatile. For gluten-free options, swap the crust with a cauliflower or gluten-free flour base; vegans can substitute cheese with plant-based options and use seasoned tofu or tempeh instead of meat. To achieve the best results, pre-bake the crust slightly before adding toppings to ensure a crispy foundation, and don\u2019t skimp on fresh toppings for vibrant flavor. Whether enjoyed alone or shared with friends, this protein-packed taco pizza makes every bite a delicious step toward your fitness goals.",
       "protein": 44,
       "calories": 440,
       "carbs": 34,
@@ -1175,13 +1764,44 @@
           "step": "Top",
           "text": "Add fresh lettuce, tomato, and sour cream after baking."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "classic-protein-pizza-crust",
+          "title": "Classic Protein Pizza Crust",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "high-protein-pizza-crust",
+          "title": "High Protein Pizza Crust",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "protein-pizza-dough",
+          "title": "Protein Pizza Dough",
+          "domain": "proteinpizzas.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "cheese-and-chive-protein-bread",
+          "title": "Cheese and Chive Protein Bread",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        },
+        {
+          "slug": "cinnamon-roll-protein-waffles",
+          "title": "Cinnamon Roll Protein Waffles",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        }
       ]
     },
     {
       "id": 21,
       "slug": "pesto-chicken-protein-pizza",
       "title": "Pesto Chicken Protein Pizza",
-      "description": "Fresh pesto chicken protein pizza. 46g protein with vibrant basil flavor.",
+      "description": "This fresh pesto chicken protein pizza offers a satisfying, high-protein meal with an impressive 46 grams of muscle-repairing goodness per serving, making it perfect for post-workout recovery or fueling your busy day. The combination of tender, juicy chicken and vibrant basil pesto creates a flavor explosion\u2014earthy, herbaceous, and slightly savory\u2014while the crispy crust provides a delightful crunch with every bite. Its balanced macros make it an ideal choice for those looking to boost their protein intake without sacrificing taste or texture. The gooey, melted cheese blends seamlessly with the pesto, adding richness and creaminess that complements the fresh ingredients beautifully. Plus, it's versatile\u2014gluten-free crust options and vegan pesto can easily be incorporated to suit various dietary needs. For best results, use high-quality, fresh basil and a good-quality chicken breast, and pre-cook the chicken to ensure maximum tenderness. This pizza is perfect for a quick weeknight dinner, meal prepping for the week ahead, or anytime you crave a flavorful, protein-packed treat that\u2019s both satisfying and nourishing.",
       "protein": 46,
       "calories": 450,
       "carbs": 32,
@@ -1234,13 +1854,44 @@
           "step": "Finish",
           "text": "Sprinkle with pine nuts."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "chicken-protein-pizza",
+          "title": "Chicken Protein Pizza",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "bbq-chicken-protein-pizza",
+          "title": "BBQ Chicken Protein Pizza",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "buffalo-chicken-protein-pizza",
+          "title": "Buffalo Chicken Protein Pizza",
+          "domain": "proteinpizzas.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "savory-herb-protein-bread",
+          "title": "Savory Herb Protein Bread",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        },
+        {
+          "slug": "matcha-green-tea-protein-crepes",
+          "title": "Matcha Green Tea Protein Crepes",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        }
       ]
     },
     {
       "id": 22,
       "slug": "mushroom-protein-pizza",
       "title": "Mushroom Protein Pizza",
-      "description": "Earthy mushroom protein pizza. 34g protein with mixed mushroom medley.",
+      "description": "This earthy mushroom protein pizza offers a satisfying combination of robust flavors and impressive nutrition, delivering a hearty 34 grams of protein per serving to fuel your active lifestyle. Packed with a medley of savory mushrooms, it boasts a rich umami taste and a tender, meaty texture that\u2019s perfectly complemented by a crispy yet tender crust. The mushrooms provide essential vitamins, antioxidants, and dietary fiber, making this a wholesome choice for vegetarians and anyone looking to boost their protein intake without sacrificing flavor. With a well-balanced macro profile\u2014high in protein, moderate in healthy fats, and moderate carbs\u2014it's ideal for post-workout recovery or meal prepping for the week ahead. Whether enjoyed warm straight from the oven or as a quick, nutritious lunch, this pizza is versatile and satisfying. To enhance the flavor, consider adding fresh herbs or a drizzle of balsamic glaze before serving. For gluten-sensitive eaters, opt for a gluten-free crust, and for vegans, substitute cheese with plant-based alternatives. For best results, use a high-quality mushroom medley and ensure your crust is baked until golden and crispy\u2014this guarantees a delightful crunch with every bite that keeps you coming back for more.",
       "protein": 34,
       "calories": 360,
       "carbs": 32,
@@ -1293,13 +1944,44 @@
           "step": "Finish",
           "text": "Top with fresh thyme."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "veggie-protein-pizza",
+          "title": "Veggie Protein Pizza",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "classic-protein-pizza-crust",
+          "title": "Classic Protein Pizza Crust",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "high-protein-pizza-crust",
+          "title": "High Protein Pizza Crust",
+          "domain": "proteinpizzas.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "lemon-blueberry-protein-bread",
+          "title": "Lemon Blueberry Protein Bread",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        },
+        {
+          "slug": "coffee-infused-protein-waffles",
+          "title": "Coffee-Infused Protein Waffles",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        }
       ]
     },
     {
       "id": 23,
       "slug": "spinach-feta-protein-pizza",
       "title": "Spinach Feta Protein Pizza",
-      "description": "Mediterranean spinach feta protein pizza. 36g protein with Greek flavors.",
+      "description": "This Mediterranean spinach feta protein pizza offers a deliciously satisfying way to fuel your day with 36 grams of high-quality protein per serving, perfect for supporting muscle recovery and keeping you energized. Packed with nutrient-dense spinach and creamy feta, each bite delivers a delightful combination of crispy crust, tender greens, and tangy cheese that melts in your mouth. The balanced macros make it an ideal choice for a post-workout meal or a wholesome dinner, providing a satisfying blend of protein, healthy fats, and complex carbs. Its savory Greek flavors evoke the sunny shores of the Mediterranean, making every slice a flavor-packed experience. Whether you\u2019re meal prepping for the week or craving a quick, nutritious pizza night, this recipe is versatile and easy to customize\u2014gluten-free options can be achieved with a low-carb crust, and vegan versions can substitute feta with plant-based cheese. For best results, use fresh spinach and high-quality feta, and avoid overloading the crust to keep it crispy. Enjoy this protein-packed delight warm for maximum flavor and texture, and feel good knowing you\u2019re nourishing your body with a wholesome, satisfying meal.",
       "protein": 36,
       "calories": 370,
       "carbs": 32,
@@ -1353,13 +2035,44 @@
           "step": "Serve",
           "text": "Slice and serve immediately."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "classic-protein-pizza-crust",
+          "title": "Classic Protein Pizza Crust",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "high-protein-pizza-crust",
+          "title": "High Protein Pizza Crust",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "protein-pizza-dough",
+          "title": "Protein Pizza Dough",
+          "domain": "proteinpizzas.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "protein-banana-bread-recipe",
+          "title": "Simple Protein Banana Bread Recipe",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        },
+        {
+          "slug": "gluten-free-buckwheat-protein-pancakes",
+          "title": "Gluten-Free Buckwheat Protein Pancakes",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        }
       ]
     },
     {
       "id": 24,
       "slug": "supreme-protein-pizza",
       "title": "Supreme Protein Pizza",
-      "description": "Loaded supreme protein pizza with everything. 48g protein per serving.",
+      "description": "Loaded supreme protein pizza with everything. 48g protein per serving. This hearty pizza is a nutritional powerhouse, perfect for fueling your active lifestyle with a balanced mix of high-quality proteins, complex carbs, and healthy fats. Each bite offers a satisfying blend of crispy crust, gooey cheese, and a medley of flavorful toppings that deliver both texture and taste\u2014think tender meats, fresh vegetables, and savory spices that keep every slice exciting. With such a robust protein content, it\u2019s an ideal post-workout meal to help repair muscles and boost recovery, or a satisfying option for meal prep throughout the week. The recipe is versatile, with gluten-free options or vegan substitutes available to suit various dietary needs\u2014just swap the crust or cheese as desired. For best results, use a high-protein dough and layer your toppings generously, baking until the cheese is perfectly melted and bubbly. Whether enjoyed hot straight from the oven or reheated the next day, this pizza combines indulgence with nutrition, making it a must-try for anyone craving a delicious, muscle-loving meal.",
       "protein": 48,
       "calories": 480,
       "carbs": 34,
@@ -1414,13 +2127,44 @@
           "step": "Bake",
           "text": "Bake at 425\u00b0F for 10 minutes until cheese is bubbly."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "meat-lovers-protein-pizza",
+          "title": "Meat Lovers Protein Pizza",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "classic-protein-pizza-crust",
+          "title": "Classic Protein Pizza Crust",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "high-protein-pizza-crust",
+          "title": "High Protein Pizza Crust",
+          "domain": "proteinpizzas.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "high-protein-banana-bread",
+          "title": "High Protein Banana Bread Recipe",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        },
+        {
+          "slug": "berries-and-cream-protein-crepes",
+          "title": "Berries and Cream Protein Crepes",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        }
       ]
     },
     {
       "id": 25,
       "slug": "dessert-protein-pizza",
       "title": "Dessert Protein Pizza",
-      "description": "Sweet dessert protein pizza with fruit and chocolate. 25g protein for a healthy treat.",
+      "description": "Indulge in this sweet dessert protein pizza, boasting an impressive 25 grams of protein per serving to satisfy your sweet tooth while fueling your body. With a perfectly chewy, golden crust topped with a luscious spread of creamy Greek yogurt or a vegan alternative, it offers a delightful balance of crispiness and softness. The vibrant fruit toppings\u2014think juicy berries, ripe banana slices, or tropical mango\u2014add natural sweetness and a burst of freshness, while a drizzle of rich chocolate sauce or cacao nibs provides a decadent chocolatey finish. Not only is this treat incredibly tasty, but it's also packed with wholesome ingredients that support muscle recovery and promote satiety, making it an ideal post-workout or midday snack. Its flexible nature allows for gluten-free options using almond or coconut flour, and vegan versions with plant-based protein powders ensure everyone can enjoy. For best results, layer the toppings after baking to keep the fruit fresh and vibrant, and serve it slightly warm for an extra comforting experience. Whether you're meal prepping for the week or craving a guilt-free dessert, this high-protein pizza is a delicious way to indulge healthfully.",
       "protein": 25,
       "calories": 320,
       "carbs": 38,
@@ -1474,13 +2218,44 @@
           "step": "Top",
           "text": "Arrange berries on top and drizzle with melted chocolate."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "classic-protein-pizza-crust",
+          "title": "Classic Protein Pizza Crust",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "high-protein-pizza-crust",
+          "title": "High Protein Pizza Crust",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "protein-pizza-dough",
+          "title": "Protein Pizza Dough",
+          "domain": "proteinpizzas.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "protein-powder-banana-bread",
+          "title": "Banana Bread with Protein Powder",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        },
+        {
+          "slug": "churro-protein-waffles",
+          "title": "Churro Protein Waffles",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        }
       ]
     },
     {
       "id": 100,
       "slug": "gluten-free-cauliflower-protein-pizza-crust",
       "title": "Gluten-Free Cauliflower Protein Pizza Crust",
-      "description": "A crispy, delicious pizza crust made from cauliflower and protein powder. Low-carb, gluten-free, and packed with vegetables!",
+      "description": "This crispy, delicious pizza crust made from cauliflower and protein powder is not only irresistibly tasty but also offers a powerhouse of nutrition, with 20 grams of protein per serving to help fuel your active lifestyle. Its tender, slightly chewy texture balances perfectly with a satisfying crunch on the edges, providing a delightful bite with every piece. The subtle vegetable flavor of cauliflower is enhanced by savory seasonings, making it a versatile base for any toppings you love, from fresh vegetables to lean proteins. Thanks to its low-carb, gluten-free nature, this crust is an excellent choice for keto, paleo, or gluten-sensitive diets, and vegan options can be easily achieved by swapping in plant-based protein powder and cheese alternatives. This recipe is perfect for post-workout recovery, meal prepping for busy weeks, or as a nutritious crowd-pleaser at your next gathering. For best results, ensure your cauliflower is thoroughly drained and pressed to remove excess moisture, which helps achieve a crispier crust. Experiment with different spices or herbs to customize the flavor, and enjoy a satisfying, high-protein pizza that supports your health goals without sacrificing taste.",
       "protein": 20,
       "calories": 180,
       "carbs": 12,
@@ -1535,13 +2310,44 @@
           "step": "Add Toppings",
           "text": "Add your favorite sauce and toppings. Return to oven for 8-10 minutes until cheese is melted and bubbly."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "cauliflower-protein-pizza-crust",
+          "title": "Cauliflower Protein Pizza Crust",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "protein-pizza-bowl",
+          "title": "Protein Pizza Bowl",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "keto-protein-pizza",
+          "title": "Keto Protein Pizza",
+          "domain": "proteinpizzas.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "healthy-protein-banana-bread",
+          "title": "Healthy Protein Banana Bread",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        },
+        {
+          "slug": "savory-spinach-and-feta-protein-crepes",
+          "title": "Savory Spinach and Feta Protein Crepes",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        }
       ]
     },
     {
       "id": 101,
       "slug": "dairy-free-chickpea-flour-protein-pizza",
       "title": "Dairy-Free Chickpea Flour Protein Pizza",
-      "description": "A crispy, protein-rich pizza crust made with chickpea flour. Naturally dairy-free and packed with plant-based protein!",
+      "description": "This crispy, protein-rich pizza crust made with nourishing chickpea flour offers a deliciously satisfying alternative to traditional pizza bases. Packed with approximately 18 grams of plant-based protein per serving, it provides a great boost to your daily macros while being naturally gluten-free and dairy-free, making it suitable for a variety of dietary needs. The crust boasts a delightful crunch with a slightly nutty flavor that perfectly complements your favorite toppings, creating a harmonious blend of textures and tastes. Its hearty, high-fiber content supports digestion and sustained energy, making it an ideal choice for post-workout recovery or a nutritious meal any time of day. You can enjoy this versatile crust as part of meal prep by making several ahead of time\u2014just reheat for a quick, wholesome bite. For vegan options, simply load it with plant-based cheeses and veggies for a fully vegan pizza experience. For the best results, bake until the edges are golden and crisp, and avoid overcrowding the toppings to maintain that perfect crunch. Whether you\u2019re fueling your fitness goals or seeking a wholesome, satisfying pizza night, this crust delivers on flavor, nutrition, and texture in every bite.",
       "protein": 18,
       "calories": 195,
       "carbs": 22,
@@ -1596,6 +2402,37 @@
         {
           "step": "Top and Serve",
           "text": "Add your favorite dairy-free sauce, vegetables, and vegan cheese. Broil for 2-3 more minutes until toppings are heated."
+        }
+      ],
+      "related_recipes": [
+        {
+          "slug": "classic-protein-pizza-crust",
+          "title": "Classic Protein Pizza Crust",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "high-protein-pizza-crust",
+          "title": "High Protein Pizza Crust",
+          "domain": "proteinpizzas.co"
+        },
+        {
+          "slug": "protein-pizza-dough",
+          "title": "Protein Pizza Dough",
+          "domain": "proteinpizzas.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "dairy-free-oat-protein-sandwich-loaf",
+          "title": "Dairy-Free Oat Protein Sandwich Loaf",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        },
+        {
+          "slug": "classic-whey-protein-pancakes",
+          "title": "Classic Whey Protein Pancakes",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
         }
       ]
     }

@@ -3,7 +3,7 @@
     "id": 1,
     "slug": "classic-vanilla-bean-cheesecake",
     "title": "Classic Vanilla Bean Cheesecake",
-    "description": "A timeless, creamy vanilla bean cheesecake with a protein-packed punch.",
+    "description": "This timeless, creamy vanilla bean cheesecake delivers a luscious, velvety texture with every bite, perfectly balanced by the sweet, aromatic essence of real vanilla beans. Packed with 22 grams of high-quality protein per serving, it\u2019s an ideal treat for those looking to support muscle recovery or satisfy a sweet craving without compromising their nutritional goals. The smooth, dense filling melts in your mouth, while the slightly crumbly crust adds a satisfying crunch, making each forkful a delightful experience. Its rich flavor and satisfying mouthfeel make it perfect for post-workout indulgence, meal prepping, or sharing at special occasions. For gluten-free options, simply swap the crust for almond or gluten-free graham crackers; vegans can substitute with plant-based cream cheese and use agave or maple syrup instead of honey. To achieve the best results, ensure your cream cheese is softened and mix thoroughly to avoid lumps, and chill the cheesecake well before serving to enhance its signature creamy consistency. Whether enjoyed as a health-conscious dessert or a protein-boosted treat, this vanilla bean cheesecake is sure to impress with its irresistible taste and nourishing benefits.",
     "protein": 22,
     "calories": 180,
     "carbs": 15,
@@ -58,13 +58,44 @@
         "step": "Serve",
         "text": "Slice and serve your delicious protein cheesecake."
       }
+    ],
+    "related_recipes": [
+      {
+        "slug": "no-bake-chocolate-cheesecake",
+        "title": "No-Bake Chocolate Cheesecake",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "strawberry-swirl-cheesecake",
+        "title": "Strawberry Swirl Cheesecake",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "lemon-blueberry-cheesecake-minis",
+        "title": "Lemon Blueberry Cheesecake Minis",
+        "domain": "proteincheesecake.co"
+      }
+    ],
+    "empire_links": [
+      {
+        "slug": "lemon-raspberry-protein-mousse",
+        "title": "Lemon Raspberry Protein Mousse",
+        "domain": "proteinpudding.co",
+        "category": "protein pudding"
+      },
+      {
+        "slug": "raspberry-swirl-protein-brownies",
+        "title": "Raspberry Swirl Protein Brownies",
+        "domain": "proteinbrownies.co",
+        "category": "protein brownies"
+      }
     ]
   },
   {
     "id": 2,
     "slug": "no-bake-chocolate-cheesecake",
     "title": "No-Bake Chocolate Cheesecake",
-    "description": "A rich and decadent no-bake chocolate cheesecake that's surprisingly high in protein.",
+    "description": "This rich and decadent no-bake chocolate cheesecake is surprisingly high in protein, providing around 25 grams per serving to support muscle recovery and keep you feeling satisfied longer. Its velvety texture melts in your mouth, with a luscious, smooth filling balanced by a crumbly, mildly sweet crust that adds a satisfying crunch. The deep chocolate flavor is indulgent yet wholesome, making it a perfect treat for satisfying your sweet tooth without guilt. Ideal for post-workout recovery, meal prepping, or a special occasion dessert, this cheesecake offers a nourishing way to enjoy dessert while fueling your body. It\u2019s naturally gluten-free when made with gluten-free graham crackers or nut-based crusts, and vegan adaptations can be achieved using plant-based ingredients like coconut cream and vegan chocolate. For best results, ensure the filling is thoroughly chilled until firm and use high-quality cocoa for a richer flavor. Whether you enjoy it straight from the fridge or slightly warmed, this cheesecake delivers a satisfying, protein-packed indulgence that fits seamlessly into a balanced, active lifestyle.",
     "protein": 25,
     "calories": 220,
     "carbs": 18,
@@ -119,13 +150,44 @@
         "step": "Serve",
         "text": "Slice and enjoy your no-bake protein cheesecake."
       }
+    ],
+    "related_recipes": [
+      {
+        "slug": "single-serving-chocolate-cheesecake",
+        "title": "Single-Serving Chocolate Cheesecake",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "single-serving-peanut-butter-cheesecake",
+        "title": "Single-Serving Peanut Butter Cheesecake",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "red-velvet-cheesecake",
+        "title": "Red Velvet Cheesecake",
+        "domain": "proteincheesecake.co"
+      }
+    ],
+    "empire_links": [
+      {
+        "slug": "raspberry-chia-protein-pudding",
+        "title": "Raspberry Chia Protein Pudding",
+        "domain": "proteinpudding.co",
+        "category": "protein pudding"
+      },
+      {
+        "slug": "chocolate-protein-brownies",
+        "title": "Chocolate Protein Brownies",
+        "domain": "proteinbrownies.co",
+        "category": "protein brownies"
+      }
     ]
   },
   {
     "id": 3,
     "slug": "strawberry-swirl-cheesecake",
     "title": "Strawberry Swirl Cheesecake",
-    "description": "A beautiful and delicious strawberry swirl cheesecake with a protein boost.",
+    "description": "This beautiful and delicious strawberry swirl cheesecake offers a satisfying protein boost, providing around 20 grams of protein per serving to support muscle recovery and keep you feeling full longer. The creamy, velvety texture of the cheesecake is perfectly complemented by the vibrant burst of fresh strawberry swirl, adding a delightful sweetness and a hint of tartness with every bite. Its rich flavor balances indulgence with nutritional benefits, making it an ideal treat for post-workout recovery or a smart dessert option for meal prep. With a lighter calorie count of approximately 190 per serving, it's a guilt-free way to satisfy your sweet tooth while fueling your body. For those with dietary restrictions, this cheesecake can easily be made gluten-free by using gluten-free graham crackers or crust alternatives, and vegan options can be achieved with plant-based cream cheeses and egg substitutes. To get the best texture, be sure to blend the filling until smooth and chill the cheesecake thoroughly before serving\u2014this helps it set perfectly and enhances the flavor. Whether enjoyed after a workout or as a sweet finish to your day, this strawberry swirl cheesecake combines indulgence with nutrition in every tempting slice.",
     "protein": 20,
     "calories": 190,
     "carbs": 16,
@@ -180,13 +242,44 @@
         "step": "Cool and Chill",
         "text": "Let the cheesecake cool completely, then refrigerate for at least 4 hours before serving."
       }
+    ],
+    "related_recipes": [
+      {
+        "slug": "key-lime-cheesecake",
+        "title": "Key Lime Cheesecake",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "raspberry-white-chocolate-cheesecake",
+        "title": "Raspberry White Chocolate Cheesecake",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "single-serving-strawberry-cheesecake",
+        "title": "Single-Serving Strawberry Cheesecake",
+        "domain": "proteincheesecake.co"
+      }
+    ],
+    "empire_links": [
+      {
+        "slug": "gluten-free-chocolate-chia-protein-pudding",
+        "title": "Gluten-Free Chocolate Chia Protein Pudding",
+        "domain": "proteinpudding.co",
+        "category": "protein pudding"
+      },
+      {
+        "slug": "banana-protein-brownies",
+        "title": "Banana Protein Brownies",
+        "domain": "proteinbrownies.co",
+        "category": "protein brownies"
+      }
     ]
   },
   {
     "id": 4,
     "slug": "lemon-blueberry-cheesecake-minis",
     "title": "Lemon Blueberry Cheesecake Minis",
-    "description": "Zesty and sweet lemon blueberry cheesecake minis, perfect for portion control.",
+    "description": "These zesty and sweet lemon blueberry cheesecake minis are perfect for portion control, offering a satisfying treat without the guilt. Packed with 18 grams of protein per serving, they support muscle recovery and help keep you full longer, making them an ideal post-workout indulgence or a nutritious snack to fuel your day. The creamy, tangy lemon flavor beautifully balances the burst of juicy blueberries, while the velvety texture melts in your mouth with each bite, offering a delightful contrast to the crisp crust. Whether you're looking for a light dessert or a high-protein snack, these minis are versatile enough to enjoy anytime\u2014prepping ahead for busy weekdays or serving at gatherings. For those with dietary preferences, they can easily be made gluten-free by using almond flour for the crust, and vegan options are available by substituting plant-based cream cheeses and egg replacers. To achieve the best results, chill the minis thoroughly before serving to allow the flavors to meld and the texture to set perfectly. These cheesecake minis are not only delicious but also a smart, nutrient-dense choice for anyone aiming to boost their protein intake while satisfying their sweet tooth.",
     "protein": 18,
     "calories": 150,
     "carbs": 12,
@@ -242,13 +335,44 @@
         "step": "Serve",
         "text": "Serve chilled."
       }
+    ],
+    "related_recipes": [
+      {
+        "slug": "no-bake-oreo-cheesecake-bites",
+        "title": "No-Bake Oreo Cheesecake Bites",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "no-bake-lemon-cheesecake",
+        "title": "No-Bake Lemon Cheesecake",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "classic-vanilla-bean-cheesecake",
+        "title": "Classic Vanilla Bean Cheesecake",
+        "domain": "proteincheesecake.co"
+      }
+    ],
+    "empire_links": [
+      {
+        "slug": "mixed-berry-chia-protein-pudding",
+        "title": "Mixed Berry Chia Protein Pudding",
+        "domain": "proteinpudding.co",
+        "category": "protein pudding"
+      },
+      {
+        "slug": "protein-blondies",
+        "title": "Protein Blondies",
+        "domain": "proteinbrownies.co",
+        "category": "protein brownies"
+      }
     ]
   },
   {
     "id": 5,
     "slug": "single-serving-peanut-butter-cheesecake",
     "title": "Single-Serving Peanut Butter Cheesecake",
-    "description": "A quick and easy single-serving peanut butter cheesecake for one.",
+    "description": "This quick and easy single-serving peanut butter cheesecake is not only a delicious treat but also packed with 28 grams of high-quality protein, making it an ideal choice for post-workout recovery or a satisfying snack to fuel your day. With its rich, creamy texture and a smooth, indulgent peanut butter flavor, each bite melts in your mouth, offering a perfect balance of sweetness and nutty goodness. The no-bake simplicity ensures you can whip it up in minutes, making it perfect for meal prep or a quick dessert after a busy day. Its wholesome ingredients provide a balanced macro profile, and you can easily customize it to be gluten-free or vegan by swapping out ingredients like Greek yogurt for plant-based alternatives. For best results, chill the cheesecake thoroughly to achieve a firm yet velvety consistency and consider topping it with a sprinkle of chopped peanuts or a drizzle of dark chocolate for extra flair. Whether enjoyed as a protein-packed dessert or a nutritious treat to satisfy your sweet tooth, this recipe is sure to become a favorite in your healthy eating arsenal.",
     "protein": 28,
     "calories": 250,
     "carbs": 10,
@@ -303,13 +427,44 @@
         "step": "Storage",
         "text": "This can be stored in the refrigerator for up to 2 days."
       }
+    ],
+    "related_recipes": [
+      {
+        "slug": "single-serving-chocolate-cheesecake",
+        "title": "Single-Serving Chocolate Cheesecake",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "single-serving-strawberry-cheesecake",
+        "title": "Single-Serving Strawberry Cheesecake",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "no-bake-chocolate-cheesecake",
+        "title": "No-Bake Chocolate Cheesecake",
+        "domain": "proteincheesecake.co"
+      }
+    ],
+    "empire_links": [
+      {
+        "slug": "quick-vanilla-protein-pudding",
+        "title": "Quick Vanilla Protein Pudding",
+        "domain": "proteinpudding.co",
+        "category": "protein pudding"
+      },
+      {
+        "slug": "single-serving-protein-brownie",
+        "title": "Single-Serving Protein Brownie",
+        "domain": "proteinbrownies.co",
+        "category": "protein brownies"
+      }
     ]
   },
   {
     "id": 6,
     "slug": "funfetti-cheesecake-dip",
     "title": "Funfetti Cheesecake Dip",
-    "description": "A fun and festive funfetti cheesecake dip, perfect for parties.",
+    "description": "This funfetti cheesecake dip is not only a vibrant, party-ready treat but also a nutritious powerhouse, packing approximately 15 grams of protein per serving to fuel your muscles and keep you energized. Its creamy texture melts in your mouth, balanced perfectly by the burst of colorful sprinkles and a hint of sweet vanilla, making each bite both indulgent and satisfying. The smooth, rich flavor of cheesecake combined with the playful crunch of sprinkles makes it an irresistible addition to any celebration or gathering. It\u2019s an ideal post-workout snack to replenish your protein needs or a convenient option for meal prep, as it stays fresh and delicious for days. For those with dietary restrictions, this dip can easily be made gluten-free by using gluten-free sprinkles and graham crackers, and vegan versions can be achieved with plant-based cream cheese and vegan protein powders. For best results, be sure to thoroughly blend the ingredients until ultra-smooth and chill the dip for at least an hour to enhance its creamy texture and flavor. Serve with an assortment of fresh fruit, graham crackers, or veggie sticks for a fun, nutritious, and visually appealing treat that everyone will love.",
     "protein": 15,
     "calories": 140,
     "carbs": 12,
@@ -364,13 +519,44 @@
         "step": "Storage",
         "text": "Store in an airtight container in the refrigerator for up to 3 days."
       }
+    ],
+    "related_recipes": [
+      {
+        "slug": "s-mores-cheesecake-dip",
+        "title": "S'mores Cheesecake Dip",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "cookie-dough-cheesecake-dip",
+        "title": "Cookie Dough Cheesecake Dip",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "brownie-batter-dip",
+        "title": "Brownie Batter Dip",
+        "domain": "proteincheesecake.co"
+      }
+    ],
+    "empire_links": [
+      {
+        "slug": "mint-chocolate-protein-pudding",
+        "title": "Mint Chocolate Protein Pudding",
+        "domain": "proteinpudding.co",
+        "category": "protein pudding"
+      },
+      {
+        "slug": "avocado-protein-brownies",
+        "title": "Avocado Protein Brownies",
+        "domain": "proteinbrownies.co",
+        "category": "protein brownies"
+      }
     ]
   },
   {
     "id": 7,
     "slug": "pumpkin-spice-cheesecake",
     "title": "Pumpkin Spice Cheesecake",
-    "description": "A seasonal favorite, this pumpkin spice cheesecake is full of fall flavor and protein.",
+    "description": "A seasonal favorite, this pumpkin spice cheesecake is full of fall flavor and protein. Packed with 24 grams of protein per serving, it\u2019s a satisfying treat that supports muscle recovery and keeps you energized throughout the day. The rich, velvety texture melts in your mouth, balanced perfectly by a lightly spiced, aromatic pumpkin filling that evokes cozy autumn afternoons. Its smooth, creamy consistency combined with a subtly crunchy crust makes every bite an indulgent yet nourishing experience. Perfect as a post-workout dessert or a make-ahead snack for busy weeknights, this cheesecake satisfies sweet cravings without the guilt. For those with gluten sensitivities, opt for a gluten-free graham cracker crust to keep it allergen-friendly. Vegans can substitute the cream cheese with plant-based alternatives and use coconut cream for added creaminess. To get the best results, chill the cheesecake thoroughly before serving to allow the flavors to meld and the texture to set perfectly. Whether enjoyed solo or shared with friends, this high-protein pumpkin spice cheesecake offers a delicious way to embrace the flavors of fall while fueling your body with wholesome goodness.",
     "protein": 24,
     "calories": 200,
     "carbs": 18,
@@ -426,13 +612,44 @@
         "step": "Serve",
         "text": "Slice and serve your delicious pumpkin spice protein cheesecake."
       }
+    ],
+    "related_recipes": [
+      {
+        "slug": "gingerbread-cheesecake",
+        "title": "Gingerbread Cheesecake",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "eggnog-cheesecake",
+        "title": "Eggnog Cheesecake",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "classic-vanilla-bean-cheesecake",
+        "title": "Classic Vanilla Bean Cheesecake",
+        "domain": "proteincheesecake.co"
+      }
+    ],
+    "empire_links": [
+      {
+        "slug": "coffee-protein-mousse",
+        "title": "Coffee Protein Mousse",
+        "domain": "proteinpudding.co",
+        "category": "protein pudding"
+      },
+      {
+        "slug": "pumpkin-protein-brownies",
+        "title": "Pumpkin Protein Brownies",
+        "domain": "proteinbrownies.co",
+        "category": "protein brownies"
+      }
     ]
   },
   {
     "id": 8,
     "slug": "key-lime-cheesecake",
     "title": "Key Lime Cheesecake",
-    "description": "A tangy and refreshing key lime cheesecake with a protein-packed twist.",
+    "description": "This tangy and refreshing key lime cheesecake with a protein-packed twist offers a delightful way to indulge while fueling your body. Packed with 21 grams of protein per serving, it\u2019s an excellent choice for post-workout recovery or a satisfying mid-day treat that keeps you energized. The smooth, creamy texture melts in your mouth, balanced by the zesty citrus flavor that awakens your palate with every bite. The subtle sweetness and tartness create a perfect harmony, making it a guilt-free dessert you\u2019ll crave. Its light and airy consistency makes it versatile for meal prep\u2014prepare it ahead of time for a quick, nutritious snack or dessert throughout the week. For those with dietary preferences, this cheesecake can easily be made gluten-free by using a gluten-free crust, and vegan options are achievable with plant-based protein sources and dairy-free cream cheeses. To achieve the best results, ensure all ingredients are well chilled and blend thoroughly for a silky smooth filling. Whether enjoyed after a workout or as a refreshing end to a balanced meal, this cheesecake delivers both flavor and nutrition in every delicious bite.",
     "protein": 21,
     "calories": 185,
     "carbs": 16,
@@ -488,13 +705,44 @@
         "step": "Serve",
         "text": "Garnish with lime zest and whipped cream before serving."
       }
+    ],
+    "related_recipes": [
+      {
+        "slug": "strawberry-swirl-cheesecake",
+        "title": "Strawberry Swirl Cheesecake",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "raspberry-white-chocolate-cheesecake",
+        "title": "Raspberry White Chocolate Cheesecake",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "no-bake-lemon-cheesecake",
+        "title": "No-Bake Lemon Cheesecake",
+        "domain": "proteincheesecake.co"
+      }
+    ],
+    "empire_links": [
+      {
+        "slug": "gluten-free-chocolate-chia-protein-pudding",
+        "title": "Gluten-Free Chocolate Chia Protein Pudding",
+        "domain": "proteinpudding.co",
+        "category": "protein pudding"
+      },
+      {
+        "slug": "gluten-free-black-bean-protein-brownies",
+        "title": "Gluten-Free Black Bean Protein Brownies",
+        "domain": "proteinbrownies.co",
+        "category": "protein brownies"
+      }
     ]
   },
   {
     "id": 9,
     "slug": "caramel-pecan-cheesecake",
     "title": "Caramel Pecan Cheesecake",
-    "description": "A decadent caramel pecan cheesecake that's loaded with protein.",
+    "description": "Indulge in this decadent caramel pecan cheesecake that's loaded with 26 grams of high-quality protein per serving, making it the perfect treat to support your active lifestyle. With its rich, creamy texture paired with a satisfying crunch from toasted pecans, each bite offers a delightful balance of smooth sweetness and nutty depth. The luscious caramel swirl adds a luscious, velvety sweetness that will leave your taste buds craving more, while the nutty undertones provide a hearty, satisfying finish. This cheesecake isn\u2019t just a dessert; it\u2019s a versatile option for post-workout recovery or a nutritious snack that fuels your day. Thanks to its high protein content and balanced macros, it\u2019s ideal for those looking to maintain muscle while satisfying their sweet tooth. The recipe can easily be made gluten-free by using a gluten-free crust, and vegan variations are possible with plant-based cream cheeses and caramel alternatives. For best results, chill the cheesecake thoroughly to achieve a smooth, firm consistency, and consider topping it with extra pecans or a drizzle of caramel for an extra indulgent touch. Whether served after a workout or as a weekend treat, this cheesecake proves that you don\u2019t have to compromise on flavor or nutrition.",
     "protein": 26,
     "calories": 240,
     "carbs": 15,
@@ -550,13 +798,44 @@
         "step": "Cool and Serve",
         "text": "Cool completely, then chill. Drizzle with more caramel sauce before serving."
       }
+    ],
+    "related_recipes": [
+      {
+        "slug": "chocolate-hazelnut-cheesecake",
+        "title": "Chocolate Hazelnut Cheesecake",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "classic-vanilla-bean-cheesecake",
+        "title": "Classic Vanilla Bean Cheesecake",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "no-bake-chocolate-cheesecake",
+        "title": "No-Bake Chocolate Cheesecake",
+        "domain": "proteincheesecake.co"
+      }
+    ],
+    "empire_links": [
+      {
+        "slug": "coffee-protein-mousse",
+        "title": "Coffee Protein Mousse",
+        "domain": "proteinpudding.co",
+        "category": "protein pudding"
+      },
+      {
+        "slug": "low-calorie-protein-brownies",
+        "title": "Low Calorie Protein Brownies",
+        "domain": "proteinbrownies.co",
+        "category": "protein brownies"
+      }
     ]
   },
   {
     "id": 10,
     "slug": "mint-chocolate-chip-cheesecake",
     "title": "Mint Chocolate Chip Cheesecake",
-    "description": "A refreshing mint chocolate chip cheesecake with a protein boost.",
+    "description": "This refreshing mint chocolate chip cheesecake offers a delightful balance of creamy indulgence and nourishing goodness, boasting an impressive 23 grams of protein per serving to support your active lifestyle. The smooth, velvety texture melts in your mouth, while bursts of cool mint and rich chocolate chips provide a satisfying contrast that keeps every bite exciting. Perfect as a post-workout treat or a satisfying dessert after a long day, this cheesecake not only satisfies your sweet tooth but also helps you meet your daily protein goals. Its well-rounded macros make it an ideal option for those seeking a high-protein, low-calorie indulgence, and it can easily be adapted for gluten-free diets by using gluten-free graham crackers or crust alternatives. For vegan versions, substitute dairy ingredients with plant-based options like coconut cream and vegan chocolate chips, ensuring everyone can enjoy its luscious flavor. To achieve the best results, chill the cheesecake thoroughly before serving to enhance its firm, sliceable texture, and consider adding an extra layer of mint extract or chocolate chips on top for an extra pop of flavor. Whether enjoyed as a meal prep treat or a special occasion dessert, this cheesecake is sure to satisfy your cravings while fueling your body with wholesome protein.",
     "protein": 23,
     "calories": 210,
     "carbs": 17,
@@ -611,13 +890,44 @@
         "step": "Cool and Chill",
         "text": "Cool completely before refrigerating for at least 4 hours."
       }
+    ],
+    "related_recipes": [
+      {
+        "slug": "classic-vanilla-bean-cheesecake",
+        "title": "Classic Vanilla Bean Cheesecake",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "no-bake-chocolate-cheesecake",
+        "title": "No-Bake Chocolate Cheesecake",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "strawberry-swirl-cheesecake",
+        "title": "Strawberry Swirl Cheesecake",
+        "domain": "proteincheesecake.co"
+      }
+    ],
+    "empire_links": [
+      {
+        "slug": "black-forest-parfait-protein-pudding",
+        "title": "Black Forest Parfait Protein Pudding",
+        "domain": "proteinpudding.co",
+        "category": "protein pudding"
+      },
+      {
+        "slug": "greek-yogurt-protein-brownies",
+        "title": "Greek Yogurt Protein Brownies",
+        "domain": "proteinbrownies.co",
+        "category": "protein brownies"
+      }
     ]
   },
   {
     "id": 11,
     "slug": "raspberry-white-chocolate-cheesecake",
     "title": "Raspberry White Chocolate Cheesecake",
-    "description": "An elegant raspberry white chocolate cheesecake that's high in protein.",
+    "description": "This elegant raspberry white chocolate cheesecake is not only a stunning dessert but also a powerhouse of nutrition, packing approximately 22 grams of protein per serving to support muscle recovery and keep you energized. Its smooth, creamy texture melts in your mouth, complemented by bursts of tart raspberry flavor and the sweet richness of white chocolate, creating a perfectly balanced indulgence. The luscious, velvety filling contrasts beautifully with a crumbly, nutty crust, making each bite a delightful experience. Ideal for post-workout treats, meal prepping, or special occasions, this cheesecake offers a satisfying way to enjoy dessert without compromising your health goals. For those with dietary restrictions, gluten-free graham crackers or almond flour can be used for the crust, and vegan white chocolate options make it adaptable for plant-based diets. To achieve the best flavor and texture, ensure your cream cheese is at room temperature and gently fold in the raspberry swirls for a marbled effect. Serve chilled for a refreshing, guilt-free indulgence that feels as elegant as it tastes.",
     "protein": 22,
     "calories": 200,
     "carbs": 16,
@@ -673,13 +983,44 @@
         "step": "Cool and Serve",
         "text": "Cool completely, then chill. Garnish with more raspberries before serving."
       }
+    ],
+    "related_recipes": [
+      {
+        "slug": "strawberry-swirl-cheesecake",
+        "title": "Strawberry Swirl Cheesecake",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "key-lime-cheesecake",
+        "title": "Key Lime Cheesecake",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "classic-vanilla-bean-cheesecake",
+        "title": "Classic Vanilla Bean Cheesecake",
+        "domain": "proteincheesecake.co"
+      }
+    ],
+    "empire_links": [
+      {
+        "slug": "quick-vanilla-protein-pudding",
+        "title": "Quick Vanilla Protein Pudding",
+        "domain": "proteinpudding.co",
+        "category": "protein pudding"
+      },
+      {
+        "slug": "single-serving-protein-brownie",
+        "title": "Single-Serving Protein Brownie",
+        "domain": "proteinbrownies.co",
+        "category": "protein brownies"
+      }
     ]
   },
   {
     "id": 12,
     "slug": "cookies-and-cream-cheesecake",
     "title": "Cookies and Cream Cheesecake",
-    "description": "A classic cookies and cream cheesecake, now with a protein-packed upgrade.",
+    "description": "Indulge in this irresistible cookies and cream cheesecake, now elevated with a powerful protein boost to satisfy your sweet tooth and support your fitness goals. With 25 grams of protein per serving, it\u2019s a delicious way to fuel your muscles and keep you feeling full longer, making it perfect for post-workout recovery or a satisfying dessert after a long day. The rich, creamy texture melts in your mouth, while crunchy bits of Oreo cookies add delightful bites of chocolatey crunch that balance sweetness with a satisfying crunch. Each bite offers a harmonious blend of velvety cheesecake and cookie crunch, delivering a decadent flavor that feels indulgent yet aligns with your health-conscious lifestyle. This cheesecake is versatile enough for meal prep, allowing you to enjoy a nutritious treat throughout the week. For those with dietary restrictions, it's easily adaptable\u2014gluten-free Oreo alternatives or vegan cream cheese options can be used to make it suitable for various diets. For best results, ensure your ingredients are at room temperature and chill the cheesecake thoroughly to achieve a smooth, firm texture that slices beautifully. Whether you're craving a healthful dessert or a protein-packed treat, this cheesecake hits the perfect sweet spot without compromising your macros.",
     "protein": 25,
     "calories": 230,
     "carbs": 18,
@@ -733,13 +1074,44 @@
         "step": "Cool and Chill",
         "text": "Cool completely before refrigerating for at least 4 hours."
       }
+    ],
+    "related_recipes": [
+      {
+        "slug": "no-bake-oreo-cheesecake-bites",
+        "title": "No-Bake Oreo Cheesecake Bites",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "classic-vanilla-bean-cheesecake",
+        "title": "Classic Vanilla Bean Cheesecake",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "no-bake-chocolate-cheesecake",
+        "title": "No-Bake Chocolate Cheesecake",
+        "domain": "proteincheesecake.co"
+      }
+    ],
+    "empire_links": [
+      {
+        "slug": "pumpkin-spice-protein-pudding",
+        "title": "Pumpkin Spice Protein Pudding",
+        "domain": "proteinpudding.co",
+        "category": "protein pudding"
+      },
+      {
+        "slug": "chocolate-protein-brownies",
+        "title": "Chocolate Protein Brownies",
+        "domain": "proteinbrownies.co",
+        "category": "protein brownies"
+      }
     ]
   },
   {
     "id": 13,
     "slug": "s-mores-cheesecake-dip",
     "title": "S'mores Cheesecake Dip",
-    "description": "A gooey and delicious s'mores cheesecake dip, perfect for sharing.",
+    "description": "This gooey and delicious s'mores cheesecake dip is a perfect treat for sharing with friends and family, offering a satisfying combination of creamy richness and nostalgic graham cracker and marshmallow flavors. Packed with 16 grams of protein per serving, it\u2019s an indulgent yet nourishing option that supports your active lifestyle, making it ideal as a post-workout snack or a crowd-pleasing party dip. The velvety texture melts in your mouth, with sweet, toasted marshmallows and crunchy graham cracker crumbs creating a delightful contrast that keeps every bite exciting. Its rich, decadent taste is perfectly balanced by the lightness of the cheesecake, making it hard to resist going back for more. You can enjoy this versatile dip with fresh fruit, graham crackers, or even as a topping for protein pancakes. For those with dietary preferences, it can be easily made gluten-free by using gluten-free graham crackers, and vegan versions are possible with plant-based cream cheese and marshmallows. To achieve the best results, be sure to chill the dip thoroughly so it firms up to that ideal gooey consistency and serve it at room temperature for maximum flavor and texture. Whether for a weekend gathering, a game day, or a quick protein boost, this indulgent treat hits all the right notes!",
     "protein": 16,
     "calories": 150,
     "carbs": 14,
@@ -794,13 +1166,44 @@
         "step": "Caution",
         "text": "The dish will be hot, so handle with care."
       }
+    ],
+    "related_recipes": [
+      {
+        "slug": "funfetti-cheesecake-dip",
+        "title": "Funfetti Cheesecake Dip",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "cookie-dough-cheesecake-dip",
+        "title": "Cookie Dough Cheesecake Dip",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "brownie-batter-dip",
+        "title": "Brownie Batter Dip",
+        "domain": "proteincheesecake.co"
+      }
+    ],
+    "empire_links": [
+      {
+        "slug": "dairy-free-vanilla-coconut-protein-pudding",
+        "title": "Dairy-Free Vanilla Coconut Protein Pudding",
+        "domain": "proteinpudding.co",
+        "category": "protein pudding"
+      },
+      {
+        "slug": "raspberry-swirl-protein-brownies",
+        "title": "Raspberry Swirl Protein Brownies",
+        "domain": "proteinbrownies.co",
+        "category": "protein brownies"
+      }
     ]
   },
   {
     "id": 14,
     "slug": "red-velvet-cheesecake",
     "title": "Red Velvet Cheesecake",
-    "description": "A stunning red velvet cheesecake with a protein-rich cream cheese filling.",
+    "description": "This stunning red velvet cheesecake features a rich, velvety texture with a luscious, cream cheese filling packed with 24 grams of protein per serving, making it an indulgent yet nourishing treat. The smooth, decadent layers melt in your mouth, complemented by a subtle hint of cocoa and a vibrant red hue that\u2019s as eye-catching as it is delicious. Perfect for satisfying sweet cravings while fueling your muscles, this cheesecake is ideal as a post-workout dessert or a satisfying dessert for special occasions. Its balanced macros make it a guilt-free indulgence that aligns with your fitness goals, offering a satisfying dose of protein without sacrificing flavor. For gluten-sensitive diners, simply swap out the crust with gluten-free cookies or almond flour, and vegan options can be achieved using plant-based cream cheese and egg substitutes. To get the best texture, ensure the cream cheese is softened thoroughly before mixing, and chill the cheesecake long enough for it to set completely\u2014ideally overnight. Whether enjoyed as a midweek reward or prepared in advance for weekend gatherings, this cheesecake offers a perfect combination of indulgence and nutrition that will keep you coming back for more.",
     "protein": 24,
     "calories": 220,
     "carbs": 18,
@@ -855,13 +1258,44 @@
         "step": "Frost",
         "text": "Top with a protein cream cheese frosting before serving."
       }
+    ],
+    "related_recipes": [
+      {
+        "slug": "no-bake-chocolate-cheesecake",
+        "title": "No-Bake Chocolate Cheesecake",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "single-serving-chocolate-cheesecake",
+        "title": "Single-Serving Chocolate Cheesecake",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "brownie-batter-dip",
+        "title": "Brownie Batter Dip",
+        "domain": "proteincheesecake.co"
+      }
+    ],
+    "empire_links": [
+      {
+        "slug": "dairy-free-vanilla-coconut-protein-pudding",
+        "title": "Dairy-Free Vanilla Coconut Protein Pudding",
+        "domain": "proteinpudding.co",
+        "category": "protein pudding"
+      },
+      {
+        "slug": "gluten-free-black-bean-protein-brownies",
+        "title": "Gluten-Free Black Bean Protein Brownies",
+        "domain": "proteinbrownies.co",
+        "category": "protein brownies"
+      }
     ]
   },
   {
     "id": 15,
     "slug": "matcha-green-tea-cheesecake",
     "title": "Matcha Green Tea Cheesecake",
-    "description": "An earthy and delicious matcha green tea cheesecake with a protein boost.",
+    "description": "This earthy and delicious matcha green tea cheesecake offers a satisfying combination of creamy richness and subtle, vegetal bitterness, all while delivering a powerful protein punch with 22 grams per serving. The velvety texture melts in your mouth, complemented by a delicate, slightly grassy flavor that is beautifully balanced with a hint of sweetness. Perfect as a post-workout treat or a nutritious dessert, it provides sustained energy and helps support muscle recovery thanks to its high protein content. With only 190 calories per serving, it fits seamlessly into a balanced diet, and its gluten-free crust can easily be adapted with gluten-free graham crackers or nut-based options for those with dietary restrictions. For vegans, substituting the dairy components with plant-based alternatives like coconut cream and vegan protein powder maintains the creamy texture and nutritional benefits. To achieve the best results, ensure the matcha powder is well sifted to avoid clumps, and chill the cheesecake thoroughly before serving for a firm, sliceable consistency. Whether enjoyed as a mindful treat after a workout or prepared in advance for meal prep, this cheesecake offers a delightful way to indulge without guilt while boosting your daily protein intake.",
     "protein": 22,
     "calories": 190,
     "carbs": 15,
@@ -915,13 +1349,44 @@
         "step": "Serve",
         "text": "Dust with extra matcha powder before serving."
       }
+    ],
+    "related_recipes": [
+      {
+        "slug": "classic-vanilla-bean-cheesecake",
+        "title": "Classic Vanilla Bean Cheesecake",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "no-bake-chocolate-cheesecake",
+        "title": "No-Bake Chocolate Cheesecake",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "strawberry-swirl-cheesecake",
+        "title": "Strawberry Swirl Cheesecake",
+        "domain": "proteincheesecake.co"
+      }
+    ],
+    "empire_links": [
+      {
+        "slug": "chocolate-avocado-protein-mousse",
+        "title": "Chocolate Avocado Protein Mousse",
+        "domain": "proteinpudding.co",
+        "category": "protein pudding"
+      },
+      {
+        "slug": "fudgy-protein-brownies",
+        "title": "Fudgy Protein Brownies",
+        "domain": "proteinbrownies.co",
+        "category": "protein brownies"
+      }
     ]
   },
   {
     "id": 16,
     "slug": "no-bake-oreo-cheesecake-bites",
     "title": "No-Bake Oreo Cheesecake Bites",
-    "description": "Bite-sized no-bake Oreo cheesecakes, perfect for a quick and easy dessert.",
+    "description": "These bite-sized no-bake Oreo cheesecakes are not only irresistibly delicious but also pack a satisfying protein punch, with each serving delivering around 17 grams to fuel your muscles and keep you energized. The creamy, smooth texture melts in your mouth, complemented by the crunchy crunch of crushed Oreos for a delightful contrast that\u2019s both indulgent and satisfying. With just the right hint of sweetness and a rich, velvety flavor, they make for an irresistible treat that feels indulgent without derailing your fitness goals. Perfectly portable, these mini cheesecakes are ideal for post-workout recovery, meal prep, or a quick dessert fix whenever cravings strike. They can easily be adapted for gluten-free diets by using gluten-free Oreos, and vegan options are available with plant-based cream cheese and dairy-free cookies. For best results, ensure the cream cheese is softened before mixing to achieve a smooth, lump-free filling, and chill the bites thoroughly to set their perfect texture. Whether you\u2019re looking for a protein-rich snack or an easy-to-make dessert, these Oreo cheesecake bites are a delicious way to indulge smartly.",
     "protein": 17,
     "calories": 160,
     "carbs": 13,
@@ -975,13 +1440,44 @@
         "step": "Serve",
         "text": "Serve chilled."
       }
+    ],
+    "related_recipes": [
+      {
+        "slug": "no-bake-chocolate-cheesecake",
+        "title": "No-Bake Chocolate Cheesecake",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "lemon-blueberry-cheesecake-minis",
+        "title": "Lemon Blueberry Cheesecake Minis",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "single-serving-peanut-butter-cheesecake",
+        "title": "Single-Serving Peanut Butter Cheesecake",
+        "domain": "proteincheesecake.co"
+      }
+    ],
+    "empire_links": [
+      {
+        "slug": "chocolate-avocado-protein-mousse",
+        "title": "Chocolate Avocado Protein Mousse",
+        "domain": "proteinpudding.co",
+        "category": "protein pudding"
+      },
+      {
+        "slug": "high-protein-brownies",
+        "title": "High Protein Brownies",
+        "domain": "proteinbrownies.co",
+        "category": "protein brownies"
+      }
     ]
   },
   {
     "id": 17,
     "slug": "single-serving-chocolate-cheesecake",
     "title": "Single-Serving Chocolate Cheesecake",
-    "description": "A rich and creamy single-serving chocolate cheesecake for a guilt-free indulgence.",
+    "description": "Indulge in a rich and creamy single-serving chocolate cheesecake that satisfies your sweet tooth without derailing your fitness goals. Packed with 26 grams of high-quality protein per serving, this guilt-free treat supports muscle recovery and keeps you feeling full longer. The velvety texture melts in your mouth, with intense chocolate flavor balanced by a smooth, luscious finish, making every bite irresistibly delightful. Perfect as a post-workout reward or a nutritious dessert, it\u2019s an easy, no-bake recipe that can be whipped up in minutes\u2014ideal for meal prep or a quick indulgence. For those following gluten-free diets, simply choose gluten-free graham crackers or a nut-based crust to make it completely gluten-free; vegan options can be achieved with plant-based cream cheese and dairy-free chocolate. To get the best results, use high-quality dark chocolate and chill the cheesecake thoroughly to ensure a firm, sliceable texture. Whether enjoyed on a cheat day or as a healthy treat anytime, this cheesecake offers a decadent taste with a nourishing boost.",
     "protein": 26,
     "calories": 230,
     "carbs": 12,
@@ -1035,13 +1531,44 @@
         "step": "Storage",
         "text": "This can be stored in the refrigerator for up to 2 days."
       }
+    ],
+    "related_recipes": [
+      {
+        "slug": "no-bake-chocolate-cheesecake",
+        "title": "No-Bake Chocolate Cheesecake",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "single-serving-peanut-butter-cheesecake",
+        "title": "Single-Serving Peanut Butter Cheesecake",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "single-serving-strawberry-cheesecake",
+        "title": "Single-Serving Strawberry Cheesecake",
+        "domain": "proteincheesecake.co"
+      }
+    ],
+    "empire_links": [
+      {
+        "slug": "gluten-free-chocolate-chia-protein-pudding",
+        "title": "Gluten-Free Chocolate Chia Protein Pudding",
+        "domain": "proteinpudding.co",
+        "category": "protein pudding"
+      },
+      {
+        "slug": "protein-powder-brownies",
+        "title": "Protein Powder Brownies",
+        "domain": "proteinbrownies.co",
+        "category": "protein brownies"
+      }
     ]
   },
   {
     "id": 18,
     "slug": "brownie-batter-dip",
     "title": "Brownie Batter Dip",
-    "description": "A decadent and protein-packed brownie batter dip that tastes just like the real thing.",
+    "description": "This decadent and protein-packed brownie batter dip tastes just like the real thing, satisfying your sweet tooth while fueling your body with a hefty 18 grams of protein per serving. Made with wholesome ingredients, it offers a rich, velvety texture that\u2019s irresistibly smooth and indulgent, with deep chocolate flavor that melts in your mouth. Perfect as a post-workout treat or a quick snack, it provides a satisfying balance of macros\u2014low in calories yet high in muscle-repairing protein\u2014making it ideal for those aiming to support their fitness goals. Its luscious taste and creamy consistency make it a crowd-pleaser at gatherings, or a convenient option for meal prepping in advance. For gluten-free diets, simply ensure any ingredients like protein powder are certified gluten-free; vegan options can be achieved by swapping in plant-based yogurt or vegan protein powder. For best results, mix the ingredients thoroughly until smooth and chill in the fridge for at least 30 minutes to intensify the flavors and achieve a thicker, dip-worthy consistency. Whether enjoyed with fresh fruit, pretzels, or whole-grain crackers, this dip is a delicious way to indulge guilt-free while boosting your daily protein intake.",
     "protein": 18,
     "calories": 160,
     "carbs": 15,
@@ -1096,13 +1623,44 @@
         "step": "Storage",
         "text": "Store in an airtight container in the refrigerator for up to 3 days."
       }
+    ],
+    "related_recipes": [
+      {
+        "slug": "no-bake-chocolate-cheesecake",
+        "title": "No-Bake Chocolate Cheesecake",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "funfetti-cheesecake-dip",
+        "title": "Funfetti Cheesecake Dip",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "s-mores-cheesecake-dip",
+        "title": "S'mores Cheesecake Dip",
+        "domain": "proteincheesecake.co"
+      }
+    ],
+    "empire_links": [
+      {
+        "slug": "peanut-butter-cup-protein-pudding",
+        "title": "Peanut Butter Cup Protein Pudding",
+        "domain": "proteinpudding.co",
+        "category": "protein pudding"
+      },
+      {
+        "slug": "healthy-protein-brownies",
+        "title": "Healthy Protein Brownies",
+        "domain": "proteinbrownies.co",
+        "category": "protein brownies"
+      }
     ]
   },
   {
     "id": 19,
     "slug": "gingerbread-cheesecake",
     "title": "Gingerbread Cheesecake",
-    "description": "A festive gingerbread cheesecake, perfect for the holidays.",
+    "description": "This festive gingerbread cheesecake is not only a holiday showstopper but also a powerhouse of nutrition, delivering an impressive 23 grams of protein per serving to support muscle recovery and keep you energized during the busy season. Its creamy, velvety texture melts in your mouth, complemented by warm notes of ginger, cinnamon, and molasses that evoke cozy holiday memories. The rich, spiced flavor profile makes each bite indulgent yet balanced with wholesome ingredients, making it a satisfying treat without the guilt. Perfect for post-workout recovery or as a festive dessert at gatherings, this cheesecake can be prepared in advance for easy holiday hosting or meal prepping for the week. For those with dietary restrictions, it's easily adaptable\u2014using gluten-free graham crackers or vegan cream cheese options to suit your needs. To achieve the best results, be sure to thoroughly chill the cheesecake for at least four hours or overnight, allowing the flavors to meld beautifully and the texture to set perfectly. Whether you're celebrating with family or enjoying a peaceful moment with a slice, this gingerbread cheesecake offers a deliciously nutritious way to indulge during the holidays.",
     "protein": 23,
     "calories": 210,
     "carbs": 18,
@@ -1158,13 +1716,44 @@
         "step": "Serve",
         "text": "Garnish with a sprinkle of cinnamon before serving."
       }
+    ],
+    "related_recipes": [
+      {
+        "slug": "eggnog-cheesecake",
+        "title": "Eggnog Cheesecake",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "pumpkin-spice-cheesecake",
+        "title": "Pumpkin Spice Cheesecake",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "classic-vanilla-bean-cheesecake",
+        "title": "Classic Vanilla Bean Cheesecake",
+        "domain": "proteincheesecake.co"
+      }
+    ],
+    "empire_links": [
+      {
+        "slug": "pumpkin-spice-protein-pudding",
+        "title": "Pumpkin Spice Protein Pudding",
+        "domain": "proteinpudding.co",
+        "category": "protein pudding"
+      },
+      {
+        "slug": "black-bean-protein-brownies",
+        "title": "Black Bean Protein Brownies",
+        "domain": "proteinbrownies.co",
+        "category": "protein brownies"
+      }
     ]
   },
   {
     "id": 20,
     "slug": "no-bake-lemon-cheesecake",
     "title": "No-Bake Lemon Cheesecake",
-    "description": "A light and refreshing no-bake lemon cheesecake with a protein kick.",
+    "description": "This light and refreshing no-bake lemon cheesecake delivers a satisfying protein punch, boasting around 20 grams of muscle-supporting protein per serving, making it an ideal choice for post-workout recovery or a nutritious midday treat. Its smooth, creamy texture melts in your mouth, balanced perfectly by the zesty brightness of fresh lemon, creating a delightful harmony of tangy and sweet notes. The crisp, crumbly crust provides a satisfying crunch that complements the velvety filling, making every bite irresistibly indulgent without feeling heavy. Perfect for meal prep, this dessert can be made ahead and stored in the fridge, ready to satisfy your sweet tooth without derailing your diet. It\u2019s naturally gluten-free if you opt for gluten-free graham crackers or nuts in the crust, and vegan versions can be easily achieved with plant-based protein sources and dairy-free cream cheese alternatives. For best results, ensure your cream cheese is softened to blend smoothly and use fresh lemon juice for that vibrant citrus flavor. Whether enjoyed as a light dessert after dinner or a wholesome snack to keep you energized, this cheesecake is a guilt-free indulgence that\u2019s both nutritious and delicious.",
     "protein": 20,
     "calories": 180,
     "carbs": 15,
@@ -1220,13 +1809,44 @@
         "step": "Serve",
         "text": "Slice and enjoy your no-bake protein cheesecake."
       }
+    ],
+    "related_recipes": [
+      {
+        "slug": "no-bake-chocolate-cheesecake",
+        "title": "No-Bake Chocolate Cheesecake",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "lemon-blueberry-cheesecake-minis",
+        "title": "Lemon Blueberry Cheesecake Minis",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "single-serving-peanut-butter-cheesecake",
+        "title": "Single-Serving Peanut Butter Cheesecake",
+        "domain": "proteincheesecake.co"
+      }
+    ],
+    "empire_links": [
+      {
+        "slug": "raspberry-chia-protein-pudding",
+        "title": "Raspberry Chia Protein Pudding",
+        "domain": "proteinpudding.co",
+        "category": "protein pudding"
+      },
+      {
+        "slug": "fudgy-protein-brownies",
+        "title": "Fudgy Protein Brownies",
+        "domain": "proteinbrownies.co",
+        "category": "protein brownies"
+      }
     ]
   },
   {
     "id": 21,
     "slug": "chocolate-hazelnut-cheesecake",
     "title": "Chocolate Hazelnut Cheesecake",
-    "description": "A rich and nutty chocolate hazelnut cheesecake, packed with protein.",
+    "description": "This rich and nutty chocolate hazelnut cheesecake is a decadent treat that\u2019s also packed with an impressive 27 grams of protein per serving, making it an ideal choice for muscle recovery and sustained energy. The creamy, velvety texture melts in your mouth, while the harmonious blend of deep chocolate and roasted hazelnut flavors offers a satisfying, indulgent experience without the guilt. Perfect as a post-workout dessert or a nourishing snack, it\u2019s great for meal prep, allowing you to enjoy a gourmet treat anytime during the week. With its balanced macros\u2014just 260 calories per slice\u2014this cheesecake fits well within a high-protein, mindful eating plan. For those with dietary restrictions, it can easily be made gluten-free by using almond or coconut flour in the crust, and vegan adaptations are possible with plant-based protein powders and dairy-free cream cheeses. To achieve the best texture and flavor, chill the cheesecake thoroughly before serving, and consider toasting the hazelnuts beforehand to enhance their nutty aroma. Each bite delivers a luscious combination of creamy richness and nutty crunch, making it a truly satisfying and health-conscious dessert option.",
     "protein": 27,
     "calories": 260,
     "carbs": 16,
@@ -1282,13 +1902,44 @@
         "step": "Cool and Serve",
         "text": "Cool completely, then chill. Garnish with more hazelnuts before serving."
       }
+    ],
+    "related_recipes": [
+      {
+        "slug": "no-bake-chocolate-cheesecake",
+        "title": "No-Bake Chocolate Cheesecake",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "caramel-pecan-cheesecake",
+        "title": "Caramel Pecan Cheesecake",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "red-velvet-cheesecake",
+        "title": "Red Velvet Cheesecake",
+        "domain": "proteincheesecake.co"
+      }
+    ],
+    "empire_links": [
+      {
+        "slug": "banana-cream-protein-pudding",
+        "title": "Banana Cream Protein Pudding",
+        "domain": "proteinpudding.co",
+        "category": "protein pudding"
+      },
+      {
+        "slug": "raspberry-swirl-protein-brownies",
+        "title": "Raspberry Swirl Protein Brownies",
+        "domain": "proteinbrownies.co",
+        "category": "protein brownies"
+      }
     ]
   },
   {
     "id": 22,
     "slug": "single-serving-strawberry-cheesecake",
     "title": "Single-Serving Strawberry Cheesecake",
-    "description": "A fresh and fruity single-serving strawberry cheesecake.",
+    "description": "This fresh and fruity single-serving strawberry cheesecake is a guilt-free indulgence packed with 24 grams of high-quality protein per serving, making it an ideal treat for post-workout recovery or a satisfying snack to fuel your day. The smooth, creamy texture of the cheesecake melts in your mouth, balanced by the vibrant burst of juicy strawberries on top, creating a delightful harmony of sweetness and tang. With its light, no-bake formulation and wholesome ingredients, this dessert offers a satisfying balance of macros\u2014low in calories but rich in protein\u2014perfect for those mindful of their diet. You can enjoy this delicious treat as a quick, nutritious dessert after your gym session or as a meal prep option to keep handy throughout the week. For dietary flexibility, it can easily be made gluten-free by using gluten-free graham crackers or crushed nuts for the crust, and vegan substitutions like plant-based cream cheese and agar agar can make it entirely dairy-free and vegan. To achieve the best results, use fresh, ripe strawberries and chill the cheesecake thoroughly before serving to ensure a firm, creamy consistency that\u2019s irresistible. Whether you\u2019re craving a healthy dessert or a protein-packed snack, this strawberry cheesecake hits all the right notes\u2014refreshing, satisfying, and nourishing.",
     "protein": 24,
     "calories": 200,
     "carbs": 14,
@@ -1342,13 +1993,44 @@
         "step": "Storage",
         "text": "This can be stored in the refrigerator for up to 2 days."
       }
+    ],
+    "related_recipes": [
+      {
+        "slug": "single-serving-peanut-butter-cheesecake",
+        "title": "Single-Serving Peanut Butter Cheesecake",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "single-serving-chocolate-cheesecake",
+        "title": "Single-Serving Chocolate Cheesecake",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "no-bake-chocolate-cheesecake",
+        "title": "No-Bake Chocolate Cheesecake",
+        "domain": "proteincheesecake.co"
+      }
+    ],
+    "empire_links": [
+      {
+        "slug": "pumpkin-spice-protein-pudding",
+        "title": "Pumpkin Spice Protein Pudding",
+        "domain": "proteinpudding.co",
+        "category": "protein pudding"
+      },
+      {
+        "slug": "sweet-potato-protein-brownies",
+        "title": "Sweet Potato Protein Brownies",
+        "domain": "proteinbrownies.co",
+        "category": "protein brownies"
+      }
     ]
   },
   {
     "id": 23,
     "slug": "cookie-dough-cheesecake-dip",
     "title": "Cookie Dough Cheesecake Dip",
-    "description": "A safe-to-eat cookie dough cheesecake dip that's high in protein.",
+    "description": "This safe-to-eat cookie dough cheesecake dip is not only irresistibly indulgent but also packed with a impressive 19 grams of protein per serving, making it a perfect guilt-free treat for fitness enthusiasts. Its creamy, velvety texture combines the rich, sweet flavor of cookie dough with the smoothness of cheesecake, creating a decadent dip that melts in your mouth with every bite. The hint of vanilla, combined with the subtle crunch of mini chocolate chips, offers a satisfying contrast that keeps you coming back for more. Ideal for post-workout recovery or as a high-protein snack, this dip is perfect for meal prepping to enjoy throughout the week. It\u2019s versatile enough to be enjoyed with fresh fruit, whole-grain crackers, or even gluten-free cookies, and can easily be adapted to vegan diets by swapping in plant-based protein and dairy-free cream cheese. For best results, be sure to chill the dip thoroughly before serving to enhance its creamy consistency, and use high-quality ingredients to maximize flavor. Whether you're looking for a healthy party centerpiece or a quick protein boost, this dip delivers on taste and nutrition without sacrificing indulgence.",
     "protein": 19,
     "calories": 170,
     "carbs": 16,
@@ -1403,13 +2085,44 @@
         "step": "Storage",
         "text": "Store in an airtight container in the refrigerator for up to 3 days."
       }
+    ],
+    "related_recipes": [
+      {
+        "slug": "funfetti-cheesecake-dip",
+        "title": "Funfetti Cheesecake Dip",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "s-mores-cheesecake-dip",
+        "title": "S'mores Cheesecake Dip",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "brownie-batter-dip",
+        "title": "Brownie Batter Dip",
+        "domain": "proteincheesecake.co"
+      }
+    ],
+    "empire_links": [
+      {
+        "slug": "mixed-berry-chia-protein-pudding",
+        "title": "Mixed Berry Chia Protein Pudding",
+        "domain": "proteinpudding.co",
+        "category": "protein pudding"
+      },
+      {
+        "slug": "gluten-free-black-bean-protein-brownies",
+        "title": "Gluten-Free Black Bean Protein Brownies",
+        "domain": "proteinbrownies.co",
+        "category": "protein brownies"
+      }
     ]
   },
   {
     "id": 24,
     "slug": "eggnog-cheesecake",
     "title": "Eggnog Cheesecake",
-    "description": "A creamy and festive eggnog cheesecake for the holiday season.",
+    "description": "Indulge in this creamy and festive eggnog cheesecake, perfect for celebrating the holiday season with a rich, satisfying dessert. Packed with 22 grams of protein per serving, it's an excellent choice for supporting your muscle recovery or adding a nutritious touch to your holiday spread. The smooth, velvety texture melts in your mouth, while the warm, spiced eggnog flavor offers a comforting, seasonal taste that\u2019s both indulgent and refined. Its balanced sweetness and subtle hints of cinnamon and nutmeg make each bite an irresistible treat. Ideal as a post-workout dessert or a make-ahead option for holiday gatherings, this cheesecake adds a touch of elegance to any occasion. For those with dietary restrictions, it can easily be made gluten-free by choosing a gluten-free crust, and vegan alternatives are simple with plant-based cream cheese and egg substitutes. To achieve the best results, ensure your cream cheese is softened before mixing, and avoid overbaking to keep the center creamy and luscious. Whether enjoyed alone or shared with loved ones, this cheesecake is sure to become a seasonal favorite that combines festive flavors with wholesome nutrition.",
     "protein": 22,
     "calories": 200,
     "carbs": 17,
@@ -1465,13 +2178,44 @@
         "step": "Serve",
         "text": "Garnish with a sprinkle of nutmeg before serving."
       }
+    ],
+    "related_recipes": [
+      {
+        "slug": "gingerbread-cheesecake",
+        "title": "Gingerbread Cheesecake",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "pumpkin-spice-cheesecake",
+        "title": "Pumpkin Spice Cheesecake",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "classic-vanilla-bean-cheesecake",
+        "title": "Classic Vanilla Bean Cheesecake",
+        "domain": "proteincheesecake.co"
+      }
+    ],
+    "empire_links": [
+      {
+        "slug": "coffee-protein-mousse",
+        "title": "Coffee Protein Mousse",
+        "domain": "proteinpudding.co",
+        "category": "protein pudding"
+      },
+      {
+        "slug": "mint-chocolate-protein-brownies",
+        "title": "Mint Chocolate Protein Brownies",
+        "domain": "proteinbrownies.co",
+        "category": "protein brownies"
+      }
     ]
   },
   {
     "id": 25,
     "slug": "tiramisu-cheesecake",
     "title": "Tiramisu Cheesecake",
-    "description": "A coffee-flavored tiramisu cheesecake with a protein-packed twist.",
+    "description": "This coffee-flavored tiramisu cheesecake offers a decadent, dessert-like experience with a nutritious twist, boasting an impressive 24 grams of protein per serving to support your active lifestyle. The smooth, creamy texture melts in your mouth, balanced perfectly by the rich bitterness of coffee and hints of chocolate, creating a harmonious blend of flavors that satisfy both sweet and caffeine cravings. With its high protein content and moderate calories, it\u2019s an ideal post-workout treat or a satisfying dessert to enjoy guilt-free anytime. The velvety cheesecake is designed to fuel muscle recovery while indulging your senses, making it perfect for meal prep or sharing with friends. For those with dietary restrictions, this recipe can easily be adapted\u2014using gluten-free graham crackers or vegan cream cheese alternatives\u2014without sacrificing flavor or texture. To achieve the best results, ensure thorough mixing of the ingredients for a silky consistency, and chill it well before serving to allow flavors to meld beautifully. Whether you\u2019re looking for a protein boost after training or a tempting dessert that aligns with your health goals, this tiramisu cheesecake is sure to become a favorite in your recipe repertoire.",
     "protein": 24,
     "calories": 220,
     "carbs": 16,
@@ -1527,13 +2271,44 @@
         "step": "Serve",
         "text": "Dust with cocoa powder before serving."
       }
+    ],
+    "related_recipes": [
+      {
+        "slug": "no-bake-chocolate-cheesecake",
+        "title": "No-Bake Chocolate Cheesecake",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "red-velvet-cheesecake",
+        "title": "Red Velvet Cheesecake",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "single-serving-chocolate-cheesecake",
+        "title": "Single-Serving Chocolate Cheesecake",
+        "domain": "proteincheesecake.co"
+      }
+    ],
+    "empire_links": [
+      {
+        "slug": "peanut-butter-cup-protein-pudding",
+        "title": "Peanut Butter Cup Protein Pudding",
+        "domain": "proteinpudding.co",
+        "category": "protein pudding"
+      },
+      {
+        "slug": "banana-protein-brownies",
+        "title": "Banana Protein Brownies",
+        "domain": "proteinbrownies.co",
+        "category": "protein brownies"
+      }
     ]
   },
   {
     "id": 100,
     "slug": "gluten-free-almond-crust-protein-cheesecake",
     "title": "Gluten-Free Almond Crust Protein Cheesecake",
-    "description": "A creamy, dreamy protein cheesecake with a naturally gluten-free almond flour crust. All the indulgence with none of the gluten!",
+    "description": "This creamy, dreamy protein cheesecake features a naturally gluten-free almond flour crust that provides a satisfyingly nutty crunch with every bite. Packed with 18 grams of high-quality protein per serving, it\u2019s an ideal treat to support your muscle recovery or keep you energized throughout the day, all while fitting seamlessly into a balanced diet. The velvety filling offers a rich, indulgent flavor that melts in your mouth, complemented by a subtle sweetness and a hint of vanilla, making each forkful truly irresistible. Its smooth, dense texture makes it perfect as a post-workout dessert or a satisfying snack when you crave something sweet without the guilt. For added flexibility, this recipe can easily be adapted to vegan diets by swapping traditional dairy ingredients with plant-based alternatives. To achieve the best results, ensure your cream cheese is softened and blend the filling thoroughly for a silky, lump-free consistency. Chill the cheesecake thoroughly before serving to allow the flavors to meld beautifully\u2014it's a great make-ahead option for meal prep or entertaining guests. Whether enjoyed as a nourishing treat after a workout or as a wholesome dessert at your next gathering, this cheesecake proves that indulgence and nutrition can go hand in hand.",
     "protein": 18,
     "calories": 245,
     "carbs": 12,
@@ -1592,13 +2367,44 @@
         "step": "Cool",
         "text": "Turn off oven, crack door, and let cheesecake cool for 1 hour. Refrigerate for at least 4 hours before serving."
       }
+    ],
+    "related_recipes": [
+      {
+        "slug": "classic-vanilla-bean-cheesecake",
+        "title": "Classic Vanilla Bean Cheesecake",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "no-bake-chocolate-cheesecake",
+        "title": "No-Bake Chocolate Cheesecake",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "strawberry-swirl-cheesecake",
+        "title": "Strawberry Swirl Cheesecake",
+        "domain": "proteincheesecake.co"
+      }
+    ],
+    "empire_links": [
+      {
+        "slug": "classic-chocolate-protein-pudding",
+        "title": "Classic Chocolate Protein Pudding",
+        "domain": "proteinpudding.co",
+        "category": "protein pudding"
+      },
+      {
+        "slug": "dairy-free-avocado-protein-brownies",
+        "title": "Dairy-Free Avocado Protein Brownies",
+        "domain": "proteinbrownies.co",
+        "category": "protein brownies"
+      }
     ]
   },
   {
     "id": 101,
     "slug": "dairy-free-cashew-protein-cheesecake",
     "title": "Dairy-Free Cashew Protein Cheesecake",
-    "description": "A luscious no-bake cheesecake made entirely from cashews and coconut cream. Completely dairy-free but impossibly creamy!",
+    "description": "This luscious no-bake cheesecake made entirely from cashews and coconut cream is a dairy-free delight that\u2019s impossibly creamy and satisfying. Packed with 12 grams of plant-based protein per serving, it\u2019s a perfect choice for post-workout recovery or a nourishing snack that fuels your muscles. The velvety texture melts in your mouth with a subtle sweetness and rich coconut undertones, offering a decadently smooth bite that feels indulgent yet wholesome. Thanks to the wholesome cashews, this cheesecake provides healthy fats and fiber, making it a nutrient-dense treat that supports your overall wellness. It\u2019s versatile enough to enjoy as a dessert after dinner or as a meal prep option to keep in the fridge for quick, satisfying bites throughout the week. For those with dietary restrictions, it\u2019s naturally gluten-free and can be easily adapted to vegan preferences by using agave or maple syrup instead of honey. To achieve the best results, soak the cashews thoroughly to ensure a silky, creamy consistency, and blend until ultra-smooth. Whether you\u2019re looking for a protein boost or a dairy-free indulgence, this cheesecake hits all the right notes\u2014rich, creamy, and irresistibly good.",
     "protein": 12,
     "calories": 210,
     "carbs": 18,
@@ -1658,13 +2464,44 @@
         "step": "Serve",
         "text": "Remove from freezer 20-30 minutes before serving. Store leftovers in the freezer."
       }
+    ],
+    "related_recipes": [
+      {
+        "slug": "classic-vanilla-bean-cheesecake",
+        "title": "Classic Vanilla Bean Cheesecake",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "no-bake-chocolate-cheesecake",
+        "title": "No-Bake Chocolate Cheesecake",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "strawberry-swirl-cheesecake",
+        "title": "Strawberry Swirl Cheesecake",
+        "domain": "proteincheesecake.co"
+      }
+    ],
+    "empire_links": [
+      {
+        "slug": "chocolate-chia-protein-pudding",
+        "title": "Chocolate Chia Protein Pudding",
+        "domain": "proteinpudding.co",
+        "category": "protein pudding"
+      },
+      {
+        "slug": "gluten-free-black-bean-protein-brownies",
+        "title": "Gluten-Free Black Bean Protein Brownies",
+        "domain": "proteinbrownies.co",
+        "category": "protein brownies"
+      }
     ]
   },
   {
     "id": 100,
     "slug": "gluten-free-almond-crust-protein-cheesecake",
     "title": "Gluten-Free Almond Crust Protein Cheesecake",
-    "description": "A creamy, dreamy protein cheesecake with a naturally gluten-free almond flour crust. All the indulgence with none of the gluten!",
+    "description": "This creamy, dreamy protein cheesecake features a naturally gluten-free almond flour crust that provides a satisfyingly nutty crunch with every bite. Packed with 18 grams of high-quality protein per serving, it\u2019s an ideal treat to support your muscle recovery or keep you energized throughout the day, all while fitting seamlessly into a balanced diet. The velvety filling offers a rich, indulgent flavor that melts in your mouth, complemented by a subtle sweetness and a hint of vanilla, making each forkful truly irresistible. Its smooth, dense texture makes it perfect as a post-workout dessert or a satisfying snack when you crave something sweet without the guilt. For added flexibility, this recipe can easily be adapted to vegan diets by swapping traditional dairy ingredients with plant-based alternatives. To achieve the best results, ensure your cream cheese is softened and blend the filling thoroughly for a silky, lump-free consistency. Chill the cheesecake thoroughly before serving to allow the flavors to meld beautifully\u2014it's a great make-ahead option for meal prep or entertaining guests. Whether enjoyed as a nourishing treat after a workout or as a wholesome dessert at your next gathering, this cheesecake proves that indulgence and nutrition can go hand in hand.",
     "protein": 18,
     "calories": 245,
     "carbs": 12,
@@ -1723,13 +2560,44 @@
         "step": "Cool",
         "text": "Turn off oven, crack door, and let cheesecake cool for 1 hour. Refrigerate for at least 4 hours before serving."
       }
+    ],
+    "related_recipes": [
+      {
+        "slug": "classic-vanilla-bean-cheesecake",
+        "title": "Classic Vanilla Bean Cheesecake",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "no-bake-chocolate-cheesecake",
+        "title": "No-Bake Chocolate Cheesecake",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "strawberry-swirl-cheesecake",
+        "title": "Strawberry Swirl Cheesecake",
+        "domain": "proteincheesecake.co"
+      }
+    ],
+    "empire_links": [
+      {
+        "slug": "classic-chocolate-protein-pudding",
+        "title": "Classic Chocolate Protein Pudding",
+        "domain": "proteinpudding.co",
+        "category": "protein pudding"
+      },
+      {
+        "slug": "dairy-free-avocado-protein-brownies",
+        "title": "Dairy-Free Avocado Protein Brownies",
+        "domain": "proteinbrownies.co",
+        "category": "protein brownies"
+      }
     ]
   },
   {
     "id": 101,
     "slug": "dairy-free-cashew-protein-cheesecake",
     "title": "Dairy-Free Cashew Protein Cheesecake",
-    "description": "A luscious no-bake cheesecake made entirely from cashews and coconut cream. Completely dairy-free but impossibly creamy!",
+    "description": "This luscious no-bake cheesecake made entirely from cashews and coconut cream is a dairy-free delight that\u2019s impossibly creamy and satisfying. Packed with 12 grams of plant-based protein per serving, it\u2019s a perfect choice for post-workout recovery or a nourishing snack that fuels your muscles. The velvety texture melts in your mouth with a subtle sweetness and rich coconut undertones, offering a decadently smooth bite that feels indulgent yet wholesome. Thanks to the wholesome cashews, this cheesecake provides healthy fats and fiber, making it a nutrient-dense treat that supports your overall wellness. It\u2019s versatile enough to enjoy as a dessert after dinner or as a meal prep option to keep in the fridge for quick, satisfying bites throughout the week. For those with dietary restrictions, it\u2019s naturally gluten-free and can be easily adapted to vegan preferences by using agave or maple syrup instead of honey. To achieve the best results, soak the cashews thoroughly to ensure a silky, creamy consistency, and blend until ultra-smooth. Whether you\u2019re looking for a protein boost or a dairy-free indulgence, this cheesecake hits all the right notes\u2014rich, creamy, and irresistibly good.",
     "protein": 12,
     "calories": 210,
     "carbs": 18,
@@ -1788,6 +2656,37 @@
       {
         "step": "Serve",
         "text": "Remove from freezer 20-30 minutes before serving. Store leftovers in the freezer."
+      }
+    ],
+    "related_recipes": [
+      {
+        "slug": "classic-vanilla-bean-cheesecake",
+        "title": "Classic Vanilla Bean Cheesecake",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "no-bake-chocolate-cheesecake",
+        "title": "No-Bake Chocolate Cheesecake",
+        "domain": "proteincheesecake.co"
+      },
+      {
+        "slug": "strawberry-swirl-cheesecake",
+        "title": "Strawberry Swirl Cheesecake",
+        "domain": "proteincheesecake.co"
+      }
+    ],
+    "empire_links": [
+      {
+        "slug": "chocolate-chia-protein-pudding",
+        "title": "Chocolate Chia Protein Pudding",
+        "domain": "proteinpudding.co",
+        "category": "protein pudding"
+      },
+      {
+        "slug": "gluten-free-black-bean-protein-brownies",
+        "title": "Gluten-Free Black Bean Protein Brownies",
+        "domain": "proteinbrownies.co",
+        "category": "protein brownies"
       }
     ]
   }

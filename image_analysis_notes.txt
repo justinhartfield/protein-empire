@@ -1,0 +1,46 @@
+Image Analysis Notes for Protein Empire Sites
+=============================================
+
+ISSUE: Images are named incorrectly - the filenames don't match the actual visual content.
+
+PROTEINCHEESECAKE-CO:
+- classic-vanilla-bean-cheesecake.png: SHOWS BANANA CHEESECAKE (has banana slices on top, bananas in background)
+  - Should be: banana-cream-cheesecake.png or similar
+
+Need to analyze all images and create correct mappings.
+
+
+FINDINGS:
+- strawberry-swirl-cheesecake.png: CORRECT - shows strawberry swirl cheesecake
+- key-lime-cheesecake.png: CORRECT - shows key lime cheesecake with limes
+
+MAJOR ISSUE DISCOVERED:
+- There are only 25 UNIQUE images for 45 image files
+- 20 images are DUPLICATES with different names
+- This means many recipes are sharing the same image incorrectly
+
+DUPLICATE PAIRS (same image, different names):
+1. banana-cream-cheesecake.png = classic-vanilla-bean-cheesecake.png (BANANA image)
+2. blueberry-swirl-cheesecake.png = no-bake-chocolate-cheesecake.png
+3. caramel-pecan-cheesecake.png = chocolate-protein-cheesecake.png
+4. cheesecake-stuffed-strawberries.png = funfetti-cheesecake-dip.png
+5. chocolate-hazelnut-cheesecake.png = oreo-protein-cheesecake.png
+6. cinnamon-roll-cheesecake.png = mint-chocolate-chip-cheesecake.png
+7. classic-protein-cheesecake.png = cookies-and-cream-cheesecake.png
+8. coconut-cheesecake.png = s-mores-cheesecake-dip.png
+9. cookie-dough-cheesecake-dip.png = pumpkin-protein-cheesecake.png
+10. cottage-cheese-protein-cheesecake.png = matcha-green-tea-cheesecake.png
+11. eggnog-cheesecake.png = salted-caramel-cheesecake.png
+12. gingerbread-cheesecake.png = mini-cheesecakes.png
+13. greek-yogurt-protein-cheesecake.png = no-bake-oreo-cheesecake-bites.png
+14. lemon-protein-cheesecake.png = single-serving-chocolate-cheesecake.png
+15. no-bake-lemon-cheesecake.png = no-bake-protein-cheesecake.png
+16. peanut-butter-protein-cheesecake.png = single-serving-strawberry-cheesecake.png
+17. caramel-apple-cheesecake.png = lemon-blueberry-cheesecake-minis.png
+18. brownie-batter-dip.png = matcha-cheesecake.png
+19. cheesecake-bars.png = single-serving-peanut-butter-cheesecake.png
+20. chocolate-peanut-butter-cheesecake.png = pumpkin-spice-cheesecake.png
+
+SOLUTION NEEDED:
+Need to analyze each unique image to determine what it actually shows,
+then rename/reassign images to match the correct recipes.
