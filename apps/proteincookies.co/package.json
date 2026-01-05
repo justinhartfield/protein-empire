@@ -1,0 +1,9 @@
+{
+  "name": "@protein-empire/proteincookies-co",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Protein Empire site: proteincookies.co",
+  "scripts": {
+    "build": "cd ../.. && node scripts/build-site.js proteincookies.co"
+  }
+}

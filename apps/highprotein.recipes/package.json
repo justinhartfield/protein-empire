@@ -1,0 +1,9 @@
+{
+  "name": "@protein-empire/highprotein-recipes",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Protein Empire site: highprotein.recipes",
+  "scripts": {
+    "build": "cd ../.. && node scripts/build-site.js highprotein.recipes"
+  }
+}
