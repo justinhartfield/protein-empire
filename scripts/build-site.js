@@ -91,14 +91,62 @@ async function buildSite(domain) {
     // Parse string ingredients into objects if needed
     if (recipe.ingredients && typeof recipe.ingredients[0] === 'string') {
       recipe.ingredients = recipe.ingredients.map(ing => {
-        const match = ing.match(/^(\d+)g?\s+(.+)$/);
-        if (match) {
-          const name = match[2];
+        // Handle gram-based ingredients: "240g cream cheese"
+        const gramMatch = ing.match(/^(\d+)g\s+(.+)$/);
+        if (gramMatch) {
+          const name = gramMatch[2];
           const id = mapIngredientNameToId(name) || name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
-          return { amount: parseInt(match[1]), name, id };
+          return { amount: parseInt(gramMatch[1]), name, id, unit: 'g' };
         }
+        
+        // Handle egg-based ingredients: "2 large eggs", "3 egg whites", "1 egg"
+        const eggMatch = ing.match(/^(\d+)\s+(large\s+)?(eggs?|egg\s+whites?)(.*)$/i);
+        if (eggMatch) {
+          const count = parseInt(eggMatch[1]);
+          const isWhites = /whites?/i.test(eggMatch[3]);
+          const name = isWhites ? 'Liquid Egg Whites' : 'Whole Eggs';
+          const id = isWhites ? 'egg-whites-liquid' : 'whole-eggs';
+          // Convert to grams: 1 large egg ≈ 50g, 1 egg white ≈ 33g (from 3 tbsp)
+          const gramsPerUnit = isWhites ? 33 : 50;
+          return { 
+            amount: count * gramsPerUnit, 
+            displayAmount: count,
+            name, 
+            id, 
+            unit: isWhites ? 'egg whites' : 'eggs',
+            originalText: ing
+          };
+        }
+        
+        // Handle tsp/tbsp measurements: "1 tsp vanilla extract"
+        const tspMatch = ing.match(/^([\d.]+)\s*(tsp|tbsp|teaspoon|tablespoon)s?\s+(.+)$/i);
+        if (tspMatch) {
+          const amount = parseFloat(tspMatch[1]);
+          const unit = tspMatch[2].toLowerCase().startsWith('tb') ? 'tbsp' : 'tsp';
+          const name = tspMatch[3];
+          const id = mapIngredientNameToId(name) || name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+          // Convert to grams: 1 tsp ≈ 5g, 1 tbsp ≈ 15g
+          const gramsPerUnit = unit === 'tbsp' ? 15 : 5;
+          return { 
+            amount: Math.round(amount * gramsPerUnit), 
+            displayAmount: amount,
+            name, 
+            id, 
+            unit,
+            originalText: ing
+          };
+        }
+        
+        // Handle generic number + ingredient: "2 large eggs" fallback, "100g almond flour for crust"
+        const genericMatch = ing.match(/^(\d+)\s+(.+)$/);
+        if (genericMatch) {
+          const name = genericMatch[2];
+          const id = mapIngredientNameToId(name) || name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+          return { amount: parseInt(genericMatch[1]), name, id, unit: 'g' };
+        }
+        
         const id = mapIngredientNameToId(ing) || ing.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
-        return { amount: 0, name: ing, id };
+        return { amount: 0, name: ing, id, unit: '' };
       });
     } else if (recipe.ingredients) {
       // Ensure existing ingredient objects have proper IDs
@@ -816,7 +864,7 @@ async function generateRecipePage(site, recipe, allRecipes, categories, partials
                     recipeId: '<%= recipe.slug %>',
                     yield: <%= recipe.yield || 12 %>,
                     servingSize: 75,
-                    ingredients: <%- JSON.stringify(recipe.ingredients.map(ing => ({ id: ing.id, name: ing.name, amount: ing.amount }))).replace(/"/g, "'") %>,
+                    ingredients: <%- JSON.stringify(recipe.ingredients.map(ing => ({ id: ing.id, name: ing.name, amount: ing.amount, unit: ing.unit || 'g', displayAmount: ing.displayAmount || ing.amount }))).replace(/"/g, "'") %>,
                     baseNutrition: { calories: <%= recipe.nutrition.calories %>, protein: <%= recipe.nutrition.protein %>, fat: <%= recipe.nutrition.fat %>, carbs: <%= recipe.nutrition.carbs %>, fiber: <%= recipe.nutrition.fiber || 0 %>, sugar: <%= recipe.nutrition.sugar || 0 %> }
                 })">
                     <div class="flex justify-between items-center mb-6">

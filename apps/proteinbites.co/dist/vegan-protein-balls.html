@@ -126,8 +126,8 @@
   },
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "ratingCount": "202",
+    "ratingValue": "4.8",
+    "ratingCount": "240",
     "bestRating": "5",
     "worstRating": "1"
   },
@@ -329,7 +329,7 @@
                     recipeId: 'vegan-protein-balls',
                     yield: 20,
                     servingSize: 75,
-                    ingredients: [{'id':'rolled-oats','name':'rolled oats','amount':180},{'id':'pea-protein','name':'vanilla pea protein powder','amount':60},{'id':'almond-butter','name':'almond butter','amount':128},{'id':'maple-syrup','name':'maple syrup','amount':80},{'id':'chocolate-chips','name':'vegan chocolate chips','amount':60},{'id':'vanilla-extract','name':'5ml vanilla extract','amount':0}],
+                    ingredients: [{'id':'rolled-oats','name':'rolled oats','amount':180,'unit':'g','displayAmount':180},{'id':'pea-protein','name':'vanilla pea protein powder','amount':60,'unit':'g','displayAmount':60},{'id':'almond-butter','name':'almond butter','amount':128,'unit':'g','displayAmount':128},{'id':'maple-syrup','name':'maple syrup','amount':80,'unit':'g','displayAmount':80},{'id':'chocolate-chips','name':'vegan chocolate chips','amount':60,'unit':'g','displayAmount':60},{'id':'vanilla-extract','name':'5ml vanilla extract','amount':0,'unit':'g','displayAmount':0}],
                     baseNutrition: { calories: 155, protein: 16, fat: 7, carbs: 16, fiber: 4, sugar: 8 }
                 })">
                     <div class="flex justify-between items-center mb-6">
@@ -552,6 +552,32 @@
     </section>
 
     <!-- Related Recipes -->
+    
+    <section class="py-16 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="anton-text text-3xl text-center mb-10 uppercase tracking-wider">YOU MIGHT ALSO LIKE</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                
+                    
+<!-- Recipe Card (matching ProteinMuffins.com) -->
+<a href="/dairy-free-tahini-date-protein-bites.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+    <div class="relative aspect-square overflow-hidden">
+        <img src="/recipe_images/dairy-free-tahini-date-protein-bites.png" alt="Dairy-Free Tahini Date Protein Bites" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-3 py-1 rounded-lg shadow-lg">
+            7g
+        </div>
+        <div class="recipe-overlay absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition-opacity duration-300"></div>
+    </div>
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 mb-1 group-hover:text-brand-600 transition-colors">Dairy-Free Tahini Date Protein Bites</h3>
+        <p class="text-sm text-slate-500">85 cal • 40m • Easy</p>
+    </div>
+</a>
+
+                
+            </div>
+        </div>
+    </section>
     
 
     <!-- CTA Banner -->
