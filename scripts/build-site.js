@@ -816,7 +816,8 @@ async function generateRecipePage(site, recipe, allRecipes, categories, partials
                     recipeId: '<%= recipe.slug %>',
                     yield: <%= recipe.yield || 12 %>,
                     servingSize: 75,
-                    ingredients: <%- JSON.stringify(recipe.ingredients.map(ing => ({ id: ing.id, name: ing.name, amount: ing.amount }))).replace(/"/g, "'") %>
+                    ingredients: <%- JSON.stringify(recipe.ingredients.map(ing => ({ id: ing.id, name: ing.name, amount: ing.amount }))).replace(/"/g, "'") %>,
+                    baseNutrition: { calories: <%= recipe.nutrition.calories %>, protein: <%= recipe.nutrition.protein %>, fat: <%= recipe.nutrition.fat %>, carbs: <%= recipe.nutrition.carbs %>, fiber: <%= recipe.nutrition.fiber || 0 %>, sugar: <%= recipe.nutrition.sugar || 0 %> }
                 })">
                     <div class="flex justify-between items-center mb-6">
                         <h2 class="anton-text text-2xl uppercase tracking-wider">INGREDIENTS</h2>
@@ -926,10 +927,14 @@ async function generateRecipePage(site, recipe, allRecipes, categories, partials
                         </template>
                     </div>
                     
-                    <!-- USDA Nutrition Facts Label -->
-                    <div class="mt-6 bg-white rounded-2xl border-4 border-slate-900 p-4">
+                    <!-- USDA Nutrition Facts Label (Real-time updating) -->
+                    <div class="mt-6 bg-white rounded-2xl border-4 border-slate-900 p-4 transition-all duration-300" :class="{ 'border-brand-500 shadow-lg shadow-brand-100': checkHasSubstitutions() }">
                         <div class="border-b-8 border-slate-900 pb-1 mb-2">
                             <h3 class="text-3xl font-black tracking-tight">Nutrition Facts</h3>
+                            <p x-show="checkHasSubstitutions()" x-cloak class="text-xs text-brand-600 font-semibold mt-1 flex items-center gap-1">
+                                <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clip-rule="evenodd"></path></svg>
+                                Updated with substitutions
+                            </p>
                         </div>
                         <div class="border-b border-slate-900 pb-1 mb-1">
                             <p class="text-sm"><span class="font-bold"><%= recipe.yield || 12 %></span> servings per recipe</p>
@@ -942,28 +947,28 @@ async function generateRecipePage(site, recipe, allRecipes, categories, partials
                             <p class="text-sm font-bold">Amount per serving</p>
                             <div class="flex justify-between items-baseline">
                                 <p class="text-4xl font-black">Calories</p>
-                                <p class="text-4xl font-black"><%= recipe.nutrition.calories %></p>
+                                <p class="text-4xl font-black transition-colors duration-300" :class="{ 'text-brand-600': getNutritionCalories() !== baseNutrition.calories }" x-text="getNutritionCalories()"><%= recipe.nutrition.calories %></p>
                             </div>
                         </div>
                         <div class="text-right text-xs font-bold border-b border-slate-300 py-1">% Daily Value*</div>
                         <div class="border-b border-slate-300 py-1 flex justify-between">
-                            <p><span class="font-bold">Total Fat</span> <%= recipe.nutrition.fat %>g</p>
-                            <p class="font-bold"><%= Math.round((recipe.nutrition.fat / 78) * 100) %>%</p>
+                            <p><span class="font-bold">Total Fat</span> <span x-text="getNutritionFat()" :class="{ 'text-brand-600 font-semibold': getNutritionFat() !== baseNutrition.fat }"><%= recipe.nutrition.fat %></span>g</p>
+                            <p class="font-bold" :class="{ 'text-brand-600': getNutritionFat() !== baseNutrition.fat }" x-text="getDVFat() + '%'"><%= Math.round((recipe.nutrition.fat / 78) * 100) %>%</p>
                         </div>
                         <div class="border-b border-slate-300 py-1 flex justify-between">
-                            <p><span class="font-bold">Total Carbohydrate</span> <%= recipe.nutrition.carbs %>g</p>
-                            <p class="font-bold"><%= Math.round((recipe.nutrition.carbs / 275) * 100) %>%</p>
+                            <p><span class="font-bold">Total Carbohydrate</span> <span x-text="getNutritionCarbs()" :class="{ 'text-brand-600 font-semibold': getNutritionCarbs() !== baseNutrition.carbs }"><%= recipe.nutrition.carbs %></span>g</p>
+                            <p class="font-bold" :class="{ 'text-brand-600': getNutritionCarbs() !== baseNutrition.carbs }" x-text="getDVCarbs() + '%'"><%= Math.round((recipe.nutrition.carbs / 275) * 100) %>%</p>
                         </div>
                         <div class="border-b border-slate-300 py-1 pl-4 flex justify-between">
-                            <p>Dietary Fiber <%= recipe.nutrition.fiber %>g</p>
-                            <p class="font-bold"><%= Math.round((recipe.nutrition.fiber / 28) * 100) %>%</p>
+                            <p>Dietary Fiber <span x-text="getNutritionFiber()" :class="{ 'text-brand-600 font-semibold': getNutritionFiber() !== baseNutrition.fiber }"><%= recipe.nutrition.fiber || 0 %></span>g</p>
+                            <p class="font-bold" :class="{ 'text-brand-600': getNutritionFiber() !== baseNutrition.fiber }" x-text="getDVFiber() + '%'"><%= Math.round(((recipe.nutrition.fiber || 0) / 28) * 100) %>%</p>
                         </div>
                         <div class="border-b border-slate-300 py-1 pl-4">
-                            <p>Total Sugars <%= recipe.nutrition.sugar %>g</p>
+                            <p>Total Sugars <span x-text="getNutritionSugar()"><%= recipe.nutrition.sugar || 0 %></span>g</p>
                         </div>
                         <div class="border-b-8 border-slate-900 py-1 flex justify-between">
-                            <p><span class="font-bold">Protein</span> <%= recipe.nutrition.protein %>g</p>
-                            <p class="font-bold"><%= Math.round((recipe.nutrition.protein / 50) * 100) %>%</p>
+                            <p><span class="font-bold">Protein</span> <span x-text="getNutritionProtein()" :class="{ 'text-brand-600 font-semibold': getNutritionProtein() !== baseNutrition.protein }"><%= recipe.nutrition.protein %></span>g</p>
+                            <p class="font-bold" :class="{ 'text-brand-600': getNutritionProtein() !== baseNutrition.protein }" x-text="getDVProtein() + '%'"><%= Math.round((recipe.nutrition.protein / 50) * 100) %>%</p>
                         </div>
                         <p class="text-xs mt-2 text-slate-500">*The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.</p>
                         <div class="mt-3 pt-3 border-t border-slate-200">
