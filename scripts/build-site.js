@@ -88,14 +88,61 @@ async function buildSite(domain) {
     if (!recipe.categories) {
       recipe.categories = [recipe.category?.toLowerCase() || 'classic'];
     }
+    // Helper function to format ingredient name properly
+    const formatIngredientName = (name) => {
+      // Capitalize first letter of each word, handle special cases
+      return name
+        .replace(/[-_]/g, ' ')
+        .replace(/\b\w/g, c => c.toUpperCase())
+        .replace(/\bOf\b/g, 'of')
+        .replace(/\bAnd\b/g, 'and');
+    };
+    
+    // Helper function to parse fractions like "1/2" to decimal
+    const parseFraction = (str) => {
+      if (!str) return 0;
+      str = str.trim();
+      // Handle mixed numbers like "1 1/2"
+      const mixedMatch = str.match(/^(\d+)\s+(\d+)\/(\d+)$/);
+      if (mixedMatch) {
+        return parseInt(mixedMatch[1]) + parseInt(mixedMatch[2]) / parseInt(mixedMatch[3]);
+      }
+      // Handle simple fractions like "1/2"
+      const fractionMatch = str.match(/^(\d+)\/(\d+)$/);
+      if (fractionMatch) {
+        return parseInt(fractionMatch[1]) / parseInt(fractionMatch[2]);
+      }
+      // Handle decimal numbers
+      return parseFloat(str) || 0;
+    };
+    
     // Parse string ingredients into objects if needed
     if (recipe.ingredients && typeof recipe.ingredients[0] === 'string') {
       recipe.ingredients = recipe.ingredients.map(ing => {
+        // Handle ml-based ingredients: "60ml almond milk", "120ml warm water"
+        const mlMatch = ing.match(/^(\d+)ml\s+(.+)$/i);
+        if (mlMatch) {
+          const mlAmount = parseInt(mlMatch[1]);
+          const rawName = mlMatch[2];
+          const name = formatIngredientName(rawName);
+          const id = mapIngredientNameToId(rawName) || rawName.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+          // Convert ml to grams (approximate: 1ml ≈ 1g for most liquids)
+          return { 
+            amount: mlAmount, 
+            displayAmount: mlAmount,
+            name, 
+            id, 
+            unit: 'ml',
+            originalText: ing
+          };
+        }
+        
         // Handle gram-based ingredients: "240g cream cheese"
         const gramMatch = ing.match(/^(\d+)g\s+(.+)$/);
         if (gramMatch) {
-          const name = gramMatch[2];
-          const id = mapIngredientNameToId(name) || name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+          const rawName = gramMatch[2];
+          const name = formatIngredientName(rawName);
+          const id = mapIngredientNameToId(rawName) || rawName.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
           return { amount: parseInt(gramMatch[1]), name, id, unit: 'g' };
         }
         
@@ -118,13 +165,14 @@ async function buildSite(domain) {
           };
         }
         
-        // Handle tsp/tbsp measurements: "1 tsp vanilla extract"
-        const tspMatch = ing.match(/^([\d.]+)\s*(tsp|tbsp|teaspoon|tablespoon)s?\s+(.+)$/i);
-        if (tspMatch) {
-          const amount = parseFloat(tspMatch[1]);
-          const unit = tspMatch[2].toLowerCase().startsWith('tb') ? 'tbsp' : 'tsp';
-          const name = tspMatch[3];
-          const id = mapIngredientNameToId(name) || name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+        // Handle fractional tsp/tbsp: "1/2 tsp cinnamon", "1 1/2 tbsp honey"
+        const fractionTspMatch = ing.match(/^([\d\s\/]+)\s*(tsp|tbsp|teaspoon|tablespoon)s?\s+(.+)$/i);
+        if (fractionTspMatch) {
+          const amount = parseFraction(fractionTspMatch[1]);
+          const unit = fractionTspMatch[2].toLowerCase().startsWith('tb') ? 'tbsp' : 'tsp';
+          const rawName = fractionTspMatch[3];
+          const name = formatIngredientName(rawName);
+          const id = mapIngredientNameToId(rawName) || rawName.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
           // Convert to grams: 1 tsp ≈ 5g, 1 tbsp ≈ 15g
           const gramsPerUnit = unit === 'tbsp' ? 15 : 5;
           return { 
@@ -137,16 +185,57 @@ async function buildSite(domain) {
           };
         }
         
-        // Handle generic number + ingredient: "2 large eggs" fallback, "100g almond flour for crust"
+        // Handle fractional amounts with ingredients: "1/2 ripe banana", "1 1/2 cups flour"
+        const fractionIngMatch = ing.match(/^([\d\s\/]+)\s+(.+)$/i);
+        if (fractionIngMatch && fractionIngMatch[1].includes('/')) {
+          const amount = parseFraction(fractionIngMatch[1]);
+          const rawName = fractionIngMatch[2];
+          const name = formatIngredientName(rawName);
+          const id = mapIngredientNameToId(rawName) || rawName.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+          // Estimate grams based on common ingredients
+          let estimatedGrams = Math.round(amount * 100); // Default: assume 100g per unit
+          if (/banana/i.test(rawName)) estimatedGrams = Math.round(amount * 120); // 1 banana ≈ 120g
+          if (/apple/i.test(rawName)) estimatedGrams = Math.round(amount * 180); // 1 apple ≈ 180g
+          if (/cup/i.test(rawName)) estimatedGrams = Math.round(amount * 240); // 1 cup ≈ 240ml/g
+          return { 
+            amount: estimatedGrams, 
+            displayAmount: fractionIngMatch[1].trim(),
+            name, 
+            id, 
+            unit: '',
+            originalText: ing
+          };
+        }
+        
+        // Handle "pinch of" ingredients
+        const pinchMatch = ing.match(/^pinch\s+(of\s+)?(.+)$/i);
+        if (pinchMatch) {
+          const rawName = pinchMatch[2];
+          const name = formatIngredientName(rawName);
+          const id = mapIngredientNameToId(rawName) || rawName.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+          return { 
+            amount: 1, 
+            displayAmount: 'pinch',
+            name, 
+            id, 
+            unit: '',
+            originalText: ing
+          };
+        }
+        
+        // Handle generic number + ingredient: "100 almond flour for crust"
         const genericMatch = ing.match(/^(\d+)\s+(.+)$/);
         if (genericMatch) {
-          const name = genericMatch[2];
-          const id = mapIngredientNameToId(name) || name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+          const rawName = genericMatch[2];
+          const name = formatIngredientName(rawName);
+          const id = mapIngredientNameToId(rawName) || rawName.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
           return { amount: parseInt(genericMatch[1]), name, id, unit: 'g' };
         }
         
+        // Fallback for unmatched ingredients - keep the original text as name
+        const name = formatIngredientName(ing);
         const id = mapIngredientNameToId(ing) || ing.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
-        return { amount: 0, name: ing, id, unit: '' };
+        return { amount: 0, displayAmount: '', name, id, unit: '' };
       });
     } else if (recipe.ingredients) {
       // Ensure existing ingredient objects have proper IDs

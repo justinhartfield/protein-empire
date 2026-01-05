@@ -386,9 +386,21 @@ export function createRecipeSubstitution(config) {
     },
 
     getFormattedAmount(ing) {
-      // Handle special units (eggs, tsp, tbsp)
-      if (ing.unit && ing.unit !== 'g') {
-        const displayAmt = ing.displayAmount || ing.amount;
+      // Handle "pinch" display
+      if (ing.displayAmount === 'pinch') {
+        return 'pinch';
+      }
+      // Handle fractional display amounts (like "1/2")
+      if (typeof ing.displayAmount === 'string' && ing.displayAmount.includes('/')) {
+        return ing.displayAmount;
+      }
+      // Handle special units (eggs, tsp, tbsp, ml)
+      if (ing.unit && ing.unit !== 'g' && ing.unit !== '') {
+        const displayAmt = ing.displayAmount !== undefined ? ing.displayAmount : ing.amount;
+        // For ml, just show the number with ml
+        if (ing.unit === 'ml') {
+          return `${displayAmt}ml`;
+        }
         return `${displayAmt} ${ing.unit}`;
       }
       // Default to grams
