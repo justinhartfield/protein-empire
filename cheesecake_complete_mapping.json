@@ -1,0 +1,160 @@
+{
+  "site": "proteincheesecake-co",
+  "analysis_date": "2026-01-05",
+  "unique_images_with_actual_content": {
+    "banana-cream-cheesecake.png": {
+      "actual_shows": "BANANA cheesecake with banana slices, whipped cream",
+      "correct_recipe": "banana-cream-cheesecake",
+      "wrong_duplicate": "classic-vanilla-bean-cheesecake.png"
+    },
+    "blueberry-swirl-cheesecake.png": {
+      "actual_shows": "BLUEBERRY swirl cheesecake with fresh blueberries",
+      "correct_recipe": "lemon-blueberry-cheesecake-minis",
+      "wrong_duplicate": "no-bake-chocolate-cheesecake.png"
+    },
+    "brownie-batter-dip.png": {
+      "actual_shows": "MATCHA/GREEN TEA cheesecake - bright green color",
+      "correct_recipe": "matcha-green-tea-cheesecake",
+      "wrong_duplicate": "matcha-cheesecake.png"
+    },
+    "caramel-apple-cheesecake.png": {
+      "actual_shows": "CARAMEL APPLE cheesecake with diced apples, caramel drizzle, fall leaves",
+      "correct_recipe": "caramel-apple-cheesecake",
+      "wrong_duplicate": "lemon-blueberry-cheesecake-minis.png"
+    },
+    "caramel-pecan-cheesecake.png": {
+      "actual_shows": "CHOCOLATE cheesecake - dark chocolate, chocolate shavings, mint garnish",
+      "correct_recipe": "no-bake-chocolate-cheesecake OR single-serving-chocolate-cheesecake",
+      "wrong_duplicate": "chocolate-protein-cheesecake.png"
+    },
+    "cheesecake-bars.png": {
+      "actual_shows": "CLASSIC cheesecake bars - stacked vanilla bars with mixed berries",
+      "correct_recipe": "cheesecake-bars",
+      "wrong_duplicate": "single-serving-peanut-butter-cheesecake.png"
+    },
+    "cheesecake-stuffed-strawberries.png": {
+      "actual_shows": "Strawberries stuffed with cream cheese, chocolate drizzle",
+      "correct_recipe": "cheesecake-stuffed-strawberries",
+      "wrong_duplicate": "funfetti-cheesecake-dip.png"
+    },
+    "chocolate-hazelnut-cheesecake.png": {
+      "actual_shows": "OREO/COOKIES AND CREAM cheesecake - Oreo crust, Oreo pieces, whipped cream",
+      "correct_recipe": "cookies-and-cream-cheesecake OR no-bake-oreo-cheesecake-bites",
+      "wrong_duplicate": "oreo-protein-cheesecake.png"
+    },
+    "chocolate-peanut-butter-cheesecake.png": {
+      "actual_shows": "CHOCOLATE PEANUT BUTTER layered cheesecake with PB cups",
+      "correct_recipe": "single-serving-peanut-butter-cheesecake",
+      "wrong_duplicate": "pumpkin-spice-cheesecake.png"
+    },
+    "cinnamon-roll-cheesecake.png": {
+      "actual_shows": "CINNAMON ROLL cheesecake with swirled cinnamon, cream cheese frosting",
+      "correct_recipe": "cinnamon-roll-cheesecake",
+      "wrong_duplicate": "mint-chocolate-chip-cheesecake.png"
+    },
+    "classic-protein-cheesecake.png": {
+      "actual_shows": "CLASSIC VANILLA cheesecake - plain white/cream with mixed berries",
+      "correct_recipe": "classic-vanilla-bean-cheesecake",
+      "wrong_duplicate": "cookies-and-cream-cheesecake.png"
+    },
+    "coconut-cheesecake.png": {
+      "actual_shows": "S'MORES cheesecake - graham cracker, chocolate, marshmallow",
+      "correct_recipe": "s-mores-cheesecake-dip",
+      "wrong_duplicate": "s-mores-cheesecake-dip.png"
+    },
+    "cookie-dough-cheesecake-dip.png": {
+      "actual_shows": "PUMPKIN cheesecake - orange color, whipped cream, pumpkin puree, fall setting",
+      "correct_recipe": "pumpkin-spice-cheesecake",
+      "wrong_duplicate": "pumpkin-protein-cheesecake.png"
+    },
+    "cottage-cheese-protein-cheesecake.png": {
+      "actual_shows": "CLASSIC VANILLA cheesecake with fresh berries - plain white slice",
+      "correct_recipe": "classic-vanilla-bean-cheesecake OR cottage-cheese-protein-cheesecake",
+      "wrong_duplicate": "matcha-green-tea-cheesecake.png"
+    },
+    "eggnog-cheesecake.png": {
+      "actual_shows": "SALTED CARAMEL PECAN cheesecake - caramel drizzle, pecans, sea salt",
+      "correct_recipe": "caramel-pecan-cheesecake",
+      "wrong_duplicate": "salted-caramel-cheesecake.png"
+    },
+    "gingerbread-cheesecake.png": {
+      "actual_shows": "MINI CHEESECAKES - assorted mini cheesecakes with various toppings on wood board",
+      "correct_recipe": "mini-cheesecakes",
+      "wrong_duplicate": "mini-cheesecakes.png"
+    },
+    "greek-yogurt-protein-cheesecake.png": {
+      "actual_shows": "GREEK YOGURT cheesecake - white slice with fresh fruit, honey, figs",
+      "correct_recipe": "greek-yogurt-protein-cheesecake",
+      "wrong_duplicate": "no-bake-oreo-cheesecake-bites.png"
+    },
+    "key-lime-cheesecake.png": {
+      "actual_shows": "KEY LIME cheesecake - green tinted, limes in background",
+      "correct_recipe": "key-lime-cheesecake",
+      "wrong_duplicate": null
+    },
+    "lemon-protein-cheesecake.png": {
+      "actual_shows": "LEMON cheesecake - bright yellow, lemons in background, lemon zest",
+      "correct_recipe": "lemon-blueberry-cheesecake-minis OR no-bake-lemon-cheesecake",
+      "wrong_duplicate": "single-serving-chocolate-cheesecake.png"
+    },
+    "no-bake-lemon-cheesecake.png": {
+      "actual_shows": "NO-BAKE CLASSIC cheesecake - white/cream slice with mixed berries",
+      "correct_recipe": "no-bake-protein-cheesecake",
+      "wrong_duplicate": "no-bake-protein-cheesecake.png"
+    },
+    "peanut-butter-protein-cheesecake.png": {
+      "actual_shows": "PEANUT BUTTER cheesecake - tan color, PB drizzle, PB cups, protein powder",
+      "correct_recipe": "single-serving-peanut-butter-cheesecake",
+      "wrong_duplicate": "single-serving-strawberry-cheesecake.png"
+    },
+    "raspberry-white-chocolate-cheesecake.png": {
+      "actual_shows": "RASPBERRY WHITE CHOCOLATE cheesecake - raspberry swirls, white chocolate curls, roses",
+      "correct_recipe": "raspberry-white-chocolate-cheesecake",
+      "wrong_duplicate": null
+    },
+    "red-velvet-cheesecake.png": {
+      "actual_shows": "RED VELVET cheesecake - deep red color, cream cheese swirl, raspberries",
+      "correct_recipe": "red-velvet-cheesecake",
+      "wrong_duplicate": null
+    },
+    "strawberry-swirl-cheesecake.png": {
+      "actual_shows": "STRAWBERRY SWIRL cheesecake - pink swirls, fresh strawberries",
+      "correct_recipe": "strawberry-swirl-cheesecake",
+      "wrong_duplicate": null
+    },
+    "tiramisu-cheesecake.png": {
+      "actual_shows": "TIRAMISU cheesecake - coffee/cocoa dusted, ladyfingers, espresso",
+      "correct_recipe": "tiramisu-cheesecake",
+      "wrong_duplicate": null
+    }
+  },
+  "correct_recipe_to_image_mapping": {
+    "classic-vanilla-bean-cheesecake": "classic-protein-cheesecake.png",
+    "no-bake-chocolate-cheesecake": "caramel-pecan-cheesecake.png",
+    "strawberry-swirl-cheesecake": "strawberry-swirl-cheesecake.png",
+    "lemon-blueberry-cheesecake-minis": "blueberry-swirl-cheesecake.png",
+    "single-serving-peanut-butter-cheesecake": "peanut-butter-protein-cheesecake.png",
+    "funfetti-cheesecake-dip": "NEEDS_NEW_IMAGE",
+    "pumpkin-spice-cheesecake": "cookie-dough-cheesecake-dip.png",
+    "key-lime-cheesecake": "key-lime-cheesecake.png",
+    "caramel-pecan-cheesecake": "eggnog-cheesecake.png",
+    "mint-chocolate-chip-cheesecake": "NEEDS_NEW_IMAGE",
+    "raspberry-white-chocolate-cheesecake": "raspberry-white-chocolate-cheesecake.png",
+    "cookies-and-cream-cheesecake": "chocolate-hazelnut-cheesecake.png",
+    "s-mores-cheesecake-dip": "NEEDS_NEW_IMAGE",
+    "red-velvet-cheesecake": "red-velvet-cheesecake.png",
+    "matcha-green-tea-cheesecake": "brownie-batter-dip.png",
+    "no-bake-oreo-cheesecake-bites": "NEEDS_NEW_IMAGE",
+    "single-serving-chocolate-cheesecake": "caramel-pecan-cheesecake.png",
+    "brownie-batter-dip": "NEEDS_NEW_IMAGE",
+    "gingerbread-cheesecake": "NEEDS_NEW_IMAGE",
+    "no-bake-lemon-cheesecake": "lemon-protein-cheesecake.png",
+    "chocolate-hazelnut-cheesecake": "NEEDS_NEW_IMAGE",
+    "single-serving-strawberry-cheesecake": "strawberry-swirl-cheesecake.png",
+    "cookie-dough-cheesecake-dip": "NEEDS_NEW_IMAGE",
+    "eggnog-cheesecake": "NEEDS_NEW_IMAGE",
+    "tiramisu-cheesecake": "tiramisu-cheesecake.png",
+    "gluten-free-almond-crust-protein-cheesecake": "NEEDS_NEW_IMAGE",
+    "dairy-free-cashew-protein-cheesecake": "NEEDS_NEW_IMAGE"
+  }
+}

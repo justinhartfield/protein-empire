@@ -1,0 +1,64 @@
+CHEESECAKE SITE - UNIQUE IMAGES ANALYSIS
+==========================================
+
+There are 25 unique images. Each needs to be analyzed to determine what it actually shows.
+
+DUPLICATE PAIRS (same image content, different filenames):
+1. banana-cream-cheesecake.png = classic-vanilla-bean-cheesecake.png
+2. blueberry-swirl-cheesecake.png = no-bake-chocolate-cheesecake.png
+3. brownie-batter-dip.png = matcha-cheesecake.png
+4. caramel-apple-cheesecake.png = lemon-blueberry-cheesecake-minis.png
+5. caramel-pecan-cheesecake.png = chocolate-protein-cheesecake.png
+6. cheesecake-bars.png = single-serving-peanut-butter-cheesecake.png
+7. cheesecake-stuffed-strawberries.png = funfetti-cheesecake-dip.png
+8. chocolate-hazelnut-cheesecake.png = oreo-protein-cheesecake.png
+9. chocolate-peanut-butter-cheesecake.png = pumpkin-spice-cheesecake.png
+10. cinnamon-roll-cheesecake.png = mint-chocolate-chip-cheesecake.png
+11. classic-protein-cheesecake.png = cookies-and-cream-cheesecake.png
+12. coconut-cheesecake.png = s-mores-cheesecake-dip.png
+13. cookie-dough-cheesecake-dip.png = pumpkin-protein-cheesecake.png
+14. cottage-cheese-protein-cheesecake.png = matcha-green-tea-cheesecake.png
+15. eggnog-cheesecake.png = salted-caramel-cheesecake.png
+16. gingerbread-cheesecake.png = mini-cheesecakes.png
+17. greek-yogurt-protein-cheesecake.png = no-bake-oreo-cheesecake-bites.png
+18. lemon-protein-cheesecake.png = single-serving-chocolate-cheesecake.png
+19. no-bake-lemon-cheesecake.png = no-bake-protein-cheesecake.png
+20. peanut-butter-protein-cheesecake.png = single-serving-strawberry-cheesecake.png
+
+UNIQUE (no duplicates):
+21. key-lime-cheesecake.png
+22. raspberry-white-chocolate-cheesecake.png
+23. red-velvet-cheesecake.png
+24. strawberry-swirl-cheesecake.png
+25. tiramisu-cheesecake.png
+
+RECIPES (29 total):
+1. classic-vanilla-bean-cheesecake
+2. no-bake-chocolate-cheesecake
+3. strawberry-swirl-cheesecake
+4. lemon-blueberry-cheesecake-minis
+5. single-serving-peanut-butter-cheesecake
+6. funfetti-cheesecake-dip
+7. pumpkin-spice-cheesecake
+8. key-lime-cheesecake
+9. caramel-pecan-cheesecake
+10. mint-chocolate-chip-cheesecake
+11. raspberry-white-chocolate-cheesecake
+12. cookies-and-cream-cheesecake
+13. s-mores-cheesecake-dip
+14. red-velvet-cheesecake
+15. matcha-green-tea-cheesecake
+16. no-bake-oreo-cheesecake-bites
+17. single-serving-chocolate-cheesecake
+18. brownie-batter-dip
+19. gingerbread-cheesecake
+20. no-bake-lemon-cheesecake
+21. chocolate-hazelnut-cheesecake
+22. single-serving-strawberry-cheesecake
+23. cookie-dough-cheesecake-dip
+24. eggnog-cheesecake
+25. tiramisu-cheesecake
+26. gluten-free-almond-crust-protein-cheesecake (NEEDS NEW IMAGE)
+27. dairy-free-cashew-protein-cheesecake (NEEDS NEW IMAGE)
+28. gluten-free-almond-crust-protein-cheesecake (duplicate)
+29. dairy-free-cashew-protein-cheesecake (duplicate)
