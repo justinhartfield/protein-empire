@@ -371,7 +371,7 @@ function getFooterPartial() {
             <!-- Brand -->
             <div class="md:col-span-1">
                 <a href="/" class="flex items-center mb-4">
-                    <img src="/images/logo.png" alt="<%= site.name %>" class="h-12 md:h-16 w-auto">
+                    <img src="/images/logo.png" alt="<%= site.name %>" class="h-12 w-auto">
                     
                 </a>
                 <p class="text-slate-400 text-sm"><%= site.tagline %></p>
