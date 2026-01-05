@@ -332,8 +332,8 @@ function getNavPartial() {
         <div class="flex justify-between items-center h-20">
             <div class="flex items-center">
                 <a href="/" class="flex items-center">
-                    <img src="/images/logo.png" alt="<%= site.name %>" class="h-12 w-12 rounded-lg mr-3">
-                    <span class="anton-text text-2xl text-slate-900 tracking-wider uppercase"><%= site.name.toUpperCase() %></span>
+                    <img src="/images/logo.png" alt="<%= site.name %>" class="h-12 md:h-16 w-auto">
+                    
                 </a>
             </div>
             <nav class="hidden md:flex space-x-8 items-center">
@@ -371,8 +371,8 @@ function getFooterPartial() {
             <!-- Brand -->
             <div class="md:col-span-1">
                 <a href="/" class="flex items-center mb-4">
-                    <img src="/images/logo.png" alt="<%= site.name %>" class="h-12 w-12 rounded-lg mr-3">
-                    <span class="anton-text text-xl tracking-wider"><%= site.name.toUpperCase() %></span>
+                    <img src="/images/logo.png" alt="<%= site.name %>" class="h-12 md:h-16 w-auto">
+                    
                 </a>
                 <p class="text-slate-400 text-sm"><%= site.tagline %></p>
             </div>
