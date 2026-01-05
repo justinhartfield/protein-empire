@@ -169,6 +169,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://proteincookies.co/gluten-free-oat-flour-protein-cookies.html</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proteincookies.co/dairy-free-peanut-butter-protein-cookies.html</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://proteincookies.co/category-all.html</loc>
     <lastmod>2026-01-05</lastmod>
     <changefreq>weekly</changefreq>
@@ -242,6 +254,18 @@
   </url>
   <url>
     <loc>https://proteincookies.co/pack-high-protein.html</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://proteincookies.co/pack-gluten-free-dairy-free.html</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://proteincookies.co/pack-gluten-free-dairy-free.html</loc>
     <lastmod>2026-01-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

@@ -31,6 +31,24 @@ export function createRecipeSubstitution(config) {
     hydrationAdjustments: [],
     nutritionDeltas: [],
     batchNutritionDeltas: [],
+    // Base nutrition values (per serving) from recipe
+    baseNutrition: {
+      calories: config.baseNutrition?.calories || 0,
+      protein: config.baseNutrition?.protein || 0,
+      fat: config.baseNutrition?.fat || 0,
+      carbs: config.baseNutrition?.carbs || 0,
+      fiber: config.baseNutrition?.fiber || 0,
+      sugar: config.baseNutrition?.sugar || 0
+    },
+    // Current calculated nutrition (updated on swap)
+    currentNutrition: {
+      calories: 0,
+      protein: 0,
+      fat: 0,
+      carbs: 0,
+      fiber: 0,
+      sugar: 0
+    },
 
     init() {
       // Deep clone original ingredients
@@ -40,6 +58,8 @@ export function createRecipeSubstitution(config) {
         ing.isSwapped = false;
         ing.originalAmount = ing.amount;
       });
+      // Initialize current nutrition to base values
+      this.currentNutrition = { ...this.baseNutrition };
       this.recalculate();
     },
 
@@ -145,6 +165,78 @@ export function createRecipeSubstitution(config) {
     recalculate() {
       this.calculateHydration();
       this.calculateNutrition();
+      this.updateCurrentNutrition();
+    },
+
+    // Update the current nutrition values based on deltas
+    updateCurrentNutrition() {
+      const servings = this.yield;
+      let calDelta = 0, proteinDelta = 0, fatDelta = 0, carbsDelta = 0, fiberDelta = 0;
+
+      this.currentIngredients.forEach(ing => {
+        if (!ing.isSwapped) return;
+        const originalIng = this.getIngredient(ing.originalId);
+        const newIng = this.getIngredient(ing.id);
+        if (!originalIng || !newIng) return;
+
+        const originalAmount = ing.originalAmount;
+        const newAmount = ing.amount;
+
+        const calcDelta = (macro) => {
+          const originalValue = (originalIng.macrosPer100g[macro] / 100) * originalAmount;
+          const newValue = (newIng.macrosPer100g[macro] / 100) * newAmount;
+          return newValue - originalValue;
+        };
+
+        calDelta += calcDelta('calories');
+        proteinDelta += calcDelta('protein');
+        fatDelta += calcDelta('fat');
+        carbsDelta += calcDelta('carbs');
+        fiberDelta += calcDelta('fiber');
+      });
+
+      // Update current nutrition (per serving)
+      this.currentNutrition = {
+        calories: Math.round(this.baseNutrition.calories + (calDelta / servings)),
+        protein: Math.round(this.baseNutrition.protein + (proteinDelta / servings)),
+        fat: Math.round(this.baseNutrition.fat + (fatDelta / servings)),
+        carbs: Math.round(this.baseNutrition.carbs + (carbsDelta / servings)),
+        fiber: Math.round(this.baseNutrition.fiber + (fiberDelta / servings)),
+        sugar: this.baseNutrition.sugar // Sugar doesn't change much with our swaps
+      };
+    },
+
+    // Getter functions for the nutrition label
+    getNutritionCalories() {
+      return this.currentNutrition.calories;
+    },
+    getNutritionProtein() {
+      return this.currentNutrition.protein;
+    },
+    getNutritionFat() {
+      return this.currentNutrition.fat;
+    },
+    getNutritionCarbs() {
+      return this.currentNutrition.carbs;
+    },
+    getNutritionFiber() {
+      return this.currentNutrition.fiber;
+    },
+    getNutritionSugar() {
+      return this.currentNutrition.sugar;
+    },
+    // Daily Value percentage calculations
+    getDVFat() {
+      return Math.round((this.currentNutrition.fat / 78) * 100);
+    },
+    getDVCarbs() {
+      return Math.round((this.currentNutrition.carbs / 275) * 100);
+    },
+    getDVFiber() {
+      return Math.round((this.currentNutrition.fiber / 28) * 100);
+    },
+    getDVProtein() {
+      return Math.round((this.currentNutrition.protein / 50) * 100);
     },
 
     calculateHydration() {
@@ -294,6 +386,12 @@ export function createRecipeSubstitution(config) {
     },
 
     getFormattedAmount(ing) {
+      // Handle special units (eggs, tsp, tbsp)
+      if (ing.unit && ing.unit !== 'g') {
+        const displayAmt = ing.displayAmount || ing.amount;
+        return `${displayAmt} ${ing.unit}`;
+      }
+      // Default to grams
       if (this.unitSystem === 'metric') {
         return `${ing.amount}g`;
       }

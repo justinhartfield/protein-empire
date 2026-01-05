@@ -169,6 +169,30 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://proteinbars.co/gluten-free-chocolate-peanut-butter-protein-bars.html</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proteinbars.co/dairy-free-coconut-almond-protein-bars.html</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proteinbars.co/gluten-free-chocolate-peanut-butter-protein-bars.html</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proteinbars.co/dairy-free-coconut-almond-protein-bars.html</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://proteinbars.co/category-all.html</loc>
     <lastmod>2026-01-05</lastmod>
     <changefreq>weekly</changefreq>
@@ -242,6 +266,18 @@
   </url>
   <url>
     <loc>https://proteinbars.co/pack-meal-prep-bars.html</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://proteinbars.co/pack-gluten-free-dairy-free.html</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://proteinbars.co/pack-gluten-free-dairy-free.html</loc>
     <lastmod>2026-01-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
