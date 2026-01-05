@@ -1,0 +1,60 @@
+CHEESECAKE IMAGE ANALYSIS
+=========================
+
+Analyzed images and their ACTUAL content:
+
+1. classic-vanilla-bean-cheesecake.png = BANANA cheesecake (shows banana slices, bananas in background)
+   SHOULD BE: banana-cream-cheesecake.png
+
+2. banana-cream-cheesecake.png = BANANA cheesecake (same image as above - duplicate)
+   CORRECT MATCH
+
+3. strawberry-swirl-cheesecake.png = STRAWBERRY swirl cheesecake (pink swirls, strawberries on top)
+   CORRECT MATCH
+
+4. key-lime-cheesecake.png = KEY LIME cheesecake (green tint, limes in background, lime zest)
+   CORRECT MATCH
+
+5. blueberry-swirl-cheesecake.png = BLUEBERRY swirl cheesecake (blueberry swirls, fresh blueberries)
+   CORRECT MATCH
+
+PATTERN IDENTIFIED:
+- Some images ARE correctly named (strawberry, key-lime, blueberry)
+- The issue is that DUPLICATES were created with wrong names
+- The duplicate pairs share the same image but have different recipe names
+
+DUPLICATE PAIRS (same image, different names):
+- banana-cream-cheesecake.png = classic-vanilla-bean-cheesecake.png (both show BANANA)
+- blueberry-swirl-cheesecake.png = no-bake-chocolate-cheesecake.png (both show BLUEBERRY)
+
+The problem: When images were duplicated, they kept the same visual content
+but were given names that don't match what they show.
+
+SOLUTION NEEDED:
+For each recipe that has a mismatched image, we need to:
+1. Find the image that actually matches the recipe name
+2. Or generate a new image if no matching image exists
+
+
+MORE FINDINGS:
+- no-bake-chocolate-cheesecake.png = Shows BLUEBERRY cheesecake (same as blueberry-swirl)
+  WRONG! Should show chocolate cheesecake
+  
+- pumpkin-spice-cheesecake.png = Shows CHOCOLATE PEANUT BUTTER cheesecake (layered, with PB cup on top, peanut butter jar in background)
+  WRONG! Should show pumpkin/orange colored cheesecake
+  
+- chocolate-peanut-butter-cheesecake.png = Shows CHOCOLATE PEANUT BUTTER cheesecake (same image)
+  CORRECT MATCH
+
+PATTERN CONFIRMED:
+The images were duplicated incorrectly. The "correct" image for each type exists,
+but it was also copied to wrong filenames.
+
+For example:
+- chocolate-peanut-butter-cheesecake.png is CORRECT (shows chocolate PB cheesecake)
+- BUT the same image was ALSO saved as pumpkin-spice-cheesecake.png (WRONG)
+
+SOLUTION:
+Need to identify which unique image matches which recipe, then:
+1. Keep the correctly named version
+2. Delete or regenerate the incorrectly named duplicates

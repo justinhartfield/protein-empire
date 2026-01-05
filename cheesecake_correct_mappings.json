@@ -1,0 +1,57 @@
+{
+  "site": "proteincheesecake-co",
+  "analysis_notes": "Images were analyzed visually. Each unique image shows a specific type of cheesecake. The goal is to map each image to the recipe it best matches.",
+  "unique_images_analysis": {
+    "banana-cream-cheesecake.png": {
+      "shows": "Banana cream cheesecake with banana slices on top, whipped cream, bananas in background",
+      "best_match_recipe": "classic-vanilla-bean-cheesecake",
+      "notes": "This image is currently duplicated as classic-vanilla-bean-cheesecake.png but shows BANANA not vanilla"
+    },
+    "blueberry-swirl-cheesecake.png": {
+      "shows": "Blueberry swirl cheesecake with fresh blueberries on top, purple swirls",
+      "best_match_recipe": "lemon-blueberry-cheesecake-minis",
+      "notes": "Good match for blueberry recipes"
+    },
+    "strawberry-swirl-cheesecake.png": {
+      "shows": "Strawberry swirl cheesecake with pink swirls, fresh strawberries",
+      "best_match_recipe": "strawberry-swirl-cheesecake",
+      "notes": "CORRECT - image matches recipe name"
+    },
+    "key-lime-cheesecake.png": {
+      "shows": "Key lime cheesecake with green tint, limes in background, lime zest",
+      "best_match_recipe": "key-lime-cheesecake",
+      "notes": "CORRECT - image matches recipe name"
+    },
+    "chocolate-peanut-butter-cheesecake.png": {
+      "shows": "Layered chocolate and peanut butter cheesecake with PB cup on top, peanut butter jar in background",
+      "best_match_recipe": "single-serving-peanut-butter-cheesecake",
+      "notes": "This is a peanut butter cheesecake image"
+    },
+    "cheesecake-stuffed-strawberries.png": {
+      "shows": "Strawberries stuffed with cream cheese filling, chocolate drizzle",
+      "best_match_recipe": "funfetti-cheesecake-dip",
+      "notes": "This image shows stuffed strawberries, not funfetti dip - MISMATCH"
+    }
+  },
+  "recipes_needing_new_images": [
+    "classic-vanilla-bean-cheesecake",
+    "no-bake-chocolate-cheesecake", 
+    "funfetti-cheesecake-dip",
+    "pumpkin-spice-cheesecake",
+    "mint-chocolate-chip-cheesecake",
+    "cookies-and-cream-cheesecake",
+    "s-mores-cheesecake-dip",
+    "matcha-green-tea-cheesecake",
+    "no-bake-oreo-cheesecake-bites",
+    "single-serving-chocolate-cheesecake",
+    "brownie-batter-dip",
+    "gingerbread-cheesecake",
+    "no-bake-lemon-cheesecake",
+    "chocolate-hazelnut-cheesecake",
+    "single-serving-strawberry-cheesecake",
+    "cookie-dough-cheesecake-dip",
+    "eggnog-cheesecake",
+    "gluten-free-almond-crust-protein-cheesecake",
+    "dairy-free-cashew-protein-cheesecake"
+  ]
+}

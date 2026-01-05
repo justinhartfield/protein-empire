@@ -294,10 +294,6 @@ RECIPE_TEMPLATE = '''<!DOCTYPE html>
                         <a href="#substitutions" class="px-2 md:px-3 py-2 text-slate-600 hover:text-slate-900 transition">Substitutions</a>
                         <a href="#nutrition" class="px-2 md:px-3 py-2 text-slate-600 hover:text-slate-900 transition">Nutrition Panel</a>
                     </div>
-                    <a href="pack-{pack_slug}.html" class="hidden md:inline-flex items-center gap-2 text-white px-4 py-2 rounded-full font-bold text-sm hover:opacity-90 transition whitespace-nowrap" style="background: {pack_color}">
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
-                        DOWNLOAD PDF PACK
-                    </a>
                 </div>
             </div>
         </div>

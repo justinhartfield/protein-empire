@@ -386,6 +386,12 @@ export function createRecipeSubstitution(config) {
     },
 
     getFormattedAmount(ing) {
+      // Handle special units (eggs, tsp, tbsp)
+      if (ing.unit && ing.unit !== 'g') {
+        const displayAmt = ing.displayAmount || ing.amount;
+        return `${displayAmt} ${ing.unit}`;
+      }
+      // Default to grams
       if (this.unitSystem === 'metric') {
         return `${ing.amount}g`;
       }
