@@ -4,7 +4,7 @@
       "id": 1,
       "slug": "classic-protein-brownies-recipe",
       "title": "Classic Protein Brownies Recipe",
-      "description": "A delicious and easy-to-make classic protein brownie recipe with 20g of protein per serving.",
+      "description": "These high-protein brownies are the perfect guilt-free indulgence, boasting an impressive 20g of muscle-repairing protein per serving to fuel your active lifestyle. Rich and fudgy, they offer a satisfying combination of moist, melt-in-your-mouth texture with a deep chocolate flavor that hits all the right notes. Whether you're craving a post-workout boost or a wholesome snack to power through your day, these brownies deliver both taste and nutrition in every bite. Their balanced macros make them suitable for those looking to support muscle growth or simply enjoy a healthier treat, and they can easily be adapted for gluten-free diets by using almond or coconut flour. For vegan options, substitute eggs with flaxseed or chia seed gel and choose plant-based protein powders. To get the best results, be sure not to overbake\u2014removing them slightly undercooked ensures a gooey, decadent center. Perfect for meal prep, these brownies store well in the fridge and make a convenient, protein-packed snack whenever cravings strike.",
       "protein": 20,
       "calories": 170,
       "carbs": 15,
@@ -64,13 +64,44 @@
           "step": "Cool",
           "text": "Let the brownies cool completely in the pan before cutting into 12 squares."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "whey-protein-brownies-recipe",
+          "title": "Whey Protein Brownies Recipe",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "high-protein-brownies",
+          "title": "High Protein Brownies",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "protein-blondies",
+          "title": "Protein Blondies",
+          "domain": "proteinbrownies.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "greek-yogurt-protein-cookies",
+          "title": "Greek Yogurt Protein Cookies",
+          "domain": "proteincookies.co",
+          "category": "protein cookies"
+        },
+        {
+          "slug": "no-bake-key-lime-pie-bars",
+          "title": "No-Bake Key Lime Pie Bars",
+          "domain": "proteinbars.co",
+          "category": "protein bars"
+        }
       ]
     },
     {
       "id": 2,
       "slug": "high-protein-brownies",
       "title": "High Protein Brownies",
-      "description": "These high-protein brownies pack a whopping 25g of protein per serving, perfect for a post-workout treat.",
+      "description": "These high-protein brownies pack a whopping 25g of protein per serving, perfect for a post-workout treat that helps support muscle recovery and keeps you energized throughout the day. Crafted with nourishing ingredients, these fudgy delights deliver a rich, chocolatey flavor with a satisfyingly dense and melt-in-your-mouth texture that makes every bite a heavenly indulgence. The balanced macros\u2014combining healthy fats, moderate carbs, and ample protein\u2014make them an ideal choice for anyone looking to boost their daily intake without sacrificing taste. Enjoy them warm for a gooey, decadent experience or chill for a firm, chewy bite\u2014perfect for meal prep or quick snacks on busy days. They can easily be made gluten-free by using almond or coconut flour, and vegan options are simple with plant-based protein powders and dairy-free chocolate. For best results, be sure to measure ingredients precisely and avoid overmixing to maintain that irresistibly fudgy consistency. These brownies are versatile, satisfying sweet cravings while fueling your body, whether you\u2019re winding down after a workout or need a nutritious treat to keep you going.",
       "protein": 25,
       "calories": 190,
       "carbs": 12,
@@ -131,13 +162,44 @@
           "step": "Cool and Serve",
           "text": "Allow the brownies to cool completely before slicing and serving."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "classic-protein-brownies-recipe",
+          "title": "Classic Protein Brownies Recipe",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "sweet-potato-protein-brownies",
+          "title": "Sweet Potato Protein Brownies",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "black-bean-protein-brownies",
+          "title": "Black Bean Protein Brownies",
+          "domain": "proteinbrownies.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "oatmeal-raisin-protein-cookies",
+          "title": "Oatmeal Raisin Protein Cookies",
+          "domain": "proteincookies.co",
+          "category": "protein cookies"
+        },
+        {
+          "slug": "high-protein-samoa-bars",
+          "title": "High-Protein Samoa Bars",
+          "domain": "proteinbars.co",
+          "category": "protein bars"
+        }
       ]
     },
     {
       "id": 3,
       "slug": "protein-powder-brownies",
       "title": "Protein Powder Brownies",
-      "description": "A simple and delicious brownie recipe that puts protein powder front and center. 18g of protein per serving.",
+      "description": "This simple and delicious brownie recipe puts protein powder front and center, delivering an impressive 18 grams of protein per serving to fuel your day and support muscle recovery. With its rich, fudgy texture and a hint of chocolatey sweetness, these brownies are a satisfying treat that satisfy your sweet tooth while nourishing your body. The moist, tender crumb melts in your mouth, offering a perfect balance of indulgence and nutrition. Enjoy them as a post-workout snack to replenish energy and support muscle growth, or pack them into your meal prep for a convenient, high-protein dessert throughout the week. They are versatile and can be easily adapted to gluten-free or vegan diets \u2014 simply swap in gluten-free flour or plant-based protein powders. For best results, be sure to measure your ingredients accurately and avoid overmixing to keep the brownies tender. Whether you're craving a quick snack or a healthy dessert, these brownies are an irresistible way to boost your protein intake without sacrificing flavor.",
       "protein": 18,
       "calories": 160,
       "carbs": 16,
@@ -196,13 +258,44 @@
           "step": "Cool",
           "text": "Let the brownies cool before cutting into squares."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "no-bake-protein-brownie-bars",
+          "title": "No-Bake Protein Brownie Bars",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "classic-protein-brownies-recipe",
+          "title": "Classic Protein Brownies Recipe",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "high-protein-brownies",
+          "title": "High Protein Brownies",
+          "domain": "proteinbrownies.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "dairy-free-peanut-butter-protein-cookies",
+          "title": "Dairy-Free Peanut Butter Protein Cookies",
+          "domain": "proteincookies.co",
+          "category": "protein cookies"
+        },
+        {
+          "slug": "meal-prep-banana-bread-bars",
+          "title": "Meal Prep Banana Bread Protein Bars",
+          "domain": "proteinbars.co",
+          "category": "protein bars"
+        }
       ]
     },
     {
       "id": 4,
       "slug": "cottage-cheese-protein-brownies",
       "title": "Cottage Cheese Protein Brownies",
-      "description": "Creamy, moist, and packed with 22g of protein, these cottage cheese brownies are a game-changer.",
+      "description": "Creamy, moist, and packed with 22g of protein per serving, these cottage cheese brownies are a game-changer for anyone looking to satisfy their sweet tooth while fueling their body. The rich, velvety texture melts in your mouth, offering a perfect balance of chocolatey decadence and wholesome goodness. With their high protein content, they make an ideal post-workout treat or a satisfying snack to keep you energized throughout the day. Each bite delivers a delightful combination of creamy cottage cheese and smooth chocolate, creating a flavor profile that's both indulgent and nourishing. These brownies are versatile enough for meal prep\u2014simply store them in the fridge for a quick, protein-packed snack on busy days. For gluten-free options, just ensure you use gluten-free cocoa powder and flour alternatives like almond or coconut flour. Vegans can substitute the cottage cheese with silken tofu or a plant-based yogurt to enjoy similar creamy textures. For best results, use full-fat cottage cheese for extra richness and avoid overmixing to keep the brownies delightfully fudgy and moist.",
       "protein": 22,
       "calories": 180,
       "carbs": 14,
@@ -260,13 +353,44 @@
           "step": "Cool",
           "text": "Let the brownies cool completely before slicing."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "banana-protein-brownies",
+          "title": "Banana Protein Brownies",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "pumpkin-protein-brownies",
+          "title": "Pumpkin Protein Brownies",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "greek-yogurt-protein-brownies",
+          "title": "Greek Yogurt Protein Brownies",
+          "domain": "proteinbrownies.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "almond-flour-protein-cookies",
+          "title": "Almond Flour Protein Cookies",
+          "domain": "proteincookies.co",
+          "category": "protein cookies"
+        },
+        {
+          "slug": "candy-bar-copycat-twix",
+          "title": "Candy Bar Copycat: Protein Twix",
+          "domain": "proteinbars.co",
+          "category": "protein bars"
+        }
       ]
     },
     {
       "id": 5,
       "slug": "healthy-protein-brownies",
       "title": "Healthy Protein Brownies",
-      "description": "A guilt-free brownie recipe with 15g of protein, made with wholesome ingredients.",
+      "description": "Indulge in these guilt-free brownies that pack a punch with 15 grams of high-quality protein per serving, making them the perfect treat to support your active lifestyle. Crafted with wholesome ingredients, they offer a satisfying combination of rich, fudgy texture and a subtly nutty flavor that melts in your mouth. The dense, moist consistency provides a delightful contrast to traditional baked goods, while the balanced macros\u2014low in fat and calories\u2014make them an ideal choice for a post-workout recovery snack or a nutritious midday pick-me-up. These brownies are versatile enough for meal prep, allowing you to enjoy a protein-rich dessert anytime you crave something sweet but nourishing. For those with dietary restrictions, they can easily be made gluten-free by using almond or coconut flour, and vegan options are simple with plant-based protein powder and flax eggs. To achieve the best results, be sure to measure your ingredients accurately and avoid over-baking to preserve their moist, tender crumb. Whether you're aiming to boost your protein intake or simply craving a wholesome indulgence, these brownies deliver on flavor and nutrition without compromise.",
       "protein": 15,
       "calories": 150,
       "carbs": 18,
@@ -324,13 +448,44 @@
           "step": "Cool and Serve",
           "text": "Cool before cutting into 12 brownies."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "sweet-potato-protein-brownies",
+          "title": "Sweet Potato Protein Brownies",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "black-bean-protein-brownies",
+          "title": "Black Bean Protein Brownies",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "low-calorie-protein-brownies",
+          "title": "Low Calorie Protein Brownies",
+          "domain": "proteinbrownies.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "banana-protein-cookies",
+          "title": "Banana Protein Cookies",
+          "domain": "proteincookies.co",
+          "category": "protein cookies"
+        },
+        {
+          "slug": "vegan-chocolate-chip-cookie-dough-bars",
+          "title": "Vegan Chocolate Chip Cookie Dough Protein Bars",
+          "domain": "proteinbars.co",
+          "category": "protein bars"
+        }
       ]
     },
     {
       "id": 6,
       "slug": "whey-protein-brownies-recipe",
       "title": "Whey Protein Brownies Recipe",
-      "description": "A classic brownie recipe specifically designed for whey protein, delivering 19g of protein per serving.",
+      "description": "These rich, fudgy brownies are a delicious way to boost your protein intake while satisfying your sweet tooth. Packed with 19 grams of high-quality whey protein per serving, they provide a satisfying balance of macronutrients ideal for supporting muscle recovery and keeping you energized throughout the day. The tender, moist crumb melts in your mouth, with a luscious chocolate flavor that\u2019s perfectly complemented by a subtle hint of sweetness. Whether enjoyed as a post-workout treat, a midday pick-me-up, or part of your meal prep, these brownies are versatile and easy to incorporate into your active lifestyle. For those with dietary restrictions, they can easily be made gluten-free by using almond or coconut flour, and vegan options are possible with plant-based protein powders and dairy-free ingredients. For best results, be sure to accurately measure your ingredients and avoid overbaking to maintain their moist texture. These brownies are not only a guilt-free indulgence but also a smart choice for anyone looking to enjoy a high-protein snack without sacrificing flavor.",
       "protein": 19,
       "calories": 165,
       "carbs": 15,
@@ -390,13 +545,44 @@
           "step": "Cool",
           "text": "Let the brownies cool completely in the pan before cutting into 12 squares."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "classic-protein-brownies-recipe",
+          "title": "Classic Protein Brownies Recipe",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "no-bake-protein-brownie-bars",
+          "title": "No-Bake Protein Brownie Bars",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "high-protein-brownies",
+          "title": "High Protein Brownies",
+          "domain": "proteinbrownies.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "protein-cookie-dough-bites",
+          "title": "Protein Cookie Dough Bites",
+          "domain": "proteincookies.co",
+          "category": "protein cookies"
+        },
+        {
+          "slug": "candy-bar-copycat-butterfinger",
+          "title": "Candy Bar Copycat: Protein Butterfinger",
+          "domain": "proteinbars.co",
+          "category": "protein bars"
+        }
       ]
     },
     {
       "id": 7,
       "slug": "sweet-potato-protein-brownies",
       "title": "Sweet Potato Protein Brownies",
-      "description": "Moist, fudgy, and secretly healthy protein brownies made with sweet potato. 16g of protein per serving.",
+      "description": "Moist, fudgy, and secretly healthy protein brownies made with sweet potato, these treats pack a powerful nutritional punch with 16 grams of protein per serving, making them perfect for fueling your active lifestyle. The smooth, velvety texture melts in your mouth with every bite, offering a rich chocolate flavor complemented by the subtle sweetness of roasted sweet potato. They strike an ideal balance between indulgence and nourishment, providing a satisfying snack or post-workout boost that helps repair muscles and keep you energized. Thanks to wholesome ingredients, these brownies are naturally gluten-free\u2014just be sure to use gluten-free oats or flour if needed\u2014and easily adaptable for vegan diets by swapping in plant-based protein powder and flax eggs. For best results, bake until the edges are slightly crisp but the center remains irresistibly fudgy, and store them in an airtight container for a fresh treat throughout the week. Whether enjoyed as a quick snack, a healthy dessert, or a pre-gym pick-me-up, these brownies are a delicious way to indulge without compromising your nutritional goals.",
       "protein": 16,
       "calories": 155,
       "carbs": 19,
@@ -454,13 +640,44 @@
           "step": "Cool",
           "text": "Let the brownies cool completely before slicing."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "black-bean-protein-brownies",
+          "title": "Black Bean Protein Brownies",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "avocado-protein-brownies",
+          "title": "Avocado Protein Brownies",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "zucchini-protein-brownies",
+          "title": "Zucchini Protein Brownies",
+          "domain": "proteinbrownies.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "thin-crispy-protein-cookies",
+          "title": "Thin & Crispy Protein Cookies",
+          "domain": "proteincookies.co",
+          "category": "protein cookies"
+        },
+        {
+          "slug": "no-bake-cashew-coconut-bars",
+          "title": "No-Bake Cashew Coconut Protein Bars",
+          "domain": "proteinbars.co",
+          "category": "protein bars"
+        }
       ]
     },
     {
       "id": 8,
       "slug": "chocolate-protein-brownies",
       "title": "Chocolate Protein Brownies",
-      "description": "Intensely chocolatey protein brownies for the ultimate chocolate lover. 21g of protein per serving.",
+      "description": "Indulge in these intensely chocolatey protein brownies, crafted for the ultimate chocolate lover seeking a nutritious treat. With 21 grams of high-quality protein per serving, these brownies are perfect for supporting muscle recovery post-workout or satisfying sweet cravings without derailing your fitness goals. The rich, fudgy texture melts in your mouth, offering a decadent balance of deep cocoa flavor and a satisfyingly dense bite, while the subtle sweetness keeps them perfectly indulgent yet not overly sugary. Packed with wholesome ingredients, they provide a balanced macro profile\u2014ideal for fueling your day or powering through an afternoon slump. These brownies are versatile enough for meal prep, allowing you to enjoy a protein-packed snack anytime, anywhere. For those with dietary restrictions, they can easily be made gluten-free by using almond or coconut flour, and vegan options are simple with plant-based protein powders and flax eggs. For best results, be sure to avoid overbaking\u2014remove them just as the edges set for that perfectly moist, chewy center. Whether enjoyed after a workout or as a guilt-free dessert, these brownies deliver a satisfying, protein-rich treat that never compromises on flavor.",
       "protein": 21,
       "calories": 185,
       "carbs": 13,
@@ -518,13 +735,44 @@
           "step": "Cool",
           "text": "Let the brownies cool before cutting and enjoying."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "fudgy-protein-brownies",
+          "title": "Fudgy Protein Brownies",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "espresso-protein-brownies",
+          "title": "Espresso Protein Brownies",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "peanut-butter-protein-brownies",
+          "title": "Peanut Butter Protein Brownies",
+          "domain": "proteinbrownies.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "double-chocolate-protein-cookies",
+          "title": "Double Chocolate Protein Cookies",
+          "domain": "proteincookies.co",
+          "category": "protein cookies"
+        },
+        {
+          "slug": "nut-free-sunbutter-bars",
+          "title": "Nut-Free Sunbutter Protein Bars",
+          "domain": "proteinbars.co",
+          "category": "protein bars"
+        }
       ]
     },
     {
       "id": 9,
       "slug": "black-bean-protein-brownies",
       "title": "Black Bean Protein Brownies",
-      "description": "You won't believe these fudgy, decadent brownies are made with black beans! 17g of protein per serving.",
+      "description": "You won't believe these fudgy, decadent brownies are made with black beans! Packed with 17 grams of protein per serving, they provide a satisfying boost to your daily intake while remaining wonderfully indulgent. The rich, chocolatey flavor combined with a moist, dense texture creates a treat that feels like a guilty pleasure but is actually nourishing and wholesome. The beans lend a subtle earthiness that complements the deep cocoa notes, making each bite irresistibly smooth and velvety. Perfect for post-workout recovery, these brownies help replenish your muscles and keep you energized, or serve as a protein-packed snack anytime you crave something sweet. They\u2019re naturally gluten-free when prepared with gluten-free cocoa or flour alternatives, and vegan options are easy to achieve by swapping eggs for flaxseed or chia seeds. For best results, be sure to blend the beans until silky smooth to ensure a uniform, fudgy crumb and avoid overbaking to maintain their moist, chewy texture. Whether enjoyed as a quick snack, a healthy dessert, or meal prep for the week ahead, these brownies prove that you don\u2019t have to sacrifice flavor for nutrition.",
       "protein": 17,
       "calories": 160,
       "carbs": 20,
@@ -583,13 +831,44 @@
           "step": "Cool",
           "text": "Let the brownies cool completely in the pan before slicing."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "sweet-potato-protein-brownies",
+          "title": "Sweet Potato Protein Brownies",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "avocado-protein-brownies",
+          "title": "Avocado Protein Brownies",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "zucchini-protein-brownies",
+          "title": "Zucchini Protein Brownies",
+          "domain": "proteinbrownies.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "peanut-butter-protein-cookies",
+          "title": "Peanut Butter Protein Cookies",
+          "domain": "proteincookies.co",
+          "category": "protein cookies"
+        },
+        {
+          "slug": "vegan-double-chocolate-bars",
+          "title": "Vegan Double Chocolate Protein Bars",
+          "domain": "proteinbars.co",
+          "category": "protein bars"
+        }
       ]
     },
     {
       "id": 10,
       "slug": "banana-protein-brownies",
       "title": "Banana Protein Brownies",
-      "description": "Naturally sweetened with banana, these protein brownies are moist and delicious. 15g of protein per serving.",
+      "description": "Naturally sweetened with ripe bananas, these protein brownies are irresistibly moist and rich, offering a decadent treat without the guilt. Packed with 15 grams of high-quality protein per serving, they make a perfect post-workout snack or a satisfying midday pick-me-up that fuels your muscles and keeps you energized. The tender crumb melts in your mouth, while the subtle banana flavor adds a natural sweetness and depth to every bite. With a balanced macro profile, they\u2019re ideal for those looking to increase their protein intake while enjoying a delicious dessert or snack. The recipe is versatile and can be easily adapted to gluten-free diets by using almond or coconut flour, and vegan options are simple with plant-based protein powders and flax eggs. For best results, use very ripe bananas for maximum sweetness and moisture, and avoid overbaking to maintain that perfect, fudgy texture. These brownies are perfect for meal prep, as they stay moist and delicious for days, making them an excellent on-the-go option to support your active lifestyle.",
       "protein": 15,
       "calories": 145,
       "carbs": 18,
@@ -646,13 +925,44 @@
           "step": "Cool",
           "text": "Let the brownies cool before cutting into squares."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "cottage-cheese-protein-brownies",
+          "title": "Cottage Cheese Protein Brownies",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "pumpkin-protein-brownies",
+          "title": "Pumpkin Protein Brownies",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "greek-yogurt-protein-brownies",
+          "title": "Greek Yogurt Protein Brownies",
+          "domain": "proteinbrownies.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "high-protein-cookies-30g",
+          "title": "High Protein Cookies (30g)",
+          "domain": "proteincookies.co",
+          "category": "protein cookies"
+        },
+        {
+          "slug": "vegan-chocolate-chip-cookie-dough-bars",
+          "title": "Vegan Chocolate Chip Cookie Dough Protein Bars",
+          "domain": "proteinbars.co",
+          "category": "protein bars"
+        }
       ]
     },
     {
       "id": 11,
       "slug": "vegan-protein-brownies",
       "title": "Vegan Protein Brownies",
-      "description": "A delicious and fudgy vegan protein brownie recipe with 18g of plant-based protein.",
+      "description": "These irresistibly fudgy vegan protein brownies are not only a decadent treat but also a powerhouse of nutrition, boasting 18 grams of plant-based protein per serving that can help fuel your day and support muscle recovery. The rich, chocolatey flavor is perfectly complemented by a moist, velvety texture that melts in your mouth, leaving a lingering sweetness with just the right hint of cocoa. Thanks to wholesome ingredients like almond butter and flaxseed, each bite offers a balanced combination of healthy fats, fiber, and protein, making it a satisfying option for any time of day. They\u2019re ideal as a post-workout snack to replenish energy and aid in muscle repair or as a convenient meal prep option for busy mornings. Plus, this recipe is naturally gluten-free if you use gluten-free oats, and vegan-friendly, making it accessible for various dietary preferences. For best results, be sure to thoroughly blend your ingredients and avoid overbaking to maintain that fudgy, gooey center. Simply store these brownies in an airtight container for a fresh, chewy treat that\u2019s perfect when craving something sweet and nourishing.",
       "protein": 18,
       "calories": 175,
       "carbs": 16,
@@ -710,13 +1020,44 @@
           "step": "Cool",
           "text": "Let the brownies cool completely before slicing."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "high-protein-brownies",
+          "title": "High Protein Brownies",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "sweet-potato-protein-brownies",
+          "title": "Sweet Potato Protein Brownies",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "black-bean-protein-brownies",
+          "title": "Black Bean Protein Brownies",
+          "domain": "proteinbrownies.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "dairy-free-peanut-butter-protein-cookies",
+          "title": "Dairy-Free Peanut Butter Protein Cookies",
+          "domain": "proteincookies.co",
+          "category": "protein cookies"
+        },
+        {
+          "slug": "high-protein-samoa-bars",
+          "title": "High-Protein Samoa Bars",
+          "domain": "proteinbars.co",
+          "category": "protein bars"
+        }
       ]
     },
     {
       "id": 12,
       "slug": "fudgy-protein-brownies",
       "title": "Fudgy Protein Brownies",
-      "description": "The ultimate fudgy protein brownies, rich and decadent with 20g of protein.",
+      "description": "Indulge in these fudgy protein brownies, rich and decadent with 20g of muscle-loving protein per serving, making them the perfect treat to fuel your active lifestyle. Crafted to deliver a moist, melt-in-your-mouth texture with a deep chocolate flavor, each bite offers a satisfying balance of sweetness and richness that will keep you coming back for more. Packed with high-quality ingredients, these brownies are not only a delicious dessert but also a smart choice for your macros\u2014providing a wholesome dose of protein, moderate carbs, and healthy fats. They're ideal for post-workout recovery, offering a quick and tasty way to replenish your energy and support muscle repair. Whether you're meal prepping for the week or craving a guilt-free indulgence, these brownies fit seamlessly into a balanced diet. For gluten-free options, simply swap out regular flour for almond or coconut flour; vegan versions can be made using plant-based protein powder and flax eggs. To get the best texture, be careful not to overmix the batter, and bake until just set for that perfect fudgy consistency. Enjoy them warm with a glass of almond milk or chilled for a more dessert-like experience\u2014either way, they\u2019re sure to satisfy your sweet tooth while boosting your protein intake.",
       "protein": 20,
       "calories": 180,
       "carbs": 14,
@@ -774,13 +1115,44 @@
           "step": "Cool",
           "text": "Let the brownies cool completely before slicing."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "chocolate-protein-brownies",
+          "title": "Chocolate Protein Brownies",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "high-protein-brownies",
+          "title": "High Protein Brownies",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "sweet-potato-protein-brownies",
+          "title": "Sweet Potato Protein Brownies",
+          "domain": "proteinbrownies.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "gluten-free-oat-flour-protein-cookies",
+          "title": "Gluten-Free Oat Flour Protein Cookies",
+          "domain": "proteincookies.co",
+          "category": "protein cookies"
+        },
+        {
+          "slug": "candy-bar-copycat-butterfinger",
+          "title": "Candy Bar Copycat: Protein Butterfinger",
+          "domain": "proteinbars.co",
+          "category": "protein bars"
+        }
       ]
     },
     {
       "id": 13,
       "slug": "pumpkin-protein-brownies",
       "title": "Pumpkin Protein Brownies",
-      "description": "Enjoy the flavors of fall with these moist and delicious pumpkin protein brownies. 16g of protein per serving.",
+      "description": "Enjoy the flavors of fall with these moist and delicious pumpkin protein brownies, packed with 16g of muscle-building protein per serving. Made with wholesome ingredients, they offer a satisfying balance of rich chocolatey goodness and the subtle sweetness of pumpkin, delivering a tender, fudgy texture that melts in your mouth. Perfect for a post-workout boost or a nutritious snack on busy days, these brownies help fuel your body with high-quality protein while keeping calories in check at around 150 per serving. Their veggie-based richness lends a moist, dense bite, complemented by hints of cocoa and warm spices that evoke cozy autumn vibes. For those with dietary preferences, they can easily be made gluten-free with almond or coconut flour, and vegan options are simple by swapping eggs for flaxseed or chia seed binders. To achieve the best texture, be careful not to overbake\u2014remove them when a toothpick inserted in the center comes out slightly moist. Enjoy these brownies as a nourishing treat, a quick breakfast option, or even as a meal prep staple to keep your protein intake on point throughout the week.",
       "protein": 16,
       "calories": 150,
       "carbs": 18,
@@ -839,13 +1211,44 @@
           "step": "Cool",
           "text": "Let the brownies cool before slicing."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "zucchini-protein-brownies",
+          "title": "Zucchini Protein Brownies",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "cottage-cheese-protein-brownies",
+          "title": "Cottage Cheese Protein Brownies",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "sweet-potato-protein-brownies",
+          "title": "Sweet Potato Protein Brownies",
+          "domain": "proteinbrownies.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "monster-protein-cookies",
+          "title": "Monster Protein Cookies",
+          "domain": "proteincookies.co",
+          "category": "protein cookies"
+        },
+        {
+          "slug": "high-protein-red-velvet-bars",
+          "title": "High-Protein Red Velvet Bars",
+          "domain": "proteinbars.co",
+          "category": "protein bars"
+        }
       ]
     },
     {
       "id": 14,
       "slug": "low-calorie-protein-brownies",
       "title": "Low Calorie Protein Brownies",
-      "description": "Enjoy a delicious brownie for under 140 calories, with a solid 15g of protein.",
+      "description": "Indulge in a rich, fudgy brownie that satisfies your sweet tooth without the guilt, clocking in at under 140 calories and boasting an impressive 15 grams of protein per serving. This treat delivers a perfect balance of moist, tender crumb and a decadent cocoa flavor, with a slightly chewy texture that melts in your mouth. Its high protein content makes it an ideal post-workout snack or a nutritious pick-me-up during busy days, helping to fuel your muscles and keep you full longer. Plus, it's a smart choice for those looking to maintain or lose weight while still enjoying dessert\u2014packed with fiber and low in sugar, it fits seamlessly into any diet plan. For gluten-sensitive eaters, using gluten-free flour options ensures this recipe remains inclusive, and vegan alternatives like plant-based protein powder or flax eggs make it easily adaptable for different dietary needs. To achieve the best texture and flavor, be sure not to overmix the batter, and bake just until a toothpick comes out with a few moist crumbs for that perfectly fudgy finish. Enjoy these brownies warm with a dollop of Greek yogurt or a sprinkle of fresh berries for an irresistible, health-conscious treat any time of day.",
       "protein": 15,
       "calories": 135,
       "carbs": 15,
@@ -903,13 +1306,44 @@
           "step": "Cool and Serve",
           "text": "Cool before cutting into 12 brownies."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "healthy-protein-brownies",
+          "title": "Healthy Protein Brownies",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "sweet-potato-protein-brownies",
+          "title": "Sweet Potato Protein Brownies",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "black-bean-protein-brownies",
+          "title": "Black Bean Protein Brownies",
+          "domain": "proteinbrownies.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "high-protein-cookies-30g",
+          "title": "High Protein Cookies (30g)",
+          "domain": "proteincookies.co",
+          "category": "protein cookies"
+        },
+        {
+          "slug": "meal-prep-berry-breakfast-bars",
+          "title": "Meal Prep Berry Breakfast Bars",
+          "domain": "proteinbars.co",
+          "category": "protein bars"
+        }
       ]
     },
     {
       "id": 15,
       "slug": "protein-blondies",
       "title": "Protein Blondies",
-      "description": "A chewy and delicious protein blondie recipe with 18g of protein per serving.",
+      "description": "This chewy and delicious protein blondie recipe packs an impressive 18 grams of muscle-nourishing protein per serving, making it an ideal treat for fitness enthusiasts and anyone looking to boost their daily intake. With a rich, buttery flavor and a satisfyingly dense, chewy texture, these blondies deliver just the right balance of sweetness and indulgence without feeling heavy. Their soft crumb and slightly caramelized edges offer a delightful contrast that keeps you coming back for more. Perfect as a post-workout snack to replenish energy and support muscle recovery, or as a convenient meal prep option to enjoy throughout the week, these blondies are versatile and crowd-pleasing. They are naturally gluten-free if made with gluten-free ingredients, and vegan adaptations can be easily achieved using plant-based protein powders and substitutes for eggs and butter. For best results, ensure your ingredients are well combined and avoid overmixing to maintain a tender, chewy consistency. Whether you're craving a guilt-free indulgence or a protein-packed treat, these blondies are sure to satisfy your sweet tooth while supporting your fitness goals.",
       "protein": 18,
       "calories": 170,
       "carbs": 16,
@@ -968,13 +1402,44 @@
           "step": "Cool",
           "text": "Let the blondies cool completely in the pan before cutting."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "classic-protein-brownies-recipe",
+          "title": "Classic Protein Brownies Recipe",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "high-protein-brownies",
+          "title": "High Protein Brownies",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "peanut-butter-protein-brownies",
+          "title": "Peanut Butter Protein Brownies",
+          "domain": "proteinbrownies.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "double-chocolate-protein-cookies",
+          "title": "Double Chocolate Protein Cookies",
+          "domain": "proteincookies.co",
+          "category": "protein cookies"
+        },
+        {
+          "slug": "dairy-free-coconut-almond-protein-bars",
+          "title": "Dairy-Free Coconut Almond Protein Bars",
+          "domain": "proteinbars.co",
+          "category": "protein bars"
+        }
       ]
     },
     {
       "id": 16,
       "slug": "no-bake-protein-brownie-bars",
       "title": "No-Bake Protein Brownie Bars",
-      "description": "Quick, easy, and delicious no-bake protein brownie bars with 15g of protein.",
+      "description": "These no-bake protein brownie bars are a perfect combination of indulgence and nutrition, offering a satisfying treat with 15 grams of muscle-replenishing protein per serving. Packed with wholesome ingredients, they provide a balanced macro profile\u2014high in protein and healthy fats while keeping carbs in check\u2014making them an ideal post-workout snack or energy-boosting midday pick-me-up. The rich, fudgy texture melts in your mouth, delivering a decadent chocolate flavor with a hint of nuttiness, all without any baking required. Their chewy consistency and delicious taste make them a versatile treat that can be enjoyed on the go, during meal prep, or as a pre- or post-exercise refuel. Plus, they\u2019re naturally gluten-free when using gluten-free oats or protein powders, and vegan adaptations are easily made with plant-based ingredients. For best results, press the mixture firmly into the pan to ensure clean, easy bars, and chill thoroughly to achieve that perfect, cohesive bite. Whether you're looking for a healthy dessert or a satisfying snack to support your active lifestyle, these bars deliver on both flavor and nutrition in every bite.",
       "protein": 15,
       "calories": 160,
       "carbs": 15,
@@ -1030,13 +1495,44 @@
           "step": "Slice and Serve",
           "text": "Cut into 10 bars and store in the refrigerator."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "classic-protein-brownies-recipe",
+          "title": "Classic Protein Brownies Recipe",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "protein-powder-brownies",
+          "title": "Protein Powder Brownies",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "whey-protein-brownies-recipe",
+          "title": "Whey Protein Brownies Recipe",
+          "domain": "proteinbrownies.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "protein-cookies-for-kids",
+          "title": "Protein Cookies for Kids",
+          "domain": "proteincookies.co",
+          "category": "protein cookies"
+        },
+        {
+          "slug": "candy-bar-copycat-twix",
+          "title": "Candy Bar Copycat: Protein Twix",
+          "domain": "proteinbars.co",
+          "category": "protein bars"
+        }
       ]
     },
     {
       "id": 17,
       "slug": "single-serving-protein-brownie",
       "title": "Single-Serving Protein Brownie",
-      "description": "A quick and easy single-serving protein brownie you can make in the microwave. 25g of protein.",
+      "description": "This quick and easy single-serving protein brownie, packed with 25 grams of muscle-building protein and only 200 calories, is the perfect guilt-free indulgence to satisfy your sweet tooth while supporting your fitness goals. With a rich, fudgy texture and a deep chocolate flavor, this mug-cake delivers a satisfying bite that\u2019s both moist and dense\u2014like a freshly baked treat, but in a fraction of the time. Its high protein content makes it an ideal post-workout snack to help repair muscles and boost recovery, or a nutritious dessert to enjoy any time of day. The batter comes together in minutes, making it perfect for meal prep or when you need a quick, satisfying boost. For gluten-free diets, simply use a gluten-free protein powder or almond flour, and vegan options can be created with plant-based protein powders and dairy-free milk. For best results, mix the ingredients thoroughly to avoid lumps and let the brownie cool slightly before digging in for optimal texture. Whether you\u2019re craving a sweet pick-me-up or a high-protein treat, this brownie is sure to become a staple in your healthy snack repertoire.",
       "protein": 25,
       "calories": 200,
       "carbs": 10,
@@ -1088,13 +1584,44 @@
           "step": "Enjoy",
           "text": "Let it cool for a minute before enjoying."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "classic-protein-brownies-recipe",
+          "title": "Classic Protein Brownies Recipe",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "high-protein-brownies",
+          "title": "High Protein Brownies",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "protein-powder-brownies",
+          "title": "Protein Powder Brownies",
+          "domain": "proteinbrownies.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "protein-cookie-dough-bites",
+          "title": "Protein Cookie Dough Bites",
+          "domain": "proteincookies.co",
+          "category": "protein cookies"
+        },
+        {
+          "slug": "vegan-double-chocolate-bars",
+          "title": "Vegan Double Chocolate Protein Bars",
+          "domain": "proteinbars.co",
+          "category": "protein bars"
+        }
       ]
     },
     {
       "id": 18,
       "slug": "keto-protein-brownies",
       "title": "Keto Protein Brownies",
-      "description": "Low-carb, high-fat keto protein brownies with 18g of protein and only 4g of net carbs.",
+      "description": "Indulge in these irresistible low-carb, high-fat keto protein brownies, packed with 18 grams of protein and only 4 grams of net carbs per serving, making them a perfect guilt-free treat. Their rich, fudgy texture melts in your mouth, with a decadent chocolate flavor balanced by a subtle nuttiness, thanks to quality ingredients like almond flour and cocoa powder. Not only do they satisfy your sweet tooth, but they also provide a powerful boost of muscle-supporting protein and healthy fats, ideal for post-workout recovery or a nourishing snack anytime during the day. These brownies are versatile enough for meal prep, staying fresh in the fridge for several days, making them an excellent option for busy schedules. For those with dietary restrictions, they can easily be made gluten-free by choosing certified gluten-free ingredients, and vegan adaptations are possible with plant-based protein powders and egg substitutes. To get the best results, be sure to thoroughly mix the ingredients for a smooth batter and avoid overbaking to maintain their moist, tender crumb. Enjoy these brownies as an energy-boosting snack or a satisfying dessert that aligns with your high-protein, keto lifestyle.",
       "protein": 18,
       "calories": 190,
       "carbs": 8,
@@ -1152,13 +1679,44 @@
           "step": "Cool",
           "text": "Let the brownies cool completely before slicing."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "classic-protein-brownies-recipe",
+          "title": "Classic Protein Brownies Recipe",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "high-protein-brownies",
+          "title": "High Protein Brownies",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "protein-powder-brownies",
+          "title": "Protein Powder Brownies",
+          "domain": "proteinbrownies.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "snickerdoodle-protein-cookies",
+          "title": "Snickerdoodle Protein Cookies",
+          "domain": "proteincookies.co",
+          "category": "protein cookies"
+        },
+        {
+          "slug": "nut-free-sunbutter-bars",
+          "title": "Nut-Free Sunbutter Protein Bars",
+          "domain": "proteinbars.co",
+          "category": "protein bars"
+        }
       ]
     },
     {
       "id": 19,
       "slug": "greek-yogurt-protein-brownies",
       "title": "Greek Yogurt Protein Brownies",
-      "description": "Moist and tangy protein brownies made with Greek yogurt, packing 23g of protein.",
+      "description": "These moist and tangy protein brownies, made with creamy Greek yogurt, deliver an impressive 23 grams of high-quality protein per serving, making them the perfect treat to fuel your active lifestyle. Packed with wholesome ingredients, they offer a balanced macronutrient profile\u2014combining healthy carbs, lean protein, and a touch of healthy fats\u2014helping to support muscle recovery and satisfy your sweet cravings without guilt. The texture is irresistibly fudgy and dense, with a slight tanginess from the yogurt that enhances the rich chocolate flavor, creating a delightful contrast in every bite. Whether enjoyed post-workout to replenish energy or as a nourishing snack during busy days, these brownies are versatile and satisfying. They are naturally gluten-free when made with gluten-free flour options, and vegan adaptations can be easily achieved by swapping Greek yogurt for plant-based alternatives. For best results, be careful not to overmix the batter to keep the brownies tender and moist, and consider refrigerating them for a firmer texture. Perfect for meal prepping, they store well in the fridge, allowing you to enjoy a protein-packed treat whenever cravings strike.",
       "protein": 23,
       "calories": 180,
       "carbs": 13,
@@ -1216,13 +1774,44 @@
           "step": "Cool",
           "text": "Let the brownies cool completely before slicing."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "cottage-cheese-protein-brownies",
+          "title": "Cottage Cheese Protein Brownies",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "banana-protein-brownies",
+          "title": "Banana Protein Brownies",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "pumpkin-protein-brownies",
+          "title": "Pumpkin Protein Brownies",
+          "domain": "proteinbrownies.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "sugar-free-protein-cookies",
+          "title": "Sugar-Free Protein Cookies",
+          "domain": "proteincookies.co",
+          "category": "protein cookies"
+        },
+        {
+          "slug": "no-bake-matcha-coconut-bars",
+          "title": "No-Bake Matcha Coconut Protein Bars",
+          "domain": "proteinbars.co",
+          "category": "protein bars"
+        }
       ]
     },
     {
       "id": 20,
       "slug": "avocado-protein-brownies",
       "title": "Avocado Protein Brownies",
-      "description": "Incredibly fudgy and healthy protein brownies made with avocado. 19g of protein per serving.",
+      "description": "Incredibly fudgy and healthy protein brownies made with avocado. With 19g of protein per serving, these treats provide a satisfying boost to your daily macros, making them perfect for post-workout recovery or a nourishing snack anytime you need a pick-me-up. The creamy avocado not only adds healthy fats but also lends a moist, melt-in-your-mouth texture that rivals traditional brownies, while the rich chocolate flavor satisfies any sweet craving. Their dense, fudgy consistency makes each bite decadently indulgent without the guilt, and the subtle hint of veggie goodness keeps them feeling wholesome. These brownies are versatile enough for meal prep, so you can batch bake and keep them handy for busy days. They\u2019re naturally gluten-free and can easily be veganized by substituting eggs with flaxseed or chia seeds, making them suitable for various dietary needs. For the best results, avoid overmixing the batter to keep the brownies tender and fudgy, and be sure to bake until a toothpick inserted in the center comes out with just a few moist crumbs. Whether enjoyed as a quick snack, a nutritious dessert, or a post-workout treat, these avocado protein brownies are sure to become a healthy favorite.",
       "protein": 19,
       "calories": 185,
       "carbs": 15,
@@ -1280,13 +1869,44 @@
           "step": "Cool",
           "text": "Let the brownies cool completely before slicing."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "sweet-potato-protein-brownies",
+          "title": "Sweet Potato Protein Brownies",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "black-bean-protein-brownies",
+          "title": "Black Bean Protein Brownies",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "zucchini-protein-brownies",
+          "title": "Zucchini Protein Brownies",
+          "domain": "proteinbrownies.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "birthday-cake-protein-cookies",
+          "title": "Birthday Cake Protein Cookies",
+          "domain": "proteincookies.co",
+          "category": "protein cookies"
+        },
+        {
+          "slug": "candy-bar-copycat-almond-mound",
+          "title": "Candy Bar Copycat: Almond Mound",
+          "domain": "proteinbars.co",
+          "category": "protein bars"
+        }
       ]
     },
     {
       "id": 21,
       "slug": "zucchini-protein-brownies",
       "title": "Zucchini Protein Brownies",
-      "description": "Shredded zucchini adds moisture and nutrients to these delicious protein brownies. 16g of protein per serving.",
+      "description": "Shredded zucchini adds moisture and nutrients to these delicious protein brownies, making them a wholesome treat you can feel good about. With 16 grams of protein per serving, they\u2019re perfect for supporting muscle recovery and keeping you energized throughout the day. The tender, fudgy texture combined with a subtle hint of sweetness creates a satisfying bite that melts in your mouth, while the zucchini imparts a gentle earthiness that balances the richness of the chocolate. These brownies are ideal as a post-workout snack, a healthy dessert, or even meal prep for busy weekdays; they stay moist and flavorful when stored in the fridge. They\u2019re naturally gluten-free if you use gluten-free oats or flour, and vegan variations can be made with plant-based protein powders and egg substitutes. For best results, be sure to finely shred the zucchini and squeeze out excess moisture to prevent sogginess. A dash of sea salt or a sprinkle of cinnamon can elevate the flavor further, making these brownies irresistibly delicious while packing a serious nutritional punch.",
       "protein": 16,
       "calories": 150,
       "carbs": 17,
@@ -1345,13 +1965,44 @@
           "step": "Cool",
           "text": "Let the brownies cool before slicing."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "sweet-potato-protein-brownies",
+          "title": "Sweet Potato Protein Brownies",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "black-bean-protein-brownies",
+          "title": "Black Bean Protein Brownies",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "pumpkin-protein-brownies",
+          "title": "Pumpkin Protein Brownies",
+          "domain": "proteinbrownies.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "no-bake-protein-cookies",
+          "title": "No-Bake Protein Cookies",
+          "domain": "proteincookies.co",
+          "category": "protein cookies"
+        },
+        {
+          "slug": "no-bake-key-lime-pie-bars",
+          "title": "No-Bake Key Lime Pie Bars",
+          "domain": "proteinbars.co",
+          "category": "protein bars"
+        }
       ]
     },
     {
       "id": 22,
       "slug": "peanut-butter-protein-brownies",
       "title": "Peanut Butter Protein Brownies",
-      "description": "The perfect combination of chocolate and peanut butter in a high-protein brownie. 22g of protein per serving.",
+      "description": "This indulgent high-protein brownie combines rich chocolate with creamy peanut butter for a flavor explosion that satisfies your sweet cravings while fueling your body. Packed with 22 grams of protein per serving, it's an ideal choice for post-workout recovery or a nutritious snack to keep you energized throughout the day. The fudgy texture melts in your mouth, offering a perfect balance of moistness and density, with a decadent chocolate-peanut butter flavor that\u2019s both indulgent and satisfying. Each bite provides a wholesome boost of macros, making it easy to stay on track with your fitness goals without sacrificing flavor. These brownies are versatile and can be enjoyed as a quick breakfast, a pre- or post-workout treat, or even meal prep for the week ahead. For those with dietary restrictions, they can easily be made gluten-free with your favorite gluten-free flour, and vegan options are simple by swapping in plant-based protein powder and nut butters. For best results, use high-quality cocoa and natural peanut butter, and avoid overmixing to keep the brownies tender. Chill them slightly before serving to enhance their fudgy consistency, and enjoy a guilt-free indulgence that\u2019s as nutritious as it is delicious.",
       "protein": 22,
       "calories": 195,
       "carbs": 14,
@@ -1409,13 +2060,44 @@
           "step": "Cool",
           "text": "Let the brownies cool completely before slicing."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "classic-protein-brownies-recipe",
+          "title": "Classic Protein Brownies Recipe",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "high-protein-brownies",
+          "title": "High Protein Brownies",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "chocolate-protein-brownies",
+          "title": "Chocolate Protein Brownies",
+          "domain": "proteinbrownies.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "banana-protein-cookies",
+          "title": "Banana Protein Cookies",
+          "domain": "proteincookies.co",
+          "category": "protein cookies"
+        },
+        {
+          "slug": "nut-free-sunbutter-bars",
+          "title": "Nut-Free Sunbutter Protein Bars",
+          "domain": "proteinbars.co",
+          "category": "protein bars"
+        }
       ]
     },
     {
       "id": 23,
       "slug": "mint-chocolate-protein-brownies",
       "title": "Mint Chocolate Protein Brownies",
-      "description": "A refreshing and delicious mint chocolate protein brownie with 20g of protein.",
+      "description": "This refreshing and delicious mint chocolate protein brownie packs a satisfying 20g of muscle-nourishing protein per serving, making it the perfect treat to fuel your day. With a rich, fudgy texture complemented by a hint of cool mint, each bite offers a delightful balance of deep chocolate flavor and invigorating freshness that keeps cravings at bay. Crafted with wholesome ingredients, these brownies are not only indulgent but also support your fitness goals by providing balanced macros\u2014low in sugar and calories, yet high in protein and healthy fats. Their moist, chewy consistency makes them ideal for post-workout recovery or as a satisfying snack anytime you need a boost. For those with dietary restrictions, you can easily adapt this recipe to be gluten-free by using almond or coconut flour, and vegan options are simple with plant-based protein powders and dairy-free chocolate. For best results, be sure to measure ingredients precisely and avoid overbaking, which can dry out the brownies. Store them in an airtight container for a quick, nutritious treat that\u2019s perfect for meal prep or sharing with friends.",
       "protein": 20,
       "calories": 175,
       "carbs": 15,
@@ -1474,13 +2156,44 @@
           "step": "Cool",
           "text": "Let the brownies cool completely before slicing."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "chocolate-protein-brownies",
+          "title": "Chocolate Protein Brownies",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "peanut-butter-protein-brownies",
+          "title": "Peanut Butter Protein Brownies",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "raspberry-swirl-protein-brownies",
+          "title": "Raspberry Swirl Protein Brownies",
+          "domain": "proteinbrownies.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "banana-protein-cookies",
+          "title": "Banana Protein Cookies",
+          "domain": "proteincookies.co",
+          "category": "protein cookies"
+        },
+        {
+          "slug": "meal-prep-oat-and-honey-bars",
+          "title": "Meal Prep Oat and Honey Protein Bars",
+          "domain": "proteinbars.co",
+          "category": "protein bars"
+        }
       ]
     },
     {
       "id": 24,
       "slug": "raspberry-swirl-protein-brownies",
       "title": "Raspberry Swirl Protein Brownies",
-      "description": "Fudgy chocolate protein brownies with a beautiful and delicious raspberry swirl. 19g of protein.",
+      "description": "Indulge in these fudgy chocolate protein brownies with a stunning and flavorful raspberry swirl, offering an irresistible combination of rich cocoa and vibrant fruitiness. Packed with 19 grams of high-quality protein per serving, they\u2019re perfect for satisfying your sweet tooth while supporting muscle recovery and overall nutrition. The dense, moist texture melts in your mouth, with a deep chocolate flavor balanced by the tangy burst of raspberry, creating a delightful contrast that keeps every bite exciting. Ideal for post-workout refueling or a nutritious snack, these brownies also make excellent meal prep options\u2014simply store and enjoy whenever craving something sweet and nourishing. They can easily be adapted for gluten-free diets by using almond or coconut flour, and vegan versions can be made with plant-based protein powder and dairy-free chocolate. For best results, use ripe raspberries for a vibrant swirl and gently fold the fruit into the batter to achieve a beautiful marbled effect. Whether you\u2019re aiming to boost your macros or enjoy a decadent yet healthy treat, these brownies are sure to become a favorite in your fitness-focused kitchen.",
       "protein": 19,
       "calories": 170,
       "carbs": 16,
@@ -1538,13 +2251,44 @@
           "step": "Cool",
           "text": "Let the brownies cool completely before slicing."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "chocolate-protein-brownies",
+          "title": "Chocolate Protein Brownies",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "peanut-butter-protein-brownies",
+          "title": "Peanut Butter Protein Brownies",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "mint-chocolate-protein-brownies",
+          "title": "Mint Chocolate Protein Brownies",
+          "domain": "proteinbrownies.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "greek-yogurt-protein-cookies",
+          "title": "Greek Yogurt Protein Cookies",
+          "domain": "proteincookies.co",
+          "category": "protein cookies"
+        },
+        {
+          "slug": "high-protein-red-velvet-bars",
+          "title": "High-Protein Red Velvet Bars",
+          "domain": "proteinbars.co",
+          "category": "protein bars"
+        }
       ]
     },
     {
       "id": 25,
       "slug": "espresso-protein-brownies",
       "title": "Espresso Protein Brownies",
-      "description": "A rich and fudgy protein brownie with a kick of espresso. 20g of protein per serving.",
+      "description": "These rich and fudgy protein brownies are the perfect indulgence for anyone looking to satisfy their sweet tooth while fueling their body. Packed with 20 grams of high-quality protein per serving, they provide a satisfying boost to support muscle recovery and keep you energized throughout the day. The deep, chocolatey flavor is enhanced by a bold kick of espresso, creating a luxurious, velvety texture that melts in your mouth with each bite. The dense, chewy consistency makes them ideal for a post-workout treat or a nutritious snack to keep hunger at bay. Thanks to their balanced macros and wholesome ingredients, they can easily be incorporated into meal prep routines for a quick grab-and-go option. For those with dietary restrictions, these brownies can be made gluten-free using almond or coconut flour, and vegan versions are simple with plant-based protein and dairy-free chocolate. For best results, be sure not to overbake; remove them from the oven when a toothpick inserted in the center comes out slightly moist to maintain that irresistibly fudgy texture. Enjoy them warm for a decadent experience or store them in an airtight container for an easy, protein-packed treat anytime you need a delicious pick-me-up.",
       "protein": 20,
       "calories": 175,
       "carbs": 14,
@@ -1604,13 +2348,44 @@
           "step": "Cool",
           "text": "Let the brownies cool completely before slicing."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "chocolate-protein-brownies",
+          "title": "Chocolate Protein Brownies",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "fudgy-protein-brownies",
+          "title": "Fudgy Protein Brownies",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "peanut-butter-protein-brownies",
+          "title": "Peanut Butter Protein Brownies",
+          "domain": "proteinbrownies.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "protein-cookie-dough-bites",
+          "title": "Protein Cookie Dough Bites",
+          "domain": "proteincookies.co",
+          "category": "protein cookies"
+        },
+        {
+          "slug": "no-bake-key-lime-pie-bars",
+          "title": "No-Bake Key Lime Pie Bars",
+          "domain": "proteinbars.co",
+          "category": "protein bars"
+        }
       ]
     },
     {
       "id": 100,
       "slug": "gluten-free-black-bean-protein-brownies",
       "title": "Gluten-Free Black Bean Protein Brownies",
-      "description": "Fudgy, rich brownies made with black beans for a naturally gluten-free base. You won't believe these decadent treats are packed with protein and fiber!",
+      "description": "Fudgy, rich brownies made with black beans for a naturally gluten-free base. You won't believe these decadent treats are packed with protein and fiber! Each serving offers around 12 grams of muscle-repairing protein and a generous dose of dietary fiber, making them an excellent choice for fueling post-workout recovery or satisfying your sweet tooth healthfully. The dense, melt-in-your-mouth texture is complemented by deep chocolate flavor with just a hint of earthiness from the beans, creating a perfectly balanced, indulgent bite. These brownies are ideal for meal prep, as they stay moist and tasty for days, allowing you to enjoy a nutritious treat anytime. They're naturally gluten-free, and vegan options are easily achieved by substituting eggs with flaxseed or chia seed gel. For best results, blend the beans thoroughly to ensure a smooth batter and avoid overbaking to maintain that fudgy consistency. Whether you're craving a guilt-free dessert or a high-protein snack, these brownies are a delicious way to nourish your body without sacrificing flavor.",
       "protein": 12,
       "calories": 145,
       "carbs": 18,
@@ -1667,13 +2442,44 @@
           "step": "Bake",
           "text": "Bake for 22-25 minutes until set but still slightly fudgy in the center. Cool completely before cutting into 12 brownies."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "black-bean-protein-brownies",
+          "title": "Black Bean Protein Brownies",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "high-protein-brownies",
+          "title": "High Protein Brownies",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "sweet-potato-protein-brownies",
+          "title": "Sweet Potato Protein Brownies",
+          "domain": "proteinbrownies.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "birthday-cake-protein-cookies",
+          "title": "Birthday Cake Protein Cookies",
+          "domain": "proteincookies.co",
+          "category": "protein cookies"
+        },
+        {
+          "slug": "meal-prep-banana-bread-bars",
+          "title": "Meal Prep Banana Bread Protein Bars",
+          "domain": "proteinbars.co",
+          "category": "protein bars"
+        }
       ]
     },
     {
       "id": 101,
       "slug": "dairy-free-avocado-protein-brownies",
       "title": "Dairy-Free Avocado Protein Brownies",
-      "description": "Ultra-fudgy dairy-free brownies made with avocado for healthy fats and incredible texture. No butter, no milk, all delicious!",
+      "description": "These ultra-fudgy dairy-free brownies are a guilt-free indulgence packed with nutritious goodness, delivering approximately 10 grams of protein per serving to fuel your body and satisfy your sweet cravings. Made with creamy avocado, they boast healthy fats that contribute to sustained energy and skin nourishment, all while providing a decadent, melt-in-your-mouth texture that\u2019s rich and velvety. The intense chocolate flavor is perfectly balanced by the smooth, moist crumb, making each bite irresistibly luscious. Thanks to the wholesome ingredients and lack of dairy, they're suitable for vegan and gluten-free diets\u2014just ensure you use gluten-free oats or flour if needed. These brownies are ideal for post-workout recovery or as a nutritious snack on busy days, and they store beautifully for meal prep, offering a quick sweet fix whenever cravings strike. For best results, underbake slightly to keep the center fudgy and moist, and consider adding a sprinkle of sea salt or dairy-free chocolate chips on top for extra flavor. Whether enjoyed with a glass of plant-based milk or on their own, these brownies are a satisfying, health-conscious treat you\u2019ll want to keep on hand!",
       "protein": 10,
       "calories": 155,
       "carbs": 16,
@@ -1729,6 +2535,37 @@
         {
           "step": "Bake",
           "text": "Pour into a parchment-lined 8x8 pan. Bake at 175\u00b0C (350\u00b0F) for 22-25 minutes. Cool completely before slicing."
+        }
+      ],
+      "related_recipes": [
+        {
+          "slug": "avocado-protein-brownies",
+          "title": "Avocado Protein Brownies",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "high-protein-brownies",
+          "title": "High Protein Brownies",
+          "domain": "proteinbrownies.co"
+        },
+        {
+          "slug": "sweet-potato-protein-brownies",
+          "title": "Sweet Potato Protein Brownies",
+          "domain": "proteinbrownies.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "vegan-protein-cookies",
+          "title": "Vegan Protein Cookies",
+          "domain": "proteincookies.co",
+          "category": "protein cookies"
+        },
+        {
+          "slug": "no-bake-chocolate-peanut-butter-bars",
+          "title": "No-Bake Chocolate Peanut Butter Bars",
+          "domain": "proteinbars.co",
+          "category": "protein bars"
         }
       ]
     }

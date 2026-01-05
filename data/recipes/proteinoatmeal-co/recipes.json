@@ -4,7 +4,7 @@
       "id": 1,
       "slug": "high-protein-oatmeal",
       "title": "High Protein Oatmeal",
-      "description": "Classic high protein oatmeal with 28g protein per bowl. The perfect muscle-building breakfast to start your day.",
+      "description": "This classic high-protein oatmeal packs an impressive 28 grams of muscle-supporting protein per bowl, making it an ideal choice for fueling your busy mornings or post-workout recovery. Richly creamy and warmly comforting, the oats are perfectly complemented by hearty additions like nut butter or protein powder, creating a satisfying texture that balances smoothness with a gentle chew. The naturally sweet aroma and inviting flavor make each spoonful feel like a treat, while the nutrient-dense ingredients help keep you full and energized for hours. Whether you're gearing up for a busy day or recovering from intense training, this oatmeal offers a wholesome, balanced start that supports your fitness goals. It's versatile enough to be customized with your favorite toppings, such as fresh berries or seeds, and can easily be prepared in advance for meal prep convenience. For those with dietary restrictions, gluten-free oats are easily incorporated, and vegan options can be achieved by swapping in plant-based protein powders and dairy-free milk. For best results, cook the oats gently to preserve their creamy texture and stir in protein powder off the heat to avoid clumping. Enjoy this nourishing bowl on its own or paired with a side of fruit for a complete, high-protein breakfast that tastes as good as it fuels.",
       "protein": 28,
       "calories": 380,
       "carbs": 45,
@@ -56,13 +56,44 @@
           "step": "Serve",
           "text": "Enjoy immediately while warm."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "high-protein-oatmeal-recipe",
+          "title": "High Protein Oatmeal Recipe",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "protein-oatmeal-cookies",
+          "title": "Protein Oatmeal Cookies",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "protein-oatmeal-recipe",
+          "title": "Protein Oatmeal Recipe",
+          "domain": "proteinoatmeal.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "double-chocolate-protein-waffles",
+          "title": "Double Chocolate Protein Waffles",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        },
+        {
+          "slug": "high-protein-banana-bread",
+          "title": "High Protein Banana Bread Recipe",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        }
       ]
     },
     {
       "id": 2,
       "slug": "protein-oatmeal-recipe",
       "title": "Protein Oatmeal Recipe",
-      "description": "The ultimate protein oatmeal recipe with 25g protein. Creamy, filling, and perfect for meal prep.",
+      "description": "This ultimate protein oatmeal recipe packs a satisfying 25 grams of muscle-building protein per serving, making it an ideal choice for fueling your day or recovering after a tough workout. With its creamy, velvety texture and naturally sweet flavor, it delivers both comfort and nourishment in every bite. The hearty oats provide complex carbs for sustained energy, while the added protein ensures your muscles get the support they need to repair and grow. Perfect for meal prep, this dish can be made in advance and enjoyed warm or chilled, making mornings effortless and satisfying. It's a versatile option suitable for gluten-free diets\u2014just ensure you use certified gluten-free oats\u2014and can easily be adapted to vegan preferences by swapping in plant-based protein powder and dairy-free milk. For best results, cook the oats gently over low heat to maintain their creamy consistency, and stir in your favorite mix-ins like berries, nuts, or a drizzle of honey to elevate the flavor. Whether you're looking for a post-workout boost or a wholesome breakfast that keeps you full until lunch, this protein oatmeal is a delicious, nutritious solution to start your day strong.",
       "protein": 25,
       "calories": 350,
       "carbs": 42,
@@ -114,13 +145,44 @@
           "step": "Serve",
           "text": "Eat immediately for best texture."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "peanut-butter-protein-oatmeal",
+          "title": "Peanut Butter Protein Oatmeal",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "high-protein-oatmeal",
+          "title": "High Protein Oatmeal",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "protein-powder-in-oatmeal",
+          "title": "Protein Powder in Oatmeal",
+          "domain": "proteinoatmeal.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "carrot-cake-protein-waffles",
+          "title": "Carrot Cake Protein Waffles",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        },
+        {
+          "slug": "banana-bread-with-protein-powder-recipe",
+          "title": "Easy Banana Bread with Protein Powder",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        }
       ]
     },
     {
       "id": 3,
       "slug": "protein-powder-in-oatmeal",
       "title": "Protein Powder in Oatmeal",
-      "description": "Learn how to add protein powder to oatmeal perfectly. 26g protein with no clumps guaranteed.",
+      "description": "Learn how to add protein powder to oatmeal perfectly, delivering a satisfying breakfast with 26 grams of muscle-building protein and no clumps guaranteed. This creamy, hearty bowl combines the warm, comforting texture of perfectly cooked oats with a smooth, protein-enriched boost that keeps you energized all morning. The subtle sweetness of the oats pairs beautifully with your favorite flavor of protein powder, creating a balanced taste that\u2019s both indulgent and nutritious. With its high-protein content, this meal is ideal for post-workout recovery, meal prep, or a filling start to your day. It\u2019s naturally gluten-free if you choose gluten-free oats, and vegan options are easy to make by selecting plant-based protein powders. For best results, add the protein powder gradually while stirring vigorously to prevent clumping, and consider topping it with fresh fruit, nuts, or a drizzle of honey for added texture and flavor. This versatile recipe is perfect for anyone looking to boost their macros without sacrificing taste or simplicity.",
       "protein": 26,
       "calories": 340,
       "carbs": 40,
@@ -171,13 +233,44 @@
           "step": "Top",
           "text": "Sprinkle with walnuts and serve."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "oatmeal-with-protein-powder",
+          "title": "Oatmeal with Protein Powder",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "high-protein-oatmeal",
+          "title": "High Protein Oatmeal",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "protein-oatmeal-recipe",
+          "title": "Protein Oatmeal Recipe",
+          "domain": "proteinoatmeal.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "dairy-free-banana-oat-protein-pancakes",
+          "title": "Dairy-Free Banana Oat Protein Pancakes",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        },
+        {
+          "slug": "protein-zucchini-bread",
+          "title": "Delicious Protein Zucchini Bread",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        }
       ]
     },
     {
       "id": 4,
       "slug": "oatmeal-with-protein-powder",
       "title": "Oatmeal with Protein Powder",
-      "description": "Fluffy oatmeal with protein powder that tastes amazing. 24g protein for sustained energy.",
+      "description": "This fluffy oatmeal with protein powder delivers a satisfying, creamy texture and a deliciously comforting flavor that will keep you energized all day long. Packed with 24 grams of high-quality protein per serving, it provides the perfect balance of macronutrients to support muscle recovery, boost your metabolism, and keep hunger at bay. The smooth, velvety oats are infused with a subtle sweetness and a hint of flavor from your favorite protein powder, making each bite both nourishing and indulgent. Whether enjoyed as a hearty breakfast after a morning workout or meal prep for busy weekdays, this dish is versatile and easy to customize\u2014try adding fresh berries, nuts, or a drizzle of honey for extra flair. It\u2019s naturally gluten-free if you choose a gluten-free protein powder and can be made vegan by swapping in plant-based milk and protein options. For the best results, cook the oats with a bit more liquid than usual to enhance creaminess, and stir thoroughly to ensure the protein powder is evenly distributed. This wholesome, high-protein oatmeal is a delicious way to fuel your day, satisfy your taste buds, and support your fitness goals effortlessly.",
       "protein": 24,
       "calories": 360,
       "carbs": 44,
@@ -229,13 +322,44 @@
           "step": "Finish",
           "text": "Top with berries, maple syrup, and chia seeds."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "protein-powder-in-oatmeal",
+          "title": "Protein Powder in Oatmeal",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "high-protein-oatmeal",
+          "title": "High Protein Oatmeal",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "protein-oatmeal-recipe",
+          "title": "Protein Oatmeal Recipe",
+          "domain": "proteinoatmeal.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "banana-bread-protein-pancakes",
+          "title": "Banana Bread Protein Pancakes",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        },
+        {
+          "slug": "high-protein-banana-bread-recipe",
+          "title": "Ultimate High-Protein Banana Bread",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        }
       ]
     },
     {
       "id": 5,
       "slug": "high-protein-oatmeal-recipe",
       "title": "High Protein Oatmeal Recipe",
-      "description": "Maximize your protein intake with this 30g protein oatmeal recipe. Perfect for athletes and fitness enthusiasts.",
+      "description": "Maximize your protein intake with this 30g protein oatmeal recipe, making it an ideal choice for athletes and fitness enthusiasts looking to fuel their muscles and support recovery. Packed with a balanced mix of complex carbs and high-quality protein, this hearty bowl provides sustained energy and aids muscle repair after intense workouts. The creamy texture is complemented by a delightful blend of flavors, with a hint of sweetness and a satisfying bite from the oats and added toppings, creating a comforting yet nourishing start to your day. Perfect for meal prep, this oatmeal can be made ahead and enjoyed warm or cold, making it a convenient option for busy mornings or post-exercise refueling. For those with dietary preferences, it's easily adaptable\u2014using plant-based protein powders for vegans or gluten-free oats for those with sensitivities. To achieve the best results, ensure you use a good-quality protein powder and stir thoroughly to prevent clumping, and consider adding fresh berries or nuts for extra texture and antioxidants. Whether you're boosting your morning routine or recovering after a workout, this recipe offers a delicious and nutritious way to stay on track with your fitness goals.",
       "protein": 30,
       "calories": 420,
       "carbs": 48,
@@ -287,13 +411,44 @@
           "step": "Enjoy",
           "text": "Serve immediately for best texture."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "high-protein-oatmeal",
+          "title": "High Protein Oatmeal",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "protein-oatmeal-recipe",
+          "title": "Protein Oatmeal Recipe",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "protein-powder-in-oatmeal",
+          "title": "Protein Powder in Oatmeal",
+          "domain": "proteinoatmeal.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "peanut-butter-cup-protein-pancakes",
+          "title": "Peanut Butter Cup Protein Pancakes",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        },
+        {
+          "slug": "protein-banana-bread-recipe",
+          "title": "Simple Protein Banana Bread Recipe",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        }
       ]
     },
     {
       "id": 6,
       "slug": "high-protein-baked-oatmeal",
       "title": "High Protein Baked Oatmeal",
-      "description": "Meal prep friendly baked oatmeal with 22g protein per serving. Make once, eat all week.",
+      "description": "This meal prep-friendly baked oatmeal is a powerhouse of nutrition, offering a satisfying 22 grams of protein per serving to fuel your day and support muscle recovery. Packed with wholesome oats, protein-rich ingredients, and a touch of natural sweetness, it delivers a creamy, tender texture with a subtly crumbly top that\u2019s irresistibly comforting. The rich, hearty flavor combines hints of vanilla and cinnamon, making each bite both indulgent and nourishing. Perfect for post-workout recovery or a quick, wholesome breakfast on busy mornings, this dish can be made once and enjoyed all week, saving you time and effort. It's naturally gluten-free if you choose certified gluten-free oats, and vegan variations can be easily achieved by swapping dairy ingredients with plant-based alternatives. For the best results, be sure to evenly distribute the wet mixture and let the oatmeal rest for a few minutes before baking to ensure a perfectly cohesive texture. Whether you're meal prepping for the week or craving a hearty start to your day, this baked oatmeal is a versatile, delicious way to boost your macros while satisfying your taste buds.",
       "protein": 22,
       "calories": 320,
       "carbs": 38,
@@ -347,13 +502,44 @@
           "step": "Bake",
           "text": "Pour into dish and bake 35 minutes until golden. Cut into 6 squares."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "protein-baked-oatmeal",
+          "title": "Protein Baked Oatmeal",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "overnight-protein-oats",
+          "title": "Overnight Protein Oats",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "high-protein-oatmeal",
+          "title": "High Protein Oatmeal",
+          "domain": "proteinoatmeal.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "churro-protein-waffles",
+          "title": "Churro Protein Waffles",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        },
+        {
+          "slug": "protein-zucchini-bread",
+          "title": "Delicious Protein Zucchini Bread",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        }
       ]
     },
     {
       "id": 7,
       "slug": "protein-baked-oatmeal",
       "title": "Protein Baked Oatmeal",
-      "description": "Soft and chewy protein baked oatmeal. 20g protein per slice with a cake-like texture.",
+      "description": "This soft and chewy protein baked oatmeal boasts an impressive 20 grams of protein per slice, making it an ideal choice for fueling your day or supporting muscle recovery. The cake-like texture offers a comforting bite, with a subtly sweet flavor that\u2019s perfectly balanced by wholesome oats and a hint of natural sweetness. Rich in fiber and packed with quality protein, this dish not only satisfies your taste buds but also helps keep you full and energized for hours. Its versatility makes it perfect for post-workout refueling, meal prepping for busy mornings, or even a nourishing snack anytime. For those with gluten sensitivities, simply use gluten-free oats to make this recipe gluten-free, and vegans can substitute dairy ingredients with plant-based alternatives to enjoy the same delicious results. To achieve the best texture, be sure to measure your ingredients carefully and avoid overmixing, which can make the baked oatmeal dense. Enjoy it warm with a dollop of yogurt or fresh fruit, or even chilled for a convenient grab-and-go breakfast that\u2019s both satisfying and nutritious.",
       "protein": 20,
       "calories": 290,
       "carbs": 35,
@@ -406,13 +592,44 @@
           "step": "Cool",
           "text": "Let cool 10 minutes before slicing into 8 pieces."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "high-protein-baked-oatmeal",
+          "title": "High Protein Baked Oatmeal",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "high-protein-oatmeal",
+          "title": "High Protein Oatmeal",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "protein-oatmeal-recipe",
+          "title": "Protein Oatmeal Recipe",
+          "domain": "proteinoatmeal.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "carrot-cake-protein-waffles",
+          "title": "Carrot Cake Protein Waffles",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        },
+        {
+          "slug": "chocolate-chip-protein-zucchini-bread",
+          "title": "Chocolate Chip Protein Zucchini Bread",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        }
       ]
     },
     {
       "id": 8,
       "slug": "protein-oatmeal-cookies",
       "title": "Protein Oatmeal Cookies",
-      "description": "Soft protein oatmeal cookies you can eat for breakfast. 12g protein per cookie.",
+      "description": "These soft protein oatmeal cookies are the perfect way to fuel your day, providing a satisfying combination of sweetness and nutrition with 12 grams of protein per cookie. Packed with wholesome oats and high-quality protein powder, they deliver a balanced macro profile that supports muscle recovery and sustained energy. The tender, chewy texture melts in your mouth, while hints of natural sweetness make each bite utterly delicious. Ideal for a quick breakfast on-the-go or a post-workout treat, these cookies are both portable and convenient, helping you stay on track with your fitness goals. They can also be easily customized to suit dietary needs\u2014gluten-free oats or vegan protein options can make them suitable for various lifestyles. For best results, ensure your oats are fresh and measure ingredients accurately for consistent texture. Store them in an airtight container to keep their softness, and enjoy them fresh for a nutritious start or a satisfying snack anytime.",
       "protein": 12,
       "calories": 180,
       "carbs": 22,
@@ -464,13 +681,44 @@
           "step": "Bake",
           "text": "Scoop 12 cookies onto sheet. Bake 12 minutes until edges are golden."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "high-protein-oatmeal",
+          "title": "High Protein Oatmeal",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "oatmeal-protein-bars",
+          "title": "Oatmeal Protein Bars",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "protein-oatmeal-recipe",
+          "title": "Protein Oatmeal Recipe",
+          "domain": "proteinoatmeal.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "lemon-ricotta-protein-crepes",
+          "title": "Lemon Ricotta Protein Crepes",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        },
+        {
+          "slug": "high-protein-banana-bread-recipe",
+          "title": "Ultimate High-Protein Banana Bread",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        }
       ]
     },
     {
       "id": 9,
       "slug": "oatmeal-protein-bars",
       "title": "Oatmeal Protein Bars",
-      "description": "No-bake oatmeal protein bars for on-the-go fuel. 15g protein per bar.",
+      "description": "These no-bake oatmeal protein bars are the perfect on-the-go fuel, offering an impressive 15 grams of protein per bar to help support muscle recovery and keep you energized throughout the day. Packed with wholesome oats and a touch of natural sweetness, they deliver a satisfying chewy texture with just the right amount of crunch from mix-ins like nuts or seeds. The rich, nutty flavor combined with a hint of honey or maple makes every bite irresistibly delicious, making them a great alternative to traditional snacks. With approximately 220 calories each, they strike a great balance between nourishment and indulgence, ideal for post-workout recovery or a quick mid-morning boost. These bars are versatile and can easily be adapted for gluten-free diets by using certified gluten-free oats, and vegan options are simple with plant-based sweeteners and protein sources like pea or rice protein. For best results, press the mixture firmly into your pan to ensure they hold together well and refrigerate for at least an hour before slicing. Whether you're filling your gym bag, prepping meals for the week, or just craving a healthy treat, these bars are a convenient and nutritious choice that never sacrifices flavor for function.",
       "protein": 15,
       "calories": 220,
       "carbs": 26,
@@ -522,13 +770,44 @@
           "step": "Set",
           "text": "Press into 9x9 pan. Refrigerate 1 hour. Cut into 10 bars."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "protein-oatmeal-cookies",
+          "title": "Protein Oatmeal Cookies",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "high-protein-oatmeal",
+          "title": "High Protein Oatmeal",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "protein-oatmeal-recipe",
+          "title": "Protein Oatmeal Recipe",
+          "domain": "proteinoatmeal.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "belgian-protein-waffles",
+          "title": "Belgian Protein Waffles",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        },
+        {
+          "slug": "protein-bread-recipe",
+          "title": "Simple Protein Bread Recipe",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        }
       ]
     },
     {
       "id": 10,
       "slug": "overnight-protein-oats",
       "title": "Overnight Protein Oats",
-      "description": "Prep the night before for grab-and-go protein oats. 23g protein with zero morning effort.",
+      "description": "Prep the night before for grab-and-go protein oats\u201423g of muscle-boosting protein with zero morning effort. These creamy overnight oats are not only rich in protein but also balanced with healthy carbs and fiber, making them an ideal choice for sustained energy and muscle recovery. The velvety texture, combined with the subtle sweetness of the oats and the richness of the added protein, creates a satisfying and flavorful bite every time. Perfect for post-workout refueling or a quick breakfast on busy mornings, they\u2019re a convenient way to stay on track with your fitness goals. You can customize this recipe with your favorite toppings like fresh berries, nuts, or a drizzle of honey for added flavor and crunch. For those with dietary restrictions, this recipe is naturally gluten-free when using certified gluten-free oats, and vegan options are easily achieved by swapping in plant-based protein powder and dairy-free milk. For best results, prepare the mixture the night before, give it a good stir in the morning, and let it sit in the fridge to develop a perfect, pudding-like consistency. This make-ahead meal is not only nutritious but also incredibly versatile, making it a staple in any health-conscious routine.",
       "protein": 23,
       "calories": 340,
       "carbs": 40,
@@ -581,13 +860,44 @@
           "step": "Eat",
           "text": "Enjoy cold or microwave for 1 minute if you prefer warm."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "high-protein-baked-oatmeal",
+          "title": "High Protein Baked Oatmeal",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "high-protein-oatmeal",
+          "title": "High Protein Oatmeal",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "protein-oatmeal-recipe",
+          "title": "Protein Oatmeal Recipe",
+          "domain": "proteinoatmeal.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "lemon-poppy-seed-protein-pancakes",
+          "title": "Lemon Poppy Seed Protein Pancakes",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        },
+        {
+          "slug": "everything-protein-bagels",
+          "title": "Everything Protein Bagels",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        }
       ]
     },
     {
       "id": 11,
       "slug": "chocolate-protein-oatmeal",
       "title": "Chocolate Protein Oatmeal",
-      "description": "Decadent chocolate protein oatmeal that tastes like dessert. 25g protein for chocolate lovers.",
+      "description": "This decadent chocolate protein oatmeal tastes like dessert, making it the perfect indulgence that also fuels your body. Packed with 25 grams of high-quality protein per serving, it helps support muscle recovery and keeps you feeling full longer, making it an ideal choice for post-workout nourishment or a satisfying breakfast. The rich, velvety texture combines creamy oats with a luscious chocolate flavor, delivering a comforting, dessert-like experience with every spoonful. Its balanced macros make it a great option for those aiming to maintain lean muscle while enjoying a sweet treat. You can savor this recipe warm for a cozy start to your day or prepare it in advance for a quick, protein-packed meal on busy mornings. For dietary flexibility, it's easily made gluten-free by using certified gluten-free oats, and vegan versions can be achieved with plant-based protein powder and dairy-free milk. To get the best results, cook the oats slowly over low heat to achieve a smooth, velvety consistency, and stir in a splash of extra almond milk or a sprinkle of cocoa nibs for added texture and flavor. Whether you're craving a dessert or looking to boost your protein intake, this chocolate oatmeal is a deliciously nutritious choice that satisfies both your sweet tooth and your health goals.",
       "protein": 25,
       "calories": 380,
       "carbs": 46,
@@ -639,13 +949,44 @@
           "step": "Top",
           "text": "Add chocolate chips and banana slices."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "maple-pecan-protein-oatmeal",
+          "title": "Maple Pecan Protein Oatmeal",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "carrot-cake-protein-oatmeal",
+          "title": "Carrot Cake Protein Oatmeal",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "high-protein-oatmeal",
+          "title": "High Protein Oatmeal",
+          "domain": "proteinoatmeal.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "coffee-infused-protein-waffles",
+          "title": "Coffee-Infused Protein Waffles",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        },
+        {
+          "slug": "whole-wheat-protein-sandwich-bread",
+          "title": "Whole Wheat Protein Sandwich Bread",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        }
       ]
     },
     {
       "id": 12,
       "slug": "peanut-butter-protein-oatmeal",
       "title": "Peanut Butter Protein Oatmeal",
-      "description": "Creamy peanut butter protein oatmeal. 27g protein with rich nutty flavor.",
+      "description": "Creamy peanut butter protein oatmeal offers a satisfying and nutrient-dense start to your day, packing an impressive 27g of muscle-loving protein per serving to fuel your workouts and aid muscle recovery. The rich, nutty flavor of smooth peanut butter blends seamlessly into the velvety oats, creating a luscious texture that\u2019s both comforting and indulgent without added sugars. This hearty dish provides a balanced mix of complex carbs and healthy fats, making it an ideal choice for a post-workout boost or a filling breakfast that keeps you energized for hours. Its creamy consistency makes each spoonful delightfully velvety, while the savory peanut butter notes add a touch of richness that keeps you coming back for more. Perfect for meal prep, you can make a batch ahead of time and enjoy it warm or chilled throughout the week. For those with dietary preferences, this recipe can easily be made gluten-free by choosing certified gluten-free oats, and vegan options are simple with plant-based peanut butter and dairy-free milk. For the best results, stir the oatmeal well to evenly distribute the peanut butter and protein powder, and add a splash of extra milk if you prefer a creamier texture. Whether you\u2019re fueling post-gym recovery or craving a satisfying, high-protein breakfast, this oatmeal is a delicious and wholesome choice.",
       "protein": 27,
       "calories": 420,
       "carbs": 44,
@@ -697,13 +1038,44 @@
           "step": "Serve",
           "text": "Top with banana and drizzle with honey."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "protein-oatmeal-recipe",
+          "title": "Protein Oatmeal Recipe",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "almond-butter-protein-oatmeal",
+          "title": "Almond Butter Protein Oatmeal",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "high-protein-oatmeal",
+          "title": "High Protein Oatmeal",
+          "domain": "proteinoatmeal.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "german-chocolate-protein-pancakes",
+          "title": "German Chocolate Protein Pancakes",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        },
+        {
+          "slug": "cinnamon-swirl-protein-bread",
+          "title": "Cinnamon Swirl Protein Bread",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        }
       ]
     },
     {
       "id": 13,
       "slug": "banana-protein-oatmeal",
       "title": "Banana Protein Oatmeal",
-      "description": "Natural sweetness from banana in this protein oatmeal. 24g protein with no added sugar needed.",
+      "description": "This nourishing bowl of protein oatmeal gets its natural sweetness from ripe bananas, offering a satisfying and wholesome start to your day without any added sugars. Packed with 24 grams of high-quality protein per serving, it supports muscle recovery and keeps you feeling full longer, making it perfect for post-workout refueling or a hearty breakfast. The creamy texture combines tender oats with the smoothness of mashed banana, creating a delightful mouthfeel that\u2019s both comforting and energizing. The subtle banana flavor pairs beautifully with your favorite toppings like nuts, seeds, or fresh berries, adding extra crunch and nutritional value. Whether you're meal prepping for busy mornings or looking for a wholesome snack, this dish is versatile and easy to customize. For those with dietary preferences, it\u2019s naturally gluten-free if using certified oats, and vegan options are simple\u2014just swap in plant-based protein powder. To achieve the best consistency, stir well and let it sit for a few minutes to allow the oats to fully absorb the flavors; adding a splash of milk or plant milk can make it even creamier. Enjoy this protein-packed oatmeal as a satisfying, nutritious treat that fuels your day and keeps your macros in check.",
       "protein": 24,
       "calories": 350,
       "carbs": 48,
@@ -755,13 +1127,44 @@
           "step": "Top",
           "text": "Sprinkle with walnuts and extra banana slices if desired."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "high-protein-oatmeal",
+          "title": "High Protein Oatmeal",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "protein-oatmeal-recipe",
+          "title": "Protein Oatmeal Recipe",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "protein-powder-in-oatmeal",
+          "title": "Protein Powder in Oatmeal",
+          "domain": "proteinoatmeal.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "lemon-ricotta-protein-crepes",
+          "title": "Lemon Ricotta Protein Crepes",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        },
+        {
+          "slug": "protein-banana-bread-recipe",
+          "title": "Simple Protein Banana Bread Recipe",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        }
       ]
     },
     {
       "id": 14,
       "slug": "apple-cinnamon-protein-oatmeal",
       "title": "Apple Cinnamon Protein Oatmeal",
-      "description": "Warm apple cinnamon protein oatmeal like apple pie for breakfast. 23g protein.",
+      "description": "Warm apple cinnamon protein oatmeal is like indulging in a comforting slice of apple pie for breakfast, but with a nutritious twist. Packed with 23 grams of muscle-repairing protein per serving, this hearty bowl helps fuel your day and supports your fitness goals. The tender oats meld seamlessly with sweet apple chunks and aromatic cinnamon, creating a cozy, dessert-like experience that\u2019s both satisfying and wholesome. The creamy texture, combined with the slight crunch of fresh apples, offers a delightful contrast that keeps every spoonful interesting. Perfect for a post-workout recovery meal or a nourishing start to your morning, it provides a balanced mix of complex carbs and high-quality protein to keep you energized. For best results, cook the oats until they\u2019re just tender but still slightly chewy, and consider topping with a sprinkle of nuts or a drizzle of honey for added flavor and crunch. This recipe is naturally gluten-free if you use certified gluten-free oats, and vegan options are easily achieved with plant-based protein powder. Make a batch ahead of time for quick, grab-and-go mornings, and enjoy the warm, comforting flavors of fall anytime you need a wholesome boost.",
       "protein": 23,
       "calories": 360,
       "carbs": 50,
@@ -814,13 +1217,44 @@
           "step": "Finish",
           "text": "Drizzle with maple syrup and top with pecans."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "pumpkin-protein-oatmeal",
+          "title": "Pumpkin Protein Oatmeal",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "high-protein-oatmeal",
+          "title": "High Protein Oatmeal",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "protein-oatmeal-recipe",
+          "title": "Protein Oatmeal Recipe",
+          "domain": "proteinoatmeal.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "birthday-cake-protein-waffles",
+          "title": "Birthday Cake Protein Waffles",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        },
+        {
+          "slug": "cheese-and-chive-protein-bread",
+          "title": "Cheese and Chive Protein Bread",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        }
       ]
     },
     {
       "id": 15,
       "slug": "blueberry-protein-oatmeal",
       "title": "Blueberry Protein Oatmeal",
-      "description": "Antioxidant-rich blueberry protein oatmeal. 24g protein with burst of berry flavor.",
+      "description": "This antioxidant-rich blueberry protein oatmeal offers a wholesome and satisfying start to your day, packing a robust 24 grams of muscle-supporting protein in each serving. The creamy, hearty oats are infused with the sweet-tart burst of fresh blueberries, delivering a natural dose of antioxidants that help combat free radicals and promote overall wellness. The smooth, velvety texture combined with juicy berries creates a delightful contrast that keeps every bite interesting and satisfying. Perfect as a post-workout recovery meal or a nourishing breakfast, it helps fuel your muscles and keeps you energized for hours. With its balanced macros\u2014fiber-rich oats, protein-packed additions, and antioxidant-packed berries\u2014this dish supports weight management and sustained fullness. For added versatility, you can customize it with plant-based protein powders to make it vegan or opt for gluten-free oats if needed. To get the best results, cook the oats on low heat to achieve a creamy consistency and stir in the berries just before serving to preserve their vibrant flavor and nutrition. Enjoy this oatmeal on busy mornings or prepare it in advance for a quick, nutritious meal ready to go!",
       "protein": 24,
       "calories": 340,
       "carbs": 44,
@@ -872,13 +1306,44 @@
           "step": "Top",
           "text": "Add remaining blueberries, almond butter, and honey."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "strawberry-protein-oatmeal",
+          "title": "Strawberry Protein Oatmeal",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "mixed-berry-protein-oatmeal",
+          "title": "Mixed Berry Protein Oatmeal",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "high-protein-oatmeal",
+          "title": "High Protein Oatmeal",
+          "domain": "proteinoatmeal.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "carrot-cake-protein-waffles",
+          "title": "Carrot Cake Protein Waffles",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        },
+        {
+          "slug": "everything-protein-bagels",
+          "title": "Everything Protein Bagels",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        }
       ]
     },
     {
       "id": 16,
       "slug": "pumpkin-protein-oatmeal",
       "title": "Pumpkin Protein Oatmeal",
-      "description": "Fall-inspired pumpkin protein oatmeal. 25g protein with warm pumpkin spice flavor.",
+      "description": "This fall-inspired pumpkin protein oatmeal offers a cozy, hearty start to your day, packed with an impressive 25 grams of muscle-nourishing protein per serving to fuel your morning and support your fitness goals. The creamy texture is infused with warm pumpkin spice, delivering a comforting aroma and a delightful blend of sweet and savory flavors that evoke the best of autumn. Each spoonful offers a satisfying chewiness from the oats, complemented by the smooth richness of pumpkin and a hint of cinnamon and nutmeg, creating a truly indulgent yet nutritious treat. Perfect for post-workout recovery or meal prep, this oatmeal keeps you full and energized for hours, thanks to its balanced macros and fiber content. For those with dietary restrictions, it can easily be made gluten-free by choosing certified gluten-free oats, and vegan options are simple by swapping in plant-based protein powder and dairy-free milk. To achieve the best texture, use rolled oats and stir frequently as it cooks to prevent sticking, and finish with a sprinkle of pumpkin seeds or a drizzle of maple syrup for added crunch and sweetness. Enjoy this warming bowl on crisp mornings or as a comforting snack, knowing you're nourishing your body with wholesome, seasonal ingredients.",
       "protein": 25,
       "calories": 370,
       "carbs": 48,
@@ -931,13 +1396,44 @@
           "step": "Serve",
           "text": "Enjoy warm."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "apple-cinnamon-protein-oatmeal",
+          "title": "Apple Cinnamon Protein Oatmeal",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "high-protein-oatmeal",
+          "title": "High Protein Oatmeal",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "protein-oatmeal-recipe",
+          "title": "Protein Oatmeal Recipe",
+          "domain": "proteinoatmeal.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "red-velvet-protein-pancakes",
+          "title": "Red Velvet Protein Pancakes",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        },
+        {
+          "slug": "gluten-free-almond-flour-protein-bread",
+          "title": "Gluten-Free Almond Flour Protein Bread",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        }
       ]
     },
     {
       "id": 17,
       "slug": "vanilla-protein-oatmeal",
       "title": "Vanilla Protein Oatmeal",
-      "description": "Simple vanilla protein oatmeal as a perfect base recipe. 24g protein to customize your way.",
+      "description": "This simple vanilla protein oatmeal serves as the perfect nutritious foundation to fuel your day, providing a satisfying 24 grams of high-quality protein per serving that supports muscle recovery and keeps you full longer. Its creamy texture, complemented by a delicate vanilla aroma, offers a comforting yet energizing bite, making it an ideal post-workout meal or a nourishing start to your morning. The naturally hearty oats create a velvety base that pairs beautifully with your favorite mix-ins\u2014think fresh berries, chopped nuts, or a drizzle of honey\u2014to customize your flavor and boost the nutritional profile. With just 320 calories per serving, it's a balanced option for those mindful of their macros, fitting seamlessly into any clean eating or high-protein diet. For added versatility, this recipe can easily be made gluten-free by choosing certified gluten-free oats, and vegan options are achievable by swapping in plant-based milk and protein powder. To get the best results, cook the oats with your preferred liquid until perfectly tender, then stir in your vanilla protein and toppings for a smooth, creamy consistency. Whether you're preparing a quick breakfast, a meal prep staple, or a satisfying snack, this versatile recipe is designed to keep you energized and satisfied throughout your day.",
       "protein": 24,
       "calories": 320,
       "carbs": 40,
@@ -989,13 +1485,44 @@
           "step": "Customize",
           "text": "Add your favorite toppings - fruit, nuts, or chocolate."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "high-protein-oatmeal",
+          "title": "High Protein Oatmeal",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "protein-oatmeal-recipe",
+          "title": "Protein Oatmeal Recipe",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "protein-powder-in-oatmeal",
+          "title": "Protein Powder in Oatmeal",
+          "domain": "proteinoatmeal.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "gluten-free-buckwheat-protein-pancakes",
+          "title": "Gluten-Free Buckwheat Protein Pancakes",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        },
+        {
+          "slug": "chocolate-chip-protein-zucchini-bread",
+          "title": "Chocolate Chip Protein Zucchini Bread",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        }
       ]
     },
     {
       "id": 18,
       "slug": "strawberry-protein-oatmeal",
       "title": "Strawberry Protein Oatmeal",
-      "description": "Fresh strawberry protein oatmeal bursting with berry flavor. 23g protein.",
+      "description": "This fresh strawberry protein oatmeal is a delicious way to start your day, bursting with vibrant berry flavor and packed with 23 grams of high-quality protein to fuel your muscles and keep you satisfied longer. The creamy, slightly chewy texture of the oats perfectly complements the juicy, sweet chunks of fresh strawberries, creating a harmonious balance of taste and mouthfeel. With its wholesome ingredients, this meal delivers a balanced macro profile\u2014rich in complex carbs, healthy fiber, and a generous protein boost\u2014making it ideal for post-workout recovery or a filling breakfast. It's versatile enough for meal prep, as you can make it ahead and enjoy warm or chilled throughout the week. To keep it vegan or gluten-free, simply swap in plant-based protein powder and gluten-free oats. For best results, cook the oats until just tender for a creamier consistency, and fold in the strawberries just before serving to preserve their freshness. Whether you're looking for a nutritious start or a satisfying snack, this strawberry protein oatmeal is a tasty, nourishing choice that keeps you energized and craving more.",
       "protein": 23,
       "calories": 330,
       "carbs": 42,
@@ -1047,13 +1574,44 @@
           "step": "Finish",
           "text": "Drizzle with honey."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "blueberry-protein-oatmeal",
+          "title": "Blueberry Protein Oatmeal",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "high-protein-oatmeal",
+          "title": "High Protein Oatmeal",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "protein-oatmeal-recipe",
+          "title": "Protein Oatmeal Recipe",
+          "domain": "proteinoatmeal.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "lemon-ricotta-protein-crepes",
+          "title": "Lemon Ricotta Protein Crepes",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        },
+        {
+          "slug": "cinnamon-raisin-protein-bagels",
+          "title": "Cinnamon Raisin Protein Bagels",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        }
       ]
     },
     {
       "id": 19,
       "slug": "savory-protein-oatmeal",
       "title": "Savory Protein Oatmeal",
-      "description": "Savory protein oatmeal for those who don't like sweet breakfasts. 28g protein.",
+      "description": "This savory protein oatmeal is the perfect alternative for those who prefer a hearty, non-sweet breakfast packed with muscle-building power. Boasting an impressive 28 grams of protein per serving, it's designed to fuel your morning with sustained energy and aid in muscle recovery, making it ideal for post-workout nourishment or a satisfying mid-day meal. The creamy oats are infused with savory flavors, complemented by melt-in-your-mouth cheese and perfectly cooked eggs, delivering a delightful combination of velvety textures and rich, savory taste that will keep you coming back for more. Its hearty consistency provides a comforting yet protein-rich start to your day, helping you stay full and focused longer. This dish can easily be tailored for gluten-free diets by using certified gluten-free oats, and vegan versions can be created with plant-based cheese and egg substitutes. For best results, cook the oats with a bit of broth instead of water for added flavor, and top with fresh herbs or a sprinkle of chili flakes for an extra kick. Whether enjoyed as a quick breakfast, meal prep option, or post-workout recovery meal, this savory oatmeal is a versatile and nutritious choice that breaks the mold of traditional sweet options.",
       "protein": 28,
       "calories": 380,
       "carbs": 38,
@@ -1107,13 +1665,44 @@
           "step": "Top",
           "text": "Fry remaining egg and place on top."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "high-protein-oatmeal",
+          "title": "High Protein Oatmeal",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "protein-oatmeal-recipe",
+          "title": "Protein Oatmeal Recipe",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "protein-powder-in-oatmeal",
+          "title": "Protein Powder in Oatmeal",
+          "domain": "proteinoatmeal.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "chocolate-chip-protein-pancakes",
+          "title": "Chocolate Chip Protein Pancakes",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        },
+        {
+          "slug": "multigrain-protein-sandwich-bread",
+          "title": "Multigrain Protein Sandwich Bread",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        }
       ]
     },
     {
       "id": 20,
       "slug": "maple-pecan-protein-oatmeal",
       "title": "Maple Pecan Protein Oatmeal",
-      "description": "Indulgent maple pecan protein oatmeal. 24g protein with buttery pecan crunch.",
+      "description": "Indulgent maple pecan protein oatmeal delivers a satisfying, nutrient-packed start to your day, offering an impressive 24 grams of muscle-repairing protein per serving to help fuel your workouts and keep you full longer. The creamy, slightly sweet oats are perfectly complemented by a buttery pecan crunch that adds a delightful texture contrast with every bite, while the rich maple flavor provides a comforting, indulgent taste. This hearty bowl not only satisfies your sweet tooth but also supplies essential healthy fats and fiber, making it an ideal choice for balanced nutrition. Its smooth, velvety consistency makes it perfect for a quick breakfast or a post-exercise recovery meal, helping to replenish glycogen stores and support muscle growth. For those with dietary restrictions, you can easily make this gluten-free by choosing certified gluten-free oats and vegan by swapping dairy milk for plant-based alternatives like almond or soy milk. To achieve the best texture and flavor, toast the pecans lightly before adding them to enhance their nuttiness, and stir in a splash of vanilla extract for added depth. Whether enjoyed warm on a chilly morning or prepared ahead for meal prep, this oatmeal delivers comfort, nutrition, and indulgence in every spoonful.",
       "protein": 24,
       "calories": 400,
       "carbs": 46,
@@ -1165,13 +1754,44 @@
           "step": "Finish",
           "text": "Top with toasted pecans and drizzle with maple syrup."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "chocolate-protein-oatmeal",
+          "title": "Chocolate Protein Oatmeal",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "high-protein-oatmeal",
+          "title": "High Protein Oatmeal",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "protein-oatmeal-recipe",
+          "title": "Protein Oatmeal Recipe",
+          "domain": "proteinoatmeal.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "german-chocolate-protein-pancakes",
+          "title": "German Chocolate Protein Pancakes",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        },
+        {
+          "slug": "high-protein-bread",
+          "title": "Everyday High Protein Bread",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        }
       ]
     },
     {
       "id": 21,
       "slug": "coconut-protein-oatmeal",
       "title": "Coconut Protein Oatmeal",
-      "description": "Tropical coconut protein oatmeal. 22g protein with island vibes.",
+      "description": "Tropical coconut protein oatmeal offers a delicious and nourishing way to start your day, packing a satisfying 22 grams of protein per serving that supports muscle recovery and keeps you energized longer. The creamy, velvety texture is infused with fragrant coconut and hints of tropical sweetness, creating a comforting bowl that feels like a mini vacation with every spoonful. Rich in wholesome oats and boosted with high-quality protein, this dish provides a balanced macro profile\u2014ideal for post-workout refueling or a hearty breakfast to fuel your busy day. Its naturally sweet, island-inspired flavors make it a delightful treat without the need for added sugars, and it's easily customizable\u2014swap in plant-based protein for a vegan version or use gluten-free oats for gluten sensitivities. For best results, prepare it with your favorite milk alternative and top with fresh pineapple or toasted coconut flakes for extra crunch and flavor. This oatmeal is perfect for meal prep, allowing you to enjoy a nutritious, high-protein breakfast on busy mornings or as a satisfying snack. Whether you\u2019re looking to boost your macros or indulge in a tropical escape, this coconut protein oatmeal is an irresistible, health-conscious choice.",
       "protein": 22,
       "calories": 360,
       "carbs": 42,
@@ -1223,13 +1843,44 @@
           "step": "Finish",
           "text": "Drizzle with honey."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "dairy-free-coconut-milk-protein-oatmeal",
+          "title": "Dairy-Free Coconut Milk Protein Oatmeal",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "high-protein-oatmeal",
+          "title": "High Protein Oatmeal",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "protein-oatmeal-recipe",
+          "title": "Protein Oatmeal Recipe",
+          "domain": "proteinoatmeal.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "german-chocolate-protein-pancakes",
+          "title": "German Chocolate Protein Pancakes",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        },
+        {
+          "slug": "protein-banana-bread",
+          "title": "Classic Protein Banana Bread",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        }
       ]
     },
     {
       "id": 22,
       "slug": "coffee-protein-oatmeal",
       "title": "Coffee Protein Oatmeal",
-      "description": "Wake up with coffee protein oatmeal. 24g protein plus caffeine boost.",
+      "description": "Wake up with coffee protein oatmeal\u2014a delicious, energizing breakfast that packs 24 grams of high-quality protein to fuel your day and keep you feeling full longer. This creamy, hearty bowl combines the rich, robust flavor of coffee with the comforting texture of perfectly cooked oats, offering a satisfying blend of smoothness and a slight chew. The caffeine boost provides an invigorating start, making it an ideal post-workout recovery meal or a quick morning pick-me-up on busy days. With its balanced macros\u2014highlighted by a healthy dose of protein and moderate calories\u2014it's perfect for supporting muscle repair and maintaining energy levels. You can customize it with toppings like nuts, berries, or a drizzle of honey for added flavor and texture. For those with dietary restrictions, this recipe can easily be made gluten-free by using certified gluten-free oats, and vegan options are simple by swapping in plant-based protein powder and milk. For best results, prepare the oatmeal the night before for a grab-and-go breakfast or cook it fresh for an extra comforting start. Whether enjoyed warm or iced, this coffee-infused meal is a tasty, nutritious way to kick off your day with a satisfying crunch and a caffeine hit.",
       "protein": 24,
       "calories": 340,
       "carbs": 40,
@@ -1282,13 +1933,44 @@
           "step": "Top",
           "text": "Add almond butter, maple syrup, and chocolate chips."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "high-protein-oatmeal",
+          "title": "High Protein Oatmeal",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "protein-oatmeal-recipe",
+          "title": "Protein Oatmeal Recipe",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "protein-powder-in-oatmeal",
+          "title": "Protein Powder in Oatmeal",
+          "domain": "proteinoatmeal.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "german-chocolate-protein-pancakes",
+          "title": "German Chocolate Protein Pancakes",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        },
+        {
+          "slug": "everything-protein-bagels",
+          "title": "Everything Protein Bagels",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        }
       ]
     },
     {
       "id": 23,
       "slug": "carrot-cake-protein-oatmeal",
       "title": "Carrot Cake Protein Oatmeal",
-      "description": "Carrot cake flavored protein oatmeal. 23g protein that tastes like dessert.",
+      "description": "This carrot cake flavored protein oatmeal offers a deliciously satisfying way to boost your daily protein intake, providing an impressive 23 grams of muscle-supporting protein per serving. Rich in fiber and wholesome ingredients, it helps keep you full and energized for hours, making it an ideal post-workout treat or a nourishing breakfast to start your day. The combination of sweet carrots, warm spices, and a hint of natural sweetness creates a dessert-like experience, with a creamy yet hearty texture that feels indulgent without the guilt. Its cozy, spiced flavor profile makes it perfect for chilly mornings or anytime you crave a comforting, nutritious snack. For added versatility, this recipe can easily be made gluten-free by using certified gluten-free oats, and vegan options are available by swapping dairy milk for plant-based alternatives and using vegan protein powder. To achieve the best consistency, stir thoroughly to prevent clumping and adjust the liquid for your preferred creaminess. Whether enjoyed as a quick breakfast, a midday pick-me-up, or meal prep for the week, this protein-packed oatmeal proves that healthy can taste like dessert\u2014without sacrificing flavor or macros.",
       "protein": 23,
       "calories": 370,
       "carbs": 48,
@@ -1342,13 +2024,44 @@
           "step": "Top",
           "text": "Add a dollop of cream cheese on top."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "chocolate-protein-oatmeal",
+          "title": "Chocolate Protein Oatmeal",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "high-protein-oatmeal",
+          "title": "High Protein Oatmeal",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "protein-oatmeal-recipe",
+          "title": "Protein Oatmeal Recipe",
+          "domain": "proteinoatmeal.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "birthday-cake-protein-waffles",
+          "title": "Birthday Cake Protein Waffles",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        },
+        {
+          "slug": "protein-powder-banana-bread",
+          "title": "Banana Bread with Protein Powder",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        }
       ]
     },
     {
       "id": 24,
       "slug": "almond-butter-protein-oatmeal",
       "title": "Almond Butter Protein Oatmeal",
-      "description": "Smooth almond butter protein oatmeal. 26g protein with healthy fats.",
+      "description": "This smooth almond butter protein oatmeal delivers an impressive 26 grams of muscle-nourishing protein per serving, making it an ideal choice for post-workout recovery or a filling breakfast to fuel your day. Rich in healthy fats from almond butter, it offers a satisfying creaminess and a subtly nutty flavor that perfectly balances the hearty oats. The combination of textures\u2014creamy almond butter mingling with tender oats\u2014creates a luxurious mouthfeel that keeps you satisfied for hours. With approximately 400 calories per serving, it's a nutrient-dense option that supports your fitness goals while providing sustained energy. This versatile dish can easily be customized with toppings like fresh berries, sliced bananas, or a sprinkle of chia seeds for added antioxidants and fiber. Perfect for meal prep, it keeps well refrigerated and makes for an easy grab-and-go breakfast or snack. For those with dietary restrictions, this recipe is naturally gluten-free when using certified gluten-free oats, and vegan-friendly if you opt for plant-based protein powder and almond butter. To achieve the best texture, cook the oats until just tender and stir in the almond butter while still warm for a silky, well-incorporated finish.",
       "protein": 26,
       "calories": 400,
       "carbs": 42,
@@ -1400,13 +2113,44 @@
           "step": "Top",
           "text": "Add banana slices and sliced almonds."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "peanut-butter-protein-oatmeal",
+          "title": "Peanut Butter Protein Oatmeal",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "high-protein-oatmeal",
+          "title": "High Protein Oatmeal",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "protein-oatmeal-recipe",
+          "title": "Protein Oatmeal Recipe",
+          "domain": "proteinoatmeal.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "red-velvet-protein-pancakes",
+          "title": "Red Velvet Protein Pancakes",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        },
+        {
+          "slug": "everything-protein-bagels",
+          "title": "Everything Protein Bagels",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        }
       ]
     },
     {
       "id": 25,
       "slug": "mixed-berry-protein-oatmeal",
       "title": "Mixed Berry Protein Oatmeal",
-      "description": "Colorful mixed berry protein oatmeal. 24g protein with antioxidant-rich berries.",
+      "description": "This vibrant mixed berry protein oatmeal offers a deliciously satisfying way to fuel your day with 24 grams of high-quality protein, making it an ideal choice for post-workout recovery or a hearty breakfast. Packed with antioxidant-rich berries, it not only boosts your immune system but also adds natural sweetness and a burst of color to every spoonful. The creamy, velvety texture combined with the tartness of fresh berries creates a perfectly balanced flavor that\u2019s both refreshing and indulgent. Rich in fiber and healthy carbs, this oatmeal provides sustained energy and keeps you feeling full longer. It\u2019s versatile enough to be enjoyed warm on chilly mornings or chilled for a cooling, nutritious snack. For those with dietary preferences, this recipe can easily be made gluten-free by using certified gluten-free oats, and vegan options are simple with plant-based protein powders. To achieve the best texture, cook the oats until tender and fold in the berries just before serving to preserve their vibrant color and antioxidant properties. Whether you're prepping for busy mornings or need a wholesome refuel after your workout, this colorful berry protein oatmeal is a tasty and nourishing choice that hits all the right notes.",
       "protein": 24,
       "calories": 350,
       "carbs": 46,
@@ -1458,13 +2202,44 @@
           "step": "Top",
           "text": "Add remaining fresh berries, honey, and chia seeds."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "blueberry-protein-oatmeal",
+          "title": "Blueberry Protein Oatmeal",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "high-protein-oatmeal",
+          "title": "High Protein Oatmeal",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "protein-oatmeal-recipe",
+          "title": "Protein Oatmeal Recipe",
+          "domain": "proteinoatmeal.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "red-velvet-protein-pancakes",
+          "title": "Red Velvet Protein Pancakes",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        },
+        {
+          "slug": "multigrain-protein-sandwich-bread",
+          "title": "Multigrain Protein Sandwich Bread",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        }
       ]
     },
     {
       "id": 100,
       "slug": "gluten-free-certified-oats-protein-oatmeal",
       "title": "Gluten-Free Certified Oats Protein Oatmeal",
-      "description": "Creamy, comforting protein oatmeal made with certified gluten-free oats. A safe and delicious breakfast for those with celiac disease or gluten sensitivity.",
+      "description": "Creamy, comforting protein oatmeal made with certified gluten-free oats offers a nourishing start to your day, boasting an impressive 25 grams of protein per serving that supports muscle recovery and sustained energy. The rich, velvety texture combines the wholesome chew of oats with a smooth, luscious finish, enhanced by a hint of natural sweetness and a subtle nutty flavor. Perfect for post-workout recovery or a hearty breakfast, this meal delivers balanced macros\u2014fiber, healthy fats, and ample protein\u2014to keep you full and energized for hours. Its versatile nature allows for customization with your favorite toppings like fresh berries, nuts, or a dollop of Greek yogurt. For those with dietary restrictions, this recipe is naturally gluten-free and can easily be adapted for vegans by using plant-based protein powders and dairy-free milk alternatives. To achieve the best creaminess, cook the oats slowly and stir in your protein of choice at the end, ensuring a smooth, well-integrated texture. This oatmeal is ideal for meal prep, offering a quick, nourishing option that can be refrigerated and reheated without losing its delicious appeal. Whether enjoyed as a satisfying breakfast or a revitalizing snack, this high-protein, gluten-free option is a wholesome, tasty way to fuel your active lifestyle.",
       "protein": 25,
       "calories": 320,
       "carbs": 35,
@@ -1519,13 +2294,44 @@
           "step": "Enjoy",
           "text": "Serve immediately while warm and creamy."
         }
+      ],
+      "related_recipes": [
+        {
+          "slug": "high-protein-oatmeal",
+          "title": "High Protein Oatmeal",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "protein-oatmeal-recipe",
+          "title": "Protein Oatmeal Recipe",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "protein-powder-in-oatmeal",
+          "title": "Protein Powder in Oatmeal",
+          "domain": "proteinoatmeal.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "chocolate-chip-protein-pancakes",
+          "title": "Chocolate Chip Protein Pancakes",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        },
+        {
+          "slug": "protein-cloud-bread",
+          "title": "Fluffy Protein Cloud Bread",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
+        }
       ]
     },
     {
       "id": 101,
       "slug": "dairy-free-coconut-milk-protein-oatmeal",
       "title": "Dairy-Free Coconut Milk Protein Oatmeal",
-      "description": "Rich and creamy oatmeal made with coconut milk and plant-based protein. Tropical flavors meet comforting breakfast in this dairy-free bowl.",
+      "description": "Rich and creamy oatmeal made with coconut milk and plant-based protein. Tropical flavors meet comforting breakfast in this dairy-free bowl. Packed with 22 grams of plant-based protein per serving, this dish provides a satisfying boost to fuel your day or support muscle recovery after a workout. The velvety coconut milk lends a luscious texture, while hints of pineapple and shredded coconut add a sweet, exotic twist that awakens your palate. The smooth, creamy consistency makes each spoonful indulgent yet nourishing, offering a balanced mix of healthy fats, fiber, and protein. Ideal for meal prep, this oatmeal can be made ahead and enjoyed warm or chilled, making it perfect for busy mornings or an energizing snack. It\u2019s naturally vegan and gluten-free, with simple swaps like gluten-free oats if needed. For best results, cook the oats slowly over low heat to achieve a silky texture and stir in the plant-based protein powder just before serving to maintain its smoothness. Whether you\u2019re post-workout, starting your day, or craving a flavorful comfort food, this tropical-inspired oatmeal delivers both taste and nutrition in every bite.",
       "protein": 22,
       "calories": 340,
       "carbs": 38,
@@ -1579,6 +2385,37 @@
         {
           "step": "Serve",
           "text": "Enjoy immediately for the best texture and flavor."
+        }
+      ],
+      "related_recipes": [
+        {
+          "slug": "coconut-protein-oatmeal",
+          "title": "Coconut Protein Oatmeal",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "high-protein-oatmeal",
+          "title": "High Protein Oatmeal",
+          "domain": "proteinoatmeal.co"
+        },
+        {
+          "slug": "protein-oatmeal-recipe",
+          "title": "Protein Oatmeal Recipe",
+          "domain": "proteinoatmeal.co"
+        }
+      ],
+      "empire_links": [
+        {
+          "slug": "dairy-free-banana-oat-protein-pancakes",
+          "title": "Dairy-Free Banana Oat Protein Pancakes",
+          "domain": "proteinpancakes.co",
+          "category": "protein pancakes"
+        },
+        {
+          "slug": "protein-cloud-bread",
+          "title": "Fluffy Protein Cloud Bread",
+          "domain": "protein-bread.com",
+          "category": "protein bread"
         }
       ]
     }
