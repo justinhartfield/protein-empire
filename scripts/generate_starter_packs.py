@@ -478,7 +478,7 @@ def generate_pack_starter_html(site_config, recipes):
         </div>
         
         <div class="mt-8 text-center text-slate-500 text-xs">
-            <p>&copy; 2026 {site_config['name']}. All recipes macro-verified using USDA FoodData Central.</p>
+            <p>&copy; 2026 <a href="https://HighProtein.Recipes" class="hover:text-amber-400 transition-colors">High Protein Recipes</a>. All recipes macro-verified using USDA FoodData Central.</p>
         </div>
     </div>
 </footer>
@@ -710,7 +710,7 @@ def generate_success_starter_html(site_config):
         </div>
         
         <div class="mt-8 text-center text-slate-500 text-xs">
-            <p>&copy; 2026 {site_config['name']}. All recipes macro-verified using USDA FoodData Central.</p>
+            <p>&copy; 2026 <a href="https://HighProtein.Recipes" class="hover:text-amber-400 transition-colors">High Protein Recipes</a>. All recipes macro-verified using USDA FoodData Central.</p>
         </div>
     </div>
 </footer>

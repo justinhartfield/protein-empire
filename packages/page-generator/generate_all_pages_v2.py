@@ -426,7 +426,7 @@ RECIPE_TEMPLATE = '''<!DOCTYPE html>
                 </a>
             </div>
             <div class="text-center">
-                <p class="text-slate-400 text-sm">&copy; 2026 {site_name}.com | Part of The Protein Empire</p>
+                <p class="text-slate-400 text-sm">&copy; 2026 <a href="https://HighProtein.Recipes" class="hover:text-amber-400 transition-colors">High Protein Recipes</a>. All rights reserved.</p>
                 <p class="text-slate-500 text-xs mt-2">Nutrition data verified using USDA FoodData Central.</p>
             </div>
         </div>
