@@ -1,25 +1,15 @@
-# Netlify Configuration for HighProtein.Recipes
-# The Indexer Site for the Protein Empire
+# Netlify Configuration
+# Uses pre-built dist files from the repository
 
 [build]
-  # Base directory for the build
-  base = "apps/highprotein.recipes"
+  # No build needed - dist files are pre-built and committed
+  command = "echo 'Using pre-built dist files'"
   
-  # Build command - runs from the repository root
-  command = "cd ../.. && node scripts/build-indexer.js"
-  
-  # Publish directory relative to base
+  # Publish directory
   publish = "dist"
 
 [build.environment]
-  NODE_VERSION = "20"
-
-# Redirects for clean URLs
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-  conditions = {Role = ["admin"]}
+  NODE_VERSION = "18"
 
 # Headers for performance and security
 [[headers]]
@@ -46,11 +36,6 @@
     Cache-Control = "public, max-age=31536000, immutable"
 
 [[headers]]
-  for = "/*.css"
+  for = "/*.pdf"
   [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
-
-[[headers]]
-  for = "/*.js"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
+    Cache-Control = "public, max-age=86400"
