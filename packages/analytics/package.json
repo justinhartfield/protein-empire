@@ -1,0 +1,31 @@
+{
+  "name": "@protein-empire/analytics",
+  "version": "1.0.0",
+  "description": "Analytics configuration and tracking for the Protein Empire - GA4, Search Console, and custom event tracking",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./ga4": "./src/ga4.js",
+    "./search-console": "./src/search-console.js",
+    "./events": "./src/events.js",
+    "./dashboard": "./src/dashboard.js"
+  },
+  "scripts": {
+    "setup": "node src/setup-analytics.js",
+    "report": "node src/generate-report.js",
+    "test": "node --test src/*.test.js"
+  },
+  "keywords": [
+    "analytics",
+    "ga4",
+    "google-analytics",
+    "search-console",
+    "protein-empire"
+  ],
+  "author": "Protein Empire",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@protein-empire/config": "workspace:*"
+  }
+}

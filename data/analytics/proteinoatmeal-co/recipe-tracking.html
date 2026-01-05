@@ -1,0 +1,66 @@
+<script>
+  // Auto-track recipe view on page load
+  document.addEventListener('DOMContentLoaded', function() {
+    const recipeData = document.querySelector('[data-recipe]');
+    if (recipeData && window.peTrack) {
+      window.peTrack.recipeView({
+        id: recipeData.dataset.recipeId,
+        title: recipeData.dataset.recipeTitle,
+        category: recipeData.dataset.recipeCategory,
+        protein: parseInt(recipeData.dataset.recipeProtein),
+        calories: parseInt(recipeData.dataset.recipeCalories)
+      });
+    }
+  });
+
+  // Track scroll depth
+  let scrollDepths = [25, 50, 75, 100];
+  let trackedDepths = [];
+  
+  window.addEventListener('scroll', function() {
+    const scrollPercent = Math.round(
+      (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100
+    );
+    
+    scrollDepths.forEach(function(depth) {
+      if (scrollPercent >= depth && !trackedDepths.includes(depth)) {
+        trackedDepths.push(depth);
+        if (window.peTrack) {
+          window.peTrack.scrollDepth(depth);
+        }
+      }
+    });
+  });
+
+  // Track print button clicks
+  document.querySelectorAll('[data-print-recipe]').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      const recipeId = this.dataset.recipeId;
+      const recipeName = this.dataset.recipeName;
+      if (window.peTrack) {
+        window.peTrack.recipePrint(recipeId, recipeName);
+      }
+    });
+  });
+
+  // Track cross-site links
+  document.querySelectorAll('a[data-cross-site]').forEach(function(link) {
+    link.addEventListener('click', function() {
+      const targetDomain = new URL(this.href).hostname;
+      const recipeName = this.dataset.recipeName || 'Unknown';
+      if (window.peTrack) {
+        window.peTrack.crossSiteClick(targetDomain, recipeName);
+      }
+    });
+  });
+
+  // Track time on page
+  let startTime = Date.now();
+  window.addEventListener('beforeunload', function() {
+    const timeSpent = Math.round((Date.now() - startTime) / 1000);
+    const recipeData = document.querySelector('[data-recipe]');
+    if (recipeData && window.peTrack && timeSpent > 5) {
+      window.peTrack.timeOnRecipe(recipeData.dataset.recipeId, timeSpent);
+    }
+  });
+</script>

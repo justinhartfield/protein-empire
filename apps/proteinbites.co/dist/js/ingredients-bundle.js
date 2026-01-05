@@ -58,8 +58,18 @@ function recipeSubstitution(config) {
     },
 
     getDisplayName(id) {
+      // First check currentIngredients for the name (handles ingredients not in database)
+      const currentIng = this.currentIngredients.find(i => i.id === id || i.originalId === id);
+      if (currentIng) {
+        return currentIng.name;
+      }
+      // Fall back to database lookup
       const ing = this.getIngredient(id);
-      return ing ? ing.name : id;
+      if (ing) {
+        return ing.name;
+      }
+      // Last resort: format the ID as a readable name
+      return id.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
     },
 
     getSubstitutes(id) {
@@ -376,9 +386,21 @@ function recipeSubstitution(config) {
     },
 
     getFormattedAmount(ing) {
-      // Handle special units (eggs, tsp, tbsp)
-      if (ing.unit && ing.unit !== 'g') {
-        const displayAmt = ing.displayAmount || ing.amount;
+      // Handle "pinch" display
+      if (ing.displayAmount === 'pinch') {
+        return 'pinch';
+      }
+      // Handle fractional display amounts (like "1/2")
+      if (typeof ing.displayAmount === 'string' && ing.displayAmount.includes('/')) {
+        return ing.displayAmount;
+      }
+      // Handle special units (eggs, tsp, tbsp, ml)
+      if (ing.unit && ing.unit !== 'g' && ing.unit !== '') {
+        const displayAmt = ing.displayAmount !== undefined ? ing.displayAmount : ing.amount;
+        // For ml, just show the number with ml
+        if (ing.unit === 'ml') {
+          return `${displayAmt}ml`;
+        }
         return `${displayAmt} ${ing.unit}`;
       }
       // Default to grams

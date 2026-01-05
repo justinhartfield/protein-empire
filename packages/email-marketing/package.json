@@ -1,0 +1,31 @@
+{
+  "name": "@protein-empire/email-marketing",
+  "version": "1.0.0",
+  "description": "Email marketing automation for the Protein Empire - welcome sequences, newsletters, and cross-promotion campaigns",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./welcome-sequence": "./src/welcome-sequence.js",
+    "./newsletter": "./src/newsletter.js",
+    "./cross-promo": "./src/cross-promo.js",
+    "./templates": "./src/templates/index.js"
+  },
+  "scripts": {
+    "generate": "node src/generate-campaigns.js",
+    "test": "node --test src/*.test.js"
+  },
+  "keywords": [
+    "email",
+    "marketing",
+    "automation",
+    "newsletter",
+    "protein-empire"
+  ],
+  "author": "Protein Empire",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@protein-empire/config": "workspace:*",
+    "@protein-empire/email-service": "workspace:*"
+  }
+}

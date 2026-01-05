@@ -1,11 +1,11 @@
-# Netlify Configuration for proteinpancakes.co
-# Individual site within the Protein Empire monorepo
+# Netlify Configuration
+# Uses pre-built dist files from the repository
 
 [build]
-  # Build command - runs from the repository root
-  command = "cd ../.. && pnpm install && node scripts/build-site.js proteinpancakes.co"
+  # No build needed - dist files are pre-built and committed
+  command = "echo 'Using pre-built dist files'"
   
-  # Publish directory relative to base
+  # Publish directory
   publish = "dist"
 
 [build.environment]

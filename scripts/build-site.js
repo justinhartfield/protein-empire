@@ -24,6 +24,7 @@ const ROOT_DIR = path.resolve(__dirname, '..');
 import { getSite, sites } from '../packages/config/sites.js';
 import { getCategoriesForSite } from '../packages/config/categories.js';
 import { mapIngredientNameToId } from '../packages/ingredients/ingredient-mapper.js';
+import { linkifyDescription } from './linkify-description.js';
 
 /**
  * Main build function
@@ -88,14 +89,61 @@ async function buildSite(domain) {
     if (!recipe.categories) {
       recipe.categories = [recipe.category?.toLowerCase() || 'classic'];
     }
+    // Helper function to format ingredient name properly
+    const formatIngredientName = (name) => {
+      // Capitalize first letter of each word, handle special cases
+      return name
+        .replace(/[-_]/g, ' ')
+        .replace(/\b\w/g, c => c.toUpperCase())
+        .replace(/\bOf\b/g, 'of')
+        .replace(/\bAnd\b/g, 'and');
+    };
+    
+    // Helper function to parse fractions like "1/2" to decimal
+    const parseFraction = (str) => {
+      if (!str) return 0;
+      str = str.trim();
+      // Handle mixed numbers like "1 1/2"
+      const mixedMatch = str.match(/^(\d+)\s+(\d+)\/(\d+)$/);
+      if (mixedMatch) {
+        return parseInt(mixedMatch[1]) + parseInt(mixedMatch[2]) / parseInt(mixedMatch[3]);
+      }
+      // Handle simple fractions like "1/2"
+      const fractionMatch = str.match(/^(\d+)\/(\d+)$/);
+      if (fractionMatch) {
+        return parseInt(fractionMatch[1]) / parseInt(fractionMatch[2]);
+      }
+      // Handle decimal numbers
+      return parseFloat(str) || 0;
+    };
+    
     // Parse string ingredients into objects if needed
     if (recipe.ingredients && typeof recipe.ingredients[0] === 'string') {
       recipe.ingredients = recipe.ingredients.map(ing => {
+        // Handle ml-based ingredients: "60ml almond milk", "120ml warm water"
+        const mlMatch = ing.match(/^(\d+)ml\s+(.+)$/i);
+        if (mlMatch) {
+          const mlAmount = parseInt(mlMatch[1]);
+          const rawName = mlMatch[2];
+          const name = formatIngredientName(rawName);
+          const id = mapIngredientNameToId(rawName) || rawName.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+          // Convert ml to grams (approximate: 1ml ≈ 1g for most liquids)
+          return { 
+            amount: mlAmount, 
+            displayAmount: mlAmount,
+            name, 
+            id, 
+            unit: 'ml',
+            originalText: ing
+          };
+        }
+        
         // Handle gram-based ingredients: "240g cream cheese"
         const gramMatch = ing.match(/^(\d+)g\s+(.+)$/);
         if (gramMatch) {
-          const name = gramMatch[2];
-          const id = mapIngredientNameToId(name) || name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+          const rawName = gramMatch[2];
+          const name = formatIngredientName(rawName);
+          const id = mapIngredientNameToId(rawName) || rawName.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
           return { amount: parseInt(gramMatch[1]), name, id, unit: 'g' };
         }
         
@@ -118,13 +166,14 @@ async function buildSite(domain) {
           };
         }
         
-        // Handle tsp/tbsp measurements: "1 tsp vanilla extract"
-        const tspMatch = ing.match(/^([\d.]+)\s*(tsp|tbsp|teaspoon|tablespoon)s?\s+(.+)$/i);
-        if (tspMatch) {
-          const amount = parseFloat(tspMatch[1]);
-          const unit = tspMatch[2].toLowerCase().startsWith('tb') ? 'tbsp' : 'tsp';
-          const name = tspMatch[3];
-          const id = mapIngredientNameToId(name) || name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+        // Handle fractional tsp/tbsp: "1/2 tsp cinnamon", "1 1/2 tbsp honey"
+        const fractionTspMatch = ing.match(/^([\d\s\/]+)\s*(tsp|tbsp|teaspoon|tablespoon)s?\s+(.+)$/i);
+        if (fractionTspMatch) {
+          const amount = parseFraction(fractionTspMatch[1]);
+          const unit = fractionTspMatch[2].toLowerCase().startsWith('tb') ? 'tbsp' : 'tsp';
+          const rawName = fractionTspMatch[3];
+          const name = formatIngredientName(rawName);
+          const id = mapIngredientNameToId(rawName) || rawName.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
           // Convert to grams: 1 tsp ≈ 5g, 1 tbsp ≈ 15g
           const gramsPerUnit = unit === 'tbsp' ? 15 : 5;
           return { 
@@ -137,16 +186,57 @@ async function buildSite(domain) {
           };
         }
         
-        // Handle generic number + ingredient: "2 large eggs" fallback, "100g almond flour for crust"
+        // Handle fractional amounts with ingredients: "1/2 ripe banana", "1 1/2 cups flour"
+        const fractionIngMatch = ing.match(/^([\d\s\/]+)\s+(.+)$/i);
+        if (fractionIngMatch && fractionIngMatch[1].includes('/')) {
+          const amount = parseFraction(fractionIngMatch[1]);
+          const rawName = fractionIngMatch[2];
+          const name = formatIngredientName(rawName);
+          const id = mapIngredientNameToId(rawName) || rawName.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+          // Estimate grams based on common ingredients
+          let estimatedGrams = Math.round(amount * 100); // Default: assume 100g per unit
+          if (/banana/i.test(rawName)) estimatedGrams = Math.round(amount * 120); // 1 banana ≈ 120g
+          if (/apple/i.test(rawName)) estimatedGrams = Math.round(amount * 180); // 1 apple ≈ 180g
+          if (/cup/i.test(rawName)) estimatedGrams = Math.round(amount * 240); // 1 cup ≈ 240ml/g
+          return { 
+            amount: estimatedGrams, 
+            displayAmount: fractionIngMatch[1].trim(),
+            name, 
+            id, 
+            unit: '',
+            originalText: ing
+          };
+        }
+        
+        // Handle "pinch of" ingredients
+        const pinchMatch = ing.match(/^pinch\s+(of\s+)?(.+)$/i);
+        if (pinchMatch) {
+          const rawName = pinchMatch[2];
+          const name = formatIngredientName(rawName);
+          const id = mapIngredientNameToId(rawName) || rawName.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+          return { 
+            amount: 1, 
+            displayAmount: 'pinch',
+            name, 
+            id, 
+            unit: '',
+            originalText: ing
+          };
+        }
+        
+        // Handle generic number + ingredient: "100 almond flour for crust"
         const genericMatch = ing.match(/^(\d+)\s+(.+)$/);
         if (genericMatch) {
-          const name = genericMatch[2];
-          const id = mapIngredientNameToId(name) || name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+          const rawName = genericMatch[2];
+          const name = formatIngredientName(rawName);
+          const id = mapIngredientNameToId(rawName) || rawName.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
           return { amount: parseInt(genericMatch[1]), name, id, unit: 'g' };
         }
         
+        // Fallback for unmatched ingredients - keep the original text as name
+        const name = formatIngredientName(ing);
         const id = mapIngredientNameToId(ing) || ing.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
-        return { amount: 0, name: ing, id, unit: '' };
+        return { amount: 0, displayAmount: '', name, id, unit: '' };
       });
     } else if (recipe.ingredients) {
       // Ensure existing ingredient objects have proper IDs
@@ -281,6 +371,20 @@ function getHeadPartial() {
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title><%= pageTitle %></title>
+
+<% if (site.ga4Id) { %>
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=<%= site.ga4Id %>"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '<%= site.ga4Id %>', {
+    'send_page_view': true,
+    'cookie_flags': 'SameSite=None;Secure'
+  });
+</script>
+<% } %>
 
 <!-- SEO Meta Tags -->
 <meta name="description" content="<%= pageDescription %>">
@@ -674,14 +778,16 @@ async function generateRecipePage(site, recipe, allRecipes, categories, partials
       // Find the full recipe object from allRecipes
       const fullRecipe = allRecipes.find(r => r.slug === rel.slug);
       if (fullRecipe) return fullRecipe;
-      // If not found (shouldn't happen for intra-site), return a minimal object
+      // If not found (shouldn't happen for intra-site), return a minimal object with all required fields
       return {
         slug: rel.slug,
         title: rel.title,
-        nutrition: { protein: 20, calories: 150 },
+        nutrition: { protein: 20, calories: 150, carbs: 15, fat: 5, fiber: 2, sugar: 5 },
+        totalTime: 30,
+        difficulty: 'Medium',
         domain: rel.domain
       };
-    });
+    }).filter(r => r !== null);
   } else {
     // Fallback to category-based matching
     relatedRecipes = allRecipes
@@ -691,6 +797,9 @@ async function generateRecipePage(site, recipe, allRecipes, categories, partials
   
   // Get empire links for cross-site interlinking
   const empireLinks = recipe.empire_links || [];
+  
+  // Generate linked description with internal links
+  const linkedDescription = linkifyDescription(recipe.description, recipe, allRecipes, site);
   
   // Get category for breadcrumb
   const primaryCategory = categories[recipe.categories?.[0]] || categories['classic'] || { name: 'Recipes', slug: 'all' };
@@ -850,7 +959,7 @@ async function generateRecipePage(site, recipe, allRecipes, categories, partials
                     </div>
 
                     <p class="text-slate-500 text-lg leading-relaxed mb-8">
-                        <%= recipe.description %> All nutrition data is verified using <a href="https://fdc.nal.usda.gov/" target="_blank" rel="noopener noreferrer" class="text-brand-600 hover:text-brand-700 font-semibold">USDA FoodData Central</a> for accuracy.
+                        <%- linkedDescription %> All nutrition data is verified using <a href="https://fdc.nal.usda.gov/" target="_blank" rel="noopener noreferrer" class="text-brand-600 hover:text-brand-700 font-semibold">USDA FoodData Central</a> for accuracy.
                     </p>
 
                     <!-- CTA Links -->
@@ -1296,6 +1405,7 @@ async function generateRecipePage(site, recipe, allRecipes, categories, partials
     recipe,
     relatedRecipes,
     empireLinks,
+    linkedDescription,
     primaryCategory,
     include: (name, data) => ejs.render(partials[name], data)
   });
