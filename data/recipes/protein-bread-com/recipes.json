@@ -18,9 +18,15 @@
       "totalTime": "45",
       "difficulty": "Easy",
       "category": "Banana Bread",
-      "tags": ["banana bread", "protein", "healthy"],
-      "methods": ["whey"],
-      "image": "protein-banana-bread.png",
+      "tags": [
+        "banana bread",
+        "protein",
+        "healthy"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "classic-protein-bread.png",
       "ingredients": [
         "200g ripe bananas",
         "100g whey protein powder (vanilla or unflavored)",
@@ -34,12 +40,30 @@
         "1/2 tsp cinnamon"
       ],
       "instructions": [
-        {"step": "Preheat Oven", "text": "Preheat your oven to 350°F (175°C) and grease a 9x5 inch loaf pan."},
-        {"step": "Mix Wet Ingredients", "text": "In a large bowl, mash the ripe bananas. Whisk in the eggs, Greek yogurt, and honey until well combined."},
-        {"step": "Combine Dry Ingredients", "text": "In a separate bowl, mix together the whey protein powder, oat flour, almond flour, baking powder, baking soda, and cinnamon."},
-        {"step": "Combine Wet and Dry", "text": "Pour the dry ingredients into the wet ingredients and stir until just combined. Do not overmix."},
-        {"step": "Bake", "text": "Pour the batter into the prepared loaf pan and bake for 25-30 minutes, or until a toothpick inserted into the center comes out clean."},
-        {"step": "Cool", "text": "Let the bread cool in the pan for 10 minutes before transferring it to a wire rack to cool completely."}
+        {
+          "step": "Preheat Oven",
+          "text": "Preheat your oven to 350\u00b0F (175\u00b0C) and grease a 9x5 inch loaf pan."
+        },
+        {
+          "step": "Mix Wet Ingredients",
+          "text": "In a large bowl, mash the ripe bananas. Whisk in the eggs, Greek yogurt, and honey until well combined."
+        },
+        {
+          "step": "Combine Dry Ingredients",
+          "text": "In a separate bowl, mix together the whey protein powder, oat flour, almond flour, baking powder, baking soda, and cinnamon."
+        },
+        {
+          "step": "Combine Wet and Dry",
+          "text": "Pour the dry ingredients into the wet ingredients and stir until just combined. Do not overmix."
+        },
+        {
+          "step": "Bake",
+          "text": "Pour the batter into the prepared loaf pan and bake for 25-30 minutes, or until a toothpick inserted into the center comes out clean."
+        },
+        {
+          "step": "Cool",
+          "text": "Let the bread cool in the pan for 10 minutes before transferring it to a wire rack to cool completely."
+        }
       ]
     },
     {
@@ -60,9 +84,15 @@
       "totalTime": "50",
       "difficulty": "Easy",
       "category": "Banana Bread",
-      "tags": ["high protein", "banana bread", "recipe"],
-      "methods": ["casein"],
-      "image": "high-protein-banana-bread.png",
+      "tags": [
+        "high protein",
+        "banana bread",
+        "recipe"
+      ],
+      "methods": [
+        "casein"
+      ],
+      "image": "almond-flour-protein-bread.png",
       "ingredients": [
         "220g ripe bananas",
         "120g casein protein powder (chocolate)",
@@ -75,12 +105,30 @@
         "1/2 tsp salt"
       ],
       "instructions": [
-        {"step": "Preheat and Prep", "text": "Preheat your oven to 325°F (165°C). Lightly grease and flour a loaf pan."},
-        {"step": "Mix Wet Ingredients", "text": "In a blender, combine mashed bananas, egg whites, applesauce, and vanilla extract. Blend until smooth."},
-        {"step": "Combine Dry Ingredients", "text": "In a large bowl, whisk together casein protein powder, coconut flour, sweetener, baking soda, and salt."},
-        {"step": "Create Batter", "text": "Pour the wet ingredients into the dry ingredients and mix until a thick batter forms."},
-        {"step": "Bake the Bread", "text": "Spread the batter evenly in the prepared pan. Bake for 30-35 minutes, or until the top is golden brown and a toothpick comes out clean."},
-        {"step": "Cool and Serve", "text": "Allow the bread to cool for at least 20 minutes before slicing and serving."}
+        {
+          "step": "Preheat and Prep",
+          "text": "Preheat your oven to 325\u00b0F (165\u00b0C). Lightly grease and flour a loaf pan."
+        },
+        {
+          "step": "Mix Wet Ingredients",
+          "text": "In a blender, combine mashed bananas, egg whites, applesauce, and vanilla extract. Blend until smooth."
+        },
+        {
+          "step": "Combine Dry Ingredients",
+          "text": "In a large bowl, whisk together casein protein powder, coconut flour, sweetener, baking soda, and salt."
+        },
+        {
+          "step": "Create Batter",
+          "text": "Pour the wet ingredients into the dry ingredients and mix until a thick batter forms."
+        },
+        {
+          "step": "Bake the Bread",
+          "text": "Spread the batter evenly in the prepared pan. Bake for 30-35 minutes, or until the top is golden brown and a toothpick comes out clean."
+        },
+        {
+          "step": "Cool and Serve",
+          "text": "Allow the bread to cool for at least 20 minutes before slicing and serving."
+        }
       ]
     },
     {
@@ -101,9 +149,16 @@
       "totalTime": "35",
       "difficulty": "Easy",
       "category": "Banana Bread",
-      "tags": ["protein", "banana bread", "recipe", "simple"],
-      "methods": ["whey"],
-      "image": "protein-banana-bread-recipe.png",
+      "tags": [
+        "protein",
+        "banana bread",
+        "recipe",
+        "simple"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "cottage-cheese-protein-bread.png",
       "ingredients": [
         "180g ripe bananas",
         "90g vanilla whey protein",
@@ -115,12 +170,30 @@
         "0.5 tsp cinnamon"
       ],
       "instructions": [
-        {"step": "Preheat Oven", "text": "Preheat oven to 180°C (350°F). Grease a loaf pan."},
-        {"step": "Mash Bananas", "text": "In a bowl, mash the bananas with a fork."},
-        {"step": "Mix Ingredients", "text": "Add the egg, milk, and brown sugar to the bananas and mix well. In a separate bowl, combine the flour, protein powder, baking powder, and cinnamon. Add the dry ingredients to the wet and stir until just combined."},
-        {"step": "Pour and Bake", "text": "Pour the batter into the loaf pan."},
-        {"step": "Bake", "text": "Bake for 20-25 minutes, or until a skewer inserted into the center comes out clean."},
-        {"step": "Cool", "text": "Let it cool before slicing."}
+        {
+          "step": "Preheat Oven",
+          "text": "Preheat oven to 180\u00b0C (350\u00b0F). Grease a loaf pan."
+        },
+        {
+          "step": "Mash Bananas",
+          "text": "In a bowl, mash the bananas with a fork."
+        },
+        {
+          "step": "Mix Ingredients",
+          "text": "Add the egg, milk, and brown sugar to the bananas and mix well. In a separate bowl, combine the flour, protein powder, baking powder, and cinnamon. Add the dry ingredients to the wet and stir until just combined."
+        },
+        {
+          "step": "Pour and Bake",
+          "text": "Pour the batter into the loaf pan."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake for 20-25 minutes, or until a skewer inserted into the center comes out clean."
+        },
+        {
+          "step": "Cool",
+          "text": "Let it cool before slicing."
+        }
       ]
     },
     {
@@ -141,9 +214,14 @@
       "totalTime": "45",
       "difficulty": "Easy",
       "category": "Banana Bread",
-      "tags": ["protein powder", "banana bread"],
-      "methods": ["plant-based"],
-      "image": "protein-powder-banana-bread.png",
+      "tags": [
+        "protein powder",
+        "banana bread"
+      ],
+      "methods": [
+        "plant-based"
+      ],
+      "image": "oat-flour-protein-bread.png",
       "ingredients": [
         "210g ripe bananas",
         "110g plant-based protein powder (vanilla)",
@@ -155,12 +233,30 @@
         "1/2 tsp nutmeg"
       ],
       "instructions": [
-        {"step": "Preheat Oven", "text": "Preheat your oven to 350°F (175°C). Grease and flour a 9x5-inch loaf pan."},
-        {"step": "Mix Wet Ingredients", "text": "In a large bowl, mash the ripe bananas. Stir in the eggs, maple syrup, and almond milk."},
-        {"step": "Combine Dry Ingredients", "text": "In another bowl, whisk together the protein powder, whole wheat flour, baking powder, and nutmeg."},
-        {"step": "Combine Batters", "text": "Add the dry ingredients to the wet ingredients and stir until just moistened. Do not overmix."},
-        {"step": "Bake", "text": "Pour the batter into the prepared loaf pan. Bake for 25-30 minutes, or until a wooden pick inserted into the center comes out clean."},
-        {"step": "Cool", "text": "Cool in the pan for 10 minutes before removing to a wire rack to cool completely."}
+        {
+          "step": "Preheat Oven",
+          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Grease and flour a 9x5-inch loaf pan."
+        },
+        {
+          "step": "Mix Wet Ingredients",
+          "text": "In a large bowl, mash the ripe bananas. Stir in the eggs, maple syrup, and almond milk."
+        },
+        {
+          "step": "Combine Dry Ingredients",
+          "text": "In another bowl, whisk together the protein powder, whole wheat flour, baking powder, and nutmeg."
+        },
+        {
+          "step": "Combine Batters",
+          "text": "Add the dry ingredients to the wet ingredients and stir until just moistened. Do not overmix."
+        },
+        {
+          "step": "Bake",
+          "text": "Pour the batter into the prepared loaf pan. Bake for 25-30 minutes, or until a wooden pick inserted into the center comes out clean."
+        },
+        {
+          "step": "Cool",
+          "text": "Cool in the pan for 10 minutes before removing to a wire rack to cool completely."
+        }
       ]
     },
     {
@@ -181,9 +277,17 @@
       "totalTime": "50",
       "difficulty": "Medium",
       "category": "Banana Bread",
-      "tags": ["high protein", "banana bread", "recipe", "ultimate"],
-      "methods": ["whey", "casein"],
-      "image": "high-protein-banana-bread-recipe.png",
+      "tags": [
+        "high protein",
+        "banana bread",
+        "recipe",
+        "ultimate"
+      ],
+      "methods": [
+        "whey",
+        "casein"
+      ],
+      "image": "greek-yogurt-protein-bread.png",
       "ingredients": [
         "250g ripe bananas",
         "80g whey protein isolate (unflavored)",
@@ -197,15 +301,32 @@
         "1 tsp cinnamon"
       ],
       "instructions": [
-        {"step": "Preheat Oven & Prepare Pan", "text": "Preheat your oven to 350°F (175°C). Grease a loaf pan thoroughly."},
-        {"step": "Combine Wet Ingredients", "text": "In a large bowl, mash the bananas. Whisk in the eggs and Greek yogurt until smooth."},
-        {"step": "Combine Dry Ingredients", "text": "In a separate bowl, combine whey protein, casein, almond flour, coconut flour, sweetener, baking powder, and cinnamon."},
-        {"step": "Mix Batter", "text": "Gently fold the dry ingredients into the wet ingredients until just combined. The batter will be thick."},
-        {"step": "Bake to Perfection", "text": "Spread the batter into the prepared pan and bake for 30-35 minutes. Check for doneness with a toothpick."},
-        {"step": "Cool and Enjoy", "text": "Let the bread cool in the pan for 15 minutes, then transfer to a wire rack to cool completely before slicing."}
+        {
+          "step": "Preheat Oven & Prepare Pan",
+          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Grease a loaf pan thoroughly."
+        },
+        {
+          "step": "Combine Wet Ingredients",
+          "text": "In a large bowl, mash the bananas. Whisk in the eggs and Greek yogurt until smooth."
+        },
+        {
+          "step": "Combine Dry Ingredients",
+          "text": "In a separate bowl, combine whey protein, casein, almond flour, coconut flour, sweetener, baking powder, and cinnamon."
+        },
+        {
+          "step": "Mix Batter",
+          "text": "Gently fold the dry ingredients into the wet ingredients until just combined. The batter will be thick."
+        },
+        {
+          "step": "Bake to Perfection",
+          "text": "Spread the batter into the prepared pan and bake for 30-35 minutes. Check for doneness with a toothpick."
+        },
+        {
+          "step": "Cool and Enjoy",
+          "text": "Let the bread cool in the pan for 15 minutes, then transfer to a wire rack to cool completely before slicing."
+        }
       ]
-    }
-,
+    },
     {
       "id": 6,
       "slug": "protein-pumpkin-bread",
@@ -224,9 +345,15 @@
       "totalTime": "45",
       "difficulty": "Easy",
       "category": "Quick Bread",
-      "tags": ["protein", "pumpkin bread", "healthy"],
-      "methods": ["whey"],
-      "image": "protein-pumpkin-bread.png",
+      "tags": [
+        "protein",
+        "pumpkin bread",
+        "healthy"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "banana-protein-bread.png",
       "ingredients": [
         "240g pumpkin puree",
         "100g vanilla whey protein powder",
@@ -238,12 +365,30 @@
         "1 tsp baking powder"
       ],
       "instructions": [
-        {"step": "Preheat Oven", "text": "Preheat your oven to 350°F (175°C) and grease a loaf pan."},
-        {"step": "Mix Wet Ingredients", "text": "In a large bowl, combine the pumpkin puree, eggs, maple syrup, and almond milk."},
-        {"step": "Combine Dry Ingredients", "text": "In a separate bowl, whisk together the protein powder, whole wheat flour, pumpkin pie spice, and baking powder."},
-        {"step": "Combine Batters", "text": "Add the dry ingredients to the wet ingredients and stir until just combined."},
-        {"step": "Bake", "text": "Pour the batter into the prepared loaf pan and bake for 25-30 minutes."},
-        {"step": "Cool", "text": "Let the bread cool before slicing and serving."}
+        {
+          "step": "Preheat Oven",
+          "text": "Preheat your oven to 350\u00b0F (175\u00b0C) and grease a loaf pan."
+        },
+        {
+          "step": "Mix Wet Ingredients",
+          "text": "In a large bowl, combine the pumpkin puree, eggs, maple syrup, and almond milk."
+        },
+        {
+          "step": "Combine Dry Ingredients",
+          "text": "In a separate bowl, whisk together the protein powder, whole wheat flour, pumpkin pie spice, and baking powder."
+        },
+        {
+          "step": "Combine Batters",
+          "text": "Add the dry ingredients to the wet ingredients and stir until just combined."
+        },
+        {
+          "step": "Bake",
+          "text": "Pour the batter into the prepared loaf pan and bake for 25-30 minutes."
+        },
+        {
+          "step": "Cool",
+          "text": "Let the bread cool before slicing and serving."
+        }
       ]
     },
     {
@@ -264,9 +409,15 @@
       "totalTime": "55",
       "difficulty": "Easy",
       "category": "Quick Bread",
-      "tags": ["protein", "zucchini bread", "healthy"],
-      "methods": ["whey"],
-      "image": "protein-zucchini-bread.png",
+      "tags": [
+        "protein",
+        "zucchini bread",
+        "healthy"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "pumpkin-protein-bread.png",
       "ingredients": [
         "200g grated zucchini",
         "100g vanilla whey protein powder",
@@ -279,12 +430,30 @@
         "1/2 tsp baking powder"
       ],
       "instructions": [
-        {"step": "Preheat Oven", "text": "Preheat oven to 350°F (175°C). Grease and flour a 9x5-inch loaf pan."},
-        {"step": "Prepare Zucchini", "text": "Squeeze the grated zucchini to remove excess moisture."},
-        {"step": "Mix Wet Ingredients", "text": "In a large bowl, whisk together the eggs, honey, and melted coconut oil."},
-        {"step": "Combine Ingredients", "text": "Stir in the grated zucchini. In a separate bowl, combine the protein powder, flour, cinnamon, baking soda, and baking powder. Add the dry ingredients to the wet and mix until just combined."},
-        {"step": "Bake", "text": "Pour the batter into the prepared pan and bake for 30-35 minutes."},
-        {"step": "Cool", "text": "Cool in the pan for 10 minutes before transferring to a wire rack."}
+        {
+          "step": "Preheat Oven",
+          "text": "Preheat oven to 350\u00b0F (175\u00b0C). Grease and flour a 9x5-inch loaf pan."
+        },
+        {
+          "step": "Prepare Zucchini",
+          "text": "Squeeze the grated zucchini to remove excess moisture."
+        },
+        {
+          "step": "Mix Wet Ingredients",
+          "text": "In a large bowl, whisk together the eggs, honey, and melted coconut oil."
+        },
+        {
+          "step": "Combine Ingredients",
+          "text": "Stir in the grated zucchini. In a separate bowl, combine the protein powder, flour, cinnamon, baking soda, and baking powder. Add the dry ingredients to the wet and mix until just combined."
+        },
+        {
+          "step": "Bake",
+          "text": "Pour the batter into the prepared pan and bake for 30-35 minutes."
+        },
+        {
+          "step": "Cool",
+          "text": "Cool in the pan for 10 minutes before transferring to a wire rack."
+        }
       ]
     },
     {
@@ -305,9 +474,15 @@
       "totalTime": "30",
       "difficulty": "Medium",
       "category": "Quick Bread",
-      "tags": ["protein", "cloud bread", "low-carb"],
-      "methods": ["egg"],
-      "image": "protein-cloud-bread.png",
+      "tags": [
+        "protein",
+        "cloud bread",
+        "low-carb"
+      ],
+      "methods": [
+        "egg"
+      ],
+      "image": "chocolate-chip-protein-bread.png",
       "ingredients": [
         "3 large eggs, separated",
         "60g cream cheese, softened",
@@ -315,12 +490,30 @@
         "1/4 tsp cream of tartar"
       ],
       "instructions": [
-        {"step": "Preheat Oven", "text": "Preheat your oven to 300°F (150°C)."},
-        {"step": "Beat Egg Whites", "text": "In a clean bowl, beat the egg whites and cream of tartar until stiff peaks form."},
-        {"step": "Mix Yolks and Cheese", "text": "In a separate bowl, mix the egg yolks, cream cheese, and protein powder until smooth."},
-        {"step": "Fold Gently", "text": "Gently fold the yolk mixture into the egg whites until just combined, being careful not to deflate the whites."},
-        {"step": "Form and Bake", "text": "Spoon the mixture onto a baking sheet lined with parchment paper, forming small circles. Bake for 15-20 minutes, or until golden brown."},
-        {"step": "Cool", "text": "Let them cool on the baking sheet for a few minutes before transferring to a wire rack."}
+        {
+          "step": "Preheat Oven",
+          "text": "Preheat your oven to 300\u00b0F (150\u00b0C)."
+        },
+        {
+          "step": "Beat Egg Whites",
+          "text": "In a clean bowl, beat the egg whites and cream of tartar until stiff peaks form."
+        },
+        {
+          "step": "Mix Yolks and Cheese",
+          "text": "In a separate bowl, mix the egg yolks, cream cheese, and protein powder until smooth."
+        },
+        {
+          "step": "Fold Gently",
+          "text": "Gently fold the yolk mixture into the egg whites until just combined, being careful not to deflate the whites."
+        },
+        {
+          "step": "Form and Bake",
+          "text": "Spoon the mixture onto a baking sheet lined with parchment paper, forming small circles. Bake for 15-20 minutes, or until golden brown."
+        },
+        {
+          "step": "Cool",
+          "text": "Let them cool on the baking sheet for a few minutes before transferring to a wire rack."
+        }
       ]
     },
     {
@@ -341,9 +534,15 @@
       "totalTime": "40",
       "difficulty": "Easy",
       "category": "Quick Bread",
-      "tags": ["protein bread", "recipe", "simple"],
-      "methods": ["whey"],
-      "image": "protein-bread-recipe.png",
+      "tags": [
+        "protein bread",
+        "recipe",
+        "simple"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "cinnamon-swirl-protein-bread.png",
       "ingredients": [
         "120g unflavored whey protein powder",
         "100g oat flour",
@@ -353,12 +552,30 @@
         "1/2 tsp salt"
       ],
       "instructions": [
-        {"step": "Preheat Oven", "text": "Preheat oven to 350°F (175°C). Grease a loaf pan."},
-        {"step": "Combine Ingredients", "text": "In a large bowl, mix all ingredients together until you have a smooth batter."},
-        {"step": "Pour into Pan", "text": "Pour the batter into the prepared loaf pan."},
-        {"step": "Bake", "text": "Bake for 25-30 minutes, or until a toothpick inserted into the center comes out clean."},
-        {"step": "Cool", "text": "Let the bread cool in the pan for 10 minutes before slicing."},
-        {"step": "Serve", "text": "Enjoy your homemade protein bread!"}
+        {
+          "step": "Preheat Oven",
+          "text": "Preheat oven to 350\u00b0F (175\u00b0C). Grease a loaf pan."
+        },
+        {
+          "step": "Combine Ingredients",
+          "text": "In a large bowl, mix all ingredients together until you have a smooth batter."
+        },
+        {
+          "step": "Pour into Pan",
+          "text": "Pour the batter into the prepared loaf pan."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake for 25-30 minutes, or until a toothpick inserted into the center comes out clean."
+        },
+        {
+          "step": "Cool",
+          "text": "Let the bread cool in the pan for 10 minutes before slicing."
+        },
+        {
+          "step": "Serve",
+          "text": "Enjoy your homemade protein bread!"
+        }
       ]
     },
     {
@@ -379,9 +596,15 @@
       "totalTime": "50",
       "difficulty": "Easy",
       "category": "Sandwich Bread",
-      "tags": ["high protein", "bread", "sandwich"],
-      "methods": ["vital wheat gluten"],
-      "image": "high-protein-bread.png",
+      "tags": [
+        "high protein",
+        "bread",
+        "sandwich"
+      ],
+      "methods": [
+        "vital wheat gluten"
+      ],
+      "image": "zucchini-protein-bread.png",
       "ingredients": [
         "150g vital wheat gluten",
         "80g oat fiber",
@@ -392,15 +615,32 @@
         "1 tsp salt"
       ],
       "instructions": [
-        {"step": "Activate Yeast", "text": "In a small bowl, combine the warm water and yeast. Let it sit for 5 minutes until foamy."},
-        {"step": "Combine Dry Ingredients", "text": "In a large bowl, whisk together the vital wheat gluten, oat fiber, flaxseed meal, and salt."},
-        {"step": "Mix Dough", "text": "Add the yeast mixture and olive oil to the dry ingredients. Mix until a dough forms."},
-        {"step": "Knead", "text": "Knead the dough on a lightly floured surface for 5-7 minutes, until it becomes elastic."},
-        {"step": "Rise and Bake", "text": "Place the dough in a greased loaf pan, cover, and let it rise for 30 minutes. Bake at 375°F (190°C) for 25-30 minutes."},
-        {"step": "Cool", "text": "Let the bread cool completely before slicing."}
+        {
+          "step": "Activate Yeast",
+          "text": "In a small bowl, combine the warm water and yeast. Let it sit for 5 minutes until foamy."
+        },
+        {
+          "step": "Combine Dry Ingredients",
+          "text": "In a large bowl, whisk together the vital wheat gluten, oat fiber, flaxseed meal, and salt."
+        },
+        {
+          "step": "Mix Dough",
+          "text": "Add the yeast mixture and olive oil to the dry ingredients. Mix until a dough forms."
+        },
+        {
+          "step": "Knead",
+          "text": "Knead the dough on a lightly floured surface for 5-7 minutes, until it becomes elastic."
+        },
+        {
+          "step": "Rise and Bake",
+          "text": "Place the dough in a greased loaf pan, cover, and let it rise for 30 minutes. Bake at 375\u00b0F (190\u00b0C) for 25-30 minutes."
+        },
+        {
+          "step": "Cool",
+          "text": "Let the bread cool completely before slicing."
+        }
       ]
-    }
-,
+    },
     {
       "id": 11,
       "slug": "high-protein-pumpkin-bread",
@@ -419,9 +659,14 @@
       "totalTime": "50",
       "difficulty": "Easy",
       "category": "Quick Bread",
-      "tags": ["high protein", "pumpkin bread"],
-      "methods": ["whey"],
-      "image": "high-protein-pumpkin-bread.png",
+      "tags": [
+        "high protein",
+        "pumpkin bread"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "multigrain-protein-bread.png",
       "ingredients": [
         "250g pumpkin puree",
         "120g vanilla whey protein powder",
@@ -433,12 +678,30 @@
         "1 tsp baking soda"
       ],
       "instructions": [
-        {"step": "Preheat Oven", "text": "Preheat your oven to 350°F (175°C). Grease and flour a loaf pan."},
-        {"step": "Mix Wet Ingredients", "text": "In a large bowl, whisk together the pumpkin puree, eggs, coconut sugar, and melted coconut oil."},
-        {"step": "Combine Dry Ingredients", "text": "In a separate bowl, combine the whey protein powder, almond flour, pumpkin pie spice, and baking soda."},
-        {"step": "Create Batter", "text": "Add the dry ingredients to the wet ingredients and mix until just combined. Do not overmix."},
-        {"step": "Bake", "text": "Pour the batter into the prepared loaf pan and bake for 30-35 minutes, or until a toothpick inserted into the center comes out clean."},
-        {"step": "Cool Down", "text": "Let the bread cool in the pan for 10 minutes before transferring to a wire rack to cool completely."}
+        {
+          "step": "Preheat Oven",
+          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Grease and flour a loaf pan."
+        },
+        {
+          "step": "Mix Wet Ingredients",
+          "text": "In a large bowl, whisk together the pumpkin puree, eggs, coconut sugar, and melted coconut oil."
+        },
+        {
+          "step": "Combine Dry Ingredients",
+          "text": "In a separate bowl, combine the whey protein powder, almond flour, pumpkin pie spice, and baking soda."
+        },
+        {
+          "step": "Create Batter",
+          "text": "Add the dry ingredients to the wet ingredients and mix until just combined. Do not overmix."
+        },
+        {
+          "step": "Bake",
+          "text": "Pour the batter into the prepared loaf pan and bake for 30-35 minutes, or until a toothpick inserted into the center comes out clean."
+        },
+        {
+          "step": "Cool Down",
+          "text": "Let the bread cool in the pan for 10 minutes before transferring to a wire rack to cool completely."
+        }
       ]
     },
     {
@@ -459,8 +722,14 @@
       "totalTime": "35",
       "difficulty": "Medium",
       "category": "Bagel",
-      "tags": ["protein", "bagels", "simple"],
-      "methods": ["greek yogurt"],
+      "tags": [
+        "protein",
+        "bagels",
+        "simple"
+      ],
+      "methods": [
+        "greek yogurt"
+      ],
       "image": "protein-bagels.png",
       "ingredients": [
         "150g all-purpose flour",
@@ -472,12 +741,30 @@
         "Everything bagel seasoning (optional)"
       ],
       "instructions": [
-        {"step": "Preheat Oven", "text": "Preheat your oven to 375°F (190°C)."},
-        {"step": "Make the Dough", "text": "In a bowl, mix together the flour, Greek yogurt, protein powder, baking powder, and salt until a dough forms."},
-        {"step": "Knead and Shape", "text": "Knead the dough on a floured surface for a few minutes. Divide the dough into 8 equal pieces and roll each piece into a rope. Join the ends to form a bagel shape."},
-        {"step": "Prepare for Baking", "text": "Place the bagels on a baking sheet lined with parchment paper. Brush the tops with the beaten egg white and sprinkle with seasoning, if desired."},
-        {"step": "Bake", "text": "Bake for 15-20 minutes, or until golden brown."},
-        {"step": "Cool", "text": "Let the bagels cool on a wire rack."}
+        {
+          "step": "Preheat Oven",
+          "text": "Preheat your oven to 375\u00b0F (190\u00b0C)."
+        },
+        {
+          "step": "Make the Dough",
+          "text": "In a bowl, mix together the flour, Greek yogurt, protein powder, baking powder, and salt until a dough forms."
+        },
+        {
+          "step": "Knead and Shape",
+          "text": "Knead the dough on a floured surface for a few minutes. Divide the dough into 8 equal pieces and roll each piece into a rope. Join the ends to form a bagel shape."
+        },
+        {
+          "step": "Prepare for Baking",
+          "text": "Place the bagels on a baking sheet lined with parchment paper. Brush the tops with the beaten egg white and sprinkle with seasoning, if desired."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake for 15-20 minutes, or until golden brown."
+        },
+        {
+          "step": "Cool",
+          "text": "Let the bagels cool on a wire rack."
+        }
       ]
     },
     {
@@ -498,9 +785,15 @@
       "totalTime": "45",
       "difficulty": "Easy",
       "category": "Savory Bread",
-      "tags": ["savory", "herb", "protein bread"],
-      "methods": ["whey"],
-      "image": "savory-herb-protein-bread.png",
+      "tags": [
+        "savory",
+        "herb",
+        "protein bread"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "garlic-herb-protein-bread.png",
       "ingredients": [
         "120g unflavored whey protein powder",
         "100g almond flour",
@@ -512,12 +805,30 @@
         "1 tsp baking powder"
       ],
       "instructions": [
-        {"step": "Preheat Oven", "text": "Preheat oven to 350°F (175°C). Grease a loaf pan."},
-        {"step": "Combine Ingredients", "text": "In a large bowl, whisk together all the ingredients until well combined."},
-        {"step": "Pour Batter", "text": "Pour the batter into the prepared loaf pan and smooth the top."},
-        {"step": "Bake", "text": "Bake for 25-30 minutes, or until the top is golden and a toothpick inserted into the center comes out clean."},
-        {"step": "Cool", "text": "Let the bread cool in the pan for 10 minutes before transferring to a wire rack."},
-        {"step": "Serve", "text": "Slice and enjoy this savory protein bread."}
+        {
+          "step": "Preheat Oven",
+          "text": "Preheat oven to 350\u00b0F (175\u00b0C). Grease a loaf pan."
+        },
+        {
+          "step": "Combine Ingredients",
+          "text": "In a large bowl, whisk together all the ingredients until well combined."
+        },
+        {
+          "step": "Pour Batter",
+          "text": "Pour the batter into the prepared loaf pan and smooth the top."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake for 25-30 minutes, or until the top is golden and a toothpick inserted into the center comes out clean."
+        },
+        {
+          "step": "Cool",
+          "text": "Let the bread cool in the pan for 10 minutes before transferring to a wire rack."
+        },
+        {
+          "step": "Serve",
+          "text": "Slice and enjoy this savory protein bread."
+        }
       ]
     },
     {
@@ -538,8 +849,14 @@
       "totalTime": "50",
       "difficulty": "Medium",
       "category": "Sweet Bread",
-      "tags": ["cinnamon swirl", "protein bread", "sweet"],
-      "methods": ["whey"],
+      "tags": [
+        "cinnamon swirl",
+        "protein bread",
+        "sweet"
+      ],
+      "methods": [
+        "whey"
+      ],
       "image": "cinnamon-swirl-protein-bread.png",
       "ingredients": [
         "120g vanilla whey protein powder",
@@ -551,12 +868,30 @@
         "For the swirl: 2 tbsp cinnamon, 2 tbsp sweetener"
       ],
       "instructions": [
-        {"step": "Preheat Oven", "text": "Preheat oven to 350°F (175°C). Grease a loaf pan."},
-        {"step": "Prepare Batter", "text": "In a large bowl, mix together the protein powder, oat flour, eggs, milk, sweetener, and baking powder."},
-        {"step": "Create Swirl", "text": "In a small bowl, mix the cinnamon and sweetener for the swirl."},
-        {"step": "Layer and Swirl", "text": "Pour half of the batter into the loaf pan. Sprinkle the cinnamon mixture over the top. Pour the remaining batter over the cinnamon layer. Use a knife to gently swirl the layers."},
-        {"step": "Bake", "text": "Bake for 25-30 minutes, until a toothpick comes out clean."},
-        {"step": "Cool", "text": "Let the bread cool before slicing."}
+        {
+          "step": "Preheat Oven",
+          "text": "Preheat oven to 350\u00b0F (175\u00b0C). Grease a loaf pan."
+        },
+        {
+          "step": "Prepare Batter",
+          "text": "In a large bowl, mix together the protein powder, oat flour, eggs, milk, sweetener, and baking powder."
+        },
+        {
+          "step": "Create Swirl",
+          "text": "In a small bowl, mix the cinnamon and sweetener for the swirl."
+        },
+        {
+          "step": "Layer and Swirl",
+          "text": "Pour half of the batter into the loaf pan. Sprinkle the cinnamon mixture over the top. Pour the remaining batter over the cinnamon layer. Use a knife to gently swirl the layers."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake for 25-30 minutes, until a toothpick comes out clean."
+        },
+        {
+          "step": "Cool",
+          "text": "Let the bread cool before slicing."
+        }
       ]
     },
     {
@@ -577,9 +912,15 @@
       "totalTime": "55",
       "difficulty": "Easy",
       "category": "Sandwich Bread",
-      "tags": ["whole wheat", "protein", "sandwich bread"],
-      "methods": ["vital wheat gluten"],
-      "image": "whole-wheat-protein-sandwich-bread.png",
+      "tags": [
+        "whole wheat",
+        "protein",
+        "sandwich bread"
+      ],
+      "methods": [
+        "vital wheat gluten"
+      ],
+      "image": "focaccia-protein-bread.png",
       "ingredients": [
         "200g whole wheat flour",
         "100g vital wheat gluten",
@@ -591,15 +932,32 @@
         "1 tsp salt"
       ],
       "instructions": [
-        {"step": "Activate Yeast", "text": "In a bowl, combine warm water, honey, and yeast. Let it sit for 5-10 minutes until foamy."},
-        {"step": "Combine Dry Ingredients", "text": "In a large bowl, whisk together the whole wheat flour, vital wheat gluten, whey protein, and salt."},
-        {"step": "Mix Dough", "text": "Pour the wet ingredients into the dry ingredients and add the olive oil. Mix until a shaggy dough forms."},
-        {"step": "Knead and Rise", "text": "Knead the dough for 5-7 minutes on a floured surface. Place in a greased bowl, cover, and let it rise for 1 hour."},
-        {"step": "Shape and Bake", "text": "Punch down the dough, shape it into a loaf, and place it in a greased loaf pan. Let it rise for another 30 minutes. Bake at 375°F (190°C) for 30-35 minutes."},
-        {"step": "Cool", "text": "Let the bread cool completely before slicing."}
+        {
+          "step": "Activate Yeast",
+          "text": "In a bowl, combine warm water, honey, and yeast. Let it sit for 5-10 minutes until foamy."
+        },
+        {
+          "step": "Combine Dry Ingredients",
+          "text": "In a large bowl, whisk together the whole wheat flour, vital wheat gluten, whey protein, and salt."
+        },
+        {
+          "step": "Mix Dough",
+          "text": "Pour the wet ingredients into the dry ingredients and add the olive oil. Mix until a shaggy dough forms."
+        },
+        {
+          "step": "Knead and Rise",
+          "text": "Knead the dough for 5-7 minutes on a floured surface. Place in a greased bowl, cover, and let it rise for 1 hour."
+        },
+        {
+          "step": "Shape and Bake",
+          "text": "Punch down the dough, shape it into a loaf, and place it in a greased loaf pan. Let it rise for another 30 minutes. Bake at 375\u00b0F (190\u00b0C) for 30-35 minutes."
+        },
+        {
+          "step": "Cool",
+          "text": "Let the bread cool completely before slicing."
+        }
       ]
-    }
-,
+    },
     {
       "id": 16,
       "slug": "healthy-protein-banana-bread",
@@ -618,9 +976,15 @@
       "totalTime": "45",
       "difficulty": "Easy",
       "category": "Banana Bread",
-      "tags": ["healthy", "protein", "banana bread"],
-      "methods": ["whey"],
-      "image": "healthy-protein-banana-bread.png",
+      "tags": [
+        "healthy",
+        "protein",
+        "banana bread"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "protein-flatbread.png",
       "ingredients": [
         "200g ripe bananas",
         "100g vanilla whey protein powder",
@@ -632,12 +996,30 @@
         "1/2 tsp cinnamon"
       ],
       "instructions": [
-        {"step": "Preheat Oven", "text": "Preheat your oven to 350°F (175°C) and grease a loaf pan."},
-        {"step": "Mix Wet Ingredients", "text": "In a large bowl, mash the bananas. Whisk in the eggs, applesauce, and honey."},
-        {"step": "Combine Dry Ingredients", "text": "In a separate bowl, mix together the protein powder, oat flour, baking powder, and cinnamon."},
-        {"step": "Combine Batters", "text": "Pour the dry ingredients into the wet ingredients and stir until just combined."},
-        {"step": "Bake", "text": "Pour the batter into the prepared loaf pan and bake for 25-30 minutes."},
-        {"step": "Cool", "text": "Let the bread cool before slicing."}
+        {
+          "step": "Preheat Oven",
+          "text": "Preheat your oven to 350\u00b0F (175\u00b0C) and grease a loaf pan."
+        },
+        {
+          "step": "Mix Wet Ingredients",
+          "text": "In a large bowl, mash the bananas. Whisk in the eggs, applesauce, and honey."
+        },
+        {
+          "step": "Combine Dry Ingredients",
+          "text": "In a separate bowl, mix together the protein powder, oat flour, baking powder, and cinnamon."
+        },
+        {
+          "step": "Combine Batters",
+          "text": "Pour the dry ingredients into the wet ingredients and stir until just combined."
+        },
+        {
+          "step": "Bake",
+          "text": "Pour the batter into the prepared loaf pan and bake for 25-30 minutes."
+        },
+        {
+          "step": "Cool",
+          "text": "Let the bread cool before slicing."
+        }
       ]
     },
     {
@@ -658,9 +1040,15 @@
       "totalTime": "40",
       "difficulty": "Easy",
       "category": "Banana Bread",
-      "tags": ["banana bread", "protein powder", "easy"],
-      "methods": ["whey"],
-      "image": "banana-bread-with-protein-powder-recipe.png",
+      "tags": [
+        "banana bread",
+        "protein powder",
+        "easy"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "keto-protein-bread.png",
       "ingredients": [
         "220g ripe bananas",
         "120g vanilla whey protein powder",
@@ -671,12 +1059,30 @@
         "1 tsp baking powder"
       ],
       "instructions": [
-        {"step": "Preheat Oven", "text": "Preheat oven to 350°F (175°C). Grease a loaf pan."},
-        {"step": "Mix Ingredients", "text": "In a bowl, mash the bananas. Add the eggs, milk, and sugar and mix. In a separate bowl, combine the flour and protein powder. Add the dry ingredients to the wet and stir until combined."},
-        {"step": "Pour and Bake", "text": "Pour the batter into the loaf pan."},
-        {"step": "Bake", "text": "Bake for 25-30 minutes."},
-        {"step": "Cool", "text": "Let it cool before slicing."},
-        {"step": "Enjoy", "text": "Enjoy your protein-packed banana bread!"}
+        {
+          "step": "Preheat Oven",
+          "text": "Preheat oven to 350\u00b0F (175\u00b0C). Grease a loaf pan."
+        },
+        {
+          "step": "Mix Ingredients",
+          "text": "In a bowl, mash the bananas. Add the eggs, milk, and sugar and mix. In a separate bowl, combine the flour and protein powder. Add the dry ingredients to the wet and stir until combined."
+        },
+        {
+          "step": "Pour and Bake",
+          "text": "Pour the batter into the loaf pan."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake for 25-30 minutes."
+        },
+        {
+          "step": "Cool",
+          "text": "Let it cool before slicing."
+        },
+        {
+          "step": "Enjoy",
+          "text": "Enjoy your protein-packed banana bread!"
+        }
       ]
     },
     {
@@ -697,9 +1103,15 @@
       "totalTime": "55",
       "difficulty": "Easy",
       "category": "Quick Bread",
-      "tags": ["chocolate chip", "protein", "zucchini bread"],
-      "methods": ["whey"],
-      "image": "chocolate-chip-protein-zucchini-bread.png",
+      "tags": [
+        "chocolate chip",
+        "protein",
+        "zucchini bread"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "honey-oat-protein-bread.png",
       "ingredients": [
         "200g grated zucchini",
         "100g chocolate whey protein powder",
@@ -713,12 +1125,30 @@
         "1/2 tsp baking powder"
       ],
       "instructions": [
-        {"step": "Preheat Oven", "text": "Preheat oven to 350°F (175°C). Grease and flour a 9x5-inch loaf pan."},
-        {"step": "Prepare Zucchini", "text": "Squeeze the grated zucchini to remove excess moisture."},
-        {"step": "Mix Wet Ingredients", "text": "In a large bowl, whisk together the eggs, honey, and melted coconut oil."},
-        {"step": "Combine Ingredients", "text": "Stir in the grated zucchini. In a separate bowl, combine the protein powder, flour, cinnamon, baking soda, and baking powder. Add the dry ingredients to the wet and mix until just combined. Fold in the chocolate chips."},
-        {"step": "Bake", "text": "Pour the batter into the prepared pan and bake for 30-35 minutes."},
-        {"step": "Cool", "text": "Cool in the pan for 10 minutes before transferring to a wire rack."}
+        {
+          "step": "Preheat Oven",
+          "text": "Preheat oven to 350\u00b0F (175\u00b0C). Grease and flour a 9x5-inch loaf pan."
+        },
+        {
+          "step": "Prepare Zucchini",
+          "text": "Squeeze the grated zucchini to remove excess moisture."
+        },
+        {
+          "step": "Mix Wet Ingredients",
+          "text": "In a large bowl, whisk together the eggs, honey, and melted coconut oil."
+        },
+        {
+          "step": "Combine Ingredients",
+          "text": "Stir in the grated zucchini. In a separate bowl, combine the protein powder, flour, cinnamon, baking soda, and baking powder. Add the dry ingredients to the wet and mix until just combined. Fold in the chocolate chips."
+        },
+        {
+          "step": "Bake",
+          "text": "Pour the batter into the prepared pan and bake for 30-35 minutes."
+        },
+        {
+          "step": "Cool",
+          "text": "Cool in the pan for 10 minutes before transferring to a wire rack."
+        }
       ]
     },
     {
@@ -739,9 +1169,15 @@
       "totalTime": "35",
       "difficulty": "Medium",
       "category": "Bagel",
-      "tags": ["cinnamon raisin", "protein", "bagels"],
-      "methods": ["greek yogurt"],
-      "image": "cinnamon-raisin-protein-bagels.png",
+      "tags": [
+        "cinnamon raisin",
+        "protein",
+        "bagels"
+      ],
+      "methods": [
+        "greek yogurt"
+      ],
+      "image": "protein-bagels.png",
       "ingredients": [
         "150g all-purpose flour",
         "100g plain non-fat Greek yogurt",
@@ -753,12 +1189,30 @@
         "1 egg white, beaten"
       ],
       "instructions": [
-        {"step": "Preheat Oven", "text": "Preheat your oven to 375°F (190°C)."},
-        {"step": "Make the Dough", "text": "In a bowl, mix together the flour, Greek yogurt, protein powder, baking powder, cinnamon, and salt. Fold in the raisins."},
-        {"step": "Knead and Shape", "text": "Knead the dough on a floured surface. Divide into 8 pieces and shape into bagels."},
-        {"step": "Prepare for Baking", "text": "Place the bagels on a baking sheet lined with parchment paper and brush with the beaten egg white."},
-        {"step": "Bake", "text": "Bake for 15-20 minutes, or until golden brown."},
-        {"step": "Cool", "text": "Let the bagels cool on a wire rack."}
+        {
+          "step": "Preheat Oven",
+          "text": "Preheat your oven to 375\u00b0F (190\u00b0C)."
+        },
+        {
+          "step": "Make the Dough",
+          "text": "In a bowl, mix together the flour, Greek yogurt, protein powder, baking powder, cinnamon, and salt. Fold in the raisins."
+        },
+        {
+          "step": "Knead and Shape",
+          "text": "Knead the dough on a floured surface. Divide into 8 pieces and shape into bagels."
+        },
+        {
+          "step": "Prepare for Baking",
+          "text": "Place the bagels on a baking sheet lined with parchment paper and brush with the beaten egg white."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake for 15-20 minutes, or until golden brown."
+        },
+        {
+          "step": "Cool",
+          "text": "Let the bagels cool on a wire rack."
+        }
       ]
     },
     {
@@ -779,9 +1233,16 @@
       "totalTime": "45",
       "difficulty": "Easy",
       "category": "Savory Bread",
-      "tags": ["cheese", "chive", "protein bread", "savory"],
-      "methods": ["whey"],
-      "image": "cheese-and-chive-protein-bread.png",
+      "tags": [
+        "cheese",
+        "chive",
+        "protein bread",
+        "savory"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "protein-english-muffins.png",
       "ingredients": [
         "120g unflavored whey protein powder",
         "100g almond flour",
@@ -793,15 +1254,32 @@
         "1 tsp baking powder"
       ],
       "instructions": [
-        {"step": "Preheat Oven", "text": "Preheat oven to 350°F (175°C). Grease a loaf pan."},
-        {"step": "Combine Ingredients", "text": "In a large bowl, whisk together all the ingredients until well combined."},
-        {"step": "Pour Batter", "text": "Pour the batter into the prepared loaf pan."},
-        {"step": "Bake", "text": "Bake for 25-30 minutes, until golden and cooked through."},
-        {"step": "Cool", "text": "Let the bread cool before slicing."},
-        {"step": "Serve", "text": "Enjoy this delicious savory bread."}
+        {
+          "step": "Preheat Oven",
+          "text": "Preheat oven to 350\u00b0F (175\u00b0C). Grease a loaf pan."
+        },
+        {
+          "step": "Combine Ingredients",
+          "text": "In a large bowl, whisk together all the ingredients until well combined."
+        },
+        {
+          "step": "Pour Batter",
+          "text": "Pour the batter into the prepared loaf pan."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake for 25-30 minutes, until golden and cooked through."
+        },
+        {
+          "step": "Cool",
+          "text": "Let the bread cool before slicing."
+        },
+        {
+          "step": "Serve",
+          "text": "Enjoy this delicious savory bread."
+        }
       ]
-    }
-,
+    },
     {
       "id": 21,
       "slug": "lemon-blueberry-protein-bread",
@@ -820,9 +1298,16 @@
       "totalTime": "45",
       "difficulty": "Easy",
       "category": "Sweet Bread",
-      "tags": ["lemon", "blueberry", "protein bread", "sweet"],
-      "methods": ["whey"],
-      "image": "lemon-blueberry-protein-bread.png",
+      "tags": [
+        "lemon",
+        "blueberry",
+        "protein bread",
+        "sweet"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "protein-pita.png",
       "ingredients": [
         "120g vanilla whey protein powder",
         "100g oat flour",
@@ -834,12 +1319,30 @@
         "1 tsp baking powder"
       ],
       "instructions": [
-        {"step": "Preheat Oven", "text": "Preheat oven to 350°F (175°C). Grease a loaf pan."},
-        {"step": "Prepare Batter", "text": "In a large bowl, mix together the protein powder, oat flour, eggs, milk, sweetener, lemon zest, and lemon juice."},
-        {"step": "Add Blueberries", "text": "Gently fold in the blueberries."},
-        {"step": "Pour and Bake", "text": "Pour the batter into the loaf pan and bake for 25-30 minutes."},
-        {"step": "Cool", "text": "Let the bread cool before slicing."},
-        {"step": "Enjoy", "text": "A sweet and zesty protein treat."}
+        {
+          "step": "Preheat Oven",
+          "text": "Preheat oven to 350\u00b0F (175\u00b0C). Grease a loaf pan."
+        },
+        {
+          "step": "Prepare Batter",
+          "text": "In a large bowl, mix together the protein powder, oat flour, eggs, milk, sweetener, lemon zest, and lemon juice."
+        },
+        {
+          "step": "Add Blueberries",
+          "text": "Gently fold in the blueberries."
+        },
+        {
+          "step": "Pour and Bake",
+          "text": "Pour the batter into the loaf pan and bake for 25-30 minutes."
+        },
+        {
+          "step": "Cool",
+          "text": "Let the bread cool before slicing."
+        },
+        {
+          "step": "Enjoy",
+          "text": "A sweet and zesty protein treat."
+        }
       ]
     },
     {
@@ -860,9 +1363,15 @@
       "totalTime": "55",
       "difficulty": "Easy",
       "category": "Sandwich Bread",
-      "tags": ["multigrain", "protein", "sandwich bread"],
-      "methods": ["vital wheat gluten"],
-      "image": "multigrain-protein-sandwich-bread.png",
+      "tags": [
+        "multigrain",
+        "protein",
+        "sandwich bread"
+      ],
+      "methods": [
+        "vital wheat gluten"
+      ],
+      "image": "protein-biscuits.png",
       "ingredients": [
         "150g whole wheat flour",
         "100g vital wheat gluten",
@@ -875,12 +1384,30 @@
         "1 tsp salt"
       ],
       "instructions": [
-        {"step": "Activate Yeast", "text": "Combine warm water, molasses, and yeast. Let sit for 5-10 minutes."},
-        {"step": "Combine Dry Ingredients", "text": "In a large bowl, whisk together the flours, gluten, seeds, protein, and salt."},
-        {"step": "Mix Dough", "text": "Pour the wet ingredients and olive oil into the dry and mix to form a dough."},
-        {"step": "Knead and Rise", "text": "Knead for 5-7 minutes. Let rise in a covered, greased bowl for 1 hour."},
-        {"step": "Shape and Bake", "text": "Shape into a loaf, place in a greased pan, and let rise for 30 minutes. Bake at 375°F (190°C) for 30-35 minutes."},
-        {"step": "Cool", "text": "Cool completely before slicing."}
+        {
+          "step": "Activate Yeast",
+          "text": "Combine warm water, molasses, and yeast. Let sit for 5-10 minutes."
+        },
+        {
+          "step": "Combine Dry Ingredients",
+          "text": "In a large bowl, whisk together the flours, gluten, seeds, protein, and salt."
+        },
+        {
+          "step": "Mix Dough",
+          "text": "Pour the wet ingredients and olive oil into the dry and mix to form a dough."
+        },
+        {
+          "step": "Knead and Rise",
+          "text": "Knead for 5-7 minutes. Let rise in a covered, greased bowl for 1 hour."
+        },
+        {
+          "step": "Shape and Bake",
+          "text": "Shape into a loaf, place in a greased pan, and let rise for 30 minutes. Bake at 375\u00b0F (190\u00b0C) for 30-35 minutes."
+        },
+        {
+          "step": "Cool",
+          "text": "Cool completely before slicing."
+        }
       ]
     },
     {
@@ -901,9 +1428,15 @@
       "totalTime": "45",
       "difficulty": "Easy",
       "category": "Banana Bread",
-      "tags": ["chocolate chip", "protein", "banana bread"],
-      "methods": ["whey"],
-      "image": "chocolate-chip-protein-banana-bread.png",
+      "tags": [
+        "chocolate chip",
+        "protein",
+        "banana bread"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "protein-naan.png",
       "ingredients": [
         "200g ripe bananas",
         "100g chocolate whey protein powder",
@@ -915,12 +1448,30 @@
         "1 tsp baking powder"
       ],
       "instructions": [
-        {"step": "Preheat Oven", "text": "Preheat oven to 350°F (175°C). Grease a loaf pan."},
-        {"step": "Mix Wet Ingredients", "text": "Mash bananas, then whisk in eggs, yogurt, and honey."},
-        {"step": "Combine Dry Ingredients", "text": "In a separate bowl, mix protein powder, oat flour, and baking powder."},
-        {"step": "Combine and Add Chips", "text": "Add dry ingredients to wet and stir until just combined. Fold in chocolate chips."},
-        {"step": "Bake", "text": "Pour into pan and bake for 25-30 minutes."},
-        {"step": "Cool", "text": "Cool before slicing."}
+        {
+          "step": "Preheat Oven",
+          "text": "Preheat oven to 350\u00b0F (175\u00b0C). Grease a loaf pan."
+        },
+        {
+          "step": "Mix Wet Ingredients",
+          "text": "Mash bananas, then whisk in eggs, yogurt, and honey."
+        },
+        {
+          "step": "Combine Dry Ingredients",
+          "text": "In a separate bowl, mix protein powder, oat flour, and baking powder."
+        },
+        {
+          "step": "Combine and Add Chips",
+          "text": "Add dry ingredients to wet and stir until just combined. Fold in chocolate chips."
+        },
+        {
+          "step": "Bake",
+          "text": "Pour into pan and bake for 25-30 minutes."
+        },
+        {
+          "step": "Cool",
+          "text": "Cool before slicing."
+        }
       ]
     },
     {
@@ -941,9 +1492,15 @@
       "totalTime": "55",
       "difficulty": "Easy",
       "category": "Quick Bread",
-      "tags": ["apple", "cinnamon", "protein bread"],
-      "methods": ["whey"],
-      "image": "apple-cinnamon-protein-bread.png",
+      "tags": [
+        "apple",
+        "cinnamon",
+        "protein bread"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "protein-rolls.png",
       "ingredients": [
         "150g grated apple",
         "120g vanilla whey protein powder",
@@ -955,12 +1512,30 @@
         "1 tsp baking powder"
       ],
       "instructions": [
-        {"step": "Preheat Oven", "text": "Preheat oven to 350°F (175°C). Grease a loaf pan."},
-        {"step": "Prepare Apple", "text": "Grate the apple and squeeze out excess moisture."},
-        {"step": "Mix Wet Ingredients", "text": "Whisk together eggs, applesauce, and maple syrup."},
-        {"step": "Combine Ingredients", "text": "Stir in the grated apple. In a separate bowl, combine protein powder, oat flour, cinnamon, and baking powder. Add dry to wet and mix."},
-        {"step": "Bake", "text": "Pour into pan and bake for 30-35 minutes."},
-        {"step": "Cool", "text": "Cool before slicing."}
+        {
+          "step": "Preheat Oven",
+          "text": "Preheat oven to 350\u00b0F (175\u00b0C). Grease a loaf pan."
+        },
+        {
+          "step": "Prepare Apple",
+          "text": "Grate the apple and squeeze out excess moisture."
+        },
+        {
+          "step": "Mix Wet Ingredients",
+          "text": "Whisk together eggs, applesauce, and maple syrup."
+        },
+        {
+          "step": "Combine Ingredients",
+          "text": "Stir in the grated apple. In a separate bowl, combine protein powder, oat flour, cinnamon, and baking powder. Add dry to wet and mix."
+        },
+        {
+          "step": "Bake",
+          "text": "Pour into pan and bake for 30-35 minutes."
+        },
+        {
+          "step": "Cool",
+          "text": "Cool before slicing."
+        }
       ]
     },
     {
@@ -981,9 +1556,15 @@
       "totalTime": "35",
       "difficulty": "Medium",
       "category": "Bagel",
-      "tags": ["everything bagel", "protein", "savory"],
-      "methods": ["greek yogurt"],
-      "image": "everything-protein-bagels.png",
+      "tags": [
+        "everything bagel",
+        "protein",
+        "savory"
+      ],
+      "methods": [
+        "greek yogurt"
+      ],
+      "image": "protein-tortillas.png",
       "ingredients": [
         "150g all-purpose flour",
         "120g plain non-fat Greek yogurt",
@@ -994,12 +1575,30 @@
         "2 tbsp everything bagel seasoning"
       ],
       "instructions": [
-        {"step": "Preheat Oven", "text": "Preheat oven to 375°F (190°C)."},
-        {"step": "Make Dough", "text": "Mix flour, yogurt, protein powder, baking powder, and salt to form a dough."},
-        {"step": "Knead and Shape", "text": "Knead briefly, then divide into 8 pieces and shape into bagels."},
-        {"step": "Top and Bake", "text": "Place on a parchment-lined baking sheet, brush with egg white, and sprinkle with seasoning."},
-        {"step": "Bake", "text": "Bake for 15-20 minutes until golden."},
-        {"step": "Cool", "text": "Cool on a wire rack."}
+        {
+          "step": "Preheat Oven",
+          "text": "Preheat oven to 375\u00b0F (190\u00b0C)."
+        },
+        {
+          "step": "Make Dough",
+          "text": "Mix flour, yogurt, protein powder, baking powder, and salt to form a dough."
+        },
+        {
+          "step": "Knead and Shape",
+          "text": "Knead briefly, then divide into 8 pieces and shape into bagels."
+        },
+        {
+          "step": "Top and Bake",
+          "text": "Place on a parchment-lined baking sheet, brush with egg white, and sprinkle with seasoning."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake for 15-20 minutes until golden."
+        },
+        {
+          "step": "Cool",
+          "text": "Cool on a wire rack."
+        }
       ]
     }
   ]

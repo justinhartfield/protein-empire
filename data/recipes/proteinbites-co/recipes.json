@@ -18,11 +18,45 @@
       "totalTime": "15",
       "difficulty": "Easy",
       "category": "Classic",
-      "tags": ["peanut butter", "no-bake", "classic"],
-      "methods": ["whey"],
-      "image": "peanut-butter-protein-balls.png",
-      "ingredients": ["256g natural peanut butter", "120g rolled oats", "60g vanilla whey protein powder", "80g honey", "60g mini chocolate chips", "5ml vanilla extract"],
-      "instructions": [{"step": "Mix Base", "text": "In a large bowl, combine the peanut butter, honey, and vanilla extract until smooth."}, {"step": "Add Dry Ingredients", "text": "Stir in the oats and protein powder until well combined."}, {"step": "Fold in Chocolate", "text": "Gently fold in the mini chocolate chips."}, {"step": "Roll into Balls", "text": "Using wet hands, roll the mixture into 20 equal-sized balls."}, {"step": "Chill", "text": "Refrigerate for at least 30 minutes before serving. Store in the fridge for up to 2 weeks."}]
+      "tags": [
+        "peanut butter",
+        "no-bake",
+        "classic"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "classic-protein-energy-bites.png",
+      "ingredients": [
+        "256g natural peanut butter",
+        "120g rolled oats",
+        "60g vanilla whey protein powder",
+        "80g honey",
+        "60g mini chocolate chips",
+        "5ml vanilla extract"
+      ],
+      "instructions": [
+        {
+          "step": "Mix Base",
+          "text": "In a large bowl, combine the peanut butter, honey, and vanilla extract until smooth."
+        },
+        {
+          "step": "Add Dry Ingredients",
+          "text": "Stir in the oats and protein powder until well combined."
+        },
+        {
+          "step": "Fold in Chocolate",
+          "text": "Gently fold in the mini chocolate chips."
+        },
+        {
+          "step": "Roll into Balls",
+          "text": "Using wet hands, roll the mixture into 20 equal-sized balls."
+        },
+        {
+          "step": "Chill",
+          "text": "Refrigerate for at least 30 minutes before serving. Store in the fridge for up to 2 weeks."
+        }
+      ]
     },
     {
       "id": 2,
@@ -42,11 +76,45 @@
       "totalTime": "15",
       "difficulty": "Beginner",
       "category": "Quick",
-      "tags": ["no-bake", "easy", "meal prep"],
-      "methods": ["whey"],
-      "image": "no-bake-protein-balls.png",
-      "ingredients": ["180g rolled oats", "60g chocolate whey protein powder", "128g almond butter", "80g maple syrup", "30g unsweetened cocoa powder", "60ml almond milk"],
-      "instructions": [{"step": "Combine Dry", "text": "Mix oats, protein powder, and cocoa powder in a large bowl."}, {"step": "Add Wet", "text": "Add almond butter, maple syrup, and almond milk. Stir until combined."}, {"step": "Adjust Texture", "text": "If too dry, add more milk. If too wet, add more oats."}, {"step": "Shape", "text": "Roll into 24 balls using damp hands."}, {"step": "Chill", "text": "Refrigerate 30 minutes until firm."}]
+      "tags": [
+        "no-bake",
+        "easy",
+        "meal prep"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "chocolate-protein-bites.png",
+      "ingredients": [
+        "180g rolled oats",
+        "60g chocolate whey protein powder",
+        "128g almond butter",
+        "80g maple syrup",
+        "30g unsweetened cocoa powder",
+        "60ml almond milk"
+      ],
+      "instructions": [
+        {
+          "step": "Combine Dry",
+          "text": "Mix oats, protein powder, and cocoa powder in a large bowl."
+        },
+        {
+          "step": "Add Wet",
+          "text": "Add almond butter, maple syrup, and almond milk. Stir until combined."
+        },
+        {
+          "step": "Adjust Texture",
+          "text": "If too dry, add more milk. If too wet, add more oats."
+        },
+        {
+          "step": "Shape",
+          "text": "Roll into 24 balls using damp hands."
+        },
+        {
+          "step": "Chill",
+          "text": "Refrigerate 30 minutes until firm."
+        }
+      ]
     },
     {
       "id": 3,
@@ -66,11 +134,45 @@
       "totalTime": "12",
       "difficulty": "Easy",
       "category": "Classic",
-      "tags": ["oatmeal", "fiber", "energy"],
-      "methods": ["whey"],
-      "image": "oatmeal-protein-balls.png",
-      "ingredients": ["200g rolled oats", "60g vanilla whey protein powder", "128g cashew butter", "80g honey", "5g cinnamon", "60g raisins"],
-      "instructions": [{"step": "Mix Dry", "text": "Combine oats, protein powder, and cinnamon in a bowl."}, {"step": "Add Wet", "text": "Stir in cashew butter and honey until a dough forms."}, {"step": "Add Mix-ins", "text": "Fold in the raisins."}, {"step": "Roll", "text": "Form into 20 balls."}, {"step": "Store", "text": "Keep refrigerated for up to 10 days."}]
+      "tags": [
+        "oatmeal",
+        "fiber",
+        "energy"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "no-bake-protein-bites.png",
+      "ingredients": [
+        "200g rolled oats",
+        "60g vanilla whey protein powder",
+        "128g cashew butter",
+        "80g honey",
+        "5g cinnamon",
+        "60g raisins"
+      ],
+      "instructions": [
+        {
+          "step": "Mix Dry",
+          "text": "Combine oats, protein powder, and cinnamon in a bowl."
+        },
+        {
+          "step": "Add Wet",
+          "text": "Stir in cashew butter and honey until a dough forms."
+        },
+        {
+          "step": "Add Mix-ins",
+          "text": "Fold in the raisins."
+        },
+        {
+          "step": "Roll",
+          "text": "Form into 20 balls."
+        },
+        {
+          "step": "Store",
+          "text": "Keep refrigerated for up to 10 days."
+        }
+      ]
     },
     {
       "id": 4,
@@ -90,11 +192,45 @@
       "totalTime": "10",
       "difficulty": "Easy",
       "category": "Pre-Workout",
-      "tags": ["energy", "dates", "workout"],
-      "methods": ["whey"],
-      "image": "protein-energy-balls.png",
-      "ingredients": ["200g medjool dates, pitted", "100g almonds", "60g vanilla whey protein powder", "30g unsweetened cocoa powder", "30ml water", "2g sea salt"],
-      "instructions": [{"step": "Blend Base", "text": "Process dates and almonds in a food processor until finely chopped."}, {"step": "Add Protein", "text": "Add protein powder, cocoa, salt, and water. Blend until sticky."}, {"step": "Form Balls", "text": "Roll into 18 balls."}, {"step": "Optional Coating", "text": "Roll in shredded coconut or cocoa powder if desired."}, {"step": "Chill", "text": "Refrigerate for 1 hour before serving."}]
+      "tags": [
+        "energy",
+        "dates",
+        "workout"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "peanut-butter-protein-bites.png",
+      "ingredients": [
+        "200g medjool dates, pitted",
+        "100g almonds",
+        "60g vanilla whey protein powder",
+        "30g unsweetened cocoa powder",
+        "30ml water",
+        "2g sea salt"
+      ],
+      "instructions": [
+        {
+          "step": "Blend Base",
+          "text": "Process dates and almonds in a food processor until finely chopped."
+        },
+        {
+          "step": "Add Protein",
+          "text": "Add protein powder, cocoa, salt, and water. Blend until sticky."
+        },
+        {
+          "step": "Form Balls",
+          "text": "Roll into 18 balls."
+        },
+        {
+          "step": "Optional Coating",
+          "text": "Roll in shredded coconut or cocoa powder if desired."
+        },
+        {
+          "step": "Chill",
+          "text": "Refrigerate for 1 hour before serving."
+        }
+      ]
     },
     {
       "id": 5,
@@ -114,11 +250,45 @@
       "totalTime": "15",
       "difficulty": "Easy",
       "category": "Chocolate",
-      "tags": ["chocolate", "brownie", "decadent"],
-      "methods": ["whey"],
-      "image": "chocolate-protein-balls.png",
-      "ingredients": ["150g rolled oats", "60g chocolate whey protein powder", "45g unsweetened cocoa powder", "128g almond butter", "80g maple syrup", "60g dark chocolate chips"],
-      "instructions": [{"step": "Mix Dry", "text": "Combine oats, protein powder, and cocoa powder."}, {"step": "Add Wet", "text": "Stir in almond butter and maple syrup."}, {"step": "Add Chips", "text": "Fold in chocolate chips."}, {"step": "Shape", "text": "Roll into 20 balls."}, {"step": "Chill", "text": "Refrigerate until firm, about 30 minutes."}]
+      "tags": [
+        "chocolate",
+        "brownie",
+        "decadent"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "almond-joy-protein-bites.png",
+      "ingredients": [
+        "150g rolled oats",
+        "60g chocolate whey protein powder",
+        "45g unsweetened cocoa powder",
+        "128g almond butter",
+        "80g maple syrup",
+        "60g dark chocolate chips"
+      ],
+      "instructions": [
+        {
+          "step": "Mix Dry",
+          "text": "Combine oats, protein powder, and cocoa powder."
+        },
+        {
+          "step": "Add Wet",
+          "text": "Stir in almond butter and maple syrup."
+        },
+        {
+          "step": "Add Chips",
+          "text": "Fold in chocolate chips."
+        },
+        {
+          "step": "Shape",
+          "text": "Roll into 20 balls."
+        },
+        {
+          "step": "Chill",
+          "text": "Refrigerate until firm, about 30 minutes."
+        }
+      ]
     },
     {
       "id": 6,
@@ -138,11 +308,45 @@
       "totalTime": "12",
       "difficulty": "Beginner",
       "category": "Classic",
-      "tags": ["chocolate chip", "cookie dough", "classic"],
-      "methods": ["whey"],
-      "image": "chocolate-chip-protein-balls.png",
-      "ingredients": ["180g oat flour", "60g vanilla whey protein powder", "128g cashew butter", "80g honey", "5ml vanilla extract", "80g mini chocolate chips"],
-      "instructions": [{"step": "Combine", "text": "Mix oat flour and protein powder."}, {"step": "Add Wet", "text": "Stir in cashew butter, honey, and vanilla."}, {"step": "Fold Chips", "text": "Add chocolate chips and mix."}, {"step": "Roll", "text": "Form 22 balls."}, {"step": "Chill", "text": "Refrigerate 20 minutes."}]
+      "tags": [
+        "chocolate chip",
+        "cookie dough",
+        "classic"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "matcha-protein-bites.png",
+      "ingredients": [
+        "180g oat flour",
+        "60g vanilla whey protein powder",
+        "128g cashew butter",
+        "80g honey",
+        "5ml vanilla extract",
+        "80g mini chocolate chips"
+      ],
+      "instructions": [
+        {
+          "step": "Combine",
+          "text": "Mix oat flour and protein powder."
+        },
+        {
+          "step": "Add Wet",
+          "text": "Stir in cashew butter, honey, and vanilla."
+        },
+        {
+          "step": "Fold Chips",
+          "text": "Add chocolate chips and mix."
+        },
+        {
+          "step": "Roll",
+          "text": "Form 22 balls."
+        },
+        {
+          "step": "Chill",
+          "text": "Refrigerate 20 minutes."
+        }
+      ]
     },
     {
       "id": 7,
@@ -162,11 +366,45 @@
       "totalTime": "15",
       "difficulty": "Easy",
       "category": "Seasonal",
-      "tags": ["pumpkin", "fall", "spice"],
-      "methods": ["whey"],
-      "image": "pumpkin-protein-balls.png",
-      "ingredients": ["180g rolled oats", "60g vanilla whey protein powder", "120g pumpkin puree", "64g almond butter", "60g maple syrup", "5g pumpkin pie spice"],
-      "instructions": [{"step": "Mix Dry", "text": "Combine oats, protein powder, and pumpkin pie spice."}, {"step": "Add Wet", "text": "Mix in pumpkin puree, almond butter, and maple syrup."}, {"step": "Combine", "text": "Stir until dough forms."}, {"step": "Shape", "text": "Roll into 20 balls."}, {"step": "Chill", "text": "Refrigerate 1 hour until firm."}]
+      "tags": [
+        "pumpkin",
+        "fall",
+        "spice"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "coconut-protein-bites.png",
+      "ingredients": [
+        "180g rolled oats",
+        "60g vanilla whey protein powder",
+        "120g pumpkin puree",
+        "64g almond butter",
+        "60g maple syrup",
+        "5g pumpkin pie spice"
+      ],
+      "instructions": [
+        {
+          "step": "Mix Dry",
+          "text": "Combine oats, protein powder, and pumpkin pie spice."
+        },
+        {
+          "step": "Add Wet",
+          "text": "Mix in pumpkin puree, almond butter, and maple syrup."
+        },
+        {
+          "step": "Combine",
+          "text": "Stir until dough forms."
+        },
+        {
+          "step": "Shape",
+          "text": "Roll into 20 balls."
+        },
+        {
+          "step": "Chill",
+          "text": "Refrigerate 1 hour until firm."
+        }
+      ]
     },
     {
       "id": 8,
@@ -186,11 +424,45 @@
       "totalTime": "15",
       "difficulty": "Easy",
       "category": "Dessert",
-      "tags": ["monster cookie", "loaded", "fun"],
-      "methods": ["whey"],
-      "image": "monster-cookie-protein-balls.png",
-      "ingredients": ["150g rolled oats", "60g vanilla whey protein powder", "192g peanut butter", "60g honey", "40g mini M&Ms", "40g mini chocolate chips"],
-      "instructions": [{"step": "Mix Base", "text": "Combine oats, protein powder, peanut butter, and honey."}, {"step": "Add Mix-ins", "text": "Fold in M&Ms and chocolate chips."}, {"step": "Roll", "text": "Form into 18 balls."}, {"step": "Press Toppings", "text": "Press extra M&Ms on top if desired."}, {"step": "Chill", "text": "Refrigerate 30 minutes."}]
+      "tags": [
+        "monster cookie",
+        "loaded",
+        "fun"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "brownie-protein-bites.png",
+      "ingredients": [
+        "150g rolled oats",
+        "60g vanilla whey protein powder",
+        "192g peanut butter",
+        "60g honey",
+        "40g mini M&Ms",
+        "40g mini chocolate chips"
+      ],
+      "instructions": [
+        {
+          "step": "Mix Base",
+          "text": "Combine oats, protein powder, peanut butter, and honey."
+        },
+        {
+          "step": "Add Mix-ins",
+          "text": "Fold in M&Ms and chocolate chips."
+        },
+        {
+          "step": "Roll",
+          "text": "Form into 18 balls."
+        },
+        {
+          "step": "Press Toppings",
+          "text": "Press extra M&Ms on top if desired."
+        },
+        {
+          "step": "Chill",
+          "text": "Refrigerate 30 minutes."
+        }
+      ]
     },
     {
       "id": 9,
@@ -210,11 +482,45 @@
       "totalTime": "15",
       "difficulty": "Easy",
       "category": "Chocolate",
-      "tags": ["chocolate", "peanut butter", "classic"],
-      "methods": ["whey"],
-      "image": "chocolate-peanut-butter-protein-balls.png",
-      "ingredients": ["150g rolled oats", "60g chocolate whey protein powder", "192g peanut butter", "60g honey", "30g unsweetened cocoa powder", "60g chocolate chips"],
-      "instructions": [{"step": "Mix Dry", "text": "Combine oats, protein powder, and cocoa."}, {"step": "Add Wet", "text": "Stir in peanut butter and honey."}, {"step": "Add Chips", "text": "Fold in chocolate chips."}, {"step": "Roll", "text": "Form 20 balls."}, {"step": "Chill", "text": "Refrigerate until firm."}]
+      "tags": [
+        "chocolate",
+        "peanut butter",
+        "classic"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "lemon-protein-bites.png",
+      "ingredients": [
+        "150g rolled oats",
+        "60g chocolate whey protein powder",
+        "192g peanut butter",
+        "60g honey",
+        "30g unsweetened cocoa powder",
+        "60g chocolate chips"
+      ],
+      "instructions": [
+        {
+          "step": "Mix Dry",
+          "text": "Combine oats, protein powder, and cocoa."
+        },
+        {
+          "step": "Add Wet",
+          "text": "Stir in peanut butter and honey."
+        },
+        {
+          "step": "Add Chips",
+          "text": "Fold in chocolate chips."
+        },
+        {
+          "step": "Roll",
+          "text": "Form 20 balls."
+        },
+        {
+          "step": "Chill",
+          "text": "Refrigerate until firm."
+        }
+      ]
     },
     {
       "id": 10,
@@ -234,11 +540,45 @@
       "totalTime": "12",
       "difficulty": "Easy",
       "category": "Keto",
-      "tags": ["keto", "low-carb", "sugar-free"],
-      "methods": ["whey"],
-      "image": "keto-protein-balls.png",
-      "ingredients": ["120g almond flour", "60g vanilla whey protein powder", "128g almond butter", "60g sugar-free sweetener", "30g unsweetened coconut flakes", "30ml coconut oil, melted"],
-      "instructions": [{"step": "Mix Dry", "text": "Combine almond flour, protein powder, and sweetener."}, {"step": "Add Wet", "text": "Stir in almond butter and coconut oil."}, {"step": "Add Coconut", "text": "Fold in coconut flakes."}, {"step": "Roll", "text": "Form 18 balls."}, {"step": "Chill", "text": "Refrigerate 1 hour."}]
+      "tags": [
+        "keto",
+        "low-carb",
+        "sugar-free"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "cookie-dough-protein-bites.png",
+      "ingredients": [
+        "120g almond flour",
+        "60g vanilla whey protein powder",
+        "128g almond butter",
+        "60g sugar-free sweetener",
+        "30g unsweetened coconut flakes",
+        "30ml coconut oil, melted"
+      ],
+      "instructions": [
+        {
+          "step": "Mix Dry",
+          "text": "Combine almond flour, protein powder, and sweetener."
+        },
+        {
+          "step": "Add Wet",
+          "text": "Stir in almond butter and coconut oil."
+        },
+        {
+          "step": "Add Coconut",
+          "text": "Fold in coconut flakes."
+        },
+        {
+          "step": "Roll",
+          "text": "Form 18 balls."
+        },
+        {
+          "step": "Chill",
+          "text": "Refrigerate 1 hour."
+        }
+      ]
     },
     {
       "id": 11,
@@ -258,11 +598,40 @@
       "totalTime": "10",
       "difficulty": "Easy",
       "category": "High Protein",
-      "tags": ["high protein", "athlete", "power"],
-      "methods": ["whey"],
-      "image": "protein-power-balls.png",
-      "ingredients": ["90g vanilla whey protein powder", "120g rolled oats", "192g peanut butter", "60g honey", "30g chia seeds"],
-      "instructions": [{"step": "Combine All", "text": "Mix all ingredients in a large bowl until well combined."}, {"step": "Rest", "text": "Let mixture sit 5 minutes to hydrate."}, {"step": "Roll", "text": "Form into 16 balls."}, {"step": "Chill", "text": "Refrigerate 30 minutes."}]
+      "tags": [
+        "high protein",
+        "athlete",
+        "power"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "maple-walnut-protein-bites.png",
+      "ingredients": [
+        "90g vanilla whey protein powder",
+        "120g rolled oats",
+        "192g peanut butter",
+        "60g honey",
+        "30g chia seeds"
+      ],
+      "instructions": [
+        {
+          "step": "Combine All",
+          "text": "Mix all ingredients in a large bowl until well combined."
+        },
+        {
+          "step": "Rest",
+          "text": "Let mixture sit 5 minutes to hydrate."
+        },
+        {
+          "step": "Roll",
+          "text": "Form into 16 balls."
+        },
+        {
+          "step": "Chill",
+          "text": "Refrigerate 30 minutes."
+        }
+      ]
     },
     {
       "id": 12,
@@ -282,11 +651,39 @@
       "totalTime": "8",
       "difficulty": "Beginner",
       "category": "Quick",
-      "tags": ["easy", "simple", "beginner"],
-      "methods": ["whey"],
-      "image": "easy-protein-balls.png",
-      "ingredients": ["180g rolled oats", "60g vanilla whey protein powder", "128g peanut butter", "80g honey"],
-      "instructions": [{"step": "Mix", "text": "Combine all ingredients in a bowl."}, {"step": "Stir", "text": "Mix until dough forms."}, {"step": "Roll", "text": "Form 20 balls."}, {"step": "Done", "text": "Eat immediately or refrigerate."}]
+      "tags": [
+        "easy",
+        "simple",
+        "beginner"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "pumpkin-spice-protein-bites.png",
+      "ingredients": [
+        "180g rolled oats",
+        "60g vanilla whey protein powder",
+        "128g peanut butter",
+        "80g honey"
+      ],
+      "instructions": [
+        {
+          "step": "Mix",
+          "text": "Combine all ingredients in a bowl."
+        },
+        {
+          "step": "Stir",
+          "text": "Mix until dough forms."
+        },
+        {
+          "step": "Roll",
+          "text": "Form 20 balls."
+        },
+        {
+          "step": "Done",
+          "text": "Eat immediately or refrigerate."
+        }
+      ]
     },
     {
       "id": 13,
@@ -306,11 +703,41 @@
       "totalTime": "15",
       "difficulty": "Easy",
       "category": "Healthy",
-      "tags": ["healthy", "clean", "whole food"],
-      "methods": ["whey"],
-      "image": "healthy-protein-balls.png",
-      "ingredients": ["150g medjool dates", "100g almonds", "60g vanilla whey protein powder", "60g rolled oats", "30g unsweetened cocoa powder", "2g sea salt"],
-      "instructions": [{"step": "Process Dates", "text": "Blend dates and almonds in food processor."}, {"step": "Add Remaining", "text": "Add protein, oats, cocoa, and salt. Pulse until combined."}, {"step": "Roll", "text": "Form 20 balls."}, {"step": "Chill", "text": "Refrigerate 1 hour."}]
+      "tags": [
+        "healthy",
+        "clean",
+        "whole food"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "espresso-protein-bites.png",
+      "ingredients": [
+        "150g medjool dates",
+        "100g almonds",
+        "60g vanilla whey protein powder",
+        "60g rolled oats",
+        "30g unsweetened cocoa powder",
+        "2g sea salt"
+      ],
+      "instructions": [
+        {
+          "step": "Process Dates",
+          "text": "Blend dates and almonds in food processor."
+        },
+        {
+          "step": "Add Remaining",
+          "text": "Add protein, oats, cocoa, and salt. Pulse until combined."
+        },
+        {
+          "step": "Roll",
+          "text": "Form 20 balls."
+        },
+        {
+          "step": "Chill",
+          "text": "Refrigerate 1 hour."
+        }
+      ]
     },
     {
       "id": 14,
@@ -330,11 +757,45 @@
       "totalTime": "12",
       "difficulty": "Easy",
       "category": "Classic",
-      "tags": ["homemade", "customizable", "classic"],
-      "methods": ["whey"],
-      "image": "homemade-protein-balls.png",
-      "ingredients": ["180g rolled oats", "60g vanilla whey protein powder", "128g nut butter of choice", "80g honey or maple syrup", "60g mix-ins of choice", "5ml vanilla extract"],
-      "instructions": [{"step": "Mix Base", "text": "Combine oats and protein powder."}, {"step": "Add Wet", "text": "Stir in nut butter, sweetener, and vanilla."}, {"step": "Add Mix-ins", "text": "Fold in your choice of chocolate chips, dried fruit, or nuts."}, {"step": "Roll", "text": "Form 22 balls."}, {"step": "Store", "text": "Keep refrigerated up to 2 weeks."}]
+      "tags": [
+        "homemade",
+        "customizable",
+        "classic"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "birthday-cake-protein-bites.png",
+      "ingredients": [
+        "180g rolled oats",
+        "60g vanilla whey protein powder",
+        "128g nut butter of choice",
+        "80g honey or maple syrup",
+        "60g mix-ins of choice",
+        "5ml vanilla extract"
+      ],
+      "instructions": [
+        {
+          "step": "Mix Base",
+          "text": "Combine oats and protein powder."
+        },
+        {
+          "step": "Add Wet",
+          "text": "Stir in nut butter, sweetener, and vanilla."
+        },
+        {
+          "step": "Add Mix-ins",
+          "text": "Fold in your choice of chocolate chips, dried fruit, or nuts."
+        },
+        {
+          "step": "Roll",
+          "text": "Form 22 balls."
+        },
+        {
+          "step": "Store",
+          "text": "Keep refrigerated up to 2 weeks."
+        }
+      ]
     },
     {
       "id": 15,
@@ -354,11 +815,40 @@
       "totalTime": "10",
       "difficulty": "Beginner",
       "category": "Classic",
-      "tags": ["oats", "fiber", "heart-healthy"],
-      "methods": ["whey"],
-      "image": "oat-protein-balls.png",
-      "ingredients": ["200g rolled oats", "60g vanilla whey protein powder", "128g sunflower seed butter", "80g honey", "5g cinnamon"],
-      "instructions": [{"step": "Combine", "text": "Mix oats, protein powder, and cinnamon."}, {"step": "Add Wet", "text": "Stir in sunflower butter and honey."}, {"step": "Roll", "text": "Form 20 balls."}, {"step": "Chill", "text": "Refrigerate 20 minutes."}]
+      "tags": [
+        "oats",
+        "fiber",
+        "heart-healthy"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "strawberry-protein-bites.png",
+      "ingredients": [
+        "200g rolled oats",
+        "60g vanilla whey protein powder",
+        "128g sunflower seed butter",
+        "80g honey",
+        "5g cinnamon"
+      ],
+      "instructions": [
+        {
+          "step": "Combine",
+          "text": "Mix oats, protein powder, and cinnamon."
+        },
+        {
+          "step": "Add Wet",
+          "text": "Stir in sunflower butter and honey."
+        },
+        {
+          "step": "Roll",
+          "text": "Form 20 balls."
+        },
+        {
+          "step": "Chill",
+          "text": "Refrigerate 20 minutes."
+        }
+      ]
     },
     {
       "id": 16,
@@ -378,11 +868,45 @@
       "totalTime": "15",
       "difficulty": "Easy",
       "category": "Tropical",
-      "tags": ["coconut", "tropical", "island"],
-      "methods": ["whey"],
-      "image": "coconut-protein-balls.png",
-      "ingredients": ["150g rolled oats", "60g vanilla whey protein powder", "80g shredded coconut", "128g coconut butter", "60g honey", "30g extra coconut for rolling"],
-      "instructions": [{"step": "Mix Dry", "text": "Combine oats, protein powder, and shredded coconut."}, {"step": "Add Wet", "text": "Stir in coconut butter and honey."}, {"step": "Roll", "text": "Form 18 balls."}, {"step": "Coat", "text": "Roll in extra shredded coconut."}, {"step": "Chill", "text": "Refrigerate 30 minutes."}]
+      "tags": [
+        "coconut",
+        "tropical",
+        "island"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "apple-pie-protein-bites.png",
+      "ingredients": [
+        "150g rolled oats",
+        "60g vanilla whey protein powder",
+        "80g shredded coconut",
+        "128g coconut butter",
+        "60g honey",
+        "30g extra coconut for rolling"
+      ],
+      "instructions": [
+        {
+          "step": "Mix Dry",
+          "text": "Combine oats, protein powder, and shredded coconut."
+        },
+        {
+          "step": "Add Wet",
+          "text": "Stir in coconut butter and honey."
+        },
+        {
+          "step": "Roll",
+          "text": "Form 18 balls."
+        },
+        {
+          "step": "Coat",
+          "text": "Roll in extra shredded coconut."
+        },
+        {
+          "step": "Chill",
+          "text": "Refrigerate 30 minutes."
+        }
+      ]
     },
     {
       "id": 17,
@@ -402,11 +926,40 @@
       "totalTime": "12",
       "difficulty": "Easy",
       "category": "Classic",
-      "tags": ["almond butter", "nutty", "smooth"],
-      "methods": ["whey"],
-      "image": "almond-butter-protein-balls.png",
-      "ingredients": ["180g rolled oats", "60g vanilla whey protein powder", "192g almond butter", "60g maple syrup", "5ml almond extract"],
-      "instructions": [{"step": "Combine", "text": "Mix oats and protein powder."}, {"step": "Add Wet", "text": "Stir in almond butter, maple syrup, and almond extract."}, {"step": "Roll", "text": "Form 20 balls."}, {"step": "Chill", "text": "Refrigerate until firm."}]
+      "tags": [
+        "almond butter",
+        "nutty",
+        "smooth"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "mint-chocolate-protein-bites.png",
+      "ingredients": [
+        "180g rolled oats",
+        "60g vanilla whey protein powder",
+        "192g almond butter",
+        "60g maple syrup",
+        "5ml almond extract"
+      ],
+      "instructions": [
+        {
+          "step": "Combine",
+          "text": "Mix oats and protein powder."
+        },
+        {
+          "step": "Add Wet",
+          "text": "Stir in almond butter, maple syrup, and almond extract."
+        },
+        {
+          "step": "Roll",
+          "text": "Form 20 balls."
+        },
+        {
+          "step": "Chill",
+          "text": "Refrigerate until firm."
+        }
+      ]
     },
     {
       "id": 18,
@@ -426,11 +979,45 @@
       "totalTime": "15",
       "difficulty": "Easy",
       "category": "Fun",
-      "tags": ["birthday cake", "sprinkles", "celebration"],
-      "methods": ["whey"],
-      "image": "birthday-cake-protein-balls.png",
-      "ingredients": ["150g oat flour", "60g vanilla whey protein powder", "128g cashew butter", "80g honey", "5ml vanilla extract", "40g rainbow sprinkles"],
-      "instructions": [{"step": "Mix Dry", "text": "Combine oat flour and protein powder."}, {"step": "Add Wet", "text": "Stir in cashew butter, honey, and vanilla."}, {"step": "Add Sprinkles", "text": "Fold in most of the sprinkles, saving some for topping."}, {"step": "Roll", "text": "Form 20 balls and roll in remaining sprinkles."}, {"step": "Chill", "text": "Refrigerate 20 minutes."}]
+      "tags": [
+        "birthday cake",
+        "sprinkles",
+        "celebration"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "carrot-cake-protein-bites.png",
+      "ingredients": [
+        "150g oat flour",
+        "60g vanilla whey protein powder",
+        "128g cashew butter",
+        "80g honey",
+        "5ml vanilla extract",
+        "40g rainbow sprinkles"
+      ],
+      "instructions": [
+        {
+          "step": "Mix Dry",
+          "text": "Combine oat flour and protein powder."
+        },
+        {
+          "step": "Add Wet",
+          "text": "Stir in cashew butter, honey, and vanilla."
+        },
+        {
+          "step": "Add Sprinkles",
+          "text": "Fold in most of the sprinkles, saving some for topping."
+        },
+        {
+          "step": "Roll",
+          "text": "Form 20 balls and roll in remaining sprinkles."
+        },
+        {
+          "step": "Chill",
+          "text": "Refrigerate 20 minutes."
+        }
+      ]
     },
     {
       "id": 19,
@@ -450,11 +1037,45 @@
       "totalTime": "15",
       "difficulty": "Easy",
       "category": "Seasonal",
-      "tags": ["apple", "cinnamon", "fall"],
-      "methods": ["whey"],
-      "image": "apple-cinnamon-protein-balls.png",
-      "ingredients": ["180g rolled oats", "60g vanilla whey protein powder", "60g dried apple pieces, chopped", "128g almond butter", "60g honey", "5g cinnamon"],
-      "instructions": [{"step": "Mix Dry", "text": "Combine oats, protein powder, and cinnamon."}, {"step": "Add Wet", "text": "Stir in almond butter and honey."}, {"step": "Add Apple", "text": "Fold in dried apple pieces."}, {"step": "Roll", "text": "Form 20 balls."}, {"step": "Chill", "text": "Refrigerate 30 minutes."}]
+      "tags": [
+        "apple",
+        "cinnamon",
+        "fall"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "s'mores-protein-bites.png",
+      "ingredients": [
+        "180g rolled oats",
+        "60g vanilla whey protein powder",
+        "60g dried apple pieces, chopped",
+        "128g almond butter",
+        "60g honey",
+        "5g cinnamon"
+      ],
+      "instructions": [
+        {
+          "step": "Mix Dry",
+          "text": "Combine oats, protein powder, and cinnamon."
+        },
+        {
+          "step": "Add Wet",
+          "text": "Stir in almond butter and honey."
+        },
+        {
+          "step": "Add Apple",
+          "text": "Fold in dried apple pieces."
+        },
+        {
+          "step": "Roll",
+          "text": "Form 20 balls."
+        },
+        {
+          "step": "Chill",
+          "text": "Refrigerate 30 minutes."
+        }
+      ]
     },
     {
       "id": 20,
@@ -474,11 +1095,45 @@
       "totalTime": "12",
       "difficulty": "Easy",
       "category": "Coffee",
-      "tags": ["coffee", "espresso", "caffeine"],
-      "methods": ["whey"],
-      "image": "coffee-protein-balls.png",
-      "ingredients": ["150g rolled oats", "60g vanilla whey protein powder", "10g instant espresso powder", "128g almond butter", "60g maple syrup", "60g dark chocolate chips"],
-      "instructions": [{"step": "Mix Dry", "text": "Combine oats, protein powder, and espresso powder."}, {"step": "Add Wet", "text": "Stir in almond butter and maple syrup."}, {"step": "Add Chips", "text": "Fold in chocolate chips."}, {"step": "Roll", "text": "Form 18 balls."}, {"step": "Chill", "text": "Refrigerate until firm."}]
+      "tags": [
+        "coffee",
+        "espresso",
+        "caffeine"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "cherry-almond-protein-bites.png",
+      "ingredients": [
+        "150g rolled oats",
+        "60g vanilla whey protein powder",
+        "10g instant espresso powder",
+        "128g almond butter",
+        "60g maple syrup",
+        "60g dark chocolate chips"
+      ],
+      "instructions": [
+        {
+          "step": "Mix Dry",
+          "text": "Combine oats, protein powder, and espresso powder."
+        },
+        {
+          "step": "Add Wet",
+          "text": "Stir in almond butter and maple syrup."
+        },
+        {
+          "step": "Add Chips",
+          "text": "Fold in chocolate chips."
+        },
+        {
+          "step": "Roll",
+          "text": "Form 18 balls."
+        },
+        {
+          "step": "Chill",
+          "text": "Refrigerate until firm."
+        }
+      ]
     },
     {
       "id": 21,
@@ -498,11 +1153,45 @@
       "totalTime": "15",
       "difficulty": "Easy",
       "category": "Vegan",
-      "tags": ["vegan", "plant-based", "dairy-free"],
-      "methods": ["plant"],
-      "image": "vegan-protein-balls.png",
-      "ingredients": ["180g rolled oats", "60g vanilla pea protein powder", "128g almond butter", "80g maple syrup", "60g vegan chocolate chips", "5ml vanilla extract"],
-      "instructions": [{"step": "Mix Dry", "text": "Combine oats and protein powder."}, {"step": "Add Wet", "text": "Stir in almond butter, maple syrup, and vanilla."}, {"step": "Add Chips", "text": "Fold in chocolate chips."}, {"step": "Roll", "text": "Form 20 balls."}, {"step": "Chill", "text": "Refrigerate 30 minutes."}]
+      "tags": [
+        "vegan",
+        "plant-based",
+        "dairy-free"
+      ],
+      "methods": [
+        "plant"
+      ],
+      "image": "cinnamon-roll-protein-bites.png",
+      "ingredients": [
+        "180g rolled oats",
+        "60g vanilla pea protein powder",
+        "128g almond butter",
+        "80g maple syrup",
+        "60g vegan chocolate chips",
+        "5ml vanilla extract"
+      ],
+      "instructions": [
+        {
+          "step": "Mix Dry",
+          "text": "Combine oats and protein powder."
+        },
+        {
+          "step": "Add Wet",
+          "text": "Stir in almond butter, maple syrup, and vanilla."
+        },
+        {
+          "step": "Add Chips",
+          "text": "Fold in chocolate chips."
+        },
+        {
+          "step": "Roll",
+          "text": "Form 20 balls."
+        },
+        {
+          "step": "Chill",
+          "text": "Refrigerate 30 minutes."
+        }
+      ]
     },
     {
       "id": 22,
@@ -522,11 +1211,44 @@
       "totalTime": "12",
       "difficulty": "Easy",
       "category": "Allergy-Friendly",
-      "tags": ["nut-free", "allergy-friendly", "school-safe"],
-      "methods": ["whey"],
-      "image": "nut-free-protein-balls.png",
-      "ingredients": ["180g rolled oats", "60g vanilla whey protein powder", "192g sunflower seed butter", "60g honey", "60g mini chocolate chips"],
-      "instructions": [{"step": "Combine", "text": "Mix oats and protein powder."}, {"step": "Add Wet", "text": "Stir in sunflower butter and honey."}, {"step": "Add Chips", "text": "Fold in chocolate chips."}, {"step": "Roll", "text": "Form 20 balls."}, {"step": "Chill", "text": "Refrigerate until firm."}]
+      "tags": [
+        "nut-free",
+        "allergy-friendly",
+        "school-safe"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "oatmeal-raisin-protein-bites.png",
+      "ingredients": [
+        "180g rolled oats",
+        "60g vanilla whey protein powder",
+        "192g sunflower seed butter",
+        "60g honey",
+        "60g mini chocolate chips"
+      ],
+      "instructions": [
+        {
+          "step": "Combine",
+          "text": "Mix oats and protein powder."
+        },
+        {
+          "step": "Add Wet",
+          "text": "Stir in sunflower butter and honey."
+        },
+        {
+          "step": "Add Chips",
+          "text": "Fold in chocolate chips."
+        },
+        {
+          "step": "Roll",
+          "text": "Form 20 balls."
+        },
+        {
+          "step": "Chill",
+          "text": "Refrigerate until firm."
+        }
+      ]
     },
     {
       "id": 23,
@@ -546,11 +1268,45 @@
       "totalTime": "15",
       "difficulty": "Easy",
       "category": "Citrus",
-      "tags": ["lemon", "citrus", "refreshing"],
-      "methods": ["whey"],
-      "image": "lemon-protein-balls.png",
-      "ingredients": ["150g oat flour", "60g vanilla whey protein powder", "128g cashew butter", "60g honey", "15ml fresh lemon juice", "10g lemon zest"],
-      "instructions": [{"step": "Mix Dry", "text": "Combine oat flour and protein powder."}, {"step": "Add Wet", "text": "Stir in cashew butter, honey, lemon juice, and zest."}, {"step": "Roll", "text": "Form 20 balls."}, {"step": "Optional", "text": "Roll in extra lemon zest or powdered sweetener."}, {"step": "Chill", "text": "Refrigerate 30 minutes."}]
+      "tags": [
+        "lemon",
+        "citrus",
+        "refreshing"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "blueberry-muffin-protein-bites.png",
+      "ingredients": [
+        "150g oat flour",
+        "60g vanilla whey protein powder",
+        "128g cashew butter",
+        "60g honey",
+        "15ml fresh lemon juice",
+        "10g lemon zest"
+      ],
+      "instructions": [
+        {
+          "step": "Mix Dry",
+          "text": "Combine oat flour and protein powder."
+        },
+        {
+          "step": "Add Wet",
+          "text": "Stir in cashew butter, honey, lemon juice, and zest."
+        },
+        {
+          "step": "Roll",
+          "text": "Form 20 balls."
+        },
+        {
+          "step": "Optional",
+          "text": "Roll in extra lemon zest or powdered sweetener."
+        },
+        {
+          "step": "Chill",
+          "text": "Refrigerate 30 minutes."
+        }
+      ]
     },
     {
       "id": 24,
@@ -570,11 +1326,42 @@
       "totalTime": "15",
       "difficulty": "Easy",
       "category": "Adventure",
-      "tags": ["trail mix", "hiking", "outdoor"],
-      "methods": ["whey"],
-      "image": "trail-mix-protein-balls.png",
-      "ingredients": ["150g rolled oats", "60g vanilla whey protein powder", "128g mixed nut butter", "60g honey", "30g mixed nuts, chopped", "30g dried cranberries", "30g dark chocolate chips"],
-      "instructions": [{"step": "Mix Base", "text": "Combine oats, protein powder, nut butter, and honey."}, {"step": "Add Mix-ins", "text": "Fold in nuts, cranberries, and chocolate chips."}, {"step": "Roll", "text": "Form 18 balls."}, {"step": "Chill", "text": "Refrigerate until firm."}]
+      "tags": [
+        "trail mix",
+        "hiking",
+        "outdoor"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "banana-bread-protein-bites.png",
+      "ingredients": [
+        "150g rolled oats",
+        "60g vanilla whey protein powder",
+        "128g mixed nut butter",
+        "60g honey",
+        "30g mixed nuts, chopped",
+        "30g dried cranberries",
+        "30g dark chocolate chips"
+      ],
+      "instructions": [
+        {
+          "step": "Mix Base",
+          "text": "Combine oats, protein powder, nut butter, and honey."
+        },
+        {
+          "step": "Add Mix-ins",
+          "text": "Fold in nuts, cranberries, and chocolate chips."
+        },
+        {
+          "step": "Roll",
+          "text": "Form 18 balls."
+        },
+        {
+          "step": "Chill",
+          "text": "Refrigerate until firm."
+        }
+      ]
     },
     {
       "id": 25,
@@ -594,11 +1381,46 @@
       "totalTime": "12",
       "difficulty": "Easy",
       "category": "Chocolate",
-      "tags": ["brownie", "chocolate", "decadent"],
-      "methods": ["whey"],
-      "image": "brownie-batter-protein-balls.png",
-      "ingredients": ["120g oat flour", "60g chocolate whey protein powder", "45g unsweetened cocoa powder", "128g almond butter", "80g maple syrup", "2g sea salt", "60g chocolate chips"],
-      "instructions": [{"step": "Mix Dry", "text": "Combine oat flour, protein powder, cocoa, and salt."}, {"step": "Add Wet", "text": "Stir in almond butter and maple syrup until fudgy."}, {"step": "Add Chips", "text": "Fold in chocolate chips."}, {"step": "Roll", "text": "Form 20 balls."}, {"step": "Chill", "text": "Refrigerate 30 minutes for best texture."}]
+      "tags": [
+        "brownie",
+        "chocolate",
+        "decadent"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "trail-mix-protein-bites.png",
+      "ingredients": [
+        "120g oat flour",
+        "60g chocolate whey protein powder",
+        "45g unsweetened cocoa powder",
+        "128g almond butter",
+        "80g maple syrup",
+        "2g sea salt",
+        "60g chocolate chips"
+      ],
+      "instructions": [
+        {
+          "step": "Mix Dry",
+          "text": "Combine oat flour, protein powder, cocoa, and salt."
+        },
+        {
+          "step": "Add Wet",
+          "text": "Stir in almond butter and maple syrup until fudgy."
+        },
+        {
+          "step": "Add Chips",
+          "text": "Fold in chocolate chips."
+        },
+        {
+          "step": "Roll",
+          "text": "Form 20 balls."
+        },
+        {
+          "step": "Chill",
+          "text": "Refrigerate 30 minutes for best texture."
+        }
+      ]
     }
   ]
 }

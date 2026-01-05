@@ -18,11 +18,46 @@
       "totalTime": "30",
       "difficulty": "Medium",
       "category": "Crust",
-      "tags": ["classic", "crust", "base recipe"],
-      "methods": ["whey"],
+      "tags": [
+        "classic",
+        "crust",
+        "base recipe"
+      ],
+      "methods": [
+        "whey"
+      ],
       "image": "classic-protein-pizza-crust.png",
-      "ingredients": ["120g oat flour", "60g vanilla whey protein powder", "5g baking powder", "2g salt", "1 egg", "120ml Greek yogurt", "15ml olive oil"],
-      "instructions": [{"step": "Preheat", "text": "Preheat oven to 425°F (220°C). Line a baking sheet with parchment."}, {"step": "Mix Dry", "text": "Combine oat flour, protein powder, baking powder, and salt."}, {"step": "Add Wet", "text": "Mix in egg, Greek yogurt, and olive oil until dough forms."}, {"step": "Shape", "text": "Press dough into a 12-inch circle on the baking sheet."}, {"step": "Par-bake", "text": "Bake for 8 minutes, then add toppings and bake 7 more minutes."}]
+      "ingredients": [
+        "120g oat flour",
+        "60g vanilla whey protein powder",
+        "5g baking powder",
+        "2g salt",
+        "1 egg",
+        "120ml Greek yogurt",
+        "15ml olive oil"
+      ],
+      "instructions": [
+        {
+          "step": "Preheat",
+          "text": "Preheat oven to 425\u00b0F (220\u00b0C). Line a baking sheet with parchment."
+        },
+        {
+          "step": "Mix Dry",
+          "text": "Combine oat flour, protein powder, baking powder, and salt."
+        },
+        {
+          "step": "Add Wet",
+          "text": "Mix in egg, Greek yogurt, and olive oil until dough forms."
+        },
+        {
+          "step": "Shape",
+          "text": "Press dough into a 12-inch circle on the baking sheet."
+        },
+        {
+          "step": "Par-bake",
+          "text": "Bake for 8 minutes, then add toppings and bake 7 more minutes."
+        }
+      ]
     },
     {
       "id": 2,
@@ -42,11 +77,46 @@
       "totalTime": "30",
       "difficulty": "Medium",
       "category": "High Protein",
-      "tags": ["high protein", "athlete", "muscle building"],
-      "methods": ["whey"],
-      "image": "high-protein-pizza-crust.png",
-      "ingredients": ["100g oat flour", "80g unflavored whey protein powder", "5g baking powder", "2g salt", "2 eggs", "100ml Greek yogurt", "15ml olive oil"],
-      "instructions": [{"step": "Preheat", "text": "Preheat oven to 425°F (220°C)."}, {"step": "Combine Dry", "text": "Mix oat flour, protein powder, baking powder, and salt."}, {"step": "Add Wet", "text": "Beat eggs, add yogurt and oil. Combine with dry ingredients."}, {"step": "Knead", "text": "Knead briefly until smooth dough forms."}, {"step": "Bake", "text": "Shape into 12-inch circle, par-bake 8 minutes, add toppings, bake 7 more minutes."}]
+      "tags": [
+        "high protein",
+        "athlete",
+        "muscle building"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "cottage-cheese-protein-pizza.png",
+      "ingredients": [
+        "100g oat flour",
+        "80g unflavored whey protein powder",
+        "5g baking powder",
+        "2g salt",
+        "2 eggs",
+        "100ml Greek yogurt",
+        "15ml olive oil"
+      ],
+      "instructions": [
+        {
+          "step": "Preheat",
+          "text": "Preheat oven to 425\u00b0F (220\u00b0C)."
+        },
+        {
+          "step": "Combine Dry",
+          "text": "Mix oat flour, protein powder, baking powder, and salt."
+        },
+        {
+          "step": "Add Wet",
+          "text": "Beat eggs, add yogurt and oil. Combine with dry ingredients."
+        },
+        {
+          "step": "Knead",
+          "text": "Knead briefly until smooth dough forms."
+        },
+        {
+          "step": "Bake",
+          "text": "Shape into 12-inch circle, par-bake 8 minutes, add toppings, bake 7 more minutes."
+        }
+      ]
     },
     {
       "id": 3,
@@ -66,11 +136,46 @@
       "totalTime": "35",
       "difficulty": "Medium",
       "category": "Dough",
-      "tags": ["dough", "make ahead", "versatile"],
-      "methods": ["whey"],
-      "image": "protein-pizza-dough.png",
-      "ingredients": ["100g bread flour", "50g unflavored whey protein powder", "5g instant yeast", "3g salt", "5g honey", "120ml warm water", "15ml olive oil"],
-      "instructions": [{"step": "Activate Yeast", "text": "Mix warm water, honey, and yeast. Let sit 5 minutes until foamy."}, {"step": "Mix Dry", "text": "Combine flour, protein powder, and salt."}, {"step": "Combine", "text": "Add yeast mixture and oil to dry ingredients. Mix until dough forms."}, {"step": "Knead", "text": "Knead for 5 minutes until smooth and elastic."}, {"step": "Rest", "text": "Let rise 30 minutes, then shape and bake at 425°F for 15 minutes."}]
+      "tags": [
+        "dough",
+        "make ahead",
+        "versatile"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "classic-protein-pizza-crust.png",
+      "ingredients": [
+        "100g bread flour",
+        "50g unflavored whey protein powder",
+        "5g instant yeast",
+        "3g salt",
+        "5g honey",
+        "120ml warm water",
+        "15ml olive oil"
+      ],
+      "instructions": [
+        {
+          "step": "Activate Yeast",
+          "text": "Mix warm water, honey, and yeast. Let sit 5 minutes until foamy."
+        },
+        {
+          "step": "Mix Dry",
+          "text": "Combine flour, protein powder, and salt."
+        },
+        {
+          "step": "Combine",
+          "text": "Add yeast mixture and oil to dry ingredients. Mix until dough forms."
+        },
+        {
+          "step": "Knead",
+          "text": "Knead for 5 minutes until smooth and elastic."
+        },
+        {
+          "step": "Rest",
+          "text": "Let rise 30 minutes, then shape and bake at 425\u00b0F for 15 minutes."
+        }
+      ]
     },
     {
       "id": 4,
@@ -90,11 +195,48 @@
       "totalTime": "38",
       "difficulty": "Medium",
       "category": "Complete",
-      "tags": ["complete recipe", "full pizza", "toppings"],
-      "methods": ["whey"],
+      "tags": [
+        "complete recipe",
+        "full pizza",
+        "toppings"
+      ],
+      "methods": [
+        "whey"
+      ],
       "image": "protein-pizza-recipe.png",
-      "ingredients": ["120g oat flour", "60g unflavored whey protein powder", "5g baking powder", "2g salt", "1 egg", "120ml Greek yogurt", "60ml pizza sauce", "100g shredded mozzarella", "60g chicken breast, cooked and diced"],
-      "instructions": [{"step": "Make Crust", "text": "Mix flour, protein, baking powder, salt, egg, and yogurt into dough."}, {"step": "Shape", "text": "Press into 12-inch circle on parchment-lined baking sheet."}, {"step": "Par-bake", "text": "Bake at 425°F for 8 minutes."}, {"step": "Top", "text": "Add sauce, cheese, and chicken."}, {"step": "Finish", "text": "Bake 10 more minutes until cheese is bubbly and golden."}]
+      "ingredients": [
+        "120g oat flour",
+        "60g unflavored whey protein powder",
+        "5g baking powder",
+        "2g salt",
+        "1 egg",
+        "120ml Greek yogurt",
+        "60ml pizza sauce",
+        "100g shredded mozzarella",
+        "60g chicken breast, cooked and diced"
+      ],
+      "instructions": [
+        {
+          "step": "Make Crust",
+          "text": "Mix flour, protein, baking powder, salt, egg, and yogurt into dough."
+        },
+        {
+          "step": "Shape",
+          "text": "Press into 12-inch circle on parchment-lined baking sheet."
+        },
+        {
+          "step": "Par-bake",
+          "text": "Bake at 425\u00b0F for 8 minutes."
+        },
+        {
+          "step": "Top",
+          "text": "Add sauce, cheese, and chicken."
+        },
+        {
+          "step": "Finish",
+          "text": "Bake 10 more minutes until cheese is bubbly and golden."
+        }
+      ]
     },
     {
       "id": 5,
@@ -114,11 +256,46 @@
       "totalTime": "38",
       "difficulty": "Medium",
       "category": "Meat",
-      "tags": ["chicken", "high protein", "post-workout"],
-      "methods": ["whey"],
-      "image": "chicken-protein-pizza.png",
-      "ingredients": ["1 protein pizza crust", "60ml pizza sauce", "120g shredded mozzarella", "100g grilled chicken breast, sliced", "30g red onion, sliced", "30g bell peppers", "5g Italian herbs"],
-      "instructions": [{"step": "Prepare Crust", "text": "Make protein pizza crust and par-bake for 8 minutes."}, {"step": "Add Sauce", "text": "Spread pizza sauce evenly over crust."}, {"step": "Add Cheese", "text": "Cover with shredded mozzarella."}, {"step": "Add Toppings", "text": "Top with chicken, onions, peppers, and herbs."}, {"step": "Bake", "text": "Bake at 425°F for 10 minutes until cheese is melted."}]
+      "tags": [
+        "chicken",
+        "high protein",
+        "post-workout"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "cauliflower-protein-pizza.png",
+      "ingredients": [
+        "1 protein pizza crust",
+        "60ml pizza sauce",
+        "120g shredded mozzarella",
+        "100g grilled chicken breast, sliced",
+        "30g red onion, sliced",
+        "30g bell peppers",
+        "5g Italian herbs"
+      ],
+      "instructions": [
+        {
+          "step": "Prepare Crust",
+          "text": "Make protein pizza crust and par-bake for 8 minutes."
+        },
+        {
+          "step": "Add Sauce",
+          "text": "Spread pizza sauce evenly over crust."
+        },
+        {
+          "step": "Add Cheese",
+          "text": "Cover with shredded mozzarella."
+        },
+        {
+          "step": "Add Toppings",
+          "text": "Top with chicken, onions, peppers, and herbs."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake at 425\u00b0F for 10 minutes until cheese is melted."
+        }
+      ]
     },
     {
       "id": 6,
@@ -138,11 +315,45 @@
       "totalTime": "33",
       "difficulty": "Easy",
       "category": "Classic",
-      "tags": ["pepperoni", "classic", "traditional"],
-      "methods": ["whey"],
+      "tags": [
+        "pepperoni",
+        "classic",
+        "traditional"
+      ],
+      "methods": [
+        "whey"
+      ],
       "image": "pepperoni-protein-pizza.png",
-      "ingredients": ["1 protein pizza crust", "60ml pizza sauce", "120g shredded mozzarella", "50g turkey pepperoni", "5g oregano", "Red pepper flakes to taste"],
-      "instructions": [{"step": "Prepare", "text": "Par-bake protein crust for 8 minutes at 425°F."}, {"step": "Sauce", "text": "Spread pizza sauce over crust."}, {"step": "Cheese", "text": "Add mozzarella cheese."}, {"step": "Pepperoni", "text": "Arrange turkey pepperoni on top."}, {"step": "Bake", "text": "Bake 10 minutes. Sprinkle with oregano and red pepper flakes."}]
+      "ingredients": [
+        "1 protein pizza crust",
+        "60ml pizza sauce",
+        "120g shredded mozzarella",
+        "50g turkey pepperoni",
+        "5g oregano",
+        "Red pepper flakes to taste"
+      ],
+      "instructions": [
+        {
+          "step": "Prepare",
+          "text": "Par-bake protein crust for 8 minutes at 425\u00b0F."
+        },
+        {
+          "step": "Sauce",
+          "text": "Spread pizza sauce over crust."
+        },
+        {
+          "step": "Cheese",
+          "text": "Add mozzarella cheese."
+        },
+        {
+          "step": "Pepperoni",
+          "text": "Arrange turkey pepperoni on top."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake 10 minutes. Sprinkle with oregano and red pepper flakes."
+        }
+      ]
     },
     {
       "id": 7,
@@ -162,11 +373,46 @@
       "totalTime": "45",
       "difficulty": "Medium",
       "category": "Low-Carb",
-      "tags": ["cauliflower", "low-carb", "keto-friendly"],
-      "methods": ["whey"],
-      "image": "cauliflower-protein-pizza-crust.png",
-      "ingredients": ["300g cauliflower, riced", "60g unflavored whey protein powder", "1 egg", "60g shredded mozzarella", "5g Italian seasoning", "2g salt", "2g garlic powder"],
-      "instructions": [{"step": "Rice Cauliflower", "text": "Pulse cauliflower in food processor until rice-like."}, {"step": "Cook", "text": "Microwave cauliflower 4 minutes, then squeeze out all moisture with towel."}, {"step": "Mix", "text": "Combine cauliflower, protein powder, egg, cheese, and seasonings."}, {"step": "Shape", "text": "Press into thin circle on parchment-lined baking sheet."}, {"step": "Bake", "text": "Bake at 425°F for 20 minutes until golden, flip halfway. Add toppings and bake 5 more minutes."}]
+      "tags": [
+        "cauliflower",
+        "low-carb",
+        "keto-friendly"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "bbq-chicken-protein-pizza.png",
+      "ingredients": [
+        "300g cauliflower, riced",
+        "60g unflavored whey protein powder",
+        "1 egg",
+        "60g shredded mozzarella",
+        "5g Italian seasoning",
+        "2g salt",
+        "2g garlic powder"
+      ],
+      "instructions": [
+        {
+          "step": "Rice Cauliflower",
+          "text": "Pulse cauliflower in food processor until rice-like."
+        },
+        {
+          "step": "Cook",
+          "text": "Microwave cauliflower 4 minutes, then squeeze out all moisture with towel."
+        },
+        {
+          "step": "Mix",
+          "text": "Combine cauliflower, protein powder, egg, cheese, and seasonings."
+        },
+        {
+          "step": "Shape",
+          "text": "Press into thin circle on parchment-lined baking sheet."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake at 425\u00b0F for 20 minutes until golden, flip halfway. Add toppings and bake 5 more minutes."
+        }
+      ]
     },
     {
       "id": 8,
@@ -186,11 +432,44 @@
       "totalTime": "25",
       "difficulty": "Beginner",
       "category": "Easy",
-      "tags": ["greek yogurt", "easy", "2-ingredient base"],
-      "methods": ["whey"],
-      "image": "greek-yogurt-protein-pizza-crust.png",
-      "ingredients": ["150g self-rising flour", "150g Greek yogurt", "30g unflavored whey protein powder", "2g salt", "5ml olive oil"],
-      "instructions": [{"step": "Mix", "text": "Combine flour, yogurt, protein powder, and salt in a bowl."}, {"step": "Knead", "text": "Knead for 2 minutes until smooth dough forms."}, {"step": "Shape", "text": "Roll out to 12-inch circle on floured surface."}, {"step": "Oil", "text": "Brush with olive oil."}, {"step": "Bake", "text": "Par-bake at 425°F for 8 minutes, add toppings, bake 7 more minutes."}]
+      "tags": [
+        "greek yogurt",
+        "easy",
+        "2-ingredient base"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "keto-protein-pizza-crust.png",
+      "ingredients": [
+        "150g self-rising flour",
+        "150g Greek yogurt",
+        "30g unflavored whey protein powder",
+        "2g salt",
+        "5ml olive oil"
+      ],
+      "instructions": [
+        {
+          "step": "Mix",
+          "text": "Combine flour, yogurt, protein powder, and salt in a bowl."
+        },
+        {
+          "step": "Knead",
+          "text": "Knead for 2 minutes until smooth dough forms."
+        },
+        {
+          "step": "Shape",
+          "text": "Roll out to 12-inch circle on floured surface."
+        },
+        {
+          "step": "Oil",
+          "text": "Brush with olive oil."
+        },
+        {
+          "step": "Bake",
+          "text": "Par-bake at 425\u00b0F for 8 minutes, add toppings, bake 7 more minutes."
+        }
+      ]
     },
     {
       "id": 9,
@@ -210,11 +489,46 @@
       "totalTime": "33",
       "difficulty": "Medium",
       "category": "Cottage Cheese",
-      "tags": ["cottage cheese", "calcium", "creamy"],
-      "methods": ["whey"],
+      "tags": [
+        "cottage cheese",
+        "calcium",
+        "creamy"
+      ],
+      "methods": [
+        "whey"
+      ],
       "image": "cottage-cheese-protein-pizza.png",
-      "ingredients": ["200g cottage cheese", "100g oat flour", "40g unflavored whey protein powder", "1 egg", "5g baking powder", "2g salt", "5g Italian herbs"],
-      "instructions": [{"step": "Blend", "text": "Blend cottage cheese until smooth."}, {"step": "Mix", "text": "Combine blended cottage cheese with flour, protein, egg, baking powder, salt, and herbs."}, {"step": "Shape", "text": "Press into 12-inch circle on parchment-lined baking sheet."}, {"step": "Par-bake", "text": "Bake at 400°F for 10 minutes."}, {"step": "Top", "text": "Add toppings and bake 8 more minutes."}]
+      "ingredients": [
+        "200g cottage cheese",
+        "100g oat flour",
+        "40g unflavored whey protein powder",
+        "1 egg",
+        "5g baking powder",
+        "2g salt",
+        "5g Italian herbs"
+      ],
+      "instructions": [
+        {
+          "step": "Blend",
+          "text": "Blend cottage cheese until smooth."
+        },
+        {
+          "step": "Mix",
+          "text": "Combine blended cottage cheese with flour, protein, egg, baking powder, salt, and herbs."
+        },
+        {
+          "step": "Shape",
+          "text": "Press into 12-inch circle on parchment-lined baking sheet."
+        },
+        {
+          "step": "Par-bake",
+          "text": "Bake at 400\u00b0F for 10 minutes."
+        },
+        {
+          "step": "Top",
+          "text": "Add toppings and bake 8 more minutes."
+        }
+      ]
     },
     {
       "id": 10,
@@ -234,11 +548,45 @@
       "totalTime": "33",
       "difficulty": "Easy",
       "category": "Classic",
-      "tags": ["margherita", "classic", "fresh"],
-      "methods": ["whey"],
-      "image": "margherita-protein-pizza.png",
-      "ingredients": ["1 protein pizza crust", "60ml crushed San Marzano tomatoes", "120g fresh mozzarella, sliced", "Fresh basil leaves", "15ml olive oil", "Salt to taste"],
-      "instructions": [{"step": "Prepare", "text": "Par-bake protein crust for 8 minutes."}, {"step": "Sauce", "text": "Spread crushed tomatoes over crust."}, {"step": "Cheese", "text": "Arrange fresh mozzarella slices."}, {"step": "Bake", "text": "Bake at 425°F for 10 minutes."}, {"step": "Finish", "text": "Top with fresh basil, drizzle with olive oil, season with salt."}]
+      "tags": [
+        "margherita",
+        "classic",
+        "fresh"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "oat-flour-protein-pizza.png",
+      "ingredients": [
+        "1 protein pizza crust",
+        "60ml crushed San Marzano tomatoes",
+        "120g fresh mozzarella, sliced",
+        "Fresh basil leaves",
+        "15ml olive oil",
+        "Salt to taste"
+      ],
+      "instructions": [
+        {
+          "step": "Prepare",
+          "text": "Par-bake protein crust for 8 minutes."
+        },
+        {
+          "step": "Sauce",
+          "text": "Spread crushed tomatoes over crust."
+        },
+        {
+          "step": "Cheese",
+          "text": "Arrange fresh mozzarella slices."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake at 425\u00b0F for 10 minutes."
+        },
+        {
+          "step": "Finish",
+          "text": "Top with fresh basil, drizzle with olive oil, season with salt."
+        }
+      ]
     },
     {
       "id": 11,
@@ -258,11 +606,46 @@
       "totalTime": "38",
       "difficulty": "Medium",
       "category": "Specialty",
-      "tags": ["bbq", "chicken", "smoky"],
-      "methods": ["whey"],
+      "tags": [
+        "bbq",
+        "chicken",
+        "smoky"
+      ],
+      "methods": [
+        "whey"
+      ],
       "image": "bbq-chicken-protein-pizza.png",
-      "ingredients": ["1 protein pizza crust", "60ml BBQ sauce", "100g shredded mozzarella", "100g grilled chicken, shredded", "30g red onion, thinly sliced", "Fresh cilantro", "15g smoked gouda"],
-      "instructions": [{"step": "Prepare", "text": "Par-bake protein crust for 8 minutes."}, {"step": "Sauce", "text": "Spread BBQ sauce over crust."}, {"step": "Layer", "text": "Add mozzarella, then chicken and onions."}, {"step": "Bake", "text": "Bake at 425°F for 10 minutes."}, {"step": "Finish", "text": "Top with smoked gouda and fresh cilantro."}]
+      "ingredients": [
+        "1 protein pizza crust",
+        "60ml BBQ sauce",
+        "100g shredded mozzarella",
+        "100g grilled chicken, shredded",
+        "30g red onion, thinly sliced",
+        "Fresh cilantro",
+        "15g smoked gouda"
+      ],
+      "instructions": [
+        {
+          "step": "Prepare",
+          "text": "Par-bake protein crust for 8 minutes."
+        },
+        {
+          "step": "Sauce",
+          "text": "Spread BBQ sauce over crust."
+        },
+        {
+          "step": "Layer",
+          "text": "Add mozzarella, then chicken and onions."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake at 425\u00b0F for 10 minutes."
+        },
+        {
+          "step": "Finish",
+          "text": "Top with smoked gouda and fresh cilantro."
+        }
+      ]
     },
     {
       "id": 12,
@@ -282,11 +665,46 @@
       "totalTime": "38",
       "difficulty": "Medium",
       "category": "Meat",
-      "tags": ["meat lovers", "loaded", "hearty"],
-      "methods": ["whey"],
+      "tags": [
+        "meat lovers",
+        "loaded",
+        "hearty"
+      ],
+      "methods": [
+        "whey"
+      ],
       "image": "meat-lovers-protein-pizza.png",
-      "ingredients": ["1 protein pizza crust", "60ml pizza sauce", "100g shredded mozzarella", "40g turkey pepperoni", "40g cooked Italian sausage", "40g cooked bacon, crumbled", "30g ham, diced"],
-      "instructions": [{"step": "Prepare", "text": "Par-bake protein crust for 8 minutes."}, {"step": "Sauce", "text": "Spread pizza sauce over crust."}, {"step": "Cheese", "text": "Add mozzarella cheese."}, {"step": "Meats", "text": "Top with pepperoni, sausage, bacon, and ham."}, {"step": "Bake", "text": "Bake at 425°F for 10 minutes until cheese is bubbly."}]
+      "ingredients": [
+        "1 protein pizza crust",
+        "60ml pizza sauce",
+        "100g shredded mozzarella",
+        "40g turkey pepperoni",
+        "40g cooked Italian sausage",
+        "40g cooked bacon, crumbled",
+        "30g ham, diced"
+      ],
+      "instructions": [
+        {
+          "step": "Prepare",
+          "text": "Par-bake protein crust for 8 minutes."
+        },
+        {
+          "step": "Sauce",
+          "text": "Spread pizza sauce over crust."
+        },
+        {
+          "step": "Cheese",
+          "text": "Add mozzarella cheese."
+        },
+        {
+          "step": "Meats",
+          "text": "Top with pepperoni, sausage, bacon, and ham."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake at 425\u00b0F for 10 minutes until cheese is bubbly."
+        }
+      ]
     },
     {
       "id": 13,
@@ -306,11 +724,47 @@
       "totalTime": "38",
       "difficulty": "Easy",
       "category": "Vegetarian",
-      "tags": ["veggie", "vegetarian", "garden"],
-      "methods": ["whey"],
+      "tags": [
+        "veggie",
+        "vegetarian",
+        "garden"
+      ],
+      "methods": [
+        "whey"
+      ],
       "image": "veggie-protein-pizza.png",
-      "ingredients": ["1 protein pizza crust", "60ml pizza sauce", "100g shredded mozzarella", "30g bell peppers, sliced", "30g mushrooms, sliced", "30g red onion", "30g black olives", "30g spinach"],
-      "instructions": [{"step": "Prepare", "text": "Par-bake protein crust for 8 minutes."}, {"step": "Sauce", "text": "Spread pizza sauce over crust."}, {"step": "Cheese", "text": "Add mozzarella cheese."}, {"step": "Veggies", "text": "Top with all vegetables."}, {"step": "Bake", "text": "Bake at 425°F for 10 minutes."}]
+      "ingredients": [
+        "1 protein pizza crust",
+        "60ml pizza sauce",
+        "100g shredded mozzarella",
+        "30g bell peppers, sliced",
+        "30g mushrooms, sliced",
+        "30g red onion",
+        "30g black olives",
+        "30g spinach"
+      ],
+      "instructions": [
+        {
+          "step": "Prepare",
+          "text": "Par-bake protein crust for 8 minutes."
+        },
+        {
+          "step": "Sauce",
+          "text": "Spread pizza sauce over crust."
+        },
+        {
+          "step": "Cheese",
+          "text": "Add mozzarella cheese."
+        },
+        {
+          "step": "Veggies",
+          "text": "Top with all vegetables."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake at 425\u00b0F for 10 minutes."
+        }
+      ]
     },
     {
       "id": 14,
@@ -330,11 +784,46 @@
       "totalTime": "38",
       "difficulty": "Medium",
       "category": "Specialty",
-      "tags": ["buffalo", "spicy", "chicken"],
-      "methods": ["whey"],
+      "tags": [
+        "buffalo",
+        "spicy",
+        "chicken"
+      ],
+      "methods": [
+        "whey"
+      ],
       "image": "buffalo-chicken-protein-pizza.png",
-      "ingredients": ["1 protein pizza crust", "45ml buffalo sauce", "100g shredded mozzarella", "100g grilled chicken, diced", "30g blue cheese crumbles", "Celery, diced", "Ranch drizzle"],
-      "instructions": [{"step": "Prepare", "text": "Par-bake protein crust for 8 minutes."}, {"step": "Sauce", "text": "Spread buffalo sauce over crust."}, {"step": "Layer", "text": "Add mozzarella, then buffalo-tossed chicken."}, {"step": "Bake", "text": "Bake at 425°F for 10 minutes."}, {"step": "Finish", "text": "Top with blue cheese, celery, and ranch drizzle."}]
+      "ingredients": [
+        "1 protein pizza crust",
+        "45ml buffalo sauce",
+        "100g shredded mozzarella",
+        "100g grilled chicken, diced",
+        "30g blue cheese crumbles",
+        "Celery, diced",
+        "Ranch drizzle"
+      ],
+      "instructions": [
+        {
+          "step": "Prepare",
+          "text": "Par-bake protein crust for 8 minutes."
+        },
+        {
+          "step": "Sauce",
+          "text": "Spread buffalo sauce over crust."
+        },
+        {
+          "step": "Layer",
+          "text": "Add mozzarella, then buffalo-tossed chicken."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake at 425\u00b0F for 10 minutes."
+        },
+        {
+          "step": "Finish",
+          "text": "Top with blue cheese, celery, and ranch drizzle."
+        }
+      ]
     },
     {
       "id": 15,
@@ -354,11 +843,46 @@
       "totalTime": "40",
       "difficulty": "Medium",
       "category": "Breakfast",
-      "tags": ["breakfast", "eggs", "morning"],
-      "methods": ["whey"],
+      "tags": [
+        "breakfast",
+        "eggs",
+        "morning"
+      ],
+      "methods": [
+        "whey"
+      ],
       "image": "breakfast-protein-pizza.png",
-      "ingredients": ["1 protein pizza crust", "60g cream cheese, softened", "100g shredded cheddar", "4 eggs", "60g cooked bacon, crumbled", "30g green onions", "Salt and pepper"],
-      "instructions": [{"step": "Prepare", "text": "Par-bake protein crust for 8 minutes."}, {"step": "Base", "text": "Spread cream cheese over crust."}, {"step": "Cheese", "text": "Add cheddar cheese."}, {"step": "Eggs", "text": "Crack eggs onto pizza, spacing evenly."}, {"step": "Bake", "text": "Bake at 400°F for 12 minutes until eggs are set. Top with bacon and green onions."}]
+      "ingredients": [
+        "1 protein pizza crust",
+        "60g cream cheese, softened",
+        "100g shredded cheddar",
+        "4 eggs",
+        "60g cooked bacon, crumbled",
+        "30g green onions",
+        "Salt and pepper"
+      ],
+      "instructions": [
+        {
+          "step": "Prepare",
+          "text": "Par-bake protein crust for 8 minutes."
+        },
+        {
+          "step": "Base",
+          "text": "Spread cream cheese over crust."
+        },
+        {
+          "step": "Cheese",
+          "text": "Add cheddar cheese."
+        },
+        {
+          "step": "Eggs",
+          "text": "Crack eggs onto pizza, spacing evenly."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake at 400\u00b0F for 12 minutes until eggs are set. Top with bacon and green onions."
+        }
+      ]
     },
     {
       "id": 16,
@@ -378,11 +902,46 @@
       "totalTime": "33",
       "difficulty": "Easy",
       "category": "White",
-      "tags": ["white pizza", "garlic", "ricotta"],
-      "methods": ["whey"],
+      "tags": [
+        "white pizza",
+        "garlic",
+        "ricotta"
+      ],
+      "methods": [
+        "whey"
+      ],
       "image": "white-protein-pizza.png",
-      "ingredients": ["1 protein pizza crust", "60g ricotta cheese", "100g shredded mozzarella", "30g parmesan, grated", "3 cloves garlic, minced", "15ml olive oil", "Fresh basil"],
-      "instructions": [{"step": "Prepare", "text": "Par-bake protein crust for 8 minutes."}, {"step": "Garlic Oil", "text": "Mix olive oil with minced garlic, brush over crust."}, {"step": "Cheese", "text": "Dollop ricotta, add mozzarella and parmesan."}, {"step": "Bake", "text": "Bake at 425°F for 10 minutes."}, {"step": "Finish", "text": "Top with fresh basil."}]
+      "ingredients": [
+        "1 protein pizza crust",
+        "60g ricotta cheese",
+        "100g shredded mozzarella",
+        "30g parmesan, grated",
+        "3 cloves garlic, minced",
+        "15ml olive oil",
+        "Fresh basil"
+      ],
+      "instructions": [
+        {
+          "step": "Prepare",
+          "text": "Par-bake protein crust for 8 minutes."
+        },
+        {
+          "step": "Garlic Oil",
+          "text": "Mix olive oil with minced garlic, brush over crust."
+        },
+        {
+          "step": "Cheese",
+          "text": "Dollop ricotta, add mozzarella and parmesan."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake at 425\u00b0F for 10 minutes."
+        },
+        {
+          "step": "Finish",
+          "text": "Top with fresh basil."
+        }
+      ]
     },
     {
       "id": 17,
@@ -402,11 +961,45 @@
       "totalTime": "33",
       "difficulty": "Easy",
       "category": "Classic",
-      "tags": ["hawaiian", "ham", "pineapple"],
-      "methods": ["whey"],
+      "tags": [
+        "hawaiian",
+        "ham",
+        "pineapple"
+      ],
+      "methods": [
+        "whey"
+      ],
       "image": "hawaiian-protein-pizza.png",
-      "ingredients": ["1 protein pizza crust", "60ml pizza sauce", "100g shredded mozzarella", "80g ham, diced", "80g pineapple chunks", "Jalapeños (optional)"],
-      "instructions": [{"step": "Prepare", "text": "Par-bake protein crust for 8 minutes."}, {"step": "Sauce", "text": "Spread pizza sauce over crust."}, {"step": "Cheese", "text": "Add mozzarella cheese."}, {"step": "Toppings", "text": "Top with ham and pineapple chunks."}, {"step": "Bake", "text": "Bake at 425°F for 10 minutes. Add jalapeños if desired."}]
+      "ingredients": [
+        "1 protein pizza crust",
+        "60ml pizza sauce",
+        "100g shredded mozzarella",
+        "80g ham, diced",
+        "80g pineapple chunks",
+        "Jalape\u00f1os (optional)"
+      ],
+      "instructions": [
+        {
+          "step": "Prepare",
+          "text": "Par-bake protein crust for 8 minutes."
+        },
+        {
+          "step": "Sauce",
+          "text": "Spread pizza sauce over crust."
+        },
+        {
+          "step": "Cheese",
+          "text": "Add mozzarella cheese."
+        },
+        {
+          "step": "Toppings",
+          "text": "Top with ham and pineapple chunks."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake at 425\u00b0F for 10 minutes. Add jalape\u00f1os if desired."
+        }
+      ]
     },
     {
       "id": 18,
@@ -426,11 +1019,47 @@
       "totalTime": "25",
       "difficulty": "Easy",
       "category": "Bowl",
-      "tags": ["bowl", "low-carb", "deconstructed"],
-      "methods": ["whey"],
-      "image": "protein-pizza-bowl.png",
-      "ingredients": ["100g ground turkey", "60ml pizza sauce", "60g shredded mozzarella", "30g turkey pepperoni", "30g bell peppers", "30g mushrooms", "Italian seasoning", "30g unflavored whey protein (mixed into meat)"],
-      "instructions": [{"step": "Cook Meat", "text": "Brown ground turkey with protein powder mixed in."}, {"step": "Add Veggies", "text": "Add peppers and mushrooms, cook 3 minutes."}, {"step": "Sauce", "text": "Stir in pizza sauce and Italian seasoning."}, {"step": "Cheese", "text": "Top with mozzarella and pepperoni."}, {"step": "Broil", "text": "Broil 2 minutes until cheese is melted and bubbly."}]
+      "tags": [
+        "bowl",
+        "low-carb",
+        "deconstructed"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "spinach-feta-protein-pizza.png",
+      "ingredients": [
+        "100g ground turkey",
+        "60ml pizza sauce",
+        "60g shredded mozzarella",
+        "30g turkey pepperoni",
+        "30g bell peppers",
+        "30g mushrooms",
+        "Italian seasoning",
+        "30g unflavored whey protein (mixed into meat)"
+      ],
+      "instructions": [
+        {
+          "step": "Cook Meat",
+          "text": "Brown ground turkey with protein powder mixed in."
+        },
+        {
+          "step": "Add Veggies",
+          "text": "Add peppers and mushrooms, cook 3 minutes."
+        },
+        {
+          "step": "Sauce",
+          "text": "Stir in pizza sauce and Italian seasoning."
+        },
+        {
+          "step": "Cheese",
+          "text": "Top with mozzarella and pepperoni."
+        },
+        {
+          "step": "Broil",
+          "text": "Broil 2 minutes until cheese is melted and bubbly."
+        }
+      ]
     },
     {
       "id": 19,
@@ -450,11 +1079,45 @@
       "totalTime": "30",
       "difficulty": "Medium",
       "category": "Keto",
-      "tags": ["keto", "low-carb", "fathead"],
-      "methods": ["whey"],
-      "image": "keto-protein-pizza.png",
-      "ingredients": ["120g shredded mozzarella", "30g cream cheese", "40g almond flour", "30g unflavored whey protein powder", "1 egg", "Pizza toppings of choice"],
-      "instructions": [{"step": "Melt Cheese", "text": "Microwave mozzarella and cream cheese 1 minute, stir, repeat until melted."}, {"step": "Mix", "text": "Quickly mix in almond flour, protein powder, and egg."}, {"step": "Shape", "text": "Press into thin circle between parchment sheets."}, {"step": "Bake", "text": "Bake at 425°F for 10 minutes until golden."}, {"step": "Top", "text": "Add toppings and bake 5 more minutes."}]
+      "tags": [
+        "keto",
+        "low-carb",
+        "fathead"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "pesto-chicken-protein-pizza.png",
+      "ingredients": [
+        "120g shredded mozzarella",
+        "30g cream cheese",
+        "40g almond flour",
+        "30g unflavored whey protein powder",
+        "1 egg",
+        "Pizza toppings of choice"
+      ],
+      "instructions": [
+        {
+          "step": "Melt Cheese",
+          "text": "Microwave mozzarella and cream cheese 1 minute, stir, repeat until melted."
+        },
+        {
+          "step": "Mix",
+          "text": "Quickly mix in almond flour, protein powder, and egg."
+        },
+        {
+          "step": "Shape",
+          "text": "Press into thin circle between parchment sheets."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake at 425\u00b0F for 10 minutes until golden."
+        },
+        {
+          "step": "Top",
+          "text": "Add toppings and bake 5 more minutes."
+        }
+      ]
     },
     {
       "id": 20,
@@ -474,11 +1137,45 @@
       "totalTime": "38",
       "difficulty": "Medium",
       "category": "Specialty",
-      "tags": ["taco", "mexican", "fusion"],
-      "methods": ["whey"],
+      "tags": [
+        "taco",
+        "mexican",
+        "fusion"
+      ],
+      "methods": [
+        "whey"
+      ],
       "image": "taco-protein-pizza.png",
-      "ingredients": ["1 protein pizza crust", "60ml salsa", "100g shredded Mexican cheese blend", "100g seasoned ground turkey", "30g black beans", "Lettuce, tomato, sour cream for topping"],
-      "instructions": [{"step": "Prepare", "text": "Par-bake protein crust for 8 minutes."}, {"step": "Sauce", "text": "Spread salsa over crust."}, {"step": "Layer", "text": "Add cheese, seasoned turkey, and black beans."}, {"step": "Bake", "text": "Bake at 425°F for 10 minutes."}, {"step": "Top", "text": "Add fresh lettuce, tomato, and sour cream after baking."}]
+      "ingredients": [
+        "1 protein pizza crust",
+        "60ml salsa",
+        "100g shredded Mexican cheese blend",
+        "100g seasoned ground turkey",
+        "30g black beans",
+        "Lettuce, tomato, sour cream for topping"
+      ],
+      "instructions": [
+        {
+          "step": "Prepare",
+          "text": "Par-bake protein crust for 8 minutes."
+        },
+        {
+          "step": "Sauce",
+          "text": "Spread salsa over crust."
+        },
+        {
+          "step": "Layer",
+          "text": "Add cheese, seasoned turkey, and black beans."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake at 425\u00b0F for 10 minutes."
+        },
+        {
+          "step": "Top",
+          "text": "Add fresh lettuce, tomato, and sour cream after baking."
+        }
+      ]
     },
     {
       "id": 21,
@@ -498,11 +1195,46 @@
       "totalTime": "33",
       "difficulty": "Easy",
       "category": "Specialty",
-      "tags": ["pesto", "chicken", "basil"],
-      "methods": ["whey"],
+      "tags": [
+        "pesto",
+        "chicken",
+        "basil"
+      ],
+      "methods": [
+        "whey"
+      ],
       "image": "pesto-chicken-protein-pizza.png",
-      "ingredients": ["1 protein pizza crust", "60ml basil pesto", "100g shredded mozzarella", "100g grilled chicken, sliced", "30g sun-dried tomatoes", "30g artichoke hearts", "Pine nuts"],
-      "instructions": [{"step": "Prepare", "text": "Par-bake protein crust for 8 minutes."}, {"step": "Pesto", "text": "Spread pesto over crust."}, {"step": "Layer", "text": "Add mozzarella, chicken, tomatoes, and artichokes."}, {"step": "Bake", "text": "Bake at 425°F for 10 minutes."}, {"step": "Finish", "text": "Sprinkle with pine nuts."}]
+      "ingredients": [
+        "1 protein pizza crust",
+        "60ml basil pesto",
+        "100g shredded mozzarella",
+        "100g grilled chicken, sliced",
+        "30g sun-dried tomatoes",
+        "30g artichoke hearts",
+        "Pine nuts"
+      ],
+      "instructions": [
+        {
+          "step": "Prepare",
+          "text": "Par-bake protein crust for 8 minutes."
+        },
+        {
+          "step": "Pesto",
+          "text": "Spread pesto over crust."
+        },
+        {
+          "step": "Layer",
+          "text": "Add mozzarella, chicken, tomatoes, and artichokes."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake at 425\u00b0F for 10 minutes."
+        },
+        {
+          "step": "Finish",
+          "text": "Sprinkle with pine nuts."
+        }
+      ]
     },
     {
       "id": 22,
@@ -522,11 +1254,46 @@
       "totalTime": "38",
       "difficulty": "Medium",
       "category": "Vegetarian",
-      "tags": ["mushroom", "earthy", "vegetarian"],
-      "methods": ["whey"],
+      "tags": [
+        "mushroom",
+        "earthy",
+        "vegetarian"
+      ],
+      "methods": [
+        "whey"
+      ],
       "image": "mushroom-protein-pizza.png",
-      "ingredients": ["1 protein pizza crust", "30ml olive oil", "3 cloves garlic, minced", "150g mixed mushrooms (cremini, shiitake, oyster)", "100g shredded mozzarella", "30g parmesan", "Fresh thyme"],
-      "instructions": [{"step": "Sauté Mushrooms", "text": "Cook mushrooms with garlic in olive oil until golden."}, {"step": "Prepare", "text": "Par-bake protein crust for 8 minutes."}, {"step": "Layer", "text": "Brush crust with garlic oil, add cheeses and mushrooms."}, {"step": "Bake", "text": "Bake at 425°F for 10 minutes."}, {"step": "Finish", "text": "Top with fresh thyme."}]
+      "ingredients": [
+        "1 protein pizza crust",
+        "30ml olive oil",
+        "3 cloves garlic, minced",
+        "150g mixed mushrooms (cremini, shiitake, oyster)",
+        "100g shredded mozzarella",
+        "30g parmesan",
+        "Fresh thyme"
+      ],
+      "instructions": [
+        {
+          "step": "Saut\u00e9 Mushrooms",
+          "text": "Cook mushrooms with garlic in olive oil until golden."
+        },
+        {
+          "step": "Prepare",
+          "text": "Par-bake protein crust for 8 minutes."
+        },
+        {
+          "step": "Layer",
+          "text": "Brush crust with garlic oil, add cheeses and mushrooms."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake at 425\u00b0F for 10 minutes."
+        },
+        {
+          "step": "Finish",
+          "text": "Top with fresh thyme."
+        }
+      ]
     },
     {
       "id": 23,
@@ -546,11 +1313,47 @@
       "totalTime": "33",
       "difficulty": "Easy",
       "category": "Mediterranean",
-      "tags": ["spinach", "feta", "greek"],
-      "methods": ["whey"],
+      "tags": [
+        "spinach",
+        "feta",
+        "greek"
+      ],
+      "methods": [
+        "whey"
+      ],
       "image": "spinach-feta-protein-pizza.png",
-      "ingredients": ["1 protein pizza crust", "30ml olive oil", "3 cloves garlic, minced", "100g fresh spinach", "80g shredded mozzarella", "60g feta cheese, crumbled", "30g kalamata olives", "Red onion slices"],
-      "instructions": [{"step": "Prepare", "text": "Par-bake protein crust for 8 minutes."}, {"step": "Garlic Oil", "text": "Mix olive oil with garlic, brush over crust."}, {"step": "Layer", "text": "Add mozzarella, spinach, feta, olives, and onion."}, {"step": "Bake", "text": "Bake at 425°F for 10 minutes."}, {"step": "Serve", "text": "Slice and serve immediately."}]
+      "ingredients": [
+        "1 protein pizza crust",
+        "30ml olive oil",
+        "3 cloves garlic, minced",
+        "100g fresh spinach",
+        "80g shredded mozzarella",
+        "60g feta cheese, crumbled",
+        "30g kalamata olives",
+        "Red onion slices"
+      ],
+      "instructions": [
+        {
+          "step": "Prepare",
+          "text": "Par-bake protein crust for 8 minutes."
+        },
+        {
+          "step": "Garlic Oil",
+          "text": "Mix olive oil with garlic, brush over crust."
+        },
+        {
+          "step": "Layer",
+          "text": "Add mozzarella, spinach, feta, olives, and onion."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake at 425\u00b0F for 10 minutes."
+        },
+        {
+          "step": "Serve",
+          "text": "Slice and serve immediately."
+        }
+      ]
     },
     {
       "id": 24,
@@ -570,11 +1373,48 @@
       "totalTime": "43",
       "difficulty": "Medium",
       "category": "Supreme",
-      "tags": ["supreme", "loaded", "everything"],
-      "methods": ["whey"],
+      "tags": [
+        "supreme",
+        "loaded",
+        "everything"
+      ],
+      "methods": [
+        "whey"
+      ],
       "image": "supreme-protein-pizza.png",
-      "ingredients": ["1 protein pizza crust", "60ml pizza sauce", "120g shredded mozzarella", "40g turkey pepperoni", "40g Italian sausage, cooked", "30g bell peppers", "30g mushrooms", "30g black olives", "30g red onion"],
-      "instructions": [{"step": "Prepare", "text": "Par-bake protein crust for 8 minutes."}, {"step": "Sauce", "text": "Spread pizza sauce over crust."}, {"step": "Cheese", "text": "Add mozzarella cheese."}, {"step": "Load Toppings", "text": "Add all meats and vegetables."}, {"step": "Bake", "text": "Bake at 425°F for 10 minutes until cheese is bubbly."}]
+      "ingredients": [
+        "1 protein pizza crust",
+        "60ml pizza sauce",
+        "120g shredded mozzarella",
+        "40g turkey pepperoni",
+        "40g Italian sausage, cooked",
+        "30g bell peppers",
+        "30g mushrooms",
+        "30g black olives",
+        "30g red onion"
+      ],
+      "instructions": [
+        {
+          "step": "Prepare",
+          "text": "Par-bake protein crust for 8 minutes."
+        },
+        {
+          "step": "Sauce",
+          "text": "Spread pizza sauce over crust."
+        },
+        {
+          "step": "Cheese",
+          "text": "Add mozzarella cheese."
+        },
+        {
+          "step": "Load Toppings",
+          "text": "Add all meats and vegetables."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake at 425\u00b0F for 10 minutes until cheese is bubbly."
+        }
+      ]
     },
     {
       "id": 25,
@@ -594,11 +1434,47 @@
       "totalTime": "27",
       "difficulty": "Easy",
       "category": "Dessert",
-      "tags": ["dessert", "sweet", "fruit"],
-      "methods": ["whey"],
-      "image": "dessert-protein-pizza.png",
-      "ingredients": ["100g oat flour", "40g vanilla whey protein powder", "1 egg", "60g Greek yogurt", "15g honey", "100g cream cheese, softened", "Mixed berries", "30g dark chocolate, melted"],
-      "instructions": [{"step": "Make Crust", "text": "Mix oat flour, protein powder, egg, yogurt, and honey into dough."}, {"step": "Bake", "text": "Press into 10-inch circle, bake at 350°F for 12 minutes until golden."}, {"step": "Cool", "text": "Let cool completely."}, {"step": "Spread", "text": "Spread sweetened cream cheese over cooled crust."}, {"step": "Top", "text": "Arrange berries on top and drizzle with melted chocolate."}]
+      "tags": [
+        "dessert",
+        "sweet",
+        "fruit"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "mushroom-protein-pizza.png",
+      "ingredients": [
+        "100g oat flour",
+        "40g vanilla whey protein powder",
+        "1 egg",
+        "60g Greek yogurt",
+        "15g honey",
+        "100g cream cheese, softened",
+        "Mixed berries",
+        "30g dark chocolate, melted"
+      ],
+      "instructions": [
+        {
+          "step": "Make Crust",
+          "text": "Mix oat flour, protein powder, egg, yogurt, and honey into dough."
+        },
+        {
+          "step": "Bake",
+          "text": "Press into 10-inch circle, bake at 350\u00b0F for 12 minutes until golden."
+        },
+        {
+          "step": "Cool",
+          "text": "Let cool completely."
+        },
+        {
+          "step": "Spread",
+          "text": "Spread sweetened cream cheese over cooled crust."
+        },
+        {
+          "step": "Top",
+          "text": "Arrange berries on top and drizzle with melted chocolate."
+        }
+      ]
     }
   ]
 }

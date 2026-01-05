@@ -18,11 +18,45 @@
       "totalTime": "10",
       "difficulty": "Easy",
       "category": "Classic",
-      "tags": ["high protein", "classic", "breakfast"],
-      "methods": ["whey"],
-      "image": "high-protein-oatmeal.png",
-      "ingredients": ["80g rolled oats", "240ml milk", "30g vanilla whey protein powder", "15g almond butter", "1 medium banana, sliced", "5g honey"],
-      "instructions": [{"step": "Cook Oats", "text": "Combine oats and milk in a pot. Cook over medium heat for 3-4 minutes, stirring occasionally."}, {"step": "Cool Slightly", "text": "Remove from heat and let cool for 1 minute to prevent protein from clumping."}, {"step": "Add Protein", "text": "Stir in the protein powder until fully incorporated."}, {"step": "Top", "text": "Add almond butter, sliced banana, and drizzle with honey."}, {"step": "Serve", "text": "Enjoy immediately while warm."}]
+      "tags": [
+        "high protein",
+        "classic",
+        "breakfast"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "apple-cinnamon-oatmeal.png",
+      "ingredients": [
+        "80g rolled oats",
+        "240ml milk",
+        "30g vanilla whey protein powder",
+        "15g almond butter",
+        "1 medium banana, sliced",
+        "5g honey"
+      ],
+      "instructions": [
+        {
+          "step": "Cook Oats",
+          "text": "Combine oats and milk in a pot. Cook over medium heat for 3-4 minutes, stirring occasionally."
+        },
+        {
+          "step": "Cool Slightly",
+          "text": "Remove from heat and let cool for 1 minute to prevent protein from clumping."
+        },
+        {
+          "step": "Add Protein",
+          "text": "Stir in the protein powder until fully incorporated."
+        },
+        {
+          "step": "Top",
+          "text": "Add almond butter, sliced banana, and drizzle with honey."
+        },
+        {
+          "step": "Serve",
+          "text": "Enjoy immediately while warm."
+        }
+      ]
     },
     {
       "id": 2,
@@ -42,11 +76,45 @@
       "totalTime": "10",
       "difficulty": "Beginner",
       "category": "Classic",
-      "tags": ["recipe", "easy", "creamy"],
-      "methods": ["whey"],
-      "image": "protein-oatmeal-recipe.png",
-      "ingredients": ["80g rolled oats", "200ml water", "60ml milk", "30g chocolate whey protein powder", "15g peanut butter", "10g dark chocolate chips"],
-      "instructions": [{"step": "Boil Water", "text": "Bring water and milk to a simmer in a small pot."}, {"step": "Add Oats", "text": "Stir in oats and cook for 4 minutes until creamy."}, {"step": "Mix Protein", "text": "Remove from heat, wait 1 minute, then stir in protein powder."}, {"step": "Add Toppings", "text": "Top with peanut butter and chocolate chips."}, {"step": "Serve", "text": "Eat immediately for best texture."}]
+      "tags": [
+        "recipe",
+        "easy",
+        "creamy"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "banana-nut-oatmeal.png",
+      "ingredients": [
+        "80g rolled oats",
+        "200ml water",
+        "60ml milk",
+        "30g chocolate whey protein powder",
+        "15g peanut butter",
+        "10g dark chocolate chips"
+      ],
+      "instructions": [
+        {
+          "step": "Boil Water",
+          "text": "Bring water and milk to a simmer in a small pot."
+        },
+        {
+          "step": "Add Oats",
+          "text": "Stir in oats and cook for 4 minutes until creamy."
+        },
+        {
+          "step": "Mix Protein",
+          "text": "Remove from heat, wait 1 minute, then stir in protein powder."
+        },
+        {
+          "step": "Add Toppings",
+          "text": "Top with peanut butter and chocolate chips."
+        },
+        {
+          "step": "Serve",
+          "text": "Eat immediately for best texture."
+        }
+      ]
     },
     {
       "id": 3,
@@ -66,11 +134,44 @@
       "totalTime": "8",
       "difficulty": "Beginner",
       "category": "Tips",
-      "tags": ["protein powder", "tips", "technique"],
-      "methods": ["whey"],
-      "image": "protein-powder-in-oatmeal.png",
-      "ingredients": ["80g rolled oats", "240ml milk", "30g vanilla whey protein powder", "5g cinnamon", "15g walnuts, chopped"],
-      "instructions": [{"step": "Cook Oats", "text": "Cook oats in milk over medium heat for 4 minutes."}, {"step": "Cool Down", "text": "Remove from heat and let sit for 2 minutes - this is crucial!"}, {"step": "Add Protein", "text": "Slowly stir in protein powder, mixing continuously to prevent clumps."}, {"step": "Season", "text": "Add cinnamon and stir well."}, {"step": "Top", "text": "Sprinkle with walnuts and serve."}]
+      "tags": [
+        "protein powder",
+        "tips",
+        "technique"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "chocolate-peanut-butter-oatmeal.png",
+      "ingredients": [
+        "80g rolled oats",
+        "240ml milk",
+        "30g vanilla whey protein powder",
+        "5g cinnamon",
+        "15g walnuts, chopped"
+      ],
+      "instructions": [
+        {
+          "step": "Cook Oats",
+          "text": "Cook oats in milk over medium heat for 4 minutes."
+        },
+        {
+          "step": "Cool Down",
+          "text": "Remove from heat and let sit for 2 minutes - this is crucial!"
+        },
+        {
+          "step": "Add Protein",
+          "text": "Slowly stir in protein powder, mixing continuously to prevent clumps."
+        },
+        {
+          "step": "Season",
+          "text": "Add cinnamon and stir well."
+        },
+        {
+          "step": "Top",
+          "text": "Sprinkle with walnuts and serve."
+        }
+      ]
     },
     {
       "id": 4,
@@ -90,11 +191,45 @@
       "totalTime": "10",
       "difficulty": "Easy",
       "category": "Classic",
-      "tags": ["fluffy", "protein powder", "energy"],
-      "methods": ["whey"],
-      "image": "oatmeal-with-protein-powder.png",
-      "ingredients": ["80g rolled oats", "240ml almond milk", "30g vanilla whey protein powder", "100g mixed berries", "10g maple syrup", "5g chia seeds"],
-      "instructions": [{"step": "Prepare", "text": "Heat almond milk in a pot until simmering."}, {"step": "Cook", "text": "Add oats and cook for 4 minutes, stirring frequently."}, {"step": "Rest", "text": "Remove from heat and let cool 1-2 minutes."}, {"step": "Protein", "text": "Fold in protein powder gently."}, {"step": "Finish", "text": "Top with berries, maple syrup, and chia seeds."}]
+      "tags": [
+        "fluffy",
+        "protein powder",
+        "energy"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "classic-protein-oatmeal.png",
+      "ingredients": [
+        "80g rolled oats",
+        "240ml almond milk",
+        "30g vanilla whey protein powder",
+        "100g mixed berries",
+        "10g maple syrup",
+        "5g chia seeds"
+      ],
+      "instructions": [
+        {
+          "step": "Prepare",
+          "text": "Heat almond milk in a pot until simmering."
+        },
+        {
+          "step": "Cook",
+          "text": "Add oats and cook for 4 minutes, stirring frequently."
+        },
+        {
+          "step": "Rest",
+          "text": "Remove from heat and let cool 1-2 minutes."
+        },
+        {
+          "step": "Protein",
+          "text": "Fold in protein powder gently."
+        },
+        {
+          "step": "Finish",
+          "text": "Top with berries, maple syrup, and chia seeds."
+        }
+      ]
     },
     {
       "id": 5,
@@ -114,11 +249,45 @@
       "totalTime": "10",
       "difficulty": "Easy",
       "category": "High Protein",
-      "tags": ["high protein", "athlete", "muscle building"],
-      "methods": ["whey"],
-      "image": "high-protein-oatmeal-recipe.png",
-      "ingredients": ["100g rolled oats", "240ml milk", "35g vanilla whey protein powder", "30g Greek yogurt", "20g almond butter", "1 medium banana"],
-      "instructions": [{"step": "Cook Oats", "text": "Cook oats in milk for 4-5 minutes until thick."}, {"step": "Cool", "text": "Let cool for 2 minutes off heat."}, {"step": "Add Protein", "text": "Stir in protein powder and Greek yogurt."}, {"step": "Top", "text": "Add almond butter and sliced banana."}, {"step": "Enjoy", "text": "Serve immediately for best texture."}]
+      "tags": [
+        "high protein",
+        "athlete",
+        "muscle building"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "blueberry-almond-oatmeal.png",
+      "ingredients": [
+        "100g rolled oats",
+        "240ml milk",
+        "35g vanilla whey protein powder",
+        "30g Greek yogurt",
+        "20g almond butter",
+        "1 medium banana"
+      ],
+      "instructions": [
+        {
+          "step": "Cook Oats",
+          "text": "Cook oats in milk for 4-5 minutes until thick."
+        },
+        {
+          "step": "Cool",
+          "text": "Let cool for 2 minutes off heat."
+        },
+        {
+          "step": "Add Protein",
+          "text": "Stir in protein powder and Greek yogurt."
+        },
+        {
+          "step": "Top",
+          "text": "Add almond butter and sliced banana."
+        },
+        {
+          "step": "Enjoy",
+          "text": "Serve immediately for best texture."
+        }
+      ]
     },
     {
       "id": 6,
@@ -138,11 +307,47 @@
       "totalTime": "45",
       "difficulty": "Medium",
       "category": "Baked",
-      "tags": ["baked", "meal prep", "make ahead"],
-      "methods": ["whey"],
-      "image": "high-protein-baked-oatmeal.png",
-      "ingredients": ["240g rolled oats", "90g vanilla whey protein powder", "480ml milk", "2 eggs", "60g maple syrup", "10g baking powder", "5g cinnamon", "150g blueberries"],
-      "instructions": [{"step": "Preheat", "text": "Preheat oven to 350°F (175°C). Grease a 9x9 baking dish."}, {"step": "Mix Dry", "text": "Combine oats, protein powder, baking powder, and cinnamon."}, {"step": "Mix Wet", "text": "Whisk milk, eggs, and maple syrup together."}, {"step": "Combine", "text": "Pour wet into dry, mix well. Fold in blueberries."}, {"step": "Bake", "text": "Pour into dish and bake 35 minutes until golden. Cut into 6 squares."}]
+      "tags": [
+        "baked",
+        "meal prep",
+        "make ahead"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "maple-pecan-oatmeal.png",
+      "ingredients": [
+        "240g rolled oats",
+        "90g vanilla whey protein powder",
+        "480ml milk",
+        "2 eggs",
+        "60g maple syrup",
+        "10g baking powder",
+        "5g cinnamon",
+        "150g blueberries"
+      ],
+      "instructions": [
+        {
+          "step": "Preheat",
+          "text": "Preheat oven to 350\u00b0F (175\u00b0C). Grease a 9x9 baking dish."
+        },
+        {
+          "step": "Mix Dry",
+          "text": "Combine oats, protein powder, baking powder, and cinnamon."
+        },
+        {
+          "step": "Mix Wet",
+          "text": "Whisk milk, eggs, and maple syrup together."
+        },
+        {
+          "step": "Combine",
+          "text": "Pour wet into dry, mix well. Fold in blueberries."
+        },
+        {
+          "step": "Bake",
+          "text": "Pour into dish and bake 35 minutes until golden. Cut into 6 squares."
+        }
+      ]
     },
     {
       "id": 7,
@@ -162,11 +367,46 @@
       "totalTime": "40",
       "difficulty": "Easy",
       "category": "Baked",
-      "tags": ["baked", "soft", "cake-like"],
-      "methods": ["whey"],
-      "image": "protein-baked-oatmeal.png",
-      "ingredients": ["200g rolled oats", "80g chocolate whey protein powder", "480ml almond milk", "2 eggs", "60g honey", "60g peanut butter", "5g baking powder"],
-      "instructions": [{"step": "Prep", "text": "Preheat oven to 350°F. Line a 9x13 pan with parchment."}, {"step": "Blend", "text": "Blend all ingredients except 40g oats until smooth."}, {"step": "Fold", "text": "Stir in remaining oats for texture."}, {"step": "Bake", "text": "Pour into pan and bake 30 minutes."}, {"step": "Cool", "text": "Let cool 10 minutes before slicing into 8 pieces."}]
+      "tags": [
+        "baked",
+        "soft",
+        "cake-like"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "pumpkin-spice-oatmeal.png",
+      "ingredients": [
+        "200g rolled oats",
+        "80g chocolate whey protein powder",
+        "480ml almond milk",
+        "2 eggs",
+        "60g honey",
+        "60g peanut butter",
+        "5g baking powder"
+      ],
+      "instructions": [
+        {
+          "step": "Prep",
+          "text": "Preheat oven to 350\u00b0F. Line a 9x13 pan with parchment."
+        },
+        {
+          "step": "Blend",
+          "text": "Blend all ingredients except 40g oats until smooth."
+        },
+        {
+          "step": "Fold",
+          "text": "Stir in remaining oats for texture."
+        },
+        {
+          "step": "Bake",
+          "text": "Pour into pan and bake 30 minutes."
+        },
+        {
+          "step": "Cool",
+          "text": "Let cool 10 minutes before slicing into 8 pieces."
+        }
+      ]
     },
     {
       "id": 8,
@@ -186,11 +426,45 @@
       "totalTime": "22",
       "difficulty": "Easy",
       "category": "Cookies",
-      "tags": ["cookies", "breakfast", "portable"],
-      "methods": ["whey"],
-      "image": "protein-oatmeal-cookies.png",
-      "ingredients": ["150g rolled oats", "60g vanilla whey protein powder", "2 ripe bananas, mashed", "60g peanut butter", "60g chocolate chips", "5ml vanilla extract"],
-      "instructions": [{"step": "Preheat", "text": "Preheat oven to 350°F. Line baking sheet with parchment."}, {"step": "Mix", "text": "Mash bananas, add peanut butter and vanilla. Mix well."}, {"step": "Add Dry", "text": "Stir in oats and protein powder."}, {"step": "Fold", "text": "Add chocolate chips."}, {"step": "Bake", "text": "Scoop 12 cookies onto sheet. Bake 12 minutes until edges are golden."}]
+      "tags": [
+        "cookies",
+        "breakfast",
+        "portable"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "overnight-protein-oats.png",
+      "ingredients": [
+        "150g rolled oats",
+        "60g vanilla whey protein powder",
+        "2 ripe bananas, mashed",
+        "60g peanut butter",
+        "60g chocolate chips",
+        "5ml vanilla extract"
+      ],
+      "instructions": [
+        {
+          "step": "Preheat",
+          "text": "Preheat oven to 350\u00b0F. Line baking sheet with parchment."
+        },
+        {
+          "step": "Mix",
+          "text": "Mash bananas, add peanut butter and vanilla. Mix well."
+        },
+        {
+          "step": "Add Dry",
+          "text": "Stir in oats and protein powder."
+        },
+        {
+          "step": "Fold",
+          "text": "Add chocolate chips."
+        },
+        {
+          "step": "Bake",
+          "text": "Scoop 12 cookies onto sheet. Bake 12 minutes until edges are golden."
+        }
+      ]
     },
     {
       "id": 9,
@@ -210,11 +484,45 @@
       "totalTime": "75",
       "difficulty": "Easy",
       "category": "Bars",
-      "tags": ["bars", "no-bake", "portable"],
-      "methods": ["whey"],
-      "image": "oatmeal-protein-bars.png",
-      "ingredients": ["200g rolled oats", "90g vanilla whey protein powder", "180g peanut butter", "120g honey", "60g chocolate chips", "60ml almond milk"],
-      "instructions": [{"step": "Mix Wet", "text": "Warm peanut butter and honey together until smooth."}, {"step": "Combine", "text": "Mix oats and protein powder in a large bowl."}, {"step": "Pour", "text": "Add wet mixture and milk. Stir until combined."}, {"step": "Add Chips", "text": "Fold in chocolate chips."}, {"step": "Set", "text": "Press into 9x9 pan. Refrigerate 1 hour. Cut into 10 bars."}]
+      "tags": [
+        "bars",
+        "no-bake",
+        "portable"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "strawberry-cream-oatmeal.png",
+      "ingredients": [
+        "200g rolled oats",
+        "90g vanilla whey protein powder",
+        "180g peanut butter",
+        "120g honey",
+        "60g chocolate chips",
+        "60ml almond milk"
+      ],
+      "instructions": [
+        {
+          "step": "Mix Wet",
+          "text": "Warm peanut butter and honey together until smooth."
+        },
+        {
+          "step": "Combine",
+          "text": "Mix oats and protein powder in a large bowl."
+        },
+        {
+          "step": "Pour",
+          "text": "Add wet mixture and milk. Stir until combined."
+        },
+        {
+          "step": "Add Chips",
+          "text": "Fold in chocolate chips."
+        },
+        {
+          "step": "Set",
+          "text": "Press into 9x9 pan. Refrigerate 1 hour. Cut into 10 bars."
+        }
+      ]
     },
     {
       "id": 10,
@@ -234,11 +542,46 @@
       "totalTime": "485",
       "difficulty": "Beginner",
       "category": "Overnight",
-      "tags": ["overnight", "meal prep", "cold"],
-      "methods": ["whey"],
+      "tags": [
+        "overnight",
+        "meal prep",
+        "cold"
+      ],
+      "methods": [
+        "whey"
+      ],
       "image": "overnight-protein-oats.png",
-      "ingredients": ["80g rolled oats", "30g vanilla whey protein powder", "200ml milk", "100g Greek yogurt", "15g chia seeds", "15g maple syrup", "100g strawberries"],
-      "instructions": [{"step": "Combine", "text": "Mix oats, protein powder, milk, yogurt, chia seeds, and maple syrup in a jar."}, {"step": "Stir", "text": "Mix well to prevent protein clumps."}, {"step": "Refrigerate", "text": "Cover and refrigerate overnight (at least 8 hours)."}, {"step": "Top", "text": "In the morning, top with fresh strawberries."}, {"step": "Eat", "text": "Enjoy cold or microwave for 1 minute if you prefer warm."}]
+      "ingredients": [
+        "80g rolled oats",
+        "30g vanilla whey protein powder",
+        "200ml milk",
+        "100g Greek yogurt",
+        "15g chia seeds",
+        "15g maple syrup",
+        "100g strawberries"
+      ],
+      "instructions": [
+        {
+          "step": "Combine",
+          "text": "Mix oats, protein powder, milk, yogurt, chia seeds, and maple syrup in a jar."
+        },
+        {
+          "step": "Stir",
+          "text": "Mix well to prevent protein clumps."
+        },
+        {
+          "step": "Refrigerate",
+          "text": "Cover and refrigerate overnight (at least 8 hours)."
+        },
+        {
+          "step": "Top",
+          "text": "In the morning, top with fresh strawberries."
+        },
+        {
+          "step": "Eat",
+          "text": "Enjoy cold or microwave for 1 minute if you prefer warm."
+        }
+      ]
     },
     {
       "id": 11,
@@ -258,11 +601,45 @@
       "totalTime": "10",
       "difficulty": "Easy",
       "category": "Chocolate",
-      "tags": ["chocolate", "dessert", "indulgent"],
-      "methods": ["whey"],
-      "image": "chocolate-protein-oatmeal.png",
-      "ingredients": ["80g rolled oats", "240ml chocolate almond milk", "30g chocolate whey protein powder", "15g unsweetened cocoa powder", "20g dark chocolate chips", "1 banana, sliced"],
-      "instructions": [{"step": "Cook", "text": "Cook oats in chocolate almond milk for 4 minutes."}, {"step": "Add Cocoa", "text": "Stir in cocoa powder while cooking."}, {"step": "Cool", "text": "Remove from heat, let cool 2 minutes."}, {"step": "Protein", "text": "Mix in protein powder until smooth."}, {"step": "Top", "text": "Add chocolate chips and banana slices."}]
+      "tags": [
+        "chocolate",
+        "dessert",
+        "indulgent"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "mocha-oatmeal.png",
+      "ingredients": [
+        "80g rolled oats",
+        "240ml chocolate almond milk",
+        "30g chocolate whey protein powder",
+        "15g unsweetened cocoa powder",
+        "20g dark chocolate chips",
+        "1 banana, sliced"
+      ],
+      "instructions": [
+        {
+          "step": "Cook",
+          "text": "Cook oats in chocolate almond milk for 4 minutes."
+        },
+        {
+          "step": "Add Cocoa",
+          "text": "Stir in cocoa powder while cooking."
+        },
+        {
+          "step": "Cool",
+          "text": "Remove from heat, let cool 2 minutes."
+        },
+        {
+          "step": "Protein",
+          "text": "Mix in protein powder until smooth."
+        },
+        {
+          "step": "Top",
+          "text": "Add chocolate chips and banana slices."
+        }
+      ]
     },
     {
       "id": 12,
@@ -282,11 +659,45 @@
       "totalTime": "10",
       "difficulty": "Easy",
       "category": "Nut Butter",
-      "tags": ["peanut butter", "creamy", "filling"],
-      "methods": ["whey"],
-      "image": "peanut-butter-protein-oatmeal.png",
-      "ingredients": ["80g rolled oats", "240ml milk", "30g vanilla whey protein powder", "32g peanut butter", "1 banana, sliced", "10g honey"],
-      "instructions": [{"step": "Cook Oats", "text": "Cook oats in milk until creamy, about 4 minutes."}, {"step": "Add PB", "text": "Stir in peanut butter while still warm."}, {"step": "Cool", "text": "Let cool 1-2 minutes."}, {"step": "Protein", "text": "Mix in protein powder."}, {"step": "Serve", "text": "Top with banana and drizzle with honey."}]
+      "tags": [
+        "peanut butter",
+        "creamy",
+        "filling"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "peach-cobbler-oatmeal.png",
+      "ingredients": [
+        "80g rolled oats",
+        "240ml milk",
+        "30g vanilla whey protein powder",
+        "32g peanut butter",
+        "1 banana, sliced",
+        "10g honey"
+      ],
+      "instructions": [
+        {
+          "step": "Cook Oats",
+          "text": "Cook oats in milk until creamy, about 4 minutes."
+        },
+        {
+          "step": "Add PB",
+          "text": "Stir in peanut butter while still warm."
+        },
+        {
+          "step": "Cool",
+          "text": "Let cool 1-2 minutes."
+        },
+        {
+          "step": "Protein",
+          "text": "Mix in protein powder."
+        },
+        {
+          "step": "Serve",
+          "text": "Top with banana and drizzle with honey."
+        }
+      ]
     },
     {
       "id": 13,
@@ -306,11 +717,45 @@
       "totalTime": "10",
       "difficulty": "Beginner",
       "category": "Fruit",
-      "tags": ["banana", "natural", "no sugar added"],
-      "methods": ["whey"],
-      "image": "banana-protein-oatmeal.png",
-      "ingredients": ["80g rolled oats", "240ml milk", "1 ripe banana, mashed", "30g vanilla whey protein powder", "5g cinnamon", "15g walnuts"],
-      "instructions": [{"step": "Mash", "text": "Mash banana in the pot before adding other ingredients."}, {"step": "Cook", "text": "Add oats, milk, and cinnamon. Cook 4 minutes."}, {"step": "Cool", "text": "Remove from heat, cool 1 minute."}, {"step": "Protein", "text": "Stir in protein powder."}, {"step": "Top", "text": "Sprinkle with walnuts and extra banana slices if desired."}]
+      "tags": [
+        "banana",
+        "natural",
+        "no sugar added"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "carrot-cake-oatmeal.png",
+      "ingredients": [
+        "80g rolled oats",
+        "240ml milk",
+        "1 ripe banana, mashed",
+        "30g vanilla whey protein powder",
+        "5g cinnamon",
+        "15g walnuts"
+      ],
+      "instructions": [
+        {
+          "step": "Mash",
+          "text": "Mash banana in the pot before adding other ingredients."
+        },
+        {
+          "step": "Cook",
+          "text": "Add oats, milk, and cinnamon. Cook 4 minutes."
+        },
+        {
+          "step": "Cool",
+          "text": "Remove from heat, cool 1 minute."
+        },
+        {
+          "step": "Protein",
+          "text": "Stir in protein powder."
+        },
+        {
+          "step": "Top",
+          "text": "Sprinkle with walnuts and extra banana slices if desired."
+        }
+      ]
     },
     {
       "id": 14,
@@ -330,11 +775,46 @@
       "totalTime": "13",
       "difficulty": "Easy",
       "category": "Fruit",
-      "tags": ["apple", "cinnamon", "fall"],
-      "methods": ["whey"],
-      "image": "apple-cinnamon-protein-oatmeal.png",
-      "ingredients": ["80g rolled oats", "240ml milk", "1 medium apple, diced", "30g vanilla whey protein powder", "5g cinnamon", "15g maple syrup", "15g pecans"],
-      "instructions": [{"step": "Cook Apple", "text": "Sauté diced apple with cinnamon for 2 minutes."}, {"step": "Add Oats", "text": "Add oats and milk, cook 4-5 minutes."}, {"step": "Cool", "text": "Remove from heat, let cool 1 minute."}, {"step": "Protein", "text": "Stir in protein powder."}, {"step": "Finish", "text": "Drizzle with maple syrup and top with pecans."}]
+      "tags": [
+        "apple",
+        "cinnamon",
+        "fall"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "cookie-dough-oatmeal.png",
+      "ingredients": [
+        "80g rolled oats",
+        "240ml milk",
+        "1 medium apple, diced",
+        "30g vanilla whey protein powder",
+        "5g cinnamon",
+        "15g maple syrup",
+        "15g pecans"
+      ],
+      "instructions": [
+        {
+          "step": "Cook Apple",
+          "text": "Saut\u00e9 diced apple with cinnamon for 2 minutes."
+        },
+        {
+          "step": "Add Oats",
+          "text": "Add oats and milk, cook 4-5 minutes."
+        },
+        {
+          "step": "Cool",
+          "text": "Remove from heat, let cool 1 minute."
+        },
+        {
+          "step": "Protein",
+          "text": "Stir in protein powder."
+        },
+        {
+          "step": "Finish",
+          "text": "Drizzle with maple syrup and top with pecans."
+        }
+      ]
     },
     {
       "id": 15,
@@ -354,11 +834,45 @@
       "totalTime": "10",
       "difficulty": "Easy",
       "category": "Fruit",
-      "tags": ["blueberry", "antioxidant", "berry"],
-      "methods": ["whey"],
-      "image": "blueberry-protein-oatmeal.png",
-      "ingredients": ["80g rolled oats", "240ml milk", "100g blueberries", "30g vanilla whey protein powder", "15g almond butter", "10g honey"],
-      "instructions": [{"step": "Cook", "text": "Cook oats in milk with half the blueberries for 4 minutes."}, {"step": "Mash", "text": "Mash the cooked blueberries into the oats."}, {"step": "Cool", "text": "Let cool 1-2 minutes."}, {"step": "Protein", "text": "Stir in protein powder."}, {"step": "Top", "text": "Add remaining blueberries, almond butter, and honey."}]
+      "tags": [
+        "blueberry",
+        "antioxidant",
+        "berry"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "raspberry-almond-oatmeal.png",
+      "ingredients": [
+        "80g rolled oats",
+        "240ml milk",
+        "100g blueberries",
+        "30g vanilla whey protein powder",
+        "15g almond butter",
+        "10g honey"
+      ],
+      "instructions": [
+        {
+          "step": "Cook",
+          "text": "Cook oats in milk with half the blueberries for 4 minutes."
+        },
+        {
+          "step": "Mash",
+          "text": "Mash the cooked blueberries into the oats."
+        },
+        {
+          "step": "Cool",
+          "text": "Let cool 1-2 minutes."
+        },
+        {
+          "step": "Protein",
+          "text": "Stir in protein powder."
+        },
+        {
+          "step": "Top",
+          "text": "Add remaining blueberries, almond butter, and honey."
+        }
+      ]
     },
     {
       "id": 16,
@@ -378,11 +892,46 @@
       "totalTime": "10",
       "difficulty": "Easy",
       "category": "Seasonal",
-      "tags": ["pumpkin", "fall", "seasonal"],
-      "methods": ["whey"],
-      "image": "pumpkin-protein-oatmeal.png",
-      "ingredients": ["80g rolled oats", "240ml milk", "60g pumpkin puree", "30g vanilla whey protein powder", "5g pumpkin pie spice", "15g maple syrup", "15g pecans"],
-      "instructions": [{"step": "Cook", "text": "Cook oats in milk with pumpkin puree and spice for 4 minutes."}, {"step": "Cool", "text": "Remove from heat, let cool 1 minute."}, {"step": "Protein", "text": "Stir in protein powder until smooth."}, {"step": "Top", "text": "Drizzle with maple syrup and add pecans."}, {"step": "Serve", "text": "Enjoy warm."}]
+      "tags": [
+        "pumpkin",
+        "fall",
+        "seasonal"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "snickerdoodle-oatmeal.png",
+      "ingredients": [
+        "80g rolled oats",
+        "240ml milk",
+        "60g pumpkin puree",
+        "30g vanilla whey protein powder",
+        "5g pumpkin pie spice",
+        "15g maple syrup",
+        "15g pecans"
+      ],
+      "instructions": [
+        {
+          "step": "Cook",
+          "text": "Cook oats in milk with pumpkin puree and spice for 4 minutes."
+        },
+        {
+          "step": "Cool",
+          "text": "Remove from heat, let cool 1 minute."
+        },
+        {
+          "step": "Protein",
+          "text": "Stir in protein powder until smooth."
+        },
+        {
+          "step": "Top",
+          "text": "Drizzle with maple syrup and add pecans."
+        },
+        {
+          "step": "Serve",
+          "text": "Enjoy warm."
+        }
+      ]
     },
     {
       "id": 17,
@@ -402,11 +951,45 @@
       "totalTime": "10",
       "difficulty": "Beginner",
       "category": "Classic",
-      "tags": ["vanilla", "base recipe", "customizable"],
-      "methods": ["whey"],
-      "image": "vanilla-protein-oatmeal.png",
-      "ingredients": ["80g rolled oats", "240ml milk", "30g vanilla whey protein powder", "5ml vanilla extract", "10g honey", "Toppings of choice"],
-      "instructions": [{"step": "Cook", "text": "Cook oats in milk with vanilla extract for 4 minutes."}, {"step": "Cool", "text": "Let cool 1-2 minutes off heat."}, {"step": "Protein", "text": "Stir in protein powder."}, {"step": "Sweeten", "text": "Add honey and mix."}, {"step": "Customize", "text": "Add your favorite toppings - fruit, nuts, or chocolate."}]
+      "tags": [
+        "vanilla",
+        "base recipe",
+        "customizable"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "cherry-almond-oatmeal.png",
+      "ingredients": [
+        "80g rolled oats",
+        "240ml milk",
+        "30g vanilla whey protein powder",
+        "5ml vanilla extract",
+        "10g honey",
+        "Toppings of choice"
+      ],
+      "instructions": [
+        {
+          "step": "Cook",
+          "text": "Cook oats in milk with vanilla extract for 4 minutes."
+        },
+        {
+          "step": "Cool",
+          "text": "Let cool 1-2 minutes off heat."
+        },
+        {
+          "step": "Protein",
+          "text": "Stir in protein powder."
+        },
+        {
+          "step": "Sweeten",
+          "text": "Add honey and mix."
+        },
+        {
+          "step": "Customize",
+          "text": "Add your favorite toppings - fruit, nuts, or chocolate."
+        }
+      ]
     },
     {
       "id": 18,
@@ -426,11 +1009,45 @@
       "totalTime": "10",
       "difficulty": "Easy",
       "category": "Fruit",
-      "tags": ["strawberry", "fresh", "berry"],
-      "methods": ["whey"],
-      "image": "strawberry-protein-oatmeal.png",
-      "ingredients": ["80g rolled oats", "240ml milk", "100g strawberries, sliced", "30g strawberry or vanilla whey protein powder", "15g almond butter", "5g honey"],
-      "instructions": [{"step": "Cook", "text": "Cook oats in milk for 4 minutes."}, {"step": "Cool", "text": "Remove from heat, let cool 1 minute."}, {"step": "Protein", "text": "Stir in protein powder."}, {"step": "Top", "text": "Add fresh strawberries and almond butter."}, {"step": "Finish", "text": "Drizzle with honey."}]
+      "tags": [
+        "strawberry",
+        "fresh",
+        "berry"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "savory-oatmeal.png",
+      "ingredients": [
+        "80g rolled oats",
+        "240ml milk",
+        "100g strawberries, sliced",
+        "30g strawberry or vanilla whey protein powder",
+        "15g almond butter",
+        "5g honey"
+      ],
+      "instructions": [
+        {
+          "step": "Cook",
+          "text": "Cook oats in milk for 4 minutes."
+        },
+        {
+          "step": "Cool",
+          "text": "Remove from heat, let cool 1 minute."
+        },
+        {
+          "step": "Protein",
+          "text": "Stir in protein powder."
+        },
+        {
+          "step": "Top",
+          "text": "Add fresh strawberries and almond butter."
+        },
+        {
+          "step": "Finish",
+          "text": "Drizzle with honey."
+        }
+      ]
     },
     {
       "id": 19,
@@ -450,11 +1067,47 @@
       "totalTime": "15",
       "difficulty": "Medium",
       "category": "Savory",
-      "tags": ["savory", "eggs", "cheese"],
-      "methods": ["egg"],
-      "image": "savory-protein-oatmeal.png",
-      "ingredients": ["80g rolled oats", "240ml water or broth", "1 egg", "30g shredded cheddar cheese", "2g salt", "1g black pepper", "30g spinach", "1 egg for topping"],
-      "instructions": [{"step": "Cook Oats", "text": "Cook oats in water or broth for 3 minutes."}, {"step": "Add Egg", "text": "Crack one egg into oats, stir vigorously to create creamy texture."}, {"step": "Season", "text": "Add salt, pepper, and spinach. Cook 2 more minutes."}, {"step": "Cheese", "text": "Stir in shredded cheese until melted."}, {"step": "Top", "text": "Fry remaining egg and place on top."}]
+      "tags": [
+        "savory",
+        "eggs",
+        "cheese"
+      ],
+      "methods": [
+        "egg"
+      ],
+      "image": "matcha-oatmeal.png",
+      "ingredients": [
+        "80g rolled oats",
+        "240ml water or broth",
+        "1 egg",
+        "30g shredded cheddar cheese",
+        "2g salt",
+        "1g black pepper",
+        "30g spinach",
+        "1 egg for topping"
+      ],
+      "instructions": [
+        {
+          "step": "Cook Oats",
+          "text": "Cook oats in water or broth for 3 minutes."
+        },
+        {
+          "step": "Add Egg",
+          "text": "Crack one egg into oats, stir vigorously to create creamy texture."
+        },
+        {
+          "step": "Season",
+          "text": "Add salt, pepper, and spinach. Cook 2 more minutes."
+        },
+        {
+          "step": "Cheese",
+          "text": "Stir in shredded cheese until melted."
+        },
+        {
+          "step": "Top",
+          "text": "Fry remaining egg and place on top."
+        }
+      ]
     },
     {
       "id": 20,
@@ -474,11 +1127,45 @@
       "totalTime": "10",
       "difficulty": "Easy",
       "category": "Indulgent",
-      "tags": ["maple", "pecan", "indulgent"],
-      "methods": ["whey"],
-      "image": "maple-pecan-protein-oatmeal.png",
-      "ingredients": ["80g rolled oats", "240ml milk", "30g vanilla whey protein powder", "20g maple syrup", "30g pecans, chopped", "5g butter"],
-      "instructions": [{"step": "Toast Pecans", "text": "Toast pecans in butter for 2 minutes until fragrant."}, {"step": "Cook Oats", "text": "Cook oats in milk for 4 minutes."}, {"step": "Cool", "text": "Let cool 1 minute."}, {"step": "Protein", "text": "Stir in protein powder."}, {"step": "Finish", "text": "Top with toasted pecans and drizzle with maple syrup."}]
+      "tags": [
+        "maple",
+        "pecan",
+        "indulgent"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "baked-oatmeal.png",
+      "ingredients": [
+        "80g rolled oats",
+        "240ml milk",
+        "30g vanilla whey protein powder",
+        "20g maple syrup",
+        "30g pecans, chopped",
+        "5g butter"
+      ],
+      "instructions": [
+        {
+          "step": "Toast Pecans",
+          "text": "Toast pecans in butter for 2 minutes until fragrant."
+        },
+        {
+          "step": "Cook Oats",
+          "text": "Cook oats in milk for 4 minutes."
+        },
+        {
+          "step": "Cool",
+          "text": "Let cool 1 minute."
+        },
+        {
+          "step": "Protein",
+          "text": "Stir in protein powder."
+        },
+        {
+          "step": "Finish",
+          "text": "Top with toasted pecans and drizzle with maple syrup."
+        }
+      ]
     },
     {
       "id": 21,
@@ -498,11 +1185,45 @@
       "totalTime": "10",
       "difficulty": "Easy",
       "category": "Tropical",
-      "tags": ["coconut", "tropical", "island"],
-      "methods": ["whey"],
-      "image": "coconut-protein-oatmeal.png",
-      "ingredients": ["80g rolled oats", "200ml coconut milk", "30g vanilla whey protein powder", "20g shredded coconut", "100g mango, diced", "10g honey"],
-      "instructions": [{"step": "Cook", "text": "Cook oats in coconut milk for 4 minutes."}, {"step": "Cool", "text": "Let cool 1-2 minutes."}, {"step": "Protein", "text": "Stir in protein powder."}, {"step": "Top", "text": "Add shredded coconut and diced mango."}, {"step": "Finish", "text": "Drizzle with honey."}]
+      "tags": [
+        "coconut",
+        "tropical",
+        "island"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "birthday-cake-oatmeal.png",
+      "ingredients": [
+        "80g rolled oats",
+        "200ml coconut milk",
+        "30g vanilla whey protein powder",
+        "20g shredded coconut",
+        "100g mango, diced",
+        "10g honey"
+      ],
+      "instructions": [
+        {
+          "step": "Cook",
+          "text": "Cook oats in coconut milk for 4 minutes."
+        },
+        {
+          "step": "Cool",
+          "text": "Let cool 1-2 minutes."
+        },
+        {
+          "step": "Protein",
+          "text": "Stir in protein powder."
+        },
+        {
+          "step": "Top",
+          "text": "Add shredded coconut and diced mango."
+        },
+        {
+          "step": "Finish",
+          "text": "Drizzle with honey."
+        }
+      ]
     },
     {
       "id": 22,
@@ -522,11 +1243,46 @@
       "totalTime": "10",
       "difficulty": "Easy",
       "category": "Coffee",
-      "tags": ["coffee", "caffeine", "morning"],
-      "methods": ["whey"],
-      "image": "coffee-protein-oatmeal.png",
-      "ingredients": ["80g rolled oats", "180ml brewed coffee", "60ml milk", "30g vanilla whey protein powder", "15g almond butter", "10g maple syrup", "10g dark chocolate chips"],
-      "instructions": [{"step": "Brew", "text": "Use freshly brewed coffee, cooled slightly."}, {"step": "Cook", "text": "Cook oats in coffee and milk for 4 minutes."}, {"step": "Cool", "text": "Let cool 2 minutes."}, {"step": "Protein", "text": "Stir in protein powder."}, {"step": "Top", "text": "Add almond butter, maple syrup, and chocolate chips."}]
+      "tags": [
+        "coffee",
+        "caffeine",
+        "morning"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "chocolate-cherry-oatmeal.png",
+      "ingredients": [
+        "80g rolled oats",
+        "180ml brewed coffee",
+        "60ml milk",
+        "30g vanilla whey protein powder",
+        "15g almond butter",
+        "10g maple syrup",
+        "10g dark chocolate chips"
+      ],
+      "instructions": [
+        {
+          "step": "Brew",
+          "text": "Use freshly brewed coffee, cooled slightly."
+        },
+        {
+          "step": "Cook",
+          "text": "Cook oats in coffee and milk for 4 minutes."
+        },
+        {
+          "step": "Cool",
+          "text": "Let cool 2 minutes."
+        },
+        {
+          "step": "Protein",
+          "text": "Stir in protein powder."
+        },
+        {
+          "step": "Top",
+          "text": "Add almond butter, maple syrup, and chocolate chips."
+        }
+      ]
     },
     {
       "id": 23,
@@ -546,11 +1302,47 @@
       "totalTime": "10",
       "difficulty": "Easy",
       "category": "Dessert",
-      "tags": ["carrot cake", "dessert", "spiced"],
-      "methods": ["whey"],
-      "image": "carrot-cake-protein-oatmeal.png",
-      "ingredients": ["80g rolled oats", "240ml milk", "50g shredded carrots", "30g vanilla whey protein powder", "5g cinnamon", "2g nutmeg", "20g raisins", "15g cream cheese"],
-      "instructions": [{"step": "Cook", "text": "Cook oats in milk with carrots and spices for 5 minutes."}, {"step": "Cool", "text": "Let cool 1-2 minutes."}, {"step": "Protein", "text": "Stir in protein powder."}, {"step": "Add Raisins", "text": "Fold in raisins."}, {"step": "Top", "text": "Add a dollop of cream cheese on top."}]
+      "tags": [
+        "carrot cake",
+        "dessert",
+        "spiced"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "lemon-blueberry-oatmeal.png",
+      "ingredients": [
+        "80g rolled oats",
+        "240ml milk",
+        "50g shredded carrots",
+        "30g vanilla whey protein powder",
+        "5g cinnamon",
+        "2g nutmeg",
+        "20g raisins",
+        "15g cream cheese"
+      ],
+      "instructions": [
+        {
+          "step": "Cook",
+          "text": "Cook oats in milk with carrots and spices for 5 minutes."
+        },
+        {
+          "step": "Cool",
+          "text": "Let cool 1-2 minutes."
+        },
+        {
+          "step": "Protein",
+          "text": "Stir in protein powder."
+        },
+        {
+          "step": "Add Raisins",
+          "text": "Fold in raisins."
+        },
+        {
+          "step": "Top",
+          "text": "Add a dollop of cream cheese on top."
+        }
+      ]
     },
     {
       "id": 24,
@@ -570,11 +1362,45 @@
       "totalTime": "10",
       "difficulty": "Easy",
       "category": "Nut Butter",
-      "tags": ["almond butter", "healthy fats", "filling"],
-      "methods": ["whey"],
-      "image": "almond-butter-protein-oatmeal.png",
-      "ingredients": ["80g rolled oats", "240ml almond milk", "30g vanilla whey protein powder", "32g almond butter", "1 banana, sliced", "10g sliced almonds"],
-      "instructions": [{"step": "Cook", "text": "Cook oats in almond milk for 4 minutes."}, {"step": "Add Butter", "text": "Stir in almond butter while warm."}, {"step": "Cool", "text": "Let cool 1 minute."}, {"step": "Protein", "text": "Mix in protein powder."}, {"step": "Top", "text": "Add banana slices and sliced almonds."}]
+      "tags": [
+        "almond butter",
+        "healthy fats",
+        "filling"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "gingerbread-oatmeal.png",
+      "ingredients": [
+        "80g rolled oats",
+        "240ml almond milk",
+        "30g vanilla whey protein powder",
+        "32g almond butter",
+        "1 banana, sliced",
+        "10g sliced almonds"
+      ],
+      "instructions": [
+        {
+          "step": "Cook",
+          "text": "Cook oats in almond milk for 4 minutes."
+        },
+        {
+          "step": "Add Butter",
+          "text": "Stir in almond butter while warm."
+        },
+        {
+          "step": "Cool",
+          "text": "Let cool 1 minute."
+        },
+        {
+          "step": "Protein",
+          "text": "Mix in protein powder."
+        },
+        {
+          "step": "Top",
+          "text": "Add banana slices and sliced almonds."
+        }
+      ]
     },
     {
       "id": 25,
@@ -594,11 +1420,45 @@
       "totalTime": "10",
       "difficulty": "Easy",
       "category": "Fruit",
-      "tags": ["mixed berry", "antioxidant", "colorful"],
-      "methods": ["whey"],
-      "image": "mixed-berry-protein-oatmeal.png",
-      "ingredients": ["80g rolled oats", "240ml milk", "100g mixed berries (strawberries, blueberries, raspberries)", "30g vanilla whey protein powder", "15g honey", "10g chia seeds"],
-      "instructions": [{"step": "Cook", "text": "Cook oats in milk with half the berries for 4 minutes."}, {"step": "Mash", "text": "Lightly mash the cooked berries."}, {"step": "Cool", "text": "Let cool 1-2 minutes."}, {"step": "Protein", "text": "Stir in protein powder."}, {"step": "Top", "text": "Add remaining fresh berries, honey, and chia seeds."}]
+      "tags": [
+        "mixed berry",
+        "antioxidant",
+        "colorful"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "almond-butter-oatmeal.png",
+      "ingredients": [
+        "80g rolled oats",
+        "240ml milk",
+        "100g mixed berries (strawberries, blueberries, raspberries)",
+        "30g vanilla whey protein powder",
+        "15g honey",
+        "10g chia seeds"
+      ],
+      "instructions": [
+        {
+          "step": "Cook",
+          "text": "Cook oats in milk with half the berries for 4 minutes."
+        },
+        {
+          "step": "Mash",
+          "text": "Lightly mash the cooked berries."
+        },
+        {
+          "step": "Cool",
+          "text": "Let cool 1-2 minutes."
+        },
+        {
+          "step": "Protein",
+          "text": "Stir in protein powder."
+        },
+        {
+          "step": "Top",
+          "text": "Add remaining fresh berries, honey, and chia seeds."
+        }
+      ]
     }
   ]
 }

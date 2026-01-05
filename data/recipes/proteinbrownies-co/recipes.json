@@ -18,9 +18,15 @@
       "totalTime": "35",
       "difficulty": "Easy",
       "category": "Brownies",
-      "tags": ["classic", "high-protein", "easy"],
-      "methods": ["whey"],
-      "image": "classic-protein-brownies-recipe.png",
+      "tags": [
+        "classic",
+        "high-protein",
+        "easy"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "fudgy-protein-brownies.png",
       "ingredients": [
         "120g chocolate whey protein powder",
         "60g almond flour",
@@ -34,12 +40,30 @@
         "1 tsp vanilla extract"
       ],
       "instructions": [
-        {"step": "Preheat Oven", "text": "Preheat your oven to 350°F (175°C). Grease and line an 8x8 inch baking pan."},
-        {"step": "Mix Dry Ingredients", "text": "In a large bowl, whisk together the protein powder, almond flour, cocoa powder, sweetener, baking soda, and salt."},
-        {"step": "Mix Wet Ingredients", "text": "In a separate bowl, whisk together the eggs, applesauce, melted coconut oil, and vanilla extract."},
-        {"step": "Combine", "text": "Pour the wet ingredients into the dry ingredients and mix until just combined. Do not overmix."},
-        {"step": "Bake", "text": "Pour the batter into the prepared pan and spread evenly. Bake for 20-25 minutes, or until a toothpick inserted into the center comes out with moist crumbs."},
-        {"step": "Cool", "text": "Let the brownies cool completely in the pan before cutting into 12 squares."}
+        {
+          "step": "Preheat Oven",
+          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Grease and line an 8x8 inch baking pan."
+        },
+        {
+          "step": "Mix Dry Ingredients",
+          "text": "In a large bowl, whisk together the protein powder, almond flour, cocoa powder, sweetener, baking soda, and salt."
+        },
+        {
+          "step": "Mix Wet Ingredients",
+          "text": "In a separate bowl, whisk together the eggs, applesauce, melted coconut oil, and vanilla extract."
+        },
+        {
+          "step": "Combine",
+          "text": "Pour the wet ingredients into the dry ingredients and mix until just combined. Do not overmix."
+        },
+        {
+          "step": "Bake",
+          "text": "Pour the batter into the prepared pan and spread evenly. Bake for 20-25 minutes, or until a toothpick inserted into the center comes out with moist crumbs."
+        },
+        {
+          "step": "Cool",
+          "text": "Let the brownies cool completely in the pan before cutting into 12 squares."
+        }
       ]
     },
     {
@@ -60,9 +84,16 @@
       "totalTime": "45",
       "difficulty": "Medium",
       "category": "Brownies",
-      "tags": ["high-protein", "post-workout", "fudgy"],
-      "methods": ["whey", "casein"],
-      "image": "high-protein-brownies.png",
+      "tags": [
+        "high-protein",
+        "post-workout",
+        "fudgy"
+      ],
+      "methods": [
+        "whey",
+        "casein"
+      ],
+      "image": "black-bean-protein-brownies.png",
       "ingredients": [
         "90g chocolate whey protein powder",
         "30g chocolate casein protein powder",
@@ -76,12 +107,30 @@
         "80g melted dark chocolate"
       ],
       "instructions": [
-        {"step": "Preheat Oven", "text": "Preheat your oven to 350°F (175°C). Grease and line an 8x8 inch baking pan."},
-        {"step": "Mix Dry Ingredients", "text": "In a large bowl, whisk together the whey and casein protein powders, coconut flour, cocoa powder, sweetener, baking powder, and salt."},
-        {"step": "Mix Wet Ingredients", "text": "In a separate bowl, whisk together the eggs and Greek yogurt until smooth. Then, stir in the melted dark chocolate."},
-        {"step": "Combine", "text": "Pour the wet ingredients into the dry ingredients and mix until a thick batter forms."},
-        {"step": "Bake", "text": "Spread the batter into the prepared pan. Bake for 25-30 minutes, or until the edges are set and the center is slightly fudgy."},
-        {"step": "Cool and Serve", "text": "Allow the brownies to cool completely before slicing and serving."}
+        {
+          "step": "Preheat Oven",
+          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Grease and line an 8x8 inch baking pan."
+        },
+        {
+          "step": "Mix Dry Ingredients",
+          "text": "In a large bowl, whisk together the whey and casein protein powders, coconut flour, cocoa powder, sweetener, baking powder, and salt."
+        },
+        {
+          "step": "Mix Wet Ingredients",
+          "text": "In a separate bowl, whisk together the eggs and Greek yogurt until smooth. Then, stir in the melted dark chocolate."
+        },
+        {
+          "step": "Combine",
+          "text": "Pour the wet ingredients into the dry ingredients and mix until a thick batter forms."
+        },
+        {
+          "step": "Bake",
+          "text": "Spread the batter into the prepared pan. Bake for 25-30 minutes, or until the edges are set and the center is slightly fudgy."
+        },
+        {
+          "step": "Cool and Serve",
+          "text": "Allow the brownies to cool completely before slicing and serving."
+        }
       ]
     },
     {
@@ -102,9 +151,15 @@
       "totalTime": "32",
       "difficulty": "Easy",
       "category": "Brownies",
-      "tags": ["protein-powder", "simple", "quick"],
-      "methods": ["whey"],
-      "image": "protein-powder-brownies.png",
+      "tags": [
+        "protein-powder",
+        "simple",
+        "quick"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "avocado-protein-brownies.png",
       "ingredients": [
         "120g vanilla whey protein powder",
         "60g all-purpose flour",
@@ -117,12 +172,30 @@
         "1 tsp vanilla extract"
       ],
       "instructions": [
-        {"step": "Preheat Oven", "text": "Preheat your oven to 350°F (175°C) and grease an 8x8 inch baking pan."},
-        {"step": "Combine Dry Ingredients", "text": "In a large bowl, combine the protein powder, flour, cocoa powder, brown sugar, and baking soda."},
-        {"step": "Combine Wet Ingredients", "text": "In another bowl, whisk the eggs, milk, melted butter, and vanilla extract."},
-        {"step": "Mix Batter", "text": "Pour the wet ingredients into the dry and stir until just combined."},
-        {"step": "Bake", "text": "Pour the batter into the prepared pan and bake for 20-22 minutes."},
-        {"step": "Cool", "text": "Let the brownies cool before cutting into squares."}
+        {
+          "step": "Preheat Oven",
+          "text": "Preheat your oven to 350\u00b0F (175\u00b0C) and grease an 8x8 inch baking pan."
+        },
+        {
+          "step": "Combine Dry Ingredients",
+          "text": "In a large bowl, combine the protein powder, flour, cocoa powder, brown sugar, and baking soda."
+        },
+        {
+          "step": "Combine Wet Ingredients",
+          "text": "In another bowl, whisk the eggs, milk, melted butter, and vanilla extract."
+        },
+        {
+          "step": "Mix Batter",
+          "text": "Pour the wet ingredients into the dry and stir until just combined."
+        },
+        {
+          "step": "Bake",
+          "text": "Pour the batter into the prepared pan and bake for 20-22 minutes."
+        },
+        {
+          "step": "Cool",
+          "text": "Let the brownies cool before cutting into squares."
+        }
       ]
     },
     {
@@ -143,9 +216,15 @@
       "totalTime": "43",
       "difficulty": "Easy",
       "category": "Brownies",
-      "tags": ["cottage-cheese", "creamy", "moist"],
-      "methods": ["whey"],
-      "image": "cottage-cheese-protein-brownies.png",
+      "tags": [
+        "cottage-cheese",
+        "creamy",
+        "moist"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "peanut-butter-protein-brownies.png",
       "ingredients": [
         "240g low-fat cottage cheese",
         "2 large eggs",
@@ -157,12 +236,30 @@
         "1/2 tsp baking soda"
       ],
       "instructions": [
-        {"step": "Preheat and Prep", "text": "Preheat your oven to 350°F (175°C). Grease an 8x8 inch baking pan."},
-        {"step": "Blend Wet Ingredients", "text": "In a blender, combine the cottage cheese, eggs, maple syrup, and vanilla extract. Blend until completely smooth."},
-        {"step": "Mix Dry Ingredients", "text": "In a large bowl, whisk together the protein powder, cocoa powder, coconut flour, and baking soda."},
-        {"step": "Combine", "text": "Pour the blended wet ingredients into the dry ingredients and mix until well combined."},
-        {"step": "Bake", "text": "Pour the batter into the prepared pan and bake for 25-28 minutes."},
-        {"step": "Cool", "text": "Let the brownies cool completely before slicing."}
+        {
+          "step": "Preheat and Prep",
+          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Grease an 8x8 inch baking pan."
+        },
+        {
+          "step": "Blend Wet Ingredients",
+          "text": "In a blender, combine the cottage cheese, eggs, maple syrup, and vanilla extract. Blend until completely smooth."
+        },
+        {
+          "step": "Mix Dry Ingredients",
+          "text": "In a large bowl, whisk together the protein powder, cocoa powder, coconut flour, and baking soda."
+        },
+        {
+          "step": "Combine",
+          "text": "Pour the blended wet ingredients into the dry ingredients and mix until well combined."
+        },
+        {
+          "step": "Bake",
+          "text": "Pour the batter into the prepared pan and bake for 25-28 minutes."
+        },
+        {
+          "step": "Cool",
+          "text": "Let the brownies cool completely before slicing."
+        }
       ]
     },
     {
@@ -183,9 +280,15 @@
       "totalTime": "35",
       "difficulty": "Easy",
       "category": "Brownies",
-      "tags": ["healthy", "low-fat", "wholesome"],
-      "methods": ["whey"],
-      "image": "healthy-protein-brownies.png",
+      "tags": [
+        "healthy",
+        "low-fat",
+        "wholesome"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "classic-protein-brownies.png",
       "ingredients": [
         "120g oat flour",
         "90g chocolate whey protein powder",
@@ -197,12 +300,30 @@
         "60ml almond milk"
       ],
       "instructions": [
-        {"step": "Preheat Oven", "text": "Preheat oven to 350°F (175°C). Lightly grease an 8x8 inch pan."},
-        {"step": "Mix Dry Ingredients", "text": "In a bowl, combine oat flour, protein powder, cocoa powder, coconut sugar, and baking powder."},
-        {"step": "Mix Wet Ingredients", "text": "In a separate bowl, whisk eggs, mashed banana, and almond milk."},
-        {"step": "Combine Batter", "text": "Add wet ingredients to dry and stir until just combined."},
-        {"step": "Bake", "text": "Pour batter into the prepared pan and bake for 22-25 minutes."},
-        {"step": "Cool and Serve", "text": "Cool before cutting into 12 brownies."}
+        {
+          "step": "Preheat Oven",
+          "text": "Preheat oven to 350\u00b0F (175\u00b0C). Lightly grease an 8x8 inch pan."
+        },
+        {
+          "step": "Mix Dry Ingredients",
+          "text": "In a bowl, combine oat flour, protein powder, cocoa powder, coconut sugar, and baking powder."
+        },
+        {
+          "step": "Mix Wet Ingredients",
+          "text": "In a separate bowl, whisk eggs, mashed banana, and almond milk."
+        },
+        {
+          "step": "Combine Batter",
+          "text": "Add wet ingredients to dry and stir until just combined."
+        },
+        {
+          "step": "Bake",
+          "text": "Pour batter into the prepared pan and bake for 22-25 minutes."
+        },
+        {
+          "step": "Cool and Serve",
+          "text": "Cool before cutting into 12 brownies."
+        }
       ]
     },
     {
@@ -223,9 +344,15 @@
       "totalTime": "35",
       "difficulty": "Easy",
       "category": "Brownies",
-      "tags": ["whey-protein", "classic", "easy"],
-      "methods": ["whey"],
-      "image": "whey-protein-brownies-recipe.png",
+      "tags": [
+        "whey-protein",
+        "classic",
+        "easy"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "salted-caramel-brownies.png",
       "ingredients": [
         "120g chocolate whey protein powder",
         "60g almond flour",
@@ -239,12 +366,30 @@
         "1 tsp vanilla extract"
       ],
       "instructions": [
-        {"step": "Preheat Oven", "text": "Preheat your oven to 350°F (175°C). Grease and line an 8x8 inch baking pan."},
-        {"step": "Mix Dry Ingredients", "text": "In a large bowl, whisk together the protein powder, almond flour, cocoa powder, sweetener, baking soda, and salt."},
-        {"step": "Mix Wet Ingredients", "text": "In a separate bowl, whisk together the eggs, applesauce, melted coconut oil, and vanilla extract."},
-        {"step": "Combine", "text": "Pour the wet ingredients into the dry ingredients and mix until just combined. Do not overmix."},
-        {"step": "Bake", "text": "Pour the batter into the prepared pan and spread evenly. Bake for 20-25 minutes, or until a toothpick inserted into the center comes out with moist crumbs."},
-        {"step": "Cool", "text": "Let the brownies cool completely in the pan before cutting into 12 squares."}
+        {
+          "step": "Preheat Oven",
+          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Grease and line an 8x8 inch baking pan."
+        },
+        {
+          "step": "Mix Dry Ingredients",
+          "text": "In a large bowl, whisk together the protein powder, almond flour, cocoa powder, sweetener, baking soda, and salt."
+        },
+        {
+          "step": "Mix Wet Ingredients",
+          "text": "In a separate bowl, whisk together the eggs, applesauce, melted coconut oil, and vanilla extract."
+        },
+        {
+          "step": "Combine",
+          "text": "Pour the wet ingredients into the dry ingredients and mix until just combined. Do not overmix."
+        },
+        {
+          "step": "Bake",
+          "text": "Pour the batter into the prepared pan and spread evenly. Bake for 20-25 minutes, or until a toothpick inserted into the center comes out with moist crumbs."
+        },
+        {
+          "step": "Cool",
+          "text": "Let the brownies cool completely in the pan before cutting into 12 squares."
+        }
       ]
     },
     {
@@ -265,9 +410,16 @@
       "totalTime": "45",
       "difficulty": "Easy",
       "category": "Brownies",
-      "tags": ["sweet-potato", "healthy", "fudgy", "veggie-based"],
-      "methods": ["whey"],
-      "image": "sweet-potato-protein-brownies.png",
+      "tags": [
+        "sweet-potato",
+        "healthy",
+        "fudgy",
+        "veggie-based"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "red-velvet-brownies.png",
       "ingredients": [
         "240g cooked and mashed sweet potato",
         "90g chocolate whey protein powder",
@@ -278,12 +430,30 @@
         "1/2 tsp baking soda"
       ],
       "instructions": [
-        {"step": "Preheat and Prep", "text": "Preheat oven to 350°F (175°C). Grease an 8x8 inch baking pan."},
-        {"step": "Combine Ingredients", "text": "In a large bowl, combine the mashed sweet potato, protein powder, cocoa powder, almond butter, maple syrup, vanilla extract, and baking soda."},
-        {"step": "Mix", "text": "Stir until all ingredients are well combined and a thick batter forms."},
-        {"step": "Pour and Spread", "text": "Pour the batter into the prepared pan and spread it out evenly."},
-        {"step": "Bake", "text": "Bake for 28-30 minutes, or until the center is set."},
-        {"step": "Cool", "text": "Let the brownies cool completely before slicing."}
+        {
+          "step": "Preheat and Prep",
+          "text": "Preheat oven to 350\u00b0F (175\u00b0C). Grease an 8x8 inch baking pan."
+        },
+        {
+          "step": "Combine Ingredients",
+          "text": "In a large bowl, combine the mashed sweet potato, protein powder, cocoa powder, almond butter, maple syrup, vanilla extract, and baking soda."
+        },
+        {
+          "step": "Mix",
+          "text": "Stir until all ingredients are well combined and a thick batter forms."
+        },
+        {
+          "step": "Pour and Spread",
+          "text": "Pour the batter into the prepared pan and spread it out evenly."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake for 28-30 minutes, or until the center is set."
+        },
+        {
+          "step": "Cool",
+          "text": "Let the brownies cool completely before slicing."
+        }
       ]
     },
     {
@@ -304,9 +474,15 @@
       "totalTime": "35",
       "difficulty": "Easy",
       "category": "Brownies",
-      "tags": ["chocolate", "rich", "decadent"],
-      "methods": ["whey"],
-      "image": "chocolate-protein-brownies.png",
+      "tags": [
+        "chocolate",
+        "rich",
+        "decadent"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "espresso-protein-brownies.png",
       "ingredients": [
         "120g chocolate whey protein powder",
         "60g unsweetened cocoa powder",
@@ -318,12 +494,30 @@
         "60g melted dark chocolate chips"
       ],
       "instructions": [
-        {"step": "Preheat Oven", "text": "Preheat your oven to 350°F (175°C). Grease an 8x8 inch baking pan."},
-        {"step": "Mix Dry Ingredients", "text": "In a large bowl, whisk together the protein powder, cocoa powder, almond flour, and sweetener."},
-        {"step": "Mix Wet Ingredients", "text": "In a separate bowl, whisk the eggs and Greek yogurt. Then, stir in the melted dark chocolate."},
-        {"step": "Combine", "text": "Pour the wet ingredients into the dry and mix until just combined."},
-        {"step": "Bake", "text": "Pour the batter into the prepared pan and bake for 22-25 minutes."},
-        {"step": "Cool", "text": "Let the brownies cool before cutting and enjoying."}
+        {
+          "step": "Preheat Oven",
+          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Grease an 8x8 inch baking pan."
+        },
+        {
+          "step": "Mix Dry Ingredients",
+          "text": "In a large bowl, whisk together the protein powder, cocoa powder, almond flour, and sweetener."
+        },
+        {
+          "step": "Mix Wet Ingredients",
+          "text": "In a separate bowl, whisk the eggs and Greek yogurt. Then, stir in the melted dark chocolate."
+        },
+        {
+          "step": "Combine",
+          "text": "Pour the wet ingredients into the dry and mix until just combined."
+        },
+        {
+          "step": "Bake",
+          "text": "Pour the batter into the prepared pan and bake for 22-25 minutes."
+        },
+        {
+          "step": "Cool",
+          "text": "Let the brownies cool before cutting and enjoying."
+        }
       ]
     },
     {
@@ -344,8 +538,15 @@
       "totalTime": "40",
       "difficulty": "Easy",
       "category": "Brownies",
-      "tags": ["black-bean", "fudgy", "healthy", "veggie-based"],
-      "methods": ["whey"],
+      "tags": [
+        "black-bean",
+        "fudgy",
+        "healthy",
+        "veggie-based"
+      ],
+      "methods": [
+        "whey"
+      ],
       "image": "black-bean-protein-brownies.png",
       "ingredients": [
         "425g can of black beans, rinsed and drained",
@@ -358,12 +559,30 @@
         "1/2 tsp baking soda"
       ],
       "instructions": [
-        {"step": "Preheat and Prep", "text": "Preheat oven to 350°F (175°C). Grease an 8x8 inch baking pan."},
-        {"step": "Blend Ingredients", "text": "In a blender or food processor, combine all ingredients. Blend until completely smooth."},
-        {"step": "Pour Batter", "text": "Pour the batter into the prepared pan and spread evenly."},
-        {"step": "Add Toppings", "text": "Optional: sprinkle some chocolate chips on top before baking."},
-        {"step": "Bake", "text": "Bake for 23-25 minutes, or until a toothpick comes out clean."},
-        {"step": "Cool", "text": "Let the brownies cool completely in the pan before slicing."}
+        {
+          "step": "Preheat and Prep",
+          "text": "Preheat oven to 350\u00b0F (175\u00b0C). Grease an 8x8 inch baking pan."
+        },
+        {
+          "step": "Blend Ingredients",
+          "text": "In a blender or food processor, combine all ingredients. Blend until completely smooth."
+        },
+        {
+          "step": "Pour Batter",
+          "text": "Pour the batter into the prepared pan and spread evenly."
+        },
+        {
+          "step": "Add Toppings",
+          "text": "Optional: sprinkle some chocolate chips on top before baking."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake for 23-25 minutes, or until a toothpick comes out clean."
+        },
+        {
+          "step": "Cool",
+          "text": "Let the brownies cool completely in the pan before slicing."
+        }
       ]
     },
     {
@@ -384,9 +603,15 @@
       "totalTime": "35",
       "difficulty": "Easy",
       "category": "Brownies",
-      "tags": ["banana", "naturally-sweetened", "moist"],
-      "methods": ["whey"],
-      "image": "banana-protein-brownies.png",
+      "tags": [
+        "banana",
+        "naturally-sweetened",
+        "moist"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "walnut-protein-brownies.png",
       "ingredients": [
         "2 ripe bananas, mashed",
         "2 large eggs",
@@ -397,12 +622,30 @@
         "1 tsp baking powder"
       ],
       "instructions": [
-        {"step": "Preheat Oven", "text": "Preheat your oven to 350°F (175°C). Grease an 8x8 inch baking pan."},
-        {"step": "Combine Ingredients", "text": "In a large bowl, mix together the mashed bananas, eggs, protein powder, cocoa powder, oat flour, peanut butter, and baking powder."},
-        {"step": "Mix", "text": "Stir until the batter is smooth and well combined."},
-        {"step": "Pour and Spread", "text": "Pour the batter into the prepared pan and spread evenly."},
-        {"step": "Bake", "text": "Bake for 22-25 minutes, or until the center is set."},
-        {"step": "Cool", "text": "Let the brownies cool before cutting into squares."}
+        {
+          "step": "Preheat Oven",
+          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Grease an 8x8 inch baking pan."
+        },
+        {
+          "step": "Combine Ingredients",
+          "text": "In a large bowl, mix together the mashed bananas, eggs, protein powder, cocoa powder, oat flour, peanut butter, and baking powder."
+        },
+        {
+          "step": "Mix",
+          "text": "Stir until the batter is smooth and well combined."
+        },
+        {
+          "step": "Pour and Spread",
+          "text": "Pour the batter into the prepared pan and spread evenly."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake for 22-25 minutes, or until the center is set."
+        },
+        {
+          "step": "Cool",
+          "text": "Let the brownies cool before cutting into squares."
+        }
       ]
     },
     {
@@ -423,9 +666,15 @@
       "totalTime": "43",
       "difficulty": "Medium",
       "category": "Brownies",
-      "tags": ["vegan", "plant-based", "fudgy"],
-      "methods": ["plant-based"],
-      "image": "vegan-protein-brownies.png",
+      "tags": [
+        "vegan",
+        "plant-based",
+        "fudgy"
+      ],
+      "methods": [
+        "plant-based"
+      ],
+      "image": "raspberry-brownies.png",
       "ingredients": [
         "120g vegan chocolate protein powder",
         "60g almond flour",
@@ -437,12 +686,30 @@
         "60ml almond milk"
       ],
       "instructions": [
-        {"step": "Preheat and Prep", "text": "Preheat oven to 350°F (175°C). Grease an 8x8 inch pan. Prepare the flax eggs by mixing ground flaxseed and water, and let it sit for 5-10 minutes to thicken."},
-        {"step": "Mix Dry Ingredients", "text": "In a large bowl, whisk together the protein powder, almond flour, cocoa powder, and coconut sugar."},
-        {"step": "Mix Wet Ingredients", "text": "In a separate bowl, mash the avocado until smooth. Then, stir in the flax eggs and almond milk."},
-        {"step": "Combine", "text": "Add the wet ingredients to the dry and mix until a thick batter forms."},
-        {"step": "Bake", "text": "Spread the batter into the prepared pan and bake for 25-28 minutes."},
-        {"step": "Cool", "text": "Let the brownies cool completely before slicing."}
+        {
+          "step": "Preheat and Prep",
+          "text": "Preheat oven to 350\u00b0F (175\u00b0C). Grease an 8x8 inch pan. Prepare the flax eggs by mixing ground flaxseed and water, and let it sit for 5-10 minutes to thicken."
+        },
+        {
+          "step": "Mix Dry Ingredients",
+          "text": "In a large bowl, whisk together the protein powder, almond flour, cocoa powder, and coconut sugar."
+        },
+        {
+          "step": "Mix Wet Ingredients",
+          "text": "In a separate bowl, mash the avocado until smooth. Then, stir in the flax eggs and almond milk."
+        },
+        {
+          "step": "Combine",
+          "text": "Add the wet ingredients to the dry and mix until a thick batter forms."
+        },
+        {
+          "step": "Bake",
+          "text": "Spread the batter into the prepared pan and bake for 25-28 minutes."
+        },
+        {
+          "step": "Cool",
+          "text": "Let the brownies cool completely before slicing."
+        }
       ]
     },
     {
@@ -463,8 +730,14 @@
       "totalTime": "35",
       "difficulty": "Easy",
       "category": "Brownies",
-      "tags": ["fudgy", "decadent", "rich"],
-      "methods": ["whey"],
+      "tags": [
+        "fudgy",
+        "decadent",
+        "rich"
+      ],
+      "methods": [
+        "whey"
+      ],
       "image": "fudgy-protein-brownies.png",
       "ingredients": [
         "120g chocolate whey protein powder",
@@ -477,12 +750,30 @@
         "60g dark chocolate chips"
       ],
       "instructions": [
-        {"step": "Preheat Oven", "text": "Preheat your oven to 325°F (165°C). Grease and line an 8x8 inch baking pan."},
-        {"step": "Mix Dry Ingredients", "text": "In a large bowl, whisk together the protein powder, cocoa powder, coconut flour, sweetener, and salt."},
-        {"step": "Mix Wet Ingredients", "text": "In a separate bowl, whisk the eggs and melted butter until well combined."},
-        {"step": "Combine", "text": "Pour the wet ingredients into the dry and mix until a thick, fudgy batter forms. Fold in the dark chocolate chips."},
-        {"step": "Bake", "text": "Spread the batter into the prepared pan. Bake for 22-25 minutes. The center should be slightly undercooked for maximum fudginess."},
-        {"step": "Cool", "text": "Let the brownies cool completely before slicing."}
+        {
+          "step": "Preheat Oven",
+          "text": "Preheat your oven to 325\u00b0F (165\u00b0C). Grease and line an 8x8 inch baking pan."
+        },
+        {
+          "step": "Mix Dry Ingredients",
+          "text": "In a large bowl, whisk together the protein powder, cocoa powder, coconut flour, sweetener, and salt."
+        },
+        {
+          "step": "Mix Wet Ingredients",
+          "text": "In a separate bowl, whisk the eggs and melted butter until well combined."
+        },
+        {
+          "step": "Combine",
+          "text": "Pour the wet ingredients into the dry and mix until a thick, fudgy batter forms. Fold in the dark chocolate chips."
+        },
+        {
+          "step": "Bake",
+          "text": "Spread the batter into the prepared pan. Bake for 22-25 minutes. The center should be slightly undercooked for maximum fudginess."
+        },
+        {
+          "step": "Cool",
+          "text": "Let the brownies cool completely before slicing."
+        }
       ]
     },
     {
@@ -503,9 +794,16 @@
       "totalTime": "40",
       "difficulty": "Easy",
       "category": "Brownies",
-      "tags": ["pumpkin", "fall", "moist", "veggie-based"],
-      "methods": ["whey"],
-      "image": "pumpkin-protein-brownies.png",
+      "tags": [
+        "pumpkin",
+        "fall",
+        "moist",
+        "veggie-based"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "cookie-brownies.png",
       "ingredients": [
         "240g pumpkin puree",
         "2 large eggs",
@@ -517,12 +815,30 @@
         "1/2 tsp baking soda"
       ],
       "instructions": [
-        {"step": "Preheat Oven", "text": "Preheat oven to 350°F (175°C). Grease an 8x8 inch baking pan."},
-        {"step": "Combine Ingredients", "text": "In a large bowl, combine the pumpkin puree, eggs, protein powder, cocoa powder, oat flour, brown sugar, pumpkin pie spice, and baking soda."},
-        {"step": "Mix", "text": "Stir until all ingredients are well combined."},
-        {"step": "Pour and Spread", "text": "Pour the batter into the prepared pan and spread evenly."},
-        {"step": "Bake", "text": "Bake for 28-30 minutes, or until a toothpick inserted into the center comes out clean."},
-        {"step": "Cool", "text": "Let the brownies cool before slicing."}
+        {
+          "step": "Preheat Oven",
+          "text": "Preheat oven to 350\u00b0F (175\u00b0C). Grease an 8x8 inch baking pan."
+        },
+        {
+          "step": "Combine Ingredients",
+          "text": "In a large bowl, combine the pumpkin puree, eggs, protein powder, cocoa powder, oat flour, brown sugar, pumpkin pie spice, and baking soda."
+        },
+        {
+          "step": "Mix",
+          "text": "Stir until all ingredients are well combined."
+        },
+        {
+          "step": "Pour and Spread",
+          "text": "Pour the batter into the prepared pan and spread evenly."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake for 28-30 minutes, or until a toothpick inserted into the center comes out clean."
+        },
+        {
+          "step": "Cool",
+          "text": "Let the brownies cool before slicing."
+        }
       ]
     },
     {
@@ -543,9 +859,15 @@
       "totalTime": "35",
       "difficulty": "Easy",
       "category": "Brownies",
-      "tags": ["low-calorie", "healthy", "diet"],
-      "methods": ["whey"],
-      "image": "low-calorie-protein-brownies.png",
+      "tags": [
+        "low-calorie",
+        "healthy",
+        "diet"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "s'mores-brownies.png",
       "ingredients": [
         "90g chocolate whey protein powder",
         "45g unsweetened cocoa powder",
@@ -557,12 +879,30 @@
         "60ml unsweetened almond milk"
       ],
       "instructions": [
-        {"step": "Preheat Oven", "text": "Preheat your oven to 350°F (175°C). Lightly grease an 8x8 inch pan."},
-        {"step": "Mix Dry Ingredients", "text": "In a bowl, combine protein powder, cocoa powder, oat flour, sweetener, and baking powder."},
-        {"step": "Mix Wet Ingredients", "text": "In a separate bowl, whisk egg whites, applesauce, and almond milk."},
-        {"step": "Combine Batter", "text": "Add wet ingredients to dry and stir until just combined."},
-        {"step": "Bake", "text": "Pour batter into the prepared pan and bake for 22-25 minutes."},
-        {"step": "Cool and Serve", "text": "Cool before cutting into 12 brownies."}
+        {
+          "step": "Preheat Oven",
+          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Lightly grease an 8x8 inch pan."
+        },
+        {
+          "step": "Mix Dry Ingredients",
+          "text": "In a bowl, combine protein powder, cocoa powder, oat flour, sweetener, and baking powder."
+        },
+        {
+          "step": "Mix Wet Ingredients",
+          "text": "In a separate bowl, whisk egg whites, applesauce, and almond milk."
+        },
+        {
+          "step": "Combine Batter",
+          "text": "Add wet ingredients to dry and stir until just combined."
+        },
+        {
+          "step": "Bake",
+          "text": "Pour batter into the prepared pan and bake for 22-25 minutes."
+        },
+        {
+          "step": "Cool and Serve",
+          "text": "Cool before cutting into 12 brownies."
+        }
       ]
     },
     {
@@ -583,9 +923,15 @@
       "totalTime": "35",
       "difficulty": "Easy",
       "category": "Blondies",
-      "tags": ["blondie", "chewy", "high-protein"],
-      "methods": ["whey"],
-      "image": "protein-blondies.png",
+      "tags": [
+        "blondie",
+        "chewy",
+        "high-protein"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "cheesecake-brownies.png",
       "ingredients": [
         "120g vanilla whey protein powder",
         "90g almond flour",
@@ -598,12 +944,30 @@
         "60g white chocolate chips"
       ],
       "instructions": [
-        {"step": "Preheat Oven", "text": "Preheat your oven to 350°F (175°C). Grease and line an 8x8 inch baking pan."},
-        {"step": "Mix Dry Ingredients", "text": "In a large bowl, whisk together the protein powder, almond flour, brown sugar substitute, baking soda, and salt."},
-        {"step": "Mix Wet Ingredients", "text": "In a separate bowl, whisk together the eggs, melted coconut oil, and vanilla extract."},
-        {"step": "Combine", "text": "Pour the wet ingredients into the dry ingredients and mix until just combined. Fold in the white chocolate chips."},
-        {"step": "Bake", "text": "Pour the batter into the prepared pan and spread evenly. Bake for 20-25 minutes."},
-        {"step": "Cool", "text": "Let the blondies cool completely in the pan before cutting."}
+        {
+          "step": "Preheat Oven",
+          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Grease and line an 8x8 inch baking pan."
+        },
+        {
+          "step": "Mix Dry Ingredients",
+          "text": "In a large bowl, whisk together the protein powder, almond flour, brown sugar substitute, baking soda, and salt."
+        },
+        {
+          "step": "Mix Wet Ingredients",
+          "text": "In a separate bowl, whisk together the eggs, melted coconut oil, and vanilla extract."
+        },
+        {
+          "step": "Combine",
+          "text": "Pour the wet ingredients into the dry ingredients and mix until just combined. Fold in the white chocolate chips."
+        },
+        {
+          "step": "Bake",
+          "text": "Pour the batter into the prepared pan and spread evenly. Bake for 20-25 minutes."
+        },
+        {
+          "step": "Cool",
+          "text": "Let the blondies cool completely in the pan before cutting."
+        }
       ]
     },
     {
@@ -624,9 +988,15 @@
       "totalTime": "15",
       "difficulty": "Easy",
       "category": "Bars",
-      "tags": ["no-bake", "quick", "easy"],
-      "methods": ["whey"],
-      "image": "no-bake-protein-brownie-bars.png",
+      "tags": [
+        "no-bake",
+        "quick",
+        "easy"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "zucchini-brownies.png",
       "ingredients": [
         "120g chocolate whey protein powder",
         "60g almond flour",
@@ -636,12 +1006,30 @@
         "60ml almond milk"
       ],
       "instructions": [
-        {"step": "Line Pan", "text": "Line an 8x8 inch pan with parchment paper."},
-        {"step": "Mix Ingredients", "text": "In a large bowl, combine the protein powder, almond flour, cocoa powder, peanut butter, honey/maple syrup, and almond milk."},
-        {"step": "Combine", "text": "Stir until a thick, uniform dough forms. If the mixture is too dry, add a little more almond milk."},
-        {"step": "Press into Pan", "text": "Press the mixture evenly into the prepared pan."},
-        {"step": "Chill", "text": "Refrigerate for at least 30 minutes to set."},
-        {"step": "Slice and Serve", "text": "Cut into 10 bars and store in the refrigerator."}
+        {
+          "step": "Line Pan",
+          "text": "Line an 8x8 inch pan with parchment paper."
+        },
+        {
+          "step": "Mix Ingredients",
+          "text": "In a large bowl, combine the protein powder, almond flour, cocoa powder, peanut butter, honey/maple syrup, and almond milk."
+        },
+        {
+          "step": "Combine",
+          "text": "Stir until a thick, uniform dough forms. If the mixture is too dry, add a little more almond milk."
+        },
+        {
+          "step": "Press into Pan",
+          "text": "Press the mixture evenly into the prepared pan."
+        },
+        {
+          "step": "Chill",
+          "text": "Refrigerate for at least 30 minutes to set."
+        },
+        {
+          "step": "Slice and Serve",
+          "text": "Cut into 10 bars and store in the refrigerator."
+        }
       ]
     },
     {
@@ -662,9 +1050,15 @@
       "totalTime": "6",
       "difficulty": "Easy",
       "category": "Mug Cake",
-      "tags": ["single-serving", "mug-cake", "microwave"],
-      "methods": ["whey"],
-      "image": "single-serving-protein-brownie.png",
+      "tags": [
+        "single-serving",
+        "mug-cake",
+        "microwave"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "pumpkin-brownies.png",
       "ingredients": [
         "30g chocolate whey protein powder",
         "15g unsweetened cocoa powder",
@@ -674,11 +1068,26 @@
         "30ml milk"
       ],
       "instructions": [
-        {"step": "Combine Dry Ingredients", "text": "In a microwave-safe mug, whisk together the protein powder, cocoa powder, sweetener, and baking powder."},
-        {"step": "Add Wet Ingredients", "text": "Add the egg and milk to the mug."},
-        {"step": "Mix", "text": "Stir until the batter is smooth and there are no lumps."},
-        {"step": "Microwave", "text": "Microwave on high for 60-90 seconds, or until the brownie is cooked through."},
-        {"step": "Enjoy", "text": "Let it cool for a minute before enjoying."}
+        {
+          "step": "Combine Dry Ingredients",
+          "text": "In a microwave-safe mug, whisk together the protein powder, cocoa powder, sweetener, and baking powder."
+        },
+        {
+          "step": "Add Wet Ingredients",
+          "text": "Add the egg and milk to the mug."
+        },
+        {
+          "step": "Mix",
+          "text": "Stir until the batter is smooth and there are no lumps."
+        },
+        {
+          "step": "Microwave",
+          "text": "Microwave on high for 60-90 seconds, or until the brownie is cooked through."
+        },
+        {
+          "step": "Enjoy",
+          "text": "Let it cool for a minute before enjoying."
+        }
       ]
     },
     {
@@ -699,9 +1108,15 @@
       "totalTime": "35",
       "difficulty": "Easy",
       "category": "Brownies",
-      "tags": ["keto", "low-carb", "high-fat"],
-      "methods": ["whey"],
-      "image": "keto-protein-brownies.png",
+      "tags": [
+        "keto",
+        "low-carb",
+        "high-fat"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "white-chocolate-brownies.png",
       "ingredients": [
         "120g chocolate whey protein powder",
         "90g almond flour",
@@ -713,12 +1128,30 @@
         "60g sugar-free chocolate chips"
       ],
       "instructions": [
-        {"step": "Preheat Oven", "text": "Preheat your oven to 350°F (175°C). Grease an 8x8 inch baking pan."},
-        {"step": "Mix Dry Ingredients", "text": "In a large bowl, combine the protein powder, almond flour, cocoa powder, and erythritol."},
-        {"step": "Mix Wet Ingredients", "text": "In a separate bowl, whisk the eggs and melted butter."},
-        {"step": "Combine", "text": "Pour the wet ingredients into the dry and mix until a thick batter forms. Fold in the sugar-free chocolate chips."},
-        {"step": "Bake", "text": "Spread the batter into the prepared pan and bake for 22-25 minutes."},
-        {"step": "Cool", "text": "Let the brownies cool completely before slicing."}
+        {
+          "step": "Preheat Oven",
+          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Grease an 8x8 inch baking pan."
+        },
+        {
+          "step": "Mix Dry Ingredients",
+          "text": "In a large bowl, combine the protein powder, almond flour, cocoa powder, and erythritol."
+        },
+        {
+          "step": "Mix Wet Ingredients",
+          "text": "In a separate bowl, whisk the eggs and melted butter."
+        },
+        {
+          "step": "Combine",
+          "text": "Pour the wet ingredients into the dry and mix until a thick batter forms. Fold in the sugar-free chocolate chips."
+        },
+        {
+          "step": "Bake",
+          "text": "Spread the batter into the prepared pan and bake for 22-25 minutes."
+        },
+        {
+          "step": "Cool",
+          "text": "Let the brownies cool completely before slicing."
+        }
       ]
     },
     {
@@ -739,9 +1172,15 @@
       "totalTime": "38",
       "difficulty": "Easy",
       "category": "Brownies",
-      "tags": ["greek-yogurt", "moist", "tangy"],
-      "methods": ["whey"],
-      "image": "greek-yogurt-protein-brownies.png",
+      "tags": [
+        "greek-yogurt",
+        "moist",
+        "tangy"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "triple-chocolate-brownies.png",
       "ingredients": [
         "120g chocolate whey protein powder",
         "60g oat flour",
@@ -753,12 +1192,30 @@
         "1 tsp vanilla extract"
       ],
       "instructions": [
-        {"step": "Preheat Oven", "text": "Preheat oven to 350°F (175°C). Grease an 8x8 inch baking pan."},
-        {"step": "Mix Dry Ingredients", "text": "In a large bowl, whisk together the protein powder, oat flour, cocoa powder, sweetener, and baking powder."},
-        {"step": "Mix Wet Ingredients", "text": "In a separate bowl, whisk together the eggs, Greek yogurt, and vanilla extract until smooth."},
-        {"step": "Combine", "text": "Pour the wet ingredients into the dry and mix until just combined."},
-        {"step": "Bake", "text": "Pour the batter into the prepared pan and bake for 25-28 minutes."},
-        {"step": "Cool", "text": "Let the brownies cool completely before slicing."}
+        {
+          "step": "Preheat Oven",
+          "text": "Preheat oven to 350\u00b0F (175\u00b0C). Grease an 8x8 inch baking pan."
+        },
+        {
+          "step": "Mix Dry Ingredients",
+          "text": "In a large bowl, whisk together the protein powder, oat flour, cocoa powder, sweetener, and baking powder."
+        },
+        {
+          "step": "Mix Wet Ingredients",
+          "text": "In a separate bowl, whisk together the eggs, Greek yogurt, and vanilla extract until smooth."
+        },
+        {
+          "step": "Combine",
+          "text": "Pour the wet ingredients into the dry and mix until just combined."
+        },
+        {
+          "step": "Bake",
+          "text": "Pour the batter into the prepared pan and bake for 25-28 minutes."
+        },
+        {
+          "step": "Cool",
+          "text": "Let the brownies cool completely before slicing."
+        }
       ]
     },
     {
@@ -779,8 +1236,15 @@
       "totalTime": "40",
       "difficulty": "Easy",
       "category": "Brownies",
-      "tags": ["avocado", "fudgy", "healthy", "veggie-based"],
-      "methods": ["whey"],
+      "tags": [
+        "avocado",
+        "fudgy",
+        "healthy",
+        "veggie-based"
+      ],
+      "methods": [
+        "whey"
+      ],
       "image": "avocado-protein-brownies.png",
       "ingredients": [
         "1 large ripe avocado, mashed",
@@ -792,12 +1256,30 @@
         "1/2 tsp baking soda"
       ],
       "instructions": [
-        {"step": "Preheat and Prep", "text": "Preheat oven to 350°F (175°C). Grease an 8x8 inch baking pan."},
-        {"step": "Blend Ingredients", "text": "In a blender or food processor, combine the mashed avocado, eggs, protein powder, cocoa powder, maple syrup, vanilla, and baking soda. Blend until smooth."},
-        {"step": "Pour Batter", "text": "Pour the batter into the prepared pan and spread evenly."},
-        {"step": "Add Toppings", "text": "Optional: sprinkle with chocolate chips."},
-        {"step": "Bake", "text": "Bake for 22-25 minutes, or until the center is set."},
-        {"step": "Cool", "text": "Let the brownies cool completely before slicing."}
+        {
+          "step": "Preheat and Prep",
+          "text": "Preheat oven to 350\u00b0F (175\u00b0C). Grease an 8x8 inch baking pan."
+        },
+        {
+          "step": "Blend Ingredients",
+          "text": "In a blender or food processor, combine the mashed avocado, eggs, protein powder, cocoa powder, maple syrup, vanilla, and baking soda. Blend until smooth."
+        },
+        {
+          "step": "Pour Batter",
+          "text": "Pour the batter into the prepared pan and spread evenly."
+        },
+        {
+          "step": "Add Toppings",
+          "text": "Optional: sprinkle with chocolate chips."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake for 22-25 minutes, or until the center is set."
+        },
+        {
+          "step": "Cool",
+          "text": "Let the brownies cool completely before slicing."
+        }
       ]
     },
     {
@@ -818,9 +1300,16 @@
       "totalTime": "50",
       "difficulty": "Easy",
       "category": "Brownies",
-      "tags": ["zucchini", "moist", "healthy", "veggie-based"],
-      "methods": ["whey"],
-      "image": "zucchini-protein-brownies.png",
+      "tags": [
+        "zucchini",
+        "moist",
+        "healthy",
+        "veggie-based"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "brownie-mug-cake.png",
       "ingredients": [
         "150g shredded zucchini, squeezed of excess moisture",
         "2 large eggs",
@@ -832,12 +1321,30 @@
         "1 tsp baking powder"
       ],
       "instructions": [
-        {"step": "Preheat Oven", "text": "Preheat oven to 350°F (175°C). Grease an 8x8 inch baking pan."},
-        {"step": "Prepare Zucchini", "text": "Shred the zucchini and squeeze out as much moisture as possible with a clean kitchen towel."},
-        {"step": "Mix Ingredients", "text": "In a large bowl, combine the shredded zucchini, eggs, protein powder, cocoa powder, oat flour, coconut sugar, melted coconut oil, and baking powder."},
-        {"step": "Combine", "text": "Stir until all ingredients are well combined."},
-        {"step": "Bake", "text": "Pour the batter into the prepared pan and bake for 28-30 minutes."},
-        {"step": "Cool", "text": "Let the brownies cool before slicing."}
+        {
+          "step": "Preheat Oven",
+          "text": "Preheat oven to 350\u00b0F (175\u00b0C). Grease an 8x8 inch baking pan."
+        },
+        {
+          "step": "Prepare Zucchini",
+          "text": "Shred the zucchini and squeeze out as much moisture as possible with a clean kitchen towel."
+        },
+        {
+          "step": "Mix Ingredients",
+          "text": "In a large bowl, combine the shredded zucchini, eggs, protein powder, cocoa powder, oat flour, coconut sugar, melted coconut oil, and baking powder."
+        },
+        {
+          "step": "Combine",
+          "text": "Stir until all ingredients are well combined."
+        },
+        {
+          "step": "Bake",
+          "text": "Pour the batter into the prepared pan and bake for 28-30 minutes."
+        },
+        {
+          "step": "Cool",
+          "text": "Let the brownies cool before slicing."
+        }
       ]
     },
     {
@@ -858,8 +1365,14 @@
       "totalTime": "35",
       "difficulty": "Easy",
       "category": "Brownies",
-      "tags": ["peanut-butter", "chocolate", "high-protein"],
-      "methods": ["whey"],
+      "tags": [
+        "peanut-butter",
+        "chocolate",
+        "high-protein"
+      ],
+      "methods": [
+        "whey"
+      ],
       "image": "peanut-butter-protein-brownies.png",
       "ingredients": [
         "120g chocolate whey protein powder",
@@ -872,12 +1385,30 @@
         "60g creamy peanut butter"
       ],
       "instructions": [
-        {"step": "Preheat Oven", "text": "Preheat your oven to 350°F (175°C). Grease an 8x8 inch baking pan."},
-        {"step": "Mix Dry Ingredients", "text": "In a large bowl, whisk together the protein powder, peanut butter powder, cocoa powder, and sweetener."},
-        {"step": "Mix Wet Ingredients", "text": "In a separate bowl, whisk the eggs, Greek yogurt, and creamy peanut butter until smooth."},
-        {"step": "Combine", "text": "Pour the wet ingredients into the dry and mix until a thick batter forms."},
-        {"step": "Bake", "text": "Spread the batter into the prepared pan. Optional: swirl in extra peanut butter on top. Bake for 22-25 minutes."},
-        {"step": "Cool", "text": "Let the brownies cool completely before slicing."}
+        {
+          "step": "Preheat Oven",
+          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Grease an 8x8 inch baking pan."
+        },
+        {
+          "step": "Mix Dry Ingredients",
+          "text": "In a large bowl, whisk together the protein powder, peanut butter powder, cocoa powder, and sweetener."
+        },
+        {
+          "step": "Mix Wet Ingredients",
+          "text": "In a separate bowl, whisk the eggs, Greek yogurt, and creamy peanut butter until smooth."
+        },
+        {
+          "step": "Combine",
+          "text": "Pour the wet ingredients into the dry and mix until a thick batter forms."
+        },
+        {
+          "step": "Bake",
+          "text": "Spread the batter into the prepared pan. Optional: swirl in extra peanut butter on top. Bake for 22-25 minutes."
+        },
+        {
+          "step": "Cool",
+          "text": "Let the brownies cool completely before slicing."
+        }
       ]
     },
     {
@@ -898,9 +1429,15 @@
       "totalTime": "35",
       "difficulty": "Easy",
       "category": "Brownies",
-      "tags": ["mint-chocolate", "refreshing", "chocolate"],
-      "methods": ["whey"],
-      "image": "mint-chocolate-protein-brownies.png",
+      "tags": [
+        "mint-chocolate",
+        "refreshing",
+        "chocolate"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "brownie-bites.png",
       "ingredients": [
         "120g chocolate whey protein powder",
         "60g almond flour",
@@ -913,12 +1450,30 @@
         "1 tsp peppermint extract"
       ],
       "instructions": [
-        {"step": "Preheat Oven", "text": "Preheat your oven to 350°F (175°C). Grease and line an 8x8 inch baking pan."},
-        {"step": "Mix Dry Ingredients", "text": "In a large bowl, whisk together the protein powder, almond flour, cocoa powder, and sweetener."},
-        {"step": "Mix Wet Ingredients", "text": "In a separate bowl, whisk together the eggs, applesauce, melted coconut oil, and peppermint extract."},
-        {"step": "Combine", "text": "Pour the wet ingredients into the dry and mix until just combined."},
-        {"step": "Bake", "text": "Pour the batter into the prepared pan and bake for 22-25 minutes."},
-        {"step": "Cool", "text": "Let the brownies cool completely before slicing."}
+        {
+          "step": "Preheat Oven",
+          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Grease and line an 8x8 inch baking pan."
+        },
+        {
+          "step": "Mix Dry Ingredients",
+          "text": "In a large bowl, whisk together the protein powder, almond flour, cocoa powder, and sweetener."
+        },
+        {
+          "step": "Mix Wet Ingredients",
+          "text": "In a separate bowl, whisk together the eggs, applesauce, melted coconut oil, and peppermint extract."
+        },
+        {
+          "step": "Combine",
+          "text": "Pour the wet ingredients into the dry and mix until just combined."
+        },
+        {
+          "step": "Bake",
+          "text": "Pour the batter into the prepared pan and bake for 22-25 minutes."
+        },
+        {
+          "step": "Cool",
+          "text": "Let the brownies cool completely before slicing."
+        }
       ]
     },
     {
@@ -939,9 +1494,15 @@
       "totalTime": "43",
       "difficulty": "Medium",
       "category": "Brownies",
-      "tags": ["raspberry", "fruity", "chocolate"],
-      "methods": ["whey"],
-      "image": "raspberry-swirl-protein-brownies.png",
+      "tags": [
+        "raspberry",
+        "fruity",
+        "chocolate"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "blondie-brownies.png",
       "ingredients": [
         "120g chocolate whey protein powder",
         "60g oat flour",
@@ -953,12 +1514,30 @@
         "100g fresh or frozen raspberries, mashed"
       ],
       "instructions": [
-        {"step": "Preheat Oven", "text": "Preheat oven to 350°F (175°C). Grease an 8x8 inch baking pan."},
-        {"step": "Mix Brownie Batter", "text": "In a large bowl, whisk together the protein powder, oat flour, cocoa powder, sweetener, baking soda, eggs, and Greek yogurt until a thick batter forms."},
-        {"step": "Pour Batter", "text": "Pour the brownie batter into the prepared pan and spread evenly."},
-        {"step": "Add Raspberry Swirl", "text": "Dollop the mashed raspberries over the top of the batter. Use a knife to gently swirl the raspberries into the brownie batter."},
-        {"step": "Bake", "text": "Bake for 25-28 minutes, or until the center is set."},
-        {"step": "Cool", "text": "Let the brownies cool completely before slicing."}
+        {
+          "step": "Preheat Oven",
+          "text": "Preheat oven to 350\u00b0F (175\u00b0C). Grease an 8x8 inch baking pan."
+        },
+        {
+          "step": "Mix Brownie Batter",
+          "text": "In a large bowl, whisk together the protein powder, oat flour, cocoa powder, sweetener, baking soda, eggs, and Greek yogurt until a thick batter forms."
+        },
+        {
+          "step": "Pour Batter",
+          "text": "Pour the brownie batter into the prepared pan and spread evenly."
+        },
+        {
+          "step": "Add Raspberry Swirl",
+          "text": "Dollop the mashed raspberries over the top of the batter. Use a knife to gently swirl the raspberries into the brownie batter."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake for 25-28 minutes, or until the center is set."
+        },
+        {
+          "step": "Cool",
+          "text": "Let the brownies cool completely before slicing."
+        }
       ]
     },
     {
@@ -979,8 +1558,15 @@
       "totalTime": "35",
       "difficulty": "Easy",
       "category": "Brownies",
-      "tags": ["espresso", "coffee", "rich", "chocolate"],
-      "methods": ["whey"],
+      "tags": [
+        "espresso",
+        "coffee",
+        "rich",
+        "chocolate"
+      ],
+      "methods": [
+        "whey"
+      ],
       "image": "espresso-protein-brownies.png",
       "ingredients": [
         "120g chocolate whey protein powder",
@@ -994,12 +1580,30 @@
         "60g melted coconut oil"
       ],
       "instructions": [
-        {"step": "Preheat Oven", "text": "Preheat your oven to 350°F (175°C). Grease and line an 8x8 inch baking pan."},
-        {"step": "Mix Dry Ingredients", "text": "In a large bowl, whisk together the protein powder, almond flour, cocoa powder, sweetener, espresso powder, and baking soda."},
-        {"step": "Mix Wet Ingredients", "text": "In a separate bowl, whisk together the eggs, applesauce, and melted coconut oil."},
-        {"step": "Combine", "text": "Pour the wet ingredients into the dry and mix until just combined."},
-        {"step": "Bake", "text": "Pour the batter into the prepared pan and bake for 22-25 minutes."},
-        {"step": "Cool", "text": "Let the brownies cool completely before slicing."}
+        {
+          "step": "Preheat Oven",
+          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Grease and line an 8x8 inch baking pan."
+        },
+        {
+          "step": "Mix Dry Ingredients",
+          "text": "In a large bowl, whisk together the protein powder, almond flour, cocoa powder, sweetener, espresso powder, and baking soda."
+        },
+        {
+          "step": "Mix Wet Ingredients",
+          "text": "In a separate bowl, whisk together the eggs, applesauce, and melted coconut oil."
+        },
+        {
+          "step": "Combine",
+          "text": "Pour the wet ingredients into the dry and mix until just combined."
+        },
+        {
+          "step": "Bake",
+          "text": "Pour the batter into the prepared pan and bake for 22-25 minutes."
+        },
+        {
+          "step": "Cool",
+          "text": "Let the brownies cool completely before slicing."
+        }
       ]
     }
   ]
