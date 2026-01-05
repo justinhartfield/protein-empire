@@ -288,13 +288,24 @@ async function buildSite(domain) {
   // Copy assets
   console.log(`📁 Copying assets...`);
   
-  // Copy recipe images
-  if (fs.existsSync(imagesDir)) {
-    const images = fs.readdirSync(imagesDir).filter(f => f.endsWith('.png') || f.endsWith('.jpg') || f.endsWith('.webp'));
-    images.forEach(img => {
-      fs.copyFileSync(path.join(imagesDir, img), path.join(outputDir, 'recipe_images', img));
+  // Copy recipe images (prefer optimized versions)
+  const optimizedImagesDir = path.join(ROOT_DIR, 'data', 'images-optimized', domain.replace(/\./g, '-'));
+  const useOptimized = fs.existsSync(optimizedImagesDir);
+  const sourceImagesDir = useOptimized ? optimizedImagesDir : imagesDir;
+  
+  if (fs.existsSync(sourceImagesDir)) {
+    // For optimized images, copy only WebP and JPG (not PNG)
+    // For original images, copy all formats
+    const images = fs.readdirSync(sourceImagesDir).filter(f => {
+      if (useOptimized) {
+        return f.endsWith('.jpg') || f.endsWith('.webp');
+      }
+      return f.endsWith('.png') || f.endsWith('.jpg') || f.endsWith('.webp');
     });
-    console.log(`   ✓ Copied ${images.length} recipe images`);
+    images.forEach(img => {
+      fs.copyFileSync(path.join(sourceImagesDir, img), path.join(outputDir, 'recipe_images', img));
+    });
+    console.log(`   ✓ Copied ${images.length} recipe images${useOptimized ? ' (optimized WebP/JPG)' : ' (original - run optimize-images.js first)'}`);
   }
   
   // Copy site-specific images (logo, favicon, etc.)
@@ -592,7 +603,10 @@ function getRecipeCardPartial() {
 <!-- Recipe Card (matching ProteinMuffins.com) -->
 <a href="/<%= recipe.slug %>.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
-        <img src="/recipe_images/<%= recipe.slug %>.png" alt="<%= recipe.title %>" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <picture>
+            <source type="image/webp" srcset="/recipe_images/<%= recipe.slug %>-small.webp 280w, /recipe_images/<%= recipe.slug %>-medium.webp 600w, /recipe_images/<%= recipe.slug %>.webp 800w" sizes="(max-width: 640px) 280px, 280px">
+            <img src="/recipe_images/<%= recipe.slug %>.jpg" alt="<%= recipe.title %>" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="280" height="280">
+        </picture>
         <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-3 py-1 rounded-lg shadow-lg">
             <%= recipe.nutrition.protein %>g
         </div>
@@ -625,7 +639,7 @@ async function generateHomepage(site, recipes, packs, categories, partials, outp
   canonicalPath: '/',
   ogType: 'website',
   ogImage: '/images/logo.png',
-  preloadImage: recipes[0] ? '/recipe_images/' + recipes[0].slug + '.png' : null,
+  preloadImage: recipes[0] ? '/recipe_images/' + recipes[0].slug + '-medium.webp' : null,
   includeIngredients: false
 }) %>
 
@@ -814,8 +828,8 @@ async function generateRecipePage(site, recipe, allRecipes, categories, partials
   pageDescription: recipe.description,
   canonicalPath: '/' + recipe.slug + '.html',
   ogType: 'article',
-  ogImage: '/recipe_images/' + recipe.slug + '.png',
-  preloadImage: '/recipe_images/' + recipe.slug + '.png',
+  ogImage: '/recipe_images/' + recipe.slug + '-og.webp',
+  preloadImage: '/recipe_images/' + recipe.slug + '-medium.webp',
   includeIngredients: true
 }) %>
 
@@ -825,7 +839,7 @@ async function generateRecipePage(site, recipe, allRecipes, categories, partials
   "@context": "https://schema.org/",
   "@type": "Recipe",
   "name": "<%= recipe.title %>",
-  "image": ["https://<%= site.domain %>/recipe_images/<%= recipe.slug %>.png"],
+  "image": ["https://<%= site.domain %>/recipe_images/<%= recipe.slug %>-og.webp", "https://<%= site.domain %>/recipe_images/<%= recipe.slug %>.jpg"],
   "description": "<%= recipe.description.replace(/"/g, '\\\\"') %>",
   "keywords": "<%= recipe.keywords?.join(', ') || 'protein ' + site.foodType %>",
   "author": {
@@ -918,7 +932,10 @@ async function generateRecipePage(site, recipe, allRecipes, categories, partials
                 <!-- Gallery Area -->
                 <div class="space-y-4">
                     <div class="rounded-[2.5rem] overflow-hidden aspect-[4/5] lg:aspect-square relative group recipe-shadow">
-                        <img src="/recipe_images/<%= recipe.slug %>.png" alt="<%= recipe.title %>" class="w-full h-full object-cover" width="800" height="800">
+                        <picture>
+                            <source type="image/webp" srcset="/recipe_images/<%= recipe.slug %>-medium.webp 600w, /recipe_images/<%= recipe.slug %>-large.webp 800w, /recipe_images/<%= recipe.slug %>-og.webp 1200w" sizes="(max-width: 768px) 600px, 800px">
+                            <img src="/recipe_images/<%= recipe.slug %>.jpg" alt="<%= recipe.title %>" class="w-full h-full object-cover" width="800" height="800">
+                        </picture>
                         <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
                         <div class="absolute bottom-6 left-6 flex space-x-2">
                             <span class="bg-white/90 backdrop-blur px-4 py-2 rounded-2xl text-[10px] font-bold anton-text tracking-widest">MACRO-VERIFIED</span>
@@ -1283,7 +1300,10 @@ async function generateRecipePage(site, recipe, allRecipes, categories, partials
                             <% relatedRecipes.slice(0, 5).forEach(r => { %>
                                 <a href="/<%= r.slug %>.html" class="flex items-center gap-3 group">
                                     <div class="w-16 h-16 bg-gradient-to-br from-slate-100 to-slate-200 rounded-lg flex items-center justify-center flex-shrink-0 overflow-hidden">
-                                        <img src="/recipe_images/<%= r.slug %>.png" alt="<%= r.title %>" class="w-full h-full object-cover" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=text-2xl><%= site.emoji || '🍪' %></span>'">
+                                        <picture>
+                                            <source type="image/webp" srcset="/recipe_images/<%= r.slug %>-thumb.webp">
+                                            <img src="/recipe_images/<%= r.slug %>-thumb.jpg" alt="<%= r.title %>" class="w-full h-full object-cover" loading="lazy" width="64" height="64" onerror="this.parentElement.parentElement.innerHTML='<span class=text-2xl><%= site.emoji || '🍪' %></span>'">
+                                        </picture>
                                     </div>
                                     <div>
                                         <h4 class="font-semibold text-slate-900 group-hover:text-brand-600 transition text-sm line-clamp-2"><%= r.title %></h4>
@@ -1441,7 +1461,7 @@ async function generateCategoryPage(site, category, allRecipes, categories, part
   canonicalPath: '/category-' + category.slug + '.html',
   ogType: 'website',
   ogImage: filteredRecipes[0] ? '/recipe_images/' + filteredRecipes[0].slug + '.png' : '/images/logo.png',
-  preloadImage: filteredRecipes[0] ? '/recipe_images/' + filteredRecipes[0].slug + '.png' : null,
+  preloadImage: filteredRecipes[0] ? '/recipe_images/' + filteredRecipes[0].slug + '-medium.webp' : null,
   includeIngredients: false
 }) %>
 
@@ -1576,7 +1596,10 @@ async function generatePackPage(site, pack, allRecipes, partials, outputDir) {
             <div class="grid gap-4">
                 <% packRecipes.forEach(recipe => { %>
                     <div class="flex items-center gap-4 bg-white rounded-xl p-4 border border-slate-200">
-                        <img src="/recipe_images/<%= recipe.slug %>.png" alt="<%= recipe.title %>" class="w-20 h-20 rounded-lg object-cover">
+                        <picture>
+                            <source type="image/webp" srcset="/recipe_images/<%= recipe.slug %>-thumb.webp">
+                            <img src="/recipe_images/<%= recipe.slug %>-thumb.jpg" alt="<%= recipe.title %>" class="w-20 h-20 rounded-lg object-cover" loading="lazy" width="80" height="80">
+                        </picture>
                         <div class="flex-grow">
                             <h3 class="font-semibold text-slate-900"><%= recipe.title %></h3>
                             <p class="text-sm text-slate-500"><%= recipe.nutrition.calories %> cal • <%= recipe.totalTime %>m</p>
