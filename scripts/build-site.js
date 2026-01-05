@@ -777,14 +777,16 @@ async function generateRecipePage(site, recipe, allRecipes, categories, partials
       // Find the full recipe object from allRecipes
       const fullRecipe = allRecipes.find(r => r.slug === rel.slug);
       if (fullRecipe) return fullRecipe;
-      // If not found (shouldn't happen for intra-site), return a minimal object
+      // If not found (shouldn't happen for intra-site), return a minimal object with all required fields
       return {
         slug: rel.slug,
         title: rel.title,
-        nutrition: { protein: 20, calories: 150 },
+        nutrition: { protein: 20, calories: 150, carbs: 15, fat: 5, fiber: 2, sugar: 5 },
+        totalTime: 30,
+        difficulty: 'Medium',
         domain: rel.domain
       };
-    });
+    }).filter(r => r !== null);
   } else {
     // Fallback to category-based matching
     relatedRecipes = allRecipes
