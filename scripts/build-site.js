@@ -666,10 +666,31 @@ async function generateHomepage(site, recipes, packs, categories, partials, outp
  * Generate a recipe page (matching ProteinMuffins.com exactly)
  */
 async function generateRecipePage(site, recipe, allRecipes, categories, partials, outputDir) {
-  // Get related recipes (same category, different recipe)
-  const relatedRecipes = allRecipes
-    .filter(r => r.slug !== recipe.slug && r.categories?.some(c => recipe.categories?.includes(c)))
-    .slice(0, 4);
+  // Get related recipes - prefer recipe.related_recipes from JSON, fallback to category matching
+  let relatedRecipes = [];
+  if (recipe.related_recipes && recipe.related_recipes.length > 0) {
+    // Use the curated related_recipes from JSON
+    relatedRecipes = recipe.related_recipes.map(rel => {
+      // Find the full recipe object from allRecipes
+      const fullRecipe = allRecipes.find(r => r.slug === rel.slug);
+      if (fullRecipe) return fullRecipe;
+      // If not found (shouldn't happen for intra-site), return a minimal object
+      return {
+        slug: rel.slug,
+        title: rel.title,
+        nutrition: { protein: 20, calories: 150 },
+        domain: rel.domain
+      };
+    });
+  } else {
+    // Fallback to category-based matching
+    relatedRecipes = allRecipes
+      .filter(r => r.slug !== recipe.slug && r.categories?.some(c => recipe.categories?.includes(c)))
+      .slice(0, 4);
+  }
+  
+  // Get empire links for cross-site interlinking
+  const empireLinks = recipe.empire_links || [];
   
   // Get category for breadcrumb
   const primaryCategory = categories[recipe.categories?.[0]] || categories['classic'] || { name: 'Recipes', slug: 'all' };
@@ -1188,15 +1209,62 @@ async function generateRecipePage(site, recipe, allRecipes, categories, partials
         </div>
     </section>
 
-    <!-- Related Recipes -->
+    <!-- Related Recipes (Intra-Site) -->
     <% if (relatedRecipes.length > 0) { %>
     <section class="py-16 bg-slate-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="anton-text text-3xl text-center mb-10 uppercase tracking-wider">YOU MIGHT ALSO LIKE</h2>
+            <h2 class="anton-text text-3xl text-center mb-10 uppercase tracking-wider">MORE <%= site.foodTypePlural.toUpperCase() %> RECIPES</h2>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
                 <% relatedRecipes.forEach(r => { %>
                     <%- include('recipeCard', { recipe: r }) %>
                 <% }) %>
+            </div>
+        </div>
+    </section>
+    <% } %>
+
+    <!-- Explore the Protein Empire (Cross-Site Links) -->
+    <% if (empireLinks && empireLinks.length > 0) { %>
+    <section class="py-16 bg-gradient-to-br from-slate-900 to-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <span class="inline-block px-4 py-1 bg-brand-500/20 text-brand-400 text-xs font-bold uppercase tracking-wider rounded-full mb-4">The Protein Empire</span>
+                <h2 class="anton-text text-3xl text-white uppercase tracking-wider">EXPLORE MORE PROTEIN RECIPES</h2>
+                <p class="text-slate-400 mt-3 max-w-xl mx-auto">Discover delicious macro-verified recipes from our sister sites</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <% empireLinks.forEach(link => { %>
+                <a href="https://<%= link.domain %>/<%= link.slug %>.html" class="group bg-slate-800/50 hover:bg-slate-700/50 border border-slate-700 hover:border-brand-500/50 rounded-2xl p-6 transition-all duration-300 flex items-center gap-4" target="_blank" rel="noopener">
+                    <div class="w-16 h-16 bg-gradient-to-br from-brand-500/20 to-brand-600/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <svg class="w-8 h-8 text-brand-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path>
+                        </svg>
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="font-bold text-white group-hover:text-brand-400 transition-colors text-lg"><%= link.title %></h3>
+                        <p class="text-slate-400 text-sm mt-1">
+                            <span class="inline-flex items-center gap-1">
+                                <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4.083 9h1.946c.089-1.546.383-2.97.837-4.118A6.004 6.004 0 004.083 9zM10 2a8 8 0 100 16 8 8 0 000-16zm0 2c-.076 0-.232.032-.465.262-.238.234-.497.623-.737 1.182-.389.907-.673 2.142-.766 3.556h3.936c-.093-1.414-.377-2.649-.766-3.556-.24-.56-.5-.948-.737-1.182C10.232 4.032 10.076 4 10 4zm3.971 5c-.089-1.546-.383-2.97-.837-4.118A6.004 6.004 0 0115.917 9h-1.946zm-2.003 2H8.032c.093 1.414.377 2.649.766 3.556.24.56.5.948.737 1.182.233.23.389.262.465.262.076 0 .232-.032.465-.262.238-.234.498-.623.737-1.182.389-.907.673-2.142.766-3.556zm1.166 4.118c.454-1.147.748-2.572.837-4.118h1.946a6.004 6.004 0 01-2.783 4.118zm-6.268 0C6.412 13.97 6.118 12.546 6.03 11H4.083a6.004 6.004 0 002.783 4.118z" clip-rule="evenodd"></path></svg>
+                                <%= link.domain %>
+                            </span>
+                            <% if (link.category) { %> · <%= link.category %><% } %>
+                        </p>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <svg class="w-5 h-5 text-slate-500 group-hover:text-brand-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                        </svg>
+                    </div>
+                </a>
+                <% }) %>
+            </div>
+            <div class="text-center mt-8">
+                <a href="https://highprotein.recipes" class="inline-flex items-center gap-2 text-brand-400 hover:text-brand-300 font-semibold transition-colors" target="_blank" rel="noopener">
+                    Browse all 300+ recipes across the Protein Empire
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    </svg>
+                </a>
             </div>
         </div>
     </section>
@@ -1227,6 +1295,7 @@ async function generateRecipePage(site, recipe, allRecipes, categories, partials
     site,
     recipe,
     relatedRecipes,
+    empireLinks,
     primaryCategory,
     include: (name, data) => ejs.render(partials[name], data)
   });
