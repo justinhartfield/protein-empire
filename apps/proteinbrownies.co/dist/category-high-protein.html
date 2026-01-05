@@ -56,7 +56,7 @@
 
 
 <!-- Performance: Preload LCP Image -->
-<link rel="preload" as="image" href="/recipe_images/high-protein-brownies.png">
+<link rel="preload" as="image" href="/recipe_images/high-protein-brownies-medium.webp">
 
 
 <!-- Scripts -->
@@ -221,7 +221,10 @@
 <!-- Recipe Card (matching ProteinMuffins.com) -->
 <a href="/high-protein-brownies.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
-        <img src="/recipe_images/high-protein-brownies.png" alt="High Protein Brownies" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <picture>
+            <source type="image/webp" srcset="/recipe_images/high-protein-brownies-small.webp 280w, /recipe_images/high-protein-brownies-medium.webp 600w, /recipe_images/high-protein-brownies.webp 800w" sizes="(max-width: 640px) 280px, 280px">
+            <img src="/recipe_images/high-protein-brownies.jpg" alt="High Protein Brownies" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="280" height="280">
+        </picture>
         <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-3 py-1 rounded-lg shadow-lg">
             25g
         </div>
@@ -238,7 +241,10 @@
 <!-- Recipe Card (matching ProteinMuffins.com) -->
 <a href="/single-serving-protein-brownie.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
-        <img src="/recipe_images/single-serving-protein-brownie.png" alt="Single-Serving Protein Brownie" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <picture>
+            <source type="image/webp" srcset="/recipe_images/single-serving-protein-brownie-small.webp 280w, /recipe_images/single-serving-protein-brownie-medium.webp 600w, /recipe_images/single-serving-protein-brownie.webp 800w" sizes="(max-width: 640px) 280px, 280px">
+            <img src="/recipe_images/single-serving-protein-brownie.jpg" alt="Single-Serving Protein Brownie" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="280" height="280">
+        </picture>
         <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-3 py-1 rounded-lg shadow-lg">
             25g
         </div>
@@ -322,7 +328,7 @@
         </div>
         
         <div class="mt-8 text-center text-slate-500 text-xs">
-            <p>&copy; 2026 <a href="https://HighProtein.Recipes" class="hover:text-amber-400 transition-colors">High Protein Recipes</a>. All recipes macro-verified using USDA FoodData Central.</p>
+            <p>&copy; 2026 ProteinBrownies. All recipes macro-verified using USDA FoodData Central.</p>
         </div>
     </div>
 </footer>
