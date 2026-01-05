@@ -24,6 +24,7 @@ const ROOT_DIR = path.resolve(__dirname, '..');
 import { getSite, sites } from '../packages/config/sites.js';
 import { getCategoriesForSite } from '../packages/config/categories.js';
 import { mapIngredientNameToId } from '../packages/ingredients/ingredient-mapper.js';
+import { linkifyDescription } from './linkify-description.js';
 
 /**
  * Main build function
@@ -797,6 +798,9 @@ async function generateRecipePage(site, recipe, allRecipes, categories, partials
   // Get empire links for cross-site interlinking
   const empireLinks = recipe.empire_links || [];
   
+  // Generate linked description with internal links
+  const linkedDescription = linkifyDescription(recipe.description, recipe, allRecipes, site);
+  
   // Get category for breadcrumb
   const primaryCategory = categories[recipe.categories?.[0]] || categories['classic'] || { name: 'Recipes', slug: 'all' };
   
@@ -955,7 +959,7 @@ async function generateRecipePage(site, recipe, allRecipes, categories, partials
                     </div>
 
                     <p class="text-slate-500 text-lg leading-relaxed mb-8">
-                        <%= recipe.description %> All nutrition data is verified using <a href="https://fdc.nal.usda.gov/" target="_blank" rel="noopener noreferrer" class="text-brand-600 hover:text-brand-700 font-semibold">USDA FoodData Central</a> for accuracy.
+                        <%- linkedDescription %> All nutrition data is verified using <a href="https://fdc.nal.usda.gov/" target="_blank" rel="noopener noreferrer" class="text-brand-600 hover:text-brand-700 font-semibold">USDA FoodData Central</a> for accuracy.
                     </p>
 
                     <!-- CTA Links -->
@@ -1401,6 +1405,7 @@ async function generateRecipePage(site, recipe, allRecipes, categories, partials
     recipe,
     relatedRecipes,
     empireLinks,
+    linkedDescription,
     primaryCategory,
     include: (name, data) => ejs.render(partials[name], data)
   });
