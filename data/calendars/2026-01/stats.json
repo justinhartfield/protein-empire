@@ -1,0 +1,70 @@
+{
+  "social": {
+    "total": 4380,
+    "byPlatform": {
+      "pinterest": 1860,
+      "instagram": 840,
+      "tiktok": 1260,
+      "facebook": 420
+    },
+    "bySite": {
+      "proteinmuffins.com": 365,
+      "proteincookies.co": 365,
+      "proteinpancakes.co": 365,
+      "proteinbrownies.co": 365,
+      "protein-bread.com": 365,
+      "proteinbars.co": 365,
+      "proteinbites.co": 365,
+      "proteindonuts.co": 365,
+      "proteinoatmeal.co": 365,
+      "proteincheesecake.co": 365,
+      "proteinpizzas.co": 365,
+      "proteinpudding.co": 365
+    }
+  },
+  "email": {
+    "total": 72,
+    "byType": {
+      "seasonal": 12,
+      "weekly_newsletter": 48,
+      "cross_promotion": 12
+    },
+    "bySite": {
+      "proteinmuffins.com": 6,
+      "proteincookies.co": 6,
+      "proteinpancakes.co": 6,
+      "proteinbrownies.co": 6,
+      "protein-bread.com": 6,
+      "proteinbars.co": 6,
+      "proteinbites.co": 6,
+      "proteindonuts.co": 6,
+      "proteinoatmeal.co": 6,
+      "proteincheesecake.co": 6,
+      "proteinpizzas.co": 6,
+      "proteinpudding.co": 6
+    }
+  },
+  "content": {
+    "total": 152,
+    "byType": {
+      "new_recipe": 96,
+      "recipe_update": 55,
+      "seo_update": 1
+    },
+    "bySite": {
+      "proteinmuffins.com": 8,
+      "proteincookies.co": 13,
+      "proteinpancakes.co": 13,
+      "proteinbrownies.co": 13,
+      "protein-bread.com": 13,
+      "proteinbars.co": 13,
+      "proteinbites.co": 13,
+      "proteindonuts.co": 13,
+      "proteinoatmeal.co": 13,
+      "proteincheesecake.co": 13,
+      "proteinpizzas.co": 13,
+      "proteinpudding.co": 13,
+      "all": 1
+    }
+  }
+}

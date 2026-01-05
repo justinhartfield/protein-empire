@@ -371,6 +371,20 @@ function getHeadPartial() {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title><%= pageTitle %></title>
 
+<% if (site.ga4Id) { %>
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=<%= site.ga4Id %>"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '<%= site.ga4Id %>', {
+    'send_page_view': true,
+    'cookie_flags': 'SameSite=None;Secure'
+  });
+</script>
+<% } %>
+
 <!-- SEO Meta Tags -->
 <meta name="description" content="<%= pageDescription %>">
 <meta name="robots" content="index, follow">

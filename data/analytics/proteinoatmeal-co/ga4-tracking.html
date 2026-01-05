@@ -1,0 +1,83 @@
+<!-- Google Analytics 4 - Enhanced -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V8Q26X7XJW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  
+  // Base configuration
+  gtag('config', 'G-V8Q26X7XJW', {
+    'send_page_view': true,
+    'cookie_flags': 'SameSite=None;Secure',
+    
+    'custom_map': {
+      'dimension1': 'recipe_category',
+      'dimension2': 'protein_content',
+      'dimension3': 'lead_magnet',
+      'dimension4': 'traffic_source'
+    }
+  });
+
+  // Protein Empire custom tracking functions
+  window.peTrack = {
+    // Track recipe view
+    recipeView: function(recipe) {
+      gtag('event', 'view_recipe', {
+        'recipe_id': recipe.id,
+        'recipe_name': recipe.title,
+        'recipe_category': recipe.category,
+        'protein_content': recipe.protein,
+        'calories': recipe.calories
+      });
+    },
+    
+    // Track PDF download
+    pdfDownload: function(packName, email) {
+      gtag('event', 'generate_lead', {
+        'lead_type': 'pdf_download',
+        'pack_name': packName,
+        'value': 1
+      });
+    },
+    
+    // Track email signup
+    emailSignup: function(source, packName) {
+      gtag('event', 'sign_up', {
+        'method': 'email',
+        'source': source,
+        'pack_name': packName
+      });
+    },
+    
+    // Track recipe print
+    recipePrint: function(recipeId, recipeName) {
+      gtag('event', 'print_recipe', {
+        'recipe_id': recipeId,
+        'recipe_name': recipeName
+      });
+    },
+    
+    // Track cross-site navigation
+    crossSiteClick: function(targetDomain, recipeName) {
+      gtag('event', 'cross_site_click', {
+        'target_domain': targetDomain,
+        'recipe_name': recipeName
+      });
+    },
+    
+    // Track scroll depth
+    scrollDepth: function(percentage) {
+      gtag('event', 'scroll', {
+        'percent_scrolled': percentage
+      });
+    },
+    
+    // Track time on recipe
+    timeOnRecipe: function(recipeId, seconds) {
+      gtag('event', 'engagement', {
+        'recipe_id': recipeId,
+        'engagement_time_msec': seconds * 1000
+      });
+    }
+  };
+</script>

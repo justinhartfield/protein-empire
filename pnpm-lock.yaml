@@ -34,31 +34,34 @@ importers:
         specifier: ^3.2.0
         version: 3.7.4
 
-  apps/highprotein.recipes: {}
-
-  apps/protein-bread.com: {}
-
-  apps/proteinbars.co: {}
-
-  apps/proteinbites.co: {}
-
-  apps/proteinbrownies.co: {}
-
-  apps/proteincheesecake.co: {}
-
-  apps/proteincookies.co: {}
-
-  apps/proteindonuts.co: {}
-
-  apps/proteinoatmeal.co: {}
-
-  apps/proteinpancakes.co: {}
-
-  apps/proteinpizzas.co: {}
-
-  apps/proteinpudding.co: {}
+  packages/analytics:
+    dependencies:
+      '@protein-empire/config':
+        specifier: workspace:*
+        version: link:../config
 
   packages/config: {}
+
+  packages/content-calendar:
+    dependencies:
+      '@protein-empire/config':
+        specifier: workspace:*
+        version: link:../config
+      '@protein-empire/email-marketing':
+        specifier: workspace:*
+        version: link:../email-marketing
+      '@protein-empire/social-media':
+        specifier: workspace:*
+        version: link:../social-media
+
+  packages/email-marketing:
+    dependencies:
+      '@protein-empire/config':
+        specifier: workspace:*
+        version: link:../config
+      '@protein-empire/email-service':
+        specifier: workspace:*
+        version: link:../email-service
 
   packages/email-service:
     dependencies:
@@ -71,11 +74,35 @@ importers:
 
   packages/ingredients: {}
 
+  packages/marketing-dashboard:
+    dependencies:
+      '@protein-empire/analytics':
+        specifier: workspace:*
+        version: link:../analytics
+      '@protein-empire/config':
+        specifier: workspace:*
+        version: link:../config
+      '@protein-empire/content-calendar':
+        specifier: workspace:*
+        version: link:../content-calendar
+      '@protein-empire/email-marketing':
+        specifier: workspace:*
+        version: link:../email-marketing
+      '@protein-empire/social-media':
+        specifier: workspace:*
+        version: link:../social-media
+
   packages/pdf-generator:
     dependencies:
       puppeteer:
         specifier: ^21.7.0
         version: 21.11.0
+
+  packages/social-media:
+    dependencies:
+      '@protein-empire/config':
+        specifier: workspace:*
+        version: link:../config
 
   packages/strapi-client: {}
 

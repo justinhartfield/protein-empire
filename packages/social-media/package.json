@@ -1,0 +1,33 @@
+{
+  "name": "@protein-empire/social-media",
+  "version": "1.0.0",
+  "description": "Social media content generator for the Protein Empire - auto-generate posts for Pinterest, Instagram, TikTok, and Facebook",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./pinterest": "./src/pinterest.js",
+    "./instagram": "./src/instagram.js",
+    "./tiktok": "./src/tiktok.js",
+    "./facebook": "./src/facebook.js",
+    "./templates": "./src/templates.js"
+  },
+  "scripts": {
+    "generate": "node src/generate-all.js",
+    "test": "node --test src/*.test.js"
+  },
+  "keywords": [
+    "social-media",
+    "pinterest",
+    "instagram",
+    "tiktok",
+    "facebook",
+    "protein-empire",
+    "content-generator"
+  ],
+  "author": "Protein Empire",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@protein-empire/config": "workspace:*"
+  }
+}

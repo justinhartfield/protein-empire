@@ -1,0 +1,32 @@
+{
+  "name": "@protein-empire/content-calendar",
+  "version": "1.0.0",
+  "description": "Content calendar and scheduling system for the Protein Empire - plan social media, email, and content publishing",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./social": "./src/social-calendar.js",
+    "./email": "./src/email-calendar.js",
+    "./content": "./src/content-calendar.js"
+  },
+  "scripts": {
+    "generate": "node src/generate-calendar.js",
+    "export": "node src/export-calendar.js",
+    "test": "node --test src/*.test.js"
+  },
+  "keywords": [
+    "content",
+    "calendar",
+    "scheduling",
+    "social-media",
+    "protein-empire"
+  ],
+  "author": "Protein Empire",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@protein-empire/config": "workspace:*",
+    "@protein-empire/social-media": "workspace:*",
+    "@protein-empire/email-marketing": "workspace:*"
+  }
+}
