@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gluten-Free &amp; Dairy-Free | Free Download | ProteinPudding</title>
+
+<!-- SEO Meta Tags -->
+<meta name="description" content="A collection of our best gluten-free and dairy-free recipes, perfect for those with dietary restrictions. Download our free PDF with 4 macro-verified recipes.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://proteinpudding.co/pack-gluten-free-dairy-free.html">
+
+<!-- Open Graph / Social Sharing -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ProteinPudding">
+<meta property="og:title" content="Gluten-Free &amp; Dairy-Free | Free Download | ProteinPudding">
+<meta property="og:description" content="A collection of our best gluten-free and dairy-free recipes, perfect for those with dietary restrictions. Download our free PDF with 4 macro-verified recipes.">
+<meta property="og:image" content="https://proteinpudding.co/recipe_images/gluten-free-chocolate-chia-protein-pudding.png">
+<meta property="og:url" content="https://proteinpudding.co/pack-gluten-free-dairy-free.html">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Gluten-Free &amp; Dairy-Free | Free Download | ProteinPudding">
+<meta name="twitter:description" content="A collection of our best gluten-free and dairy-free recipes, perfect for those with dietary restrictions. Download our free PDF with 4 macro-verified recipes.">
+<meta name="twitter:image" content="https://proteinpudding.co/recipe_images/gluten-free-chocolate-chia-protein-pudding.png">
+
+<!-- Theme & Favicon -->
+<meta name="theme-color" content="#f59e0b">
+<link rel="icon" type="image/png" href="/images/favicon.png">
+<link rel="apple-touch-icon" href="/images/favicon.png">
+
+<!-- Performance: DNS Prefetch & Preconnect -->
+<link rel="dns-prefetch" href="//cdn.tailwindcss.com">
+<link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+
+
+<!-- Scripts -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+
+
+<!-- Tailwind Config -->
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                fontFamily: {
+                    'anton': ['Anton', 'sans-serif'],
+                    'sans': ['Inter', 'sans-serif'],
+                },
+                colors: {
+                    brand: {
+                        50: '#fffbeb',
+                        100: '#fef3c7',
+                        500: '#f59e0b',
+                        600: '#d97706',
+                        900: '#451a03',
+                    },
+                    accent: {
+                        500: '#10b981',
+                    }
+                }
+            }
+        }
+    }
+</script>
+
+<style>
+    [x-cloak] { display: none !important; }
+    .glass-nav {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+    }
+    .anton-text {
+        font-family: 'Anton', sans-serif;
+        letter-spacing: 0.05em;
+    }
+    .recipe-card:hover .recipe-overlay { opacity: 1; }
+    .recipe-shadow { box-shadow: 0 20px 50px -12px rgba(0, 0, 0, 0.1); }
+</style>
+
+</head>
+<body class="min-h-screen flex flex-col bg-slate-50 text-slate-900 font-sans">
+
+
+<!-- Top Navigation (matching ProteinMuffins.com) -->
+<header class="sticky top-0 z-50 glass-nav border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+            <div class="flex items-center">
+                <a href="/" class="flex items-center">
+                    <img src="/images/logo.png" alt="ProteinPudding" class="h-12 md:h-16 w-auto">
+                    
+                </a>
+            </div>
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="/#recipes" class="text-slate-600 hover:text-brand-600 font-semibold text-sm uppercase tracking-wider">Recipes</a>
+                <a href="/#categories" class="text-slate-600 hover:text-brand-600 font-semibold text-sm uppercase tracking-wider">Categories</a>
+                <a href="/#packs" class="text-slate-600 hover:text-brand-600 font-semibold text-sm uppercase tracking-wider">Recipe Packs</a>
+                <a href="/pack-starter.html" class="bg-brand-600 text-white px-5 py-2.5 rounded-full font-bold text-sm hover:bg-brand-900 transition shadow-lg shadow-brand-500/30">STARTER PACK (FREE)</a>
+            </nav>
+            <div class="md:hidden" x-data="{ open: false }">
+                <button @click="open = !open" class="text-slate-900 focus:outline-none">
+                    <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+                <!-- Mobile Menu -->
+                <div x-show="open" x-cloak class="absolute top-20 left-0 right-0 bg-white border-b border-slate-100 p-6 space-y-4 shadow-xl">
+                    <a href="/#recipes" class="block text-xl anton-text text-slate-900">RECIPES</a>
+                    <a href="/#categories" class="block text-xl anton-text text-slate-900">CATEGORIES</a>
+                    <a href="/#packs" class="block text-xl anton-text text-slate-900">RECIPE PACKS</a>
+                    <a href="/pack-starter.html" class="block text-center w-full bg-brand-600 text-white py-4 rounded-xl font-bold anton-text text-lg">GET STARTER PACK</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<main class="flex-grow">
+    <!-- Hero -->
+    <section class="bg-slate-900 text-white py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="text-6xl mb-6 block">🥬</span>
+            <h1 class="anton-text text-5xl md:text-6xl uppercase mb-4 tracking-wider">GLUTEN-FREE &amp; DAIRY-FREE</h1>
+            <p class="text-xl text-slate-300 mb-8">A collection of our best gluten-free and dairy-free recipes, perfect for those with dietary restrictions.</p>
+            <div class="inline-flex items-center gap-2 bg-brand-500/20 text-brand-400 px-4 py-2 rounded-full text-sm font-semibold">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                4 Macro-Verified Recipes
+            </div>
+        </div>
+    </section>
+
+    <!-- What's Included -->
+    <section class="py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="anton-text text-3xl text-center mb-10 uppercase tracking-wider">WHAT'S INCLUDED</h2>
+            
+            <div class="grid gap-4">
+                
+                    <div class="flex items-center gap-4 bg-white rounded-xl p-4 border border-slate-200">
+                        <img src="/recipe_images/gluten-free-chocolate-chia-protein-pudding.png" alt="Gluten-Free Chocolate Chia Protein Pudding" class="w-20 h-20 rounded-lg object-cover">
+                        <div class="flex-grow">
+                            <h3 class="font-semibold text-slate-900">Gluten-Free Chocolate Chia Protein Pudding</h3>
+                            <p class="text-sm text-slate-500">220 cal • 245m</p>
+                        </div>
+                        <div class="text-right">
+                            <span class="bg-accent-500 text-white text-lg font-bold px-3 py-1 rounded-lg">20g</span>
+                            <p class="text-xs text-slate-500 mt-1">protein</p>
+                        </div>
+                    </div>
+                
+                    <div class="flex items-center gap-4 bg-white rounded-xl p-4 border border-slate-200">
+                        <img src="/recipe_images/dairy-free-vanilla-coconut-protein-pudding.png" alt="Dairy-Free Vanilla Coconut Protein Pudding" class="w-20 h-20 rounded-lg object-cover">
+                        <div class="flex-grow">
+                            <h3 class="font-semibold text-slate-900">Dairy-Free Vanilla Coconut Protein Pudding</h3>
+                            <p class="text-sm text-slate-500">195 cal • 130m</p>
+                        </div>
+                        <div class="text-right">
+                            <span class="bg-accent-500 text-white text-lg font-bold px-3 py-1 rounded-lg">18g</span>
+                            <p class="text-xs text-slate-500 mt-1">protein</p>
+                        </div>
+                    </div>
+                
+                    <div class="flex items-center gap-4 bg-white rounded-xl p-4 border border-slate-200">
+                        <img src="/recipe_images/gluten-free-chocolate-chia-protein-pudding.png" alt="Gluten-Free Chocolate Chia Protein Pudding" class="w-20 h-20 rounded-lg object-cover">
+                        <div class="flex-grow">
+                            <h3 class="font-semibold text-slate-900">Gluten-Free Chocolate Chia Protein Pudding</h3>
+                            <p class="text-sm text-slate-500">220 cal • 245m</p>
+                        </div>
+                        <div class="text-right">
+                            <span class="bg-accent-500 text-white text-lg font-bold px-3 py-1 rounded-lg">20g</span>
+                            <p class="text-xs text-slate-500 mt-1">protein</p>
+                        </div>
+                    </div>
+                
+                    <div class="flex items-center gap-4 bg-white rounded-xl p-4 border border-slate-200">
+                        <img src="/recipe_images/dairy-free-vanilla-coconut-protein-pudding.png" alt="Dairy-Free Vanilla Coconut Protein Pudding" class="w-20 h-20 rounded-lg object-cover">
+                        <div class="flex-grow">
+                            <h3 class="font-semibold text-slate-900">Dairy-Free Vanilla Coconut Protein Pudding</h3>
+                            <p class="text-sm text-slate-500">195 cal • 130m</p>
+                        </div>
+                        <div class="text-right">
+                            <span class="bg-accent-500 text-white text-lg font-bold px-3 py-1 rounded-lg">18g</span>
+                            <p class="text-xs text-slate-500 mt-1">protein</p>
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Form -->
+    <section class="py-16 bg-brand-50">
+        <div class="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="anton-text text-3xl mb-4 uppercase tracking-wider">GET YOUR FREE COPY</h2>
+            <p class="text-slate-600 mb-8">Enter your email to download the PDF instantly.</p>
+            
+            <form action="/success-gluten-free-dairy-free.html" method="GET" class="space-y-4">
+                <input type="email" name="email" placeholder="Enter your email" required
+                    class="w-full px-6 py-4 rounded-xl border border-slate-300 focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20 outline-none transition text-lg">
+                <button type="submit" class="w-full bg-brand-500 text-white px-8 py-4 rounded-xl font-bold anton-text text-lg hover:bg-brand-600 transition-colors shadow-xl shadow-brand-500/30 tracking-wider">
+                    DOWNLOAD FREE PDF
+                </button>
+            </form>
+            
+            <p class="text-xs text-slate-500 mt-4">No spam. Unsubscribe anytime.</p>
+        </div>
+    </section>
+
+    <!-- Also Includes -->
+    <section class="py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="anton-text text-3xl text-center mb-10 uppercase tracking-wider">ALSO INCLUDES</h2>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-xl p-6 border border-slate-200 text-center">
+                    <span class="text-3xl mb-4 block">🛒</span>
+                    <h3 class="font-semibold mb-2">Shopping List</h3>
+                    <p class="text-sm text-slate-600">Combined ingredient list organized by category</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 border border-slate-200 text-center">
+                    <span class="text-3xl mb-4 block">📊</span>
+                    <h3 class="font-semibold mb-2">Nutrition Facts</h3>
+                    <p class="text-sm text-slate-600">Complete macros for every recipe</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 border border-slate-200 text-center">
+                    <span class="text-3xl mb-4 block">💡</span>
+                    <h3 class="font-semibold mb-2">Pro Tips</h3>
+                    <p class="text-sm text-slate-600">Storage, meal prep, and substitution advice</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+<!-- Footer (matching ProteinMuffins.com) -->
+<footer class="bg-slate-900 text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+            <!-- Brand -->
+            <div class="md:col-span-1">
+                <a href="/" class="flex items-center mb-4">
+                    <img src="/images/logo.png" alt="ProteinPudding" class="h-12 w-auto">
+                    
+                </a>
+                <p class="text-slate-400 text-sm">Creamy protein puddings, mousses, and chia puddings</p>
+            </div>
+            
+            <!-- Quick Links -->
+            <div>
+                <h4 class="anton-text text-sm tracking-wider mb-4">RECIPES</h4>
+                <ul class="space-y-2 text-slate-400 text-sm">
+                    <li><a href="/category-all.html" class="hover:text-white transition">All Recipes</a></li>
+                    <li><a href="/category-classic.html" class="hover:text-white transition">Classic</a></li>
+                    <li><a href="/category-high-protein.html" class="hover:text-white transition">High Protein</a></li>
+                    <li><a href="/category-quick.html" class="hover:text-white transition">Quick & Easy</a></li>
+                </ul>
+            </div>
+            
+            <!-- Recipe Packs -->
+            <div>
+                <h4 class="anton-text text-sm tracking-wider mb-4">RECIPE PACKS</h4>
+                <ul class="space-y-2 text-slate-400 text-sm">
+                    <li><a href="/pack-starter.html" class="hover:text-white transition">Starter Pack (Free)</a></li>
+                    <li><a href="/pack-no-bake.html" class="hover:text-white transition">No-Bake Pack</a></li>
+                    <li><a href="/pack-high-protein.html" class="hover:text-white transition">High Protein Pack</a></li>
+                </ul>
+            </div>
+            
+            <!-- Legal -->
+            <div>
+                <h4 class="anton-text text-sm tracking-wider mb-4">LEGAL</h4>
+                <ul class="space-y-2 text-slate-400 text-sm">
+                    <li><a href="/privacy.html" class="hover:text-white transition">Privacy Policy</a></li>
+                    <li><a href="/terms.html" class="hover:text-white transition">Terms of Use</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Empire Links -->
+        <div class="mt-12 pt-8 border-t border-slate-800">
+            <p class="text-slate-500 text-xs text-center mb-4">Part of the Protein Recipe Empire</p>
+            <div class="flex flex-wrap justify-center gap-4 text-xs text-slate-500">
+                <a href="https://proteinmuffins.com" class="hover:text-white transition">Muffins</a>
+                <a href="https://proteincookies.co" class="hover:text-white transition">Cookies</a>
+                <a href="https://proteinpancakes.co" class="hover:text-white transition">Pancakes</a>
+                <a href="https://proteinbrownies.co" class="hover:text-white transition">Brownies</a>
+                <a href="https://protein-bread.com" class="hover:text-white transition">Bread</a>
+                <a href="https://proteinbars.co" class="hover:text-white transition">Bars</a>
+                <a href="https://proteinbites.co" class="hover:text-white transition">Bites</a>
+                <a href="https://proteindonuts.co" class="hover:text-white transition">Donuts</a>
+                <a href="https://proteinoatmeal.co" class="hover:text-white transition">Oatmeal</a>
+                <a href="https://proteincheesecake.co" class="hover:text-white transition">Cheesecake</a>
+                <a href="https://proteinpizzas.co" class="hover:text-white transition">Pizza</a>
+                <a href="https://proteinpudding.co" class="hover:text-white transition">Pudding</a>
+            </div>
+        </div>
+        
+        <div class="mt-8 text-center text-slate-500 text-xs">
+            <p>&copy; 2026 ProteinPudding. All recipes macro-verified using USDA FoodData Central.</p>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

@@ -169,6 +169,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://proteinoatmeal.co/gluten-free-certified-oats-protein-oatmeal.html</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proteinoatmeal.co/dairy-free-coconut-milk-protein-oatmeal.html</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://proteinoatmeal.co/category-all.html</loc>
     <lastmod>2026-01-05</lastmod>
     <changefreq>weekly</changefreq>
@@ -242,6 +254,18 @@
   </url>
   <url>
     <loc>https://proteinoatmeal.co/pack-quick-proats.html</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://proteinoatmeal.co/pack-gluten-free-dairy-free.html</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://proteinoatmeal.co/pack-gluten-free-dairy-free.html</loc>
     <lastmod>2026-01-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

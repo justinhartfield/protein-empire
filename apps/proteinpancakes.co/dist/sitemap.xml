@@ -169,6 +169,30 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://proteinpancakes.co/gluten-free-buckwheat-protein-pancakes.html</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proteinpancakes.co/dairy-free-banana-oat-protein-pancakes.html</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proteinpancakes.co/gluten-free-buckwheat-protein-pancakes.html</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proteinpancakes.co/dairy-free-banana-oat-protein-pancakes.html</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://proteinpancakes.co/category-all.html</loc>
     <lastmod>2026-01-05</lastmod>
     <changefreq>weekly</changefreq>
@@ -242,6 +266,18 @@
   </url>
   <url>
     <loc>https://proteinpancakes.co/pack-high-protein-stack.html</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://proteinpancakes.co/pack-gluten-free-dairy-free.html</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://proteinpancakes.co/pack-gluten-free-dairy-free.html</loc>
     <lastmod>2026-01-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
