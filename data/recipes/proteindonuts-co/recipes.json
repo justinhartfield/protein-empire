@@ -1637,5 +1637,259 @@
         "text": "Bake for 10-12 minutes. Once cooled, top with a sugar-free glaze and toasted coconut flakes."
       }
     ]
+  },
+  {
+    "id": 100,
+    "slug": "gluten-free-baked-protein-donuts",
+    "title": "Gluten-Free Baked Protein Donuts",
+    "description": "Light, fluffy baked donuts made with gluten-free flour and protein powder. Topped with a simple glaze for the perfect guilt-free treat!",
+    "protein": 12,
+    "calories": 145,
+    "carbs": 18,
+    "fat": 4,
+    "fiber": 2,
+    "sugar": 8,
+    "servingSize": "1 donut",
+    "yield": "8 donuts",
+    "prepTime": "10",
+    "cookTime": "15",
+    "totalTime": "25",
+    "difficulty": "Easy",
+    "category": "Baked",
+    "tags": [
+      "gluten-free",
+      "baked",
+      "glazed",
+      "low-fat"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "gluten-free-baked-protein-donuts.png",
+    "ingredients": [
+      "120g gluten-free all-purpose flour blend",
+      "45g vanilla whey protein powder",
+      "60g coconut sugar",
+      "1 tsp baking powder (gluten-free)",
+      "1/4 tsp salt",
+      "1 large egg",
+      "120ml unsweetened almond milk",
+      "30ml coconut oil, melted",
+      "1 tsp vanilla extract",
+      "For glaze: 60g powdered sugar + 1 tbsp almond milk"
+    ],
+    "instructions": [
+      {
+        "step": "Preheat and Prep",
+        "text": "Preheat oven to 175\u00b0C (350\u00b0F). Grease a donut pan with cooking spray."
+      },
+      {
+        "step": "Mix Dry Ingredients",
+        "text": "In a bowl, whisk together the gluten-free flour, protein powder, coconut sugar, baking powder, and salt."
+      },
+      {
+        "step": "Mix Wet Ingredients",
+        "text": "In another bowl, whisk the egg, almond milk, melted coconut oil, and vanilla."
+      },
+      {
+        "step": "Combine and Fill",
+        "text": "Add wet ingredients to dry and mix until just combined. Pipe or spoon batter into donut pan, filling each cavity about 2/3 full."
+      },
+      {
+        "step": "Bake and Glaze",
+        "text": "Bake for 12-15 minutes until a toothpick comes out clean. Cool, then dip in glaze made by whisking powdered sugar and almond milk."
+      }
+    ]
+  },
+  {
+    "id": 101,
+    "slug": "dairy-free-chocolate-glazed-protein-donuts",
+    "title": "Dairy-Free Chocolate Glazed Protein Donuts",
+    "description": "Decadent chocolate donuts with a rich dairy-free chocolate glaze. Made with plant-based protein for a healthier indulgence!",
+    "protein": 10,
+    "calories": 165,
+    "carbs": 22,
+    "fat": 6,
+    "fiber": 3,
+    "sugar": 10,
+    "servingSize": "1 donut",
+    "yield": "8 donuts",
+    "prepTime": "15",
+    "cookTime": "15",
+    "totalTime": "30",
+    "difficulty": "Easy",
+    "category": "Glazed",
+    "tags": [
+      "dairy-free",
+      "chocolate",
+      "glazed",
+      "vegan"
+    ],
+    "methods": [
+      "vegan"
+    ],
+    "image": "dairy-free-chocolate-glazed-protein-donuts.png",
+    "ingredients": [
+      "100g oat flour",
+      "45g chocolate plant-based protein powder",
+      "30g unsweetened cocoa powder",
+      "60g coconut sugar",
+      "1 tsp baking powder",
+      "1/4 tsp salt",
+      "1 flax egg (1 tbsp ground flaxseed + 3 tbsp water)",
+      "120ml oat milk",
+      "30ml coconut oil, melted",
+      "1 tsp vanilla extract",
+      "For glaze: 60g dairy-free chocolate chips + 1 tbsp coconut oil"
+    ],
+    "instructions": [
+      {
+        "step": "Prepare Flax Egg",
+        "text": "Mix ground flaxseed with water and let sit for 5 minutes."
+      },
+      {
+        "step": "Mix Dry Ingredients",
+        "text": "Combine oat flour, protein powder, cocoa powder, coconut sugar, baking powder, and salt."
+      },
+      {
+        "step": "Mix Wet Ingredients",
+        "text": "Whisk together the flax egg, oat milk, melted coconut oil, and vanilla."
+      },
+      {
+        "step": "Bake",
+        "text": "Combine wet and dry ingredients. Fill greased donut pan 2/3 full. Bake at 175\u00b0C (350\u00b0F) for 12-15 minutes."
+      },
+      {
+        "step": "Glaze",
+        "text": "Melt chocolate chips with coconut oil. Dip cooled donuts in the glaze and let set on a wire rack."
+      }
+    ]
+  },
+  {
+    "id": 100,
+    "slug": "gluten-free-baked-protein-donuts",
+    "title": "Gluten-Free Baked Protein Donuts",
+    "description": "Light, fluffy baked donuts made with gluten-free flour and protein powder. Topped with a simple glaze for the perfect guilt-free treat!",
+    "protein": 12,
+    "calories": 145,
+    "carbs": 18,
+    "fat": 4,
+    "fiber": 2,
+    "sugar": 8,
+    "servingSize": "1 donut",
+    "yield": "8 donuts",
+    "prepTime": "10",
+    "cookTime": "15",
+    "totalTime": "25",
+    "difficulty": "Easy",
+    "category": "Baked",
+    "tags": [
+      "gluten-free",
+      "baked",
+      "glazed",
+      "low-fat"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "gluten-free-baked-protein-donuts.png",
+    "ingredients": [
+      "120g gluten-free all-purpose flour blend",
+      "45g vanilla whey protein powder",
+      "60g coconut sugar",
+      "1 tsp baking powder (gluten-free)",
+      "1/4 tsp salt",
+      "1 large egg",
+      "120ml unsweetened almond milk",
+      "30ml coconut oil, melted",
+      "1 tsp vanilla extract",
+      "For glaze: 60g powdered sugar + 1 tbsp almond milk"
+    ],
+    "instructions": [
+      {
+        "step": "Preheat and Prep",
+        "text": "Preheat oven to 175\u00b0C (350\u00b0F). Grease a donut pan with cooking spray."
+      },
+      {
+        "step": "Mix Dry Ingredients",
+        "text": "In a bowl, whisk together the gluten-free flour, protein powder, coconut sugar, baking powder, and salt."
+      },
+      {
+        "step": "Mix Wet Ingredients",
+        "text": "In another bowl, whisk the egg, almond milk, melted coconut oil, and vanilla."
+      },
+      {
+        "step": "Combine and Fill",
+        "text": "Add wet ingredients to dry and mix until just combined. Pipe or spoon batter into donut pan, filling each cavity about 2/3 full."
+      },
+      {
+        "step": "Bake and Glaze",
+        "text": "Bake for 12-15 minutes until a toothpick comes out clean. Cool, then dip in glaze made by whisking powdered sugar and almond milk."
+      }
+    ]
+  },
+  {
+    "id": 101,
+    "slug": "dairy-free-chocolate-glazed-protein-donuts",
+    "title": "Dairy-Free Chocolate Glazed Protein Donuts",
+    "description": "Decadent chocolate donuts with a rich dairy-free chocolate glaze. Made with plant-based protein for a healthier indulgence!",
+    "protein": 10,
+    "calories": 165,
+    "carbs": 22,
+    "fat": 6,
+    "fiber": 3,
+    "sugar": 10,
+    "servingSize": "1 donut",
+    "yield": "8 donuts",
+    "prepTime": "15",
+    "cookTime": "15",
+    "totalTime": "30",
+    "difficulty": "Easy",
+    "category": "Glazed",
+    "tags": [
+      "dairy-free",
+      "chocolate",
+      "glazed",
+      "vegan"
+    ],
+    "methods": [
+      "vegan"
+    ],
+    "image": "dairy-free-chocolate-glazed-protein-donuts.png",
+    "ingredients": [
+      "100g oat flour",
+      "45g chocolate plant-based protein powder",
+      "30g unsweetened cocoa powder",
+      "60g coconut sugar",
+      "1 tsp baking powder",
+      "1/4 tsp salt",
+      "1 flax egg (1 tbsp ground flaxseed + 3 tbsp water)",
+      "120ml oat milk",
+      "30ml coconut oil, melted",
+      "1 tsp vanilla extract",
+      "For glaze: 60g dairy-free chocolate chips + 1 tbsp coconut oil"
+    ],
+    "instructions": [
+      {
+        "step": "Prepare Flax Egg",
+        "text": "Mix ground flaxseed with water and let sit for 5 minutes."
+      },
+      {
+        "step": "Mix Dry Ingredients",
+        "text": "Combine oat flour, protein powder, cocoa powder, coconut sugar, baking powder, and salt."
+      },
+      {
+        "step": "Mix Wet Ingredients",
+        "text": "Whisk together the flax egg, oat milk, melted coconut oil, and vanilla."
+      },
+      {
+        "step": "Bake",
+        "text": "Combine wet and dry ingredients. Fill greased donut pan 2/3 full. Bake at 175\u00b0C (350\u00b0F) for 12-15 minutes."
+      },
+      {
+        "step": "Glaze",
+        "text": "Melt chocolate chips with coconut oil. Dip cooled donuts in the glaze and let set on a wire rack."
+      }
+    ]
   }
 ]

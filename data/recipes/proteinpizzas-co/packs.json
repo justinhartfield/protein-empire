@@ -71,5 +71,25 @@
       "recipe-slug-24",
       "recipe-slug-25"
     ]
+  },
+  {
+    "slug": "gluten-free-dairy-free",
+    "title": "Gluten-Free & Dairy-Free",
+    "description": "A collection of our best gluten-free and dairy-free recipes, perfect for those with dietary restrictions.",
+    "icon": "\ud83e\udd6c",
+    "recipes": [
+      "gluten-free-cauliflower-protein-pizza-crust",
+      "dairy-free-chickpea-flour-protein-pizza"
+    ]
+  },
+  {
+    "slug": "gluten-free-dairy-free",
+    "title": "Gluten-Free & Dairy-Free",
+    "description": "A collection of our best gluten-free and dairy-free recipes, perfect for those with dietary restrictions.",
+    "icon": "\ud83e\udd6c",
+    "recipes": [
+      "gluten-free-cauliflower-protein-pizza-crust",
+      "dairy-free-chickpea-flour-protein-pizza"
+    ]
   }
 ]

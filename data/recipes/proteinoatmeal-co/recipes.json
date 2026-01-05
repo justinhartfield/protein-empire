@@ -1459,6 +1459,128 @@
           "text": "Add remaining fresh berries, honey, and chia seeds."
         }
       ]
+    },
+    {
+      "id": 100,
+      "slug": "gluten-free-certified-oats-protein-oatmeal",
+      "title": "Gluten-Free Certified Oats Protein Oatmeal",
+      "description": "Creamy, comforting protein oatmeal made with certified gluten-free oats. A safe and delicious breakfast for those with celiac disease or gluten sensitivity.",
+      "protein": 25,
+      "calories": 320,
+      "carbs": 35,
+      "fat": 8,
+      "fiber": 6,
+      "sugar": 8,
+      "servingSize": "1 bowl",
+      "yield": "1 serving",
+      "prepTime": "2",
+      "cookTime": "5",
+      "totalTime": "7",
+      "difficulty": "Easy",
+      "category": "Proats (Stovetop)",
+      "tags": [
+        "gluten-free",
+        "certified-oats",
+        "quick",
+        "high-protein"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "gluten-free-certified-oats-protein-oatmeal.png",
+      "ingredients": [
+        "50g certified gluten-free rolled oats",
+        "30g vanilla whey protein powder",
+        "240ml water or milk of choice",
+        "1 tbsp almond butter",
+        "1/2 banana, sliced",
+        "1 tsp honey or maple syrup",
+        "Pinch of cinnamon",
+        "Pinch of salt"
+      ],
+      "instructions": [
+        {
+          "step": "Cook Oats",
+          "text": "In a small pot, bring water and salt to a boil. Add the certified gluten-free oats and reduce heat to medium-low."
+        },
+        {
+          "step": "Simmer",
+          "text": "Cook for 4-5 minutes, stirring occasionally, until oats are creamy and most liquid is absorbed."
+        },
+        {
+          "step": "Add Protein",
+          "text": "Remove from heat and stir in the protein powder until fully incorporated. Add a splash more liquid if needed."
+        },
+        {
+          "step": "Top and Serve",
+          "text": "Transfer to a bowl and top with almond butter, sliced banana, a drizzle of honey, and a sprinkle of cinnamon."
+        },
+        {
+          "step": "Enjoy",
+          "text": "Serve immediately while warm and creamy."
+        }
+      ]
+    },
+    {
+      "id": 101,
+      "slug": "dairy-free-coconut-milk-protein-oatmeal",
+      "title": "Dairy-Free Coconut Milk Protein Oatmeal",
+      "description": "Rich and creamy oatmeal made with coconut milk and plant-based protein. Tropical flavors meet comforting breakfast in this dairy-free bowl.",
+      "protein": 22,
+      "calories": 340,
+      "carbs": 38,
+      "fat": 12,
+      "fiber": 5,
+      "sugar": 10,
+      "servingSize": "1 bowl",
+      "yield": "1 serving",
+      "prepTime": "2",
+      "cookTime": "5",
+      "totalTime": "7",
+      "difficulty": "Easy",
+      "category": "Proats (Stovetop)",
+      "tags": [
+        "dairy-free",
+        "coconut",
+        "tropical",
+        "vegan"
+      ],
+      "methods": [
+        "vegan"
+      ],
+      "image": "dairy-free-coconut-milk-protein-oatmeal.png",
+      "ingredients": [
+        "50g rolled oats",
+        "30g vanilla plant-based protein powder",
+        "180ml full-fat coconut milk",
+        "60ml water",
+        "2 tbsp shredded coconut",
+        "1 tbsp maple syrup",
+        "Fresh mango or pineapple for topping",
+        "Pinch of salt"
+      ],
+      "instructions": [
+        {
+          "step": "Heat Liquids",
+          "text": "In a small pot, combine coconut milk, water, and salt. Bring to a gentle simmer."
+        },
+        {
+          "step": "Add Oats",
+          "text": "Stir in the rolled oats and cook over medium-low heat for 4-5 minutes, stirring frequently."
+        },
+        {
+          "step": "Mix in Protein",
+          "text": "Remove from heat and stir in the plant-based protein powder until smooth and creamy."
+        },
+        {
+          "step": "Add Toppings",
+          "text": "Transfer to a bowl and top with shredded coconut, fresh tropical fruit, and a drizzle of maple syrup."
+        },
+        {
+          "step": "Serve",
+          "text": "Enjoy immediately for the best texture and flavor."
+        }
+      ]
     }
   ]
 }

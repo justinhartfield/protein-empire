@@ -71,5 +71,25 @@
       "recipe-slug-22",
       "recipe-slug-24"
     ]
+  },
+  {
+    "slug": "gluten-free-dairy-free",
+    "title": "Gluten-Free & Dairy-Free",
+    "description": "A collection of our best gluten-free and dairy-free recipes, perfect for those with dietary restrictions.",
+    "icon": "\ud83e\udd6c",
+    "recipes": [
+      "gluten-free-certified-oats-protein-oatmeal",
+      "dairy-free-coconut-milk-protein-oatmeal"
+    ]
+  },
+  {
+    "slug": "gluten-free-dairy-free",
+    "title": "Gluten-Free & Dairy-Free",
+    "description": "A collection of our best gluten-free and dairy-free recipes, perfect for those with dietary restrictions.",
+    "icon": "\ud83e\udd6c",
+    "recipes": [
+      "gluten-free-certified-oats-protein-oatmeal",
+      "dairy-free-coconut-milk-protein-oatmeal"
+    ]
   }
 ]

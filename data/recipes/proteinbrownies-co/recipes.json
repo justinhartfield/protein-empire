@@ -1605,6 +1605,132 @@
           "text": "Let the brownies cool completely before slicing."
         }
       ]
+    },
+    {
+      "id": 100,
+      "slug": "gluten-free-black-bean-protein-brownies",
+      "title": "Gluten-Free Black Bean Protein Brownies",
+      "description": "Fudgy, rich brownies made with black beans for a naturally gluten-free base. You won't believe these decadent treats are packed with protein and fiber!",
+      "protein": 12,
+      "calories": 145,
+      "carbs": 18,
+      "fat": 6,
+      "fiber": 5,
+      "sugar": 8,
+      "servingSize": "1 brownie",
+      "yield": "12 brownies",
+      "prepTime": "10",
+      "cookTime": "25",
+      "totalTime": "35",
+      "difficulty": "Easy",
+      "category": "Brownies",
+      "tags": [
+        "gluten-free",
+        "black-bean",
+        "fudgy",
+        "high-fiber"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "gluten-free-black-bean-protein-brownies.png",
+      "ingredients": [
+        "400g canned black beans, drained and rinsed",
+        "60g chocolate whey protein powder",
+        "45g unsweetened cocoa powder",
+        "80ml maple syrup",
+        "60g nut butter of choice",
+        "2 large eggs",
+        "1 tsp vanilla extract",
+        "1/2 tsp baking powder",
+        "Pinch of salt",
+        "60g dark chocolate chips"
+      ],
+      "instructions": [
+        {
+          "step": "Preheat and Prep",
+          "text": "Preheat oven to 175\u00b0C (350\u00b0F). Line an 8x8 inch baking pan with parchment paper."
+        },
+        {
+          "step": "Blend Base",
+          "text": "Add black beans, eggs, maple syrup, nut butter, and vanilla to a food processor. Blend until completely smooth."
+        },
+        {
+          "step": "Add Dry Ingredients",
+          "text": "Add the protein powder, cocoa powder, baking powder, and salt. Blend until combined."
+        },
+        {
+          "step": "Fold and Pour",
+          "text": "Fold in the chocolate chips. Pour batter into the prepared pan and spread evenly."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake for 22-25 minutes until set but still slightly fudgy in the center. Cool completely before cutting into 12 brownies."
+        }
+      ]
+    },
+    {
+      "id": 101,
+      "slug": "dairy-free-avocado-protein-brownies",
+      "title": "Dairy-Free Avocado Protein Brownies",
+      "description": "Ultra-fudgy dairy-free brownies made with avocado for healthy fats and incredible texture. No butter, no milk, all delicious!",
+      "protein": 10,
+      "calories": 155,
+      "carbs": 16,
+      "fat": 8,
+      "fiber": 4,
+      "sugar": 9,
+      "servingSize": "1 brownie",
+      "yield": "12 brownies",
+      "prepTime": "10",
+      "cookTime": "25",
+      "totalTime": "35",
+      "difficulty": "Easy",
+      "category": "Brownies",
+      "tags": [
+        "dairy-free",
+        "avocado",
+        "fudgy",
+        "healthy-fats"
+      ],
+      "methods": [
+        "vegan"
+      ],
+      "image": "dairy-free-avocado-protein-brownies.png",
+      "ingredients": [
+        "1 large ripe avocado (about 150g flesh)",
+        "60g chocolate plant-based protein powder",
+        "45g unsweetened cocoa powder",
+        "100g coconut sugar",
+        "60ml unsweetened almond milk",
+        "2 flax eggs (2 tbsp ground flaxseed + 6 tbsp water)",
+        "1 tsp vanilla extract",
+        "1/2 tsp baking soda",
+        "Pinch of salt",
+        "60g dairy-free chocolate chips"
+      ],
+      "instructions": [
+        {
+          "step": "Prepare Flax Eggs",
+          "text": "Mix ground flaxseed with water and let sit for 5 minutes until gel-like."
+        },
+        {
+          "step": "Blend Avocado",
+          "text": "In a food processor, blend the avocado until completely smooth with no lumps."
+        },
+        {
+          "step": "Mix Wet Ingredients",
+          "text": "Add the coconut sugar, almond milk, flax eggs, and vanilla to the avocado. Blend until smooth."
+        },
+        {
+          "step": "Add Dry Ingredients",
+          "text": "Add protein powder, cocoa powder, baking soda, and salt. Blend until combined. Fold in chocolate chips."
+        },
+        {
+          "step": "Bake",
+          "text": "Pour into a parchment-lined 8x8 pan. Bake at 175\u00b0C (350\u00b0F) for 22-25 minutes. Cool completely before slicing."
+        }
+      ]
     }
   ]
 }

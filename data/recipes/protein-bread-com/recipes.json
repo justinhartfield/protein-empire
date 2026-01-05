@@ -1600,6 +1600,127 @@
           "text": "Cool on a wire rack."
         }
       ]
+    },
+    {
+      "id": 100,
+      "slug": "gluten-free-almond-flour-protein-bread",
+      "title": "Gluten-Free Almond Flour Protein Bread",
+      "description": "A soft, fluffy gluten-free bread made with almond flour and protein powder. Perfect for sandwiches, toast, or enjoying on its own. No gluten, all flavor!",
+      "protein": 18,
+      "calories": 165,
+      "carbs": 8,
+      "fat": 11,
+      "fiber": 3,
+      "sugar": 2,
+      "servingSize": "1 slice",
+      "yield": "12 slices",
+      "prepTime": "10",
+      "cookTime": "45",
+      "totalTime": "55",
+      "difficulty": "Easy",
+      "category": "Loaves",
+      "tags": [
+        "gluten-free",
+        "almond-flour",
+        "high-protein",
+        "low-carb"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "gluten-free-almond-flour-protein-bread.png",
+      "ingredients": [
+        "200g almond flour",
+        "60g unflavored whey protein powder",
+        "4 large eggs",
+        "60ml olive oil",
+        "1 tsp baking powder (gluten-free)",
+        "1/2 tsp salt",
+        "1 tbsp apple cider vinegar"
+      ],
+      "instructions": [
+        {
+          "step": "Preheat Oven",
+          "text": "Preheat your oven to 175\u00b0C (350\u00b0F) and line a 9x5 inch loaf pan with parchment paper."
+        },
+        {
+          "step": "Mix Dry Ingredients",
+          "text": "In a large bowl, whisk together the almond flour, protein powder, baking powder, and salt."
+        },
+        {
+          "step": "Add Wet Ingredients",
+          "text": "Add the eggs, olive oil, and apple cider vinegar to the dry ingredients. Mix until a smooth batter forms."
+        },
+        {
+          "step": "Pour and Bake",
+          "text": "Pour the batter into the prepared loaf pan and smooth the top. Bake for 40-45 minutes until golden brown and a toothpick comes out clean."
+        },
+        {
+          "step": "Cool and Slice",
+          "text": "Let the bread cool in the pan for 10 minutes, then transfer to a wire rack. Slice and serve once completely cooled."
+        }
+      ]
+    },
+    {
+      "id": 101,
+      "slug": "dairy-free-oat-protein-sandwich-loaf",
+      "title": "Dairy-Free Oat Protein Sandwich Loaf",
+      "description": "A hearty, dairy-free sandwich bread made with oat flour and plant-based protein. Soft, sliceable, and perfect for your favorite sandwiches.",
+      "protein": 15,
+      "calories": 145,
+      "carbs": 18,
+      "fat": 5,
+      "fiber": 3,
+      "sugar": 3,
+      "servingSize": "1 slice",
+      "yield": "14 slices",
+      "prepTime": "15",
+      "cookTime": "50",
+      "totalTime": "65",
+      "difficulty": "Medium",
+      "category": "Loaves",
+      "tags": [
+        "dairy-free",
+        "vegan-option",
+        "oat-flour",
+        "sandwich-bread"
+      ],
+      "methods": [
+        "vegan"
+      ],
+      "image": "dairy-free-oat-protein-sandwich-loaf.png",
+      "ingredients": [
+        "200g certified gluten-free oat flour",
+        "60g vanilla plant-based protein powder",
+        "240ml unsweetened oat milk",
+        "60ml coconut oil, melted",
+        "2 tbsp maple syrup",
+        "1 packet (7g) instant yeast",
+        "1 tsp salt",
+        "2 flax eggs (2 tbsp ground flaxseed + 6 tbsp water)"
+      ],
+      "instructions": [
+        {
+          "step": "Prepare Flax Eggs",
+          "text": "Mix ground flaxseed with water and let sit for 5 minutes until gel-like."
+        },
+        {
+          "step": "Activate Yeast",
+          "text": "Warm the oat milk to 110\u00b0F (43\u00b0C), add maple syrup and yeast. Let sit for 5 minutes until foamy."
+        },
+        {
+          "step": "Mix Dough",
+          "text": "Combine oat flour, protein powder, and salt. Add the yeast mixture, flax eggs, and melted coconut oil. Mix until a sticky dough forms."
+        },
+        {
+          "step": "Rise",
+          "text": "Cover the dough and let rise in a warm place for 45 minutes until doubled in size."
+        },
+        {
+          "step": "Bake",
+          "text": "Transfer to a greased loaf pan, let rise another 20 minutes. Bake at 175\u00b0C (350\u00b0F) for 45-50 minutes until golden and hollow-sounding when tapped."
+        }
+      ]
     }
   ]
 }

@@ -1421,6 +1421,127 @@
           "text": "Refrigerate 30 minutes for best texture."
         }
       ]
+    },
+    {
+      "id": 100,
+      "slug": "gluten-free-sunflower-seed-protein-bites",
+      "title": "Gluten-Free Sunflower Seed Protein Bites",
+      "description": "Nut-free and gluten-free protein bites made with sunflower seed butter. Perfect for those with allergies who still want a delicious, protein-packed snack.",
+      "protein": 8,
+      "calories": 95,
+      "carbs": 10,
+      "fat": 5,
+      "fiber": 2,
+      "sugar": 5,
+      "servingSize": "2 bites",
+      "yield": "20 bites",
+      "prepTime": "15",
+      "cookTime": "0",
+      "totalTime": "45",
+      "difficulty": "Easy",
+      "category": "Nut-Free",
+      "tags": [
+        "gluten-free",
+        "nut-free",
+        "sunflower-seed",
+        "allergy-friendly"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "gluten-free-sunflower-seed-protein-bites.png",
+      "ingredients": [
+        "60g vanilla whey protein powder",
+        "100g sunflower seed butter",
+        "60ml honey",
+        "80g certified gluten-free rolled oats",
+        "30g mini chocolate chips (optional)",
+        "1 tsp vanilla extract",
+        "Pinch of salt"
+      ],
+      "instructions": [
+        {
+          "step": "Mix Ingredients",
+          "text": "In a large bowl, combine all ingredients and mix until a thick, uniform dough forms."
+        },
+        {
+          "step": "Chill Dough",
+          "text": "Refrigerate the dough for 15 minutes to make it easier to roll."
+        },
+        {
+          "step": "Roll Bites",
+          "text": "Using a tablespoon, scoop and roll the dough into 20 small balls."
+        },
+        {
+          "step": "Set",
+          "text": "Place the bites on a parchment-lined tray and refrigerate for at least 30 minutes."
+        },
+        {
+          "step": "Store",
+          "text": "Store in an airtight container in the refrigerator for up to 2 weeks or freeze for up to 3 months."
+        }
+      ]
+    },
+    {
+      "id": 101,
+      "slug": "dairy-free-tahini-date-protein-bites",
+      "title": "Dairy-Free Tahini Date Protein Bites",
+      "description": "Naturally sweetened with dates and made creamy with tahini, these dairy-free protein bites are a wholesome, Middle Eastern-inspired treat.",
+      "protein": 7,
+      "calories": 85,
+      "carbs": 12,
+      "fat": 4,
+      "fiber": 2,
+      "sugar": 8,
+      "servingSize": "2 bites",
+      "yield": "18 bites",
+      "prepTime": "10",
+      "cookTime": "0",
+      "totalTime": "40",
+      "difficulty": "Easy",
+      "category": "Vegan",
+      "tags": [
+        "dairy-free",
+        "vegan",
+        "tahini",
+        "date-sweetened"
+      ],
+      "methods": [
+        "vegan"
+      ],
+      "image": "dairy-free-tahini-date-protein-bites.png",
+      "ingredients": [
+        "150g Medjool dates, pitted",
+        "60g vanilla plant-based protein powder",
+        "60g tahini",
+        "40g rolled oats",
+        "1 tbsp cocoa powder (optional)",
+        "1/2 tsp cinnamon",
+        "Pinch of salt",
+        "Sesame seeds for rolling"
+      ],
+      "instructions": [
+        {
+          "step": "Process Dates",
+          "text": "Add dates to a food processor and pulse until they form a sticky paste."
+        },
+        {
+          "step": "Add Remaining Ingredients",
+          "text": "Add the protein powder, tahini, oats, cocoa powder, cinnamon, and salt. Process until well combined."
+        },
+        {
+          "step": "Roll Bites",
+          "text": "Roll the mixture into 18 small balls using your hands."
+        },
+        {
+          "step": "Coat",
+          "text": "Roll each bite in sesame seeds to coat."
+        },
+        {
+          "step": "Chill and Store",
+          "text": "Refrigerate for 30 minutes before serving. Store in the refrigerator for up to 2 weeks."
+        }
+      ]
     }
   ]
 }

@@ -1481,5 +1481,249 @@
         "text": "Drizzle the glaze over the warm waffles and top with extra sprinkles."
       }
     ]
+  },
+  {
+    "id": 100,
+    "slug": "gluten-free-buckwheat-protein-pancakes",
+    "title": "Gluten-Free Buckwheat Protein Pancakes",
+    "description": "Hearty, nutty-flavored pancakes made with naturally gluten-free buckwheat flour. Despite its name, buckwheat contains no wheat or gluten!",
+    "protein": 22,
+    "calories": 195,
+    "carbs": 20,
+    "fat": 6,
+    "fiber": 4,
+    "sugar": 5,
+    "servingSize": "1 serving",
+    "yield": "4 pancakes",
+    "prepTime": "5",
+    "cookTime": "10",
+    "totalTime": "15",
+    "difficulty": "Easy",
+    "category": "Pancakes",
+    "tags": [
+      "gluten-free",
+      "buckwheat",
+      "hearty",
+      "nutty"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "gluten-free-buckwheat-protein-pancakes.png",
+    "ingredients": [
+      "60g buckwheat flour",
+      "30g vanilla whey protein powder",
+      "1 large egg",
+      "120ml unsweetened almond milk",
+      "1 tsp baking powder (gluten-free)",
+      "1 tbsp maple syrup",
+      "1/2 tsp vanilla extract",
+      "Pinch of salt"
+    ],
+    "instructions": [
+      {
+        "step": "Mix Dry Ingredients",
+        "text": "In a medium bowl, whisk together the buckwheat flour, protein powder, baking powder, and salt."
+      },
+      {
+        "step": "Mix Wet Ingredients",
+        "text": "In a separate bowl, whisk the egg, almond milk, maple syrup, and vanilla extract."
+      },
+      {
+        "step": "Combine",
+        "text": "Pour the wet ingredients into the dry and stir until just combined. Don't overmix."
+      },
+      {
+        "step": "Cook",
+        "text": "Heat a non-stick skillet over medium heat. Pour 1/4 cup batter per pancake and cook for 2-3 minutes per side until golden."
+      },
+      {
+        "step": "Serve",
+        "text": "Serve warm with fresh berries, a drizzle of maple syrup, and a dollop of Greek yogurt."
+      }
+    ]
+  },
+  {
+    "id": 101,
+    "slug": "dairy-free-banana-oat-protein-pancakes",
+    "title": "Dairy-Free Banana Oat Protein Pancakes",
+    "description": "Fluffy, naturally sweetened pancakes made with banana, oats, and plant-based protein. No dairy needed for these delicious breakfast favorites!",
+    "protein": 18,
+    "calories": 185,
+    "carbs": 24,
+    "fat": 5,
+    "fiber": 4,
+    "sugar": 8,
+    "servingSize": "1 serving",
+    "yield": "4 pancakes",
+    "prepTime": "5",
+    "cookTime": "10",
+    "totalTime": "15",
+    "difficulty": "Easy",
+    "category": "Pancakes",
+    "tags": [
+      "dairy-free",
+      "banana",
+      "oat",
+      "vegan"
+    ],
+    "methods": [
+      "vegan"
+    ],
+    "image": "dairy-free-banana-oat-protein-pancakes.png",
+    "ingredients": [
+      "1 ripe banana",
+      "50g rolled oats",
+      "30g vanilla plant-based protein powder",
+      "120ml oat milk",
+      "1 flax egg (1 tbsp ground flaxseed + 3 tbsp water)",
+      "1 tsp baking powder",
+      "1/2 tsp cinnamon",
+      "1/2 tsp vanilla extract"
+    ],
+    "instructions": [
+      {
+        "step": "Prepare Flax Egg",
+        "text": "Mix ground flaxseed with water and let sit for 5 minutes until gel-like."
+      },
+      {
+        "step": "Blend Batter",
+        "text": "Add banana, oats, protein powder, oat milk, flax egg, baking powder, cinnamon, and vanilla to a blender. Blend until smooth."
+      },
+      {
+        "step": "Rest Batter",
+        "text": "Let the batter rest for 5 minutes to thicken slightly."
+      },
+      {
+        "step": "Cook Pancakes",
+        "text": "Heat a non-stick skillet over medium heat. Pour 1/4 cup batter per pancake. Cook 2-3 minutes per side until golden."
+      },
+      {
+        "step": "Serve",
+        "text": "Top with fresh fruit, nut butter, and a drizzle of maple syrup."
+      }
+    ]
+  },
+  {
+    "id": 100,
+    "slug": "gluten-free-buckwheat-protein-pancakes",
+    "title": "Gluten-Free Buckwheat Protein Pancakes",
+    "description": "Hearty, nutty-flavored pancakes made with naturally gluten-free buckwheat flour. Despite its name, buckwheat contains no wheat or gluten!",
+    "protein": 22,
+    "calories": 195,
+    "carbs": 20,
+    "fat": 6,
+    "fiber": 4,
+    "sugar": 5,
+    "servingSize": "1 serving",
+    "yield": "4 pancakes",
+    "prepTime": "5",
+    "cookTime": "10",
+    "totalTime": "15",
+    "difficulty": "Easy",
+    "category": "Pancakes",
+    "tags": [
+      "gluten-free",
+      "buckwheat",
+      "hearty",
+      "nutty"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "gluten-free-buckwheat-protein-pancakes.png",
+    "ingredients": [
+      "60g buckwheat flour",
+      "30g vanilla whey protein powder",
+      "1 large egg",
+      "120ml unsweetened almond milk",
+      "1 tsp baking powder (gluten-free)",
+      "1 tbsp maple syrup",
+      "1/2 tsp vanilla extract",
+      "Pinch of salt"
+    ],
+    "instructions": [
+      {
+        "step": "Mix Dry Ingredients",
+        "text": "In a medium bowl, whisk together the buckwheat flour, protein powder, baking powder, and salt."
+      },
+      {
+        "step": "Mix Wet Ingredients",
+        "text": "In a separate bowl, whisk the egg, almond milk, maple syrup, and vanilla extract."
+      },
+      {
+        "step": "Combine",
+        "text": "Pour the wet ingredients into the dry and stir until just combined. Don't overmix."
+      },
+      {
+        "step": "Cook",
+        "text": "Heat a non-stick skillet over medium heat. Pour 1/4 cup batter per pancake and cook for 2-3 minutes per side until golden."
+      },
+      {
+        "step": "Serve",
+        "text": "Serve warm with fresh berries, a drizzle of maple syrup, and a dollop of Greek yogurt."
+      }
+    ]
+  },
+  {
+    "id": 101,
+    "slug": "dairy-free-banana-oat-protein-pancakes",
+    "title": "Dairy-Free Banana Oat Protein Pancakes",
+    "description": "Fluffy, naturally sweetened pancakes made with banana, oats, and plant-based protein. No dairy needed for these delicious breakfast favorites!",
+    "protein": 18,
+    "calories": 185,
+    "carbs": 24,
+    "fat": 5,
+    "fiber": 4,
+    "sugar": 8,
+    "servingSize": "1 serving",
+    "yield": "4 pancakes",
+    "prepTime": "5",
+    "cookTime": "10",
+    "totalTime": "15",
+    "difficulty": "Easy",
+    "category": "Pancakes",
+    "tags": [
+      "dairy-free",
+      "banana",
+      "oat",
+      "vegan"
+    ],
+    "methods": [
+      "vegan"
+    ],
+    "image": "dairy-free-banana-oat-protein-pancakes.png",
+    "ingredients": [
+      "1 ripe banana",
+      "50g rolled oats",
+      "30g vanilla plant-based protein powder",
+      "120ml oat milk",
+      "1 flax egg (1 tbsp ground flaxseed + 3 tbsp water)",
+      "1 tsp baking powder",
+      "1/2 tsp cinnamon",
+      "1/2 tsp vanilla extract"
+    ],
+    "instructions": [
+      {
+        "step": "Prepare Flax Egg",
+        "text": "Mix ground flaxseed with water and let sit for 5 minutes until gel-like."
+      },
+      {
+        "step": "Blend Batter",
+        "text": "Add banana, oats, protein powder, oat milk, flax egg, baking powder, cinnamon, and vanilla to a blender. Blend until smooth."
+      },
+      {
+        "step": "Rest Batter",
+        "text": "Let the batter rest for 5 minutes to thicken slightly."
+      },
+      {
+        "step": "Cook Pancakes",
+        "text": "Heat a non-stick skillet over medium heat. Pour 1/4 cup batter per pancake. Cook 2-3 minutes per side until golden."
+      },
+      {
+        "step": "Serve",
+        "text": "Top with fresh fruit, nut butter, and a drizzle of maple syrup."
+      }
+    ]
   }
 ]

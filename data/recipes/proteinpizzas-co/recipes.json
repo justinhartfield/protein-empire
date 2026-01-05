@@ -1475,6 +1475,129 @@
           "text": "Arrange berries on top and drizzle with melted chocolate."
         }
       ]
+    },
+    {
+      "id": 100,
+      "slug": "gluten-free-cauliflower-protein-pizza-crust",
+      "title": "Gluten-Free Cauliflower Protein Pizza Crust",
+      "description": "A crispy, delicious pizza crust made from cauliflower and protein powder. Low-carb, gluten-free, and packed with vegetables!",
+      "protein": 20,
+      "calories": 180,
+      "carbs": 12,
+      "fat": 10,
+      "fiber": 4,
+      "sugar": 4,
+      "servingSize": "1/2 pizza",
+      "yield": "1 large pizza",
+      "prepTime": "20",
+      "cookTime": "25",
+      "totalTime": "45",
+      "difficulty": "Medium",
+      "category": "Veggie-Based Crusts",
+      "tags": [
+        "gluten-free",
+        "cauliflower",
+        "low-carb",
+        "keto-friendly"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "gluten-free-cauliflower-protein-pizza-crust.png",
+      "ingredients": [
+        "500g cauliflower florets (about 1 medium head)",
+        "60g unflavored whey protein powder",
+        "1 large egg",
+        "60g shredded mozzarella cheese",
+        "1 tsp Italian seasoning",
+        "1/2 tsp garlic powder",
+        "1/4 tsp salt",
+        "Your favorite pizza toppings"
+      ],
+      "instructions": [
+        {
+          "step": "Rice Cauliflower",
+          "text": "Pulse cauliflower in a food processor until it resembles rice. Microwave for 4 minutes, then let cool."
+        },
+        {
+          "step": "Remove Moisture",
+          "text": "Place cauliflower in a clean kitchen towel and squeeze out as much moisture as possible. This is crucial for a crispy crust!"
+        },
+        {
+          "step": "Mix Dough",
+          "text": "In a bowl, combine the dried cauliflower, protein powder, egg, mozzarella, Italian seasoning, garlic powder, and salt. Mix well."
+        },
+        {
+          "step": "Shape and Bake",
+          "text": "Press the mixture onto a parchment-lined baking sheet into a 12-inch circle. Bake at 220\u00b0C (425\u00b0F) for 15-18 minutes until golden."
+        },
+        {
+          "step": "Add Toppings",
+          "text": "Add your favorite sauce and toppings. Return to oven for 8-10 minutes until cheese is melted and bubbly."
+        }
+      ]
+    },
+    {
+      "id": 101,
+      "slug": "dairy-free-chickpea-flour-protein-pizza",
+      "title": "Dairy-Free Chickpea Flour Protein Pizza",
+      "description": "A crispy, protein-rich pizza crust made with chickpea flour. Naturally dairy-free and packed with plant-based protein!",
+      "protein": 18,
+      "calories": 195,
+      "carbs": 22,
+      "fat": 6,
+      "fiber": 5,
+      "sugar": 3,
+      "servingSize": "1/2 pizza",
+      "yield": "1 large pizza",
+      "prepTime": "15",
+      "cookTime": "20",
+      "totalTime": "35",
+      "difficulty": "Easy",
+      "category": "Veggie-Based Crusts",
+      "tags": [
+        "dairy-free",
+        "chickpea",
+        "vegan",
+        "high-fiber"
+      ],
+      "methods": [
+        "vegan"
+      ],
+      "image": "dairy-free-chickpea-flour-protein-pizza.png",
+      "ingredients": [
+        "150g chickpea flour (besan)",
+        "30g unflavored plant-based protein powder",
+        "240ml warm water",
+        "2 tbsp olive oil",
+        "1 tsp Italian seasoning",
+        "1/2 tsp garlic powder",
+        "1/2 tsp salt",
+        "1/4 tsp baking powder",
+        "Dairy-free pizza toppings of choice"
+      ],
+      "instructions": [
+        {
+          "step": "Mix Batter",
+          "text": "Whisk together chickpea flour, protein powder, Italian seasoning, garlic powder, salt, and baking powder."
+        },
+        {
+          "step": "Add Liquids",
+          "text": "Add warm water and 1 tbsp olive oil. Whisk until smooth. Let rest for 10 minutes."
+        },
+        {
+          "step": "Cook Crust",
+          "text": "Heat remaining oil in a 12-inch oven-safe skillet over medium heat. Pour in batter and cook for 5 minutes until bottom is set."
+        },
+        {
+          "step": "Broil",
+          "text": "Transfer skillet to oven and broil for 3-4 minutes until top is golden and crust is cooked through."
+        },
+        {
+          "step": "Top and Serve",
+          "text": "Add your favorite dairy-free sauce, vegetables, and vegan cheese. Broil for 2-3 more minutes until toppings are heated."
+        }
+      ]
     }
   ]
 }

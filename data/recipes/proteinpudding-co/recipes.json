@@ -1418,5 +1418,247 @@
         "text": "Top each parfait with a dollop of whipped cream and a few more cherries before serving."
       }
     ]
+  },
+  {
+    "id": 100,
+    "slug": "gluten-free-chocolate-chia-protein-pudding",
+    "title": "Gluten-Free Chocolate Chia Protein Pudding",
+    "description": "A naturally gluten-free pudding made with chia seeds and chocolate protein. Creamy, chocolatey, and packed with omega-3s and protein!",
+    "protein": 20,
+    "calories": 220,
+    "carbs": 18,
+    "fat": 10,
+    "fiber": 8,
+    "sugar": 6,
+    "servingSize": "1 serving",
+    "yield": "2 servings",
+    "prepTime": "5",
+    "cookTime": "0",
+    "totalTime": "245",
+    "difficulty": "Easy",
+    "category": "Chia Pudding",
+    "tags": [
+      "gluten-free",
+      "chia",
+      "chocolate",
+      "omega-3"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "gluten-free-chocolate-chia-protein-pudding.png",
+    "ingredients": [
+      "60g chia seeds",
+      "30g chocolate whey protein powder",
+      "15g unsweetened cocoa powder",
+      "360ml unsweetened almond milk",
+      "2 tbsp maple syrup or sweetener of choice",
+      "1/2 tsp vanilla extract",
+      "Pinch of salt",
+      "Fresh berries for topping"
+    ],
+    "instructions": [
+      {
+        "step": "Mix Base",
+        "text": "In a bowl or jar, whisk together the almond milk, protein powder, cocoa powder, maple syrup, vanilla, and salt until smooth."
+      },
+      {
+        "step": "Add Chia Seeds",
+        "text": "Stir in the chia seeds until evenly distributed."
+      },
+      {
+        "step": "First Stir",
+        "text": "After 5 minutes, stir again to prevent clumping."
+      },
+      {
+        "step": "Refrigerate",
+        "text": "Cover and refrigerate for at least 4 hours or overnight until thick and pudding-like."
+      },
+      {
+        "step": "Serve",
+        "text": "Divide between two bowls and top with fresh berries. Store leftovers in the refrigerator for up to 5 days."
+      }
+    ]
+  },
+  {
+    "id": 101,
+    "slug": "dairy-free-vanilla-coconut-protein-pudding",
+    "title": "Dairy-Free Vanilla Coconut Protein Pudding",
+    "description": "A silky smooth dairy-free pudding made with coconut milk and vanilla protein. Rich, creamy, and completely plant-based!",
+    "protein": 18,
+    "calories": 195,
+    "carbs": 15,
+    "fat": 10,
+    "fiber": 2,
+    "sugar": 8,
+    "servingSize": "1 serving",
+    "yield": "4 servings",
+    "prepTime": "10",
+    "cookTime": "10",
+    "totalTime": "130",
+    "difficulty": "Easy",
+    "category": "Classic Pudding",
+    "tags": [
+      "dairy-free",
+      "vanilla",
+      "coconut",
+      "vegan"
+    ],
+    "methods": [
+      "vegan"
+    ],
+    "image": "dairy-free-vanilla-coconut-protein-pudding.png",
+    "ingredients": [
+      "400ml full-fat coconut milk",
+      "60g vanilla plant-based protein powder",
+      "30g cornstarch",
+      "60g coconut sugar",
+      "1 tsp vanilla extract",
+      "Pinch of salt",
+      "Toasted coconut flakes for topping"
+    ],
+    "instructions": [
+      {
+        "step": "Mix Dry Ingredients",
+        "text": "In a medium saucepan, whisk together the protein powder, cornstarch, coconut sugar, and salt."
+      },
+      {
+        "step": "Add Coconut Milk",
+        "text": "Gradually whisk in the coconut milk until smooth with no lumps."
+      },
+      {
+        "step": "Cook",
+        "text": "Place over medium heat and cook, whisking constantly, until the mixture thickens and begins to bubble, about 8-10 minutes."
+      },
+      {
+        "step": "Add Vanilla",
+        "text": "Remove from heat and stir in the vanilla extract."
+      },
+      {
+        "step": "Chill and Serve",
+        "text": "Divide among 4 serving dishes. Press plastic wrap directly onto the surface to prevent a skin. Refrigerate for at least 2 hours. Top with toasted coconut before serving."
+      }
+    ]
+  },
+  {
+    "id": 100,
+    "slug": "gluten-free-chocolate-chia-protein-pudding",
+    "title": "Gluten-Free Chocolate Chia Protein Pudding",
+    "description": "A naturally gluten-free pudding made with chia seeds and chocolate protein. Creamy, chocolatey, and packed with omega-3s and protein!",
+    "protein": 20,
+    "calories": 220,
+    "carbs": 18,
+    "fat": 10,
+    "fiber": 8,
+    "sugar": 6,
+    "servingSize": "1 serving",
+    "yield": "2 servings",
+    "prepTime": "5",
+    "cookTime": "0",
+    "totalTime": "245",
+    "difficulty": "Easy",
+    "category": "Chia Pudding",
+    "tags": [
+      "gluten-free",
+      "chia",
+      "chocolate",
+      "omega-3"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "gluten-free-chocolate-chia-protein-pudding.png",
+    "ingredients": [
+      "60g chia seeds",
+      "30g chocolate whey protein powder",
+      "15g unsweetened cocoa powder",
+      "360ml unsweetened almond milk",
+      "2 tbsp maple syrup or sweetener of choice",
+      "1/2 tsp vanilla extract",
+      "Pinch of salt",
+      "Fresh berries for topping"
+    ],
+    "instructions": [
+      {
+        "step": "Mix Base",
+        "text": "In a bowl or jar, whisk together the almond milk, protein powder, cocoa powder, maple syrup, vanilla, and salt until smooth."
+      },
+      {
+        "step": "Add Chia Seeds",
+        "text": "Stir in the chia seeds until evenly distributed."
+      },
+      {
+        "step": "First Stir",
+        "text": "After 5 minutes, stir again to prevent clumping."
+      },
+      {
+        "step": "Refrigerate",
+        "text": "Cover and refrigerate for at least 4 hours or overnight until thick and pudding-like."
+      },
+      {
+        "step": "Serve",
+        "text": "Divide between two bowls and top with fresh berries. Store leftovers in the refrigerator for up to 5 days."
+      }
+    ]
+  },
+  {
+    "id": 101,
+    "slug": "dairy-free-vanilla-coconut-protein-pudding",
+    "title": "Dairy-Free Vanilla Coconut Protein Pudding",
+    "description": "A silky smooth dairy-free pudding made with coconut milk and vanilla protein. Rich, creamy, and completely plant-based!",
+    "protein": 18,
+    "calories": 195,
+    "carbs": 15,
+    "fat": 10,
+    "fiber": 2,
+    "sugar": 8,
+    "servingSize": "1 serving",
+    "yield": "4 servings",
+    "prepTime": "10",
+    "cookTime": "10",
+    "totalTime": "130",
+    "difficulty": "Easy",
+    "category": "Classic Pudding",
+    "tags": [
+      "dairy-free",
+      "vanilla",
+      "coconut",
+      "vegan"
+    ],
+    "methods": [
+      "vegan"
+    ],
+    "image": "dairy-free-vanilla-coconut-protein-pudding.png",
+    "ingredients": [
+      "400ml full-fat coconut milk",
+      "60g vanilla plant-based protein powder",
+      "30g cornstarch",
+      "60g coconut sugar",
+      "1 tsp vanilla extract",
+      "Pinch of salt",
+      "Toasted coconut flakes for topping"
+    ],
+    "instructions": [
+      {
+        "step": "Mix Dry Ingredients",
+        "text": "In a medium saucepan, whisk together the protein powder, cornstarch, coconut sugar, and salt."
+      },
+      {
+        "step": "Add Coconut Milk",
+        "text": "Gradually whisk in the coconut milk until smooth with no lumps."
+      },
+      {
+        "step": "Cook",
+        "text": "Place over medium heat and cook, whisking constantly, until the mixture thickens and begins to bubble, about 8-10 minutes."
+      },
+      {
+        "step": "Add Vanilla",
+        "text": "Remove from heat and stir in the vanilla extract."
+      },
+      {
+        "step": "Chill and Serve",
+        "text": "Divide among 4 serving dishes. Press plastic wrap directly onto the surface to prevent a skin. Refrigerate for at least 2 hours. Top with toasted coconut before serving."
+      }
+    ]
   }
 ]

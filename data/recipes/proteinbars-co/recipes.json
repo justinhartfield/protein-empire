@@ -1550,5 +1550,247 @@
         "text": "Enjoy a unique and healthy protein bar."
       }
     ]
+  },
+  {
+    "id": 100,
+    "slug": "gluten-free-chocolate-peanut-butter-protein-bars",
+    "title": "Gluten-Free Chocolate Peanut Butter Protein Bars",
+    "description": "No-bake, gluten-free protein bars with a rich chocolate peanut butter flavor. Made with certified gluten-free oats and perfect for meal prep.",
+    "protein": 20,
+    "calories": 220,
+    "carbs": 18,
+    "fat": 10,
+    "fiber": 4,
+    "sugar": 6,
+    "servingSize": "1 bar",
+    "yield": "10 bars",
+    "prepTime": "15",
+    "cookTime": "0",
+    "totalTime": "75",
+    "difficulty": "Easy",
+    "category": "No-Bake Bars",
+    "tags": [
+      "gluten-free",
+      "no-bake",
+      "chocolate",
+      "peanut-butter"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "gluten-free-chocolate-peanut-butter-protein-bars.png",
+    "ingredients": [
+      "120g certified gluten-free rolled oats",
+      "60g chocolate whey protein powder",
+      "120g natural peanut butter",
+      "80ml honey or maple syrup",
+      "30g dark chocolate chips (dairy-free optional)",
+      "1 tsp vanilla extract",
+      "Pinch of salt"
+    ],
+    "instructions": [
+      {
+        "step": "Mix Dry Ingredients",
+        "text": "In a large bowl, combine the gluten-free oats, protein powder, and salt."
+      },
+      {
+        "step": "Add Wet Ingredients",
+        "text": "Add the peanut butter, honey, and vanilla extract. Mix until a thick, sticky dough forms."
+      },
+      {
+        "step": "Fold in Chocolate",
+        "text": "Fold in the dark chocolate chips until evenly distributed."
+      },
+      {
+        "step": "Press and Chill",
+        "text": "Press the mixture firmly into an 8x8 inch pan lined with parchment paper. Refrigerate for at least 1 hour."
+      },
+      {
+        "step": "Cut and Store",
+        "text": "Cut into 10 bars. Store in an airtight container in the refrigerator for up to 2 weeks."
+      }
+    ]
+  },
+  {
+    "id": 101,
+    "slug": "dairy-free-coconut-almond-protein-bars",
+    "title": "Dairy-Free Coconut Almond Protein Bars",
+    "description": "Tropical-inspired dairy-free protein bars with coconut, almonds, and plant-based protein. A delicious grab-and-go snack without any dairy.",
+    "protein": 18,
+    "calories": 195,
+    "carbs": 15,
+    "fat": 11,
+    "fiber": 4,
+    "sugar": 7,
+    "servingSize": "1 bar",
+    "yield": "12 bars",
+    "prepTime": "15",
+    "cookTime": "0",
+    "totalTime": "75",
+    "difficulty": "Easy",
+    "category": "No-Bake Bars",
+    "tags": [
+      "dairy-free",
+      "coconut",
+      "almond",
+      "vegan"
+    ],
+    "methods": [
+      "vegan"
+    ],
+    "image": "dairy-free-coconut-almond-protein-bars.png",
+    "ingredients": [
+      "60g vanilla plant-based protein powder",
+      "80g unsweetened shredded coconut",
+      "60g almond butter",
+      "80ml coconut cream",
+      "60ml maple syrup",
+      "40g sliced almonds",
+      "1 tsp vanilla extract",
+      "Pinch of sea salt"
+    ],
+    "instructions": [
+      {
+        "step": "Combine Base",
+        "text": "In a large bowl, mix the protein powder, shredded coconut, and sliced almonds."
+      },
+      {
+        "step": "Add Wet Ingredients",
+        "text": "Add the almond butter, coconut cream, maple syrup, vanilla, and salt. Mix until well combined."
+      },
+      {
+        "step": "Press into Pan",
+        "text": "Line an 8x8 inch pan with parchment paper. Press the mixture firmly and evenly into the pan."
+      },
+      {
+        "step": "Chill",
+        "text": "Refrigerate for at least 1 hour until firm."
+      },
+      {
+        "step": "Slice and Enjoy",
+        "text": "Cut into 12 bars. Store refrigerated in an airtight container for up to 10 days."
+      }
+    ]
+  },
+  {
+    "id": 100,
+    "slug": "gluten-free-chocolate-peanut-butter-protein-bars",
+    "title": "Gluten-Free Chocolate Peanut Butter Protein Bars",
+    "description": "No-bake, gluten-free protein bars with a rich chocolate peanut butter flavor. Made with certified gluten-free oats and perfect for meal prep.",
+    "protein": 20,
+    "calories": 220,
+    "carbs": 18,
+    "fat": 10,
+    "fiber": 4,
+    "sugar": 6,
+    "servingSize": "1 bar",
+    "yield": "10 bars",
+    "prepTime": "15",
+    "cookTime": "0",
+    "totalTime": "75",
+    "difficulty": "Easy",
+    "category": "No-Bake Bars",
+    "tags": [
+      "gluten-free",
+      "no-bake",
+      "chocolate",
+      "peanut-butter"
+    ],
+    "methods": [
+      "whey"
+    ],
+    "image": "gluten-free-chocolate-peanut-butter-protein-bars.png",
+    "ingredients": [
+      "120g certified gluten-free rolled oats",
+      "60g chocolate whey protein powder",
+      "120g natural peanut butter",
+      "80ml honey or maple syrup",
+      "30g dark chocolate chips (dairy-free optional)",
+      "1 tsp vanilla extract",
+      "Pinch of salt"
+    ],
+    "instructions": [
+      {
+        "step": "Mix Dry Ingredients",
+        "text": "In a large bowl, combine the gluten-free oats, protein powder, and salt."
+      },
+      {
+        "step": "Add Wet Ingredients",
+        "text": "Add the peanut butter, honey, and vanilla extract. Mix until a thick, sticky dough forms."
+      },
+      {
+        "step": "Fold in Chocolate",
+        "text": "Fold in the dark chocolate chips until evenly distributed."
+      },
+      {
+        "step": "Press and Chill",
+        "text": "Press the mixture firmly into an 8x8 inch pan lined with parchment paper. Refrigerate for at least 1 hour."
+      },
+      {
+        "step": "Cut and Store",
+        "text": "Cut into 10 bars. Store in an airtight container in the refrigerator for up to 2 weeks."
+      }
+    ]
+  },
+  {
+    "id": 101,
+    "slug": "dairy-free-coconut-almond-protein-bars",
+    "title": "Dairy-Free Coconut Almond Protein Bars",
+    "description": "Tropical-inspired dairy-free protein bars with coconut, almonds, and plant-based protein. A delicious grab-and-go snack without any dairy.",
+    "protein": 18,
+    "calories": 195,
+    "carbs": 15,
+    "fat": 11,
+    "fiber": 4,
+    "sugar": 7,
+    "servingSize": "1 bar",
+    "yield": "12 bars",
+    "prepTime": "15",
+    "cookTime": "0",
+    "totalTime": "75",
+    "difficulty": "Easy",
+    "category": "No-Bake Bars",
+    "tags": [
+      "dairy-free",
+      "coconut",
+      "almond",
+      "vegan"
+    ],
+    "methods": [
+      "vegan"
+    ],
+    "image": "dairy-free-coconut-almond-protein-bars.png",
+    "ingredients": [
+      "60g vanilla plant-based protein powder",
+      "80g unsweetened shredded coconut",
+      "60g almond butter",
+      "80ml coconut cream",
+      "60ml maple syrup",
+      "40g sliced almonds",
+      "1 tsp vanilla extract",
+      "Pinch of sea salt"
+    ],
+    "instructions": [
+      {
+        "step": "Combine Base",
+        "text": "In a large bowl, mix the protein powder, shredded coconut, and sliced almonds."
+      },
+      {
+        "step": "Add Wet Ingredients",
+        "text": "Add the almond butter, coconut cream, maple syrup, vanilla, and salt. Mix until well combined."
+      },
+      {
+        "step": "Press into Pan",
+        "text": "Line an 8x8 inch pan with parchment paper. Press the mixture firmly and evenly into the pan."
+      },
+      {
+        "step": "Chill",
+        "text": "Refrigerate for at least 1 hour until firm."
+      },
+      {
+        "step": "Slice and Enjoy",
+        "text": "Cut into 12 bars. Store refrigerated in an airtight container for up to 10 days."
+      }
+    ]
   }
 ]

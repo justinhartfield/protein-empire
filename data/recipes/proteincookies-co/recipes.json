@@ -1709,6 +1709,130 @@
           "text": "Cool on baking sheet for 5 minutes. Optional: decorate with icing."
         }
       ]
+    },
+    {
+      "id": 100,
+      "slug": "gluten-free-oat-flour-protein-cookies",
+      "title": "Gluten-Free Oat Flour Protein Cookies",
+      "description": "Soft, chewy protein cookies made with certified gluten-free oat flour. Classic chocolate chip flavor that everyone can enjoy!",
+      "protein": 10,
+      "calories": 125,
+      "carbs": 14,
+      "fat": 5,
+      "fiber": 2,
+      "sugar": 6,
+      "servingSize": "1 cookie",
+      "yield": "16 cookies",
+      "prepTime": "10",
+      "cookTime": "12",
+      "totalTime": "22",
+      "difficulty": "Easy",
+      "category": "Cookies",
+      "tags": [
+        "gluten-free",
+        "oat-flour",
+        "chocolate-chip",
+        "chewy"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "image": "gluten-free-oat-flour-protein-cookies.png",
+      "ingredients": [
+        "150g certified gluten-free oat flour",
+        "60g vanilla whey protein powder",
+        "80g coconut sugar",
+        "1 large egg",
+        "80g almond butter",
+        "60ml unsweetened almond milk",
+        "1 tsp vanilla extract",
+        "1/2 tsp baking soda",
+        "Pinch of salt",
+        "80g dark chocolate chips"
+      ],
+      "instructions": [
+        {
+          "step": "Preheat Oven",
+          "text": "Preheat oven to 175\u00b0C (350\u00b0F) and line a baking sheet with parchment paper."
+        },
+        {
+          "step": "Mix Wet Ingredients",
+          "text": "In a large bowl, whisk together the egg, almond butter, almond milk, and vanilla until smooth."
+        },
+        {
+          "step": "Add Dry Ingredients",
+          "text": "Add the oat flour, protein powder, coconut sugar, baking soda, and salt. Mix until a dough forms."
+        },
+        {
+          "step": "Fold in Chips",
+          "text": "Fold in the chocolate chips until evenly distributed."
+        },
+        {
+          "step": "Bake",
+          "text": "Scoop tablespoon-sized balls onto the baking sheet. Flatten slightly. Bake for 10-12 minutes until edges are golden. Cool on pan for 5 minutes."
+        }
+      ]
+    },
+    {
+      "id": 101,
+      "slug": "dairy-free-peanut-butter-protein-cookies",
+      "title": "Dairy-Free Peanut Butter Protein Cookies",
+      "description": "Classic peanut butter cookies made completely dairy-free with plant-based protein. Soft, chewy, and packed with peanut butter flavor!",
+      "protein": 12,
+      "calories": 135,
+      "carbs": 12,
+      "fat": 7,
+      "fiber": 2,
+      "sugar": 6,
+      "servingSize": "1 cookie",
+      "yield": "14 cookies",
+      "prepTime": "10",
+      "cookTime": "10",
+      "totalTime": "20",
+      "difficulty": "Easy",
+      "category": "Cookies",
+      "tags": [
+        "dairy-free",
+        "peanut-butter",
+        "vegan",
+        "classic"
+      ],
+      "methods": [
+        "vegan"
+      ],
+      "image": "dairy-free-peanut-butter-protein-cookies.png",
+      "ingredients": [
+        "180g natural peanut butter",
+        "60g vanilla plant-based protein powder",
+        "80g coconut sugar",
+        "1 flax egg (1 tbsp ground flaxseed + 3 tbsp water)",
+        "60ml maple syrup",
+        "1 tsp vanilla extract",
+        "1/2 tsp baking soda",
+        "Pinch of salt"
+      ],
+      "instructions": [
+        {
+          "step": "Prepare Flax Egg",
+          "text": "Mix ground flaxseed with water and let sit for 5 minutes until gel-like."
+        },
+        {
+          "step": "Mix Ingredients",
+          "text": "In a large bowl, combine peanut butter, coconut sugar, maple syrup, flax egg, and vanilla. Mix until smooth."
+        },
+        {
+          "step": "Add Dry Ingredients",
+          "text": "Add the protein powder, baking soda, and salt. Mix until a thick dough forms."
+        },
+        {
+          "step": "Shape Cookies",
+          "text": "Roll into 14 balls and place on a parchment-lined baking sheet. Flatten with a fork in a crosshatch pattern."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake at 175\u00b0C (350\u00b0F) for 8-10 minutes until edges are set. Cool on pan for 10 minutes before moving."
+        }
+      ]
     }
   ]
 }
