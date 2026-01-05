@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Protein Empire - Marketing Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .sidebar-link.active {
+      background-color: rgba(245, 158, 11, 0.1);
+      border-left-color: #f59e0b;
+    }
+    .metric-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    }
+    .tab-btn.active {
+      border-bottom-color: #f59e0b;
+      color: #f59e0b;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+  <div class="flex">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-white shadow-lg min-h-screen fixed">
+      <div class="p-6 border-b">
+        <h1 class="text-xl font-bold text-gray-800 flex items-center gap-2">
+          <span class="text-2xl">🏰</span>
+          Protein Empire
+        </h1>
+        <p class="text-sm text-gray-500 mt-1">Marketing Dashboard</p>
+      </div>
+      
+      <nav class="p-4">
+        <ul class="space-y-2">
+          <li>
+            <a href="#overview" class="sidebar-link active flex items-center gap-3 px-4 py-3 rounded-lg text-gray-700 hover:bg-amber-50 border-l-4 border-transparent transition-all">
+              <i class="fas fa-chart-line w-5"></i>
+              <span>Overview</span>
+            </a>
+          </li>
+          <li>
+            <a href="#social" class="sidebar-link flex items-center gap-3 px-4 py-3 rounded-lg text-gray-700 hover:bg-amber-50 border-l-4 border-transparent transition-all">
+              <i class="fas fa-share-alt w-5"></i>
+              <span>Social Media</span>
+            </a>
+          </li>
+          <li>
+            <a href="#email" class="sidebar-link flex items-center gap-3 px-4 py-3 rounded-lg text-gray-700 hover:bg-amber-50 border-l-4 border-transparent transition-all">
+              <i class="fas fa-envelope w-5"></i>
+              <span>Email Marketing</span>
+            </a>
+          </li>
+          <li>
+            <a href="#analytics" class="sidebar-link flex items-center gap-3 px-4 py-3 rounded-lg text-gray-700 hover:bg-amber-50 border-l-4 border-transparent transition-all">
+              <i class="fas fa-chart-bar w-5"></i>
+              <span>Analytics</span>
+            </a>
+          </li>
+          <li>
+            <a href="#calendar" class="sidebar-link flex items-center gap-3 px-4 py-3 rounded-lg text-gray-700 hover:bg-amber-50 border-l-4 border-transparent transition-all">
+              <i class="fas fa-calendar-alt w-5"></i>
+              <span>Content Calendar</span>
+            </a>
+          </li>
+          <li>
+            <a href="#sites" class="sidebar-link flex items-center gap-3 px-4 py-3 rounded-lg text-gray-700 hover:bg-amber-50 border-l-4 border-transparent transition-all">
+              <i class="fas fa-globe w-5"></i>
+              <span>Sites</span>
+            </a>
+          </li>
+          <li>
+            <a href="#settings" class="sidebar-link flex items-center gap-3 px-4 py-3 rounded-lg text-gray-700 hover:bg-amber-50 border-l-4 border-transparent transition-all">
+              <i class="fas fa-cog w-5"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      
+      <!-- Site Selector -->
+      <div class="p-4 border-t mt-auto">
+        <label class="text-xs text-gray-500 uppercase tracking-wider">Current Site</label>
+        <select id="site-selector" class="mt-2 w-full px-3 py-2 border rounded-lg text-sm focus:ring-2 focus:ring-amber-500 focus:border-amber-500">
+          <option value="all">All Sites</option>
+          <!-- Sites will be populated dynamically -->
+        </select>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="ml-64 flex-1 p-8">
+      <!-- Header -->
+      <header class="flex justify-between items-center mb-8">
+        <div>
+          <h2 class="text-2xl font-bold text-gray-800" id="page-title">Overview</h2>
+          <p class="text-gray-500" id="page-subtitle">Empire-wide marketing performance</p>
+        </div>
+        <div class="flex items-center gap-4">
+          <select id="date-range" class="px-4 py-2 border rounded-lg text-sm focus:ring-2 focus:ring-amber-500">
+            <option value="7d">Last 7 days</option>
+            <option value="30d" selected>Last 30 days</option>
+            <option value="90d">Last 90 days</option>
+            <option value="ytd">Year to date</option>
+          </select>
+          <button class="px-4 py-2 bg-amber-500 text-white rounded-lg hover:bg-amber-600 transition-colors flex items-center gap-2">
+            <i class="fas fa-download"></i>
+            Export
+          </button>
+        </div>
+      </header>
+
+      <!-- Overview Section -->
+      <section id="overview-section" class="space-y-8">
+        <!-- Metric Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="metric-card bg-white rounded-xl shadow-sm p-6 transition-all duration-200">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="text-sm text-gray-500">Total Users</p>
+                <p class="text-3xl font-bold text-gray-800 mt-1" id="metric-users">12,500</p>
+              </div>
+              <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                <i class="fas fa-users text-blue-600"></i>
+              </div>
+            </div>
+            <div class="mt-4 flex items-center text-sm">
+              <span class="text-green-600 flex items-center">
+                <i class="fas fa-arrow-up mr-1"></i>
+                <span id="metric-users-change">11.6%</span>
+              </span>
+              <span class="text-gray-400 ml-2">vs last period</span>
+            </div>
+          </div>
+
+          <div class="metric-card bg-white rounded-xl shadow-sm p-6 transition-all duration-200">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="text-sm text-gray-500">Email Signups</p>
+                <p class="text-3xl font-bold text-gray-800 mt-1" id="metric-signups">375</p>
+              </div>
+              <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                <i class="fas fa-envelope-open text-green-600"></i>
+              </div>
+            </div>
+            <div class="mt-4 flex items-center text-sm">
+              <span class="text-green-600 flex items-center">
+                <i class="fas fa-arrow-up mr-1"></i>
+                <span id="metric-signups-change">17.2%</span>
+              </span>
+              <span class="text-gray-400 ml-2">vs last period</span>
+            </div>
+          </div>
+
+          <div class="metric-card bg-white rounded-xl shadow-sm p-6 transition-all duration-200">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="text-sm text-gray-500">PDF Downloads</p>
+                <p class="text-3xl font-bold text-gray-800 mt-1" id="metric-downloads">340</p>
+              </div>
+              <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
+                <i class="fas fa-file-pdf text-purple-600"></i>
+              </div>
+            </div>
+            <div class="mt-4 flex items-center text-sm">
+              <span class="text-green-600 flex items-center">
+                <i class="fas fa-arrow-up mr-1"></i>
+                <span id="metric-downloads-change">17.2%</span>
+              </span>
+              <span class="text-gray-400 ml-2">vs last period</span>
+            </div>
+          </div>
+
+          <div class="metric-card bg-white rounded-xl shadow-sm p-6 transition-all duration-200">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="text-sm text-gray-500">Social Engagement</p>
+                <p class="text-3xl font-bold text-gray-800 mt-1" id="metric-engagement">8.2K</p>
+              </div>
+              <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center">
+                <i class="fas fa-heart text-amber-600"></i>
+              </div>
+            </div>
+            <div class="mt-4 flex items-center text-sm">
+              <span class="text-green-600 flex items-center">
+                <i class="fas fa-arrow-up mr-1"></i>
+                <span id="metric-engagement-change">24.5%</span>
+              </span>
+              <span class="text-gray-400 ml-2">vs last period</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Charts Row -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <!-- Traffic Chart -->
+          <div class="bg-white rounded-xl shadow-sm p-6">
+            <h3 class="text-lg font-semibold text-gray-800 mb-4">Traffic by Site</h3>
+            <canvas id="traffic-chart" height="250"></canvas>
+          </div>
+
+          <!-- Traffic Sources -->
+          <div class="bg-white rounded-xl shadow-sm p-6">
+            <h3 class="text-lg font-semibold text-gray-800 mb-4">Traffic Sources</h3>
+            <canvas id="sources-chart" height="250"></canvas>
+          </div>
+        </div>
+
+        <!-- Top Recipes Table -->
+        <div class="bg-white rounded-xl shadow-sm p-6">
+          <div class="flex justify-between items-center mb-4">
+            <h3 class="text-lg font-semibold text-gray-800">Top Performing Recipes</h3>
+            <a href="#" class="text-amber-600 text-sm hover:underline">View all →</a>
+          </div>
+          <div class="overflow-x-auto">
+            <table class="w-full">
+              <thead>
+                <tr class="border-b">
+                  <th class="text-left py-3 px-4 text-sm font-medium text-gray-500">Recipe</th>
+                  <th class="text-left py-3 px-4 text-sm font-medium text-gray-500">Site</th>
+                  <th class="text-right py-3 px-4 text-sm font-medium text-gray-500">Views</th>
+                  <th class="text-right py-3 px-4 text-sm font-medium text-gray-500">Signups</th>
+                  <th class="text-right py-3 px-4 text-sm font-medium text-gray-500">Conv. Rate</th>
+                </tr>
+              </thead>
+              <tbody id="top-recipes-table">
+                <!-- Populated dynamically -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-gradient-to-br from-amber-500 to-orange-500 rounded-xl p-6 text-white">
+            <h3 class="font-semibold mb-2">Generate Social Content</h3>
+            <p class="text-sm opacity-90 mb-4">Create Pinterest pins, Instagram posts, and more for all recipes.</p>
+            <button class="px-4 py-2 bg-white text-amber-600 rounded-lg text-sm font-medium hover:bg-amber-50 transition-colors">
+              Generate Now
+            </button>
+          </div>
+
+          <div class="bg-gradient-to-br from-blue-500 to-indigo-500 rounded-xl p-6 text-white">
+            <h3 class="font-semibold mb-2">Send Newsletter</h3>
+            <p class="text-sm opacity-90 mb-4">Weekly newsletter ready with featured recipes and tips.</p>
+            <button class="px-4 py-2 bg-white text-blue-600 rounded-lg text-sm font-medium hover:bg-blue-50 transition-colors">
+              Preview & Send
+            </button>
+          </div>
+
+          <div class="bg-gradient-to-br from-green-500 to-emerald-500 rounded-xl p-6 text-white">
+            <h3 class="font-semibold mb-2">View Calendar</h3>
+            <p class="text-sm opacity-90 mb-4">See upcoming posts, emails, and content schedule.</p>
+            <button class="px-4 py-2 bg-white text-green-600 rounded-lg text-sm font-medium hover:bg-green-50 transition-colors">
+              Open Calendar
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Social Media Section (hidden by default) -->
+      <section id="social-section" class="hidden space-y-8">
+        <div class="bg-white rounded-xl shadow-sm p-6">
+          <h3 class="text-lg font-semibold text-gray-800 mb-4">Social Media Management</h3>
+          
+          <!-- Platform Tabs -->
+          <div class="border-b mb-6">
+            <div class="flex gap-6">
+              <button class="tab-btn active pb-3 border-b-2 border-transparent text-gray-600 hover:text-amber-600 transition-colors">
+                <i class="fab fa-pinterest mr-2"></i>Pinterest
+              </button>
+              <button class="tab-btn pb-3 border-b-2 border-transparent text-gray-600 hover:text-amber-600 transition-colors">
+                <i class="fab fa-instagram mr-2"></i>Instagram
+              </button>
+              <button class="tab-btn pb-3 border-b-2 border-transparent text-gray-600 hover:text-amber-600 transition-colors">
+                <i class="fab fa-tiktok mr-2"></i>TikTok
+              </button>
+              <button class="tab-btn pb-3 border-b-2 border-transparent text-gray-600 hover:text-amber-600 transition-colors">
+                <i class="fab fa-facebook mr-2"></i>Facebook
+              </button>
+            </div>
+          </div>
+
+          <!-- Content Generator -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div>
+              <h4 class="font-medium text-gray-700 mb-3">Generate Content</h4>
+              <div class="space-y-4">
+                <div>
+                  <label class="block text-sm text-gray-500 mb-1">Select Recipe</label>
+                  <select class="w-full px-3 py-2 border rounded-lg">
+                    <option>Choose a recipe...</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-sm text-gray-500 mb-1">Content Type</label>
+                  <select class="w-full px-3 py-2 border rounded-lg">
+                    <option>Standard Pin</option>
+                    <option>Idea Pin</option>
+                    <option>Story Pin</option>
+                  </select>
+                </div>
+                <button class="w-full px-4 py-2 bg-amber-500 text-white rounded-lg hover:bg-amber-600 transition-colors">
+                  Generate Content
+                </button>
+              </div>
+            </div>
+            
+            <div>
+              <h4 class="font-medium text-gray-700 mb-3">Preview</h4>
+              <div class="border-2 border-dashed border-gray-200 rounded-lg p-8 text-center text-gray-400">
+                <i class="fas fa-image text-4xl mb-2"></i>
+                <p>Select a recipe to preview content</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scheduled Posts -->
+        <div class="bg-white rounded-xl shadow-sm p-6">
+          <h3 class="text-lg font-semibold text-gray-800 mb-4">Scheduled Posts</h3>
+          <div class="text-center text-gray-400 py-8">
+            <i class="fas fa-calendar-check text-4xl mb-2"></i>
+            <p>No scheduled posts. Generate content to get started.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Email Section (hidden by default) -->
+      <section id="email-section" class="hidden space-y-8">
+        <div class="bg-white rounded-xl shadow-sm p-6">
+          <h3 class="text-lg font-semibold text-gray-800 mb-4">Email Marketing</h3>
+          
+          <!-- Email Stats -->
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+            <div class="bg-gray-50 rounded-lg p-4">
+              <p class="text-sm text-gray-500">Total Subscribers</p>
+              <p class="text-2xl font-bold text-gray-800">4,250</p>
+            </div>
+            <div class="bg-gray-50 rounded-lg p-4">
+              <p class="text-sm text-gray-500">Open Rate</p>
+              <p class="text-2xl font-bold text-gray-800">42.5%</p>
+            </div>
+            <div class="bg-gray-50 rounded-lg p-4">
+              <p class="text-sm text-gray-500">Click Rate</p>
+              <p class="text-2xl font-bold text-gray-800">8.2%</p>
+            </div>
+            <div class="bg-gray-50 rounded-lg p-4">
+              <p class="text-sm text-gray-500">Unsubscribe Rate</p>
+              <p class="text-2xl font-bold text-gray-800">0.3%</p>
+            </div>
+          </div>
+
+          <!-- Campaign List -->
+          <h4 class="font-medium text-gray-700 mb-3">Recent Campaigns</h4>
+          <div class="space-y-3">
+            <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+              <div>
+                <p class="font-medium text-gray-800">Weekly Newsletter - Week 1</p>
+                <p class="text-sm text-gray-500">Sent Jan 5, 2026 • 4,250 recipients</p>
+              </div>
+              <div class="text-right">
+                <p class="text-sm text-gray-600">45.2% open • 9.1% click</p>
+                <span class="text-xs text-green-600 bg-green-100 px-2 py-1 rounded">Completed</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Welcome Sequence -->
+        <div class="bg-white rounded-xl shadow-sm p-6">
+          <h3 class="text-lg font-semibold text-gray-800 mb-4">Welcome Sequence Status</h3>
+          <div class="space-y-4">
+            <div class="flex items-center gap-4">
+              <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white text-sm">1</div>
+              <div class="flex-1">
+                <p class="font-medium">PDF Delivery</p>
+                <p class="text-sm text-gray-500">Immediate • 100% delivery rate</p>
+              </div>
+              <span class="text-green-600"><i class="fas fa-check-circle"></i> Active</span>
+            </div>
+            <div class="flex items-center gap-4">
+              <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white text-sm">2</div>
+              <div class="flex-1">
+                <p class="font-medium">Welcome Story</p>
+                <p class="text-sm text-gray-500">Day 2 • 52% open rate</p>
+              </div>
+              <span class="text-green-600"><i class="fas fa-check-circle"></i> Active</span>
+            </div>
+            <div class="flex items-center gap-4">
+              <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white text-sm">3</div>
+              <div class="flex-1">
+                <p class="font-medium">Tips & Tricks</p>
+                <p class="text-sm text-gray-500">Day 4 • 48% open rate</p>
+              </div>
+              <span class="text-green-600"><i class="fas fa-check-circle"></i> Active</span>
+            </div>
+            <div class="flex items-center gap-4">
+              <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white text-sm">4</div>
+              <div class="flex-1">
+                <p class="font-medium">Cross-Promotion</p>
+                <p class="text-sm text-gray-500">Day 6 • 38% open rate</p>
+              </div>
+              <span class="text-green-600"><i class="fas fa-check-circle"></i> Active</span>
+            </div>
+            <div class="flex items-center gap-4">
+              <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white text-sm">5</div>
+              <div class="flex-1">
+                <p class="font-medium">Social Proof</p>
+                <p class="text-sm text-gray-500">Day 8 • 35% open rate</p>
+              </div>
+              <span class="text-green-600"><i class="fas fa-check-circle"></i> Active</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Analytics Section (hidden by default) -->
+      <section id="analytics-section" class="hidden space-y-8">
+        <div class="bg-white rounded-xl shadow-sm p-6">
+          <h3 class="text-lg font-semibold text-gray-800 mb-4">Analytics Overview</h3>
+          <p class="text-gray-500 mb-6">Connect your GA4 properties to see live analytics data.</p>
+          
+          <!-- GA4 Status -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="border rounded-lg p-4">
+              <div class="flex items-center justify-between mb-2">
+                <span class="font-medium">proteincookies.co</span>
+                <span class="text-amber-600 text-sm"><i class="fas fa-exclamation-circle"></i> Not configured</span>
+              </div>
+              <button class="text-sm text-amber-600 hover:underline">Configure GA4 →</button>
+            </div>
+            <!-- More sites... -->
+          </div>
+        </div>
+
+        <!-- SEO Performance -->
+        <div class="bg-white rounded-xl shadow-sm p-6">
+          <h3 class="text-lg font-semibold text-gray-800 mb-4">SEO Performance</h3>
+          <div class="text-center text-gray-400 py-8">
+            <i class="fas fa-search text-4xl mb-2"></i>
+            <p>Connect Google Search Console to see SEO data.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Calendar Section (hidden by default) -->
+      <section id="calendar-section" class="hidden space-y-8">
+        <div class="bg-white rounded-xl shadow-sm p-6">
+          <div class="flex justify-between items-center mb-6">
+            <h3 class="text-lg font-semibold text-gray-800">Content Calendar</h3>
+            <div class="flex gap-2">
+              <button class="px-3 py-1 text-sm border rounded-lg hover:bg-gray-50">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <span class="px-4 py-1 text-sm font-medium">January 2026</span>
+              <button class="px-3 py-1 text-sm border rounded-lg hover:bg-gray-50">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+          
+          <!-- Calendar Grid -->
+          <div class="grid grid-cols-7 gap-1">
+            <div class="text-center text-sm font-medium text-gray-500 py-2">Sun</div>
+            <div class="text-center text-sm font-medium text-gray-500 py-2">Mon</div>
+            <div class="text-center text-sm font-medium text-gray-500 py-2">Tue</div>
+            <div class="text-center text-sm font-medium text-gray-500 py-2">Wed</div>
+            <div class="text-center text-sm font-medium text-gray-500 py-2">Thu</div>
+            <div class="text-center text-sm font-medium text-gray-500 py-2">Fri</div>
+            <div class="text-center text-sm font-medium text-gray-500 py-2">Sat</div>
+            
+            <!-- Calendar days will be populated dynamically -->
+            <div id="calendar-grid" class="col-span-7 grid grid-cols-7 gap-1">
+              <!-- Days populated by JS -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Upcoming Items -->
+        <div class="bg-white rounded-xl shadow-sm p-6">
+          <h3 class="text-lg font-semibold text-gray-800 mb-4">Upcoming This Week</h3>
+          <div class="space-y-3" id="upcoming-items">
+            <!-- Populated dynamically -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Sites Section (hidden by default) -->
+      <section id="sites-section" class="hidden space-y-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="sites-grid">
+          <!-- Sites populated dynamically -->
+        </div>
+      </section>
+
+      <!-- Settings Section (hidden by default) -->
+      <section id="settings-section" class="hidden space-y-8">
+        <div class="bg-white rounded-xl shadow-sm p-6">
+          <h3 class="text-lg font-semibold text-gray-800 mb-4">Settings</h3>
+          
+          <div class="space-y-6">
+            <!-- API Keys -->
+            <div>
+              <h4 class="font-medium text-gray-700 mb-3">API Integrations</h4>
+              <div class="space-y-3">
+                <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+                  <div>
+                    <p class="font-medium">SendGrid</p>
+                    <p class="text-sm text-gray-500">Email delivery service</p>
+                  </div>
+                  <span class="text-green-600 text-sm"><i class="fas fa-check-circle mr-1"></i>Connected</span>
+                </div>
+                <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+                  <div>
+                    <p class="font-medium">Google Analytics</p>
+                    <p class="text-sm text-gray-500">Traffic analytics</p>
+                  </div>
+                  <button class="text-amber-600 text-sm hover:underline">Configure →</button>
+                </div>
+                <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+                  <div>
+                    <p class="font-medium">Pinterest API</p>
+                    <p class="text-sm text-gray-500">Auto-posting to Pinterest</p>
+                  </div>
+                  <button class="text-amber-600 text-sm hover:underline">Connect →</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Notification Settings -->
+            <div>
+              <h4 class="font-medium text-gray-700 mb-3">Notifications</h4>
+              <div class="space-y-3">
+                <label class="flex items-center justify-between">
+                  <span class="text-gray-600">Email signup alerts</span>
+                  <input type="checkbox" checked class="w-5 h-5 text-amber-500 rounded focus:ring-amber-500">
+                </label>
+                <label class="flex items-center justify-between">
+                  <span class="text-gray-600">Weekly performance report</span>
+                  <input type="checkbox" checked class="w-5 h-5 text-amber-500 rounded focus:ring-amber-500">
+                </label>
+                <label class="flex items-center justify-between">
+                  <span class="text-gray-600">Content calendar reminders</span>
+                  <input type="checkbox" checked class="w-5 h-5 text-amber-500 rounded focus:ring-amber-500">
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

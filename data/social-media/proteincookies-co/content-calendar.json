@@ -1,0 +1,622 @@
+{
+  "site": "proteincookies.co",
+  "weeks": [
+    {
+      "week": 1,
+      "days": [
+        {
+          "day": "Monday",
+          "posts": [
+            {
+              "platform": "Pinterest",
+              "time": "8:00 AM",
+              "type": "New Pin",
+              "recipe": "Greek Yogurt Protein Cookies"
+            },
+            {
+              "platform": "Instagram",
+              "time": "12:00 PM",
+              "type": "Feed Post",
+              "recipe": "Greek Yogurt Protein Cookies"
+            },
+            {
+              "platform": "TikTok",
+              "time": "7:00 PM",
+              "type": "Recipe Video",
+              "recipe": "Greek Yogurt Protein Cookies"
+            }
+          ]
+        },
+        {
+          "day": "Tuesday",
+          "posts": [
+            {
+              "platform": "Instagram",
+              "time": "9:00 AM",
+              "type": "Story",
+              "content": "Behind the scenes / Poll"
+            },
+            {
+              "platform": "Facebook",
+              "time": "1:00 PM",
+              "type": "Engagement Post",
+              "recipe": "Chocolate Chip Protein Cookies"
+            },
+            {
+              "platform": "Pinterest",
+              "time": "4:00 PM",
+              "type": "Re-pin variation",
+              "recipe": "Chocolate Chip Protein Cookies"
+            }
+          ]
+        },
+        {
+          "day": "Wednesday",
+          "posts": [
+            {
+              "platform": "Pinterest",
+              "time": "8:00 AM",
+              "type": "New Pin",
+              "recipe": "Oatmeal Raisin Protein Cookies"
+            },
+            {
+              "platform": "Instagram",
+              "time": "12:00 PM",
+              "type": "Feed Post",
+              "recipe": "Oatmeal Raisin Protein Cookies"
+            },
+            {
+              "platform": "TikTok",
+              "time": "7:00 PM",
+              "type": "Recipe Video",
+              "recipe": "Oatmeal Raisin Protein Cookies"
+            }
+          ]
+        },
+        {
+          "day": "Thursday",
+          "posts": [
+            {
+              "platform": "Instagram",
+              "time": "9:00 AM",
+              "type": "Story",
+              "content": "Behind the scenes / Poll"
+            },
+            {
+              "platform": "Facebook",
+              "time": "1:00 PM",
+              "type": "Engagement Post",
+              "recipe": "Monster Protein Cookies"
+            },
+            {
+              "platform": "Pinterest",
+              "time": "4:00 PM",
+              "type": "Re-pin variation",
+              "recipe": "Monster Protein Cookies"
+            }
+          ]
+        },
+        {
+          "day": "Friday",
+          "posts": [
+            {
+              "platform": "Pinterest",
+              "time": "8:00 AM",
+              "type": "New Pin",
+              "recipe": "High Protein Cookies (30g)"
+            },
+            {
+              "platform": "Instagram",
+              "time": "12:00 PM",
+              "type": "Feed Post",
+              "recipe": "High Protein Cookies (30g)"
+            },
+            {
+              "platform": "TikTok",
+              "time": "7:00 PM",
+              "type": "Recipe Video",
+              "recipe": "High Protein Cookies (30g)"
+            }
+          ]
+        },
+        {
+          "day": "Saturday",
+          "posts": [
+            {
+              "platform": "Facebook",
+              "time": "10:00 AM",
+              "type": "Weekly Roundup",
+              "content": "Top 5 recipes of the week"
+            },
+            {
+              "platform": "Instagram",
+              "time": "2:00 PM",
+              "type": "Carousel",
+              "content": "Recipe collection"
+            }
+          ]
+        },
+        {
+          "day": "Sunday",
+          "posts": [
+            {
+              "platform": "Instagram",
+              "time": "11:00 AM",
+              "type": "Story",
+              "content": "Meal prep motivation"
+            },
+            {
+              "platform": "Pinterest",
+              "time": "3:00 PM",
+              "type": "Board organization",
+              "content": "Curate and organize pins"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "days": [
+        {
+          "day": "Monday",
+          "posts": [
+            {
+              "platform": "Pinterest",
+              "time": "8:00 AM",
+              "type": "New Pin",
+              "recipe": "Dairy-Free Peanut Butter Protein Cookies"
+            },
+            {
+              "platform": "Instagram",
+              "time": "12:00 PM",
+              "type": "Feed Post",
+              "recipe": "Dairy-Free Peanut Butter Protein Cookies"
+            },
+            {
+              "platform": "TikTok",
+              "time": "7:00 PM",
+              "type": "Recipe Video",
+              "recipe": "Dairy-Free Peanut Butter Protein Cookies"
+            }
+          ]
+        },
+        {
+          "day": "Tuesday",
+          "posts": [
+            {
+              "platform": "Instagram",
+              "time": "9:00 AM",
+              "type": "Story",
+              "content": "Behind the scenes / Poll"
+            },
+            {
+              "platform": "Facebook",
+              "time": "1:00 PM",
+              "type": "Engagement Post",
+              "recipe": "Double Chocolate Protein Cookies"
+            },
+            {
+              "platform": "Pinterest",
+              "time": "4:00 PM",
+              "type": "Re-pin variation",
+              "recipe": "Double Chocolate Protein Cookies"
+            }
+          ]
+        },
+        {
+          "day": "Wednesday",
+          "posts": [
+            {
+              "platform": "Pinterest",
+              "time": "8:00 AM",
+              "type": "New Pin",
+              "recipe": "Vegan Protein Cookies"
+            },
+            {
+              "platform": "Instagram",
+              "time": "12:00 PM",
+              "type": "Feed Post",
+              "recipe": "Vegan Protein Cookies"
+            },
+            {
+              "platform": "TikTok",
+              "time": "7:00 PM",
+              "type": "Recipe Video",
+              "recipe": "Vegan Protein Cookies"
+            }
+          ]
+        },
+        {
+          "day": "Thursday",
+          "posts": [
+            {
+              "platform": "Instagram",
+              "time": "9:00 AM",
+              "type": "Story",
+              "content": "Behind the scenes / Poll"
+            },
+            {
+              "platform": "Facebook",
+              "time": "1:00 PM",
+              "type": "Engagement Post",
+              "recipe": "Thin & Crispy Protein Cookies"
+            },
+            {
+              "platform": "Pinterest",
+              "time": "4:00 PM",
+              "type": "Re-pin variation",
+              "recipe": "Thin & Crispy Protein Cookies"
+            }
+          ]
+        },
+        {
+          "day": "Friday",
+          "posts": [
+            {
+              "platform": "Pinterest",
+              "time": "8:00 AM",
+              "type": "New Pin",
+              "recipe": "Sugar-Free Protein Cookies"
+            },
+            {
+              "platform": "Instagram",
+              "time": "12:00 PM",
+              "type": "Feed Post",
+              "recipe": "Sugar-Free Protein Cookies"
+            },
+            {
+              "platform": "TikTok",
+              "time": "7:00 PM",
+              "type": "Recipe Video",
+              "recipe": "Sugar-Free Protein Cookies"
+            }
+          ]
+        },
+        {
+          "day": "Saturday",
+          "posts": [
+            {
+              "platform": "Facebook",
+              "time": "10:00 AM",
+              "type": "Weekly Roundup",
+              "content": "Top 5 recipes of the week"
+            },
+            {
+              "platform": "Instagram",
+              "time": "2:00 PM",
+              "type": "Carousel",
+              "content": "Recipe collection"
+            }
+          ]
+        },
+        {
+          "day": "Sunday",
+          "posts": [
+            {
+              "platform": "Instagram",
+              "time": "11:00 AM",
+              "type": "Story",
+              "content": "Meal prep motivation"
+            },
+            {
+              "platform": "Pinterest",
+              "time": "3:00 PM",
+              "type": "Board organization",
+              "content": "Curate and organize pins"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "days": [
+        {
+          "day": "Monday",
+          "posts": [
+            {
+              "platform": "Pinterest",
+              "time": "8:00 AM",
+              "type": "New Pin",
+              "recipe": "White Chocolate Macadamia Protein Cookies"
+            },
+            {
+              "platform": "Instagram",
+              "time": "12:00 PM",
+              "type": "Feed Post",
+              "recipe": "White Chocolate Macadamia Protein Cookies"
+            },
+            {
+              "platform": "TikTok",
+              "time": "7:00 PM",
+              "type": "Recipe Video",
+              "recipe": "White Chocolate Macadamia Protein Cookies"
+            }
+          ]
+        },
+        {
+          "day": "Tuesday",
+          "posts": [
+            {
+              "platform": "Instagram",
+              "time": "9:00 AM",
+              "type": "Story",
+              "content": "Behind the scenes / Poll"
+            },
+            {
+              "platform": "Facebook",
+              "time": "1:00 PM",
+              "type": "Engagement Post",
+              "recipe": "No-Bake Protein Cookies"
+            },
+            {
+              "platform": "Pinterest",
+              "time": "4:00 PM",
+              "type": "Re-pin variation",
+              "recipe": "No-Bake Protein Cookies"
+            }
+          ]
+        },
+        {
+          "day": "Wednesday",
+          "posts": [
+            {
+              "platform": "Pinterest",
+              "time": "8:00 AM",
+              "type": "New Pin",
+              "recipe": "Lemon Protein Cookies"
+            },
+            {
+              "platform": "Instagram",
+              "time": "12:00 PM",
+              "type": "Feed Post",
+              "recipe": "Lemon Protein Cookies"
+            },
+            {
+              "platform": "TikTok",
+              "time": "7:00 PM",
+              "type": "Recipe Video",
+              "recipe": "Lemon Protein Cookies"
+            }
+          ]
+        },
+        {
+          "day": "Thursday",
+          "posts": [
+            {
+              "platform": "Instagram",
+              "time": "9:00 AM",
+              "type": "Story",
+              "content": "Behind the scenes / Poll"
+            },
+            {
+              "platform": "Facebook",
+              "time": "1:00 PM",
+              "type": "Engagement Post",
+              "recipe": "Red Velvet Protein Cookies"
+            },
+            {
+              "platform": "Pinterest",
+              "time": "4:00 PM",
+              "type": "Re-pin variation",
+              "recipe": "Red Velvet Protein Cookies"
+            }
+          ]
+        },
+        {
+          "day": "Friday",
+          "posts": [
+            {
+              "platform": "Pinterest",
+              "time": "8:00 AM",
+              "type": "New Pin",
+              "recipe": "Gluten-Free Protein Cookies"
+            },
+            {
+              "platform": "Instagram",
+              "time": "12:00 PM",
+              "type": "Feed Post",
+              "recipe": "Gluten-Free Protein Cookies"
+            },
+            {
+              "platform": "TikTok",
+              "time": "7:00 PM",
+              "type": "Recipe Video",
+              "recipe": "Gluten-Free Protein Cookies"
+            }
+          ]
+        },
+        {
+          "day": "Saturday",
+          "posts": [
+            {
+              "platform": "Facebook",
+              "time": "10:00 AM",
+              "type": "Weekly Roundup",
+              "content": "Top 5 recipes of the week"
+            },
+            {
+              "platform": "Instagram",
+              "time": "2:00 PM",
+              "type": "Carousel",
+              "content": "Recipe collection"
+            }
+          ]
+        },
+        {
+          "day": "Sunday",
+          "posts": [
+            {
+              "platform": "Instagram",
+              "time": "11:00 AM",
+              "type": "Story",
+              "content": "Meal prep motivation"
+            },
+            {
+              "platform": "Pinterest",
+              "time": "3:00 PM",
+              "type": "Board organization",
+              "content": "Curate and organize pins"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "days": [
+        {
+          "day": "Monday",
+          "posts": [
+            {
+              "platform": "Pinterest",
+              "time": "8:00 AM",
+              "type": "New Pin",
+              "recipe": "Protein Cookie Dough Bites"
+            },
+            {
+              "platform": "Instagram",
+              "time": "12:00 PM",
+              "type": "Feed Post",
+              "recipe": "Protein Cookie Dough Bites"
+            },
+            {
+              "platform": "TikTok",
+              "time": "7:00 PM",
+              "type": "Recipe Video",
+              "recipe": "Protein Cookie Dough Bites"
+            }
+          ]
+        },
+        {
+          "day": "Tuesday",
+          "posts": [
+            {
+              "platform": "Instagram",
+              "time": "9:00 AM",
+              "type": "Story",
+              "content": "Behind the scenes / Poll"
+            },
+            {
+              "platform": "Facebook",
+              "time": "1:00 PM",
+              "type": "Engagement Post",
+              "recipe": "Almond Flour Protein Cookies"
+            },
+            {
+              "platform": "Pinterest",
+              "time": "4:00 PM",
+              "type": "Re-pin variation",
+              "recipe": "Almond Flour Protein Cookies"
+            }
+          ]
+        },
+        {
+          "day": "Wednesday",
+          "posts": [
+            {
+              "platform": "Pinterest",
+              "time": "8:00 AM",
+              "type": "New Pin",
+              "recipe": "Snickerdoodle Protein Cookies"
+            },
+            {
+              "platform": "Instagram",
+              "time": "12:00 PM",
+              "type": "Feed Post",
+              "recipe": "Snickerdoodle Protein Cookies"
+            },
+            {
+              "platform": "TikTok",
+              "time": "7:00 PM",
+              "type": "Recipe Video",
+              "recipe": "Snickerdoodle Protein Cookies"
+            }
+          ]
+        },
+        {
+          "day": "Thursday",
+          "posts": [
+            {
+              "platform": "Instagram",
+              "time": "9:00 AM",
+              "type": "Story",
+              "content": "Behind the scenes / Poll"
+            },
+            {
+              "platform": "Facebook",
+              "time": "1:00 PM",
+              "type": "Engagement Post",
+              "recipe": "Pumpkin Spice Protein Cookies"
+            },
+            {
+              "platform": "Pinterest",
+              "time": "4:00 PM",
+              "type": "Re-pin variation",
+              "recipe": "Pumpkin Spice Protein Cookies"
+            }
+          ]
+        },
+        {
+          "day": "Friday",
+          "posts": [
+            {
+              "platform": "Pinterest",
+              "time": "8:00 AM",
+              "type": "New Pin",
+              "recipe": "Gingerbread Protein Cookies"
+            },
+            {
+              "platform": "Instagram",
+              "time": "12:00 PM",
+              "type": "Feed Post",
+              "recipe": "Gingerbread Protein Cookies"
+            },
+            {
+              "platform": "TikTok",
+              "time": "7:00 PM",
+              "type": "Recipe Video",
+              "recipe": "Gingerbread Protein Cookies"
+            }
+          ]
+        },
+        {
+          "day": "Saturday",
+          "posts": [
+            {
+              "platform": "Facebook",
+              "time": "10:00 AM",
+              "type": "Weekly Roundup",
+              "content": "Top 5 recipes of the week"
+            },
+            {
+              "platform": "Instagram",
+              "time": "2:00 PM",
+              "type": "Carousel",
+              "content": "Recipe collection"
+            }
+          ]
+        },
+        {
+          "day": "Sunday",
+          "posts": [
+            {
+              "platform": "Instagram",
+              "time": "11:00 AM",
+              "type": "Story",
+              "content": "Meal prep motivation"
+            },
+            {
+              "platform": "Pinterest",
+              "time": "3:00 PM",
+              "type": "Board organization",
+              "content": "Curate and organize pins"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "generatedAt": "2026-01-05T15:43:16.809Z"
+}

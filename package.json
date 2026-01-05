@@ -4,10 +4,18 @@
   "description": "The Protein Empire - A network of macro-verified protein recipe websites",
   "private": true,
   "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "build": "node scripts/build-all.js",
     "build:site": "node scripts/build-site.js",
     "generate:pdfs": "node scripts/generate-pdfs.js",
+    "generate:social": "node packages/social-media/src/generate-all.js",
+    "generate:emails": "node packages/email-marketing/src/generate-campaigns.js",
+    "generate:analytics": "node packages/analytics/src/setup-analytics.js",
+    "generate:calendar": "node packages/content-calendar/src/generate-calendar.js",
+    "dashboard": "node packages/marketing-dashboard/src/server.js",
     "dev": "node scripts/dev-server.js",
     "lint": "eslint .",
     "format": "prettier --write ."

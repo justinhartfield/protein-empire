@@ -1,0 +1,27 @@
+{
+  "name": "@protein-empire/marketing-dashboard",
+  "version": "1.0.0",
+  "description": "Marketing dashboard for the Protein Empire - centralized management of social media, email, analytics, and content",
+  "type": "module",
+  "main": "./src/index.js",
+  "scripts": {
+    "dev": "node src/server.js",
+    "build": "node src/build.js",
+    "start": "NODE_ENV=production node src/server.js"
+  },
+  "keywords": [
+    "dashboard",
+    "marketing",
+    "admin",
+    "protein-empire"
+  ],
+  "author": "Protein Empire",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@protein-empire/config": "workspace:*",
+    "@protein-empire/social-media": "workspace:*",
+    "@protein-empire/email-marketing": "workspace:*",
+    "@protein-empire/analytics": "workspace:*",
+    "@protein-empire/content-calendar": "workspace:*"
+  }
+}
