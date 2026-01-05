@@ -1,0 +1,2413 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Snacks Recipes | HighProtein.Recipes | HighProtein.Recipes</title>
+
+<!-- SEO Meta Tags -->
+<meta name="description" content="Quick protein bites and bars for on-the-go nutrition">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://highprotein.recipes/category-snacks.html">
+
+<!-- Open Graph / Social Sharing -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="HighProtein.Recipes">
+<meta property="og:title" content="Snacks Recipes | HighProtein.Recipes">
+<meta property="og:description" content="Quick protein bites and bars for on-the-go nutrition">
+<meta property="og:image" content="https://highprotein.recipes/images/social-share.png">
+<meta property="og:url" content="https://highprotein.recipes/category-snacks.html">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Snacks Recipes | HighProtein.Recipes">
+<meta name="twitter:description" content="Quick protein bites and bars for on-the-go nutrition">
+<meta name="twitter:image" content="https://highprotein.recipes/images/social-share.png">
+
+<!-- Theme & Favicon -->
+<meta name="theme-color" content="#f59e0b">
+<link rel="icon" type="image/png" href="/images/favicon.png">
+<link rel="apple-touch-icon" href="/images/favicon.png">
+
+<!-- Performance: DNS Prefetch & Preconnect -->
+<link rel="dns-prefetch" href="//cdn.tailwindcss.com">
+<link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+
+
+<!-- Scripts -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+
+
+<!-- Tailwind Config -->
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                fontFamily: {
+                    'anton': ['Anton', 'sans-serif'],
+                    'sans': ['Inter', 'sans-serif'],
+                },
+                colors: {
+                    brand: {
+                        50: '#fffbeb',
+                        100: '#fef3c7',
+                        500: '#f59e0b',
+                        600: '#d97706',
+                        900: '#451a03',
+                    },
+                    accent: {
+                        500: '#10b981',
+                    }
+                }
+            }
+        }
+    }
+</script>
+
+<style>
+    [x-cloak] { display: none !important; }
+</style>
+
+
+
+</head>
+<body class="min-h-screen flex flex-col bg-slate-50 text-slate-900 font-sans">
+
+<nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/80 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <!-- Logo -->
+            <a href="/" class="flex items-center gap-2">
+                <img src="/images/logo.png" alt="HighProtein.Recipes" class="h-10 w-10 rounded-full">
+                <span class="font-anton text-xl text-slate-900 tracking-tight uppercase">HighProtein<span class="text-brand-500">.Recipes</span></span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center gap-6">
+                <div class="relative group">
+                    <button class="text-slate-600 hover:text-slate-900 font-medium transition-colors flex items-center gap-1">
+                        Categories
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-slate-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+                        <a href="/category-breakfast.html" class="block px-4 py-2 text-slate-600 hover:bg-slate-50 hover:text-slate-900">Breakfast</a>
+                        <a href="/category-desserts.html" class="block px-4 py-2 text-slate-600 hover:bg-slate-50 hover:text-slate-900">Desserts</a>
+                        <a href="/category-snacks.html" class="block px-4 py-2 text-slate-600 hover:bg-slate-50 hover:text-slate-900">Snacks</a>
+                        <a href="/category-savory.html" class="block px-4 py-2 text-slate-600 hover:bg-slate-50 hover:text-slate-900">Savory</a>
+                    </div>
+                </div>
+                <a href="/no-bake.html" class="text-slate-600 hover:text-slate-900 font-medium transition-colors">No-Bake</a>
+                <a href="/high-protein.html" class="text-slate-600 hover:text-slate-900 font-medium transition-colors">30g+ Protein</a>
+                <a href="/#sites" class="bg-brand-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-brand-600 transition-colors">
+                    Browse All Sites
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button 
+                x-data="{ open: false }"
+                @click="open = !open; $dispatch('toggle-mobile-menu', { open })"
+                class="md:hidden p-2 text-slate-600 hover:text-slate-900"
+                aria-label="Toggle menu"
+            >
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div 
+        x-data="{ open: false }"
+        @toggle-mobile-menu.window="open = $event.detail.open"
+        x-show="open"
+        x-cloak
+        class="md:hidden bg-white border-b border-slate-200"
+    >
+        <div class="px-4 py-4 space-y-3">
+            <a href="/category-breakfast.html" class="block text-slate-600 hover:text-slate-900 font-medium">Breakfast</a>
+            <a href="/category-desserts.html" class="block text-slate-600 hover:text-slate-900 font-medium">Desserts</a>
+            <a href="/category-snacks.html" class="block text-slate-600 hover:text-slate-900 font-medium">Snacks</a>
+            <a href="/category-savory.html" class="block text-slate-600 hover:text-slate-900 font-medium">Savory</a>
+            <a href="/no-bake.html" class="block text-slate-600 hover:text-slate-900 font-medium">No-Bake</a>
+            <a href="/high-protein.html" class="block text-slate-600 hover:text-slate-900 font-medium">30g+ Protein</a>
+            <a href="/#sites" class="block bg-brand-500 text-white px-4 py-2 rounded-lg font-semibold text-center">
+                Browse All Sites
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!-- Spacer for fixed nav -->
+<div class="h-16"></div>
+
+
+<main class="flex-grow py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Breadcrumb -->
+        <nav class="mb-8 text-sm">
+            <ol class="flex items-center gap-2 text-slate-500">
+                
+                    
+                        <li><a href="/" class="hover:text-slate-900">Home</a></li>
+                        <li>/</li>
+                    
+                
+                    
+                        <li class="text-slate-900 font-medium">Snacks</li>
+                    
+                
+            </ol>
+        </nav>
+        
+        <!-- Header -->
+        <div class="mb-12">
+            <h1 class="font-anton text-4xl uppercase tracking-wider mb-4">Snacks Recipes</h1>
+            <p class="text-slate-600 text-lg">Quick protein bites and bars for on-the-go nutrition</p>
+            <p class="text-slate-500 mt-2">50 recipes found</p>
+        </div>
+        
+        
+        <!-- Recipe Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/no-bake-chocolate-peanut-butter-bars-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/no-bake-chocolate-peanut-butter-bars.png" 
+            alt="No-Bake Chocolate Peanut Butter Bars"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            22g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bars
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/no-bake-chocolate-peanut-butter-bars-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                No-Bake Chocolate Peanut Butter Bars
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>250 cal</span>
+            <span>•</span>
+            <span>15m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+        <a href="https://proteinbars.co/no-bake-chocolate-peanut-butter-bars.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/candy-bar-copycat-snickers-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/candy-bar-copycat-snickers.png" 
+            alt="Candy Bar Copycat: Protein Snickers"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            18g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bars
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/candy-bar-copycat-snickers-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                Candy Bar Copycat: Protein Snickers
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>280 cal</span>
+            <span>•</span>
+            <span>25m</span>
+            <span>•</span>
+            <span>Medium</span>
+        </div>
+        <a href="https://proteinbars.co/candy-bar-copycat-snickers.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/vegan-almond-joy-bars-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/vegan-almond-joy-bars.png" 
+            alt="Vegan Almond Joy Protein Bars"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            15g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bars
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/vegan-almond-joy-bars-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                Vegan Almond Joy Protein Bars
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>220 cal</span>
+            <span>•</span>
+            <span>15m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+        <a href="https://proteinbars.co/vegan-almond-joy-bars.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/nut-free-sunbutter-bars-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/nut-free-sunbutter-bars.png" 
+            alt="Nut-Free Sunbutter Protein Bars"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            16g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bars
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/nut-free-sunbutter-bars-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                Nut-Free Sunbutter Protein Bars
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>230 cal</span>
+            <span>•</span>
+            <span>10m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+        <a href="https://proteinbars.co/nut-free-sunbutter-bars.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/high-protein-chocolate-brownie-bars-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/high-protein-chocolate-brownie-bars.png" 
+            alt="High-Protein Chocolate Brownie Bars"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            25g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bars
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/high-protein-chocolate-brownie-bars-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                High-Protein Chocolate Brownie Bars
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>200 cal</span>
+            <span>•</span>
+            <span>30m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+        <a href="https://proteinbars.co/high-protein-chocolate-brownie-bars.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/meal-prep-oat-and-honey-bars-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/meal-prep-oat-and-honey-bars.png" 
+            alt="Meal Prep Oat and Honey Protein Bars"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            20g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bars
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/meal-prep-oat-and-honey-bars-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                Meal Prep Oat and Honey Protein Bars
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>240 cal</span>
+            <span>•</span>
+            <span>25m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+        <a href="https://proteinbars.co/meal-prep-oat-and-honey-bars.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/no-bake-cashew-coconut-bars-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/no-bake-cashew-coconut-bars.png" 
+            alt="No-Bake Cashew Coconut Protein Bars"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            18g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bars
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/no-bake-cashew-coconut-bars-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                No-Bake Cashew Coconut Protein Bars
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>260 cal</span>
+            <span>•</span>
+            <span>15m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+        <a href="https://proteinbars.co/no-bake-cashew-coconut-bars.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/candy-bar-copycat-twix-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/candy-bar-copycat-twix.png" 
+            alt="Candy Bar Copycat: Protein Twix"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            17g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bars
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/candy-bar-copycat-twix-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                Candy Bar Copycat: Protein Twix
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>270 cal</span>
+            <span>•</span>
+            <span>35m</span>
+            <span>•</span>
+            <span>Medium</span>
+        </div>
+        <a href="https://proteinbars.co/candy-bar-copycat-twix.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/vegan-chocolate-chip-cookie-dough-bars-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/vegan-chocolate-chip-cookie-dough-bars.png" 
+            alt="Vegan Chocolate Chip Cookie Dough Protein Bars"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            16g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bars
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/vegan-chocolate-chip-cookie-dough-bars-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                Vegan Chocolate Chip Cookie Dough Protein Bars
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>250 cal</span>
+            <span>•</span>
+            <span>15m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+        <a href="https://proteinbars.co/vegan-chocolate-chip-cookie-dough-bars.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/nut-free-chocolate-seed-bars-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/nut-free-chocolate-seed-bars.png" 
+            alt="Nut-Free Chocolate Seed Protein Bars"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            17g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bars
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/nut-free-chocolate-seed-bars-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                Nut-Free Chocolate Seed Protein Bars
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>240 cal</span>
+            <span>•</span>
+            <span>10m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+        <a href="https://proteinbars.co/nut-free-chocolate-seed-bars.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/high-protein-lemon-bars-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/high-protein-lemon-bars.png" 
+            alt="High-Protein Lemon Bars"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            19g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bars
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/high-protein-lemon-bars-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                High-Protein Lemon Bars
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>220 cal</span>
+            <span>•</span>
+            <span>40m</span>
+            <span>•</span>
+            <span>Medium</span>
+        </div>
+        <a href="https://proteinbars.co/high-protein-lemon-bars.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/meal-prep-berry-breakfast-bars-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/meal-prep-berry-breakfast-bars.png" 
+            alt="Meal Prep Berry Breakfast Bars"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            18g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bars
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/meal-prep-berry-breakfast-bars-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                Meal Prep Berry Breakfast Bars
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>230 cal</span>
+            <span>•</span>
+            <span>30m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+        <a href="https://proteinbars.co/meal-prep-berry-breakfast-bars.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/no-bake-key-lime-pie-bars-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/no-bake-key-lime-pie-bars.png" 
+            alt="No-Bake Key Lime Pie Bars"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            16g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bars
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/no-bake-key-lime-pie-bars-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                No-Bake Key Lime Pie Bars
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>240 cal</span>
+            <span>•</span>
+            <span>20m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+        <a href="https://proteinbars.co/no-bake-key-lime-pie-bars.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/candy-bar-copycat-almond-mound-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/candy-bar-copycat-almond-mound.png" 
+            alt="Candy Bar Copycat: Almond Mound"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            20g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bars
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/candy-bar-copycat-almond-mound-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                Candy Bar Copycat: Almond Mound
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>280 cal</span>
+            <span>•</span>
+            <span>10m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+        <a href="https://proteinbars.co/candy-bar-copycat-almond-mound.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/vegan-peanut-butter-jelly-bars-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/vegan-peanut-butter-jelly-bars.png" 
+            alt="Vegan Peanut Butter &amp; Jelly Protein Bars"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            17g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bars
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/vegan-peanut-butter-jelly-bars-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                Vegan Peanut Butter &amp; Jelly Protein Bars
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>260 cal</span>
+            <span>•</span>
+            <span>15m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+        <a href="https://proteinbars.co/vegan-peanut-butter-jelly-bars.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/nut-free-apple-cinnamon-bars-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/nut-free-apple-cinnamon-bars.png" 
+            alt="Nut-Free Apple Cinnamon Protein Bars"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            16g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bars
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/nut-free-apple-cinnamon-bars-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                Nut-Free Apple Cinnamon Protein Bars
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>220 cal</span>
+            <span>•</span>
+            <span>30m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+        <a href="https://proteinbars.co/nut-free-apple-cinnamon-bars.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/high-protein-samoa-bars-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/high-protein-samoa-bars.png" 
+            alt="High-Protein Samoa Bars"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            20g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bars
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/high-protein-samoa-bars-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                High-Protein Samoa Bars
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>280 cal</span>
+            <span>•</span>
+            <span>30m</span>
+            <span>•</span>
+            <span>Medium</span>
+        </div>
+        <a href="https://proteinbars.co/high-protein-samoa-bars.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/meal-prep-banana-bread-bars-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/meal-prep-banana-bread-bars.png" 
+            alt="Meal Prep Banana Bread Protein Bars"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            19g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bars
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/meal-prep-banana-bread-bars-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                Meal Prep Banana Bread Protein Bars
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>240 cal</span>
+            <span>•</span>
+            <span>30m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+        <a href="https://proteinbars.co/meal-prep-banana-bread-bars.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/no-bake-birthday-cake-bars-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/no-bake-birthday-cake-bars.png" 
+            alt="No-Bake Birthday Cake Protein Bars"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            20g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bars
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/no-bake-birthday-cake-bars-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                No-Bake Birthday Cake Protein Bars
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>250 cal</span>
+            <span>•</span>
+            <span>15m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+        <a href="https://proteinbars.co/no-bake-birthday-cake-bars.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/candy-bar-copycat-butterfinger-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/candy-bar-copycat-butterfinger.png" 
+            alt="Candy Bar Copycat: Protein Butterfinger"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            18g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bars
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/candy-bar-copycat-butterfinger-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                Candy Bar Copycat: Protein Butterfinger
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>270 cal</span>
+            <span>•</span>
+            <span>25m</span>
+            <span>•</span>
+            <span>Medium</span>
+        </div>
+        <a href="https://proteinbars.co/candy-bar-copycat-butterfinger.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/vegan-double-chocolate-bars-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/vegan-double-chocolate-bars.png" 
+            alt="Vegan Double Chocolate Protein Bars"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            18g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bars
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/vegan-double-chocolate-bars-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                Vegan Double Chocolate Protein Bars
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>260 cal</span>
+            <span>•</span>
+            <span>15m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+        <a href="https://proteinbars.co/vegan-double-chocolate-bars.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/nut-free-vanilla-funfetti-bars-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/nut-free-vanilla-funfetti-bars.png" 
+            alt="Nut-Free Vanilla Funfetti Protein Bars"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            17g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bars
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/nut-free-vanilla-funfetti-bars-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                Nut-Free Vanilla Funfetti Protein Bars
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>230 cal</span>
+            <span>•</span>
+            <span>10m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+        <a href="https://proteinbars.co/nut-free-vanilla-funfetti-bars.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/high-protein-red-velvet-bars-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/high-protein-red-velvet-bars.png" 
+            alt="High-Protein Red Velvet Bars"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            22g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bars
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/high-protein-red-velvet-bars-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                High-Protein Red Velvet Bars
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>270 cal</span>
+            <span>•</span>
+            <span>35m</span>
+            <span>•</span>
+            <span>Medium</span>
+        </div>
+        <a href="https://proteinbars.co/high-protein-red-velvet-bars.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/meal-prep-pumpkin-spice-bars-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/meal-prep-pumpkin-spice-bars.png" 
+            alt="Meal Prep Pumpkin Spice Protein Bars"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            18g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bars
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/meal-prep-pumpkin-spice-bars-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                Meal Prep Pumpkin Spice Protein Bars
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>230 cal</span>
+            <span>•</span>
+            <span>30m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+        <a href="https://proteinbars.co/meal-prep-pumpkin-spice-bars.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/no-bake-matcha-coconut-bars-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/no-bake-matcha-coconut-bars.png" 
+            alt="No-Bake Matcha Coconut Protein Bars"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            17g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bars
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/no-bake-matcha-coconut-bars-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                No-Bake Matcha Coconut Protein Bars
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>250 cal</span>
+            <span>•</span>
+            <span>15m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+        <a href="https://proteinbars.co/no-bake-matcha-coconut-bars.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/peanut-butter-protein-balls-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/peanut-butter-protein-balls.png" 
+            alt="Peanut Butter Protein Balls"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            18g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bites
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/peanut-butter-protein-balls-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                Peanut Butter Protein Balls
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>165 cal</span>
+            <span>•</span>
+            <span>15m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+        <a href="https://proteinbites.co/peanut-butter-protein-balls.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/no-bake-protein-balls-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/no-bake-protein-balls.png" 
+            alt="No-Bake Protein Balls"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            16g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bites
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/no-bake-protein-balls-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                No-Bake Protein Balls
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>155 cal</span>
+            <span>•</span>
+            <span>15m</span>
+            <span>•</span>
+            <span>Beginner</span>
+        </div>
+        <a href="https://proteinbites.co/no-bake-protein-balls.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/oatmeal-protein-balls-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/oatmeal-protein-balls.png" 
+            alt="Oatmeal Protein Balls"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            17g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bites
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/oatmeal-protein-balls-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                Oatmeal Protein Balls
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>160 cal</span>
+            <span>•</span>
+            <span>12m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+        <a href="https://proteinbites.co/oatmeal-protein-balls.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/protein-energy-balls-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/protein-energy-balls.png" 
+            alt="Protein Energy Balls"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            19g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bites
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/protein-energy-balls-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                Protein Energy Balls
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>175 cal</span>
+            <span>•</span>
+            <span>10m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+        <a href="https://proteinbites.co/protein-energy-balls.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/chocolate-protein-balls-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/chocolate-protein-balls.png" 
+            alt="Chocolate Protein Balls"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            20g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bites
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/chocolate-protein-balls-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                Chocolate Protein Balls
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>170 cal</span>
+            <span>•</span>
+            <span>15m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+        <a href="https://proteinbites.co/chocolate-protein-balls.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/chocolate-chip-protein-balls-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/chocolate-chip-protein-balls.png" 
+            alt="Chocolate Chip Protein Balls"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            18g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bites
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/chocolate-chip-protein-balls-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                Chocolate Chip Protein Balls
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>165 cal</span>
+            <span>•</span>
+            <span>12m</span>
+            <span>•</span>
+            <span>Beginner</span>
+        </div>
+        <a href="https://proteinbites.co/chocolate-chip-protein-balls.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/pumpkin-protein-balls-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/pumpkin-protein-balls.png" 
+            alt="Pumpkin Protein Balls"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            16g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bites
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/pumpkin-protein-balls-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                Pumpkin Protein Balls
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>150 cal</span>
+            <span>•</span>
+            <span>15m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+        <a href="https://proteinbites.co/pumpkin-protein-balls.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/monster-cookie-protein-balls-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/monster-cookie-protein-balls.png" 
+            alt="Monster Cookie Protein Balls"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            19g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bites
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/monster-cookie-protein-balls-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                Monster Cookie Protein Balls
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>185 cal</span>
+            <span>•</span>
+            <span>15m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+        <a href="https://proteinbites.co/monster-cookie-protein-balls.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/chocolate-peanut-butter-protein-balls-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/chocolate-peanut-butter-protein-balls.png" 
+            alt="Chocolate Peanut Butter Protein Balls"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            21g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bites
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/chocolate-peanut-butter-protein-balls-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                Chocolate Peanut Butter Protein Balls
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>180 cal</span>
+            <span>•</span>
+            <span>15m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+        <a href="https://proteinbites.co/chocolate-peanut-butter-protein-balls.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/keto-protein-balls-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/keto-protein-balls.png" 
+            alt="Keto Protein Balls"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            17g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bites
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/keto-protein-balls-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                Keto Protein Balls
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>160 cal</span>
+            <span>•</span>
+            <span>12m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+        <a href="https://proteinbites.co/keto-protein-balls.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/protein-power-balls-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/protein-power-balls.png" 
+            alt="Protein Power Balls"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            24g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bites
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/protein-power-balls-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                Protein Power Balls
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>195 cal</span>
+            <span>•</span>
+            <span>10m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+        <a href="https://proteinbites.co/protein-power-balls.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/easy-protein-balls-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/easy-protein-balls.png" 
+            alt="Easy Protein Balls"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            15g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bites
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/easy-protein-balls-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                Easy Protein Balls
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>145 cal</span>
+            <span>•</span>
+            <span>8m</span>
+            <span>•</span>
+            <span>Beginner</span>
+        </div>
+        <a href="https://proteinbites.co/easy-protein-balls.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/healthy-protein-balls-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/healthy-protein-balls.png" 
+            alt="Healthy Protein Balls"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            16g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bites
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/healthy-protein-balls-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                Healthy Protein Balls
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>150 cal</span>
+            <span>•</span>
+            <span>15m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+        <a href="https://proteinbites.co/healthy-protein-balls.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/homemade-protein-balls-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/homemade-protein-balls.png" 
+            alt="Homemade Protein Balls"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            18g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bites
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/homemade-protein-balls-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                Homemade Protein Balls
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>165 cal</span>
+            <span>•</span>
+            <span>12m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+        <a href="https://proteinbites.co/homemade-protein-balls.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/oat-protein-balls-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/oat-protein-balls.png" 
+            alt="Oat Protein Balls"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            17g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bites
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/oat-protein-balls-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                Oat Protein Balls
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>155 cal</span>
+            <span>•</span>
+            <span>10m</span>
+            <span>•</span>
+            <span>Beginner</span>
+        </div>
+        <a href="https://proteinbites.co/oat-protein-balls.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/coconut-protein-balls-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/coconut-protein-balls.png" 
+            alt="Coconut Protein Balls"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            16g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bites
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/coconut-protein-balls-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                Coconut Protein Balls
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>160 cal</span>
+            <span>•</span>
+            <span>15m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+        <a href="https://proteinbites.co/coconut-protein-balls.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/almond-butter-protein-balls-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/almond-butter-protein-balls.png" 
+            alt="Almond Butter Protein Balls"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            17g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bites
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/almond-butter-protein-balls-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                Almond Butter Protein Balls
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>160 cal</span>
+            <span>•</span>
+            <span>12m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+        <a href="https://proteinbites.co/almond-butter-protein-balls.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/birthday-cake-protein-balls-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/birthday-cake-protein-balls.png" 
+            alt="Birthday Cake Protein Balls"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            15g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bites
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/birthday-cake-protein-balls-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                Birthday Cake Protein Balls
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>155 cal</span>
+            <span>•</span>
+            <span>15m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+        <a href="https://proteinbites.co/birthday-cake-protein-balls.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/apple-cinnamon-protein-balls-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/apple-cinnamon-protein-balls.png" 
+            alt="Apple Cinnamon Protein Balls"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            16g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bites
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/apple-cinnamon-protein-balls-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                Apple Cinnamon Protein Balls
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>150 cal</span>
+            <span>•</span>
+            <span>15m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+        <a href="https://proteinbites.co/apple-cinnamon-protein-balls.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/coffee-protein-balls-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/coffee-protein-balls.png" 
+            alt="Coffee Protein Balls"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            17g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bites
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/coffee-protein-balls-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                Coffee Protein Balls
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>160 cal</span>
+            <span>•</span>
+            <span>12m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+        <a href="https://proteinbites.co/coffee-protein-balls.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/vegan-protein-balls-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/vegan-protein-balls.png" 
+            alt="Vegan Protein Balls"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            16g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bites
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/vegan-protein-balls-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                Vegan Protein Balls
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>155 cal</span>
+            <span>•</span>
+            <span>15m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+        <a href="https://proteinbites.co/vegan-protein-balls.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/nut-free-protein-balls-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/nut-free-protein-balls.png" 
+            alt="Nut-Free Protein Balls"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            15g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bites
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/nut-free-protein-balls-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                Nut-Free Protein Balls
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>150 cal</span>
+            <span>•</span>
+            <span>12m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+        <a href="https://proteinbites.co/nut-free-protein-balls.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/lemon-protein-balls-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/lemon-protein-balls.png" 
+            alt="Lemon Protein Balls"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            15g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bites
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/lemon-protein-balls-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                Lemon Protein Balls
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>145 cal</span>
+            <span>•</span>
+            <span>15m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+        <a href="https://proteinbites.co/lemon-protein-balls.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/trail-mix-protein-balls-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/trail-mix-protein-balls.png" 
+            alt="Trail Mix Protein Balls"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            18g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bites
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/trail-mix-protein-balls-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                Trail Mix Protein Balls
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>175 cal</span>
+            <span>•</span>
+            <span>15m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+        <a href="https://proteinbites.co/trail-mix-protein-balls.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+                
+<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+    <!-- Image Container -->
+    <a href="/brownie-batter-protein-balls-preview.html" class="block relative aspect-square overflow-hidden">
+        <img 
+            src="/recipe_images/brownie-batter-protein-balls.png" 
+            alt="Brownie Batter Protein Balls"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            onerror="this.src='/images/placeholder.png'"
+        >
+        <!-- Protein Badge -->
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg">
+            19g
+        </div>
+        <!-- Source Badge -->
+        <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg">
+            Bites
+        </div>
+    </a>
+    
+    <!-- Content -->
+    <div class="p-4">
+        <a href="/brownie-batter-protein-balls-preview.html">
+            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+                Brownie Batter Protein Balls
+            </h3>
+        </a>
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+            <span>170 cal</span>
+            <span>•</span>
+            <span>12m</span>
+            <span>•</span>
+            <span>Easy</span>
+        </div>
+        <a href="https://proteinbites.co/brownie-batter-protein-balls.html" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-brand-500 hover:text-brand-600 font-medium text-sm">
+            Full Recipe
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+    </div>
+</div>
+
+            
+        </div>
+        
+    </div>
+</main>
+
+
+<footer class="bg-slate-900 text-white py-12 mt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- Brand -->
+            <div class="col-span-1">
+                <div class="flex items-center gap-2 mb-4">
+                    <img src="/images/logo.png" alt="HighProtein.Recipes" class="h-10 w-10 rounded-full">
+                    <span class="font-anton text-xl tracking-tight uppercase">HighProtein<span class="text-brand-500">.Recipes</span></span>
+                </div>
+                <p class="text-slate-400 text-sm">
+                    Your gateway to 300+ macro-verified high-protein recipes across 12 specialized sites.
+                </p>
+            </div>
+
+            <!-- Categories -->
+            <div>
+                <h4 class="font-semibold mb-4">Categories</h4>
+                <ul class="space-y-2 text-slate-400 text-sm">
+                    <li><a href="/category-breakfast.html" class="hover:text-white transition-colors">Breakfast</a></li>
+                    <li><a href="/category-desserts.html" class="hover:text-white transition-colors">Desserts</a></li>
+                    <li><a href="/category-snacks.html" class="hover:text-white transition-colors">Snacks</a></li>
+                    <li><a href="/category-savory.html" class="hover:text-white transition-colors">Savory</a></li>
+                </ul>
+            </div>
+
+            <!-- Popular Ingredients -->
+            <div>
+                <h4 class="font-semibold mb-4">By Ingredient</h4>
+                <ul class="space-y-2 text-slate-400 text-sm">
+                    <li><a href="/ingredient-protein-powder.html" class="hover:text-white transition-colors">Protein Powder</a></li>
+                    <li><a href="/ingredient-greek-yogurt.html" class="hover:text-white transition-colors">Greek Yogurt</a></li>
+                    <li><a href="/ingredient-cottage-cheese.html" class="hover:text-white transition-colors">Cottage Cheese</a></li>
+                    <li><a href="/ingredient-oats.html" class="hover:text-white transition-colors">Oats</a></li>
+                </ul>
+            </div>
+
+            <!-- Legal -->
+            <div>
+                <h4 class="font-semibold mb-4">Legal</h4>
+                <ul class="space-y-2 text-slate-400 text-sm">
+                    <li><a href="/privacy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                    <li><a href="/terms.html" class="hover:text-white transition-colors">Terms of Use</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Empire Links -->
+        <div class="mt-12 pt-8 border-t border-slate-800">
+            <p class="text-slate-500 text-sm text-center mb-4">The Protein Empire</p>
+            <div class="flex flex-wrap justify-center gap-4 text-slate-400 text-sm">
+                <a href="https://proteinmuffins.com" class="hover:text-white transition-colors">Muffins</a>
+                <a href="https://proteincookies.co" class="hover:text-white transition-colors">Cookies</a>
+                <a href="https://proteinpancakes.co" class="hover:text-white transition-colors">Pancakes</a>
+                <a href="https://proteinbrownies.co" class="hover:text-white transition-colors">Brownies</a>
+                <a href="https://protein-bread.com" class="hover:text-white transition-colors">Bread</a>
+                <a href="https://proteinbars.co" class="hover:text-white transition-colors">Bars</a>
+                <a href="https://proteinbites.co" class="hover:text-white transition-colors">Bites</a>
+                <a href="https://proteindonuts.co" class="hover:text-white transition-colors">Donuts</a>
+                <a href="https://proteinoatmeal.co" class="hover:text-white transition-colors">Oatmeal</a>
+                <a href="https://proteincheesecake.co" class="hover:text-white transition-colors">Cheesecake</a>
+                <a href="https://proteinpizzas.co" class="hover:text-white transition-colors">Pizza</a>
+                <a href="https://proteinpudding.co" class="hover:text-white transition-colors">Pudding</a>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="mt-8 text-center text-slate-500 text-sm">
+            <p>&copy; 2026 HighProtein.Recipes. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

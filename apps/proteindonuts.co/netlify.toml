@@ -1,0 +1,41 @@
+# Netlify Configuration for proteindonuts.co
+# Individual site within the Protein Empire monorepo
+
+[build]
+  # Build command - runs from the repository root
+  command = "cd ../.. && node scripts/build-site.js proteindonuts.co"
+  
+  # Publish directory relative to base
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+# Headers for performance and security
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/recipe_images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.pdf"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"

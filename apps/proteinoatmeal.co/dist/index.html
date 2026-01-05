@@ -1,0 +1,799 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ProteinOatmeal | The Hub for Macro-Verified Oatmeal recipes Recipes</title>
+
+<!-- SEO Meta Tags -->
+<meta name="description" content="Macro-verified protein oatmeal, overnight oats, and baked oatmeal recipes. 25+ recipes measured in grams for precise macros.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://proteinoatmeal.co/">
+
+<!-- Open Graph / Social Sharing -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ProteinOatmeal">
+<meta property="og:title" content="ProteinOatmeal | The Hub for Macro-Verified Oatmeal recipes Recipes">
+<meta property="og:description" content="Macro-verified protein oatmeal, overnight oats, and baked oatmeal recipes. 25+ recipes measured in grams for precise macros.">
+<meta property="og:image" content="https://proteinoatmeal.co/images/logo.png">
+<meta property="og:url" content="https://proteinoatmeal.co/">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ProteinOatmeal | The Hub for Macro-Verified Oatmeal recipes Recipes">
+<meta name="twitter:description" content="Macro-verified protein oatmeal, overnight oats, and baked oatmeal recipes. 25+ recipes measured in grams for precise macros.">
+<meta name="twitter:image" content="https://proteinoatmeal.co/images/logo.png">
+
+<!-- Theme & Favicon -->
+<meta name="theme-color" content="#f59e0b">
+<link rel="icon" type="image/png" href="/images/favicon.png">
+<link rel="apple-touch-icon" href="/images/favicon.png">
+
+<!-- Performance: DNS Prefetch & Preconnect -->
+<link rel="dns-prefetch" href="//cdn.tailwindcss.com">
+<link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+
+<!-- Performance: Preload LCP Image -->
+<link rel="preload" as="image" href="/recipe_images/high-protein-oatmeal.png">
+
+
+<!-- Scripts -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+
+
+<!-- Tailwind Config -->
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                fontFamily: {
+                    'anton': ['Anton', 'sans-serif'],
+                    'sans': ['Inter', 'sans-serif'],
+                },
+                colors: {
+                    brand: {
+                        50: '#fffbeb',
+                        100: '#fef3c7',
+                        500: '#f59e0b',
+                        600: '#d97706',
+                        900: '#451a03',
+                    },
+                    accent: {
+                        500: '#10b981',
+                    }
+                }
+            }
+        }
+    }
+</script>
+
+<style>
+    [x-cloak] { display: none !important; }
+    .glass-nav {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+    }
+    .anton-text {
+        font-family: 'Anton', sans-serif;
+        letter-spacing: 0.05em;
+    }
+    .recipe-card:hover .recipe-overlay { opacity: 1; }
+    .recipe-shadow { box-shadow: 0 20px 50px -12px rgba(0, 0, 0, 0.1); }
+</style>
+
+
+<!-- WebSite + Organization Schema (matching ProteinMuffins.com) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "ProteinOatmeal",
+  "url": "https://proteinoatmeal.co/",
+  "description": "Macro-verified protein oatmeal, overnight oats, and baked oatmeal recipes. 25+ recipes measured in grams for precise macros.",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://proteinoatmeal.co/?search={search_term_string}",
+    "query-input": "required name=search_term_string"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ProteinOatmeal",
+    "url": "https://proteinoatmeal.co/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://proteinoatmeal.co/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+</head>
+<body class="min-h-screen flex flex-col bg-slate-50 text-slate-900 font-sans">
+
+
+<!-- Top Navigation (matching ProteinMuffins.com) -->
+<header class="sticky top-0 z-50 glass-nav border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+            <div class="flex items-center">
+                <a href="/" class="flex items-center">
+                    <img src="/images/logo.png" alt="ProteinOatmeal" class="h-12 w-12 rounded-lg mr-3">
+                    <span class="anton-text text-2xl text-slate-900 tracking-wider uppercase">PROTEINOATMEAL</span>
+                </a>
+            </div>
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="/#recipes" class="text-slate-600 hover:text-brand-600 font-semibold text-sm uppercase tracking-wider">Recipes</a>
+                <a href="/#categories" class="text-slate-600 hover:text-brand-600 font-semibold text-sm uppercase tracking-wider">Categories</a>
+                <a href="/#packs" class="text-slate-600 hover:text-brand-600 font-semibold text-sm uppercase tracking-wider">Recipe Packs</a>
+                <a href="/pack-starter.html" class="bg-brand-600 text-white px-5 py-2.5 rounded-full font-bold text-sm hover:bg-brand-900 transition shadow-lg shadow-brand-500/30">STARTER PACK (FREE)</a>
+            </nav>
+            <div class="md:hidden" x-data="{ open: false }">
+                <button @click="open = !open" class="text-slate-900 focus:outline-none">
+                    <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+                <!-- Mobile Menu -->
+                <div x-show="open" x-cloak class="absolute top-20 left-0 right-0 bg-white border-b border-slate-100 p-6 space-y-4 shadow-xl">
+                    <a href="/#recipes" class="block text-xl anton-text text-slate-900">RECIPES</a>
+                    <a href="/#categories" class="block text-xl anton-text text-slate-900">CATEGORIES</a>
+                    <a href="/#packs" class="block text-xl anton-text text-slate-900">RECIPE PACKS</a>
+                    <a href="/pack-starter.html" class="block text-center w-full bg-brand-600 text-white py-4 rounded-xl font-bold anton-text text-lg">GET STARTER PACK</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<main class="flex-grow">
+    <!-- Hero Section (matching ProteinMuffins.com) -->
+    <section class="bg-slate-900 text-white py-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-brand-600/20 to-transparent"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="inline-block bg-brand-500 text-white text-sm font-bold px-4 py-1.5 rounded-full mb-6 anton-text tracking-wider">
+                25+ Macro-Verified Recipes
+            </span>
+            <h1 class="anton-text text-5xl md:text-7xl tracking-tight uppercase mb-6 leading-tight">
+                THE HUB FOR PROTEIN<br><span class="text-brand-500">OATMEAL RECIPES</span>
+            </h1>
+            <p class="text-xl text-slate-300 max-w-2xl mx-auto mb-10">
+                Macro-verified protein oatmeal recipes with precise nutrition data. Every recipe measured in grams for precise macros.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#recipes" class="bg-brand-500 text-white px-8 py-4 rounded-2xl font-bold anton-text text-lg hover:bg-brand-600 transition-colors shadow-xl shadow-brand-500/30 tracking-wider">
+                    Browse Recipes
+                </a>
+                <a href="/pack-starter.html" class="bg-white/10 text-white px-8 py-4 rounded-2xl font-bold anton-text text-lg hover:bg-white/20 transition-colors border border-white/20 tracking-wider">
+                    Get Free Starter Pack
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- All Recipes Section -->
+    <section id="recipes" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="anton-text text-4xl text-center mb-4 uppercase tracking-wider">ALL RECIPES</h2>
+            <p class="text-center text-slate-500 mb-10">Every recipe macro-verified using USDA FoodData Central</p>
+            
+            <!-- Category Filter -->
+            <div id="categories" class="flex flex-wrap justify-center gap-3 mb-12">
+                
+                    <a href="/category-all.html" class="px-5 py-2.5 rounded-full text-sm font-semibold bg-white border border-slate-200 hover:border-brand-500 hover:text-brand-600 transition-all shadow-sm">
+                        All Recipes
+                    </a>
+                
+                    <a href="/category-high-protein.html" class="px-5 py-2.5 rounded-full text-sm font-semibold bg-white border border-slate-200 hover:border-brand-500 hover:text-brand-600 transition-all shadow-sm">
+                        High Protein
+                    </a>
+                
+                    <a href="/category-quick.html" class="px-5 py-2.5 rounded-full text-sm font-semibold bg-white border border-slate-200 hover:border-brand-500 hover:text-brand-600 transition-all shadow-sm">
+                        Quick &amp; Easy
+                    </a>
+                
+                    <a href="/category-gluten-free.html" class="px-5 py-2.5 rounded-full text-sm font-semibold bg-white border border-slate-200 hover:border-brand-500 hover:text-brand-600 transition-all shadow-sm">
+                        Gluten-Free
+                    </a>
+                
+                    <a href="/category-vegan.html" class="px-5 py-2.5 rounded-full text-sm font-semibold bg-white border border-slate-200 hover:border-brand-500 hover:text-brand-600 transition-all shadow-sm">
+                        Vegan
+                    </a>
+                
+                    <a href="/category-kids.html" class="px-5 py-2.5 rounded-full text-sm font-semibold bg-white border border-slate-200 hover:border-brand-500 hover:text-brand-600 transition-all shadow-sm">
+                        Kids
+                    </a>
+                
+                    <a href="/category-seasonal.html" class="px-5 py-2.5 rounded-full text-sm font-semibold bg-white border border-slate-200 hover:border-brand-500 hover:text-brand-600 transition-all shadow-sm">
+                        Seasonal
+                    </a>
+                
+            </div>
+            
+            <!-- Recipe Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                    
+<!-- Recipe Card (matching ProteinMuffins.com) -->
+<a href="/high-protein-oatmeal.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+    <div class="relative aspect-square overflow-hidden">
+        <img src="/recipe_images/high-protein-oatmeal.png" alt="High Protein Oatmeal" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-3 py-1 rounded-lg shadow-lg">
+            28g
+        </div>
+        <div class="recipe-overlay absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition-opacity duration-300"></div>
+    </div>
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 mb-1 group-hover:text-brand-600 transition-colors">High Protein Oatmeal</h3>
+        <p class="text-sm text-slate-500">380 cal • 10m • Easy</p>
+    </div>
+</a>
+
+                
+                    
+<!-- Recipe Card (matching ProteinMuffins.com) -->
+<a href="/protein-oatmeal-recipe.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+    <div class="relative aspect-square overflow-hidden">
+        <img src="/recipe_images/protein-oatmeal-recipe.png" alt="Protein Oatmeal Recipe" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-3 py-1 rounded-lg shadow-lg">
+            25g
+        </div>
+        <div class="recipe-overlay absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition-opacity duration-300"></div>
+    </div>
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 mb-1 group-hover:text-brand-600 transition-colors">Protein Oatmeal Recipe</h3>
+        <p class="text-sm text-slate-500">350 cal • 10m • Beginner</p>
+    </div>
+</a>
+
+                
+                    
+<!-- Recipe Card (matching ProteinMuffins.com) -->
+<a href="/protein-powder-in-oatmeal.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+    <div class="relative aspect-square overflow-hidden">
+        <img src="/recipe_images/protein-powder-in-oatmeal.png" alt="Protein Powder in Oatmeal" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-3 py-1 rounded-lg shadow-lg">
+            26g
+        </div>
+        <div class="recipe-overlay absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition-opacity duration-300"></div>
+    </div>
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 mb-1 group-hover:text-brand-600 transition-colors">Protein Powder in Oatmeal</h3>
+        <p class="text-sm text-slate-500">340 cal • 8m • Beginner</p>
+    </div>
+</a>
+
+                
+                    
+<!-- Recipe Card (matching ProteinMuffins.com) -->
+<a href="/oatmeal-with-protein-powder.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+    <div class="relative aspect-square overflow-hidden">
+        <img src="/recipe_images/oatmeal-with-protein-powder.png" alt="Oatmeal with Protein Powder" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-3 py-1 rounded-lg shadow-lg">
+            24g
+        </div>
+        <div class="recipe-overlay absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition-opacity duration-300"></div>
+    </div>
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 mb-1 group-hover:text-brand-600 transition-colors">Oatmeal with Protein Powder</h3>
+        <p class="text-sm text-slate-500">360 cal • 10m • Easy</p>
+    </div>
+</a>
+
+                
+                    
+<!-- Recipe Card (matching ProteinMuffins.com) -->
+<a href="/high-protein-oatmeal-recipe.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+    <div class="relative aspect-square overflow-hidden">
+        <img src="/recipe_images/high-protein-oatmeal-recipe.png" alt="High Protein Oatmeal Recipe" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-3 py-1 rounded-lg shadow-lg">
+            30g
+        </div>
+        <div class="recipe-overlay absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition-opacity duration-300"></div>
+    </div>
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 mb-1 group-hover:text-brand-600 transition-colors">High Protein Oatmeal Recipe</h3>
+        <p class="text-sm text-slate-500">420 cal • 10m • Easy</p>
+    </div>
+</a>
+
+                
+                    
+<!-- Recipe Card (matching ProteinMuffins.com) -->
+<a href="/high-protein-baked-oatmeal.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+    <div class="relative aspect-square overflow-hidden">
+        <img src="/recipe_images/high-protein-baked-oatmeal.png" alt="High Protein Baked Oatmeal" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-3 py-1 rounded-lg shadow-lg">
+            22g
+        </div>
+        <div class="recipe-overlay absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition-opacity duration-300"></div>
+    </div>
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 mb-1 group-hover:text-brand-600 transition-colors">High Protein Baked Oatmeal</h3>
+        <p class="text-sm text-slate-500">320 cal • 45m • Medium</p>
+    </div>
+</a>
+
+                
+                    
+<!-- Recipe Card (matching ProteinMuffins.com) -->
+<a href="/protein-baked-oatmeal.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+    <div class="relative aspect-square overflow-hidden">
+        <img src="/recipe_images/protein-baked-oatmeal.png" alt="Protein Baked Oatmeal" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-3 py-1 rounded-lg shadow-lg">
+            20g
+        </div>
+        <div class="recipe-overlay absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition-opacity duration-300"></div>
+    </div>
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 mb-1 group-hover:text-brand-600 transition-colors">Protein Baked Oatmeal</h3>
+        <p class="text-sm text-slate-500">290 cal • 40m • Easy</p>
+    </div>
+</a>
+
+                
+                    
+<!-- Recipe Card (matching ProteinMuffins.com) -->
+<a href="/protein-oatmeal-cookies.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+    <div class="relative aspect-square overflow-hidden">
+        <img src="/recipe_images/protein-oatmeal-cookies.png" alt="Protein Oatmeal Cookies" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-3 py-1 rounded-lg shadow-lg">
+            12g
+        </div>
+        <div class="recipe-overlay absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition-opacity duration-300"></div>
+    </div>
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 mb-1 group-hover:text-brand-600 transition-colors">Protein Oatmeal Cookies</h3>
+        <p class="text-sm text-slate-500">180 cal • 22m • Easy</p>
+    </div>
+</a>
+
+                
+                    
+<!-- Recipe Card (matching ProteinMuffins.com) -->
+<a href="/oatmeal-protein-bars.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+    <div class="relative aspect-square overflow-hidden">
+        <img src="/recipe_images/oatmeal-protein-bars.png" alt="Oatmeal Protein Bars" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-3 py-1 rounded-lg shadow-lg">
+            15g
+        </div>
+        <div class="recipe-overlay absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition-opacity duration-300"></div>
+    </div>
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 mb-1 group-hover:text-brand-600 transition-colors">Oatmeal Protein Bars</h3>
+        <p class="text-sm text-slate-500">220 cal • 75m • Easy</p>
+    </div>
+</a>
+
+                
+                    
+<!-- Recipe Card (matching ProteinMuffins.com) -->
+<a href="/overnight-protein-oats.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+    <div class="relative aspect-square overflow-hidden">
+        <img src="/recipe_images/overnight-protein-oats.png" alt="Overnight Protein Oats" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-3 py-1 rounded-lg shadow-lg">
+            23g
+        </div>
+        <div class="recipe-overlay absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition-opacity duration-300"></div>
+    </div>
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 mb-1 group-hover:text-brand-600 transition-colors">Overnight Protein Oats</h3>
+        <p class="text-sm text-slate-500">340 cal • 485m • Beginner</p>
+    </div>
+</a>
+
+                
+                    
+<!-- Recipe Card (matching ProteinMuffins.com) -->
+<a href="/chocolate-protein-oatmeal.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+    <div class="relative aspect-square overflow-hidden">
+        <img src="/recipe_images/chocolate-protein-oatmeal.png" alt="Chocolate Protein Oatmeal" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-3 py-1 rounded-lg shadow-lg">
+            25g
+        </div>
+        <div class="recipe-overlay absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition-opacity duration-300"></div>
+    </div>
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 mb-1 group-hover:text-brand-600 transition-colors">Chocolate Protein Oatmeal</h3>
+        <p class="text-sm text-slate-500">380 cal • 10m • Easy</p>
+    </div>
+</a>
+
+                
+                    
+<!-- Recipe Card (matching ProteinMuffins.com) -->
+<a href="/peanut-butter-protein-oatmeal.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+    <div class="relative aspect-square overflow-hidden">
+        <img src="/recipe_images/peanut-butter-protein-oatmeal.png" alt="Peanut Butter Protein Oatmeal" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-3 py-1 rounded-lg shadow-lg">
+            27g
+        </div>
+        <div class="recipe-overlay absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition-opacity duration-300"></div>
+    </div>
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 mb-1 group-hover:text-brand-600 transition-colors">Peanut Butter Protein Oatmeal</h3>
+        <p class="text-sm text-slate-500">420 cal • 10m • Easy</p>
+    </div>
+</a>
+
+                
+                    
+<!-- Recipe Card (matching ProteinMuffins.com) -->
+<a href="/banana-protein-oatmeal.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+    <div class="relative aspect-square overflow-hidden">
+        <img src="/recipe_images/banana-protein-oatmeal.png" alt="Banana Protein Oatmeal" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-3 py-1 rounded-lg shadow-lg">
+            24g
+        </div>
+        <div class="recipe-overlay absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition-opacity duration-300"></div>
+    </div>
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 mb-1 group-hover:text-brand-600 transition-colors">Banana Protein Oatmeal</h3>
+        <p class="text-sm text-slate-500">350 cal • 10m • Beginner</p>
+    </div>
+</a>
+
+                
+                    
+<!-- Recipe Card (matching ProteinMuffins.com) -->
+<a href="/apple-cinnamon-protein-oatmeal.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+    <div class="relative aspect-square overflow-hidden">
+        <img src="/recipe_images/apple-cinnamon-protein-oatmeal.png" alt="Apple Cinnamon Protein Oatmeal" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-3 py-1 rounded-lg shadow-lg">
+            23g
+        </div>
+        <div class="recipe-overlay absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition-opacity duration-300"></div>
+    </div>
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 mb-1 group-hover:text-brand-600 transition-colors">Apple Cinnamon Protein Oatmeal</h3>
+        <p class="text-sm text-slate-500">360 cal • 13m • Easy</p>
+    </div>
+</a>
+
+                
+                    
+<!-- Recipe Card (matching ProteinMuffins.com) -->
+<a href="/blueberry-protein-oatmeal.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+    <div class="relative aspect-square overflow-hidden">
+        <img src="/recipe_images/blueberry-protein-oatmeal.png" alt="Blueberry Protein Oatmeal" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-3 py-1 rounded-lg shadow-lg">
+            24g
+        </div>
+        <div class="recipe-overlay absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition-opacity duration-300"></div>
+    </div>
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 mb-1 group-hover:text-brand-600 transition-colors">Blueberry Protein Oatmeal</h3>
+        <p class="text-sm text-slate-500">340 cal • 10m • Easy</p>
+    </div>
+</a>
+
+                
+                    
+<!-- Recipe Card (matching ProteinMuffins.com) -->
+<a href="/pumpkin-protein-oatmeal.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+    <div class="relative aspect-square overflow-hidden">
+        <img src="/recipe_images/pumpkin-protein-oatmeal.png" alt="Pumpkin Protein Oatmeal" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-3 py-1 rounded-lg shadow-lg">
+            25g
+        </div>
+        <div class="recipe-overlay absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition-opacity duration-300"></div>
+    </div>
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 mb-1 group-hover:text-brand-600 transition-colors">Pumpkin Protein Oatmeal</h3>
+        <p class="text-sm text-slate-500">370 cal • 10m • Easy</p>
+    </div>
+</a>
+
+                
+                    
+<!-- Recipe Card (matching ProteinMuffins.com) -->
+<a href="/vanilla-protein-oatmeal.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+    <div class="relative aspect-square overflow-hidden">
+        <img src="/recipe_images/vanilla-protein-oatmeal.png" alt="Vanilla Protein Oatmeal" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-3 py-1 rounded-lg shadow-lg">
+            24g
+        </div>
+        <div class="recipe-overlay absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition-opacity duration-300"></div>
+    </div>
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 mb-1 group-hover:text-brand-600 transition-colors">Vanilla Protein Oatmeal</h3>
+        <p class="text-sm text-slate-500">320 cal • 10m • Beginner</p>
+    </div>
+</a>
+
+                
+                    
+<!-- Recipe Card (matching ProteinMuffins.com) -->
+<a href="/strawberry-protein-oatmeal.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+    <div class="relative aspect-square overflow-hidden">
+        <img src="/recipe_images/strawberry-protein-oatmeal.png" alt="Strawberry Protein Oatmeal" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-3 py-1 rounded-lg shadow-lg">
+            23g
+        </div>
+        <div class="recipe-overlay absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition-opacity duration-300"></div>
+    </div>
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 mb-1 group-hover:text-brand-600 transition-colors">Strawberry Protein Oatmeal</h3>
+        <p class="text-sm text-slate-500">330 cal • 10m • Easy</p>
+    </div>
+</a>
+
+                
+                    
+<!-- Recipe Card (matching ProteinMuffins.com) -->
+<a href="/savory-protein-oatmeal.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+    <div class="relative aspect-square overflow-hidden">
+        <img src="/recipe_images/savory-protein-oatmeal.png" alt="Savory Protein Oatmeal" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-3 py-1 rounded-lg shadow-lg">
+            28g
+        </div>
+        <div class="recipe-overlay absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition-opacity duration-300"></div>
+    </div>
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 mb-1 group-hover:text-brand-600 transition-colors">Savory Protein Oatmeal</h3>
+        <p class="text-sm text-slate-500">380 cal • 15m • Medium</p>
+    </div>
+</a>
+
+                
+                    
+<!-- Recipe Card (matching ProteinMuffins.com) -->
+<a href="/maple-pecan-protein-oatmeal.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+    <div class="relative aspect-square overflow-hidden">
+        <img src="/recipe_images/maple-pecan-protein-oatmeal.png" alt="Maple Pecan Protein Oatmeal" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-3 py-1 rounded-lg shadow-lg">
+            24g
+        </div>
+        <div class="recipe-overlay absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition-opacity duration-300"></div>
+    </div>
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 mb-1 group-hover:text-brand-600 transition-colors">Maple Pecan Protein Oatmeal</h3>
+        <p class="text-sm text-slate-500">400 cal • 10m • Easy</p>
+    </div>
+</a>
+
+                
+                    
+<!-- Recipe Card (matching ProteinMuffins.com) -->
+<a href="/coconut-protein-oatmeal.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+    <div class="relative aspect-square overflow-hidden">
+        <img src="/recipe_images/coconut-protein-oatmeal.png" alt="Coconut Protein Oatmeal" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-3 py-1 rounded-lg shadow-lg">
+            22g
+        </div>
+        <div class="recipe-overlay absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition-opacity duration-300"></div>
+    </div>
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 mb-1 group-hover:text-brand-600 transition-colors">Coconut Protein Oatmeal</h3>
+        <p class="text-sm text-slate-500">360 cal • 10m • Easy</p>
+    </div>
+</a>
+
+                
+                    
+<!-- Recipe Card (matching ProteinMuffins.com) -->
+<a href="/coffee-protein-oatmeal.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+    <div class="relative aspect-square overflow-hidden">
+        <img src="/recipe_images/coffee-protein-oatmeal.png" alt="Coffee Protein Oatmeal" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-3 py-1 rounded-lg shadow-lg">
+            24g
+        </div>
+        <div class="recipe-overlay absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition-opacity duration-300"></div>
+    </div>
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 mb-1 group-hover:text-brand-600 transition-colors">Coffee Protein Oatmeal</h3>
+        <p class="text-sm text-slate-500">340 cal • 10m • Easy</p>
+    </div>
+</a>
+
+                
+                    
+<!-- Recipe Card (matching ProteinMuffins.com) -->
+<a href="/carrot-cake-protein-oatmeal.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+    <div class="relative aspect-square overflow-hidden">
+        <img src="/recipe_images/carrot-cake-protein-oatmeal.png" alt="Carrot Cake Protein Oatmeal" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-3 py-1 rounded-lg shadow-lg">
+            23g
+        </div>
+        <div class="recipe-overlay absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition-opacity duration-300"></div>
+    </div>
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 mb-1 group-hover:text-brand-600 transition-colors">Carrot Cake Protein Oatmeal</h3>
+        <p class="text-sm text-slate-500">370 cal • 10m • Easy</p>
+    </div>
+</a>
+
+                
+                    
+<!-- Recipe Card (matching ProteinMuffins.com) -->
+<a href="/almond-butter-protein-oatmeal.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+    <div class="relative aspect-square overflow-hidden">
+        <img src="/recipe_images/almond-butter-protein-oatmeal.png" alt="Almond Butter Protein Oatmeal" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-3 py-1 rounded-lg shadow-lg">
+            26g
+        </div>
+        <div class="recipe-overlay absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition-opacity duration-300"></div>
+    </div>
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 mb-1 group-hover:text-brand-600 transition-colors">Almond Butter Protein Oatmeal</h3>
+        <p class="text-sm text-slate-500">400 cal • 10m • Easy</p>
+    </div>
+</a>
+
+                
+                    
+<!-- Recipe Card (matching ProteinMuffins.com) -->
+<a href="/mixed-berry-protein-oatmeal.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+    <div class="relative aspect-square overflow-hidden">
+        <img src="/recipe_images/mixed-berry-protein-oatmeal.png" alt="Mixed Berry Protein Oatmeal" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-3 py-1 rounded-lg shadow-lg">
+            24g
+        </div>
+        <div class="recipe-overlay absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition-opacity duration-300"></div>
+    </div>
+    <div class="p-4">
+        <h3 class="font-semibold text-slate-900 mb-1 group-hover:text-brand-600 transition-colors">Mixed Berry Protein Oatmeal</h3>
+        <p class="text-sm text-slate-500">350 cal • 10m • Easy</p>
+    </div>
+</a>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Starter Pack CTA -->
+    <section class="py-20 bg-brand-50">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="inline-block bg-brand-500 text-white text-sm font-bold px-4 py-1.5 rounded-full mb-6 anton-text tracking-wider">
+                FREE DOWNLOAD
+            </span>
+            <h2 class="anton-text text-4xl uppercase mb-4 tracking-wider">Get the Starter Pack</h2>
+            <p class="text-slate-600 text-lg mb-8">
+                5 essential protein oatmeal recipes in a printable PDF. Includes shopping list, nutrition facts, and pro tips.
+            </p>
+            <a href="/pack-starter.html" class="inline-flex items-center gap-3 bg-brand-500 text-white px-8 py-4 rounded-2xl font-bold anton-text text-lg hover:bg-brand-600 transition-colors shadow-xl shadow-brand-500/30 tracking-wider">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                </svg>
+                Download Free PDF
+            </a>
+        </div>
+    </section>
+
+    <!-- More Packs -->
+    
+    <section id="packs" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="anton-text text-4xl text-center mb-4 uppercase tracking-wider">More Recipe Packs</h2>
+            <p class="text-center text-slate-500 mb-10">Curated collections for every goal and preference.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                    <a href="/pack-overnight-starter.html" class="block bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all group">
+                        <span class="text-4xl mb-4 block">🥣</span>
+                        <h3 class="font-semibold text-xl mb-2 group-hover:text-brand-600 transition-colors">Overnight Starter</h3>
+                        <p class="text-slate-600">A collection of our easiest and most delicious overnight oat recipes to get you started.</p>
+                    </a>
+                
+                    <a href="/pack-baked-oatmeal.html" class="block bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all group">
+                        <span class="text-4xl mb-4 block">🔥</span>
+                        <h3 class="font-semibold text-xl mb-2 group-hover:text-brand-600 transition-colors">Baked Oatmeal</h3>
+                        <p class="text-slate-600">Warm, comforting, and protein-packed baked oatmeal recipes for a satisfying breakfast.</p>
+                    </a>
+                
+                    <a href="/pack-dessert-breakfast.html" class="block bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all group">
+                        <span class="text-4xl mb-4 block">🍰</span>
+                        <h3 class="font-semibold text-xl mb-2 group-hover:text-brand-600 transition-colors">Dessert for Breakfast</h3>
+                        <p class="text-slate-600">Indulgent yet healthy oatmeal recipes that taste like dessert but are packed with protein.</p>
+                    </a>
+                
+                    <a href="/pack-savory-oats.html" class="block bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all group">
+                        <span class="text-4xl mb-4 block">🍳</span>
+                        <h3 class="font-semibold text-xl mb-2 group-hover:text-brand-600 transition-colors">Savory Oats</h3>
+                        <p class="text-slate-600">Tired of sweet oatmeal? Try these savory and protein-rich oatmeal recipes for a change.</p>
+                    </a>
+                
+                    <a href="/pack-meal-prep.html" class="block bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all group">
+                        <span class="text-4xl mb-4 block">🗓️</span>
+                        <h3 class="font-semibold text-xl mb-2 group-hover:text-brand-600 transition-colors">Meal Prep</h3>
+                        <p class="text-slate-600">Plan your week with these easy and convenient meal prep oatmeal recipes.</p>
+                    </a>
+                
+                    <a href="/pack-quick-proats.html" class="block bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all group">
+                        <span class="text-4xl mb-4 block">⚡️</span>
+                        <h3 class="font-semibold text-xl mb-2 group-hover:text-brand-600 transition-colors">Quick Proats</h3>
+                        <p class="text-slate-600">When you&#39;re short on time, these quick and easy protein oatmeal recipes are a lifesaver.</p>
+                    </a>
+                
+            </div>
+        </div>
+    </section>
+    
+</main>
+
+
+<!-- Footer (matching ProteinMuffins.com) -->
+<footer class="bg-slate-900 text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+            <!-- Brand -->
+            <div class="md:col-span-1">
+                <a href="/" class="flex items-center mb-4">
+                    <img src="/images/logo.png" alt="ProteinOatmeal" class="h-12 w-12 rounded-lg mr-3">
+                    <span class="anton-text text-xl tracking-wider">PROTEINOATMEAL</span>
+                </a>
+                <p class="text-slate-400 text-sm">Overnight oats, baked oatmeal, and proats</p>
+            </div>
+            
+            <!-- Quick Links -->
+            <div>
+                <h4 class="anton-text text-sm tracking-wider mb-4">RECIPES</h4>
+                <ul class="space-y-2 text-slate-400 text-sm">
+                    <li><a href="/category-all.html" class="hover:text-white transition">All Recipes</a></li>
+                    <li><a href="/category-classic.html" class="hover:text-white transition">Classic</a></li>
+                    <li><a href="/category-high-protein.html" class="hover:text-white transition">High Protein</a></li>
+                    <li><a href="/category-quick.html" class="hover:text-white transition">Quick & Easy</a></li>
+                </ul>
+            </div>
+            
+            <!-- Recipe Packs -->
+            <div>
+                <h4 class="anton-text text-sm tracking-wider mb-4">RECIPE PACKS</h4>
+                <ul class="space-y-2 text-slate-400 text-sm">
+                    <li><a href="/pack-starter.html" class="hover:text-white transition">Starter Pack (Free)</a></li>
+                    <li><a href="/pack-no-bake.html" class="hover:text-white transition">No-Bake Pack</a></li>
+                    <li><a href="/pack-high-protein.html" class="hover:text-white transition">High Protein Pack</a></li>
+                </ul>
+            </div>
+            
+            <!-- Legal -->
+            <div>
+                <h4 class="anton-text text-sm tracking-wider mb-4">LEGAL</h4>
+                <ul class="space-y-2 text-slate-400 text-sm">
+                    <li><a href="/privacy.html" class="hover:text-white transition">Privacy Policy</a></li>
+                    <li><a href="/terms.html" class="hover:text-white transition">Terms of Use</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Empire Links -->
+        <div class="mt-12 pt-8 border-t border-slate-800">
+            <p class="text-slate-500 text-xs text-center mb-4">Part of the Protein Recipe Empire</p>
+            <div class="flex flex-wrap justify-center gap-4 text-xs text-slate-500">
+                <a href="https://proteinmuffins.com" class="hover:text-white transition">Muffins</a>
+                <a href="https://proteincookies.co" class="hover:text-white transition">Cookies</a>
+                <a href="https://proteinpancakes.co" class="hover:text-white transition">Pancakes</a>
+                <a href="https://proteinbrownies.co" class="hover:text-white transition">Brownies</a>
+                <a href="https://protein-bread.com" class="hover:text-white transition">Bread</a>
+                <a href="https://proteinbars.co" class="hover:text-white transition">Bars</a>
+                <a href="https://proteinbites.co" class="hover:text-white transition">Bites</a>
+                <a href="https://proteindonuts.co" class="hover:text-white transition">Donuts</a>
+                <a href="https://proteinoatmeal.co" class="hover:text-white transition">Oatmeal</a>
+                <a href="https://proteincheesecake.co" class="hover:text-white transition">Cheesecake</a>
+                <a href="https://proteinpizzas.co" class="hover:text-white transition">Pizza</a>
+                <a href="https://proteinpudding.co" class="hover:text-white transition">Pudding</a>
+            </div>
+        </div>
+        
+        <div class="mt-8 text-center text-slate-500 text-xs">
+            <p>&copy; 2026 ProteinOatmeal. All recipes macro-verified using USDA FoodData Central.</p>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
