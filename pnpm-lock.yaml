@@ -34,6 +34,30 @@ importers:
         specifier: ^3.2.0
         version: 3.7.4
 
+  apps/highprotein.recipes: {}
+
+  apps/protein-bread.com: {}
+
+  apps/proteinbars.co: {}
+
+  apps/proteinbites.co: {}
+
+  apps/proteinbrownies.co: {}
+
+  apps/proteincheesecake.co: {}
+
+  apps/proteincookies.co: {}
+
+  apps/proteindonuts.co: {}
+
+  apps/proteinoatmeal.co: {}
+
+  apps/proteinpancakes.co: {}
+
+  apps/proteinpizzas.co: {}
+
+  apps/proteinpudding.co: {}
+
   packages/config: {}
 
   packages/email-service:

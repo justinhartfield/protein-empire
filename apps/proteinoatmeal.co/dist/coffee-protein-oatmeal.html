@@ -127,7 +127,7 @@
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4.8",
-    "ratingCount": "169",
+    "ratingCount": "282",
     "bestRating": "5",
     "worstRating": "1"
   },
@@ -324,69 +324,167 @@
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-5 gap-12">
                 <!-- Ingredients (2 cols) -->
-                <div class="md:col-span-2">
-                    <h2 class="anton-text text-2xl uppercase mb-6 tracking-wider">INGREDIENTS</h2>
+                <div class="md:col-span-2" x-data="recipeSubstitution({
+                    recipeId: 'coffee-protein-oatmeal',
+                    yield: 1,
+                    servingSize: 75,
+                    ingredients: [{'id':'rolled-oats','name':'rolled oats','amount':80},{'id':'180ml-brewed-coffee','name':'180ml brewed coffee','amount':0},{'id':'60ml-milk','name':'60ml milk','amount':0},{'id':'whey-vanilla','name':'vanilla whey protein powder','amount':30},{'id':'almond-butter','name':'almond butter','amount':15},{'id':'maple-syrup','name':'maple syrup','amount':10},{'id':'chocolate-chips','name':'dark chocolate chips','amount':10}]
+                })">
+                    <div class="flex justify-between items-center mb-6">
+                        <h2 class="anton-text text-2xl uppercase tracking-wider">INGREDIENTS</h2>
+                        <button 
+                            x-show="checkHasSubstitutions()"
+                            @click="resetAll()"
+                            class="text-xs text-brand-600 hover:text-brand-700 font-semibold uppercase tracking-wider flex items-center gap-1"
+                        >
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+                            </svg>
+                            Reset All
+                        </button>
+                    </div>
                     <div class="bg-white rounded-2xl p-6 border border-slate-200 recipe-shadow">
-                        <ul class="space-y-4">
-                            
-                                <li class="flex justify-between items-center py-2 border-b border-slate-100 last:border-0">
-                                    <span class="text-slate-700">rolled oats</span>
-                                    <span class="font-mono text-slate-500 bg-slate-50 px-3 py-1 rounded-lg text-sm">80g</span>
+                        <!-- Substitution Info Banner -->
+                        <div x-show="checkHasSubstitutions()" x-cloak class="mb-4 p-3 bg-amber-50 border border-amber-200 rounded-xl text-sm">
+                            <div class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-amber-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <div>
+                                    <p class="font-semibold text-amber-800"><span x-text="getSubstitutionCount()"></span> ingredient(s) swapped</p>
+                                    <template x-if="checkHasHydrationAdjustment()">
+                                        <p class="text-amber-700 mt-1">Hydration adjustment: <span x-text="getTotalHydrationAdjustment() > 0 ? '+' + getTotalHydrationAdjustment() : getTotalHydrationAdjustment()"></span>ml liquid</p>
+                                    </template>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <ul class="space-y-2">
+                            <template x-for="ing in currentIngredients" :key="ing.originalId">
+                                <li class="relative">
+                                    <!-- Main Ingredient Row -->
+                                    <div 
+                                        :class="getIngredientClasses(ing)"
+                                        @click="toggleIngredient(ing.id)"
+                                    >
+                                        <div class="flex justify-between items-center">
+                                            <div class="flex items-center gap-2">
+                                                <span x-text="getDisplayName(ing.id)" :class="ing.isSwapped ? 'text-brand-700 font-semibold' : 'text-slate-700'"></span>
+                                                <template x-if="ing.isSwapped">
+                                                    <button 
+                                                        @click.stop="revertIngredient(ing.originalId)"
+                                                        class="text-slate-400 hover:text-slate-600"
+                                                        title="Revert to original"
+                                                    >
+                                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                                        </svg>
+                                                    </button>
+                                                </template>
+                                                <template x-if="canSubstitute(ing.originalId) && !ing.isSwapped">
+                                                    <svg class="w-4 h-4 text-brand-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
+                                                    </svg>
+                                                </template>
+                                            </div>
+                                            <span class="font-mono text-slate-500 bg-slate-50 px-3 py-1 rounded-lg text-sm" x-text="getFormattedAmount(ing)"></span>
+                                        </div>
+                                        <template x-if="ing.isSwapped">
+                                            <p class="text-xs text-slate-500 mt-1">Originally: <span x-text="getDisplayName(ing.originalId)"></span></p>
+                                        </template>
+                                    </div>
+                                    
+                                    <!-- Substitutes Dropdown -->
+                                    <div 
+                                        x-show="isExpanded(ing.id) && canSubstitute(ing.originalId)"
+                                        x-cloak
+                                        x-transition:enter="transition ease-out duration-200"
+                                        x-transition:enter-start="opacity-0 -translate-y-2"
+                                        x-transition:enter-end="opacity-100 translate-y-0"
+                                        class="mt-2 bg-slate-50 rounded-xl p-3 border border-slate-200"
+                                    >
+                                        <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2">Swap with:</p>
+                                        <div class="space-y-1">
+                                            <template x-for="sub in getSubstitutes(ing.originalId)" :key="sub.id">
+                                                <button 
+                                                    @click.stop="selectSubstitute(ing.originalId, sub.id)"
+                                                    class="w-full text-left px-3 py-2 rounded-lg hover:bg-white transition-colors flex justify-between items-center group"
+                                                    :class="sub.isSpecialSwap ? 'border border-amber-200 bg-amber-50' : ''"
+                                                >
+                                                    <span x-text="sub.name" class="text-slate-700 group-hover:text-brand-600"></span>
+                                                    <span x-show="sub.swapNote" x-text="sub.swapNote" class="text-xs text-slate-500 bg-slate-100 px-2 py-0.5 rounded"></span>
+                                                </button>
+                                            </template>
+                                        </div>
+                                    </div>
                                 </li>
-                            
-                                <li class="flex justify-between items-center py-2 border-b border-slate-100 last:border-0">
-                                    <span class="text-slate-700">180ml brewed coffee</span>
-                                    <span class="font-mono text-slate-500 bg-slate-50 px-3 py-1 rounded-lg text-sm">0g</span>
-                                </li>
-                            
-                                <li class="flex justify-between items-center py-2 border-b border-slate-100 last:border-0">
-                                    <span class="text-slate-700">60ml milk</span>
-                                    <span class="font-mono text-slate-500 bg-slate-50 px-3 py-1 rounded-lg text-sm">0g</span>
-                                </li>
-                            
-                                <li class="flex justify-between items-center py-2 border-b border-slate-100 last:border-0">
-                                    <span class="text-slate-700">vanilla whey protein powder</span>
-                                    <span class="font-mono text-slate-500 bg-slate-50 px-3 py-1 rounded-lg text-sm">30g</span>
-                                </li>
-                            
-                                <li class="flex justify-between items-center py-2 border-b border-slate-100 last:border-0">
-                                    <span class="text-slate-700">almond butter</span>
-                                    <span class="font-mono text-slate-500 bg-slate-50 px-3 py-1 rounded-lg text-sm">15g</span>
-                                </li>
-                            
-                                <li class="flex justify-between items-center py-2 border-b border-slate-100 last:border-0">
-                                    <span class="text-slate-700">maple syrup</span>
-                                    <span class="font-mono text-slate-500 bg-slate-50 px-3 py-1 rounded-lg text-sm">10g</span>
-                                </li>
-                            
-                                <li class="flex justify-between items-center py-2 border-b border-slate-100 last:border-0">
-                                    <span class="text-slate-700">dark chocolate chips</span>
-                                    <span class="font-mono text-slate-500 bg-slate-50 px-3 py-1 rounded-lg text-sm">10g</span>
-                                </li>
-                            
+                            </template>
                         </ul>
+                        
+                        <!-- Nutrition Delta Display -->
+                        <template x-if="nutritionDeltas.length > 0">
+                            <div class="mt-4 pt-4 border-t border-slate-200">
+                                <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2">Nutrition Change (per serving):</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <template x-for="delta in nutritionDeltas" :key="delta.name">
+                                        <span 
+                                            class="text-xs px-2 py-1 rounded-full"
+                                            :class="delta.delta > 0 ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'"
+                                            x-text="delta.name + ': ' + delta.formatted"
+                                        ></span>
+                                    </template>
+                                </div>
+                            </div>
+                        </template>
                     </div>
                     
-                    <!-- Nutrition Card -->
-                    <div class="mt-6 bg-brand-50 rounded-2xl p-6 border border-brand-100">
-                        <h3 class="anton-text text-lg uppercase mb-4 tracking-wider">NUTRITION PER OATMEAL</h3>
-                        <div class="grid grid-cols-2 gap-4">
-                            <div class="text-center">
-                                <p class="anton-text text-2xl text-brand-600">24g</p>
-                                <p class="text-xs text-slate-500 uppercase">Protein</p>
+                    <!-- USDA Nutrition Facts Label -->
+                    <div class="mt-6 bg-white rounded-2xl border-4 border-slate-900 p-4">
+                        <div class="border-b-8 border-slate-900 pb-1 mb-2">
+                            <h3 class="text-3xl font-black tracking-tight">Nutrition Facts</h3>
+                        </div>
+                        <div class="border-b border-slate-900 pb-1 mb-1">
+                            <p class="text-sm"><span class="font-bold">1</span> servings per recipe</p>
+                            <div class="flex justify-between items-baseline">
+                                <p class="text-sm font-bold">Serving size</p>
+                                <p class="text-sm font-bold">1 oatmeal</p>
                             </div>
-                            <div class="text-center">
-                                <p class="anton-text text-2xl text-slate-900">340</p>
-                                <p class="text-xs text-slate-500 uppercase">Calories</p>
+                        </div>
+                        <div class="border-b-8 border-slate-900 py-2">
+                            <p class="text-sm font-bold">Amount per serving</p>
+                            <div class="flex justify-between items-baseline">
+                                <p class="text-4xl font-black">Calories</p>
+                                <p class="text-4xl font-black">340</p>
                             </div>
-                            <div class="text-center">
-                                <p class="anton-text text-2xl text-slate-900">40g</p>
-                                <p class="text-xs text-slate-500 uppercase">Carbs</p>
-                            </div>
-                            <div class="text-center">
-                                <p class="anton-text text-2xl text-slate-900">10g</p>
-                                <p class="text-xs text-slate-500 uppercase">Fat</p>
-                            </div>
+                        </div>
+                        <div class="text-right text-xs font-bold border-b border-slate-300 py-1">% Daily Value*</div>
+                        <div class="border-b border-slate-300 py-1 flex justify-between">
+                            <p><span class="font-bold">Total Fat</span> 10g</p>
+                            <p class="font-bold">13%</p>
+                        </div>
+                        <div class="border-b border-slate-300 py-1 flex justify-between">
+                            <p><span class="font-bold">Total Carbohydrate</span> 40g</p>
+                            <p class="font-bold">15%</p>
+                        </div>
+                        <div class="border-b border-slate-300 py-1 pl-4 flex justify-between">
+                            <p>Dietary Fiber 5g</p>
+                            <p class="font-bold">18%</p>
+                        </div>
+                        <div class="border-b border-slate-300 py-1 pl-4">
+                            <p>Total Sugars 10g</p>
+                        </div>
+                        <div class="border-b-8 border-slate-900 py-1 flex justify-between">
+                            <p><span class="font-bold">Protein</span> 24g</p>
+                            <p class="font-bold">48%</p>
+                        </div>
+                        <p class="text-xs mt-2 text-slate-500">*The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.</p>
+                        <div class="mt-3 pt-3 border-t border-slate-200">
+                            <p class="text-xs text-slate-500 flex items-center gap-1">
+                                <svg class="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                Verified using <a href="https://fdc.nal.usda.gov/" target="_blank" rel="noopener noreferrer" class="text-brand-600 hover:text-brand-700 font-semibold">USDA FoodData Central</a>
+                            </p>
                         </div>
                     </div>
                 </div>
