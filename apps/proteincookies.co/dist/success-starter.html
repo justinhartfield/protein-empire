@@ -342,17 +342,17 @@
     // Verify the access token
     const result = await verifyAccess(accessToken);
 
-    if (result.success) {
-      console.log('[protected-success] Access verified for:', result.data.email);
+    if (result.valid) {
+      console.log('[protected-success] Access verified for:', result.email);
       
       // Update email display
       const emailEl = document.getElementById('user-email');
-      if (emailEl) emailEl.textContent = result.data.email;
+      if (emailEl) emailEl.textContent = result.email;
       
       // Update download button
       const btn = document.getElementById('download-btn');
-      if (btn && result.data.pdfUrl) {
-        btn.href = result.data.pdfUrl;
+      if (btn && result.pdfUrl) {
+        btn.href = result.pdfUrl;
       }
       
       showState('success-state');
@@ -360,12 +360,12 @@
       // Track event
       if (typeof gtag === 'function') {
         gtag('event', 'download_page_accessed', {
-          email: result.data.email,
-          pack: result.data.packSlug
+          email: result.email,
+          pack: result.packSlug
         });
       }
     } else {
-      console.log('[protected-success] Access denied:', result.code, result.error);
+      console.log('[protected-success] Access denied:', result.message);
       
       // Update denied message
       const msg = document.getElementById('denied-message');

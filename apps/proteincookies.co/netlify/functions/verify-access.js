@@ -66,7 +66,7 @@ export async function handler(event, context) {
   }
 
   // Get access token from query string or body
-  let accessToken = event.queryStringParameters?.access;
+  let accessToken = event.queryStringParameters?.access || event.queryStringParameters?.token;
   
   if (!accessToken && event.body) {
     try {
