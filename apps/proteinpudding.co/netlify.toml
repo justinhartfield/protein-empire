@@ -42,7 +42,7 @@
 
 # Netlify Functions
 [functions]
-  directory = "../../netlify/functions"
+  directory = "netlify/functions"
 
 # Redirect /api/* to Netlify Functions
 [[redirects]]
