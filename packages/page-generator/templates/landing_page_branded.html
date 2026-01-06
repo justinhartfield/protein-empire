@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{page_title}} | High Protein Recipes</title>
+    <meta name="description" content="{{meta_description}}">
+    <meta name="keywords" content="{{keywords}}">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="{{page_title}}">
+    <meta property="og:description" content="{{meta_description}}">
+    <meta property="og:image" content="{{og_image}}">
+    <meta property="og:url" content="{{canonical_url}}">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{page_title}}">
+    <meta name="twitter:description" content="{{meta_description}}">
+    
+    <link rel="canonical" href="{{canonical_url}}">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Alpine.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'anton': ['Anton', 'sans-serif'],
+                        'sans': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#fffbeb',
+                            100: '#fef3c7',
+                            200: '#fde68a',
+                            300: '#fcd34d',
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                            700: '#b45309',
+                            800: '#92400e',
+                            900: '#451a03',
+                        },
+                        accent: {
+                            400: '#34d399',
+                            500: '#10b981',
+                            600: '#059669',
+                        }
+                    },
+                    borderRadius: {
+                        'xl': '1rem',
+                        '2xl': '1.5rem',
+                        '3xl': '2rem',
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-soft': 'pulse-soft 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'pulse-soft': {
+                            '0%, 100%': { opacity: 1 },
+                            '50%': { opacity: 0.8 },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        [x-cloak] { display: none !important; }
+        
+        body {
+            background-color: #fffbeb;
+            color: #451a03;
+            scroll-behavior: smooth;
+        }
+
+        .recipe-card-shadow {
+            box-shadow: 0 10px 30px -10px rgba(69, 26, 3, 0.1);
+        }
+
+        .glass-nav {
+            background: rgba(255, 251, 235, 0.9);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(245, 158, 11, 0.1);
+        }
+
+        .organic-shape {
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        }
+
+        .cta-gradient {
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+        }
+
+        .transition-all-custom {
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .anton-text {
+            font-family: 'Anton', sans-serif;
+            letter-spacing: 0.02em;
+        }
+
+        /* Modal Specific Styles */
+        .modal-overlay {
+            background: rgba(69, 26, 3, 0.7);
+            backdrop-filter: blur(8px);
+        }
+
+        .pdf-mockup-shadow {
+            box-shadow: 20px 20px 60px rgba(0,0,0,0.1), -5px -5px 20px rgba(255,255,255,0.5);
+        }
+
+        .guide-mockup {
+            background: linear-gradient(145deg, #f59e0b, #d97706);
+            box-shadow: 15px 15px 30px rgba(0,0,0,0.1), -5px -5px 15px rgba(255,255,255,0.5);
+        }
+
+        @media print {
+            .no-print { display: none !important; }
+            body { background: white; }
+        }
+    </style>
+    
+    <!-- Schema.org ItemList -->
+    <script type="application/ld+json">
+    {{schema_json}}
+    </script>
+</head>
+<body x-data="landingPage()" @scroll.window="trackScroll()" @mouseleave="triggerExitIntent()" class="min-h-screen flex flex-col antialiased">
+
+    <!-- Navigation -->
+    <nav class="glass-nav fixed top-0 w-full z-40 transition-all duration-300 no-print">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <a href="https://highprotein.recipes" class="flex items-center gap-2">
+                    <span class="text-2xl">🥗</span>
+                    <span class="anton-text text-xl text-brand-900">HIGH PROTEIN RECIPES</span>
+                </a>
+                <div class="hidden md:flex items-center space-x-6 text-sm font-medium text-brand-900">
+                    <a href="https://highprotein.recipes" class="hover:text-brand-500 transition-colors">All Recipes</a>
+                    <a href="https://highprotein.recipes/meal-prep/" class="hover:text-brand-500 transition-colors">Meal Prep</a>
+                    <a href="https://highprotein.recipes/quick-snacks/" class="hover:text-brand-500 transition-colors">Quick Snacks</a>
+                    <button @click="openLeadMagnet()" class="bg-accent-500 text-white px-5 py-2 rounded-full hover:bg-accent-600 transition-all shadow-sm font-semibold">
+                        Free Guide
+                    </button>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-brand-900 p-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-28 pb-12 px-4 relative overflow-hidden">
+        <div class="absolute top-0 right-0 -z-10 w-1/3 h-full opacity-10 pointer-events-none">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="w-full h-full fill-brand-500">
+                <path d="M44.7,-76.4C58.2,-69.2,70,-58.1,78.2,-44.6C86.4,-31.1,91,-15.5,89.5,-0.9C87.9,13.8,80.3,27.5,70.9,39.1C61.4,50.7,50.1,60.1,37.6,67.6C25.1,75.1,11.3,80.7,-2,84.1C-15.3,87.6,-30.5,88.9,-43.3,82.1C-56.1,75.3,-66.4,60.4,-73.4,45.4C-80.4,30.4,-84.1,15.2,-83.4,0.4C-82.7,-14.4,-77.6,-28.9,-69.1,-41.4C60.6,-53.9,48.7,-64.5,35.3,-71.7C21.8,-78.9,10.9,-82.7,-1.8,-79.6C-14.5,-76.4,-29.1,-66.4,-44.7,-76.4Z" transform="translate(100 100)"/>
+            </svg>
+        </div>
+
+        <div class="max-w-4xl mx-auto text-center">
+            <span class="inline-block px-4 py-1.5 bg-brand-100 text-brand-700 rounded-full text-xs font-bold uppercase tracking-widest mb-6">
+                {{collection_label}}
+            </span>
+            <h1 class="anton-text text-4xl md:text-6xl text-brand-900 leading-tight mb-6">
+                {{hero_title_line1}}<br><span class="text-brand-500">{{hero_title_line2}}</span>
+            </h1>
+            <p class="text-lg text-brand-700/80 max-w-2xl mx-auto leading-relaxed">
+                {{hero_subtitle}}
+            </p>
+            
+            <!-- Stats Bar -->
+            <div class="flex justify-center gap-8 md:gap-16 mt-10 flex-wrap">
+                <div class="text-center">
+                    <div class="anton-text text-3xl md:text-4xl text-accent-500">{{recipe_count}}</div>
+                    <div class="text-sm text-brand-600 font-medium">Recipes</div>
+                </div>
+                <div class="text-center">
+                    <div class="anton-text text-3xl md:text-4xl text-accent-500">{{avg_protein}}g</div>
+                    <div class="text-sm text-brand-600 font-medium">Avg Protein</div>
+                </div>
+                <div class="text-center">
+                    <div class="anton-text text-3xl md:text-4xl text-accent-500">{{site_count}}</div>
+                    <div class="text-sm text-brand-600 font-medium">Recipe Sites</div>
+                </div>
+                <div class="text-center">
+                    <div class="anton-text text-3xl md:text-4xl text-accent-500">Free</div>
+                    <div class="text-sm text-brand-600 font-medium">All Recipes</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Recipe Grid Section -->
+    <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
+        
+        <!-- Filter Tabs -->
+        <div class="flex flex-wrap justify-center gap-3 mb-12 no-print">
+            <a href="https://highprotein.recipes" class="px-5 py-2 rounded-full bg-white border border-brand-200 text-brand-700 text-sm font-semibold hover:bg-brand-100 transition-all">All Recipes</a>
+            <a href="https://highprotein.recipes/quick-snacks/" class="px-5 py-2 rounded-full bg-white border border-brand-200 text-brand-700 text-sm font-semibold hover:bg-brand-100 transition-all">Quick Snacks</a>
+            <a href="https://highprotein.recipes/30g-protein/" class="px-5 py-2 rounded-full bg-white border border-brand-200 text-brand-700 text-sm font-semibold hover:bg-brand-100 transition-all">30g+ Protein</a>
+            <a href="https://highprotein.recipes/vegan/" class="px-5 py-2 rounded-full bg-white border border-brand-200 text-brand-700 text-sm font-semibold hover:bg-brand-100 transition-all">Vegan</a>
+        </div>
+
+        <!-- Recipe Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {{recipe_cards}}
+        </div>
+
+        <!-- In-Content CTA Block -->
+        <div class="my-16 relative overflow-hidden rounded-3xl cta-gradient p-8 md:p-12 text-white no-print">
+            <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
+                <div class="max-w-xl text-center md:text-left">
+                    <h2 class="anton-text text-3xl md:text-4xl mb-4">Want all these recipes in a PDF?</h2>
+                    <p class="text-white/80 text-lg leading-relaxed">Download our "{{pdf_pack_name}}" containing all recipes with shopping lists and macro breakdowns.</p>
+                </div>
+                <div class="w-full md:w-auto">
+                    <button @click="openLeadMagnet()" class="w-full md:w-auto px-10 py-4 bg-white hover:bg-brand-50 text-brand-700 font-bold rounded-full transition-all shadow-lg flex items-center justify-center gap-3 group">
+                        <svg class="w-6 h-6 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                        Download PDF Pack
+                    </button>
+                </div>
+            </div>
+            <!-- Decorative Elements -->
+            <div class="absolute -bottom-10 -right-10 w-64 h-64 bg-white/5 organic-shape pointer-events-none"></div>
+            <div class="absolute top-0 right-1/4 w-32 h-32 bg-white/10 rounded-full blur-2xl pointer-events-none"></div>
+        </div>
+
+        <!-- Load More -->
+        <div class="mt-12 text-center no-print" x-show="hasMoreRecipes">
+            <button @click="loadMore()" class="px-12 py-4 border-2 border-brand-200 rounded-full text-brand-700 font-bold hover:bg-brand-100 transition-all">
+                Load More Recipes
+            </button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brand-100/50 pt-16 pb-32 no-print">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="text-2xl">🥗</span>
+                        <span class="anton-text text-xl text-brand-900">HIGH PROTEIN RECIPES</span>
+                    </div>
+                    <p class="text-brand-700/70 max-w-sm mb-6 leading-relaxed">
+                        Macro-verified protein recipes for real results. All nutrition data verified using USDA FoodData Central.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-brand-700 hover:bg-brand-500 hover:text-white transition-all shadow-sm">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073z"/></svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-brand-700 hover:bg-brand-500 hover:text-white transition-all shadow-sm">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold text-brand-900 mb-6 uppercase tracking-widest text-xs">Categories</h4>
+                    <ul class="space-y-3 text-brand-700/70 text-sm">
+                        <li><a href="https://highprotein.recipes/meal-prep/" class="hover:text-brand-500 transition-colors">Meal Prep Recipes</a></li>
+                        <li><a href="https://highprotein.recipes/post-workout/" class="hover:text-brand-500 transition-colors">Post-Workout Meals</a></li>
+                        <li><a href="https://highprotein.recipes/under-200-calories/" class="hover:text-brand-500 transition-colors">Under 200 Calories</a></li>
+                        <li><a href="https://highprotein.recipes/vegan/" class="hover:text-brand-500 transition-colors">Vegan Protein</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-brand-900 mb-6 uppercase tracking-widest text-xs">Recipe Sites</h4>
+                    <ul class="space-y-3 text-brand-700/70 text-sm">
+                        <li><a href="https://proteincookies.co" class="hover:text-brand-500 transition-colors">Protein Cookies</a></li>
+                        <li><a href="https://proteinbrownies.co" class="hover:text-brand-500 transition-colors">Protein Brownies</a></li>
+                        <li><a href="https://proteinpancakes.co" class="hover:text-brand-500 transition-colors">Protein Pancakes</a></li>
+                        <li><a href="https://proteinmuffins.com" class="hover:text-brand-500 transition-colors">Protein Muffins</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-brand-200 pt-8 text-center text-xs text-brand-600/60">
+                © 2026 High Protein Recipes. All recipes macro-verified using USDA FoodData Central.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky CTA Banner -->
+    <div x-show="showSticky" x-cloak x-transition:enter="transition ease-out duration-500" x-transition:enter-start="translate-y-full" x-transition:enter-end="translate-y-0" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="translate-y-0" x-transition:leave-end="translate-y-full" class="fixed bottom-0 left-0 w-full z-50 p-4 pointer-events-none no-print">
+        <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-2xl border border-brand-200 p-4 flex flex-col md:flex-row items-center gap-4 pointer-events-auto">
+            <div class="flex items-center gap-4 flex-grow">
+                <div class="hidden sm:flex w-12 h-16 bg-brand-100 rounded-lg flex-shrink-0 items-center justify-center">
+                    <span class="text-2xl">📖</span>
+                </div>
+                <div>
+                    <h5 class="font-bold text-brand-900 text-sm md:text-base">Grab the {{pdf_pack_name}}!</h5>
+                    <p class="text-xs text-brand-600 font-medium">Join 15,000+ home cooks saving 5 hours/week.</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-3 w-full md:w-auto">
+                <input type="email" x-model="stickyEmail" placeholder="Your email..." class="flex-grow px-4 py-2 rounded-full bg-brand-50 border border-brand-200 text-sm focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none">
+                <button @click="submitStickyForm()" class="bg-brand-500 text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-brand-600 transition-all whitespace-nowrap">
+                    Join Free
+                </button>
+                <button @click="showSticky = false" class="text-brand-400 hover:text-brand-700 p-1">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Exit Intent Popup -->
+    <div x-show="showExitModal" x-cloak class="fixed inset-0 z-[100] flex items-center justify-center p-4 no-print">
+        <div x-show="showExitModal" x-transition:enter="ease-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" @click="showExitModal = false" class="absolute inset-0 bg-brand-900/60 backdrop-blur-sm"></div>
+
+        <div x-show="showExitModal" x-transition:enter="ease-out duration-300" x-transition:enter-start="opacity-0 scale-95 translate-y-4" x-transition:enter-end="opacity-100 scale-100 translate-y-0" class="relative bg-brand-50 rounded-3xl shadow-3xl max-w-lg w-full p-8 md:p-12 overflow-hidden">
+            <div class="absolute -top-10 -left-10 w-32 h-32 bg-brand-500/10 organic-shape"></div>
+            
+            <button @click="showExitModal = false" class="absolute top-4 right-4 p-2 text-brand-400 hover:text-brand-700 transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            
+            <div class="relative z-10 text-center">
+                <div class="w-20 h-20 bg-brand-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-10 h-10 text-brand-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                </div>
+                <h2 class="anton-text text-3xl text-brand-900 mb-4">Don't leave empty-handed!</h2>
+                <p class="text-brand-700/70 mb-8">Get our "High-Protein Essentials" shopping list for free. No credit card required, just healthy fuel.</p>
+                
+                <form @submit.prevent="submitExitForm()" class="space-y-4">
+                    <input type="email" x-model="exitEmail" required placeholder="Enter your email" class="w-full px-6 py-4 rounded-full border-2 border-brand-200 focus:border-brand-500 outline-none transition-all">
+                    <button type="submit" class="w-full py-4 bg-brand-500 text-white font-bold rounded-full hover:bg-brand-600 transition-all shadow-lg">
+                        Send Me The List
+                    </button>
+                    <button type="button" @click="showExitModal = false" class="text-brand-400 text-sm hover:text-brand-700 transition-colors mt-4">No thanks, I'm good</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- PDF Lead Magnet Modal -->
+    <div x-show="showLeadMagnet" x-cloak class="fixed inset-0 z-[100] flex items-center justify-center p-0 md:p-6 overflow-hidden no-print">
+        <!-- Backdrop -->
+        <div x-show="showLeadMagnet" x-transition:enter="ease-out duration-500" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" @click="showLeadMagnet = false" class="absolute inset-0 bg-brand-900/80 backdrop-blur-sm"></div>
+
+        <!-- Modal Container -->
+        <div x-show="showLeadMagnet" x-transition:enter="ease-out duration-500 transform" x-transition:enter-start="opacity-0 scale-90 translate-y-12" x-transition:enter-end="opacity-100 scale-100 translate-y-0" class="relative w-full max-w-5xl bg-brand-50 md:rounded-[3rem] shadow-premium overflow-hidden flex flex-col md:flex-row min-h-[500px]">
+            <!-- Close Button -->
+            <button @click="showLeadMagnet = false" class="absolute top-6 right-6 z-50 p-2 bg-brand-900/5 hover:bg-brand-900/10 rounded-full transition-colors text-brand-900">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+
+            <!-- Left Side: Visual -->
+            <div class="w-full md:w-5/12 cta-gradient p-12 flex flex-col justify-center items-center relative overflow-hidden">
+                <div class="absolute -top-20 -left-20 w-64 h-64 bg-white/10 organic-shape blur-3xl"></div>
+                <div class="absolute -bottom-20 -right-20 w-64 h-64 bg-white/10 organic-shape blur-3xl"></div>
+
+                <!-- Guide Mockup -->
+                <div class="relative z-10 animate-float">
+                    <div class="guide-mockup w-48 h-64 rounded-tr-[2rem] rounded-br-xl rounded-l-md p-5 flex flex-col justify-between text-white relative">
+                        <div class="absolute left-0 top-0 bottom-0 w-3 bg-black/10 rounded-l-md"></div>
+                        <div class="relative">
+                            <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center mb-3">
+                                <span class="text-xs font-bold">HP</span>
+                            </div>
+                            <h4 class="text-lg font-bold leading-tight">{{pdf_pack_name}}</h4>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="h-1 w-12 bg-white/50 rounded"></div>
+                            <p class="text-[10px] font-medium text-white/70 uppercase tracking-widest">Free Download</p>
+                        </div>
+                        <div class="absolute -right-3 -bottom-3 w-14 h-14 bg-accent-500 rounded-full flex items-center justify-center text-[9px] font-bold text-center rotate-12 shadow-lg border-2 border-white/20">
+                            FREE<br>PDF
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-10 text-center relative z-10">
+                    <p class="text-white/80 font-bold text-sm tracking-widest uppercase mb-2">Exclusive Offer</p>
+                    <h3 class="text-white text-xl font-bold mb-4">{{recipe_count}} Recipes to<br>Transform Your Prep</h3>
+                    <div class="flex items-center justify-center gap-2">
+                        <div class="flex -space-x-2">
+                            <div class="w-8 h-8 rounded-full bg-white/20 border-2 border-white/30 flex items-center justify-center text-xs">👤</div>
+                            <div class="w-8 h-8 rounded-full bg-white/20 border-2 border-white/30 flex items-center justify-center text-xs">👤</div>
+                            <div class="w-8 h-8 rounded-full bg-white/20 border-2 border-white/30 flex items-center justify-center text-xs">👤</div>
+                        </div>
+                        <span class="text-white/60 text-xs font-medium">Join 15.2k+ others</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: Form -->
+            <div class="w-full md:w-7/12 p-8 md:p-14 flex flex-col justify-center">
+                <div x-show="!leadMagnetSubmitted">
+                    <div class="mb-8">
+                        <span class="inline-block px-3 py-1 bg-brand-500/10 text-brand-600 text-[10px] font-bold uppercase tracking-widest rounded-full mb-4">
+                            Free Download
+                        </span>
+                        <h2 class="anton-text text-3xl md:text-4xl text-brand-900 leading-tight mb-4">
+                            Get Your <span class="text-brand-500">{{pdf_pack_name}}</span>
+                        </h2>
+                        <p class="text-lg text-brand-700/70 leading-relaxed">
+                            All {{recipe_count}} recipes with complete nutrition info, shopping lists, and meal prep tips. Delivered instantly to your inbox.
+                        </p>
+                    </div>
+
+                    <form @submit.prevent="submitLeadMagnetForm()" class="space-y-4">
+                        <div class="relative">
+                            <input type="email" x-model="leadMagnetEmail" required placeholder="Where should we send your guide?" class="w-full px-6 py-5 rounded-2xl bg-brand-100/50 border-2 border-transparent focus:border-brand-500 outline-none transition-all text-brand-900 placeholder:text-brand-400 text-lg">
+                            <div class="absolute right-4 top-1/2 -translate-y-1/2">
+                                <svg class="w-6 h-6 text-brand-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="w-full py-5 bg-brand-500 hover:bg-brand-600 text-white font-bold rounded-2xl transition-all shadow-xl flex items-center justify-center gap-3 text-lg group">
+                            <span>Download Free Guide Now</span>
+                            <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </button>
+
+                        <div class="flex items-center gap-3 pt-4 px-2">
+                            <svg class="w-5 h-5 text-accent-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                            <p class="text-xs text-brand-500">We respect your privacy. Unsubscribe anytime.</p>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Success State -->
+                <div x-show="leadMagnetSubmitted" x-transition class="text-center py-8">
+                    <div class="w-20 h-20 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-accent-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    </div>
+                    <h3 class="anton-text text-2xl text-brand-900 mb-4">Check Your Inbox!</h3>
+                    <p class="text-brand-700/70 mb-6">Your {{pdf_pack_name}} is on its way. Check your email for the download link.</p>
+                    <button @click="showLeadMagnet = false" class="px-8 py-3 bg-brand-100 text-brand-700 font-semibold rounded-full hover:bg-brand-200 transition-all">
+                        Continue Browsing
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script Section -->
+    <script>
+        // SendGrid configuration
+        const SENDGRID_ENDPOINT = '{{sendgrid_endpoint}}';
+        const SUCCESS_REDIRECT = '{{success_redirect}}';
+        const PDF_DOWNLOAD_URL = '{{pdf_download_url}}';
+        const GA_MEASUREMENT_ID = 'G-86MYLJ5WDT';
+
+        function landingPage() {
+            return {
+                showSticky: false,
+                showExitModal: false,
+                showLeadMagnet: false,
+                exitIntentTriggered: false,
+                leadMagnetSubmitted: false,
+                stickyEmail: '',
+                exitEmail: '',
+                leadMagnetEmail: '',
+                hasMoreRecipes: false,
+                scrollMarkers: [25, 50, 75, 100],
+                trackedMarkers: [],
+
+                init() {
+                    // Show sticky after 3 seconds
+                    setTimeout(() => {
+                        this.showSticky = true;
+                    }, 3000);
+                },
+
+                openLeadMagnet() {
+                    this.showLeadMagnet = true;
+                    this.trackEvent('lead_magnet_opened', { source: 'cta_button' });
+                },
+
+                triggerExitIntent() {
+                    if (!this.exitIntentTriggered && !this.showLeadMagnet) {
+                        this.showExitModal = true;
+                        this.exitIntentTriggered = true;
+                        this.trackEvent('exit_intent_triggered');
+                    }
+                },
+
+                trackScroll() {
+                    const h = document.documentElement, 
+                          b = document.body,
+                          st = 'scrollTop',
+                          sh = 'scrollHeight';
+                    const percent = Math.round((h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100);
+                    
+                    this.scrollMarkers.forEach(marker => {
+                        if (percent >= marker && !this.trackedMarkers.includes(marker)) {
+                            this.trackedMarkers.push(marker);
+                            this.trackEvent('scroll_depth', { percent: marker });
+                        }
+                    });
+                },
+
+                async submitStickyForm() {
+                    if (!this.stickyEmail) return;
+                    await this.submitEmail(this.stickyEmail, 'sticky_cta');
+                    this.showSticky = false;
+                },
+
+                async submitExitForm() {
+                    if (!this.exitEmail) return;
+                    await this.submitEmail(this.exitEmail, 'exit_intent');
+                    this.showExitModal = false;
+                },
+
+                async submitLeadMagnetForm() {
+                    if (!this.leadMagnetEmail) return;
+                    await this.submitEmail(this.leadMagnetEmail, 'lead_magnet');
+                    this.leadMagnetSubmitted = true;
+                    
+                    // Redirect to success page after delay
+                    setTimeout(() => {
+                        if (SUCCESS_REDIRECT) {
+                            window.location.href = SUCCESS_REDIRECT;
+                        }
+                    }, 2000);
+                },
+
+                async submitEmail(email, source) {
+                    this.trackEvent('email_signup', { source: source });
+                    
+                    // If SendGrid endpoint is configured, submit
+                    if (SENDGRID_ENDPOINT && SENDGRID_ENDPOINT !== '{{sendgrid_endpoint}}') {
+                        try {
+                            await fetch(SENDGRID_ENDPOINT, {
+                                method: 'POST',
+                                headers: { 'Content-Type': 'application/json' },
+                                body: JSON.stringify({
+                                    email: email,
+                                    source: source,
+                                    page: window.location.pathname,
+                                    timestamp: new Date().toISOString()
+                                })
+                            });
+                        } catch (e) {
+                            console.error('Email submission failed:', e);
+                        }
+                    }
+                },
+
+                trackEvent(eventName, params = {}) {
+                    // GA4 tracking
+                    if (typeof gtag !== 'undefined') {
+                        gtag('event', eventName, params);
+                    }
+                    console.log('Event:', eventName, params);
+                },
+
+                loadMore() {
+                    // Placeholder for load more functionality
+                    this.trackEvent('load_more_clicked');
+                }
+            }
+        }
+    </script>
+
+    <!-- GA4 Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-86MYLJ5WDT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-86MYLJ5WDT');
+    </script>
+</body>
+</html>

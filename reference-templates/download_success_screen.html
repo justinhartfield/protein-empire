@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success! Your Guide is Ready | Dotoro Wellness</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Alpine.js -->
+    <script defer="" src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        wellness: {
+                            sage: '#7B8E7E',
+                            forest: '#3A4D39',
+                            cream: '#FDFBF7',
+                            sand: '#F5EFE6',
+                            terracotta: '#D4A373',
+                            clay: '#A67C52',
+                        }
+                    },
+                    borderRadius: {
+                        'xl': '1rem',
+                        '2xl': '1.5rem',
+                        '3xl': '2rem',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        [x-cloak] { display: none !important; }
+        
+        body {
+            background-color: #FDFBF7;
+            color: #2D3436;
+            scroll-behavior: smooth;
+        }
+
+        .recipe-card-shadow {
+            box-shadow: 0 10px 30px -10px rgba(58, 77, 57, 0.1);
+        }
+
+        .glass-nav {
+            background: rgba(253, 251, 247, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(123, 142, 126, 0.1);
+        }
+
+        .organic-shape {
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        }
+
+        .success-blob {
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        }
+
+        .cta-gradient {
+            background: linear-gradient(135deg, #7B8E7E 0%, #3A4D39 100%);
+        }
+
+        .transition-all-custom {
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        /* GA4 Simulation Toast */
+        .analytics-toast {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #333;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 12px;
+            z-index: 9999;
+            pointer-events: none;
+            opacity: 0;
+            transform: translateY(-20px);
+            transition: all 0.3s ease;
+        }
+        .analytics-toast.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .float-anim {
+            animation: float 4s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body x-data="successPage()" class="min-h-screen flex flex-col antialiased">
+
+    <!-- GA4 Simulation Helper -->
+    <div id="analytics-toast" class="analytics-toast font-mono"></div>
+
+    <!-- Navigation -->
+    <nav class="glass-nav fixed top-0 w-full z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                
+                <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-wellness-forest">
+                    <a href="#" class="hover:text-wellness-terracotta transition-colors">Browse Recipes</a>
+                    <a href="#" class="hover:text-wellness-terracotta transition-colors">Metabolic Health</a>
+                    <button @click="trackClick('nav_support', 'outbound_click')" class="text-wellness-sage border border-wellness-sage/30 px-5 py-2 rounded-full hover:bg-wellness-sage hover:text-white transition-all">
+                        Support
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow pt-32 pb-20">
+        <!-- Success Hero Section -->
+        <section class="max-w-4xl mx-auto px-4 text-center mb-20">
+            <div class="relative inline-block mb-8">
+                <div class="w-24 h-24 bg-wellness-sand success-blob flex items-center justify-center mx-auto relative z-10">
+                    <svg class="w-12 h-12 text-wellness-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                </div>
+                <div class="absolute -top-4 -right-4 w-12 h-12 bg-wellness-terracotta/20 organic-shape animate-pulse"></div>
+                <div class="absolute -bottom-2 -left-6 w-16 h-16 bg-wellness-sage/10 organic-shape float-anim"></div>
+            </div>
+
+            <h1 class="text-4xl md:text-5xl font-extrabold text-wellness-forest mb-4">
+                Thank You for Joining!
+            </h1>
+            <p class="text-lg text-wellness-sage/90 max-w-xl mx-auto leading-relaxed mb-10">
+                Your <span class="font-bold text-wellness-forest">High-Protein Meal Prep Master Pack</span> has been sent to your inbox, but you can download it right now below.
+            </p>
+
+            <!-- Main Download Card -->
+            <div class="bg-white rounded-3xl recipe-card-shadow p-8 md:p-12 border border-wellness-sand max-w-2xl mx-auto relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-4">
+                    <span class="bg-wellness-terracotta text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Instant Access</span>
+                </div>
+                
+                <div class="flex flex-col md:flex-row items-center gap-8 relative z-10">
+                    <div class="w-32 h-44 bg-wellness-sand rounded-xl shadow-inner flex-shrink-0 flex flex-col items-center justify-center p-4 border-2 border-dashed border-wellness-sage/30">
+                        <svg class="w-10 h-10 text-wellness-sage mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                        </svg>
+                        <span class="text-[10px] font-bold text-wellness-forest text-center leading-tight">MEAL PREP GUIDE.pdf</span>
+                        <div class="mt-4 w-full h-1.5 bg-wellness-sage/20 rounded-full overflow-hidden">
+                            <div class="w-full h-full bg-wellness-sage"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-left flex-grow">
+                        <h3 class="text-xl font-bold text-wellness-forest mb-2">High-Protein Master Pack</h3>
+                        <p class="text-sm text-wellness-sage mb-6">Contains 52 recipes, macro-tracking sheets, and a 4-week shopping schedule.</p>
+                        
+                        <a href="#" @click.prevent="downloadPdf('high-protein-master-pack')" class="inline-flex items-center gap-3 bg-wellness-forest text-white px-8 py-4 rounded-full font-bold hover:bg-wellness-terracotta transition-all shadow-lg group">
+                            <svg class="w-5 h-5 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                            </svg>
+                            Download PDF (12.4 MB)
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Decorative organic shape -->
+                <div class="absolute -bottom-12 -right-12 w-40 h-40 bg-wellness-sand/40 organic-shape -z-0"></div>
+            </div>
+        </section>
+
+        <!-- Recommended Recipes Section -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between mb-10">
+                <div>
+                    <h2 class="text-2xl font-bold text-wellness-forest">While you wait for your download...</h2>
+                    <p class="text-wellness-sage text-sm">Explore these high-protein favorites from the community.</p>
+                </div>
+                <a href="#" class="text-wellness-terracotta font-bold text-sm hover:underline">View All Recipes →</a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <template x-for="recipe in trendingRecipes" :key="recipe.id">
+                    <article class="group bg-white rounded-3xl overflow-hidden recipe-card-shadow border border-wellness-sand/50 transition-all-custom hover:-translate-y-2">
+                        <div class="relative h-48 overflow-hidden">
+                            <img :src="recipe.image" :alt="recipe.title" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                            <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-wellness-forest">
+                                <span x-text="recipe.protein"></span>g Protein
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-bold text-wellness-forest mb-2 group-hover:text-wellness-terracotta transition-colors" x-text="recipe.title"></h3>
+                            <div class="flex items-center justify-between mt-4">
+                                <span class="text-xs font-semibold text-wellness-sage/70" x-text="recipe.time"></span>
+                                <a href="#" @click="trackClick(recipe.slug, 'outbound_click')" class="text-[10px] font-bold text-wellness-terracotta tracking-widest uppercase">Details</a>
+                            </div>
+                        </div>
+                    </article>
+                </template>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-wellness-sand/50 pt-20 pb-10 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8 border-b border-wellness-sage/10 pb-12 mb-8">
+                
+                <div class="flex gap-8 text-sm font-medium text-wellness-sage">
+                    <a href="#" class="hover:text-wellness-forest transition-colors">Recipes</a>
+                    <a href="#" class="hover:text-wellness-forest transition-colors">Meal Plans</a>
+                    <a href="#" class="hover:text-wellness-forest transition-colors">Privacy</a>
+                    <a href="#" class="hover:text-wellness-forest transition-colors">Contact</a>
+                </div>
+                <div class="flex gap-4">
+                    <div class="w-8 h-8 rounded-full bg-wellness-forest/5 flex items-center justify-center text-wellness-forest hover:bg-wellness-sage hover:text-white transition-all cursor-pointer">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg>
+                    </div>
+                    <div class="w-8 h-8 rounded-full bg-wellness-forest/5 flex items-center justify-center text-wellness-forest hover:bg-wellness-sage hover:text-white transition-all cursor-pointer">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.058-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center text-xs text-wellness-sage/60">
+                © 2023 Dotoro Wellness. All recipes nutrition-verified. Sustainable health for everyday humans.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script Section -->
+    <script>
+        function successPage() {
+            return {
+                trendingRecipes: [
+                    { id: 1, title: "Zesty Lime Shrimp Tacos", protein: 32, slug: "lime-shrimp-tacos", time: "15 min", image: "https://images.unsplash.com/photo-1551248429-40975aa4de74?auto=format&fit=crop&q=80&w=800" },
+                    { id: 2, title: "Overnight High-Pro Oats", protein: 28, slug: "pro-oats", time: "5 min prep", image: "https://images.unsplash.com/photo-1517673400267-0251440c45dc?auto=format&fit=crop&q=80&w=800" },
+                    { id: 3, title: "Turkey Pesto Zoodles", protein: 35, slug: "turkey-zoodles", time: "20 min", image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&q=80&w=800" }
+                ],
+
+                downloadPdf(packName) {
+                    this.logAnalytics(`Event: pdf_download | pack_name: ${packName} | site: dotoro`);
+                    
+                    // Simulate download start
+                    const toast = document.getElementById('analytics-toast');
+                    toast.innerText = "🚀 Your download has started!";
+                    toast.classList.add('show');
+                    
+                    setTimeout(() => {
+                        toast.classList.remove('show');
+                        // In production, this would be: window.location.href = '/path/to/pdf';
+                        alert('Success! In a real environment, your PDF would be downloading now.');
+                    }, 2000);
+                },
+
+                trackClick(slug, action) {
+                    this.logAnalytics(`Event: ${action} | target: ${slug}`);
+                },
+
+                logAnalytics(message) {
+                    console.log(`[GA4 SIMULATION]: ${message}`);
+                    const toast = document.getElementById('analytics-toast');
+                    toast.innerText = message;
+                    toast.classList.add('show');
+                    setTimeout(() => toast.classList.remove('show'), 2500);
+                }
+            }
+        }
+    </script>
+
+    <!-- Schema Markup for Page -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Download Success - Dotoro Wellness",
+      "description": "Confirmation page for high-protein recipe guide download.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Dotoro Wellness",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://dotoro.com/logo.png"
+        }
+      }
+    }
+    </script>
+
+
+</body></html>

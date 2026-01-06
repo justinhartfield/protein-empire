@@ -414,5 +414,25 @@
 </footer>
 
 
+
+<!-- Conversion Components -->
+<script src="/js/conversion-components.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        initConversionComponents({
+            siteName: 'Protein Cheesecake',
+            siteEmoji: '🍰',
+            leadMagnetTitle: 'Protein Cheesecake Recipe Pack',
+            leadMagnetDescription: 'Get 20+ protein cheesecake recipes with shopping lists and macro breakdowns.',
+            sendgridEndpoint: '/.netlify/functions/subscribe',
+            successRedirect: '/download-success/',
+            pdfDownloadUrl: '/downloads/protein-cheesecake-pack.pdf',
+            gaMeasurementId: 'G-86MYLJ5WDT',
+            stickyDelay: 3000,
+            exitIntentEnabled: true
+        });
+    });
+</script>
+
 </body>
 </html>

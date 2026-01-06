@@ -4,633 +4,138 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Post-Workout Protein Recipes | High Protein Recipes</title>
-    <meta name="description" content="Discover post-workout protein recipes with 20-40g protein per serving. Macro-verified recipes for optimal muscle recovery.">
-    <meta name="keywords" content="post workout protein, recovery recipes, muscle building meals, high protein snacks">
+    <meta name="description" content="Fuel your recovery with high-protein recipes designed for optimal muscle repair. Quick to make, delicious to eat.">
+    <meta name="keywords" content="post workout protein, recovery meals, muscle building recipes">
     
     <!-- Open Graph -->
     <meta property="og:title" content="Post-Workout Protein Recipes">
-    <meta property="og:description" content="Discover post-workout protein recipes with 20-40g protein per serving. Macro-verified recipes for optimal muscle recovery.">
-    <meta property="og:image" content="https://proteinbrownies.co/recipe_images/zucchini-protein-brownies.jpg">
+    <meta property="og:description" content="Fuel your recovery with high-protein recipes designed for optimal muscle repair. Quick to make, delicious to eat.">
+    <meta property="og:image" content="https://proteinpizzas.co/recipe_images/cauliflower-protein-pizza-crust.jpg">
     <meta property="og:url" content="https://highprotein.recipes/post-workout/">
     <meta property="og:type" content="website">
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Post-Workout Protein Recipes">
-    <meta name="twitter:description" content="Discover post-workout protein recipes with 20-40g protein per serving. Macro-verified recipes for optimal muscle recovery.">
+    <meta name="twitter:description" content="Fuel your recovery with high-protein recipes designed for optimal muscle repair. Quick to make, delicious to eat.">
     
     <link rel="canonical" href="https://highprotein.recipes/post-workout/">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Alpine.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'anton': ['Anton', 'sans-serif'],
+                        'sans': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#fffbeb',
+                            100: '#fef3c7',
+                            200: '#fde68a',
+                            300: '#fcd34d',
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                            700: '#b45309',
+                            800: '#92400e',
+                            900: '#451a03',
+                        },
+                        accent: {
+                            400: '#34d399',
+                            500: '#10b981',
+                            600: '#059669',
+                        }
+                    },
+                    borderRadius: {
+                        'xl': '1rem',
+                        '2xl': '1.5rem',
+                        '3xl': '2rem',
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-soft': 'pulse-soft 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'pulse-soft': {
+                            '0%, 100%': { opacity: 1 },
+                            '50%': { opacity: 0.8 },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
     <style>
-        :root {
-            --primary: #16a34a;
-            --primary-dark: #15803d;
-            --primary-light: #dcfce7;
-            --accent: #f97316;
-            --accent-hover: #ea580c;
-            --bg-cream: #fefdfb;
-            --bg-light: #f8fafc;
-            --text-dark: #1e293b;
-            --text-muted: #64748b;
-            --text-light: #94a3b8;
-            --border: #e2e8f0;
-            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
-            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
-            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
-            --radius: 12px;
-            --radius-lg: 16px;
-            --radius-xl: 24px;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        [x-cloak] { display: none !important; }
         
         body {
-            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: var(--bg-cream);
-            color: var(--text-dark);
-            line-height: 1.6;
-            -webkit-font-smoothing: antialiased;
-        }
-        
-        /* Header */
-        .header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid var(--border);
-            z-index: 1000;
-            padding: 12px 0;
-        }
-        
-        .header-inner {
-            max-width: 1280px;
-            margin: 0 auto;
-            padding: 0 24px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        
-        .logo {
-            font-weight: 800;
-            font-size: 20px;
-            color: var(--primary);
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        
-        .logo-icon {
-            width: 32px;
-            height: 32px;
-            background: var(--primary);
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 18px;
-        }
-        
-        .header-cta {
-            background: var(--accent);
-            color: white;
-            padding: 10px 20px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 14px;
-            transition: all 0.2s;
-        }
-        
-        .header-cta:hover {
-            background: var(--accent-hover);
-            transform: translateY(-1px);
-        }
-        
-        /* Hero Section */
-        .hero {
-            padding: 120px 24px 80px;
-            background: linear-gradient(180deg, var(--bg-cream) 0%, var(--bg-light) 100%);
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -20%;
-            width: 60%;
-            height: 100%;
-            background: radial-gradient(circle, var(--primary-light) 0%, transparent 70%);
-            opacity: 0.5;
-            pointer-events: none;
-        }
-        
-        .hero-inner {
-            max-width: 1280px;
-            margin: 0 auto;
-            text-align: center;
-            position: relative;
-            z-index: 1;
-        }
-        
-        .hero-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: var(--primary-light);
-            color: var(--primary-dark);
-            padding: 8px 16px;
-            border-radius: 100px;
-            font-size: 14px;
-            font-weight: 600;
-            margin-bottom: 24px;
-        }
-        
-        .hero-badge svg {
-            width: 16px;
-            height: 16px;
-        }
-        
-        .hero h1 {
-            font-size: clamp(36px, 6vw, 64px);
-            font-weight: 800;
-            line-height: 1.1;
-            margin-bottom: 20px;
-            color: var(--text-dark);
-        }
-        
-        .hero h1 span {
-            color: var(--primary);
-        }
-        
-        .hero-subtitle {
-            font-size: clamp(16px, 2vw, 20px);
-            color: var(--text-muted);
-            max-width: 600px;
-            margin: 0 auto 32px;
-            line-height: 1.7;
-        }
-        
-        .hero-ctas {
-            display: flex;
-            gap: 16px;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-bottom: 48px;
-        }
-        
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 14px 28px;
-            border-radius: 10px;
-            font-weight: 600;
-            font-size: 16px;
-            text-decoration: none;
-            transition: all 0.2s;
-            cursor: pointer;
-            border: none;
-        }
-        
-        .btn-primary {
-            background: var(--primary);
-            color: white;
-        }
-        
-        .btn-primary:hover {
-            background: var(--primary-dark);
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-lg);
-        }
-        
-        .btn-secondary {
-            background: white;
-            color: var(--text-dark);
-            border: 2px solid var(--border);
-        }
-        
-        .btn-secondary:hover {
-            border-color: var(--primary);
-            color: var(--primary);
-        }
-        
-        .btn-accent {
-            background: var(--accent);
-            color: white;
-        }
-        
-        .btn-accent:hover {
-            background: var(--accent-hover);
-            transform: translateY(-2px);
-        }
-        
-        /* Stats Bar */
-        .stats-bar {
-            display: flex;
-            justify-content: center;
-            gap: 48px;
-            flex-wrap: wrap;
-            padding: 32px;
-            background: white;
-            border-radius: var(--radius-xl);
-            box-shadow: var(--shadow-lg);
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        .stat-item {
-            text-align: center;
-        }
-        
-        .stat-value {
-            font-size: 36px;
-            font-weight: 800;
-            color: var(--primary);
-            line-height: 1;
-        }
-        
-        .stat-label {
-            font-size: 14px;
-            color: var(--text-muted);
-            margin-top: 4px;
-        }
-        
-        /* Trust Banner */
-        .trust-banner {
-            background: var(--primary);
-            color: white;
-            padding: 16px 24px;
-            text-align: center;
-            font-size: 14px;
-            font-weight: 500;
-        }
-        
-        .trust-banner strong {
-            font-weight: 700;
-        }
-        
-        /* Recipe Grid Section */
-        .recipes-section {
-            padding: 80px 24px;
-            background: var(--bg-light);
-        }
-        
-        .section-inner {
-            max-width: 1280px;
-            margin: 0 auto;
-        }
-        
-        .section-header {
-            text-align: center;
-            margin-bottom: 48px;
-        }
-        
-        .section-label {
-            display: inline-block;
-            background: var(--primary-light);
-            color: var(--primary-dark);
-            padding: 6px 14px;
-            border-radius: 100px;
-            font-size: 13px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-bottom: 16px;
-        }
-        
-        .section-title {
-            font-size: clamp(28px, 4vw, 42px);
-            font-weight: 800;
-            margin-bottom: 16px;
-            color: var(--text-dark);
-        }
-        
-        .section-subtitle {
-            font-size: 18px;
-            color: var(--text-muted);
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        
-        /* Recipe Grid */
-        .recipe-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 24px;
-        }
-        
-        .recipe-card {
-            background: white;
-            border-radius: var(--radius-lg);
-            overflow: hidden;
-            box-shadow: var(--shadow);
-            transition: all 0.3s;
-            text-decoration: none;
-            color: inherit;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .recipe-card:hover {
-            transform: translateY(-8px);
-            box-shadow: var(--shadow-xl);
-        }
-        
-        .recipe-image {
-            position: relative;
-            aspect-ratio: 4/3;
-            overflow: hidden;
-            background: var(--bg-light);
-        }
-        
-        .recipe-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.3s;
-        }
-        
-        .recipe-card:hover .recipe-image img {
-            transform: scale(1.05);
-        }
-        
-        .recipe-badges {
-            position: absolute;
-            top: 12px;
-            left: 12px;
-            right: 12px;
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-        }
-        
-        .protein-badge {
-            background: var(--primary);
-            color: white;
-            padding: 6px 12px;
-            border-radius: 100px;
-            font-size: 13px;
-            font-weight: 700;
-        }
-        
-        .site-badge {
-            background: rgba(0, 0, 0, 0.7);
-            color: white;
-            padding: 6px 10px;
-            border-radius: 6px;
-            font-size: 11px;
-            font-weight: 600;
-        }
-        
-        .recipe-content {
-            padding: 20px;
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .recipe-title {
-            font-size: 18px;
-            font-weight: 700;
-            margin-bottom: 12px;
-            line-height: 1.3;
-            color: var(--text-dark);
-        }
-        
-        .recipe-meta {
-            display: flex;
-            gap: 16px;
-            margin-bottom: 16px;
-            flex-wrap: wrap;
-        }
-        
-        .recipe-meta-item {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            font-size: 13px;
-            color: var(--text-muted);
-        }
-        
-        .recipe-meta-item svg {
-            width: 16px;
-            height: 16px;
-            color: var(--text-light);
-        }
-        
-        .recipe-cta {
-            margin-top: auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding-top: 16px;
-            border-top: 1px solid var(--border);
-        }
-        
-        .view-recipe {
-            color: var(--primary);
-            font-weight: 600;
-            font-size: 14px;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-        
-        .view-recipe svg {
-            width: 16px;
-            height: 16px;
-            transition: transform 0.2s;
-        }
-        
-        .recipe-card:hover .view-recipe svg {
-            transform: translateX(4px);
-        }
-        
-        /* Benefits Section */
-        .benefits-section {
-            padding: 80px 24px;
-            background: white;
-        }
-        
-        .benefits-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 32px;
-            margin-top: 48px;
-        }
-        
-        .benefit-card {
-            text-align: center;
-            padding: 32px 24px;
-            background: var(--bg-light);
-            border-radius: var(--radius-lg);
-            transition: all 0.3s;
-        }
-        
-        .benefit-card:hover {
-            background: var(--primary-light);
-            transform: translateY(-4px);
-        }
-        
-        .benefit-icon {
-            width: 56px;
-            height: 56px;
-            background: var(--primary);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 16px;
-            color: white;
-            font-size: 24px;
-        }
-        
-        .benefit-title {
-            font-size: 16px;
-            font-weight: 700;
-            margin-bottom: 8px;
-            color: var(--text-dark);
-        }
-        
-        .benefit-desc {
-            font-size: 14px;
-            color: var(--text-muted);
-            line-height: 1.5;
-        }
-        
-        /* CTA Section */
-        .cta-section {
-            padding: 80px 24px;
-            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-            text-align: center;
-            color: white;
-        }
-        
-        .cta-section h2 {
-            font-size: clamp(28px, 4vw, 40px);
-            font-weight: 800;
-            margin-bottom: 16px;
-        }
-        
-        .cta-section p {
-            font-size: 18px;
-            opacity: 0.9;
-            max-width: 500px;
-            margin: 0 auto 32px;
-        }
-        
-        .cta-section .btn {
-            background: white;
-            color: var(--primary);
-        }
-        
-        .cta-section .btn:hover {
-            background: var(--bg-light);
-            transform: translateY(-2px);
-        }
-        
-        /* Footer */
-        .footer {
-            background: var(--text-dark);
-            color: white;
-            padding: 48px 24px;
-            text-align: center;
-        }
-        
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 32px;
-            margin-bottom: 24px;
-            flex-wrap: wrap;
-        }
-        
-        .footer-links a {
-            color: var(--text-light);
-            text-decoration: none;
-            font-size: 14px;
-            transition: color 0.2s;
-        }
-        
-        .footer-links a:hover {
-            color: white;
-        }
-        
-        .footer-copy {
-            font-size: 14px;
-            color: var(--text-light);
-        }
-        
-        /* Sticky Mobile CTA */
-        .mobile-cta {
-            display: none;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: white;
-            padding: 16px 24px;
-            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
-            z-index: 999;
-        }
-        
-        .mobile-cta .btn {
-            width: 100%;
-            justify-content: center;
-        }
-        
-        @media (max-width: 768px) {
-            .mobile-cta {
-                display: block;
-            }
-            
-            .stats-bar {
-                gap: 24px;
-                padding: 24px;
-            }
-            
-            .stat-value {
-                font-size: 28px;
-            }
-            
-            .hero {
-                padding-bottom: 60px;
-            }
-            
-            .recipes-section {
-                padding-bottom: 120px;
-            }
-        }
-        
-        /* Schema.org structured data styling */
-        .sr-only {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
-            border: 0;
+            background-color: #fffbeb;
+            color: #451a03;
+            scroll-behavior: smooth;
+        }
+
+        .recipe-card-shadow {
+            box-shadow: 0 10px 30px -10px rgba(69, 26, 3, 0.1);
+        }
+
+        .glass-nav {
+            background: rgba(255, 251, 235, 0.9);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(245, 158, 11, 0.1);
+        }
+
+        .organic-shape {
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        }
+
+        .cta-gradient {
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+        }
+
+        .transition-all-custom {
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .anton-text {
+            font-family: 'Anton', sans-serif;
+            letter-spacing: 0.02em;
+        }
+
+        /* Modal Specific Styles */
+        .modal-overlay {
+            background: rgba(69, 26, 3, 0.7);
+            backdrop-filter: blur(8px);
+        }
+
+        .pdf-mockup-shadow {
+            box-shadow: 20px 20px 60px rgba(0,0,0,0.1), -5px -5px 20px rgba(255,255,255,0.5);
+        }
+
+        .guide-mockup {
+            background: linear-gradient(145deg, #f59e0b, #d97706);
+            box-shadow: 15px 15px 30px rgba(0,0,0,0.1), -5px -5px 15px rgba(255,255,255,0.5);
+        }
+
+        @media print {
+            .no-print { display: none !important; }
+            body { background: white; }
         }
     </style>
     
@@ -640,1035 +145,1058 @@
   "@context": "https://schema.org",
   "@type": "ItemList",
   "name": "Post-Workout Protein Recipes",
-  "description": "Discover post-workout protein recipes with 20-40g protein per serving. Macro-verified recipes for optimal muscle recovery.",
+  "description": "Fuel your recovery with high-protein recipes designed for optimal muscle repair. Quick to make, delicious to eat.",
   "numberOfItems": 21,
   "itemListElement": [
     {
       "@type": "ListItem",
       "position": 1,
-      "url": "https://proteinbrownies.co/zucchini-protein-brownies.html",
-      "name": "Zucchini Protein Brownies"
+      "url": "https://proteinpizzas.co/cauliflower-protein-pizza-crust.html",
+      "name": "Cauliflower Protein Pizza Crust"
     },
     {
       "@type": "ListItem",
       "position": 2,
-      "url": "https://protein-bread.com/protein-zucchini-bread.html",
-      "name": "Delicious Protein Zucchini Bread"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "url": "https://protein-bread.com/cinnamon-swirl-protein-bread.html",
-      "name": "Cinnamon Swirl Protein Bread"
-    },
-    {
-      "@type": "ListItem",
-      "position": 4,
-      "url": "https://protein-bread.com/whole-wheat-protein-sandwich-bread.html",
-      "name": "Whole Wheat Protein Sandwich Bread"
-    },
-    {
-      "@type": "ListItem",
-      "position": 5,
-      "url": "https://protein-bread.com/chocolate-chip-protein-zucchini-bread.html",
-      "name": "Chocolate Chip Protein Zucchini Bread"
-    },
-    {
-      "@type": "ListItem",
-      "position": 6,
-      "url": "https://protein-bread.com/multigrain-protein-sandwich-bread.html",
-      "name": "Multigrain Protein Sandwich Bread"
-    },
-    {
-      "@type": "ListItem",
-      "position": 7,
-      "url": "https://protein-bread.com/apple-cinnamon-protein-bread.html",
-      "name": "Apple Cinnamon Protein Bread"
-    },
-    {
-      "@type": "ListItem",
-      "position": 8,
-      "url": "https://proteinbars.co/candy-bar-copycat-snickers.html",
-      "name": "Candy Bar Copycat: Protein Snickers"
-    },
-    {
-      "@type": "ListItem",
-      "position": 9,
-      "url": "https://proteinbars.co/candy-bar-copycat-twix.html",
-      "name": "Candy Bar Copycat: Protein Twix"
-    },
-    {
-      "@type": "ListItem",
-      "position": 10,
-      "url": "https://proteinbars.co/high-protein-samoa-bars.html",
-      "name": "High-Protein Samoa Bars"
-    },
-    {
-      "@type": "ListItem",
-      "position": 11,
-      "url": "https://proteinbars.co/candy-bar-copycat-butterfinger.html",
-      "name": "Candy Bar Copycat: Protein Butterfinger"
-    },
-    {
-      "@type": "ListItem",
-      "position": 12,
-      "url": "https://proteindonuts.co/maple-bacon-protein-donuts.html",
-      "name": "Maple Bacon Protein Donuts"
-    },
-    {
-      "@type": "ListItem",
-      "position": 13,
-      "url": "https://proteindonuts.co/boston-cream-protein-donuts.html",
-      "name": "Boston Cream Protein Donuts"
-    },
-    {
-      "@type": "ListItem",
-      "position": 14,
-      "url": "https://proteindonuts.co/jelly-filled-protein-donuts.html",
-      "name": "Jelly-Filled Protein Donuts"
-    },
-    {
-      "@type": "ListItem",
-      "position": 15,
-      "url": "https://proteindonuts.co/carrot-cake-protein-donuts.html",
-      "name": "Carrot Cake Protein Donuts"
-    },
-    {
-      "@type": "ListItem",
-      "position": 16,
-      "url": "https://proteincheesecake.co/strawberry-swirl-cheesecake.html",
-      "name": "Strawberry Swirl Cheesecake"
-    },
-    {
-      "@type": "ListItem",
-      "position": 17,
       "url": "https://proteincheesecake.co/caramel-pecan-cheesecake.html",
       "name": "Caramel Pecan Cheesecake"
     },
     {
       "@type": "ListItem",
-      "position": 18,
-      "url": "https://proteincheesecake.co/raspberry-white-chocolate-cheesecake.html",
-      "name": "Raspberry White Chocolate Cheesecake"
-    },
-    {
-      "@type": "ListItem",
-      "position": 19,
+      "position": 3,
       "url": "https://proteincheesecake.co/red-velvet-cheesecake.html",
       "name": "Red Velvet Cheesecake"
     },
     {
       "@type": "ListItem",
-      "position": 20,
+      "position": 4,
       "url": "https://proteincheesecake.co/tiramisu-cheesecake.html",
       "name": "Tiramisu Cheesecake"
     },
     {
       "@type": "ListItem",
+      "position": 5,
+      "url": "https://proteinbread.co/chocolate-chip-protein-zucchini-bread.html",
+      "name": "Chocolate Chip Protein Zucchini Bread"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "url": "https://proteincheesecake.co/raspberry-white-chocolate-cheesecake.html",
+      "name": "Raspberry White Chocolate Cheesecake"
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "url": "https://proteindonuts.co/maple-bacon-protein-donuts.html",
+      "name": "Maple Bacon Protein Donuts"
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "url": "https://proteinbread.co/apple-cinnamon-protein-bread.html",
+      "name": "Apple Cinnamon Protein Bread"
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "url": "https://proteinbread.co/protein-zucchini-bread.html",
+      "name": "Delicious Protein Zucchini Bread"
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "url": "https://proteinbread.co/cinnamon-swirl-protein-bread.html",
+      "name": "Cinnamon Swirl Protein Bread"
+    },
+    {
+      "@type": "ListItem",
+      "position": 11,
+      "url": "https://proteinbread.co/multigrain-protein-sandwich-bread.html",
+      "name": "Multigrain Protein Sandwich Bread"
+    },
+    {
+      "@type": "ListItem",
+      "position": 12,
+      "url": "https://proteinbars.co/high-protein-samoa-bars.html",
+      "name": "High-Protein Samoa Bars"
+    },
+    {
+      "@type": "ListItem",
+      "position": 13,
+      "url": "https://proteincheesecake.co/strawberry-swirl-cheesecake.html",
+      "name": "Strawberry Swirl Cheesecake"
+    },
+    {
+      "@type": "ListItem",
+      "position": 14,
+      "url": "https://proteindonuts.co/boston-cream-protein-donuts.html",
+      "name": "Boston Cream Protein Donuts"
+    },
+    {
+      "@type": "ListItem",
+      "position": 15,
+      "url": "https://proteinbread.co/whole-wheat-protein-sandwich-bread.html",
+      "name": "Whole Wheat Protein Sandwich Bread"
+    },
+    {
+      "@type": "ListItem",
+      "position": 16,
+      "url": "https://proteinbars.co/candy-bar-copycat-snickers.html",
+      "name": "Candy Bar Copycat: Protein Snickers"
+    },
+    {
+      "@type": "ListItem",
+      "position": 17,
+      "url": "https://proteinbars.co/candy-bar-copycat-butterfinger.html",
+      "name": "Candy Bar Copycat: Protein Butterfinger"
+    },
+    {
+      "@type": "ListItem",
+      "position": 18,
+      "url": "https://proteindonuts.co/jelly-filled-protein-donuts.html",
+      "name": "Jelly-Filled Protein Donuts"
+    },
+    {
+      "@type": "ListItem",
+      "position": 19,
+      "url": "https://proteindonuts.co/carrot-cake-protein-donuts.html",
+      "name": "Carrot Cake Protein Donuts"
+    },
+    {
+      "@type": "ListItem",
+      "position": 20,
+      "url": "https://proteinbars.co/candy-bar-copycat-twix.html",
+      "name": "Candy Bar Copycat: Protein Twix"
+    },
+    {
+      "@type": "ListItem",
       "position": 21,
-      "url": "https://proteinpizzas.co/cauliflower-protein-pizza-crust.html",
-      "name": "Cauliflower Protein Pizza Crust"
+      "url": "https://proteinbrownies.co/zucchini-protein-brownies.html",
+      "name": "Zucchini Protein Brownies"
     }
   ]
 }
     </script>
 </head>
-<body>
-    <!-- Header -->
-    <header class="header">
-        <div class="header-inner">
-            <a href="https://highprotein.recipes" class="logo">
-                <span class="logo-icon">🥗</span>
-                High Protein Recipes
-            </a>
-            <a href="#recipes" class="header-cta">Browse Recipes</a>
+<body x-data="landingPage()" @scroll.window="trackScroll()" @mouseleave="triggerExitIntent()" class="min-h-screen flex flex-col antialiased">
+
+    <!-- Navigation -->
+    <nav class="glass-nav fixed top-0 w-full z-40 transition-all duration-300 no-print">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <a href="https://highprotein.recipes" class="flex items-center gap-2">
+                    <span class="text-2xl">🥗</span>
+                    <span class="anton-text text-xl text-brand-900">HIGH PROTEIN RECIPES</span>
+                </a>
+                <div class="hidden md:flex items-center space-x-6 text-sm font-medium text-brand-900">
+                    <a href="https://highprotein.recipes" class="hover:text-brand-500 transition-colors">All Recipes</a>
+                    <a href="https://highprotein.recipes/meal-prep/" class="hover:text-brand-500 transition-colors">Meal Prep</a>
+                    <a href="https://highprotein.recipes/quick-snacks/" class="hover:text-brand-500 transition-colors">Quick Snacks</a>
+                    <button @click="openLeadMagnet()" class="bg-accent-500 text-white px-5 py-2 rounded-full hover:bg-accent-600 transition-all shadow-sm font-semibold">
+                        Free Guide
+                    </button>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-brand-900 p-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-28 pb-12 px-4 relative overflow-hidden">
+        <div class="absolute top-0 right-0 -z-10 w-1/3 h-full opacity-10 pointer-events-none">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="w-full h-full fill-brand-500">
+                <path d="M44.7,-76.4C58.2,-69.2,70,-58.1,78.2,-44.6C86.4,-31.1,91,-15.5,89.5,-0.9C87.9,13.8,80.3,27.5,70.9,39.1C61.4,50.7,50.1,60.1,37.6,67.6C25.1,75.1,11.3,80.7,-2,84.1C-15.3,87.6,-30.5,88.9,-43.3,82.1C-56.1,75.3,-66.4,60.4,-73.4,45.4C-80.4,30.4,-84.1,15.2,-83.4,0.4C-82.7,-14.4,-77.6,-28.9,-69.1,-41.4C60.6,-53.9,48.7,-64.5,35.3,-71.7C21.8,-78.9,10.9,-82.7,-1.8,-79.6C-14.5,-76.4,-29.1,-66.4,-44.7,-76.4Z" transform="translate(100 100)"/>
+            </svg>
+        </div>
+
+        <div class="max-w-4xl mx-auto text-center">
+            <span class="inline-block px-4 py-1.5 bg-brand-100 text-brand-700 rounded-full text-xs font-bold uppercase tracking-widest mb-6">
+                Collection: Post-Workout
+            </span>
+            <h1 class="anton-text text-4xl md:text-6xl text-brand-900 leading-tight mb-6">
+                Post-Workout<br><span class="text-brand-500">Recovery Recipes</span>
+            </h1>
+            <p class="text-lg text-brand-700/80 max-w-2xl mx-auto leading-relaxed">
+                Fuel your recovery with high-protein recipes designed for optimal muscle repair. Quick to make, delicious to eat.
+            </p>
+            
+            <!-- Stats Bar -->
+            <div class="flex justify-center gap-8 md:gap-16 mt-10 flex-wrap">
+                <div class="text-center">
+                    <div class="anton-text text-3xl md:text-4xl text-accent-500">21</div>
+                    <div class="text-sm text-brand-600 font-medium">Recipes</div>
+                </div>
+                <div class="text-center">
+                    <div class="anton-text text-3xl md:text-4xl text-accent-500">21g</div>
+                    <div class="text-sm text-brand-600 font-medium">Avg Protein</div>
+                </div>
+                <div class="text-center">
+                    <div class="anton-text text-3xl md:text-4xl text-accent-500">6</div>
+                    <div class="text-sm text-brand-600 font-medium">Recipe Sites</div>
+                </div>
+                <div class="text-center">
+                    <div class="anton-text text-3xl md:text-4xl text-accent-500">Free</div>
+                    <div class="text-sm text-brand-600 font-medium">All Recipes</div>
+                </div>
+            </div>
         </div>
     </header>
-    
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-inner">
-            <div class="hero-badge">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                All Recipes Macro-Verified
+
+    <!-- Recipe Grid Section -->
+    <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
+        
+        <!-- Filter Tabs -->
+        <div class="flex flex-wrap justify-center gap-3 mb-12 no-print">
+            <a href="https://highprotein.recipes" class="px-5 py-2 rounded-full bg-white border border-brand-200 text-brand-700 text-sm font-semibold hover:bg-brand-100 transition-all">All Recipes</a>
+            <a href="https://highprotein.recipes/quick-snacks/" class="px-5 py-2 rounded-full bg-white border border-brand-200 text-brand-700 text-sm font-semibold hover:bg-brand-100 transition-all">Quick Snacks</a>
+            <a href="https://highprotein.recipes/30g-protein/" class="px-5 py-2 rounded-full bg-white border border-brand-200 text-brand-700 text-sm font-semibold hover:bg-brand-100 transition-all">30g+ Protein</a>
+            <a href="https://highprotein.recipes/vegan/" class="px-5 py-2 rounded-full bg-white border border-brand-200 text-brand-700 text-sm font-semibold hover:bg-brand-100 transition-all">Vegan</a>
+        </div>
+
+        <!-- Recipe Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+    <article class="group bg-white rounded-3xl overflow-hidden recipe-card-shadow transition-all-custom hover:-translate-y-2">
+        <div class="relative h-56 overflow-hidden">
+            <img src="https://proteinpizzas.co/recipe_images/cauliflower-protein-pizza-crust.jpg" alt="Cauliflower Protein Pizza Crust" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+            <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-brand-900">
+                28g Protein
             </div>
-            
-            <h1>Post-Workout<br><span>Protein Recipes</span></h1>
-            
-            <p class="hero-subtitle">Fuel your recovery with macro-verified recipes designed to maximize muscle repair and replenish your energy after intense training sessions.</p>
-            
-            <div class="hero-ctas">
-                <a href="#recipes" class="btn btn-primary">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                    </svg>
-                    Browse 21 Recipes
-                </a>
-                <a href="https://highprotein.recipes/starter-pack/" class="btn btn-secondary">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                    </svg>
-                    Free Starter Pack
-                </a>
-            </div>
-            
-            <div class="stats-bar">
-                <div class="stat-item">
-                    <div class="stat-value">21</div>
-                    <div class="stat-label">Recipes</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-value">21g</div>
-                    <div class="stat-label">Avg Protein</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-value">6</div>
-                    <div class="stat-label">Recipe Sites</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-value">100%</div>
-                    <div class="stat-label">Free Access</div>
-                </div>
+            <div class="absolute top-4 right-4 bg-brand-900/70 backdrop-blur-sm px-2 py-1 rounded text-[10px] font-semibold text-white">
+                ProteinPizzas
             </div>
         </div>
-    </section>
-    
-    <!-- Trust Banner -->
-    <div class="trust-banner">
-        <strong>✓ USDA Verified</strong> — All nutrition data verified using USDA FoodData Central for accuracy
-    </div>
-    
-    <!-- Recipe Grid -->
-    <section class="recipes-section" id="recipes">
-        <div class="section-inner">
-            <div class="section-header">
-                <span class="section-label">Recovery Fuel</span>
-                <h2 class="section-title">Recipes Built for Recovery</h2>
-                <p class="section-subtitle">High-protein meals and snacks to help you recover faster and build lean muscle</p>
+        <div class="p-5">
+            <div class="flex items-center gap-4 text-xs font-semibold text-brand-600 mb-2">
+                <span>20 min</span> • <span>1 pizza Servings</span>
             </div>
-            
-            <div class="recipe-grid">
-                
-                <a href="https://proteinbrownies.co/zucchini-protein-brownies.html" class="recipe-card" target="_blank" rel="noopener">
-                    <div class="recipe-image">
-                        <img src="https://proteinbrownies.co/recipe_images/zucchini-protein-brownies.jpg" alt="Zucchini Protein Brownies" loading="lazy">
-                        <div class="recipe-badges">
-                            <span class="protein-badge">16g Protein</span>
-                            <span class="site-badge">ProteinBrownies</span>
-                        </div>
-                    </div>
-                    <div class="recipe-content">
-                        <h3 class="recipe-title">Zucchini Protein Brownies</h3>
-                        <div class="recipe-meta">
-                            <span class="recipe-meta-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                20 min
-                            </span>
-                            <span class="recipe-meta-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
-                                </svg>
-                                150 cal
-                            </span>
-                        </div>
-                        <div class="recipe-cta">
-                            <span class="view-recipe">
-                                View Recipe
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://protein-bread.com/protein-zucchini-bread.html" class="recipe-card" target="_blank" rel="noopener">
-                    <div class="recipe-image">
-                        <img src="https://protein-bread.com/recipe_images/protein-zucchini-bread.jpg" alt="Delicious Protein Zucchini Bread" loading="lazy">
-                        <div class="recipe-badges">
-                            <span class="protein-badge">20g Protein</span>
-                            <span class="site-badge">ProteinBread</span>
-                        </div>
-                    </div>
-                    <div class="recipe-content">
-                        <h3 class="recipe-title">Delicious Protein Zucchini Bread</h3>
-                        <div class="recipe-meta">
-                            <span class="recipe-meta-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                20 min
-                            </span>
-                            <span class="recipe-meta-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
-                                </svg>
-                                190 cal
-                            </span>
-                        </div>
-                        <div class="recipe-cta">
-                            <span class="view-recipe">
-                                View Recipe
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://protein-bread.com/cinnamon-swirl-protein-bread.html" class="recipe-card" target="_blank" rel="noopener">
-                    <div class="recipe-image">
-                        <img src="https://protein-bread.com/recipe_images/cinnamon-swirl-protein-bread.jpg" alt="Cinnamon Swirl Protein Bread" loading="lazy">
-                        <div class="recipe-badges">
-                            <span class="protein-badge">20g Protein</span>
-                            <span class="site-badge">ProteinBread</span>
-                        </div>
-                    </div>
-                    <div class="recipe-content">
-                        <h3 class="recipe-title">Cinnamon Swirl Protein Bread</h3>
-                        <div class="recipe-meta">
-                            <span class="recipe-meta-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                20 min
-                            </span>
-                            <span class="recipe-meta-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
-                                </svg>
-                                200 cal
-                            </span>
-                        </div>
-                        <div class="recipe-cta">
-                            <span class="view-recipe">
-                                View Recipe
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://protein-bread.com/whole-wheat-protein-sandwich-bread.html" class="recipe-card" target="_blank" rel="noopener">
-                    <div class="recipe-image">
-                        <img src="https://protein-bread.com/recipe_images/whole-wheat-protein-sandwich-bread.jpg" alt="Whole Wheat Protein Sandwich Bread" loading="lazy">
-                        <div class="recipe-badges">
-                            <span class="protein-badge">18g Protein</span>
-                            <span class="site-badge">ProteinBread</span>
-                        </div>
-                    </div>
-                    <div class="recipe-content">
-                        <h3 class="recipe-title">Whole Wheat Protein Sandwich Bread</h3>
-                        <div class="recipe-meta">
-                            <span class="recipe-meta-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                20 min
-                            </span>
-                            <span class="recipe-meta-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
-                                </svg>
-                                170 cal
-                            </span>
-                        </div>
-                        <div class="recipe-cta">
-                            <span class="view-recipe">
-                                View Recipe
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://protein-bread.com/chocolate-chip-protein-zucchini-bread.html" class="recipe-card" target="_blank" rel="noopener">
-                    <div class="recipe-image">
-                        <img src="https://protein-bread.com/recipe_images/chocolate-chip-protein-zucchini-bread.jpg" alt="Chocolate Chip Protein Zucchini Bread" loading="lazy">
-                        <div class="recipe-badges">
-                            <span class="protein-badge">22g Protein</span>
-                            <span class="site-badge">ProteinBread</span>
-                        </div>
-                    </div>
-                    <div class="recipe-content">
-                        <h3 class="recipe-title">Chocolate Chip Protein Zucchini Bread</h3>
-                        <div class="recipe-meta">
-                            <span class="recipe-meta-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                20 min
-                            </span>
-                            <span class="recipe-meta-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
-                                </svg>
-                                210 cal
-                            </span>
-                        </div>
-                        <div class="recipe-cta">
-                            <span class="view-recipe">
-                                View Recipe
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://protein-bread.com/multigrain-protein-sandwich-bread.html" class="recipe-card" target="_blank" rel="noopener">
-                    <div class="recipe-image">
-                        <img src="https://protein-bread.com/recipe_images/multigrain-protein-sandwich-bread.jpg" alt="Multigrain Protein Sandwich Bread" loading="lazy">
-                        <div class="recipe-badges">
-                            <span class="protein-badge">20g Protein</span>
-                            <span class="site-badge">ProteinBread</span>
-                        </div>
-                    </div>
-                    <div class="recipe-content">
-                        <h3 class="recipe-title">Multigrain Protein Sandwich Bread</h3>
-                        <div class="recipe-meta">
-                            <span class="recipe-meta-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                20 min
-                            </span>
-                            <span class="recipe-meta-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
-                                </svg>
-                                180 cal
-                            </span>
-                        </div>
-                        <div class="recipe-cta">
-                            <span class="view-recipe">
-                                View Recipe
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://protein-bread.com/apple-cinnamon-protein-bread.html" class="recipe-card" target="_blank" rel="noopener">
-                    <div class="recipe-image">
-                        <img src="https://protein-bread.com/recipe_images/apple-cinnamon-protein-bread.jpg" alt="Apple Cinnamon Protein Bread" loading="lazy">
-                        <div class="recipe-badges">
-                            <span class="protein-badge">21g Protein</span>
-                            <span class="site-badge">ProteinBread</span>
-                        </div>
-                    </div>
-                    <div class="recipe-content">
-                        <h3 class="recipe-title">Apple Cinnamon Protein Bread</h3>
-                        <div class="recipe-meta">
-                            <span class="recipe-meta-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                20 min
-                            </span>
-                            <span class="recipe-meta-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
-                                </svg>
-                                200 cal
-                            </span>
-                        </div>
-                        <div class="recipe-cta">
-                            <span class="view-recipe">
-                                View Recipe
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://proteinbars.co/candy-bar-copycat-snickers.html" class="recipe-card" target="_blank" rel="noopener">
-                    <div class="recipe-image">
-                        <img src="https://proteinbars.co/recipe_images/candy-bar-copycat-snickers.jpg" alt="Candy Bar Copycat: Protein Snickers" loading="lazy">
-                        <div class="recipe-badges">
-                            <span class="protein-badge">18g Protein</span>
-                            <span class="site-badge">ProteinBars</span>
-                        </div>
-                    </div>
-                    <div class="recipe-content">
-                        <h3 class="recipe-title">Candy Bar Copycat: Protein Snickers</h3>
-                        <div class="recipe-meta">
-                            <span class="recipe-meta-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                20 min
-                            </span>
-                            <span class="recipe-meta-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
-                                </svg>
-                                280 cal
-                            </span>
-                        </div>
-                        <div class="recipe-cta">
-                            <span class="view-recipe">
-                                View Recipe
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://proteinbars.co/candy-bar-copycat-twix.html" class="recipe-card" target="_blank" rel="noopener">
-                    <div class="recipe-image">
-                        <img src="https://proteinbars.co/recipe_images/candy-bar-copycat-twix.jpg" alt="Candy Bar Copycat: Protein Twix" loading="lazy">
-                        <div class="recipe-badges">
-                            <span class="protein-badge">17g Protein</span>
-                            <span class="site-badge">ProteinBars</span>
-                        </div>
-                    </div>
-                    <div class="recipe-content">
-                        <h3 class="recipe-title">Candy Bar Copycat: Protein Twix</h3>
-                        <div class="recipe-meta">
-                            <span class="recipe-meta-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                25 min
-                            </span>
-                            <span class="recipe-meta-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
-                                </svg>
-                                270 cal
-                            </span>
-                        </div>
-                        <div class="recipe-cta">
-                            <span class="view-recipe">
-                                View Recipe
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://proteinbars.co/high-protein-samoa-bars.html" class="recipe-card" target="_blank" rel="noopener">
-                    <div class="recipe-image">
-                        <img src="https://proteinbars.co/recipe_images/high-protein-samoa-bars.jpg" alt="High-Protein Samoa Bars" loading="lazy">
-                        <div class="recipe-badges">
-                            <span class="protein-badge">20g Protein</span>
-                            <span class="site-badge">ProteinBars</span>
-                        </div>
-                    </div>
-                    <div class="recipe-content">
-                        <h3 class="recipe-title">High-Protein Samoa Bars</h3>
-                        <div class="recipe-meta">
-                            <span class="recipe-meta-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                20 min
-                            </span>
-                            <span class="recipe-meta-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
-                                </svg>
-                                280 cal
-                            </span>
-                        </div>
-                        <div class="recipe-cta">
-                            <span class="view-recipe">
-                                View Recipe
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://proteinbars.co/candy-bar-copycat-butterfinger.html" class="recipe-card" target="_blank" rel="noopener">
-                    <div class="recipe-image">
-                        <img src="https://proteinbars.co/recipe_images/candy-bar-copycat-butterfinger.jpg" alt="Candy Bar Copycat: Protein Butterfinger" loading="lazy">
-                        <div class="recipe-badges">
-                            <span class="protein-badge">18g Protein</span>
-                            <span class="site-badge">ProteinBars</span>
-                        </div>
-                    </div>
-                    <div class="recipe-content">
-                        <h3 class="recipe-title">Candy Bar Copycat: Protein Butterfinger</h3>
-                        <div class="recipe-meta">
-                            <span class="recipe-meta-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                20 min
-                            </span>
-                            <span class="recipe-meta-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
-                                </svg>
-                                270 cal
-                            </span>
-                        </div>
-                        <div class="recipe-cta">
-                            <span class="view-recipe">
-                                View Recipe
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://proteindonuts.co/maple-bacon-protein-donuts.html" class="recipe-card" target="_blank" rel="noopener">
-                    <div class="recipe-image">
-                        <img src="https://proteindonuts.co/recipe_images/maple-bacon-protein-donuts.jpg" alt="Maple Bacon Protein Donuts" loading="lazy">
-                        <div class="recipe-badges">
-                            <span class="protein-badge">22g Protein</span>
-                            <span class="site-badge">ProteinDonuts</span>
-                        </div>
-                    </div>
-                    <div class="recipe-content">
-                        <h3 class="recipe-title">Maple Bacon Protein Donuts</h3>
-                        <div class="recipe-meta">
-                            <span class="recipe-meta-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                20 min
-                            </span>
-                            <span class="recipe-meta-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
-                                </svg>
-                                190 cal
-                            </span>
-                        </div>
-                        <div class="recipe-cta">
-                            <span class="view-recipe">
-                                View Recipe
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://proteindonuts.co/boston-cream-protein-donuts.html" class="recipe-card" target="_blank" rel="noopener">
-                    <div class="recipe-image">
-                        <img src="https://proteindonuts.co/recipe_images/boston-cream-protein-donuts.jpg" alt="Boston Cream Protein Donuts" loading="lazy">
-                        <div class="recipe-badges">
-                            <span class="protein-badge">20g Protein</span>
-                            <span class="site-badge">ProteinDonuts</span>
-                        </div>
-                    </div>
-                    <div class="recipe-content">
-                        <h3 class="recipe-title">Boston Cream Protein Donuts</h3>
-                        <div class="recipe-meta">
-                            <span class="recipe-meta-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                25 min
-                            </span>
-                            <span class="recipe-meta-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
-                                </svg>
-                                180 cal
-                            </span>
-                        </div>
-                        <div class="recipe-cta">
-                            <span class="view-recipe">
-                                View Recipe
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://proteindonuts.co/jelly-filled-protein-donuts.html" class="recipe-card" target="_blank" rel="noopener">
-                    <div class="recipe-image">
-                        <img src="https://proteindonuts.co/recipe_images/jelly-filled-protein-donuts.jpg" alt="Jelly-Filled Protein Donuts" loading="lazy">
-                        <div class="recipe-badges">
-                            <span class="protein-badge">18g Protein</span>
-                            <span class="site-badge">ProteinDonuts</span>
-                        </div>
-                    </div>
-                    <div class="recipe-content">
-                        <h3 class="recipe-title">Jelly-Filled Protein Donuts</h3>
-                        <div class="recipe-meta">
-                            <span class="recipe-meta-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                25 min
-                            </span>
-                            <span class="recipe-meta-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
-                                </svg>
-                                170 cal
-                            </span>
-                        </div>
-                        <div class="recipe-cta">
-                            <span class="view-recipe">
-                                View Recipe
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://proteindonuts.co/carrot-cake-protein-donuts.html" class="recipe-card" target="_blank" rel="noopener">
-                    <div class="recipe-image">
-                        <img src="https://proteindonuts.co/recipe_images/carrot-cake-protein-donuts.jpg" alt="Carrot Cake Protein Donuts" loading="lazy">
-                        <div class="recipe-badges">
-                            <span class="protein-badge">18g Protein</span>
-                            <span class="site-badge">ProteinDonuts</span>
-                        </div>
-                    </div>
-                    <div class="recipe-content">
-                        <h3 class="recipe-title">Carrot Cake Protein Donuts</h3>
-                        <div class="recipe-meta">
-                            <span class="recipe-meta-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                20 min
-                            </span>
-                            <span class="recipe-meta-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
-                                </svg>
-                                165 cal
-                            </span>
-                        </div>
-                        <div class="recipe-cta">
-                            <span class="view-recipe">
-                                View Recipe
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://proteincheesecake.co/strawberry-swirl-cheesecake.html" class="recipe-card" target="_blank" rel="noopener">
-                    <div class="recipe-image">
-                        <img src="https://proteincheesecake.co/recipe_images/strawberry-swirl-cheesecake.jpg" alt="Strawberry Swirl Cheesecake" loading="lazy">
-                        <div class="recipe-badges">
-                            <span class="protein-badge">20g Protein</span>
-                            <span class="site-badge">ProteinCheesecake</span>
-                        </div>
-                    </div>
-                    <div class="recipe-content">
-                        <h3 class="recipe-title">Strawberry Swirl Cheesecake</h3>
-                        <div class="recipe-meta">
-                            <span class="recipe-meta-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                20 min
-                            </span>
-                            <span class="recipe-meta-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
-                                </svg>
-                                190 cal
-                            </span>
-                        </div>
-                        <div class="recipe-cta">
-                            <span class="view-recipe">
-                                View Recipe
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://proteincheesecake.co/caramel-pecan-cheesecake.html" class="recipe-card" target="_blank" rel="noopener">
-                    <div class="recipe-image">
-                        <img src="https://proteincheesecake.co/recipe_images/caramel-pecan-cheesecake.jpg" alt="Caramel Pecan Cheesecake" loading="lazy">
-                        <div class="recipe-badges">
-                            <span class="protein-badge">26g Protein</span>
-                            <span class="site-badge">ProteinCheesecake</span>
-                        </div>
-                    </div>
-                    <div class="recipe-content">
-                        <h3 class="recipe-title">Caramel Pecan Cheesecake</h3>
-                        <div class="recipe-meta">
-                            <span class="recipe-meta-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                20 min
-                            </span>
-                            <span class="recipe-meta-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
-                                </svg>
-                                240 cal
-                            </span>
-                        </div>
-                        <div class="recipe-cta">
-                            <span class="view-recipe">
-                                View Recipe
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://proteincheesecake.co/raspberry-white-chocolate-cheesecake.html" class="recipe-card" target="_blank" rel="noopener">
-                    <div class="recipe-image">
-                        <img src="https://proteincheesecake.co/recipe_images/raspberry-white-chocolate-cheesecake.jpg" alt="Raspberry White Chocolate Cheesecake" loading="lazy">
-                        <div class="recipe-badges">
-                            <span class="protein-badge">22g Protein</span>
-                            <span class="site-badge">ProteinCheesecake</span>
-                        </div>
-                    </div>
-                    <div class="recipe-content">
-                        <h3 class="recipe-title">Raspberry White Chocolate Cheesecake</h3>
-                        <div class="recipe-meta">
-                            <span class="recipe-meta-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                20 min
-                            </span>
-                            <span class="recipe-meta-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
-                                </svg>
-                                200 cal
-                            </span>
-                        </div>
-                        <div class="recipe-cta">
-                            <span class="view-recipe">
-                                View Recipe
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://proteincheesecake.co/red-velvet-cheesecake.html" class="recipe-card" target="_blank" rel="noopener">
-                    <div class="recipe-image">
-                        <img src="https://proteincheesecake.co/recipe_images/red-velvet-cheesecake.jpg" alt="Red Velvet Cheesecake" loading="lazy">
-                        <div class="recipe-badges">
-                            <span class="protein-badge">24g Protein</span>
-                            <span class="site-badge">ProteinCheesecake</span>
-                        </div>
-                    </div>
-                    <div class="recipe-content">
-                        <h3 class="recipe-title">Red Velvet Cheesecake</h3>
-                        <div class="recipe-meta">
-                            <span class="recipe-meta-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                20 min
-                            </span>
-                            <span class="recipe-meta-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
-                                </svg>
-                                220 cal
-                            </span>
-                        </div>
-                        <div class="recipe-cta">
-                            <span class="view-recipe">
-                                View Recipe
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://proteincheesecake.co/tiramisu-cheesecake.html" class="recipe-card" target="_blank" rel="noopener">
-                    <div class="recipe-image">
-                        <img src="https://proteincheesecake.co/recipe_images/tiramisu-cheesecake.jpg" alt="Tiramisu Cheesecake" loading="lazy">
-                        <div class="recipe-badges">
-                            <span class="protein-badge">24g Protein</span>
-                            <span class="site-badge">ProteinCheesecake</span>
-                        </div>
-                    </div>
-                    <div class="recipe-content">
-                        <h3 class="recipe-title">Tiramisu Cheesecake</h3>
-                        <div class="recipe-meta">
-                            <span class="recipe-meta-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                20 min
-                            </span>
-                            <span class="recipe-meta-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
-                                </svg>
-                                220 cal
-                            </span>
-                        </div>
-                        <div class="recipe-cta">
-                            <span class="view-recipe">
-                                View Recipe
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://proteinpizzas.co/cauliflower-protein-pizza-crust.html" class="recipe-card" target="_blank" rel="noopener">
-                    <div class="recipe-image">
-                        <img src="https://proteinpizzas.co/recipe_images/cauliflower-protein-pizza-crust.jpg" alt="Cauliflower Protein Pizza Crust" loading="lazy">
-                        <div class="recipe-badges">
-                            <span class="protein-badge">28g Protein</span>
-                            <span class="site-badge">ProteinPizzas</span>
-                        </div>
-                    </div>
-                    <div class="recipe-content">
-                        <h3 class="recipe-title">Cauliflower Protein Pizza Crust</h3>
-                        <div class="recipe-meta">
-                            <span class="recipe-meta-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                20 min
-                            </span>
-                            <span class="recipe-meta-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
-                                </svg>
-                                220 cal
-                            </span>
-                        </div>
-                        <div class="recipe-cta">
-                            <span class="view-recipe">
-                                View Recipe
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </a>
+            <h3 class="text-lg font-bold text-brand-900 mb-3 group-hover:text-brand-500 transition-colors">Cauliflower Protein Pizza Crust</h3>
+            <div class="flex items-center justify-between mt-4">
+                <span class="text-sm font-medium text-brand-600/70">220 kcal</span>
+                <a href="https://proteinpizzas.co/cauliflower-protein-pizza-crust.html" target="_blank" rel="noopener" class="text-xs font-bold text-brand-500 underline underline-offset-4 decoration-brand-500/30 hover:decoration-brand-500 transition-all">VIEW RECIPE →</a>
             </div>
         </div>
-    </section>
-    
-    <!-- Benefits Section -->
-    <section class="benefits-section">
-        <div class="section-inner">
-            <div class="section-header">
-                <span class="section-label">Why Choose Us</span>
-                <h2 class="section-title">Recipes Built for Results</h2>
-                <p class="section-subtitle">Every recipe is designed to help you hit your protein goals without sacrificing taste</p>
+    </article>
+
+    <article class="group bg-white rounded-3xl overflow-hidden recipe-card-shadow transition-all-custom hover:-translate-y-2">
+        <div class="relative h-56 overflow-hidden">
+            <img src="https://proteincheesecake.co/recipe_images/caramel-pecan-cheesecake.jpg" alt="Caramel Pecan Cheesecake" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+            <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-brand-900">
+                26g Protein
             </div>
-            
-            <div class="benefits-grid">
-                <div class="benefit-card">
-                    <div class="benefit-icon">📊</div>
-                    <h3 class="benefit-title">Macro-Verified</h3>
-                    <p class="benefit-desc">Every recipe verified using USDA FoodData Central</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">⚡</div>
-                    <h3 class="benefit-title">Quick & Easy</h3>
-                    <p class="benefit-desc">Most recipes ready in under 20 minutes</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">📥</div>
-                    <h3 class="benefit-title">Free PDF Packs</h3>
-                    <p class="benefit-desc">Download printable recipe cards with shopping lists</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">🥗</div>
-                    <h3 class="benefit-title">Diet Friendly</h3>
-                    <p class="benefit-desc">Vegan, gluten-free, and keto options available</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">💪</div>
-                    <h3 class="benefit-title">High Protein</h3>
-                    <p class="benefit-desc">15-40g protein per serving across all recipes</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">🍳</div>
-                    <h3 class="benefit-title">Beginner Friendly</h3>
-                    <p class="benefit-desc">Step-by-step instructions anyone can follow</p>
-                </div>
+            <div class="absolute top-4 right-4 bg-brand-900/70 backdrop-blur-sm px-2 py-1 rounded text-[10px] font-semibold text-white">
+                ProteinCheesecake
             </div>
         </div>
-    </section>
-    
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="section-inner">
-            <h2>Get Your Free Starter Pack</h2>
-            <p>5 essential protein recipes with printable cards, shopping lists, and nutrition breakdowns</p>
-            <a href="https://highprotein.recipes/starter-pack/" class="btn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                </svg>
-                Download Free Pack
-            </a>
+        <div class="p-5">
+            <div class="flex items-center gap-4 text-xs font-semibold text-brand-600 mb-2">
+                <span>20 min</span> • <span>12 servings Servings</span>
+            </div>
+            <h3 class="text-lg font-bold text-brand-900 mb-3 group-hover:text-brand-500 transition-colors">Caramel Pecan Cheesecake</h3>
+            <div class="flex items-center justify-between mt-4">
+                <span class="text-sm font-medium text-brand-600/70">240 kcal</span>
+                <a href="https://proteincheesecake.co/caramel-pecan-cheesecake.html" target="_blank" rel="noopener" class="text-xs font-bold text-brand-500 underline underline-offset-4 decoration-brand-500/30 hover:decoration-brand-500 transition-all">VIEW RECIPE →</a>
+            </div>
         </div>
-    </section>
-    
+    </article>
+
+    <article class="group bg-white rounded-3xl overflow-hidden recipe-card-shadow transition-all-custom hover:-translate-y-2">
+        <div class="relative h-56 overflow-hidden">
+            <img src="https://proteincheesecake.co/recipe_images/red-velvet-cheesecake.jpg" alt="Red Velvet Cheesecake" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+            <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-brand-900">
+                24g Protein
+            </div>
+            <div class="absolute top-4 right-4 bg-brand-900/70 backdrop-blur-sm px-2 py-1 rounded text-[10px] font-semibold text-white">
+                ProteinCheesecake
+            </div>
+        </div>
+        <div class="p-5">
+            <div class="flex items-center gap-4 text-xs font-semibold text-brand-600 mb-2">
+                <span>20 min</span> • <span>12 servings Servings</span>
+            </div>
+            <h3 class="text-lg font-bold text-brand-900 mb-3 group-hover:text-brand-500 transition-colors">Red Velvet Cheesecake</h3>
+            <div class="flex items-center justify-between mt-4">
+                <span class="text-sm font-medium text-brand-600/70">220 kcal</span>
+                <a href="https://proteincheesecake.co/red-velvet-cheesecake.html" target="_blank" rel="noopener" class="text-xs font-bold text-brand-500 underline underline-offset-4 decoration-brand-500/30 hover:decoration-brand-500 transition-all">VIEW RECIPE →</a>
+            </div>
+        </div>
+    </article>
+
+    <article class="group bg-white rounded-3xl overflow-hidden recipe-card-shadow transition-all-custom hover:-translate-y-2">
+        <div class="relative h-56 overflow-hidden">
+            <img src="https://proteincheesecake.co/recipe_images/tiramisu-cheesecake.jpg" alt="Tiramisu Cheesecake" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+            <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-brand-900">
+                24g Protein
+            </div>
+            <div class="absolute top-4 right-4 bg-brand-900/70 backdrop-blur-sm px-2 py-1 rounded text-[10px] font-semibold text-white">
+                ProteinCheesecake
+            </div>
+        </div>
+        <div class="p-5">
+            <div class="flex items-center gap-4 text-xs font-semibold text-brand-600 mb-2">
+                <span>20 min</span> • <span>12 servings Servings</span>
+            </div>
+            <h3 class="text-lg font-bold text-brand-900 mb-3 group-hover:text-brand-500 transition-colors">Tiramisu Cheesecake</h3>
+            <div class="flex items-center justify-between mt-4">
+                <span class="text-sm font-medium text-brand-600/70">220 kcal</span>
+                <a href="https://proteincheesecake.co/tiramisu-cheesecake.html" target="_blank" rel="noopener" class="text-xs font-bold text-brand-500 underline underline-offset-4 decoration-brand-500/30 hover:decoration-brand-500 transition-all">VIEW RECIPE →</a>
+            </div>
+        </div>
+    </article>
+
+    <article class="group bg-white rounded-3xl overflow-hidden recipe-card-shadow transition-all-custom hover:-translate-y-2">
+        <div class="relative h-56 overflow-hidden">
+            <img src="https://proteinbread.co/recipe_images/chocolate-chip-protein-zucchini-bread.jpg" alt="Chocolate Chip Protein Zucchini Bread" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+            <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-brand-900">
+                22g Protein
+            </div>
+            <div class="absolute top-4 right-4 bg-brand-900/70 backdrop-blur-sm px-2 py-1 rounded text-[10px] font-semibold text-white">
+                ProteinBread
+            </div>
+        </div>
+        <div class="p-5">
+            <div class="flex items-center gap-4 text-xs font-semibold text-brand-600 mb-2">
+                <span>20 min</span> • <span>12 slices Servings</span>
+            </div>
+            <h3 class="text-lg font-bold text-brand-900 mb-3 group-hover:text-brand-500 transition-colors">Chocolate Chip Protein Zucchini Bread</h3>
+            <div class="flex items-center justify-between mt-4">
+                <span class="text-sm font-medium text-brand-600/70">210 kcal</span>
+                <a href="https://proteinbread.co/chocolate-chip-protein-zucchini-bread.html" target="_blank" rel="noopener" class="text-xs font-bold text-brand-500 underline underline-offset-4 decoration-brand-500/30 hover:decoration-brand-500 transition-all">VIEW RECIPE →</a>
+            </div>
+        </div>
+    </article>
+
+    <article class="group bg-white rounded-3xl overflow-hidden recipe-card-shadow transition-all-custom hover:-translate-y-2">
+        <div class="relative h-56 overflow-hidden">
+            <img src="https://proteincheesecake.co/recipe_images/raspberry-white-chocolate-cheesecake.jpg" alt="Raspberry White Chocolate Cheesecake" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+            <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-brand-900">
+                22g Protein
+            </div>
+            <div class="absolute top-4 right-4 bg-brand-900/70 backdrop-blur-sm px-2 py-1 rounded text-[10px] font-semibold text-white">
+                ProteinCheesecake
+            </div>
+        </div>
+        <div class="p-5">
+            <div class="flex items-center gap-4 text-xs font-semibold text-brand-600 mb-2">
+                <span>20 min</span> • <span>12 servings Servings</span>
+            </div>
+            <h3 class="text-lg font-bold text-brand-900 mb-3 group-hover:text-brand-500 transition-colors">Raspberry White Chocolate Cheesecake</h3>
+            <div class="flex items-center justify-between mt-4">
+                <span class="text-sm font-medium text-brand-600/70">200 kcal</span>
+                <a href="https://proteincheesecake.co/raspberry-white-chocolate-cheesecake.html" target="_blank" rel="noopener" class="text-xs font-bold text-brand-500 underline underline-offset-4 decoration-brand-500/30 hover:decoration-brand-500 transition-all">VIEW RECIPE →</a>
+            </div>
+        </div>
+    </article>
+
+    <article class="group bg-white rounded-3xl overflow-hidden recipe-card-shadow transition-all-custom hover:-translate-y-2">
+        <div class="relative h-56 overflow-hidden">
+            <img src="https://proteindonuts.co/recipe_images/maple-bacon-protein-donuts.jpg" alt="Maple Bacon Protein Donuts" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+            <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-brand-900">
+                22g Protein
+            </div>
+            <div class="absolute top-4 right-4 bg-brand-900/70 backdrop-blur-sm px-2 py-1 rounded text-[10px] font-semibold text-white">
+                ProteinDonuts
+            </div>
+        </div>
+        <div class="p-5">
+            <div class="flex items-center gap-4 text-xs font-semibold text-brand-600 mb-2">
+                <span>20 min</span> • <span>12 donuts Servings</span>
+            </div>
+            <h3 class="text-lg font-bold text-brand-900 mb-3 group-hover:text-brand-500 transition-colors">Maple Bacon Protein Donuts</h3>
+            <div class="flex items-center justify-between mt-4">
+                <span class="text-sm font-medium text-brand-600/70">190 kcal</span>
+                <a href="https://proteindonuts.co/maple-bacon-protein-donuts.html" target="_blank" rel="noopener" class="text-xs font-bold text-brand-500 underline underline-offset-4 decoration-brand-500/30 hover:decoration-brand-500 transition-all">VIEW RECIPE →</a>
+            </div>
+        </div>
+    </article>
+
+    <article class="group bg-white rounded-3xl overflow-hidden recipe-card-shadow transition-all-custom hover:-translate-y-2">
+        <div class="relative h-56 overflow-hidden">
+            <img src="https://proteinbread.co/recipe_images/apple-cinnamon-protein-bread.jpg" alt="Apple Cinnamon Protein Bread" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+            <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-brand-900">
+                21g Protein
+            </div>
+            <div class="absolute top-4 right-4 bg-brand-900/70 backdrop-blur-sm px-2 py-1 rounded text-[10px] font-semibold text-white">
+                ProteinBread
+            </div>
+        </div>
+        <div class="p-5">
+            <div class="flex items-center gap-4 text-xs font-semibold text-brand-600 mb-2">
+                <span>20 min</span> • <span>12 slices Servings</span>
+            </div>
+            <h3 class="text-lg font-bold text-brand-900 mb-3 group-hover:text-brand-500 transition-colors">Apple Cinnamon Protein Bread</h3>
+            <div class="flex items-center justify-between mt-4">
+                <span class="text-sm font-medium text-brand-600/70">200 kcal</span>
+                <a href="https://proteinbread.co/apple-cinnamon-protein-bread.html" target="_blank" rel="noopener" class="text-xs font-bold text-brand-500 underline underline-offset-4 decoration-brand-500/30 hover:decoration-brand-500 transition-all">VIEW RECIPE →</a>
+            </div>
+        </div>
+    </article>
+
+    <article class="group bg-white rounded-3xl overflow-hidden recipe-card-shadow transition-all-custom hover:-translate-y-2">
+        <div class="relative h-56 overflow-hidden">
+            <img src="https://proteinbread.co/recipe_images/protein-zucchini-bread.jpg" alt="Delicious Protein Zucchini Bread" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+            <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-brand-900">
+                20g Protein
+            </div>
+            <div class="absolute top-4 right-4 bg-brand-900/70 backdrop-blur-sm px-2 py-1 rounded text-[10px] font-semibold text-white">
+                ProteinBread
+            </div>
+        </div>
+        <div class="p-5">
+            <div class="flex items-center gap-4 text-xs font-semibold text-brand-600 mb-2">
+                <span>20 min</span> • <span>12 slices Servings</span>
+            </div>
+            <h3 class="text-lg font-bold text-brand-900 mb-3 group-hover:text-brand-500 transition-colors">Delicious Protein Zucchini Bread</h3>
+            <div class="flex items-center justify-between mt-4">
+                <span class="text-sm font-medium text-brand-600/70">190 kcal</span>
+                <a href="https://proteinbread.co/protein-zucchini-bread.html" target="_blank" rel="noopener" class="text-xs font-bold text-brand-500 underline underline-offset-4 decoration-brand-500/30 hover:decoration-brand-500 transition-all">VIEW RECIPE →</a>
+            </div>
+        </div>
+    </article>
+
+    <article class="group bg-white rounded-3xl overflow-hidden recipe-card-shadow transition-all-custom hover:-translate-y-2">
+        <div class="relative h-56 overflow-hidden">
+            <img src="https://proteinbread.co/recipe_images/cinnamon-swirl-protein-bread.jpg" alt="Cinnamon Swirl Protein Bread" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+            <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-brand-900">
+                20g Protein
+            </div>
+            <div class="absolute top-4 right-4 bg-brand-900/70 backdrop-blur-sm px-2 py-1 rounded text-[10px] font-semibold text-white">
+                ProteinBread
+            </div>
+        </div>
+        <div class="p-5">
+            <div class="flex items-center gap-4 text-xs font-semibold text-brand-600 mb-2">
+                <span>20 min</span> • <span>12 slices Servings</span>
+            </div>
+            <h3 class="text-lg font-bold text-brand-900 mb-3 group-hover:text-brand-500 transition-colors">Cinnamon Swirl Protein Bread</h3>
+            <div class="flex items-center justify-between mt-4">
+                <span class="text-sm font-medium text-brand-600/70">200 kcal</span>
+                <a href="https://proteinbread.co/cinnamon-swirl-protein-bread.html" target="_blank" rel="noopener" class="text-xs font-bold text-brand-500 underline underline-offset-4 decoration-brand-500/30 hover:decoration-brand-500 transition-all">VIEW RECIPE →</a>
+            </div>
+        </div>
+    </article>
+
+    <article class="group bg-white rounded-3xl overflow-hidden recipe-card-shadow transition-all-custom hover:-translate-y-2">
+        <div class="relative h-56 overflow-hidden">
+            <img src="https://proteinbread.co/recipe_images/multigrain-protein-sandwich-bread.jpg" alt="Multigrain Protein Sandwich Bread" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+            <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-brand-900">
+                20g Protein
+            </div>
+            <div class="absolute top-4 right-4 bg-brand-900/70 backdrop-blur-sm px-2 py-1 rounded text-[10px] font-semibold text-white">
+                ProteinBread
+            </div>
+        </div>
+        <div class="p-5">
+            <div class="flex items-center gap-4 text-xs font-semibold text-brand-600 mb-2">
+                <span>20 min</span> • <span>14 slices Servings</span>
+            </div>
+            <h3 class="text-lg font-bold text-brand-900 mb-3 group-hover:text-brand-500 transition-colors">Multigrain Protein Sandwich Bread</h3>
+            <div class="flex items-center justify-between mt-4">
+                <span class="text-sm font-medium text-brand-600/70">180 kcal</span>
+                <a href="https://proteinbread.co/multigrain-protein-sandwich-bread.html" target="_blank" rel="noopener" class="text-xs font-bold text-brand-500 underline underline-offset-4 decoration-brand-500/30 hover:decoration-brand-500 transition-all">VIEW RECIPE →</a>
+            </div>
+        </div>
+    </article>
+
+    <article class="group bg-white rounded-3xl overflow-hidden recipe-card-shadow transition-all-custom hover:-translate-y-2">
+        <div class="relative h-56 overflow-hidden">
+            <img src="https://proteinbars.co/recipe_images/high-protein-samoa-bars.jpg" alt="High-Protein Samoa Bars" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+            <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-brand-900">
+                20g Protein
+            </div>
+            <div class="absolute top-4 right-4 bg-brand-900/70 backdrop-blur-sm px-2 py-1 rounded text-[10px] font-semibold text-white">
+                ProteinBars
+            </div>
+        </div>
+        <div class="p-5">
+            <div class="flex items-center gap-4 text-xs font-semibold text-brand-600 mb-2">
+                <span>20 min</span> • <span>12 bars Servings</span>
+            </div>
+            <h3 class="text-lg font-bold text-brand-900 mb-3 group-hover:text-brand-500 transition-colors">High-Protein Samoa Bars</h3>
+            <div class="flex items-center justify-between mt-4">
+                <span class="text-sm font-medium text-brand-600/70">280 kcal</span>
+                <a href="https://proteinbars.co/high-protein-samoa-bars.html" target="_blank" rel="noopener" class="text-xs font-bold text-brand-500 underline underline-offset-4 decoration-brand-500/30 hover:decoration-brand-500 transition-all">VIEW RECIPE →</a>
+            </div>
+        </div>
+    </article>
+
+    <article class="group bg-white rounded-3xl overflow-hidden recipe-card-shadow transition-all-custom hover:-translate-y-2">
+        <div class="relative h-56 overflow-hidden">
+            <img src="https://proteincheesecake.co/recipe_images/strawberry-swirl-cheesecake.jpg" alt="Strawberry Swirl Cheesecake" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+            <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-brand-900">
+                20g Protein
+            </div>
+            <div class="absolute top-4 right-4 bg-brand-900/70 backdrop-blur-sm px-2 py-1 rounded text-[10px] font-semibold text-white">
+                ProteinCheesecake
+            </div>
+        </div>
+        <div class="p-5">
+            <div class="flex items-center gap-4 text-xs font-semibold text-brand-600 mb-2">
+                <span>20 min</span> • <span>12 servings Servings</span>
+            </div>
+            <h3 class="text-lg font-bold text-brand-900 mb-3 group-hover:text-brand-500 transition-colors">Strawberry Swirl Cheesecake</h3>
+            <div class="flex items-center justify-between mt-4">
+                <span class="text-sm font-medium text-brand-600/70">190 kcal</span>
+                <a href="https://proteincheesecake.co/strawberry-swirl-cheesecake.html" target="_blank" rel="noopener" class="text-xs font-bold text-brand-500 underline underline-offset-4 decoration-brand-500/30 hover:decoration-brand-500 transition-all">VIEW RECIPE →</a>
+            </div>
+        </div>
+    </article>
+
+    <article class="group bg-white rounded-3xl overflow-hidden recipe-card-shadow transition-all-custom hover:-translate-y-2">
+        <div class="relative h-56 overflow-hidden">
+            <img src="https://proteindonuts.co/recipe_images/boston-cream-protein-donuts.jpg" alt="Boston Cream Protein Donuts" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+            <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-brand-900">
+                20g Protein
+            </div>
+            <div class="absolute top-4 right-4 bg-brand-900/70 backdrop-blur-sm px-2 py-1 rounded text-[10px] font-semibold text-white">
+                ProteinDonuts
+            </div>
+        </div>
+        <div class="p-5">
+            <div class="flex items-center gap-4 text-xs font-semibold text-brand-600 mb-2">
+                <span>25 min</span> • <span>12 donuts Servings</span>
+            </div>
+            <h3 class="text-lg font-bold text-brand-900 mb-3 group-hover:text-brand-500 transition-colors">Boston Cream Protein Donuts</h3>
+            <div class="flex items-center justify-between mt-4">
+                <span class="text-sm font-medium text-brand-600/70">180 kcal</span>
+                <a href="https://proteindonuts.co/boston-cream-protein-donuts.html" target="_blank" rel="noopener" class="text-xs font-bold text-brand-500 underline underline-offset-4 decoration-brand-500/30 hover:decoration-brand-500 transition-all">VIEW RECIPE →</a>
+            </div>
+        </div>
+    </article>
+
+    <article class="group bg-white rounded-3xl overflow-hidden recipe-card-shadow transition-all-custom hover:-translate-y-2">
+        <div class="relative h-56 overflow-hidden">
+            <img src="https://proteinbread.co/recipe_images/whole-wheat-protein-sandwich-bread.jpg" alt="Whole Wheat Protein Sandwich Bread" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+            <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-brand-900">
+                18g Protein
+            </div>
+            <div class="absolute top-4 right-4 bg-brand-900/70 backdrop-blur-sm px-2 py-1 rounded text-[10px] font-semibold text-white">
+                ProteinBread
+            </div>
+        </div>
+        <div class="p-5">
+            <div class="flex items-center gap-4 text-xs font-semibold text-brand-600 mb-2">
+                <span>20 min</span> • <span>14 slices Servings</span>
+            </div>
+            <h3 class="text-lg font-bold text-brand-900 mb-3 group-hover:text-brand-500 transition-colors">Whole Wheat Protein Sandwich Bread</h3>
+            <div class="flex items-center justify-between mt-4">
+                <span class="text-sm font-medium text-brand-600/70">170 kcal</span>
+                <a href="https://proteinbread.co/whole-wheat-protein-sandwich-bread.html" target="_blank" rel="noopener" class="text-xs font-bold text-brand-500 underline underline-offset-4 decoration-brand-500/30 hover:decoration-brand-500 transition-all">VIEW RECIPE →</a>
+            </div>
+        </div>
+    </article>
+
+    <article class="group bg-white rounded-3xl overflow-hidden recipe-card-shadow transition-all-custom hover:-translate-y-2">
+        <div class="relative h-56 overflow-hidden">
+            <img src="https://proteinbars.co/recipe_images/candy-bar-copycat-snickers.jpg" alt="Candy Bar Copycat: Protein Snickers" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+            <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-brand-900">
+                18g Protein
+            </div>
+            <div class="absolute top-4 right-4 bg-brand-900/70 backdrop-blur-sm px-2 py-1 rounded text-[10px] font-semibold text-white">
+                ProteinBars
+            </div>
+        </div>
+        <div class="p-5">
+            <div class="flex items-center gap-4 text-xs font-semibold text-brand-600 mb-2">
+                <span>20 min</span> • <span>10 bars Servings</span>
+            </div>
+            <h3 class="text-lg font-bold text-brand-900 mb-3 group-hover:text-brand-500 transition-colors">Candy Bar Copycat: Protein Snickers</h3>
+            <div class="flex items-center justify-between mt-4">
+                <span class="text-sm font-medium text-brand-600/70">280 kcal</span>
+                <a href="https://proteinbars.co/candy-bar-copycat-snickers.html" target="_blank" rel="noopener" class="text-xs font-bold text-brand-500 underline underline-offset-4 decoration-brand-500/30 hover:decoration-brand-500 transition-all">VIEW RECIPE →</a>
+            </div>
+        </div>
+    </article>
+
+    <article class="group bg-white rounded-3xl overflow-hidden recipe-card-shadow transition-all-custom hover:-translate-y-2">
+        <div class="relative h-56 overflow-hidden">
+            <img src="https://proteinbars.co/recipe_images/candy-bar-copycat-butterfinger.jpg" alt="Candy Bar Copycat: Protein Butterfinger" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+            <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-brand-900">
+                18g Protein
+            </div>
+            <div class="absolute top-4 right-4 bg-brand-900/70 backdrop-blur-sm px-2 py-1 rounded text-[10px] font-semibold text-white">
+                ProteinBars
+            </div>
+        </div>
+        <div class="p-5">
+            <div class="flex items-center gap-4 text-xs font-semibold text-brand-600 mb-2">
+                <span>20 min</span> • <span>12 bars Servings</span>
+            </div>
+            <h3 class="text-lg font-bold text-brand-900 mb-3 group-hover:text-brand-500 transition-colors">Candy Bar Copycat: Protein Butterfinger</h3>
+            <div class="flex items-center justify-between mt-4">
+                <span class="text-sm font-medium text-brand-600/70">270 kcal</span>
+                <a href="https://proteinbars.co/candy-bar-copycat-butterfinger.html" target="_blank" rel="noopener" class="text-xs font-bold text-brand-500 underline underline-offset-4 decoration-brand-500/30 hover:decoration-brand-500 transition-all">VIEW RECIPE →</a>
+            </div>
+        </div>
+    </article>
+
+    <article class="group bg-white rounded-3xl overflow-hidden recipe-card-shadow transition-all-custom hover:-translate-y-2">
+        <div class="relative h-56 overflow-hidden">
+            <img src="https://proteindonuts.co/recipe_images/jelly-filled-protein-donuts.jpg" alt="Jelly-Filled Protein Donuts" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+            <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-brand-900">
+                18g Protein
+            </div>
+            <div class="absolute top-4 right-4 bg-brand-900/70 backdrop-blur-sm px-2 py-1 rounded text-[10px] font-semibold text-white">
+                ProteinDonuts
+            </div>
+        </div>
+        <div class="p-5">
+            <div class="flex items-center gap-4 text-xs font-semibold text-brand-600 mb-2">
+                <span>25 min</span> • <span>12 donuts Servings</span>
+            </div>
+            <h3 class="text-lg font-bold text-brand-900 mb-3 group-hover:text-brand-500 transition-colors">Jelly-Filled Protein Donuts</h3>
+            <div class="flex items-center justify-between mt-4">
+                <span class="text-sm font-medium text-brand-600/70">170 kcal</span>
+                <a href="https://proteindonuts.co/jelly-filled-protein-donuts.html" target="_blank" rel="noopener" class="text-xs font-bold text-brand-500 underline underline-offset-4 decoration-brand-500/30 hover:decoration-brand-500 transition-all">VIEW RECIPE →</a>
+            </div>
+        </div>
+    </article>
+
+    <article class="group bg-white rounded-3xl overflow-hidden recipe-card-shadow transition-all-custom hover:-translate-y-2">
+        <div class="relative h-56 overflow-hidden">
+            <img src="https://proteindonuts.co/recipe_images/carrot-cake-protein-donuts.jpg" alt="Carrot Cake Protein Donuts" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+            <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-brand-900">
+                18g Protein
+            </div>
+            <div class="absolute top-4 right-4 bg-brand-900/70 backdrop-blur-sm px-2 py-1 rounded text-[10px] font-semibold text-white">
+                ProteinDonuts
+            </div>
+        </div>
+        <div class="p-5">
+            <div class="flex items-center gap-4 text-xs font-semibold text-brand-600 mb-2">
+                <span>20 min</span> • <span>12 donuts Servings</span>
+            </div>
+            <h3 class="text-lg font-bold text-brand-900 mb-3 group-hover:text-brand-500 transition-colors">Carrot Cake Protein Donuts</h3>
+            <div class="flex items-center justify-between mt-4">
+                <span class="text-sm font-medium text-brand-600/70">165 kcal</span>
+                <a href="https://proteindonuts.co/carrot-cake-protein-donuts.html" target="_blank" rel="noopener" class="text-xs font-bold text-brand-500 underline underline-offset-4 decoration-brand-500/30 hover:decoration-brand-500 transition-all">VIEW RECIPE →</a>
+            </div>
+        </div>
+    </article>
+
+    <article class="group bg-white rounded-3xl overflow-hidden recipe-card-shadow transition-all-custom hover:-translate-y-2">
+        <div class="relative h-56 overflow-hidden">
+            <img src="https://proteinbars.co/recipe_images/candy-bar-copycat-twix.jpg" alt="Candy Bar Copycat: Protein Twix" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+            <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-brand-900">
+                17g Protein
+            </div>
+            <div class="absolute top-4 right-4 bg-brand-900/70 backdrop-blur-sm px-2 py-1 rounded text-[10px] font-semibold text-white">
+                ProteinBars
+            </div>
+        </div>
+        <div class="p-5">
+            <div class="flex items-center gap-4 text-xs font-semibold text-brand-600 mb-2">
+                <span>25 min</span> • <span>12 bars Servings</span>
+            </div>
+            <h3 class="text-lg font-bold text-brand-900 mb-3 group-hover:text-brand-500 transition-colors">Candy Bar Copycat: Protein Twix</h3>
+            <div class="flex items-center justify-between mt-4">
+                <span class="text-sm font-medium text-brand-600/70">270 kcal</span>
+                <a href="https://proteinbars.co/candy-bar-copycat-twix.html" target="_blank" rel="noopener" class="text-xs font-bold text-brand-500 underline underline-offset-4 decoration-brand-500/30 hover:decoration-brand-500 transition-all">VIEW RECIPE →</a>
+            </div>
+        </div>
+    </article>
+
+    <article class="group bg-white rounded-3xl overflow-hidden recipe-card-shadow transition-all-custom hover:-translate-y-2">
+        <div class="relative h-56 overflow-hidden">
+            <img src="https://proteinbrownies.co/recipe_images/zucchini-protein-brownies.jpg" alt="Zucchini Protein Brownies" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+            <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-brand-900">
+                16g Protein
+            </div>
+            <div class="absolute top-4 right-4 bg-brand-900/70 backdrop-blur-sm px-2 py-1 rounded text-[10px] font-semibold text-white">
+                ProteinBrownies
+            </div>
+        </div>
+        <div class="p-5">
+            <div class="flex items-center gap-4 text-xs font-semibold text-brand-600 mb-2">
+                <span>20 min</span> • <span>12 servings Servings</span>
+            </div>
+            <h3 class="text-lg font-bold text-brand-900 mb-3 group-hover:text-brand-500 transition-colors">Zucchini Protein Brownies</h3>
+            <div class="flex items-center justify-between mt-4">
+                <span class="text-sm font-medium text-brand-600/70">150 kcal</span>
+                <a href="https://proteinbrownies.co/zucchini-protein-brownies.html" target="_blank" rel="noopener" class="text-xs font-bold text-brand-500 underline underline-offset-4 decoration-brand-500/30 hover:decoration-brand-500 transition-all">VIEW RECIPE →</a>
+            </div>
+        </div>
+    </article>
+        </div>
+
+        <!-- In-Content CTA Block -->
+        <div class="my-16 relative overflow-hidden rounded-3xl cta-gradient p-8 md:p-12 text-white no-print">
+            <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
+                <div class="max-w-xl text-center md:text-left">
+                    <h2 class="anton-text text-3xl md:text-4xl mb-4">Want all these recipes in a PDF?</h2>
+                    <p class="text-white/80 text-lg leading-relaxed">Download our "Post-Workout Recipe Pack" containing all recipes with shopping lists and macro breakdowns.</p>
+                </div>
+                <div class="w-full md:w-auto">
+                    <button @click="openLeadMagnet()" class="w-full md:w-auto px-10 py-4 bg-white hover:bg-brand-50 text-brand-700 font-bold rounded-full transition-all shadow-lg flex items-center justify-center gap-3 group">
+                        <svg class="w-6 h-6 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                        Download PDF Pack
+                    </button>
+                </div>
+            </div>
+            <!-- Decorative Elements -->
+            <div class="absolute -bottom-10 -right-10 w-64 h-64 bg-white/5 organic-shape pointer-events-none"></div>
+            <div class="absolute top-0 right-1/4 w-32 h-32 bg-white/10 rounded-full blur-2xl pointer-events-none"></div>
+        </div>
+
+        <!-- Load More -->
+        <div class="mt-12 text-center no-print" x-show="hasMoreRecipes">
+            <button @click="loadMore()" class="px-12 py-4 border-2 border-brand-200 rounded-full text-brand-700 font-bold hover:bg-brand-100 transition-all">
+                Load More Recipes
+            </button>
+        </div>
+    </main>
+
     <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-links">
-            <a href="https://highprotein.recipes">Home</a>
-            <a href="https://highprotein.recipes/recipes/">All Recipes</a>
-            <a href="https://highprotein.recipes/privacy-policy/">Privacy Policy</a>
-            <a href="https://highprotein.recipes/terms/">Terms of Use</a>
+    <footer class="bg-brand-100/50 pt-16 pb-32 no-print">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="text-2xl">🥗</span>
+                        <span class="anton-text text-xl text-brand-900">HIGH PROTEIN RECIPES</span>
+                    </div>
+                    <p class="text-brand-700/70 max-w-sm mb-6 leading-relaxed">
+                        Macro-verified protein recipes for real results. All nutrition data verified using USDA FoodData Central.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-brand-700 hover:bg-brand-500 hover:text-white transition-all shadow-sm">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073z"/></svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-brand-700 hover:bg-brand-500 hover:text-white transition-all shadow-sm">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold text-brand-900 mb-6 uppercase tracking-widest text-xs">Categories</h4>
+                    <ul class="space-y-3 text-brand-700/70 text-sm">
+                        <li><a href="https://highprotein.recipes/meal-prep/" class="hover:text-brand-500 transition-colors">Meal Prep Recipes</a></li>
+                        <li><a href="https://highprotein.recipes/post-workout/" class="hover:text-brand-500 transition-colors">Post-Workout Meals</a></li>
+                        <li><a href="https://highprotein.recipes/under-200-calories/" class="hover:text-brand-500 transition-colors">Under 200 Calories</a></li>
+                        <li><a href="https://highprotein.recipes/vegan/" class="hover:text-brand-500 transition-colors">Vegan Protein</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-brand-900 mb-6 uppercase tracking-widest text-xs">Recipe Sites</h4>
+                    <ul class="space-y-3 text-brand-700/70 text-sm">
+                        <li><a href="https://proteincookies.co" class="hover:text-brand-500 transition-colors">Protein Cookies</a></li>
+                        <li><a href="https://proteinbrownies.co" class="hover:text-brand-500 transition-colors">Protein Brownies</a></li>
+                        <li><a href="https://proteinpancakes.co" class="hover:text-brand-500 transition-colors">Protein Pancakes</a></li>
+                        <li><a href="https://proteinmuffins.com" class="hover:text-brand-500 transition-colors">Protein Muffins</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-brand-200 pt-8 text-center text-xs text-brand-600/60">
+                © 2026 High Protein Recipes. All recipes macro-verified using USDA FoodData Central.
+            </div>
         </div>
-        <p class="footer-copy">© 2026 High Protein Recipes. All recipes macro-verified using USDA FoodData Central.</p>
     </footer>
-    
-    <!-- Mobile Sticky CTA -->
-    <div class="mobile-cta">
-        <a href="https://highprotein.recipes/starter-pack/" class="btn btn-accent">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-            </svg>
-            Get Free Starter Pack
-        </a>
+
+    <!-- Sticky CTA Banner -->
+    <div x-show="showSticky" x-cloak x-transition:enter="transition ease-out duration-500" x-transition:enter-start="translate-y-full" x-transition:enter-end="translate-y-0" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="translate-y-0" x-transition:leave-end="translate-y-full" class="fixed bottom-0 left-0 w-full z-50 p-4 pointer-events-none no-print">
+        <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-2xl border border-brand-200 p-4 flex flex-col md:flex-row items-center gap-4 pointer-events-auto">
+            <div class="flex items-center gap-4 flex-grow">
+                <div class="hidden sm:flex w-12 h-16 bg-brand-100 rounded-lg flex-shrink-0 items-center justify-center">
+                    <span class="text-2xl">📖</span>
+                </div>
+                <div>
+                    <h5 class="font-bold text-brand-900 text-sm md:text-base">Grab the Post-Workout Recipe Pack!</h5>
+                    <p class="text-xs text-brand-600 font-medium">Join 15,000+ home cooks saving 5 hours/week.</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-3 w-full md:w-auto">
+                <input type="email" x-model="stickyEmail" placeholder="Your email..." class="flex-grow px-4 py-2 rounded-full bg-brand-50 border border-brand-200 text-sm focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none">
+                <button @click="submitStickyForm()" class="bg-brand-500 text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-brand-600 transition-all whitespace-nowrap">
+                    Join Free
+                </button>
+                <button @click="showSticky = false" class="text-brand-400 hover:text-brand-700 p-1">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+        </div>
     </div>
-    
+
+    <!-- Exit Intent Popup -->
+    <div x-show="showExitModal" x-cloak class="fixed inset-0 z-[100] flex items-center justify-center p-4 no-print">
+        <div x-show="showExitModal" x-transition:enter="ease-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" @click="showExitModal = false" class="absolute inset-0 bg-brand-900/60 backdrop-blur-sm"></div>
+
+        <div x-show="showExitModal" x-transition:enter="ease-out duration-300" x-transition:enter-start="opacity-0 scale-95 translate-y-4" x-transition:enter-end="opacity-100 scale-100 translate-y-0" class="relative bg-brand-50 rounded-3xl shadow-3xl max-w-lg w-full p-8 md:p-12 overflow-hidden">
+            <div class="absolute -top-10 -left-10 w-32 h-32 bg-brand-500/10 organic-shape"></div>
+            
+            <button @click="showExitModal = false" class="absolute top-4 right-4 p-2 text-brand-400 hover:text-brand-700 transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            
+            <div class="relative z-10 text-center">
+                <div class="w-20 h-20 bg-brand-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-10 h-10 text-brand-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                </div>
+                <h2 class="anton-text text-3xl text-brand-900 mb-4">Don't leave empty-handed!</h2>
+                <p class="text-brand-700/70 mb-8">Get our "High-Protein Essentials" shopping list for free. No credit card required, just healthy fuel.</p>
+                
+                <form @submit.prevent="submitExitForm()" class="space-y-4">
+                    <input type="email" x-model="exitEmail" required placeholder="Enter your email" class="w-full px-6 py-4 rounded-full border-2 border-brand-200 focus:border-brand-500 outline-none transition-all">
+                    <button type="submit" class="w-full py-4 bg-brand-500 text-white font-bold rounded-full hover:bg-brand-600 transition-all shadow-lg">
+                        Send Me The List
+                    </button>
+                    <button type="button" @click="showExitModal = false" class="text-brand-400 text-sm hover:text-brand-700 transition-colors mt-4">No thanks, I'm good</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- PDF Lead Magnet Modal -->
+    <div x-show="showLeadMagnet" x-cloak class="fixed inset-0 z-[100] flex items-center justify-center p-0 md:p-6 overflow-hidden no-print">
+        <!-- Backdrop -->
+        <div x-show="showLeadMagnet" x-transition:enter="ease-out duration-500" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" @click="showLeadMagnet = false" class="absolute inset-0 bg-brand-900/80 backdrop-blur-sm"></div>
+
+        <!-- Modal Container -->
+        <div x-show="showLeadMagnet" x-transition:enter="ease-out duration-500 transform" x-transition:enter-start="opacity-0 scale-90 translate-y-12" x-transition:enter-end="opacity-100 scale-100 translate-y-0" class="relative w-full max-w-5xl bg-brand-50 md:rounded-[3rem] shadow-premium overflow-hidden flex flex-col md:flex-row min-h-[500px]">
+            <!-- Close Button -->
+            <button @click="showLeadMagnet = false" class="absolute top-6 right-6 z-50 p-2 bg-brand-900/5 hover:bg-brand-900/10 rounded-full transition-colors text-brand-900">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+
+            <!-- Left Side: Visual -->
+            <div class="w-full md:w-5/12 cta-gradient p-12 flex flex-col justify-center items-center relative overflow-hidden">
+                <div class="absolute -top-20 -left-20 w-64 h-64 bg-white/10 organic-shape blur-3xl"></div>
+                <div class="absolute -bottom-20 -right-20 w-64 h-64 bg-white/10 organic-shape blur-3xl"></div>
+
+                <!-- Guide Mockup -->
+                <div class="relative z-10 animate-float">
+                    <div class="guide-mockup w-48 h-64 rounded-tr-[2rem] rounded-br-xl rounded-l-md p-5 flex flex-col justify-between text-white relative">
+                        <div class="absolute left-0 top-0 bottom-0 w-3 bg-black/10 rounded-l-md"></div>
+                        <div class="relative">
+                            <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center mb-3">
+                                <span class="text-xs font-bold">HP</span>
+                            </div>
+                            <h4 class="text-lg font-bold leading-tight">Post-Workout Recipe Pack</h4>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="h-1 w-12 bg-white/50 rounded"></div>
+                            <p class="text-[10px] font-medium text-white/70 uppercase tracking-widest">Free Download</p>
+                        </div>
+                        <div class="absolute -right-3 -bottom-3 w-14 h-14 bg-accent-500 rounded-full flex items-center justify-center text-[9px] font-bold text-center rotate-12 shadow-lg border-2 border-white/20">
+                            FREE<br>PDF
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-10 text-center relative z-10">
+                    <p class="text-white/80 font-bold text-sm tracking-widest uppercase mb-2">Exclusive Offer</p>
+                    <h3 class="text-white text-xl font-bold mb-4">21 Recipes to<br>Transform Your Prep</h3>
+                    <div class="flex items-center justify-center gap-2">
+                        <div class="flex -space-x-2">
+                            <div class="w-8 h-8 rounded-full bg-white/20 border-2 border-white/30 flex items-center justify-center text-xs">👤</div>
+                            <div class="w-8 h-8 rounded-full bg-white/20 border-2 border-white/30 flex items-center justify-center text-xs">👤</div>
+                            <div class="w-8 h-8 rounded-full bg-white/20 border-2 border-white/30 flex items-center justify-center text-xs">👤</div>
+                        </div>
+                        <span class="text-white/60 text-xs font-medium">Join 15.2k+ others</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: Form -->
+            <div class="w-full md:w-7/12 p-8 md:p-14 flex flex-col justify-center">
+                <div x-show="!leadMagnetSubmitted">
+                    <div class="mb-8">
+                        <span class="inline-block px-3 py-1 bg-brand-500/10 text-brand-600 text-[10px] font-bold uppercase tracking-widest rounded-full mb-4">
+                            Free Download
+                        </span>
+                        <h2 class="anton-text text-3xl md:text-4xl text-brand-900 leading-tight mb-4">
+                            Get Your <span class="text-brand-500">Post-Workout Recipe Pack</span>
+                        </h2>
+                        <p class="text-lg text-brand-700/70 leading-relaxed">
+                            All 21 recipes with complete nutrition info, shopping lists, and meal prep tips. Delivered instantly to your inbox.
+                        </p>
+                    </div>
+
+                    <form @submit.prevent="submitLeadMagnetForm()" class="space-y-4">
+                        <div class="relative">
+                            <input type="email" x-model="leadMagnetEmail" required placeholder="Where should we send your guide?" class="w-full px-6 py-5 rounded-2xl bg-brand-100/50 border-2 border-transparent focus:border-brand-500 outline-none transition-all text-brand-900 placeholder:text-brand-400 text-lg">
+                            <div class="absolute right-4 top-1/2 -translate-y-1/2">
+                                <svg class="w-6 h-6 text-brand-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="w-full py-5 bg-brand-500 hover:bg-brand-600 text-white font-bold rounded-2xl transition-all shadow-xl flex items-center justify-center gap-3 text-lg group">
+                            <span>Download Free Guide Now</span>
+                            <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </button>
+
+                        <div class="flex items-center gap-3 pt-4 px-2">
+                            <svg class="w-5 h-5 text-accent-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                            <p class="text-xs text-brand-500">We respect your privacy. Unsubscribe anytime.</p>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Success State -->
+                <div x-show="leadMagnetSubmitted" x-transition class="text-center py-8">
+                    <div class="w-20 h-20 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-accent-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    </div>
+                    <h3 class="anton-text text-2xl text-brand-900 mb-4">Check Your Inbox!</h3>
+                    <p class="text-brand-700/70 mb-6">Your Post-Workout Recipe Pack is on its way. Check your email for the download link.</p>
+                    <button @click="showLeadMagnet = false" class="px-8 py-3 bg-brand-100 text-brand-700 font-semibold rounded-full hover:bg-brand-200 transition-all">
+                        Continue Browsing
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script Section -->
+    <script>
+        // SendGrid configuration
+        const SENDGRID_ENDPOINT = '/api/subscribe';
+        const SUCCESS_REDIRECT = '/download-success/';
+        const PDF_DOWNLOAD_URL = '/downloads/post-workout-pack.pdf';
+        const GA_MEASUREMENT_ID = 'G-86MYLJ5WDT';
+
+        function landingPage() {
+            return {
+                showSticky: false,
+                showExitModal: false,
+                showLeadMagnet: false,
+                exitIntentTriggered: false,
+                leadMagnetSubmitted: false,
+                stickyEmail: '',
+                exitEmail: '',
+                leadMagnetEmail: '',
+                hasMoreRecipes: false,
+                scrollMarkers: [25, 50, 75, 100],
+                trackedMarkers: [],
+
+                init() {
+                    // Show sticky after 3 seconds
+                    setTimeout(() => {
+                        this.showSticky = true;
+                    }, 3000);
+                },
+
+                openLeadMagnet() {
+                    this.showLeadMagnet = true;
+                    this.trackEvent('lead_magnet_opened', { source: 'cta_button' });
+                },
+
+                triggerExitIntent() {
+                    if (!this.exitIntentTriggered && !this.showLeadMagnet) {
+                        this.showExitModal = true;
+                        this.exitIntentTriggered = true;
+                        this.trackEvent('exit_intent_triggered');
+                    }
+                },
+
+                trackScroll() {
+                    const h = document.documentElement, 
+                          b = document.body,
+                          st = 'scrollTop',
+                          sh = 'scrollHeight';
+                    const percent = Math.round((h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100);
+                    
+                    this.scrollMarkers.forEach(marker => {
+                        if (percent >= marker && !this.trackedMarkers.includes(marker)) {
+                            this.trackedMarkers.push(marker);
+                            this.trackEvent('scroll_depth', { percent: marker });
+                        }
+                    });
+                },
+
+                async submitStickyForm() {
+                    if (!this.stickyEmail) return;
+                    await this.submitEmail(this.stickyEmail, 'sticky_cta');
+                    this.showSticky = false;
+                },
+
+                async submitExitForm() {
+                    if (!this.exitEmail) return;
+                    await this.submitEmail(this.exitEmail, 'exit_intent');
+                    this.showExitModal = false;
+                },
+
+                async submitLeadMagnetForm() {
+                    if (!this.leadMagnetEmail) return;
+                    await this.submitEmail(this.leadMagnetEmail, 'lead_magnet');
+                    this.leadMagnetSubmitted = true;
+                    
+                    // Redirect to success page after delay
+                    setTimeout(() => {
+                        if (SUCCESS_REDIRECT) {
+                            window.location.href = SUCCESS_REDIRECT;
+                        }
+                    }, 2000);
+                },
+
+                async submitEmail(email, source) {
+                    this.trackEvent('email_signup', { source: source });
+                    
+                    // If SendGrid endpoint is configured, submit
+                    if (SENDGRID_ENDPOINT && SENDGRID_ENDPOINT !== '/api/subscribe') {
+                        try {
+                            await fetch(SENDGRID_ENDPOINT, {
+                                method: 'POST',
+                                headers: { 'Content-Type': 'application/json' },
+                                body: JSON.stringify({
+                                    email: email,
+                                    source: source,
+                                    page: window.location.pathname,
+                                    timestamp: new Date().toISOString()
+                                })
+                            });
+                        } catch (e) {
+                            console.error('Email submission failed:', e);
+                        }
+                    }
+                },
+
+                trackEvent(eventName, params = {}) {
+                    // GA4 tracking
+                    if (typeof gtag !== 'undefined') {
+                        gtag('event', eventName, params);
+                    }
+                    console.log('Event:', eventName, params);
+                },
+
+                loadMore() {
+                    // Placeholder for load more functionality
+                    this.trackEvent('load_more_clicked');
+                }
+            }
+        }
+    </script>
+
     <!-- GA4 Analytics -->
-    <script src="/js/ga4-events.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-86MYLJ5WDT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-86MYLJ5WDT');
+    </script>
+
+<!-- Conversion Components -->
+<script src="/js/conversion-components.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        initConversionComponents({
+            siteName: 'High Protein Recipes',
+            siteEmoji: '🥗',
+            leadMagnetTitle: 'High-Protein Starter Pack',
+            leadMagnetDescription: 'Get 50+ high-protein recipes from all our sites with shopping lists and macro breakdowns.',
+            sendgridEndpoint: '/.netlify/functions/subscribe',
+            successRedirect: '/download-success/',
+            pdfDownloadUrl: '/downloads/high-protein-starter-pack.pdf',
+            gaMeasurementId: 'G-86MYLJ5WDT',
+            stickyDelay: 3000,
+            exitIntentEnabled: true
+        });
+    });
+</script>
+
 </body>
 </html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Recipe: Greek Lemon Chicken Bowls | Dotoro Wellness</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Alpine.js -->
+    <script defer="" src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        wellness: {
+                            sage: '#7B8E7E',
+                            forest: '#3A4D39',
+                            cream: '#FDFBF7',
+                            sand: '#F5EFE6',
+                            terracotta: '#D4A373',
+                            clay: '#A67C52',
+                        }
+                    },
+                    borderRadius: {
+                        'xl': '1rem',
+                        '2xl': '1.5rem',
+                        '3xl': '2rem',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        [x-cloak] { display: none !important; }
+        
+        body {
+            background-color: #FDFBF7;
+            color: #2D3436;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        .organic-shape {
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        }
+
+        .recipe-border {
+            border: 2px solid #F5EFE6;
+        }
+
+        /* GA4 Simulation Toast */
+        .analytics-toast {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #333;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 12px;
+            z-index: 9999;
+            pointer-events: none;
+            opacity: 0;
+            transform: translateY(-20px);
+            transition: all 0.3s ease;
+        }
+        .analytics-toast.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+            body {
+                background-color: white !important;
+                padding: 0 !important;
+            }
+            .print-container {
+                box-shadow: none !important;
+                border: none !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+            .recipe-card-shadow {
+                box-shadow: none !important;
+            }
+            a {
+                text-decoration: none !important;
+                color: black !important;
+            }
+        }
+
+        @page {
+            margin: 1.5cm;
+        }
+    </style>
+</head>
+<body x-data="printRecipe()" class="min-h-screen flex flex-col antialiased py-8 md:py-12">
+
+    <!-- GA4 Simulation Helper -->
+    <div id="analytics-toast" class="analytics-toast font-mono"></div>
+
+    <!-- Toolbar / Action Bar (Hidden in Print) -->
+    <div class="no-print max-w-4xl mx-auto w-full mb-8 px-4 flex items-center justify-between">
+        <a href="#" class="flex items-center gap-2 group">
+            <div class="w-8 h-8 bg-wellness-sage/10 organic-shape flex items-center justify-center group-hover:bg-wellness-sage transition-all">
+                <svg class="w-4 h-4 text-wellness-sage group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+            </div>
+            <span class="text-sm font-semibold text-wellness-sage">Back to Collection</span>
+        </a>
+        
+        <div class="flex items-center gap-3">
+            <button @click="triggerPrint()" class="flex items-center gap-2 bg-wellness-forest text-white px-6 py-2.5 rounded-full font-bold shadow-lg hover:bg-wellness-terracotta transition-all transform hover:scale-105 active:scale-95">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+                Print Recipe
+            </button>
+        </div>
+    </div>
+
+    <!-- Print Canvas -->
+    <main class="print-container flex-grow max-w-4xl mx-auto w-full bg-white rounded-[2rem] shadow-xl md:shadow-2xl overflow-hidden recipe-border">
+        
+        <!-- Recipe Header Decor -->
+        <div class="h-3 bg-wellness-sage w-full"></div>
+        
+        <div class="p-8 md:p-12">
+            <!-- Brand & URL (Print Context) -->
+            <div class="flex justify-between items-start mb-10 border-b border-wellness-sand pb-8">
+                <div>
+                    
+                    
+                </div>
+                <div class="text-right hidden sm:block">
+                    <p class="text-[10px] text-wellness-sage uppercase tracking-widest font-bold mb-1">Recipe Source</p>
+                    <p class="text-xs font-mono text-wellness-forest">dotoro.com/recipes/greek-chicken-bowls</p>
+                </div>
+            </div>
+
+            <!-- Recipe Title & Meta -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
+                <div class="md:col-span-2">
+                    <h1 class="text-4xl md:text-5xl font-extrabold text-wellness-forest leading-tight mb-4" x-text="recipe.title"></h1>
+                    <p class="text-wellness-sage text-lg leading-relaxed italic" x-text="recipe.description"></p>
+                    
+                    <div class="flex flex-wrap gap-6 mt-8">
+                        <div class="flex flex-col">
+                            <span class="text-[10px] uppercase tracking-widest font-bold text-wellness-terracotta">Prep Time</span>
+                            <span class="font-bold text-wellness-forest" x-text="recipe.prepTime"></span>
+                        </div>
+                        <div class="flex flex-col border-l border-wellness-sand pl-6">
+                            <span class="text-[10px] uppercase tracking-widest font-bold text-wellness-terracotta">Cook Time</span>
+                            <span class="font-bold text-wellness-forest" x-text="recipe.cookTime"></span>
+                        </div>
+                        <div class="flex flex-col border-l border-wellness-sand pl-6">
+                            <span class="text-[10px] uppercase tracking-widest font-bold text-wellness-terracotta">Servings</span>
+                            <span class="font-bold text-wellness-forest" x-text="recipe.servings"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-wellness-sand/30 p-6 rounded-2xl flex flex-col justify-center items-center text-center">
+                    <div class="mb-4">
+                        <span class="block text-3xl font-black text-wellness-forest" x-text="recipe.protein + 'g'"></span>
+                        <span class="text-[10px] uppercase tracking-widest font-bold text-wellness-sage">Protein Per Serving</span>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 w-full pt-4 border-t border-wellness-sand/50">
+                        <div>
+                            <span class="block text-sm font-bold text-wellness-forest" x-text="recipe.calories"></span>
+                            <span class="text-[9px] uppercase font-bold text-wellness-sage">Calories</span>
+                        </div>
+                        <div>
+                            <span class="block text-sm font-bold text-wellness-forest" x-text="recipe.fat + 'g'"></span>
+                            <span class="text-[9px] uppercase font-bold text-wellness-sage">Fat</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ingredients & Instructions Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-12">
+                <!-- Ingredients List -->
+                <div class="lg:col-span-2">
+                    <h3 class="text-xl font-bold text-wellness-forest mb-6 flex items-center gap-2">
+                        <span class="w-1.5 h-6 bg-wellness-terracotta rounded-full"></span>
+                        Ingredients
+                    </h3>
+                    <ul class="space-y-4">
+                        <template x-for="(ingredient, index) in recipe.ingredients" :key="index">
+                            <li class="flex items-start gap-3 pb-3 border-b border-wellness-sand/40 last:border-0">
+                                <div class="no-print mt-1 w-4 h-4 border-2 border-wellness-sand rounded-sm flex-shrink-0"></div>
+                                <span class="text-sm text-wellness-forest leading-snug" x-html="ingredient"></span>
+                            </li>
+                        </template>
+                    </ul>
+                </div>
+
+                <!-- Instructions -->
+                <div class="lg:col-span-3">
+                    <h3 class="text-xl font-bold text-wellness-forest mb-6 flex items-center gap-2">
+                        <span class="w-1.5 h-6 bg-wellness-sage rounded-full"></span>
+                        Instructions
+                    </h3>
+                    <div class="space-y-8">
+                        <template x-for="(step, index) in recipe.steps" :key="index">
+                            <div class="flex gap-4">
+                                <span class="flex-shrink-0 w-8 h-8 rounded-full bg-wellness-sand flex items-center justify-center font-bold text-wellness-forest text-sm" x-text="index + 1"></span>
+                                <div>
+                                    <p class="text-wellness-forest leading-relaxed" x-text="step"></p>
+                                </div>
+                            </div>
+                        </template>
+                    </div>
+
+                    <!-- Chef's Note -->
+                    <div class="mt-12 bg-wellness-cream p-6 rounded-2xl border-l-4 border-wellness-terracotta">
+                        <h4 class="text-xs font-bold uppercase tracking-widest text-wellness-terracotta mb-2">Nutritionist Tip</h4>
+                        <p class="text-sm text-wellness-sage leading-relaxed italic">
+                            "For maximum protein absorption and satiety, ensure you don't skip the Greek yogurt base. The combination of slow-digesting casein and fast-acting chicken protein makes this the ultimate recovery meal."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Print Footer -->
+        <div class="bg-wellness-forest text-white p-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <p class="text-sm font-bold mb-1">Want more high-protein recipes?</p>
+                <p class="text-xs text-wellness-sand/70 italic">Scan to download our Free 50-Recipe Meal Prep Pack</p>
+            </div>
+            <div class="flex items-center gap-4">
+                <!-- Mock QR Code for Print Usefulness -->
+                <div class="bg-white p-2 rounded-lg no-print-background">
+                    <div class="w-16 h-16 bg-wellness-forest flex items-center justify-center text-[8px] font-bold text-center p-1 leading-tight border border-wellness-forest">
+                        DOTORO<br>RECIPES<br>ONLINE
+                    </div>
+                </div>
+                <div class="hidden sm:block border-l border-white/20 pl-4">
+                    <p class="text-[10px] font-bold tracking-widest uppercase mb-1 text-wellness-terracotta">Community</p>
+                    <p class="text-xs text-wellness-sand">Join 15k+ healthy cooks<br>@dotorowellness</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Script Section -->
+    <script>
+        function printRecipe() {
+            return {
+                recipe: {
+                    title: "Greek Lemon Chicken Bowls",
+                    slug: "greek-chicken-bowls",
+                    description: "Zesty, refreshing, and packed with 38g of protein. This meal prep staple combines Mediterranean flavors with nutritionist-approved macro ratios.",
+                    prepTime: "15 min",
+                    cookTime: "10 min",
+                    servings: "4",
+                    protein: 38,
+                    calories: 420,
+                    fat: 12,
+                    ingredients: [
+                        "<strong>1.5 lbs</strong> Chicken Breast, cut into bite-sized pieces",
+                        "<strong>2 tbsp</strong> Extra Virgin Olive Oil",
+                        "<strong>1 large</strong> Lemon, juiced and zested",
+                        "<strong>3 cloves</strong> Garlic, minced",
+                        "<strong>1 tbsp</strong> Dried Oregano",
+                        "<strong>2 cups</strong> Cooked Quinoa or Brown Rice",
+                        "<strong>1 cup</strong> Cucumber, diced",
+                        "<strong>1 cup</strong> Cherry Tomatoes, halved",
+                        "<strong>1/2 cup</strong> Kalamata Olives, pitted",
+                        "<strong>1/4 cup</strong> Red Onion, thinly sliced",
+                        "<strong>1/2 cup</strong> Low-fat Greek Yogurt (for garnish)",
+                        "Fresh Parsley, chopped for garnish"
+                    ],
+                    steps: [
+                        "In a large bowl, whisk together the olive oil, lemon juice, lemon zest, minced garlic, and oregano. Add the chicken pieces and toss to coat thoroughly. Let marinate for at least 15 minutes (or up to 4 hours in the fridge).",
+                        "Heat a large non-stick skillet over medium-high heat. Add the chicken (work in batches if necessary) and cook until golden brown and cooked through, about 5-7 minutes.",
+                        "While the chicken is cooking, prepare the base of your bowls with cooked quinoa or rice.",
+                        "Top each bowl with a portion of cooked chicken, cucumbers, tomatoes, olives, and red onion.",
+                        "Add a dollop of Greek yogurt to the center and garnish with fresh parsley. Serve immediately or divide into meal-prep containers for the week."
+                    ]
+                },
+
+                triggerPrint() {
+                    this.logAnalytics(`Event: recipe_print | recipe_slug: ${this.recipe.slug}`);
+                    
+                    // Allow toast to show before print dialog
+                    setTimeout(() => {
+                        window.print();
+                    }, 800);
+                },
+
+                logAnalytics(message) {
+                    console.log(`[GA4 SIMULATION]: ${message}`);
+                    const toast = document.getElementById('analytics-toast');
+                    toast.innerText = message;
+                    toast.classList.add('show');
+                    setTimeout(() => toast.classList.remove('show'), 2500);
+                }
+            }
+        }
+    </script>
+
+    <!-- ItemList Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Recipe",
+      "name": "Greek Lemon Chicken Bowls",
+      "author": {
+        "@type": "Organization",
+        "name": "Dotoro Wellness"
+      },
+      "description": "Zesty, refreshing, and packed with 38g of protein.",
+      "prepTime": "PT15M",
+      "cookTime": "PT10M",
+      "recipeYield": "4 servings",
+      "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "420 calories",
+        "proteinContent": "38 grams"
+      }
+    }
+    </script>
+
+
+</body></html>

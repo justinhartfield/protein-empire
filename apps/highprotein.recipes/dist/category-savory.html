@@ -2409,5 +2409,25 @@
     </div>
 </footer>
 
+
+<!-- Conversion Components -->
+<script src="/js/conversion-components.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        initConversionComponents({
+            siteName: 'High Protein Recipes',
+            siteEmoji: '🥗',
+            leadMagnetTitle: 'High-Protein Starter Pack',
+            leadMagnetDescription: 'Get 50+ high-protein recipes from all our sites with shopping lists and macro breakdowns.',
+            sendgridEndpoint: '/.netlify/functions/subscribe',
+            successRedirect: '/download-success/',
+            pdfDownloadUrl: '/downloads/high-protein-starter-pack.pdf',
+            gaMeasurementId: 'G-86MYLJ5WDT',
+            stickyDelay: 3000,
+            exitIntentEnabled: true
+        });
+    });
+</script>
+
 </body>
 </html>

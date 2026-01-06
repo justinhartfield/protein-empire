@@ -93,8 +93,9 @@ def main():
     steps = [
         ("Add Intent Classes", "python3 scripts/add_intent_class.py"),
         ("Generate Master Feed", "python3 packages/page-generator/create_master_feed.py"),
-        ("Generate Modern Landing Pages", "python3 packages/page-generator/generate_landing_pages_v2.py"),
+        ("Generate Modern Landing Pages", "python3 packages/page-generator/generate_landing_pages_v3.py"),
         ("Generate Sitemap", "python3 packages/page-generator/generate_sitemap.py"),
+        ("Integrate Conversion Components", "python3 packages/page-generator/integrate_conversion_components.py"),
     ]
     
     results = []

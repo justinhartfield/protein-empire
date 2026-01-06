@@ -963,5 +963,25 @@
 </footer>
 
 
+
+<!-- Conversion Components -->
+<script src="/js/conversion-components.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        initConversionComponents({
+            siteName: 'Proteinpudding Co',
+            siteEmoji: '🍽️',
+            leadMagnetTitle: 'Recipe Starter Pack',
+            leadMagnetDescription: 'Get our free recipe pack with shopping lists and macro breakdowns.',
+            sendgridEndpoint: '/.netlify/functions/subscribe',
+            successRedirect: '/download-success/',
+            pdfDownloadUrl: '/downloads/starter-pack.pdf',
+            gaMeasurementId: 'G-86MYLJ5WDT',
+            stickyDelay: 3000,
+            exitIntentEnabled: true
+        });
+    });
+</script>
+
 </body>
 </html>
