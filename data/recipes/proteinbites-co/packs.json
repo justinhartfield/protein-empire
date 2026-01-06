@@ -18,10 +18,8 @@
     "description": "A collection of our most decadent and chocolatey protein bites.",
     "icon": "🍫",
     "recipes": [
-      "chocolate-coconut-energy-bites",
-      "recipe-slug-3",
-      "recipe-slug-4",
-      "recipe-slug-5"
+      "chocolate-protein-balls",
+      "chocolate-peanut-butter-protein-balls"
     ]
   },
   {
@@ -30,11 +28,10 @@
     "description": "Enjoy the natural sweetness of fruit in these delicious and healthy protein bites.",
     "icon": "🍓",
     "recipes": [
-      "apricot-almond-protein-bites",
-      "recipe-slug-6",
-      "recipe-slug-7",
-      "recipe-slug-8",
-      "recipe-slug-9"
+      "chocolate-peanut-butter-protein-balls",
+      "keto-protein-balls",
+      "protein-power-balls",
+      "easy-protein-balls"
     ]
   },
   {
@@ -43,10 +40,10 @@
     "description": "Festive and flavorful protein bites perfect for holiday gatherings.",
     "icon": "🎄",
     "recipes": [
-      "recipe-slug-10",
-      "recipe-slug-11",
-      "recipe-slug-12",
-      "recipe-slug-13"
+      "healthy-protein-balls",
+      "homemade-protein-balls",
+      "oat-protein-balls",
+      "coconut-protein-balls"
     ]
   },
   {
@@ -55,11 +52,10 @@
     "description": "Allergy-friendly protein bites made without any nuts.",
     "icon": "🥜",
     "recipes": [
-      "recipe-slug-14",
-      "recipe-slug-15",
-      "recipe-slug-16",
-      "recipe-slug-17",
-      "recipe-slug-18"
+      "almond-butter-protein-balls",
+      "birthday-cake-protein-balls",
+      "apple-cinnamon-protein-balls",
+      "coffee-protein-balls"
     ]
   },
   {
@@ -68,10 +64,10 @@
     "description": "Get a quick and healthy energy boost with these protein-packed bites.",
     "icon": "⚡️",
     "recipes": [
-      "recipe-slug-19",
-      "recipe-slug-20",
-      "recipe-slug-21",
-      "recipe-slug-22"
+      "vegan-protein-balls",
+      "nut-free-protein-balls",
+      "lemon-protein-balls",
+      "trail-mix-protein-balls"
     ]
   },
   {
@@ -80,10 +76,9 @@
     "description": "Fun and tasty protein bites that your kids will love.",
     "icon": "👶",
     "recipes": [
-      "recipe-slug-23",
-      "recipe-slug-24",
-      "recipe-slug-25",
-      "chocolate-coconut-energy-bites"
+      "brownie-batter-protein-balls",
+      "gluten-free-sunflower-seed-protein-bites",
+      "dairy-free-tahini-date-protein-bites"
     ]
   },
   {

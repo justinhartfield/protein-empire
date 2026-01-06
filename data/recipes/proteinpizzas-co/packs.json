@@ -18,10 +18,10 @@
     "description": "A collection of our best protein pizza dough recipes.",
     "icon": "🍕",
     "recipes": [
-      "classic-protein-pizza-crust",
-      "recipe-slug-2",
-      "recipe-slug-3",
-      "recipe-slug-4"
+      "chicken-protein-pizza",
+      "pepperoni-protein-pizza",
+      "cauliflower-protein-pizza-crust",
+      "greek-yogurt-protein-pizza-crust"
     ]
   },
   {
@@ -30,10 +30,10 @@
     "description": "All the classics for your next pizza night.",
     "icon": "🎉",
     "recipes": [
-      "recipe-slug-5",
-      "recipe-slug-6",
-      "recipe-slug-7",
-      "recipe-slug-8"
+      "margherita-protein-pizza",
+      "pepperoni-protein-pizza",
+      "meat-lovers-protein-pizza",
+      "supreme-protein-pizza"
     ]
   },
   {
@@ -42,10 +42,10 @@
     "description": "Healthy and delicious veggie-based pizza crusts.",
     "icon": "🥦",
     "recipes": [
-      "recipe-slug-9",
-      "recipe-slug-10",
-      "recipe-slug-11",
-      "recipe-slug-12"
+      "veggie-protein-pizza",
+      "buffalo-chicken-protein-pizza",
+      "breakfast-protein-pizza",
+      "white-protein-pizza"
     ]
   },
   {
@@ -54,10 +54,10 @@
     "description": "Low-carb and keto-friendly pizza crusts.",
     "icon": "🥑",
     "recipes": [
-      "recipe-slug-13",
-      "recipe-slug-14",
-      "recipe-slug-15",
-      "recipe-slug-16"
+      "hawaiian-protein-pizza",
+      "protein-pizza-bowl",
+      "keto-protein-pizza",
+      "taco-protein-pizza"
     ]
   },
   {
@@ -66,10 +66,10 @@
     "description": "Unique and creative pizza recipes to try.",
     "icon": "🎨",
     "recipes": [
-      "recipe-slug-17",
-      "recipe-slug-18",
-      "recipe-slug-19",
-      "recipe-slug-20"
+      "pesto-chicken-protein-pizza",
+      "mushroom-protein-pizza",
+      "spinach-feta-protein-pizza",
+      "supreme-protein-pizza"
     ]
   },
   {
@@ -78,11 +78,9 @@
     "description": "Easy and quick flatbread recipes.",
     "icon": "🏃",
     "recipes": [
-      "recipe-slug-21",
-      "recipe-slug-22",
-      "recipe-slug-23",
-      "recipe-slug-24",
-      "recipe-slug-25"
+      "dessert-protein-pizza",
+      "gluten-free-cauliflower-protein-pizza-crust",
+      "dairy-free-chickpea-flour-protein-pizza"
     ]
   },
   {

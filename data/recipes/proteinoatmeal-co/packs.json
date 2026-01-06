@@ -18,11 +18,7 @@
     "description": "A collection of our easiest and most delicious overnight oat recipes to get you started.",
     "icon": "🥣",
     "recipes": [
-      "classic-vanilla-overnight-oats",
-      "recipe-slug-4",
-      "recipe-slug-6",
-      "recipe-slug-8",
-      "recipe-slug-10"
+      "overnight-protein-oats"
     ]
   },
   {
@@ -30,13 +26,7 @@
     "title": "Baked Oatmeal",
     "description": "Warm, comforting, and protein-packed baked oatmeal recipes for a satisfying breakfast.",
     "icon": "🔥",
-    "recipes": [
-      "chocolate-peanut-butter-baked-oatmeal",
-      "recipe-slug-3",
-      "recipe-slug-5",
-      "recipe-slug-7",
-      "recipe-slug-9"
-    ]
+    "recipes": []
   },
   {
     "slug": "dessert-breakfast",
@@ -44,10 +34,10 @@
     "description": "Indulgent yet healthy oatmeal recipes that taste like dessert but are packed with protein.",
     "icon": "🍰",
     "recipes": [
-      "recipe-slug-11",
-      "recipe-slug-13",
-      "recipe-slug-15",
-      "recipe-slug-17"
+      "banana-protein-oatmeal",
+      "apple-cinnamon-protein-oatmeal",
+      "blueberry-protein-oatmeal",
+      "pumpkin-protein-oatmeal"
     ]
   },
   {
@@ -56,10 +46,10 @@
     "description": "Tired of sweet oatmeal? Try these savory and protein-rich oatmeal recipes for a change.",
     "icon": "🍳",
     "recipes": [
-      "recipe-slug-12",
-      "recipe-slug-14",
-      "recipe-slug-16",
-      "recipe-slug-18"
+      "vanilla-protein-oatmeal",
+      "strawberry-protein-oatmeal",
+      "savory-protein-oatmeal",
+      "maple-pecan-protein-oatmeal"
     ]
   },
   {
@@ -68,10 +58,10 @@
     "description": "Plan your week with these easy and convenient meal prep oatmeal recipes.",
     "icon": "🗓️",
     "recipes": [
-      "recipe-slug-19",
-      "recipe-slug-21",
-      "recipe-slug-23",
-      "recipe-slug-25"
+      "coconut-protein-oatmeal",
+      "coffee-protein-oatmeal",
+      "carrot-cake-protein-oatmeal",
+      "almond-butter-protein-oatmeal"
     ]
   },
   {
@@ -80,9 +70,9 @@
     "description": "When you're short on time, these quick and easy protein oatmeal recipes are a lifesaver.",
     "icon": "⚡️",
     "recipes": [
-      "recipe-slug-20",
-      "recipe-slug-22",
-      "recipe-slug-24"
+      "mixed-berry-protein-oatmeal",
+      "gluten-free-certified-oats-protein-oatmeal",
+      "dairy-free-coconut-milk-protein-oatmeal"
     ]
   },
   {
