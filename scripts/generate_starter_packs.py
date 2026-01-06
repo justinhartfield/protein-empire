@@ -7,6 +7,31 @@ import json
 import os
 
 # Site configurations
+# Emoji to icon image mapping
+EMOJI_TO_ICON = {
+    "🍞": "bread.png",
+    "🍫": "chocolate-bar.png",
+    "🟤": "protein-bites.png",
+    "🟫": "brownies.png",
+    "🍰": "cheesecake.png",
+    "🍩": "donuts.png",
+    "🥣": "oatmeal.png",
+    "🥞": "pancakes.png",
+    "🍕": "pizza.png",
+    "🍮": "pudding.png",
+    "💪": "flexed-arm.png",
+    "🛒": "shopping-cart.png",
+    "📊": "nutrition-chart.png",
+    "💡": "lightbulb.png",
+    "✅": "sparkle.png",
+    "🍪": "cookies.png",
+}
+
+def get_icon_html(emoji, size="96"):
+    """Convert emoji to icon image HTML."""
+    icon_file = EMOJI_TO_ICON.get(emoji, "sparkle.png")
+    return f'<img src="/images/icons/{icon_file}" alt="" class="mx-auto object-contain" style="width: {size}px; height: {size}px;">'
+
 SITES = {
     "protein-bread.com": {
         "name": "ProteinBread",
@@ -357,7 +382,7 @@ def generate_pack_starter_html(site_config, recipes):
     <!-- Hero -->
     <section class="bg-slate-900 text-white py-20">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <span class="text-6xl mb-6 block">{site_config['emoji']}</span>
+            {get_icon_html(site_config['emoji'], '96')}
             <h1 class="anton-text text-5xl md:text-6xl uppercase mb-4 tracking-wider">STARTER PACK</h1>
             <p class="text-xl text-slate-300 mb-8">{recipe_count} essential protein {site_config['item_type_plural']} to get you started. Perfect for beginners!</p>
             <div class="inline-flex items-center gap-2 bg-brand-500/20 text-brand-400 px-4 py-2 rounded-full text-sm font-semibold">
@@ -405,17 +430,17 @@ def generate_pack_starter_html(site_config, recipes):
             
             <div class="grid md:grid-cols-3 gap-6">
                 <div class="bg-white rounded-xl p-6 border border-slate-200 text-center">
-                    <span class="text-3xl mb-4 block">🛒</span>
+                    {get_icon_html('🛒', '48')}
                     <h3 class="font-semibold mb-2">Shopping List</h3>
                     <p class="text-sm text-slate-600">Combined ingredient list organized by category</p>
                 </div>
                 <div class="bg-white rounded-xl p-6 border border-slate-200 text-center">
-                    <span class="text-3xl mb-4 block">📊</span>
+                    {get_icon_html('📊', '48')}
                     <h3 class="font-semibold mb-2">Nutrition Facts</h3>
                     <p class="text-sm text-slate-600">Complete macros for every recipe</p>
                 </div>
                 <div class="bg-white rounded-xl p-6 border border-slate-200 text-center">
-                    <span class="text-3xl mb-4 block">💡</span>
+                    {get_icon_html('💡', '48')}
                     <h3 class="font-semibold mb-2">Pro Tips</h3>
                     <p class="text-sm text-slate-600">Storage, meal prep, and substitution advice</p>
                 </div>
@@ -628,7 +653,7 @@ def generate_success_starter_html(site_config):
 
 <main class="flex-grow py-20">
     <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <span class="text-6xl mb-6 block">✅</span>
+        {get_icon_html('✅', '96')}
         <h1 class="anton-text text-4xl uppercase mb-4 tracking-wider">YOU'RE ALL SET!</h1>
         <p class="text-xl text-slate-600 mb-8">Your Starter Pack is ready to download.</p>
         

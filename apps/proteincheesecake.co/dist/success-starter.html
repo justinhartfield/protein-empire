@@ -7,23 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Download Starter Pack | ProteinCheesecake</title>
 
-
-<!-- Google Analytics 4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HJ0X1TGXYC"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-HJ0X1TGXYC', {
-    'send_page_view': true,
-    'cookie_flags': 'SameSite=None;Secure'
-  });
-</script>
-
-
 <!-- SEO Meta Tags -->
 <meta name="description" content="Download your free Starter Pack PDF.">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <link rel="canonical" href="https://proteincheesecake.co/success-starter.html">
 
 <!-- Open Graph / Social Sharing -->
@@ -103,19 +89,18 @@
     .recipe-shadow { box-shadow: 0 20px 50px -12px rgba(0, 0, 0, 0.1); }
 </style>
 
-<meta name="robots" content="noindex, nofollow">
 </head>
 <body class="min-h-screen flex flex-col bg-slate-50 text-slate-900 font-sans">
 
 
-<!-- Top Navigation (matching ProteinMuffins.com) -->
+<!-- Top Navigation -->
 <header class="sticky top-0 z-50 glass-nav border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-20">
             <div class="flex items-center">
                 <a href="/" class="flex items-center">
-                    <img src="/images/logo.png" alt="ProteinCheesecake" class="h-12 md:h-16 w-auto">
-                    
+                    <img src="/images/logo.png" alt="ProteinCheesecake" class="h-12 w-12 rounded-lg mr-3">
+                    <span class="anton-text text-2xl text-slate-900 tracking-wider uppercase">PROTEINCHEESECAKE</span>
                 </a>
             </div>
             <nav class="hidden md:flex space-x-8 items-center">
@@ -145,7 +130,7 @@
 
 <main class="flex-grow py-20">
     <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <span class="text-6xl mb-6 block">✅</span>
+        <img src="/images/icons/sparkle.png" alt="" class="mx-auto object-contain" style="width: 96px; height: 96px;">
         <h1 class="anton-text text-4xl uppercase mb-4 tracking-wider">YOU'RE ALL SET!</h1>
         <p class="text-xl text-slate-600 mb-8">Your Starter Pack is ready to download.</p>
         
@@ -174,17 +159,17 @@
 </main>
 
 
-<!-- Footer (matching ProteinMuffins.com) -->
+<!-- Footer -->
 <footer class="bg-slate-900 text-white py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
             <!-- Brand -->
             <div class="md:col-span-1">
                 <a href="/" class="flex items-center mb-4">
-                    <img src="/images/logo.png" alt="ProteinCheesecake" class="h-12 w-auto">
-                    
+                    <img src="/images/logo.png" alt="ProteinCheesecake" class="h-12 w-12 rounded-lg mr-3">
+                    <span class="anton-text text-xl tracking-wider">PROTEINCHEESECAKE</span>
                 </a>
-                <p class="text-slate-400 text-sm">Creamy, indulgent protein cheesecakes and dessert dips</p>
+                <p class="text-slate-400 text-sm">Macro-verified protein cheesecake recipes with precise nutrition data</p>
             </div>
             
             <!-- Quick Links -->
@@ -222,6 +207,7 @@
         <div class="mt-12 pt-8 border-t border-slate-800">
             <p class="text-slate-500 text-xs text-center mb-4">Part of the Protein Recipe Empire</p>
             <div class="flex flex-wrap justify-center gap-4 text-xs text-slate-500">
+
                 <a href="https://proteinmuffins.com" class="hover:text-white transition">Muffins</a>
                 <a href="https://proteincookies.co" class="hover:text-white transition">Cookies</a>
                 <a href="https://proteinpancakes.co" class="hover:text-white transition">Pancakes</a>
@@ -234,6 +220,7 @@
                 <a href="https://proteincheesecake.co" class="hover:text-white transition">Cheesecake</a>
                 <a href="https://proteinpizzas.co" class="hover:text-white transition">Pizza</a>
                 <a href="https://proteinpudding.co" class="hover:text-white transition">Pudding</a>
+
             </div>
         </div>
         
@@ -243,26 +230,6 @@
     </div>
 </footer>
 
-
-
-<!-- Conversion Components -->
-<script src="/js/conversion-components.js"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        initConversionComponents({
-            siteName: 'Protein Cheesecake',
-            siteEmoji: '🍰',
-            leadMagnetTitle: 'Protein Cheesecake Recipe Pack',
-            leadMagnetDescription: 'Get 20+ protein cheesecake recipes with shopping lists and macro breakdowns.',
-            sendgridEndpoint: '/.netlify/functions/subscribe',
-            successRedirect: '/download-success/',
-            pdfDownloadUrl: '/downloads/protein-cheesecake-pack.pdf',
-            gaMeasurementId: 'G-86MYLJ5WDT',
-            stickyDelay: 3000,
-            exitIntentEnabled: true
-        });
-    });
-</script>
 
 </body>
 </html>
