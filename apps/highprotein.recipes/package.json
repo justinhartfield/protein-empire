@@ -5,5 +5,9 @@
   "description": "Protein Empire site: highprotein.recipes",
   "scripts": {
     "build": "cd ../.. && node scripts/build-site.js highprotein.recipes"
+  },
+  "dependencies": {
+    "@sendgrid/client": "^8.1.1",
+    "@sendgrid/mail": "^8.1.1"
   }
 }

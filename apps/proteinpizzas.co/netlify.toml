@@ -3,7 +3,7 @@
 
 [build]
   # No build needed - dist files are pre-built and committed
-  command = "echo 'Using pre-built dist files'"
+  command = "npm install && echo 'Dependencies installed'"
   
   # Publish directory
   publish = "dist"

@@ -5,5 +5,9 @@
   "description": "Protein Empire site: proteinpudding.co",
   "scripts": {
     "build": "cd ../.. && node scripts/build-site.js proteinpudding.co"
+  },
+  "dependencies": {
+    "@sendgrid/client": "^8.1.1",
+    "@sendgrid/mail": "^8.1.1"
   }
 }
