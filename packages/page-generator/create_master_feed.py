@@ -105,9 +105,8 @@ def transform_recipe(recipe, site_slug, site_config):
     # Build canonical URL (points to ProteinXYZ.co, NOT highprotein.recipes)
     canonical_url = f"https://{domain}/{slug}.html"
     
-    # Build image URL
-    image_file = recipe.get('image', f"{slug}.png")
-    image_url = f"https://{domain}/images/{image_file}"
+    # Build image URL (correct path is /recipe_images/ with .jpg extension)
+    image_url = f"https://{domain}/recipe_images/{slug}.jpg"
     
     # Extract diet tags (combine tags and category)
     diet_tags = list(recipe.get('tags', []))

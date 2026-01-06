@@ -2,7 +2,7 @@
   "metadata": {
     "name": "Protein Empire Master Recipe Feed",
     "description": "Unified recipe feed for Dotoro ad engine integration",
-    "generated_at": "2026-01-06T15:04:17.753565Z",
+    "generated_at": "2026-01-06T15:18:16.631551Z",
     "total_recipes": 305,
     "sites_included": 11,
     "version": "1.0",
@@ -62,7 +62,7 @@
       "difficulty": "Easy",
       "servings": "12 cookies",
       "canonical_url": "https://proteincookies.co/chocolate-chip-protein-cookies.html",
-      "image_url": "https://proteincookies.co/images/chocolate-chip-protein-cookies.png",
+      "image_url": "https://proteincookies.co/recipe_images/chocolate-chip-protein-cookies.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -91,7 +91,7 @@
       "difficulty": "Beginner",
       "servings": "12 cookies",
       "canonical_url": "https://proteincookies.co/peanut-butter-protein-cookies.html",
-      "image_url": "https://proteincookies.co/images/peanut-butter-protein-cookies.png",
+      "image_url": "https://proteincookies.co/recipe_images/peanut-butter-protein-cookies.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -119,7 +119,7 @@
       "difficulty": "Beginner",
       "servings": "12 cookies",
       "canonical_url": "https://proteincookies.co/no-bake-protein-cookies.html",
-      "image_url": "https://proteincookies.co/images/no-bake-protein-cookies.png",
+      "image_url": "https://proteincookies.co/recipe_images/no-bake-protein-cookies.jpg",
       "intent_class": "meal-prep"
     },
     {
@@ -148,7 +148,7 @@
       "difficulty": "Easy",
       "servings": "12 cookies",
       "canonical_url": "https://proteincookies.co/oatmeal-raisin-protein-cookies.html",
-      "image_url": "https://proteincookies.co/images/oatmeal-raisin-protein-cookies.png",
+      "image_url": "https://proteincookies.co/recipe_images/oatmeal-raisin-protein-cookies.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -177,7 +177,7 @@
       "difficulty": "Easy",
       "servings": "12 cookies",
       "canonical_url": "https://proteincookies.co/double-chocolate-protein-cookies.html",
-      "image_url": "https://proteincookies.co/images/double-chocolate-protein-cookies.png",
+      "image_url": "https://proteincookies.co/recipe_images/double-chocolate-protein-cookies.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -205,7 +205,7 @@
       "difficulty": "Easy",
       "servings": "12 cookies",
       "canonical_url": "https://proteincookies.co/snickerdoodle-protein-cookies.html",
-      "image_url": "https://proteincookies.co/images/snickerdoodle-protein-cookies.png",
+      "image_url": "https://proteincookies.co/recipe_images/snickerdoodle-protein-cookies.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -234,7 +234,7 @@
       "difficulty": "Easy",
       "servings": "12 cookies",
       "canonical_url": "https://proteincookies.co/birthday-cake-protein-cookies.html",
-      "image_url": "https://proteincookies.co/images/birthday-cake-protein-cookies.png",
+      "image_url": "https://proteincookies.co/recipe_images/birthday-cake-protein-cookies.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -262,7 +262,7 @@
       "difficulty": "Medium",
       "servings": "12 cookies",
       "canonical_url": "https://proteincookies.co/vegan-protein-cookies.html",
-      "image_url": "https://proteincookies.co/images/vegan-protein-cookies.png",
+      "image_url": "https://proteincookies.co/recipe_images/vegan-protein-cookies.jpg",
       "intent_class": "vegan"
     },
     {
@@ -290,7 +290,7 @@
       "difficulty": "Easy",
       "servings": "12 cookies",
       "canonical_url": "https://proteincookies.co/gluten-free-protein-cookies.html",
-      "image_url": "https://proteincookies.co/images/gluten-free-protein-cookies.png",
+      "image_url": "https://proteincookies.co/recipe_images/gluten-free-protein-cookies.jpg",
       "intent_class": "gluten-free"
     },
     {
@@ -319,7 +319,7 @@
       "difficulty": "Beginner",
       "servings": "24 bites",
       "canonical_url": "https://proteincookies.co/protein-cookie-dough-bites.html",
-      "image_url": "https://proteincookies.co/images/protein-cookie-dough-bites.png",
+      "image_url": "https://proteincookies.co/recipe_images/protein-cookie-dough-bites.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -348,7 +348,7 @@
       "difficulty": "Easy",
       "servings": "12 cookies",
       "canonical_url": "https://proteincookies.co/white-chocolate-macadamia-protein-cookies.html",
-      "image_url": "https://proteincookies.co/images/white-chocolate-macadamia-protein-cookies.png",
+      "image_url": "https://proteincookies.co/recipe_images/white-chocolate-macadamia-protein-cookies.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -376,7 +376,7 @@
       "difficulty": "Beginner",
       "servings": "16 cookies",
       "canonical_url": "https://proteincookies.co/protein-cookies-for-kids.html",
-      "image_url": "https://proteincookies.co/images/protein-cookies-for-kids.png",
+      "image_url": "https://proteincookies.co/recipe_images/protein-cookies-for-kids.jpg",
       "intent_class": "kid-friendly"
     },
     {
@@ -405,7 +405,7 @@
       "difficulty": "Easy",
       "servings": "12 cookies",
       "canonical_url": "https://proteincookies.co/cottage-cheese-protein-cookies.html",
-      "image_url": "https://proteincookies.co/images/cottage-cheese-protein-cookies.png",
+      "image_url": "https://proteincookies.co/recipe_images/cottage-cheese-protein-cookies.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -434,7 +434,7 @@
       "difficulty": "Easy",
       "servings": "12 cookies",
       "canonical_url": "https://proteincookies.co/greek-yogurt-protein-cookies.html",
-      "image_url": "https://proteincookies.co/images/greek-yogurt-protein-cookies.png",
+      "image_url": "https://proteincookies.co/recipe_images/greek-yogurt-protein-cookies.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -462,7 +462,7 @@
       "difficulty": "Easy",
       "servings": "12 cookies",
       "canonical_url": "https://proteincookies.co/almond-flour-protein-cookies.html",
-      "image_url": "https://proteincookies.co/images/almond-flour-protein-cookies.png",
+      "image_url": "https://proteincookies.co/recipe_images/almond-flour-protein-cookies.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -491,7 +491,7 @@
       "difficulty": "Easy",
       "servings": "14 cookies",
       "canonical_url": "https://proteincookies.co/pumpkin-spice-protein-cookies.html",
-      "image_url": "https://proteincookies.co/images/pumpkin-spice-protein-cookies.png",
+      "image_url": "https://proteincookies.co/recipe_images/pumpkin-spice-protein-cookies.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -520,7 +520,7 @@
       "difficulty": "Easy",
       "servings": "12 cookies",
       "canonical_url": "https://proteincookies.co/lemon-protein-cookies.html",
-      "image_url": "https://proteincookies.co/images/lemon-protein-cookies.png",
+      "image_url": "https://proteincookies.co/recipe_images/lemon-protein-cookies.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -549,7 +549,7 @@
       "difficulty": "Easy",
       "servings": "12 cookies",
       "canonical_url": "https://proteincookies.co/monster-protein-cookies.html",
-      "image_url": "https://proteincookies.co/images/monster-protein-cookies.png",
+      "image_url": "https://proteincookies.co/recipe_images/monster-protein-cookies.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -578,7 +578,7 @@
       "difficulty": "Medium",
       "servings": "10 cookies",
       "canonical_url": "https://proteincookies.co/high-protein-cookies-30g.html",
-      "image_url": "https://proteincookies.co/images/high-protein-cookies-30g.png",
+      "image_url": "https://proteincookies.co/recipe_images/high-protein-cookies-30g.jpg",
       "intent_class": "high-protein-30g"
     },
     {
@@ -607,7 +607,7 @@
       "difficulty": "Easy",
       "servings": "12 cookies",
       "canonical_url": "https://proteincookies.co/chocolate-peanut-butter-protein-cookies.html",
-      "image_url": "https://proteincookies.co/images/chocolate-peanut-butter-protein-cookies.png",
+      "image_url": "https://proteincookies.co/recipe_images/chocolate-peanut-butter-protein-cookies.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -636,7 +636,7 @@
       "difficulty": "Beginner",
       "servings": "14 cookies",
       "canonical_url": "https://proteincookies.co/banana-protein-cookies.html",
-      "image_url": "https://proteincookies.co/images/banana-protein-cookies.png",
+      "image_url": "https://proteincookies.co/recipe_images/banana-protein-cookies.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -665,7 +665,7 @@
       "difficulty": "Easy",
       "servings": "12 cookies",
       "canonical_url": "https://proteincookies.co/sugar-free-protein-cookies.html",
-      "image_url": "https://proteincookies.co/images/sugar-free-protein-cookies.png",
+      "image_url": "https://proteincookies.co/recipe_images/sugar-free-protein-cookies.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -694,7 +694,7 @@
       "difficulty": "Easy",
       "servings": "16 cookies",
       "canonical_url": "https://proteincookies.co/thin-crispy-protein-cookies.html",
-      "image_url": "https://proteincookies.co/images/thin-crispy-protein-cookies.png",
+      "image_url": "https://proteincookies.co/recipe_images/thin-crispy-protein-cookies.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -723,7 +723,7 @@
       "difficulty": "Medium",
       "servings": "12 cookies",
       "canonical_url": "https://proteincookies.co/red-velvet-protein-cookies.html",
-      "image_url": "https://proteincookies.co/images/red-velvet-protein-cookies.png",
+      "image_url": "https://proteincookies.co/recipe_images/red-velvet-protein-cookies.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -752,7 +752,7 @@
       "difficulty": "Easy",
       "servings": "14 cookies",
       "canonical_url": "https://proteincookies.co/gingerbread-protein-cookies.html",
-      "image_url": "https://proteincookies.co/images/gingerbread-protein-cookies.png",
+      "image_url": "https://proteincookies.co/recipe_images/gingerbread-protein-cookies.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -782,7 +782,7 @@
       "difficulty": "Easy",
       "servings": "16 cookies",
       "canonical_url": "https://proteincookies.co/gluten-free-oat-flour-protein-cookies.html",
-      "image_url": "https://proteincookies.co/images/gluten-free-oat-flour-protein-cookies.png",
+      "image_url": "https://proteincookies.co/recipe_images/gluten-free-oat-flour-protein-cookies.jpg",
       "intent_class": "gluten-free"
     },
     {
@@ -812,7 +812,7 @@
       "difficulty": "Easy",
       "servings": "14 cookies",
       "canonical_url": "https://proteincookies.co/dairy-free-peanut-butter-protein-cookies.html",
-      "image_url": "https://proteincookies.co/images/dairy-free-peanut-butter-protein-cookies.png",
+      "image_url": "https://proteincookies.co/recipe_images/dairy-free-peanut-butter-protein-cookies.jpg",
       "intent_class": "vegan"
     },
     {
@@ -841,7 +841,7 @@
       "difficulty": "Easy",
       "servings": "4 pancakes",
       "canonical_url": "https://proteinpancakes.co/classic-whey-protein-pancakes.html",
-      "image_url": "https://proteinpancakes.co/images/classic-whey-protein-pancakes.png",
+      "image_url": "https://proteinpancakes.co/recipe_images/classic-whey-protein-pancakes.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -870,7 +870,7 @@
       "difficulty": "Easy",
       "servings": "4 pancakes",
       "canonical_url": "https://proteinpancakes.co/chocolate-casein-pancakes.html",
-      "image_url": "https://proteinpancakes.co/images/chocolate-casein-pancakes.png",
+      "image_url": "https://proteinpancakes.co/recipe_images/chocolate-casein-pancakes.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -899,7 +899,7 @@
       "difficulty": "Easy",
       "servings": "4 pancakes",
       "canonical_url": "https://proteinpancakes.co/blueberry-vegan-protein-pancakes.html",
-      "image_url": "https://proteinpancakes.co/images/blueberry-vegan-protein-pancakes.png",
+      "image_url": "https://proteinpancakes.co/recipe_images/blueberry-vegan-protein-pancakes.jpg",
       "intent_class": "vegan"
     },
     {
@@ -928,7 +928,7 @@
       "difficulty": "Easy",
       "servings": "3 pancakes",
       "canonical_url": "https://proteinpancakes.co/savory-herb-and-cheese-pancakes.html",
-      "image_url": "https://proteinpancakes.co/images/savory-herb-and-cheese-pancakes.png",
+      "image_url": "https://proteinpancakes.co/recipe_images/savory-herb-and-cheese-pancakes.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -957,7 +957,7 @@
       "difficulty": "Easy",
       "servings": "4 pancakes",
       "canonical_url": "https://proteinpancakes.co/banana-bread-protein-pancakes.html",
-      "image_url": "https://proteinpancakes.co/images/banana-bread-protein-pancakes.png",
+      "image_url": "https://proteinpancakes.co/recipe_images/banana-bread-protein-pancakes.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -987,7 +987,7 @@
       "difficulty": "Medium",
       "servings": "6 crepes",
       "canonical_url": "https://proteinpancakes.co/lemon-ricotta-protein-crepes.html",
-      "image_url": "https://proteinpancakes.co/images/lemon-ricotta-protein-crepes.png",
+      "image_url": "https://proteinpancakes.co/recipe_images/lemon-ricotta-protein-crepes.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -1016,7 +1016,7 @@
       "difficulty": "Easy",
       "servings": "4 waffles",
       "canonical_url": "https://proteinpancakes.co/cinnamon-roll-protein-waffles.html",
-      "image_url": "https://proteinpancakes.co/images/cinnamon-roll-protein-waffles.png",
+      "image_url": "https://proteinpancakes.co/recipe_images/cinnamon-roll-protein-waffles.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -1045,7 +1045,7 @@
       "difficulty": "Easy",
       "servings": "4 pancakes",
       "canonical_url": "https://proteinpancakes.co/red-velvet-protein-pancakes.html",
-      "image_url": "https://proteinpancakes.co/images/red-velvet-protein-pancakes.png",
+      "image_url": "https://proteinpancakes.co/recipe_images/red-velvet-protein-pancakes.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -1075,7 +1075,7 @@
       "difficulty": "Easy",
       "servings": "4 waffles",
       "canonical_url": "https://proteinpancakes.co/pumpkin-spice-protein-waffles.html",
-      "image_url": "https://proteinpancakes.co/images/pumpkin-spice-protein-waffles.png",
+      "image_url": "https://proteinpancakes.co/recipe_images/pumpkin-spice-protein-waffles.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -1104,7 +1104,7 @@
       "difficulty": "Easy",
       "servings": "4 pancakes",
       "canonical_url": "https://proteinpancakes.co/chocolate-chip-protein-pancakes.html",
-      "image_url": "https://proteinpancakes.co/images/chocolate-chip-protein-pancakes.png",
+      "image_url": "https://proteinpancakes.co/recipe_images/chocolate-chip-protein-pancakes.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -1133,7 +1133,7 @@
       "difficulty": "Easy",
       "servings": "4 pancakes",
       "canonical_url": "https://proteinpancakes.co/strawberry-shortcake-protein-pancakes.html",
-      "image_url": "https://proteinpancakes.co/images/strawberry-shortcake-protein-pancakes.png",
+      "image_url": "https://proteinpancakes.co/recipe_images/strawberry-shortcake-protein-pancakes.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -1162,7 +1162,7 @@
       "difficulty": "Easy",
       "servings": "4 waffles",
       "canonical_url": "https://proteinpancakes.co/double-chocolate-protein-waffles.html",
-      "image_url": "https://proteinpancakes.co/images/double-chocolate-protein-waffles.png",
+      "image_url": "https://proteinpancakes.co/recipe_images/double-chocolate-protein-waffles.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -1192,7 +1192,7 @@
       "difficulty": "Medium",
       "servings": "6 crepes",
       "canonical_url": "https://proteinpancakes.co/matcha-green-tea-protein-crepes.html",
-      "image_url": "https://proteinpancakes.co/images/matcha-green-tea-protein-crepes.png",
+      "image_url": "https://proteinpancakes.co/recipe_images/matcha-green-tea-protein-crepes.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -1222,7 +1222,7 @@
       "difficulty": "Easy",
       "servings": "4 pancakes",
       "canonical_url": "https://proteinpancakes.co/apple-cinnamon-protein-pancakes.html",
-      "image_url": "https://proteinpancakes.co/images/apple-cinnamon-protein-pancakes.png",
+      "image_url": "https://proteinpancakes.co/recipe_images/apple-cinnamon-protein-pancakes.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -1251,7 +1251,7 @@
       "difficulty": "Easy",
       "servings": "4 waffles",
       "canonical_url": "https://proteinpancakes.co/belgian-protein-waffles.html",
-      "image_url": "https://proteinpancakes.co/images/belgian-protein-waffles.png",
+      "image_url": "https://proteinpancakes.co/recipe_images/belgian-protein-waffles.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -1280,7 +1280,7 @@
       "difficulty": "Easy",
       "servings": "4 pancakes",
       "canonical_url": "https://proteinpancakes.co/peanut-butter-cup-protein-pancakes.html",
-      "image_url": "https://proteinpancakes.co/images/peanut-butter-cup-protein-pancakes.png",
+      "image_url": "https://proteinpancakes.co/recipe_images/peanut-butter-cup-protein-pancakes.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -1309,7 +1309,7 @@
       "difficulty": "Easy",
       "servings": "4 waffles",
       "canonical_url": "https://proteinpancakes.co/carrot-cake-protein-waffles.html",
-      "image_url": "https://proteinpancakes.co/images/carrot-cake-protein-waffles.png",
+      "image_url": "https://proteinpancakes.co/recipe_images/carrot-cake-protein-waffles.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -1339,7 +1339,7 @@
       "difficulty": "Medium",
       "servings": "6 crepes",
       "canonical_url": "https://proteinpancakes.co/savory-spinach-and-feta-protein-crepes.html",
-      "image_url": "https://proteinpancakes.co/images/savory-spinach-and-feta-protein-crepes.png",
+      "image_url": "https://proteinpancakes.co/recipe_images/savory-spinach-and-feta-protein-crepes.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -1368,7 +1368,7 @@
       "difficulty": "Easy",
       "servings": "4 pancakes",
       "canonical_url": "https://proteinpancakes.co/lemon-poppy-seed-protein-pancakes.html",
-      "image_url": "https://proteinpancakes.co/images/savory-spinach-and-feta-protein-crepes.png",
+      "image_url": "https://proteinpancakes.co/recipe_images/lemon-poppy-seed-protein-pancakes.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -1397,7 +1397,7 @@
       "difficulty": "Easy",
       "servings": "4 waffles",
       "canonical_url": "https://proteinpancakes.co/coffee-infused-protein-waffles.html",
-      "image_url": "https://proteinpancakes.co/images/samoa-inspired-protein-pancakes.png",
+      "image_url": "https://proteinpancakes.co/recipe_images/coffee-infused-protein-waffles.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -1427,7 +1427,7 @@
       "difficulty": "Medium",
       "servings": "4 pancakes",
       "canonical_url": "https://proteinpancakes.co/german-chocolate-protein-pancakes.html",
-      "image_url": "https://proteinpancakes.co/images/oatmeal-raisin-protein-pancakes.png",
+      "image_url": "https://proteinpancakes.co/recipe_images/german-chocolate-protein-pancakes.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -1456,7 +1456,7 @@
       "difficulty": "Easy",
       "servings": "4 waffles",
       "canonical_url": "https://proteinpancakes.co/churro-protein-waffles.html",
-      "image_url": "https://proteinpancakes.co/images/nutella-stuffed-protein-crepes.png",
+      "image_url": "https://proteinpancakes.co/recipe_images/churro-protein-waffles.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -1486,7 +1486,7 @@
       "difficulty": "Medium",
       "servings": "6 crepes",
       "canonical_url": "https://proteinpancakes.co/berries-and-cream-protein-crepes.html",
-      "image_url": "https://proteinpancakes.co/images/berries-and-cream-protein-crepes.png",
+      "image_url": "https://proteinpancakes.co/recipe_images/berries-and-cream-protein-crepes.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -1516,7 +1516,7 @@
       "difficulty": "Medium",
       "servings": "4 pancakes",
       "canonical_url": "https://proteinpancakes.co/samoa-inspired-protein-pancakes.html",
-      "image_url": "https://proteinpancakes.co/images/samoa-inspired-protein-pancakes.png",
+      "image_url": "https://proteinpancakes.co/recipe_images/samoa-inspired-protein-pancakes.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -1545,7 +1545,7 @@
       "difficulty": "Easy",
       "servings": "4 waffles",
       "canonical_url": "https://proteinpancakes.co/birthday-cake-protein-waffles.html",
-      "image_url": "https://proteinpancakes.co/images/birthday-cake-protein-waffles.png",
+      "image_url": "https://proteinpancakes.co/recipe_images/birthday-cake-protein-waffles.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -1575,7 +1575,7 @@
       "difficulty": "Easy",
       "servings": "4 pancakes",
       "canonical_url": "https://proteinpancakes.co/gluten-free-buckwheat-protein-pancakes.html",
-      "image_url": "https://proteinpancakes.co/images/gluten-free-buckwheat-protein-pancakes.png",
+      "image_url": "https://proteinpancakes.co/recipe_images/gluten-free-buckwheat-protein-pancakes.jpg",
       "intent_class": "gluten-free"
     },
     {
@@ -1605,7 +1605,7 @@
       "difficulty": "Easy",
       "servings": "4 pancakes",
       "canonical_url": "https://proteinpancakes.co/dairy-free-banana-oat-protein-pancakes.html",
-      "image_url": "https://proteinpancakes.co/images/dairy-free-banana-oat-protein-pancakes.png",
+      "image_url": "https://proteinpancakes.co/recipe_images/dairy-free-banana-oat-protein-pancakes.jpg",
       "intent_class": "vegan"
     },
     {
@@ -1635,7 +1635,7 @@
       "difficulty": "Easy",
       "servings": "4 pancakes",
       "canonical_url": "https://proteinpancakes.co/gluten-free-buckwheat-protein-pancakes.html",
-      "image_url": "https://proteinpancakes.co/images/gluten-free-buckwheat-protein-pancakes.png",
+      "image_url": "https://proteinpancakes.co/recipe_images/gluten-free-buckwheat-protein-pancakes.jpg",
       "intent_class": "gluten-free"
     },
     {
@@ -1665,7 +1665,7 @@
       "difficulty": "Easy",
       "servings": "4 pancakes",
       "canonical_url": "https://proteinpancakes.co/dairy-free-banana-oat-protein-pancakes.html",
-      "image_url": "https://proteinpancakes.co/images/dairy-free-banana-oat-protein-pancakes.png",
+      "image_url": "https://proteinpancakes.co/recipe_images/dairy-free-banana-oat-protein-pancakes.jpg",
       "intent_class": "vegan"
     },
     {
@@ -1694,7 +1694,7 @@
       "difficulty": "Easy",
       "servings": "12 servings",
       "canonical_url": "https://proteinbrownies.co/classic-protein-brownies-recipe.html",
-      "image_url": "https://proteinbrownies.co/images/classic-protein-brownies-recipe.png",
+      "image_url": "https://proteinbrownies.co/recipe_images/classic-protein-brownies-recipe.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -1723,7 +1723,7 @@
       "difficulty": "Medium",
       "servings": "12 servings",
       "canonical_url": "https://proteinbrownies.co/high-protein-brownies.html",
-      "image_url": "https://proteinbrownies.co/images/high-protein-brownies.png",
+      "image_url": "https://proteinbrownies.co/recipe_images/high-protein-brownies.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -1752,7 +1752,7 @@
       "difficulty": "Easy",
       "servings": "12 servings",
       "canonical_url": "https://proteinbrownies.co/protein-powder-brownies.html",
-      "image_url": "https://proteinbrownies.co/images/protein-powder-brownies.png",
+      "image_url": "https://proteinbrownies.co/recipe_images/protein-powder-brownies.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -1781,7 +1781,7 @@
       "difficulty": "Easy",
       "servings": "12 servings",
       "canonical_url": "https://proteinbrownies.co/cottage-cheese-protein-brownies.html",
-      "image_url": "https://proteinbrownies.co/images/cottage-cheese-protein-brownies.png",
+      "image_url": "https://proteinbrownies.co/recipe_images/cottage-cheese-protein-brownies.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -1810,7 +1810,7 @@
       "difficulty": "Easy",
       "servings": "12 servings",
       "canonical_url": "https://proteinbrownies.co/healthy-protein-brownies.html",
-      "image_url": "https://proteinbrownies.co/images/healthy-protein-brownies.png",
+      "image_url": "https://proteinbrownies.co/recipe_images/healthy-protein-brownies.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -1839,7 +1839,7 @@
       "difficulty": "Easy",
       "servings": "12 servings",
       "canonical_url": "https://proteinbrownies.co/whey-protein-brownies-recipe.html",
-      "image_url": "https://proteinbrownies.co/images/whey-protein-brownies-recipe.png",
+      "image_url": "https://proteinbrownies.co/recipe_images/whey-protein-brownies-recipe.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -1869,7 +1869,7 @@
       "difficulty": "Easy",
       "servings": "12 servings",
       "canonical_url": "https://proteinbrownies.co/sweet-potato-protein-brownies.html",
-      "image_url": "https://proteinbrownies.co/images/sweet-potato-protein-brownies.png",
+      "image_url": "https://proteinbrownies.co/recipe_images/sweet-potato-protein-brownies.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -1898,7 +1898,7 @@
       "difficulty": "Easy",
       "servings": "12 servings",
       "canonical_url": "https://proteinbrownies.co/chocolate-protein-brownies.html",
-      "image_url": "https://proteinbrownies.co/images/chocolate-protein-brownies.png",
+      "image_url": "https://proteinbrownies.co/recipe_images/chocolate-protein-brownies.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -1928,7 +1928,7 @@
       "difficulty": "Easy",
       "servings": "12 servings",
       "canonical_url": "https://proteinbrownies.co/black-bean-protein-brownies.html",
-      "image_url": "https://proteinbrownies.co/images/black-bean-protein-brownies.png",
+      "image_url": "https://proteinbrownies.co/recipe_images/black-bean-protein-brownies.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -1957,7 +1957,7 @@
       "difficulty": "Easy",
       "servings": "12 servings",
       "canonical_url": "https://proteinbrownies.co/banana-protein-brownies.html",
-      "image_url": "https://proteinbrownies.co/images/banana-protein-brownies.png",
+      "image_url": "https://proteinbrownies.co/recipe_images/banana-protein-brownies.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -1986,7 +1986,7 @@
       "difficulty": "Medium",
       "servings": "12 servings",
       "canonical_url": "https://proteinbrownies.co/vegan-protein-brownies.html",
-      "image_url": "https://proteinbrownies.co/images/vegan-protein-brownies.png",
+      "image_url": "https://proteinbrownies.co/recipe_images/vegan-protein-brownies.jpg",
       "intent_class": "vegan"
     },
     {
@@ -2015,7 +2015,7 @@
       "difficulty": "Easy",
       "servings": "12 servings",
       "canonical_url": "https://proteinbrownies.co/fudgy-protein-brownies.html",
-      "image_url": "https://proteinbrownies.co/images/fudgy-protein-brownies.png",
+      "image_url": "https://proteinbrownies.co/recipe_images/fudgy-protein-brownies.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -2045,7 +2045,7 @@
       "difficulty": "Easy",
       "servings": "12 servings",
       "canonical_url": "https://proteinbrownies.co/pumpkin-protein-brownies.html",
-      "image_url": "https://proteinbrownies.co/images/pumpkin-protein-brownies.png",
+      "image_url": "https://proteinbrownies.co/recipe_images/pumpkin-protein-brownies.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -2074,7 +2074,7 @@
       "difficulty": "Easy",
       "servings": "12 servings",
       "canonical_url": "https://proteinbrownies.co/low-calorie-protein-brownies.html",
-      "image_url": "https://proteinbrownies.co/images/low-calorie-protein-brownies.png",
+      "image_url": "https://proteinbrownies.co/recipe_images/low-calorie-protein-brownies.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -2103,7 +2103,7 @@
       "difficulty": "Easy",
       "servings": "12 servings",
       "canonical_url": "https://proteinbrownies.co/protein-blondies.html",
-      "image_url": "https://proteinbrownies.co/images/protein-blondies.png",
+      "image_url": "https://proteinbrownies.co/recipe_images/protein-blondies.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -2132,7 +2132,7 @@
       "difficulty": "Easy",
       "servings": "10 servings",
       "canonical_url": "https://proteinbrownies.co/no-bake-protein-brownie-bars.html",
-      "image_url": "https://proteinbrownies.co/images/no-bake-protein-brownie-bars.png",
+      "image_url": "https://proteinbrownies.co/recipe_images/no-bake-protein-brownie-bars.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -2161,7 +2161,7 @@
       "difficulty": "Easy",
       "servings": "1 serving",
       "canonical_url": "https://proteinbrownies.co/single-serving-protein-brownie.html",
-      "image_url": "https://proteinbrownies.co/images/single-serving-protein-brownie.png",
+      "image_url": "https://proteinbrownies.co/recipe_images/single-serving-protein-brownie.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -2190,7 +2190,7 @@
       "difficulty": "Easy",
       "servings": "12 servings",
       "canonical_url": "https://proteinbrownies.co/keto-protein-brownies.html",
-      "image_url": "https://proteinbrownies.co/images/keto-protein-brownies.png",
+      "image_url": "https://proteinbrownies.co/recipe_images/keto-protein-brownies.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -2219,7 +2219,7 @@
       "difficulty": "Easy",
       "servings": "12 servings",
       "canonical_url": "https://proteinbrownies.co/greek-yogurt-protein-brownies.html",
-      "image_url": "https://proteinbrownies.co/images/greek-yogurt-protein-brownies.png",
+      "image_url": "https://proteinbrownies.co/recipe_images/greek-yogurt-protein-brownies.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -2249,7 +2249,7 @@
       "difficulty": "Easy",
       "servings": "12 servings",
       "canonical_url": "https://proteinbrownies.co/avocado-protein-brownies.html",
-      "image_url": "https://proteinbrownies.co/images/avocado-protein-brownies.png",
+      "image_url": "https://proteinbrownies.co/recipe_images/avocado-protein-brownies.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -2279,7 +2279,7 @@
       "difficulty": "Easy",
       "servings": "12 servings",
       "canonical_url": "https://proteinbrownies.co/zucchini-protein-brownies.html",
-      "image_url": "https://proteinbrownies.co/images/zucchini-protein-brownies.png",
+      "image_url": "https://proteinbrownies.co/recipe_images/zucchini-protein-brownies.jpg",
       "intent_class": "post-workout"
     },
     {
@@ -2308,7 +2308,7 @@
       "difficulty": "Easy",
       "servings": "12 servings",
       "canonical_url": "https://proteinbrownies.co/peanut-butter-protein-brownies.html",
-      "image_url": "https://proteinbrownies.co/images/peanut-butter-protein-brownies.png",
+      "image_url": "https://proteinbrownies.co/recipe_images/peanut-butter-protein-brownies.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -2337,7 +2337,7 @@
       "difficulty": "Easy",
       "servings": "12 servings",
       "canonical_url": "https://proteinbrownies.co/mint-chocolate-protein-brownies.html",
-      "image_url": "https://proteinbrownies.co/images/mint-chocolate-protein-brownies.png",
+      "image_url": "https://proteinbrownies.co/recipe_images/mint-chocolate-protein-brownies.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -2366,7 +2366,7 @@
       "difficulty": "Medium",
       "servings": "12 servings",
       "canonical_url": "https://proteinbrownies.co/raspberry-swirl-protein-brownies.html",
-      "image_url": "https://proteinbrownies.co/images/raspberry-swirl-protein-brownies.png",
+      "image_url": "https://proteinbrownies.co/recipe_images/raspberry-swirl-protein-brownies.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -2396,7 +2396,7 @@
       "difficulty": "Easy",
       "servings": "12 servings",
       "canonical_url": "https://proteinbrownies.co/espresso-protein-brownies.html",
-      "image_url": "https://proteinbrownies.co/images/espresso-protein-brownies.png",
+      "image_url": "https://proteinbrownies.co/recipe_images/espresso-protein-brownies.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -2426,7 +2426,7 @@
       "difficulty": "Easy",
       "servings": "12 brownies",
       "canonical_url": "https://proteinbrownies.co/gluten-free-black-bean-protein-brownies.html",
-      "image_url": "https://proteinbrownies.co/images/gluten-free-black-bean-protein-brownies.png",
+      "image_url": "https://proteinbrownies.co/recipe_images/gluten-free-black-bean-protein-brownies.jpg",
       "intent_class": "gluten-free"
     },
     {
@@ -2456,7 +2456,7 @@
       "difficulty": "Easy",
       "servings": "12 brownies",
       "canonical_url": "https://proteinbrownies.co/dairy-free-avocado-protein-brownies.html",
-      "image_url": "https://proteinbrownies.co/images/dairy-free-avocado-protein-brownies.png",
+      "image_url": "https://proteinbrownies.co/recipe_images/dairy-free-avocado-protein-brownies.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -2485,7 +2485,7 @@
       "difficulty": "Easy",
       "servings": "10 slices",
       "canonical_url": "https://protein-bread.com/protein-banana-bread.html",
-      "image_url": "https://protein-bread.com/images/protein-banana-bread.png",
+      "image_url": "https://protein-bread.com/recipe_images/protein-banana-bread.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -2514,7 +2514,7 @@
       "difficulty": "Easy",
       "servings": "10 slices",
       "canonical_url": "https://protein-bread.com/high-protein-banana-bread.html",
-      "image_url": "https://protein-bread.com/images/high-protein-banana-bread.png",
+      "image_url": "https://protein-bread.com/recipe_images/high-protein-banana-bread.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -2544,7 +2544,7 @@
       "difficulty": "Easy",
       "servings": "12 slices",
       "canonical_url": "https://protein-bread.com/protein-banana-bread-recipe.html",
-      "image_url": "https://protein-bread.com/images/protein-banana-bread-recipe.png",
+      "image_url": "https://protein-bread.com/recipe_images/protein-banana-bread-recipe.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -2572,7 +2572,7 @@
       "difficulty": "Easy",
       "servings": "10 slices",
       "canonical_url": "https://protein-bread.com/protein-powder-banana-bread.html",
-      "image_url": "https://protein-bread.com/images/protein-powder-banana-bread.png",
+      "image_url": "https://protein-bread.com/recipe_images/protein-powder-banana-bread.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -2602,7 +2602,7 @@
       "difficulty": "Medium",
       "servings": "10 slices",
       "canonical_url": "https://protein-bread.com/high-protein-banana-bread-recipe.html",
-      "image_url": "https://protein-bread.com/images/high-protein-banana-bread-recipe.png",
+      "image_url": "https://protein-bread.com/recipe_images/high-protein-banana-bread-recipe.jpg",
       "intent_class": "high-protein-30g"
     },
     {
@@ -2631,7 +2631,7 @@
       "difficulty": "Easy",
       "servings": "12 slices",
       "canonical_url": "https://protein-bread.com/protein-pumpkin-bread.html",
-      "image_url": "https://protein-bread.com/images/protein-pumpkin-bread.png",
+      "image_url": "https://protein-bread.com/recipe_images/protein-pumpkin-bread.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -2660,7 +2660,7 @@
       "difficulty": "Easy",
       "servings": "12 slices",
       "canonical_url": "https://protein-bread.com/protein-zucchini-bread.html",
-      "image_url": "https://protein-bread.com/images/protein-zucchini-bread.png",
+      "image_url": "https://protein-bread.com/recipe_images/protein-zucchini-bread.jpg",
       "intent_class": "post-workout"
     },
     {
@@ -2689,7 +2689,7 @@
       "difficulty": "Medium",
       "servings": "10 pieces",
       "canonical_url": "https://protein-bread.com/protein-cloud-bread.html",
-      "image_url": "https://protein-bread.com/images/protein-cloud-bread.png",
+      "image_url": "https://protein-bread.com/recipe_images/protein-cloud-bread.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -2718,7 +2718,7 @@
       "difficulty": "Easy",
       "servings": "12 slices",
       "canonical_url": "https://protein-bread.com/protein-bread-recipe.html",
-      "image_url": "https://protein-bread.com/images/protein-bread-recipe.png",
+      "image_url": "https://protein-bread.com/recipe_images/protein-bread-recipe.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -2747,7 +2747,7 @@
       "difficulty": "Easy",
       "servings": "10 slices",
       "canonical_url": "https://protein-bread.com/high-protein-bread.html",
-      "image_url": "https://protein-bread.com/images/high-protein-bread.png",
+      "image_url": "https://protein-bread.com/recipe_images/high-protein-bread.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -2775,7 +2775,7 @@
       "difficulty": "Easy",
       "servings": "12 slices",
       "canonical_url": "https://protein-bread.com/high-protein-pumpkin-bread.html",
-      "image_url": "https://protein-bread.com/images/high-protein-pumpkin-bread.png",
+      "image_url": "https://protein-bread.com/recipe_images/high-protein-pumpkin-bread.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -2804,7 +2804,7 @@
       "difficulty": "Medium",
       "servings": "8 bagels",
       "canonical_url": "https://protein-bread.com/protein-bagels.html",
-      "image_url": "https://protein-bread.com/images/protein-bagels.png",
+      "image_url": "https://protein-bread.com/recipe_images/protein-bagels.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -2833,7 +2833,7 @@
       "difficulty": "Easy",
       "servings": "12 slices",
       "canonical_url": "https://protein-bread.com/savory-herb-protein-bread.html",
-      "image_url": "https://protein-bread.com/images/savory-herb-protein-bread.png",
+      "image_url": "https://protein-bread.com/recipe_images/savory-herb-protein-bread.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -2862,7 +2862,7 @@
       "difficulty": "Medium",
       "servings": "12 slices",
       "canonical_url": "https://protein-bread.com/cinnamon-swirl-protein-bread.html",
-      "image_url": "https://protein-bread.com/images/cinnamon-swirl-protein-bread.png",
+      "image_url": "https://protein-bread.com/recipe_images/cinnamon-swirl-protein-bread.jpg",
       "intent_class": "post-workout"
     },
     {
@@ -2891,7 +2891,7 @@
       "difficulty": "Easy",
       "servings": "14 slices",
       "canonical_url": "https://protein-bread.com/whole-wheat-protein-sandwich-bread.html",
-      "image_url": "https://protein-bread.com/images/whole-wheat-protein-sandwich-bread.png",
+      "image_url": "https://protein-bread.com/recipe_images/whole-wheat-protein-sandwich-bread.jpg",
       "intent_class": "post-workout"
     },
     {
@@ -2920,7 +2920,7 @@
       "difficulty": "Easy",
       "servings": "12 slices",
       "canonical_url": "https://protein-bread.com/healthy-protein-banana-bread.html",
-      "image_url": "https://protein-bread.com/images/healthy-protein-banana-bread.png",
+      "image_url": "https://protein-bread.com/recipe_images/healthy-protein-banana-bread.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -2949,7 +2949,7 @@
       "difficulty": "Easy",
       "servings": "10 slices",
       "canonical_url": "https://protein-bread.com/banana-bread-with-protein-powder-recipe.html",
-      "image_url": "https://protein-bread.com/images/banana-bread-with-protein-powder-recipe.png",
+      "image_url": "https://protein-bread.com/recipe_images/banana-bread-with-protein-powder-recipe.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -2978,7 +2978,7 @@
       "difficulty": "Easy",
       "servings": "12 slices",
       "canonical_url": "https://protein-bread.com/chocolate-chip-protein-zucchini-bread.html",
-      "image_url": "https://protein-bread.com/images/chocolate-chip-protein-zucchini-bread.png",
+      "image_url": "https://protein-bread.com/recipe_images/chocolate-chip-protein-zucchini-bread.jpg",
       "intent_class": "post-workout"
     },
     {
@@ -3007,7 +3007,7 @@
       "difficulty": "Medium",
       "servings": "8 bagels",
       "canonical_url": "https://protein-bread.com/cinnamon-raisin-protein-bagels.html",
-      "image_url": "https://protein-bread.com/images/cinnamon-raisin-protein-bagels.png",
+      "image_url": "https://protein-bread.com/recipe_images/cinnamon-raisin-protein-bagels.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -3037,7 +3037,7 @@
       "difficulty": "Easy",
       "servings": "12 slices",
       "canonical_url": "https://protein-bread.com/cheese-and-chive-protein-bread.html",
-      "image_url": "https://protein-bread.com/images/cheese-and-chive-protein-bread.png",
+      "image_url": "https://protein-bread.com/recipe_images/cheese-and-chive-protein-bread.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -3067,7 +3067,7 @@
       "difficulty": "Easy",
       "servings": "12 slices",
       "canonical_url": "https://protein-bread.com/lemon-blueberry-protein-bread.html",
-      "image_url": "https://protein-bread.com/images/lemon-blueberry-protein-bread.png",
+      "image_url": "https://protein-bread.com/recipe_images/lemon-blueberry-protein-bread.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -3096,7 +3096,7 @@
       "difficulty": "Easy",
       "servings": "14 slices",
       "canonical_url": "https://protein-bread.com/multigrain-protein-sandwich-bread.html",
-      "image_url": "https://protein-bread.com/images/multigrain-protein-sandwich-bread.png",
+      "image_url": "https://protein-bread.com/recipe_images/multigrain-protein-sandwich-bread.jpg",
       "intent_class": "post-workout"
     },
     {
@@ -3125,7 +3125,7 @@
       "difficulty": "Easy",
       "servings": "12 slices",
       "canonical_url": "https://protein-bread.com/chocolate-chip-protein-banana-bread.html",
-      "image_url": "https://protein-bread.com/images/chocolate-chip-protein-banana-bread.png",
+      "image_url": "https://protein-bread.com/recipe_images/chocolate-chip-protein-banana-bread.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -3154,7 +3154,7 @@
       "difficulty": "Easy",
       "servings": "12 slices",
       "canonical_url": "https://protein-bread.com/apple-cinnamon-protein-bread.html",
-      "image_url": "https://protein-bread.com/images/apple-cinnamon-protein-bread.png",
+      "image_url": "https://protein-bread.com/recipe_images/apple-cinnamon-protein-bread.jpg",
       "intent_class": "post-workout"
     },
     {
@@ -3183,7 +3183,7 @@
       "difficulty": "Medium",
       "servings": "8 bagels",
       "canonical_url": "https://protein-bread.com/everything-protein-bagels.html",
-      "image_url": "https://protein-bread.com/images/everything-protein-bagels.png",
+      "image_url": "https://protein-bread.com/recipe_images/everything-protein-bagels.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -3213,7 +3213,7 @@
       "difficulty": "Easy",
       "servings": "12 slices",
       "canonical_url": "https://protein-bread.com/gluten-free-almond-flour-protein-bread.html",
-      "image_url": "https://protein-bread.com/images/gluten-free-almond-flour-protein-bread.png",
+      "image_url": "https://protein-bread.com/recipe_images/gluten-free-almond-flour-protein-bread.jpg",
       "intent_class": "gluten-free"
     },
     {
@@ -3243,7 +3243,7 @@
       "difficulty": "Medium",
       "servings": "14 slices",
       "canonical_url": "https://protein-bread.com/dairy-free-oat-protein-sandwich-loaf.html",
-      "image_url": "https://protein-bread.com/images/dairy-free-oat-protein-sandwich-loaf.png",
+      "image_url": "https://protein-bread.com/recipe_images/dairy-free-oat-protein-sandwich-loaf.jpg",
       "intent_class": "vegan"
     },
     {
@@ -3272,7 +3272,7 @@
       "difficulty": "Easy",
       "servings": "12 bars",
       "canonical_url": "https://proteinbars.co/no-bake-chocolate-peanut-butter-bars.html",
-      "image_url": "https://proteinbars.co/images/no-bake-chocolate-peanut-butter-bars.png",
+      "image_url": "https://proteinbars.co/recipe_images/no-bake-chocolate-peanut-butter-bars.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -3301,7 +3301,7 @@
       "difficulty": "Medium",
       "servings": "10 bars",
       "canonical_url": "https://proteinbars.co/candy-bar-copycat-snickers.html",
-      "image_url": "https://proteinbars.co/images/candy-bar-copycat-snickers.png",
+      "image_url": "https://proteinbars.co/recipe_images/candy-bar-copycat-snickers.jpg",
       "intent_class": "post-workout"
     },
     {
@@ -3330,7 +3330,7 @@
       "difficulty": "Easy",
       "servings": "12 bars",
       "canonical_url": "https://proteinbars.co/vegan-almond-joy-bars.html",
-      "image_url": "https://proteinbars.co/images/vegan-almond-joy-bars.png",
+      "image_url": "https://proteinbars.co/recipe_images/vegan-almond-joy-bars.jpg",
       "intent_class": "vegan"
     },
     {
@@ -3359,7 +3359,7 @@
       "difficulty": "Easy",
       "servings": "12 bars",
       "canonical_url": "https://proteinbars.co/nut-free-sunbutter-bars.html",
-      "image_url": "https://proteinbars.co/images/nut-free-sunbutter-bars.png",
+      "image_url": "https://proteinbars.co/recipe_images/nut-free-sunbutter-bars.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -3388,7 +3388,7 @@
       "difficulty": "Easy",
       "servings": "12 bars",
       "canonical_url": "https://proteinbars.co/high-protein-chocolate-brownie-bars.html",
-      "image_url": "https://proteinbars.co/images/high-protein-chocolate-brownie-bars.png",
+      "image_url": "https://proteinbars.co/recipe_images/high-protein-chocolate-brownie-bars.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -3417,7 +3417,7 @@
       "difficulty": "Easy",
       "servings": "12 bars",
       "canonical_url": "https://proteinbars.co/meal-prep-oat-and-honey-bars.html",
-      "image_url": "https://proteinbars.co/images/meal-prep-oat-and-honey-bars.png",
+      "image_url": "https://proteinbars.co/recipe_images/meal-prep-oat-and-honey-bars.jpg",
       "intent_class": "meal-prep"
     },
     {
@@ -3446,7 +3446,7 @@
       "difficulty": "Easy",
       "servings": "12 bars",
       "canonical_url": "https://proteinbars.co/no-bake-cashew-coconut-bars.html",
-      "image_url": "https://proteinbars.co/images/no-bake-cashew-coconut-bars.png",
+      "image_url": "https://proteinbars.co/recipe_images/no-bake-cashew-coconut-bars.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -3475,7 +3475,7 @@
       "difficulty": "Medium",
       "servings": "12 bars",
       "canonical_url": "https://proteinbars.co/candy-bar-copycat-twix.html",
-      "image_url": "https://proteinbars.co/images/candy-bar-copycat-twix.png",
+      "image_url": "https://proteinbars.co/recipe_images/candy-bar-copycat-twix.jpg",
       "intent_class": "post-workout"
     },
     {
@@ -3504,7 +3504,7 @@
       "difficulty": "Easy",
       "servings": "12 bars",
       "canonical_url": "https://proteinbars.co/vegan-chocolate-chip-cookie-dough-bars.html",
-      "image_url": "https://proteinbars.co/images/vegan-chocolate-chip-cookie-dough-bars.png",
+      "image_url": "https://proteinbars.co/recipe_images/vegan-chocolate-chip-cookie-dough-bars.jpg",
       "intent_class": "vegan"
     },
     {
@@ -3533,7 +3533,7 @@
       "difficulty": "Easy",
       "servings": "12 bars",
       "canonical_url": "https://proteinbars.co/nut-free-chocolate-seed-bars.html",
-      "image_url": "https://proteinbars.co/images/nut-free-chocolate-seed-bars.png",
+      "image_url": "https://proteinbars.co/recipe_images/nut-free-chocolate-seed-bars.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -3562,7 +3562,7 @@
       "difficulty": "Medium",
       "servings": "16 bars",
       "canonical_url": "https://proteinbars.co/high-protein-lemon-bars.html",
-      "image_url": "https://proteinbars.co/images/high-protein-lemon-bars.png",
+      "image_url": "https://proteinbars.co/recipe_images/high-protein-lemon-bars.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -3591,7 +3591,7 @@
       "difficulty": "Easy",
       "servings": "12 bars",
       "canonical_url": "https://proteinbars.co/meal-prep-berry-breakfast-bars.html",
-      "image_url": "https://proteinbars.co/images/meal-prep-berry-breakfast-bars.png",
+      "image_url": "https://proteinbars.co/recipe_images/meal-prep-berry-breakfast-bars.jpg",
       "intent_class": "meal-prep"
     },
     {
@@ -3620,7 +3620,7 @@
       "difficulty": "Easy",
       "servings": "12 bars",
       "canonical_url": "https://proteinbars.co/no-bake-key-lime-pie-bars.html",
-      "image_url": "https://proteinbars.co/images/no-bake-key-lime-pie-bars.png",
+      "image_url": "https://proteinbars.co/recipe_images/no-bake-key-lime-pie-bars.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -3649,7 +3649,7 @@
       "difficulty": "Easy",
       "servings": "10 bars",
       "canonical_url": "https://proteinbars.co/candy-bar-copycat-almond-mound.html",
-      "image_url": "https://proteinbars.co/images/candy-bar-copycat-almond-mound.png",
+      "image_url": "https://proteinbars.co/recipe_images/candy-bar-copycat-almond-mound.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -3679,7 +3679,7 @@
       "difficulty": "Easy",
       "servings": "12 bars",
       "canonical_url": "https://proteinbars.co/vegan-peanut-butter-jelly-bars.html",
-      "image_url": "https://proteinbars.co/images/vegan-peanut-butter-jelly-bars.png",
+      "image_url": "https://proteinbars.co/recipe_images/vegan-peanut-butter-jelly-bars.jpg",
       "intent_class": "vegan"
     },
     {
@@ -3709,7 +3709,7 @@
       "difficulty": "Easy",
       "servings": "12 bars",
       "canonical_url": "https://proteinbars.co/nut-free-apple-cinnamon-bars.html",
-      "image_url": "https://proteinbars.co/images/nut-free-apple-cinnamon-bars.png",
+      "image_url": "https://proteinbars.co/recipe_images/nut-free-apple-cinnamon-bars.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -3739,7 +3739,7 @@
       "difficulty": "Medium",
       "servings": "12 bars",
       "canonical_url": "https://proteinbars.co/high-protein-samoa-bars.html",
-      "image_url": "https://proteinbars.co/images/high-protein-samoa-bars.png",
+      "image_url": "https://proteinbars.co/recipe_images/high-protein-samoa-bars.jpg",
       "intent_class": "post-workout"
     },
     {
@@ -3768,7 +3768,7 @@
       "difficulty": "Easy",
       "servings": "12 bars",
       "canonical_url": "https://proteinbars.co/meal-prep-banana-bread-bars.html",
-      "image_url": "https://proteinbars.co/images/meal-prep-banana-bread-bars.png",
+      "image_url": "https://proteinbars.co/recipe_images/meal-prep-banana-bread-bars.jpg",
       "intent_class": "meal-prep"
     },
     {
@@ -3797,7 +3797,7 @@
       "difficulty": "Easy",
       "servings": "12 bars",
       "canonical_url": "https://proteinbars.co/no-bake-birthday-cake-bars.html",
-      "image_url": "https://proteinbars.co/images/no-bake-birthday-cake-bars.png",
+      "image_url": "https://proteinbars.co/recipe_images/no-bake-birthday-cake-bars.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -3826,7 +3826,7 @@
       "difficulty": "Medium",
       "servings": "12 bars",
       "canonical_url": "https://proteinbars.co/candy-bar-copycat-butterfinger.html",
-      "image_url": "https://proteinbars.co/images/candy-bar-copycat-butterfinger.png",
+      "image_url": "https://proteinbars.co/recipe_images/candy-bar-copycat-butterfinger.jpg",
       "intent_class": "post-workout"
     },
     {
@@ -3855,7 +3855,7 @@
       "difficulty": "Easy",
       "servings": "12 bars",
       "canonical_url": "https://proteinbars.co/vegan-double-chocolate-bars.html",
-      "image_url": "https://proteinbars.co/images/vegan-double-chocolate-bars.png",
+      "image_url": "https://proteinbars.co/recipe_images/vegan-double-chocolate-bars.jpg",
       "intent_class": "vegan"
     },
     {
@@ -3885,7 +3885,7 @@
       "difficulty": "Easy",
       "servings": "12 bars",
       "canonical_url": "https://proteinbars.co/nut-free-vanilla-funfetti-bars.html",
-      "image_url": "https://proteinbars.co/images/nut-free-vanilla-funfetti-bars.png",
+      "image_url": "https://proteinbars.co/recipe_images/nut-free-vanilla-funfetti-bars.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -3914,7 +3914,7 @@
       "difficulty": "Medium",
       "servings": "12 bars",
       "canonical_url": "https://proteinbars.co/high-protein-red-velvet-bars.html",
-      "image_url": "https://proteinbars.co/images/high-protein-red-velvet-bars.png",
+      "image_url": "https://proteinbars.co/recipe_images/high-protein-red-velvet-bars.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -3943,7 +3943,7 @@
       "difficulty": "Easy",
       "servings": "12 bars",
       "canonical_url": "https://proteinbars.co/meal-prep-pumpkin-spice-bars.html",
-      "image_url": "https://proteinbars.co/images/meal-prep-pumpkin-spice-bars.png",
+      "image_url": "https://proteinbars.co/recipe_images/meal-prep-pumpkin-spice-bars.jpg",
       "intent_class": "meal-prep"
     },
     {
@@ -3972,7 +3972,7 @@
       "difficulty": "Easy",
       "servings": "12 bars",
       "canonical_url": "https://proteinbars.co/no-bake-matcha-coconut-bars.html",
-      "image_url": "https://proteinbars.co/images/no-bake-matcha-coconut-bars.png",
+      "image_url": "https://proteinbars.co/recipe_images/no-bake-matcha-coconut-bars.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -4002,7 +4002,7 @@
       "difficulty": "Easy",
       "servings": "10 bars",
       "canonical_url": "https://proteinbars.co/gluten-free-chocolate-peanut-butter-protein-bars.html",
-      "image_url": "https://proteinbars.co/images/gluten-free-chocolate-peanut-butter-protein-bars.png",
+      "image_url": "https://proteinbars.co/recipe_images/gluten-free-chocolate-peanut-butter-protein-bars.jpg",
       "intent_class": "gluten-free"
     },
     {
@@ -4032,7 +4032,7 @@
       "difficulty": "Easy",
       "servings": "12 bars",
       "canonical_url": "https://proteinbars.co/dairy-free-coconut-almond-protein-bars.html",
-      "image_url": "https://proteinbars.co/images/dairy-free-coconut-almond-protein-bars.png",
+      "image_url": "https://proteinbars.co/recipe_images/dairy-free-coconut-almond-protein-bars.jpg",
       "intent_class": "vegan"
     },
     {
@@ -4062,7 +4062,7 @@
       "difficulty": "Easy",
       "servings": "10 bars",
       "canonical_url": "https://proteinbars.co/gluten-free-chocolate-peanut-butter-protein-bars.html",
-      "image_url": "https://proteinbars.co/images/gluten-free-chocolate-peanut-butter-protein-bars.png",
+      "image_url": "https://proteinbars.co/recipe_images/gluten-free-chocolate-peanut-butter-protein-bars.jpg",
       "intent_class": "gluten-free"
     },
     {
@@ -4092,7 +4092,7 @@
       "difficulty": "Easy",
       "servings": "12 bars",
       "canonical_url": "https://proteinbars.co/dairy-free-coconut-almond-protein-bars.html",
-      "image_url": "https://proteinbars.co/images/dairy-free-coconut-almond-protein-bars.png",
+      "image_url": "https://proteinbars.co/recipe_images/dairy-free-coconut-almond-protein-bars.jpg",
       "intent_class": "vegan"
     },
     {
@@ -4121,7 +4121,7 @@
       "difficulty": "Easy",
       "servings": "20 balls",
       "canonical_url": "https://proteinbites.co/peanut-butter-protein-balls.html",
-      "image_url": "https://proteinbites.co/images/peanut-butter-protein-balls.png",
+      "image_url": "https://proteinbites.co/recipe_images/peanut-butter-protein-balls.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -4150,7 +4150,7 @@
       "difficulty": "Beginner",
       "servings": "24 balls",
       "canonical_url": "https://proteinbites.co/no-bake-protein-balls.html",
-      "image_url": "https://proteinbites.co/images/no-bake-protein-balls.png",
+      "image_url": "https://proteinbites.co/recipe_images/no-bake-protein-balls.jpg",
       "intent_class": "meal-prep"
     },
     {
@@ -4179,7 +4179,7 @@
       "difficulty": "Easy",
       "servings": "20 balls",
       "canonical_url": "https://proteinbites.co/oatmeal-protein-balls.html",
-      "image_url": "https://proteinbites.co/images/oatmeal-protein-balls.png",
+      "image_url": "https://proteinbites.co/recipe_images/oatmeal-protein-balls.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -4208,7 +4208,7 @@
       "difficulty": "Easy",
       "servings": "18 balls",
       "canonical_url": "https://proteinbites.co/protein-energy-balls.html",
-      "image_url": "https://proteinbites.co/images/protein-energy-balls.png",
+      "image_url": "https://proteinbites.co/recipe_images/protein-energy-balls.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -4237,7 +4237,7 @@
       "difficulty": "Easy",
       "servings": "20 balls",
       "canonical_url": "https://proteinbites.co/chocolate-protein-balls.html",
-      "image_url": "https://proteinbites.co/images/chocolate-protein-balls.png",
+      "image_url": "https://proteinbites.co/recipe_images/chocolate-protein-balls.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -4266,7 +4266,7 @@
       "difficulty": "Beginner",
       "servings": "22 balls",
       "canonical_url": "https://proteinbites.co/chocolate-chip-protein-balls.html",
-      "image_url": "https://proteinbites.co/images/chocolate-chip-protein-balls.png",
+      "image_url": "https://proteinbites.co/recipe_images/chocolate-chip-protein-balls.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -4295,7 +4295,7 @@
       "difficulty": "Easy",
       "servings": "20 balls",
       "canonical_url": "https://proteinbites.co/pumpkin-protein-balls.html",
-      "image_url": "https://proteinbites.co/images/pumpkin-protein-balls.png",
+      "image_url": "https://proteinbites.co/recipe_images/pumpkin-protein-balls.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -4324,7 +4324,7 @@
       "difficulty": "Easy",
       "servings": "18 balls",
       "canonical_url": "https://proteinbites.co/monster-cookie-protein-balls.html",
-      "image_url": "https://proteinbites.co/images/monster-cookie-protein-balls.png",
+      "image_url": "https://proteinbites.co/recipe_images/monster-cookie-protein-balls.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -4353,7 +4353,7 @@
       "difficulty": "Easy",
       "servings": "20 balls",
       "canonical_url": "https://proteinbites.co/chocolate-peanut-butter-protein-balls.html",
-      "image_url": "https://proteinbites.co/images/chocolate-peanut-butter-protein-balls.png",
+      "image_url": "https://proteinbites.co/recipe_images/chocolate-peanut-butter-protein-balls.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -4382,7 +4382,7 @@
       "difficulty": "Easy",
       "servings": "18 balls",
       "canonical_url": "https://proteinbites.co/keto-protein-balls.html",
-      "image_url": "https://proteinbites.co/images/keto-protein-balls.png",
+      "image_url": "https://proteinbites.co/recipe_images/keto-protein-balls.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -4411,7 +4411,7 @@
       "difficulty": "Easy",
       "servings": "16 balls",
       "canonical_url": "https://proteinbites.co/protein-power-balls.html",
-      "image_url": "https://proteinbites.co/images/protein-power-balls.png",
+      "image_url": "https://proteinbites.co/recipe_images/protein-power-balls.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -4440,7 +4440,7 @@
       "difficulty": "Beginner",
       "servings": "20 balls",
       "canonical_url": "https://proteinbites.co/easy-protein-balls.html",
-      "image_url": "https://proteinbites.co/images/easy-protein-balls.png",
+      "image_url": "https://proteinbites.co/recipe_images/easy-protein-balls.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -4469,7 +4469,7 @@
       "difficulty": "Easy",
       "servings": "20 balls",
       "canonical_url": "https://proteinbites.co/healthy-protein-balls.html",
-      "image_url": "https://proteinbites.co/images/healthy-protein-balls.png",
+      "image_url": "https://proteinbites.co/recipe_images/healthy-protein-balls.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -4498,7 +4498,7 @@
       "difficulty": "Easy",
       "servings": "22 balls",
       "canonical_url": "https://proteinbites.co/homemade-protein-balls.html",
-      "image_url": "https://proteinbites.co/images/homemade-protein-balls.png",
+      "image_url": "https://proteinbites.co/recipe_images/homemade-protein-balls.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -4527,7 +4527,7 @@
       "difficulty": "Beginner",
       "servings": "20 balls",
       "canonical_url": "https://proteinbites.co/oat-protein-balls.html",
-      "image_url": "https://proteinbites.co/images/oat-protein-balls.png",
+      "image_url": "https://proteinbites.co/recipe_images/oat-protein-balls.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -4556,7 +4556,7 @@
       "difficulty": "Easy",
       "servings": "18 balls",
       "canonical_url": "https://proteinbites.co/coconut-protein-balls.html",
-      "image_url": "https://proteinbites.co/images/coconut-protein-balls.png",
+      "image_url": "https://proteinbites.co/recipe_images/coconut-protein-balls.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -4585,7 +4585,7 @@
       "difficulty": "Easy",
       "servings": "20 balls",
       "canonical_url": "https://proteinbites.co/almond-butter-protein-balls.html",
-      "image_url": "https://proteinbites.co/images/almond-butter-protein-balls.png",
+      "image_url": "https://proteinbites.co/recipe_images/almond-butter-protein-balls.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -4614,7 +4614,7 @@
       "difficulty": "Easy",
       "servings": "20 balls",
       "canonical_url": "https://proteinbites.co/birthday-cake-protein-balls.html",
-      "image_url": "https://proteinbites.co/images/birthday-cake-protein-balls.png",
+      "image_url": "https://proteinbites.co/recipe_images/birthday-cake-protein-balls.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -4643,7 +4643,7 @@
       "difficulty": "Easy",
       "servings": "20 balls",
       "canonical_url": "https://proteinbites.co/apple-cinnamon-protein-balls.html",
-      "image_url": "https://proteinbites.co/images/apple-cinnamon-protein-balls.png",
+      "image_url": "https://proteinbites.co/recipe_images/apple-cinnamon-protein-balls.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -4672,7 +4672,7 @@
       "difficulty": "Easy",
       "servings": "18 balls",
       "canonical_url": "https://proteinbites.co/coffee-protein-balls.html",
-      "image_url": "https://proteinbites.co/images/coffee-protein-balls.png",
+      "image_url": "https://proteinbites.co/recipe_images/coffee-protein-balls.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -4701,7 +4701,7 @@
       "difficulty": "Easy",
       "servings": "20 balls",
       "canonical_url": "https://proteinbites.co/vegan-protein-balls.html",
-      "image_url": "https://proteinbites.co/images/vegan-protein-balls.png",
+      "image_url": "https://proteinbites.co/recipe_images/vegan-protein-balls.jpg",
       "intent_class": "vegan"
     },
     {
@@ -4730,7 +4730,7 @@
       "difficulty": "Easy",
       "servings": "20 balls",
       "canonical_url": "https://proteinbites.co/nut-free-protein-balls.html",
-      "image_url": "https://proteinbites.co/images/nut-free-protein-balls.png",
+      "image_url": "https://proteinbites.co/recipe_images/nut-free-protein-balls.jpg",
       "intent_class": "kid-friendly"
     },
     {
@@ -4759,7 +4759,7 @@
       "difficulty": "Easy",
       "servings": "20 balls",
       "canonical_url": "https://proteinbites.co/lemon-protein-balls.html",
-      "image_url": "https://proteinbites.co/images/lemon-protein-balls.png",
+      "image_url": "https://proteinbites.co/recipe_images/lemon-protein-balls.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -4788,7 +4788,7 @@
       "difficulty": "Easy",
       "servings": "18 balls",
       "canonical_url": "https://proteinbites.co/trail-mix-protein-balls.html",
-      "image_url": "https://proteinbites.co/images/trail-mix-protein-balls.png",
+      "image_url": "https://proteinbites.co/recipe_images/trail-mix-protein-balls.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -4817,7 +4817,7 @@
       "difficulty": "Easy",
       "servings": "20 balls",
       "canonical_url": "https://proteinbites.co/brownie-batter-protein-balls.html",
-      "image_url": "https://proteinbites.co/images/brownie-batter-protein-balls.png",
+      "image_url": "https://proteinbites.co/recipe_images/brownie-batter-protein-balls.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -4847,7 +4847,7 @@
       "difficulty": "Easy",
       "servings": "20 bites",
       "canonical_url": "https://proteinbites.co/gluten-free-sunflower-seed-protein-bites.html",
-      "image_url": "https://proteinbites.co/images/gluten-free-sunflower-seed-protein-bites.png",
+      "image_url": "https://proteinbites.co/recipe_images/gluten-free-sunflower-seed-protein-bites.jpg",
       "intent_class": "gluten-free"
     },
     {
@@ -4877,7 +4877,7 @@
       "difficulty": "Easy",
       "servings": "18 bites",
       "canonical_url": "https://proteinbites.co/dairy-free-tahini-date-protein-bites.html",
-      "image_url": "https://proteinbites.co/images/dairy-free-tahini-date-protein-bites.png",
+      "image_url": "https://proteinbites.co/recipe_images/dairy-free-tahini-date-protein-bites.jpg",
       "intent_class": "vegan"
     },
     {
@@ -4906,7 +4906,7 @@
       "difficulty": "Easy",
       "servings": "12 donuts",
       "canonical_url": "https://proteindonuts.co/classic-glazed-protein-donuts.html",
-      "image_url": "https://proteindonuts.co/images/chocolate-glazed-protein-donuts.png",
+      "image_url": "https://proteindonuts.co/recipe_images/classic-glazed-protein-donuts.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -4935,7 +4935,7 @@
       "difficulty": "Easy",
       "servings": "12 donuts",
       "canonical_url": "https://proteindonuts.co/chocolate-frosted-protein-donuts.html",
-      "image_url": "https://proteindonuts.co/images/baked-protein-donuts.png",
+      "image_url": "https://proteindonuts.co/recipe_images/chocolate-frosted-protein-donuts.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -4964,7 +4964,7 @@
       "difficulty": "Easy",
       "servings": "12 donuts",
       "canonical_url": "https://proteindonuts.co/cinnamon-sugar-protein-donuts.html",
-      "image_url": "https://proteindonuts.co/images/cinnamon-sugar-protein-donuts.png",
+      "image_url": "https://proteindonuts.co/recipe_images/cinnamon-sugar-protein-donuts.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -4993,7 +4993,7 @@
       "difficulty": "Easy",
       "servings": "12 donuts",
       "canonical_url": "https://proteindonuts.co/blueberry-protein-donuts.html",
-      "image_url": "https://proteindonuts.co/images/blueberry-protein-donuts.png",
+      "image_url": "https://proteindonuts.co/recipe_images/blueberry-protein-donuts.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -5022,7 +5022,7 @@
       "difficulty": "Medium",
       "servings": "12 donuts",
       "canonical_url": "https://proteindonuts.co/red-velvet-protein-donuts.html",
-      "image_url": "https://proteindonuts.co/images/red-velvet-protein-donuts.png",
+      "image_url": "https://proteindonuts.co/recipe_images/red-velvet-protein-donuts.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -5051,7 +5051,7 @@
       "difficulty": "Easy",
       "servings": "12 donuts",
       "canonical_url": "https://proteindonuts.co/lemon-poppy-seed-protein-donuts.html",
-      "image_url": "https://proteindonuts.co/images/boston-cream-protein-donuts.png",
+      "image_url": "https://proteindonuts.co/recipe_images/lemon-poppy-seed-protein-donuts.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -5081,7 +5081,7 @@
       "difficulty": "Medium",
       "servings": "12 donuts",
       "canonical_url": "https://proteindonuts.co/maple-bacon-protein-donuts.html",
-      "image_url": "https://proteindonuts.co/images/lemon-poppy-seed-donuts.png",
+      "image_url": "https://proteindonuts.co/recipe_images/maple-bacon-protein-donuts.jpg",
       "intent_class": "post-workout"
     },
     {
@@ -5110,7 +5110,7 @@
       "difficulty": "Hard",
       "servings": "12 donuts",
       "canonical_url": "https://proteindonuts.co/boston-cream-protein-donuts.html",
-      "image_url": "https://proteindonuts.co/images/boston-cream-protein-donuts.png",
+      "image_url": "https://proteindonuts.co/recipe_images/boston-cream-protein-donuts.jpg",
       "intent_class": "post-workout"
     },
     {
@@ -5139,7 +5139,7 @@
       "difficulty": "Hard",
       "servings": "12 donuts",
       "canonical_url": "https://proteindonuts.co/jelly-filled-protein-donuts.html",
-      "image_url": "https://proteindonuts.co/images/jelly-filled-protein-donuts.png",
+      "image_url": "https://proteindonuts.co/recipe_images/jelly-filled-protein-donuts.jpg",
       "intent_class": "post-workout"
     },
     {
@@ -5168,7 +5168,7 @@
       "difficulty": "Easy",
       "servings": "8 donuts",
       "canonical_url": "https://proteindonuts.co/air-fryer-protein-donuts.html",
-      "image_url": "https://proteindonuts.co/images/strawberry-glazed-protein-donuts.png",
+      "image_url": "https://proteindonuts.co/recipe_images/air-fryer-protein-donuts.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -5198,7 +5198,7 @@
       "difficulty": "Easy",
       "servings": "12 donuts",
       "canonical_url": "https://proteindonuts.co/pumpkin-spice-protein-donuts.html",
-      "image_url": "https://proteindonuts.co/images/pumpkin-spice-protein-donuts.png",
+      "image_url": "https://proteindonuts.co/recipe_images/pumpkin-spice-protein-donuts.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -5227,7 +5227,7 @@
       "difficulty": "Easy",
       "servings": "12 donuts",
       "canonical_url": "https://proteindonuts.co/gingerbread-protein-donuts.html",
-      "image_url": "https://proteindonuts.co/images/pumpkin-spice-protein-donuts.png",
+      "image_url": "https://proteindonuts.co/recipe_images/gingerbread-protein-donuts.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -5257,7 +5257,7 @@
       "difficulty": "Easy",
       "servings": "12 donuts",
       "canonical_url": "https://proteindonuts.co/apple-cider-protein-donuts.html",
-      "image_url": "https://proteindonuts.co/images/apple-cider-protein-donuts.png",
+      "image_url": "https://proteindonuts.co/recipe_images/apple-cider-protein-donuts.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -5286,7 +5286,7 @@
       "difficulty": "Easy",
       "servings": "12 donuts",
       "canonical_url": "https://proteindonuts.co/double-chocolate-protein-donuts.html",
-      "image_url": "https://proteindonuts.co/images/cookies-and-cream-donuts.png",
+      "image_url": "https://proteindonuts.co/recipe_images/double-chocolate-protein-donuts.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -5315,7 +5315,7 @@
       "difficulty": "Easy",
       "servings": "12 donuts",
       "canonical_url": "https://proteindonuts.co/strawberry-frosted-protein-donuts.html",
-      "image_url": "https://proteindonuts.co/images/apple-cider-protein-donuts.png",
+      "image_url": "https://proteindonuts.co/recipe_images/strawberry-frosted-protein-donuts.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -5344,7 +5344,7 @@
       "difficulty": "Easy",
       "servings": "12 donuts",
       "canonical_url": "https://proteindonuts.co/vanilla-bean-protein-donuts.html",
-      "image_url": "https://proteindonuts.co/images/jelly-filled-protein-donuts.png",
+      "image_url": "https://proteindonuts.co/recipe_images/vanilla-bean-protein-donuts.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -5373,7 +5373,7 @@
       "difficulty": "Easy",
       "servings": "12 donuts",
       "canonical_url": "https://proteindonuts.co/cookies-and-cream-protein-donuts.html",
-      "image_url": "https://proteindonuts.co/images/caramel-apple-donuts.png",
+      "image_url": "https://proteindonuts.co/recipe_images/cookies-and-cream-protein-donuts.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -5402,7 +5402,7 @@
       "difficulty": "Easy",
       "servings": "12 donuts",
       "canonical_url": "https://proteindonuts.co/pistachio-protein-donuts.html",
-      "image_url": "https://proteindonuts.co/images/birthday-cake-donuts.png",
+      "image_url": "https://proteindonuts.co/recipe_images/pistachio-protein-donuts.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -5431,7 +5431,7 @@
       "difficulty": "Easy",
       "servings": "12 donuts",
       "canonical_url": "https://proteindonuts.co/matcha-protein-donuts.html",
-      "image_url": "https://proteindonuts.co/images/matcha-protein-donuts.png",
+      "image_url": "https://proteindonuts.co/recipe_images/matcha-protein-donuts.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -5460,7 +5460,7 @@
       "difficulty": "Easy",
       "servings": "12 donuts",
       "canonical_url": "https://proteindonuts.co/coffee-protein-donuts.html",
-      "image_url": "https://proteindonuts.co/images/coconut-protein-donuts.png",
+      "image_url": "https://proteindonuts.co/recipe_images/coffee-protein-donuts.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -5489,7 +5489,7 @@
       "difficulty": "Medium",
       "servings": "12 donuts",
       "canonical_url": "https://proteindonuts.co/carrot-cake-protein-donuts.html",
-      "image_url": "https://proteindonuts.co/images/s'mores-protein-donuts.png",
+      "image_url": "https://proteindonuts.co/recipe_images/carrot-cake-protein-donuts.jpg",
       "intent_class": "post-workout"
     },
     {
@@ -5518,7 +5518,7 @@
       "difficulty": "Easy",
       "servings": "12 donuts",
       "canonical_url": "https://proteindonuts.co/banana-bread-protein-donuts.html",
-      "image_url": "https://proteindonuts.co/images/banana-bread-donuts.png",
+      "image_url": "https://proteindonuts.co/recipe_images/banana-bread-protein-donuts.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -5547,7 +5547,7 @@
       "difficulty": "Easy",
       "servings": "12 donuts",
       "canonical_url": "https://proteindonuts.co/chocolate-chip-protein-donuts.html",
-      "image_url": "https://proteindonuts.co/images/churro-protein-donuts.png",
+      "image_url": "https://proteindonuts.co/recipe_images/chocolate-chip-protein-donuts.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -5576,7 +5576,7 @@
       "difficulty": "Easy",
       "servings": "12 donuts",
       "canonical_url": "https://proteindonuts.co/peanut-butter-protein-donuts.html",
-      "image_url": "https://proteindonuts.co/images/peanut-butter-protein-donuts.png",
+      "image_url": "https://proteindonuts.co/recipe_images/peanut-butter-protein-donuts.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -5605,7 +5605,7 @@
       "difficulty": "Easy",
       "servings": "12 donuts",
       "canonical_url": "https://proteindonuts.co/coconut-protein-donuts.html",
-      "image_url": "https://proteindonuts.co/images/coconut-protein-donuts.png",
+      "image_url": "https://proteindonuts.co/recipe_images/coconut-protein-donuts.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -5635,7 +5635,7 @@
       "difficulty": "Easy",
       "servings": "8 donuts",
       "canonical_url": "https://proteindonuts.co/gluten-free-baked-protein-donuts.html",
-      "image_url": "https://proteindonuts.co/images/gluten-free-baked-protein-donuts.png",
+      "image_url": "https://proteindonuts.co/recipe_images/gluten-free-baked-protein-donuts.jpg",
       "intent_class": "gluten-free"
     },
     {
@@ -5665,7 +5665,7 @@
       "difficulty": "Easy",
       "servings": "8 donuts",
       "canonical_url": "https://proteindonuts.co/dairy-free-chocolate-glazed-protein-donuts.html",
-      "image_url": "https://proteindonuts.co/images/dairy-free-chocolate-glazed-protein-donuts.png",
+      "image_url": "https://proteindonuts.co/recipe_images/dairy-free-chocolate-glazed-protein-donuts.jpg",
       "intent_class": "vegan"
     },
     {
@@ -5695,7 +5695,7 @@
       "difficulty": "Easy",
       "servings": "8 donuts",
       "canonical_url": "https://proteindonuts.co/gluten-free-baked-protein-donuts.html",
-      "image_url": "https://proteindonuts.co/images/gluten-free-baked-protein-donuts.png",
+      "image_url": "https://proteindonuts.co/recipe_images/gluten-free-baked-protein-donuts.jpg",
       "intent_class": "gluten-free"
     },
     {
@@ -5725,7 +5725,7 @@
       "difficulty": "Easy",
       "servings": "8 donuts",
       "canonical_url": "https://proteindonuts.co/dairy-free-chocolate-glazed-protein-donuts.html",
-      "image_url": "https://proteindonuts.co/images/dairy-free-chocolate-glazed-protein-donuts.png",
+      "image_url": "https://proteindonuts.co/recipe_images/dairy-free-chocolate-glazed-protein-donuts.jpg",
       "intent_class": "vegan"
     },
     {
@@ -5754,7 +5754,7 @@
       "difficulty": "Easy",
       "servings": "1 serving",
       "canonical_url": "https://proteinoatmeal.co/high-protein-oatmeal.html",
-      "image_url": "https://proteinoatmeal.co/images/high-protein-oatmeal.png",
+      "image_url": "https://proteinoatmeal.co/recipe_images/high-protein-oatmeal.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -5783,7 +5783,7 @@
       "difficulty": "Beginner",
       "servings": "1 serving",
       "canonical_url": "https://proteinoatmeal.co/protein-oatmeal-recipe.html",
-      "image_url": "https://proteinoatmeal.co/images/protein-oatmeal-recipe.png",
+      "image_url": "https://proteinoatmeal.co/recipe_images/protein-oatmeal-recipe.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -5812,7 +5812,7 @@
       "difficulty": "Beginner",
       "servings": "1 serving",
       "canonical_url": "https://proteinoatmeal.co/protein-powder-in-oatmeal.html",
-      "image_url": "https://proteinoatmeal.co/images/protein-powder-in-oatmeal.png",
+      "image_url": "https://proteinoatmeal.co/recipe_images/protein-powder-in-oatmeal.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -5841,7 +5841,7 @@
       "difficulty": "Easy",
       "servings": "1 serving",
       "canonical_url": "https://proteinoatmeal.co/oatmeal-with-protein-powder.html",
-      "image_url": "https://proteinoatmeal.co/images/oatmeal-with-protein-powder.png",
+      "image_url": "https://proteinoatmeal.co/recipe_images/oatmeal-with-protein-powder.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -5870,7 +5870,7 @@
       "difficulty": "Easy",
       "servings": "1 serving",
       "canonical_url": "https://proteinoatmeal.co/high-protein-oatmeal-recipe.html",
-      "image_url": "https://proteinoatmeal.co/images/high-protein-oatmeal-recipe.png",
+      "image_url": "https://proteinoatmeal.co/recipe_images/high-protein-oatmeal-recipe.jpg",
       "intent_class": "high-protein-30g"
     },
     {
@@ -5899,7 +5899,7 @@
       "difficulty": "Medium",
       "servings": "6 servings",
       "canonical_url": "https://proteinoatmeal.co/high-protein-baked-oatmeal.html",
-      "image_url": "https://proteinoatmeal.co/images/high-protein-baked-oatmeal.png",
+      "image_url": "https://proteinoatmeal.co/recipe_images/high-protein-baked-oatmeal.jpg",
       "intent_class": "meal-prep"
     },
     {
@@ -5928,7 +5928,7 @@
       "difficulty": "Easy",
       "servings": "8 servings",
       "canonical_url": "https://proteinoatmeal.co/protein-baked-oatmeal.html",
-      "image_url": "https://proteinoatmeal.co/images/protein-baked-oatmeal.png",
+      "image_url": "https://proteinoatmeal.co/recipe_images/protein-baked-oatmeal.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -5957,7 +5957,7 @@
       "difficulty": "Easy",
       "servings": "12 cookies",
       "canonical_url": "https://proteinoatmeal.co/protein-oatmeal-cookies.html",
-      "image_url": "https://proteinoatmeal.co/images/protein-oatmeal-cookies.png",
+      "image_url": "https://proteinoatmeal.co/recipe_images/protein-oatmeal-cookies.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -5986,7 +5986,7 @@
       "difficulty": "Easy",
       "servings": "10 bars",
       "canonical_url": "https://proteinoatmeal.co/oatmeal-protein-bars.html",
-      "image_url": "https://proteinoatmeal.co/images/oatmeal-protein-bars.png",
+      "image_url": "https://proteinoatmeal.co/recipe_images/oatmeal-protein-bars.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -6015,7 +6015,7 @@
       "difficulty": "Beginner",
       "servings": "1 serving",
       "canonical_url": "https://proteinoatmeal.co/overnight-protein-oats.html",
-      "image_url": "https://proteinoatmeal.co/images/overnight-protein-oats.png",
+      "image_url": "https://proteinoatmeal.co/recipe_images/overnight-protein-oats.jpg",
       "intent_class": "meal-prep"
     },
     {
@@ -6044,7 +6044,7 @@
       "difficulty": "Easy",
       "servings": "1 serving",
       "canonical_url": "https://proteinoatmeal.co/chocolate-protein-oatmeal.html",
-      "image_url": "https://proteinoatmeal.co/images/chocolate-protein-oatmeal.png",
+      "image_url": "https://proteinoatmeal.co/recipe_images/chocolate-protein-oatmeal.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -6073,7 +6073,7 @@
       "difficulty": "Easy",
       "servings": "1 serving",
       "canonical_url": "https://proteinoatmeal.co/peanut-butter-protein-oatmeal.html",
-      "image_url": "https://proteinoatmeal.co/images/peanut-butter-protein-oatmeal.png",
+      "image_url": "https://proteinoatmeal.co/recipe_images/peanut-butter-protein-oatmeal.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -6102,7 +6102,7 @@
       "difficulty": "Beginner",
       "servings": "1 serving",
       "canonical_url": "https://proteinoatmeal.co/banana-protein-oatmeal.html",
-      "image_url": "https://proteinoatmeal.co/images/banana-protein-oatmeal.png",
+      "image_url": "https://proteinoatmeal.co/recipe_images/banana-protein-oatmeal.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -6131,7 +6131,7 @@
       "difficulty": "Easy",
       "servings": "1 serving",
       "canonical_url": "https://proteinoatmeal.co/apple-cinnamon-protein-oatmeal.html",
-      "image_url": "https://proteinoatmeal.co/images/apple-cinnamon-protein-oatmeal.png",
+      "image_url": "https://proteinoatmeal.co/recipe_images/apple-cinnamon-protein-oatmeal.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -6160,7 +6160,7 @@
       "difficulty": "Easy",
       "servings": "1 serving",
       "canonical_url": "https://proteinoatmeal.co/blueberry-protein-oatmeal.html",
-      "image_url": "https://proteinoatmeal.co/images/blueberry-protein-oatmeal.png",
+      "image_url": "https://proteinoatmeal.co/recipe_images/blueberry-protein-oatmeal.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -6189,7 +6189,7 @@
       "difficulty": "Easy",
       "servings": "1 serving",
       "canonical_url": "https://proteinoatmeal.co/pumpkin-protein-oatmeal.html",
-      "image_url": "https://proteinoatmeal.co/images/pumpkin-protein-oatmeal.png",
+      "image_url": "https://proteinoatmeal.co/recipe_images/pumpkin-protein-oatmeal.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -6218,7 +6218,7 @@
       "difficulty": "Beginner",
       "servings": "1 serving",
       "canonical_url": "https://proteinoatmeal.co/vanilla-protein-oatmeal.html",
-      "image_url": "https://proteinoatmeal.co/images/vanilla-protein-oatmeal.png",
+      "image_url": "https://proteinoatmeal.co/recipe_images/vanilla-protein-oatmeal.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -6247,7 +6247,7 @@
       "difficulty": "Easy",
       "servings": "1 serving",
       "canonical_url": "https://proteinoatmeal.co/strawberry-protein-oatmeal.html",
-      "image_url": "https://proteinoatmeal.co/images/strawberry-protein-oatmeal.png",
+      "image_url": "https://proteinoatmeal.co/recipe_images/strawberry-protein-oatmeal.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -6276,7 +6276,7 @@
       "difficulty": "Medium",
       "servings": "1 serving",
       "canonical_url": "https://proteinoatmeal.co/savory-protein-oatmeal.html",
-      "image_url": "https://proteinoatmeal.co/images/savory-protein-oatmeal.png",
+      "image_url": "https://proteinoatmeal.co/recipe_images/savory-protein-oatmeal.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -6305,7 +6305,7 @@
       "difficulty": "Easy",
       "servings": "1 serving",
       "canonical_url": "https://proteinoatmeal.co/maple-pecan-protein-oatmeal.html",
-      "image_url": "https://proteinoatmeal.co/images/maple-pecan-protein-oatmeal.png",
+      "image_url": "https://proteinoatmeal.co/recipe_images/maple-pecan-protein-oatmeal.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -6334,7 +6334,7 @@
       "difficulty": "Easy",
       "servings": "1 serving",
       "canonical_url": "https://proteinoatmeal.co/coconut-protein-oatmeal.html",
-      "image_url": "https://proteinoatmeal.co/images/coconut-protein-oatmeal.png",
+      "image_url": "https://proteinoatmeal.co/recipe_images/coconut-protein-oatmeal.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -6363,7 +6363,7 @@
       "difficulty": "Easy",
       "servings": "1 serving",
       "canonical_url": "https://proteinoatmeal.co/coffee-protein-oatmeal.html",
-      "image_url": "https://proteinoatmeal.co/images/coffee-protein-oatmeal.png",
+      "image_url": "https://proteinoatmeal.co/recipe_images/coffee-protein-oatmeal.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -6392,7 +6392,7 @@
       "difficulty": "Easy",
       "servings": "1 serving",
       "canonical_url": "https://proteinoatmeal.co/carrot-cake-protein-oatmeal.html",
-      "image_url": "https://proteinoatmeal.co/images/carrot-cake-protein-oatmeal.png",
+      "image_url": "https://proteinoatmeal.co/recipe_images/carrot-cake-protein-oatmeal.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -6421,7 +6421,7 @@
       "difficulty": "Easy",
       "servings": "1 serving",
       "canonical_url": "https://proteinoatmeal.co/almond-butter-protein-oatmeal.html",
-      "image_url": "https://proteinoatmeal.co/images/almond-butter-protein-oatmeal.png",
+      "image_url": "https://proteinoatmeal.co/recipe_images/almond-butter-protein-oatmeal.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -6450,7 +6450,7 @@
       "difficulty": "Easy",
       "servings": "1 serving",
       "canonical_url": "https://proteinoatmeal.co/mixed-berry-protein-oatmeal.html",
-      "image_url": "https://proteinoatmeal.co/images/mixed-berry-protein-oatmeal.png",
+      "image_url": "https://proteinoatmeal.co/recipe_images/mixed-berry-protein-oatmeal.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -6480,7 +6480,7 @@
       "difficulty": "Easy",
       "servings": "1 serving",
       "canonical_url": "https://proteinoatmeal.co/gluten-free-certified-oats-protein-oatmeal.html",
-      "image_url": "https://proteinoatmeal.co/images/gluten-free-certified-oats-protein-oatmeal.png",
+      "image_url": "https://proteinoatmeal.co/recipe_images/gluten-free-certified-oats-protein-oatmeal.jpg",
       "intent_class": "gluten-free"
     },
     {
@@ -6510,7 +6510,7 @@
       "difficulty": "Easy",
       "servings": "1 serving",
       "canonical_url": "https://proteinoatmeal.co/dairy-free-coconut-milk-protein-oatmeal.html",
-      "image_url": "https://proteinoatmeal.co/images/dairy-free-coconut-milk-protein-oatmeal.png",
+      "image_url": "https://proteinoatmeal.co/recipe_images/dairy-free-coconut-milk-protein-oatmeal.jpg",
       "intent_class": "vegan"
     },
     {
@@ -6538,7 +6538,7 @@
       "difficulty": "Medium",
       "servings": "12 servings",
       "canonical_url": "https://proteincheesecake.co/classic-vanilla-bean-cheesecake.html",
-      "image_url": "https://proteincheesecake.co/images/classic-vanilla-bean-cheesecake.png",
+      "image_url": "https://proteincheesecake.co/recipe_images/classic-vanilla-bean-cheesecake.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -6566,7 +6566,7 @@
       "difficulty": "Easy",
       "servings": "10 servings",
       "canonical_url": "https://proteincheesecake.co/no-bake-chocolate-cheesecake.html",
-      "image_url": "https://proteincheesecake.co/images/no-bake-chocolate-cheesecake.png",
+      "image_url": "https://proteincheesecake.co/recipe_images/no-bake-chocolate-cheesecake.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -6594,7 +6594,7 @@
       "difficulty": "Medium",
       "servings": "12 servings",
       "canonical_url": "https://proteincheesecake.co/strawberry-swirl-cheesecake.html",
-      "image_url": "https://proteincheesecake.co/images/strawberry-swirl-cheesecake.png",
+      "image_url": "https://proteincheesecake.co/recipe_images/strawberry-swirl-cheesecake.jpg",
       "intent_class": "post-workout"
     },
     {
@@ -6623,7 +6623,7 @@
       "difficulty": "Easy",
       "servings": "12 servings",
       "canonical_url": "https://proteincheesecake.co/lemon-blueberry-cheesecake-minis.html",
-      "image_url": "https://proteincheesecake.co/images/lemon-blueberry-cheesecake-minis.png",
+      "image_url": "https://proteincheesecake.co/recipe_images/lemon-blueberry-cheesecake-minis.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -6651,7 +6651,7 @@
       "difficulty": "Easy",
       "servings": "1 serving",
       "canonical_url": "https://proteincheesecake.co/single-serving-peanut-butter-cheesecake.html",
-      "image_url": "https://proteincheesecake.co/images/single-serving-peanut-butter-cheesecake.png",
+      "image_url": "https://proteincheesecake.co/recipe_images/single-serving-peanut-butter-cheesecake.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -6680,7 +6680,7 @@
       "difficulty": "Easy",
       "servings": "16 servings",
       "canonical_url": "https://proteincheesecake.co/funfetti-cheesecake-dip.html",
-      "image_url": "https://proteincheesecake.co/images/funfetti-cheesecake-dip.png",
+      "image_url": "https://proteincheesecake.co/recipe_images/funfetti-cheesecake-dip.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -6709,7 +6709,7 @@
       "difficulty": "Medium",
       "servings": "12 servings",
       "canonical_url": "https://proteincheesecake.co/pumpkin-spice-cheesecake.html",
-      "image_url": "https://proteincheesecake.co/images/pumpkin-spice-cheesecake.png",
+      "image_url": "https://proteincheesecake.co/recipe_images/pumpkin-spice-cheesecake.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -6738,7 +6738,7 @@
       "difficulty": "Medium",
       "servings": "12 servings",
       "canonical_url": "https://proteincheesecake.co/key-lime-cheesecake.html",
-      "image_url": "https://proteincheesecake.co/images/key-lime-cheesecake.png",
+      "image_url": "https://proteincheesecake.co/recipe_images/key-lime-cheesecake.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -6767,7 +6767,7 @@
       "difficulty": "Medium",
       "servings": "12 servings",
       "canonical_url": "https://proteincheesecake.co/caramel-pecan-cheesecake.html",
-      "image_url": "https://proteincheesecake.co/images/caramel-pecan-cheesecake.png",
+      "image_url": "https://proteincheesecake.co/recipe_images/caramel-pecan-cheesecake.jpg",
       "intent_class": "post-workout"
     },
     {
@@ -6795,7 +6795,7 @@
       "difficulty": "Medium",
       "servings": "12 servings",
       "canonical_url": "https://proteincheesecake.co/mint-chocolate-chip-cheesecake.html",
-      "image_url": "https://proteincheesecake.co/images/mint-chocolate-chip-cheesecake.png",
+      "image_url": "https://proteincheesecake.co/recipe_images/mint-chocolate-chip-cheesecake.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -6824,7 +6824,7 @@
       "difficulty": "Medium",
       "servings": "12 servings",
       "canonical_url": "https://proteincheesecake.co/raspberry-white-chocolate-cheesecake.html",
-      "image_url": "https://proteincheesecake.co/images/raspberry-white-chocolate-cheesecake.png",
+      "image_url": "https://proteincheesecake.co/recipe_images/raspberry-white-chocolate-cheesecake.jpg",
       "intent_class": "post-workout"
     },
     {
@@ -6852,7 +6852,7 @@
       "difficulty": "Medium",
       "servings": "12 servings",
       "canonical_url": "https://proteincheesecake.co/cookies-and-cream-cheesecake.html",
-      "image_url": "https://proteincheesecake.co/images/cookies-and-cream-cheesecake.png",
+      "image_url": "https://proteincheesecake.co/recipe_images/cookies-and-cream-cheesecake.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -6881,7 +6881,7 @@
       "difficulty": "Easy",
       "servings": "16 servings",
       "canonical_url": "https://proteincheesecake.co/s-mores-cheesecake-dip.html",
-      "image_url": "https://proteincheesecake.co/images/s-mores-cheesecake-dip.png",
+      "image_url": "https://proteincheesecake.co/recipe_images/s-mores-cheesecake-dip.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -6909,7 +6909,7 @@
       "difficulty": "Hard",
       "servings": "12 servings",
       "canonical_url": "https://proteincheesecake.co/red-velvet-cheesecake.html",
-      "image_url": "https://proteincheesecake.co/images/red-velvet-cheesecake.png",
+      "image_url": "https://proteincheesecake.co/recipe_images/red-velvet-cheesecake.jpg",
       "intent_class": "post-workout"
     },
     {
@@ -6937,7 +6937,7 @@
       "difficulty": "Medium",
       "servings": "12 servings",
       "canonical_url": "https://proteincheesecake.co/matcha-green-tea-cheesecake.html",
-      "image_url": "https://proteincheesecake.co/images/matcha-green-tea-cheesecake.png",
+      "image_url": "https://proteincheesecake.co/recipe_images/matcha-green-tea-cheesecake.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -6966,7 +6966,7 @@
       "difficulty": "Easy",
       "servings": "16 servings",
       "canonical_url": "https://proteincheesecake.co/no-bake-oreo-cheesecake-bites.html",
-      "image_url": "https://proteincheesecake.co/images/no-bake-oreo-cheesecake-bites.png",
+      "image_url": "https://proteincheesecake.co/recipe_images/no-bake-oreo-cheesecake-bites.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -6994,7 +6994,7 @@
       "difficulty": "Easy",
       "servings": "1 serving",
       "canonical_url": "https://proteincheesecake.co/single-serving-chocolate-cheesecake.html",
-      "image_url": "https://proteincheesecake.co/images/single-serving-chocolate-cheesecake.png",
+      "image_url": "https://proteincheesecake.co/recipe_images/single-serving-chocolate-cheesecake.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -7023,7 +7023,7 @@
       "difficulty": "Easy",
       "servings": "16 servings",
       "canonical_url": "https://proteincheesecake.co/brownie-batter-dip.html",
-      "image_url": "https://proteincheesecake.co/images/brownie-batter-dip.png",
+      "image_url": "https://proteincheesecake.co/recipe_images/brownie-batter-dip.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -7052,7 +7052,7 @@
       "difficulty": "Medium",
       "servings": "12 servings",
       "canonical_url": "https://proteincheesecake.co/gingerbread-cheesecake.html",
-      "image_url": "https://proteincheesecake.co/images/gingerbread-cheesecake.png",
+      "image_url": "https://proteincheesecake.co/recipe_images/gingerbread-cheesecake.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -7081,7 +7081,7 @@
       "difficulty": "Easy",
       "servings": "10 servings",
       "canonical_url": "https://proteincheesecake.co/no-bake-lemon-cheesecake.html",
-      "image_url": "https://proteincheesecake.co/images/no-bake-lemon-cheesecake.png",
+      "image_url": "https://proteincheesecake.co/recipe_images/no-bake-lemon-cheesecake.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -7110,7 +7110,7 @@
       "difficulty": "Medium",
       "servings": "12 servings",
       "canonical_url": "https://proteincheesecake.co/chocolate-hazelnut-cheesecake.html",
-      "image_url": "https://proteincheesecake.co/images/chocolate-hazelnut-cheesecake.png",
+      "image_url": "https://proteincheesecake.co/recipe_images/chocolate-hazelnut-cheesecake.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -7138,7 +7138,7 @@
       "difficulty": "Easy",
       "servings": "1 serving",
       "canonical_url": "https://proteincheesecake.co/single-serving-strawberry-cheesecake.html",
-      "image_url": "https://proteincheesecake.co/images/single-serving-strawberry-cheesecake.png",
+      "image_url": "https://proteincheesecake.co/recipe_images/single-serving-strawberry-cheesecake.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -7167,7 +7167,7 @@
       "difficulty": "Easy",
       "servings": "16 servings",
       "canonical_url": "https://proteincheesecake.co/cookie-dough-cheesecake-dip.html",
-      "image_url": "https://proteincheesecake.co/images/cookie-dough-cheesecake-dip.png",
+      "image_url": "https://proteincheesecake.co/recipe_images/cookie-dough-cheesecake-dip.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -7196,7 +7196,7 @@
       "difficulty": "Medium",
       "servings": "12 servings",
       "canonical_url": "https://proteincheesecake.co/eggnog-cheesecake.html",
-      "image_url": "https://proteincheesecake.co/images/eggnog-cheesecake.png",
+      "image_url": "https://proteincheesecake.co/recipe_images/eggnog-cheesecake.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -7225,7 +7225,7 @@
       "difficulty": "Medium",
       "servings": "12 servings",
       "canonical_url": "https://proteincheesecake.co/tiramisu-cheesecake.html",
-      "image_url": "https://proteincheesecake.co/images/tiramisu-cheesecake.png",
+      "image_url": "https://proteincheesecake.co/recipe_images/tiramisu-cheesecake.jpg",
       "intent_class": "post-workout"
     },
     {
@@ -7255,7 +7255,7 @@
       "difficulty": "Medium",
       "servings": "12 slices",
       "canonical_url": "https://proteincheesecake.co/gluten-free-almond-crust-protein-cheesecake.html",
-      "image_url": "https://proteincheesecake.co/images/gluten-free-almond-crust-protein-cheesecake.png",
+      "image_url": "https://proteincheesecake.co/recipe_images/gluten-free-almond-crust-protein-cheesecake.jpg",
       "intent_class": "gluten-free"
     },
     {
@@ -7285,7 +7285,7 @@
       "difficulty": "Medium",
       "servings": "12 slices",
       "canonical_url": "https://proteincheesecake.co/dairy-free-cashew-protein-cheesecake.html",
-      "image_url": "https://proteincheesecake.co/images/dairy-free-cashew-protein-cheesecake.png",
+      "image_url": "https://proteincheesecake.co/recipe_images/dairy-free-cashew-protein-cheesecake.jpg",
       "intent_class": "vegan"
     },
     {
@@ -7314,7 +7314,7 @@
       "difficulty": "Medium",
       "servings": "1 pizza",
       "canonical_url": "https://proteinpizzas.co/classic-protein-pizza-crust.html",
-      "image_url": "https://proteinpizzas.co/images/classic-protein-pizza-crust.png",
+      "image_url": "https://proteinpizzas.co/recipe_images/classic-protein-pizza-crust.jpg",
       "intent_class": "high-protein-30g"
     },
     {
@@ -7343,7 +7343,7 @@
       "difficulty": "Medium",
       "servings": "1 pizza",
       "canonical_url": "https://proteinpizzas.co/high-protein-pizza-crust.html",
-      "image_url": "https://proteinpizzas.co/images/high-protein-pizza-crust.png",
+      "image_url": "https://proteinpizzas.co/recipe_images/high-protein-pizza-crust.jpg",
       "intent_class": "high-protein-30g"
     },
     {
@@ -7372,7 +7372,7 @@
       "difficulty": "Medium",
       "servings": "1 pizza",
       "canonical_url": "https://proteinpizzas.co/protein-pizza-dough.html",
-      "image_url": "https://proteinpizzas.co/images/protein-pizza-dough.png",
+      "image_url": "https://proteinpizzas.co/recipe_images/protein-pizza-dough.jpg",
       "intent_class": "high-protein-30g"
     },
     {
@@ -7401,7 +7401,7 @@
       "difficulty": "Medium",
       "servings": "2 servings",
       "canonical_url": "https://proteinpizzas.co/protein-pizza-recipe.html",
-      "image_url": "https://proteinpizzas.co/images/protein-pizza-recipe.png",
+      "image_url": "https://proteinpizzas.co/recipe_images/protein-pizza-recipe.jpg",
       "intent_class": "high-protein-30g"
     },
     {
@@ -7430,7 +7430,7 @@
       "difficulty": "Medium",
       "servings": "2 servings",
       "canonical_url": "https://proteinpizzas.co/chicken-protein-pizza.html",
-      "image_url": "https://proteinpizzas.co/images/chicken-protein-pizza.png",
+      "image_url": "https://proteinpizzas.co/recipe_images/chicken-protein-pizza.jpg",
       "intent_class": "high-protein-30g"
     },
     {
@@ -7459,7 +7459,7 @@
       "difficulty": "Easy",
       "servings": "2 servings",
       "canonical_url": "https://proteinpizzas.co/pepperoni-protein-pizza.html",
-      "image_url": "https://proteinpizzas.co/images/pepperoni-protein-pizza.png",
+      "image_url": "https://proteinpizzas.co/recipe_images/pepperoni-protein-pizza.jpg",
       "intent_class": "high-protein-30g"
     },
     {
@@ -7488,7 +7488,7 @@
       "difficulty": "Medium",
       "servings": "1 pizza",
       "canonical_url": "https://proteinpizzas.co/cauliflower-protein-pizza-crust.html",
-      "image_url": "https://proteinpizzas.co/images/cauliflower-protein-pizza-crust.png",
+      "image_url": "https://proteinpizzas.co/recipe_images/cauliflower-protein-pizza-crust.jpg",
       "intent_class": "post-workout"
     },
     {
@@ -7517,7 +7517,7 @@
       "difficulty": "Beginner",
       "servings": "1 pizza",
       "canonical_url": "https://proteinpizzas.co/greek-yogurt-protein-pizza-crust.html",
-      "image_url": "https://proteinpizzas.co/images/greek-yogurt-protein-pizza-crust.png",
+      "image_url": "https://proteinpizzas.co/recipe_images/greek-yogurt-protein-pizza-crust.jpg",
       "intent_class": "high-protein-30g"
     },
     {
@@ -7546,7 +7546,7 @@
       "difficulty": "Medium",
       "servings": "1 pizza",
       "canonical_url": "https://proteinpizzas.co/cottage-cheese-protein-pizza.html",
-      "image_url": "https://proteinpizzas.co/images/cottage-cheese-protein-pizza.png",
+      "image_url": "https://proteinpizzas.co/recipe_images/cottage-cheese-protein-pizza.jpg",
       "intent_class": "high-protein-30g"
     },
     {
@@ -7575,7 +7575,7 @@
       "difficulty": "Easy",
       "servings": "2 servings",
       "canonical_url": "https://proteinpizzas.co/margherita-protein-pizza.html",
-      "image_url": "https://proteinpizzas.co/images/margherita-protein-pizza.png",
+      "image_url": "https://proteinpizzas.co/recipe_images/margherita-protein-pizza.jpg",
       "intent_class": "high-protein-30g"
     },
     {
@@ -7604,7 +7604,7 @@
       "difficulty": "Medium",
       "servings": "2 servings",
       "canonical_url": "https://proteinpizzas.co/bbq-chicken-protein-pizza.html",
-      "image_url": "https://proteinpizzas.co/images/bbq-chicken-protein-pizza.png",
+      "image_url": "https://proteinpizzas.co/recipe_images/bbq-chicken-protein-pizza.jpg",
       "intent_class": "high-protein-30g"
     },
     {
@@ -7633,7 +7633,7 @@
       "difficulty": "Medium",
       "servings": "2 servings",
       "canonical_url": "https://proteinpizzas.co/meat-lovers-protein-pizza.html",
-      "image_url": "https://proteinpizzas.co/images/meat-lovers-protein-pizza.png",
+      "image_url": "https://proteinpizzas.co/recipe_images/meat-lovers-protein-pizza.jpg",
       "intent_class": "high-protein-30g"
     },
     {
@@ -7662,7 +7662,7 @@
       "difficulty": "Easy",
       "servings": "2 servings",
       "canonical_url": "https://proteinpizzas.co/veggie-protein-pizza.html",
-      "image_url": "https://proteinpizzas.co/images/veggie-protein-pizza.png",
+      "image_url": "https://proteinpizzas.co/recipe_images/veggie-protein-pizza.jpg",
       "intent_class": "high-protein-30g"
     },
     {
@@ -7691,7 +7691,7 @@
       "difficulty": "Medium",
       "servings": "2 servings",
       "canonical_url": "https://proteinpizzas.co/buffalo-chicken-protein-pizza.html",
-      "image_url": "https://proteinpizzas.co/images/buffalo-chicken-protein-pizza.png",
+      "image_url": "https://proteinpizzas.co/recipe_images/buffalo-chicken-protein-pizza.jpg",
       "intent_class": "high-protein-30g"
     },
     {
@@ -7720,7 +7720,7 @@
       "difficulty": "Medium",
       "servings": "2 servings",
       "canonical_url": "https://proteinpizzas.co/breakfast-protein-pizza.html",
-      "image_url": "https://proteinpizzas.co/images/breakfast-protein-pizza.png",
+      "image_url": "https://proteinpizzas.co/recipe_images/breakfast-protein-pizza.jpg",
       "intent_class": "high-protein-30g"
     },
     {
@@ -7749,7 +7749,7 @@
       "difficulty": "Easy",
       "servings": "2 servings",
       "canonical_url": "https://proteinpizzas.co/white-protein-pizza.html",
-      "image_url": "https://proteinpizzas.co/images/white-protein-pizza.png",
+      "image_url": "https://proteinpizzas.co/recipe_images/white-protein-pizza.jpg",
       "intent_class": "high-protein-30g"
     },
     {
@@ -7778,7 +7778,7 @@
       "difficulty": "Easy",
       "servings": "2 servings",
       "canonical_url": "https://proteinpizzas.co/hawaiian-protein-pizza.html",
-      "image_url": "https://proteinpizzas.co/images/hawaiian-protein-pizza.png",
+      "image_url": "https://proteinpizzas.co/recipe_images/hawaiian-protein-pizza.jpg",
       "intent_class": "high-protein-30g"
     },
     {
@@ -7807,7 +7807,7 @@
       "difficulty": "Easy",
       "servings": "1 serving",
       "canonical_url": "https://proteinpizzas.co/protein-pizza-bowl.html",
-      "image_url": "https://proteinpizzas.co/images/protein-pizza-bowl.png",
+      "image_url": "https://proteinpizzas.co/recipe_images/protein-pizza-bowl.jpg",
       "intent_class": "high-protein-30g"
     },
     {
@@ -7836,7 +7836,7 @@
       "difficulty": "Medium",
       "servings": "1 serving",
       "canonical_url": "https://proteinpizzas.co/keto-protein-pizza.html",
-      "image_url": "https://proteinpizzas.co/images/keto-protein-pizza.png",
+      "image_url": "https://proteinpizzas.co/recipe_images/keto-protein-pizza.jpg",
       "intent_class": "high-protein-30g"
     },
     {
@@ -7865,7 +7865,7 @@
       "difficulty": "Medium",
       "servings": "2 servings",
       "canonical_url": "https://proteinpizzas.co/taco-protein-pizza.html",
-      "image_url": "https://proteinpizzas.co/images/taco-protein-pizza.png",
+      "image_url": "https://proteinpizzas.co/recipe_images/taco-protein-pizza.jpg",
       "intent_class": "high-protein-30g"
     },
     {
@@ -7894,7 +7894,7 @@
       "difficulty": "Easy",
       "servings": "2 servings",
       "canonical_url": "https://proteinpizzas.co/pesto-chicken-protein-pizza.html",
-      "image_url": "https://proteinpizzas.co/images/pesto-chicken-protein-pizza.png",
+      "image_url": "https://proteinpizzas.co/recipe_images/pesto-chicken-protein-pizza.jpg",
       "intent_class": "high-protein-30g"
     },
     {
@@ -7923,7 +7923,7 @@
       "difficulty": "Medium",
       "servings": "2 servings",
       "canonical_url": "https://proteinpizzas.co/mushroom-protein-pizza.html",
-      "image_url": "https://proteinpizzas.co/images/mushroom-protein-pizza.png",
+      "image_url": "https://proteinpizzas.co/recipe_images/mushroom-protein-pizza.jpg",
       "intent_class": "high-protein-30g"
     },
     {
@@ -7952,7 +7952,7 @@
       "difficulty": "Easy",
       "servings": "2 servings",
       "canonical_url": "https://proteinpizzas.co/spinach-feta-protein-pizza.html",
-      "image_url": "https://proteinpizzas.co/images/spinach-feta-protein-pizza.png",
+      "image_url": "https://proteinpizzas.co/recipe_images/spinach-feta-protein-pizza.jpg",
       "intent_class": "high-protein-30g"
     },
     {
@@ -7981,7 +7981,7 @@
       "difficulty": "Medium",
       "servings": "2 servings",
       "canonical_url": "https://proteinpizzas.co/supreme-protein-pizza.html",
-      "image_url": "https://proteinpizzas.co/images/supreme-protein-pizza.png",
+      "image_url": "https://proteinpizzas.co/recipe_images/supreme-protein-pizza.jpg",
       "intent_class": "high-protein-30g"
     },
     {
@@ -8010,7 +8010,7 @@
       "difficulty": "Easy",
       "servings": "2 servings",
       "canonical_url": "https://proteinpizzas.co/dessert-protein-pizza.html",
-      "image_url": "https://proteinpizzas.co/images/dessert-protein-pizza.png",
+      "image_url": "https://proteinpizzas.co/recipe_images/dessert-protein-pizza.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -8040,7 +8040,7 @@
       "difficulty": "Medium",
       "servings": "1 large pizza",
       "canonical_url": "https://proteinpizzas.co/gluten-free-cauliflower-protein-pizza-crust.html",
-      "image_url": "https://proteinpizzas.co/images/gluten-free-cauliflower-protein-pizza-crust.png",
+      "image_url": "https://proteinpizzas.co/recipe_images/gluten-free-cauliflower-protein-pizza-crust.jpg",
       "intent_class": "gluten-free"
     },
     {
@@ -8070,7 +8070,7 @@
       "difficulty": "Easy",
       "servings": "1 large pizza",
       "canonical_url": "https://proteinpizzas.co/dairy-free-chickpea-flour-protein-pizza.html",
-      "image_url": "https://proteinpizzas.co/images/dairy-free-chickpea-flour-protein-pizza.png",
+      "image_url": "https://proteinpizzas.co/recipe_images/dairy-free-chickpea-flour-protein-pizza.jpg",
       "intent_class": "vegan"
     },
     {
@@ -8099,7 +8099,7 @@
       "difficulty": "Easy",
       "servings": "4 servings",
       "canonical_url": "https://proteinpudding.co/classic-chocolate-protein-pudding.html",
-      "image_url": "https://proteinpudding.co/images/classic-chocolate-protein-pudding.png",
+      "image_url": "https://proteinpudding.co/recipe_images/classic-chocolate-protein-pudding.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -8128,7 +8128,7 @@
       "difficulty": "Easy",
       "servings": "4 servings",
       "canonical_url": "https://proteinpudding.co/vanilla-bean-protein-mousse.html",
-      "image_url": "https://proteinpudding.co/images/vanilla-bean-protein-mousse.png",
+      "image_url": "https://proteinpudding.co/recipe_images/vanilla-bean-protein-mousse.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -8158,7 +8158,7 @@
       "difficulty": "Easy",
       "servings": "2 servings",
       "canonical_url": "https://proteinpudding.co/chocolate-chia-protein-pudding.html",
-      "image_url": "https://proteinpudding.co/images/chocolate-chia-protein-pudding.png",
+      "image_url": "https://proteinpudding.co/recipe_images/chocolate-chia-protein-pudding.jpg",
       "intent_class": "vegan"
     },
     {
@@ -8187,7 +8187,7 @@
       "difficulty": "Easy",
       "servings": "2 parfaits",
       "canonical_url": "https://proteinpudding.co/strawberry-parfait-protein-pudding.html",
-      "image_url": "https://proteinpudding.co/images/strawberry-parfait-protein-pudding.png",
+      "image_url": "https://proteinpudding.co/recipe_images/strawberry-parfait-protein-pudding.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -8216,7 +8216,7 @@
       "difficulty": "Easy",
       "servings": "4 servings",
       "canonical_url": "https://proteinpudding.co/lemon-raspberry-protein-mousse.html",
-      "image_url": "https://proteinpudding.co/images/lemon-raspberry-protein-mousse.png",
+      "image_url": "https://proteinpudding.co/recipe_images/lemon-raspberry-protein-mousse.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -8245,7 +8245,7 @@
       "difficulty": "Easy",
       "servings": "2 servings",
       "canonical_url": "https://proteinpudding.co/peanut-butter-cup-protein-pudding.html",
-      "image_url": "https://proteinpudding.co/images/peanut-butter-cup-protein-pudding.png",
+      "image_url": "https://proteinpudding.co/recipe_images/peanut-butter-cup-protein-pudding.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -8275,7 +8275,7 @@
       "difficulty": "Easy",
       "servings": "2 servings",
       "canonical_url": "https://proteinpudding.co/matcha-chia-protein-pudding.html",
-      "image_url": "https://proteinpudding.co/images/matcha-chia-protein-pudding.png",
+      "image_url": "https://proteinpudding.co/recipe_images/matcha-chia-protein-pudding.jpg",
       "intent_class": "vegan"
     },
     {
@@ -8303,7 +8303,7 @@
       "difficulty": "Easy",
       "servings": "2 servings",
       "canonical_url": "https://proteinpudding.co/cookies-and-cream-protein-pudding.html",
-      "image_url": "https://proteinpudding.co/images/cookies-and-cream-protein-pudding.png",
+      "image_url": "https://proteinpudding.co/recipe_images/cookies-and-cream-protein-pudding.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -8332,7 +8332,7 @@
       "difficulty": "Easy",
       "servings": "2 parfaits",
       "canonical_url": "https://proteinpudding.co/blueberry-parfait-protein-pudding.html",
-      "image_url": "https://proteinpudding.co/images/blueberry-parfait-protein-pudding.png",
+      "image_url": "https://proteinpudding.co/recipe_images/blueberry-parfait-protein-pudding.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -8362,7 +8362,7 @@
       "difficulty": "Easy",
       "servings": "2 servings",
       "canonical_url": "https://proteinpudding.co/chocolate-avocado-protein-mousse.html",
-      "image_url": "https://proteinpudding.co/images/chocolate-avocado-protein-mousse.png",
+      "image_url": "https://proteinpudding.co/recipe_images/chocolate-avocado-protein-mousse.jpg",
       "intent_class": "vegan"
     },
     {
@@ -8391,7 +8391,7 @@
       "difficulty": "Easy",
       "servings": "2 servings",
       "canonical_url": "https://proteinpudding.co/quick-vanilla-protein-pudding.html",
-      "image_url": "https://proteinpudding.co/images/quick-vanilla-protein-pudding.png",
+      "image_url": "https://proteinpudding.co/recipe_images/quick-vanilla-protein-pudding.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -8421,7 +8421,7 @@
       "difficulty": "Easy",
       "servings": "2 servings",
       "canonical_url": "https://proteinpudding.co/mango-chia-protein-pudding.html",
-      "image_url": "https://proteinpudding.co/images/mango-chia-protein-pudding.png",
+      "image_url": "https://proteinpudding.co/recipe_images/mango-chia-protein-pudding.jpg",
       "intent_class": "vegan"
     },
     {
@@ -8449,7 +8449,7 @@
       "difficulty": "Easy",
       "servings": "2 servings",
       "canonical_url": "https://proteinpudding.co/caramel-protein-pudding.html",
-      "image_url": "https://proteinpudding.co/images/caramel-protein-pudding.png",
+      "image_url": "https://proteinpudding.co/recipe_images/caramel-protein-pudding.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -8479,7 +8479,7 @@
       "difficulty": "Easy",
       "servings": "2 servings",
       "canonical_url": "https://proteinpudding.co/raspberry-chia-protein-pudding.html",
-      "image_url": "https://proteinpudding.co/images/raspberry-chia-protein-pudding.png",
+      "image_url": "https://proteinpudding.co/recipe_images/raspberry-chia-protein-pudding.jpg",
       "intent_class": "vegan"
     },
     {
@@ -8507,7 +8507,7 @@
       "difficulty": "Easy",
       "servings": "2 servings",
       "canonical_url": "https://proteinpudding.co/banana-cream-protein-pudding.html",
-      "image_url": "https://proteinpudding.co/images/banana-cream-protein-pudding.png",
+      "image_url": "https://proteinpudding.co/recipe_images/banana-cream-protein-pudding.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -8535,7 +8535,7 @@
       "difficulty": "Easy",
       "servings": "2 servings",
       "canonical_url": "https://proteinpudding.co/coffee-protein-mousse.html",
-      "image_url": "https://proteinpudding.co/images/coffee-protein-mousse.png",
+      "image_url": "https://proteinpudding.co/recipe_images/coffee-protein-mousse.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -8564,7 +8564,7 @@
       "difficulty": "Easy",
       "servings": "2 parfaits",
       "canonical_url": "https://proteinpudding.co/peach-parfait-protein-pudding.html",
-      "image_url": "https://proteinpudding.co/images/peach-parfait-protein-pudding.png",
+      "image_url": "https://proteinpudding.co/recipe_images/peach-parfait-protein-pudding.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -8593,7 +8593,7 @@
       "difficulty": "Easy",
       "servings": "2 servings",
       "canonical_url": "https://proteinpudding.co/mint-chocolate-protein-pudding.html",
-      "image_url": "https://proteinpudding.co/images/mint-chocolate-protein-pudding.png",
+      "image_url": "https://proteinpudding.co/recipe_images/mint-chocolate-protein-pudding.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -8622,7 +8622,7 @@
       "difficulty": "Easy",
       "servings": "2 servings",
       "canonical_url": "https://proteinpudding.co/coconut-cream-protein-pudding.html",
-      "image_url": "https://proteinpudding.co/images/coconut-cream-protein-pudding.png",
+      "image_url": "https://proteinpudding.co/recipe_images/coconut-cream-protein-pudding.jpg",
       "intent_class": "vegan"
     },
     {
@@ -8651,7 +8651,7 @@
       "difficulty": "Easy",
       "servings": "2 servings",
       "canonical_url": "https://proteinpudding.co/pumpkin-spice-protein-pudding.html",
-      "image_url": "https://proteinpudding.co/images/pumpkin-spice-protein-pudding.png",
+      "image_url": "https://proteinpudding.co/recipe_images/pumpkin-spice-protein-pudding.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -8679,7 +8679,7 @@
       "difficulty": "Easy",
       "servings": "2 servings",
       "canonical_url": "https://proteinpudding.co/double-chocolate-protein-mousse.html",
-      "image_url": "https://proteinpudding.co/images/double-chocolate-protein-mousse.png",
+      "image_url": "https://proteinpudding.co/recipe_images/double-chocolate-protein-mousse.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -8709,7 +8709,7 @@
       "difficulty": "Easy",
       "servings": "2 servings",
       "canonical_url": "https://proteinpudding.co/mixed-berry-chia-protein-pudding.html",
-      "image_url": "https://proteinpudding.co/images/mixed-berry-chia-protein-pudding.png",
+      "image_url": "https://proteinpudding.co/recipe_images/mixed-berry-chia-protein-pudding.jpg",
       "intent_class": "vegan"
     },
     {
@@ -8737,7 +8737,7 @@
       "difficulty": "Easy",
       "servings": "2 servings",
       "canonical_url": "https://proteinpudding.co/key-lime-protein-pudding.html",
-      "image_url": "https://proteinpudding.co/images/key-lime-protein-pudding.png",
+      "image_url": "https://proteinpudding.co/recipe_images/key-lime-protein-pudding.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -8766,7 +8766,7 @@
       "difficulty": "Easy",
       "servings": "2 servings",
       "canonical_url": "https://proteinpudding.co/chocolate-hazelnut-protein-pudding.html",
-      "image_url": "https://proteinpudding.co/images/chocolate-hazelnut-protein-pudding.png",
+      "image_url": "https://proteinpudding.co/recipe_images/chocolate-hazelnut-protein-pudding.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -8796,7 +8796,7 @@
       "difficulty": "Easy",
       "servings": "2 parfaits",
       "canonical_url": "https://proteinpudding.co/black-forest-parfait-protein-pudding.html",
-      "image_url": "https://proteinpudding.co/images/black-forest-parfait-protein-pudding.png",
+      "image_url": "https://proteinpudding.co/recipe_images/black-forest-parfait-protein-pudding.jpg",
       "intent_class": "quick-snack"
     },
     {
@@ -8826,7 +8826,7 @@
       "difficulty": "Easy",
       "servings": "2 servings",
       "canonical_url": "https://proteinpudding.co/gluten-free-chocolate-chia-protein-pudding.html",
-      "image_url": "https://proteinpudding.co/images/gluten-free-chocolate-chia-protein-pudding.png",
+      "image_url": "https://proteinpudding.co/recipe_images/gluten-free-chocolate-chia-protein-pudding.jpg",
       "intent_class": "gluten-free"
     },
     {
@@ -8856,7 +8856,7 @@
       "difficulty": "Easy",
       "servings": "4 servings",
       "canonical_url": "https://proteinpudding.co/dairy-free-vanilla-coconut-protein-pudding.html",
-      "image_url": "https://proteinpudding.co/images/dairy-free-vanilla-coconut-protein-pudding.png",
+      "image_url": "https://proteinpudding.co/recipe_images/dairy-free-vanilla-coconut-protein-pudding.jpg",
       "intent_class": "vegan"
     },
     {
@@ -8886,7 +8886,7 @@
       "difficulty": "Easy",
       "servings": "2 servings",
       "canonical_url": "https://proteinpudding.co/gluten-free-chocolate-chia-protein-pudding.html",
-      "image_url": "https://proteinpudding.co/images/gluten-free-chocolate-chia-protein-pudding.png",
+      "image_url": "https://proteinpudding.co/recipe_images/gluten-free-chocolate-chia-protein-pudding.jpg",
       "intent_class": "gluten-free"
     },
     {
@@ -8916,7 +8916,7 @@
       "difficulty": "Easy",
       "servings": "4 servings",
       "canonical_url": "https://proteinpudding.co/dairy-free-vanilla-coconut-protein-pudding.html",
-      "image_url": "https://proteinpudding.co/images/dairy-free-vanilla-coconut-protein-pudding.png",
+      "image_url": "https://proteinpudding.co/recipe_images/dairy-free-vanilla-coconut-protein-pudding.jpg",
       "intent_class": "vegan"
     }
   ]
