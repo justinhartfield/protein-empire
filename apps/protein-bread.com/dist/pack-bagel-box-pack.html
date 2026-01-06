@@ -268,7 +268,7 @@
                     if (!successEl.id) {
                         successEl.id = 'form-success';
                         successEl.className = 'text-green-600 font-semibold text-center mt-4';
-                        form.parentNode.appendChild(successEl);
+                        document.getElementById('subscribe-form').parentNode.appendChild(successEl);
                     }
                     successEl.innerHTML = '<span class="flex items-center justify-center gap-2"><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>Check your email to confirm and get your PDF!</span>';
                     successEl.classList.remove('hidden');
