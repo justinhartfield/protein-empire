@@ -277,8 +277,23 @@
             const data = await response.json();
             
             if (data.success) {
-                // Redirect to success page
-                window.location.href = '/success-keto-crusts.html?email=' + encodeURIComponent(email);
+                if (data.doubleOptIn) {
+                    // Double opt-in mode: Show confirmation message
+                    const successEl = document.getElementById('form-success') || document.createElement('p');
+                    if (!successEl.id) {
+                        successEl.id = 'form-success';
+                        successEl.className = 'text-green-600 font-semibold text-center mt-4';
+                        form.parentNode.appendChild(successEl);
+                    }
+                    successEl.innerHTML = '<span class="flex items-center justify-center gap-2"><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>Check your email to confirm and get your PDF!</span>';
+                    successEl.classList.remove('hidden');
+                    submitBtn.textContent = 'CHECK YOUR EMAIL';
+                    submitBtn.classList.remove('bg-brand-500', 'hover:bg-brand-600');
+                    submitBtn.classList.add('bg-green-500', 'cursor-default');
+                } else {
+                    // Single opt-in mode: Redirect to success page
+                    window.location.href = '/success-keto-crusts.html?email=' + encodeURIComponent(email);
+                }
             } else {
                 throw new Error(data.message || 'Subscription failed');
             }

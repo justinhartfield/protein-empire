@@ -146,31 +146,77 @@
 
 <main class="flex-grow py-20">
     <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <span class="text-6xl mb-6 block">✅</span>
-        <h1 class="anton-text text-4xl uppercase mb-4 tracking-wider">YOU'RE ALL SET!</h1>
-        <p class="text-xl text-slate-600 mb-8">Your Quick Energy is ready to download.</p>
         
-        <a href="/guides/proteinbites-co-quick-energy.pdf" download
-            class="inline-flex items-center gap-3 bg-brand-500 text-white px-8 py-4 rounded-2xl font-bold anton-text text-lg hover:bg-brand-600 transition-colors shadow-xl shadow-brand-500/30 tracking-wider mb-8">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
-            </svg>
-            DOWNLOAD PDF
-        </a>
-        
-        <p class="text-slate-500 mb-12">Having trouble? Check your downloads folder or <a href="/pack-quick-energy.html" class="text-brand-600 hover:underline">try again</a>.</p>
-        
-        <div class="border-t border-slate-200 pt-12">
-            <h2 class="anton-text text-2xl uppercase mb-6 tracking-wider">EXPLORE MORE RECIPES</h2>
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="/" class="px-6 py-3 rounded-xl bg-white border border-slate-200 hover:border-brand-500 hover:text-brand-600 transition-all font-semibold">
-                    All Recipes
-                </a>
-                <a href="/#packs" class="px-6 py-3 rounded-xl bg-white border border-slate-200 hover:border-brand-500 hover:text-brand-600 transition-all font-semibold">
-                    More Recipe Packs
-                </a>
+        <!-- Loading State -->
+        <div id="loading-state" style="display: block;">
+            <div class="animate-pulse">
+                <span class="text-6xl mb-6 block">⏳</span>
+                <h1 class="anton-text text-4xl uppercase mb-4 tracking-wider">VERIFYING ACCESS...</h1>
+                <p class="text-xl text-slate-600">Please wait while we verify your subscription.</p>
             </div>
         </div>
+
+        <!-- Success State (shown after verification) -->
+        <div id="success-state" style="display: none;">
+            <span class="text-6xl mb-6 block">✅</span>
+            <h1 class="anton-text text-4xl uppercase mb-4 tracking-wider">YOU'RE ALL SET!</h1>
+            <p class="text-xl text-slate-600 mb-2">Your Quick Energy Pack is ready to download.</p>
+            <p class="text-sm text-slate-500 mb-8">Confirmed for: <span id="user-email" class="font-semibold text-slate-700"></span></p>
+            
+            <a id="download-btn" href="/guides/proteinbites-co-quick-energy.pdf" download
+                class="inline-flex items-center gap-3 bg-brand-500 text-white px-8 py-4 rounded-2xl font-bold anton-text text-lg hover:bg-brand-600 transition-colors shadow-xl shadow-brand-500/30 tracking-wider mb-8">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                </svg>
+                DOWNLOAD PDF
+            </a>
+            
+            <p class="text-slate-500 mb-12">We've also sent the download link to your email.</p>
+            
+            <div class="border-t border-slate-200 pt-12">
+                <h2 class="anton-text text-2xl uppercase mb-6 tracking-wider">EXPLORE MORE RECIPES</h2>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="/" class="px-6 py-3 rounded-xl bg-white border border-slate-200 hover:border-brand-500 hover:text-brand-600 transition-all font-semibold">
+                        All Recipes
+                    </a>
+                    <a href="/#packs" class="px-6 py-3 rounded-xl bg-white border border-slate-200 hover:border-brand-500 hover:text-brand-600 transition-all font-semibold">
+                        More Recipe Packs
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Access Denied State -->
+        <div id="denied-state" style="display: none;">
+            <span class="text-6xl mb-6 block">🔒</span>
+            <h1 class="anton-text text-4xl uppercase mb-4 tracking-wider">ACCESS REQUIRED</h1>
+            <p id="denied-message" class="text-xl text-slate-600 mb-8">
+                Please confirm your email first to access the download.
+            </p>
+            
+            <div class="bg-amber-50 border border-amber-200 rounded-xl p-6 mb-8 text-left">
+                <h3 class="font-bold text-amber-800 mb-2">How to get access:</h3>
+                <ol class="text-amber-700 space-y-2 list-decimal list-inside">
+                    <li>Request the recipe pack from the <a href="/pack-quick-energy.html" class="underline hover:text-amber-900">download page</a></li>
+                    <li>Check your email for a confirmation message</li>
+                    <li>Click the confirmation link in the email</li>
+                    <li>You'll be redirected here with full access!</li>
+                </ol>
+            </div>
+            
+            <a href="/pack-quick-energy.html" 
+                class="inline-flex items-center gap-3 bg-brand-500 text-white px-8 py-4 rounded-2xl font-bold anton-text text-lg hover:bg-brand-600 transition-colors shadow-xl shadow-brand-500/30 tracking-wider">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                </svg>
+                REQUEST DOWNLOAD LINK
+            </a>
+            
+            <p class="text-slate-500 mt-6 text-sm">
+                Already confirmed? Check your email for the download link.
+            </p>
+        </div>
+        
     </div>
 </main>
 
@@ -276,6 +322,93 @@
         }
     })();
     </script>
+
+<!-- Protected Success Page Script -->
+<script>
+/**
+ * Protected Success Page - Verifies access token before showing download content
+ */
+(function() {
+  'use strict';
+
+  const VERIFY_ENDPOINT = '/api/verify-access';
+
+  function getUrlParams() {
+    const params = new URLSearchParams(window.location.search);
+    return {
+      accessToken: params.get('access'),
+      email: params.get('email')
+    };
+  }
+
+  function showState(stateId) {
+    ['loading-state', 'success-state', 'denied-state'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.style.display = id === stateId ? 'block' : 'none';
+    });
+  }
+
+  async function verifyAccess(token) {
+    try {
+      const response = await fetch(`${VERIFY_ENDPOINT}?token=${encodeURIComponent(token)}`);
+      return await response.json();
+    } catch (error) {
+      console.error('[protected-success] Verification error:', error);
+      return { valid: false, message: 'Network error' };
+    }
+  }
+
+  async function init() {
+    const { accessToken, email } = getUrlParams();
+
+    // If no access token, show denied state
+    if (!accessToken) {
+      console.log('[protected-success] No access token provided');
+      showState('denied-state');
+      return;
+    }
+
+    // Show loading state while verifying
+    showState('loading-state');
+
+    // Verify the access token
+    const result = await verifyAccess(accessToken);
+
+    if (result.valid) {
+      console.log('[protected-success] Access verified for:', result.email);
+      
+      // Update email display
+      const emailEl = document.getElementById('user-email');
+      if (emailEl) emailEl.textContent = result.email;
+      
+      // Update download button
+      const btn = document.getElementById('download-btn');
+      if (btn && result.pdfUrl) {
+        btn.href = result.pdfUrl;
+      }
+      
+      showState('success-state');
+      
+      // Track event
+      if (typeof gtag === 'function') {
+        gtag('event', 'download_page_accessed', {
+          email: result.email,
+          pack: result.packSlug
+        });
+      }
+    } else {
+      console.log('[protected-success] Access denied:', result.message);
+      showState('denied-state');
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
 
 </body>
 </html>
