@@ -2,22 +2,11 @@
  * Netlify Serverless Function: Confirm
  * 
  * Handles email confirmation for double opt-in subscriptions.
+ * Verifies signed token, adds contact to SendGrid, and redirects to success page.
  * 
- * Flow:
- * 1. Validate token from URL query parameter
- * 2. Retrieve pending subscription from Netlify Blobs
- * 3. Check if token has expired
- * 4. Add contact to SendGrid marketing list
- * 5. Generate a secure access token for the success page
- * 6. Send PDF delivery email
- * 7. Delete pending subscription record
- * 8. Redirect to protected success page with access token
- * 
- * Environment Variables Required:
- * - SENDGRID_API_KEY: Your SendGrid API key
+ * Uses signed tokens (JWT-like) - no external storage needed.
  */
 
-import { getStore } from "@netlify/blobs";
 import sgClient from '@sendgrid/client';
 import sgMail from '@sendgrid/mail';
 import crypto from 'crypto';
@@ -27,13 +16,89 @@ const apiKey = process.env.SENDGRID_API_KEY || '';
 sgClient.setApiKey(apiKey);
 sgMail.setApiKey(apiKey);
 
-// Access token expiry (24 hours - for success page access)
+// Use SendGrid API key as signing secret (or a dedicated secret if available)
+const SIGNING_SECRET = process.env.TOKEN_SECRET || process.env.SENDGRID_API_KEY || 'default-secret';
+
+// Access token expiry (24 hours for success page access)
 const ACCESS_TOKEN_EXPIRY_HOURS = 24;
+
+/**
+ * Verify and decode a signed token
+ * Returns null if invalid or expired
+ */
+function verifySignedToken(token) {
+  try {
+    const [dataStr, signature] = token.split('.');
+    if (!dataStr || !signature) return null;
+    
+    // Verify signature
+    const expectedSignature = crypto
+      .createHmac('sha256', SIGNING_SECRET)
+      .update(dataStr)
+      .digest('base64url');
+    
+    if (signature !== expectedSignature) {
+      console.log('[confirm] Invalid token signature');
+      return null;
+    }
+    
+    // Decode and check expiry
+    const payload = JSON.parse(Buffer.from(dataStr, 'base64url').toString());
+    
+    if (payload.exp && Date.now() > payload.exp) {
+      console.log('[confirm] Token expired');
+      return null;
+    }
+    
+    return payload;
+  } catch (error) {
+    console.error('[confirm] Token verification error:', error);
+    return null;
+  }
+}
+
+/**
+ * Create a signed access token for the success page
+ */
+function createAccessToken(data) {
+  const payload = {
+    ...data,
+    exp: Date.now() + (ACCESS_TOKEN_EXPIRY_HOURS * 60 * 60 * 1000),
+    type: 'access'
+  };
+  
+  const dataStr = Buffer.from(JSON.stringify(payload)).toString('base64url');
+  const signature = crypto
+    .createHmac('sha256', SIGNING_SECRET)
+    .update(dataStr)
+    .digest('base64url');
+  
+  return `${dataStr}.${signature}`;
+}
+
+/**
+ * Add contact to SendGrid list
+ */
+async function subscribeContact(email, listId) {
+  const requestData = {
+    list_ids: [listId],
+    contacts: [{ email: email.toLowerCase().trim() }]
+  };
+
+  const request = {
+    url: '/v3/marketing/contacts',
+    method: 'PUT',
+    body: requestData
+  };
+
+  const [response] = await sgClient.request(request);
+  return response;
+}
 
 /**
  * Send PDF delivery email
  */
-async function sendPdfEmail({ to, from, packName, downloadUrl, siteName }) {
+async function sendPdfEmail(to, from, packName, downloadUrl, siteName) {
   const subject = `Your ${packName} is ready! 🎉`;
   
   const html = `
@@ -50,7 +115,7 @@ async function sendPdfEmail({ to, from, packName, downloadUrl, siteName }) {
       
       <h2 style="color: #1e293b;">Your ${packName} is ready!</h2>
       
-      <p>Thanks for confirming your email! Click the button below to get your free recipe pack:</p>
+      <p>Thanks for confirming your email! Click the button below to download your free recipe pack:</p>
       
       <div style="text-align: center; margin: 30px 0;">
         <a href="${downloadUrl}" 
@@ -67,25 +132,22 @@ async function sendPdfEmail({ to, from, packName, downloadUrl, siteName }) {
       <hr style="border: none; border-top: 1px solid #e2e8f0; margin: 30px 0;">
       
       <p style="color: #64748b; font-size: 12px; text-align: center;">
-        You're receiving this because you confirmed your subscription for the ${packName} from ${siteName}.<br>
+        You're receiving this because you confirmed your subscription to ${siteName}.<br>
         Questions? Just reply to this email.
       </p>
     </body>
     </html>
   `;
 
-  const text = `
-Your ${packName} is ready!
+  const text = `Your ${packName} is ready!\n\nDownload here: ${downloadUrl}`;
 
-Thanks for confirming your email! Click the link below to get your free recipe pack:
-
-${downloadUrl}
-
-You're receiving this because you confirmed your subscription for the ${packName} from ${siteName}.
-Questions? Just reply to this email.
-  `.trim();
-
-  await sgMail.send({ to, from, subject, html, text });
+  await sgMail.send({
+    to,
+    from,
+    subject,
+    html,
+    text
+  });
 }
 
 /**
@@ -100,14 +162,7 @@ function formatPackName(slug) {
     'holiday': 'Holiday Pack',
     'kids': 'Kids Pack',
     'no-bake': 'No-Bake Pack',
-    'peanut-butter': 'Peanut Butter Pack',
-    'bagel-box-pack': 'Bagel Box Pack',
-    'banana-bread-pack': 'Banana Bread Pack',
-    'gluten-free-dairy-free': 'Gluten-Free & Dairy-Free Pack',
-    'quick-bread-collection': 'Quick Bread Collection',
-    'sandwich-bread-pack': 'Sandwich Bread Pack',
-    'savory-bread-pack': 'Savory Bread Pack',
-    'sweet-bread-pack': 'Sweet Bread Pack'
+    'peanut-butter': 'Peanut Butter Pack'
   };
   
   return packNames[slug] || slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ') + ' Pack';
@@ -125,7 +180,6 @@ function generateErrorPage(title, message, siteUrl) {
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>${title}</title>
       <script src="https://cdn.tailwindcss.com"></script>
-      <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     </head>
     <body class="min-h-screen bg-slate-50 flex items-center justify-center p-4">
       <div class="max-w-md w-full bg-white rounded-2xl shadow-xl p-8 text-center">
@@ -146,149 +200,85 @@ function generateErrorPage(title, message, siteUrl) {
  * Main handler
  */
 export async function handler(event, context) {
+  // Get token from query string
   const token = event.queryStringParameters?.token;
-  const siteUrl = process.env.URL || 'https://example.com';
+  const siteUrl = process.env.URL || 'https://proteincookies.co';
   
-  // Validate token presence
   if (!token) {
-    console.error('[confirm] No token provided');
     return {
       statusCode: 400,
       headers: { 'Content-Type': 'text/html' },
       body: generateErrorPage(
         'Invalid Link',
-        'This confirmation link is invalid. Please request a new download link.',
+        'This confirmation link is missing required information.',
         siteUrl
       )
     };
   }
 
-  try {
-    // Get pending subscription from Netlify Blobs
-    const store = getStore("pending-subscriptions");
-    const pendingJson = await store.get(`pending:${token}`);
-    
-    if (!pendingJson) {
-      console.error(`[confirm] Token not found: ${token.substring(0, 8)}...`);
-      return {
-        statusCode: 404,
-        headers: { 'Content-Type': 'text/html' },
-        body: generateErrorPage(
-          'Link Expired or Already Used',
-          'This confirmation link has expired or has already been used. Please request a new download link.',
-          siteUrl
-        )
-      };
-    }
-
-    const pending = JSON.parse(pendingJson);
-    console.log(`[confirm] Processing confirmation for ${pending.email}`);
-    
-    // Check if token has expired
-    if (new Date(pending.expiresAt) < new Date()) {
-      console.log(`[confirm] Token expired for ${pending.email}`);
-      // Clean up expired token
-      await store.delete(`pending:${token}`);
-      return {
-        statusCode: 410,
-        headers: { 'Content-Type': 'text/html' },
-        body: generateErrorPage(
-          'Link Expired',
-          'This confirmation link has expired (links are valid for 15 days). Please request a new download link.',
-          pending.siteUrl || siteUrl
-        )
-      };
-    }
-
-    // Add contact to SendGrid marketing list
-    try {
-      const requestData = {
-        list_ids: [pending.listId],
-        contacts: [{ 
-          email: pending.email
-        }]
-      };
-
-      const request = {
-        url: '/v3/marketing/contacts',
-        method: 'PUT',
-        body: requestData
-      };
-
-      const [response] = await sgClient.request(request);
-      console.log(`[confirm] Contact ${pending.email} added to SendGrid list. Job ID: ${response.body?.job_id}`);
-    } catch (sgError) {
-      console.error('[confirm] Error adding contact to SendGrid:', sgError?.response?.body || sgError.message);
-      // Continue anyway - we still want to give them access to the PDF
-    }
-
-    // Generate access token for protected success page
-    const accessToken = crypto.randomBytes(32).toString('hex');
-    const accessExpiresAt = new Date(Date.now() + ACCESS_TOKEN_EXPIRY_HOURS * 60 * 60 * 1000);
-    
-    // Store access token in Netlify Blobs
-    const accessStore = getStore("confirmed-access");
-    const accessData = {
-      email: pending.email,
-      packSlug: pending.packSlug,
-      pdfUrl: pending.pdfUrl,
-      siteName: pending.siteName,
-      confirmedAt: new Date().toISOString(),
-      expiresAt: accessExpiresAt.toISOString()
-    };
-    
-    await accessStore.set(`access:${accessToken}`, JSON.stringify(accessData), {
-      metadata: { 
-        email: pending.email,
-        expiresAt: accessData.expiresAt
-      }
-    });
-    console.log(`[confirm] Access token generated for ${pending.email}`);
-
-    // Send PDF delivery email
-    if (pending.pdfUrl && pending.fromEmail) {
-      try {
-        const packName = formatPackName(pending.packSlug);
-        await sendPdfEmail({
-          to: pending.email,
-          from: pending.fromEmail,
-          packName,
-          downloadUrl: pending.pdfUrl,
-          siteName: pending.siteName
-        });
-        console.log(`[confirm] PDF delivery email sent to ${pending.email}`);
-      } catch (emailError) {
-        console.error('[confirm] Error sending PDF email:', emailError?.response?.body || emailError.message);
-        // Continue anyway - they can still download from success page
-      }
-    }
-
-    // Delete pending subscription record
-    await store.delete(`pending:${token}`);
-    console.log(`[confirm] Pending subscription deleted for ${pending.email}`);
-
-    // Redirect to protected success page with access token
-    const successUrl = `${pending.siteUrl || siteUrl}/success-${pending.packSlug}.html?access=${accessToken}&email=${encodeURIComponent(pending.email)}`;
-    
+  // Verify the token
+  const data = verifySignedToken(token);
+  
+  if (!data) {
     return {
-      statusCode: 302,
-      headers: {
-        'Location': successUrl,
-        'Cache-Control': 'no-cache, no-store, must-revalidate'
-      },
-      body: ''
-    };
-
-  } catch (error) {
-    console.error('[confirm] Unexpected error:', error);
-    return {
-      statusCode: 500,
+      statusCode: 400,
       headers: { 'Content-Type': 'text/html' },
       body: generateErrorPage(
-        'Something Went Wrong',
-        'We encountered an error processing your confirmation. Please try again or contact support.',
+        'Link Expired or Invalid',
+        'This confirmation link has expired or is invalid. Please request a new download link from the recipe pack page.',
         siteUrl
       )
     };
   }
+
+  const { email, packSlug, pdfUrl, listId, fromEmail, siteName, siteUrl: tokenSiteUrl } = data;
+  const packName = formatPackName(packSlug);
+  const finalSiteUrl = tokenSiteUrl || siteUrl;
+
+  console.log(`[confirm] Processing confirmation for ${email}`);
+
+  // Add contact to SendGrid list
+  try {
+    await subscribeContact(email, listId);
+    console.log(`[confirm] Added ${email} to SendGrid list ${listId}`);
+  } catch (sgError) {
+    console.error('[confirm] SendGrid error:', sgError?.response?.body || sgError.message);
+    // Continue anyway - we still want to give them access to the PDF
+  }
+
+  // Send PDF delivery email
+  if (pdfUrl && fromEmail) {
+    try {
+      await sendPdfEmail(email, fromEmail, packName, pdfUrl, siteName);
+      console.log(`[confirm] PDF email sent to ${email}`);
+    } catch (emailError) {
+      console.error('[confirm] Email error:', emailError?.response?.body || emailError.message);
+      // Don't fail - contact is already subscribed
+    }
+  }
+
+  // Create access token for success page
+  const accessToken = createAccessToken({
+    email,
+    packSlug,
+    pdfUrl,
+    siteName
+  });
+
+  // Redirect to success page with access token
+  const successUrl = `${finalSiteUrl}/success-${packSlug}.html?access=${encodeURIComponent(accessToken)}`;
+  
+  console.log(`[confirm] Redirecting ${email} to success page`);
+
+  return {
+    statusCode: 302,
+    headers: {
+      'Location': successUrl,
+      'Cache-Control': 'no-cache, no-store, must-revalidate'
+    },
+    body: ''
+  };
 }
+
+// Export for use by verify-access.js
+export { verifySignedToken, createAccessToken };

@@ -4,11 +4,11 @@
  * Handles email subscription requests from the frontend.
  * Supports both single opt-in and double opt-in modes.
  * 
- * Double Opt-In Flow:
- * 1. Generate unique confirmation token
- * 2. Store pending subscription in Netlify Blobs
- * 3. Send confirmation email
- * 4. User must click confirmation link to complete subscription
+ * Double Opt-In Flow (using signed tokens - no external storage needed):
+ * 1. Generate signed confirmation token with embedded data
+ * 2. Send confirmation email with token
+ * 3. User clicks link, token is verified and decoded
+ * 4. Contact is added to SendGrid list
  * 
  * Environment Variables Required:
  * - SENDGRID_API_KEY: Your SendGrid API key
@@ -18,7 +18,6 @@
  * - DOUBLE_OPT_IN: Set to "true" to enable double opt-in
  */
 
-import { getStore } from "@netlify/blobs";
 import sgClient from '@sendgrid/client';
 import sgMail from '@sendgrid/mail';
 import crypto from 'crypto';
@@ -31,6 +30,63 @@ sgMail.setApiKey(apiKey);
 // Configuration
 const DOUBLE_OPT_IN_ENABLED = process.env.DOUBLE_OPT_IN === 'true';
 const CONFIRMATION_EXPIRY_DAYS = 15; // 15-day expiry for confirmation links
+
+// Use SendGrid API key as signing secret (or a dedicated secret if available)
+const SIGNING_SECRET = process.env.TOKEN_SECRET || process.env.SENDGRID_API_KEY || 'default-secret';
+
+/**
+ * Create a signed token containing the subscription data
+ * Format: base64(data).base64(signature)
+ */
+function createSignedToken(data) {
+  const payload = {
+    ...data,
+    exp: Date.now() + (CONFIRMATION_EXPIRY_DAYS * 24 * 60 * 60 * 1000)
+  };
+  
+  const dataStr = Buffer.from(JSON.stringify(payload)).toString('base64url');
+  const signature = crypto
+    .createHmac('sha256', SIGNING_SECRET)
+    .update(dataStr)
+    .digest('base64url');
+  
+  return `${dataStr}.${signature}`;
+}
+
+/**
+ * Verify and decode a signed token
+ * Returns null if invalid or expired
+ */
+function verifySignedToken(token) {
+  try {
+    const [dataStr, signature] = token.split('.');
+    if (!dataStr || !signature) return null;
+    
+    // Verify signature
+    const expectedSignature = crypto
+      .createHmac('sha256', SIGNING_SECRET)
+      .update(dataStr)
+      .digest('base64url');
+    
+    if (signature !== expectedSignature) {
+      console.log('[subscribe] Invalid token signature');
+      return null;
+    }
+    
+    // Decode and check expiry
+    const payload = JSON.parse(Buffer.from(dataStr, 'base64url').toString());
+    
+    if (payload.exp && Date.now() > payload.exp) {
+      console.log('[subscribe] Token expired');
+      return null;
+    }
+    
+    return payload;
+  } catch (error) {
+    console.error('[subscribe] Token verification error:', error);
+    return null;
+  }
+}
 
 /**
  * Add contact to SendGrid list (used in single opt-in mode)
@@ -269,52 +325,28 @@ export async function handler(event, context) {
     }
 
     // ============================================
-    // DOUBLE OPT-IN FLOW
+    // DOUBLE OPT-IN FLOW (using signed tokens)
     // ============================================
     if (DOUBLE_OPT_IN_ENABLED) {
       console.log(`[subscribe] Double opt-in enabled. Processing ${email}`);
       
-      // Generate secure confirmation token (256-bit)
-      const token = crypto.randomBytes(32).toString('hex');
-      
-      // Calculate expiry date (15 days from now)
-      const expiresAt = new Date(Date.now() + CONFIRMATION_EXPIRY_DAYS * 24 * 60 * 60 * 1000);
-      
-      // Prepare pending subscription data
-      const pendingData = {
+      // Create signed token with subscription data
+      const tokenData = {
         email: email.toLowerCase().trim(),
         packSlug: packSlug || 'starter',
         pdfUrl: pdfUrl || '',
         listId,
         fromEmail,
         siteName,
-        siteUrl,
-        createdAt: new Date().toISOString(),
-        expiresAt: expiresAt.toISOString()
+        siteUrl
       };
       
-      try {
-        // Store pending subscription in Netlify Blobs
-        const store = getStore("pending-subscriptions");
-        await store.set(`pending:${token}`, JSON.stringify(pendingData), {
-          metadata: { 
-            email: pendingData.email,
-            expiresAt: pendingData.expiresAt
-          }
-        });
-        console.log(`[subscribe] Stored pending subscription for ${email} with token ${token.substring(0, 8)}...`);
-      } catch (storeError) {
-        console.error('[subscribe] Error storing pending subscription:', storeError);
-        return {
-          statusCode: 500,
-          headers,
-          body: JSON.stringify({ success: false, message: 'Failed to process subscription' })
-        };
-      }
+      const token = createSignedToken(tokenData);
+      console.log(`[subscribe] Created signed token for ${email}`);
 
       // Send confirmation email
       try {
-        const confirmUrl = `${siteUrl}/api/confirm?token=${token}`;
+        const confirmUrl = `${siteUrl}/api/confirm?token=${encodeURIComponent(token)}`;
         const packName = formatPackName(packSlug);
         
         await sendConfirmationEmail({
@@ -327,13 +359,6 @@ export async function handler(event, context) {
         console.log(`[subscribe] Confirmation email sent to ${email}`);
       } catch (emailError) {
         console.error('[subscribe] Error sending confirmation email:', emailError?.response?.body || emailError.message);
-        // Clean up the pending subscription since email failed
-        try {
-          const store = getStore("pending-subscriptions");
-          await store.delete(`pending:${token}`);
-        } catch (cleanupError) {
-          console.error('[subscribe] Error cleaning up pending subscription:', cleanupError);
-        }
         return {
           statusCode: 500,
           headers,
@@ -348,44 +373,47 @@ export async function handler(event, context) {
         body: JSON.stringify({
           success: true,
           doubleOptIn: true,
-          message: 'Please check your email to confirm your subscription!'
+          message: 'Please check your email to confirm your subscription'
         })
       };
     }
 
     // ============================================
-    // SINGLE OPT-IN FLOW (Original behavior)
+    // SINGLE OPT-IN FLOW (original behavior)
     // ============================================
-    console.log(`[subscribe] Single opt-in mode. Processing ${email}`);
+    console.log(`[subscribe] Single opt-in. Processing ${email}`);
 
-    // Subscribe contact to list (triggers welcome automation)
+    // Add contact to SendGrid list
     try {
       await subscribeContact(email, listId);
-      console.log(`[subscribe] Contact ${email} added to list ${listId}`);
-    } catch (error) {
-      console.error('[subscribe] Error adding contact:', error?.response?.body || error.message);
-      // Continue anyway - we still want to send the PDF
+      console.log(`[subscribe] Added ${email} to SendGrid list ${listId}`);
+    } catch (sgError) {
+      console.error('[subscribe] SendGrid error:', sgError?.response?.body || sgError.message);
+      return {
+        statusCode: 500,
+        headers,
+        body: JSON.stringify({ success: false, message: 'Failed to subscribe' })
+      };
     }
 
-    // Send PDF delivery email if URL provided
+    // Send PDF email if URL provided
     if (pdfUrl && fromEmail) {
       try {
         const packName = formatPackName(packSlug);
         await sendPdfEmail(email, fromEmail, packName, pdfUrl, siteName);
         console.log(`[subscribe] PDF email sent to ${email}`);
-      } catch (error) {
-        console.error('[subscribe] Error sending PDF email:', error?.response?.body || error.message);
-        // Don't fail the request - the subscription succeeded
+      } catch (emailError) {
+        console.error('[subscribe] Email error:', emailError?.response?.body || emailError.message);
+        // Don't fail the request if email fails - contact is already subscribed
       }
     }
 
     return {
       statusCode: 200,
       headers,
-      body: JSON.stringify({ 
+      body: JSON.stringify({
         success: true,
-        doubleOptIn: false,
-        message: 'Successfully subscribed!' 
+        message: 'Successfully subscribed'
       })
     };
 
@@ -394,7 +422,10 @@ export async function handler(event, context) {
     return {
       statusCode: 500,
       headers,
-      body: JSON.stringify({ success: false, message: 'An unexpected error occurred' })
+      body: JSON.stringify({ success: false, message: 'Failed to process subscription' })
     };
   }
 }
+
+// Export token functions for use by confirm.js
+export { createSignedToken, verifySignedToken, formatPackName };
