@@ -39,3 +39,13 @@
   for = "/*.pdf"
   [headers.values]
     Cache-Control = "public, max-age=86400"
+
+# Netlify Functions
+[functions]
+  directory = "../../netlify/functions"
+
+# Redirect /api/* to Netlify Functions
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
