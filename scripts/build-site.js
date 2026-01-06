@@ -248,6 +248,22 @@ async function buildSite(domain) {
         return ing;
       });
     }
+    
+    // Deduplicate ingredient IDs to prevent Alpine.js x-for key conflicts
+    if (recipe.ingredients && recipe.ingredients.length > 0) {
+      const idCounts = {};
+      recipe.ingredients = recipe.ingredients.map(ing => {
+        const baseId = ing.id;
+        if (idCounts[baseId] !== undefined) {
+          idCounts[baseId]++;
+          return { ...ing, id: `${baseId}-${idCounts[baseId]}` };
+        } else {
+          idCounts[baseId] = 0;
+          return ing;
+        }
+      });
+    }
+    
     // Normalize instructions to array of strings
     if (recipe.instructions && recipe.instructions.length > 0) {
       if (typeof recipe.instructions[0] === 'object') {
