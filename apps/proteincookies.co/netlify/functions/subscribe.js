@@ -324,6 +324,17 @@ export async function handler(event, context) {
       };
     }
 
+    if (!fromEmail) {
+      console.error('[subscribe] SENDGRID_FROM_EMAIL not configured');
+      return {
+        statusCode: 500,
+        headers,
+        body: JSON.stringify({ success: false, message: 'Sender email not configured' })
+      };
+    }
+
+    console.log(`[subscribe] Config: listId=${listId}, fromEmail=${fromEmail}, siteName=${siteName}, siteUrl=${siteUrl}, doubleOptIn=${DOUBLE_OPT_IN_ENABLED}`);
+
     // ============================================
     // DOUBLE OPT-IN FLOW (using signed tokens)
     // ============================================
