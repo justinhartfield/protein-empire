@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kid-Friendly Protein Recipes | High Protein Recipes</title>
-    <meta name="description" content="Kid-friendly protein recipes and snacks. Healthy treats children love with hidden nutrition.">
-    <meta name="keywords" content="kid friendly protein, healthy snacks for kids, protein treats, family recipes">
+    <title>{{page_title}} | High Protein Recipes</title>
+    <meta name="description" content="{{meta_description}}">
+    <meta name="keywords" content="{{keywords}}">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="Kid-Friendly Protein Recipes">
-    <meta property="og:description" content="Kid-friendly protein recipes and snacks. Healthy treats children love with hidden nutrition.">
-    <meta property="og:image" content="https://proteincookies.co/recipe_images/protein-cookies-for-kids.jpg">
-    <meta property="og:url" content="https://highprotein.recipes/kid-friendly/">
+    <meta property="og:title" content="{{page_title}}">
+    <meta property="og:description" content="{{meta_description}}">
+    <meta property="og:image" content="{{og_image}}">
+    <meta property="og:url" content="{{canonical_url}}">
     <meta property="og:type" content="website">
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Kid-Friendly Protein Recipes">
-    <meta name="twitter:description" content="Kid-friendly protein recipes and snacks. Healthy treats children love with hidden nutrition.">
+    <meta name="twitter:title" content="{{page_title}}">
+    <meta name="twitter:description" content="{{meta_description}}">
     
-    <link rel="canonical" href="https://highprotein.recipes/kid-friendly/">
+    <link rel="canonical" href="{{canonical_url}}">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -636,27 +636,7 @@
     
     <!-- Schema.org ItemList -->
     <script type="application/ld+json">
-    {
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  "name": "Kid-Friendly Protein Recipes",
-  "description": "Kid-friendly protein recipes and snacks. Healthy treats children love with hidden nutrition.",
-  "numberOfItems": 2,
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "url": "https://proteincookies.co/protein-cookies-for-kids.html",
-      "name": "Protein Cookies for Kids"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "url": "https://proteinbites.co/nut-free-protein-balls.html",
-      "name": "Nut-Free Protein Balls"
-    }
-  ]
-}
+    {{schema_json}}
     </script>
 </head>
 <body>
@@ -681,16 +661,16 @@
                 All Recipes Macro-Verified
             </div>
             
-            <h1>Kid-Friendly<br><span>Protein Recipes</span></h1>
+            <h1>{{hero_title_line1}}<br><span>{{hero_title_line2}}</span></h1>
             
-            <p class="hero-subtitle">Delicious protein-packed treats that kids actually love. Healthy snacks disguised as their favorite foods.</p>
+            <p class="hero-subtitle">{{hero_subtitle}}</p>
             
             <div class="hero-ctas">
                 <a href="#recipes" class="btn btn-primary">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                     </svg>
-                    Browse 2 Recipes
+                    Browse {{recipe_count}} Recipes
                 </a>
                 <a href="https://highprotein.recipes/starter-pack/" class="btn btn-secondary">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -702,15 +682,15 @@
             
             <div class="stats-bar">
                 <div class="stat-item">
-                    <div class="stat-value">2</div>
+                    <div class="stat-value">{{recipe_count}}</div>
                     <div class="stat-label">Recipes</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-value">14g</div>
+                    <div class="stat-value">{{avg_protein}}g</div>
                     <div class="stat-label">Avg Protein</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-value">2</div>
+                    <div class="stat-value">{{site_count}}</div>
                     <div class="stat-label">Recipe Sites</div>
                 </div>
                 <div class="stat-item">
@@ -730,82 +710,13 @@
     <section class="recipes-section" id="recipes">
         <div class="section-inner">
             <div class="section-header">
-                <span class="section-label">Family Favorites</span>
-                <h2 class="section-title">Protein Snacks Kids Love</h2>
-                <p class="section-subtitle">Healthy treats that taste like dessert but pack a protein punch</p>
+                <span class="section-label">{{section_label}}</span>
+                <h2 class="section-title">{{section_title}}</h2>
+                <p class="section-subtitle">{{section_subtitle}}</p>
             </div>
             
             <div class="recipe-grid">
-                
-                <a href="https://proteincookies.co/protein-cookies-for-kids.html" class="recipe-card" target="_blank" rel="noopener">
-                    <div class="recipe-image">
-                        <img src="https://proteincookies.co/recipe_images/protein-cookies-for-kids.jpg" alt="Protein Cookies for Kids" loading="lazy">
-                        <div class="recipe-badges">
-                            <span class="protein-badge">12g Protein</span>
-                            <span class="site-badge">ProteinCookies</span>
-                        </div>
-                    </div>
-                    <div class="recipe-content">
-                        <h3 class="recipe-title">Protein Cookies for Kids</h3>
-                        <div class="recipe-meta">
-                            <span class="recipe-meta-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                10 min
-                            </span>
-                            <span class="recipe-meta-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
-                                </svg>
-                                130 cal
-                            </span>
-                        </div>
-                        <div class="recipe-cta">
-                            <span class="view-recipe">
-                                View Recipe
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://proteinbites.co/nut-free-protein-balls.html" class="recipe-card" target="_blank" rel="noopener">
-                    <div class="recipe-image">
-                        <img src="https://proteinbites.co/recipe_images/nut-free-protein-balls.jpg" alt="Nut-Free Protein Balls" loading="lazy">
-                        <div class="recipe-badges">
-                            <span class="protein-badge">15g Protein</span>
-                            <span class="site-badge">ProteinBites</span>
-                        </div>
-                    </div>
-                    <div class="recipe-content">
-                        <h3 class="recipe-title">Nut-Free Protein Balls</h3>
-                        <div class="recipe-meta">
-                            <span class="recipe-meta-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                12 min
-                            </span>
-                            <span class="recipe-meta-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
-                                </svg>
-                                150 cal
-                            </span>
-                        </div>
-                        <div class="recipe-cta">
-                            <span class="view-recipe">
-                                View Recipe
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </a>
+                {{recipe_cards}}
             </div>
         </div>
     </section>
