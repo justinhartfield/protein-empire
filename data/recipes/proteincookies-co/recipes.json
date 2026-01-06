@@ -4,7 +4,7 @@
       "id": 1,
       "slug": "chocolate-chip-protein-cookies",
       "title": "Chocolate Chip Protein Cookies",
-      "description": "These classic soft and chewy chocolate chip cookies are not only irresistibly delicious but also packed with a powerful protein punch, delivering 21g of protein per serving to support your active lifestyle. The rich, melt-in-your-mouth texture pairs perfectly with the sweet bursts of chocolate chips, creating a satisfying treat that tastes just like the real thing\u2014without the guilt. Perfect for post-workout recovery or a midday snack, these cookies provide a balanced mix of macros to fuel your day while satisfying your sweet tooth. Their moist, chewy consistency makes them a comforting choice for meal prep, as they stay fresh and delightful for days when stored properly. For those with dietary restrictions, they can easily be made gluten-free by swapping in almond or oat flour, and vegan options are simple to achieve with plant-based protein powders and dairy-free chocolate chips. To get the best results, use high-quality protein powder for a smoother texture and avoid overmixing to keep the cookies tender. Enjoy these cookies fresh out of the oven or stored in an airtight container\u2014either way, they\u2019re a tasty way to boost your protein intake without sacrificing flavor.",
+      "description": "These classic soft and chewy chocolate chip cookies are not only irresistibly delicious but also packed with a powerful protein punch, delivering 21g of protein per serving to support your active lifestyle. The rich, melt-in-your-mouth texture pairs perfectly with the sweet bursts of chocolate chips, creating a satisfying treat that tastes just like the real thing—without the guilt. Perfect for post-workout recovery or a midday snack, these cookies provide a balanced mix of macros to fuel your day while satisfying your sweet tooth. Their moist, chewy consistency makes them a comforting choice for meal prep, as they stay fresh and delightful for days when stored properly. For those with dietary restrictions, they can easily be made gluten-free by swapping in almond or oat flour, and vegan options are simple to achieve with plant-based protein powders and dairy-free chocolate chips. To get the best results, use high-quality protein powder for a smoother texture and avoid overmixing to keep the cookies tender. Enjoy these cookies fresh out of the oven or stored in an airtight container—either way, they’re a tasty way to boost your protein intake without sacrificing flavor.",
       "protein": 21,
       "calories": 165,
       "carbs": 14,
@@ -41,7 +41,7 @@
       "instructions": [
         {
           "step": "Preheat and Prep",
-          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Line a baking sheet with parchment paper or a silicone baking mat."
+          "text": "Preheat your oven to 350°F (175°C). Line a baking sheet with parchment paper or a silicone baking mat."
         },
         {
           "step": "Mix Dry Ingredients",
@@ -94,13 +94,14 @@
           "domain": "proteinbars.co",
           "category": "protein bars"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 2,
       "slug": "peanut-butter-protein-cookies",
       "title": "Peanut Butter Protein Cookies",
-      "description": "Rich, flourless peanut butter cookies with an incredible 24g of protein per cookie, making them the perfect guilt-free indulgence for fitness enthusiasts. Crafted with just four simple ingredients, these cookies deliver a satisfying chewy texture with a slightly crispy edge, complemented by the creamy, nutty flavor of peanut butter that melts in your mouth. Each bite provides a balanced mix of healthy fats and high-quality protein, helping to fuel your muscles and keep you full longer. They\u2019re an ideal post-workout treat or a convenient snack for meal prep, offering a delicious way to boost your macros without sacrificing taste. Naturally gluten-free, these cookies can easily be adapted to vegan diets by using plant-based sweeteners or egg substitutes\u2014just be sure to select options that maintain the rich, moist texture. For best results, use natural, creamy peanut butter and avoid overbaking to preserve the soft, chewy interior. These cookies are not only a protein-packed delight but also a versatile, satisfying option for anyone looking to satisfy sweet cravings while staying on track with their nutritional goals.",
+      "description": "Rich, flourless peanut butter cookies with an incredible 24g of protein per cookie, making them the perfect guilt-free indulgence for fitness enthusiasts. Crafted with just four simple ingredients, these cookies deliver a satisfying chewy texture with a slightly crispy edge, complemented by the creamy, nutty flavor of peanut butter that melts in your mouth. Each bite provides a balanced mix of healthy fats and high-quality protein, helping to fuel your muscles and keep you full longer. They’re an ideal post-workout treat or a convenient snack for meal prep, offering a delicious way to boost your macros without sacrificing taste. Naturally gluten-free, these cookies can easily be adapted to vegan diets by using plant-based sweeteners or egg substitutes—just be sure to select options that maintain the rich, moist texture. For best results, use natural, creamy peanut butter and avoid overbaking to preserve the soft, chewy interior. These cookies are not only a protein-packed delight but also a versatile, satisfying option for anyone looking to satisfy sweet cravings while staying on track with their nutritional goals.",
       "protein": 24,
       "calories": 185,
       "carbs": 10,
@@ -134,7 +135,7 @@
       "instructions": [
         {
           "step": "Preheat",
-          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Line a baking sheet with parchment paper."
+          "text": "Preheat your oven to 350°F (175°C). Line a baking sheet with parchment paper."
         },
         {
           "step": "Mix Ingredients",
@@ -187,13 +188,14 @@
           "domain": "proteinbars.co",
           "category": "protein bars"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 3,
       "slug": "no-bake-protein-cookies",
       "title": "No-Bake Protein Cookies",
-      "description": "These no-bake protein cookies are a quick and effortless treat, ready in just 15 minutes, making them perfect for busy mornings or post-workout fuel. Packed with 18 grams of high-quality protein per serving, they support muscle recovery and keep you feeling satisfied longer, thanks to their balanced macros and wholesome ingredients. The fudgy, chewy texture offers a delightful contrast to traditional baked cookies, with rich chocolatey flavor and a hint of sweetness that will satisfy any sweet tooth. Enjoy these cookies as a nutritious snack after your workout, or prepare a batch ahead of time for convenient, on-the-go energy boosts throughout the week. They\u2019re versatile enough to fit into various dietary needs\u2014gluten-free options are easily achieved with gluten-free oats, and vegan versions can be made with plant-based protein and sweeteners. For best results, mix the ingredients thoroughly to ensure even distribution of protein powder and binders, then refrigerate for at least 30 minutes to firm up before enjoying. Whether you\u2019re aiming to hit your macros or just craving a healthy, indulgent treat, these cookies are a delicious, guilt-free way to stay on track.",
+      "description": "These no-bake protein cookies are a quick and effortless treat, ready in just 15 minutes, making them perfect for busy mornings or post-workout fuel. Packed with 18 grams of high-quality protein per serving, they support muscle recovery and keep you feeling satisfied longer, thanks to their balanced macros and wholesome ingredients. The fudgy, chewy texture offers a delightful contrast to traditional baked cookies, with rich chocolatey flavor and a hint of sweetness that will satisfy any sweet tooth. Enjoy these cookies as a nutritious snack after your workout, or prepare a batch ahead of time for convenient, on-the-go energy boosts throughout the week. They’re versatile enough to fit into various dietary needs—gluten-free options are easily achieved with gluten-free oats, and vegan versions can be made with plant-based protein and sweeteners. For best results, mix the ingredients thoroughly to ensure even distribution of protein powder and binders, then refrigerate for at least 30 minutes to firm up before enjoying. Whether you’re aiming to hit your macros or just craving a healthy, indulgent treat, these cookies are a delicious, guilt-free way to stay on track.",
       "protein": 18,
       "calories": 155,
       "carbs": 16,
@@ -277,13 +279,14 @@
           "domain": "proteinbars.co",
           "category": "protein bars"
         }
-      ]
+      ],
+      "intent_class": "meal-prep"
     },
     {
       "id": 4,
       "slug": "oatmeal-raisin-protein-cookies",
       "title": "Oatmeal Raisin Protein Cookies",
-      "description": "Soft and chewy oatmeal raisin cookies with 19g protein make for a satisfying, macro-friendly snack that hits all the right notes. Packed with high-quality protein, these cookies support muscle recovery and keep you energized throughout the day, making them perfect for post-workout refueling or a nutritious midday treat. The cinnamon-spiced aroma combined with tender oats and sweet raisins creates a delightful balance of flavors and textures\u2014crispy edges give way to a chewy, hearty center that\u2019s both comforting and indulgent. Rich in fiber, they aid digestion and promote sustained fullness, helping you stay on track with your health goals. For best results, use a combination of rolled oats and protein powder to ensure the perfect chewy texture and balanced macros. They\u2019re naturally gluten-free if you opt for certified gluten-free oats, and vegan versions can be easily made with plant-based protein and dairy-free sweeteners. These cookies are ideal for meal prep, allowing you to grab a wholesome snack anytime, whether as a quick breakfast or a nourishing afternoon pick-me-up. Enjoy them warm from the oven or stored in an airtight container for a convenient, delicious way to boost your protein intake while satisfying your sweet tooth.",
+      "description": "Soft and chewy oatmeal raisin cookies with 19g protein make for a satisfying, macro-friendly snack that hits all the right notes. Packed with high-quality protein, these cookies support muscle recovery and keep you energized throughout the day, making them perfect for post-workout refueling or a nutritious midday treat. The cinnamon-spiced aroma combined with tender oats and sweet raisins creates a delightful balance of flavors and textures—crispy edges give way to a chewy, hearty center that’s both comforting and indulgent. Rich in fiber, they aid digestion and promote sustained fullness, helping you stay on track with your health goals. For best results, use a combination of rolled oats and protein powder to ensure the perfect chewy texture and balanced macros. They’re naturally gluten-free if you opt for certified gluten-free oats, and vegan versions can be easily made with plant-based protein and dairy-free sweeteners. These cookies are ideal for meal prep, allowing you to grab a wholesome snack anytime, whether as a quick breakfast or a nourishing afternoon pick-me-up. Enjoy them warm from the oven or stored in an airtight container for a convenient, delicious way to boost your protein intake while satisfying your sweet tooth.",
       "protein": 19,
       "calories": 170,
       "carbs": 20,
@@ -321,7 +324,7 @@
       "instructions": [
         {
           "step": "Preheat",
-          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Line a baking sheet with parchment paper."
+          "text": "Preheat your oven to 350°F (175°C). Line a baking sheet with parchment paper."
         },
         {
           "step": "Mix Dry",
@@ -374,13 +377,14 @@
           "domain": "proteinbars.co",
           "category": "protein bars"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 5,
       "slug": "double-chocolate-protein-cookies",
       "title": "Double Chocolate Protein Cookies",
-      "description": "Decadent double chocolate cookies with 22g protein are the perfect indulgence for chocolate lovers seeking a nutritious boost. Rich cocoa creates a deep, satisfying flavor, while chocolate chips add delightful bursts of sweetness with every bite. These cookies boast a balanced macro profile\u2014high in protein to support muscle recovery and sustained energy, making them an ideal post-workout treat or mid-afternoon pick-me-up. Their tender, chewy texture combined with crispy edges offers a satisfying contrast that keeps you reaching for more. Whether enjoyed fresh out of the oven or packed into your meal prep for the week, they\u2019re versatile and easy to savor anytime. For those with dietary restrictions, they can be made gluten-free by using a gluten-free flour blend, and vegan options are simple with dairy-free chocolate chips and plant-based protein sources. For best results, slightly underbake to achieve a perfect chewy center, and store in an airtight container to maintain freshness. These cookies are as nourishing as they are indulgent, making them a guilt-free way to satisfy your sweet tooth while fueling your body.",
+      "description": "Decadent double chocolate cookies with 22g protein are the perfect indulgence for chocolate lovers seeking a nutritious boost. Rich cocoa creates a deep, satisfying flavor, while chocolate chips add delightful bursts of sweetness with every bite. These cookies boast a balanced macro profile—high in protein to support muscle recovery and sustained energy, making them an ideal post-workout treat or mid-afternoon pick-me-up. Their tender, chewy texture combined with crispy edges offers a satisfying contrast that keeps you reaching for more. Whether enjoyed fresh out of the oven or packed into your meal prep for the week, they’re versatile and easy to savor anytime. For those with dietary restrictions, they can be made gluten-free by using a gluten-free flour blend, and vegan options are simple with dairy-free chocolate chips and plant-based protein sources. For best results, slightly underbake to achieve a perfect chewy center, and store in an airtight container to maintain freshness. These cookies are as nourishing as they are indulgent, making them a guilt-free way to satisfy your sweet tooth while fueling your body.",
       "protein": 22,
       "calories": 175,
       "carbs": 15,
@@ -417,7 +421,7 @@
       "instructions": [
         {
           "step": "Preheat",
-          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Line a baking sheet with parchment paper."
+          "text": "Preheat your oven to 350°F (175°C). Line a baking sheet with parchment paper."
         },
         {
           "step": "Mix Dry",
@@ -470,13 +474,14 @@
           "domain": "proteinbars.co",
           "category": "protein bars"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 6,
       "slug": "snickerdoodle-protein-cookies",
       "title": "Snickerdoodle Protein Cookies",
-      "description": "Soft, pillowy snickerdoodle cookies rolled in cinnamon sugar with 20g of protein per serving. A guilt-free version of the classic that tastes just like the original. These cookies boast a tender, melt-in-your-mouth texture with a delightful cinnamon-sugar crust that offers just the right crunch on the outside while remaining irresistibly soft inside. Packed with high-quality protein, they make a perfect post-workout treat or a satisfying snack to fuel your day without piling on empty calories. With their balanced macros\u2014combining protein, moderate carbs, and healthy fats\u2014they support your fitness goals while indulging your sweet tooth. The recipe is naturally gluten-free if you use a gluten-free flour blend, and vegan options can be easily accommodated with plant-based protein powder and dairy-free butter. For best results, chill the dough for at least 30 minutes to enhance the cinnamon-sugar coating and improve the overall texture. These cookies are ideal for meal prep, allowing you to enjoy a protein-packed dessert anytime you crave a comforting, nostalgic treat that doesn\u2019t compromise your health.",
+      "description": "Soft, pillowy snickerdoodle cookies rolled in cinnamon sugar with 20g of protein per serving. A guilt-free version of the classic that tastes just like the original. These cookies boast a tender, melt-in-your-mouth texture with a delightful cinnamon-sugar crust that offers just the right crunch on the outside while remaining irresistibly soft inside. Packed with high-quality protein, they make a perfect post-workout treat or a satisfying snack to fuel your day without piling on empty calories. With their balanced macros—combining protein, moderate carbs, and healthy fats—they support your fitness goals while indulging your sweet tooth. The recipe is naturally gluten-free if you use a gluten-free flour blend, and vegan options can be easily accommodated with plant-based protein powder and dairy-free butter. For best results, chill the dough for at least 30 minutes to enhance the cinnamon-sugar coating and improve the overall texture. These cookies are ideal for meal prep, allowing you to enjoy a protein-packed dessert anytime you crave a comforting, nostalgic treat that doesn’t compromise your health.",
       "protein": 20,
       "calories": 160,
       "carbs": 14,
@@ -514,7 +519,7 @@
       "instructions": [
         {
           "step": "Preheat",
-          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Line a baking sheet with parchment paper."
+          "text": "Preheat your oven to 350°F (175°C). Line a baking sheet with parchment paper."
         },
         {
           "step": "Mix Dry",
@@ -571,13 +576,14 @@
           "domain": "proteinbars.co",
           "category": "protein bars"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 7,
       "slug": "birthday-cake-protein-cookies",
       "title": "Birthday Cake Protein Cookies",
-      "description": "These festive funfetti-style protein cookies are a delightful way to indulge while fueling your body with 19 grams of high-quality protein per serving, making them an excellent choice for post-workout recovery or a satisfying snack. Packed with vibrant sprinkles and rich cake batter flavor, each bite offers a perfect balance of soft, chewy texture and a subtle crunch from the colorful sprinkles, creating a celebration-worthy treat that\u2019s as fun to eat as it is nourishing. With a satisfying sweetness and a hint of vanilla, these cookies satisfy your sweet tooth without derailing your fitness goals. Thanks to their high protein content and moderate calories, they\u2019re ideal for meal prepping or enjoying as a guilt-free dessert anytime. They\u2019re naturally gluten-free if you opt for gluten-free flour, and vegan variations can be made using plant-based protein powders and egg substitutes. For best results, ensure your ingredients are well combined and chilled before baking to achieve a consistently soft and chewy texture. Whether enjoyed as a midday pick-me-up or a festive snack, these cookies make a tasty, nutritious addition to any healthy lifestyle.",
+      "description": "These festive funfetti-style protein cookies are a delightful way to indulge while fueling your body with 19 grams of high-quality protein per serving, making them an excellent choice for post-workout recovery or a satisfying snack. Packed with vibrant sprinkles and rich cake batter flavor, each bite offers a perfect balance of soft, chewy texture and a subtle crunch from the colorful sprinkles, creating a celebration-worthy treat that’s as fun to eat as it is nourishing. With a satisfying sweetness and a hint of vanilla, these cookies satisfy your sweet tooth without derailing your fitness goals. Thanks to their high protein content and moderate calories, they’re ideal for meal prepping or enjoying as a guilt-free dessert anytime. They’re naturally gluten-free if you opt for gluten-free flour, and vegan variations can be made using plant-based protein powders and egg substitutes. For best results, ensure your ingredients are well combined and chilled before baking to achieve a consistently soft and chewy texture. Whether enjoyed as a midday pick-me-up or a festive snack, these cookies make a tasty, nutritious addition to any healthy lifestyle.",
       "protein": 19,
       "calories": 165,
       "carbs": 16,
@@ -615,7 +621,7 @@
       "instructions": [
         {
           "step": "Preheat",
-          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Line a baking sheet with parchment paper."
+          "text": "Preheat your oven to 350°F (175°C). Line a baking sheet with parchment paper."
         },
         {
           "step": "Mix Dry",
@@ -672,13 +678,14 @@
           "domain": "proteinbars.co",
           "category": "protein bars"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 8,
       "slug": "vegan-protein-cookies",
       "title": "Vegan Protein Cookies",
-      "description": "These 100% plant-based protein cookies pack a powerful nutritional punch, boasting 17 grams of high-quality protein per serving to fuel your muscles and keep you satisfied throughout the day. Made with wholesome pea protein and flax eggs, they offer a dairy-free, vegan-friendly indulgence that doesn\u2019t compromise on flavor or texture. The cookies feature a satisfyingly chewy exterior with a slightly crisp edge, while the inside remains soft and gooey, offering a delightful balance of crunch and tenderness. Their subtly sweet, nutty taste makes them an irresistible treat after a workout or as a nutritious snack on busy days. Perfect for meal prepping, these cookies store well in the fridge and make for a quick, grab-and-go option when you need a clean, energizing boost. For those with gluten sensitivities, they can be easily made gluten-free by using certified gluten-free oats or flour. To get the best results, be sure to measure your ingredients accurately and avoid overbaking, which can dry out the cookies. Whether you're looking to support your fitness goals or simply craving a tasty, plant-based sweet, these cookies are an excellent addition to any health-conscious diet.",
+      "description": "These 100% plant-based protein cookies pack a powerful nutritional punch, boasting 17 grams of high-quality protein per serving to fuel your muscles and keep you satisfied throughout the day. Made with wholesome pea protein and flax eggs, they offer a dairy-free, vegan-friendly indulgence that doesn’t compromise on flavor or texture. The cookies feature a satisfyingly chewy exterior with a slightly crisp edge, while the inside remains soft and gooey, offering a delightful balance of crunch and tenderness. Their subtly sweet, nutty taste makes them an irresistible treat after a workout or as a nutritious snack on busy days. Perfect for meal prepping, these cookies store well in the fridge and make for a quick, grab-and-go option when you need a clean, energizing boost. For those with gluten sensitivities, they can be easily made gluten-free by using certified gluten-free oats or flour. To get the best results, be sure to measure your ingredients accurately and avoid overbaking, which can dry out the cookies. Whether you're looking to support your fitness goals or simply craving a tasty, plant-based sweet, these cookies are an excellent addition to any health-conscious diet.",
       "protein": 17,
       "calories": 160,
       "carbs": 18,
@@ -719,7 +726,7 @@
         },
         {
           "step": "Preheat",
-          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Line a baking sheet with parchment paper."
+          "text": "Preheat your oven to 350°F (175°C). Line a baking sheet with parchment paper."
         },
         {
           "step": "Mix Dry",
@@ -772,13 +779,14 @@
           "domain": "proteinbars.co",
           "category": "protein bars"
         }
-      ]
+      ],
+      "intent_class": "vegan"
     },
     {
       "id": 9,
       "slug": "gluten-free-protein-cookies",
       "title": "Gluten-Free Protein Cookies",
-      "description": "These celiac-safe gluten-free protein cookies are a perfect guilt-free indulgence, packing a robust 20 grams of high-quality protein per serving to support your active lifestyle. Made with certified gluten-free oats and almond flour, they offer a satisfying chewy texture with a slight crunch on the edges, complemented by a rich, nutty flavor that melts in your mouth. The balanced macros make these cookies an excellent post-workout snack or energy-boosting treat during busy days, helping to fuel muscle recovery and keep you full longer. Their versatile, allergen-friendly ingredients make them suitable for gluten-sensitive, celiac, and vegan diets\u2014simply swap honey for a vegan sweetener if needed. For best results, gently fold in extras like dark chocolate chips or chopped nuts to add texture and flavor, and store them in an airtight container to maintain their freshness. Whether you're meal prepping for the week or craving a wholesome snack on the go, these cookies are a delicious way to satisfy your sweet tooth while supporting your nutritional goals.",
+      "description": "These celiac-safe gluten-free protein cookies are a perfect guilt-free indulgence, packing a robust 20 grams of high-quality protein per serving to support your active lifestyle. Made with certified gluten-free oats and almond flour, they offer a satisfying chewy texture with a slight crunch on the edges, complemented by a rich, nutty flavor that melts in your mouth. The balanced macros make these cookies an excellent post-workout snack or energy-boosting treat during busy days, helping to fuel muscle recovery and keep you full longer. Their versatile, allergen-friendly ingredients make them suitable for gluten-sensitive, celiac, and vegan diets—simply swap honey for a vegan sweetener if needed. For best results, gently fold in extras like dark chocolate chips or chopped nuts to add texture and flavor, and store them in an airtight container to maintain their freshness. Whether you're meal prepping for the week or craving a wholesome snack on the go, these cookies are a delicious way to satisfy your sweet tooth while supporting your nutritional goals.",
       "protein": 20,
       "calories": 170,
       "carbs": 12,
@@ -815,7 +823,7 @@
       "instructions": [
         {
           "step": "Preheat",
-          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Line a baking sheet with parchment paper."
+          "text": "Preheat your oven to 350°F (175°C). Line a baking sheet with parchment paper."
         },
         {
           "step": "Mix Dry",
@@ -872,13 +880,14 @@
           "domain": "proteinbars.co",
           "category": "protein bars"
         }
-      ]
+      ],
+      "intent_class": "gluten-free"
     },
     {
       "id": 10,
       "slug": "protein-cookie-dough-bites",
       "title": "Protein Cookie Dough Bites",
-      "description": "These edible cookie dough bites pack an impressive 15 grams of protein per serving, making them an ideal guilt-free treat to fuel your active lifestyle. Crafted with heat-treated flour and egg-free ingredients, they\u2019re completely safe to enjoy raw\u2014perfect for a quick, satisfying snack or dessert. The rich, buttery flavor combined with a chewy yet tender texture creates a delightful balance that melts in your mouth, while hints of vanilla and chocolate chips add extra indulgence. With their high-protein content and balanced macros, they make a great post-workout recovery bite or a wholesome addition to your meal prep routine. For those with gluten sensitivities, simply swap in gluten-free oats or flour to keep this treat gluten-free, and vegan options are easily achieved by using plant-based protein powder and dairy-free chocolate chips. To get the best results, ensure your flour is thoroughly heat-treated to eliminate any raw flour concerns, and mix the ingredients until smooth and creamy for a uniform, gooey consistency. These bites are not only nourishing but also versatile\u2014perfect for satisfying sweet cravings without spiking your calorie intake.",
+      "description": "These edible cookie dough bites pack an impressive 15 grams of protein per serving, making them an ideal guilt-free treat to fuel your active lifestyle. Crafted with heat-treated flour and egg-free ingredients, they’re completely safe to enjoy raw—perfect for a quick, satisfying snack or dessert. The rich, buttery flavor combined with a chewy yet tender texture creates a delightful balance that melts in your mouth, while hints of vanilla and chocolate chips add extra indulgence. With their high-protein content and balanced macros, they make a great post-workout recovery bite or a wholesome addition to your meal prep routine. For those with gluten sensitivities, simply swap in gluten-free oats or flour to keep this treat gluten-free, and vegan options are easily achieved by using plant-based protein powder and dairy-free chocolate chips. To get the best results, ensure your flour is thoroughly heat-treated to eliminate any raw flour concerns, and mix the ingredients until smooth and creamy for a uniform, gooey consistency. These bites are not only nourishing but also versatile—perfect for satisfying sweet cravings without spiking your calorie intake.",
       "protein": 15,
       "calories": 140,
       "carbs": 14,
@@ -967,7 +976,8 @@
           "domain": "proteinbars.co",
           "category": "protein bars"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 11,
@@ -1011,7 +1021,7 @@
       "instructions": [
         {
           "step": "Preheat",
-          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Line a baking sheet with parchment paper."
+          "text": "Preheat your oven to 350°F (175°C). Line a baking sheet with parchment paper."
         },
         {
           "step": "Mix Dry",
@@ -1064,13 +1074,14 @@
           "domain": "proteinbars.co",
           "category": "protein bars"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 12,
       "slug": "protein-cookies-for-kids",
       "title": "Protein Cookies for Kids",
-      "description": "Kid-approved protein cookies with 12g of muscle-building protein and no artificial sweeteners make for a nutritious and delicious treat that parents can feel good about packing into lunchboxes or serving as an after-school snack. These cookies offer a satisfying combination of a soft, chewy center with just the right amount of crisp on the edges, delivering a tempting blend of sweet and nutty flavors that kids love. Packed with wholesome ingredients, they provide a balanced macronutrient boost\u2014perfect for supporting growing bodies, active kids, and those looking to increase their daily protein intake without sacrificing taste. The cookies are ideal for post-play or homework time, giving kids sustained energy and helping to curb afternoon cravings. For added versatility, they can be made gluten-free by using almond or oat flour, and vegan options are easy to create with plant-based protein powders and non-dairy sweeteners. To ensure the best texture, be sure to measure ingredients precisely and avoid overbaking; they\u2019re best enjoyed slightly soft and chewy. These cookies are a convenient, nutritious snack that fits seamlessly into busy family routines while supporting healthy, active lifestyles.",
+      "description": "Kid-approved protein cookies with 12g of muscle-building protein and no artificial sweeteners make for a nutritious and delicious treat that parents can feel good about packing into lunchboxes or serving as an after-school snack. These cookies offer a satisfying combination of a soft, chewy center with just the right amount of crisp on the edges, delivering a tempting blend of sweet and nutty flavors that kids love. Packed with wholesome ingredients, they provide a balanced macronutrient boost—perfect for supporting growing bodies, active kids, and those looking to increase their daily protein intake without sacrificing taste. The cookies are ideal for post-play or homework time, giving kids sustained energy and helping to curb afternoon cravings. For added versatility, they can be made gluten-free by using almond or oat flour, and vegan options are easy to create with plant-based protein powders and non-dairy sweeteners. To ensure the best texture, be sure to measure ingredients precisely and avoid overbaking; they’re best enjoyed slightly soft and chewy. These cookies are a convenient, nutritious snack that fits seamlessly into busy family routines while supporting healthy, active lifestyles.",
       "protein": 12,
       "calories": 130,
       "carbs": 16,
@@ -1107,7 +1118,7 @@
       "instructions": [
         {
           "step": "Preheat",
-          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Line a baking sheet with parchment paper."
+          "text": "Preheat your oven to 350°F (175°C). Line a baking sheet with parchment paper."
         },
         {
           "step": "Mix Dry",
@@ -1164,13 +1175,14 @@
           "domain": "proteinbars.co",
           "category": "protein bars"
         }
-      ]
+      ],
+      "intent_class": "kid-friendly"
     },
     {
       "id": 13,
       "slug": "cottage-cheese-protein-cookies",
       "title": "Cottage Cheese Protein Cookies",
-      "description": "These ultra-soft protein cookies, crafted with creamy cottage cheese, pack a impressive 23 grams of muscle-building protein per serving, making them an ideal choice for post-workout recovery or a satisfying snack to fuel your day. The secret ingredient not only boosts the protein content but also ensures each bite is incredibly moist, tender, and melt-in-your-mouth delicious. With a balanced blend of flavors and a satisfying, chewy texture, these cookies offer a guilt-free indulgence that keeps you full and energized for hours. Their rich, subtly cheesy taste pairs perfectly with a cup of coffee or a glass of milk, making them a versatile treat any time of day. Plus, they\u2019re gluten-free by nature\u2014just ensure your oats are certified gluten-free if needed\u2014and vegan alternatives can easily be made using plant-based protein sources and dairy-free cottage cheese substitutes. For best results, use high-quality cottage cheese and avoid overmixing to preserve that soft, delicate crumb. Whether enjoyed as a quick breakfast, a snack during busy afternoons, or part of your meal prep routine, these cookies are a delicious way to boost your protein intake without sacrificing flavor or texture.",
+      "description": "These ultra-soft protein cookies, crafted with creamy cottage cheese, pack a impressive 23 grams of muscle-building protein per serving, making them an ideal choice for post-workout recovery or a satisfying snack to fuel your day. The secret ingredient not only boosts the protein content but also ensures each bite is incredibly moist, tender, and melt-in-your-mouth delicious. With a balanced blend of flavors and a satisfying, chewy texture, these cookies offer a guilt-free indulgence that keeps you full and energized for hours. Their rich, subtly cheesy taste pairs perfectly with a cup of coffee or a glass of milk, making them a versatile treat any time of day. Plus, they’re gluten-free by nature—just ensure your oats are certified gluten-free if needed—and vegan alternatives can easily be made using plant-based protein sources and dairy-free cottage cheese substitutes. For best results, use high-quality cottage cheese and avoid overmixing to preserve that soft, delicate crumb. Whether enjoyed as a quick breakfast, a snack during busy afternoons, or part of your meal prep routine, these cookies are a delicious way to boost your protein intake without sacrificing flavor or texture.",
       "protein": 23,
       "calories": 155,
       "carbs": 12,
@@ -1211,7 +1223,7 @@
         },
         {
           "step": "Preheat",
-          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Line a baking sheet with parchment paper."
+          "text": "Preheat your oven to 350°F (175°C). Line a baking sheet with parchment paper."
         },
         {
           "step": "Mix Wet",
@@ -1264,13 +1276,14 @@
           "domain": "proteinbars.co",
           "category": "protein bars"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 14,
       "slug": "greek-yogurt-protein-cookies",
       "title": "Greek Yogurt Protein Cookies",
-      "description": "These incredibly moist protein cookies, crafted with creamy Greek yogurt, deliver a satisfying 21 grams of protein per serving, making them an ideal choice for post-workout recovery or a nourishing snack. The light, fluffy texture melts in your mouth, with a subtle tang from the yogurt that adds a delightful depth of flavor without overpowering sweetness. Packed with wholesome ingredients, they provide a balanced macro profile\u2014rich in protein, moderate in healthy carbs, and low in fat\u2014perfect for supporting muscle repair and sustained energy. Their versatile taste and soft bite make them an irresistible treat that can be enjoyed anytime, whether as an afternoon pick-me-up or part of a meal prep plan for busy weekdays. For gluten-sensitive individuals, simply use gluten-free oats and flour options to ensure the recipe suits your needs; vegans can swap Greek yogurt for plant-based alternatives like coconut or almond yogurt. To achieve the best results, be sure not to overmix the batter to maintain that light, airy consistency, and for extra flavor, consider adding mix-ins like dark chocolate chips or chopped nuts. These cookies are a delicious way to fuel your body while satisfying your sweet tooth\u2014guilt-free and packed with high-quality protein.",
+      "description": "These incredibly moist protein cookies, crafted with creamy Greek yogurt, deliver a satisfying 21 grams of protein per serving, making them an ideal choice for post-workout recovery or a nourishing snack. The light, fluffy texture melts in your mouth, with a subtle tang from the yogurt that adds a delightful depth of flavor without overpowering sweetness. Packed with wholesome ingredients, they provide a balanced macro profile—rich in protein, moderate in healthy carbs, and low in fat—perfect for supporting muscle repair and sustained energy. Their versatile taste and soft bite make them an irresistible treat that can be enjoyed anytime, whether as an afternoon pick-me-up or part of a meal prep plan for busy weekdays. For gluten-sensitive individuals, simply use gluten-free oats and flour options to ensure the recipe suits your needs; vegans can swap Greek yogurt for plant-based alternatives like coconut or almond yogurt. To achieve the best results, be sure not to overmix the batter to maintain that light, airy consistency, and for extra flavor, consider adding mix-ins like dark chocolate chips or chopped nuts. These cookies are a delicious way to fuel your body while satisfying your sweet tooth—guilt-free and packed with high-quality protein.",
       "protein": 21,
       "calories": 150,
       "carbs": 14,
@@ -1307,7 +1320,7 @@
       "instructions": [
         {
           "step": "Preheat",
-          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Line a baking sheet with parchment paper."
+          "text": "Preheat your oven to 350°F (175°C). Line a baking sheet with parchment paper."
         },
         {
           "step": "Mix Wet",
@@ -1364,13 +1377,14 @@
           "domain": "proteinbars.co",
           "category": "protein bars"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 15,
       "slug": "almond-flour-protein-cookies",
       "title": "Almond Flour Protein Cookies",
-      "description": "These delicious low-carb almond flour protein cookies pack a powerful punch with 19 grams of high-quality protein per serving, making them a perfect choice for supporting muscle recovery and keeping you energized throughout the day. With their tender, slightly chewy texture and a satisfying crunch from toasted almond flour, each bite offers a rich, nutty flavor that\u2019s both wholesome and indulgent. The keto-friendly formulation contains only 8 grams of net carbs per cookie, making it an ideal treat for those following low-carb or ketogenic diets. Whether enjoyed post-workout to replenish your muscles or as a nutritious snack to curb midday cravings, these cookies fit seamlessly into any meal plan. They\u2019re also versatile for meal prep, staying fresh in the fridge for several days\u2014just reheat or enjoy as-is. For vegan or dairy-free options, simply swap eggs for flaxseed or chia seed gel, and use plant-based protein powder. To achieve the best texture, be sure not to overmix the batter and to slightly underbake for a softer center. These cookies are a guilt-free, delicious way to boost your daily protein intake while satisfying your sweet tooth.",
+      "description": "These delicious low-carb almond flour protein cookies pack a powerful punch with 19 grams of high-quality protein per serving, making them a perfect choice for supporting muscle recovery and keeping you energized throughout the day. With their tender, slightly chewy texture and a satisfying crunch from toasted almond flour, each bite offers a rich, nutty flavor that’s both wholesome and indulgent. The keto-friendly formulation contains only 8 grams of net carbs per cookie, making it an ideal treat for those following low-carb or ketogenic diets. Whether enjoyed post-workout to replenish your muscles or as a nutritious snack to curb midday cravings, these cookies fit seamlessly into any meal plan. They’re also versatile for meal prep, staying fresh in the fridge for several days—just reheat or enjoy as-is. For vegan or dairy-free options, simply swap eggs for flaxseed or chia seed gel, and use plant-based protein powder. To achieve the best texture, be sure not to overmix the batter and to slightly underbake for a softer center. These cookies are a guilt-free, delicious way to boost your daily protein intake while satisfying your sweet tooth.",
       "protein": 19,
       "calories": 175,
       "carbs": 10,
@@ -1407,7 +1421,7 @@
       "instructions": [
         {
           "step": "Preheat",
-          "text": "Preheat your oven to 325\u00b0F (165\u00b0C). Line a baking sheet with parchment paper."
+          "text": "Preheat your oven to 325°F (165°C). Line a baking sheet with parchment paper."
         },
         {
           "step": "Mix Dry",
@@ -1464,13 +1478,14 @@
           "domain": "proteinbars.co",
           "category": "protein bars"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 16,
       "slug": "pumpkin-spice-protein-cookies",
       "title": "Pumpkin Spice Protein Cookies",
-      "description": "Soft, cakey pumpkin spice cookies with 18g protein. Perfect for fall with warm spices and real pumpkin puree. These cookies are not only irresistibly tender and melt-in-your-mouth delicious, but they also pack a powerful protein punch to fuel your active lifestyle. With a balanced blend of healthy carbs, fats, and fiber, they make an excellent post-workout treat or a satisfying snack to keep you energized throughout the day. Their rich pumpkin flavor and aromatic spices create a cozy, seasonal vibe that\u2019s perfect for autumn gatherings or a quick grab-and-go boost. For those with dietary preferences, they can easily be made gluten-free with almond or oat flour, and vegan options are simple with plant-based protein powder and egg replacements. To get the best results, be sure to measure your pumpkin puree and avoid overmixing to keep the cookies light and fluffy. Enjoy these cookies warm from the oven or store them in an airtight container for a convenient, nutritious snack anytime you need a comforting, protein-rich pick-me-up.",
+      "description": "Soft, cakey pumpkin spice cookies with 18g protein. Perfect for fall with warm spices and real pumpkin puree. These cookies are not only irresistibly tender and melt-in-your-mouth delicious, but they also pack a powerful protein punch to fuel your active lifestyle. With a balanced blend of healthy carbs, fats, and fiber, they make an excellent post-workout treat or a satisfying snack to keep you energized throughout the day. Their rich pumpkin flavor and aromatic spices create a cozy, seasonal vibe that’s perfect for autumn gatherings or a quick grab-and-go boost. For those with dietary preferences, they can easily be made gluten-free with almond or oat flour, and vegan options are simple with plant-based protein powder and egg replacements. To get the best results, be sure to measure your pumpkin puree and avoid overmixing to keep the cookies light and fluffy. Enjoy these cookies warm from the oven or store them in an airtight container for a convenient, nutritious snack anytime you need a comforting, protein-rich pick-me-up.",
       "protein": 18,
       "calories": 145,
       "carbs": 16,
@@ -1508,7 +1523,7 @@
       "instructions": [
         {
           "step": "Preheat",
-          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Line a baking sheet with parchment paper."
+          "text": "Preheat your oven to 350°F (175°C). Line a baking sheet with parchment paper."
         },
         {
           "step": "Mix Dry",
@@ -1565,13 +1580,14 @@
           "domain": "proteinbars.co",
           "category": "protein bars"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 17,
       "slug": "lemon-protein-cookies",
       "title": "Lemon Protein Cookies",
-      "description": "Bright, zesty lemon cookies with 17g protein per serving offer a delicious way to fuel your day. Packed with high-quality ingredients, these cookies deliver a satisfying balance of macros\u2014rich in protein, moderate in healthy fats, and lightly sweetened with natural citrus notes\u2014making them an excellent choice for post-workout recovery or a midday pick-me-up. The tender crumb melts in your mouth, while the refreshing lemon flavor invigorates your palate with each bite, leaving behind a subtle tang that perfectly complements their light, airy texture. Enjoy them straight from the oven for a warm treat, or prepare a batch in advance for easy, on-the-go snacking throughout the week. They can easily be adapted for gluten-free diets by using almond or oat flour, and vegan options are simple to achieve with plant-based protein powders and dairy-free glaze. For best results, be sure not to overmix the dough to keep the cookies tender and avoid spreading too much during baking. Whether you're craving a guilt-free dessert or a protein-packed snack, these lemon cookies are a bright, refreshing addition to your fitness-focused repertoire.",
+      "description": "Bright, zesty lemon cookies with 17g protein per serving offer a delicious way to fuel your day. Packed with high-quality ingredients, these cookies deliver a satisfying balance of macros—rich in protein, moderate in healthy fats, and lightly sweetened with natural citrus notes—making them an excellent choice for post-workout recovery or a midday pick-me-up. The tender crumb melts in your mouth, while the refreshing lemon flavor invigorates your palate with each bite, leaving behind a subtle tang that perfectly complements their light, airy texture. Enjoy them straight from the oven for a warm treat, or prepare a batch in advance for easy, on-the-go snacking throughout the week. They can easily be adapted for gluten-free diets by using almond or oat flour, and vegan options are simple to achieve with plant-based protein powders and dairy-free glaze. For best results, be sure not to overmix the dough to keep the cookies tender and avoid spreading too much during baking. Whether you're craving a guilt-free dessert or a protein-packed snack, these lemon cookies are a bright, refreshing addition to your fitness-focused repertoire.",
       "protein": 17,
       "calories": 150,
       "carbs": 15,
@@ -1609,7 +1625,7 @@
       "instructions": [
         {
           "step": "Preheat",
-          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Line a baking sheet with parchment paper."
+          "text": "Preheat your oven to 350°F (175°C). Line a baking sheet with parchment paper."
         },
         {
           "step": "Mix Dry",
@@ -1666,13 +1682,14 @@
           "domain": "proteinbars.co",
           "category": "protein bars"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 18,
       "slug": "monster-protein-cookies",
       "title": "Monster Protein Cookies",
-      "description": "Loaded monster cookies with oats, peanut butter, chocolate, and M&Ms with 20g protein. A protein-packed version of the classic that delivers both indulgence and nutrition in every bite. These cookies boast a satisfying chewy texture from hearty oats, complemented by the creamy richness of peanut butter and bursts of sweetness from chocolate chunks and colorful M&Ms. With each cookie offering around 20 grams of protein, they're an excellent choice for post-workout recovery or a satisfying snack to fuel your day. The balanced macros make them a great option for those looking to boost their protein intake without sacrificing flavor. Perfect for meal prep, you can enjoy these cookies fresh or stored in the fridge for a quick, nutritious treat anytime. They're naturally gluten-free if you opt for gluten-free oats, and vegan variants can be made using plant-based peanut butter and dairy-free chocolate. For best results, slightly underbake if you prefer a softer center or let them cool completely for a firmer bite\u2014either way, they're irresistibly delicious and satisfying.",
+      "description": "Loaded monster cookies with oats, peanut butter, chocolate, and M&Ms with 20g protein. A protein-packed version of the classic that delivers both indulgence and nutrition in every bite. These cookies boast a satisfying chewy texture from hearty oats, complemented by the creamy richness of peanut butter and bursts of sweetness from chocolate chunks and colorful M&Ms. With each cookie offering around 20 grams of protein, they're an excellent choice for post-workout recovery or a satisfying snack to fuel your day. The balanced macros make them a great option for those looking to boost their protein intake without sacrificing flavor. Perfect for meal prep, you can enjoy these cookies fresh or stored in the fridge for a quick, nutritious treat anytime. They're naturally gluten-free if you opt for gluten-free oats, and vegan variants can be made using plant-based peanut butter and dairy-free chocolate. For best results, slightly underbake if you prefer a softer center or let them cool completely for a firmer bite—either way, they're irresistibly delicious and satisfying.",
       "protein": 20,
       "calories": 195,
       "carbs": 20,
@@ -1710,7 +1727,7 @@
       "instructions": [
         {
           "step": "Preheat",
-          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Line a baking sheet with parchment paper."
+          "text": "Preheat your oven to 350°F (175°C). Line a baking sheet with parchment paper."
         },
         {
           "step": "Mix Dry",
@@ -1767,7 +1784,8 @@
           "domain": "proteinbars.co",
           "category": "protein bars"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 19,
@@ -1810,7 +1828,7 @@
       "instructions": [
         {
           "step": "Preheat",
-          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Line a baking sheet with parchment paper."
+          "text": "Preheat your oven to 350°F (175°C). Line a baking sheet with parchment paper."
         },
         {
           "step": "Mix Dry",
@@ -1867,7 +1885,8 @@
           "domain": "proteinbars.co",
           "category": "protein bars"
         }
-      ]
+      ],
+      "intent_class": "high-protein-30g"
     },
     {
       "id": 20,
@@ -1911,7 +1930,7 @@
       "instructions": [
         {
           "step": "Preheat",
-          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Line a baking sheet with parchment paper."
+          "text": "Preheat your oven to 350°F (175°C). Line a baking sheet with parchment paper."
         },
         {
           "step": "Mix Dry",
@@ -1972,13 +1991,14 @@
           "domain": "proteinbars.co",
           "category": "protein bars"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 21,
       "slug": "banana-protein-cookies",
       "title": "Banana Protein Cookies",
-      "description": "Naturally sweetened banana cookies with 16g of protein per serving, making them a delicious and nourishing treat for any time of day. Crafted with ripe bananas, these cookies deliver a moist, tender crumb with a subtle natural sweetness that satisfies your cravings without added sugars. Packed with high-quality protein, they support muscle recovery and help keep you full longer, making them an ideal post-workout snack or a satisfying midday pick-me-up. The chewy texture combined with hints of wholesome ingredients creates a flavor that\u2019s both comforting and satisfying, with hints of banana and a light, nutty undertone. These cookies are versatile enough for meal prep, allowing you to batch them ahead of time for convenient, nutritious snacking throughout the week. For those with dietary restrictions, they can easily be made gluten-free by using gluten-free oats or flour, and vegan options are simple with plant-based protein powders and flax eggs. To get the best texture, be sure to mash the bananas thoroughly and avoid over-baking to keep them soft and moist. Whether enjoyed fresh or stored in an airtight container, these cookies are a guilt-free indulgence that fuels your body and delights your senses.",
+      "description": "Naturally sweetened banana cookies with 16g of protein per serving, making them a delicious and nourishing treat for any time of day. Crafted with ripe bananas, these cookies deliver a moist, tender crumb with a subtle natural sweetness that satisfies your cravings without added sugars. Packed with high-quality protein, they support muscle recovery and help keep you full longer, making them an ideal post-workout snack or a satisfying midday pick-me-up. The chewy texture combined with hints of wholesome ingredients creates a flavor that’s both comforting and satisfying, with hints of banana and a light, nutty undertone. These cookies are versatile enough for meal prep, allowing you to batch them ahead of time for convenient, nutritious snacking throughout the week. For those with dietary restrictions, they can easily be made gluten-free by using gluten-free oats or flour, and vegan options are simple with plant-based protein powders and flax eggs. To get the best texture, be sure to mash the bananas thoroughly and avoid over-baking to keep them soft and moist. Whether enjoyed fresh or stored in an airtight container, these cookies are a guilt-free indulgence that fuels your body and delights your senses.",
       "protein": 16,
       "calories": 140,
       "carbs": 18,
@@ -2016,7 +2036,7 @@
       "instructions": [
         {
           "step": "Preheat",
-          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Line a baking sheet with parchment paper."
+          "text": "Preheat your oven to 350°F (175°C). Line a baking sheet with parchment paper."
         },
         {
           "step": "Mix Dry",
@@ -2073,13 +2093,14 @@
           "domain": "proteinbars.co",
           "category": "protein bars"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 22,
       "slug": "sugar-free-protein-cookies",
       "title": "Sugar-Free Protein Cookies",
-      "description": "These sugar-free protein cookies are a delicious way to boost your daily protein intake with 19 grams of high-quality protein per serving, making them an ideal post-workout treat or satisfying snack to fuel your day. Sweetened naturally with monk fruit and stevia, they are perfect for those managing blood sugar levels, offering a diabetic-friendly and keto-approved indulgence without sacrificing flavor. The cookies boast a satisfying crunch on the outside with a soft, chewy interior that melts in your mouth, complemented by a subtle sweetness and rich, nutty undertones. Packed with wholesome ingredients, they provide an excellent balance of macros\u2014low in carbs and healthy fats\u2014supporting your fitness and nutrition goals. These cookies are versatile and can easily be adapted for vegan diets with plant-based protein powders and dairy-free ingredients. For the best texture, ensure you measure your ingredients accurately and allow the cookies to cool completely before enjoying. Perfect for meal prep, you can store them in an airtight container for a quick, nutritious snack anytime you need a protein boost or a guilt-free dessert.",
+      "description": "These sugar-free protein cookies are a delicious way to boost your daily protein intake with 19 grams of high-quality protein per serving, making them an ideal post-workout treat or satisfying snack to fuel your day. Sweetened naturally with monk fruit and stevia, they are perfect for those managing blood sugar levels, offering a diabetic-friendly and keto-approved indulgence without sacrificing flavor. The cookies boast a satisfying crunch on the outside with a soft, chewy interior that melts in your mouth, complemented by a subtle sweetness and rich, nutty undertones. Packed with wholesome ingredients, they provide an excellent balance of macros—low in carbs and healthy fats—supporting your fitness and nutrition goals. These cookies are versatile and can easily be adapted for vegan diets with plant-based protein powders and dairy-free ingredients. For the best texture, ensure you measure your ingredients accurately and allow the cookies to cool completely before enjoying. Perfect for meal prep, you can store them in an airtight container for a quick, nutritious snack anytime you need a protein boost or a guilt-free dessert.",
       "protein": 19,
       "calories": 145,
       "carbs": 10,
@@ -2117,7 +2138,7 @@
       "instructions": [
         {
           "step": "Preheat",
-          "text": "Preheat your oven to 325\u00b0F (165\u00b0C). Line a baking sheet with parchment paper."
+          "text": "Preheat your oven to 325°F (165°C). Line a baking sheet with parchment paper."
         },
         {
           "step": "Mix Dry",
@@ -2174,13 +2195,14 @@
           "domain": "proteinbars.co",
           "category": "protein bars"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 23,
       "slug": "thin-crispy-protein-cookies",
       "title": "Thin & Crispy Protein Cookies",
-      "description": "These perfectly thin and crispy protein cookies deliver a satisfying crunch with every bite, making them an irresistible treat for snack lovers and fitness enthusiasts alike. Packed with 15 grams of high-quality protein per serving, they provide an excellent way to fuel your muscles and support muscle recovery, whether you're post-workout or need a midday energy boost. The delicate, wafer-thin texture melts in your mouth, offering a delightful balance of sweetness and crunch that keeps you coming back for more. With only 135 calories per serving, they\u2019re an ideal guilt-free snack that can easily fit into your meal prep routine or be enjoyed on-the-go. For those with dietary preferences, these cookies can be made gluten-free by using alternative flours and can be vegan-friendly with plant-based protein powders and swaps. To get the best results, ensure your dough is well chilled before baking for crispier edges, and avoid overbaking to maintain that perfect crispy yet tender bite. Whether you're craving a crunchy snack after the gym or a quick, protein-packed treat during a busy day, these cookies are a delicious and nutritious choice to satisfy your cravings while supporting your fitness goals.",
+      "description": "These perfectly thin and crispy protein cookies deliver a satisfying crunch with every bite, making them an irresistible treat for snack lovers and fitness enthusiasts alike. Packed with 15 grams of high-quality protein per serving, they provide an excellent way to fuel your muscles and support muscle recovery, whether you're post-workout or need a midday energy boost. The delicate, wafer-thin texture melts in your mouth, offering a delightful balance of sweetness and crunch that keeps you coming back for more. With only 135 calories per serving, they’re an ideal guilt-free snack that can easily fit into your meal prep routine or be enjoyed on-the-go. For those with dietary preferences, these cookies can be made gluten-free by using alternative flours and can be vegan-friendly with plant-based protein powders and swaps. To get the best results, ensure your dough is well chilled before baking for crispier edges, and avoid overbaking to maintain that perfect crispy yet tender bite. Whether you're craving a crunchy snack after the gym or a quick, protein-packed treat during a busy day, these cookies are a delicious and nutritious choice to satisfy your cravings while supporting your fitness goals.",
       "protein": 15,
       "calories": 135,
       "carbs": 14,
@@ -2217,7 +2239,7 @@
       "instructions": [
         {
           "step": "Preheat",
-          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Line a baking sheet with parchment paper."
+          "text": "Preheat your oven to 350°F (175°C). Line a baking sheet with parchment paper."
         },
         {
           "step": "Mix Dry",
@@ -2274,7 +2296,8 @@
           "domain": "proteinbars.co",
           "category": "protein bars"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 24,
@@ -2319,7 +2342,7 @@
       "instructions": [
         {
           "step": "Preheat",
-          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Line a baking sheet with parchment paper."
+          "text": "Preheat your oven to 350°F (175°C). Line a baking sheet with parchment paper."
         },
         {
           "step": "Mix Dry",
@@ -2376,13 +2399,14 @@
           "domain": "proteinbars.co",
           "category": "protein bars"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 25,
       "slug": "gingerbread-protein-cookies",
       "title": "Gingerbread Protein Cookies",
-      "description": "Warm, spiced gingerbread cookies with 17g protein make for a delightful holiday treat that satisfies your sweet tooth while fueling your body. Packed with high-quality protein, these cookies help support muscle recovery and keep you energized, making them an ideal post-workout indulgence or a nutritious snack on busy days. The soft, melt-in-your-mouth texture combined with the rich, warming aroma of ginger, cinnamon, and molasses creates a comforting holiday vibe in every bite. With their balanced macros\u2014just 150 calories per serving\u2014they allow you to enjoy festive flavors without the guilt. Perfect for meal prep, these cookies can be baked ahead and stored for convenient snacking throughout the season. For a vegan version, substitute plant-based protein powder and dairy-free sweeteners, and for gluten-free options, use almond or oat flour. To get the best results, be sure to measure your ingredients carefully and avoid overbaking to keep the cookies irresistibly soft. Whether enjoyed on your holiday cookie platter or as a cozy treat on chilly evenings, these gingerbread protein cookies are a festive, nutritious addition to your seasonal repertoire.",
+      "description": "Warm, spiced gingerbread cookies with 17g protein make for a delightful holiday treat that satisfies your sweet tooth while fueling your body. Packed with high-quality protein, these cookies help support muscle recovery and keep you energized, making them an ideal post-workout indulgence or a nutritious snack on busy days. The soft, melt-in-your-mouth texture combined with the rich, warming aroma of ginger, cinnamon, and molasses creates a comforting holiday vibe in every bite. With their balanced macros—just 150 calories per serving—they allow you to enjoy festive flavors without the guilt. Perfect for meal prep, these cookies can be baked ahead and stored for convenient snacking throughout the season. For a vegan version, substitute plant-based protein powder and dairy-free sweeteners, and for gluten-free options, use almond or oat flour. To get the best results, be sure to measure your ingredients carefully and avoid overbaking to keep the cookies irresistibly soft. Whether enjoyed on your holiday cookie platter or as a cozy treat on chilly evenings, these gingerbread protein cookies are a festive, nutritious addition to your seasonal repertoire.",
       "protein": 17,
       "calories": 150,
       "carbs": 17,
@@ -2422,7 +2446,7 @@
       "instructions": [
         {
           "step": "Preheat",
-          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Line a baking sheet with parchment paper."
+          "text": "Preheat your oven to 350°F (175°C). Line a baking sheet with parchment paper."
         },
         {
           "step": "Mix Dry",
@@ -2483,7 +2507,8 @@
           "domain": "proteinbars.co",
           "category": "protein bars"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 100,
@@ -2528,7 +2553,7 @@
       "instructions": [
         {
           "step": "Preheat Oven",
-          "text": "Preheat oven to 175\u00b0C (350\u00b0F) and line a baking sheet with parchment paper."
+          "text": "Preheat oven to 175°C (350°F) and line a baking sheet with parchment paper."
         },
         {
           "step": "Mix Wet Ingredients",
@@ -2577,13 +2602,14 @@
           "domain": "proteinbars.co",
           "category": "protein bars"
         }
-      ]
+      ],
+      "intent_class": "gluten-free"
     },
     {
       "id": 101,
       "slug": "dairy-free-peanut-butter-protein-cookies",
       "title": "Dairy-Free Peanut Butter Protein Cookies",
-      "description": "These classic peanut butter cookies are completely dairy-free and infused with plant-based protein, offering a wholesome treat that\u2019s as nourishing as it is delicious. Each cookie delivers approximately 12 grams of protein, making them an excellent choice for post-workout recovery or a satisfying snack to fuel your day. The soft, chewy texture combined with the rich, nutty flavor of peanut butter creates an irresistible mouthfeel that melts in your mouth with every bite. Their balanced macros make them a smart addition to any fitness-focused diet, supporting muscle repair and sustained energy. Perfect for meal prep, these cookies are easy to store and enjoy throughout the week, whether as a quick snack or a dessert. They\u2019re naturally gluten-free if you opt for gluten-free oats, and vegan-friendly with plant-based ingredients, catering to various dietary needs. For best results, use high-quality peanut butter and avoid overbaking to keep the cookies soft and moist. Pair them with a glass of almond milk or a cup of tea for an enjoyable, nutrient-packed treat anytime you crave something sweet and satisfying.",
+      "description": "These classic peanut butter cookies are completely dairy-free and infused with plant-based protein, offering a wholesome treat that’s as nourishing as it is delicious. Each cookie delivers approximately 12 grams of protein, making them an excellent choice for post-workout recovery or a satisfying snack to fuel your day. The soft, chewy texture combined with the rich, nutty flavor of peanut butter creates an irresistible mouthfeel that melts in your mouth with every bite. Their balanced macros make them a smart addition to any fitness-focused diet, supporting muscle repair and sustained energy. Perfect for meal prep, these cookies are easy to store and enjoy throughout the week, whether as a quick snack or a dessert. They’re naturally gluten-free if you opt for gluten-free oats, and vegan-friendly with plant-based ingredients, catering to various dietary needs. For best results, use high-quality peanut butter and avoid overbaking to keep the cookies soft and moist. Pair them with a glass of almond milk or a cup of tea for an enjoyable, nutrient-packed treat anytime you crave something sweet and satisfying.",
       "protein": 12,
       "calories": 135,
       "carbs": 12,
@@ -2636,7 +2662,7 @@
         },
         {
           "step": "Bake",
-          "text": "Bake at 175\u00b0C (350\u00b0F) for 8-10 minutes until edges are set. Cool on pan for 10 minutes before moving."
+          "text": "Bake at 175°C (350°F) for 8-10 minutes until edges are set. Cool on pan for 10 minutes before moving."
         }
       ],
       "related_recipes": [
@@ -2669,7 +2695,8 @@
           "domain": "proteinbars.co",
           "category": "protein bars"
         }
-      ]
+      ],
+      "intent_class": "vegan"
     }
   ]
 }

@@ -3,7 +3,7 @@
     "id": 1,
     "slug": "classic-glazed-protein-donuts",
     "title": "Classic Glazed Protein Donuts",
-    "description": "A timeless classic, these glazed protein donuts are soft, sweet, and packed with 18g of protein, making them the perfect treat to fuel your day. Whether you're looking for a satisfying post-workout snack or a delicious way to boost your morning protein intake, these donuts deliver both flavor and nutrition in every bite. Their tender, melt-in-your-mouth texture is complemented by a glossy, sweet glaze that adds just the right amount of indulgence without feeling heavy. Rich in protein and relatively low in calories at 150 per serving, they help support muscle recovery and keep you feeling full longer. You can customize them with gluten-free flours or vegan protein powders for dietary needs, making them versatile for various lifestyles. For best results, ensure not to overmix the batter to keep the donuts light and fluffy, and bake until golden for a perfect finish. These donuts are ideal for meal prep\u2014simply store them in an airtight container and enjoy a wholesome treat anytime you need a quick energy boost. Their irresistible taste and nutritious profile make them a must-try for anyone seeking a guilt-free, high-protein indulgence.",
+    "description": "A timeless classic, these glazed protein donuts are soft, sweet, and packed with 18g of protein, making them the perfect treat to fuel your day. Whether you're looking for a satisfying post-workout snack or a delicious way to boost your morning protein intake, these donuts deliver both flavor and nutrition in every bite. Their tender, melt-in-your-mouth texture is complemented by a glossy, sweet glaze that adds just the right amount of indulgence without feeling heavy. Rich in protein and relatively low in calories at 150 per serving, they help support muscle recovery and keep you feeling full longer. You can customize them with gluten-free flours or vegan protein powders for dietary needs, making them versatile for various lifestyles. For best results, ensure not to overmix the batter to keep the donuts light and fluffy, and bake until golden for a perfect finish. These donuts are ideal for meal prep—simply store them in an airtight container and enjoy a wholesome treat anytime you need a quick energy boost. Their irresistible taste and nutritious profile make them a must-try for anyone seeking a guilt-free, high-protein indulgence.",
     "protein": 18,
     "calories": 150,
     "carbs": 15,
@@ -40,7 +40,7 @@
     "instructions": [
       {
         "step": "Preheat Oven",
-        "text": "Preheat your oven to 180\u00b0C (350\u00b0F) and lightly grease a donut pan."
+        "text": "Preheat your oven to 180°C (350°F) and lightly grease a donut pan."
       },
       {
         "step": "Mix Dry Ingredients",
@@ -93,13 +93,14 @@
         "domain": "proteincookies.co",
         "category": "protein cookies"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 2,
     "slug": "chocolate-frosted-protein-donuts",
     "title": "Chocolate Frosted Protein Donuts",
-    "description": "Indulge your chocolate cravings with these rich, chocolate-frosted protein donuts, boasting 20g of protein per serving. Packed with high-quality whey protein, they provide a satisfying boost to your macros\u2014perfect for supporting muscle recovery and fueling your day. The donuts offer a tender, moist crumb with a satisfyingly chewy bite, balanced by a smooth, glossy chocolate frosting that strikes the perfect harmony of sweetness and cocoa richness. Whether enjoyed as a post-workout treat or a quick breakfast on busy mornings, they make for an energizing and guilt-free indulgence. Thanks to simple, wholesome ingredients, these donuts can easily be adapted for gluten-free diets by using almond or coconut flour, and vegans can swap whey for plant-based protein powders to enjoy the same delicious flavor. For best results, be sure not to overmix the batter to keep the donuts light and airy, and refrigerate the frosting for a glossy finish. These protein-packed delights are ideal for meal prep\u2014simply bake a batch ahead of time and store in an airtight container for an on-the-go, protein-rich snack anytime you need a sweet pick-me-up.",
+    "description": "Indulge your chocolate cravings with these rich, chocolate-frosted protein donuts, boasting 20g of protein per serving. Packed with high-quality whey protein, they provide a satisfying boost to your macros—perfect for supporting muscle recovery and fueling your day. The donuts offer a tender, moist crumb with a satisfyingly chewy bite, balanced by a smooth, glossy chocolate frosting that strikes the perfect harmony of sweetness and cocoa richness. Whether enjoyed as a post-workout treat or a quick breakfast on busy mornings, they make for an energizing and guilt-free indulgence. Thanks to simple, wholesome ingredients, these donuts can easily be adapted for gluten-free diets by using almond or coconut flour, and vegans can swap whey for plant-based protein powders to enjoy the same delicious flavor. For best results, be sure not to overmix the batter to keep the donuts light and airy, and refrigerate the frosting for a glossy finish. These protein-packed delights are ideal for meal prep—simply bake a batch ahead of time and store in an airtight container for an on-the-go, protein-rich snack anytime you need a sweet pick-me-up.",
     "protein": 20,
     "calories": 170,
     "carbs": 16,
@@ -136,7 +137,7 @@
     "instructions": [
       {
         "step": "Preheat Oven",
-        "text": "Preheat your oven to 180\u00b0C (350\u00b0F) and lightly grease a donut pan."
+        "text": "Preheat your oven to 180°C (350°F) and lightly grease a donut pan."
       },
       {
         "step": "Mix Dry Ingredients",
@@ -189,13 +190,14 @@
         "domain": "proteincookies.co",
         "category": "protein cookies"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 3,
     "slug": "cinnamon-sugar-protein-donuts",
     "title": "Cinnamon Sugar Protein Donuts",
-    "description": "Warm and comforting, these cinnamon sugar protein donuts are the perfect guilt-free treat with 17g of protein per serving, making them an ideal choice for fueling your day or post-workout recovery. Rich in high-quality whey protein, they provide a satisfying balance of macros\u2014delivering energy and muscle-supporting nutrients without the added sugars and empty calories of traditional donuts. The tender, moist interior is complemented by a lightly crisp exterior, while the sweet cinnamon sugar coating offers a delightful crunch with every bite, creating a harmonious blend of flavors and textures that will keep you coming back for more. These donuts are perfect for meal prep, allowing you to enjoy a nutritious snack anytime, whether as a quick breakfast or an afternoon pick-me-up. They are naturally gluten-free if made with gluten-free protein powder, and vegan options can be easily achieved using plant-based protein and dairy-free milk. For best results, be sure not to overmix the batter to keep the donuts light and airy, and bake until just golden for optimal texture. Enjoy them warm for a melt-in-your-mouth experience or let them cool for a firmer bite\u2014either way, they\u2019re a delicious way to indulge your sweet tooth while supporting your fitness goals.",
+    "description": "Warm and comforting, these cinnamon sugar protein donuts are the perfect guilt-free treat with 17g of protein per serving, making them an ideal choice for fueling your day or post-workout recovery. Rich in high-quality whey protein, they provide a satisfying balance of macros—delivering energy and muscle-supporting nutrients without the added sugars and empty calories of traditional donuts. The tender, moist interior is complemented by a lightly crisp exterior, while the sweet cinnamon sugar coating offers a delightful crunch with every bite, creating a harmonious blend of flavors and textures that will keep you coming back for more. These donuts are perfect for meal prep, allowing you to enjoy a nutritious snack anytime, whether as a quick breakfast or an afternoon pick-me-up. They are naturally gluten-free if made with gluten-free protein powder, and vegan options can be easily achieved using plant-based protein and dairy-free milk. For best results, be sure not to overmix the batter to keep the donuts light and airy, and bake until just golden for optimal texture. Enjoy them warm for a melt-in-your-mouth experience or let them cool for a firmer bite—either way, they’re a delicious way to indulge your sweet tooth while supporting your fitness goals.",
     "protein": 17,
     "calories": 160,
     "carbs": 18,
@@ -233,7 +235,7 @@
     "instructions": [
       {
         "step": "Preheat Oven",
-        "text": "Preheat your oven to 180\u00b0C (350\u00b0F) and lightly grease a donut pan."
+        "text": "Preheat your oven to 180°C (350°F) and lightly grease a donut pan."
       },
       {
         "step": "Mix Dry Ingredients",
@@ -286,13 +288,14 @@
         "domain": "proteincookies.co",
         "category": "protein cookies"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 4,
     "slug": "blueberry-protein-donuts",
     "title": "Blueberry Protein Donuts",
-    "description": "Bursting with fresh blueberries, these protein donuts are a fruity and delicious way to get 16g of protein. Packed with high-quality whey protein, they provide a satisfying boost to your daily macros, making them an ideal choice for post-workout recovery or a nutritious snack any time of day. The tender, moist interior offers a perfect balance of sweetness and tartness from the blueberries, while the lightly crisp exterior provides a delightful texture with every bite. Not only are these donuts rich in protein, but they also deliver healthy carbs and minimal added sugars, supporting your active lifestyle and balanced diet. They\u2019re versatile enough for meal prep\u2014simply store in an airtight container for a quick, grab-and-go treat\u2014and can be enjoyed as a gluten-free option if you substitute almond or coconut flour. For vegans, swapping the whey for plant-based protein powders makes these donuts entirely dairy-free and equally delicious. For best results, use ripe blueberries and avoid overmixing the batter to keep the donuts light and fluffy. Whether you\u2019re fueling a workout, craving a sweet yet healthy snack, or looking for a portable breakfast, these blueberry protein donuts are sure to satisfy your taste buds and support your fitness goals.",
+    "description": "Bursting with fresh blueberries, these protein donuts are a fruity and delicious way to get 16g of protein. Packed with high-quality whey protein, they provide a satisfying boost to your daily macros, making them an ideal choice for post-workout recovery or a nutritious snack any time of day. The tender, moist interior offers a perfect balance of sweetness and tartness from the blueberries, while the lightly crisp exterior provides a delightful texture with every bite. Not only are these donuts rich in protein, but they also deliver healthy carbs and minimal added sugars, supporting your active lifestyle and balanced diet. They’re versatile enough for meal prep—simply store in an airtight container for a quick, grab-and-go treat—and can be enjoyed as a gluten-free option if you substitute almond or coconut flour. For vegans, swapping the whey for plant-based protein powders makes these donuts entirely dairy-free and equally delicious. For best results, use ripe blueberries and avoid overmixing the batter to keep the donuts light and fluffy. Whether you’re fueling a workout, craving a sweet yet healthy snack, or looking for a portable breakfast, these blueberry protein donuts are sure to satisfy your taste buds and support your fitness goals.",
     "protein": 16,
     "calories": 140,
     "carbs": 17,
@@ -330,7 +333,7 @@
     "instructions": [
       {
         "step": "Preheat Oven",
-        "text": "Preheat your oven to 180\u00b0C (350\u00b0F) and lightly grease a donut pan."
+        "text": "Preheat your oven to 180°C (350°F) and lightly grease a donut pan."
       },
       {
         "step": "Mix Dry Ingredients",
@@ -383,13 +386,14 @@
         "domain": "proteincookies.co",
         "category": "protein cookies"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 5,
     "slug": "red-velvet-protein-donuts",
     "title": "Red Velvet Protein Donuts",
-    "description": "A decadent and healthy twist on a classic, these red velvet protein donuts have 19g of protein, making them a satisfying treat that supports your fitness goals. Packed with high-quality whey protein, they deliver a boost of muscle-repairing nutrition while satisfying your sweet tooth. The tender, moist texture is complemented by a subtly rich red velvet flavor with just the right hint of cocoa, creating an indulgent experience without the guilt. Perfect for post-workout recovery or a nourishing snack on busy mornings, these donuts are ideal for meal prep\u2014simply store them in the fridge or freezer and enjoy throughout the week. They are naturally gluten-free if you use almond or coconut flour, and vegan options can be achieved with plant-based protein powders and substitutions for eggs. For best results, be careful not to overmix the batter to keep the donuts light and fluffy, and ensure they are baked until just set for optimal texture. Whether you're craving a protein-packed dessert or a wholesome grab-and-go snack, these red velvet donuts are sure to become a favorite in your healthy repertoire.",
+    "description": "A decadent and healthy twist on a classic, these red velvet protein donuts have 19g of protein, making them a satisfying treat that supports your fitness goals. Packed with high-quality whey protein, they deliver a boost of muscle-repairing nutrition while satisfying your sweet tooth. The tender, moist texture is complemented by a subtly rich red velvet flavor with just the right hint of cocoa, creating an indulgent experience without the guilt. Perfect for post-workout recovery or a nourishing snack on busy mornings, these donuts are ideal for meal prep—simply store them in the fridge or freezer and enjoy throughout the week. They are naturally gluten-free if you use almond or coconut flour, and vegan options can be achieved with plant-based protein powders and substitutions for eggs. For best results, be careful not to overmix the batter to keep the donuts light and fluffy, and ensure they are baked until just set for optimal texture. Whether you're craving a protein-packed dessert or a wholesome grab-and-go snack, these red velvet donuts are sure to become a favorite in your healthy repertoire.",
     "protein": 19,
     "calories": 165,
     "carbs": 16,
@@ -428,7 +432,7 @@
     "instructions": [
       {
         "step": "Preheat Oven",
-        "text": "Preheat your oven to 180\u00b0C (350\u00b0F) and lightly grease a donut pan."
+        "text": "Preheat your oven to 180°C (350°F) and lightly grease a donut pan."
       },
       {
         "step": "Mix Dry Ingredients",
@@ -481,7 +485,8 @@
         "domain": "proteincookies.co",
         "category": "protein cookies"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 6,
@@ -526,7 +531,7 @@
     "instructions": [
       {
         "step": "Preheat Oven",
-        "text": "Preheat your oven to 180\u00b0C (350\u00b0F) and lightly grease a donut pan."
+        "text": "Preheat your oven to 180°C (350°F) and lightly grease a donut pan."
       },
       {
         "step": "Mix Dry Ingredients",
@@ -579,13 +584,14 @@
         "domain": "proteincookies.co",
         "category": "protein cookies"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 7,
     "slug": "maple-bacon-protein-donuts",
     "title": "Maple Bacon Protein Donuts",
-    "description": "A sweet and savory combination, these maple bacon protein donuts are a unique and delicious treat with 22g of protein, making them an excellent choice for supporting muscle recovery and satisfying your hunger. Packed with high-quality whey protein, they offer a satisfying, moist texture with a tender crumb, complemented by the crispy crunch of smoky bacon and the rich sweetness of maple glaze. Each bite delivers a harmonious balance of savory and sweet flavors that will keep your taste buds delighted. Perfect for post-workout refueling or a nutritious breakfast on the go, these donuts are also great for meal prepping\u2014they stay fresh and tasty when stored in an airtight container. For those with dietary restrictions, they can easily be made gluten-free by using almond or coconut flour, and vegan alternatives can be achieved with plant-based protein powders and vegan bacon substitutes. For best results, ensure your bacon is crispy before adding it to the batter, and don\u2019t overmix to keep the donuts light and fluffy. Whether you\u2019re looking to indulge guilt-free or boost your protein intake, these donuts are a versatile and satisfying option that delivers on flavor and nutrition alike.",
+    "description": "A sweet and savory combination, these maple bacon protein donuts are a unique and delicious treat with 22g of protein, making them an excellent choice for supporting muscle recovery and satisfying your hunger. Packed with high-quality whey protein, they offer a satisfying, moist texture with a tender crumb, complemented by the crispy crunch of smoky bacon and the rich sweetness of maple glaze. Each bite delivers a harmonious balance of savory and sweet flavors that will keep your taste buds delighted. Perfect for post-workout refueling or a nutritious breakfast on the go, these donuts are also great for meal prepping—they stay fresh and tasty when stored in an airtight container. For those with dietary restrictions, they can easily be made gluten-free by using almond or coconut flour, and vegan alternatives can be achieved with plant-based protein powders and vegan bacon substitutes. For best results, ensure your bacon is crispy before adding it to the batter, and don’t overmix to keep the donuts light and fluffy. Whether you’re looking to indulge guilt-free or boost your protein intake, these donuts are a versatile and satisfying option that delivers on flavor and nutrition alike.",
     "protein": 22,
     "calories": 190,
     "carbs": 14,
@@ -624,7 +630,7 @@
     "instructions": [
       {
         "step": "Preheat Oven",
-        "text": "Preheat your oven to 180\u00b0C (350\u00b0F) and lightly grease a donut pan."
+        "text": "Preheat your oven to 180°C (350°F) and lightly grease a donut pan."
       },
       {
         "step": "Mix Dry Ingredients",
@@ -677,13 +683,14 @@
         "domain": "proteincookies.co",
         "category": "protein cookies"
       }
-    ]
+    ],
+    "intent_class": "post-workout"
   },
   {
     "id": 8,
     "slug": "boston-cream-protein-donuts",
     "title": "Boston Cream Protein Donuts",
-    "description": "Indulge in these decadent Boston Cream Protein Donuts, a perfect balance of flavor and fuel, packing an impressive 20 grams of protein per serving. Crafted with high-quality whey protein, they offer a satisfying boost to your daily macros, making them an ideal post-workout treat or a nourishing snack to keep you energized throughout the day. The tender, fluffy donut exterior gives way to a rich, creamy vanilla filling that melts in your mouth, complemented by a glossy chocolate glaze that provides a delightful bittersweet finish. With their indulgent taste and wholesome ingredients, these donuts satisfy your sweet tooth without compromising your fitness goals. They are versatile enough for meal prep\u2014simply store them in an airtight container for a quick, protein-packed snack anytime. For gluten-free options, substitute the wheat flour with almond or coconut flour, and vegans can replace the whey protein with plant-based alternatives to enjoy similar benefits. To achieve the best texture, ensure not to overmix the batter and bake until just golden; a light touch makes all the difference in keeping them tender and fluffy. Whether you're fueling up after a gym session or craving a guilt-free dessert, these Boston Cream Protein Donuts are sure to become a favorite in your healthy indulgence repertoire.",
+    "description": "Indulge in these decadent Boston Cream Protein Donuts, a perfect balance of flavor and fuel, packing an impressive 20 grams of protein per serving. Crafted with high-quality whey protein, they offer a satisfying boost to your daily macros, making them an ideal post-workout treat or a nourishing snack to keep you energized throughout the day. The tender, fluffy donut exterior gives way to a rich, creamy vanilla filling that melts in your mouth, complemented by a glossy chocolate glaze that provides a delightful bittersweet finish. With their indulgent taste and wholesome ingredients, these donuts satisfy your sweet tooth without compromising your fitness goals. They are versatile enough for meal prep—simply store them in an airtight container for a quick, protein-packed snack anytime. For gluten-free options, substitute the wheat flour with almond or coconut flour, and vegans can replace the whey protein with plant-based alternatives to enjoy similar benefits. To achieve the best texture, ensure not to overmix the batter and bake until just golden; a light touch makes all the difference in keeping them tender and fluffy. Whether you're fueling up after a gym session or craving a guilt-free dessert, these Boston Cream Protein Donuts are sure to become a favorite in your healthy indulgence repertoire.",
     "protein": 20,
     "calories": 180,
     "carbs": 17,
@@ -722,7 +729,7 @@
     "instructions": [
       {
         "step": "Preheat Oven",
-        "text": "Preheat your oven to 180\u00b0C (350\u00b0F) and lightly grease a donut pan."
+        "text": "Preheat your oven to 180°C (350°F) and lightly grease a donut pan."
       },
       {
         "step": "Make Donut Batter",
@@ -775,7 +782,8 @@
         "domain": "proteincookies.co",
         "category": "protein cookies"
       }
-    ]
+    ],
+    "intent_class": "post-workout"
   },
   {
     "id": 9,
@@ -819,7 +827,7 @@
     "instructions": [
       {
         "step": "Preheat Oven",
-        "text": "Preheat your oven to 180\u00b0C (350\u00b0F) and lightly grease a donut pan."
+        "text": "Preheat your oven to 180°C (350°F) and lightly grease a donut pan."
       },
       {
         "step": "Make Donut Batter",
@@ -872,13 +880,14 @@
         "domain": "proteincookies.co",
         "category": "protein cookies"
       }
-    ]
+    ],
+    "intent_class": "post-workout"
   },
   {
     "id": 10,
     "slug": "air-fryer-protein-donuts",
     "title": "Air-Fryer Protein Donuts",
-    "description": "Quick and easy, these air-fryer protein donuts are ready in minutes and pack 15g of protein per serving, making them an ideal choice for a satisfying breakfast or post-workout treat. With their tender, moist crumb and subtly sweet flavor, they offer a delightful balance of indulgence and nutrition, perfect for curbing sweet cravings without spiking your calorie intake. The crispy exterior provides a satisfying bite, while the airy interior melts in your mouth, making each bite both nourishing and enjoyable. Rich in high-quality whey protein, these donuts help support muscle recovery and keep you energized throughout the day. Whether enjoyed fresh from the air fryer or stored for meal prep, they\u2019re a convenient option for busy mornings or healthy snack times. For those with dietary restrictions, this recipe can easily be made gluten-free by using a gluten-free flour blend, and vegan versions are possible with plant-based protein powders and dairy-free milk. To achieve the best texture, be sure to not overmix the batter and preheat your air fryer for even cooking. Serve them topped with fresh berries or a light drizzle of honey for an extra flavor boost\u2014these donuts are sure to become a go-to for anyone seeking a nutritious, delicious treat on the fly.",
+    "description": "Quick and easy, these air-fryer protein donuts are ready in minutes and pack 15g of protein per serving, making them an ideal choice for a satisfying breakfast or post-workout treat. With their tender, moist crumb and subtly sweet flavor, they offer a delightful balance of indulgence and nutrition, perfect for curbing sweet cravings without spiking your calorie intake. The crispy exterior provides a satisfying bite, while the airy interior melts in your mouth, making each bite both nourishing and enjoyable. Rich in high-quality whey protein, these donuts help support muscle recovery and keep you energized throughout the day. Whether enjoyed fresh from the air fryer or stored for meal prep, they’re a convenient option for busy mornings or healthy snack times. For those with dietary restrictions, this recipe can easily be made gluten-free by using a gluten-free flour blend, and vegan versions are possible with plant-based protein powders and dairy-free milk. To achieve the best texture, be sure to not overmix the batter and preheat your air fryer for even cooking. Serve them topped with fresh berries or a light drizzle of honey for an extra flavor boost—these donuts are sure to become a go-to for anyone seeking a nutritious, delicious treat on the fly.",
     "protein": 15,
     "calories": 130,
     "carbs": 14,
@@ -912,7 +921,7 @@
     "instructions": [
       {
         "step": "Preheat Air Fryer",
-        "text": "Preheat your air fryer to 175\u00b0C (350\u00b0F)."
+        "text": "Preheat your air fryer to 175°C (350°F)."
       },
       {
         "step": "Mix Ingredients",
@@ -965,13 +974,14 @@
         "domain": "proteincookies.co",
         "category": "protein cookies"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 11,
     "slug": "pumpkin-spice-protein-donuts",
     "title": "Pumpkin Spice Protein Donuts",
-    "description": "Embrace the flavors of fall with these delicious pumpkin spice protein donuts, with 18g of protein per serving. Packed with high-quality whey protein, they provide a satisfying boost to your daily macros, making them an ideal choice for post-workout recovery or a nutritious snack to fuel your day. The moist, tender texture is perfectly complemented by a lightly crisp exterior and a warm, spiced aroma that invites you in with every bite. The comforting pumpkin flavor, blended with aromatic cinnamon and nutmeg, creates a cozy, indulgent taste without the guilt. These donuts are not only rich in protein but also relatively low in calories, making them a smart addition to any balanced diet\u2014gluten-free options are easily achievable with gluten-free flour, and vegan versions can be made using plant-based protein powders and dairy-free milk. For best results, be sure to thoroughly mix the batter to avoid clumps and fill the donut molds evenly to ensure a uniform bake. Perfect for meal prep, they store well in the fridge for a quick, nutritious snack or dessert throughout the week. Whether enjoyed as a morning treat, a post-exercise replenishment, or a cozy fall snack, these protein donuts deliver both flavor and nutrition in every bite.",
+    "description": "Embrace the flavors of fall with these delicious pumpkin spice protein donuts, with 18g of protein per serving. Packed with high-quality whey protein, they provide a satisfying boost to your daily macros, making them an ideal choice for post-workout recovery or a nutritious snack to fuel your day. The moist, tender texture is perfectly complemented by a lightly crisp exterior and a warm, spiced aroma that invites you in with every bite. The comforting pumpkin flavor, blended with aromatic cinnamon and nutmeg, creates a cozy, indulgent taste without the guilt. These donuts are not only rich in protein but also relatively low in calories, making them a smart addition to any balanced diet—gluten-free options are easily achievable with gluten-free flour, and vegan versions can be made using plant-based protein powders and dairy-free milk. For best results, be sure to thoroughly mix the batter to avoid clumps and fill the donut molds evenly to ensure a uniform bake. Perfect for meal prep, they store well in the fridge for a quick, nutritious snack or dessert throughout the week. Whether enjoyed as a morning treat, a post-exercise replenishment, or a cozy fall snack, these protein donuts deliver both flavor and nutrition in every bite.",
     "protein": 18,
     "calories": 160,
     "carbs": 17,
@@ -1009,7 +1019,7 @@
     "instructions": [
       {
         "step": "Preheat Oven",
-        "text": "Preheat your oven to 180\u00b0C (350\u00b0F) and lightly grease a donut pan."
+        "text": "Preheat your oven to 180°C (350°F) and lightly grease a donut pan."
       },
       {
         "step": "Mix Dry Ingredients",
@@ -1062,13 +1072,14 @@
         "domain": "proteincookies.co",
         "category": "protein cookies"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 12,
     "slug": "gingerbread-protein-donuts",
     "title": "Gingerbread Protein Donuts",
-    "description": "Get into the holiday spirit with these festive gingerbread protein donuts, packed with 19g of muscle-building protein per serving. Not only do they satisfy your sweet tooth, but they also deliver a balanced combination of carbs and healthy fats, making them an excellent choice for post-workout recovery or a nutritious snack on busy mornings. The tender, moist interior is infused with warming gingerbread spices, while the lightly crisp exterior provides a delightful contrast with every bite. These donuts are perfect for meal prep, allowing you to enjoy a guilt-free treat throughout the week\u2014just reheat or eat them at room temperature. For those with dietary preferences, they can easily be made gluten-free by using almond or coconut flour, and vegan options are possible with plant-based protein powders and egg replacers. To achieve best results, be sure to measure ingredients precisely and avoid overmixing, which can lead to a denser texture. Whether you're fueling your workouts or celebrating the holidays, these protein-packed donuts are a delicious way to indulge without compromising your nutrition goals.",
+    "description": "Get into the holiday spirit with these festive gingerbread protein donuts, packed with 19g of muscle-building protein per serving. Not only do they satisfy your sweet tooth, but they also deliver a balanced combination of carbs and healthy fats, making them an excellent choice for post-workout recovery or a nutritious snack on busy mornings. The tender, moist interior is infused with warming gingerbread spices, while the lightly crisp exterior provides a delightful contrast with every bite. These donuts are perfect for meal prep, allowing you to enjoy a guilt-free treat throughout the week—just reheat or eat them at room temperature. For those with dietary preferences, they can easily be made gluten-free by using almond or coconut flour, and vegan options are possible with plant-based protein powders and egg replacers. To achieve best results, be sure to measure ingredients precisely and avoid overmixing, which can lead to a denser texture. Whether you're fueling your workouts or celebrating the holidays, these protein-packed donuts are a delicious way to indulge without compromising your nutrition goals.",
     "protein": 19,
     "calories": 165,
     "carbs": 16,
@@ -1108,7 +1119,7 @@
     "instructions": [
       {
         "step": "Preheat Oven",
-        "text": "Preheat your oven to 180\u00b0C (350\u00b0F) and lightly grease a donut pan."
+        "text": "Preheat your oven to 180°C (350°F) and lightly grease a donut pan."
       },
       {
         "step": "Mix Dry Ingredients",
@@ -1161,13 +1172,14 @@
         "domain": "proteincookies.co",
         "category": "protein cookies"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 13,
     "slug": "apple-cider-protein-donuts",
     "title": "Apple Cider Protein Donuts",
-    "description": "A taste of autumn, these apple cider protein donuts are a delicious and healthy treat with 17g of protein per serving, making them perfect for fueling your day or post-workout recovery. Packed with high-quality whey protein, they support muscle repair and help you stay full longer, all while satisfying your sweet tooth. The tender, moist texture combines the natural sweetness of apple and cider with a light, airy crumb that melts in your mouth, complemented by a subtle hint of cinnamon and fall spices. These donuts are a versatile snack or breakfast option\u2014great for meal prep, as they store well in the fridge and can be enjoyed warm or at room temperature. For those with dietary preferences, they can easily be made gluten-free by using almond or oat flour, and vegan alternatives such as plant-based protein powders and flax eggs work seamlessly. To get the best rise and fluffiness, be sure not to overmix the batter, and for a touch of extra flavor, sprinkle with a dusting of cinnamon or a drizzle of honey before serving. Whether you're looking for a nutritious snack after hitting the gym or a seasonal treat to enjoy with coffee, these donuts deliver wholesome goodness with a delightful fall-inspired twist.",
+    "description": "A taste of autumn, these apple cider protein donuts are a delicious and healthy treat with 17g of protein per serving, making them perfect for fueling your day or post-workout recovery. Packed with high-quality whey protein, they support muscle repair and help you stay full longer, all while satisfying your sweet tooth. The tender, moist texture combines the natural sweetness of apple and cider with a light, airy crumb that melts in your mouth, complemented by a subtle hint of cinnamon and fall spices. These donuts are a versatile snack or breakfast option—great for meal prep, as they store well in the fridge and can be enjoyed warm or at room temperature. For those with dietary preferences, they can easily be made gluten-free by using almond or oat flour, and vegan alternatives such as plant-based protein powders and flax eggs work seamlessly. To get the best rise and fluffiness, be sure not to overmix the batter, and for a touch of extra flavor, sprinkle with a dusting of cinnamon or a drizzle of honey before serving. Whether you're looking for a nutritious snack after hitting the gym or a seasonal treat to enjoy with coffee, these donuts deliver wholesome goodness with a delightful fall-inspired twist.",
     "protein": 17,
     "calories": 155,
     "carbs": 18,
@@ -1205,7 +1217,7 @@
     "instructions": [
       {
         "step": "Preheat Oven",
-        "text": "Preheat your oven to 180\u00b0C (350\u00b0F) and lightly grease a donut pan."
+        "text": "Preheat your oven to 180°C (350°F) and lightly grease a donut pan."
       },
       {
         "step": "Mix Dry Ingredients",
@@ -1258,13 +1270,14 @@
         "domain": "proteincookies.co",
         "category": "protein cookies"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 14,
     "slug": "double-chocolate-protein-donuts",
     "title": "Double Chocolate Protein Donuts",
-    "description": "For the ultimate chocolate lover, these double chocolate protein donuts are rich, decadent, and have 21g of protein per serving, making them the perfect guilt-free indulgence. Packed with high-quality whey protein, they offer a satisfying boost to your daily macros\u2014ideal for muscle recovery or a nourishing snack. The moist, tender crumb is infused with luscious cocoa flavor, while a hint of sweetness balances the deep chocolate notes, creating a melt-in-your-mouth experience with every bite. Their slightly chewy exterior gives way to a soft, airy center, making them irresistibly tempting and perfect for satisfying sweet cravings anytime. These donuts are fantastic post-workout treats, or great for meal prep\u2014just store them in an airtight container for a quick, protein-packed snack on busy days. For those with dietary restrictions, they can easily be made gluten-free by using a gluten-free flour blend, and vegan options can be achieved with plant-based protein powders and dairy-free milk. For best results, be careful not to overmix the batter to keep the donuts light and fluffy, and consider adding a sprinkle of cocoa powder or a drizzle of dark chocolate for extra indulgence. Whether you're aiming to fuel your workout or simply craving a decadent, high-protein dessert, these donuts deliver deliciousness with a nutritious punch.",
+    "description": "For the ultimate chocolate lover, these double chocolate protein donuts are rich, decadent, and have 21g of protein per serving, making them the perfect guilt-free indulgence. Packed with high-quality whey protein, they offer a satisfying boost to your daily macros—ideal for muscle recovery or a nourishing snack. The moist, tender crumb is infused with luscious cocoa flavor, while a hint of sweetness balances the deep chocolate notes, creating a melt-in-your-mouth experience with every bite. Their slightly chewy exterior gives way to a soft, airy center, making them irresistibly tempting and perfect for satisfying sweet cravings anytime. These donuts are fantastic post-workout treats, or great for meal prep—just store them in an airtight container for a quick, protein-packed snack on busy days. For those with dietary restrictions, they can easily be made gluten-free by using a gluten-free flour blend, and vegan options can be achieved with plant-based protein powders and dairy-free milk. For best results, be careful not to overmix the batter to keep the donuts light and fluffy, and consider adding a sprinkle of cocoa powder or a drizzle of dark chocolate for extra indulgence. Whether you're aiming to fuel your workout or simply craving a decadent, high-protein dessert, these donuts deliver deliciousness with a nutritious punch.",
     "protein": 21,
     "calories": 180,
     "carbs": 16,
@@ -1302,7 +1315,7 @@
     "instructions": [
       {
         "step": "Preheat Oven",
-        "text": "Preheat your oven to 180\u00b0C (350\u00b0F) and lightly grease a donut pan."
+        "text": "Preheat your oven to 180°C (350°F) and lightly grease a donut pan."
       },
       {
         "step": "Mix Dry Ingredients",
@@ -1355,7 +1368,8 @@
         "domain": "proteincookies.co",
         "category": "protein cookies"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 15,
@@ -1397,7 +1411,7 @@
     "instructions": [
       {
         "step": "Preheat Oven",
-        "text": "Preheat your oven to 180\u00b0C (350\u00b0F) and lightly grease a donut pan."
+        "text": "Preheat your oven to 180°C (350°F) and lightly grease a donut pan."
       },
       {
         "step": "Mix Dry Ingredients",
@@ -1450,13 +1464,14 @@
         "domain": "proteincookies.co",
         "category": "protein cookies"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 16,
     "slug": "vanilla-bean-protein-donuts",
     "title": "Vanilla Bean Protein Donuts",
-    "description": "A simple yet elegant donut, these vanilla bean protein donuts are a delicious treat with 18g of protein per serving, making them an ideal choice for fueling your day or post-workout recovery. Packed with high-quality whey protein, they help support muscle repair while satisfying your sweet tooth without derailing your nutrition goals. Their tender, moist crumb is complemented by a delicate vanilla bean aroma, and each bite offers a perfect balance of sweetness and creamy richness. The subtle crunch of the outer glaze adds an irresistible texture contrast, making every mouthful both satisfying and indulgent. These donuts are perfect for meal prep, allowing you to enjoy a nutritious snack throughout the week, or as a satisfying treat after an intense workout. They\u2019re naturally gluten-free if made with almond or coconut flour, and vegan adaptations can be created using plant-based protein powders and dairy-free alternatives. For best results, be careful not to overmix the batter to keep the donuts light and fluffy, and consider adding a touch of vanilla extract or extra vanilla bean for a more intense flavor. Whether enjoyed with a cup of coffee or as a quick protein-packed snack, these vanilla bean protein donuts are a delicious way to indulge without compromising your fitness goals.",
+    "description": "A simple yet elegant donut, these vanilla bean protein donuts are a delicious treat with 18g of protein per serving, making them an ideal choice for fueling your day or post-workout recovery. Packed with high-quality whey protein, they help support muscle repair while satisfying your sweet tooth without derailing your nutrition goals. Their tender, moist crumb is complemented by a delicate vanilla bean aroma, and each bite offers a perfect balance of sweetness and creamy richness. The subtle crunch of the outer glaze adds an irresistible texture contrast, making every mouthful both satisfying and indulgent. These donuts are perfect for meal prep, allowing you to enjoy a nutritious snack throughout the week, or as a satisfying treat after an intense workout. They’re naturally gluten-free if made with almond or coconut flour, and vegan adaptations can be created using plant-based protein powders and dairy-free alternatives. For best results, be careful not to overmix the batter to keep the donuts light and fluffy, and consider adding a touch of vanilla extract or extra vanilla bean for a more intense flavor. Whether enjoyed with a cup of coffee or as a quick protein-packed snack, these vanilla bean protein donuts are a delicious way to indulge without compromising your fitness goals.",
     "protein": 18,
     "calories": 150,
     "carbs": 15,
@@ -1493,7 +1508,7 @@
     "instructions": [
       {
         "step": "Preheat Oven",
-        "text": "Preheat your oven to 180\u00b0C (350\u00b0F) and lightly grease a donut pan."
+        "text": "Preheat your oven to 180°C (350°F) and lightly grease a donut pan."
       },
       {
         "step": "Mix Dry Ingredients",
@@ -1546,7 +1561,8 @@
         "domain": "proteincookies.co",
         "category": "protein cookies"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 17,
@@ -1589,7 +1605,7 @@
     "instructions": [
       {
         "step": "Preheat Oven",
-        "text": "Preheat your oven to 180\u00b0C (350\u00b0F) and lightly grease a donut pan."
+        "text": "Preheat your oven to 180°C (350°F) and lightly grease a donut pan."
       },
       {
         "step": "Mix Dry Ingredients",
@@ -1642,7 +1658,8 @@
         "domain": "proteincookies.co",
         "category": "protein cookies"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 18,
@@ -1685,7 +1702,7 @@
     "instructions": [
       {
         "step": "Preheat Oven",
-        "text": "Preheat your oven to 180\u00b0C (350\u00b0F) and lightly grease a donut pan."
+        "text": "Preheat your oven to 180°C (350°F) and lightly grease a donut pan."
       },
       {
         "step": "Mix Dry Ingredients",
@@ -1738,13 +1755,14 @@
         "domain": "proteincookies.co",
         "category": "protein cookies"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 19,
     "slug": "matcha-protein-donuts",
     "title": "Matcha Protein Donuts",
-    "description": "A vibrant and earthy flavor, these matcha protein donuts are a unique and healthy treat with 18g of protein, making them an excellent choice for supporting muscle recovery and maintaining energy levels throughout the day. The tender, slightly chewy interior combined with a delicate, crisp exterior offers a satisfying texture that melts in your mouth, while the subtle bitterness of the matcha pairs beautifully with the sweetness of the donut base. Rich in antioxidants and packed with wholesome ingredients, these donuts provide a nourishing boost that aligns perfectly with a balanced, fitness-focused diet. They\u2019re ideal for post-workout refueling, a nutritious snack on the go, or even as a satisfying breakfast when you need a quick, energizing boost. The recipe can easily be adapted to be gluten-free by using almond or coconut flour, and vegan options are simple with plant-based protein powders and flaxseed eggs. For the best results, ensure your matcha is high-quality and sift the dry ingredients thoroughly to avoid clumps, resulting in a smooth batter that bakes evenly. These donuts are not only a guilt-free indulgence but also a versatile addition to your meal prep routine\u2014grab one straight from the fridge for a delicious, protein-packed treat anytime you need it.",
+    "description": "A vibrant and earthy flavor, these matcha protein donuts are a unique and healthy treat with 18g of protein, making them an excellent choice for supporting muscle recovery and maintaining energy levels throughout the day. The tender, slightly chewy interior combined with a delicate, crisp exterior offers a satisfying texture that melts in your mouth, while the subtle bitterness of the matcha pairs beautifully with the sweetness of the donut base. Rich in antioxidants and packed with wholesome ingredients, these donuts provide a nourishing boost that aligns perfectly with a balanced, fitness-focused diet. They’re ideal for post-workout refueling, a nutritious snack on the go, or even as a satisfying breakfast when you need a quick, energizing boost. The recipe can easily be adapted to be gluten-free by using almond or coconut flour, and vegan options are simple with plant-based protein powders and flaxseed eggs. For the best results, ensure your matcha is high-quality and sift the dry ingredients thoroughly to avoid clumps, resulting in a smooth batter that bakes evenly. These donuts are not only a guilt-free indulgence but also a versatile addition to your meal prep routine—grab one straight from the fridge for a delicious, protein-packed treat anytime you need it.",
     "protein": 18,
     "calories": 160,
     "carbs": 16,
@@ -1781,7 +1799,7 @@
     "instructions": [
       {
         "step": "Preheat Oven",
-        "text": "Preheat your oven to 180\u00b0C (350\u00b0F) and lightly grease a donut pan."
+        "text": "Preheat your oven to 180°C (350°F) and lightly grease a donut pan."
       },
       {
         "step": "Mix Dry Ingredients",
@@ -1834,7 +1852,8 @@
         "domain": "proteincookies.co",
         "category": "protein cookies"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 20,
@@ -1877,7 +1896,7 @@
     "instructions": [
       {
         "step": "Preheat Oven",
-        "text": "Preheat your oven to 180\u00b0C (350\u00b0F) and lightly grease a donut pan."
+        "text": "Preheat your oven to 180°C (350°F) and lightly grease a donut pan."
       },
       {
         "step": "Mix Dry Ingredients",
@@ -1930,13 +1949,14 @@
         "domain": "proteincookies.co",
         "category": "protein cookies"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 21,
     "slug": "carrot-cake-protein-donuts",
     "title": "Carrot Cake Protein Donuts",
-    "description": "Indulge in the irresistible taste of carrot cake with these guilt-free protein donuts, delivering a satisfying 18g of muscle-nourishing protein per serving. Packed with wholesome ingredients, they provide a balanced mix of complex carbs, healthy fats, and fiber, making them an ideal choice for fueling your day or recovering after intense workouts. The tender, moist texture combined with a lightly spiced, sweet flavor reminiscent of classic carrot cake offers a delectable treat that's both satisfying and nutritious. Perfect as a post-workout snack or a quick breakfast, these donuts are great for meal prep\u2014simply store them in an airtight container for grab-and-go convenience. For those with dietary restrictions, they can easily be made gluten-free by using almond or coconut flour, and vegan options are achievable with plant-based protein powders and egg substitutes. To get the best results, be sure to measure your ingredients carefully and avoid overmixing to keep the donuts light and fluffy. Whether you're craving a sweet reward or a nutritious snack, these protein donuts deliver on flavor and health benefits in every bite.",
+    "description": "Indulge in the irresistible taste of carrot cake with these guilt-free protein donuts, delivering a satisfying 18g of muscle-nourishing protein per serving. Packed with wholesome ingredients, they provide a balanced mix of complex carbs, healthy fats, and fiber, making them an ideal choice for fueling your day or recovering after intense workouts. The tender, moist texture combined with a lightly spiced, sweet flavor reminiscent of classic carrot cake offers a delectable treat that's both satisfying and nutritious. Perfect as a post-workout snack or a quick breakfast, these donuts are great for meal prep—simply store them in an airtight container for grab-and-go convenience. For those with dietary restrictions, they can easily be made gluten-free by using almond or coconut flour, and vegan options are achievable with plant-based protein powders and egg substitutes. To get the best results, be sure to measure your ingredients carefully and avoid overmixing to keep the donuts light and fluffy. Whether you're craving a sweet reward or a nutritious snack, these protein donuts deliver on flavor and health benefits in every bite.",
     "protein": 18,
     "calories": 165,
     "carbs": 17,
@@ -1975,7 +1995,7 @@
     "instructions": [
       {
         "step": "Preheat Oven",
-        "text": "Preheat your oven to 180\u00b0C (350\u00b0F) and lightly grease a donut pan."
+        "text": "Preheat your oven to 180°C (350°F) and lightly grease a donut pan."
       },
       {
         "step": "Mix Dry Ingredients",
@@ -2028,13 +2048,14 @@
         "domain": "proteincookies.co",
         "category": "protein cookies"
       }
-    ]
+    ],
+    "intent_class": "post-workout"
   },
   {
     "id": 22,
     "slug": "banana-bread-protein-donuts",
     "title": "Banana Bread Protein Donuts",
-    "description": "Indulge in the comforting taste of banana bread transformed into a healthy, protein-packed donut, delivering 17g of muscle-repairing protein per serving. With a moist, tender crumb and a subtle sweetness from ripe bananas, these donuts boast a delightful combination of soft, cake-like texture and a lightly crisp exterior. Perfect for fueling your post-workout recovery or satisfying a mid-morning craving, they make for an ideal snack or breakfast on the go. Each bite offers a balanced macro profile\u2014rich in protein, moderate in healthy carbs, and low in added sugars\u2014making them a smart choice for supporting your fitness goals. Plus, they're versatile: easily adaptable to gluten-free diets with almond or coconut flour, or vegan-friendly by swapping whey protein for plant-based alternatives. For best results, ensure your bananas are super ripe for maximum natural sweetness and moisture, and don\u2019t overmix the batter to keep the donuts light and fluffy. These donuts store well in the fridge, making them perfect for meal prep to keep you energized throughout the week.",
+    "description": "Indulge in the comforting taste of banana bread transformed into a healthy, protein-packed donut, delivering 17g of muscle-repairing protein per serving. With a moist, tender crumb and a subtle sweetness from ripe bananas, these donuts boast a delightful combination of soft, cake-like texture and a lightly crisp exterior. Perfect for fueling your post-workout recovery or satisfying a mid-morning craving, they make for an ideal snack or breakfast on the go. Each bite offers a balanced macro profile—rich in protein, moderate in healthy carbs, and low in added sugars—making them a smart choice for supporting your fitness goals. Plus, they're versatile: easily adaptable to gluten-free diets with almond or coconut flour, or vegan-friendly by swapping whey protein for plant-based alternatives. For best results, ensure your bananas are super ripe for maximum natural sweetness and moisture, and don’t overmix the batter to keep the donuts light and fluffy. These donuts store well in the fridge, making them perfect for meal prep to keep you energized throughout the week.",
     "protein": 17,
     "calories": 155,
     "carbs": 18,
@@ -2071,7 +2092,7 @@
     "instructions": [
       {
         "step": "Preheat Oven",
-        "text": "Preheat your oven to 180\u00b0C (350\u00b0F) and lightly grease a donut pan."
+        "text": "Preheat your oven to 180°C (350°F) and lightly grease a donut pan."
       },
       {
         "step": "Mix Dry Ingredients",
@@ -2124,13 +2145,14 @@
         "domain": "proteincookies.co",
         "category": "protein cookies"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 23,
     "slug": "chocolate-chip-protein-donuts",
     "title": "Chocolate Chip Protein Donuts",
-    "description": "A classic combination, these chocolate chip protein donuts are a delicious and satisfying treat with 19g of protein. Packed with high-quality whey protein, they offer a perfect balance of macronutrients\u2014ideal for fueling your day or aiding muscle recovery. The tender, moist interior is complemented by a slight crunch on the outside, with pockets of melty chocolate chips that satisfy your sweet tooth without overindulging. With their rich chocolate flavor and soft, airy texture, these donuts make a guilt-free indulgence that\u2019s perfect for post-workout recovery or a quick, nutritious breakfast. They\u2019re also versatile for meal prep\u2014you can batch bake them and enjoy a healthy snack throughout the week. For gluten-free options, substitute regular flour with almond or coconut flour, and vegans can replace whey with plant-based protein powders. To achieve the best results, be sure not to overmix the batter to keep the donuts light and fluffy, and use a silicone donut mold for easy removal. Whether you\u2019re craving a sweet pick-me-up or need a high-protein snack on the go, these donuts deliver on flavor and nutrition in every bite.",
+    "description": "A classic combination, these chocolate chip protein donuts are a delicious and satisfying treat with 19g of protein. Packed with high-quality whey protein, they offer a perfect balance of macronutrients—ideal for fueling your day or aiding muscle recovery. The tender, moist interior is complemented by a slight crunch on the outside, with pockets of melty chocolate chips that satisfy your sweet tooth without overindulging. With their rich chocolate flavor and soft, airy texture, these donuts make a guilt-free indulgence that’s perfect for post-workout recovery or a quick, nutritious breakfast. They’re also versatile for meal prep—you can batch bake them and enjoy a healthy snack throughout the week. For gluten-free options, substitute regular flour with almond or coconut flour, and vegans can replace whey with plant-based protein powders. To achieve the best results, be sure not to overmix the batter to keep the donuts light and fluffy, and use a silicone donut mold for easy removal. Whether you’re craving a sweet pick-me-up or need a high-protein snack on the go, these donuts deliver on flavor and nutrition in every bite.",
     "protein": 19,
     "calories": 170,
     "carbs": 16,
@@ -2167,7 +2189,7 @@
     "instructions": [
       {
         "step": "Preheat Oven",
-        "text": "Preheat your oven to 180\u00b0C (350\u00b0F) and lightly grease a donut pan."
+        "text": "Preheat your oven to 180°C (350°F) and lightly grease a donut pan."
       },
       {
         "step": "Mix Dry Ingredients",
@@ -2220,13 +2242,14 @@
         "domain": "proteincookies.co",
         "category": "protein cookies"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 24,
     "slug": "peanut-butter-protein-donuts",
     "title": "Peanut Butter Protein Donuts",
-    "description": "A nutty and delicious treat, these peanut butter protein donuts are packed with 22g of muscle-loving protein per serving, making them an ideal choice for post-workout recovery or a satisfying snack to fuel your day. Their moist, tender crumb is complemented by a rich, peanut butter flavor that delivers a satisfying nutty bite with every mouthful, while a subtle sweetness balances the savory undertones. With a texture that\u2019s both soft and slightly chewy, these donuts provide a delightful contrast to traditional fried varieties, and their nutty aroma will have you craving more. Perfect for meal prep, they store well in the fridge, ready to energize you whenever needed. Thanks to their high protein content and moderate calories, they fit seamlessly into a balanced diet, whether you're aiming to build muscle or simply enjoy a healthier treat. Gluten-free options are easily achievable by using almond or coconut flour, and vegan adaptations can be made with plant-based protein powders and nut butters. For best results, be sure to mix the batter thoroughly to ensure even distribution of ingredients and avoid overmixing to keep the donuts light and fluffy. These versatile donuts are a wholesome, guilt-free indulgence that satisfies your sweet tooth while supporting your fitness goals.",
+    "description": "A nutty and delicious treat, these peanut butter protein donuts are packed with 22g of muscle-loving protein per serving, making them an ideal choice for post-workout recovery or a satisfying snack to fuel your day. Their moist, tender crumb is complemented by a rich, peanut butter flavor that delivers a satisfying nutty bite with every mouthful, while a subtle sweetness balances the savory undertones. With a texture that’s both soft and slightly chewy, these donuts provide a delightful contrast to traditional fried varieties, and their nutty aroma will have you craving more. Perfect for meal prep, they store well in the fridge, ready to energize you whenever needed. Thanks to their high protein content and moderate calories, they fit seamlessly into a balanced diet, whether you're aiming to build muscle or simply enjoy a healthier treat. Gluten-free options are easily achievable by using almond or coconut flour, and vegan adaptations can be made with plant-based protein powders and nut butters. For best results, be sure to mix the batter thoroughly to ensure even distribution of ingredients and avoid overmixing to keep the donuts light and fluffy. These versatile donuts are a wholesome, guilt-free indulgence that satisfies your sweet tooth while supporting your fitness goals.",
     "protein": 22,
     "calories": 190,
     "carbs": 15,
@@ -2262,7 +2285,7 @@
     "instructions": [
       {
         "step": "Preheat Oven",
-        "text": "Preheat your oven to 180\u00b0C (350\u00b0F) and lightly grease a donut pan."
+        "text": "Preheat your oven to 180°C (350°F) and lightly grease a donut pan."
       },
       {
         "step": "Mix Dry Ingredients",
@@ -2315,13 +2338,14 @@
         "domain": "proteincookies.co",
         "category": "protein cookies"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 25,
     "slug": "coconut-protein-donuts",
     "title": "Coconut Protein Donuts",
-    "description": "A taste of the tropics, these coconut protein donuts are a delicious and healthy treat with 19g of protein per serving, making them perfect for fueling your active lifestyle. Packed with high-quality whey protein and wholesome ingredients, they offer a satisfying balance of macros\u2014ideal for post-workout recovery or a nourishing snack between meals. The donuts boast a tender, moist interior with a lightly crisp exterior, complemented by the tropical sweetness of coconut that transports your taste buds straight to a beachside paradise. Their rich, creamy flavor pairs beautifully with a cup of coffee or a refreshing smoothie, making them versatile for breakfast, snack time, or even a guilt-free dessert. Whether you're following a gluten-free diet or looking for vegan options, simple substitutions like gluten-free flour or plant-based protein can easily adapt this recipe to your needs. For best results, use fresh coconut and avoid overbaking to keep them moist and tender. These donuts are perfect for meal prep, allowing you to enjoy a protein-packed treat throughout the week while staying on track with your fitness goals.",
+    "description": "A taste of the tropics, these coconut protein donuts are a delicious and healthy treat with 19g of protein per serving, making them perfect for fueling your active lifestyle. Packed with high-quality whey protein and wholesome ingredients, they offer a satisfying balance of macros—ideal for post-workout recovery or a nourishing snack between meals. The donuts boast a tender, moist interior with a lightly crisp exterior, complemented by the tropical sweetness of coconut that transports your taste buds straight to a beachside paradise. Their rich, creamy flavor pairs beautifully with a cup of coffee or a refreshing smoothie, making them versatile for breakfast, snack time, or even a guilt-free dessert. Whether you're following a gluten-free diet or looking for vegan options, simple substitutions like gluten-free flour or plant-based protein can easily adapt this recipe to your needs. For best results, use fresh coconut and avoid overbaking to keep them moist and tender. These donuts are perfect for meal prep, allowing you to enjoy a protein-packed treat throughout the week while staying on track with your fitness goals.",
     "protein": 19,
     "calories": 175,
     "carbs": 15,
@@ -2358,7 +2382,7 @@
     "instructions": [
       {
         "step": "Preheat Oven",
-        "text": "Preheat your oven to 180\u00b0C (350\u00b0F) and lightly grease a donut pan."
+        "text": "Preheat your oven to 180°C (350°F) and lightly grease a donut pan."
       },
       {
         "step": "Mix Dry Ingredients",
@@ -2411,13 +2435,14 @@
         "domain": "proteincookies.co",
         "category": "protein cookies"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 100,
     "slug": "gluten-free-baked-protein-donuts",
     "title": "Gluten-Free Baked Protein Donuts",
-    "description": "Light, fluffy baked donuts made with gluten-free flour and protein powder offer a deliciously satisfying way to fuel your day with nearly 12 grams of protein per serving, making them an ideal choice for post-workout recovery or a nutritious snack. Their tender texture melts in your mouth, while the subtle sweetness and rich glaze create a perfect balance of flavors that feel indulgent without the guilt. These donuts are not only gluten-free but also low in fat, making them suitable for various dietary preferences\u2014vegan alternatives can be easily achieved by swapping the eggs and dairy for plant-based options. For best results, be sure to measure your ingredients carefully and avoid overmixing to keep the donuts light and airy. They're perfect for meal prep, as they stay fresh when stored in an airtight container and make a quick, protein-packed grab-and-go treat. Whether enjoyed as a satisfying breakfast, a midday pick-me-up, or a post-workout reward, these guilt-free donuts are a versatile and wholesome indulgence that everyone can enjoy.",
+    "description": "Light, fluffy baked donuts made with gluten-free flour and protein powder offer a deliciously satisfying way to fuel your day with nearly 12 grams of protein per serving, making them an ideal choice for post-workout recovery or a nutritious snack. Their tender texture melts in your mouth, while the subtle sweetness and rich glaze create a perfect balance of flavors that feel indulgent without the guilt. These donuts are not only gluten-free but also low in fat, making them suitable for various dietary preferences—vegan alternatives can be easily achieved by swapping the eggs and dairy for plant-based options. For best results, be sure to measure your ingredients carefully and avoid overmixing to keep the donuts light and airy. They're perfect for meal prep, as they stay fresh when stored in an airtight container and make a quick, protein-packed grab-and-go treat. Whether enjoyed as a satisfying breakfast, a midday pick-me-up, or a post-workout reward, these guilt-free donuts are a versatile and wholesome indulgence that everyone can enjoy.",
     "protein": 12,
     "calories": 145,
     "carbs": 18,
@@ -2456,7 +2481,7 @@
     "instructions": [
       {
         "step": "Preheat and Prep",
-        "text": "Preheat oven to 175\u00b0C (350\u00b0F). Grease a donut pan with cooking spray."
+        "text": "Preheat oven to 175°C (350°F). Grease a donut pan with cooking spray."
       },
       {
         "step": "Mix Dry Ingredients",
@@ -2505,13 +2530,14 @@
         "domain": "proteincookies.co",
         "category": "protein cookies"
       }
-    ]
+    ],
+    "intent_class": "gluten-free"
   },
   {
     "id": 101,
     "slug": "dairy-free-chocolate-glazed-protein-donuts",
     "title": "Dairy-Free Chocolate Glazed Protein Donuts",
-    "description": "Decadent chocolate donuts with a rich dairy-free chocolate glaze, these treats are not only irresistibly indulgent but also pack a powerful nutritional punch, offering 10 grams of plant-based protein per serving to fuel your day. The tender, fluffy interior melts in your mouth, while the glossy, smooth glaze adds a decadent touch of chocolate goodness\u2014perfect for satisfying sweet cravings without guilt. Their moist, slightly chewy texture makes each bite a delightful experience, and the deep chocolate flavor is balanced by a hint of natural sweetness, making them a versatile snack or dessert. Ideal for post-workout recovery, these donuts help replenish your energy and support muscle repair, or they can be prepped ahead for easy, on-the-go enjoyment. Thanks to their plant-based ingredients, they are suitable for vegan and gluten-free diets\u2014just be sure to use gluten-free flour if needed. For best results, avoid overmixing the batter to keep the donuts light and airy, and allow them to cool fully before glazing to achieve a smooth, shiny finish. Whether you\u2019re craving a nutritious treat after a tough workout or looking for a healthier dessert option, these dairy-free chocolate glazed protein donuts are sure to satisfy your sweet tooth while fueling your body.",
+    "description": "Decadent chocolate donuts with a rich dairy-free chocolate glaze, these treats are not only irresistibly indulgent but also pack a powerful nutritional punch, offering 10 grams of plant-based protein per serving to fuel your day. The tender, fluffy interior melts in your mouth, while the glossy, smooth glaze adds a decadent touch of chocolate goodness—perfect for satisfying sweet cravings without guilt. Their moist, slightly chewy texture makes each bite a delightful experience, and the deep chocolate flavor is balanced by a hint of natural sweetness, making them a versatile snack or dessert. Ideal for post-workout recovery, these donuts help replenish your energy and support muscle repair, or they can be prepped ahead for easy, on-the-go enjoyment. Thanks to their plant-based ingredients, they are suitable for vegan and gluten-free diets—just be sure to use gluten-free flour if needed. For best results, avoid overmixing the batter to keep the donuts light and airy, and allow them to cool fully before glazing to achieve a smooth, shiny finish. Whether you’re craving a nutritious treat after a tough workout or looking for a healthier dessert option, these dairy-free chocolate glazed protein donuts are sure to satisfy your sweet tooth while fueling your body.",
     "protein": 10,
     "calories": 165,
     "carbs": 22,
@@ -2563,7 +2589,7 @@
       },
       {
         "step": "Bake",
-        "text": "Combine wet and dry ingredients. Fill greased donut pan 2/3 full. Bake at 175\u00b0C (350\u00b0F) for 12-15 minutes."
+        "text": "Combine wet and dry ingredients. Fill greased donut pan 2/3 full. Bake at 175°C (350°F) for 12-15 minutes."
       },
       {
         "step": "Glaze",
@@ -2600,13 +2626,14 @@
         "domain": "proteincookies.co",
         "category": "protein cookies"
       }
-    ]
+    ],
+    "intent_class": "vegan"
   },
   {
     "id": 100,
     "slug": "gluten-free-baked-protein-donuts",
     "title": "Gluten-Free Baked Protein Donuts",
-    "description": "Light, fluffy baked donuts made with gluten-free flour and protein powder offer a deliciously satisfying way to fuel your day with nearly 12 grams of protein per serving, making them an ideal choice for post-workout recovery or a nutritious snack. Their tender texture melts in your mouth, while the subtle sweetness and rich glaze create a perfect balance of flavors that feel indulgent without the guilt. These donuts are not only gluten-free but also low in fat, making them suitable for various dietary preferences\u2014vegan alternatives can be easily achieved by swapping the eggs and dairy for plant-based options. For best results, be sure to measure your ingredients carefully and avoid overmixing to keep the donuts light and airy. They're perfect for meal prep, as they stay fresh when stored in an airtight container and make a quick, protein-packed grab-and-go treat. Whether enjoyed as a satisfying breakfast, a midday pick-me-up, or a post-workout reward, these guilt-free donuts are a versatile and wholesome indulgence that everyone can enjoy.",
+    "description": "Light, fluffy baked donuts made with gluten-free flour and protein powder offer a deliciously satisfying way to fuel your day with nearly 12 grams of protein per serving, making them an ideal choice for post-workout recovery or a nutritious snack. Their tender texture melts in your mouth, while the subtle sweetness and rich glaze create a perfect balance of flavors that feel indulgent without the guilt. These donuts are not only gluten-free but also low in fat, making them suitable for various dietary preferences—vegan alternatives can be easily achieved by swapping the eggs and dairy for plant-based options. For best results, be sure to measure your ingredients carefully and avoid overmixing to keep the donuts light and airy. They're perfect for meal prep, as they stay fresh when stored in an airtight container and make a quick, protein-packed grab-and-go treat. Whether enjoyed as a satisfying breakfast, a midday pick-me-up, or a post-workout reward, these guilt-free donuts are a versatile and wholesome indulgence that everyone can enjoy.",
     "protein": 12,
     "calories": 145,
     "carbs": 18,
@@ -2645,7 +2672,7 @@
     "instructions": [
       {
         "step": "Preheat and Prep",
-        "text": "Preheat oven to 175\u00b0C (350\u00b0F). Grease a donut pan with cooking spray."
+        "text": "Preheat oven to 175°C (350°F). Grease a donut pan with cooking spray."
       },
       {
         "step": "Mix Dry Ingredients",
@@ -2694,13 +2721,14 @@
         "domain": "proteincookies.co",
         "category": "protein cookies"
       }
-    ]
+    ],
+    "intent_class": "gluten-free"
   },
   {
     "id": 101,
     "slug": "dairy-free-chocolate-glazed-protein-donuts",
     "title": "Dairy-Free Chocolate Glazed Protein Donuts",
-    "description": "Decadent chocolate donuts with a rich dairy-free chocolate glaze, these treats are not only irresistibly indulgent but also pack a powerful nutritional punch, offering 10 grams of plant-based protein per serving to fuel your day. The tender, fluffy interior melts in your mouth, while the glossy, smooth glaze adds a decadent touch of chocolate goodness\u2014perfect for satisfying sweet cravings without guilt. Their moist, slightly chewy texture makes each bite a delightful experience, and the deep chocolate flavor is balanced by a hint of natural sweetness, making them a versatile snack or dessert. Ideal for post-workout recovery, these donuts help replenish your energy and support muscle repair, or they can be prepped ahead for easy, on-the-go enjoyment. Thanks to their plant-based ingredients, they are suitable for vegan and gluten-free diets\u2014just be sure to use gluten-free flour if needed. For best results, avoid overmixing the batter to keep the donuts light and airy, and allow them to cool fully before glazing to achieve a smooth, shiny finish. Whether you\u2019re craving a nutritious treat after a tough workout or looking for a healthier dessert option, these dairy-free chocolate glazed protein donuts are sure to satisfy your sweet tooth while fueling your body.",
+    "description": "Decadent chocolate donuts with a rich dairy-free chocolate glaze, these treats are not only irresistibly indulgent but also pack a powerful nutritional punch, offering 10 grams of plant-based protein per serving to fuel your day. The tender, fluffy interior melts in your mouth, while the glossy, smooth glaze adds a decadent touch of chocolate goodness—perfect for satisfying sweet cravings without guilt. Their moist, slightly chewy texture makes each bite a delightful experience, and the deep chocolate flavor is balanced by a hint of natural sweetness, making them a versatile snack or dessert. Ideal for post-workout recovery, these donuts help replenish your energy and support muscle repair, or they can be prepped ahead for easy, on-the-go enjoyment. Thanks to their plant-based ingredients, they are suitable for vegan and gluten-free diets—just be sure to use gluten-free flour if needed. For best results, avoid overmixing the batter to keep the donuts light and airy, and allow them to cool fully before glazing to achieve a smooth, shiny finish. Whether you’re craving a nutritious treat after a tough workout or looking for a healthier dessert option, these dairy-free chocolate glazed protein donuts are sure to satisfy your sweet tooth while fueling your body.",
     "protein": 10,
     "calories": 165,
     "carbs": 22,
@@ -2752,7 +2780,7 @@
       },
       {
         "step": "Bake",
-        "text": "Combine wet and dry ingredients. Fill greased donut pan 2/3 full. Bake at 175\u00b0C (350\u00b0F) for 12-15 minutes."
+        "text": "Combine wet and dry ingredients. Fill greased donut pan 2/3 full. Bake at 175°C (350°F) for 12-15 minutes."
       },
       {
         "step": "Glaze",
@@ -2789,6 +2817,7 @@
         "domain": "proteincookies.co",
         "category": "protein cookies"
       }
-    ]
+    ],
+    "intent_class": "vegan"
   }
 ]

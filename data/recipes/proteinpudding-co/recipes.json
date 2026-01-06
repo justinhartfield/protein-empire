@@ -3,7 +3,7 @@
     "id": 1,
     "slug": "classic-chocolate-protein-pudding",
     "title": "Classic Chocolate Protein Pudding",
-    "description": "A rich and creamy chocolate pudding packed with 25g of protein, this indulgent treat offers a satisfying way to boost your daily macros while satisfying your sweet cravings. With its velvety smooth texture and deep chocolate flavor, each spoonful melts in your mouth, providing a decadent dessert that feels indulgent but is actually nourishing. Perfect for post-workout recovery, it helps replenish glycogen stores and repair muscle tissue, making it an ideal choice for active lifestyles. The balanced macros\u2014low in sugar and around 200 calories per serving\u2014make it a guilt-free option for those watching their intake. For added versatility, it's naturally gluten-free and can easily be veganized with plant-based protein powder and dairy-free milk, broadening its appeal for various dietary needs. To get the best results, blend thoroughly to ensure a silky, lump-free pudding and chill for at least an hour to enhance its creamy texture. Whether enjoyed as a quick snack, a satisfying dessert after dinner, or part of your meal prep routine, this pudding is a delicious way to indulge in high-protein goodness without compromise.",
+    "description": "A rich and creamy chocolate pudding packed with 25g of protein, this indulgent treat offers a satisfying way to boost your daily macros while satisfying your sweet cravings. With its velvety smooth texture and deep chocolate flavor, each spoonful melts in your mouth, providing a decadent dessert that feels indulgent but is actually nourishing. Perfect for post-workout recovery, it helps replenish glycogen stores and repair muscle tissue, making it an ideal choice for active lifestyles. The balanced macros—low in sugar and around 200 calories per serving—make it a guilt-free option for those watching their intake. For added versatility, it's naturally gluten-free and can easily be veganized with plant-based protein powder and dairy-free milk, broadening its appeal for various dietary needs. To get the best results, blend thoroughly to ensure a silky, lump-free pudding and chill for at least an hour to enhance its creamy texture. Whether enjoyed as a quick snack, a satisfying dessert after dinner, or part of your meal prep routine, this pudding is a delicious way to indulge in high-protein goodness without compromise.",
     "protein": 25,
     "calories": 200,
     "carbs": 15,
@@ -85,13 +85,14 @@
         "domain": "proteinoatmeal.co",
         "category": "protein oatmeal"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 2,
     "slug": "vanilla-bean-protein-mousse",
     "title": "Vanilla Bean Protein Mousse",
-    "description": "This light and airy vanilla bean mousse boasts an impressive 22 grams of protein per serving, making it an ideal choice for post-workout recovery or a satisfying afternoon treat. Crafted with high-quality protein sources, it offers a balanced macro profile that supports muscle repair while satisfying your sweet tooth without the guilt. The mousse's velvety texture melts effortlessly in your mouth, with delicate vanilla bean flecks adding a fragrant, natural sweetness that enhances every bite. Its smooth, fluffy consistency makes it a versatile dessert\u2014perfect for meal prep, served chilled as a refreshing finish to any meal, or enjoyed as a nourishing snack on busy days. For those with dietary restrictions, this recipe can easily be adapted to be gluten-free by using gluten-free protein powder or thickeners, and vegan options are available by swapping dairy ingredients for plant-based alternatives. To achieve the best results, ensure you whip the mixture until it\u2019s light and airy, and chill it sufficiently before serving to enhance its delicate texture. Whether you\u2019re looking to boost your protein intake or indulge in a sophisticated, guilt-free dessert, this mousse is sure to impress with its elegant simplicity and nutritional punch.",
+    "description": "This light and airy vanilla bean mousse boasts an impressive 22 grams of protein per serving, making it an ideal choice for post-workout recovery or a satisfying afternoon treat. Crafted with high-quality protein sources, it offers a balanced macro profile that supports muscle repair while satisfying your sweet tooth without the guilt. The mousse's velvety texture melts effortlessly in your mouth, with delicate vanilla bean flecks adding a fragrant, natural sweetness that enhances every bite. Its smooth, fluffy consistency makes it a versatile dessert—perfect for meal prep, served chilled as a refreshing finish to any meal, or enjoyed as a nourishing snack on busy days. For those with dietary restrictions, this recipe can easily be adapted to be gluten-free by using gluten-free protein powder or thickeners, and vegan options are available by swapping dairy ingredients for plant-based alternatives. To achieve the best results, ensure you whip the mixture until it’s light and airy, and chill it sufficiently before serving to enhance its delicate texture. Whether you’re looking to boost your protein intake or indulge in a sophisticated, guilt-free dessert, this mousse is sure to impress with its elegant simplicity and nutritional punch.",
     "protein": 22,
     "calories": 180,
     "carbs": 12,
@@ -173,7 +174,8 @@
         "domain": "proteinoatmeal.co",
         "category": "protein oatmeal"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 3,
@@ -262,13 +264,14 @@
         "domain": "proteinoatmeal.co",
         "category": "protein oatmeal"
       }
-    ]
+    ],
+    "intent_class": "vegan"
   },
   {
     "id": 4,
     "slug": "strawberry-parfait-protein-pudding",
     "title": "Strawberry Parfait Protein Pudding",
-    "description": "This beautiful and delicious strawberry parfait with layers of creamy protein pudding and fresh, juicy strawberries not only looks stunning but also packs a satisfying nutritional punch, offering 18 grams of high-quality protein per serving. Perfect for fueling your active lifestyle, this parfait provides a well-balanced macro profile\u2014rich in protein to support muscle recovery, moderate carbs for energy, and healthy fats to keep you feeling full longer. The velvety pudding has a luscious, smooth texture that melts in your mouth, complemented by the crisp, sweet bursts of fresh strawberries with every spoonful. Its delightful balance of sweetness and freshness makes it an ideal post-workout treat or a nourishing breakfast to start your day on a high note. You can easily customize this recipe to be gluten-free by using gluten-free protein powder or vegan by swapping in plant-based yogurt and protein sources\u2014it's versatile for many dietary preferences. For best results, chill the parfait for at least an hour to allow the layers to set and the flavors to meld beautifully. Whether enjoyed as a quick meal prep option or a wholesome dessert, this parfait is a delicious way to boost your protein intake while indulging in a refreshing, satisfying treat.",
+    "description": "This beautiful and delicious strawberry parfait with layers of creamy protein pudding and fresh, juicy strawberries not only looks stunning but also packs a satisfying nutritional punch, offering 18 grams of high-quality protein per serving. Perfect for fueling your active lifestyle, this parfait provides a well-balanced macro profile—rich in protein to support muscle recovery, moderate carbs for energy, and healthy fats to keep you feeling full longer. The velvety pudding has a luscious, smooth texture that melts in your mouth, complemented by the crisp, sweet bursts of fresh strawberries with every spoonful. Its delightful balance of sweetness and freshness makes it an ideal post-workout treat or a nourishing breakfast to start your day on a high note. You can easily customize this recipe to be gluten-free by using gluten-free protein powder or vegan by swapping in plant-based yogurt and protein sources—it's versatile for many dietary preferences. For best results, chill the parfait for at least an hour to allow the layers to set and the flavors to meld beautifully. Whether enjoyed as a quick meal prep option or a wholesome dessert, this parfait is a delicious way to boost your protein intake while indulging in a refreshing, satisfying treat.",
     "protein": 18,
     "calories": 190,
     "carbs": 18,
@@ -350,7 +353,8 @@
         "domain": "proteinoatmeal.co",
         "category": "protein oatmeal"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 5,
@@ -439,13 +443,14 @@
         "domain": "proteinoatmeal.co",
         "category": "protein oatmeal"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 6,
     "slug": "peanut-butter-cup-protein-pudding",
     "title": "Peanut Butter Cup Protein Pudding",
-    "description": "This creamy and indulgent peanut butter cup protein pudding delivers an impressive 28 grams of muscle-repairing protein per serving, making it a perfect post-workout treat or satisfying snack to fuel your day. Rich and velvety, it combines the irresistible flavors of peanut butter and chocolate with a luscious texture that\u2019s smooth and spoonable, almost like dessert but with a wholesome boost. With balanced macros\u2014high in protein and moderate in healthy fats\u2014it keeps you full and energized while satisfying your sweet cravings in a healthy way. The pudding\u2019s decadent taste mimics your favorite candy, offering a guilt-free indulgence that feels like a treat. It\u2019s versatile enough to be enjoyed straight from the fridge after a workout or packed into meal prep containers for a quick, protein-packed snack on busy days. For those with dietary preferences, you can easily make it vegan by swapping dairy ingredients with plant-based alternatives or ensure it\u2019s gluten-free by using certified gluten-free chocolate and thickening agents. To get the best texture, chill the pudding for at least an hour before serving\u2014this allows the flavors to meld beautifully and the consistency to firm up perfectly. Whether you\u2019re craving something sweet after a gym session or need a nutritious dessert, this pudding hits the spot while supporting your fitness goals.",
+    "description": "This creamy and indulgent peanut butter cup protein pudding delivers an impressive 28 grams of muscle-repairing protein per serving, making it a perfect post-workout treat or satisfying snack to fuel your day. Rich and velvety, it combines the irresistible flavors of peanut butter and chocolate with a luscious texture that’s smooth and spoonable, almost like dessert but with a wholesome boost. With balanced macros—high in protein and moderate in healthy fats—it keeps you full and energized while satisfying your sweet cravings in a healthy way. The pudding’s decadent taste mimics your favorite candy, offering a guilt-free indulgence that feels like a treat. It’s versatile enough to be enjoyed straight from the fridge after a workout or packed into meal prep containers for a quick, protein-packed snack on busy days. For those with dietary preferences, you can easily make it vegan by swapping dairy ingredients with plant-based alternatives or ensure it’s gluten-free by using certified gluten-free chocolate and thickening agents. To get the best texture, chill the pudding for at least an hour before serving—this allows the flavors to meld beautifully and the consistency to firm up perfectly. Whether you’re craving something sweet after a gym session or need a nutritious dessert, this pudding hits the spot while supporting your fitness goals.",
     "protein": 28,
     "calories": 280,
     "carbs": 15,
@@ -527,7 +532,8 @@
         "domain": "proteinoatmeal.co",
         "category": "protein oatmeal"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 7,
@@ -616,13 +622,14 @@
         "domain": "proteinoatmeal.co",
         "category": "protein oatmeal"
       }
-    ]
+    ],
+    "intent_class": "vegan"
   },
   {
     "id": 8,
     "slug": "cookies-and-cream-protein-pudding",
     "title": "Cookies and Cream Protein Pudding",
-    "description": "This cookies and cream protein pudding delivers an indulgent treat with a impressive 26 grams of muscle-repairing protein per serving, making it an ideal choice for post-workout recovery or a satisfying midday snack. Its rich, creamy texture melts in your mouth, with bits of crushed cookies adding a delightful crunch that perfectly balances sweetness with a hint of chocolatey goodness. Packed with wholesome ingredients, it offers a balanced macro profile\u2014high in protein, moderate in healthy fats, and low in added sugars\u2014helping you stay on track with your fitness goals. The luscious flavor makes it a healthier alternative to traditional desserts, satisfying your sweet tooth without the guilt. This versatile pudding is perfect for meal prep, as it keeps well in the fridge for a quick, nourishing boost whenever needed. It can easily be made gluten-free by using gluten-free cookies or vegan by substituting dairy milk with plant-based options, without sacrificing taste or texture. For best results, blend thoroughly to achieve a smooth, velvety consistency and sprinkle extra cookie crumbs on top for added crunch and visual appeal. Whether enjoyed after a workout, as a quick snack, or a guilt-free dessert, this pudding is sure to become a favorite for anyone seeking a delicious, high-protein treat.",
+    "description": "This cookies and cream protein pudding delivers an indulgent treat with a impressive 26 grams of muscle-repairing protein per serving, making it an ideal choice for post-workout recovery or a satisfying midday snack. Its rich, creamy texture melts in your mouth, with bits of crushed cookies adding a delightful crunch that perfectly balances sweetness with a hint of chocolatey goodness. Packed with wholesome ingredients, it offers a balanced macro profile—high in protein, moderate in healthy fats, and low in added sugars—helping you stay on track with your fitness goals. The luscious flavor makes it a healthier alternative to traditional desserts, satisfying your sweet tooth without the guilt. This versatile pudding is perfect for meal prep, as it keeps well in the fridge for a quick, nourishing boost whenever needed. It can easily be made gluten-free by using gluten-free cookies or vegan by substituting dairy milk with plant-based options, without sacrificing taste or texture. For best results, blend thoroughly to achieve a smooth, velvety consistency and sprinkle extra cookie crumbs on top for added crunch and visual appeal. Whether enjoyed after a workout, as a quick snack, or a guilt-free dessert, this pudding is sure to become a favorite for anyone seeking a delicious, high-protein treat.",
     "protein": 26,
     "calories": 230,
     "carbs": 18,
@@ -702,13 +709,14 @@
         "domain": "proteinoatmeal.co",
         "category": "protein oatmeal"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 9,
     "slug": "blueberry-parfait-protein-pudding",
     "title": "Blueberry Parfait Protein Pudding",
-    "description": "This delightful blueberry parfait features layers of velvety protein pudding paired with burst-in-your-mouth juicy blueberries, creating a satisfying treat that balances indulgence with nutrition. Packed with 20 grams of high-quality protein per serving, this parfait is perfect for supporting muscle recovery after a workout or fueling you through a busy day. The creamy pudding offers a smooth, luxurious texture that contrasts beautifully with the fresh, plump blueberries, delivering a harmonious blend of sweetness and tartness with every bite. With only around 200 calories per serving, it\u2019s an ideal guilt-free snack or light meal option. You can enjoy this parfait as a refreshing breakfast, a post-exercise boost, or a quick dessert that satisfies your sweet tooth without derailing your health goals. For those with gluten sensitivities, simply ensure your ingredients are gluten-free, and vegan options can be easily achieved using plant-based protein powders and dairy-free yogurt. For best results, prepare the parfait in advance and let it chill for at least an hour to allow the flavors to meld beautifully. A versatile, nourishing treat, it\u2019s perfect for meal prep and can be customized with other berries or toppings for variety.",
+    "description": "This delightful blueberry parfait features layers of velvety protein pudding paired with burst-in-your-mouth juicy blueberries, creating a satisfying treat that balances indulgence with nutrition. Packed with 20 grams of high-quality protein per serving, this parfait is perfect for supporting muscle recovery after a workout or fueling you through a busy day. The creamy pudding offers a smooth, luxurious texture that contrasts beautifully with the fresh, plump blueberries, delivering a harmonious blend of sweetness and tartness with every bite. With only around 200 calories per serving, it’s an ideal guilt-free snack or light meal option. You can enjoy this parfait as a refreshing breakfast, a post-exercise boost, or a quick dessert that satisfies your sweet tooth without derailing your health goals. For those with gluten sensitivities, simply ensure your ingredients are gluten-free, and vegan options can be easily achieved using plant-based protein powders and dairy-free yogurt. For best results, prepare the parfait in advance and let it chill for at least an hour to allow the flavors to meld beautifully. A versatile, nourishing treat, it’s perfect for meal prep and can be customized with other berries or toppings for variety.",
     "protein": 20,
     "calories": 200,
     "carbs": 20,
@@ -790,13 +798,14 @@
         "domain": "proteinoatmeal.co",
         "category": "protein oatmeal"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 10,
     "slug": "chocolate-avocado-protein-mousse",
     "title": "Chocolate Avocado Protein Mousse",
-    "description": "A surprisingly rich and creamy chocolate mousse made with avocado and 18g of protein. A healthy and decadent treat that effortlessly combines indulgence with nutrition, making it perfect for satisfying sweet cravings without guilt. Packed with wholesome fats from avocado and a generous protein boost, this mousse supports muscle recovery and keeps you feeling full longer. Its velvety texture melts in your mouth, offering a luscious, chocolatey flavor with just a hint of natural earthiness from the avocado\u2014no one will guess its nutritious secret! Ideal as a post-workout reward, a satisfying dessert, or even a make-ahead snack, this recipe is versatile and easy to enjoy anytime. For those following a vegan or gluten-free diet, simply ensure your chocolate is dairy-free and use gluten-free sweeteners or thickeners\u2014it's naturally friendly to both! To achieve the best creaminess, blend until ultra-smooth and chill for at least an hour before serving. A perfect guilt-free indulgence that\u2019s both nourishing and irresistibly delicious.",
+    "description": "A surprisingly rich and creamy chocolate mousse made with avocado and 18g of protein. A healthy and decadent treat that effortlessly combines indulgence with nutrition, making it perfect for satisfying sweet cravings without guilt. Packed with wholesome fats from avocado and a generous protein boost, this mousse supports muscle recovery and keeps you feeling full longer. Its velvety texture melts in your mouth, offering a luscious, chocolatey flavor with just a hint of natural earthiness from the avocado—no one will guess its nutritious secret! Ideal as a post-workout reward, a satisfying dessert, or even a make-ahead snack, this recipe is versatile and easy to enjoy anytime. For those following a vegan or gluten-free diet, simply ensure your chocolate is dairy-free and use gluten-free sweeteners or thickeners—it's naturally friendly to both! To achieve the best creaminess, blend until ultra-smooth and chill for at least an hour before serving. A perfect guilt-free indulgence that’s both nourishing and irresistibly delicious.",
     "protein": 18,
     "calories": 280,
     "carbs": 20,
@@ -879,13 +888,14 @@
         "domain": "proteinoatmeal.co",
         "category": "protein oatmeal"
       }
-    ]
+    ],
+    "intent_class": "vegan"
   },
   {
     "id": 11,
     "slug": "quick-vanilla-protein-pudding",
     "title": "Quick Vanilla Protein Pudding",
-    "description": "This simple and quick vanilla protein pudding packs a powerful punch with 25 grams of muscle-repairing protein per serving, making it an ideal choice for post-workout recovery or a satisfying snack to fuel your day. Its silky-smooth texture melts in your mouth, with a rich vanilla flavor that\u2019s both comforting and indulgent, yet light enough to keep your macros in check\u2014only 180 calories per serving. The creamy consistency is complemented by a subtle sweetness that leaves you craving more, and it\u2019s versatile enough to be enjoyed as a quick breakfast or an afternoon pick-me-up. For those with dietary preferences, this pudding can easily be made gluten-free by using gluten-free protein powder, and vegan options are available with plant-based milk and vegan protein powders. To achieve the best results, mix thoroughly to eliminate lumps and let it sit for a minute or two to thicken before serving. Whip up a batch ahead of time for convenient meal prep, or enjoy it straight from the bowl as a delicious, high-protein treat anytime you need a quick energy boost.",
+    "description": "This simple and quick vanilla protein pudding packs a powerful punch with 25 grams of muscle-repairing protein per serving, making it an ideal choice for post-workout recovery or a satisfying snack to fuel your day. Its silky-smooth texture melts in your mouth, with a rich vanilla flavor that’s both comforting and indulgent, yet light enough to keep your macros in check—only 180 calories per serving. The creamy consistency is complemented by a subtle sweetness that leaves you craving more, and it’s versatile enough to be enjoyed as a quick breakfast or an afternoon pick-me-up. For those with dietary preferences, this pudding can easily be made gluten-free by using gluten-free protein powder, and vegan options are available with plant-based milk and vegan protein powders. To achieve the best results, mix thoroughly to eliminate lumps and let it sit for a minute or two to thicken before serving. Whip up a batch ahead of time for convenient meal prep, or enjoy it straight from the bowl as a delicious, high-protein treat anytime you need a quick energy boost.",
     "protein": 25,
     "calories": 180,
     "carbs": 12,
@@ -967,13 +977,14 @@
         "domain": "proteinoatmeal.co",
         "category": "protein oatmeal"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 12,
     "slug": "mango-chia-protein-pudding",
     "title": "Mango Chia Protein Pudding",
-    "description": "A tropical and refreshing mango chia pudding with 16g of protein. A taste of summer in a jar. This vibrant treat not only satisfies your sweet tooth but also delivers a powerful punch of nutrients\u2014packed with plant-based protein, healthy omega-3 fats from the chia seeds, and a boost of fiber that supports digestion and keeps you feeling full longer. The velvety mango creates a naturally sweet, juicy flavor that pairs perfectly with the crunchy, chewy chia texture, resulting in a delightful contrast that\u2019s both satisfying and indulgent. Ideal as a post-workout snack to replenish energy or as a nutritious breakfast that keeps you energized throughout the day, this pudding is also perfect for meal prep\u2014simply make a batch ahead of time and enjoy it chilled whenever cravings strike. Vegan and gluten-free, it\u2019s suitable for various dietary preferences; for an extra protein boost, you can add a scoop of plant-based protein powder. To achieve the best consistency, stir the mixture well before refrigerating and let it sit for at least 2-3 hours, or overnight, to allow the chia seeds to fully thicken. Top with fresh fruit or a sprinkle of coconut for added flavor and texture\u2014an irresistibly wholesome treat that\u2019s as beautiful as it is nourishing.",
+    "description": "A tropical and refreshing mango chia pudding with 16g of protein. A taste of summer in a jar. This vibrant treat not only satisfies your sweet tooth but also delivers a powerful punch of nutrients—packed with plant-based protein, healthy omega-3 fats from the chia seeds, and a boost of fiber that supports digestion and keeps you feeling full longer. The velvety mango creates a naturally sweet, juicy flavor that pairs perfectly with the crunchy, chewy chia texture, resulting in a delightful contrast that’s both satisfying and indulgent. Ideal as a post-workout snack to replenish energy or as a nutritious breakfast that keeps you energized throughout the day, this pudding is also perfect for meal prep—simply make a batch ahead of time and enjoy it chilled whenever cravings strike. Vegan and gluten-free, it’s suitable for various dietary preferences; for an extra protein boost, you can add a scoop of plant-based protein powder. To achieve the best consistency, stir the mixture well before refrigerating and let it sit for at least 2-3 hours, or overnight, to allow the chia seeds to fully thicken. Top with fresh fruit or a sprinkle of coconut for added flavor and texture—an irresistibly wholesome treat that’s as beautiful as it is nourishing.",
     "protein": 16,
     "calories": 240,
     "carbs": 25,
@@ -1055,13 +1066,14 @@
         "domain": "proteinoatmeal.co",
         "category": "protein oatmeal"
       }
-    ]
+    ],
+    "intent_class": "vegan"
   },
   {
     "id": 13,
     "slug": "caramel-protein-pudding",
     "title": "Caramel Protein Pudding",
-    "description": "This sweet and creamy caramel protein pudding delivers an indulgent dessert experience with the added benefit of 24 grams of muscle-repairing protein per serving, making it a perfect choice for post-workout recovery or a satisfying mid-day treat. Its velvety texture melts in your mouth, complemented by the rich caramel flavor that strikes the ideal balance between decadence and sweetness, without feeling overly heavy or greasy. Packed with wholesome ingredients, this pudding provides a balanced macro profile\u2014high in protein, moderate in healthy carbs, and with minimal added sugars\u2014helping you stay on track with your fitness goals. Whether enjoyed as a guilt-free dessert or a nutritious snack, it\u2019s versatile enough to serve after workouts, during meal prep, or even as a quick energy boost on busy days. For those with dietary restrictions, the recipe can easily be made gluten-free by using gluten-free protein powders or thickeners, and vegan versions can be created with plant-based milk and protein powders. To achieve the best results, blend the ingredients thoroughly until smooth and chill for at least an hour to let the flavors meld and the pudding to set to a luscious, spoonable consistency. This treat is sure to satisfy your sweet tooth while supporting your active lifestyle\u2014guilt-free, delicious, and nourishing in every bite.",
+    "description": "This sweet and creamy caramel protein pudding delivers an indulgent dessert experience with the added benefit of 24 grams of muscle-repairing protein per serving, making it a perfect choice for post-workout recovery or a satisfying mid-day treat. Its velvety texture melts in your mouth, complemented by the rich caramel flavor that strikes the ideal balance between decadence and sweetness, without feeling overly heavy or greasy. Packed with wholesome ingredients, this pudding provides a balanced macro profile—high in protein, moderate in healthy carbs, and with minimal added sugars—helping you stay on track with your fitness goals. Whether enjoyed as a guilt-free dessert or a nutritious snack, it’s versatile enough to serve after workouts, during meal prep, or even as a quick energy boost on busy days. For those with dietary restrictions, the recipe can easily be made gluten-free by using gluten-free protein powders or thickeners, and vegan versions can be created with plant-based milk and protein powders. To achieve the best results, blend the ingredients thoroughly until smooth and chill for at least an hour to let the flavors meld and the pudding to set to a luscious, spoonable consistency. This treat is sure to satisfy your sweet tooth while supporting your active lifestyle—guilt-free, delicious, and nourishing in every bite.",
     "protein": 24,
     "calories": 220,
     "carbs": 16,
@@ -1141,13 +1153,14 @@
         "domain": "proteinoatmeal.co",
         "category": "protein oatmeal"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 14,
     "slug": "raspberry-chia-protein-pudding",
     "title": "Raspberry Chia Protein Pudding",
-    "description": "This vibrant and delicious raspberry chia pudding packs a satisfying 17 grams of plant-based protein per serving, making it an ideal choice for fueling your day or recovering after a tough workout. With its creamy texture contrasted by bursts of juicy raspberries, each spoonful offers a delightful balance of smoothness and tartness that keeps your taste buds engaged. Rich in fiber, omega-3 fatty acids, and antioxidants, this pudding not only satisfies your sweet tooth but also supports digestion and overall health. Its naturally vegan ingredients make it a perfect gluten-free option, and you can easily customize it with your favorite plant-based milk for added creaminess. Whether enjoyed as a quick breakfast, a nutritious snack, or a prepped meal for busy mornings, it\u2019s a versatile and wholesome choice. For best results, stir well before serving to ensure the chia seeds are evenly distributed, and allow it to chill for at least 2 hours or overnight to achieve a thick, pudding-like consistency. This recipe is a fantastic way to incorporate more superfoods into your diet while indulging in a satisfying, protein-rich treat.",
+    "description": "This vibrant and delicious raspberry chia pudding packs a satisfying 17 grams of plant-based protein per serving, making it an ideal choice for fueling your day or recovering after a tough workout. With its creamy texture contrasted by bursts of juicy raspberries, each spoonful offers a delightful balance of smoothness and tartness that keeps your taste buds engaged. Rich in fiber, omega-3 fatty acids, and antioxidants, this pudding not only satisfies your sweet tooth but also supports digestion and overall health. Its naturally vegan ingredients make it a perfect gluten-free option, and you can easily customize it with your favorite plant-based milk for added creaminess. Whether enjoyed as a quick breakfast, a nutritious snack, or a prepped meal for busy mornings, it’s a versatile and wholesome choice. For best results, stir well before serving to ensure the chia seeds are evenly distributed, and allow it to chill for at least 2 hours or overnight to achieve a thick, pudding-like consistency. This recipe is a fantastic way to incorporate more superfoods into your diet while indulging in a satisfying, protein-rich treat.",
     "protein": 17,
     "calories": 230,
     "carbs": 22,
@@ -1229,7 +1242,8 @@
         "domain": "proteinoatmeal.co",
         "category": "protein oatmeal"
       }
-    ]
+    ],
+    "intent_class": "vegan"
   },
   {
     "id": 15,
@@ -1315,13 +1329,14 @@
         "domain": "proteinoatmeal.co",
         "category": "protein oatmeal"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 16,
     "slug": "coffee-protein-mousse",
     "title": "Coffee Protein Mousse",
-    "description": "This rich and energizing coffee protein mousse packs a satisfying 23 grams of muscle-repairing protein per serving, making it an ideal choice for post-workout recovery or a nutritious midday treat. With its creamy, velvety texture and bold coffee flavor, each spoonful offers a delightful balance of smoothness and a subtle bitterness that awakens the senses. The mousse not only satisfies sweet cravings but also provides a well-rounded macro profile\u2014high in protein, moderate in healthy fats, and low in carbs\u2014perfect for supporting your fitness goals. Its indulgent taste makes it a versatile dessert or snack that can be enjoyed any time of day, whether you\u2019re fueling up after exercise or prepping in advance for busy mornings. For those with dietary restrictions, this recipe can easily be made gluten-free by choosing gluten-free protein powder, and vegan options are simple with plant-based milk and vegan protein. For best results, chill the mousse thoroughly until set and consider adding a sprinkle of cocoa or a dash of cinnamon on top for extra flavor. This protein-packed treat is not only delicious but also a smart, muscle-nourishing choice to keep you energized and satisfied.",
+    "description": "This rich and energizing coffee protein mousse packs a satisfying 23 grams of muscle-repairing protein per serving, making it an ideal choice for post-workout recovery or a nutritious midday treat. With its creamy, velvety texture and bold coffee flavor, each spoonful offers a delightful balance of smoothness and a subtle bitterness that awakens the senses. The mousse not only satisfies sweet cravings but also provides a well-rounded macro profile—high in protein, moderate in healthy fats, and low in carbs—perfect for supporting your fitness goals. Its indulgent taste makes it a versatile dessert or snack that can be enjoyed any time of day, whether you’re fueling up after exercise or prepping in advance for busy mornings. For those with dietary restrictions, this recipe can easily be made gluten-free by choosing gluten-free protein powder, and vegan options are simple with plant-based milk and vegan protein. For best results, chill the mousse thoroughly until set and consider adding a sprinkle of cocoa or a dash of cinnamon on top for extra flavor. This protein-packed treat is not only delicious but also a smart, muscle-nourishing choice to keep you energized and satisfied.",
     "protein": 23,
     "calories": 190,
     "carbs": 10,
@@ -1401,13 +1416,14 @@
         "domain": "proteinoatmeal.co",
         "category": "protein oatmeal"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 17,
     "slug": "peach-parfait-protein-pudding",
     "title": "Peach Parfait Protein Pudding",
-    "description": "This summery peach parfait with layers of creamy protein pudding and juicy, ripe peaches offers a delightful balance of flavor and nourishment, packing in 19 grams of protein per serving to fuel your day. The smooth, velvety pudding provides a satisfying richness that perfectly complements the natural sweetness and tender bite of fresh peaches, creating a refreshing texture that\u2019s both indulgent and wholesome. With each spoonful, you'll enjoy a harmonious blend of fruity brightness and protein-packed creaminess, making it an ideal treat for post-workout recovery or a nutritious breakfast to start your day. Its light, yet satisfying profile makes it perfect for meal prep\u2014you can assemble several layers in advance and keep them chilled for a quick grab-and-go option. This recipe can easily be adapted for gluten-free diets by using gluten-free protein powder or pudding mix, and vegan versions are simple to create by swapping dairy ingredients for plant-based alternatives. For best results, opt for ripe, fragrant peaches and layer the parfait just before serving to preserve their freshness and vibrant flavor. Whether enjoyed as a midday snack or a healthy dessert, this parfait is a delicious way to boost your protein intake while indulging in a naturally sweet, summery treat.",
+    "description": "This summery peach parfait with layers of creamy protein pudding and juicy, ripe peaches offers a delightful balance of flavor and nourishment, packing in 19 grams of protein per serving to fuel your day. The smooth, velvety pudding provides a satisfying richness that perfectly complements the natural sweetness and tender bite of fresh peaches, creating a refreshing texture that’s both indulgent and wholesome. With each spoonful, you'll enjoy a harmonious blend of fruity brightness and protein-packed creaminess, making it an ideal treat for post-workout recovery or a nutritious breakfast to start your day. Its light, yet satisfying profile makes it perfect for meal prep—you can assemble several layers in advance and keep them chilled for a quick grab-and-go option. This recipe can easily be adapted for gluten-free diets by using gluten-free protein powder or pudding mix, and vegan versions are simple to create by swapping dairy ingredients for plant-based alternatives. For best results, opt for ripe, fragrant peaches and layer the parfait just before serving to preserve their freshness and vibrant flavor. Whether enjoyed as a midday snack or a healthy dessert, this parfait is a delicious way to boost your protein intake while indulging in a naturally sweet, summery treat.",
     "protein": 19,
     "calories": 200,
     "carbs": 22,
@@ -1489,13 +1505,14 @@
         "domain": "proteinoatmeal.co",
         "category": "protein oatmeal"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 18,
     "slug": "mint-chocolate-protein-pudding",
     "title": "Mint Chocolate Protein Pudding",
-    "description": "This refreshing and decadent mint chocolate protein pudding packs an impressive 25 grams of muscle-repairing protein per serving, making it an ideal treat after a tough workout or as a satisfying snack to fuel your day. With its rich, velvety texture and a burst of cool mint flavor complemented by smooth chocolate notes, it\u2019s reminiscent of a thin mint cookie\u2014guilt-free and utterly indulgent. The creamy consistency melts in your mouth, offering a perfect balance of sweetness and refreshing mint that will keep you coming back for more. Not only is this pudding high in protein, but it also provides a good source of healthy fats and fiber, helping to keep you full and energized. It\u2019s versatile enough for meal prep\u2014just portion it into containers and enjoy throughout the week\u2014making it a convenient and nutritious option when time is limited. For those with dietary restrictions, this recipe can easily be made gluten-free by using gluten-free protein powder or thickeners; vegans can swap dairy milk for plant-based alternatives and select vegan-friendly chocolate and flavorings. For best results, blend the ingredients thoroughly to achieve a silky smooth texture, and chill the pudding for at least an hour to enhance the flavors and consistency. This indulgent treat proves that you don\u2019t have to compromise on taste or nutrition to stay on track with your fitness goals.",
+    "description": "This refreshing and decadent mint chocolate protein pudding packs an impressive 25 grams of muscle-repairing protein per serving, making it an ideal treat after a tough workout or as a satisfying snack to fuel your day. With its rich, velvety texture and a burst of cool mint flavor complemented by smooth chocolate notes, it’s reminiscent of a thin mint cookie—guilt-free and utterly indulgent. The creamy consistency melts in your mouth, offering a perfect balance of sweetness and refreshing mint that will keep you coming back for more. Not only is this pudding high in protein, but it also provides a good source of healthy fats and fiber, helping to keep you full and energized. It’s versatile enough for meal prep—just portion it into containers and enjoy throughout the week—making it a convenient and nutritious option when time is limited. For those with dietary restrictions, this recipe can easily be made gluten-free by using gluten-free protein powder or thickeners; vegans can swap dairy milk for plant-based alternatives and select vegan-friendly chocolate and flavorings. For best results, blend the ingredients thoroughly to achieve a silky smooth texture, and chill the pudding for at least an hour to enhance the flavors and consistency. This indulgent treat proves that you don’t have to compromise on taste or nutrition to stay on track with your fitness goals.",
     "protein": 25,
     "calories": 210,
     "carbs": 15,
@@ -1577,13 +1594,14 @@
         "domain": "proteinoatmeal.co",
         "category": "protein oatmeal"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 19,
     "slug": "coconut-cream-protein-pudding",
     "title": "Coconut Cream Protein Pudding",
-    "description": "This tropical and creamy coconut cream protein pudding delivers a satisfying 20 grams of high-quality plant-based protein per serving, making it an excellent choice for post-workout recovery or a nutritious snack to keep you energized throughout the day. Rich and velvety, the pudding boasts a luscious coconut flavor with hints of natural sweetness, complemented by a smooth, melt-in-your-mouth texture that feels indulgent yet wholesome. Its balanced macros\u2014combining healthy fats, moderate carbs, and ample protein\u2014support muscle repair and sustained fullness, making it perfect for meal prep or a quick energy boost. Whether you're vegan or gluten-free, this pudding is easily adaptable with dairy-free ingredients, ensuring everyone can enjoy its tropical goodness. For best results, blend thoroughly to achieve an ultra-smooth consistency and chill for at least an hour to enhance its creamy texture. Enjoy it straight from the fridge as a refreshing dessert or spoon it over fresh fruit for an extra flavor boost\u2014it's a versatile treat that transports you straight to the islands with every bite.",
+    "description": "This tropical and creamy coconut cream protein pudding delivers a satisfying 20 grams of high-quality plant-based protein per serving, making it an excellent choice for post-workout recovery or a nutritious snack to keep you energized throughout the day. Rich and velvety, the pudding boasts a luscious coconut flavor with hints of natural sweetness, complemented by a smooth, melt-in-your-mouth texture that feels indulgent yet wholesome. Its balanced macros—combining healthy fats, moderate carbs, and ample protein—support muscle repair and sustained fullness, making it perfect for meal prep or a quick energy boost. Whether you're vegan or gluten-free, this pudding is easily adaptable with dairy-free ingredients, ensuring everyone can enjoy its tropical goodness. For best results, blend thoroughly to achieve an ultra-smooth consistency and chill for at least an hour to enhance its creamy texture. Enjoy it straight from the fridge as a refreshing dessert or spoon it over fresh fruit for an extra flavor boost—it's a versatile treat that transports you straight to the islands with every bite.",
     "protein": 20,
     "calories": 250,
     "carbs": 15,
@@ -1664,13 +1682,14 @@
         "domain": "proteinoatmeal.co",
         "category": "protein oatmeal"
       }
-    ]
+    ],
+    "intent_class": "vegan"
   },
   {
     "id": 20,
     "slug": "pumpkin-spice-protein-pudding",
     "title": "Pumpkin Spice Protein Pudding",
-    "description": "This festive and flavorful pumpkin spice protein pudding packs an impressive 22 grams of protein per serving, making it an ideal choice for supporting muscle recovery and keeping you energized throughout the day. With its creamy, velvety texture and warm, aromatic notes of cinnamon, nutmeg, and cloves, it offers a comforting treat that satisfies both your sweet tooth and your nutritional needs. The rich pumpkin flavor blends seamlessly with the smooth pudding base, delivering a delightful taste experience with every spoonful. Perfect for post-workout refueling, meal prep, or a cozy fall dessert, this pudding is versatile and easy to prepare ahead of time. Its balanced macros\u2014low in calories yet high in satisfying protein\u2014make it suitable for various dietary goals, and gluten-free options are easily achieved by using gluten-free protein powders or thickeners. For vegan versions, swap dairy ingredients with plant-based alternatives like almond milk and vegan protein powders. For best results, use chilled ingredients and whisk vigorously to achieve a silky, lump-free consistency, and top with a sprinkle of cinnamon or crushed nuts for added texture and flavor.",
+    "description": "This festive and flavorful pumpkin spice protein pudding packs an impressive 22 grams of protein per serving, making it an ideal choice for supporting muscle recovery and keeping you energized throughout the day. With its creamy, velvety texture and warm, aromatic notes of cinnamon, nutmeg, and cloves, it offers a comforting treat that satisfies both your sweet tooth and your nutritional needs. The rich pumpkin flavor blends seamlessly with the smooth pudding base, delivering a delightful taste experience with every spoonful. Perfect for post-workout refueling, meal prep, or a cozy fall dessert, this pudding is versatile and easy to prepare ahead of time. Its balanced macros—low in calories yet high in satisfying protein—make it suitable for various dietary goals, and gluten-free options are easily achieved by using gluten-free protein powders or thickeners. For vegan versions, swap dairy ingredients with plant-based alternatives like almond milk and vegan protein powders. For best results, use chilled ingredients and whisk vigorously to achieve a silky, lump-free consistency, and top with a sprinkle of cinnamon or crushed nuts for added texture and flavor.",
     "protein": 22,
     "calories": 200,
     "carbs": 18,
@@ -1752,7 +1771,8 @@
         "domain": "proteinoatmeal.co",
         "category": "protein oatmeal"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 21,
@@ -1839,13 +1859,14 @@
         "domain": "proteinoatmeal.co",
         "category": "protein oatmeal"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 22,
     "slug": "mixed-berry-chia-protein-pudding",
     "title": "Mixed Berry Chia Protein Pudding",
-    "description": "This colorful and antioxidant-rich mixed berry chia pudding boasts an impressive 18g of plant-based protein per serving, making it an ideal choice for fueling your active lifestyle. The creamy, velvety texture is perfectly complemented by bursts of juicy berries, offering a delightful balance of sweetness and tartness with every spoonful. Rich in fiber, healthy fats, and antioxidants, this pudding not only satisfies your taste buds but also supports digestion and immune health. Its smooth consistency makes it a fantastic post-workout recovery treat or a nutritious breakfast to start your day energized. Thanks to its vegan-friendly ingredients, it\u2019s suitable for a variety of dietary preferences and can easily be made gluten-free\u2014just ensure your oats or add-ins are certified gluten-free. For best results, prepare it the night before to allow the chia seeds to fully hydrate and develop a pudding-like texture, and customize it with your favorite toppings like nuts or extra berries for added crunch. Whether enjoyed straight from the fridge or topped with a sprinkle of granola, this versatile dish is both nourishing and irresistibly delicious\u2014perfect for meal prep or a quick snack on busy mornings.",
+    "description": "This colorful and antioxidant-rich mixed berry chia pudding boasts an impressive 18g of plant-based protein per serving, making it an ideal choice for fueling your active lifestyle. The creamy, velvety texture is perfectly complemented by bursts of juicy berries, offering a delightful balance of sweetness and tartness with every spoonful. Rich in fiber, healthy fats, and antioxidants, this pudding not only satisfies your taste buds but also supports digestion and immune health. Its smooth consistency makes it a fantastic post-workout recovery treat or a nutritious breakfast to start your day energized. Thanks to its vegan-friendly ingredients, it’s suitable for a variety of dietary preferences and can easily be made gluten-free—just ensure your oats or add-ins are certified gluten-free. For best results, prepare it the night before to allow the chia seeds to fully hydrate and develop a pudding-like texture, and customize it with your favorite toppings like nuts or extra berries for added crunch. Whether enjoyed straight from the fridge or topped with a sprinkle of granola, this versatile dish is both nourishing and irresistibly delicious—perfect for meal prep or a quick snack on busy mornings.",
     "protein": 18,
     "calories": 240,
     "carbs": 24,
@@ -1927,7 +1948,8 @@
         "domain": "proteinoatmeal.co",
         "category": "protein oatmeal"
       }
-    ]
+    ],
+    "intent_class": "vegan"
   },
   {
     "id": 23,
@@ -2015,13 +2037,14 @@
         "domain": "proteinoatmeal.co",
         "category": "protein oatmeal"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 24,
     "slug": "chocolate-hazelnut-protein-pudding",
     "title": "Chocolate Hazelnut Protein Pudding",
-    "description": "This rich and nutty chocolate hazelnut protein pudding delivers an impressive 27 grams of muscle-repairing protein per serving, making it an ideal choice for post-workout recovery or a satisfying midday treat. The velvety texture melts in your mouth, with the luscious chocolate flavor perfectly balanced by the roasted, slightly crunchy hazelnut notes\u2014a decadent yet wholesome indulgence. Packed with healthy fats and fiber, this pudding not only satisfies your sweet tooth but also fuels your body with essential nutrients to keep you energized throughout the day. Its creamy consistency makes it a versatile snack or dessert, perfect for meal prep to enjoy throughout the week. For those with dietary preferences, this recipe can easily be made gluten-free by choosing certified gluten-free ingredients, and vegan options are simple by swapping out dairy-based components for plant-based alternatives. For best results, blend until ultra-smooth and chill for at least an hour to enhance the flavors and achieve a luscious, pudding-like consistency. Whether you\u2019re aiming to build lean muscle, manage your weight, or simply indulge healthily, this guilt-free treat is sure to satisfy your cravings while supporting your fitness goals.",
+    "description": "This rich and nutty chocolate hazelnut protein pudding delivers an impressive 27 grams of muscle-repairing protein per serving, making it an ideal choice for post-workout recovery or a satisfying midday treat. The velvety texture melts in your mouth, with the luscious chocolate flavor perfectly balanced by the roasted, slightly crunchy hazelnut notes—a decadent yet wholesome indulgence. Packed with healthy fats and fiber, this pudding not only satisfies your sweet tooth but also fuels your body with essential nutrients to keep you energized throughout the day. Its creamy consistency makes it a versatile snack or dessert, perfect for meal prep to enjoy throughout the week. For those with dietary preferences, this recipe can easily be made gluten-free by choosing certified gluten-free ingredients, and vegan options are simple by swapping out dairy-based components for plant-based alternatives. For best results, blend until ultra-smooth and chill for at least an hour to enhance the flavors and achieve a luscious, pudding-like consistency. Whether you’re aiming to build lean muscle, manage your weight, or simply indulge healthily, this guilt-free treat is sure to satisfy your cravings while supporting your fitness goals.",
     "protein": 27,
     "calories": 260,
     "carbs": 16,
@@ -2103,13 +2126,14 @@
         "domain": "proteinoatmeal.co",
         "category": "protein oatmeal"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 25,
     "slug": "black-forest-parfait-protein-pudding",
     "title": "Black Forest Parfait Protein Pudding",
-    "description": "A decadent black forest parfait with layers of rich chocolate protein pudding, juicy cherries, and fluffy whipped cream, delivering an indulgent treat with a generous 22 grams of muscle-building protein per serving. This dessert not only satisfies your sweet tooth but also provides a balanced mix of macros\u2014perfect for supporting recovery after a workout or fueling your busy day. The velvety pudding offers a smooth, chocolatey taste that pairs beautifully with tart cherries, creating a harmonious flavor combination, while the light whipped cream adds a touch of airy decadence. Its creamy texture melts in your mouth, making each spoonful a delightful experience. Ideal for post-exercise recovery, meal prep, or a satisfying dessert, this parfait is versatile and easy to assemble. For those with dietary restrictions, it can be made gluten-free using certified gluten-free protein powders, and vegan options are simple by swapping whipped cream for coconut whipped topping. To get the best results, chill the layers thoroughly before serving to enhance the textures and flavors, and consider adding a sprinkle of dark chocolate shavings or crushed nuts for extra crunch and richness. Whether enjoyed as a quick snack or a luxurious treat, this parfait is a delicious way to boost your protein intake while indulging in classic black forest flavors.",
+    "description": "A decadent black forest parfait with layers of rich chocolate protein pudding, juicy cherries, and fluffy whipped cream, delivering an indulgent treat with a generous 22 grams of muscle-building protein per serving. This dessert not only satisfies your sweet tooth but also provides a balanced mix of macros—perfect for supporting recovery after a workout or fueling your busy day. The velvety pudding offers a smooth, chocolatey taste that pairs beautifully with tart cherries, creating a harmonious flavor combination, while the light whipped cream adds a touch of airy decadence. Its creamy texture melts in your mouth, making each spoonful a delightful experience. Ideal for post-exercise recovery, meal prep, or a satisfying dessert, this parfait is versatile and easy to assemble. For those with dietary restrictions, it can be made gluten-free using certified gluten-free protein powders, and vegan options are simple by swapping whipped cream for coconut whipped topping. To get the best results, chill the layers thoroughly before serving to enhance the textures and flavors, and consider adding a sprinkle of dark chocolate shavings or crushed nuts for extra crunch and richness. Whether enjoyed as a quick snack or a luxurious treat, this parfait is a delicious way to boost your protein intake while indulging in classic black forest flavors.",
     "protein": 22,
     "calories": 240,
     "carbs": 25,
@@ -2192,13 +2216,14 @@
         "domain": "proteinoatmeal.co",
         "category": "protein oatmeal"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 100,
     "slug": "gluten-free-chocolate-chia-protein-pudding",
     "title": "Gluten-Free Chocolate Chia Protein Pudding",
-    "description": "A naturally gluten-free pudding made with chia seeds and chocolate protein. Creamy, chocolatey, and packed with omega-3s and protein! With approximately 20 grams of protein per serving and just 220 calories, this indulgent treat is perfect for fueling your day or aiding muscle recovery after a tough workout. The velvety texture combines the smoothness of rich chocolate with the subtle crunch of chia seeds, delivering a satisfying bite in every spoonful. Its deep cocoa flavor makes it a delightful dessert or snack to satisfy your sweet tooth without the guilt. You can enjoy this pudding as a quick breakfast option, a post-exercise replenishment, or meal prep for busy mornings ahead. For those with dietary restrictions, it's easily adaptable\u2014swap the protein powder for a vegan or plant-based alternative, or use gluten-free chocolate for an entirely gluten-free experience. To get the best results, mix the ingredients thoroughly and let the pudding sit in the refrigerator for at least 2 hours or overnight; this allows the chia seeds to fully hydrate and develop a luscious, pudding-like consistency. Whether you're looking for a nutritious snack or a protein-packed dessert, this recipe is sure to satisfy your cravings while supporting your health and fitness goals.",
+    "description": "A naturally gluten-free pudding made with chia seeds and chocolate protein. Creamy, chocolatey, and packed with omega-3s and protein! With approximately 20 grams of protein per serving and just 220 calories, this indulgent treat is perfect for fueling your day or aiding muscle recovery after a tough workout. The velvety texture combines the smoothness of rich chocolate with the subtle crunch of chia seeds, delivering a satisfying bite in every spoonful. Its deep cocoa flavor makes it a delightful dessert or snack to satisfy your sweet tooth without the guilt. You can enjoy this pudding as a quick breakfast option, a post-exercise replenishment, or meal prep for busy mornings ahead. For those with dietary restrictions, it's easily adaptable—swap the protein powder for a vegan or plant-based alternative, or use gluten-free chocolate for an entirely gluten-free experience. To get the best results, mix the ingredients thoroughly and let the pudding sit in the refrigerator for at least 2 hours or overnight; this allows the chia seeds to fully hydrate and develop a luscious, pudding-like consistency. Whether you're looking for a nutritious snack or a protein-packed dessert, this recipe is sure to satisfy your cravings while supporting your health and fitness goals.",
     "protein": 20,
     "calories": 220,
     "carbs": 18,
@@ -2284,13 +2309,14 @@
         "domain": "proteinoatmeal.co",
         "category": "protein oatmeal"
       }
-    ]
+    ],
+    "intent_class": "gluten-free"
   },
   {
     "id": 101,
     "slug": "dairy-free-vanilla-coconut-protein-pudding",
     "title": "Dairy-Free Vanilla Coconut Protein Pudding",
-    "description": "A silky smooth dairy-free pudding made with coconut milk and vanilla protein. Rich, creamy, and completely plant-based, this indulgent treat delivers 18 grams of protein per serving, making it an excellent choice for supporting muscle recovery and satisfying your sweet tooth without compromising your macros. The luscious texture melts in your mouth, with a subtle sweetness and a hint of tropical coconut that enhances every bite. Perfect as a post-workout boost or a satisfying snack, it\u2019s ideal for meal prep\u2014just make a batch ahead of time to enjoy throughout the week. This recipe is naturally gluten-free and vegan, catering to various dietary needs, and can easily be customized with your favorite plant-based toppings like fresh berries or shredded coconut. For best results, use full-fat coconut milk for extra creaminess and whisk vigorously to avoid lumps. Chill thoroughly before serving to achieve a velvety, pudding-like consistency that\u2019s irresistibly smooth and decadent. Whether you're looking for a healthy dessert or a nourishing snack, this pudding hits the spot while fueling your active lifestyle.",
+    "description": "A silky smooth dairy-free pudding made with coconut milk and vanilla protein. Rich, creamy, and completely plant-based, this indulgent treat delivers 18 grams of protein per serving, making it an excellent choice for supporting muscle recovery and satisfying your sweet tooth without compromising your macros. The luscious texture melts in your mouth, with a subtle sweetness and a hint of tropical coconut that enhances every bite. Perfect as a post-workout boost or a satisfying snack, it’s ideal for meal prep—just make a batch ahead of time to enjoy throughout the week. This recipe is naturally gluten-free and vegan, catering to various dietary needs, and can easily be customized with your favorite plant-based toppings like fresh berries or shredded coconut. For best results, use full-fat coconut milk for extra creaminess and whisk vigorously to avoid lumps. Chill thoroughly before serving to achieve a velvety, pudding-like consistency that’s irresistibly smooth and decadent. Whether you're looking for a healthy dessert or a nourishing snack, this pudding hits the spot while fueling your active lifestyle.",
     "protein": 18,
     "calories": 195,
     "carbs": 15,
@@ -2375,13 +2401,14 @@
         "domain": "proteinoatmeal.co",
         "category": "protein oatmeal"
       }
-    ]
+    ],
+    "intent_class": "vegan"
   },
   {
     "id": 100,
     "slug": "gluten-free-chocolate-chia-protein-pudding",
     "title": "Gluten-Free Chocolate Chia Protein Pudding",
-    "description": "A naturally gluten-free pudding made with chia seeds and chocolate protein. Creamy, chocolatey, and packed with omega-3s and protein! With approximately 20 grams of protein per serving and just 220 calories, this indulgent treat is perfect for fueling your day or aiding muscle recovery after a tough workout. The velvety texture combines the smoothness of rich chocolate with the subtle crunch of chia seeds, delivering a satisfying bite in every spoonful. Its deep cocoa flavor makes it a delightful dessert or snack to satisfy your sweet tooth without the guilt. You can enjoy this pudding as a quick breakfast option, a post-exercise replenishment, or meal prep for busy mornings ahead. For those with dietary restrictions, it's easily adaptable\u2014swap the protein powder for a vegan or plant-based alternative, or use gluten-free chocolate for an entirely gluten-free experience. To get the best results, mix the ingredients thoroughly and let the pudding sit in the refrigerator for at least 2 hours or overnight; this allows the chia seeds to fully hydrate and develop a luscious, pudding-like consistency. Whether you're looking for a nutritious snack or a protein-packed dessert, this recipe is sure to satisfy your cravings while supporting your health and fitness goals.",
+    "description": "A naturally gluten-free pudding made with chia seeds and chocolate protein. Creamy, chocolatey, and packed with omega-3s and protein! With approximately 20 grams of protein per serving and just 220 calories, this indulgent treat is perfect for fueling your day or aiding muscle recovery after a tough workout. The velvety texture combines the smoothness of rich chocolate with the subtle crunch of chia seeds, delivering a satisfying bite in every spoonful. Its deep cocoa flavor makes it a delightful dessert or snack to satisfy your sweet tooth without the guilt. You can enjoy this pudding as a quick breakfast option, a post-exercise replenishment, or meal prep for busy mornings ahead. For those with dietary restrictions, it's easily adaptable—swap the protein powder for a vegan or plant-based alternative, or use gluten-free chocolate for an entirely gluten-free experience. To get the best results, mix the ingredients thoroughly and let the pudding sit in the refrigerator for at least 2 hours or overnight; this allows the chia seeds to fully hydrate and develop a luscious, pudding-like consistency. Whether you're looking for a nutritious snack or a protein-packed dessert, this recipe is sure to satisfy your cravings while supporting your health and fitness goals.",
     "protein": 20,
     "calories": 220,
     "carbs": 18,
@@ -2467,13 +2494,14 @@
         "domain": "proteinoatmeal.co",
         "category": "protein oatmeal"
       }
-    ]
+    ],
+    "intent_class": "gluten-free"
   },
   {
     "id": 101,
     "slug": "dairy-free-vanilla-coconut-protein-pudding",
     "title": "Dairy-Free Vanilla Coconut Protein Pudding",
-    "description": "A silky smooth dairy-free pudding made with coconut milk and vanilla protein. Rich, creamy, and completely plant-based, this indulgent treat delivers 18 grams of protein per serving, making it an excellent choice for supporting muscle recovery and satisfying your sweet tooth without compromising your macros. The luscious texture melts in your mouth, with a subtle sweetness and a hint of tropical coconut that enhances every bite. Perfect as a post-workout boost or a satisfying snack, it\u2019s ideal for meal prep\u2014just make a batch ahead of time to enjoy throughout the week. This recipe is naturally gluten-free and vegan, catering to various dietary needs, and can easily be customized with your favorite plant-based toppings like fresh berries or shredded coconut. For best results, use full-fat coconut milk for extra creaminess and whisk vigorously to avoid lumps. Chill thoroughly before serving to achieve a velvety, pudding-like consistency that\u2019s irresistibly smooth and decadent. Whether you're looking for a healthy dessert or a nourishing snack, this pudding hits the spot while fueling your active lifestyle.",
+    "description": "A silky smooth dairy-free pudding made with coconut milk and vanilla protein. Rich, creamy, and completely plant-based, this indulgent treat delivers 18 grams of protein per serving, making it an excellent choice for supporting muscle recovery and satisfying your sweet tooth without compromising your macros. The luscious texture melts in your mouth, with a subtle sweetness and a hint of tropical coconut that enhances every bite. Perfect as a post-workout boost or a satisfying snack, it’s ideal for meal prep—just make a batch ahead of time to enjoy throughout the week. This recipe is naturally gluten-free and vegan, catering to various dietary needs, and can easily be customized with your favorite plant-based toppings like fresh berries or shredded coconut. For best results, use full-fat coconut milk for extra creaminess and whisk vigorously to avoid lumps. Chill thoroughly before serving to achieve a velvety, pudding-like consistency that’s irresistibly smooth and decadent. Whether you're looking for a healthy dessert or a nourishing snack, this pudding hits the spot while fueling your active lifestyle.",
     "protein": 18,
     "calories": 195,
     "carbs": 15,
@@ -2558,6 +2586,7 @@
         "domain": "proteinoatmeal.co",
         "category": "protein oatmeal"
       }
-    ]
+    ],
+    "intent_class": "vegan"
   }
 ]

@@ -1,3 +1,12 @@
+# Robots.txt for highprotein.recipes
 User-agent: *
 Allow: /
+
+# Sitemap
 Sitemap: https://highprotein.recipes/sitemap.xml
+
+# Feed
+Allow: /feed/
+
+# Crawl-delay (optional, for politeness)
+Crawl-delay: 1

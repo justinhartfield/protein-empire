@@ -87,13 +87,14 @@
         "domain": "protein-bread.com",
         "category": "protein bread"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 2,
     "slug": "chocolate-casein-pancakes",
     "title": "Chocolate Casein Pancakes",
-    "description": "Indulge in these rich and decadent chocolate pancakes, made with slow-digesting casein protein to keep you full and satisfied. Packed with 22 grams of high-quality protein per serving, these pancakes are perfect for supporting muscle recovery and maintaining steady energy levels throughout the day. The velvety chocolate flavor delivers a luscious taste with a moist, tender crumb that melts in your mouth, while a hint of cocoa adds a satisfying depth of flavor. Their fluffy yet slightly dense texture makes each bite a delightful treat\u2014ideal for a leisurely breakfast or a post-workout boost. Thanks to the wholesome ingredients, these pancakes are not only nourishing but also gluten-free if you use gluten-free oats or flour, and vegan alternatives can be easily incorporated with plant-based milk and egg substitutes. For best results, gently fold ingredients to avoid deflating the batter, and cook over medium-low heat for evenly browned, tender edges. Enjoy these as a satisfying meal prep option by making a batch to reheat during busy mornings, or serve them topped with fresh berries and a drizzle of almond butter for an extra flavor boost. Whether you\u2019re fueling up after a gym session or craving a guilt-free dessert, these chocolate casein pancakes deliver both indulgence and nutrition in every bite.",
+    "description": "Indulge in these rich and decadent chocolate pancakes, made with slow-digesting casein protein to keep you full and satisfied. Packed with 22 grams of high-quality protein per serving, these pancakes are perfect for supporting muscle recovery and maintaining steady energy levels throughout the day. The velvety chocolate flavor delivers a luscious taste with a moist, tender crumb that melts in your mouth, while a hint of cocoa adds a satisfying depth of flavor. Their fluffy yet slightly dense texture makes each bite a delightful treat—ideal for a leisurely breakfast or a post-workout boost. Thanks to the wholesome ingredients, these pancakes are not only nourishing but also gluten-free if you use gluten-free oats or flour, and vegan alternatives can be easily incorporated with plant-based milk and egg substitutes. For best results, gently fold ingredients to avoid deflating the batter, and cook over medium-low heat for evenly browned, tender edges. Enjoy these as a satisfying meal prep option by making a batch to reheat during busy mornings, or serve them topped with fresh berries and a drizzle of almond butter for an extra flavor boost. Whether you’re fueling up after a gym session or craving a guilt-free dessert, these chocolate casein pancakes deliver both indulgence and nutrition in every bite.",
     "protein": 22,
     "calories": 200,
     "carbs": 18,
@@ -177,13 +178,14 @@
         "domain": "protein-bread.com",
         "category": "protein bread"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 3,
     "slug": "blueberry-vegan-protein-pancakes",
     "title": "Blueberry Vegan Protein Pancakes",
-    "description": "These blueberry vegan protein pancakes are a delicious and plant-based breakfast that\u2019s as nourishing as it is flavorful, offering an impressive 18 grams of protein per serving to fuel your day. Made with wholesome ingredients, they deliver a satisfying combination of fluffy texture and juicy bursts of blueberry in every bite, creating a delightful contrast that keeps your taste buds engaged. Rich in plant-based protein, these pancakes support muscle recovery and keep you feeling full longer, making them perfect for post-workout refueling or a hearty weekend breakfast. Their slightly sweet, fruity flavor pairs perfectly with a drizzle of maple syrup or a dollop of dairy-free yogurt. For best results, gently fold the blueberries into the batter to prevent them from sinking, and cook on a preheated, lightly greased skillet until golden brown on both sides. These pancakes are naturally gluten-free if you use gluten-free oats or flour, and vegan substitutes like flax eggs work seamlessly for a plant-based diet. They\u2019re ideal for meal prep\u2014just store in the fridge and reheat quickly for a nutritious, protein-packed start to your day anytime.",
+    "description": "These blueberry vegan protein pancakes are a delicious and plant-based breakfast that’s as nourishing as it is flavorful, offering an impressive 18 grams of protein per serving to fuel your day. Made with wholesome ingredients, they deliver a satisfying combination of fluffy texture and juicy bursts of blueberry in every bite, creating a delightful contrast that keeps your taste buds engaged. Rich in plant-based protein, these pancakes support muscle recovery and keep you feeling full longer, making them perfect for post-workout refueling or a hearty weekend breakfast. Their slightly sweet, fruity flavor pairs perfectly with a drizzle of maple syrup or a dollop of dairy-free yogurt. For best results, gently fold the blueberries into the batter to prevent them from sinking, and cook on a preheated, lightly greased skillet until golden brown on both sides. These pancakes are naturally gluten-free if you use gluten-free oats or flour, and vegan substitutes like flax eggs work seamlessly for a plant-based diet. They’re ideal for meal prep—just store in the fridge and reheat quickly for a nutritious, protein-packed start to your day anytime.",
     "protein": 18,
     "calories": 190,
     "carbs": 22,
@@ -267,7 +269,8 @@
         "domain": "protein-bread.com",
         "category": "protein bread"
       }
-    ]
+    ],
+    "intent_class": "vegan"
   },
   {
     "id": 4,
@@ -358,13 +361,14 @@
         "domain": "protein-bread.com",
         "category": "protein bread"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 5,
     "slug": "banana-bread-protein-pancakes",
     "title": "Banana Bread Protein Pancakes",
-    "description": "Enjoy the comforting flavors of banana bread in a high-protein pancake form\u2014a nutritious and satisfying way to fuel your day. Packed with 20 grams of protein per serving, these pancakes help support muscle recovery and keep you energized longer, making them perfect for a post-workout boost or a hearty breakfast. The tender, fluffy texture is infused with the sweet aroma of ripe bananas and a hint of warm spices, offering a delightful blend of comfort-food coziness with a health-conscious twist. Each bite delivers a balance of natural sweetness and wholesome ingredients, helping you stay on track with your macros while indulging in a guilt-free treat. These pancakes are versatile and can be enjoyed topped with fresh fruit, a drizzle of honey, or a dollop of Greek yogurt for extra creaminess. They are naturally gluten-free if you use gluten-free oats or flour, and vegan options can be easily made by swapping eggs for flaxseed or chia seed substitutes. For best results, cook them on a lightly greased skillet over medium heat until golden brown, ensuring they are cooked through but still moist inside. Whether you\u2019re meal prepping for the week or craving a nourishing breakfast, these banana bread protein pancakes are a delicious, protein-packed choice to start your day on a healthy note.",
+    "description": "Enjoy the comforting flavors of banana bread in a high-protein pancake form—a nutritious and satisfying way to fuel your day. Packed with 20 grams of protein per serving, these pancakes help support muscle recovery and keep you energized longer, making them perfect for a post-workout boost or a hearty breakfast. The tender, fluffy texture is infused with the sweet aroma of ripe bananas and a hint of warm spices, offering a delightful blend of comfort-food coziness with a health-conscious twist. Each bite delivers a balance of natural sweetness and wholesome ingredients, helping you stay on track with your macros while indulging in a guilt-free treat. These pancakes are versatile and can be enjoyed topped with fresh fruit, a drizzle of honey, or a dollop of Greek yogurt for extra creaminess. They are naturally gluten-free if you use gluten-free oats or flour, and vegan options can be easily made by swapping eggs for flaxseed or chia seed substitutes. For best results, cook them on a lightly greased skillet over medium heat until golden brown, ensuring they are cooked through but still moist inside. Whether you’re meal prepping for the week or craving a nourishing breakfast, these banana bread protein pancakes are a delicious, protein-packed choice to start your day on a healthy note.",
     "protein": 20,
     "calories": 210,
     "carbs": 25,
@@ -449,13 +453,14 @@
         "domain": "protein-bread.com",
         "category": "protein bread"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 6,
     "slug": "lemon-ricotta-protein-crepes",
     "title": "Lemon Ricotta Protein Crepes",
-    "description": "Light and delicate crepes filled with a creamy, high-protein lemon ricotta filling, these treats offer a perfect balance of indulgence and nourishment. Packed with approximately 20 grams of protein per serving, they support muscle recovery and help keep you full and satisfied longer. The tender, melt-in-your-mouth texture of the crepes pairs beautifully with the smooth, tangy lemon ricotta, creating a sophisticated flavor profile that\u2019s both refreshing and satisfying. Whether enjoyed as a wholesome breakfast, a post-workout boost, or a delightful dessert, they\u2019re versatile enough for any time of day. For those with dietary preferences, gluten-free options can be easily achieved using almond or rice flour, and vegan versions can be made with plant-based ricotta and egg substitutes. To get the best results, ensure the batter is rested for a few minutes to achieve optimal thinness and even cooking. Serve these crepes topped with fresh berries or a drizzle of honey for an extra touch of sweetness. Their light yet nourishing nature makes them an ideal choice for meal prep, offering a quick, protein-packed option to fuel your day.",
+    "description": "Light and delicate crepes filled with a creamy, high-protein lemon ricotta filling, these treats offer a perfect balance of indulgence and nourishment. Packed with approximately 20 grams of protein per serving, they support muscle recovery and help keep you full and satisfied longer. The tender, melt-in-your-mouth texture of the crepes pairs beautifully with the smooth, tangy lemon ricotta, creating a sophisticated flavor profile that’s both refreshing and satisfying. Whether enjoyed as a wholesome breakfast, a post-workout boost, or a delightful dessert, they’re versatile enough for any time of day. For those with dietary preferences, gluten-free options can be easily achieved using almond or rice flour, and vegan versions can be made with plant-based ricotta and egg substitutes. To get the best results, ensure the batter is rested for a few minutes to achieve optimal thinness and even cooking. Serve these crepes topped with fresh berries or a drizzle of honey for an extra touch of sweetness. Their light yet nourishing nature makes them an ideal choice for meal prep, offering a quick, protein-packed option to fuel your day.",
     "protein": 20,
     "calories": 230,
     "carbs": 15,
@@ -541,13 +546,14 @@
         "domain": "protein-bread.com",
         "category": "protein bread"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 7,
     "slug": "cinnamon-roll-protein-waffles",
     "title": "Cinnamon Roll Protein Waffles",
-    "description": "All the flavor of a warm cinnamon roll packed into a crispy, high-protein waffle. Drizzled with a sweet cream cheese glaze, this indulgent treat offers a satisfying crunch with every bite, balanced by the comforting warmth of cinnamon and a touch of sweetness. With 26 grams of protein per serving and only 280 calories, these waffles are perfect for fueling your morning or recovering after a workout, making them a nutritious yet decadent option. The texture is irresistibly crispy on the outside while tender and fluffy on the inside, delivering a delightful contrast that keeps you coming back for more. They\u2019re ideal for meal prep\u2014just make a batch ahead of time and reheat for a quick, satisfying breakfast or snack. For those with gluten sensitivities, try using a gluten-free flour blend to ensure the same crispy perfection. Vegans can swap the cream cheese glaze for coconut cream or a plant-based frosting while maintaining the rich, sweet flavor. To get the best results, ensure your waffle iron is fully preheated, and don\u2019t overmix the batter to keep the waffles light and airy. These cinnamon roll waffles are a delicious, protein-packed way to start your day or indulge guilt-free whenever cravings strike.",
+    "description": "All the flavor of a warm cinnamon roll packed into a crispy, high-protein waffle. Drizzled with a sweet cream cheese glaze, this indulgent treat offers a satisfying crunch with every bite, balanced by the comforting warmth of cinnamon and a touch of sweetness. With 26 grams of protein per serving and only 280 calories, these waffles are perfect for fueling your morning or recovering after a workout, making them a nutritious yet decadent option. The texture is irresistibly crispy on the outside while tender and fluffy on the inside, delivering a delightful contrast that keeps you coming back for more. They’re ideal for meal prep—just make a batch ahead of time and reheat for a quick, satisfying breakfast or snack. For those with gluten sensitivities, try using a gluten-free flour blend to ensure the same crispy perfection. Vegans can swap the cream cheese glaze for coconut cream or a plant-based frosting while maintaining the rich, sweet flavor. To get the best results, ensure your waffle iron is fully preheated, and don’t overmix the batter to keep the waffles light and airy. These cinnamon roll waffles are a delicious, protein-packed way to start your day or indulge guilt-free whenever cravings strike.",
     "protein": 26,
     "calories": 280,
     "carbs": 25,
@@ -632,7 +638,8 @@
         "domain": "protein-bread.com",
         "category": "protein bread"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 8,
@@ -726,13 +733,14 @@
         "domain": "protein-bread.com",
         "category": "protein bread"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 9,
     "slug": "pumpkin-spice-protein-waffles",
     "title": "Pumpkin Spice Protein Waffles",
-    "description": "Embrace autumn with these warm and spicy pumpkin protein waffles, a cozy and nutritious breakfast treat that offers a satisfying balance of flavors and macros. Packed with 22 grams of high-quality protein per serving, they provide the perfect fuel to kick-start your day or support muscle recovery after a workout. The waffles boast a tender, fluffy interior with a slight crisp on the outside, complemented by the rich, earthy sweetness of pumpkin and warming notes of cinnamon, nutmeg, and cloves. Their delightful texture and comforting aroma make them a true fall favorite. Ideal for meal prepping, these waffles can be made ahead and enjoyed throughout the week\u2014just reheat and savor! For those with dietary preferences, they can easily be made gluten-free with a blend of almond or oat flour, and vegan options are simple with plant-based protein powder and dairy-free milk. For best results, ensure your waffle iron is properly preheated and lightly greased, and don\u2019t overmix the batter to keep them light and airy. Whether served with a drizzle of maple syrup, a dollop of whipped cream, or a handful of toasted pecans, these waffles are a wholesome, satisfying way to enjoy the flavors of fall while nourishing your body.",
+    "description": "Embrace autumn with these warm and spicy pumpkin protein waffles, a cozy and nutritious breakfast treat that offers a satisfying balance of flavors and macros. Packed with 22 grams of high-quality protein per serving, they provide the perfect fuel to kick-start your day or support muscle recovery after a workout. The waffles boast a tender, fluffy interior with a slight crisp on the outside, complemented by the rich, earthy sweetness of pumpkin and warming notes of cinnamon, nutmeg, and cloves. Their delightful texture and comforting aroma make them a true fall favorite. Ideal for meal prepping, these waffles can be made ahead and enjoyed throughout the week—just reheat and savor! For those with dietary preferences, they can easily be made gluten-free with a blend of almond or oat flour, and vegan options are simple with plant-based protein powder and dairy-free milk. For best results, ensure your waffle iron is properly preheated and lightly greased, and don’t overmix the batter to keep them light and airy. Whether served with a drizzle of maple syrup, a dollop of whipped cream, or a handful of toasted pecans, these waffles are a wholesome, satisfying way to enjoy the flavors of fall while nourishing your body.",
     "protein": 22,
     "calories": 240,
     "carbs": 22,
@@ -819,13 +827,14 @@
         "domain": "protein-bread.com",
         "category": "protein bread"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 10,
     "slug": "chocolate-chip-protein-pancakes",
     "title": "Chocolate Chip Protein Pancakes",
-    "description": "A classic breakfast favorite gets a healthy, high-protein makeover with these irresistibly fluffy pancakes loaded with melty chocolate chips. Each serving packs an impressive 25 grams of protein, making them an excellent choice for fueling your morning or recovering after an intense workout. The tender, airy texture melts in your mouth, while the pockets of rich chocolate chips add a touch of indulgence to every bite. Not only are these pancakes satisfying and delicious, but they also deliver balanced macros\u2014high in protein and moderate in healthy carbs\u2014perfect for supporting muscle growth and sustained energy. They\u2019re ideal for meal prepping, allowing you to enjoy a quick, nutritious breakfast on busy mornings or even as a post-workout treat that helps replenish glycogen stores. For those with dietary restrictions, these pancakes can easily be made gluten-free with a gluten-free flour blend, and vegan options are simple with plant-based protein powders and dairy-free chocolate chips. For best results, use a non-stick skillet and cook on medium-low heat to ensure they stay fluffy and don\u2019t burn. Top with fresh berries or a drizzle of almond butter for an extra boost of flavor and nutrients\u2014these pancakes are sure to become a staple in your high-protein, feel-good breakfast repertoire.",
+    "description": "A classic breakfast favorite gets a healthy, high-protein makeover with these irresistibly fluffy pancakes loaded with melty chocolate chips. Each serving packs an impressive 25 grams of protein, making them an excellent choice for fueling your morning or recovering after an intense workout. The tender, airy texture melts in your mouth, while the pockets of rich chocolate chips add a touch of indulgence to every bite. Not only are these pancakes satisfying and delicious, but they also deliver balanced macros—high in protein and moderate in healthy carbs—perfect for supporting muscle growth and sustained energy. They’re ideal for meal prepping, allowing you to enjoy a quick, nutritious breakfast on busy mornings or even as a post-workout treat that helps replenish glycogen stores. For those with dietary restrictions, these pancakes can easily be made gluten-free with a gluten-free flour blend, and vegan options are simple with plant-based protein powders and dairy-free chocolate chips. For best results, use a non-stick skillet and cook on medium-low heat to ensure they stay fluffy and don’t burn. Top with fresh berries or a drizzle of almond butter for an extra boost of flavor and nutrients—these pancakes are sure to become a staple in your high-protein, feel-good breakfast repertoire.",
     "protein": 25,
     "calories": 260,
     "carbs": 22,
@@ -908,13 +917,14 @@
         "domain": "protein-bread.com",
         "category": "protein bread"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 11,
     "slug": "strawberry-shortcake-protein-pancakes",
     "title": "Strawberry Shortcake Protein Pancakes",
-    "description": "A healthy twist on a classic dessert! These protein pancakes are layered with fresh strawberries and a dollop of Greek yogurt, offering a deliciously satisfying treat packed with 22 grams of muscle-repairing protein per serving. The tender, fluffy pancakes boast a subtly sweet flavor with hints of vanilla, perfectly complemented by the juicy burst of ripe strawberries and the creamy tang of yogurt. Not only do they satisfy your sweet tooth, but they also deliver balanced macros\u2014rich in complex carbs, healthy fats, and lean protein\u2014making them ideal for post-workout recovery or a nourishing breakfast. Their light, melt-in-your-mouth texture makes each bite a delightful experience, while the fresh fruit adds a refreshing summer vibe. Perfect for meal prep, these pancakes can be made ahead and enjoyed throughout the week, giving you a quick, wholesome option on busy mornings. They\u2019re naturally gluten-free if you use a gluten-free flour blend, and vegan-friendly versions can be created with plant-based yogurt and egg substitutes. For best results, ensure your batter isn\u2019t overmixed to keep the pancakes airy and tender, and use ripe strawberries for maximum sweetness. Whether you\u2019re fueling a workout or indulging in a guilt-free dessert, these protein pancakes are a versatile, nutritious choice you\u2019ll crave again and again.",
+    "description": "A healthy twist on a classic dessert! These protein pancakes are layered with fresh strawberries and a dollop of Greek yogurt, offering a deliciously satisfying treat packed with 22 grams of muscle-repairing protein per serving. The tender, fluffy pancakes boast a subtly sweet flavor with hints of vanilla, perfectly complemented by the juicy burst of ripe strawberries and the creamy tang of yogurt. Not only do they satisfy your sweet tooth, but they also deliver balanced macros—rich in complex carbs, healthy fats, and lean protein—making them ideal for post-workout recovery or a nourishing breakfast. Their light, melt-in-your-mouth texture makes each bite a delightful experience, while the fresh fruit adds a refreshing summer vibe. Perfect for meal prep, these pancakes can be made ahead and enjoyed throughout the week, giving you a quick, wholesome option on busy mornings. They’re naturally gluten-free if you use a gluten-free flour blend, and vegan-friendly versions can be created with plant-based yogurt and egg substitutes. For best results, ensure your batter isn’t overmixed to keep the pancakes airy and tender, and use ripe strawberries for maximum sweetness. Whether you’re fueling a workout or indulging in a guilt-free dessert, these protein pancakes are a versatile, nutritious choice you’ll crave again and again.",
     "protein": 22,
     "calories": 240,
     "carbs": 25,
@@ -998,13 +1008,14 @@
         "domain": "protein-bread.com",
         "category": "protein bread"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 12,
     "slug": "double-chocolate-protein-waffles",
     "title": "Double Chocolate Protein Waffles",
-    "description": "Intensely chocolatey and packed with protein, these waffles are a dream come true for any chocolate lover. Made with both cocoa powder and chocolate chips, they deliver a rich, decadent flavor with every bite, while still providing an impressive 28 grams of protein per serving to fuel your day or support muscle recovery. The texture strikes the perfect balance between crispy on the outside and tender on the inside, with melty pockets of chocolate chips that add a delightful burst of sweetness. Thanks to their high protein content and moderate calorie count, these waffles are an ideal choice for post-workout recovery, meal prepping, or satisfying a guilt-free indulgence. They can easily be customized for gluten-free diets by using a gluten-free flour blend, and vegans can swap in plant-based protein powders and dairy-free chocolate chips for a delicious, cruelty-free treat. For best results, mix the batter just until combined to keep it light and fluffy, and ensure your waffle iron is properly preheated to achieve that perfect crispy exterior. Enjoy them topped with fresh berries, a dollop of Greek yogurt, or a drizzle of almond butter for an extra flavor boost\u2014these waffles make every bite both satisfying and nourishing.",
+    "description": "Intensely chocolatey and packed with protein, these waffles are a dream come true for any chocolate lover. Made with both cocoa powder and chocolate chips, they deliver a rich, decadent flavor with every bite, while still providing an impressive 28 grams of protein per serving to fuel your day or support muscle recovery. The texture strikes the perfect balance between crispy on the outside and tender on the inside, with melty pockets of chocolate chips that add a delightful burst of sweetness. Thanks to their high protein content and moderate calorie count, these waffles are an ideal choice for post-workout recovery, meal prepping, or satisfying a guilt-free indulgence. They can easily be customized for gluten-free diets by using a gluten-free flour blend, and vegans can swap in plant-based protein powders and dairy-free chocolate chips for a delicious, cruelty-free treat. For best results, mix the batter just until combined to keep it light and fluffy, and ensure your waffle iron is properly preheated to achieve that perfect crispy exterior. Enjoy them topped with fresh berries, a dollop of Greek yogurt, or a drizzle of almond butter for an extra flavor boost—these waffles make every bite both satisfying and nourishing.",
     "protein": 28,
     "calories": 300,
     "carbs": 25,
@@ -1089,13 +1100,14 @@
         "domain": "protein-bread.com",
         "category": "protein bread"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 13,
     "slug": "matcha-green-tea-protein-crepes",
     "title": "Matcha Green Tea Protein Crepes",
-    "description": "Elegant and earthy, these matcha green tea crepes are filled with a sweet and creamy protein filling, making for a truly indulgent yet nourishing treat. Packed with approximately 20 grams of protein per serving, they provide a satisfying boost to support muscle recovery and keep you energized throughout the day. The delicate, thin crepes boast a subtle grassy flavor complemented by the rich, smooth filling, creating a delightful harmony of textures\u2014crisp edges with a tender, melt-in-your-mouth center. The natural bitterness of matcha balances perfectly with the sweetness of the filling, offering a sophisticated flavor profile that\u2019s both refreshing and comforting. Perfect for post-workout refueling or as a nutritious breakfast, these crepes are versatile enough for meal prep and can be enjoyed warm or chilled. For gluten-free options, use a gluten-free flour blend, and vegans can substitute the protein filling with plant-based yogurt or coconut cream. To achieve the best results, whisk the batter until smooth and let it rest for 10 minutes to improve the texture, and cook on a non-stick pan over medium heat until lightly golden. Whether you\u2019re craving a healthy brunch or a satisfying snack, these matcha green tea crepes are a unique, delicious way to elevate your high-protein meal repertoire.",
+    "description": "Elegant and earthy, these matcha green tea crepes are filled with a sweet and creamy protein filling, making for a truly indulgent yet nourishing treat. Packed with approximately 20 grams of protein per serving, they provide a satisfying boost to support muscle recovery and keep you energized throughout the day. The delicate, thin crepes boast a subtle grassy flavor complemented by the rich, smooth filling, creating a delightful harmony of textures—crisp edges with a tender, melt-in-your-mouth center. The natural bitterness of matcha balances perfectly with the sweetness of the filling, offering a sophisticated flavor profile that’s both refreshing and comforting. Perfect for post-workout refueling or as a nutritious breakfast, these crepes are versatile enough for meal prep and can be enjoyed warm or chilled. For gluten-free options, use a gluten-free flour blend, and vegans can substitute the protein filling with plant-based yogurt or coconut cream. To achieve the best results, whisk the batter until smooth and let it rest for 10 minutes to improve the texture, and cook on a non-stick pan over medium heat until lightly golden. Whether you’re craving a healthy brunch or a satisfying snack, these matcha green tea crepes are a unique, delicious way to elevate your high-protein meal repertoire.",
     "protein": 20,
     "calories": 220,
     "carbs": 18,
@@ -1181,13 +1193,14 @@
         "domain": "protein-bread.com",
         "category": "protein bread"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 14,
     "slug": "apple-cinnamon-protein-pancakes",
     "title": "Apple Cinnamon Protein Pancakes",
-    "description": "Warm and comforting, these pancakes are filled with tender apple pieces and spiced with cinnamon, offering a delightful taste of fall in every bite. Packed with 23 grams of protein per serving, they provide a satisfying boost to fuel your day or support muscle recovery after a workout. The combination of fluffy texture and juicy apple bits creates a perfect harmony of softness and slight chewiness, while the cinnamon adds a warm, aromatic kick that makes each bite irresistible. With approximately 250 calories per serving, they make for a balanced and nourishing breakfast or post-exercise meal that keeps you energized and satisfied. These pancakes are versatile \u2014 gluten-free options can be easily achieved using almond or oat flour, and vegan adaptations are possible with plant-based protein powder and dairy-free milk. For best results, lightly fold the apple pieces into the batter to prevent them from sinking and cook on medium heat until golden brown for that ideal crispy edge. Whether enjoyed as a cozy weekend treat or meal prep for busy mornings, these pancakes are an excellent way to indulge in seasonal flavors while meeting your high-protein goals.",
+    "description": "Warm and comforting, these pancakes are filled with tender apple pieces and spiced with cinnamon, offering a delightful taste of fall in every bite. Packed with 23 grams of protein per serving, they provide a satisfying boost to fuel your day or support muscle recovery after a workout. The combination of fluffy texture and juicy apple bits creates a perfect harmony of softness and slight chewiness, while the cinnamon adds a warm, aromatic kick that makes each bite irresistible. With approximately 250 calories per serving, they make for a balanced and nourishing breakfast or post-exercise meal that keeps you energized and satisfied. These pancakes are versatile — gluten-free options can be easily achieved using almond or oat flour, and vegan adaptations are possible with plant-based protein powder and dairy-free milk. For best results, lightly fold the apple pieces into the batter to prevent them from sinking and cook on medium heat until golden brown for that ideal crispy edge. Whether enjoyed as a cozy weekend treat or meal prep for busy mornings, these pancakes are an excellent way to indulge in seasonal flavors while meeting your high-protein goals.",
     "protein": 23,
     "calories": 250,
     "carbs": 28,
@@ -1272,13 +1285,14 @@
         "domain": "protein-bread.com",
         "category": "protein bread"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 15,
     "slug": "belgian-protein-waffles",
     "title": "Belgian Protein Waffles",
-    "description": "Light, crispy, and deep-pocketed Belgian waffles with a protein-packed punch, these waffles are a delicious way to fuel your day. Packed with 25 grams of high-quality protein per serving, they offer a satisfying balance of macros that support muscle recovery and sustained energy. The tender interior contrasts beautifully with the crisp exterior, creating a delightful texture that holds up perfectly to a variety of toppings\u2014think fresh berries, Greek yogurt, or a drizzle of nut butter. Their rich, slightly sweet flavor makes them an irresistible breakfast or post-workout treat, ideal for replenishing your muscles and keeping you full for hours. These waffles are versatile enough for meal prep\u2014just reheat and enjoy, or top with your favorite healthy additions for an indulgent yet nutritious start to your morning. For those with dietary preferences, they can easily be made gluten-free with almond or oat flour, and vegan options are simple by swapping eggs for flaxseed or chia seed \"eggs.\" For best results, ensure your batter is well-mixed but not overworked, and preheat your waffle iron thoroughly for perfectly crispy edges every time. Whether you're fueling an active day or enjoying a weekend brunch, these waffles deliver both flavor and nutrition in every bite.",
+    "description": "Light, crispy, and deep-pocketed Belgian waffles with a protein-packed punch, these waffles are a delicious way to fuel your day. Packed with 25 grams of high-quality protein per serving, they offer a satisfying balance of macros that support muscle recovery and sustained energy. The tender interior contrasts beautifully with the crisp exterior, creating a delightful texture that holds up perfectly to a variety of toppings—think fresh berries, Greek yogurt, or a drizzle of nut butter. Their rich, slightly sweet flavor makes them an irresistible breakfast or post-workout treat, ideal for replenishing your muscles and keeping you full for hours. These waffles are versatile enough for meal prep—just reheat and enjoy, or top with your favorite healthy additions for an indulgent yet nutritious start to your morning. For those with dietary preferences, they can easily be made gluten-free with almond or oat flour, and vegan options are simple by swapping eggs for flaxseed or chia seed \"eggs.\" For best results, ensure your batter is well-mixed but not overworked, and preheat your waffle iron thoroughly for perfectly crispy edges every time. Whether you're fueling an active day or enjoying a weekend brunch, these waffles deliver both flavor and nutrition in every bite.",
     "protein": 25,
     "calories": 270,
     "carbs": 20,
@@ -1362,13 +1376,14 @@
         "domain": "protein-bread.com",
         "category": "protein bread"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 16,
     "slug": "peanut-butter-cup-protein-pancakes",
     "title": "Peanut Butter Cup Protein Pancakes",
-    "description": "Indulge in a decadent, protein-rich breakfast that perfectly mimics the irresistible flavor of a peanut butter cup. These fluffy chocolate pancakes boast a satisfying texture that\u2019s light and airy on the inside, with a subtly chewy exterior, complemented by a luscious swirl of creamy peanut butter that melts into every bite. Packed with approximately 28 grams of protein per serving, they provide a powerful start to your day, fueling your muscles and keeping hunger at bay longer. With a rich chocolate flavor balanced by the nutty sweetness of peanut butter, each mouthful is a delightful combination of indulgence and nourishment. Ideal for post-workout recovery or meal prepping on busy mornings, these pancakes are versatile enough to enjoy hot off the griddle or reheated later. For those with dietary restrictions, they can easily be made gluten-free using almond or oat flour, and vegan options are available by swapping in plant-based milk and peanut butter. To achieve the best texture, gently fold in the ingredients and avoid overmixing, which keeps the pancakes tender and fluffy. Drizzle with extra peanut butter or a dusting of cocoa powder for an extra treat\u2014these pancakes are sure to satisfy your sweet tooth while supporting your active lifestyle.",
+    "description": "Indulge in a decadent, protein-rich breakfast that perfectly mimics the irresistible flavor of a peanut butter cup. These fluffy chocolate pancakes boast a satisfying texture that’s light and airy on the inside, with a subtly chewy exterior, complemented by a luscious swirl of creamy peanut butter that melts into every bite. Packed with approximately 28 grams of protein per serving, they provide a powerful start to your day, fueling your muscles and keeping hunger at bay longer. With a rich chocolate flavor balanced by the nutty sweetness of peanut butter, each mouthful is a delightful combination of indulgence and nourishment. Ideal for post-workout recovery or meal prepping on busy mornings, these pancakes are versatile enough to enjoy hot off the griddle or reheated later. For those with dietary restrictions, they can easily be made gluten-free using almond or oat flour, and vegan options are available by swapping in plant-based milk and peanut butter. To achieve the best texture, gently fold in the ingredients and avoid overmixing, which keeps the pancakes tender and fluffy. Drizzle with extra peanut butter or a dusting of cocoa powder for an extra treat—these pancakes are sure to satisfy your sweet tooth while supporting your active lifestyle.",
     "protein": 28,
     "calories": 320,
     "carbs": 25,
@@ -1452,13 +1467,14 @@
         "domain": "protein-bread.com",
         "category": "protein bread"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 17,
     "slug": "carrot-cake-protein-waffles",
     "title": "Carrot Cake Protein Waffles",
-    "description": "Indulge in the comforting flavors of classic carrot cake with these protein-packed waffles that deliver both incredible taste and nutritious benefits. Each serving boasts an impressive 25 grams of high-quality protein, making them an ideal choice for post-workout recovery or a satisfying breakfast that keeps you energized all morning. The tender, crisp exterior combined with a moist, spiced interior captures the irresistible essence of carrot cake, complete with the subtle sweetness of grated carrots and warming hints of cinnamon and nutmeg. Topped with a creamy, tangy cream cheese glaze, these waffles offer a delightful contrast in texture that\u2019s both rich and refreshing. Perfect for meal prep, they store well in the fridge, ready to be reheated for a quick, wholesome meal any day. For those with dietary considerations, gluten-free flour options and vegan cream cheese can easily be substituted to suit your needs. To get the best results, make sure not to overmix the batter to keep the waffles light and fluffy, and allow the waffle iron to heat thoroughly before pouring in the batter for a perfectly crisp finish. Whether enjoyed as a hearty breakfast or a satisfying dessert, these waffles are a delicious way to fuel your body with wholesome, high-protein ingredients.",
+    "description": "Indulge in the comforting flavors of classic carrot cake with these protein-packed waffles that deliver both incredible taste and nutritious benefits. Each serving boasts an impressive 25 grams of high-quality protein, making them an ideal choice for post-workout recovery or a satisfying breakfast that keeps you energized all morning. The tender, crisp exterior combined with a moist, spiced interior captures the irresistible essence of carrot cake, complete with the subtle sweetness of grated carrots and warming hints of cinnamon and nutmeg. Topped with a creamy, tangy cream cheese glaze, these waffles offer a delightful contrast in texture that’s both rich and refreshing. Perfect for meal prep, they store well in the fridge, ready to be reheated for a quick, wholesome meal any day. For those with dietary considerations, gluten-free flour options and vegan cream cheese can easily be substituted to suit your needs. To get the best results, make sure not to overmix the batter to keep the waffles light and fluffy, and allow the waffle iron to heat thoroughly before pouring in the batter for a perfectly crisp finish. Whether enjoyed as a hearty breakfast or a satisfying dessert, these waffles are a delicious way to fuel your body with wholesome, high-protein ingredients.",
     "protein": 25,
     "calories": 280,
     "carbs": 28,
@@ -1546,7 +1562,8 @@
         "domain": "protein-bread.com",
         "category": "protein bread"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 18,
@@ -1638,13 +1655,14 @@
         "domain": "protein-bread.com",
         "category": "protein bread"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 19,
     "slug": "lemon-poppy-seed-protein-pancakes",
     "title": "Lemon Poppy Seed Protein Pancakes",
-    "description": "Bright and zesty, these pancakes are bursting with lemon flavor and a delightful crunch from poppy seeds. With 24 grams of protein per serving, they provide a satisfying, muscle-nourishing start to your day or a perfect post-workout boost to support recovery. The tender, fluffy texture combined with the crisp poppy seeds creates a balanced bite that's both refreshing and indulgent. The vibrant lemon aroma and tangy flavor make them an irresistible choice for a healthy breakfast or brunch, while their wholesome ingredients keep you energized throughout the day. These pancakes are versatile and can easily be made gluten-free by using a gluten-free flour blend, and vegan options are simple with plant-based protein and dairy substitutes. For best results, mix the batter just until combined to maintain a light, airy texture, and cook on a medium heat to prevent burning while ensuring they cook through evenly. Perfect for meal prep, you can make a batch in advance to enjoy throughout the week\u2014just reheat and top with fresh fruit or a drizzle of honey for added flavor. Whether enjoyed as a nourishing morning treat or a revitalizing snack, these lemon poppy seed protein pancakes are a delicious way to fuel your active lifestyle.",
+    "description": "Bright and zesty, these pancakes are bursting with lemon flavor and a delightful crunch from poppy seeds. With 24 grams of protein per serving, they provide a satisfying, muscle-nourishing start to your day or a perfect post-workout boost to support recovery. The tender, fluffy texture combined with the crisp poppy seeds creates a balanced bite that's both refreshing and indulgent. The vibrant lemon aroma and tangy flavor make them an irresistible choice for a healthy breakfast or brunch, while their wholesome ingredients keep you energized throughout the day. These pancakes are versatile and can easily be made gluten-free by using a gluten-free flour blend, and vegan options are simple with plant-based protein and dairy substitutes. For best results, mix the batter just until combined to maintain a light, airy texture, and cook on a medium heat to prevent burning while ensuring they cook through evenly. Perfect for meal prep, you can make a batch in advance to enjoy throughout the week—just reheat and top with fresh fruit or a drizzle of honey for added flavor. Whether enjoyed as a nourishing morning treat or a revitalizing snack, these lemon poppy seed protein pancakes are a delicious way to fuel your active lifestyle.",
     "protein": 24,
     "calories": 250,
     "carbs": 22,
@@ -1724,13 +1742,14 @@
         "domain": "protein-bread.com",
         "category": "protein bread"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 20,
     "slug": "coffee-infused-protein-waffles",
     "title": "Coffee-Infused Protein Waffles",
-    "description": "Get your caffeine and protein fix in one delicious breakfast! These waffles are infused with real coffee for a rich and robust flavor, creating a satisfying start to your day. Packed with 26 grams of high-quality protein per serving, they support muscle recovery and keep you energized longer, making them perfect for post-workout refueling or a hearty weekend brunch. The crispy exterior gives way to a tender, fluffy interior with a delightful coffee aroma that awakens your senses. Their balanced macros make them a nutritious choice for anyone looking to boost their protein intake without sacrificing flavor. For added versatility, they can easily be made gluten-free using almond or oat flour, and vegan options can be achieved with plant-based protein and dairy-free milk. To get the best results, be sure to thoroughly mix your batter to avoid lumps and lightly preheat your waffle iron for a crisp, golden finish. These waffles are excellent enjoyed with a dollop of Greek yogurt, a drizzle of maple syrup, or fresh berries\u2014perfect for meal prepping as they reheat beautifully in the toaster or oven. Whether you're fueling a busy morning or treating yourself on a lazy weekend, these coffee-infused protein waffles are a deliciously energizing choice.",
+    "description": "Get your caffeine and protein fix in one delicious breakfast! These waffles are infused with real coffee for a rich and robust flavor, creating a satisfying start to your day. Packed with 26 grams of high-quality protein per serving, they support muscle recovery and keep you energized longer, making them perfect for post-workout refueling or a hearty weekend brunch. The crispy exterior gives way to a tender, fluffy interior with a delightful coffee aroma that awakens your senses. Their balanced macros make them a nutritious choice for anyone looking to boost their protein intake without sacrificing flavor. For added versatility, they can easily be made gluten-free using almond or oat flour, and vegan options can be achieved with plant-based protein and dairy-free milk. To get the best results, be sure to thoroughly mix your batter to avoid lumps and lightly preheat your waffle iron for a crisp, golden finish. These waffles are excellent enjoyed with a dollop of Greek yogurt, a drizzle of maple syrup, or fresh berries—perfect for meal prepping as they reheat beautifully in the toaster or oven. Whether you're fueling a busy morning or treating yourself on a lazy weekend, these coffee-infused protein waffles are a deliciously energizing choice.",
     "protein": 26,
     "calories": 280,
     "carbs": 22,
@@ -1809,13 +1828,14 @@
         "domain": "protein-bread.com",
         "category": "protein bread"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 21,
     "slug": "german-chocolate-protein-pancakes",
     "title": "German Chocolate Protein Pancakes",
-    "description": "These decadent and delicious pancakes, inspired by the classic German chocolate cake, are a true treat for both your taste buds and your fitness goals. Packed with approximately 28 grams of high-quality protein per serving, they provide the perfect fuel for post-workout recovery or a satisfying start to your day. The rich, chocolatey batter offers a moist, tender texture with indulgent flavors that melt in your mouth, while the coconut-pecan topping adds a delightful crunch and a sweet, toasted aroma. Made with wholesome ingredients, these pancakes are naturally gluten-free if you use certified GF oats or flour, and vegan options can be easily crafted with plant-based protein powders and dairy-free coconut milk. They\u2019re ideal for meal prep, allowing you to enjoy a flavorful, high-protein breakfast or dessert throughout the week. For best results, cook the pancakes on a medium-low heat to achieve a golden exterior without burning, and gently fold in the ingredients to keep the batter light and fluffy. Whether you\u2019re craving a nutritious indulgence or a satisfying way to boost your macros, these German chocolate protein pancakes are sure to become a favorite in your rotation.",
+    "description": "These decadent and delicious pancakes, inspired by the classic German chocolate cake, are a true treat for both your taste buds and your fitness goals. Packed with approximately 28 grams of high-quality protein per serving, they provide the perfect fuel for post-workout recovery or a satisfying start to your day. The rich, chocolatey batter offers a moist, tender texture with indulgent flavors that melt in your mouth, while the coconut-pecan topping adds a delightful crunch and a sweet, toasted aroma. Made with wholesome ingredients, these pancakes are naturally gluten-free if you use certified GF oats or flour, and vegan options can be easily crafted with plant-based protein powders and dairy-free coconut milk. They’re ideal for meal prep, allowing you to enjoy a flavorful, high-protein breakfast or dessert throughout the week. For best results, cook the pancakes on a medium-low heat to achieve a golden exterior without burning, and gently fold in the ingredients to keep the batter light and fluffy. Whether you’re craving a nutritious indulgence or a satisfying way to boost your macros, these German chocolate protein pancakes are sure to become a favorite in your rotation.",
     "protein": 28,
     "calories": 350,
     "carbs": 28,
@@ -1896,13 +1916,14 @@
         "domain": "protein-bread.com",
         "category": "protein bread"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 22,
     "slug": "churro-protein-waffles",
     "title": "Churro Protein Waffles",
-    "description": "Crispy on the outside, fluffy on the inside, and coated in cinnamon-sugar, these protein waffles taste just like a classic churro, but with a nutritious twist. Packed with 25 grams of protein per serving, they provide the perfect fuel for post-workout recovery or a satisfying breakfast that keeps you energized all morning. The tender, airy interior combined with a crisp exterior offers a delightful texture contrast, while the warm cinnamon and sweet sugar coating evoke the comforting aroma of fresh churros. Thanks to their high protein content and balanced macros, these waffles are as nourishing as they are indulgent, making them an ideal meal prep option for busy mornings. They\u2019re naturally gluten-free if you use a gluten-free protein powder, and vegan variations can be easily made with plant-based milk and egg substitutes. For best results, ensure your waffle iron is well-heated before pouring the batter, and avoid overmixing to keep the waffles light and fluffy. Enjoy these waffles as a decadent breakfast, a guilt-free dessert, or even a savory snack by tweaking the toppings\u2014either way, they\u2019re sure to satisfy your sweet tooth while supporting your fitness goals.",
+    "description": "Crispy on the outside, fluffy on the inside, and coated in cinnamon-sugar, these protein waffles taste just like a classic churro, but with a nutritious twist. Packed with 25 grams of protein per serving, they provide the perfect fuel for post-workout recovery or a satisfying breakfast that keeps you energized all morning. The tender, airy interior combined with a crisp exterior offers a delightful texture contrast, while the warm cinnamon and sweet sugar coating evoke the comforting aroma of fresh churros. Thanks to their high protein content and balanced macros, these waffles are as nourishing as they are indulgent, making them an ideal meal prep option for busy mornings. They’re naturally gluten-free if you use a gluten-free protein powder, and vegan variations can be easily made with plant-based milk and egg substitutes. For best results, ensure your waffle iron is well-heated before pouring the batter, and avoid overmixing to keep the waffles light and fluffy. Enjoy these waffles as a decadent breakfast, a guilt-free dessert, or even a savory snack by tweaking the toppings—either way, they’re sure to satisfy your sweet tooth while supporting your fitness goals.",
     "protein": 25,
     "calories": 300,
     "carbs": 30,
@@ -1985,7 +2006,8 @@
         "domain": "protein-bread.com",
         "category": "protein bread"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 23,
@@ -2078,13 +2100,14 @@
         "domain": "protein-bread.com",
         "category": "protein bread"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 24,
     "slug": "samoa-inspired-protein-pancakes",
     "title": "Samoa-Inspired Protein Pancakes",
-    "description": "Indulge in these Samoa-inspired protein pancakes, a delicious tribute to the beloved Girl Scout cookie, packed with 27 grams of muscle-building protein per serving to fuel your day. The tender, fluffy pancakes boast a rich chocolate flavor, perfectly complemented by a luscious caramel drizzle, toasted coconut flakes, and a decadent chocolate topping that create a symphony of textures\u2014crisp coconut, gooey caramel, and velvety chocolate all in one bite. Not only are these pancakes irresistibly tasty, but they also offer a balanced macro profile with wholesome ingredients that support muscle recovery and sustained energy. Ideal for a satisfying post-workout meal or a nutritious weekend brunch, they\u2019re versatile enough for meal prep\u2014just store and reheat for a quick, protein-packed start to your day. For those with dietary preferences, they can easily be made gluten-free with a gluten-free flour blend or vegan by swapping eggs for flaxseed meal and dairy-free chocolate and caramel alternatives. To achieve the best fluffiness, gently fold in the wet and dry ingredients without overmixing, and cook on medium heat to prevent burning. Top with extra toasted coconut or a drizzle of sugar-free caramel for an added flavor punch, making every bite both nourishing and indulgent.",
+    "description": "Indulge in these Samoa-inspired protein pancakes, a delicious tribute to the beloved Girl Scout cookie, packed with 27 grams of muscle-building protein per serving to fuel your day. The tender, fluffy pancakes boast a rich chocolate flavor, perfectly complemented by a luscious caramel drizzle, toasted coconut flakes, and a decadent chocolate topping that create a symphony of textures—crisp coconut, gooey caramel, and velvety chocolate all in one bite. Not only are these pancakes irresistibly tasty, but they also offer a balanced macro profile with wholesome ingredients that support muscle recovery and sustained energy. Ideal for a satisfying post-workout meal or a nutritious weekend brunch, they’re versatile enough for meal prep—just store and reheat for a quick, protein-packed start to your day. For those with dietary preferences, they can easily be made gluten-free with a gluten-free flour blend or vegan by swapping eggs for flaxseed meal and dairy-free chocolate and caramel alternatives. To achieve the best fluffiness, gently fold in the wet and dry ingredients without overmixing, and cook on medium heat to prevent burning. Top with extra toasted coconut or a drizzle of sugar-free caramel for an added flavor punch, making every bite both nourishing and indulgent.",
     "protein": 27,
     "calories": 340,
     "carbs": 30,
@@ -2164,13 +2187,14 @@
         "domain": "protein-bread.com",
         "category": "protein bread"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 25,
     "slug": "birthday-cake-protein-waffles",
     "title": "Birthday Cake Protein Waffles",
-    "description": "Celebrate any day with these fun and festive birthday cake protein waffles, complete with sprinkles and a sweet glaze. Packed with 26 grams of high-quality protein per serving, these waffles are perfect for supporting muscle recovery and keeping you energized throughout your busy day. The tender, fluffy texture is complemented by a hint of vanilla and a delightful crunch from the colorful sprinkles, making each bite both satisfying and playful. The sweet glaze adds a touch of decadence without feeling heavy, creating a balanced treat that feels indulgent yet nourishing. Ideal for post-workout recovery or a special weekend breakfast, these waffles can also be prepped in advance for a quick, protein-packed meal on busy mornings. They\u2019re naturally gluten-free if made with a gluten-free flour blend, and vegan options can be easily achieved by swapping in plant-based protein powder and dairy-free milk. For best results, ensure your waffle iron is fully preheated and lightly greased to achieve a crisp exterior, and gently fold the sprinkles into the batter to prevent them from sinking. Whether celebrating a special occasion or simply craving a nutritious, fun breakfast, these waffles are sure to bring joy and a boost of protein to your day.",
+    "description": "Celebrate any day with these fun and festive birthday cake protein waffles, complete with sprinkles and a sweet glaze. Packed with 26 grams of high-quality protein per serving, these waffles are perfect for supporting muscle recovery and keeping you energized throughout your busy day. The tender, fluffy texture is complemented by a hint of vanilla and a delightful crunch from the colorful sprinkles, making each bite both satisfying and playful. The sweet glaze adds a touch of decadence without feeling heavy, creating a balanced treat that feels indulgent yet nourishing. Ideal for post-workout recovery or a special weekend breakfast, these waffles can also be prepped in advance for a quick, protein-packed meal on busy mornings. They’re naturally gluten-free if made with a gluten-free flour blend, and vegan options can be easily achieved by swapping in plant-based protein powder and dairy-free milk. For best results, ensure your waffle iron is fully preheated and lightly greased to achieve a crisp exterior, and gently fold the sprinkles into the batter to prevent them from sinking. Whether celebrating a special occasion or simply craving a nutritious, fun breakfast, these waffles are sure to bring joy and a boost of protein to your day.",
     "protein": 26,
     "calories": 290,
     "carbs": 28,
@@ -2255,13 +2279,14 @@
         "domain": "protein-bread.com",
         "category": "protein bread"
       }
-    ]
+    ],
+    "intent_class": "quick-snack"
   },
   {
     "id": 100,
     "slug": "gluten-free-buckwheat-protein-pancakes",
     "title": "Gluten-Free Buckwheat Protein Pancakes",
-    "description": "These hearty, nutty-flavored pancakes made with naturally gluten-free buckwheat flour offer a robust and satisfying breakfast option packed with 22 grams of protein per serving, making them perfect for fueling your day or post-workout recovery. The rich, earthy taste of buckwheat gives each bite a delightful depth, while the tender yet slightly chewy texture makes them incredibly satisfying. With their balanced macros\u2014combining complex carbs, healthy fats, and a significant protein boost\u2014these pancakes support muscle repair and sustained energy release. They\u2019re versatile enough to enjoy any time of day, whether as a hearty breakfast, a nutritious snack, or part of meal prep for busy mornings. For an extra boost, consider adding your favorite nuts or seeds on top, or serve with fresh fruit and a dollop of yogurt. This recipe is naturally gluten-free, and vegan variations can be easily achieved by swapping eggs for flaxseed or chia seed eggs. To achieve the best possible results, use a well-sifted buckwheat flour to prevent clumping and ensure a smooth batter, and cook on a medium-low heat to get perfectly golden, fluffy pancakes every time.",
+    "description": "These hearty, nutty-flavored pancakes made with naturally gluten-free buckwheat flour offer a robust and satisfying breakfast option packed with 22 grams of protein per serving, making them perfect for fueling your day or post-workout recovery. The rich, earthy taste of buckwheat gives each bite a delightful depth, while the tender yet slightly chewy texture makes them incredibly satisfying. With their balanced macros—combining complex carbs, healthy fats, and a significant protein boost—these pancakes support muscle repair and sustained energy release. They’re versatile enough to enjoy any time of day, whether as a hearty breakfast, a nutritious snack, or part of meal prep for busy mornings. For an extra boost, consider adding your favorite nuts or seeds on top, or serve with fresh fruit and a dollop of yogurt. This recipe is naturally gluten-free, and vegan variations can be easily achieved by swapping eggs for flaxseed or chia seed eggs. To achieve the best possible results, use a well-sifted buckwheat flour to prevent clumping and ensure a smooth batter, and cook on a medium-low heat to get perfectly golden, fluffy pancakes every time.",
     "protein": 22,
     "calories": 195,
     "carbs": 20,
@@ -2347,13 +2372,14 @@
         "domain": "protein-bread.com",
         "category": "protein bread"
       }
-    ]
+    ],
+    "intent_class": "gluten-free"
   },
   {
     "id": 101,
     "slug": "dairy-free-banana-oat-protein-pancakes",
     "title": "Dairy-Free Banana Oat Protein Pancakes",
-    "description": "These fluffy, naturally sweetened pancakes are a nourishing treat that packs an impressive 18 grams of plant-based protein per serving, making them an ideal choice for fueling your day or fueling your recovery after a workout. Crafted with ripe bananas, hearty oats, and a boost of vegan protein, they offer a satisfying combination of tender, moist texture and subtly caramelized flavor from the bananas, with a slight chew from the oats. The naturally sweet taste means no added sugars are necessary, allowing the pure, wholesome flavors to shine through. Perfect for meal prep, these pancakes can be enjoyed hot with fresh fruit, nut butter, or a drizzle of pure maple syrup\u2014great for a quick breakfast or a post-exercise refuel. Their dairy-free, vegan-friendly ingredients make them suitable for various dietary needs, and you can easily swap in gluten-free oats for an allergy-friendly version. For best results, blend the batter until completely smooth and let it rest for a few minutes before cooking to ensure tender, evenly cooked pancakes. Whether you're looking for a high-protein morning boost or a satisfying snack, these pancakes deliver delicious flavor and impressive macros in every bite.",
+    "description": "These fluffy, naturally sweetened pancakes are a nourishing treat that packs an impressive 18 grams of plant-based protein per serving, making them an ideal choice for fueling your day or fueling your recovery after a workout. Crafted with ripe bananas, hearty oats, and a boost of vegan protein, they offer a satisfying combination of tender, moist texture and subtly caramelized flavor from the bananas, with a slight chew from the oats. The naturally sweet taste means no added sugars are necessary, allowing the pure, wholesome flavors to shine through. Perfect for meal prep, these pancakes can be enjoyed hot with fresh fruit, nut butter, or a drizzle of pure maple syrup—great for a quick breakfast or a post-exercise refuel. Their dairy-free, vegan-friendly ingredients make them suitable for various dietary needs, and you can easily swap in gluten-free oats for an allergy-friendly version. For best results, blend the batter until completely smooth and let it rest for a few minutes before cooking to ensure tender, evenly cooked pancakes. Whether you're looking for a high-protein morning boost or a satisfying snack, these pancakes deliver delicious flavor and impressive macros in every bite.",
     "protein": 18,
     "calories": 185,
     "carbs": 24,
@@ -2439,13 +2465,14 @@
         "domain": "protein-bread.com",
         "category": "protein bread"
       }
-    ]
+    ],
+    "intent_class": "vegan"
   },
   {
     "id": 100,
     "slug": "gluten-free-buckwheat-protein-pancakes",
     "title": "Gluten-Free Buckwheat Protein Pancakes",
-    "description": "These hearty, nutty-flavored pancakes made with naturally gluten-free buckwheat flour offer a robust and satisfying breakfast option packed with 22 grams of protein per serving, making them perfect for fueling your day or post-workout recovery. The rich, earthy taste of buckwheat gives each bite a delightful depth, while the tender yet slightly chewy texture makes them incredibly satisfying. With their balanced macros\u2014combining complex carbs, healthy fats, and a significant protein boost\u2014these pancakes support muscle repair and sustained energy release. They\u2019re versatile enough to enjoy any time of day, whether as a hearty breakfast, a nutritious snack, or part of meal prep for busy mornings. For an extra boost, consider adding your favorite nuts or seeds on top, or serve with fresh fruit and a dollop of yogurt. This recipe is naturally gluten-free, and vegan variations can be easily achieved by swapping eggs for flaxseed or chia seed eggs. To achieve the best possible results, use a well-sifted buckwheat flour to prevent clumping and ensure a smooth batter, and cook on a medium-low heat to get perfectly golden, fluffy pancakes every time.",
+    "description": "These hearty, nutty-flavored pancakes made with naturally gluten-free buckwheat flour offer a robust and satisfying breakfast option packed with 22 grams of protein per serving, making them perfect for fueling your day or post-workout recovery. The rich, earthy taste of buckwheat gives each bite a delightful depth, while the tender yet slightly chewy texture makes them incredibly satisfying. With their balanced macros—combining complex carbs, healthy fats, and a significant protein boost—these pancakes support muscle repair and sustained energy release. They’re versatile enough to enjoy any time of day, whether as a hearty breakfast, a nutritious snack, or part of meal prep for busy mornings. For an extra boost, consider adding your favorite nuts or seeds on top, or serve with fresh fruit and a dollop of yogurt. This recipe is naturally gluten-free, and vegan variations can be easily achieved by swapping eggs for flaxseed or chia seed eggs. To achieve the best possible results, use a well-sifted buckwheat flour to prevent clumping and ensure a smooth batter, and cook on a medium-low heat to get perfectly golden, fluffy pancakes every time.",
     "protein": 22,
     "calories": 195,
     "carbs": 20,
@@ -2531,13 +2558,14 @@
         "domain": "protein-bread.com",
         "category": "protein bread"
       }
-    ]
+    ],
+    "intent_class": "gluten-free"
   },
   {
     "id": 101,
     "slug": "dairy-free-banana-oat-protein-pancakes",
     "title": "Dairy-Free Banana Oat Protein Pancakes",
-    "description": "These fluffy, naturally sweetened pancakes are a nourishing treat that packs an impressive 18 grams of plant-based protein per serving, making them an ideal choice for fueling your day or fueling your recovery after a workout. Crafted with ripe bananas, hearty oats, and a boost of vegan protein, they offer a satisfying combination of tender, moist texture and subtly caramelized flavor from the bananas, with a slight chew from the oats. The naturally sweet taste means no added sugars are necessary, allowing the pure, wholesome flavors to shine through. Perfect for meal prep, these pancakes can be enjoyed hot with fresh fruit, nut butter, or a drizzle of pure maple syrup\u2014great for a quick breakfast or a post-exercise refuel. Their dairy-free, vegan-friendly ingredients make them suitable for various dietary needs, and you can easily swap in gluten-free oats for an allergy-friendly version. For best results, blend the batter until completely smooth and let it rest for a few minutes before cooking to ensure tender, evenly cooked pancakes. Whether you're looking for a high-protein morning boost or a satisfying snack, these pancakes deliver delicious flavor and impressive macros in every bite.",
+    "description": "These fluffy, naturally sweetened pancakes are a nourishing treat that packs an impressive 18 grams of plant-based protein per serving, making them an ideal choice for fueling your day or fueling your recovery after a workout. Crafted with ripe bananas, hearty oats, and a boost of vegan protein, they offer a satisfying combination of tender, moist texture and subtly caramelized flavor from the bananas, with a slight chew from the oats. The naturally sweet taste means no added sugars are necessary, allowing the pure, wholesome flavors to shine through. Perfect for meal prep, these pancakes can be enjoyed hot with fresh fruit, nut butter, or a drizzle of pure maple syrup—great for a quick breakfast or a post-exercise refuel. Their dairy-free, vegan-friendly ingredients make them suitable for various dietary needs, and you can easily swap in gluten-free oats for an allergy-friendly version. For best results, blend the batter until completely smooth and let it rest for a few minutes before cooking to ensure tender, evenly cooked pancakes. Whether you're looking for a high-protein morning boost or a satisfying snack, these pancakes deliver delicious flavor and impressive macros in every bite.",
     "protein": 18,
     "calories": 185,
     "carbs": 24,
@@ -2623,6 +2651,7 @@
         "domain": "protein-bread.com",
         "category": "protein bread"
       }
-    ]
+    ],
+    "intent_class": "vegan"
   }
 ]

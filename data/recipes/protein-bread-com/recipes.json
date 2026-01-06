@@ -4,7 +4,7 @@
       "id": 1,
       "slug": "protein-banana-bread",
       "title": "Classic Protein Banana Bread",
-      "description": "This delicious and moist banana bread is packed with 25 grams of protein per slice, making it the perfect treat to fuel your day or support your post-workout recovery. Its tender crumb and subtly sweet banana flavor are complemented by a hearty, satisfying texture that melts in your mouth with every bite. Rich in quality protein, fiber, and healthy carbs, it provides sustained energy and helps keep hunger at bay, making it an ideal choice for meal prep or a quick snack on the go. Whether enjoyed warm with a spread of nut butter or sliced and topped with a dollop of Greek yogurt, this bread delivers both flavor and nutritional benefits in every slice. For those with dietary restrictions, it's easily adaptable\u2014try using gluten-free oats or plant-based protein powder to make it vegan and gluten-free. To achieve the best results, ensure your bananas are ripe for maximum sweetness and mash them thoroughly to prevent lumps; adding a handful of chopped nuts can also boost crunch and healthy fats. Perfect for anyone looking to indulge guilt-free while hitting their daily macro goals, this banana bread is a wholesome, versatile treat you\u2019ll want to make again and again.",
+      "description": "This delicious and moist banana bread is packed with 25 grams of protein per slice, making it the perfect treat to fuel your day or support your post-workout recovery. Its tender crumb and subtly sweet banana flavor are complemented by a hearty, satisfying texture that melts in your mouth with every bite. Rich in quality protein, fiber, and healthy carbs, it provides sustained energy and helps keep hunger at bay, making it an ideal choice for meal prep or a quick snack on the go. Whether enjoyed warm with a spread of nut butter or sliced and topped with a dollop of Greek yogurt, this bread delivers both flavor and nutritional benefits in every slice. For those with dietary restrictions, it's easily adaptable—try using gluten-free oats or plant-based protein powder to make it vegan and gluten-free. To achieve the best results, ensure your bananas are ripe for maximum sweetness and mash them thoroughly to prevent lumps; adding a handful of chopped nuts can also boost crunch and healthy fats. Perfect for anyone looking to indulge guilt-free while hitting their daily macro goals, this banana bread is a wholesome, versatile treat you’ll want to make again and again.",
       "protein": 25,
       "calories": 220,
       "carbs": 20,
@@ -42,7 +42,7 @@
       "instructions": [
         {
           "step": "Preheat Oven",
-          "text": "Preheat your oven to 350\u00b0F (175\u00b0C) and grease a 9x5 inch loaf pan."
+          "text": "Preheat your oven to 350°F (175°C) and grease a 9x5 inch loaf pan."
         },
         {
           "step": "Mix Wet Ingredients",
@@ -95,13 +95,14 @@
           "domain": "proteinoatmeal.co",
           "category": "protein oatmeal"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 2,
       "slug": "high-protein-banana-bread",
       "title": "High Protein Banana Bread Recipe",
-      "description": "Boost your protein intake with this delicious banana bread, boasting 28g of protein per serving. Packed with wholesome ingredients, this bread provides a satisfying balance of macronutrients\u2014perfect for fueling your day or supporting your post-workout recovery. The moist, tender crumb is complemented by a subtle sweetness from ripe bananas and a hint of warmth from cinnamon, creating a comforting aroma with every slice. Its dense texture is both hearty and indulgent, making each bite incredibly satisfying without feeling heavy. Ideal for meal prep, you can enjoy this bread as a quick breakfast, a nutritious snack, or an energizing post-workout treat. For those with dietary restrictions, it can easily be made gluten-free by using almond or oat flour, and vegan options are simple with plant-based protein powders and flax eggs. To achieve the best results, be sure to mash the bananas thoroughly and avoid overmixing the batter to keep the bread light and fluffy. Whether you're looking to boost your protein intake or simply indulge in a delicious treat, this banana bread is a wholesome, versatile choice that fits seamlessly into a healthy lifestyle.",
+      "description": "Boost your protein intake with this delicious banana bread, boasting 28g of protein per serving. Packed with wholesome ingredients, this bread provides a satisfying balance of macronutrients—perfect for fueling your day or supporting your post-workout recovery. The moist, tender crumb is complemented by a subtle sweetness from ripe bananas and a hint of warmth from cinnamon, creating a comforting aroma with every slice. Its dense texture is both hearty and indulgent, making each bite incredibly satisfying without feeling heavy. Ideal for meal prep, you can enjoy this bread as a quick breakfast, a nutritious snack, or an energizing post-workout treat. For those with dietary restrictions, it can easily be made gluten-free by using almond or oat flour, and vegan options are simple with plant-based protein powders and flax eggs. To achieve the best results, be sure to mash the bananas thoroughly and avoid overmixing the batter to keep the bread light and fluffy. Whether you're looking to boost your protein intake or simply indulge in a delicious treat, this banana bread is a wholesome, versatile choice that fits seamlessly into a healthy lifestyle.",
       "protein": 28,
       "calories": 240,
       "carbs": 22,
@@ -138,7 +139,7 @@
       "instructions": [
         {
           "step": "Preheat and Prep",
-          "text": "Preheat your oven to 325\u00b0F (165\u00b0C). Lightly grease and flour a loaf pan."
+          "text": "Preheat your oven to 325°F (165°C). Lightly grease and flour a loaf pan."
         },
         {
           "step": "Mix Wet Ingredients",
@@ -191,13 +192,14 @@
           "domain": "proteinoatmeal.co",
           "category": "protein oatmeal"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 3,
       "slug": "protein-banana-bread-recipe",
       "title": "Simple Protein Banana Bread Recipe",
-      "description": "This straightforward and delicious protein banana bread recipe delivers a satisfying slice with 22 grams of muscle-loving protein per serving, making it an ideal choice for fueling your day. Packed with wholesome ingredients, it's not only rich in protein but also offers a balanced mix of healthy carbs and fats, perfect for supporting muscle recovery and sustained energy. The moist, tender crumb melts in your mouth, while the natural sweetness of ripe bananas pairs beautifully with a hint of vanilla and a touch of cinnamon, creating a comforting yet nutritious treat. Its dense texture makes it a perfect post-workout snack or a satisfying breakfast on busy mornings. Thanks to its high protein content, it can help keep you full longer and curb cravings between meals. For those with dietary restrictions, this bread can easily be made gluten-free by using almond or oat flour, and vegan options are simple with plant-based protein powders or flax eggs. To achieve the best rise and texture, be sure to measure your ingredients carefully and avoid overmixing the batter. Enjoy it fresh out of the oven, or store slices in the fridge for quick, easy meals throughout the week\u2014it's an indulgent, health-conscious treat that fits seamlessly into any active lifestyle.",
+      "description": "This straightforward and delicious protein banana bread recipe delivers a satisfying slice with 22 grams of muscle-loving protein per serving, making it an ideal choice for fueling your day. Packed with wholesome ingredients, it's not only rich in protein but also offers a balanced mix of healthy carbs and fats, perfect for supporting muscle recovery and sustained energy. The moist, tender crumb melts in your mouth, while the natural sweetness of ripe bananas pairs beautifully with a hint of vanilla and a touch of cinnamon, creating a comforting yet nutritious treat. Its dense texture makes it a perfect post-workout snack or a satisfying breakfast on busy mornings. Thanks to its high protein content, it can help keep you full longer and curb cravings between meals. For those with dietary restrictions, this bread can easily be made gluten-free by using almond or oat flour, and vegan options are simple with plant-based protein powders or flax eggs. To achieve the best rise and texture, be sure to measure your ingredients carefully and avoid overmixing the batter. Enjoy it fresh out of the oven, or store slices in the fridge for quick, easy meals throughout the week—it's an indulgent, health-conscious treat that fits seamlessly into any active lifestyle.",
       "protein": 22,
       "calories": 200,
       "carbs": 18,
@@ -234,7 +236,7 @@
       "instructions": [
         {
           "step": "Preheat Oven",
-          "text": "Preheat oven to 180\u00b0C (350\u00b0F). Grease a loaf pan."
+          "text": "Preheat oven to 180°C (350°F). Grease a loaf pan."
         },
         {
           "step": "Mash Bananas",
@@ -287,13 +289,14 @@
           "domain": "proteinoatmeal.co",
           "category": "protein oatmeal"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 4,
       "slug": "protein-powder-banana-bread",
       "title": "Banana Bread with Protein Powder",
-      "description": "Enhance your banana bread with a scoop of protein powder for a 26g protein boost, making it the perfect guilt-free treat to fuel your day. Rich in satisfying texture, this bread boasts a moist, tender crumb with just the right balance of sweetness and banana flavor, complemented by a subtle protein-rich richness that keeps you full longer. Packed with wholesome ingredients, it offers a balanced macro profile\u2014ideal for post-workout recovery or a nutritious snack on busy mornings. The dense yet fluffy texture makes each bite incredibly satisfying, while the natural sweetness of ripe bananas ensures a delightful, comforting taste. Whether enjoyed warm with a smear of almond butter or sliced and packed into your lunchbox, this bread is versatile and crave-worthy. It\u2019s easy to customize\u2014using gluten-free oats or vegan protein powder makes it suitable for various dietary needs. For best results, fold the protein powder gently into the batter to maintain a light texture, and avoid overmixing to prevent a dense loaf. Perfect for meal prep, this high-protein banana bread provides a delicious way to stay energized and on track with your health goals.",
+      "description": "Enhance your banana bread with a scoop of protein powder for a 26g protein boost, making it the perfect guilt-free treat to fuel your day. Rich in satisfying texture, this bread boasts a moist, tender crumb with just the right balance of sweetness and banana flavor, complemented by a subtle protein-rich richness that keeps you full longer. Packed with wholesome ingredients, it offers a balanced macro profile—ideal for post-workout recovery or a nutritious snack on busy mornings. The dense yet fluffy texture makes each bite incredibly satisfying, while the natural sweetness of ripe bananas ensures a delightful, comforting taste. Whether enjoyed warm with a smear of almond butter or sliced and packed into your lunchbox, this bread is versatile and crave-worthy. It’s easy to customize—using gluten-free oats or vegan protein powder makes it suitable for various dietary needs. For best results, fold the protein powder gently into the batter to maintain a light texture, and avoid overmixing to prevent a dense loaf. Perfect for meal prep, this high-protein banana bread provides a delicious way to stay energized and on track with your health goals.",
       "protein": 26,
       "calories": 230,
       "carbs": 21,
@@ -328,7 +331,7 @@
       "instructions": [
         {
           "step": "Preheat Oven",
-          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Grease and flour a 9x5-inch loaf pan."
+          "text": "Preheat your oven to 350°F (175°C). Grease and flour a 9x5-inch loaf pan."
         },
         {
           "step": "Mix Wet Ingredients",
@@ -381,13 +384,14 @@
           "domain": "proteinoatmeal.co",
           "category": "protein oatmeal"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 5,
       "slug": "high-protein-banana-bread-recipe",
       "title": "Ultimate High-Protein Banana Bread",
-      "description": "This ultimate high-protein banana bread is a deliciously nutritious treat, offering an impressive 30 grams of protein per serving to fuel your day and support muscle recovery. Rich in wholesome ingredients like ripe bananas and protein-packed additions, it provides a satisfying balance of moist, tender crumb and a subtly sweet, banana flavor that melts in your mouth. The dense texture is complemented by a hint of natural sweetness, making it a perfect indulgence that aligns with your fitness goals. With its balanced macros\u2014high in protein and moderate in healthy carbs and fats\u2014it\u2019s ideal for post-workout recovery or a nourishing on-the-go snack. You can enjoy this bread warm with a smear of almond butter or sliced fresh, or even use it as a portable breakfast for busy mornings. For those with dietary restrictions, it can easily be made gluten-free by using almond or coconut flour, and vegan options are simple by substituting plant-based protein powders and flax eggs. For best results, ensure your bananas are very ripe for maximum sweetness and moisture, and don\u2019t overmix the batter to keep the bread light and tender. This versatile loaf is perfect for meal prep, allowing you to batch cook and have a high-protein snack ready to go anytime hunger strikes.",
+      "description": "This ultimate high-protein banana bread is a deliciously nutritious treat, offering an impressive 30 grams of protein per serving to fuel your day and support muscle recovery. Rich in wholesome ingredients like ripe bananas and protein-packed additions, it provides a satisfying balance of moist, tender crumb and a subtly sweet, banana flavor that melts in your mouth. The dense texture is complemented by a hint of natural sweetness, making it a perfect indulgence that aligns with your fitness goals. With its balanced macros—high in protein and moderate in healthy carbs and fats—it’s ideal for post-workout recovery or a nourishing on-the-go snack. You can enjoy this bread warm with a smear of almond butter or sliced fresh, or even use it as a portable breakfast for busy mornings. For those with dietary restrictions, it can easily be made gluten-free by using almond or coconut flour, and vegan options are simple by substituting plant-based protein powders and flax eggs. For best results, ensure your bananas are very ripe for maximum sweetness and moisture, and don’t overmix the batter to keep the bread light and tender. This versatile loaf is perfect for meal prep, allowing you to batch cook and have a high-protein snack ready to go anytime hunger strikes.",
       "protein": 30,
       "calories": 250,
       "carbs": 24,
@@ -427,7 +431,7 @@
       "instructions": [
         {
           "step": "Preheat Oven & Prepare Pan",
-          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Grease a loaf pan thoroughly."
+          "text": "Preheat your oven to 350°F (175°C). Grease a loaf pan thoroughly."
         },
         {
           "step": "Combine Wet Ingredients",
@@ -480,13 +484,14 @@
           "domain": "proteinoatmeal.co",
           "category": "protein oatmeal"
         }
-      ]
+      ],
+      "intent_class": "high-protein-30g"
     },
     {
       "id": 6,
       "slug": "protein-pumpkin-bread",
       "title": "Healthy Protein Pumpkin Bread",
-      "description": "This moist and delicious pumpkin bread delivers a satisfying protein punch of 24g per slice, making it an ideal choice for fueling your busy day or post-workout recovery. Packed with wholesome ingredients, it offers a balanced macro profile with healthy carbs and fiber to keep you energized, alongside lean protein to support muscle repair. The tender crumb boasts a rich pumpkin flavor complemented by warm spices, with a subtle sweetness that makes every bite irresistible. Its dense yet soft texture makes it perfect for enjoying as a wholesome snack or a nutritious breakfast alongside a cup of coffee or tea. For best results, use ripe pumpkin puree and measure your ingredients carefully to ensure optimal moisture and rise. This bread is versatile for meal prep, lasting well in the fridge for several days, and can be easily adapted to gluten-free or vegan diets with alternative flours and plant-based protein powders. Whether you\u2019re looking for a satisfying treat after the gym or a healthy addition to your weekly meal plan, this pumpkin bread hits the spot while supporting your nutritional goals.",
+      "description": "This moist and delicious pumpkin bread delivers a satisfying protein punch of 24g per slice, making it an ideal choice for fueling your busy day or post-workout recovery. Packed with wholesome ingredients, it offers a balanced macro profile with healthy carbs and fiber to keep you energized, alongside lean protein to support muscle repair. The tender crumb boasts a rich pumpkin flavor complemented by warm spices, with a subtle sweetness that makes every bite irresistible. Its dense yet soft texture makes it perfect for enjoying as a wholesome snack or a nutritious breakfast alongside a cup of coffee or tea. For best results, use ripe pumpkin puree and measure your ingredients carefully to ensure optimal moisture and rise. This bread is versatile for meal prep, lasting well in the fridge for several days, and can be easily adapted to gluten-free or vegan diets with alternative flours and plant-based protein powders. Whether you’re looking for a satisfying treat after the gym or a healthy addition to your weekly meal plan, this pumpkin bread hits the spot while supporting your nutritional goals.",
       "protein": 24,
       "calories": 210,
       "carbs": 19,
@@ -522,7 +527,7 @@
       "instructions": [
         {
           "step": "Preheat Oven",
-          "text": "Preheat your oven to 350\u00b0F (175\u00b0C) and grease a loaf pan."
+          "text": "Preheat your oven to 350°F (175°C) and grease a loaf pan."
         },
         {
           "step": "Mix Wet Ingredients",
@@ -575,13 +580,14 @@
           "domain": "proteinoatmeal.co",
           "category": "protein oatmeal"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 7,
       "slug": "protein-zucchini-bread",
       "title": "Delicious Protein Zucchini Bread",
-      "description": "This healthy and flavorful zucchini bread packs an impressive 20g of protein per serving, making it an ideal choice for fueling your active lifestyle. Rich in fiber and low in refined sugars, it offers a balanced macro profile that supports muscle recovery and sustained energy. The moist, tender crumb is complemented by the subtle sweetness of zucchini and a hint of warming spices, creating a comforting yet nutritious treat. Perfect as a post-workout snack or a satisfying breakfast, it\u2019s great for meal prep and can be enjoyed throughout the week. For gluten-free options, simply swap out regular flour for almond or oat flour, and vegan adaptations can be achieved with plant-based protein powder and egg substitutes. To get the best results, be sure to grate the zucchini finely and squeeze out excess moisture to prevent sogginess, and don't overmix the batter to keep the bread light and airy. Whether you're aiming to boost your protein intake or indulge in a wholesome baked good, this zucchini bread is as nourishing as it is delicious.",
+      "description": "This healthy and flavorful zucchini bread packs an impressive 20g of protein per serving, making it an ideal choice for fueling your active lifestyle. Rich in fiber and low in refined sugars, it offers a balanced macro profile that supports muscle recovery and sustained energy. The moist, tender crumb is complemented by the subtle sweetness of zucchini and a hint of warming spices, creating a comforting yet nutritious treat. Perfect as a post-workout snack or a satisfying breakfast, it’s great for meal prep and can be enjoyed throughout the week. For gluten-free options, simply swap out regular flour for almond or oat flour, and vegan adaptations can be achieved with plant-based protein powder and egg substitutes. To get the best results, be sure to grate the zucchini finely and squeeze out excess moisture to prevent sogginess, and don't overmix the batter to keep the bread light and airy. Whether you're aiming to boost your protein intake or indulge in a wholesome baked good, this zucchini bread is as nourishing as it is delicious.",
       "protein": 20,
       "calories": 190,
       "carbs": 16,
@@ -618,7 +624,7 @@
       "instructions": [
         {
           "step": "Preheat Oven",
-          "text": "Preheat oven to 350\u00b0F (175\u00b0C). Grease and flour a 9x5-inch loaf pan."
+          "text": "Preheat oven to 350°F (175°C). Grease and flour a 9x5-inch loaf pan."
         },
         {
           "step": "Prepare Zucchini",
@@ -671,7 +677,8 @@
           "domain": "proteinoatmeal.co",
           "category": "protein oatmeal"
         }
-      ]
+      ],
+      "intent_class": "post-workout"
     },
     {
       "id": 8,
@@ -709,7 +716,7 @@
       "instructions": [
         {
           "step": "Preheat Oven",
-          "text": "Preheat your oven to 300\u00b0F (150\u00b0C)."
+          "text": "Preheat your oven to 300°F (150°C)."
         },
         {
           "step": "Beat Egg Whites",
@@ -762,13 +769,14 @@
           "domain": "proteinoatmeal.co",
           "category": "protein oatmeal"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 9,
       "slug": "protein-bread-recipe",
       "title": "Simple Protein Bread Recipe",
-      "description": "This simple protein bread recipe offers a satisfying, hearty slice packed with 20 grams of muscle-nourishing protein per serving, making it an ideal choice for fueling your active lifestyle. With its soft, slightly chewy texture and a subtly nutty flavor, each bite delivers a comforting yet nutritious experience that\u2019s perfect for breakfast, a post-workout boost, or anytime you need a wholesome snack. Its balanced macros\u2014combining lean protein, healthy carbs, and minimal fats\u2014support muscle recovery and sustained energy throughout the day. Whether you're meal prepping for the week or enjoying freshly baked bread with your favorite spreads, this recipe is versatile and easy to customize. For gluten-sensitive eaters, using gluten-free flour options ensures this bread fits your dietary needs, and vegan alternatives like plant-based protein powder can easily be incorporated. To achieve the best results, be sure to measure your ingredients precisely and avoid overmixing to keep the bread light and fluffy. This high-protein loaf is not only delicious but also a smart, nourishing addition to any balanced diet.",
+      "description": "This simple protein bread recipe offers a satisfying, hearty slice packed with 20 grams of muscle-nourishing protein per serving, making it an ideal choice for fueling your active lifestyle. With its soft, slightly chewy texture and a subtly nutty flavor, each bite delivers a comforting yet nutritious experience that’s perfect for breakfast, a post-workout boost, or anytime you need a wholesome snack. Its balanced macros—combining lean protein, healthy carbs, and minimal fats—support muscle recovery and sustained energy throughout the day. Whether you're meal prepping for the week or enjoying freshly baked bread with your favorite spreads, this recipe is versatile and easy to customize. For gluten-sensitive eaters, using gluten-free flour options ensures this bread fits your dietary needs, and vegan alternatives like plant-based protein powder can easily be incorporated. To achieve the best results, be sure to measure your ingredients precisely and avoid overmixing to keep the bread light and fluffy. This high-protein loaf is not only delicious but also a smart, nourishing addition to any balanced diet.",
       "protein": 20,
       "calories": 180,
       "carbs": 15,
@@ -802,7 +810,7 @@
       "instructions": [
         {
           "step": "Preheat Oven",
-          "text": "Preheat oven to 350\u00b0F (175\u00b0C). Grease a loaf pan."
+          "text": "Preheat oven to 350°F (175°C). Grease a loaf pan."
         },
         {
           "step": "Combine Ingredients",
@@ -855,13 +863,14 @@
           "domain": "proteinoatmeal.co",
           "category": "protein oatmeal"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 10,
       "slug": "high-protein-bread",
       "title": "Everyday High Protein Bread",
-      "description": "This versatile high-protein bread is perfect for fueling your day, offering an impressive 25 grams of protein per slice to support muscle recovery and keep you energized. With its hearty texture and subtly nutty flavor, it makes for a satisfying base for sandwiches or a deliciously crispy toast\u2014ideal for a quick breakfast or a post-workout snack. Packed with wholesome ingredients, it\u2019s not only high in protein but also provides balanced macros to help you stay full longer and maintain lean muscle mass. Whether you're prepping meals for the week or enjoying a fresh slice after the gym, this bread adds both nutrition and flavor to your day. It\u2019s naturally gluten-free when made with alternative flours, and vegan options can easily be incorporated with plant-based protein sources. For best results, ensure thorough mixing and proper baking time to achieve a perfect crust and soft interior. Keep it stored in an airtight container for freshness, and toast slightly before eating for an extra satisfying crunch. This bread is a fantastic go-to for health-conscious eaters seeking a delicious, high-protein option that supports active lifestyles.",
+      "description": "This versatile high-protein bread is perfect for fueling your day, offering an impressive 25 grams of protein per slice to support muscle recovery and keep you energized. With its hearty texture and subtly nutty flavor, it makes for a satisfying base for sandwiches or a deliciously crispy toast—ideal for a quick breakfast or a post-workout snack. Packed with wholesome ingredients, it’s not only high in protein but also provides balanced macros to help you stay full longer and maintain lean muscle mass. Whether you're prepping meals for the week or enjoying a fresh slice after the gym, this bread adds both nutrition and flavor to your day. It’s naturally gluten-free when made with alternative flours, and vegan options can easily be incorporated with plant-based protein sources. For best results, ensure thorough mixing and proper baking time to achieve a perfect crust and soft interior. Keep it stored in an airtight container for freshness, and toast slightly before eating for an extra satisfying crunch. This bread is a fantastic go-to for health-conscious eaters seeking a delicious, high-protein option that supports active lifestyles.",
       "protein": 25,
       "calories": 200,
       "carbs": 12,
@@ -912,7 +921,7 @@
         },
         {
           "step": "Rise and Bake",
-          "text": "Place the dough in a greased loaf pan, cover, and let it rise for 30 minutes. Bake at 375\u00b0F (190\u00b0C) for 25-30 minutes."
+          "text": "Place the dough in a greased loaf pan, cover, and let it rise for 30 minutes. Bake at 375°F (190°C) for 25-30 minutes."
         },
         {
           "step": "Cool",
@@ -949,13 +958,14 @@
           "domain": "proteinoatmeal.co",
           "category": "protein oatmeal"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 11,
       "slug": "high-protein-pumpkin-bread",
       "title": "High Protein Pumpkin Bread",
-      "description": "This delicious and moist pumpkin bread is a perfect guilt-free indulgence, delivering an impressive 26g of protein per slice to fuel your day. Rich in high-quality protein and wholesome ingredients, it offers a satisfying balance of macros that can support muscle recovery and keep you energized. The tender crumb is infused with warm pumpkin spices, creating a comforting aroma and a melt-in-your-mouth texture that\u2019s both hearty and delicately sweet. Whether enjoyed as a post-workout snack, a nutritious breakfast, or a wholesome treat on the go, it\u2019s versatile enough to fit into any meal plan. For added convenience, this bread makes excellent meal prep, staying fresh for several days when stored properly. It\u2019s naturally gluten-free if you use almond or coconut flour, and vegan options are easy to achieve with plant-based protein powders and egg substitutes. For the best results, be sure to measure ingredients carefully and avoid overmixing to keep the bread light and fluffy. A slice of this pumpkin bread not only satisfies your taste buds but also helps you stay on track with your high-protein goals.",
+      "description": "This delicious and moist pumpkin bread is a perfect guilt-free indulgence, delivering an impressive 26g of protein per slice to fuel your day. Rich in high-quality protein and wholesome ingredients, it offers a satisfying balance of macros that can support muscle recovery and keep you energized. The tender crumb is infused with warm pumpkin spices, creating a comforting aroma and a melt-in-your-mouth texture that’s both hearty and delicately sweet. Whether enjoyed as a post-workout snack, a nutritious breakfast, or a wholesome treat on the go, it’s versatile enough to fit into any meal plan. For added convenience, this bread makes excellent meal prep, staying fresh for several days when stored properly. It’s naturally gluten-free if you use almond or coconut flour, and vegan options are easy to achieve with plant-based protein powders and egg substitutes. For the best results, be sure to measure ingredients carefully and avoid overmixing to keep the bread light and fluffy. A slice of this pumpkin bread not only satisfies your taste buds but also helps you stay on track with your high-protein goals.",
       "protein": 26,
       "calories": 230,
       "carbs": 20,
@@ -990,7 +1000,7 @@
       "instructions": [
         {
           "step": "Preheat Oven",
-          "text": "Preheat your oven to 350\u00b0F (175\u00b0C). Grease and flour a loaf pan."
+          "text": "Preheat your oven to 350°F (175°C). Grease and flour a loaf pan."
         },
         {
           "step": "Mix Wet Ingredients",
@@ -1043,13 +1053,14 @@
           "domain": "proteinoatmeal.co",
           "category": "protein oatmeal"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 12,
       "slug": "protein-bagels",
       "title": "Simple Protein Bagels",
-      "description": "These easy-to-make protein bagels pack an impressive 18 grams of muscle-supporting protein per serving, making them an ideal choice for a satisfying breakfast or post-workout fuel. Their dense, chewy texture offers a delightful contrast to the crispy crust, while a subtle hint of salt and a touch of sweetness create a perfectly balanced flavor profile that pairs wonderfully with cream cheese, smoked salmon, or your favorite spreads. With just 160 calories per bagel, they're a guilt-free indulgence that keeps you energized throughout the day. Perfect for meal prep, you can bake a batch ahead of time and enjoy warm or toasted on busy mornings. For those with dietary preferences, gluten-free flours can be substituted to make a gluten-free version, and vegan options are easily achieved by using plant-based protein powders and dairy-free toppings. To ensure the best rise and texture, be precise with your measurements and avoid overmixing the dough. Serve these bagels fresh or store them in an airtight container for up to a few days\u2014reheat briefly for that just-baked feel and flavor every time.",
+      "description": "These easy-to-make protein bagels pack an impressive 18 grams of muscle-supporting protein per serving, making them an ideal choice for a satisfying breakfast or post-workout fuel. Their dense, chewy texture offers a delightful contrast to the crispy crust, while a subtle hint of salt and a touch of sweetness create a perfectly balanced flavor profile that pairs wonderfully with cream cheese, smoked salmon, or your favorite spreads. With just 160 calories per bagel, they're a guilt-free indulgence that keeps you energized throughout the day. Perfect for meal prep, you can bake a batch ahead of time and enjoy warm or toasted on busy mornings. For those with dietary preferences, gluten-free flours can be substituted to make a gluten-free version, and vegan options are easily achieved by using plant-based protein powders and dairy-free toppings. To ensure the best rise and texture, be precise with your measurements and avoid overmixing the dough. Serve these bagels fresh or store them in an airtight container for up to a few days—reheat briefly for that just-baked feel and flavor every time.",
       "protein": 18,
       "calories": 160,
       "carbs": 15,
@@ -1084,7 +1095,7 @@
       "instructions": [
         {
           "step": "Preheat Oven",
-          "text": "Preheat your oven to 375\u00b0F (190\u00b0C)."
+          "text": "Preheat your oven to 375°F (190°C)."
         },
         {
           "step": "Make the Dough",
@@ -1137,13 +1148,14 @@
           "domain": "proteinoatmeal.co",
           "category": "protein oatmeal"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 13,
       "slug": "savory-herb-protein-bread",
       "title": "Savory Herb Protein Bread",
-      "description": "This savory herb protein bread offers a satisfying combination of flavor and nutrition, delivering an impressive 22g of protein per slice to fuel your day. Packed with wholesome ingredients, it\u2019s an excellent choice for supporting muscle recovery post-workout or as a hearty addition to any meal. The bread boasts a tender yet slightly chewy texture, with fragrant herbs that infuse each bite with aromatic complexity, making it perfect for pairing with eggs, avocado, or your favorite spreads. Its rich, savory flavor makes it a versatile staple\u2014ideal for meal prep, snacks, or even a quick lunch. With approximately 190 calories per slice, it\u2019s a smart option for those mindful of their macros, providing ample protein without excess carbs or fat. For gluten-free needs, simply substitute traditional flour with a gluten-free blend, and vegan versions can be made using plant-based protein sources and dairy-free alternatives. To achieve the best texture, avoid overmixing the batter and bake until golden brown for a crisp crust. Enjoy this bread fresh from the oven or toasted to bring out its full flavor and aroma\u2014perfect for any time of day when you crave a savory, protein-packed treat.",
+      "description": "This savory herb protein bread offers a satisfying combination of flavor and nutrition, delivering an impressive 22g of protein per slice to fuel your day. Packed with wholesome ingredients, it’s an excellent choice for supporting muscle recovery post-workout or as a hearty addition to any meal. The bread boasts a tender yet slightly chewy texture, with fragrant herbs that infuse each bite with aromatic complexity, making it perfect for pairing with eggs, avocado, or your favorite spreads. Its rich, savory flavor makes it a versatile staple—ideal for meal prep, snacks, or even a quick lunch. With approximately 190 calories per slice, it’s a smart option for those mindful of their macros, providing ample protein without excess carbs or fat. For gluten-free needs, simply substitute traditional flour with a gluten-free blend, and vegan versions can be made using plant-based protein sources and dairy-free alternatives. To achieve the best texture, avoid overmixing the batter and bake until golden brown for a crisp crust. Enjoy this bread fresh from the oven or toasted to bring out its full flavor and aroma—perfect for any time of day when you crave a savory, protein-packed treat.",
       "protein": 22,
       "calories": 190,
       "carbs": 14,
@@ -1179,7 +1191,7 @@
       "instructions": [
         {
           "step": "Preheat Oven",
-          "text": "Preheat oven to 350\u00b0F (175\u00b0C). Grease a loaf pan."
+          "text": "Preheat oven to 350°F (175°C). Grease a loaf pan."
         },
         {
           "step": "Combine Ingredients",
@@ -1232,13 +1244,14 @@
           "domain": "proteinoatmeal.co",
           "category": "protein oatmeal"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 14,
       "slug": "cinnamon-swirl-protein-bread",
       "title": "Cinnamon Swirl Protein Bread",
-      "description": "This sweet and delicious cinnamon swirl bread packs a satisfying 20 grams of protein per serving, making it a perfect choice for fueling your day or recovering after a workout. Its soft, tender crumb is infused with warm cinnamon and a sweet swirl that creates a delightful contrast in both texture and flavor\u2014crispy edges give way to moist, fluffy interior with each bite. The rich, comforting aroma of cinnamon hints at the cozy, indulgent taste, while the balanced macros support muscle repair and sustained energy. Ideal for meal prep, enjoy this bread toasted with a smear of almond butter or alongside your morning coffee, or slice it up for a nutritious snack on-the-go. For those with dietary preferences, this recipe can easily be made gluten-free using a gluten-free flour blend, and vegan versions can be achieved with plant-based protein sources and dairy-free milk. For best results, ensure the dough is well-kneaded to develop the gluten structure, and don\u2019t overbake\u2014just until golden\u2014to keep it moist and tender. Whether you\u2019re looking to satisfy a sweet craving or add a high-protein option to your meal lineup, this cinnamon swirl bread is a versatile and tasty choice that supports your fitness goals without compromising on flavor.",
+      "description": "This sweet and delicious cinnamon swirl bread packs a satisfying 20 grams of protein per serving, making it a perfect choice for fueling your day or recovering after a workout. Its soft, tender crumb is infused with warm cinnamon and a sweet swirl that creates a delightful contrast in both texture and flavor—crispy edges give way to moist, fluffy interior with each bite. The rich, comforting aroma of cinnamon hints at the cozy, indulgent taste, while the balanced macros support muscle repair and sustained energy. Ideal for meal prep, enjoy this bread toasted with a smear of almond butter or alongside your morning coffee, or slice it up for a nutritious snack on-the-go. For those with dietary preferences, this recipe can easily be made gluten-free using a gluten-free flour blend, and vegan versions can be achieved with plant-based protein sources and dairy-free milk. For best results, ensure the dough is well-kneaded to develop the gluten structure, and don’t overbake—just until golden—to keep it moist and tender. Whether you’re looking to satisfy a sweet craving or add a high-protein option to your meal lineup, this cinnamon swirl bread is a versatile and tasty choice that supports your fitness goals without compromising on flavor.",
       "protein": 20,
       "calories": 200,
       "carbs": 18,
@@ -1273,7 +1286,7 @@
       "instructions": [
         {
           "step": "Preheat Oven",
-          "text": "Preheat oven to 350\u00b0F (175\u00b0C). Grease a loaf pan."
+          "text": "Preheat oven to 350°F (175°C). Grease a loaf pan."
         },
         {
           "step": "Prepare Batter",
@@ -1326,7 +1339,8 @@
           "domain": "proteinoatmeal.co",
           "category": "protein oatmeal"
         }
-      ]
+      ],
+      "intent_class": "post-workout"
     },
     {
       "id": 15,
@@ -1384,7 +1398,7 @@
         },
         {
           "step": "Shape and Bake",
-          "text": "Punch down the dough, shape it into a loaf, and place it in a greased loaf pan. Let it rise for another 30 minutes. Bake at 375\u00b0F (190\u00b0C) for 30-35 minutes."
+          "text": "Punch down the dough, shape it into a loaf, and place it in a greased loaf pan. Let it rise for another 30 minutes. Bake at 375°F (190°C) for 30-35 minutes."
         },
         {
           "step": "Cool",
@@ -1421,13 +1435,14 @@
           "domain": "proteinoatmeal.co",
           "category": "protein oatmeal"
         }
-      ]
+      ],
+      "intent_class": "post-workout"
     },
     {
       "id": 16,
       "slug": "healthy-protein-banana-bread",
       "title": "Healthy Protein Banana Bread",
-      "description": "This guilt-free and delicious banana bread packs an impressive 22g of protein per slice, making it an ideal choice for fueling your day or recovering after a tough workout. Rich in wholesome ingredients, it offers a moist, tender crumb with a subtly sweet banana flavor complemented by hints of vanilla and a hint of nuttiness, perfect for satisfying your cravings without the guilt. The high protein content helps support muscle repair and keeps you feeling fuller longer, making it a fantastic addition to your meal prep routine or a nutritious snack on busy days. Its soft, dense texture makes each bite incredibly satisfying, while the natural sweetness of ripe bananas balances out the richness from added protein sources like Greek yogurt or protein powder. For best results, use very ripe bananas for maximum flavor, and consider adding a handful of nuts or dark chocolate chips for extra texture and indulgence. This bread is versatile enough to be enjoyed as a quick breakfast, post-workout treat, or even as a healthy dessert. Plus, it\u2019s easily adaptable for gluten-free diets by substituting almond or coconut flour, and vegan options can be made by using plant-based protein and non-dairy alternatives. Whether you're aiming to boost your protein intake or simply indulge in a nourishing, flavorful treat, this banana bread is sure to become a staple in your healthy eating arsenal.",
+      "description": "This guilt-free and delicious banana bread packs an impressive 22g of protein per slice, making it an ideal choice for fueling your day or recovering after a tough workout. Rich in wholesome ingredients, it offers a moist, tender crumb with a subtly sweet banana flavor complemented by hints of vanilla and a hint of nuttiness, perfect for satisfying your cravings without the guilt. The high protein content helps support muscle repair and keeps you feeling fuller longer, making it a fantastic addition to your meal prep routine or a nutritious snack on busy days. Its soft, dense texture makes each bite incredibly satisfying, while the natural sweetness of ripe bananas balances out the richness from added protein sources like Greek yogurt or protein powder. For best results, use very ripe bananas for maximum flavor, and consider adding a handful of nuts or dark chocolate chips for extra texture and indulgence. This bread is versatile enough to be enjoyed as a quick breakfast, post-workout treat, or even as a healthy dessert. Plus, it’s easily adaptable for gluten-free diets by substituting almond or coconut flour, and vegan options can be made by using plant-based protein and non-dairy alternatives. Whether you're aiming to boost your protein intake or simply indulge in a nourishing, flavorful treat, this banana bread is sure to become a staple in your healthy eating arsenal.",
       "protein": 22,
       "calories": 200,
       "carbs": 20,
@@ -1463,7 +1478,7 @@
       "instructions": [
         {
           "step": "Preheat Oven",
-          "text": "Preheat your oven to 350\u00b0F (175\u00b0C) and grease a loaf pan."
+          "text": "Preheat your oven to 350°F (175°C) and grease a loaf pan."
         },
         {
           "step": "Mix Wet Ingredients",
@@ -1516,13 +1531,14 @@
           "domain": "proteinoatmeal.co",
           "category": "protein oatmeal"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 17,
       "slug": "banana-bread-with-protein-powder-recipe",
       "title": "Easy Banana Bread with Protein Powder",
-      "description": "This simple banana bread recipe is not only delicious but also packed with a substantial 24 grams of protein per serving, making it an ideal choice for fueling your day or supporting muscle recovery. The moist, tender crumb is infused with the rich sweetness of ripe bananas, balanced by a subtle hint of vanilla, while the added protein powder creates a satisfying, slightly chewy texture that keeps you full longer. With just 220 calories per slice, it\u2019s a nutritious treat perfect for post-workout refueling or a wholesome snack on busy mornings. For those with dietary preferences, this bread can easily be made gluten-free by using a gluten-free flour blend, and vegan options are simple with plant-based protein powders and flax eggs. To get the best rise and texture, be sure to measure your ingredients carefully and avoid overmixing the batter. Enjoy it warm with a smear of nut butter or Greek yogurt, or slice and store for quick grab-and-go breakfasts throughout the week. Whether you\u2019re looking to boost your protein intake or satisfy a sweet craving healthfully, this banana bread hits all the right notes.",
+      "description": "This simple banana bread recipe is not only delicious but also packed with a substantial 24 grams of protein per serving, making it an ideal choice for fueling your day or supporting muscle recovery. The moist, tender crumb is infused with the rich sweetness of ripe bananas, balanced by a subtle hint of vanilla, while the added protein powder creates a satisfying, slightly chewy texture that keeps you full longer. With just 220 calories per slice, it’s a nutritious treat perfect for post-workout refueling or a wholesome snack on busy mornings. For those with dietary preferences, this bread can easily be made gluten-free by using a gluten-free flour blend, and vegan options are simple with plant-based protein powders and flax eggs. To get the best rise and texture, be sure to measure your ingredients carefully and avoid overmixing the batter. Enjoy it warm with a smear of nut butter or Greek yogurt, or slice and store for quick grab-and-go breakfasts throughout the week. Whether you’re looking to boost your protein intake or satisfy a sweet craving healthfully, this banana bread hits all the right notes.",
       "protein": 24,
       "calories": 220,
       "carbs": 22,
@@ -1557,7 +1573,7 @@
       "instructions": [
         {
           "step": "Preheat Oven",
-          "text": "Preheat oven to 350\u00b0F (175\u00b0C). Grease a loaf pan."
+          "text": "Preheat oven to 350°F (175°C). Grease a loaf pan."
         },
         {
           "step": "Mix Ingredients",
@@ -1610,13 +1626,14 @@
           "domain": "proteinoatmeal.co",
           "category": "protein oatmeal"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 18,
       "slug": "chocolate-chip-protein-zucchini-bread",
       "title": "Chocolate Chip Protein Zucchini Bread",
-      "description": "This delicious zucchini bread is packed with 22 grams of high-quality protein per serving, making it an ideal choice for fueling your active lifestyle and supporting muscle recovery. Its moist, tender crumb is perfectly complemented by pockets of rich chocolate chips, offering a harmonious balance of sweetness and subtle earthiness from the zucchini. The texture is soft yet hearty, providing a satisfying bite that feels indulgent without the guilt. With its wholesome ingredients and protein boost, this bread is perfect as a post-workout snack, a nutritious breakfast, or a convenient meal prep option to keep on hand throughout the week. For those with dietary preferences, it's easily adaptable\u2014gluten-free with almond or coconut flour, or vegan by swapping eggs for flaxseed or chia seed eggs, and dairy-free chocolate chips. To achieve the best results, be sure to squeeze out excess moisture from the zucchini before mixing, and don't overmix the batter to keep the bread light and fluffy. Enjoy slices warm from the oven or toasted with a spread of nut butter for an extra satisfying treat. Whether you're looking to increase your protein intake or simply craving a delicious, healthful baked good, this zucchini bread hits all the right notes.",
+      "description": "This delicious zucchini bread is packed with 22 grams of high-quality protein per serving, making it an ideal choice for fueling your active lifestyle and supporting muscle recovery. Its moist, tender crumb is perfectly complemented by pockets of rich chocolate chips, offering a harmonious balance of sweetness and subtle earthiness from the zucchini. The texture is soft yet hearty, providing a satisfying bite that feels indulgent without the guilt. With its wholesome ingredients and protein boost, this bread is perfect as a post-workout snack, a nutritious breakfast, or a convenient meal prep option to keep on hand throughout the week. For those with dietary preferences, it's easily adaptable—gluten-free with almond or coconut flour, or vegan by swapping eggs for flaxseed or chia seed eggs, and dairy-free chocolate chips. To achieve the best results, be sure to squeeze out excess moisture from the zucchini before mixing, and don't overmix the batter to keep the bread light and fluffy. Enjoy slices warm from the oven or toasted with a spread of nut butter for an extra satisfying treat. Whether you're looking to increase your protein intake or simply craving a delicious, healthful baked good, this zucchini bread hits all the right notes.",
       "protein": 22,
       "calories": 210,
       "carbs": 18,
@@ -1654,7 +1671,7 @@
       "instructions": [
         {
           "step": "Preheat Oven",
-          "text": "Preheat oven to 350\u00b0F (175\u00b0C). Grease and flour a 9x5-inch loaf pan."
+          "text": "Preheat oven to 350°F (175°C). Grease and flour a 9x5-inch loaf pan."
         },
         {
           "step": "Prepare Zucchini",
@@ -1707,13 +1724,14 @@
           "domain": "proteinoatmeal.co",
           "category": "protein oatmeal"
         }
-      ]
+      ],
+      "intent_class": "post-workout"
     },
     {
       "id": 19,
       "slug": "cinnamon-raisin-protein-bagels",
       "title": "Cinnamon Raisin Protein Bagels",
-      "description": "Indulge in these sweet and chewy cinnamon raisin bagels, each boasting a hearty 20 grams of protein to fuel your day. Packed with wholesome ingredients, they offer a balanced macro profile\u2014perfect for supporting muscle recovery, sustained energy, and overall wellness. The tender, dense texture combines a satisfying chew with bursts of sweet cinnamon and juicy raisins, creating a delightful contrast that makes each bite irresistibly flavorful. Whether enjoyed as a energizing breakfast, post-workout treat, or a nutritious snack, these bagels are versatile and satisfying. They\u2019re especially great for meal prep, allowing you to have a protein-rich option on hand throughout the week. For gluten-free or vegan adaptations, simply swap in gluten-free flours or vegan binders like flaxseed meal\u2014these tweaks will still deliver a delicious, nutrient-dense result. For best results, ensure your dough is well-kneaded for a smooth, elastic consistency, and consider toasting them lightly before serving to enhance their aroma and texture. Enjoy them plain or spread with nut butter or Greek yogurt for added flavor and creaminess.",
+      "description": "Indulge in these sweet and chewy cinnamon raisin bagels, each boasting a hearty 20 grams of protein to fuel your day. Packed with wholesome ingredients, they offer a balanced macro profile—perfect for supporting muscle recovery, sustained energy, and overall wellness. The tender, dense texture combines a satisfying chew with bursts of sweet cinnamon and juicy raisins, creating a delightful contrast that makes each bite irresistibly flavorful. Whether enjoyed as a energizing breakfast, post-workout treat, or a nutritious snack, these bagels are versatile and satisfying. They’re especially great for meal prep, allowing you to have a protein-rich option on hand throughout the week. For gluten-free or vegan adaptations, simply swap in gluten-free flours or vegan binders like flaxseed meal—these tweaks will still deliver a delicious, nutrient-dense result. For best results, ensure your dough is well-kneaded for a smooth, elastic consistency, and consider toasting them lightly before serving to enhance their aroma and texture. Enjoy them plain or spread with nut butter or Greek yogurt for added flavor and creaminess.",
       "protein": 20,
       "calories": 180,
       "carbs": 20,
@@ -1749,7 +1767,7 @@
       "instructions": [
         {
           "step": "Preheat Oven",
-          "text": "Preheat your oven to 375\u00b0F (190\u00b0C)."
+          "text": "Preheat your oven to 375°F (190°C)."
         },
         {
           "step": "Make the Dough",
@@ -1802,13 +1820,14 @@
           "domain": "proteinoatmeal.co",
           "category": "protein oatmeal"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 20,
       "slug": "cheese-and-chive-protein-bread",
       "title": "Cheese and Chive Protein Bread",
-      "description": "This savory and cheesy bread with fresh chives offers a satisfying combination of flavors and textures that will elevate any meal. Packed with 24 grams of protein per serving, it's an excellent choice for supporting muscle recovery and keeping you energized throughout the day. The bread boasts a tender, moist crumb with a golden, slightly crispy crust, while the melty cheese and fragrant chives provide bursts of savory richness with every bite. Its robust flavor makes it perfect for enjoying alongside salads, soups, or as a standalone snack after a workout to replenish your energy levels. Whether you're meal prepping for the week or looking for a high-protein option to satisfy your cravings, this bread fits seamlessly into a balanced diet\u2014it's naturally gluten-free if you opt for a gluten-free flour blend, and vegan versions can be created with plant-based cheese and egg substitutes. For best results, use fresh chives and ensure your cheese is well incorporated to achieve an even distribution of flavor. Serve it warm for maximum gooeyness or let it cool for a firmer texture\u2014either way, it\u2019s sure to become a favorite in your healthy recipe repertoire.",
+      "description": "This savory and cheesy bread with fresh chives offers a satisfying combination of flavors and textures that will elevate any meal. Packed with 24 grams of protein per serving, it's an excellent choice for supporting muscle recovery and keeping you energized throughout the day. The bread boasts a tender, moist crumb with a golden, slightly crispy crust, while the melty cheese and fragrant chives provide bursts of savory richness with every bite. Its robust flavor makes it perfect for enjoying alongside salads, soups, or as a standalone snack after a workout to replenish your energy levels. Whether you're meal prepping for the week or looking for a high-protein option to satisfy your cravings, this bread fits seamlessly into a balanced diet—it's naturally gluten-free if you opt for a gluten-free flour blend, and vegan versions can be created with plant-based cheese and egg substitutes. For best results, use fresh chives and ensure your cheese is well incorporated to achieve an even distribution of flavor. Serve it warm for maximum gooeyness or let it cool for a firmer texture—either way, it’s sure to become a favorite in your healthy recipe repertoire.",
       "protein": 24,
       "calories": 220,
       "carbs": 12,
@@ -1845,7 +1864,7 @@
       "instructions": [
         {
           "step": "Preheat Oven",
-          "text": "Preheat oven to 350\u00b0F (175\u00b0C). Grease a loaf pan."
+          "text": "Preheat oven to 350°F (175°C). Grease a loaf pan."
         },
         {
           "step": "Combine Ingredients",
@@ -1898,7 +1917,8 @@
           "domain": "proteinoatmeal.co",
           "category": "protein oatmeal"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 21,
@@ -1941,7 +1961,7 @@
       "instructions": [
         {
           "step": "Preheat Oven",
-          "text": "Preheat oven to 350\u00b0F (175\u00b0C). Grease a loaf pan."
+          "text": "Preheat oven to 350°F (175°C). Grease a loaf pan."
         },
         {
           "step": "Prepare Batter",
@@ -1994,13 +2014,14 @@
           "domain": "proteinoatmeal.co",
           "category": "protein oatmeal"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 22,
       "slug": "multigrain-protein-sandwich-bread",
       "title": "Multigrain Protein Sandwich Bread",
-      "description": "This healthy and hearty multigrain sandwich bread offers an impressive 20g of protein per slice, making it an excellent choice for fueling your active lifestyle and supporting muscle recovery. Packed with a blend of wholesome grains and seeds, its dense yet tender crumb delivers a satisfying bite with subtle nutty flavors and a lightly toasted aroma. The bread's rich texture holds up perfectly to hearty fillings like lean meats, avocado, or nut butters, while its balanced macros make it an ideal option for balanced meals or post-workout refueling. With only 180 calories per slice, it's a guilt-free way to enjoy your favorite sandwiches without sacrificing nutrition. For best results, use high-quality, fresh ingredients and ensure thorough mixing to achieve an even rise and texture. This bread is naturally gluten-free if made with gluten-free grains, and vegan adaptations are easy by swapping out eggs for flaxseed meal or aquafaba. It\u2019s perfect for meal prepping ahead of busy weeks or enjoying fresh for breakfast, lunch, or an afternoon snack\u2014just toast lightly for added crunch and flavor.",
+      "description": "This healthy and hearty multigrain sandwich bread offers an impressive 20g of protein per slice, making it an excellent choice for fueling your active lifestyle and supporting muscle recovery. Packed with a blend of wholesome grains and seeds, its dense yet tender crumb delivers a satisfying bite with subtle nutty flavors and a lightly toasted aroma. The bread's rich texture holds up perfectly to hearty fillings like lean meats, avocado, or nut butters, while its balanced macros make it an ideal option for balanced meals or post-workout refueling. With only 180 calories per slice, it's a guilt-free way to enjoy your favorite sandwiches without sacrificing nutrition. For best results, use high-quality, fresh ingredients and ensure thorough mixing to achieve an even rise and texture. This bread is naturally gluten-free if made with gluten-free grains, and vegan adaptations are easy by swapping out eggs for flaxseed meal or aquafaba. It’s perfect for meal prepping ahead of busy weeks or enjoying fresh for breakfast, lunch, or an afternoon snack—just toast lightly for added crunch and flavor.",
       "protein": 20,
       "calories": 180,
       "carbs": 18,
@@ -2053,7 +2074,7 @@
         },
         {
           "step": "Shape and Bake",
-          "text": "Shape into a loaf, place in a greased pan, and let rise for 30 minutes. Bake at 375\u00b0F (190\u00b0C) for 30-35 minutes."
+          "text": "Shape into a loaf, place in a greased pan, and let rise for 30 minutes. Bake at 375°F (190°C) for 30-35 minutes."
         },
         {
           "step": "Cool",
@@ -2090,13 +2111,14 @@
           "domain": "proteinoatmeal.co",
           "category": "protein oatmeal"
         }
-      ]
+      ],
+      "intent_class": "post-workout"
     },
     {
       "id": 23,
       "slug": "chocolate-chip-protein-banana-bread",
       "title": "Chocolate Chip Protein Banana Bread",
-      "description": "This decadent chocolate chip banana bread packs an impressive 23 grams of protein per serving, making it an ideal choice for fueling your day or recovering after a tough workout. The moist, tender crumb is enriched with ripe bananas, delivering natural sweetness and a subtle fruity flavor that pairs perfectly with melty chocolate chips. Each bite offers a harmonious balance of rich chocolate and banana, with a satisfying texture that\u2019s both dense and tender, making it incredibly moreish. With its high protein content and moderate calories, this bread is perfect for meal prep, snacks, or a nutritious breakfast that keeps you energized and full longer. It\u2019s naturally gluten-free if made with almond or coconut flour, and vegan-friendly options are easy to adapt with plant-based protein and dairy-free chocolate. For best results, use very ripe bananas for maximum flavor and moisture, and gently fold in the chocolate chips to keep them evenly distributed. Toasted slightly before serving enhances the flavor and adds a delightful crunch on the outside, making every bite even more enjoyable. Whether you\u2019re looking to boost your macros or indulge in a healthier treat, this banana bread is a delicious way to satisfy your sweet tooth without compromising your fitness goals.",
+      "description": "This decadent chocolate chip banana bread packs an impressive 23 grams of protein per serving, making it an ideal choice for fueling your day or recovering after a tough workout. The moist, tender crumb is enriched with ripe bananas, delivering natural sweetness and a subtle fruity flavor that pairs perfectly with melty chocolate chips. Each bite offers a harmonious balance of rich chocolate and banana, with a satisfying texture that’s both dense and tender, making it incredibly moreish. With its high protein content and moderate calories, this bread is perfect for meal prep, snacks, or a nutritious breakfast that keeps you energized and full longer. It’s naturally gluten-free if made with almond or coconut flour, and vegan-friendly options are easy to adapt with plant-based protein and dairy-free chocolate. For best results, use very ripe bananas for maximum flavor and moisture, and gently fold in the chocolate chips to keep them evenly distributed. Toasted slightly before serving enhances the flavor and adds a delightful crunch on the outside, making every bite even more enjoyable. Whether you’re looking to boost your macros or indulge in a healthier treat, this banana bread is a delicious way to satisfy your sweet tooth without compromising your fitness goals.",
       "protein": 23,
       "calories": 240,
       "carbs": 25,
@@ -2132,7 +2154,7 @@
       "instructions": [
         {
           "step": "Preheat Oven",
-          "text": "Preheat oven to 350\u00b0F (175\u00b0C). Grease a loaf pan."
+          "text": "Preheat oven to 350°F (175°C). Grease a loaf pan."
         },
         {
           "step": "Mix Wet Ingredients",
@@ -2185,13 +2207,14 @@
           "domain": "proteinoatmeal.co",
           "category": "protein oatmeal"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 24,
       "slug": "apple-cinnamon-protein-bread",
       "title": "Apple Cinnamon Protein Bread",
-      "description": "This warm and comforting apple cinnamon bread delivers a satisfying combination of soft, moist texture with hints of sweet, fragrant cinnamon and tender apple chunks in every bite. Packed with 21g of high-quality protein per serving, it makes for a nourishing choice to fuel your day or recover after a workout. The balanced macros provide a hearty dose of protein while keeping the calories around 200 per slice, making it an ideal option for those aiming to build muscle or maintain a lean physique. Its natural sweetness from fresh apples pairs perfectly with the aromatic cinnamon, creating a flavor profile that's both cozy and invigorating. Whether enjoyed as a quick breakfast, a post-exercise treat, or part of your meal prep, this bread is versatile and satisfying. For gluten-free options, use a gluten-free flour blend, and to make it vegan, swap in plant-based milk and egg replacers\u2014it's just as delicious! For the best results, mix the batter until smooth and avoid overbaking to keep the bread moist and tender. Slice it warm and spread with a little nut butter or enjoy it plain for a wholesome, protein-packed snack anytime.",
+      "description": "This warm and comforting apple cinnamon bread delivers a satisfying combination of soft, moist texture with hints of sweet, fragrant cinnamon and tender apple chunks in every bite. Packed with 21g of high-quality protein per serving, it makes for a nourishing choice to fuel your day or recover after a workout. The balanced macros provide a hearty dose of protein while keeping the calories around 200 per slice, making it an ideal option for those aiming to build muscle or maintain a lean physique. Its natural sweetness from fresh apples pairs perfectly with the aromatic cinnamon, creating a flavor profile that's both cozy and invigorating. Whether enjoyed as a quick breakfast, a post-exercise treat, or part of your meal prep, this bread is versatile and satisfying. For gluten-free options, use a gluten-free flour blend, and to make it vegan, swap in plant-based milk and egg replacers—it's just as delicious! For the best results, mix the batter until smooth and avoid overbaking to keep the bread moist and tender. Slice it warm and spread with a little nut butter or enjoy it plain for a wholesome, protein-packed snack anytime.",
       "protein": 21,
       "calories": 200,
       "carbs": 20,
@@ -2227,7 +2250,7 @@
       "instructions": [
         {
           "step": "Preheat Oven",
-          "text": "Preheat oven to 350\u00b0F (175\u00b0C). Grease a loaf pan."
+          "text": "Preheat oven to 350°F (175°C). Grease a loaf pan."
         },
         {
           "step": "Prepare Apple",
@@ -2280,13 +2303,14 @@
           "domain": "proteinoatmeal.co",
           "category": "protein oatmeal"
         }
-      ]
+      ],
+      "intent_class": "post-workout"
     },
     {
       "id": 25,
       "slug": "everything-protein-bagels",
       "title": "Everything Protein Bagels",
-      "description": "Savory everything bagels packed with 22g of protein offer a delicious way to fuel your day with wholesome goodness. These bagels boast a satisfying chewy texture with a crispy, flavorful crust topped generously with the classic everything bagel seasoning\u2014think crunchy sesame seeds, poppy seeds, garlic, onion, and a hint of salt\u2014that delivers a burst of savory delight in every bite. Rich in protein and balanced with healthy carbs, they make for a perfect post-workout meal or a hearty breakfast that keeps you energized for hours. Their dense, yet tender crumb pairs beautifully with cream cheese, smoked salmon, or avocado, making them versatile for any craving. Whether you're meal prepping for the week or enjoying a quick, satisfying snack, these bagels are a great gluten-free option if you use a suitable alternative flour. For vegans, swapping out dairy ingredients or using plant-based binders keeps them plant-based and equally delicious. For best results, ensure your dough is well-kneaded and allow it to rise properly\u2014patience pays off with a light, airy interior. These protein-packed bagels are a tasty and nutritious addition to any diet, satisfying your savory cravings while supporting your fitness goals.",
+      "description": "Savory everything bagels packed with 22g of protein offer a delicious way to fuel your day with wholesome goodness. These bagels boast a satisfying chewy texture with a crispy, flavorful crust topped generously with the classic everything bagel seasoning—think crunchy sesame seeds, poppy seeds, garlic, onion, and a hint of salt—that delivers a burst of savory delight in every bite. Rich in protein and balanced with healthy carbs, they make for a perfect post-workout meal or a hearty breakfast that keeps you energized for hours. Their dense, yet tender crumb pairs beautifully with cream cheese, smoked salmon, or avocado, making them versatile for any craving. Whether you're meal prepping for the week or enjoying a quick, satisfying snack, these bagels are a great gluten-free option if you use a suitable alternative flour. For vegans, swapping out dairy ingredients or using plant-based binders keeps them plant-based and equally delicious. For best results, ensure your dough is well-kneaded and allow it to rise properly—patience pays off with a light, airy interior. These protein-packed bagels are a tasty and nutritious addition to any diet, satisfying your savory cravings while supporting your fitness goals.",
       "protein": 22,
       "calories": 190,
       "carbs": 16,
@@ -2321,7 +2345,7 @@
       "instructions": [
         {
           "step": "Preheat Oven",
-          "text": "Preheat oven to 375\u00b0F (190\u00b0C)."
+          "text": "Preheat oven to 375°F (190°C)."
         },
         {
           "step": "Make Dough",
@@ -2374,13 +2398,14 @@
           "domain": "proteinoatmeal.co",
           "category": "protein oatmeal"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 100,
       "slug": "gluten-free-almond-flour-protein-bread",
       "title": "Gluten-Free Almond Flour Protein Bread",
-      "description": "This soft, fluffy gluten-free bread made with almond flour and protein powder is a nutritious and satisfying addition to any meal. Packed with approximately 18 grams of protein per serving, it provides a perfect balance of macros to fuel your day and support muscle recovery. The delicate crumb offers a tender bite with a subtly nutty flavor, making it incredibly versatile\u2014ideal for hearty sandwiches, crispy toast, or simply enjoyed on its own with a smear of nut butter or jam. Its low-carb, gluten-free profile makes it suitable for various dietary needs, and vegan options can be easily achieved by swapping out the eggs for flaxseed or chia seed alternatives. For best results, ensure your ingredients are fresh and measure carefully to maintain that light, airy texture. This bread is perfect post-workout to replenish energy and aid muscle repair or as a nutritious prep option for busy weekdays. You can also customize it by adding herbs or seeds for extra flavor and crunch. Store it in an airtight container to keep it fresh and enjoy within a few days or freeze slices for convenient, healthy snacks anytime.",
+      "description": "This soft, fluffy gluten-free bread made with almond flour and protein powder is a nutritious and satisfying addition to any meal. Packed with approximately 18 grams of protein per serving, it provides a perfect balance of macros to fuel your day and support muscle recovery. The delicate crumb offers a tender bite with a subtly nutty flavor, making it incredibly versatile—ideal for hearty sandwiches, crispy toast, or simply enjoyed on its own with a smear of nut butter or jam. Its low-carb, gluten-free profile makes it suitable for various dietary needs, and vegan options can be easily achieved by swapping out the eggs for flaxseed or chia seed alternatives. For best results, ensure your ingredients are fresh and measure carefully to maintain that light, airy texture. This bread is perfect post-workout to replenish energy and aid muscle repair or as a nutritious prep option for busy weekdays. You can also customize it by adding herbs or seeds for extra flavor and crunch. Store it in an airtight container to keep it fresh and enjoy within a few days or freeze slices for convenient, healthy snacks anytime.",
       "protein": 18,
       "calories": 165,
       "carbs": 8,
@@ -2416,7 +2441,7 @@
       "instructions": [
         {
           "step": "Preheat Oven",
-          "text": "Preheat your oven to 175\u00b0C (350\u00b0F) and line a 9x5 inch loaf pan with parchment paper."
+          "text": "Preheat your oven to 175°C (350°F) and line a 9x5 inch loaf pan with parchment paper."
         },
         {
           "step": "Mix Dry Ingredients",
@@ -2465,13 +2490,14 @@
           "domain": "proteinoatmeal.co",
           "category": "protein oatmeal"
         }
-      ]
+      ],
+      "intent_class": "gluten-free"
     },
     {
       "id": 101,
       "slug": "dairy-free-oat-protein-sandwich-loaf",
       "title": "Dairy-Free Oat Protein Sandwich Loaf",
-      "description": "This hearty, dairy-free sandwich bread made with wholesome oat flour and plant-based protein is not only delicious but also a nutritious powerhouse, offering approximately 15 grams of protein per slice to fuel your day. Its soft, tender crumb and slightly nutty flavor create the perfect canvas for any filling, from fresh veggies and lean meats to savory spreads. The bread's moist texture holds up well to hearty ingredients, making every bite satisfying and fulfilling. Whether you're enjoying a post-workout meal or meal prepping for the week, this bread provides a balanced mix of complex carbs and plant-based protein to support your active lifestyle. It\u2019s naturally gluten-free when using certified gluten-free oat flour, and vegan-friendly, making it suitable for various dietary needs. For best results, ensure your ingredients are fresh, and avoid overmixing to keep the bread light and airy. Toast slices for added crunch or use them straight from the loaf for a quick, nourishing snack. This versatile bread is perfect for anyone looking to boost their protein intake without sacrificing flavor or texture.",
+      "description": "This hearty, dairy-free sandwich bread made with wholesome oat flour and plant-based protein is not only delicious but also a nutritious powerhouse, offering approximately 15 grams of protein per slice to fuel your day. Its soft, tender crumb and slightly nutty flavor create the perfect canvas for any filling, from fresh veggies and lean meats to savory spreads. The bread's moist texture holds up well to hearty ingredients, making every bite satisfying and fulfilling. Whether you're enjoying a post-workout meal or meal prepping for the week, this bread provides a balanced mix of complex carbs and plant-based protein to support your active lifestyle. It’s naturally gluten-free when using certified gluten-free oat flour, and vegan-friendly, making it suitable for various dietary needs. For best results, ensure your ingredients are fresh, and avoid overmixing to keep the bread light and airy. Toast slices for added crunch or use them straight from the loaf for a quick, nourishing snack. This versatile bread is perfect for anyone looking to boost their protein intake without sacrificing flavor or texture.",
       "protein": 15,
       "calories": 145,
       "carbs": 18,
@@ -2512,7 +2538,7 @@
         },
         {
           "step": "Activate Yeast",
-          "text": "Warm the oat milk to 110\u00b0F (43\u00b0C), add maple syrup and yeast. Let sit for 5 minutes until foamy."
+          "text": "Warm the oat milk to 110°F (43°C), add maple syrup and yeast. Let sit for 5 minutes until foamy."
         },
         {
           "step": "Mix Dough",
@@ -2524,7 +2550,7 @@
         },
         {
           "step": "Bake",
-          "text": "Transfer to a greased loaf pan, let rise another 20 minutes. Bake at 175\u00b0C (350\u00b0F) for 45-50 minutes until golden and hollow-sounding when tapped."
+          "text": "Transfer to a greased loaf pan, let rise another 20 minutes. Bake at 175°C (350°F) for 45-50 minutes until golden and hollow-sounding when tapped."
         }
       ],
       "related_recipes": [
@@ -2557,7 +2583,8 @@
           "domain": "proteinoatmeal.co",
           "category": "protein oatmeal"
         }
-      ]
+      ],
+      "intent_class": "vegan"
     }
   ]
 }

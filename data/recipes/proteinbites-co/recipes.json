@@ -4,7 +4,7 @@
       "id": 1,
       "slug": "peanut-butter-protein-balls",
       "title": "Peanut Butter Protein Balls",
-      "description": "These classic no-bake peanut butter protein balls pack an impressive 18 grams of muscle-fueling protein per serving, making them an ideal choice for anyone looking to boost their daily intake while satisfying sweet cravings. Rich and creamy with a hint of natural peanut butter, they offer a satisfying chewy texture with just the right amount of crunch from optional add-ins like oats or chopped nuts. The balanced macros make them perfect for post-workout recovery, providing quick energy and aiding muscle repair, or as a nutritious snack to keep you fueled throughout busy days. With a deliciously indulgent flavor that\u2019s both nutty and slightly sweet, these bites feel like a treat without derailing your fitness goals. They are naturally gluten-free if you use gluten-free oats, and vegan options are easily achieved by swapping in plant-based protein powder and ensuring your sweeteners are vegan-friendly. For the best results, refrigerate the mixture for at least 30 minutes to help it firm up before rolling, and store leftovers in an airtight container for up to a week. Perfect for meal prep or on-the-go snacking, these protein balls are a versatile, healthy option that satisfies both your taste buds and your nutritional needs.",
+      "description": "These classic no-bake peanut butter protein balls pack an impressive 18 grams of muscle-fueling protein per serving, making them an ideal choice for anyone looking to boost their daily intake while satisfying sweet cravings. Rich and creamy with a hint of natural peanut butter, they offer a satisfying chewy texture with just the right amount of crunch from optional add-ins like oats or chopped nuts. The balanced macros make them perfect for post-workout recovery, providing quick energy and aiding muscle repair, or as a nutritious snack to keep you fueled throughout busy days. With a deliciously indulgent flavor that’s both nutty and slightly sweet, these bites feel like a treat without derailing your fitness goals. They are naturally gluten-free if you use gluten-free oats, and vegan options are easily achieved by swapping in plant-based protein powder and ensuring your sweeteners are vegan-friendly. For the best results, refrigerate the mixture for at least 30 minutes to help it firm up before rolling, and store leftovers in an airtight container for up to a week. Perfect for meal prep or on-the-go snacking, these protein balls are a versatile, healthy option that satisfies both your taste buds and your nutritional needs.",
       "protein": 18,
       "calories": 165,
       "carbs": 14,
@@ -87,13 +87,14 @@
           "domain": "proteincookies.co",
           "category": "protein cookies"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 2,
       "slug": "no-bake-protein-balls",
       "title": "No-Bake Protein Balls",
-      "description": "These no-bake protein balls are a quick and easy snack, ready in just 15 minutes, making them perfect for busy mornings or on-the-go nourishment. Packed with 16 grams of high-quality protein per serving, they provide a satisfying boost to fuel your day, support muscle recovery, and keep hunger at bay. The rich, nutty flavor combined with a hint of sweetness creates a delightful balance of taste and texture\u2014chewy yet tender bites that melt in your mouth. Their dense, crumbly exterior gives way to a moist, nourishing center, making each bite both satisfying and energizing. Ideal for post-workout recovery or as a wholesome snack during busy afternoons, these protein balls are perfect for meal prep and can be stored in the fridge for up to a week. They are naturally gluten-free when using gluten-free oats and can easily be adapted to vegan diets by swapping honey for maple syrup or agave. For best results, lightly toast the oats beforehand to enhance flavor, and ensure the mixture is well combined before shaping into balls to achieve a uniform texture. Whether you\u2019re aiming to build lean muscle or simply want a nutritious treat, these bites are a versatile, delicious addition to your healthy eating routine.",
+      "description": "These no-bake protein balls are a quick and easy snack, ready in just 15 minutes, making them perfect for busy mornings or on-the-go nourishment. Packed with 16 grams of high-quality protein per serving, they provide a satisfying boost to fuel your day, support muscle recovery, and keep hunger at bay. The rich, nutty flavor combined with a hint of sweetness creates a delightful balance of taste and texture—chewy yet tender bites that melt in your mouth. Their dense, crumbly exterior gives way to a moist, nourishing center, making each bite both satisfying and energizing. Ideal for post-workout recovery or as a wholesome snack during busy afternoons, these protein balls are perfect for meal prep and can be stored in the fridge for up to a week. They are naturally gluten-free when using gluten-free oats and can easily be adapted to vegan diets by swapping honey for maple syrup or agave. For best results, lightly toast the oats beforehand to enhance flavor, and ensure the mixture is well combined before shaping into balls to achieve a uniform texture. Whether you’re aiming to build lean muscle or simply want a nutritious treat, these bites are a versatile, delicious addition to your healthy eating routine.",
       "protein": 16,
       "calories": 155,
       "carbs": 16,
@@ -176,13 +177,14 @@
           "domain": "proteincookies.co",
           "category": "protein cookies"
         }
-      ]
+      ],
+      "intent_class": "meal-prep"
     },
     {
       "id": 3,
       "slug": "oatmeal-protein-balls",
       "title": "Oatmeal Protein Balls",
-      "description": "These hearty oatmeal protein balls pack a satisfying 17 grams of muscle-repairing protein per serving, making them an ideal snack to fuel your busy day or support your workout recovery. Rich in fiber and healthy fats, they promote digestion and sustained energy, helping you stay full and focused for hours. The chewy texture combined with a subtly sweet, nutty flavor creates a delightful bite that\u2019s both indulgent and nutritious. Perfect for meal prep, these bites are easy to grab on the go, whether you need a quick post-workout refuel or a wholesome snack to tide you over between meals. They can easily be made gluten-free by using certified gluten-free oats, and vegan options are simple to achieve by swapping honey for maple syrup or adding plant-based protein powder. For best results, store them in an airtight container in the fridge to keep their chewy texture fresh and delicious. Enjoy these protein balls as a convenient, health-boosting treat that satisfies your cravings while supporting your fitness goals.",
+      "description": "These hearty oatmeal protein balls pack a satisfying 17 grams of muscle-repairing protein per serving, making them an ideal snack to fuel your busy day or support your workout recovery. Rich in fiber and healthy fats, they promote digestion and sustained energy, helping you stay full and focused for hours. The chewy texture combined with a subtly sweet, nutty flavor creates a delightful bite that’s both indulgent and nutritious. Perfect for meal prep, these bites are easy to grab on the go, whether you need a quick post-workout refuel or a wholesome snack to tide you over between meals. They can easily be made gluten-free by using certified gluten-free oats, and vegan options are simple to achieve by swapping honey for maple syrup or adding plant-based protein powder. For best results, store them in an airtight container in the fridge to keep their chewy texture fresh and delicious. Enjoy these protein balls as a convenient, health-boosting treat that satisfies your cravings while supporting your fitness goals.",
       "protein": 17,
       "calories": 160,
       "carbs": 18,
@@ -265,13 +267,14 @@
           "domain": "proteincookies.co",
           "category": "protein cookies"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 4,
       "slug": "protein-energy-balls",
       "title": "Protein Energy Balls",
-      "description": "Power-packed energy balls with dates, nuts, and protein powder, offering an impressive 19 grams of protein per serving, making them an ideal choice for fueling your active lifestyle. These bites are not only rich in protein but also packed with healthy fats and natural sugars, providing sustained energy and helping to curb hunger between meals. Their chewy, slightly crunchy texture from the nuts combined with the sweet, caramel-like flavor of dates creates a deliciously satisfying treat that melts in your mouth. Perfect for a quick pre- or post-workout snack, they\u2019re great for meal prepping and can be stored easily in the fridge for up to a week. For those on gluten-free diets, ensure you select gluten-free oats or skip oats altogether for an entirely gluten-free version\u2014vegan options can be made by using plant-based protein powders and nut butters. To achieve the best texture, process the ingredients until sticky and well combined, then refrigerate the mixture before rolling into balls to help them set perfectly. These energy bites are not just nutritious\u2014they\u2019re irresistibly tasty and versatile enough to enjoy anytime you need a quick, wholesome boost of energy.",
+      "description": "Power-packed energy balls with dates, nuts, and protein powder, offering an impressive 19 grams of protein per serving, making them an ideal choice for fueling your active lifestyle. These bites are not only rich in protein but also packed with healthy fats and natural sugars, providing sustained energy and helping to curb hunger between meals. Their chewy, slightly crunchy texture from the nuts combined with the sweet, caramel-like flavor of dates creates a deliciously satisfying treat that melts in your mouth. Perfect for a quick pre- or post-workout snack, they’re great for meal prepping and can be stored easily in the fridge for up to a week. For those on gluten-free diets, ensure you select gluten-free oats or skip oats altogether for an entirely gluten-free version—vegan options can be made by using plant-based protein powders and nut butters. To achieve the best texture, process the ingredients until sticky and well combined, then refrigerate the mixture before rolling into balls to help them set perfectly. These energy bites are not just nutritious—they’re irresistibly tasty and versatile enough to enjoy anytime you need a quick, wholesome boost of energy.",
       "protein": 19,
       "calories": 175,
       "carbs": 20,
@@ -354,13 +357,14 @@
           "domain": "proteincookies.co",
           "category": "protein cookies"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 5,
       "slug": "chocolate-protein-balls",
       "title": "Chocolate Protein Balls",
-      "description": "These rich chocolate protein balls taste just like indulgent brownie batter, offering a satisfying treat with a powerful nutritional punch. Packed with 20 grams of high-quality protein per serving, they make an ideal snack to support muscle recovery and keep you energized throughout the day. The dense, fudgy texture melts in your mouth, delivering deep chocolate flavor with just the right hint of sweetness\u2014perfect for satisfying your dessert cravings guilt-free. Enjoy these bites as a post-workout boost, a quick energy snack, or even as a meal prep option to have on hand during busy weeks. They are naturally gluten-free if made with gluten-free oats and can easily be adapted for vegan diets by swapping in plant-based protein powder and nut butters. For best results, process the ingredients until smooth and chill the mixture beforehand to ensure they hold together perfectly. These decadent bites are not only rich in macros but also incredibly versatile, making them a delicious and nutritious addition to any health-conscious lifestyle.",
+      "description": "These rich chocolate protein balls taste just like indulgent brownie batter, offering a satisfying treat with a powerful nutritional punch. Packed with 20 grams of high-quality protein per serving, they make an ideal snack to support muscle recovery and keep you energized throughout the day. The dense, fudgy texture melts in your mouth, delivering deep chocolate flavor with just the right hint of sweetness—perfect for satisfying your dessert cravings guilt-free. Enjoy these bites as a post-workout boost, a quick energy snack, or even as a meal prep option to have on hand during busy weeks. They are naturally gluten-free if made with gluten-free oats and can easily be adapted for vegan diets by swapping in plant-based protein powder and nut butters. For best results, process the ingredients until smooth and chill the mixture beforehand to ensure they hold together perfectly. These decadent bites are not only rich in macros but also incredibly versatile, making them a delicious and nutritious addition to any health-conscious lifestyle.",
       "protein": 20,
       "calories": 170,
       "carbs": 15,
@@ -443,13 +447,14 @@
           "domain": "proteincookies.co",
           "category": "protein cookies"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 6,
       "slug": "chocolate-chip-protein-balls",
       "title": "Chocolate Chip Protein Balls",
-      "description": "These cookie dough-inspired protein balls are a deliciously satisfying way to boost your daily protein intake, packing an impressive 18 grams of muscle-replenishing protein per serving. Crafted with wholesome ingredients, they offer a perfect balance of soft, chewy texture with delightful pockets of melty chocolate chips that melt in your mouth. The rich, indulgent flavor mimics classic cookie dough, making them an irresistible treat that feels like dessert but fuels your body with clean energy. Whether you're fueling up after a tough workout, need a quick snack on busy days, or want to prep ahead for the week, these bites are versatile and convenient. They\u2019re naturally gluten-free if you use GF oats and vegan-friendly if you substitute dairy-free chocolate chips and plant-based binders \u2014 making them suitable for various dietary needs. For best results, chill the mixture before rolling into balls to ensure they hold their shape and develop an even, firm texture. Keep them handy in the fridge for a fresh, protein-rich snack that satisfies sweet cravings without the guilt.",
+      "description": "These cookie dough-inspired protein balls are a deliciously satisfying way to boost your daily protein intake, packing an impressive 18 grams of muscle-replenishing protein per serving. Crafted with wholesome ingredients, they offer a perfect balance of soft, chewy texture with delightful pockets of melty chocolate chips that melt in your mouth. The rich, indulgent flavor mimics classic cookie dough, making them an irresistible treat that feels like dessert but fuels your body with clean energy. Whether you're fueling up after a tough workout, need a quick snack on busy days, or want to prep ahead for the week, these bites are versatile and convenient. They’re naturally gluten-free if you use GF oats and vegan-friendly if you substitute dairy-free chocolate chips and plant-based binders — making them suitable for various dietary needs. For best results, chill the mixture before rolling into balls to ensure they hold their shape and develop an even, firm texture. Keep them handy in the fridge for a fresh, protein-rich snack that satisfies sweet cravings without the guilt.",
       "protein": 18,
       "calories": 165,
       "carbs": 16,
@@ -532,7 +537,8 @@
           "domain": "proteincookies.co",
           "category": "protein cookies"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 7,
@@ -621,13 +627,14 @@
           "domain": "proteincookies.co",
           "category": "protein cookies"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 8,
       "slug": "monster-cookie-protein-balls",
       "title": "Monster Cookie Protein Balls",
-      "description": "These loaded monster cookie protein balls pack a powerful punch of 19 grams of protein per serving, making them the perfect energizing snack to fuel your busy day or support your post-workout recovery. With a satisfying blend of chewy oats, creamy peanut butter, and indulgent chocolate chips, each bite offers a delightful combination of textures\u2014crunchy, soft, and gooey all at once\u2014that will keep you coming back for more. The touch of colorful M&Ms adds a fun sweetness and a pop of vibrant flavor, making these bites both delicious and visually appealing. Rich in healthy fats and complex carbs, they provide sustained energy and help curb cravings, making them an excellent option for meal prep or a quick nutritious snack on-the-go. They\u2019re naturally gluten-free if you choose certified oats, and vegan alternatives can easily be made by swapping in plant-based peanut butter and dairy-free chocolate. For best results, refrigerate the mixture for at least 30 minutes to firm up before rolling into balls, ensuring they hold together perfectly. Enjoy these protein-packed treats as a wholesome snack after your workout, during busy afternoons, or whenever you need a satisfying boost of energy.",
+      "description": "These loaded monster cookie protein balls pack a powerful punch of 19 grams of protein per serving, making them the perfect energizing snack to fuel your busy day or support your post-workout recovery. With a satisfying blend of chewy oats, creamy peanut butter, and indulgent chocolate chips, each bite offers a delightful combination of textures—crunchy, soft, and gooey all at once—that will keep you coming back for more. The touch of colorful M&Ms adds a fun sweetness and a pop of vibrant flavor, making these bites both delicious and visually appealing. Rich in healthy fats and complex carbs, they provide sustained energy and help curb cravings, making them an excellent option for meal prep or a quick nutritious snack on-the-go. They’re naturally gluten-free if you choose certified oats, and vegan alternatives can easily be made by swapping in plant-based peanut butter and dairy-free chocolate. For best results, refrigerate the mixture for at least 30 minutes to firm up before rolling into balls, ensuring they hold together perfectly. Enjoy these protein-packed treats as a wholesome snack after your workout, during busy afternoons, or whenever you need a satisfying boost of energy.",
       "protein": 19,
       "calories": 185,
       "carbs": 18,
@@ -710,13 +717,14 @@
           "domain": "proteincookies.co",
           "category": "protein cookies"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 9,
       "slug": "chocolate-peanut-butter-protein-balls",
       "title": "Chocolate Peanut Butter Protein Balls",
-      "description": "Indulge in these irresistible chocolate peanut butter protein balls, a perfect blend of rich flavors and powerful nutrition. Packed with 21 grams of high-quality protein per serving, they provide sustained energy and support muscle recovery\u2014ideal for post-workout refueling or a midday snack. The creamy peanut butter combined with velvety chocolate creates a luscious, melt-in-your-mouth texture that\u2019s both satisfying and decadent, while the bite-sized form makes them convenient for on-the-go enjoyment. With a balance of healthy fats, fiber, and protein, these bites help keep you full longer and curb cravings naturally. Whether you\u2019re meal prepping for the week or looking for a wholesome treat, they\u2019re versatile and easy to make in advance. For gluten-sensitive individuals, simply ensure your oats or binders are certified gluten-free; vegan options can be achieved by swapping in plant-based protein or nut butters. To get the best texture, refrigerate the mixture for at least 30 minutes before rolling into balls\u2014this helps them hold their shape and enhances flavor. Enjoy these delicious bites as a nutritious snack anytime you need a quick energy boost or a satisfying dessert that aligns with your fitness goals.",
+      "description": "Indulge in these irresistible chocolate peanut butter protein balls, a perfect blend of rich flavors and powerful nutrition. Packed with 21 grams of high-quality protein per serving, they provide sustained energy and support muscle recovery—ideal for post-workout refueling or a midday snack. The creamy peanut butter combined with velvety chocolate creates a luscious, melt-in-your-mouth texture that’s both satisfying and decadent, while the bite-sized form makes them convenient for on-the-go enjoyment. With a balance of healthy fats, fiber, and protein, these bites help keep you full longer and curb cravings naturally. Whether you’re meal prepping for the week or looking for a wholesome treat, they’re versatile and easy to make in advance. For gluten-sensitive individuals, simply ensure your oats or binders are certified gluten-free; vegan options can be achieved by swapping in plant-based protein or nut butters. To get the best texture, refrigerate the mixture for at least 30 minutes before rolling into balls—this helps them hold their shape and enhances flavor. Enjoy these delicious bites as a nutritious snack anytime you need a quick energy boost or a satisfying dessert that aligns with your fitness goals.",
       "protein": 21,
       "calories": 180,
       "carbs": 14,
@@ -799,13 +807,14 @@
           "domain": "proteincookies.co",
           "category": "protein cookies"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 10,
       "slug": "keto-protein-balls",
       "title": "Keto Protein Balls",
-      "description": "These low-carb, keto-friendly protein balls are a deliciously convenient way to fuel your day, boasting only 4g net carbs and an impressive 17g of protein per serving. Packed with wholesome ingredients, they provide a satisfying combination of creamy texture and a slight chewiness, with a rich, nutty flavor that\u2019s perfectly complemented by hints of cocoa or vanilla\u2014depending on your choice of add-ins. Their dense, bite-sized form makes them ideal for quick snacks or post-workout recovery, helping to replenish amino acids and support muscle growth while keeping your macros in check. With their sugar-free and keto-friendly profile, they\u2019re suitable for various dietary preferences, and vegan options can easily be achieved with plant-based protein sources. For best results, store them in the fridge to maintain freshness, and consider adding a sprinkle of sea salt or a dash of cinnamon for an extra flavor boost. These protein balls are perfect for meal prep, allowing you to grab a nutritious, high-protein snack on the go or enjoy a sweet treat without breaking your keto goals. Whether you need a pre-workout pick-me-up or a healthy snack between meals, they deliver on taste and nutrition in every bite.",
+      "description": "These low-carb, keto-friendly protein balls are a deliciously convenient way to fuel your day, boasting only 4g net carbs and an impressive 17g of protein per serving. Packed with wholesome ingredients, they provide a satisfying combination of creamy texture and a slight chewiness, with a rich, nutty flavor that’s perfectly complemented by hints of cocoa or vanilla—depending on your choice of add-ins. Their dense, bite-sized form makes them ideal for quick snacks or post-workout recovery, helping to replenish amino acids and support muscle growth while keeping your macros in check. With their sugar-free and keto-friendly profile, they’re suitable for various dietary preferences, and vegan options can easily be achieved with plant-based protein sources. For best results, store them in the fridge to maintain freshness, and consider adding a sprinkle of sea salt or a dash of cinnamon for an extra flavor boost. These protein balls are perfect for meal prep, allowing you to grab a nutritious, high-protein snack on the go or enjoy a sweet treat without breaking your keto goals. Whether you need a pre-workout pick-me-up or a healthy snack between meals, they deliver on taste and nutrition in every bite.",
       "protein": 17,
       "calories": 160,
       "carbs": 6,
@@ -888,7 +897,8 @@
           "domain": "proteincookies.co",
           "category": "protein cookies"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 11,
@@ -972,13 +982,14 @@
           "domain": "proteincookies.co",
           "category": "protein cookies"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 12,
       "slug": "easy-protein-balls",
       "title": "Easy Protein Balls",
-      "description": "These simple 4-ingredient protein balls are a delicious and convenient way to boost your daily intake of muscle-nourishing nutrients, offering approximately 15 grams of high-quality protein per serving while remaining low in added sugars and unhealthy fats. The chewy, slightly sticky texture combined with a rich, nutty flavor makes each bite irresistibly satisfying\u2014perfect for curbing sweet cravings or energizing your day. Packed with wholesome ingredients, they serve as an excellent post-workout snack to support muscle recovery or a quick, nutritious bite during busy mornings. Thanks to their compact size, they\u2019re ideal for meal prep, allowing you to grab a protein-packed treat whenever hunger strikes. These bites are naturally gluten-free when made with gluten-free oats and can easily be adapted to vegan diets by swapping in plant-based sweeteners or nut butters. For best results, process the ingredients until well combined and chill the mixture before rolling into balls to ensure they hold together perfectly. Whether you\u2019re looking to fuel your workouts, manage weight, or enjoy a healthy snack on the go, these protein balls are a simple, tasty, and versatile addition to your diet.",
+      "description": "These simple 4-ingredient protein balls are a delicious and convenient way to boost your daily intake of muscle-nourishing nutrients, offering approximately 15 grams of high-quality protein per serving while remaining low in added sugars and unhealthy fats. The chewy, slightly sticky texture combined with a rich, nutty flavor makes each bite irresistibly satisfying—perfect for curbing sweet cravings or energizing your day. Packed with wholesome ingredients, they serve as an excellent post-workout snack to support muscle recovery or a quick, nutritious bite during busy mornings. Thanks to their compact size, they’re ideal for meal prep, allowing you to grab a protein-packed treat whenever hunger strikes. These bites are naturally gluten-free when made with gluten-free oats and can easily be adapted to vegan diets by swapping in plant-based sweeteners or nut butters. For best results, process the ingredients until well combined and chill the mixture before rolling into balls to ensure they hold together perfectly. Whether you’re looking to fuel your workouts, manage weight, or enjoy a healthy snack on the go, these protein balls are a simple, tasty, and versatile addition to your diet.",
       "protein": 15,
       "calories": 145,
       "carbs": 15,
@@ -1055,13 +1066,14 @@
           "domain": "proteincookies.co",
           "category": "protein cookies"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 13,
       "slug": "healthy-protein-balls",
       "title": "Healthy Protein Balls",
-      "description": "These clean ingredient protein balls pack an impressive 16 grams of protein per serving, making them an ideal snack to fuel your busy day or support your post-workout recovery. Crafted with wholesome, whole foods and no added sugar, they offer a naturally sweet, nutty flavor with a satisfying chewy yet tender texture that melts in your mouth. Rich in healthy fats and fiber, they help keep you full and energized, while their balanced macros make them a smart choice for any balanced diet. Perfect for meal prep, you can enjoy these bites as a quick, on-the-go snack or a nourishing pick-me-up during busy afternoons. They\u2019re versatile enough to be vegan or gluten-free\u2014simply swap ingredients to suit your dietary needs. For best results, store them in an airtight container in the fridge, and enjoy within a week for freshness. These protein balls are not only delicious but also an easy way to incorporate more clean, nutrient-dense foods into your daily routine.",
+      "description": "These clean ingredient protein balls pack an impressive 16 grams of protein per serving, making them an ideal snack to fuel your busy day or support your post-workout recovery. Crafted with wholesome, whole foods and no added sugar, they offer a naturally sweet, nutty flavor with a satisfying chewy yet tender texture that melts in your mouth. Rich in healthy fats and fiber, they help keep you full and energized, while their balanced macros make them a smart choice for any balanced diet. Perfect for meal prep, you can enjoy these bites as a quick, on-the-go snack or a nourishing pick-me-up during busy afternoons. They’re versatile enough to be vegan or gluten-free—simply swap ingredients to suit your dietary needs. For best results, store them in an airtight container in the fridge, and enjoy within a week for freshness. These protein balls are not only delicious but also an easy way to incorporate more clean, nutrient-dense foods into your daily routine.",
       "protein": 16,
       "calories": 150,
       "carbs": 16,
@@ -1140,13 +1152,14 @@
           "domain": "proteincookies.co",
           "category": "protein cookies"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 14,
       "slug": "homemade-protein-balls",
       "title": "Homemade Protein Balls",
-      "description": "Better than store-bought, these homemade protein balls are a delicious way to fuel your day with a hefty 18 grams of protein per serving, making them perfect for post-workout recovery or a satisfying snack to keep you energized. Packed with wholesome ingredients, they offer a balanced mix of healthy fats, fiber, and natural sweetness, while delivering a chewy, melt-in-your-mouth texture with just the right touch of crunch from your chosen mix-ins. The rich, nutty flavor combined with hints of cocoa or dried fruit makes each bite irresistibly tasty. These bites are incredibly versatile\u2014customize them with your favorite add-ins like nuts, seeds, or dried berries to suit your taste or dietary needs. They\u2019re ideal for meal prep, easy to grab on-the-go, or enjoy as a quick afternoon pick-me-up. Plus, with gluten-free options and vegan alternatives, they can fit into a variety of dietary lifestyles. For best results, refrigerate after mixing to help them firm up, and store in an airtight container for fresh, convenient snacking all week long.",
+      "description": "Better than store-bought, these homemade protein balls are a delicious way to fuel your day with a hefty 18 grams of protein per serving, making them perfect for post-workout recovery or a satisfying snack to keep you energized. Packed with wholesome ingredients, they offer a balanced mix of healthy fats, fiber, and natural sweetness, while delivering a chewy, melt-in-your-mouth texture with just the right touch of crunch from your chosen mix-ins. The rich, nutty flavor combined with hints of cocoa or dried fruit makes each bite irresistibly tasty. These bites are incredibly versatile—customize them with your favorite add-ins like nuts, seeds, or dried berries to suit your taste or dietary needs. They’re ideal for meal prep, easy to grab on-the-go, or enjoy as a quick afternoon pick-me-up. Plus, with gluten-free options and vegan alternatives, they can fit into a variety of dietary lifestyles. For best results, refrigerate after mixing to help them firm up, and store in an airtight container for fresh, convenient snacking all week long.",
       "protein": 18,
       "calories": 165,
       "carbs": 15,
@@ -1229,7 +1242,8 @@
           "domain": "proteincookies.co",
           "category": "protein cookies"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 15,
@@ -1313,13 +1327,14 @@
           "domain": "proteincookies.co",
           "category": "protein cookies"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 16,
       "slug": "coconut-protein-balls",
       "title": "Coconut Protein Balls",
-      "description": "These tropical coconut protein balls pack a satisfying 16 grams of high-quality protein per serving, making them an ideal post-workout snack to help refuel and support muscle recovery. With their irresistible blend of shredded coconut inside and out, they offer a delightful combination of chewy, moist texture and crunchy exterior that melts in your mouth with each bite. The rich coconut flavor delivers a sweet, tropical escape\u2014perfect for satisfying cravings while providing a healthy boost of energy. At just 160 calories per serving, they\u2019re an excellent choice for meal prep or a quick snack on-the-go, fueling your day with clean, wholesome ingredients. For those with gluten sensitivities, these bites can easily be made gluten-free by using certified gluten-free oats or nut flours. Vegans can substitute honey with maple syrup or agave nectar to keep them plant-based. For best results, store these in an airtight container in the fridge\u2014they stay fresh longer and maintain their chewy texture. Whether enjoyed as a post-workout pick-me-up, a midday treat, or part of your healthy snack rotation, these coconut protein balls are a delicious, nutrient-dense way to stay energized and satisfied.",
+      "description": "These tropical coconut protein balls pack a satisfying 16 grams of high-quality protein per serving, making them an ideal post-workout snack to help refuel and support muscle recovery. With their irresistible blend of shredded coconut inside and out, they offer a delightful combination of chewy, moist texture and crunchy exterior that melts in your mouth with each bite. The rich coconut flavor delivers a sweet, tropical escape—perfect for satisfying cravings while providing a healthy boost of energy. At just 160 calories per serving, they’re an excellent choice for meal prep or a quick snack on-the-go, fueling your day with clean, wholesome ingredients. For those with gluten sensitivities, these bites can easily be made gluten-free by using certified gluten-free oats or nut flours. Vegans can substitute honey with maple syrup or agave nectar to keep them plant-based. For best results, store these in an airtight container in the fridge—they stay fresh longer and maintain their chewy texture. Whether enjoyed as a post-workout pick-me-up, a midday treat, or part of your healthy snack rotation, these coconut protein balls are a delicious, nutrient-dense way to stay energized and satisfied.",
       "protein": 16,
       "calories": 160,
       "carbs": 14,
@@ -1402,13 +1417,14 @@
           "domain": "proteincookies.co",
           "category": "protein cookies"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 17,
       "slug": "almond-butter-protein-balls",
       "title": "Almond Butter Protein Balls",
-      "description": "These smooth almond butter protein balls are a deliciously satisfying snack with a subtle nutty flavor that\u2019s perfect for any time of day. Packed with 17 grams of protein per serving, they provide a powerful energy boost and support muscle recovery, making them an ideal choice for post-workout fuel or a midday pick-me-up. The creamy texture melts in your mouth, complemented by tiny crunches from added ingredients like oats or chopped nuts, creating a perfect balance of smoothness and chewiness. With their naturally sweet, nutty taste, they feel indulgent without any guilt, thanks to wholesome ingredients. These bites are also incredibly versatile\u2014great for meal prep, as a portable snack, or even as a quick breakfast on busy mornings. For those with dietary restrictions, they can easily be made gluten-free by using gluten-free oats, and vegan options are simple with plant-based sweeteners and vegan protein powders. To get the best results, store them in the fridge to maintain their freshness and firmness, and consider adding a touch of honey or maple syrup if you prefer a slightly sweeter bite. Overall, these almond butter protein balls are a tasty, nutritious treat that satisfies your cravings while supporting your fitness goals.",
+      "description": "These smooth almond butter protein balls are a deliciously satisfying snack with a subtle nutty flavor that’s perfect for any time of day. Packed with 17 grams of protein per serving, they provide a powerful energy boost and support muscle recovery, making them an ideal choice for post-workout fuel or a midday pick-me-up. The creamy texture melts in your mouth, complemented by tiny crunches from added ingredients like oats or chopped nuts, creating a perfect balance of smoothness and chewiness. With their naturally sweet, nutty taste, they feel indulgent without any guilt, thanks to wholesome ingredients. These bites are also incredibly versatile—great for meal prep, as a portable snack, or even as a quick breakfast on busy mornings. For those with dietary restrictions, they can easily be made gluten-free by using gluten-free oats, and vegan options are simple with plant-based sweeteners and vegan protein powders. To get the best results, store them in the fridge to maintain their freshness and firmness, and consider adding a touch of honey or maple syrup if you prefer a slightly sweeter bite. Overall, these almond butter protein balls are a tasty, nutritious treat that satisfies your cravings while supporting your fitness goals.",
       "protein": 17,
       "calories": 160,
       "carbs": 14,
@@ -1486,13 +1502,14 @@
           "domain": "proteincookies.co",
           "category": "protein cookies"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 18,
       "slug": "birthday-cake-protein-balls",
       "title": "Birthday Cake Protein Balls",
-      "description": "These festive birthday cake flavored protein balls are the perfect sweet treat to celebrate any occasion while fueling your body with high-quality protein\u2014an impressive 15 grams per serving\u2014making them ideal for post-workout recovery or a satisfying snack. Packed with a balanced blend of wholesome ingredients, they offer a delightful combination of soft, chewy texture with a slight crunch from colorful sprinkles that add a fun, celebratory touch. The rich, cake-like flavor is complemented by a hint of sweetness, making each bite irresistibly tempting without any guilt. Not only are these bites gluten-free (simply use certified gluten-free oats), but they can easily be made vegan by substituting honey with maple syrup or agave nectar\u2014perfect for accommodating various dietary needs. For best results, refrigerate the mixture for at least 30 minutes before rolling into balls to ensure they hold together well, and store in an airtight container for up to a week. These protein balls are a fantastic option for meal prep, a quick on-the-go snack, or a fun dessert for parties and celebrations. Enjoy them straight from the fridge for a cool, satisfying treat or at room temperature for a softer bite\u2014either way, they\u2019re sure to brighten up your day with a nutritious, delicious boost.",
+      "description": "These festive birthday cake flavored protein balls are the perfect sweet treat to celebrate any occasion while fueling your body with high-quality protein—an impressive 15 grams per serving—making them ideal for post-workout recovery or a satisfying snack. Packed with a balanced blend of wholesome ingredients, they offer a delightful combination of soft, chewy texture with a slight crunch from colorful sprinkles that add a fun, celebratory touch. The rich, cake-like flavor is complemented by a hint of sweetness, making each bite irresistibly tempting without any guilt. Not only are these bites gluten-free (simply use certified gluten-free oats), but they can easily be made vegan by substituting honey with maple syrup or agave nectar—perfect for accommodating various dietary needs. For best results, refrigerate the mixture for at least 30 minutes before rolling into balls to ensure they hold together well, and store in an airtight container for up to a week. These protein balls are a fantastic option for meal prep, a quick on-the-go snack, or a fun dessert for parties and celebrations. Enjoy them straight from the fridge for a cool, satisfying treat or at room temperature for a softer bite—either way, they’re sure to brighten up your day with a nutritious, delicious boost.",
       "protein": 15,
       "calories": 155,
       "carbs": 17,
@@ -1575,7 +1592,8 @@
           "domain": "proteincookies.co",
           "category": "protein cookies"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 19,
@@ -1664,13 +1682,14 @@
           "domain": "proteincookies.co",
           "category": "protein cookies"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 20,
       "slug": "coffee-protein-balls",
       "title": "Coffee Protein Balls",
-      "description": "These espresso-infused protein balls are the perfect treat for coffee lovers seeking a nutritious, energizing snack. Packed with 17 grams of high-quality protein per serving, they provide sustained energy and help support muscle recovery, making them an ideal post-workout boost or mid-day pick-me-up. The rich, bold coffee flavor pairs beautifully with the subtly sweet, chewy texture of the bites, offering a delightful balance of bitterness and sweetness that keeps your taste buds satisfied. With a satisfying bite and a slightly crumbly exterior, these balls melt in your mouth, leaving a pleasant coffee aroma that lingers. They\u2019re versatile enough to enjoy at any time of day\u2014whether as a quick breakfast, an energy-boosting snack during busy afternoons, or part of your meal prep routine for convenience. For those with dietary restrictions, they can easily be made gluten-free by using gluten-free oats or vegan by swapping in plant-based protein powder and nut butters. To achieve the best results, use a strong, freshly brewed espresso for an intense flavor and ensure the mixture is well combined and chilled before shaping. Keep them stored in the fridge for a firm, chewy bite that stays fresh and delicious.",
+      "description": "These espresso-infused protein balls are the perfect treat for coffee lovers seeking a nutritious, energizing snack. Packed with 17 grams of high-quality protein per serving, they provide sustained energy and help support muscle recovery, making them an ideal post-workout boost or mid-day pick-me-up. The rich, bold coffee flavor pairs beautifully with the subtly sweet, chewy texture of the bites, offering a delightful balance of bitterness and sweetness that keeps your taste buds satisfied. With a satisfying bite and a slightly crumbly exterior, these balls melt in your mouth, leaving a pleasant coffee aroma that lingers. They’re versatile enough to enjoy at any time of day—whether as a quick breakfast, an energy-boosting snack during busy afternoons, or part of your meal prep routine for convenience. For those with dietary restrictions, they can easily be made gluten-free by using gluten-free oats or vegan by swapping in plant-based protein powder and nut butters. To achieve the best results, use a strong, freshly brewed espresso for an intense flavor and ensure the mixture is well combined and chilled before shaping. Keep them stored in the fridge for a firm, chewy bite that stays fresh and delicious.",
       "protein": 17,
       "calories": 160,
       "carbs": 14,
@@ -1753,7 +1772,8 @@
           "domain": "proteincookies.co",
           "category": "protein cookies"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 21,
@@ -1842,13 +1862,14 @@
           "domain": "proteincookies.co",
           "category": "protein cookies"
         }
-      ]
+      ],
+      "intent_class": "vegan"
     },
     {
       "id": 22,
       "slug": "nut-free-protein-balls",
       "title": "Nut-Free Protein Balls",
-      "description": "These allergy-friendly, nut-free protein balls crafted with creamy sunflower seed butter are the perfect energizing snack to fuel your day. Packed with approximately 15 grams of high-quality protein per serving, they provide sustained energy and help support muscle recovery, making them an ideal choice for post-workout refueling or a midday boost. The tender, chewy texture combined with a hint of natural sweetness from ingredients like honey or dried fruit creates a delicious bite that\u2019s both satisfying and wholesome. Their rich, nutty flavor is balanced by the subtle sweetness, making them a delightful treat for kids and adults alike\u2014perfect for school snacks or on-the-go munching. These bites are versatile and can easily be customized with add-ins like chia seeds or dark chocolate chips for extra flavor and nutrients. For best results, store them in an airtight container and enjoy within a week for maximum freshness. Plus, they're gluten-free and can be made vegan with plant-based sweeteners, making them suitable for various dietary needs. Whether you\u2019re meal prepping for the week or looking for a quick, healthful snack, these protein balls are a convenient and nutritious choice that hits the spot every time.",
+      "description": "These allergy-friendly, nut-free protein balls crafted with creamy sunflower seed butter are the perfect energizing snack to fuel your day. Packed with approximately 15 grams of high-quality protein per serving, they provide sustained energy and help support muscle recovery, making them an ideal choice for post-workout refueling or a midday boost. The tender, chewy texture combined with a hint of natural sweetness from ingredients like honey or dried fruit creates a delicious bite that’s both satisfying and wholesome. Their rich, nutty flavor is balanced by the subtle sweetness, making them a delightful treat for kids and adults alike—perfect for school snacks or on-the-go munching. These bites are versatile and can easily be customized with add-ins like chia seeds or dark chocolate chips for extra flavor and nutrients. For best results, store them in an airtight container and enjoy within a week for maximum freshness. Plus, they're gluten-free and can be made vegan with plant-based sweeteners, making them suitable for various dietary needs. Whether you’re meal prepping for the week or looking for a quick, healthful snack, these protein balls are a convenient and nutritious choice that hits the spot every time.",
       "protein": 15,
       "calories": 150,
       "carbs": 16,
@@ -1930,13 +1951,14 @@
           "domain": "proteincookies.co",
           "category": "protein cookies"
         }
-      ]
+      ],
+      "intent_class": "kid-friendly"
     },
     {
       "id": 23,
       "slug": "lemon-protein-balls",
       "title": "Lemon Protein Balls",
-      "description": "Bright and zesty lemon protein balls offer a delightful burst of citrus flavor with each bite, making them an irresistible treat. Packed with 15 grams of high-quality protein per serving, these bites are perfect for supporting muscle recovery and keeping you energized throughout the day. Their chewy, slightly crumbly texture is complemented by a tangy, fresh lemon aroma that awakens your taste buds. Whether enjoyed as a post-workout snack, a quick breakfast on the go, or a satisfying midday pick-me-up, they\u2019re versatile and convenient. With only 145 calories per serving, they fit well into balanced meal plans while providing essential nutrients. For those with dietary preferences, they can easily be made gluten-free by choosing certified gluten-free oats or vegan by substituting honey with maple syrup or agave. To achieve the best results, store these bites in an airtight container in the fridge to maintain their freshness and chewiness. A great option for meal prepping, they stay delicious for several days, making healthy snacking effortless and delicious.",
+      "description": "Bright and zesty lemon protein balls offer a delightful burst of citrus flavor with each bite, making them an irresistible treat. Packed with 15 grams of high-quality protein per serving, these bites are perfect for supporting muscle recovery and keeping you energized throughout the day. Their chewy, slightly crumbly texture is complemented by a tangy, fresh lemon aroma that awakens your taste buds. Whether enjoyed as a post-workout snack, a quick breakfast on the go, or a satisfying midday pick-me-up, they’re versatile and convenient. With only 145 calories per serving, they fit well into balanced meal plans while providing essential nutrients. For those with dietary preferences, they can easily be made gluten-free by choosing certified gluten-free oats or vegan by substituting honey with maple syrup or agave. To achieve the best results, store these bites in an airtight container in the fridge to maintain their freshness and chewiness. A great option for meal prepping, they stay delicious for several days, making healthy snacking effortless and delicious.",
       "protein": 15,
       "calories": 145,
       "carbs": 15,
@@ -2019,13 +2041,14 @@
           "domain": "proteincookies.co",
           "category": "protein cookies"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 24,
       "slug": "trail-mix-protein-balls",
       "title": "Trail Mix Protein Balls",
-      "description": "Loaded trail mix protein balls with nuts, seeds, and dried fruit\u2014perfect for fueling your adventures and satisfying your snack cravings. Packed with 18 grams of high-quality protein per serving, these bites provide a satisfying mix of macros to support muscle recovery and sustained energy. The combination of crunchy nuts, chewy dried fruit, and nutty seeds creates a delightful texture that\u2019s both chewy and crisp with each bite, while a hint of natural sweetness makes them irresistibly tasty. Whether you're heading out on a hike, hitting the gym, or need a convenient meal prep option, these protein balls are an excellent choice to keep you energized and nourished on the go. They are naturally gluten-free if made with certified ingredients, and vegan-friendly options are easily achievable by swapping honey for maple syrup and choosing plant-based sweeteners. For best results, refrigerate the mixture before shaping and store the balls in an airtight container\u2014they stay fresh and delicious for several days. Enjoy these versatile bites as a post-workout refuel, an afternoon pick-me-up, or a healthy snack to power you through busy days with wholesome, nutrient-dense goodness.",
+      "description": "Loaded trail mix protein balls with nuts, seeds, and dried fruit—perfect for fueling your adventures and satisfying your snack cravings. Packed with 18 grams of high-quality protein per serving, these bites provide a satisfying mix of macros to support muscle recovery and sustained energy. The combination of crunchy nuts, chewy dried fruit, and nutty seeds creates a delightful texture that’s both chewy and crisp with each bite, while a hint of natural sweetness makes them irresistibly tasty. Whether you're heading out on a hike, hitting the gym, or need a convenient meal prep option, these protein balls are an excellent choice to keep you energized and nourished on the go. They are naturally gluten-free if made with certified ingredients, and vegan-friendly options are easily achievable by swapping honey for maple syrup and choosing plant-based sweeteners. For best results, refrigerate the mixture before shaping and store the balls in an airtight container—they stay fresh and delicious for several days. Enjoy these versatile bites as a post-workout refuel, an afternoon pick-me-up, or a healthy snack to power you through busy days with wholesome, nutrient-dense goodness.",
       "protein": 18,
       "calories": 175,
       "carbs": 17,
@@ -2105,13 +2128,14 @@
           "domain": "proteincookies.co",
           "category": "protein cookies"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 25,
       "slug": "brownie-batter-protein-balls",
       "title": "Brownie Batter Protein Balls",
-      "description": "These rich brownie batter protein balls deliver a decadent treat that tastes just like raw brownie mix, with the added benefit of a hefty 19 grams of protein per serving to fuel your day. Packed with high-quality ingredients, they offer a perfect balance of indulgence and nutrition\u2014ideal for satisfying sweet cravings while supporting muscle recovery and growth. The velvety texture melts in your mouth, with a chewy, brownie-like consistency and a deep chocolate flavor that\u2019s both indulgent and satisfying. Whether enjoyed as a post-workout snack, a quick energy boost during busy days, or meal prep for the week ahead, these bites are versatile and convenient. They\u2019re naturally gluten-free when made with gluten-free oats and can easily be veganized by swapping in plant-based protein and sweeteners. For best results, chill the mixture before rolling into balls to ensure they hold their shape, and store them in an airtight container for maximum freshness. Truly a guilt-free treat that combines taste and nutrition in every bite!",
+      "description": "These rich brownie batter protein balls deliver a decadent treat that tastes just like raw brownie mix, with the added benefit of a hefty 19 grams of protein per serving to fuel your day. Packed with high-quality ingredients, they offer a perfect balance of indulgence and nutrition—ideal for satisfying sweet cravings while supporting muscle recovery and growth. The velvety texture melts in your mouth, with a chewy, brownie-like consistency and a deep chocolate flavor that’s both indulgent and satisfying. Whether enjoyed as a post-workout snack, a quick energy boost during busy days, or meal prep for the week ahead, these bites are versatile and convenient. They’re naturally gluten-free when made with gluten-free oats and can easily be veganized by swapping in plant-based protein and sweeteners. For best results, chill the mixture before rolling into balls to ensure they hold their shape, and store them in an airtight container for maximum freshness. Truly a guilt-free treat that combines taste and nutrition in every bite!",
       "protein": 19,
       "calories": 170,
       "carbs": 15,
@@ -2195,13 +2219,14 @@
           "domain": "proteincookies.co",
           "category": "protein cookies"
         }
-      ]
+      ],
+      "intent_class": "quick-snack"
     },
     {
       "id": 100,
       "slug": "gluten-free-sunflower-seed-protein-bites",
       "title": "Gluten-Free Sunflower Seed Protein Bites",
-      "description": "These nut-free and gluten-free protein bites made with sunflower seed butter are a deliciously convenient way to fuel your day, offering approximately 8 grams of high-quality protein per serving to support muscle recovery and sustained energy. With a satisfyingly chewy texture and a subtly nutty, toasted flavor, they provide a perfect balance of sweetness and richness that keeps you coming back for more. Packed with healthy fats and fiber, they help keep you full longer, making them an ideal snack after a workout or as a quick, on-the-go energy boost during busy days. Their allergy-friendly profile makes them suitable for those with nut or gluten sensitivities, and they can easily be adapted with vegan-friendly sweeteners or added plant-based protein powders. For best results, store these bites in an airtight container to maintain their chewy texture, and enjoy them chilled or at room temperature. They\u2019re perfect for meal prep, allowing you to grab a nutritious, protein-packed snack whenever hunger strikes. Whether you\u2019re looking for a post-exercise refuel or a healthy snack to keep at your desk, these bites deliver flavor, nutrition, and convenience in every bite.",
+      "description": "These nut-free and gluten-free protein bites made with sunflower seed butter are a deliciously convenient way to fuel your day, offering approximately 8 grams of high-quality protein per serving to support muscle recovery and sustained energy. With a satisfyingly chewy texture and a subtly nutty, toasted flavor, they provide a perfect balance of sweetness and richness that keeps you coming back for more. Packed with healthy fats and fiber, they help keep you full longer, making them an ideal snack after a workout or as a quick, on-the-go energy boost during busy days. Their allergy-friendly profile makes them suitable for those with nut or gluten sensitivities, and they can easily be adapted with vegan-friendly sweeteners or added plant-based protein powders. For best results, store these bites in an airtight container to maintain their chewy texture, and enjoy them chilled or at room temperature. They’re perfect for meal prep, allowing you to grab a nutritious, protein-packed snack whenever hunger strikes. Whether you’re looking for a post-exercise refuel or a healthy snack to keep at your desk, these bites deliver flavor, nutrition, and convenience in every bite.",
       "protein": 8,
       "calories": 95,
       "carbs": 10,
@@ -2286,13 +2311,14 @@
           "domain": "proteincookies.co",
           "category": "protein cookies"
         }
-      ]
+      ],
+      "intent_class": "gluten-free"
     },
     {
       "id": 101,
       "slug": "dairy-free-tahini-date-protein-bites",
       "title": "Dairy-Free Tahini Date Protein Bites",
-      "description": "Naturally sweetened with dates and made creamy with tahini, these dairy-free protein bites are a wholesome, Middle Eastern-inspired treat. Packed with approximately 7 grams of protein per serving, they provide a satisfying boost to your day, supporting muscle recovery and sustained energy. The rich, nutty flavor of tahini perfectly complements the natural sweetness of dates, creating a harmonious balance of taste and texture\u2014soft, chewy centers coated in a slightly crunchy exterior. With their wholesome ingredients and healthy fats, these bites make an excellent snack for post-workout recovery, meal prep, or a midday energy lift. They are entirely vegan and gluten-free, making them suitable for a variety of dietary preferences; you can also customize them with add-ins like chopped nuts or seeds for extra crunch. For best results, process the ingredients until smooth and firm, then refrigerate to achieve a perfect, cohesive texture. Enjoy these bites straight from the fridge for a cool, satisfying treat, or pack them in your bag for a portable, nutrient-dense snack that keeps you fueled and satisfied throughout the day.",
+      "description": "Naturally sweetened with dates and made creamy with tahini, these dairy-free protein bites are a wholesome, Middle Eastern-inspired treat. Packed with approximately 7 grams of protein per serving, they provide a satisfying boost to your day, supporting muscle recovery and sustained energy. The rich, nutty flavor of tahini perfectly complements the natural sweetness of dates, creating a harmonious balance of taste and texture—soft, chewy centers coated in a slightly crunchy exterior. With their wholesome ingredients and healthy fats, these bites make an excellent snack for post-workout recovery, meal prep, or a midday energy lift. They are entirely vegan and gluten-free, making them suitable for a variety of dietary preferences; you can also customize them with add-ins like chopped nuts or seeds for extra crunch. For best results, process the ingredients until smooth and firm, then refrigerate to achieve a perfect, cohesive texture. Enjoy these bites straight from the fridge for a cool, satisfying treat, or pack them in your bag for a portable, nutrient-dense snack that keeps you fueled and satisfied throughout the day.",
       "protein": 7,
       "calories": 85,
       "carbs": 12,
@@ -2378,7 +2404,8 @@
           "domain": "proteincookies.co",
           "category": "protein cookies"
         }
-      ]
+      ],
+      "intent_class": "vegan"
     }
   ]
 }
