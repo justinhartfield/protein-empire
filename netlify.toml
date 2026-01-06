@@ -21,6 +21,18 @@
   to = "/.netlify/functions/:splat"
   status = 200
 
+# Double opt-in confirmation endpoint
+[[redirects]]
+  from = "/api/confirm"
+  to = "/.netlify/functions/confirm"
+  status = 200
+
+# Access verification endpoint for protected success pages
+[[redirects]]
+  from = "/api/verify-access"
+  to = "/.netlify/functions/verify-access"
+  status = 200
+
 # SPA fallback (if needed)
 # [[redirects]]
 #   from = "/*"
@@ -62,3 +74,4 @@
 # - SENDGRID_LIST_ID (unique per site)
 # - SENDGRID_FROM_EMAIL (unique per site)
 # - SITE_NAME (unique per site)
+# - DOUBLE_OPT_IN (optional, set to "true" to enable double opt-in)
