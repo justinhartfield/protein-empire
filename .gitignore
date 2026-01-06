@@ -1,1 +1,4 @@
 .env.strapi
+
+# Local Netlify folder
+.netlify
