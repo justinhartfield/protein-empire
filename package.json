@@ -34,6 +34,7 @@
     "prettier": "^3.2.0"
   },
   "dependencies": {
+    "@netlify/blobs": "^8.1.0",
     "dotenv": "^17.2.3",
     "ejs": "^3.1.10",
     "gray-matter": "^4.0.3",
