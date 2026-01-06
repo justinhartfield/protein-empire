@@ -205,17 +205,62 @@
             <h2 class="anton-text text-3xl mb-4 uppercase tracking-wider">GET YOUR FREE COPY</h2>
             <p class="text-slate-600 mb-8">Enter your email to download the PDF instantly.</p>
             
-            <form action="/success-sweet-bread-pack.html" method="GET" class="space-y-4">
-                <input type="email" name="email" placeholder="Enter your email" required
+            <form id="subscribe-form" class="space-y-4">
+                <input type="email" id="email-input" name="email" placeholder="Enter your email" required
                     class="w-full px-6 py-4 rounded-xl border border-slate-300 focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20 outline-none transition text-lg">
-                <button type="submit" class="w-full bg-brand-500 text-white px-8 py-4 rounded-xl font-bold anton-text text-lg hover:bg-brand-600 transition-colors shadow-xl shadow-brand-500/30 tracking-wider">
+                <button type="submit" id="submit-btn" class="w-full bg-brand-500 text-white px-8 py-4 rounded-xl font-bold anton-text text-lg hover:bg-brand-600 transition-colors shadow-xl shadow-brand-500/30 tracking-wider">
                     DOWNLOAD FREE PDF
                 </button>
+                <p id="form-error" class="text-red-500 text-sm hidden"></p>
             </form>
             
             <p class="text-xs text-slate-500 mt-4">No spam. Unsubscribe anytime.</p>
         </div>
     </section>
+
+    <script>
+    document.getElementById('subscribe-form').addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        const email = document.getElementById('email-input').value;
+        const submitBtn = document.getElementById('submit-btn');
+        const errorEl = document.getElementById('form-error');
+        
+        // Disable button and show loading state
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'PROCESSING...';
+        errorEl.classList.add('hidden');
+        
+        try {
+            const response = await fetch('/api/subscribe', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    email: email,
+                    packSlug: 'sweet-bread-pack',
+                    pdfUrl: window.location.origin + '/guides/protein-bread-com-sweet-bread-pack.pdf'
+                })
+            });
+            
+            const data = await response.json();
+            
+            if (data.success) {
+                // Redirect to success page
+                window.location.href = '/success-sweet-bread-pack.html?email=' + encodeURIComponent(email);
+            } else {
+                throw new Error(data.message || 'Subscription failed');
+            }
+        } catch (error) {
+            console.error('Subscription error:', error);
+            errorEl.textContent = 'Something went wrong. Please try again.';
+            errorEl.classList.remove('hidden');
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'DOWNLOAD FREE PDF';
+        }
+    });
+    </script>
 
     <!-- Also Includes -->
     <section class="py-16">

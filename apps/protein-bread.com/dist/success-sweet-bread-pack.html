@@ -5,6 +5,7 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="site-slug" content="protein-bread-com">
 <title>Download Sweet Bread Pack | ProteinBread</title>
 
 
@@ -243,6 +244,38 @@
     </div>
 </footer>
 
+
+
+    <script>
+    // Subscribe user on success page load (backup in case form submission failed)
+    (function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const email = urlParams.get('email');
+        
+        if (email) {
+            // Get pack slug from URL
+            const pathMatch = window.location.pathname.match(/success-(.+)\.html/);
+            const packSlug = pathMatch ? pathMatch[1] : 'starter';
+            
+            // Get site slug from meta tag or derive from domain
+            const siteSlug = document.querySelector('meta[name="site-slug"]')?.content || 
+                             window.location.hostname.replace(/\./g, '-');
+            
+            // Call subscribe API (fire and forget - user already has access to PDF)
+            fetch('/api/subscribe', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    email: email,
+                    packSlug: packSlug,
+                    pdfUrl: window.location.origin + '/guides/' + siteSlug + '-' + packSlug + '.pdf'
+                })
+            }).catch(err => console.log('Subscribe backup call:', err));
+        }
+    })();
+    </script>
 
 </body>
 </html>

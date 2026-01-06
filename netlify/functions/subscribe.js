@@ -130,7 +130,7 @@ export async function handler(event, context) {
     // Get environment variables
     const listId = process.env.SENDGRID_LIST_ID;
     const fromEmail = process.env.SENDGRID_FROM_EMAIL;
-    const siteName = process.env.SITE_NAME || 'Protein Empire';
+    const siteName = process.env.PROTEIN_SITE_NAME || process.env.SITE_NAME || 'Protein Empire';
 
     // Check configuration
     if (!apiKey) {
