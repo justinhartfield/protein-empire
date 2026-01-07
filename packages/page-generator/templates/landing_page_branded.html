@@ -223,8 +223,13 @@
             <a href="https://highprotein.recipes/vegan/" class="px-5 py-2 rounded-full bg-white border border-brand-200 text-brand-700 text-sm font-semibold hover:bg-brand-100 transition-all">Vegan</a>
         </div>
 
+        <!-- Recipe Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {{recipe_cards}}
+        </div>
+
         <!-- In-Content CTA Block -->
-        <div class="mb-12 relative overflow-hidden rounded-3xl cta-gradient p-8 md:p-12 text-white no-print">
+        <div class="my-16 relative overflow-hidden rounded-3xl cta-gradient p-8 md:p-12 text-white no-print">
             <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
                 <div class="max-w-xl text-center md:text-left">
                     <h2 class="anton-text text-3xl md:text-4xl mb-4">Want all these recipes in a PDF?</h2>
@@ -241,12 +246,6 @@
             <div class="absolute -bottom-10 -right-10 w-64 h-64 bg-white/5 organic-shape pointer-events-none"></div>
             <div class="absolute top-0 right-1/4 w-32 h-32 bg-white/10 rounded-full blur-2xl pointer-events-none"></div>
         </div>
-
-        <!-- Recipe Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {{recipe_cards}}
-        </div>
-
 
         <!-- Load More -->
         <div class="mt-12 text-center no-print" x-show="hasMoreRecipes">
