@@ -122,7 +122,8 @@ def load_local_recipes():
                                 # Build canonical URL and image URL
                                 slug = recipe.get('slug', recipe.get('title', '').lower().replace(' ', '-'))
                                 recipe['canonical_url'] = recipe.get('canonical_url', f'https://{domain}/{slug}.html')
-                                recipe['image_url'] = recipe.get('image_url', recipe.get('image', f'https://{domain}/recipe_images/{slug}.jpg'))
+                                # Build full image URL - use slug-based path since 'image' field only has filename
+                                recipe['image_url'] = f'https://{domain}/recipe_images/{slug}.jpg'
                                 
                             all_recipes.extend(recipes)
                             print(f"Loaded {len(recipes)} recipes from {site_dir}")
