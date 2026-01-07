@@ -73,26 +73,49 @@ def fetch_hub_pages():
 
 
 def load_local_recipes():
-    """Load all recipes from local JSON files"""
+    """Load all recipes from the highprotein.recipes feed JSON"""
     all_recipes = []
     base_path = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-    recipes_dir = os.path.join(base_path, 'data', 'recipes')
     
-    for site_dir in os.listdir(recipes_dir):
-        site_path = os.path.join(recipes_dir, site_dir)
-        if os.path.isdir(site_path):
-            recipes_file = os.path.join(site_path, 'recipes.json')
-            if os.path.exists(recipes_file):
-                try:
-                    with open(recipes_file, 'r') as f:
-                        data = json.load(f)
-                        recipes = data.get('recipes', data) if isinstance(data, dict) else data
-                        # Add site info to each recipe
-                        for recipe in recipes:
-                            recipe['site'] = site_dir
-                        all_recipes.extend(recipes)
-                except Exception as e:
-                    print(f"Error loading {recipes_file}: {e}")
+    # Use the highprotein.recipes feed which has all recipes from the network
+    feed_file = os.path.join(base_path, 'apps', 'highprotein.recipes', 'dist', 'feed', 'recipes.json')
+    
+    if os.path.exists(feed_file):
+        try:
+            with open(feed_file, 'r') as f:
+                data = json.load(f)
+                recipes = data.get('recipes', [])
+                # Normalize the recipe format for the hub page generator
+                for recipe in recipes:
+                    # Map feed fields to expected fields
+                    recipe['title'] = recipe.get('title', 'Recipe')
+                    recipe['protein'] = recipe.get('protein_grams', 0)
+                    recipe['calories'] = recipe.get('calories', 0)
+                    recipe['totalTime'] = recipe.get('total_time_minutes', 0)
+                    recipe['image_url'] = recipe.get('image_url', '')
+                    recipe['canonical_url'] = recipe.get('canonical_url', '')
+                    recipe['site_domain'] = recipe.get('site_domain', '')
+                all_recipes.extend(recipes)
+        except Exception as e:
+            print(f"Error loading {feed_file}: {e}")
+    else:
+        print(f"Feed file not found: {feed_file}")
+        # Fallback to old method
+        recipes_dir = os.path.join(base_path, 'data', 'recipes')
+        for site_dir in os.listdir(recipes_dir):
+            site_path = os.path.join(recipes_dir, site_dir)
+            if os.path.isdir(site_path):
+                recipes_file = os.path.join(site_path, 'recipes.json')
+                if os.path.exists(recipes_file):
+                    try:
+                        with open(recipes_file, 'r') as f:
+                            data = json.load(f)
+                            recipes = data.get('recipes', data) if isinstance(data, dict) else data
+                            for recipe in recipes:
+                                recipe['site'] = site_dir
+                            all_recipes.extend(recipes)
+                    except Exception as e:
+                        print(f"Error loading {recipes_file}: {e}")
     
     return all_recipes
 
@@ -186,25 +209,39 @@ def generate_recipe_card_html(recipe):
     """Generate HTML for a recipe card (handles both API and local formats)"""
     # Handle both Strapi API format (with attributes) and local JSON format
     attrs = recipe.get('attributes', recipe)
-    slug = attrs.get('slug', '')
     title = attrs.get('title', 'Recipe')
-    protein = attrs.get('protein', 0)
+    protein = attrs.get('protein', 0) or attrs.get('protein_grams', 0)
     calories = attrs.get('calories', 0)
-    total_time = attrs.get('totalTime', 0)
+    total_time = attrs.get('totalTime', 0) or attrs.get('total_time_minutes', 0)
     
-    # Use a placeholder image with recipe-specific styling
-    # Generate a gradient background based on the recipe title hash for variety
-    title_hash = sum(ord(c) for c in title) % 360
-    image_url = f'https://placehold.co/400x300/f59e0b/ffffff?text={title[:20].replace(" ", "+")}'
+    # Get the canonical URL for the recipe (links to the actual recipe page on its site)
+    canonical_url = attrs.get('canonical_url', '')
+    if not canonical_url:
+        # Fallback to slug-based URL if no canonical URL
+        slug = attrs.get('slug', '')
+        canonical_url = f'/{slug}.html' if slug else '#'
+    
+    # Get the image URL from the feed data
+    image_url = attrs.get('image_url', '')
+    if not image_url:
+        # Fallback to placeholder if no image URL
+        title_safe = title[:20].replace(' ', '+').replace('"', '')
+        image_url = f'https://placehold.co/400x300/f59e0b/ffffff?text={title_safe}'
+    
+    # Get site domain for attribution
+    site_domain = attrs.get('site_domain', '')
+    site_badge = f'<span class="absolute top-2 right-2 bg-white/90 text-xs px-2 py-1 rounded-full text-slate-600">{site_domain}</span>' if site_domain else ''
     
     return f'''
         <div class="recipe-card bg-white rounded-2xl shadow-lg overflow-hidden transition-all hover:shadow-xl hover:-translate-y-1"
              data-protein="{protein}" data-calories="{calories}" data-time="{total_time}">
-            <a href="/{slug}.html" class="block">
-                <div class="aspect-[4/3] overflow-hidden">
+            <a href="{canonical_url}" class="block" target="_blank" rel="noopener">
+                <div class="aspect-[4/3] overflow-hidden relative">
                     <img src="{image_url}" alt="{title}" 
                          class="w-full h-full object-cover transition-transform hover:scale-105"
-                         loading="lazy">
+                         loading="lazy"
+                         onerror="this.src='https://placehold.co/400x300/f59e0b/ffffff?text=Recipe'">
+                    {site_badge}
                 </div>
                 <div class="p-4">
                     <h3 class="font-bold text-lg text-slate-900 mb-2 line-clamp-2">{title}</h3>
