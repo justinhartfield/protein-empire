@@ -18,7 +18,7 @@
         // SendGrid API endpoint for email capture
         sendgridEndpoint: null,
         
-        // Success redirect URL after email capture
+        // Success redirect URL after email capture (only used for single opt-in)
         successRedirect: null,
         
         // PDF download URL
@@ -87,13 +87,18 @@
                         utm_campaign: getUrlParam('utm_campaign')
                     })
                 });
-                return response.ok;
+                
+                if (response.ok) {
+                    const data = await response.json();
+                    return { success: true, doubleOptIn: data.doubleOptIn || false };
+                }
+                return { success: false, doubleOptIn: false };
             } catch (e) {
                 console.error('Email submission failed:', e);
-                return false;
+                return { success: false, doubleOptIn: false };
             }
         }
-        return true; // No endpoint configured, treat as success
+        return { success: true, doubleOptIn: false }; // No endpoint configured, treat as success
     }
 
     function getUrlParam(param) {
@@ -122,7 +127,8 @@
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
                 </button>
                 
-                <div class="relative z-10 text-center">
+                <!-- Form State -->
+                <div class="pe-form-state relative z-10 text-center">
                     <div class="w-20 h-20 bg-brand-100 rounded-full flex items-center justify-center mx-auto mb-6">
                         <svg class="w-10 h-10 text-brand-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
                     </div>
@@ -131,11 +137,24 @@
                     
                     <form class="pe-form space-y-4">
                         <input type="email" required placeholder="Enter your email" class="pe-email w-full px-6 py-4 rounded-full border-2 border-brand-200 focus:border-brand-500 outline-none transition-all">
-                        <button type="submit" class="w-full py-4 bg-brand-500 text-white font-bold rounded-full hover:bg-brand-600 transition-all shadow-lg">
+                        <button type="submit" class="pe-submit-btn w-full py-4 bg-brand-500 text-white font-bold rounded-full hover:bg-brand-600 transition-all shadow-lg">
                             Send Me The List
                         </button>
                         <button type="button" class="pe-dismiss text-brand-400 text-sm hover:text-brand-700 transition-colors mt-4">No thanks, I'm good</button>
                     </form>
+                </div>
+                
+                <!-- Success State -->
+                <div class="pe-success-state relative z-10 text-center" style="display: none;">
+                    <div class="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h2 class="font-bold text-3xl text-brand-900 mb-4" style="font-family: Anton, sans-serif;">Check Your Email!</h2>
+                    <p class="text-brand-700/70 mb-4">We've sent a confirmation link to your inbox.</p>
+                    <p class="text-brand-500 text-sm font-medium mb-6">📧 Don't forget to check your spam folder!</p>
+                    <button type="button" class="pe-continue px-8 py-3 bg-brand-100 text-brand-700 font-semibold rounded-full hover:bg-brand-200 transition-all">
+                        Continue Browsing
+                    </button>
                 </div>
             </div>
         </div>`;
@@ -147,14 +166,36 @@
         popup.querySelector('.pe-backdrop').addEventListener('click', () => hideExitIntent());
         popup.querySelector('.pe-close').addEventListener('click', () => hideExitIntent());
         popup.querySelector('.pe-dismiss').addEventListener('click', () => hideExitIntent());
+        popup.querySelector('.pe-continue').addEventListener('click', () => hideExitIntent());
         popup.querySelector('.pe-form').addEventListener('submit', async (e) => {
             e.preventDefault();
             const email = popup.querySelector('.pe-email').value;
+            const submitBtn = popup.querySelector('.pe-submit-btn');
+            
             if (email) {
-                await submitEmail(email, 'exit_intent');
-                hideExitIntent();
-                if (config.successRedirect) {
-                    window.location.href = config.successRedirect;
+                // Show loading state
+                submitBtn.textContent = 'Sending...';
+                submitBtn.disabled = true;
+                
+                const result = await submitEmail(email, 'exit_intent');
+                
+                if (result.success) {
+                    if (result.doubleOptIn) {
+                        // Show success message for double opt-in
+                        popup.querySelector('.pe-form-state').style.display = 'none';
+                        popup.querySelector('.pe-success-state').style.display = 'block';
+                    } else {
+                        // Single opt-in - redirect to success page
+                        hideExitIntent();
+                        if (config.successRedirect) {
+                            window.location.href = config.successRedirect;
+                        }
+                    }
+                } else {
+                    // Reset button on error
+                    submitBtn.textContent = 'Send Me The List';
+                    submitBtn.disabled = false;
+                    alert('Something went wrong. Please try again.');
                 }
             }
         });
@@ -165,6 +206,13 @@
     function showExitIntent() {
         const popup = document.getElementById('pe-exit-intent');
         if (popup && !state.exitIntentTriggered) {
+            // Reset to form state
+            popup.querySelector('.pe-form-state').style.display = 'block';
+            popup.querySelector('.pe-success-state').style.display = 'none';
+            popup.querySelector('.pe-email').value = '';
+            popup.querySelector('.pe-submit-btn').textContent = 'Send Me The List';
+            popup.querySelector('.pe-submit-btn').disabled = false;
+            
             popup.style.display = 'flex';
             state.exitIntentTriggered = true;
             trackEvent('exit_intent_shown');
@@ -185,22 +233,41 @@
     function createStickyFooter() {
         const html = `
         <div id="pe-sticky-footer" class="fixed bottom-0 left-0 w-full z-50 p-4 pointer-events-none" style="display: none; transform: translateY(100%);">
-            <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-2xl border border-brand-200 p-4 flex flex-col md:flex-row items-center gap-4 pointer-events-auto">
-                <div class="flex items-center gap-4 flex-grow">
-                    <div class="hidden sm:flex w-12 h-16 bg-brand-100 rounded-lg flex-shrink-0 items-center justify-center">
-                        <span class="text-2xl">📖</span>
+            <div class="pe-container max-w-4xl mx-auto bg-white rounded-2xl shadow-2xl border border-brand-200 p-4 pointer-events-auto">
+                <!-- Form State -->
+                <div class="pe-form-state flex flex-col md:flex-row items-center gap-4">
+                    <div class="flex items-center gap-4 flex-grow">
+                        <div class="hidden sm:flex w-12 h-16 bg-brand-100 rounded-lg flex-shrink-0 items-center justify-center">
+                            <span class="text-2xl">📖</span>
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-brand-900 text-sm md:text-base pe-title">Grab the Free Recipe Pack!</h5>
+                            <p class="text-xs text-brand-600 font-medium">Join 15,000+ home cooks saving 5 hours/week.</p>
+                        </div>
                     </div>
-                    <div>
-                        <h5 class="font-bold text-brand-900 text-sm md:text-base pe-title">Grab the Free Recipe Pack!</h5>
-                        <p class="text-xs text-brand-600 font-medium">Join 15,000+ home cooks saving 5 hours/week.</p>
+                    <div class="flex items-center gap-3 w-full md:w-auto">
+                        <input type="email" placeholder="Your email..." class="pe-email flex-grow px-4 py-2 rounded-full bg-brand-50 border border-brand-200 text-sm focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none">
+                        <button class="pe-submit bg-brand-500 text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-brand-600 transition-all whitespace-nowrap">
+                            Join Free
+                        </button>
+                        <button class="pe-close text-brand-400 hover:text-brand-700 p-1">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                        </button>
                     </div>
                 </div>
-                <div class="flex items-center gap-3 w-full md:w-auto">
-                    <input type="email" placeholder="Your email..." class="pe-email flex-grow px-4 py-2 rounded-full bg-brand-50 border border-brand-200 text-sm focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none">
-                    <button class="pe-submit bg-brand-500 text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-brand-600 transition-all whitespace-nowrap">
-                        Join Free
-                    </button>
-                    <button class="pe-close text-brand-400 hover:text-brand-700 p-1">
+                
+                <!-- Success State -->
+                <div class="pe-success-state flex items-center justify-center gap-4 py-2" style="display: none;">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0">
+                            <svg class="w-5 h-5 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-brand-900 text-sm">Email Sent! Check Your Inbox</h5>
+                            <p class="text-xs text-brand-600">Don't forget to check your spam folder 📧</p>
+                        </div>
+                    </div>
+                    <button class="pe-close-success text-brand-400 hover:text-brand-700 p-1 ml-auto">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
                     </button>
                 </div>
@@ -215,14 +282,49 @@
         
         // Event listeners
         sticky.querySelector('.pe-close').addEventListener('click', () => hideStickyFooter());
+        sticky.querySelector('.pe-close-success').addEventListener('click', () => hideStickyFooter());
         sticky.querySelector('.pe-submit').addEventListener('click', async () => {
             const email = sticky.querySelector('.pe-email').value;
+            const submitBtn = sticky.querySelector('.pe-submit');
+            
             if (email) {
-                await submitEmail(email, 'sticky_footer');
-                hideStickyFooter();
-                if (config.successRedirect) {
-                    window.location.href = config.successRedirect;
+                // Show loading state
+                submitBtn.textContent = 'Sending...';
+                submitBtn.disabled = true;
+                
+                const result = await submitEmail(email, 'sticky_footer');
+                
+                if (result.success) {
+                    if (result.doubleOptIn) {
+                        // Show success message for double opt-in
+                        sticky.querySelector('.pe-form-state').style.display = 'none';
+                        sticky.querySelector('.pe-success-state').style.display = 'flex';
+                        
+                        // Auto-hide after 8 seconds
+                        setTimeout(() => {
+                            hideStickyFooter();
+                        }, 8000);
+                    } else {
+                        // Single opt-in - redirect to success page
+                        hideStickyFooter();
+                        if (config.successRedirect) {
+                            window.location.href = config.successRedirect;
+                        }
+                    }
+                } else {
+                    // Reset button on error
+                    submitBtn.textContent = 'Join Free';
+                    submitBtn.disabled = false;
+                    alert('Something went wrong. Please try again.');
                 }
+            }
+        });
+        
+        // Allow Enter key to submit
+        sticky.querySelector('.pe-email').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                sticky.querySelector('.pe-submit').click();
             }
         });
         
@@ -232,6 +334,13 @@
     function showStickyFooter() {
         const sticky = document.getElementById('pe-sticky-footer');
         if (sticky && !state.stickyShown) {
+            // Reset to form state
+            sticky.querySelector('.pe-form-state').style.display = 'flex';
+            sticky.querySelector('.pe-success-state').style.display = 'none';
+            sticky.querySelector('.pe-email').value = '';
+            sticky.querySelector('.pe-submit').textContent = 'Join Free';
+            sticky.querySelector('.pe-submit').disabled = false;
+            
             sticky.style.display = 'block';
             sticky.style.transition = 'transform 0.5s ease-out';
             setTimeout(() => {
@@ -311,7 +420,7 @@
                             <div class="relative">
                                 <input type="email" required placeholder="Where should we send your guide?" class="pe-email w-full px-6 py-5 rounded-2xl bg-brand-100/50 border-2 border-transparent focus:border-brand-500 outline-none transition-all text-brand-900 placeholder:text-brand-400 text-lg">
                             </div>
-                            <button type="submit" class="w-full py-5 bg-brand-500 hover:bg-brand-600 text-white font-bold rounded-2xl transition-all shadow-xl flex items-center justify-center gap-3 text-lg group">
+                            <button type="submit" class="pe-submit-btn w-full py-5 bg-brand-500 hover:bg-brand-600 text-white font-bold rounded-2xl transition-all shadow-xl flex items-center justify-center gap-3 text-lg group">
                                 <span>Download Free Guide Now</span>
                                 <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                             </button>
@@ -325,10 +434,11 @@
                     <!-- Success State -->
                     <div class="pe-success text-center py-8" style="display: none;">
                         <div class="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                            <svg class="w-10 h-10 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <svg class="w-10 h-10 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                         </div>
                         <h3 class="text-2xl text-brand-900 mb-4" style="font-family: Anton, sans-serif;">Check Your Inbox!</h3>
-                        <p class="text-brand-700/70 mb-6">Your recipe pack is on its way. Check your email for the download link.</p>
+                        <p class="text-brand-700/70 mb-2">We've sent a confirmation link to your email.</p>
+                        <p class="text-brand-500 text-sm font-medium mb-6">📧 Don't forget to check your spam folder!</p>
                         <button class="pe-continue px-8 py-3 bg-brand-100 text-brand-700 font-semibold rounded-full hover:bg-brand-200 transition-all">
                             Continue Browsing
                         </button>
@@ -352,16 +462,32 @@
         modal.querySelector('.pe-form').addEventListener('submit', async (e) => {
             e.preventDefault();
             const email = modal.querySelector('.pe-email').value;
+            const submitBtn = modal.querySelector('.pe-submit-btn');
+            
             if (email) {
-                await submitEmail(email, 'lead_magnet');
-                modal.querySelector('.pe-form-container').style.display = 'none';
-                modal.querySelector('.pe-success').style.display = 'block';
-                trackEvent('lead_magnet_submitted');
+                // Show loading state
+                submitBtn.querySelector('span').textContent = 'Sending...';
+                submitBtn.disabled = true;
                 
-                if (config.successRedirect) {
-                    setTimeout(() => {
-                        window.location.href = config.successRedirect;
-                    }, 2000);
+                const result = await submitEmail(email, 'lead_magnet');
+                
+                if (result.success) {
+                    // Always show success message (works for both single and double opt-in)
+                    modal.querySelector('.pe-form-container').style.display = 'none';
+                    modal.querySelector('.pe-success').style.display = 'block';
+                    trackEvent('lead_magnet_submitted');
+                    
+                    // Only redirect for single opt-in
+                    if (!result.doubleOptIn && config.successRedirect) {
+                        setTimeout(() => {
+                            window.location.href = config.successRedirect;
+                        }, 2000);
+                    }
+                } else {
+                    // Reset button on error
+                    submitBtn.querySelector('span').textContent = 'Download Free Guide Now';
+                    submitBtn.disabled = false;
+                    alert('Something went wrong. Please try again.');
                 }
             }
         });
@@ -372,6 +498,14 @@
     function showLeadMagnet() {
         const modal = document.getElementById('pe-lead-magnet');
         if (modal) {
+            // Reset to form state
+            modal.querySelector('.pe-form-container').style.display = 'block';
+            modal.querySelector('.pe-success').style.display = 'none';
+            modal.querySelector('.pe-email').value = '';
+            const submitBtn = modal.querySelector('.pe-submit-btn');
+            submitBtn.querySelector('span').textContent = 'Download Free Guide Now';
+            submitBtn.disabled = false;
+            
             modal.style.display = 'flex';
             state.leadMagnetOpen = true;
             trackEvent('lead_magnet_opened');
@@ -383,10 +517,6 @@
         if (modal) {
             modal.style.display = 'none';
             state.leadMagnetOpen = false;
-            // Reset form
-            modal.querySelector('.pe-form-container').style.display = 'block';
-            modal.querySelector('.pe-success').style.display = 'none';
-            modal.querySelector('.pe-email').value = '';
         }
     }
 
