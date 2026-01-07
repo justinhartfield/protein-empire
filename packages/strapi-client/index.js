@@ -142,6 +142,126 @@ class StrapiClient {
     return result.data || [];
   }
   
+  // ============================================
+  // Hub Page Methods (for Dotoro Integration)
+  // ============================================
+  
+  /**
+   * Get all hub pages
+   */
+  async getHubPages(options = {}) {
+    const params = {
+      filters: { isActive: { '$eq': true } },
+      populate: '*',
+      sort: options.sort || 'order:asc',
+    };
+    
+    if (options.siteId) {
+      params.filters.siteId = { '$eq': options.siteId };
+    }
+    
+    const result = await this.fetch('/hub-pages', params);
+    return result.data || [];
+  }
+  
+  /**
+   * Get a single hub page by slug
+   */
+  async getHubPage(slug) {
+    const result = await this.fetch('/hub-pages', {
+      filters: { slug: { '$eq': slug } },
+      populate: '*',
+    });
+    
+    return result.data?.[0] || null;
+  }
+  
+  /**
+   * Get recipes filtered by hub page criteria
+   * Supports protein bands, calorie bands, time bands, and category filters
+   */
+  async getRecipesForHubPage(hubPage, siteId, options = {}) {
+    const attrs = hubPage.attributes || hubPage;
+    const filters = { 
+      site: { id: { '$eq': siteId } }, 
+      isPublished: { '$eq': true } 
+    };
+    
+    // Apply protein band filters
+    if (attrs.proteinBandMin) {
+      filters.protein = filters.protein || {};
+      filters.protein['$gte'] = attrs.proteinBandMin;
+    }
+    if (attrs.proteinBandMax) {
+      filters.protein = filters.protein || {};
+      filters.protein['$lte'] = attrs.proteinBandMax;
+    }
+    
+    // Apply calorie band filters
+    if (attrs.calorieBandMin) {
+      filters.calories = filters.calories || {};
+      filters.calories['$gte'] = attrs.calorieBandMin;
+    }
+    if (attrs.calorieBandMax) {
+      filters.calories = filters.calories || {};
+      filters.calories['$lte'] = attrs.calorieBandMax;
+    }
+    
+    // Apply time band filter
+    if (attrs.timeBandMax) {
+      filters.totalTime = { '$lte': attrs.timeBandMax };
+    }
+    
+    const params = {
+      filters,
+      populate: {
+        categories: { fields: ['name', 'slug'] },
+        image: { fields: ['url', 'alternativeText'] },
+      },
+      pagination: { limit: options.limit || 50 },
+      sort: options.sort || 'protein:desc',
+    };
+    
+    const result = await this.fetch('/recipes', params);
+    return result.data || [];
+  }
+  
+  /**
+   * Get all goals
+   */
+  async getGoals() {
+    const result = await this.fetch('/goals', {
+      populate: '*',
+      sort: 'order:asc',
+    });
+    
+    return result.data || [];
+  }
+  
+  /**
+   * Get all constraints
+   */
+  async getConstraints() {
+    const result = await this.fetch('/constraints', {
+      populate: '*',
+      sort: 'order:asc',
+    });
+    
+    return result.data || [];
+  }
+  
+  /**
+   * Get all outcomes
+   */
+  async getOutcomes() {
+    const result = await this.fetch('/outcomes', {
+      populate: '*',
+      sort: 'order:asc',
+    });
+    
+    return result.data || [];
+  }
+  
   /**
    * Transform Strapi recipe data to the format expected by build scripts
    */
@@ -179,6 +299,10 @@ class StrapiClient {
       tags: attrs.tags || [],
       categories: (attrs.categories?.data || []).map(cat => cat.attributes?.slug || cat.slug),
       image: attrs.image?.data?.attributes?.url || `/recipe_images/${attrs.slug}.png`,
+      // Add computed band values
+      proteinBand: this.getProteinBand(attrs.protein),
+      calorieBand: this.getCalorieBand(attrs.calories),
+      timeBand: this.getTimeBand(attrs.totalTime),
     };
   }
   
@@ -196,6 +320,77 @@ class StrapiClient {
       isFree: attrs.isFree,
       recipes: (attrs.recipes?.data || []).map(r => r.attributes?.slug || r.slug),
     };
+  }
+  
+  /**
+   * Transform Strapi hub page data
+   */
+  transformHubPage(strapiHubPage) {
+    const attrs = strapiHubPage.attributes || strapiHubPage;
+    
+    return {
+      id: strapiHubPage.id,
+      title: attrs.title,
+      slug: attrs.slug,
+      metaTitle: attrs.metaTitle,
+      metaDescription: attrs.metaDescription,
+      heroHeadline: attrs.heroHeadline,
+      heroSubheadline: attrs.heroSubheadline,
+      heroImage: attrs.heroImage?.data?.attributes?.url || null,
+      introContent: attrs.introContent,
+      filterRules: attrs.filterRules,
+      defaultFilters: attrs.defaultFilters,
+      ctaHeadline: attrs.ctaHeadline,
+      ctaButtonText: attrs.ctaButtonText,
+      ctaButtonLink: attrs.ctaButtonLink,
+      faqContent: attrs.faqContent,
+      bottomContent: attrs.bottomContent,
+      order: attrs.order,
+      isActive: attrs.isActive,
+      proteinBandMin: attrs.proteinBandMin,
+      proteinBandMax: attrs.proteinBandMax,
+      calorieBandMin: attrs.calorieBandMin,
+      calorieBandMax: attrs.calorieBandMax,
+      timeBandMax: attrs.timeBandMax,
+      siteId: attrs.siteId,
+    };
+  }
+  
+  // ============================================
+  // Band Calculation Helpers
+  // ============================================
+  
+  /**
+   * Get protein band label from protein value
+   */
+  getProteinBand(protein) {
+    if (!protein) return null;
+    if (protein < 20) return 'under-20g';
+    if (protein < 30) return '20-29g';
+    if (protein < 40) return '30-39g';
+    return '40g-plus';
+  }
+  
+  /**
+   * Get calorie band label from calorie value
+   */
+  getCalorieBand(calories) {
+    if (!calories) return null;
+    if (calories < 300) return 'under-300';
+    if (calories < 500) return '300-500';
+    if (calories < 700) return '500-700';
+    return '700-plus';
+  }
+  
+  /**
+   * Get time band label from total time value
+   */
+  getTimeBand(totalTime) {
+    if (!totalTime) return null;
+    if (totalTime <= 15) return 'under-15min';
+    if (totalTime <= 30) return '15-30min';
+    if (totalTime <= 60) return '30-60min';
+    return '60min-plus';
   }
 }
 
