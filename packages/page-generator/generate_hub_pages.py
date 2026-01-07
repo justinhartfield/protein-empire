@@ -15,7 +15,7 @@ import requests
 from datetime import datetime
 
 # Configuration - Use separate URLs for hub pages (dev) and recipes (prod)
-STRAPI_HUB_URL = os.environ.get('STRAPI_HUB_URL', 'https://web-dev-d8d4.up.railway.app')
+STRAPI_HUB_URL = os.environ.get('STRAPI_HUB_URL', 'https://web-production-98f1.up.railway.app')
 STRAPI_RECIPE_URL = os.environ.get('STRAPI_RECIPE_URL', 'https://web-production-98f1.up.railway.app')
 STRAPI_API_TOKEN = os.environ.get('STRAPI_API_TOKEN', '')
 
