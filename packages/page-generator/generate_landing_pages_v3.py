@@ -318,11 +318,52 @@ def generate_schema(page_config, recipes):
     }, indent=2)
 
 
+
+def generate_inline_cta(pdf_pack_name, variant=0):
+    """Generate an inline CTA banner to insert between recipe rows."""
+    messages = [
+        ("Want all these recipes in a PDF?", f'Download our "{pdf_pack_name}" containing all recipes with shopping lists and macro breakdowns.'),
+        ("Save hours of meal planning!", f'Get the complete "{pdf_pack_name}" with printable shopping lists and prep guides.'),
+        ("Never lose a recipe again!", f'Download the "{pdf_pack_name}" - all recipes organized and ready to print.'),
+    ]
+    title, subtitle = messages[variant % len(messages)]
+    
+    return f'''
+    </div>
+    <!-- Inline CTA Banner -->
+    <div class="my-8 relative overflow-hidden rounded-2xl cta-gradient p-6 md:p-8 text-white no-print">
+        <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="max-w-lg text-center md:text-left">
+                <h3 class="anton-text text-2xl md:text-3xl mb-2">{title}</h3>
+                <p class="text-white/80 text-base leading-relaxed">{subtitle}</p>
+            </div>
+            <div class="w-full md:w-auto flex-shrink-0">
+                <button onclick="window.openLeadMagnet && window.openLeadMagnet()" class="w-full md:w-auto px-8 py-3 bg-white hover:bg-brand-50 text-brand-700 font-bold rounded-full transition-all shadow-lg flex items-center justify-center gap-2 group">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    Download PDF Pack
+                </button>
+            </div>
+        </div>
+        <div class="absolute -bottom-8 -right-8 w-48 h-48 bg-white/5 organic-shape pointer-events-none"></div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    '''
+
+
 def generate_landing_page(page_config, recipes, template):
     """Generate a complete landing page from config and recipes."""
     
-    # Generate recipe cards HTML
-    cards_html = '\n'.join(generate_recipe_card(r) for r in recipes)
+    # Generate recipe cards HTML with inline CTAs every 9 recipes (3 rows)
+    cards_parts = []
+    cta_variant = 0
+    for i, recipe in enumerate(recipes):
+        cards_parts.append(generate_recipe_card(recipe))
+        # Insert CTA after every 9 recipes (3 rows of 3)
+        if (i + 1) % 9 == 0 and i < len(recipes) - 1:
+            cards_parts.append(generate_inline_cta(page_config['pdf_pack_name'], cta_variant))
+            cta_variant += 1
+    
+    cards_html = '\n'.join(cards_parts)
     
     # Calculate stats
     avg_protein = round(sum(r['protein_grams'] for r in recipes) / len(recipes)) if recipes else 0
