@@ -73,35 +73,29 @@ def fetch_hub_pages():
 
 
 def load_local_recipes():
-    """Load all recipes from the highprotein.recipes feed JSON"""
+    """Load all recipes from all site folders in data/recipes/"""
     all_recipes = []
     base_path = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     
-    # Use the highprotein.recipes feed which has all recipes from the network
-    feed_file = os.path.join(base_path, 'apps', 'highprotein.recipes', 'dist', 'feed', 'recipes.json')
+    # Site domain mapping
+    site_domains = {
+        'protein-bread-com': 'protein-bread.com',
+        'proteinbars-co': 'proteinbars.co',
+        'proteinbites-co': 'proteinbites.co',
+        'proteinbrownies-co': 'proteinbrownies.co',
+        'proteincheesecake-co': 'proteincheesecake.co',
+        'proteincookies-co': 'proteincookies.co',
+        'proteindonuts-co': 'proteindonuts.co',
+        'proteinoatmeal-co': 'proteinoatmeal.co',
+        'proteinpancakes-co': 'proteinpancakes.co',
+        'proteinpizzas-co': 'proteinpizzas.co',
+        'proteinpudding-co': 'proteinpudding.co',
+    }
     
-    if os.path.exists(feed_file):
-        try:
-            with open(feed_file, 'r') as f:
-                data = json.load(f)
-                recipes = data.get('recipes', [])
-                # Normalize the recipe format for the hub page generator
-                for recipe in recipes:
-                    # Map feed fields to expected fields
-                    recipe['title'] = recipe.get('title', 'Recipe')
-                    recipe['protein'] = recipe.get('protein_grams', 0)
-                    recipe['calories'] = recipe.get('calories', 0)
-                    recipe['totalTime'] = recipe.get('total_time_minutes', 0)
-                    recipe['image_url'] = recipe.get('image_url', '')
-                    recipe['canonical_url'] = recipe.get('canonical_url', '')
-                    recipe['site_domain'] = recipe.get('site_domain', '')
-                all_recipes.extend(recipes)
-        except Exception as e:
-            print(f"Error loading {feed_file}: {e}")
-    else:
-        print(f"Feed file not found: {feed_file}")
-        # Fallback to old method
-        recipes_dir = os.path.join(base_path, 'data', 'recipes')
+    # Load from all site folders in data/recipes/
+    recipes_dir = os.path.join(base_path, 'data', 'recipes')
+    
+    if os.path.exists(recipes_dir):
         for site_dir in os.listdir(recipes_dir):
             site_path = os.path.join(recipes_dir, site_dir)
             if os.path.isdir(site_path):
@@ -110,13 +104,34 @@ def load_local_recipes():
                     try:
                         with open(recipes_file, 'r') as f:
                             data = json.load(f)
+                            # Handle nested 'recipes' key
                             recipes = data.get('recipes', data) if isinstance(data, dict) else data
+                            
+                            # Get the domain for this site
+                            domain = site_domains.get(site_dir, site_dir.replace('-', '.'))
+                            
                             for recipe in recipes:
+                                # Normalize recipe format
                                 recipe['site'] = site_dir
+                                recipe['site_domain'] = domain
+                                recipe['title'] = recipe.get('title', recipe.get('name', 'Recipe'))
+                                recipe['protein'] = recipe.get('protein', recipe.get('protein_grams', 0))
+                                recipe['calories'] = recipe.get('calories', 0)
+                                recipe['totalTime'] = recipe.get('totalTime', recipe.get('total_time_minutes', recipe.get('total_time', 0)))
+                                
+                                # Build canonical URL and image URL
+                                slug = recipe.get('slug', recipe.get('title', '').lower().replace(' ', '-'))
+                                recipe['canonical_url'] = recipe.get('canonical_url', f'https://{domain}/{slug}.html')
+                                recipe['image_url'] = recipe.get('image_url', recipe.get('image', f'https://{domain}/recipe_images/{slug}.jpg'))
+                                
                             all_recipes.extend(recipes)
+                            print(f"Loaded {len(recipes)} recipes from {site_dir}")
                     except Exception as e:
                         print(f"Error loading {recipes_file}: {e}")
+    else:
+        print(f"Recipes directory not found: {recipes_dir}")
     
+    print(f"Total recipes loaded: {len(all_recipes)}")
     return all_recipes
 
 
@@ -279,7 +294,7 @@ def generate_hub_page_html(hub_page, recipes, brand):
     bottom_content = attrs.get('bottomContent', '')
     
     # Generate recipe cards
-    recipe_cards = '\n'.join([generate_recipe_card_html(r) for r in recipes[:24]])
+    recipe_cards = '\n'.join([generate_recipe_card_html(r) for r in recipes])
     
     # Generate filter buttons
     protein_filters = generate_filter_buttons_html('protein', PROTEIN_BANDS)
