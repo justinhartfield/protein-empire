@@ -157,9 +157,9 @@
                 <div class="hidden md:flex items-center space-x-6">
                     <a href="/" class="text-slate-600 hover:text-brand-600 font-semibold text-sm">Recipes</a>
                     <a href="/categories/" class="text-slate-600 hover:text-brand-600 font-semibold text-sm">Categories</a>
-                    <a href="None" class="bg-brand-500 text-white px-4 py-2 rounded-full font-bold text-sm hover:bg-brand-600 transition">
+                    <button @click="showEmailModal = true" class="bg-brand-500 text-white px-4 py-2 rounded-full font-bold text-sm hover:bg-brand-600 transition cursor-pointer">
                         FREE PACK
-                    </a>
+                    </button>
                 </div>
             </div>
         </div>
@@ -179,9 +179,9 @@
                     <a href="#recipes" class="bg-brand-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-brand-600 transition shadow-lg">
                         Browse Recipes
                     </a>
-                    <a href="None" class="bg-white text-brand-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-brand-50 transition border-2 border-brand-500">
+                    <button @click="showEmailModal = true" class="bg-white text-brand-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-brand-50 transition border-2 border-brand-500 cursor-pointer">
                         /meal-plans/low-calorie-high-protein/
-                    </a>
+                    </button>
                 </div>
             </div>
         </section>
@@ -9219,10 +9219,10 @@
                 <p class="text-lg text-brand-100 mb-8">
                     Get our top-rated high protein recipes delivered straight to your inbox.
                 </p>
-                <a href="None" 
-                   class="inline-block bg-white text-brand-600 px-10 py-5 rounded-full font-bold text-xl hover:bg-brand-50 transition shadow-xl">
+                <button @click="showEmailModal = true" 
+                   class="bg-white text-brand-600 px-10 py-5 rounded-full font-bold text-xl hover:bg-brand-50 transition shadow-xl cursor-pointer">
                     /meal-plans/low-calorie-high-protein/ →
-                </a>
+                </button>
             </div>
         </section>
 
@@ -9290,10 +9290,51 @@
                 <span class="text-6xl mb-4 block">💪</span>
                 <h3 class="anton-text text-2xl text-brand-900 mb-4">Wait! Don't Miss Out!</h3>
                 <p class="text-slate-600 mb-6">Get our FREE high protein recipe pack with 10 delicious recipes.</p>
-                <a href="None" 
-                   class="block w-full bg-brand-500 text-white py-4 rounded-full font-bold text-lg hover:bg-brand-600 transition">
+                <button @click="showExitModal = false; showEmailModal = true" 
+                   class="w-full bg-brand-500 text-white py-4 rounded-full font-bold text-lg hover:bg-brand-600 transition cursor-pointer">
                     Get Free Recipes →
-                </a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Email Capture Modal -->
+    <div x-show="showEmailModal" x-cloak
+         class="fixed inset-0 z-50 flex items-center justify-center modal-overlay no-print"
+         @click.self="showEmailModal = false">
+        <div class="bg-white rounded-3xl p-8 max-w-lg mx-4 shadow-2xl relative" @click.stop>
+            <button @click="showEmailModal = false" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+            
+            <!-- Before Submit -->
+            <div x-show="!emailSubmitted" class="text-center">
+                <span class="text-6xl mb-4 block">💪</span>
+                <h3 class="anton-text text-2xl text-brand-900 mb-2">Get Your Free Recipe Pack!</h3>
+                <p class="text-slate-600 mb-6">Enter your email to receive 10 delicious high protein recipes.</p>
+                <form @submit.prevent="emailSubmitted = true" class="space-y-4">
+                    <input type="email" x-model="emailAddress" required
+                           placeholder="Enter your email address"
+                           class="w-full px-4 py-3 rounded-full border-2 border-slate-200 focus:border-brand-500 focus:outline-none text-center">
+                    <button type="submit" 
+                           class="w-full bg-brand-500 text-white py-4 rounded-full font-bold text-lg hover:bg-brand-600 transition">
+                        Send Me Free Recipes →
+                    </button>
+                </form>
+                <p class="text-xs text-slate-400 mt-4">No spam, unsubscribe anytime.</p>
+            </div>
+            
+            <!-- After Submit -->
+            <div x-show="emailSubmitted" class="text-center">
+                <span class="text-6xl mb-4 block">🎉</span>
+                <h3 class="anton-text text-2xl text-brand-900 mb-2">Check Your Inbox!</h3>
+                <p class="text-slate-600 mb-6">We've sent your free recipe pack to <strong x-text="emailAddress"></strong></p>
+                <button @click="showEmailModal = false" 
+                       class="w-full bg-brand-500 text-white py-4 rounded-full font-bold text-lg hover:bg-brand-600 transition">
+                    Continue Browsing
+                </button>
             </div>
         </div>
     </div>
@@ -9310,6 +9351,9 @@
                 visibleCount: 0,
                 hasMore: false,
                 showExitModal: false,
+                showEmailModal: false,
+                emailSubmitted: false,
+                emailAddress: '',
                 exitIntentTriggered: false,
                 
                 init() {
