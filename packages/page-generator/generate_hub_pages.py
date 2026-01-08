@@ -55,7 +55,7 @@ TIME_BANDS = [
 
 
 def fetch_hub_pages():
-    """Fetch all hub pages from Strapi (dev instance)"""
+    """Fetch all hub pages from Strapi (dev instance) or local fallback"""
     headers = {'Content-Type': 'application/json'}
     if STRAPI_API_TOKEN:
         headers['Authorization'] = f'Bearer {STRAPI_API_TOKEN}'
@@ -63,12 +63,20 @@ def fetch_hub_pages():
     url = f'{STRAPI_HUB_URL}/api/hub-pages?populate=*&filters[isActive][$eq]=true&sort=order:asc'
     
     try:
-        response = requests.get(url, headers=headers)
+        response = requests.get(url, headers=headers, timeout=10)
         response.raise_for_status()
         data = response.json()
         return data.get('data', [])
     except Exception as e:
-        print(f"Error fetching hub pages: {e}")
+        print(f"Error fetching hub pages from API: {e}")
+        # Fallback to local JSON file
+        base_path = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+        local_file = os.path.join(base_path, 'data', 'hub-pages.json')
+        if os.path.exists(local_file):
+            print(f"Using local hub pages from {local_file}")
+            with open(local_file, 'r') as f:
+                data = json.load(f)
+                return data.get('data', [])
         return []
 
 
@@ -123,8 +131,9 @@ def load_local_recipes():
                                 # Build canonical URL and image URL
                                 slug = recipe.get('slug', recipe.get('title', '').lower().replace(' ', '-'))
                                 recipe['canonical_url'] = recipe.get('canonical_url', f'https://{domain}/{slug}.html')
-                                # Build full image URL - use slug-based path since 'image' field only has filename
-                                recipe['image_url'] = f'https://{domain}/recipe_images/{slug}.jpg'
+                                # Use image_url from JSON if available, otherwise build from slug
+                                if not recipe.get('image_url'):
+                                    recipe['image_url'] = f'https://{domain}/recipe_images/{slug}.jpg'
                                 
                             all_recipes.extend(recipes)
                             print(f"Loaded {len(recipes)} recipes from {site_dir}")

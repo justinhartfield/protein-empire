@@ -1,0 +1,74 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "attributes": {
+        "title": "Hit Your Protein Target",
+        "slug": "hit-your-protein",
+        "heroHeadline": "Hit Your Protein Target Every Single Day",
+        "heroSubheadline": "Whether you need 30g, 50g, or 100g+ protein per meal, we've got recipes to match your exact macros.",
+        "ctaHeadline": "Get Your Free High Protein Recipe Pack",
+        "ctaButtonText": "Download Free Pack",
+        "ctaButtonLink": "/free-pack/",
+        "isActive": true,
+        "order": 1
+      }
+    },
+    {
+      "id": 2,
+      "attributes": {
+        "title": "High Protein Eating Out",
+        "slug": "high-protein-eating-out",
+        "heroHeadline": "High Protein Eating Out Made Easy",
+        "heroSubheadline": "Find high-protein options at your favorite restaurants and fast food chains.",
+        "ctaHeadline": "Get Your Free High Protein Recipe Pack",
+        "ctaButtonText": "Download Free Pack",
+        "ctaButtonLink": "/free-pack/",
+        "isActive": true,
+        "order": 2
+      }
+    },
+    {
+      "id": 3,
+      "attributes": {
+        "title": "High Protein Under 500 Calories",
+        "slug": "high-protein-under-500-calories",
+        "heroHeadline": "High Protein Recipes Under 500 Calories",
+        "heroSubheadline": "Maximize your protein intake while keeping calories in check. Perfect for weight loss.",
+        "ctaHeadline": "Get Your Free High Protein Recipe Pack",
+        "ctaButtonText": "Download Free Pack",
+        "ctaButtonLink": "/free-pack/",
+        "isActive": true,
+        "order": 3
+      }
+    },
+    {
+      "id": 4,
+      "attributes": {
+        "title": "Best High Protein Desserts",
+        "slug": "best-high-protein-desserts",
+        "heroHeadline": "Guilt-Free High Protein Desserts",
+        "heroSubheadline": "Satisfy your sweet tooth while hitting your protein goals. Cookies, brownies, cheesecake and more.",
+        "ctaHeadline": "Get Your Free High Protein Recipe Pack",
+        "ctaButtonText": "Download Free Pack",
+        "ctaButtonLink": "/free-pack/",
+        "isActive": true,
+        "order": 4
+      }
+    },
+    {
+      "id": 5,
+      "attributes": {
+        "title": "Start High Protein",
+        "slug": "start-high-protein",
+        "heroHeadline": "Start Your High Protein Journey Today",
+        "heroSubheadline": "New to high protein eating? Start here with beginner-friendly recipes and tips.",
+        "ctaHeadline": "Get Your Free High Protein Recipe Pack",
+        "ctaButtonText": "Download Free Pack",
+        "ctaButtonLink": "/free-pack/",
+        "isActive": true,
+        "order": 5
+      }
+    }
+  ]
+}
