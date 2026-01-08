@@ -90,6 +90,7 @@ def load_local_recipes():
         'proteinpancakes-co': 'proteinpancakes.co',
         'proteinpizzas-co': 'proteinpizzas.co',
         'proteinpudding-co': 'proteinpudding.co',
+        'proteinmuffins-com': 'proteinmuffins.com',
     }
     
     # Load from all site folders in data/recipes/

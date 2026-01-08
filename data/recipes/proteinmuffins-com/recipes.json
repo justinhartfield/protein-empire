@@ -1,0 +1,196 @@
+{
+  "recipes": [
+    {
+      "title": "Apple Protein Muffins",
+      "slug": "apple-protein-muffins",
+      "protein": 19,
+      "calories": 125,
+      "totalTime": 37,
+      "description": "Cinnamon-spiced apple protein muffins with fresh apple chunks. 19g protein, 125 calories per muffin. Tastes like apple pie but supports your fitness goals."
+    },
+    {
+      "title": "Banana Chocolate Chip Protein Muffins",
+      "slug": "banana-chocolate-chip-protein-muffins",
+      "protein": 19,
+      "calories": 134,
+      "totalTime": 28,
+      "description": "Banana chocolate chip protein muffins combining two classics with 19g protein per serving. Melty chocolate chips and ripe bananas in every bite."
+    },
+    {
+      "title": "Banana Nut Protein Muffins",
+      "slug": "banana-nut-protein-muffins",
+      "protein": 19,
+      "calories": 133,
+      "totalTime": 32,
+      "description": "Banana nut protein muffins with toasted walnuts and 19g protein. Heart-healthy omega-3s meet satisfying crunch in every bite."
+    },
+    {
+      "title": "Chocolate Chip Protein Muffins",
+      "slug": "chocolate-chip-protein-muffins",
+      "protein": 19,
+      "calories": 133,
+      "totalTime": 28,
+      "description": "Classic chocolate chip protein muffins with 19g protein per serving. Vanilla base studded with melty chocolate chips for the perfect balance."
+    },
+    {
+      "title": "Chocolate Protein Muffins",
+      "slug": "chocolate-protein-muffins",
+      "protein": 19,
+      "calories": 137,
+      "totalTime": 28,
+      "description": "Deep, rich chocolate protein muffins with 19g protein per serving. Chocolate whey and cocoa powder for intense flavor without the guilt."
+    },
+    {
+      "title": "Cottage Cheese Protein Muffins",
+      "slug": "cottage-cheese-protein-muffins",
+      "protein": 19,
+      "calories": 143,
+      "totalTime": 30,
+      "description": "Cottage cheese protein muffins with extra protein and incredible moisture. The secret weapon for tender, high-protein baking."
+    },
+    {
+      "title": "Double Chocolate Protein Muffins",
+      "slug": "double-chocolate-protein-muffins",
+      "protein": 19,
+      "calories": 138,
+      "totalTime": 32,
+      "description": "Double chocolate protein muffins for serious chocoholics. Chocolate whey, dark cocoa, and chips deliver 19g protein with maximum indulgence."
+    },
+    {
+      "title": "High Fiber Protein Muffins",
+      "slug": "high-fiber-protein-muffins",
+      "protein": 18,
+      "calories": 165,
+      "totalTime": 30,
+      "description": "High fiber protein muffins packed with 8g fiber and 18g protein per serving. Supports digestive health, satiety, and sustained energy throughout the day."
+    },
+    {
+      "title": "High Protein Muffins With Greek Yogurt",
+      "slug": "high-protein-muffins-with-greek-yogurt",
+      "protein": 19,
+      "calories": 130,
+      "totalTime": 28,
+      "description": "High protein muffins featuring Greek yogurt as the star ingredient. Triple duty moisture, protein, and texture enhancement."
+    },
+    {
+      "title": "High Protein Muffins Without Protein Powder",
+      "slug": "high-protein-muffins-without-protein-powder",
+      "protein": 6,
+      "calories": 96,
+      "totalTime": 32,
+      "description": "High protein muffins without protein powder. Whole food ingredients like cottage cheese, egg whites, and oat flour only. 6g protein per muffin."
+    },
+    {
+      "title": "High Protein Muffins",
+      "slug": "high-protein-muffins",
+      "protein": 12,
+      "calories": 96,
+      "totalTime": 32,
+      "description": "High protein muffins with 12g protein per serving. Maximum protein-to-calorie ratio for serious athletes and bodybuilders."
+    },
+    {
+      "title": "Lemon Blueberry Protein Muffins",
+      "slug": "lemon-blueberry-protein-muffins",
+      "protein": 19,
+      "calories": 125,
+      "totalTime": 32,
+      "description": "Lemon blueberry protein muffins with fresh zest and berries. 19g protein, 125 calories with a bright, refreshing flavor profile."
+    },
+    {
+      "title": "Protein Banana Muffins",
+      "slug": "protein-banana-muffins",
+      "protein": 19,
+      "calories": 136,
+      "totalTime": 28,
+      "description": "The original macro-verified banana protein muffins with 19g protein per serving. Ripe bananas and Greek yogurt create bakery-quality moisture and flavor."
+    },
+    {
+      "title": "Protein Breakfast Muffins",
+      "slug": "protein-breakfast-muffins",
+      "protein": 19,
+      "calories": 133,
+      "totalTime": 32,
+      "description": "Protein breakfast muffins designed for meal prep. 19g protein, grab-and-go convenience for busy mornings."
+    },
+    {
+      "title": "Protein Carrot Cake Muffins",
+      "slug": "protein-carrot-cake-muffins",
+      "protein": 19,
+      "calories": 130,
+      "totalTime": 37,
+      "description": "Protein carrot cake muffins with real carrots and warm spices. All the cozy carrot cake flavor with high protein content."
+    },
+    {
+      "title": "Protein Mini Muffins",
+      "slug": "protein-mini-muffins",
+      "protein": 19,
+      "calories": 133,
+      "totalTime": 22,
+      "description": "Protein mini muffins in bite-size format. Perfect for portion control, snacking, and easy macro tracking on the go."
+    },
+    {
+      "title": "Protein Muffins For Kids",
+      "slug": "protein-muffins-for-kids",
+      "protein": 8,
+      "calories": 80,
+      "totalTime": 28,
+      "description": "Protein muffins for kids with 8g protein per lunchbox-friendly serving. Mild flavor that picky eaters approve of."
+    },
+    {
+      "title": "Protein Muffins Recipe",
+      "slug": "protein-muffins-recipe",
+      "protein": 19,
+      "calories": 133,
+      "totalTime": 28,
+      "description": "The complete USDA-verified protein muffins recipe. Every ingredient measured in grams for perfect, repeatable results."
+    },
+    {
+      "title": "Protein Pancake Muffins",
+      "slug": "protein-pancake-muffins",
+      "protein": 19,
+      "calories": 133,
+      "totalTime": 23,
+      "description": "Protein pancake muffins using Kodiak mix. All the maple-y breakfast flavor in a portable, high-protein format."
+    },
+    {
+      "title": "Protein Powder Muffins",
+      "slug": "protein-powder-muffins",
+      "protein": 19,
+      "calories": 133,
+      "totalTime": 28,
+      "description": "Comprehensive guide to protein powder muffins. Learn how to bake with whey, casein, and plant proteins for perfect results."
+    },
+    {
+      "title": "Protein Pumpkin Muffins",
+      "slug": "protein-pumpkin-muffins",
+      "protein": 19,
+      "calories": 119,
+      "totalTime": 34,
+      "description": "Protein pumpkin muffins with fall spices and 19g protein. Pumpkin puree creates incredible moisture and seasonal flavor."
+    },
+    {
+      "title": "Banana Protein Muffins",
+      "slug": "standard_recipe__banana_protein_muffin",
+      "protein": 19,
+      "calories": 133,
+      "totalTime": 28,
+      "description": "The standard banana protein muffin recipe with 19g protein per serving. USDA-verified macros, gram measurements, and consistent results every time."
+    },
+    {
+      "title": "Vegan Protein Muffins",
+      "slug": "vegan-protein-muffins",
+      "protein": 15,
+      "calories": 119,
+      "totalTime": 34,
+      "description": "Vegan protein muffins using pea protein and flax eggs. 15g plant-based protein per serving, completely dairy-free and delicious."
+    },
+    {
+      "title": "Zucchini Protein Muffins",
+      "slug": "zucchini-protein-muffins",
+      "protein": 19,
+      "calories": 128,
+      "totalTime": 37,
+      "description": "Zucchini protein muffins that sneak veggies into your breakfast. Incredible moisture and hidden nutrition in every bite."
+    }
+  ]
+}
