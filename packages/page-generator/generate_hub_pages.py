@@ -299,7 +299,9 @@ def generate_hub_page_html(hub_page, recipes, brand):
     hero_subheadline = attrs.get('heroSubheadline', '')
     intro_content = attrs.get('introContent', '')
     cta_headline = attrs.get('ctaHeadline', 'Get Your Free Recipe Pack')
-    cta_button_text = attrs.get('ctaButtonText', 'Download Free')
+    # Always use proper button text for email modal (ignore API values that might be URLs)
+    raw_cta_text = attrs.get('ctaButtonText', 'Download Free Pack')
+    cta_button_text = 'Download Free Pack' if raw_cta_text.startswith('/') else raw_cta_text
     cta_button_link = attrs.get('ctaButtonLink', '/recipe-packs/')
     faq_content = attrs.get('faqContent', '')
     bottom_content = attrs.get('bottomContent', '')
