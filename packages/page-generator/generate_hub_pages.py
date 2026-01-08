@@ -261,7 +261,8 @@ def generate_recipe_card_html(recipe):
     return f'''
         <div class="recipe-card bg-white rounded-2xl shadow-lg overflow-hidden transition-all hover:shadow-xl hover:-translate-y-1"
              data-protein="{protein}" data-calories="{calories}" data-time="{total_time}">
-            <a href="{canonical_url}" class="block" target="_blank" rel="noopener">
+            <a href="{canonical_url}" class="block" target="_blank" rel="noopener"
+               onclick="if(typeof trackRecipeClick === 'function') trackRecipeClick('{title.replace(chr(39), chr(92)+chr(39))}', '{attrs.get('slug', '')}', '{site_domain}');">
                 <div class="aspect-[4/3] overflow-hidden relative">
                     <img src="{image_url}" alt="{title}" 
                          class="w-full h-full object-cover transition-transform hover:scale-105"
@@ -373,6 +374,45 @@ def generate_hub_page_html(hub_page, recipes, brand):
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-86MYLJ5WDT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){{dataLayer.push(arguments);}}
+        gtag('js', new Date());
+        gtag('config', 'G-86MYLJ5WDT', {{
+            page_title: '{meta_title}',
+            page_location: window.location.href
+        }});
+        
+        // Track filter applied events
+        function trackFilterApplied(filterType, filterValue) {{
+            gtag('event', 'filter_applied', {{
+                filter_type: filterType,
+                filter_value: filterValue,
+                page_path: window.location.pathname
+            }});
+        }}
+        
+        // Track recipe click events
+        function trackRecipeClick(recipeName, recipeSlug, recipeSite) {{
+            gtag('event', 'recipe_click', {{
+                recipe_name: recipeName,
+                recipe_slug: recipeSlug,
+                recipe_site: recipeSite,
+                page_path: window.location.pathname
+            }});
+        }}
+        
+        // Track email signup (generate_lead)
+        function trackEmailSignup(email) {{
+            gtag('event', 'generate_lead', {{
+                method: 'email_popup',
+                page_path: window.location.pathname
+            }});
+        }}
+    </script>
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -638,7 +678,7 @@ def generate_hub_page_html(hub_page, recipes, brand):
                 <span class="text-6xl mb-4 block">{brand['emoji']}</span>
                 <h3 class="anton-text text-2xl text-brand-900 mb-2">Get Your Free Recipe Pack!</h3>
                 <p class="text-slate-600 mb-6">Enter your email to receive 10 delicious high protein recipes.</p>
-                <form @submit.prevent="emailSubmitted = true" class="space-y-4">
+                <form @submit.prevent="emailSubmitted = true; if(typeof trackEmailSignup === 'function') trackEmailSignup(emailAddress);" class="space-y-4">
                     <input type="email" x-model="emailAddress" required
                            placeholder="Enter your email address"
                            class="w-full px-4 py-3 rounded-full border-2 border-slate-200 focus:border-brand-500 focus:outline-none text-center">
@@ -753,6 +793,11 @@ def generate_hub_page_html(hub_page, recipes, brand):
                     
                     // Update URL
                     this.updateURL();
+                    
+                    // Track filter event in GA
+                    if (typeof trackFilterApplied === 'function') {{
+                        trackFilterApplied(type, id);
+                    }}
                 }},
                 
                 setActiveButton(type, activeId) {{
