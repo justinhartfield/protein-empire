@@ -378,7 +378,7 @@ function generateIndexerRecipeCard() {
     <!-- Image Container -->
     <a href="/<%= recipe.slug %>-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
-            src="https://<%= recipe.sourceSite %>/recipe_images/<%= recipe.slug %>.jpg" 
+            src="<%= recipe.image_url || ('https://' + recipe.sourceSite + '/recipe_images/' + recipe.slug + '.jpg') %>" 
             alt="<%= recipe.title %>"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
             loading="lazy"
@@ -846,8 +846,8 @@ function generateRecipePreviewPages(site, allRecipes, partials, outputDir) {
   pageDescription: recipe.description,
   canonicalPath: '/' + recipe.slug + '-preview.html',
   ogType: 'article',
-  ogImage: 'https://' + recipe.sourceSite + '/recipe_images/' + recipe.slug + '.jpg',
-  preloadImage: 'https://' + recipe.sourceSite + '/recipe_images/' + recipe.slug + '.jpg',
+  ogImage: recipe.image_url || ('https://' + recipe.sourceSite + '/recipe_images/' + recipe.slug + '.jpg'),
+  preloadImage: recipe.image_url || ('https://' + recipe.sourceSite + '/recipe_images/' + recipe.slug + '.jpg'),
   includeIngredients: false
 }) %>
 <script type="application/ld+json">
@@ -856,7 +856,7 @@ function generateRecipePreviewPages(site, allRecipes, partials, outputDir) {
   "@type": "Recipe",
   "name": "<%= recipe.title %>",
   "description": "<%= recipe.description %>",
-  "image": "https://<%= recipe.sourceSite %>/recipe_images/<%= recipe.slug %>.jpg",
+  "image": "<%= recipe.image_url || ('https://' + recipe.sourceSite + '/recipe_images/' + recipe.slug + '.jpg') %>",
   "author": {
     "@type": "Organization",
     "name": "<%= recipe.sourceName %>"
@@ -895,7 +895,7 @@ function generateRecipePreviewPages(site, allRecipes, partials, outputDir) {
         <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 mb-8">
             <div class="aspect-video relative">
                 <img 
-                    src="https://<%= recipe.sourceSite %>/recipe_images/<%= recipe.slug %>.jpg" 
+                    src="<%= recipe.image_url || ('https://' + recipe.sourceSite + '/recipe_images/' + recipe.slug + '.jpg') %>" 
                     alt="<%= recipe.title %>"
                     class="w-full h-full object-cover"
                     onerror="this.src='/images/placeholder.png'"
