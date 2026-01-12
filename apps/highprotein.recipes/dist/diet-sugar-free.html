@@ -78,6 +78,15 @@
 </style>
 
 
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-86MYLJ5WDT"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-86MYLJ5WDT');
+</script>
+
 
 </head>
 <body class="min-h-screen flex flex-col bg-slate-50 text-slate-900 font-sans">
@@ -190,7 +199,7 @@
     <!-- Image Container -->
     <a href="/sugar-free-protein-cookies-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
-            src="/recipe_images/sugar-free-protein-cookies.png" 
+            src="https://proteincookies.co/recipe_images/sugar-free-protein-cookies.jpg" 
             alt="Sugar-Free Protein Cookies"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
             loading="lazy"
@@ -233,7 +242,7 @@
     <!-- Image Container -->
     <a href="/keto-protein-balls-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
-            src="/recipe_images/keto-protein-balls.png" 
+            src="https://proteinbites.co/recipe_images/keto-protein-balls.jpg" 
             alt="Keto Protein Balls"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
             loading="lazy"
@@ -344,30 +353,10 @@
 
         <!-- Copyright -->
         <div class="mt-8 text-center text-slate-500 text-sm">
-            <p>&copy; 2026 HighProtein.Recipes. All rights reserved.</p>
+            <p>&copy; 2026 <a href="https://HighProtein.Recipes" class="hover:text-amber-400 transition-colors">High Protein Recipes</a>. All rights reserved.</p>
         </div>
     </div>
 </footer>
-
-
-<!-- Conversion Components -->
-<script src="/js/conversion-components.js"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        initConversionComponents({
-            siteName: 'High Protein Recipes',
-            siteEmoji: '🥗',
-            leadMagnetTitle: 'High-Protein Starter Pack',
-            leadMagnetDescription: 'Get 50+ high-protein recipes from all our sites with shopping lists and macro breakdowns.',
-            sendgridEndpoint: '/.netlify/functions/subscribe',
-            successRedirect: '/download-success/',
-            pdfDownloadUrl: '/downloads/high-protein-starter-pack.pdf',
-            gaMeasurementId: 'G-86MYLJ5WDT',
-            stickyDelay: 3000,
-            exitIntentEnabled: true
-        });
-    });
-</script>
 
 </body>
 </html>

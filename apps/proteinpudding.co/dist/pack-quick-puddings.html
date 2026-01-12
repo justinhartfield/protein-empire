@@ -146,7 +146,7 @@
     <!-- Hero -->
     <section class="bg-slate-900 text-white py-20">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <img src="/images/icons/timer.png" alt="" class="w-24 h-24 mb-6 block mx-auto object-contain" style="width: 96px; height: 96px;">
+            <span class="text-6xl mb-6 block">⏱️</span>
             <h1 class="anton-text text-5xl md:text-6xl uppercase mb-4 tracking-wider">QUICK PUDDINGS</h1>
             <p class="text-xl text-slate-300 mb-8">Delicious protein puddings that are ready in 5 minutes or less.</p>
             <div class="inline-flex items-center gap-2 bg-brand-500/20 text-brand-400 px-4 py-2 rounded-full text-sm font-semibold">
@@ -250,77 +250,17 @@
             <h2 class="anton-text text-3xl mb-4 uppercase tracking-wider">GET YOUR FREE COPY</h2>
             <p class="text-slate-600 mb-8">Enter your email to download the PDF instantly.</p>
             
-            <form id="subscribe-form" class="space-y-4">
-                <input type="email" id="email-input" name="email" placeholder="Enter your email" required
+            <form action="/success-quick-puddings.html" method="GET" class="space-y-4">
+                <input type="email" name="email" placeholder="Enter your email" required
                     class="w-full px-6 py-4 rounded-xl border border-slate-300 focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20 outline-none transition text-lg">
-                <button type="submit" id="submit-btn" class="w-full bg-brand-500 text-white px-8 py-4 rounded-xl font-bold anton-text text-lg hover:bg-brand-600 transition-colors shadow-xl shadow-brand-500/30 tracking-wider">
+                <button type="submit" class="w-full bg-brand-500 text-white px-8 py-4 rounded-xl font-bold anton-text text-lg hover:bg-brand-600 transition-colors shadow-xl shadow-brand-500/30 tracking-wider">
                     DOWNLOAD FREE PDF
                 </button>
-                <p id="form-error" class="text-red-500 text-sm hidden"></p>
             </form>
             
             <p class="text-xs text-slate-500 mt-4">No spam. Unsubscribe anytime.</p>
         </div>
     </section>
-
-    <script>
-    document.getElementById('subscribe-form').addEventListener('submit', async function(e) {
-        e.preventDefault();
-        
-        const email = document.getElementById('email-input').value;
-        const submitBtn = document.getElementById('submit-btn');
-        const errorEl = document.getElementById('form-error');
-        
-        // Disable button and show loading state
-        submitBtn.disabled = true;
-        submitBtn.textContent = 'PROCESSING...';
-        errorEl.classList.add('hidden');
-        
-        try {
-            const response = await fetch('/api/subscribe', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    email: email,
-                    packSlug: 'quick-puddings',
-                    pdfUrl: window.location.origin + '/guides/proteinpudding-co-quick-puddings.pdf'
-                })
-            });
-            
-            const data = await response.json();
-            
-            if (data.success) {
-                if (data.doubleOptIn) {
-                    // Double opt-in mode: Show confirmation message
-                    const successEl = document.getElementById('form-success') || document.createElement('p');
-                    if (!successEl.id) {
-                        successEl.id = 'form-success';
-                        successEl.className = 'text-green-600 font-semibold text-center mt-4';
-                        document.getElementById('subscribe-form').parentNode.appendChild(successEl);
-                    }
-                    successEl.innerHTML = '<span class="flex items-center justify-center gap-2"><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>Check your email to confirm and get your PDF!</span>';
-                    successEl.classList.remove('hidden');
-                    submitBtn.textContent = 'CHECK YOUR EMAIL';
-                    submitBtn.classList.remove('bg-brand-500', 'hover:bg-brand-600');
-                    submitBtn.classList.add('bg-green-500', 'cursor-default');
-                } else {
-                    // Single opt-in mode: Redirect to success page
-                    window.location.href = '/success-quick-puddings.html?email=' + encodeURIComponent(email);
-                }
-            } else {
-                throw new Error(data.message || 'Subscription failed');
-            }
-        } catch (error) {
-            console.error('Subscription error:', error);
-            errorEl.textContent = 'Something went wrong. Please try again.';
-            errorEl.classList.remove('hidden');
-            submitBtn.disabled = false;
-            submitBtn.textContent = 'DOWNLOAD FREE PDF';
-        }
-    });
-    </script>
 
     <!-- Also Includes -->
     <section class="py-16">
@@ -329,17 +269,17 @@
             
             <div class="grid md:grid-cols-3 gap-6">
                 <div class="bg-white rounded-xl p-6 border border-slate-200 text-center">
-                    <img src="/images/icons/shopping-cart.png" alt="" class="w-12 h-12 mb-4 block mx-auto object-contain" style="width: 48px; height: 48px;">
+                    <span class="text-3xl mb-4 block">🛒</span>
                     <h3 class="font-semibold mb-2">Shopping List</h3>
                     <p class="text-sm text-slate-600">Combined ingredient list organized by category</p>
                 </div>
                 <div class="bg-white rounded-xl p-6 border border-slate-200 text-center">
-                    <img src="/images/icons/nutrition-chart.png" alt="" class="w-12 h-12 mb-4 block mx-auto object-contain" style="width: 48px; height: 48px;">
+                    <span class="text-3xl mb-4 block">📊</span>
                     <h3 class="font-semibold mb-2">Nutrition Facts</h3>
                     <p class="text-sm text-slate-600">Complete macros for every recipe</p>
                 </div>
                 <div class="bg-white rounded-xl p-6 border border-slate-200 text-center">
-                    <img src="/images/icons/lightbulb.png" alt="" class="w-12 h-12 mb-4 block mx-auto object-contain" style="width: 48px; height: 48px;">
+                    <span class="text-3xl mb-4 block">💡</span>
                     <h3 class="font-semibold mb-2">Pro Tips</h3>
                     <p class="text-sm text-slate-600">Storage, meal prep, and substitution advice</p>
                 </div>
@@ -418,26 +358,6 @@
     </div>
 </footer>
 
-
-
-<!-- Conversion Components -->
-<script src="/js/conversion-components.js"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        initConversionComponents({
-            siteName: 'Proteinpudding Co',
-            siteEmoji: '🍽️',
-            leadMagnetTitle: 'Recipe Starter Pack',
-            leadMagnetDescription: 'Get our free recipe pack with shopping lists and macro breakdowns.',
-            sendgridEndpoint: '/.netlify/functions/subscribe',
-            successRedirect: '/download-success/',
-            pdfDownloadUrl: '/downloads/starter-pack.pdf',
-            gaMeasurementId: 'G-86MYLJ5WDT',
-            stickyDelay: 3000,
-            exitIntentEnabled: true
-        });
-    });
-</script>
 
 </body>
 </html>

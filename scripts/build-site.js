@@ -25,6 +25,7 @@ import { getSite, sites } from '../packages/config/sites.js';
 import { getCategoriesForSite } from '../packages/config/categories.js';
 import { mapIngredientNameToId } from '../packages/ingredients/ingredient-mapper.js';
 import { linkifyDescription } from './linkify-description.js';
+import { seoContent } from '../packages/config/seo-content.js';
 
 /**
  * Main build function
@@ -715,6 +716,137 @@ async function generateHomepage(site, recipes, packs, categories, partials, outp
         </div>
     </section>
 
+    <% if (seoData) { %>
+    <!-- What Are Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 mb-6 uppercase tracking-wide"><%= seoData.whatAre.title %></h2>
+            <% seoData.whatAre.paragraphs.forEach(paragraph => { %>
+            <p class="text-slate-600 text-lg leading-relaxed mb-4"><%= paragraph %></p>
+            <% }) %>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-16 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 mb-10 text-center uppercase tracking-wide">Benefits of Protein <%= site.foodTypePlural.charAt(0).toUpperCase() + site.foodTypePlural.slice(1) %></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <% seoData.benefits.forEach(benefit => { %>
+                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
+                    <h3 class="font-bold text-lg text-slate-900 mb-2"><%= benefit.title %></h3>
+                    <p class="text-slate-600"><%= benefit.description %></p>
+                </div>
+                <% }) %>
+            </div>
+        </div>
+    </section>
+
+    <!-- Types Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 mb-10 text-center uppercase tracking-wide">Types of Protein <%= site.foodTypePlural.charAt(0).toUpperCase() + site.foodTypePlural.slice(1) %></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <% seoData.types.forEach(type => { %>
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200">
+                    <h3 class="font-bold text-xl text-slate-900 mb-2"><%= type.name %></h3>
+                    <p class="text-slate-600"><%= type.description %></p>
+                </div>
+                <% }) %>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Ingredients Section -->
+    <section class="py-16 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 mb-10 text-center uppercase tracking-wide">Best Ingredients for Protein <%= site.foodTypePlural.charAt(0).toUpperCase() + site.foodTypePlural.slice(1) %></h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl p-6 border border-slate-200">
+                    <h3 class="font-bold text-lg text-brand-600 mb-4 uppercase tracking-wide">Protein Sources</h3>
+                    <ul class="space-y-2">
+                        <% (seoData.ingredients.proteins || []).forEach(ing => { %>
+                        <li class="text-slate-600 flex items-center"><span class="w-2 h-2 bg-brand-500 rounded-full mr-3"></span><%= ing %></li>
+                        <% }) %>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-2xl p-6 border border-slate-200">
+                    <h3 class="font-bold text-lg text-brand-600 mb-4 uppercase tracking-wide"><%= Object.keys(seoData.ingredients)[1] ? Object.keys(seoData.ingredients)[1].replace(/([A-Z])/g, ' $1').trim() : 'Flour Options' %></h3>
+                    <ul class="space-y-2">
+                        <% (seoData.ingredients[Object.keys(seoData.ingredients)[1]] || []).forEach(ing => { %>
+                        <li class="text-slate-600 flex items-center"><span class="w-2 h-2 bg-brand-500 rounded-full mr-3"></span><%= ing %></li>
+                        <% }) %>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-2xl p-6 border border-slate-200">
+                    <h3 class="font-bold text-lg text-brand-600 mb-4 uppercase tracking-wide"><%= Object.keys(seoData.ingredients)[2] ? Object.keys(seoData.ingredients)[2].replace(/([A-Z])/g, ' $1').trim() : 'Sweeteners & Flavors' %></h3>
+                    <ul class="space-y-2">
+                        <% (seoData.ingredients[Object.keys(seoData.ingredients)[2]] || []).forEach(ing => { %>
+                        <li class="text-slate-600 flex items-center"><span class="w-2 h-2 bg-brand-500 rounded-full mr-3"></span><%= ing %></li>
+                        <% }) %>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How To Make Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 mb-10 text-center uppercase tracking-wide">How to Make Perfect Protein <%= site.foodTypePlural.charAt(0).toUpperCase() + site.foodTypePlural.slice(1) %></h2>
+            <div class="space-y-6">
+                <% seoData.howTo.forEach((step, index) => { %>
+                <div class="flex gap-4">
+                    <div class="flex-shrink-0 w-10 h-10 bg-brand-500 text-white rounded-full flex items-center justify-center font-bold text-lg"><%= index + 1 %></div>
+                    <div>
+                        <h3 class="font-bold text-lg text-slate-900 mb-1"><%= step.step %></h3>
+                        <p class="text-slate-600"><%= step.description %></p>
+                    </div>
+                </div>
+                <% }) %>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-slate-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 mb-10 text-center uppercase tracking-wide">Frequently Asked Questions</h2>
+            <div class="space-y-4">
+                <% seoData.faqs.forEach(faq => { %>
+                <details class="bg-white rounded-2xl border border-slate-200 overflow-hidden group">
+                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 hover:text-brand-600 transition-colors flex justify-between items-center">
+                        <%= faq.question %>
+                        <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="px-6 pb-4 text-slate-600"><%= faq.answer %></div>
+                </details>
+                <% }) %>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        <% seoData.faqs.forEach((faq, index) => { %>
+        {
+          "@type": "Question",
+          "name": "<%= faq.question.replace(/"/g, '\\"') %>",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<%= faq.answer.replace(/"/g, '\\"') %>"
+          }
+        }<%= index < seoData.faqs.length - 1 ? ',' : '' %>
+        <% }) %>
+      ]
+    }
+    </script>
+    <% } %>
+
     <!-- All Recipes Section -->
     <section id="recipes" class="py-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -785,11 +917,15 @@ async function generateHomepage(site, recipes, packs, categories, partials, outp
 </html>
 `;
 
+  // Get SEO content for this site
+  const seoData = seoContent[site.domain] || null;
+
   const html = ejs.render(template, {
     site,
     recipes,
     packs,
     categories,
+    seoData,
     include: (name, data) => ejs.render(partials[name], data)
   });
   

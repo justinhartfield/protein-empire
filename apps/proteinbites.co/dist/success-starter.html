@@ -7,9 +7,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Download Starter Pack | ProteinBites</title>
 
+
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7MXP78QYPD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-7MXP78QYPD', {
+    'send_page_view': true,
+    'cookie_flags': 'SameSite=None;Secure'
+  });
+</script>
+
+
 <!-- SEO Meta Tags -->
 <meta name="description" content="Download your free Starter Pack PDF.">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <link rel="canonical" href="https://proteinbites.co/success-starter.html">
 
 <!-- Open Graph / Social Sharing -->
@@ -89,18 +103,19 @@
     .recipe-shadow { box-shadow: 0 20px 50px -12px rgba(0, 0, 0, 0.1); }
 </style>
 
+<meta name="robots" content="noindex, nofollow">
 </head>
 <body class="min-h-screen flex flex-col bg-slate-50 text-slate-900 font-sans">
 
 
-<!-- Top Navigation -->
+<!-- Top Navigation (matching ProteinMuffins.com) -->
 <header class="sticky top-0 z-50 glass-nav border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-20">
             <div class="flex items-center">
                 <a href="/" class="flex items-center">
-                    <img src="/images/logo.png" alt="ProteinBites" class="h-12 w-12 rounded-lg mr-3">
-                    <span class="anton-text text-2xl text-slate-900 tracking-wider uppercase">PROTEINBITES</span>
+                    <img src="/images/logo.png" alt="ProteinBites" class="h-12 md:h-16 w-auto">
+                    
                 </a>
             </div>
             <nav class="hidden md:flex space-x-8 items-center">
@@ -130,115 +145,46 @@
 
 <main class="flex-grow py-20">
     <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <!-- Loading State -->
-        <div id="loading-state" style="display: block;">
-            <div class="animate-pulse">
-                <div class="w-24 h-24 bg-slate-200 rounded-full mx-auto mb-6"></div>
-                <div class="h-10 bg-slate-200 rounded w-3/4 mx-auto mb-4"></div>
-                <div class="h-6 bg-slate-200 rounded w-1/2 mx-auto mb-8"></div>
-                <div class="h-14 bg-slate-200 rounded-2xl w-64 mx-auto"></div>
-            </div>
-            <p class="text-slate-500 mt-6">Verifying access...</p>
-        </div>
+        <span class="text-6xl mb-6 block">✅</span>
+        <h1 class="anton-text text-4xl uppercase mb-4 tracking-wider">YOU'RE ALL SET!</h1>
+        <p class="text-xl text-slate-600 mb-8">Your Starter Pack is ready to download.</p>
         
-        <!-- Success State (hidden by default) -->
-        <div id="success-state" style="display: none;">
-            <img src="/images/icons/sparkle.png" alt="" class="mx-auto object-contain mb-4" style="width: 96px; height: 96px;" onerror="this.style.display='none'">
-            <h1 class="anton-text text-4xl uppercase mb-4 tracking-wider">YOU'RE ALL SET!</h1>
-            <p class="text-xl text-slate-600 mb-8">Your pack is ready to download.</p>
-            
-            <a id="download-link" href="/guides/proteinbites-co-starter.pdf" download
-                class="inline-flex items-center gap-3 bg-brand-500 text-white px-8 py-4 rounded-2xl font-bold anton-text text-lg hover:bg-brand-600 transition-colors shadow-xl shadow-brand-500/30 tracking-wider mb-8">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
-                </svg>
-                DOWNLOAD PDF
-            </a>
-            
-            <p class="text-slate-500 mb-12">Having trouble? Check your downloads folder or <a href="/pack-starter.html" class="text-brand-600 hover:underline">try again</a>.</p>
-            
-            <div class="border-t border-slate-200 pt-12">
-                <h2 class="anton-text text-2xl uppercase mb-6 tracking-wider">EXPLORE MORE RECIPES</h2>
-                <div class="flex flex-wrap justify-center gap-4">
-                    <a href="/" class="px-6 py-3 rounded-xl bg-white border border-slate-200 hover:border-brand-500 hover:text-brand-600 transition-all font-semibold">
-                        All Recipes
-                    </a>
-                    <a href="/#packs" class="px-6 py-3 rounded-xl bg-white border border-slate-200 hover:border-brand-500 hover:text-brand-600 transition-all font-semibold">
-                        More Recipe Packs
-                    </a>
-                </div>
-            </div>
-        </div>
+        <a href="/guides/proteinbites-co-starter.pdf" download
+            class="inline-flex items-center gap-3 bg-brand-500 text-white px-8 py-4 rounded-2xl font-bold anton-text text-lg hover:bg-brand-600 transition-colors shadow-xl shadow-brand-500/30 tracking-wider mb-8">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+            </svg>
+            DOWNLOAD PDF
+        </a>
         
-        <!-- Denied State (hidden by default) -->
-        <div id="denied-state" style="display: none;">
-            <div class="w-24 h-24 mx-auto mb-6 bg-red-100 rounded-full flex items-center justify-center">
-                <svg class="w-12 h-12 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
-                </svg>
+        <p class="text-slate-500 mb-12">Having trouble? Check your downloads folder or <a href="/pack-starter.html" class="text-brand-600 hover:underline">try again</a>.</p>
+        
+        <div class="border-t border-slate-200 pt-12">
+            <h2 class="anton-text text-2xl uppercase mb-6 tracking-wider">EXPLORE MORE RECIPES</h2>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="/" class="px-6 py-3 rounded-xl bg-white border border-slate-200 hover:border-brand-500 hover:text-brand-600 transition-all font-semibold">
+                    All Recipes
+                </a>
+                <a href="/#packs" class="px-6 py-3 rounded-xl bg-white border border-slate-200 hover:border-brand-500 hover:text-brand-600 transition-all font-semibold">
+                    More Recipe Packs
+                </a>
             </div>
-            <h1 class="anton-text text-3xl uppercase mb-4 tracking-wider">ACCESS REQUIRED</h1>
-            <p class="text-xl text-slate-600 mb-6">Please confirm your email address to access this download.</p>
-            <p class="text-slate-500 mb-8">Check your inbox for a confirmation email, or request a new one below.</p>
-            
-            <a href="/pack-starter.html" 
-                class="inline-flex items-center gap-3 bg-brand-500 text-white px-8 py-4 rounded-2xl font-bold anton-text text-lg hover:bg-brand-600 transition-colors shadow-xl shadow-brand-500/30 tracking-wider">
-                GET ACCESS
-            </a>
         </div>
     </div>
 </main>
 
-<script>
-(async function() {
-    const VERIFY_ENDPOINT = '/api/verify-access';
-    
-    // Get token from URL
-    const urlParams = new URLSearchParams(window.location.search);
-    const token = urlParams.get('access') || urlParams.get('token');
-    
-    // Helper to show/hide states
-    function showState(stateId) {
-        ['loading-state', 'success-state', 'denied-state'].forEach(id => {
-            const el = document.getElementById(id);
-            if (el) el.style.display = id === stateId ? 'block' : 'none';
-        });
-    }
-    
-    // If no token, show denied state
-    if (!token) {
-        showState('denied-state');
-        return;
-    }
-    
-    try {
-        const response = await fetch(`${VERIFY_ENDPOINT}?token=${encodeURIComponent(token)}`);
-        const data = await response.json();
-        
-        if (data.valid) {
-            showState('success-state');
-        } else {
-            showState('denied-state');
-        }
-    } catch (error) {
-        console.error('Verification error:', error);
-        showState('denied-state');
-    }
-})();
-</script>
 
-
-<!-- Footer -->
+<!-- Footer (matching ProteinMuffins.com) -->
 <footer class="bg-slate-900 text-white py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
             <!-- Brand -->
             <div class="md:col-span-1">
                 <a href="/" class="flex items-center mb-4">
-                    <img src="/images/logo.png" alt="ProteinBites" class="h-12 w-12 rounded-lg mr-3">
-                    <span class="anton-text text-xl tracking-wider">PROTEINBITES</span>
+                    <img src="/images/logo.png" alt="ProteinBites" class="h-12 w-auto">
+                    
                 </a>
-                <p class="text-slate-400 text-sm">Macro-verified protein bite recipes with precise nutrition data</p>
+                <p class="text-slate-400 text-sm">Quick, no-bake protein and energy bites</p>
             </div>
             
             <!-- Quick Links -->
@@ -276,7 +222,6 @@
         <div class="mt-12 pt-8 border-t border-slate-800">
             <p class="text-slate-500 text-xs text-center mb-4">Part of the Protein Recipe Empire</p>
             <div class="flex flex-wrap justify-center gap-4 text-xs text-slate-500">
-
                 <a href="https://proteinmuffins.com" class="hover:text-white transition">Muffins</a>
                 <a href="https://proteincookies.co" class="hover:text-white transition">Cookies</a>
                 <a href="https://proteinpancakes.co" class="hover:text-white transition">Pancakes</a>
@@ -289,7 +234,6 @@
                 <a href="https://proteincheesecake.co" class="hover:text-white transition">Cheesecake</a>
                 <a href="https://proteinpizzas.co" class="hover:text-white transition">Pizza</a>
                 <a href="https://proteinpudding.co" class="hover:text-white transition">Pudding</a>
-
             </div>
         </div>
         
