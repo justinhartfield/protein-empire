@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download Your Free Recipe Pack | High Protein Recipes</title>
+    <title>Download Your Free Meal Plan | High Protein Recipes</title>
     <meta name="robots" content="noindex, nofollow">
-    
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Tailwind CSS -->
+
+    <!-- Tailwind CSS & Alpine.js -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
     <script>
         tailwind.config = {
             theme: {
@@ -33,6 +34,7 @@
                             900: '#451a03',
                         },
                         accent: {
+                            100: '#d1fae5',
                             400: '#34d399',
                             500: '#10b981',
                             600: '#059669',
@@ -59,6 +61,7 @@
     </script>
 
     <style>
+        [x-cloak] { display: none !important; }
         body {
             background-color: #fffbeb;
         }
@@ -66,20 +69,16 @@
             font-family: 'Anton', sans-serif;
             letter-spacing: 0.02em;
         }
-        .guide-mockup {
-            background: linear-gradient(145deg, #f59e0b, #d97706);
-            box-shadow: 15px 15px 30px rgba(0,0,0,0.1), -5px -5px 15px rgba(255,255,255,0.5);
-        }
     </style>
 </head>
-<body class="min-h-screen flex flex-col antialiased">
+<body class="min-h-screen flex flex-col antialiased" x-data="successPage()" x-init="checkAccess()">
 
     <!-- Navigation -->
     <nav class="w-full z-40 bg-brand-50/80 backdrop-blur-sm border-b border-brand-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16 items-center">
                 <a href="https://highprotein.recipes" class="flex items-center gap-2">
-                    <span class="text-2xl">🥗</span>
+                    <span class="text-2xl">&#127859;</span>
                     <span class="anton-text text-xl text-brand-900">HIGH PROTEIN RECIPES</span>
                 </a>
             </div>
@@ -88,8 +87,16 @@
 
     <!-- Main Content -->
     <main class="flex-grow flex items-center justify-center px-4 py-16">
-        <div class="max-w-3xl mx-auto text-center">
-            
+
+        <!-- Loading State -->
+        <div x-show="loading" class="text-center">
+            <div class="w-16 h-16 border-4 border-brand-200 border-t-brand-500 rounded-full animate-spin mx-auto mb-6"></div>
+            <p class="text-brand-700 text-lg">Verifying your access...</p>
+        </div>
+
+        <!-- Verified: Show Download -->
+        <div x-show="verified" x-cloak class="max-w-3xl mx-auto text-center">
+
             <!-- Success Icon -->
             <div class="relative inline-block mb-8">
                 <div class="w-24 h-24 bg-accent-100 rounded-full flex items-center justify-center mx-auto animate-confetti">
@@ -104,19 +111,19 @@
             </div>
 
             <h1 class="anton-text text-4xl md:text-5xl text-brand-900 mb-4">
-                You're In! 🎉
+                You're In!
             </h1>
-            
+
             <p class="text-xl text-brand-700/70 mb-8 max-w-xl mx-auto">
-                Your <strong class="text-brand-900">High-Protein Starter Pack</strong> is ready to download. Click the button below to get instant access.
+                Your <strong class="text-brand-900">7-Day Breakfast Meal Plan</strong> is ready to download. Click the button below to get instant access.
             </p>
 
             <!-- Download Button -->
-            <a href="/downloads/starter-pack.pdf" class="inline-flex items-center gap-3 px-10 py-5 bg-accent-500 hover:bg-accent-600 text-white font-bold rounded-2xl transition-all shadow-xl text-lg group mb-8">
+            <a href="/downloads/breakfast-meal-plan.pdf" class="inline-flex items-center gap-3 px-10 py-5 bg-accent-500 hover:bg-accent-600 text-white font-bold rounded-2xl transition-all shadow-xl text-lg group mb-8">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
                 </svg>
-                <span>Download Your Free Pack</span>
+                <span>Download Your Free Meal Plan</span>
                 <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                 </svg>
@@ -124,61 +131,141 @@
 
             <!-- What's Inside -->
             <div class="bg-white rounded-3xl p-8 shadow-lg border border-brand-200 mb-12">
-                <h2 class="anton-text text-2xl text-brand-900 mb-6">What's Inside Your Pack</h2>
+                <h2 class="anton-text text-2xl text-brand-900 mb-6">What's Inside Your Meal Plan</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div class="text-center">
                         <div class="w-14 h-14 bg-brand-100 rounded-2xl flex items-center justify-center mx-auto mb-3">
-                            <span class="text-2xl">📖</span>
+                            <span class="text-2xl">&#127859;</span>
                         </div>
-                        <h3 class="font-bold text-brand-900 mb-1">305 Recipes</h3>
-                        <p class="text-sm text-brand-600">Complete with step-by-step instructions</p>
+                        <h3 class="font-bold text-brand-900 mb-1">7 Breakfast Recipes</h3>
+                        <p class="text-sm text-brand-600">One for each day, 30g+ protein each</p>
                     </div>
                     <div class="text-center">
                         <div class="w-14 h-14 bg-brand-100 rounded-2xl flex items-center justify-center mx-auto mb-3">
-                            <span class="text-2xl">🛒</span>
+                            <span class="text-2xl">&#128722;</span>
                         </div>
-                        <h3 class="font-bold text-brand-900 mb-1">Shopping Lists</h3>
-                        <p class="text-sm text-brand-600">Organized by aisle for easy shopping</p>
+                        <h3 class="font-bold text-brand-900 mb-1">Shopping List</h3>
+                        <p class="text-sm text-brand-600">Combined ingredients organized by category</p>
                     </div>
                     <div class="text-center">
                         <div class="w-14 h-14 bg-brand-100 rounded-2xl flex items-center justify-center mx-auto mb-3">
-                            <span class="text-2xl">📊</span>
+                            <span class="text-2xl">&#128200;</span>
                         </div>
-                        <h3 class="font-bold text-brand-900 mb-1">Macro Breakdown</h3>
-                        <p class="text-sm text-brand-600">USDA-verified nutrition data</p>
+                        <h3 class="font-bold text-brand-900 mb-1">Complete Macros</h3>
+                        <p class="text-sm text-brand-600">USDA-verified nutrition for every recipe</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Next Steps -->
+            <!-- Pro Tip -->
             <div class="text-left bg-brand-100/50 rounded-2xl p-6 mb-12">
                 <h3 class="font-bold text-brand-900 mb-4 flex items-center gap-2">
-                    <span class="text-xl">📬</span> Check Your Inbox
+                    <span class="text-xl">&#128161;</span> Pro Tip: Meal Prep Sunday
                 </h3>
-                <p class="text-brand-700/70 mb-4">
-                    We've also sent a copy to your email. If you don't see it in the next few minutes, check your spam folder and mark us as "not spam" so you don't miss future recipes!
-                </p>
-                <p class="text-sm text-brand-600">
-                    <strong>From:</strong> recipes@highprotein.recipes
+                <p class="text-brand-700/70">
+                    Make the Freezer Breakfast Burritos and Sheet Pan Breakfast Bake on Sunday. They'll last all week in the fridge or up to 3 months in the freezer!
                 </p>
             </div>
 
             <!-- Continue Browsing -->
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://highprotein.recipes/breakfast/" class="px-8 py-3 bg-white border-2 border-brand-200 text-brand-700 font-semibold rounded-full hover:bg-brand-50 transition-all">
+                    More Breakfast Recipes
+                </a>
                 <a href="https://highprotein.recipes" class="px-8 py-3 bg-white border-2 border-brand-200 text-brand-700 font-semibold rounded-full hover:bg-brand-50 transition-all">
                     Browse All Recipes
                 </a>
-                <a href="https://highprotein.recipes/meal-prep/" class="px-8 py-3 bg-white border-2 border-brand-200 text-brand-700 font-semibold rounded-full hover:bg-brand-50 transition-all">
-                    Meal Prep Ideas
-                </a>
             </div>
         </div>
+
+        <!-- Access Denied -->
+        <div x-show="!loading && !verified" x-cloak class="max-w-xl mx-auto text-center">
+
+            <!-- Lock Icon -->
+            <div class="w-24 h-24 bg-brand-100 rounded-full flex items-center justify-center mx-auto mb-8">
+                <svg class="w-12 h-12 text-brand-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                </svg>
+            </div>
+
+            <h1 class="anton-text text-4xl text-brand-900 mb-4">
+                Access Required
+            </h1>
+
+            <p class="text-lg text-brand-700/70 mb-8">
+                Please confirm your email to access the download. Check your inbox for the confirmation link we sent you.
+            </p>
+
+            <!-- Error Message -->
+            <p x-show="error" x-cloak class="text-red-600 mb-6" x-text="error"></p>
+
+            <div class="space-y-4">
+                <a href="/pack-starter.html" class="inline-flex items-center gap-2 px-8 py-4 bg-brand-500 hover:bg-brand-600 text-white font-bold rounded-xl transition-all shadow-lg">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
+                    Request Access
+                </a>
+
+                <p class="text-sm text-brand-600">
+                    Already confirmed? The link may have expired. Request a new one above.
+                </p>
+            </div>
+        </div>
+
     </main>
 
     <!-- Footer -->
     <footer class="bg-brand-100/50 py-8 text-center text-sm text-brand-600/60">
-        © 2026 High Protein Recipes. All recipes macro-verified using USDA FoodData Central.
+        &copy; 2026 High Protein Recipes. All recipes macro-verified using USDA FoodData Central.
     </footer>
+
+    <!-- Access Verification Script -->
+    <script>
+    function successPage() {
+        return {
+            loading: true,
+            verified: false,
+            error: '',
+
+            async checkAccess() {
+                const token = new URLSearchParams(window.location.search).get('token');
+
+                if (!token) {
+                    this.loading = false;
+                    this.error = 'No access token provided.';
+                    return;
+                }
+
+                try {
+                    const res = await fetch(`/api/verify-access?token=${token}`);
+                    const data = await res.json();
+
+                    this.verified = data.valid;
+
+                    if (!data.valid) {
+                        this.error = data.reason === 'expired-token'
+                            ? 'Your access link has expired. Please request a new one.'
+                            : 'Invalid access token.';
+                    } else {
+                        // Track successful download page view
+                        if (typeof gtag !== 'undefined') {
+                            gtag('event', 'conversion', {
+                                'event_category': 'lead_magnet',
+                                'event_label': 'download_success_verified'
+                            });
+                        }
+                    }
+                } catch (e) {
+                    this.verified = false;
+                    this.error = 'Unable to verify access. Please try again.';
+                }
+
+                this.loading = false;
+            }
+        }
+    }
+    </script>
 
     <!-- GA4 Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-86MYLJ5WDT"></script>
@@ -187,12 +274,6 @@
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-86MYLJ5WDT');
-        
-        // Track successful download page view
-        gtag('event', 'conversion', {
-            'event_category': 'lead_magnet',
-            'event_label': 'download_success_page'
-        });
     </script>
 </body>
 </html>

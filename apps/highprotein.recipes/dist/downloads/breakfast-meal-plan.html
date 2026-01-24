@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>7-Day High-Protein Breakfast Meal Plan</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 11pt;
+            line-height: 1.5;
+            color: #1e293b;
+        }
+
+        .page {
+            width: 8.5in;
+            min-height: 11in;
+            padding: 0.75in;
+            page-break-after: always;
+            background: white;
+        }
+
+        /* Cover Page */
+        .cover {
+            background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .cover-icon {
+            font-size: 72pt;
+            margin-bottom: 30px;
+        }
+
+        .cover h1 {
+            font-size: 32pt;
+            font-weight: 800;
+            color: #f59e0b;
+            margin-bottom: 15px;
+            letter-spacing: -0.02em;
+        }
+
+        .cover .subtitle {
+            font-size: 14pt;
+            color: #64748b;
+            margin-bottom: 40px;
+        }
+
+        .cover .badge {
+            background: #f59e0b;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 11pt;
+        }
+
+        .cover .brand {
+            position: absolute;
+            bottom: 60px;
+            color: #94a3b8;
+            font-size: 10pt;
+        }
+
+        /* TOC Page */
+        .toc {
+            background: #fefce8;
+        }
+
+        .toc h2 {
+            font-size: 24pt;
+            color: #f59e0b;
+            margin-bottom: 30px;
+            font-weight: 800;
+        }
+
+        .toc-item {
+            display: flex;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .toc-day {
+            background: #f59e0b;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 9pt;
+            font-weight: 600;
+            margin-right: 15px;
+            min-width: 55px;
+            text-align: center;
+        }
+
+        .toc-title {
+            flex: 1;
+            font-weight: 500;
+        }
+
+        .toc-protein {
+            background: #10b981;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 9pt;
+            font-weight: 600;
+        }
+
+        .toc-extras {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #e2e8f0;
+        }
+
+        .toc-extras-item {
+            padding: 10px 0;
+            color: #64748b;
+        }
+
+        /* Recipe Pages */
+        .recipe-page {
+            position: relative;
+        }
+
+        .day-badge {
+            position: absolute;
+            top: 0.5in;
+            right: 0.5in;
+            background: #f59e0b;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 10pt;
+        }
+
+        .recipe-header {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding-right: 100px;
+        }
+
+        .recipe-title {
+            font-size: 20pt;
+            font-weight: 700;
+            color: #1e293b;
+            line-height: 1.2;
+        }
+
+        .protein-badge {
+            background: #10b981;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 12px;
+            font-size: 16pt;
+            font-weight: 700;
+        }
+
+        .recipe-meta {
+            display: flex;
+            gap: 20px;
+            color: #64748b;
+            font-size: 9pt;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #f59e0b;
+        }
+
+        .macros-bar {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .macro {
+            flex: 1;
+            background: #f8fafc;
+            padding: 12px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .macro.protein {
+            background: #ecfdf5;
+        }
+
+        .macro-value {
+            display: block;
+            font-size: 18pt;
+            font-weight: 700;
+            color: #1e293b;
+        }
+
+        .macro.protein .macro-value {
+            color: #10b981;
+        }
+
+        .macro-label {
+            font-size: 7pt;
+            color: #94a3b8;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+        }
+
+        .recipe-content {
+            display: flex;
+            gap: 30px;
+        }
+
+        .ingredients-section {
+            width: 35%;
+        }
+
+        .instructions-section {
+            width: 65%;
+        }
+
+        .ingredients-section h3,
+        .instructions-section h3 {
+            font-size: 10pt;
+            font-weight: 700;
+            color: #f59e0b;
+            margin-bottom: 15px;
+            letter-spacing: 0.05em;
+        }
+
+        .ingredients-list {
+            list-style: none;
+        }
+
+        .ingredient {
+            padding: 6px 0;
+            border-bottom: 1px solid #f1f5f9;
+            font-size: 9pt;
+        }
+
+        .step {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 15px;
+        }
+
+        .step-num {
+            background: #f59e0b;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 9pt;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+
+        .step div {
+            font-size: 9pt;
+            line-height: 1.5;
+        }
+
+        /* Shopping List Page */
+        .shopping-page h2 {
+            font-size: 24pt;
+            color: #f59e0b;
+            margin-bottom: 25px;
+            font-weight: 800;
+        }
+
+        .shop-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .shop-category h4 {
+            font-size: 10pt;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #f59e0b;
+        }
+
+        .shop-category ul {
+            list-style: none;
+        }
+
+        .shop-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            padding: 5px 0;
+            font-size: 9pt;
+        }
+
+        .checkbox {
+            width: 14px;
+            height: 14px;
+            border: 2px solid #cbd5e1;
+            border-radius: 3px;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        /* Tips Page */
+        .tips-page h2 {
+            font-size: 24pt;
+            color: #f59e0b;
+            margin-bottom: 25px;
+            font-weight: 800;
+        }
+
+        .tip-card {
+            background: #f8fafc;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .tip-card h4 {
+            font-size: 12pt;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 8px;
+        }
+
+        .tip-card p {
+            font-size: 10pt;
+            color: #64748b;
+            line-height: 1.6;
+        }
+
+        /* Back Page */
+        .back-page {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .back-page h2 {
+            font-size: 28pt;
+            font-weight: 800;
+            margin-bottom: 15px;
+            color: #f59e0b;
+        }
+
+        .back-page p {
+            font-size: 12pt;
+            color: #94a3b8;
+            margin-bottom: 30px;
+        }
+
+        .back-page .url {
+            font-size: 18pt;
+            font-weight: 700;
+            color: #f59e0b;
+        }
+
+        @media print {
+            .page {
+                page-break-after: always;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Cover Page -->
+    <div class="page cover">
+        <div class="cover-icon">🍳</div>
+        <h1>7-DAY HIGH-PROTEIN<br>BREAKFAST MEAL PLAN</h1>
+        <p class="subtitle">Start every day with 30g+ protein. Macro-verified recipes for the whole week!</p>
+        <div class="badge">7 Macro-Verified Recipes • 230g Total Protein</div>
+        <div class="brand">HighProtein.Recipes | highprotein.recipes</div>
+    </div>
+
+    <!-- Table of Contents -->
+    <div class="page toc">
+        <h2>WHAT'S INSIDE</h2>
+        
+        <div class="toc-item">
+            <span class="toc-day">Day 1</span>
+            <span class="toc-title">Freezer Breakfast Burritos</span>
+            <span class="toc-protein">40g protein</span>
+        </div>
+        
+        <div class="toc-item">
+            <span class="toc-day">Day 2</span>
+            <span class="toc-title">Fluffy Protein Pancakes</span>
+            <span class="toc-protein">32g protein</span>
+        </div>
+        
+        <div class="toc-item">
+            <span class="toc-day">Day 3</span>
+            <span class="toc-title">Sheet Pan Breakfast Bake Squares</span>
+            <span class="toc-protein">28g protein</span>
+        </div>
+        
+        <div class="toc-item">
+            <span class="toc-day">Day 4</span>
+            <span class="toc-title">Volume Greek-Style Protein Bowl</span>
+            <span class="toc-protein">32g protein</span>
+        </div>
+        
+        <div class="toc-item">
+            <span class="toc-day">Day 5</span>
+            <span class="toc-title">5-Jar Chia Protein Pudding</span>
+            <span class="toc-protein">25g protein</span>
+        </div>
+        
+        <div class="toc-item">
+            <span class="toc-day">Day 6</span>
+            <span class="toc-title">Cottage Cheese Protein Scramble</span>
+            <span class="toc-protein">35g protein</span>
+        </div>
+        
+        <div class="toc-item">
+            <span class="toc-day">Day 7</span>
+            <span class="toc-title">Savory Oats with Turkey & Spinach</span>
+            <span class="toc-protein">38g protein</span>
+        </div>
+        
+        <div class="toc-extras">
+            <div class="toc-extras-item">Combined Shopping List</div>
+            <div class="toc-extras-item">Pro Tips for Meal Prep</div>
+        </div>
+    </div>
+
+    <!-- Recipe Pages -->
+    
+        <div class="page recipe-page">
+            <div class="day-badge">DAY 1</div>
+            <div class="recipe-header">
+                <h2 class="recipe-title">Freezer Breakfast Burritos (40g Protein)</h2>
+                <div class="protein-badge">40g</div>
+            </div>
+
+            <div class="recipe-meta">
+                <span>Prep: 30 min</span>
+                <span>Cook: 15 min</span>
+                <span>Total: 45 min</span>
+                <span>Yield: 12 burritos</span>
+                <span>Difficulty: Easy</span>
+            </div>
+
+            <div class="macros-bar">
+                <div class="macro"><span class="macro-value">420</span><span class="macro-label">CALORIES</span></div>
+                <div class="macro protein"><span class="macro-value">40g</span><span class="macro-label">PROTEIN</span></div>
+                <div class="macro"><span class="macro-value">32g</span><span class="macro-label">CARBS</span></div>
+                <div class="macro"><span class="macro-value">16g</span><span class="macro-label">FAT</span></div>
+            </div>
+
+            <div class="recipe-content">
+                <div class="ingredients-section">
+                    <h3>INGREDIENTS</h3>
+                    <ul class="ingredients-list"><li class="ingredient">12 large flour tortillas (10-inch)</li>
+<li class="ingredient">680g (1.5 lbs) lean turkey sausage</li>
+<li class="ingredient">720ml (24 oz) liquid egg whites</li>
+<li class="ingredient">1 red bell pepper, diced</li>
+<li class="ingredient">1 green bell pepper, diced</li>
+<li class="ingredient">1 medium onion, diced</li>
+<li class="ingredient">170g (6 oz) reduced-fat Mexican cheese blend</li>
+<li class="ingredient">5g cumin</li>
+<li class="ingredient">5g chili powder</li>
+<li class="ingredient">3g garlic powder</li>
+<li class="ingredient">Salt and pepper to taste</li></ul>
+                </div>
+                <div class="instructions-section">
+                    <h3>INSTRUCTIONS</h3>
+                    <div class="instructions-list"><div class="step"><span class="step-num">1</span><div><strong>Cook the Sausage</strong><br>In a large skillet over medium-high heat, cook turkey sausage until browned and crumbled, about 8-10 minutes. Season with cumin, chili powder, and garlic powder. Transfer to a large bowl.</div></div>
+<div class="step"><span class="step-num">2</span><div><strong>Sauté Vegetables</strong><br>In the same skillet, add peppers and onion. Sauté until softened, about 5 minutes. Add to the bowl with sausage.</div></div>
+<div class="step"><span class="step-num">3</span><div><strong>Scramble Egg Whites</strong><br>Wipe skillet clean, spray with cooking spray. Add egg whites and scramble over medium heat until just set. Season with salt and pepper. Add to bowl.</div></div>
+<div class="step"><span class="step-num">4</span><div><strong>Combine Filling</strong><br>Add shredded cheese to the bowl. Toss everything together until well combined. Let cool for 10 minutes.</div></div>
+<div class="step"><span class="step-num">5</span><div><strong>Assemble Burritos</strong><br>Place about 3/4 cup filling in center of each tortilla. Fold in sides, then roll tightly from bottom to top. Place seam-side down.</div></div>
+<div class="step"><span class="step-num">6</span><div><strong>Wrap and Store</strong><br>Let cool completely. Wrap each burrito tightly in foil. For freezing, place wrapped burritos in freezer bags and label with date.</div></div></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="page recipe-page">
+            <div class="day-badge">DAY 2</div>
+            <div class="recipe-header">
+                <h2 class="recipe-title">Fluffy Protein Pancakes</h2>
+                <div class="protein-badge">32g</div>
+            </div>
+
+            <div class="recipe-meta">
+                <span>Prep: 10 min</span>
+                <span>Cook: 15 min</span>
+                <span>Total: 25 min</span>
+                <span>Yield: 2 servings (8 pancakes)</span>
+                <span>Difficulty: Easy</span>
+            </div>
+
+            <div class="macros-bar">
+                <div class="macro"><span class="macro-value">360</span><span class="macro-label">CALORIES</span></div>
+                <div class="macro protein"><span class="macro-value">32g</span><span class="macro-label">PROTEIN</span></div>
+                <div class="macro"><span class="macro-value">35g</span><span class="macro-label">CARBS</span></div>
+                <div class="macro"><span class="macro-value">8g</span><span class="macro-label">FAT</span></div>
+            </div>
+
+            <div class="recipe-content">
+                <div class="ingredients-section">
+                    <h3>INGREDIENTS</h3>
+                    <ul class="ingredients-list"><li class="ingredient">115g (1/2 cup) low-fat cottage cheese</li>
+<li class="ingredient">2 large eggs</li>
+<li class="ingredient">60g (2 scoops) vanilla whey protein powder</li>
+<li class="ingredient">60g oat flour</li>
+<li class="ingredient">5g baking powder</li>
+<li class="ingredient">60ml milk</li>
+<li class="ingredient">5g vanilla extract</li>
+<li class="ingredient">Sugar-free maple syrup for serving</li>
+<li class="ingredient">Fresh berries for topping</li></ul>
+                </div>
+                <div class="instructions-section">
+                    <h3>INSTRUCTIONS</h3>
+                    <div class="instructions-list"><div class="step"><span class="step-num">1</span><div><strong>Blend</strong><br>Add cottage cheese, eggs, protein powder, oat flour, baking powder, milk, and vanilla to a blender. Blend until smooth.</div></div>
+<div class="step"><span class="step-num">2</span><div><strong>Rest</strong><br>Let batter rest 5 minutes while you heat a non-stick pan or griddle over medium heat.</div></div>
+<div class="step"><span class="step-num">3</span><div><strong>Cook</strong><br>Pour 60ml batter per pancake onto the pan. Cook until bubbles form on surface and edges look set, about 2-3 minutes.</div></div>
+<div class="step"><span class="step-num">4</span><div><strong>Flip</strong><br>Flip carefully and cook another 1-2 minutes until golden brown.</div></div>
+<div class="step"><span class="step-num">5</span><div><strong>Serve</strong><br>Stack pancakes, top with sugar-free syrup and fresh berries.</div></div></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="page recipe-page">
+            <div class="day-badge">DAY 3</div>
+            <div class="recipe-header">
+                <h2 class="recipe-title">Sheet Pan Breakfast Bake Squares</h2>
+                <div class="protein-badge">28g</div>
+            </div>
+
+            <div class="recipe-meta">
+                <span>Prep: 15 min</span>
+                <span>Cook: 35 min</span>
+                <span>Total: 50 min</span>
+                <span>Yield: 12 squares</span>
+                <span>Difficulty: Easy</span>
+            </div>
+
+            <div class="macros-bar">
+                <div class="macro"><span class="macro-value">220</span><span class="macro-label">CALORIES</span></div>
+                <div class="macro protein"><span class="macro-value">28g</span><span class="macro-label">PROTEIN</span></div>
+                <div class="macro"><span class="macro-value">8g</span><span class="macro-label">CARBS</span></div>
+                <div class="macro"><span class="macro-value">14g</span><span class="macro-label">FAT</span></div>
+            </div>
+
+            <div class="recipe-content">
+                <div class="ingredients-section">
+                    <h3>INGREDIENTS</h3>
+                    <ul class="ingredients-list"><li class="ingredient">454g (1 lb) turkey breakfast sausage</li>
+<li class="ingredient">12 large eggs</li>
+<li class="ingredient">240ml (1 cup) unsweetened almond milk</li>
+<li class="ingredient">200g baby spinach</li>
+<li class="ingredient">1 red bell pepper, diced</li>
+<li class="ingredient">150g mushrooms, sliced</li>
+<li class="ingredient">1 medium onion, diced</li>
+<li class="ingredient">115g (1 cup) shredded cheddar cheese</li>
+<li class="ingredient">3g garlic powder</li>
+<li class="ingredient">Salt and pepper to taste</li></ul>
+                </div>
+                <div class="instructions-section">
+                    <h3>INSTRUCTIONS</h3>
+                    <div class="instructions-list"><div class="step"><span class="step-num">1</span><div><strong>Prep Pan</strong><br>Preheat oven to 375F. Line a 9x13 baking pan with parchment paper and spray with cooking spray.</div></div>
+<div class="step"><span class="step-num">2</span><div><strong>Cook Sausage and Veggies</strong><br>In a large skillet, cook turkey sausage until browned. Add peppers, onion, and mushrooms. Cook 5 minutes. Add spinach and cook until wilted.</div></div>
+<div class="step"><span class="step-num">3</span><div><strong>Make Egg Mixture</strong><br>Whisk eggs, almond milk, garlic powder, salt, and pepper in a large bowl.</div></div>
+<div class="step"><span class="step-num">4</span><div><strong>Assemble</strong><br>Spread sausage mixture evenly in prepared pan. Pour egg mixture over top. Sprinkle with cheese.</div></div>
+<div class="step"><span class="step-num">5</span><div><strong>Bake</strong><br>Bake 35-40 minutes until eggs are set and top is golden. Let cool 10 minutes before cutting into 12 squares.</div></div></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="page recipe-page">
+            <div class="day-badge">DAY 4</div>
+            <div class="recipe-header">
+                <h2 class="recipe-title">Volume Greek-Style Protein Bowl (Dairy-Free)</h2>
+                <div class="protein-badge">32g</div>
+            </div>
+
+            <div class="recipe-meta">
+                <span>Prep: 10 min</span>
+                <span>Cook: 0 min</span>
+                <span>Total: 10 min</span>
+                <span>Yield: 1 serving</span>
+                <span>Difficulty: Beginner</span>
+            </div>
+
+            <div class="macros-bar">
+                <div class="macro"><span class="macro-value">260</span><span class="macro-label">CALORIES</span></div>
+                <div class="macro protein"><span class="macro-value">32g</span><span class="macro-label">PROTEIN</span></div>
+                <div class="macro"><span class="macro-value">28g</span><span class="macro-label">CARBS</span></div>
+                <div class="macro"><span class="macro-value">6g</span><span class="macro-label">FAT</span></div>
+            </div>
+
+            <div class="recipe-content">
+                <div class="ingredients-section">
+                    <h3>INGREDIENTS</h3>
+                    <ul class="ingredients-list"><li class="ingredient">250g coconut or soy yogurt (high-protein variety)</li>
+<li class="ingredient">30g (1 scoop) vanilla plant protein powder</li>
+<li class="ingredient">150g fresh strawberries, sliced</li>
+<li class="ingredient">100g fresh blueberries</li>
+<li class="ingredient">50g cucumber, diced</li>
+<li class="ingredient">30g pumpkin seeds</li>
+<li class="ingredient">15g chia seeds</li>
+<li class="ingredient">Mint leaves for garnish</li>
+<li class="ingredient">Drizzle of honey or maple syrup (optional)</li></ul>
+                </div>
+                <div class="instructions-section">
+                    <h3>INSTRUCTIONS</h3>
+                    <div class="instructions-list"><div class="step"><span class="step-num">1</span><div><strong>Mix Base</strong><br>In a large bowl, stir protein powder into yogurt until smooth and creamy.</div></div>
+<div class="step"><span class="step-num">2</span><div><strong>Add Volume</strong><br>Top with strawberries, blueberries, and cucumber for maximum volume with minimal calories.</div></div>
+<div class="step"><span class="step-num">3</span><div><strong>Add Crunch</strong><br>Sprinkle with pumpkin seeds and chia seeds.</div></div>
+<div class="step"><span class="step-num">4</span><div><strong>Garnish</strong><br>Add fresh mint and a light drizzle of honey if desired.</div></div></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="page recipe-page">
+            <div class="day-badge">DAY 5</div>
+            <div class="recipe-header">
+                <h2 class="recipe-title">5-Jar Chia Protein Pudding</h2>
+                <div class="protein-badge">25g</div>
+            </div>
+
+            <div class="recipe-meta">
+                <span>Prep: 10 min</span>
+                <span>Cook: 0 min</span>
+                <span>Total: 10 min</span>
+                <span>Yield: 5 jars</span>
+                <span>Difficulty: Beginner</span>
+            </div>
+
+            <div class="macros-bar">
+                <div class="macro"><span class="macro-value">280</span><span class="macro-label">CALORIES</span></div>
+                <div class="macro protein"><span class="macro-value">25g</span><span class="macro-label">PROTEIN</span></div>
+                <div class="macro"><span class="macro-value">22g</span><span class="macro-label">CARBS</span></div>
+                <div class="macro"><span class="macro-value">12g</span><span class="macro-label">FAT</span></div>
+            </div>
+
+            <div class="recipe-content">
+                <div class="ingredients-section">
+                    <h3>INGREDIENTS</h3>
+                    <ul class="ingredients-list"><li class="ingredient">150g chia seeds</li>
+<li class="ingredient">150g (5 scoops) vanilla whey protein powder</li>
+<li class="ingredient">1L unsweetened almond milk</li>
+<li class="ingredient">60ml maple syrup or honey</li>
+<li class="ingredient">5g vanilla extract</li>
+<li class="ingredient">Pinch of salt</li>
+<li class="ingredient">Toppings: berries, sliced almonds, coconut flakes</li></ul>
+                </div>
+                <div class="instructions-section">
+                    <h3>INSTRUCTIONS</h3>
+                    <div class="instructions-list"><div class="step"><span class="step-num">1</span><div><strong>Mix Base</strong><br>In a large bowl or pitcher, whisk together almond milk, protein powder, maple syrup, vanilla, and salt until protein is dissolved.</div></div>
+<div class="step"><span class="step-num">2</span><div><strong>Add Chia Seeds</strong><br>Stir in chia seeds and whisk well to prevent clumping.</div></div>
+<div class="step"><span class="step-num">3</span><div><strong>Divide</strong><br>Pour mixture evenly into 5 mason jars or containers (about 280ml each).</div></div>
+<div class="step"><span class="step-num">4</span><div><strong>Refrigerate</strong><br>Cover and refrigerate for at least 4 hours or overnight. Chia seeds will absorb liquid and create pudding texture.</div></div>
+<div class="step"><span class="step-num">5</span><div><strong>Serve</strong><br>Stir before eating. Top with fresh berries, nuts, or coconut flakes.</div></div></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="page recipe-page">
+            <div class="day-badge">DAY 6</div>
+            <div class="recipe-header">
+                <h2 class="recipe-title">Cottage Cheese Protein Scramble</h2>
+                <div class="protein-badge">35g</div>
+            </div>
+
+            <div class="recipe-meta">
+                <span>Prep: 5 min</span>
+                <span>Cook: 10 min</span>
+                <span>Total: 15 min</span>
+                <span>Yield: 1 serving</span>
+                <span>Difficulty: Beginner</span>
+            </div>
+
+            <div class="macros-bar">
+                <div class="macro"><span class="macro-value">280</span><span class="macro-label">CALORIES</span></div>
+                <div class="macro protein"><span class="macro-value">35g</span><span class="macro-label">PROTEIN</span></div>
+                <div class="macro"><span class="macro-value">8g</span><span class="macro-label">CARBS</span></div>
+                <div class="macro"><span class="macro-value">14g</span><span class="macro-label">FAT</span></div>
+            </div>
+
+            <div class="recipe-content">
+                <div class="ingredients-section">
+                    <h3>INGREDIENTS</h3>
+                    <ul class="ingredients-list"><li class="ingredient">3 large eggs</li>
+<li class="ingredient">120ml (1/2 cup) liquid egg whites</li>
+<li class="ingredient">115g (1/2 cup) low-fat cottage cheese</li>
+<li class="ingredient">15g butter</li>
+<li class="ingredient">Fresh chives, chopped</li>
+<li class="ingredient">Salt and pepper to taste</li></ul>
+                </div>
+                <div class="instructions-section">
+                    <h3>INSTRUCTIONS</h3>
+                    <div class="instructions-list"><div class="step"><span class="step-num">1</span><div><strong>Blend</strong><br>Add eggs, egg whites, and cottage cheese to a blender. Blend until smooth.</div></div>
+<div class="step"><span class="step-num">2</span><div><strong>Heat Pan</strong><br>Melt butter in a non-stick pan over medium-low heat.</div></div>
+<div class="step"><span class="step-num">3</span><div><strong>Cook Slowly</strong><br>Pour in egg mixture. Let sit for 30 seconds, then gently push from edges to center with a spatula.</div></div>
+<div class="step"><span class="step-num">4</span><div><strong>Fold</strong><br>Continue folding gently every 30 seconds. Remove from heat while eggs are still slightly wet - they'll continue cooking.</div></div>
+<div class="step"><span class="step-num">5</span><div><strong>Serve</strong><br>Season with salt and pepper, top with fresh chives. Serve immediately.</div></div></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="page recipe-page">
+            <div class="day-badge">DAY 7</div>
+            <div class="recipe-header">
+                <h2 class="recipe-title">Savory Oats with Turkey & Spinach</h2>
+                <div class="protein-badge">38g</div>
+            </div>
+
+            <div class="recipe-meta">
+                <span>Prep: 10 min</span>
+                <span>Cook: 20 min</span>
+                <span>Total: 30 min</span>
+                <span>Yield: 2 servings</span>
+                <span>Difficulty: Easy</span>
+            </div>
+
+            <div class="macros-bar">
+                <div class="macro"><span class="macro-value">450</span><span class="macro-label">CALORIES</span></div>
+                <div class="macro protein"><span class="macro-value">38g</span><span class="macro-label">PROTEIN</span></div>
+                <div class="macro"><span class="macro-value">38g</span><span class="macro-label">CARBS</span></div>
+                <div class="macro"><span class="macro-value">18g</span><span class="macro-label">FAT</span></div>
+            </div>
+
+            <div class="recipe-content">
+                <div class="ingredients-section">
+                    <h3>INGREDIENTS</h3>
+                    <ul class="ingredients-list"><li class="ingredient">160g rolled oats</li>
+<li class="ingredient">480ml low-sodium chicken broth</li>
+<li class="ingredient">227g (8 oz) lean ground turkey</li>
+<li class="ingredient">200g fresh spinach</li>
+<li class="ingredient">2 large eggs</li>
+<li class="ingredient">2g garlic powder</li>
+<li class="ingredient">Salt and pepper</li>
+<li class="ingredient">Hot sauce (optional)</li>
+<li class="ingredient">Green onions for garnish</li></ul>
+                </div>
+                <div class="instructions-section">
+                    <h3>INSTRUCTIONS</h3>
+                    <div class="instructions-list"><div class="step"><span class="step-num">1</span><div><strong>Cook Oats</strong><br>Bring chicken broth to a boil. Add oats, reduce heat, and simmer 5-7 minutes until creamy. Season with salt, pepper, and garlic powder.</div></div>
+<div class="step"><span class="step-num">2</span><div><strong>Cook Turkey</strong><br>Meanwhile, brown ground turkey in a skillet, breaking into crumbles. Season with salt and pepper.</div></div>
+<div class="step"><span class="step-num">3</span><div><strong>Wilt Spinach</strong><br>Add spinach to the turkey and cook until just wilted.</div></div>
+<div class="step"><span class="step-num">4</span><div><strong>Fry Eggs</strong><br>In a separate pan, fry eggs sunny-side up or to your preference.</div></div>
+<div class="step"><span class="step-num">5</span><div><strong>Assemble</strong><br>Divide savory oats between two bowls. Top with turkey-spinach mixture and a fried egg. Garnish with green onions and hot sauce.</div></div></div>
+                </div>
+            </div>
+        </div>
+        
+
+    <!-- Shopping List -->
+    <div class="page shopping-page">
+        <h2>COMBINED SHOPPING LIST</h2>
+        <div class="shop-grid">
+            
+            <div class="shop-category">
+                <h4>Proteins & Meats</h4>
+                <ul><li class="shop-item"><span class="checkbox"></span>680g (1.5 lbs) lean turkey sausage</li>
+<li class="shop-item"><span class="checkbox"></span>720ml (24 oz) liquid egg whites</li>
+<li class="shop-item"><span class="checkbox"></span>2 large eggs</li>
+<li class="shop-item"><span class="checkbox"></span>60g (2 scoops) vanilla whey protein powder</li>
+<li class="shop-item"><span class="checkbox"></span>454g (1 lb) turkey breakfast sausage</li>
+<li class="shop-item"><span class="checkbox"></span>12 large eggs</li>
+<li class="shop-item"><span class="checkbox"></span>30g (1 scoop) vanilla plant protein powder</li>
+<li class="shop-item"><span class="checkbox"></span>150g (5 scoops) vanilla whey protein powder</li>
+<li class="shop-item"><span class="checkbox"></span>3 large eggs</li>
+<li class="shop-item"><span class="checkbox"></span>120ml (1/2 cup) liquid egg whites</li>
+<li class="shop-item"><span class="checkbox"></span>480ml low-sodium chicken broth</li>
+<li class="shop-item"><span class="checkbox"></span>227g (8 oz) lean ground turkey</li></ul>
+            </div>
+            
+            <div class="shop-category">
+                <h4>Dairy & Eggs</h4>
+                <ul><li class="shop-item"><span class="checkbox"></span>170g (6 oz) reduced-fat Mexican cheese blend</li>
+<li class="shop-item"><span class="checkbox"></span>115g (1/2 cup) low-fat cottage cheese</li>
+<li class="shop-item"><span class="checkbox"></span>60ml milk</li>
+<li class="shop-item"><span class="checkbox"></span>240ml (1 cup) unsweetened almond milk</li>
+<li class="shop-item"><span class="checkbox"></span>115g (1 cup) shredded cheddar cheese</li>
+<li class="shop-item"><span class="checkbox"></span>250g coconut or soy yogurt (high-protein variety)</li>
+<li class="shop-item"><span class="checkbox"></span>1L unsweetened almond milk</li></ul>
+            </div>
+            
+            <div class="shop-category">
+                <h4>Grains & Flours</h4>
+                <ul><li class="shop-item"><span class="checkbox"></span>12 large flour tortillas (10-inch)</li>
+<li class="shop-item"><span class="checkbox"></span>60g oat flour</li>
+<li class="shop-item"><span class="checkbox"></span>160g rolled oats</li></ul>
+            </div>
+            
+            <div class="shop-category">
+                <h4>Produce</h4>
+                <ul><li class="shop-item"><span class="checkbox"></span>1 red bell pepper, diced</li>
+<li class="shop-item"><span class="checkbox"></span>1 green bell pepper, diced</li>
+<li class="shop-item"><span class="checkbox"></span>1 medium onion, diced</li>
+<li class="shop-item"><span class="checkbox"></span>Salt and pepper to taste</li>
+<li class="shop-item"><span class="checkbox"></span>200g baby spinach</li>
+<li class="shop-item"><span class="checkbox"></span>200g fresh spinach</li>
+<li class="shop-item"><span class="checkbox"></span>Salt and pepper</li>
+<li class="shop-item"><span class="checkbox"></span>Green onions for garnish</li></ul>
+            </div>
+            
+            <div class="shop-category">
+                <h4>Pantry Staples</h4>
+                <ul><li class="shop-item"><span class="checkbox"></span>5g baking powder</li>
+<li class="shop-item"><span class="checkbox"></span>5g vanilla extract</li>
+<li class="shop-item"><span class="checkbox"></span>Sugar-free maple syrup for serving</li>
+<li class="shop-item"><span class="checkbox"></span>Drizzle of honey or maple syrup (optional)</li>
+<li class="shop-item"><span class="checkbox"></span>60ml maple syrup or honey</li>
+<li class="shop-item"><span class="checkbox"></span>Pinch of salt</li></ul>
+            </div>
+            
+            <div class="shop-category">
+                <h4>Other</h4>
+                <ul><li class="shop-item"><span class="checkbox"></span>5g cumin</li>
+<li class="shop-item"><span class="checkbox"></span>5g chili powder</li>
+<li class="shop-item"><span class="checkbox"></span>3g garlic powder</li>
+<li class="shop-item"><span class="checkbox"></span>Fresh berries for topping</li>
+<li class="shop-item"><span class="checkbox"></span>150g mushrooms, sliced</li>
+<li class="shop-item"><span class="checkbox"></span>150g fresh strawberries, sliced</li>
+<li class="shop-item"><span class="checkbox"></span>100g fresh blueberries</li>
+<li class="shop-item"><span class="checkbox"></span>50g cucumber, diced</li>
+<li class="shop-item"><span class="checkbox"></span>30g pumpkin seeds</li>
+<li class="shop-item"><span class="checkbox"></span>15g chia seeds</li>
+<li class="shop-item"><span class="checkbox"></span>Mint leaves for garnish</li>
+<li class="shop-item"><span class="checkbox"></span>150g chia seeds</li>
+<li class="shop-item"><span class="checkbox"></span>Toppings: berries, sliced almonds, coconut flakes</li>
+<li class="shop-item"><span class="checkbox"></span>15g butter</li>
+<li class="shop-item"><span class="checkbox"></span>Fresh chives, chopped</li>
+<li class="shop-item"><span class="checkbox"></span>2g garlic powder</li>
+<li class="shop-item"><span class="checkbox"></span>Hot sauce (optional)</li></ul>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Pro Tips -->
+    <div class="page tips-page">
+        <h2>PRO TIPS</h2>
+
+        <div class="tip-card">
+            <h4>Meal Prep Sunday</h4>
+            <p>Make the Freezer Breakfast Burritos and Sheet Pan Breakfast Bake on Sunday. They'll last all week in the fridge or up to 3 months in the freezer. Reheat in 2-3 minutes for instant high-protein breakfasts.</p>
+        </div>
+
+        <div class="tip-card">
+            <h4>Overnight Prep</h4>
+            <p>Prepare the Chia Protein Pudding the night before. It takes just 5 minutes and will be perfectly set by morning. Make multiple jars to grab-and-go throughout the week.</p>
+        </div>
+
+        <div class="tip-card">
+            <h4>Protein Powder Tips</h4>
+            <p>Different protein powders absorb liquid differently. If your batter is too thick, add liquid 1 tablespoon at a time. Whey blends best in hot recipes, while plant proteins work great in no-cook recipes.</p>
+        </div>
+
+        <div class="tip-card">
+            <h4>Storage Guidelines</h4>
+            <p>Refrigerator: Most cooked recipes last 4-5 days. Store in airtight containers.<br>
+            Freezer: Burritos and egg bites freeze well for up to 3 months. Wrap individually for easy portions.</p>
+        </div>
+
+        <div class="tip-card">
+            <h4>Ingredient Substitutions</h4>
+            <p>Visit highprotein.recipes for our interactive ingredient substitution tool that automatically recalculates macros when you swap ingredients. Perfect for dietary restrictions or using what you have on hand.</p>
+        </div>
+    </div>
+
+    <!-- Back Page -->
+    <div class="page back-page">
+        <h2>Want More Recipes?</h2>
+        <p>Visit us for 300+ macro-verified high-protein recipes,<br>interactive ingredient swaps, and more free meal plans.</p>
+        <div class="url">highprotein.recipes</div>
+    </div>
+</body>
+</html>

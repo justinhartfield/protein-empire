@@ -1,50 +1,38 @@
 /**
  * Netlify Serverless Function: Subscribe
- * 
- * Handles email subscription requests from the frontend.
- * Adds contacts to SendGrid and optionally sends a PDF delivery email.
- * 
+ *
+ * Handles email subscription requests with DOUBLE OPT-IN.
+ * Instead of directly adding to SendGrid, stores a pending subscription
+ * and sends a confirmation email.
+ *
  * Environment Variables Required:
  * - SENDGRID_API_KEY: Your SendGrid API key
- * - SENDGRID_LIST_ID: The list ID for this specific site
- * - SENDGRID_FROM_EMAIL: Verified sender email (e.g., hello@proteincookies.co)
- * - SITE_NAME: Display name (e.g., "ProteinCookies")
+ * - SENDGRID_FROM_EMAIL: Verified sender email
+ * - PROTEIN_SITE_NAME: Display name (e.g., "High Protein Recipes")
  */
 
-// Import SendGrid client directly (Netlify bundles dependencies)
-import sgClient from '@sendgrid/client';
+import { getStore } from '@netlify/blobs';
 import sgMail from '@sendgrid/mail';
 
 // Initialize SendGrid
 const apiKey = process.env.SENDGRID_API_KEY || '';
-sgClient.setApiKey(apiKey);
 sgMail.setApiKey(apiKey);
 
 /**
- * Add contact to SendGrid list
+ * Generate a secure random token
  */
-async function subscribeContact(email, listId) {
-  const requestData = {
-    list_ids: [listId],
-    contacts: [{ email: email.toLowerCase().trim() }]
-  };
-
-  const request = {
-    url: '/v3/marketing/contacts',
-    method: 'PUT',
-    body: requestData
-  };
-
-  const [response] = await sgClient.request(request);
-  return response;
+function generateToken() {
+  const bytes = new Uint8Array(32);
+  crypto.getRandomValues(bytes);
+  return Array.from(bytes).map(b => b.toString(16).padStart(2, '0')).join('');
 }
 
 /**
- * Send PDF delivery email
+ * Send confirmation email
  */
-async function sendPdfEmail(to, from, packName, downloadUrl, siteName) {
-  const subject = `Your ${packName} is ready! 🎉`;
-  
+async function sendConfirmationEmail(to, from, confirmUrl, packName, siteName) {
+  const subject = `Confirm your subscription to ${siteName}`;
+
   const html = `
     <!DOCTYPE html>
     <html>
@@ -54,36 +42,52 @@ async function sendPdfEmail(to, from, packName, downloadUrl, siteName) {
     </head>
     <body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #1e293b; max-width: 600px; margin: 0 auto; padding: 20px;">
       <div style="text-align: center; margin-bottom: 30px;">
-        <h1 style="color: #f59e0b; margin: 0;">🍪 ${siteName}</h1>
+        <h1 style="color: #f59e0b; margin: 0; font-size: 28px;">High Protein Recipes</h1>
       </div>
-      
-      <h2 style="color: #1e293b;">Your ${packName} is ready!</h2>
-      
-      <p>Thanks for downloading! Click the button below to get your free recipe pack:</p>
-      
+
+      <h2 style="color: #1e293b;">One more step!</h2>
+
+      <p>Thanks for requesting the <strong>${packName}</strong>!</p>
+
+      <p>Please confirm your email address to complete your subscription and access your free download:</p>
+
       <div style="text-align: center; margin: 30px 0;">
-        <a href="${downloadUrl}" 
+        <a href="${confirmUrl}"
            style="display: inline-block; background-color: #f59e0b; color: white; text-decoration: none; padding: 16px 32px; border-radius: 8px; font-weight: bold; font-size: 16px;">
-          Download Your PDF
+          Confirm & Get Your Free PDF
         </a>
       </div>
-      
+
       <p style="color: #64748b; font-size: 14px;">
         If the button doesn't work, copy and paste this link into your browser:<br>
-        <a href="${downloadUrl}" style="color: #f59e0b;">${downloadUrl}</a>
+        <a href="${confirmUrl}" style="color: #f59e0b; word-break: break-all;">${confirmUrl}</a>
       </p>
-      
+
+      <p style="color: #64748b; font-size: 14px;">
+        This link will expire in 15 days. If you didn't request this, you can safely ignore this email.
+      </p>
+
       <hr style="border: none; border-top: 1px solid #e2e8f0; margin: 30px 0;">
-      
-      <p style="color: #64748b; font-size: 12px; text-align: center;">
-        You're receiving this because you requested the ${packName} from ${siteName}.<br>
-        Questions? Just reply to this email.
+
+      <p style="color: #94a3b8; font-size: 12px; text-align: center;">
+        ${siteName} | highprotein.recipes
       </p>
     </body>
     </html>
   `;
 
-  const text = `Your ${packName} is ready!\n\nDownload here: ${downloadUrl}`;
+  const text = `One more step!
+
+Thanks for requesting the ${packName}!
+
+Please confirm your email by visiting this link:
+${confirmUrl}
+
+This link will expire in 15 days.
+
+If you didn't request this, you can safely ignore this email.
+
+${siteName} | highprotein.recipes`;
 
   await sgMail.send({
     to,
@@ -92,6 +96,25 @@ async function sendPdfEmail(to, from, packName, downloadUrl, siteName) {
     html,
     text
   });
+}
+
+/**
+ * Format pack slug to display name
+ */
+function formatPackName(slug) {
+  if (!slug) return 'Recipe Pack';
+
+  const packNames = {
+    'starter': 'Starter Pack',
+    'breakfast-meal-plan': '7-Day Breakfast Meal Plan',
+    'high-protein': 'High Protein Pack',
+    'holiday': 'Holiday Pack',
+    'kids': 'Kids Pack',
+    'no-bake': 'No-Bake Pack',
+    'peanut-butter': 'Peanut Butter Pack'
+  };
+
+  return packNames[slug] || slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
 }
 
 /**
@@ -113,10 +136,15 @@ export async function handler(event, context) {
     'Content-Type': 'application/json'
   };
 
+  // Handle preflight
+  if (event.httpMethod === 'OPTIONS') {
+    return { statusCode: 204, headers };
+  }
+
   try {
     // Parse request body
     const body = JSON.parse(event.body || '{}');
-    const { email, packSlug, pdfUrl } = body;
+    const { email, packSlug } = body;
 
     // Validate email
     if (!email || !email.includes('@')) {
@@ -128,9 +156,8 @@ export async function handler(event, context) {
     }
 
     // Get environment variables
-    const listId = process.env.SENDGRID_LIST_ID;
     const fromEmail = process.env.SENDGRID_FROM_EMAIL;
-    const siteName = process.env.PROTEIN_SITE_NAME || process.env.SITE_NAME || 'Protein Empire';
+    const siteName = process.env.PROTEIN_SITE_NAME || 'High Protein Recipes';
 
     // Check configuration
     if (!apiKey) {
@@ -142,42 +169,48 @@ export async function handler(event, context) {
       };
     }
 
-    if (!listId) {
-      console.error('[subscribe] SENDGRID_LIST_ID not configured');
+    if (!fromEmail) {
+      console.error('[subscribe] SENDGRID_FROM_EMAIL not configured');
       return {
         statusCode: 500,
         headers,
-        body: JSON.stringify({ success: false, message: 'Email list not configured' })
+        body: JSON.stringify({ success: false, message: 'Email sender not configured' })
       };
     }
 
-    // Subscribe contact to list (triggers welcome automation)
-    try {
-      await subscribeContact(email, listId);
-      console.log(`[subscribe] Contact ${email} added to list ${listId}`);
-    } catch (error) {
-      console.error('[subscribe] Error adding contact:', error?.response?.body || error.message);
-      // Continue anyway - we still want to send the PDF
-    }
+    // Generate confirmation token
+    const confirmToken = generateToken();
 
-    // Send PDF delivery email if URL provided
-    if (pdfUrl && fromEmail) {
-      try {
-        const packName = formatPackName(packSlug);
-        await sendPdfEmail(email, fromEmail, packName, pdfUrl, siteName);
-        console.log(`[subscribe] PDF email sent to ${email}`);
-      } catch (error) {
-        console.error('[subscribe] Error sending PDF email:', error?.response?.body || error.message);
-        // Don't fail the request - the subscription succeeded
-      }
-    }
+    // Store pending subscription in Netlify Blobs
+    const pendingStore = getStore({
+      name: 'pending-subscriptions',
+      siteID: context.site?.id || process.env.SITE_ID,
+      token: process.env.NETLIFY_BLOBS_TOKEN || context.clientContext?.custom?.netlify
+    });
+
+    await pendingStore.setJSON(confirmToken, {
+      email: email.toLowerCase().trim(),
+      packSlug: packSlug || 'breakfast-meal-plan',
+      createdAt: new Date().toISOString()
+    });
+
+    console.log(`[subscribe] Stored pending subscription for ${email}`);
+
+    // Build confirmation URL
+    const siteUrl = process.env.URL || 'https://highprotein.recipes';
+    const confirmUrl = `${siteUrl}/api/confirm?token=${confirmToken}`;
+
+    // Send confirmation email
+    const packName = formatPackName(packSlug || 'breakfast-meal-plan');
+    await sendConfirmationEmail(email, fromEmail, confirmUrl, packName, siteName);
+    console.log(`[subscribe] Confirmation email sent to ${email}`);
 
     return {
       statusCode: 200,
       headers,
-      body: JSON.stringify({ 
-        success: true, 
-        message: 'Successfully subscribed!' 
+      body: JSON.stringify({
+        success: true,
+        message: 'Check your email to confirm your subscription!'
       })
     };
 
@@ -189,22 +222,4 @@ export async function handler(event, context) {
       body: JSON.stringify({ success: false, message: 'An unexpected error occurred' })
     };
   }
-}
-
-/**
- * Format pack slug to display name
- */
-function formatPackName(slug) {
-  if (!slug) return 'Recipe Pack';
-  
-  const packNames = {
-    'starter': 'Starter Pack',
-    'high-protein': 'High Protein Pack',
-    'holiday': 'Holiday Pack',
-    'kids': 'Kids Pack',
-    'no-bake': 'No-Bake Pack',
-    'peanut-butter': 'Peanut Butter Pack'
-  };
-  
-  return packNames[slug] || slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ') + ' Pack';
 }
