@@ -590,6 +590,267 @@ export const INGREDIENTS = {
     substitutes: ['honey', 'maple-syrup'],
     notes: 'Very sweet. Use less than honey/maple.',
     swapNote: '-10% liquid · Vegan'
+  },
+
+  // ============================================
+  // BREAKFAST PROTEINS & MEATS
+  // ============================================
+  'turkey-sausage': {
+    name: 'Lean Turkey Sausage',
+    category: 'wet',
+    role: 'protein',
+    macrosPer100g: { calories: 170, protein: 19, carbs: 1, fat: 10, fiber: 0 },
+    hydrationFactor: 1,
+    substitutes: ['chicken-sausage', 'tempeh-crumbles', 'tofu-firm'],
+    notes: 'Lean breakfast protein. Lower fat than pork sausage.'
+  },
+  'chicken-sausage': {
+    name: 'Chicken Breakfast Sausage',
+    category: 'wet',
+    role: 'protein',
+    macrosPer100g: { calories: 140, protein: 18, carbs: 2, fat: 7, fiber: 0 },
+    hydrationFactor: 1,
+    substitutes: ['turkey-sausage', 'tempeh-crumbles'],
+    notes: 'Lower fat option. Apple chicken sausage works great.',
+    swapNote: '-30 cal · Lower fat'
+  },
+  'tempeh-crumbles': {
+    name: 'Tempeh (Crumbled)',
+    category: 'wet',
+    role: 'protein',
+    macrosPer100g: { calories: 193, protein: 19, carbs: 9, fat: 11, fiber: 0 },
+    hydrationFactor: 1,
+    substitutes: ['turkey-sausage', 'tofu-firm'],
+    notes: 'Vegan protein. Season well with breakfast spices.',
+    swapNote: 'Vegan · +fiber'
+  },
+  'tofu-firm': {
+    name: 'Firm Tofu (Pressed)',
+    category: 'wet',
+    role: 'protein',
+    macrosPer100g: { calories: 144, protein: 17, carbs: 3, fat: 8, fiber: 2 },
+    hydrationFactor: 1,
+    substitutes: ['tempeh-crumbles', 'egg-whites-liquid'],
+    notes: 'Vegan. Press well and crumble for scrambles.',
+    swapNote: 'Vegan · Low cal'
+  },
+
+  // ============================================
+  // TORTILLAS & WRAPS
+  // ============================================
+  'flour-tortilla': {
+    name: 'Large Flour Tortilla (10")',
+    category: 'dry',
+    role: 'structure',
+    macrosPer100g: { calories: 312, protein: 8, carbs: 52, fat: 8, fiber: 2 },
+    hydrationFactor: 1,
+    substitutes: ['whole-wheat-tortilla', 'low-carb-tortilla', 'corn-tortilla'],
+    notes: 'Standard burrito wrap. ~60g per tortilla.'
+  },
+  'whole-wheat-tortilla': {
+    name: 'Whole Wheat Tortilla (10")',
+    category: 'dry',
+    role: 'structure',
+    macrosPer100g: { calories: 295, protein: 9, carbs: 48, fat: 7, fiber: 5 },
+    hydrationFactor: 1,
+    substitutes: ['flour-tortilla', 'low-carb-tortilla'],
+    notes: 'Higher fiber option.',
+    swapNote: '+fiber · Whole grain'
+  },
+  'low-carb-tortilla': {
+    name: 'Low-Carb Tortilla (Mission Carb Balance)',
+    category: 'dry',
+    role: 'structure',
+    macrosPer100g: { calories: 180, protein: 12, carbs: 26, fat: 6, fiber: 18 },
+    hydrationFactor: 1,
+    substitutes: ['flour-tortilla', 'whole-wheat-tortilla'],
+    notes: 'High fiber, lower net carbs. Great for keto.',
+    swapNote: '-40% cal · +protein · Keto'
+  },
+  'corn-tortilla': {
+    name: 'Corn Tortilla (6")',
+    category: 'dry',
+    role: 'structure',
+    macrosPer100g: { calories: 218, protein: 6, carbs: 45, fat: 3, fiber: 5 },
+    hydrationFactor: 1,
+    substitutes: ['flour-tortilla'],
+    notes: 'Gluten-free. Smaller size, use 2 per serving.',
+    swapNote: 'GF · Smaller'
+  },
+
+  // ============================================
+  // CHEESE
+  // ============================================
+  'cheddar-cheese': {
+    name: 'Cheddar Cheese (Shredded)',
+    category: 'dry',
+    role: 'protein',
+    macrosPer100g: { calories: 403, protein: 25, carbs: 1, fat: 33, fiber: 0 },
+    hydrationFactor: 1,
+    substitutes: ['reduced-fat-cheddar', 'mozzarella', 'dairy-free-cheese'],
+    notes: 'Sharp or mild. High protein but also high fat.'
+  },
+  'reduced-fat-cheddar': {
+    name: 'Reduced-Fat Cheddar',
+    category: 'dry',
+    role: 'protein',
+    macrosPer100g: { calories: 282, protein: 27, carbs: 2, fat: 18, fiber: 0 },
+    hydrationFactor: 1,
+    substitutes: ['cheddar-cheese', 'mozzarella'],
+    notes: '30% less fat than regular cheddar.',
+    swapNote: '-30% fat'
+  },
+  'mozzarella': {
+    name: 'Part-Skim Mozzarella',
+    category: 'dry',
+    role: 'protein',
+    macrosPer100g: { calories: 280, protein: 22, carbs: 3, fat: 20, fiber: 0 },
+    hydrationFactor: 1,
+    substitutes: ['cheddar-cheese', 'dairy-free-cheese'],
+    notes: 'Milder flavor, great melting cheese.'
+  },
+  'dairy-free-cheese': {
+    name: 'Dairy-Free Cheese (Violife/Daiya)',
+    category: 'dry',
+    role: 'add-in',
+    macrosPer100g: { calories: 310, protein: 1, carbs: 7, fat: 30, fiber: 0 },
+    hydrationFactor: 1,
+    substitutes: ['cheddar-cheese', 'cheese-none'],
+    notes: 'Vegan. Lower protein than dairy cheese.',
+    swapNote: 'Vegan · -24g protein'
+  },
+  'cheese-none': {
+    name: 'No Cheese',
+    category: 'dry',
+    role: 'add-in',
+    macrosPer100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+    amountRatio: 0,
+    hydrationFactor: 1,
+    substitutes: ['cheddar-cheese', 'dairy-free-cheese'],
+    notes: 'Omit cheese entirely. Dairy-free option.',
+    swapNote: 'DF · -protein · -fat',
+    isSpecialSwap: true
+  },
+
+  // ============================================
+  // SEEDS & SUPERFOODS
+  // ============================================
+  'chia-seeds': {
+    name: 'Chia Seeds',
+    category: 'dry',
+    role: 'add-in',
+    macrosPer100g: { calories: 486, protein: 17, carbs: 42, fat: 31, fiber: 34 },
+    hydrationFactor: 1.3,
+    substitutes: ['flax-seeds', 'hemp-hearts'],
+    notes: 'High fiber superfood. Absorbs liquid, great for puddings.',
+    swapNote: '+30% liquid · High fiber'
+  },
+  'flax-seeds': {
+    name: 'Ground Flaxseed',
+    category: 'dry',
+    role: 'add-in',
+    macrosPer100g: { calories: 534, protein: 18, carbs: 29, fat: 42, fiber: 27 },
+    hydrationFactor: 1.2,
+    substitutes: ['chia-seeds', 'hemp-hearts'],
+    notes: 'Omega-3 rich. Use ground for absorption.',
+    swapNote: '+20% liquid · Omega-3'
+  },
+  'hemp-hearts': {
+    name: 'Hemp Hearts (Hulled)',
+    category: 'dry',
+    role: 'add-in',
+    macrosPer100g: { calories: 553, protein: 31, carbs: 9, fat: 49, fiber: 4 },
+    hydrationFactor: 1,
+    substitutes: ['chia-seeds', 'flax-seeds'],
+    notes: 'Complete protein. Nutty flavor.',
+    swapNote: '+protein · Complete amino'
+  },
+
+  // ============================================
+  // LEGUME FLOURS & ALTERNATIVES
+  // ============================================
+  'chickpea-flour': {
+    name: 'Chickpea Flour (Besan)',
+    category: 'dry',
+    role: 'structure',
+    macrosPer100g: { calories: 387, protein: 22, carbs: 58, fat: 7, fiber: 10 },
+    hydrationFactor: 1.1,
+    substitutes: ['oat-flour', 'almond-flour'],
+    notes: 'High protein flour. Great for savory dishes.',
+    swapNote: '+protein · GF · Savory'
+  },
+  'mung-beans': {
+    name: 'Mung Beans (Cooked)',
+    category: 'wet',
+    role: 'protein',
+    macrosPer100g: { calories: 105, protein: 7, carbs: 19, fat: 0.4, fiber: 8 },
+    hydrationFactor: 1,
+    substitutes: ['lentils-cooked', 'black-beans'],
+    notes: 'High protein legume. Use for egg-free scrambles.',
+    swapNote: 'Vegan · High fiber'
+  },
+  'lentils-cooked': {
+    name: 'Lentils (Cooked)',
+    category: 'wet',
+    role: 'protein',
+    macrosPer100g: { calories: 116, protein: 9, carbs: 20, fat: 0.4, fiber: 8 },
+    hydrationFactor: 1,
+    substitutes: ['mung-beans', 'black-beans'],
+    notes: 'Versatile legume. Red lentils cook fastest.',
+    swapNote: 'Vegan · +protein'
+  },
+  'black-beans': {
+    name: 'Black Beans (Cooked)',
+    category: 'wet',
+    role: 'protein',
+    macrosPer100g: { calories: 132, protein: 9, carbs: 24, fat: 0.5, fiber: 8 },
+    hydrationFactor: 1,
+    substitutes: ['mung-beans', 'lentils-cooked'],
+    notes: 'Great for breakfast burritos and bowls.',
+    swapNote: 'Vegan · +fiber'
+  },
+
+  // ============================================
+  // MILK ALTERNATIVES
+  // ============================================
+  'almond-milk-unsweetened': {
+    name: 'Unsweetened Almond Milk',
+    category: 'wet',
+    role: 'moisture',
+    macrosPer100g: { calories: 15, protein: 0.5, carbs: 0.3, fat: 1.2, fiber: 0 },
+    hydrationFactor: 1,
+    substitutes: ['oat-milk', 'dairy-milk', 'soy-milk'],
+    notes: 'Low calorie milk alternative. Vegan.',
+    swapNote: 'Vegan · Low cal'
+  },
+  'oat-milk': {
+    name: 'Oat Milk',
+    category: 'wet',
+    role: 'moisture',
+    macrosPer100g: { calories: 43, protein: 1, carbs: 7, fat: 1.5, fiber: 0.8 },
+    hydrationFactor: 1,
+    substitutes: ['almond-milk-unsweetened', 'dairy-milk'],
+    notes: 'Creamy texture. Good for frothing.',
+    swapNote: 'Vegan · Creamy'
+  },
+  'dairy-milk': {
+    name: 'Skim Milk',
+    category: 'wet',
+    role: 'moisture',
+    macrosPer100g: { calories: 34, protein: 3.4, carbs: 5, fat: 0.1, fiber: 0 },
+    hydrationFactor: 1,
+    substitutes: ['almond-milk-unsweetened', 'oat-milk', 'soy-milk'],
+    notes: 'Traditional option. Higher protein.'
+  },
+  'soy-milk': {
+    name: 'Soy Milk (Unsweetened)',
+    category: 'wet',
+    role: 'moisture',
+    macrosPer100g: { calories: 33, protein: 3.3, carbs: 1.2, fat: 1.8, fiber: 0.4 },
+    hydrationFactor: 1,
+    substitutes: ['almond-milk-unsweetened', 'dairy-milk'],
+    notes: 'Highest protein non-dairy milk.',
+    swapNote: 'Vegan · High protein'
   }
 };
 
@@ -597,14 +858,21 @@ export const INGREDIENTS = {
  * Substitution groups for easy lookup
  */
 export const SUBSTITUTION_GROUPS = {
-  flour: ['oat-flour', 'king-arthur-gf-mix', 'bobs-gf-1to1', 'almond-flour', 'coconut-flour', 'whole-wheat-flour'],
+  flour: ['oat-flour', 'king-arthur-gf-mix', 'bobs-gf-1to1', 'almond-flour', 'coconut-flour', 'whole-wheat-flour', 'chickpea-flour'],
   protein: ['whey-vanilla', 'whey-chocolate', 'casein-vanilla', 'pea-protein', 'hemp-protein', 'egg-white-powder'],
   dairy: ['greek-yogurt-nonfat', 'greek-yogurt-2pct', 'cottage-cheese-blended', 'ricotta-part-skim', 'skyr', 'sour-cream-light', 'coconut-almond-yogurt', 'yogurt-none'],
   eggs: ['egg-whites-liquid', 'whole-eggs', 'flax-egg', 'chia-egg', 'aquafaba'],
   fruit: ['banana-mashed', 'pumpkin-puree', 'applesauce-unsweetened', 'sweet-potato-mashed', 'butternut-squash-mashed'],
   vegetables: ['zucchini-grated', 'carrot-grated'],
   nutButters: ['peanut-butter', 'almond-butter', 'sunflower-seed-butter', 'cashew-butter'],
-  sweeteners: ['honey', 'maple-syrup', 'agave-nectar', 'medjool-dates']
+  sweeteners: ['honey', 'maple-syrup', 'agave-nectar', 'medjool-dates'],
+  // Breakfast-specific groups
+  breakfastMeats: ['turkey-sausage', 'chicken-sausage', 'tempeh-crumbles', 'tofu-firm'],
+  tortillas: ['flour-tortilla', 'whole-wheat-tortilla', 'low-carb-tortilla', 'corn-tortilla'],
+  cheese: ['cheddar-cheese', 'reduced-fat-cheddar', 'mozzarella', 'dairy-free-cheese', 'cheese-none'],
+  seeds: ['chia-seeds', 'flax-seeds', 'hemp-hearts'],
+  legumes: ['mung-beans', 'lentils-cooked', 'black-beans'],
+  milk: ['almond-milk-unsweetened', 'oat-milk', 'dairy-milk', 'soy-milk']
 };
 
 export default { INGREDIENTS, SUBSTITUTION_GROUPS };

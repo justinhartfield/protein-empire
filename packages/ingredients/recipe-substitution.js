@@ -249,6 +249,25 @@ export function createRecipeSubstitution(config) {
       return Math.round((this.currentNutrition.protein / 50) * 100);
     },
 
+    // P:E Ratio calculations
+    getPERatio() {
+      const protein = this.currentNutrition.protein;
+      const calories = this.currentNutrition.calories;
+      // P:E = protein / (non-protein calories / 100)
+      // Non-protein calories = total calories - (protein * 4)
+      const nonProteinCals = calories - (protein * 4);
+      if (nonProteinCals <= 0) return 99; // Very high protein
+      return protein / (nonProteinCals / 100);
+    },
+
+    getPERating() {
+      const pe = this.getPERatio();
+      if (pe >= 15) return 'ELITE';
+      if (pe >= 10) return 'EXCELLENT';
+      if (pe >= 5) return 'GOOD';
+      return 'MODERATE';
+    },
+
     calculateHydration() {
       this.hydrationAdjustments = [];
 

@@ -5,7 +5,14 @@
   "lastUpdated": "2026-01-24",
   "metadata": {
     "totalRecipes": 25,
-    "categories": ["Meal Prep", "Vegan", "Low-Calorie", "Fast-Food Clone", "High-Fiber", "Grab-and-Go"],
+    "categories": [
+      "Meal Prep",
+      "Vegan",
+      "Low-Calorie",
+      "Fast-Food Clone",
+      "High-Fiber",
+      "Grab-and-Go"
+    ],
     "avgProtein": 32,
     "avgPeRatio": 10.5
   },
@@ -33,9 +40,22 @@
       "category": "Meal Prep",
       "subcategory": "Burritos & Wraps",
       "breakfastType": "hot",
-      "tags": ["Meal Prep", "Freezer-Friendly", "40g+", "Grab-and-Go", "Savory"],
-      "methods": ["eggWhite", "noPowder"],
-      "cookingMethod": ["stovetop", "microwave", "airFryer"],
+      "tags": [
+        "Meal Prep",
+        "Freezer-Friendly",
+        "40g+",
+        "Grab-and-Go",
+        "Savory"
+      ],
+      "methods": [
+        "eggWhite",
+        "noPowder"
+      ],
+      "cookingMethod": [
+        "stovetop",
+        "microwave",
+        "airFryer"
+      ],
       "dietary": {
         "glutenFree": false,
         "dairyFree": false,
@@ -55,12 +75,25 @@
         "batchSize": 12,
         "freezerFriendly": true,
         "storage": {
-          "refrigerator": { "duration": "5 days" },
-          "freezer": { "duration": "3 months" }
+          "refrigerator": {
+            "duration": "5 days"
+          },
+          "freezer": {
+            "duration": "3 months"
+          }
         },
         "reheat": [
-          { "method": "microwave", "duration": "2-3 min from fridge, 4-5 min from frozen", "instructions": "Remove foil. Wrap in damp paper towel. Microwave on 50% power." },
-          { "method": "airFryer", "duration": "8-10 min from frozen", "temperature": "350F", "instructions": "Remove foil. Place seam-side down." }
+          {
+            "method": "microwave",
+            "duration": "2-3 min from fridge, 4-5 min from frozen",
+            "instructions": "Remove foil. Wrap in damp paper towel. Microwave on 50% power."
+          },
+          {
+            "method": "airFryer",
+            "duration": "8-10 min from frozen",
+            "temperature": "350F",
+            "instructions": "Remove foil. Place seam-side down."
+          }
         ]
       },
       "image": "freezer-breakfast-burritos.png",
@@ -78,12 +111,109 @@
         "Salt and pepper to taste"
       ],
       "instructions": [
-        { "step": "Cook the Sausage", "text": "In a large skillet over medium-high heat, cook turkey sausage until browned and crumbled, about 8-10 minutes. Season with cumin, chili powder, and garlic powder. Transfer to a large bowl." },
-        { "step": "Sauté Vegetables", "text": "In the same skillet, add peppers and onion. Sauté until softened, about 5 minutes. Add to the bowl with sausage." },
-        { "step": "Scramble Egg Whites", "text": "Wipe skillet clean, spray with cooking spray. Add egg whites and scramble over medium heat until just set. Season with salt and pepper. Add to bowl." },
-        { "step": "Combine Filling", "text": "Add shredded cheese to the bowl. Toss everything together until well combined. Let cool for 10 minutes." },
-        { "step": "Assemble Burritos", "text": "Place about 3/4 cup filling in center of each tortilla. Fold in sides, then roll tightly from bottom to top. Place seam-side down." },
-        { "step": "Wrap and Store", "text": "Let cool completely. Wrap each burrito tightly in foil. For freezing, place wrapped burritos in freezer bags and label with date." }
+        {
+          "step": "Cook the Sausage",
+          "text": "In a large skillet over medium-high heat, cook turkey sausage until browned and crumbled, about 8-10 minutes. Season with cumin, chili powder, and garlic powder. Transfer to a large bowl."
+        },
+        {
+          "step": "Saut\u00e9 Vegetables",
+          "text": "In the same skillet, add peppers and onion. Saut\u00e9 until softened, about 5 minutes. Add to the bowl with sausage."
+        },
+        {
+          "step": "Scramble Egg Whites",
+          "text": "Wipe skillet clean, spray with cooking spray. Add egg whites and scramble over medium heat until just set. Season with salt and pepper. Add to bowl."
+        },
+        {
+          "step": "Combine Filling",
+          "text": "Add shredded cheese to the bowl. Toss everything together until well combined. Let cool for 10 minutes."
+        },
+        {
+          "step": "Assemble Burritos",
+          "text": "Place about 3/4 cup filling in center of each tortilla. Fold in sides, then roll tightly from bottom to top. Place seam-side down."
+        },
+        {
+          "step": "Wrap and Store",
+          "text": "Let cool completely. Wrap each burrito tightly in foil. For freezing, place wrapped burritos in freezer bags and label with date."
+        }
+      ],
+      "ingredientsStructured": [
+        {
+          "id": "flour-tortilla",
+          "name": "12 large flour tortillas (10-inch)",
+          "amount": 12.0,
+          "unit": "unit",
+          "displayAmount": "12 large flour tortillas (10-inch)"
+        },
+        {
+          "id": "turkey-sausage",
+          "name": "680g (1.5 lbs) lean turkey sausage",
+          "amount": 680.0,
+          "unit": "g",
+          "displayAmount": "680g (1.5 lbs) lean turkey sausage"
+        },
+        {
+          "id": "egg-whites-liquid",
+          "name": "720ml (24 oz) liquid egg whites",
+          "amount": 720.0,
+          "unit": "ml",
+          "displayAmount": "720ml (24 oz) liquid egg whites"
+        },
+        {
+          "id": null,
+          "name": "1 red bell pepper, diced",
+          "amount": 1.0,
+          "unit": "unit",
+          "displayAmount": "1 red bell pepper, diced"
+        },
+        {
+          "id": null,
+          "name": "1 green bell pepper, diced",
+          "amount": 1.0,
+          "unit": "g",
+          "displayAmount": "1 green bell pepper, diced"
+        },
+        {
+          "id": null,
+          "name": "1 medium onion, diced",
+          "amount": 1.0,
+          "unit": "unit",
+          "displayAmount": "1 medium onion, diced"
+        },
+        {
+          "id": "reduced-fat-cheddar",
+          "name": "170g (6 oz) reduced-fat Mexican cheese blend",
+          "amount": 170.0,
+          "unit": "g",
+          "displayAmount": "170g (6 oz) reduced-fat Mexican cheese blend"
+        },
+        {
+          "id": null,
+          "name": "5g cumin",
+          "amount": 5.0,
+          "unit": "g",
+          "displayAmount": "5g cumin"
+        },
+        {
+          "id": null,
+          "name": "5g chili powder",
+          "amount": 5.0,
+          "unit": "g",
+          "displayAmount": "5g chili powder"
+        },
+        {
+          "id": null,
+          "name": "3g garlic powder",
+          "amount": 3.0,
+          "unit": "g",
+          "displayAmount": "3g garlic powder"
+        },
+        {
+          "id": null,
+          "name": "Salt and pepper to taste",
+          "amount": 1,
+          "unit": "unit",
+          "displayAmount": "Salt and pepper to taste"
+        }
       ]
     },
     {
@@ -109,9 +239,18 @@
       "category": "Meal Prep",
       "subcategory": "Eggs & Scrambles",
       "breakfastType": "hot",
-      "tags": ["Meal Prep", "Low-Carb", "Keto-Friendly", "Grab-and-Go"],
-      "methods": ["noPowder"],
-      "cookingMethod": ["oven"],
+      "tags": [
+        "Meal Prep",
+        "Low-Carb",
+        "Keto-Friendly",
+        "Grab-and-Go"
+      ],
+      "methods": [
+        "noPowder"
+      ],
+      "cookingMethod": [
+        "oven"
+      ],
       "dietary": {
         "glutenFree": true,
         "dairyFree": false,
@@ -131,12 +270,24 @@
         "batchSize": 12,
         "freezerFriendly": true,
         "storage": {
-          "refrigerator": { "duration": "5 days" },
-          "freezer": { "duration": "2 months" }
+          "refrigerator": {
+            "duration": "5 days"
+          },
+          "freezer": {
+            "duration": "2 months"
+          }
         },
         "reheat": [
-          { "method": "microwave", "duration": "60-90 seconds", "instructions": "Heat until warmed through." },
-          { "method": "oven", "duration": "10-12 min", "temperature": "350F" }
+          {
+            "method": "microwave",
+            "duration": "60-90 seconds",
+            "instructions": "Heat until warmed through."
+          },
+          {
+            "method": "oven",
+            "duration": "10-12 min",
+            "temperature": "350F"
+          }
         ]
       },
       "image": "sheet-pan-breakfast-bake.png",
@@ -153,11 +304,98 @@
         "Salt and pepper to taste"
       ],
       "instructions": [
-        { "step": "Prep Pan", "text": "Preheat oven to 375F. Line a 9x13 baking pan with parchment paper and spray with cooking spray." },
-        { "step": "Cook Sausage and Veggies", "text": "In a large skillet, cook turkey sausage until browned. Add peppers, onion, and mushrooms. Cook 5 minutes. Add spinach and cook until wilted." },
-        { "step": "Make Egg Mixture", "text": "Whisk eggs, almond milk, garlic powder, salt, and pepper in a large bowl." },
-        { "step": "Assemble", "text": "Spread sausage mixture evenly in prepared pan. Pour egg mixture over top. Sprinkle with cheese." },
-        { "step": "Bake", "text": "Bake 35-40 minutes until eggs are set and top is golden. Let cool 10 minutes before cutting into 12 squares." }
+        {
+          "step": "Prep Pan",
+          "text": "Preheat oven to 375F. Line a 9x13 baking pan with parchment paper and spray with cooking spray."
+        },
+        {
+          "step": "Cook Sausage and Veggies",
+          "text": "In a large skillet, cook turkey sausage until browned. Add peppers, onion, and mushrooms. Cook 5 minutes. Add spinach and cook until wilted."
+        },
+        {
+          "step": "Make Egg Mixture",
+          "text": "Whisk eggs, almond milk, garlic powder, salt, and pepper in a large bowl."
+        },
+        {
+          "step": "Assemble",
+          "text": "Spread sausage mixture evenly in prepared pan. Pour egg mixture over top. Sprinkle with cheese."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake 35-40 minutes until eggs are set and top is golden. Let cool 10 minutes before cutting into 12 squares."
+        }
+      ],
+      "ingredientsStructured": [
+        {
+          "id": "turkey-sausage",
+          "name": "454g (1 lb) turkey breakfast sausage",
+          "amount": 454.0,
+          "unit": "g",
+          "displayAmount": "454g (1 lb) turkey breakfast sausage"
+        },
+        {
+          "id": "whole-eggs",
+          "name": "12 large eggs",
+          "amount": 12.0,
+          "unit": "unit",
+          "displayAmount": "12 large eggs"
+        },
+        {
+          "id": "almond-milk-unsweetened",
+          "name": "240ml (1 cup) unsweetened almond milk",
+          "amount": 240.0,
+          "unit": "ml",
+          "displayAmount": "240ml (1 cup) unsweetened almond milk"
+        },
+        {
+          "id": null,
+          "name": "200g baby spinach",
+          "amount": 200.0,
+          "unit": "g",
+          "displayAmount": "200g baby spinach"
+        },
+        {
+          "id": null,
+          "name": "1 red bell pepper, diced",
+          "amount": 1.0,
+          "unit": "unit",
+          "displayAmount": "1 red bell pepper, diced"
+        },
+        {
+          "id": null,
+          "name": "150g mushrooms, sliced",
+          "amount": 150.0,
+          "unit": "g",
+          "displayAmount": "150g mushrooms, sliced"
+        },
+        {
+          "id": null,
+          "name": "1 medium onion, diced",
+          "amount": 1.0,
+          "unit": "unit",
+          "displayAmount": "1 medium onion, diced"
+        },
+        {
+          "id": "reduced-fat-cheddar",
+          "name": "115g (1 cup) shredded cheddar cheese",
+          "amount": 115.0,
+          "unit": "g",
+          "displayAmount": "115g (1 cup) shredded cheddar cheese"
+        },
+        {
+          "id": null,
+          "name": "3g garlic powder",
+          "amount": 3.0,
+          "unit": "g",
+          "displayAmount": "3g garlic powder"
+        },
+        {
+          "id": null,
+          "name": "Salt and pepper to taste",
+          "amount": 1,
+          "unit": "unit",
+          "displayAmount": "Salt and pepper to taste"
+        }
       ]
     },
     {
@@ -183,9 +421,19 @@
       "category": "Meal Prep",
       "subcategory": "Eggs & Scrambles",
       "breakfastType": "hot",
-      "tags": ["Starbucks Copycat", "Low-Calorie", "Very High Protein", "Keto"],
-      "methods": ["eggWhite", "noPowder"],
-      "cookingMethod": ["oven"],
+      "tags": [
+        "Starbucks Copycat",
+        "Low-Calorie",
+        "Very High Protein",
+        "Keto"
+      ],
+      "methods": [
+        "eggWhite",
+        "noPowder"
+      ],
+      "cookingMethod": [
+        "oven"
+      ],
       "dietary": {
         "glutenFree": true,
         "dairyFree": false,
@@ -205,21 +453,38 @@
         "batchSize": 12,
         "freezerFriendly": true,
         "storage": {
-          "refrigerator": { "duration": "5 days" },
-          "freezer": { "duration": "2 months" }
+          "refrigerator": {
+            "duration": "5 days"
+          },
+          "freezer": {
+            "duration": "2 months"
+          }
         },
         "reheat": [
-          { "method": "microwave", "duration": "30-45 seconds", "instructions": "Heat until warmed through." }
+          {
+            "method": "microwave",
+            "duration": "30-45 seconds",
+            "instructions": "Heat until warmed through."
+          }
         ]
       },
       "fastFoodClone": {
         "chain": "Starbucks",
         "originalItem": "Egg White & Red Pepper Egg Bites",
         "comparison": {
-          "original": { "protein": 13, "calories": 170 },
-          "clone": { "protein": 24, "calories": 120 }
+          "original": {
+            "protein": 13,
+            "calories": 170
+          },
+          "clone": {
+            "protein": 24,
+            "calories": 120
+          }
         },
-        "improvements": { "proteinIncrease": 85, "calorieReduction": 29 }
+        "improvements": {
+          "proteinIncrease": 85,
+          "calorieReduction": 29
+        }
       },
       "image": "egg-white-veggie-bites.png",
       "ingredients": [
@@ -232,11 +497,77 @@
         "Salt and pepper to taste"
       ],
       "instructions": [
-        { "step": "Prep", "text": "Preheat oven to 325F. Generously grease a 12-cup muffin tin or silicone egg bite mold." },
-        { "step": "Blend Base", "text": "Add egg whites, cottage cheese, garlic powder, salt and pepper to a blender. Blend until completely smooth." },
-        { "step": "Add Mix-Ins", "text": "Divide roasted peppers, spinach, and cheese evenly among muffin cups." },
-        { "step": "Pour and Bake", "text": "Pour egg mixture over the vegetables. Bake 25-30 minutes until set and slightly puffed." },
-        { "step": "Cool", "text": "Let cool 5 minutes before removing from mold. Store in airtight container." }
+        {
+          "step": "Prep",
+          "text": "Preheat oven to 325F. Generously grease a 12-cup muffin tin or silicone egg bite mold."
+        },
+        {
+          "step": "Blend Base",
+          "text": "Add egg whites, cottage cheese, garlic powder, salt and pepper to a blender. Blend until completely smooth."
+        },
+        {
+          "step": "Add Mix-Ins",
+          "text": "Divide roasted peppers, spinach, and cheese evenly among muffin cups."
+        },
+        {
+          "step": "Pour and Bake",
+          "text": "Pour egg mixture over the vegetables. Bake 25-30 minutes until set and slightly puffed."
+        },
+        {
+          "step": "Cool",
+          "text": "Let cool 5 minutes before removing from mold. Store in airtight container."
+        }
+      ],
+      "ingredientsStructured": [
+        {
+          "id": "egg-whites-liquid",
+          "name": "480ml (2 cups) liquid egg whites",
+          "amount": 480.0,
+          "unit": "ml",
+          "displayAmount": "480ml (2 cups) liquid egg whites"
+        },
+        {
+          "id": "cottage-cheese-blended",
+          "name": "170g (3/4 cup) low-fat cottage cheese",
+          "amount": 170.0,
+          "unit": "g",
+          "displayAmount": "170g (3/4 cup) low-fat cottage cheese"
+        },
+        {
+          "id": null,
+          "name": "60g roasted red peppers, diced",
+          "amount": 60.0,
+          "unit": "g",
+          "displayAmount": "60g roasted red peppers, diced"
+        },
+        {
+          "id": null,
+          "name": "30g baby spinach, chopped",
+          "amount": 30.0,
+          "unit": "g",
+          "displayAmount": "30g baby spinach, chopped"
+        },
+        {
+          "id": "mozzarella",
+          "name": "60g (1/2 cup) shredded mozzarella",
+          "amount": 60.0,
+          "unit": "g",
+          "displayAmount": "60g (1/2 cup) shredded mozzarella"
+        },
+        {
+          "id": null,
+          "name": "2g garlic powder",
+          "amount": 2.0,
+          "unit": "g",
+          "displayAmount": "2g garlic powder"
+        },
+        {
+          "id": null,
+          "name": "Salt and pepper to taste",
+          "amount": 1,
+          "unit": "unit",
+          "displayAmount": "Salt and pepper to taste"
+        }
       ]
     },
     {
@@ -262,9 +593,19 @@
       "category": "Meal Prep",
       "subcategory": "Sausage & Patties",
       "breakfastType": "hot",
-      "tags": ["Meal Prep", "Low-Carb", "Keto", "Whole30"],
-      "methods": ["noPowder"],
-      "cookingMethod": ["stovetop", "airFryer"],
+      "tags": [
+        "Meal Prep",
+        "Low-Carb",
+        "Keto",
+        "Whole30"
+      ],
+      "methods": [
+        "noPowder"
+      ],
+      "cookingMethod": [
+        "stovetop",
+        "airFryer"
+      ],
       "dietary": {
         "glutenFree": true,
         "dairyFree": true,
@@ -284,12 +625,22 @@
         "batchSize": 12,
         "freezerFriendly": true,
         "storage": {
-          "refrigerator": { "duration": "5 days" },
-          "freezer": { "duration": "3 months" }
+          "refrigerator": {
+            "duration": "5 days"
+          },
+          "freezer": {
+            "duration": "3 months"
+          }
         },
         "reheat": [
-          { "method": "microwave", "duration": "45-60 seconds" },
-          { "method": "stovetop", "duration": "2-3 min per side" }
+          {
+            "method": "microwave",
+            "duration": "45-60 seconds"
+          },
+          {
+            "method": "stovetop",
+            "duration": "2-3 min per side"
+          }
         ]
       },
       "image": "turkey-breakfast-sausage-patties.png",
@@ -307,11 +658,105 @@
         "Pinch of cayenne (optional)"
       ],
       "instructions": [
-        { "step": "Mix Seasonings", "text": "In a small bowl, combine all spices and maple syrup." },
-        { "step": "Season Meat", "text": "Add ground turkey to a large bowl. Pour spice mixture over turkey and mix with hands until evenly distributed. Don't overmix." },
-        { "step": "Form Patties", "text": "Divide into 12 equal portions. Form into thin patties about 3 inches in diameter." },
-        { "step": "Cook", "text": "Heat a skillet over medium heat. Cook patties 5-6 minutes per side until internal temp reaches 165F." },
-        { "step": "Store", "text": "Cool completely before storing. Layer with parchment paper in airtight container." }
+        {
+          "step": "Mix Seasonings",
+          "text": "In a small bowl, combine all spices and maple syrup."
+        },
+        {
+          "step": "Season Meat",
+          "text": "Add ground turkey to a large bowl. Pour spice mixture over turkey and mix with hands until evenly distributed. Don't overmix."
+        },
+        {
+          "step": "Form Patties",
+          "text": "Divide into 12 equal portions. Form into thin patties about 3 inches in diameter."
+        },
+        {
+          "step": "Cook",
+          "text": "Heat a skillet over medium heat. Cook patties 5-6 minutes per side until internal temp reaches 165F."
+        },
+        {
+          "step": "Store",
+          "text": "Cool completely before storing. Layer with parchment paper in airtight container."
+        }
+      ],
+      "ingredientsStructured": [
+        {
+          "id": "turkey-sausage",
+          "name": "680g (1.5 lbs) 93% lean ground turkey",
+          "amount": 680.0,
+          "unit": "g",
+          "displayAmount": "680g (1.5 lbs) 93% lean ground turkey"
+        },
+        {
+          "id": "maple-syrup",
+          "name": "10g maple syrup (or sugar-free alternative)",
+          "amount": 10.0,
+          "unit": "g",
+          "displayAmount": "10g maple syrup (or sugar-free alternative)"
+        },
+        {
+          "id": null,
+          "name": "5g dried sage",
+          "amount": 5.0,
+          "unit": "g",
+          "displayAmount": "5g dried sage"
+        },
+        {
+          "id": null,
+          "name": "3g dried thyme",
+          "amount": 3.0,
+          "unit": "g",
+          "displayAmount": "3g dried thyme"
+        },
+        {
+          "id": null,
+          "name": "3g fennel seeds, crushed",
+          "amount": 3.0,
+          "unit": "g",
+          "displayAmount": "3g fennel seeds, crushed"
+        },
+        {
+          "id": null,
+          "name": "3g smoked paprika",
+          "amount": 3.0,
+          "unit": "g",
+          "displayAmount": "3g smoked paprika"
+        },
+        {
+          "id": null,
+          "name": "2g garlic powder",
+          "amount": 2.0,
+          "unit": "g",
+          "displayAmount": "2g garlic powder"
+        },
+        {
+          "id": null,
+          "name": "2g onion powder",
+          "amount": 2.0,
+          "unit": "g",
+          "displayAmount": "2g onion powder"
+        },
+        {
+          "id": null,
+          "name": "1g black pepper",
+          "amount": 1.0,
+          "unit": "g",
+          "displayAmount": "1g black pepper"
+        },
+        {
+          "id": null,
+          "name": "5g salt",
+          "amount": 5.0,
+          "unit": "g",
+          "displayAmount": "5g salt"
+        },
+        {
+          "id": null,
+          "name": "Pinch of cayenne (optional)",
+          "amount": 1,
+          "unit": "unit",
+          "displayAmount": "Pinch of cayenne (optional)"
+        }
       ]
     },
     {
@@ -337,9 +782,19 @@
       "category": "Meal Prep",
       "subcategory": "Puddings",
       "breakfastType": "cold",
-      "tags": ["No-Cook", "Meal Prep", "High-Fiber", "Make-Ahead"],
-      "methods": ["whey", "noBake"],
-      "cookingMethod": ["noHeat"],
+      "tags": [
+        "No-Cook",
+        "Meal Prep",
+        "High-Fiber",
+        "Make-Ahead"
+      ],
+      "methods": [
+        "whey",
+        "noBake"
+      ],
+      "cookingMethod": [
+        "noHeat"
+      ],
       "dietary": {
         "glutenFree": true,
         "dairyFree": false,
@@ -359,7 +814,9 @@
         "batchSize": 5,
         "freezerFriendly": false,
         "storage": {
-          "refrigerator": { "duration": "5 days" }
+          "refrigerator": {
+            "duration": "5 days"
+          }
         },
         "reheat": []
       },
@@ -374,11 +831,77 @@
         "Toppings: berries, sliced almonds, coconut flakes"
       ],
       "instructions": [
-        { "step": "Mix Base", "text": "In a large bowl or pitcher, whisk together almond milk, protein powder, maple syrup, vanilla, and salt until protein is dissolved." },
-        { "step": "Add Chia Seeds", "text": "Stir in chia seeds and whisk well to prevent clumping." },
-        { "step": "Divide", "text": "Pour mixture evenly into 5 mason jars or containers (about 280ml each)." },
-        { "step": "Refrigerate", "text": "Cover and refrigerate for at least 4 hours or overnight. Chia seeds will absorb liquid and create pudding texture." },
-        { "step": "Serve", "text": "Stir before eating. Top with fresh berries, nuts, or coconut flakes." }
+        {
+          "step": "Mix Base",
+          "text": "In a large bowl or pitcher, whisk together almond milk, protein powder, maple syrup, vanilla, and salt until protein is dissolved."
+        },
+        {
+          "step": "Add Chia Seeds",
+          "text": "Stir in chia seeds and whisk well to prevent clumping."
+        },
+        {
+          "step": "Divide",
+          "text": "Pour mixture evenly into 5 mason jars or containers (about 280ml each)."
+        },
+        {
+          "step": "Refrigerate",
+          "text": "Cover and refrigerate for at least 4 hours or overnight. Chia seeds will absorb liquid and create pudding texture."
+        },
+        {
+          "step": "Serve",
+          "text": "Stir before eating. Top with fresh berries, nuts, or coconut flakes."
+        }
+      ],
+      "ingredientsStructured": [
+        {
+          "id": "chia-seeds",
+          "name": "150g chia seeds",
+          "amount": 150.0,
+          "unit": "g",
+          "displayAmount": "150g chia seeds"
+        },
+        {
+          "id": "whey-vanilla",
+          "name": "150g (5 scoops) vanilla whey protein powder",
+          "amount": 150.0,
+          "unit": "g",
+          "displayAmount": "150g (5 scoops) vanilla whey protein powder"
+        },
+        {
+          "id": "almond-milk-unsweetened",
+          "name": "1L unsweetened almond milk",
+          "amount": 1,
+          "unit": "unit",
+          "displayAmount": "1L unsweetened almond milk"
+        },
+        {
+          "id": "maple-syrup",
+          "name": "60ml maple syrup or honey",
+          "amount": 60.0,
+          "unit": "ml",
+          "displayAmount": "60ml maple syrup or honey"
+        },
+        {
+          "id": "vanilla-extract",
+          "name": "5g vanilla extract",
+          "amount": 5.0,
+          "unit": "g",
+          "displayAmount": "5g vanilla extract"
+        },
+        {
+          "id": null,
+          "name": "Pinch of salt",
+          "amount": 1,
+          "unit": "unit",
+          "displayAmount": "Pinch of salt"
+        },
+        {
+          "id": null,
+          "name": "Toppings: berries, sliced almonds, coconut flakes",
+          "amount": 1,
+          "unit": "unit",
+          "displayAmount": "Toppings: berries, sliced almonds, coconut flakes"
+        }
       ]
     },
     {
@@ -404,9 +927,18 @@
       "category": "Grab-and-Go",
       "subcategory": "Muffins",
       "breakfastType": "either",
-      "tags": ["Grab-and-Go", "Meal Prep", "Savory", "Portable"],
-      "methods": ["noPowder"],
-      "cookingMethod": ["oven"],
+      "tags": [
+        "Grab-and-Go",
+        "Meal Prep",
+        "Savory",
+        "Portable"
+      ],
+      "methods": [
+        "noPowder"
+      ],
+      "cookingMethod": [
+        "oven"
+      ],
       "dietary": {
         "glutenFree": true,
         "dairyFree": false,
@@ -426,11 +958,18 @@
         "batchSize": 12,
         "freezerFriendly": true,
         "storage": {
-          "refrigerator": { "duration": "5 days" },
-          "freezer": { "duration": "2 months" }
+          "refrigerator": {
+            "duration": "5 days"
+          },
+          "freezer": {
+            "duration": "2 months"
+          }
         },
         "reheat": [
-          { "method": "microwave", "duration": "30-45 seconds" }
+          {
+            "method": "microwave",
+            "duration": "30-45 seconds"
+          }
         ]
       },
       "image": "savory-breakfast-muffins.png",
@@ -445,11 +984,84 @@
         "Salt and pepper to taste"
       ],
       "instructions": [
-        { "step": "Prep", "text": "Preheat oven to 350F. Grease a 12-cup muffin tin or use silicone liners." },
-        { "step": "Whisk Eggs", "text": "In a large bowl, whisk eggs, milk, Italian seasoning, salt and pepper." },
-        { "step": "Add Veggies", "text": "Stir in broccoli, bell pepper, sun-dried tomatoes, and half the cheese." },
-        { "step": "Fill and Top", "text": "Divide mixture evenly among muffin cups. Top with remaining cheese." },
-        { "step": "Bake", "text": "Bake 22-25 minutes until set and golden. Cool 5 minutes before removing." }
+        {
+          "step": "Prep",
+          "text": "Preheat oven to 350F. Grease a 12-cup muffin tin or use silicone liners."
+        },
+        {
+          "step": "Whisk Eggs",
+          "text": "In a large bowl, whisk eggs, milk, Italian seasoning, salt and pepper."
+        },
+        {
+          "step": "Add Veggies",
+          "text": "Stir in broccoli, bell pepper, sun-dried tomatoes, and half the cheese."
+        },
+        {
+          "step": "Fill and Top",
+          "text": "Divide mixture evenly among muffin cups. Top with remaining cheese."
+        },
+        {
+          "step": "Bake",
+          "text": "Bake 22-25 minutes until set and golden. Cool 5 minutes before removing."
+        }
+      ],
+      "ingredientsStructured": [
+        {
+          "id": "whole-eggs",
+          "name": "10 large eggs",
+          "amount": 10.0,
+          "unit": "unit",
+          "displayAmount": "10 large eggs"
+        },
+        {
+          "id": "dairy-milk",
+          "name": "120ml (1/2 cup) milk",
+          "amount": 120.0,
+          "unit": "ml",
+          "displayAmount": "120ml (1/2 cup) milk"
+        },
+        {
+          "id": null,
+          "name": "150g broccoli florets, finely chopped",
+          "amount": 150.0,
+          "unit": "g",
+          "displayAmount": "150g broccoli florets, finely chopped"
+        },
+        {
+          "id": null,
+          "name": "1 red bell pepper, diced",
+          "amount": 1.0,
+          "unit": "unit",
+          "displayAmount": "1 red bell pepper, diced"
+        },
+        {
+          "id": "reduced-fat-cheddar",
+          "name": "115g (1 cup) shredded cheddar cheese",
+          "amount": 115.0,
+          "unit": "g",
+          "displayAmount": "115g (1 cup) shredded cheddar cheese"
+        },
+        {
+          "id": null,
+          "name": "60g sun-dried tomatoes, chopped",
+          "amount": 60.0,
+          "unit": "g",
+          "displayAmount": "60g sun-dried tomatoes, chopped"
+        },
+        {
+          "id": null,
+          "name": "3g Italian seasoning",
+          "amount": 3.0,
+          "unit": "g",
+          "displayAmount": "3g Italian seasoning"
+        },
+        {
+          "id": null,
+          "name": "Salt and pepper to taste",
+          "amount": 1,
+          "unit": "unit",
+          "displayAmount": "Salt and pepper to taste"
+        }
       ]
     },
     {
@@ -475,9 +1087,19 @@
       "category": "Vegan",
       "subcategory": "Bowls",
       "breakfastType": "cold",
-      "tags": ["Vegan", "Soy-Free", "Gluten-Free", "Smoothie Bowl"],
-      "methods": ["vegan", "noBake"],
-      "cookingMethod": ["noHeat"],
+      "tags": [
+        "Vegan",
+        "Soy-Free",
+        "Gluten-Free",
+        "Smoothie Bowl"
+      ],
+      "methods": [
+        "vegan",
+        "noBake"
+      ],
+      "cookingMethod": [
+        "noHeat"
+      ],
       "dietary": {
         "glutenFree": true,
         "dairyFree": true,
@@ -502,10 +1124,66 @@
         "Toppings: sliced banana, berries, hemp seeds, coconut flakes, chia seeds"
       ],
       "instructions": [
-        { "step": "Blend", "text": "Add frozen bananas, berries, protein powder, coconut milk, and almond butter to a high-speed blender." },
-        { "step": "Process", "text": "Blend until thick and creamy, scraping sides as needed. The consistency should be thicker than a smoothie." },
-        { "step": "Pour", "text": "Transfer to a bowl." },
-        { "step": "Top", "text": "Arrange toppings in rows: sliced banana, berries, hemp seeds, coconut flakes, and chia seeds." }
+        {
+          "step": "Blend",
+          "text": "Add frozen bananas, berries, protein powder, coconut milk, and almond butter to a high-speed blender."
+        },
+        {
+          "step": "Process",
+          "text": "Blend until thick and creamy, scraping sides as needed. The consistency should be thicker than a smoothie."
+        },
+        {
+          "step": "Pour",
+          "text": "Transfer to a bowl."
+        },
+        {
+          "step": "Top",
+          "text": "Arrange toppings in rows: sliced banana, berries, hemp seeds, coconut flakes, and chia seeds."
+        }
+      ],
+      "ingredientsStructured": [
+        {
+          "id": "banana-mashed",
+          "name": "2 frozen bananas",
+          "amount": 2.0,
+          "unit": "unit",
+          "displayAmount": "2 frozen bananas"
+        },
+        {
+          "id": null,
+          "name": "150g frozen mixed berries",
+          "amount": 150.0,
+          "unit": "g",
+          "displayAmount": "150g frozen mixed berries"
+        },
+        {
+          "id": "whey-vanilla",
+          "name": "60g (2 scoops) vanilla pea protein powder",
+          "amount": 60.0,
+          "unit": "g",
+          "displayAmount": "60g (2 scoops) vanilla pea protein powder"
+        },
+        {
+          "id": "dairy-milk",
+          "name": "120ml coconut milk",
+          "amount": 120.0,
+          "unit": "ml",
+          "displayAmount": "120ml coconut milk"
+        },
+        {
+          "id": "almond-butter",
+          "name": "30g almond butter",
+          "amount": 30.0,
+          "unit": "g",
+          "displayAmount": "30g almond butter"
+        },
+        {
+          "id": "chia-seeds",
+          "name": "Toppings: sliced banana, berries, hemp seeds, coconut flakes, chia seeds",
+          "amount": 1,
+          "unit": "unit",
+          "displayAmount": "Toppings: sliced banana, berries, hemp seeds, coconut flakes, chia seeds"
+        }
       ]
     },
     {
@@ -531,9 +1209,19 @@
       "category": "Vegan",
       "subcategory": "Burritos & Wraps",
       "breakfastType": "hot",
-      "tags": ["Vegan", "Egg-Free", "High-Fiber", "Plant-Based"],
-      "methods": ["vegan", "noPowder"],
-      "cookingMethod": ["stovetop"],
+      "tags": [
+        "Vegan",
+        "Egg-Free",
+        "High-Fiber",
+        "Plant-Based"
+      ],
+      "methods": [
+        "vegan",
+        "noPowder"
+      ],
+      "cookingMethod": [
+        "stovetop"
+      ],
       "dietary": {
         "glutenFree": false,
         "dairyFree": true,
@@ -563,11 +1251,105 @@
         "Salt and pepper to taste"
       ],
       "instructions": [
-        { "step": "Make Batter", "text": "Whisk chickpea flour, water, turmeric, black salt, garlic powder, and onion powder until smooth." },
-        { "step": "Sauté Veggies", "text": "Heat oil in a non-stick pan. Sauté onion until soft, add tomatoes and spinach. Cook until wilted. Set aside." },
-        { "step": "Cook Scramble", "text": "Pour batter into the same pan over medium heat. As it sets, use a spatula to break it into scramble-like pieces. Cook 8-10 minutes until no longer wet." },
-        { "step": "Combine", "text": "Add sautéed vegetables back to the pan and mix with the scramble." },
-        { "step": "Assemble", "text": "Warm tortillas. Divide scramble between tortillas, roll up, and serve." }
+        {
+          "step": "Make Batter",
+          "text": "Whisk chickpea flour, water, turmeric, black salt, garlic powder, and onion powder until smooth."
+        },
+        {
+          "step": "Saut\u00e9 Veggies",
+          "text": "Heat oil in a non-stick pan. Saut\u00e9 onion until soft, add tomatoes and spinach. Cook until wilted. Set aside."
+        },
+        {
+          "step": "Cook Scramble",
+          "text": "Pour batter into the same pan over medium heat. As it sets, use a spatula to break it into scramble-like pieces. Cook 8-10 minutes until no longer wet."
+        },
+        {
+          "step": "Combine",
+          "text": "Add saut\u00e9ed vegetables back to the pan and mix with the scramble."
+        },
+        {
+          "step": "Assemble",
+          "text": "Warm tortillas. Divide scramble between tortillas, roll up, and serve."
+        }
+      ],
+      "ingredientsStructured": [
+        {
+          "id": "chickpea-flour",
+          "name": "100g chickpea flour (besan)",
+          "amount": 100.0,
+          "unit": "g",
+          "displayAmount": "100g chickpea flour (besan)"
+        },
+        {
+          "id": null,
+          "name": "240ml water",
+          "amount": 240.0,
+          "unit": "ml",
+          "displayAmount": "240ml water"
+        },
+        {
+          "id": null,
+          "name": "3g turmeric powder",
+          "amount": 3.0,
+          "unit": "g",
+          "displayAmount": "3g turmeric powder"
+        },
+        {
+          "id": null,
+          "name": "2g black salt (kala namak) for eggy flavor",
+          "amount": 2.0,
+          "unit": "g",
+          "displayAmount": "2g black salt (kala namak) for eggy flavor"
+        },
+        {
+          "id": null,
+          "name": "2g garlic powder",
+          "amount": 2.0,
+          "unit": "g",
+          "displayAmount": "2g garlic powder"
+        },
+        {
+          "id": null,
+          "name": "2g onion powder",
+          "amount": 2.0,
+          "unit": "g",
+          "displayAmount": "2g onion powder"
+        },
+        {
+          "id": null,
+          "name": "100g baby spinach",
+          "amount": 100.0,
+          "unit": "g",
+          "displayAmount": "100g baby spinach"
+        },
+        {
+          "id": null,
+          "name": "1 tomato, diced",
+          "amount": 1.0,
+          "unit": "unit",
+          "displayAmount": "1 tomato, diced"
+        },
+        {
+          "id": null,
+          "name": "1/2 onion, diced",
+          "amount": 1,
+          "unit": "unit",
+          "displayAmount": "1/2 onion, diced"
+        },
+        {
+          "id": "flour-tortilla",
+          "name": "2 large flour tortillas",
+          "amount": 2.0,
+          "unit": "unit",
+          "displayAmount": "2 large flour tortillas"
+        },
+        {
+          "id": null,
+          "name": "Salt and pepper to taste",
+          "amount": 1,
+          "unit": "unit",
+          "displayAmount": "Salt and pepper to taste"
+        }
       ]
     },
     {
@@ -593,9 +1375,20 @@
       "category": "Vegan",
       "subcategory": "Oatmeal & Porridge",
       "breakfastType": "cold",
-      "tags": ["Oat-Free", "Grain-Free", "Vegan", "High-Fiber", "Meal Prep"],
-      "methods": ["vegan", "noBake"],
-      "cookingMethod": ["noHeat"],
+      "tags": [
+        "Oat-Free",
+        "Grain-Free",
+        "Vegan",
+        "High-Fiber",
+        "Meal Prep"
+      ],
+      "methods": [
+        "vegan",
+        "noBake"
+      ],
+      "cookingMethod": [
+        "noHeat"
+      ],
       "dietary": {
         "glutenFree": true,
         "dairyFree": true,
@@ -615,7 +1408,9 @@
         "batchSize": 4,
         "freezerFriendly": false,
         "storage": {
-          "refrigerator": { "duration": "5 days" }
+          "refrigerator": {
+            "duration": "5 days"
+          }
         },
         "reheat": []
       },
@@ -631,11 +1426,84 @@
         "5g vanilla extract"
       ],
       "instructions": [
-        { "step": "Mix Dry", "text": "In a large bowl, combine chia seeds, hemp hearts, tigernut flour, protein powder, and cinnamon." },
-        { "step": "Add Wet", "text": "Pour in coconut milk, maple syrup, and vanilla. Whisk until well combined." },
-        { "step": "Divide", "text": "Pour into 4 jars or containers." },
-        { "step": "Refrigerate", "text": "Cover and refrigerate at least 4 hours or overnight." },
-        { "step": "Serve", "text": "Stir well before eating. Top with fresh fruit, nuts, or seeds." }
+        {
+          "step": "Mix Dry",
+          "text": "In a large bowl, combine chia seeds, hemp hearts, tigernut flour, protein powder, and cinnamon."
+        },
+        {
+          "step": "Add Wet",
+          "text": "Pour in coconut milk, maple syrup, and vanilla. Whisk until well combined."
+        },
+        {
+          "step": "Divide",
+          "text": "Pour into 4 jars or containers."
+        },
+        {
+          "step": "Refrigerate",
+          "text": "Cover and refrigerate at least 4 hours or overnight."
+        },
+        {
+          "step": "Serve",
+          "text": "Stir well before eating. Top with fresh fruit, nuts, or seeds."
+        }
+      ],
+      "ingredientsStructured": [
+        {
+          "id": "chia-seeds",
+          "name": "80g chia seeds",
+          "amount": 80.0,
+          "unit": "g",
+          "displayAmount": "80g chia seeds"
+        },
+        {
+          "id": "hemp-hearts",
+          "name": "80g hemp hearts",
+          "amount": 80.0,
+          "unit": "g",
+          "displayAmount": "80g hemp hearts"
+        },
+        {
+          "id": null,
+          "name": "60g tigernut flour",
+          "amount": 60.0,
+          "unit": "g",
+          "displayAmount": "60g tigernut flour"
+        },
+        {
+          "id": "whey-vanilla",
+          "name": "60g (2 scoops) vanilla plant protein powder",
+          "amount": 60.0,
+          "unit": "g",
+          "displayAmount": "60g (2 scoops) vanilla plant protein powder"
+        },
+        {
+          "id": "dairy-milk",
+          "name": "800ml unsweetened coconut milk",
+          "amount": 800.0,
+          "unit": "ml",
+          "displayAmount": "800ml unsweetened coconut milk"
+        },
+        {
+          "id": "maple-syrup",
+          "name": "40ml maple syrup",
+          "amount": 40.0,
+          "unit": "ml",
+          "displayAmount": "40ml maple syrup"
+        },
+        {
+          "id": "cinnamon",
+          "name": "5g cinnamon",
+          "amount": 5.0,
+          "unit": "g",
+          "displayAmount": "5g cinnamon"
+        },
+        {
+          "id": "vanilla-extract",
+          "name": "5g vanilla extract",
+          "amount": 5.0,
+          "unit": "g",
+          "displayAmount": "5g vanilla extract"
+        }
       ]
     },
     {
@@ -661,9 +1529,18 @@
       "category": "Vegan",
       "subcategory": "Bowls",
       "breakfastType": "cold",
-      "tags": ["Vegan", "Dairy-Free", "Gluten-Free", "Crunchy"],
-      "methods": ["vegan"],
-      "cookingMethod": ["oven"],
+      "tags": [
+        "Vegan",
+        "Dairy-Free",
+        "Gluten-Free",
+        "Crunchy"
+      ],
+      "methods": [
+        "vegan"
+      ],
+      "cookingMethod": [
+        "oven"
+      ],
       "dietary": {
         "glutenFree": true,
         "dairyFree": true,
@@ -693,12 +1570,109 @@
         "Per serving: 150g coconut yogurt"
       ],
       "instructions": [
-        { "step": "Prep", "text": "Preheat oven to 325F. Line a large baking sheet with parchment paper." },
-        { "step": "Mix Dry", "text": "In a large bowl, combine oats, protein powder, almonds, pumpkin seeds, coconut flakes, cinnamon, and salt." },
-        { "step": "Add Wet", "text": "Drizzle coconut oil, maple syrup, and vanilla over dry ingredients. Stir until everything is evenly coated." },
-        { "step": "Bake", "text": "Spread in an even layer on prepared baking sheet. Bake 20-25 minutes, stirring halfway, until golden brown." },
-        { "step": "Cool", "text": "Let cool completely on the pan - it will crisp up as it cools." },
-        { "step": "Serve", "text": "Store granola in airtight container. Serve 60g granola over 150g coconut yogurt with fresh berries." }
+        {
+          "step": "Prep",
+          "text": "Preheat oven to 325F. Line a large baking sheet with parchment paper."
+        },
+        {
+          "step": "Mix Dry",
+          "text": "In a large bowl, combine oats, protein powder, almonds, pumpkin seeds, coconut flakes, cinnamon, and salt."
+        },
+        {
+          "step": "Add Wet",
+          "text": "Drizzle coconut oil, maple syrup, and vanilla over dry ingredients. Stir until everything is evenly coated."
+        },
+        {
+          "step": "Bake",
+          "text": "Spread in an even layer on prepared baking sheet. Bake 20-25 minutes, stirring halfway, until golden brown."
+        },
+        {
+          "step": "Cool",
+          "text": "Let cool completely on the pan - it will crisp up as it cools."
+        },
+        {
+          "step": "Serve",
+          "text": "Store granola in airtight container. Serve 60g granola over 150g coconut yogurt with fresh berries."
+        }
+      ],
+      "ingredientsStructured": [
+        {
+          "id": "rolled-oats",
+          "name": "200g gluten-free rolled oats",
+          "amount": 200.0,
+          "unit": "g",
+          "displayAmount": "200g gluten-free rolled oats"
+        },
+        {
+          "id": "whey-vanilla",
+          "name": "90g (3 scoops) vanilla plant protein powder",
+          "amount": 90.0,
+          "unit": "g",
+          "displayAmount": "90g (3 scoops) vanilla plant protein powder"
+        },
+        {
+          "id": null,
+          "name": "100g raw almonds, roughly chopped",
+          "amount": 100.0,
+          "unit": "g",
+          "displayAmount": "100g raw almonds, roughly chopped"
+        },
+        {
+          "id": null,
+          "name": "60g pumpkin seeds",
+          "amount": 60.0,
+          "unit": "g",
+          "displayAmount": "60g pumpkin seeds"
+        },
+        {
+          "id": null,
+          "name": "60g unsweetened coconut flakes",
+          "amount": 60.0,
+          "unit": "g",
+          "displayAmount": "60g unsweetened coconut flakes"
+        },
+        {
+          "id": null,
+          "name": "80ml coconut oil, melted",
+          "amount": 80.0,
+          "unit": "ml",
+          "displayAmount": "80ml coconut oil, melted"
+        },
+        {
+          "id": "maple-syrup",
+          "name": "80ml maple syrup",
+          "amount": 80.0,
+          "unit": "ml",
+          "displayAmount": "80ml maple syrup"
+        },
+        {
+          "id": "cinnamon",
+          "name": "5g cinnamon",
+          "amount": 5.0,
+          "unit": "g",
+          "displayAmount": "5g cinnamon"
+        },
+        {
+          "id": "vanilla-extract",
+          "name": "3g vanilla extract",
+          "amount": 3.0,
+          "unit": "g",
+          "displayAmount": "3g vanilla extract"
+        },
+        {
+          "id": null,
+          "name": "Pinch of salt",
+          "amount": 1,
+          "unit": "unit",
+          "displayAmount": "Pinch of salt"
+        },
+        {
+          "id": null,
+          "name": "Per serving: 150g coconut yogurt",
+          "amount": 1,
+          "unit": "unit",
+          "displayAmount": "Per serving: 150g coconut yogurt"
+        }
       ]
     },
     {
@@ -724,9 +1698,20 @@
       "category": "Vegan",
       "subcategory": "Scrambles",
       "breakfastType": "hot",
-      "tags": ["Vegan", "Soy-Free", "Tofu-Free", "High-Fiber"],
-      "methods": ["vegan", "legume", "noPowder"],
-      "cookingMethod": ["stovetop"],
+      "tags": [
+        "Vegan",
+        "Soy-Free",
+        "Tofu-Free",
+        "High-Fiber"
+      ],
+      "methods": [
+        "vegan",
+        "legume",
+        "noPowder"
+      ],
+      "cookingMethod": [
+        "stovetop"
+      ],
       "dietary": {
         "glutenFree": true,
         "dairyFree": true,
@@ -755,12 +1740,102 @@
         "Fresh cilantro for garnish"
       ],
       "instructions": [
-        { "step": "Prep Beans", "text": "Drain soaked mung beans. Add to a blender with water and blend until a thick, slightly chunky paste forms." },
-        { "step": "Season", "text": "Add turmeric, black salt, cumin, and garlic powder to the paste. Mix well." },
-        { "step": "Cook", "text": "Heat oil in a non-stick pan over medium heat. Pour in the mung bean mixture." },
-        { "step": "Scramble", "text": "As the edges set, use a spatula to push and fold the mixture, creating scramble-like pieces. Cook 10-12 minutes until no longer wet." },
-        { "step": "Add Veggies", "text": "Add tomatoes and spinach in the last 2 minutes of cooking. Season to taste." },
-        { "step": "Serve", "text": "Garnish with fresh cilantro and serve hot." }
+        {
+          "step": "Prep Beans",
+          "text": "Drain soaked mung beans. Add to a blender with water and blend until a thick, slightly chunky paste forms."
+        },
+        {
+          "step": "Season",
+          "text": "Add turmeric, black salt, cumin, and garlic powder to the paste. Mix well."
+        },
+        {
+          "step": "Cook",
+          "text": "Heat oil in a non-stick pan over medium heat. Pour in the mung bean mixture."
+        },
+        {
+          "step": "Scramble",
+          "text": "As the edges set, use a spatula to push and fold the mixture, creating scramble-like pieces. Cook 10-12 minutes until no longer wet."
+        },
+        {
+          "step": "Add Veggies",
+          "text": "Add tomatoes and spinach in the last 2 minutes of cooking. Season to taste."
+        },
+        {
+          "step": "Serve",
+          "text": "Garnish with fresh cilantro and serve hot."
+        }
+      ],
+      "ingredientsStructured": [
+        {
+          "id": "mung-beans",
+          "name": "200g dried mung beans, soaked overnight",
+          "amount": 200.0,
+          "unit": "g",
+          "displayAmount": "200g dried mung beans, soaked overnight"
+        },
+        {
+          "id": null,
+          "name": "120ml water",
+          "amount": 120.0,
+          "unit": "ml",
+          "displayAmount": "120ml water"
+        },
+        {
+          "id": null,
+          "name": "3g turmeric powder",
+          "amount": 3.0,
+          "unit": "g",
+          "displayAmount": "3g turmeric powder"
+        },
+        {
+          "id": null,
+          "name": "2g black salt (kala namak)",
+          "amount": 2.0,
+          "unit": "g",
+          "displayAmount": "2g black salt (kala namak)"
+        },
+        {
+          "id": null,
+          "name": "2g cumin powder",
+          "amount": 2.0,
+          "unit": "g",
+          "displayAmount": "2g cumin powder"
+        },
+        {
+          "id": null,
+          "name": "2g garlic powder",
+          "amount": 2.0,
+          "unit": "g",
+          "displayAmount": "2g garlic powder"
+        },
+        {
+          "id": null,
+          "name": "1 tbsp olive oil",
+          "amount": 1.0,
+          "unit": "tbsp",
+          "displayAmount": "1 tbsp olive oil"
+        },
+        {
+          "id": null,
+          "name": "100g cherry tomatoes, halved",
+          "amount": 100.0,
+          "unit": "g",
+          "displayAmount": "100g cherry tomatoes, halved"
+        },
+        {
+          "id": null,
+          "name": "50g fresh spinach",
+          "amount": 50.0,
+          "unit": "g",
+          "displayAmount": "50g fresh spinach"
+        },
+        {
+          "id": null,
+          "name": "Fresh cilantro for garnish",
+          "amount": 1,
+          "unit": "unit",
+          "displayAmount": "Fresh cilantro for garnish"
+        }
       ]
     },
     {
@@ -786,9 +1861,19 @@
       "category": "Low-Calorie",
       "subcategory": "Burritos & Wraps",
       "breakfastType": "hot",
-      "tags": ["Low-Calorie", "Quick", "Fresh", "Light"],
-      "methods": ["eggWhite", "noPowder"],
-      "cookingMethod": ["stovetop"],
+      "tags": [
+        "Low-Calorie",
+        "Quick",
+        "Fresh",
+        "Light"
+      ],
+      "methods": [
+        "eggWhite",
+        "noPowder"
+      ],
+      "cookingMethod": [
+        "stovetop"
+      ],
       "dietary": {
         "glutenFree": false,
         "dairyFree": false,
@@ -815,10 +1900,80 @@
         "Salt and pepper"
       ],
       "instructions": [
-        { "step": "Scramble Eggs", "text": "Heat a non-stick pan over medium heat. Add egg whites, season with salt and pepper. Scramble until just set, keeping them fluffy." },
-        { "step": "Warm Tortillas", "text": "Warm tortillas in a dry skillet or microwave for 20 seconds." },
-        { "step": "Assemble", "text": "Divide scrambled egg whites between tortillas. Top with cheese, pico de gallo, avocado slices, and cilantro." },
-        { "step": "Serve", "text": "Add hot sauce if desired and serve immediately." }
+        {
+          "step": "Scramble Eggs",
+          "text": "Heat a non-stick pan over medium heat. Add egg whites, season with salt and pepper. Scramble until just set, keeping them fluffy."
+        },
+        {
+          "step": "Warm Tortillas",
+          "text": "Warm tortillas in a dry skillet or microwave for 20 seconds."
+        },
+        {
+          "step": "Assemble",
+          "text": "Divide scrambled egg whites between tortillas. Top with cheese, pico de gallo, avocado slices, and cilantro."
+        },
+        {
+          "step": "Serve",
+          "text": "Add hot sauce if desired and serve immediately."
+        }
+      ],
+      "ingredientsStructured": [
+        {
+          "id": "egg-whites-liquid",
+          "name": "360ml (12 oz) liquid egg whites",
+          "amount": 360.0,
+          "unit": "ml",
+          "displayAmount": "360ml (12 oz) liquid egg whites"
+        },
+        {
+          "id": "flour-tortilla",
+          "name": "4 small corn or flour tortillas",
+          "amount": 4.0,
+          "unit": "unit",
+          "displayAmount": "4 small corn or flour tortillas"
+        },
+        {
+          "id": null,
+          "name": "120g fresh pico de gallo",
+          "amount": 120.0,
+          "unit": "g",
+          "displayAmount": "120g fresh pico de gallo"
+        },
+        {
+          "id": null,
+          "name": "60g (1/2 cup) shredded pepper jack cheese",
+          "amount": 60.0,
+          "unit": "g",
+          "displayAmount": "60g (1/2 cup) shredded pepper jack cheese"
+        },
+        {
+          "id": null,
+          "name": "1 avocado, sliced",
+          "amount": 1.0,
+          "unit": "unit",
+          "displayAmount": "1 avocado, sliced"
+        },
+        {
+          "id": null,
+          "name": "Fresh cilantro",
+          "amount": 1,
+          "unit": "unit",
+          "displayAmount": "Fresh cilantro"
+        },
+        {
+          "id": null,
+          "name": "Hot sauce (optional)",
+          "amount": 1,
+          "unit": "unit",
+          "displayAmount": "Hot sauce (optional)"
+        },
+        {
+          "id": null,
+          "name": "Salt and pepper",
+          "amount": 1,
+          "unit": "unit",
+          "displayAmount": "Salt and pepper"
+        }
       ]
     },
     {
@@ -844,9 +1999,19 @@
       "category": "Low-Calorie",
       "subcategory": "Bowls",
       "breakfastType": "cold",
-      "tags": ["Low-Calorie", "Volume Eating", "Dairy-Free", "High-Fiber"],
-      "methods": ["vegan", "noBake"],
-      "cookingMethod": ["noHeat"],
+      "tags": [
+        "Low-Calorie",
+        "Volume Eating",
+        "Dairy-Free",
+        "High-Fiber"
+      ],
+      "methods": [
+        "vegan",
+        "noBake"
+      ],
+      "cookingMethod": [
+        "noHeat"
+      ],
       "dietary": {
         "glutenFree": true,
         "dairyFree": true,
@@ -874,10 +2039,87 @@
         "Drizzle of honey or maple syrup (optional)"
       ],
       "instructions": [
-        { "step": "Mix Base", "text": "In a large bowl, stir protein powder into yogurt until smooth and creamy." },
-        { "step": "Add Volume", "text": "Top with strawberries, blueberries, and cucumber for maximum volume with minimal calories." },
-        { "step": "Add Crunch", "text": "Sprinkle with pumpkin seeds and chia seeds." },
-        { "step": "Garnish", "text": "Add fresh mint and a light drizzle of honey if desired." }
+        {
+          "step": "Mix Base",
+          "text": "In a large bowl, stir protein powder into yogurt until smooth and creamy."
+        },
+        {
+          "step": "Add Volume",
+          "text": "Top with strawberries, blueberries, and cucumber for maximum volume with minimal calories."
+        },
+        {
+          "step": "Add Crunch",
+          "text": "Sprinkle with pumpkin seeds and chia seeds."
+        },
+        {
+          "step": "Garnish",
+          "text": "Add fresh mint and a light drizzle of honey if desired."
+        }
+      ],
+      "ingredientsStructured": [
+        {
+          "id": null,
+          "name": "250g coconut or soy yogurt (high-protein variety)",
+          "amount": 250.0,
+          "unit": "g",
+          "displayAmount": "250g coconut or soy yogurt (high-protein variety)"
+        },
+        {
+          "id": "whey-vanilla",
+          "name": "30g (1 scoop) vanilla plant protein powder",
+          "amount": 30.0,
+          "unit": "g",
+          "displayAmount": "30g (1 scoop) vanilla plant protein powder"
+        },
+        {
+          "id": null,
+          "name": "150g fresh strawberries, sliced",
+          "amount": 150.0,
+          "unit": "g",
+          "displayAmount": "150g fresh strawberries, sliced"
+        },
+        {
+          "id": "blueberries-fresh",
+          "name": "100g fresh blueberries",
+          "amount": 100.0,
+          "unit": "g",
+          "displayAmount": "100g fresh blueberries"
+        },
+        {
+          "id": null,
+          "name": "50g cucumber, diced",
+          "amount": 50.0,
+          "unit": "g",
+          "displayAmount": "50g cucumber, diced"
+        },
+        {
+          "id": null,
+          "name": "30g pumpkin seeds",
+          "amount": 30.0,
+          "unit": "g",
+          "displayAmount": "30g pumpkin seeds"
+        },
+        {
+          "id": "chia-seeds",
+          "name": "15g chia seeds",
+          "amount": 15.0,
+          "unit": "g",
+          "displayAmount": "15g chia seeds"
+        },
+        {
+          "id": null,
+          "name": "Mint leaves for garnish",
+          "amount": 1,
+          "unit": "unit",
+          "displayAmount": "Mint leaves for garnish"
+        },
+        {
+          "id": "maple-syrup",
+          "name": "Drizzle of honey or maple syrup (optional)",
+          "amount": 1,
+          "unit": "unit",
+          "displayAmount": "Drizzle of honey or maple syrup (optional)"
+        }
       ]
     },
     {
@@ -903,9 +2145,19 @@
       "category": "Low-Calorie",
       "subcategory": "Eggs & Scrambles",
       "breakfastType": "hot",
-      "tags": ["Quick", "Cottage Cheese", "Fluffy", "High-Protein"],
-      "methods": ["cottage", "noPowder"],
-      "cookingMethod": ["stovetop"],
+      "tags": [
+        "Quick",
+        "Cottage Cheese",
+        "Fluffy",
+        "High-Protein"
+      ],
+      "methods": [
+        "cottage",
+        "noPowder"
+      ],
+      "cookingMethod": [
+        "stovetop"
+      ],
       "dietary": {
         "glutenFree": true,
         "dairyFree": false,
@@ -930,11 +2182,70 @@
         "Salt and pepper to taste"
       ],
       "instructions": [
-        { "step": "Blend", "text": "Add eggs, egg whites, and cottage cheese to a blender. Blend until smooth." },
-        { "step": "Heat Pan", "text": "Melt butter in a non-stick pan over medium-low heat." },
-        { "step": "Cook Slowly", "text": "Pour in egg mixture. Let sit for 30 seconds, then gently push from edges to center with a spatula." },
-        { "step": "Fold", "text": "Continue folding gently every 30 seconds. Remove from heat while eggs are still slightly wet - they'll continue cooking." },
-        { "step": "Serve", "text": "Season with salt and pepper, top with fresh chives. Serve immediately." }
+        {
+          "step": "Blend",
+          "text": "Add eggs, egg whites, and cottage cheese to a blender. Blend until smooth."
+        },
+        {
+          "step": "Heat Pan",
+          "text": "Melt butter in a non-stick pan over medium-low heat."
+        },
+        {
+          "step": "Cook Slowly",
+          "text": "Pour in egg mixture. Let sit for 30 seconds, then gently push from edges to center with a spatula."
+        },
+        {
+          "step": "Fold",
+          "text": "Continue folding gently every 30 seconds. Remove from heat while eggs are still slightly wet - they'll continue cooking."
+        },
+        {
+          "step": "Serve",
+          "text": "Season with salt and pepper, top with fresh chives. Serve immediately."
+        }
+      ],
+      "ingredientsStructured": [
+        {
+          "id": "whole-eggs",
+          "name": "3 large eggs",
+          "amount": 3.0,
+          "unit": "unit",
+          "displayAmount": "3 large eggs"
+        },
+        {
+          "id": "egg-whites-liquid",
+          "name": "120ml (1/2 cup) liquid egg whites",
+          "amount": 120.0,
+          "unit": "ml",
+          "displayAmount": "120ml (1/2 cup) liquid egg whites"
+        },
+        {
+          "id": "cottage-cheese-blended",
+          "name": "115g (1/2 cup) low-fat cottage cheese",
+          "amount": 115.0,
+          "unit": "g",
+          "displayAmount": "115g (1/2 cup) low-fat cottage cheese"
+        },
+        {
+          "id": null,
+          "name": "15g butter",
+          "amount": 15.0,
+          "unit": "g",
+          "displayAmount": "15g butter"
+        },
+        {
+          "id": null,
+          "name": "Fresh chives, chopped",
+          "amount": 1,
+          "unit": "unit",
+          "displayAmount": "Fresh chives, chopped"
+        },
+        {
+          "id": null,
+          "name": "Salt and pepper to taste",
+          "amount": 1,
+          "unit": "unit",
+          "displayAmount": "Salt and pepper to taste"
+        }
       ]
     },
     {
@@ -960,9 +2271,19 @@
       "category": "Low-Calorie",
       "subcategory": "Sandwiches",
       "breakfastType": "hot",
-      "tags": ["Quick", "Sandwich", "Portable", "Balanced"],
-      "methods": ["eggWhite", "noPowder"],
-      "cookingMethod": ["stovetop"],
+      "tags": [
+        "Quick",
+        "Sandwich",
+        "Portable",
+        "Balanced"
+      ],
+      "methods": [
+        "eggWhite",
+        "noPowder"
+      ],
+      "cookingMethod": [
+        "stovetop"
+      ],
       "dietary": {
         "glutenFree": false,
         "dairyFree": false,
@@ -987,11 +2308,70 @@
         "Salt, pepper, and hot sauce to taste"
       ],
       "instructions": [
-        { "step": "Toast Muffin", "text": "Split and toast the English muffin until golden." },
-        { "step": "Cook Egg Whites", "text": "Spray a small pan or egg ring with cooking spray. Pour in egg whites, season with salt and pepper. Cook until set, flipping once to form a patty shape." },
-        { "step": "Heat Turkey", "text": "Briefly warm turkey slices in the same pan." },
-        { "step": "Assemble", "text": "Layer on bottom muffin: egg white patty, turkey, cheese slice. The heat will melt the cheese." },
-        { "step": "Serve", "text": "Add top of muffin, add hot sauce if desired. Wrap in foil for on-the-go." }
+        {
+          "step": "Toast Muffin",
+          "text": "Split and toast the English muffin until golden."
+        },
+        {
+          "step": "Cook Egg Whites",
+          "text": "Spray a small pan or egg ring with cooking spray. Pour in egg whites, season with salt and pepper. Cook until set, flipping once to form a patty shape."
+        },
+        {
+          "step": "Heat Turkey",
+          "text": "Briefly warm turkey slices in the same pan."
+        },
+        {
+          "step": "Assemble",
+          "text": "Layer on bottom muffin: egg white patty, turkey, cheese slice. The heat will melt the cheese."
+        },
+        {
+          "step": "Serve",
+          "text": "Add top of muffin, add hot sauce if desired. Wrap in foil for on-the-go."
+        }
+      ],
+      "ingredientsStructured": [
+        {
+          "id": null,
+          "name": "1 whole wheat English muffin",
+          "amount": 1.0,
+          "unit": "unit",
+          "displayAmount": "1 whole wheat English muffin"
+        },
+        {
+          "id": "egg-whites-liquid",
+          "name": "180ml (6 oz) liquid egg whites",
+          "amount": 180.0,
+          "unit": "ml",
+          "displayAmount": "180ml (6 oz) liquid egg whites"
+        },
+        {
+          "id": "turkey-sausage",
+          "name": "60g sliced turkey breast (deli-style)",
+          "amount": 60.0,
+          "unit": "g",
+          "displayAmount": "60g sliced turkey breast (deli-style)"
+        },
+        {
+          "id": "reduced-fat-cheddar",
+          "name": "1 slice reduced-fat cheddar cheese",
+          "amount": 1.0,
+          "unit": "unit",
+          "displayAmount": "1 slice reduced-fat cheddar cheese"
+        },
+        {
+          "id": null,
+          "name": "Cooking spray",
+          "amount": 1,
+          "unit": "unit",
+          "displayAmount": "Cooking spray"
+        },
+        {
+          "id": null,
+          "name": "Salt, pepper, and hot sauce to taste",
+          "amount": 1,
+          "unit": "unit",
+          "displayAmount": "Salt, pepper, and hot sauce to taste"
+        }
       ]
     },
     {
@@ -1017,9 +2397,20 @@
       "category": "Low-Calorie",
       "subcategory": "Pancakes & Waffles",
       "breakfastType": "hot",
-      "tags": ["Pancakes", "Fluffy", "Sweet", "Weekend Brunch"],
-      "methods": ["cottage", "whey"],
-      "cookingMethod": ["stovetop", "griddle"],
+      "tags": [
+        "Pancakes",
+        "Fluffy",
+        "Sweet",
+        "Weekend Brunch"
+      ],
+      "methods": [
+        "cottage",
+        "whey"
+      ],
+      "cookingMethod": [
+        "stovetop",
+        "griddle"
+      ],
       "dietary": {
         "glutenFree": false,
         "dairyFree": false,
@@ -1047,11 +2438,91 @@
         "Fresh berries for topping"
       ],
       "instructions": [
-        { "step": "Blend", "text": "Add cottage cheese, eggs, protein powder, oat flour, baking powder, milk, and vanilla to a blender. Blend until smooth." },
-        { "step": "Rest", "text": "Let batter rest 5 minutes while you heat a non-stick pan or griddle over medium heat." },
-        { "step": "Cook", "text": "Pour 60ml batter per pancake onto the pan. Cook until bubbles form on surface and edges look set, about 2-3 minutes." },
-        { "step": "Flip", "text": "Flip carefully and cook another 1-2 minutes until golden brown." },
-        { "step": "Serve", "text": "Stack pancakes, top with sugar-free syrup and fresh berries." }
+        {
+          "step": "Blend",
+          "text": "Add cottage cheese, eggs, protein powder, oat flour, baking powder, milk, and vanilla to a blender. Blend until smooth."
+        },
+        {
+          "step": "Rest",
+          "text": "Let batter rest 5 minutes while you heat a non-stick pan or griddle over medium heat."
+        },
+        {
+          "step": "Cook",
+          "text": "Pour 60ml batter per pancake onto the pan. Cook until bubbles form on surface and edges look set, about 2-3 minutes."
+        },
+        {
+          "step": "Flip",
+          "text": "Flip carefully and cook another 1-2 minutes until golden brown."
+        },
+        {
+          "step": "Serve",
+          "text": "Stack pancakes, top with sugar-free syrup and fresh berries."
+        }
+      ],
+      "ingredientsStructured": [
+        {
+          "id": "cottage-cheese-blended",
+          "name": "115g (1/2 cup) low-fat cottage cheese",
+          "amount": 115.0,
+          "unit": "g",
+          "displayAmount": "115g (1/2 cup) low-fat cottage cheese"
+        },
+        {
+          "id": "whole-eggs",
+          "name": "2 large eggs",
+          "amount": 2.0,
+          "unit": "unit",
+          "displayAmount": "2 large eggs"
+        },
+        {
+          "id": "whey-vanilla",
+          "name": "60g (2 scoops) vanilla whey protein powder",
+          "amount": 60.0,
+          "unit": "g",
+          "displayAmount": "60g (2 scoops) vanilla whey protein powder"
+        },
+        {
+          "id": "oat-flour",
+          "name": "60g oat flour",
+          "amount": 60.0,
+          "unit": "g",
+          "displayAmount": "60g oat flour"
+        },
+        {
+          "id": "baking-powder",
+          "name": "5g baking powder",
+          "amount": 5.0,
+          "unit": "g",
+          "displayAmount": "5g baking powder"
+        },
+        {
+          "id": "dairy-milk",
+          "name": "60ml milk",
+          "amount": 60.0,
+          "unit": "ml",
+          "displayAmount": "60ml milk"
+        },
+        {
+          "id": "vanilla-extract",
+          "name": "5g vanilla extract",
+          "amount": 5.0,
+          "unit": "g",
+          "displayAmount": "5g vanilla extract"
+        },
+        {
+          "id": "maple-syrup",
+          "name": "Sugar-free maple syrup for serving",
+          "amount": 1,
+          "unit": "unit",
+          "displayAmount": "Sugar-free maple syrup for serving"
+        },
+        {
+          "id": null,
+          "name": "Fresh berries for topping",
+          "amount": 1,
+          "unit": "unit",
+          "displayAmount": "Fresh berries for topping"
+        }
       ]
     },
     {
@@ -1077,9 +2548,19 @@
       "category": "Fast-Food Clone",
       "subcategory": "Sandwiches",
       "breakfastType": "hot",
-      "tags": ["McDonald's Clone", "Copycat", "40g+", "Classic"],
-      "methods": ["eggWhite", "noPowder"],
-      "cookingMethod": ["stovetop"],
+      "tags": [
+        "McDonald's Clone",
+        "Copycat",
+        "40g+",
+        "Classic"
+      ],
+      "methods": [
+        "eggWhite",
+        "noPowder"
+      ],
+      "cookingMethod": [
+        "stovetop"
+      ],
       "dietary": {
         "glutenFree": false,
         "dairyFree": false,
@@ -1098,8 +2579,16 @@
         "chain": "McDonalds",
         "originalItem": "Egg McMuffin",
         "comparison": {
-          "original": { "protein": 17, "calories": 310, "sodium": 770 },
-          "clone": { "protein": 40, "calories": 320, "sodium": 580 }
+          "original": {
+            "protein": 17,
+            "calories": 310,
+            "sodium": 770
+          },
+          "clone": {
+            "protein": 40,
+            "calories": 320,
+            "sodium": 580
+          }
         },
         "improvements": {
           "proteinIncrease": 135,
@@ -1118,11 +2607,77 @@
         "Salt and pepper"
       ],
       "instructions": [
-        { "step": "Prep Ring", "text": "Use a round cookie cutter or egg ring sprayed with cooking oil. Place in a heated pan over medium heat." },
-        { "step": "Cook Eggs", "text": "Crack whole eggs into a bowl with egg whites, beat lightly. Pour into the ring to create a round patty. Season with salt and pepper. Cook 3 minutes, flip, cook 2 more minutes." },
-        { "step": "Heat Meat", "text": "While eggs cook, warm Canadian bacon in the pan." },
-        { "step": "Toast", "text": "Toast the English muffin until golden." },
-        { "step": "Assemble", "text": "Layer: bottom muffin, Canadian bacon, egg patty, cheese (let it melt from egg heat), top muffin." }
+        {
+          "step": "Prep Ring",
+          "text": "Use a round cookie cutter or egg ring sprayed with cooking oil. Place in a heated pan over medium heat."
+        },
+        {
+          "step": "Cook Eggs",
+          "text": "Crack whole eggs into a bowl with egg whites, beat lightly. Pour into the ring to create a round patty. Season with salt and pepper. Cook 3 minutes, flip, cook 2 more minutes."
+        },
+        {
+          "step": "Heat Meat",
+          "text": "While eggs cook, warm Canadian bacon in the pan."
+        },
+        {
+          "step": "Toast",
+          "text": "Toast the English muffin until golden."
+        },
+        {
+          "step": "Assemble",
+          "text": "Layer: bottom muffin, Canadian bacon, egg patty, cheese (let it melt from egg heat), top muffin."
+        }
+      ],
+      "ingredientsStructured": [
+        {
+          "id": null,
+          "name": "1 whole wheat English muffin",
+          "amount": 1.0,
+          "unit": "unit",
+          "displayAmount": "1 whole wheat English muffin"
+        },
+        {
+          "id": "whole-eggs",
+          "name": "2 large eggs",
+          "amount": 2.0,
+          "unit": "unit",
+          "displayAmount": "2 large eggs"
+        },
+        {
+          "id": "egg-whites-liquid",
+          "name": "120ml (4 oz) liquid egg whites",
+          "amount": 120.0,
+          "unit": "ml",
+          "displayAmount": "120ml (4 oz) liquid egg whites"
+        },
+        {
+          "id": null,
+          "name": "60g turkey Canadian bacon (2 slices)",
+          "amount": 60.0,
+          "unit": "g",
+          "displayAmount": "60g turkey Canadian bacon (2 slices)"
+        },
+        {
+          "id": null,
+          "name": "1 slice reduced-fat American cheese",
+          "amount": 1.0,
+          "unit": "unit",
+          "displayAmount": "1 slice reduced-fat American cheese"
+        },
+        {
+          "id": null,
+          "name": "Cooking spray",
+          "amount": 1,
+          "unit": "unit",
+          "displayAmount": "Cooking spray"
+        },
+        {
+          "id": null,
+          "name": "Salt and pepper",
+          "amount": 1,
+          "unit": "unit",
+          "displayAmount": "Salt and pepper"
+        }
       ]
     },
     {
@@ -1148,9 +2703,19 @@
       "category": "Fast-Food Clone",
       "subcategory": "Eggs & Scrambles",
       "breakfastType": "hot",
-      "tags": ["Starbucks Clone", "Copycat", "Creamy", "Meal Prep"],
-      "methods": ["cottage", "noPowder"],
-      "cookingMethod": ["oven"],
+      "tags": [
+        "Starbucks Clone",
+        "Copycat",
+        "Creamy",
+        "Meal Prep"
+      ],
+      "methods": [
+        "cottage",
+        "noPowder"
+      ],
+      "cookingMethod": [
+        "oven"
+      ],
       "dietary": {
         "glutenFree": true,
         "dairyFree": false,
@@ -1170,19 +2735,34 @@
         "batchSize": 12,
         "freezerFriendly": true,
         "storage": {
-          "refrigerator": { "duration": "5 days" },
-          "freezer": { "duration": "2 months" }
+          "refrigerator": {
+            "duration": "5 days"
+          },
+          "freezer": {
+            "duration": "2 months"
+          }
         },
         "reheat": [
-          { "method": "microwave", "duration": "30-45 seconds" }
+          {
+            "method": "microwave",
+            "duration": "30-45 seconds"
+          }
         ]
       },
       "fastFoodClone": {
         "chain": "Starbucks",
         "originalItem": "Bacon & Gruyere Egg Bites",
         "comparison": {
-          "original": { "protein": 13, "calories": 300, "sodium": 600 },
-          "clone": { "protein": 28, "calories": 180, "sodium": 360 }
+          "original": {
+            "protein": 13,
+            "calories": 300,
+            "sodium": 600
+          },
+          "clone": {
+            "protein": 28,
+            "calories": 180,
+            "sodium": 360
+          }
         },
         "improvements": {
           "proteinIncrease": 115,
@@ -1201,12 +2781,81 @@
         "Salt and pepper to taste"
       ],
       "instructions": [
-        { "step": "Prep", "text": "Preheat oven to 325F. Generously grease a 12-cup silicone egg bite mold or muffin tin." },
-        { "step": "Blend", "text": "Add eggs, egg whites, cottage cheese, garlic powder, salt, and pepper to a blender. Blend until completely smooth." },
-        { "step": "Add Mix-Ins", "text": "Divide bacon and gruyere evenly among the molds." },
-        { "step": "Pour", "text": "Pour egg mixture over the bacon and cheese, filling each cup about 3/4 full." },
-        { "step": "Bake", "text": "Cover with foil. Bake 25-30 minutes until set and slightly puffed." },
-        { "step": "Cool", "text": "Let cool 5 minutes before removing from molds." }
+        {
+          "step": "Prep",
+          "text": "Preheat oven to 325F. Generously grease a 12-cup silicone egg bite mold or muffin tin."
+        },
+        {
+          "step": "Blend",
+          "text": "Add eggs, egg whites, cottage cheese, garlic powder, salt, and pepper to a blender. Blend until completely smooth."
+        },
+        {
+          "step": "Add Mix-Ins",
+          "text": "Divide bacon and gruyere evenly among the molds."
+        },
+        {
+          "step": "Pour",
+          "text": "Pour egg mixture over the bacon and cheese, filling each cup about 3/4 full."
+        },
+        {
+          "step": "Bake",
+          "text": "Cover with foil. Bake 25-30 minutes until set and slightly puffed."
+        },
+        {
+          "step": "Cool",
+          "text": "Let cool 5 minutes before removing from molds."
+        }
+      ],
+      "ingredientsStructured": [
+        {
+          "id": "whole-eggs",
+          "name": "6 large eggs",
+          "amount": 6.0,
+          "unit": "unit",
+          "displayAmount": "6 large eggs"
+        },
+        {
+          "id": "egg-whites-liquid",
+          "name": "240ml (1 cup) liquid egg whites",
+          "amount": 240.0,
+          "unit": "ml",
+          "displayAmount": "240ml (1 cup) liquid egg whites"
+        },
+        {
+          "id": "cottage-cheese-blended",
+          "name": "230g (1 cup) low-fat cottage cheese",
+          "amount": 230.0,
+          "unit": "g",
+          "displayAmount": "230g (1 cup) low-fat cottage cheese"
+        },
+        {
+          "id": null,
+          "name": "60g gruyere cheese, shredded",
+          "amount": 60.0,
+          "unit": "g",
+          "displayAmount": "60g gruyere cheese, shredded"
+        },
+        {
+          "id": null,
+          "name": "4 slices turkey bacon, cooked and chopped",
+          "amount": 4.0,
+          "unit": "unit",
+          "displayAmount": "4 slices turkey bacon, cooked and chopped"
+        },
+        {
+          "id": null,
+          "name": "2g garlic powder",
+          "amount": 2.0,
+          "unit": "g",
+          "displayAmount": "2g garlic powder"
+        },
+        {
+          "id": null,
+          "name": "Salt and pepper to taste",
+          "amount": 1,
+          "unit": "unit",
+          "displayAmount": "Salt and pepper to taste"
+        }
       ]
     },
     {
@@ -1232,9 +2881,19 @@
       "category": "Fast-Food Clone",
       "subcategory": "Sandwiches",
       "breakfastType": "hot",
-      "tags": ["Chick-fil-A Clone", "Copycat", "Chicken", "35g+"],
-      "methods": ["eggWhite", "noPowder"],
-      "cookingMethod": ["stovetop"],
+      "tags": [
+        "Chick-fil-A Clone",
+        "Copycat",
+        "Chicken",
+        "35g+"
+      ],
+      "methods": [
+        "eggWhite",
+        "noPowder"
+      ],
+      "cookingMethod": [
+        "stovetop"
+      ],
       "dietary": {
         "glutenFree": false,
         "dairyFree": false,
@@ -1253,8 +2912,16 @@
         "chain": "ChickFilA",
         "originalItem": "Egg White Grill",
         "comparison": {
-          "original": { "protein": 25, "calories": 290, "sodium": 810 },
-          "clone": { "protein": 35, "calories": 310, "sodium": 580 }
+          "original": {
+            "protein": 25,
+            "calories": 290,
+            "sodium": 810
+          },
+          "clone": {
+            "protein": 35,
+            "calories": 310,
+            "sodium": 580
+          }
         },
         "improvements": {
           "proteinIncrease": 40,
@@ -1276,11 +2943,105 @@
         "4 slices American cheese"
       ],
       "instructions": [
-        { "step": "Season Chicken", "text": "Mix ground chicken with all seasonings until well combined." },
-        { "step": "Form Patties", "text": "Divide into 4 equal portions and form into thin, round patties slightly larger than the English muffins (they'll shrink)." },
-        { "step": "Cook Patties", "text": "Heat a non-stick pan over medium heat. Cook patties 4-5 minutes per side until internal temp reaches 165F." },
-        { "step": "Cook Egg Whites", "text": "In an egg ring or small pan, cook egg whites into round patties, about 120ml each." },
-        { "step": "Assemble", "text": "Toast muffins. Stack: bottom muffin, chicken patty, cheese, egg white patty, top muffin." }
+        {
+          "step": "Season Chicken",
+          "text": "Mix ground chicken with all seasonings until well combined."
+        },
+        {
+          "step": "Form Patties",
+          "text": "Divide into 4 equal portions and form into thin, round patties slightly larger than the English muffins (they'll shrink)."
+        },
+        {
+          "step": "Cook Patties",
+          "text": "Heat a non-stick pan over medium heat. Cook patties 4-5 minutes per side until internal temp reaches 165F."
+        },
+        {
+          "step": "Cook Egg Whites",
+          "text": "In an egg ring or small pan, cook egg whites into round patties, about 120ml each."
+        },
+        {
+          "step": "Assemble",
+          "text": "Toast muffins. Stack: bottom muffin, chicken patty, cheese, egg white patty, top muffin."
+        }
+      ],
+      "ingredientsStructured": [
+        {
+          "id": null,
+          "name": "454g (1 lb) chicken breast, ground or finely minced",
+          "amount": 454.0,
+          "unit": "g",
+          "displayAmount": "454g (1 lb) chicken breast, ground or finely minced"
+        },
+        {
+          "id": null,
+          "name": "5g smoked paprika",
+          "amount": 5.0,
+          "unit": "g",
+          "displayAmount": "5g smoked paprika"
+        },
+        {
+          "id": null,
+          "name": "3g garlic powder",
+          "amount": 3.0,
+          "unit": "g",
+          "displayAmount": "3g garlic powder"
+        },
+        {
+          "id": null,
+          "name": "3g onion powder",
+          "amount": 3.0,
+          "unit": "g",
+          "displayAmount": "3g onion powder"
+        },
+        {
+          "id": null,
+          "name": "2g dried thyme",
+          "amount": 2.0,
+          "unit": "g",
+          "displayAmount": "2g dried thyme"
+        },
+        {
+          "id": null,
+          "name": "5g salt",
+          "amount": 5.0,
+          "unit": "g",
+          "displayAmount": "5g salt"
+        },
+        {
+          "id": null,
+          "name": "2g black pepper",
+          "amount": 2.0,
+          "unit": "g",
+          "displayAmount": "2g black pepper"
+        },
+        {
+          "id": null,
+          "name": "1g cayenne pepper",
+          "amount": 1.0,
+          "unit": "g",
+          "displayAmount": "1g cayenne pepper"
+        },
+        {
+          "id": null,
+          "name": "4 whole wheat English muffins",
+          "amount": 4.0,
+          "unit": "unit",
+          "displayAmount": "4 whole wheat English muffins"
+        },
+        {
+          "id": "egg-whites-liquid",
+          "name": "480ml (2 cups) liquid egg whites",
+          "amount": 480.0,
+          "unit": "ml",
+          "displayAmount": "480ml (2 cups) liquid egg whites"
+        },
+        {
+          "id": null,
+          "name": "4 slices American cheese",
+          "amount": 4.0,
+          "unit": "unit",
+          "displayAmount": "4 slices American cheese"
+        }
       ]
     },
     {
@@ -1306,9 +3067,18 @@
       "category": "Fast-Food Clone",
       "subcategory": "Bowls",
       "breakfastType": "hot",
-      "tags": ["Panera Clone", "Copycat", "Bowl", "Avocado"],
-      "methods": ["noPowder"],
-      "cookingMethod": ["stovetop"],
+      "tags": [
+        "Panera Clone",
+        "Copycat",
+        "Bowl",
+        "Avocado"
+      ],
+      "methods": [
+        "noPowder"
+      ],
+      "cookingMethod": [
+        "stovetop"
+      ],
       "dietary": {
         "glutenFree": true,
         "dairyFree": false,
@@ -1327,8 +3097,16 @@
         "chain": "Panera",
         "originalItem": "Power Breakfast Bowl",
         "comparison": {
-          "original": { "protein": 27, "calories": 430, "sodium": 870 },
-          "clone": { "protein": 32, "calories": 380, "sodium": 480 }
+          "original": {
+            "protein": 27,
+            "calories": 430,
+            "sodium": 870
+          },
+          "clone": {
+            "protein": 32,
+            "calories": 380,
+            "sodium": 480
+          }
         },
         "improvements": {
           "proteinIncrease": 19,
@@ -1349,11 +3127,91 @@
         "Salt, pepper, and everything bagel seasoning"
       ],
       "instructions": [
-        { "step": "Prep Veggies", "text": "Halve tomatoes, slice avocado, and crumble feta. Set aside." },
-        { "step": "Wilt Spinach", "text": "Heat olive oil in a pan. Add spinach and cook until just wilted. Divide between two bowls." },
-        { "step": "Scramble Eggs", "text": "Whisk eggs and egg whites together. Pour into the same pan and scramble until just set. Season with salt and pepper." },
-        { "step": "Assemble Bowls", "text": "Divide scrambled eggs between bowls over spinach. Add avocado slices, tomatoes, and feta." },
-        { "step": "Season", "text": "Top with fresh basil and everything bagel seasoning." }
+        {
+          "step": "Prep Veggies",
+          "text": "Halve tomatoes, slice avocado, and crumble feta. Set aside."
+        },
+        {
+          "step": "Wilt Spinach",
+          "text": "Heat olive oil in a pan. Add spinach and cook until just wilted. Divide between two bowls."
+        },
+        {
+          "step": "Scramble Eggs",
+          "text": "Whisk eggs and egg whites together. Pour into the same pan and scramble until just set. Season with salt and pepper."
+        },
+        {
+          "step": "Assemble Bowls",
+          "text": "Divide scrambled eggs between bowls over spinach. Add avocado slices, tomatoes, and feta."
+        },
+        {
+          "step": "Season",
+          "text": "Top with fresh basil and everything bagel seasoning."
+        }
+      ],
+      "ingredientsStructured": [
+        {
+          "id": "whole-eggs",
+          "name": "4 large eggs",
+          "amount": 4.0,
+          "unit": "unit",
+          "displayAmount": "4 large eggs"
+        },
+        {
+          "id": "egg-whites-liquid",
+          "name": "240ml (1 cup) liquid egg whites",
+          "amount": 240.0,
+          "unit": "ml",
+          "displayAmount": "240ml (1 cup) liquid egg whites"
+        },
+        {
+          "id": null,
+          "name": "1 large avocado, sliced",
+          "amount": 1.0,
+          "unit": "unit",
+          "displayAmount": "1 large avocado, sliced"
+        },
+        {
+          "id": null,
+          "name": "200g cherry tomatoes, halved",
+          "amount": 200.0,
+          "unit": "g",
+          "displayAmount": "200g cherry tomatoes, halved"
+        },
+        {
+          "id": null,
+          "name": "100g baby spinach",
+          "amount": 100.0,
+          "unit": "g",
+          "displayAmount": "100g baby spinach"
+        },
+        {
+          "id": null,
+          "name": "60g feta cheese, crumbled",
+          "amount": 60.0,
+          "unit": "g",
+          "displayAmount": "60g feta cheese, crumbled"
+        },
+        {
+          "id": null,
+          "name": "Fresh basil leaves",
+          "amount": 1,
+          "unit": "unit",
+          "displayAmount": "Fresh basil leaves"
+        },
+        {
+          "id": null,
+          "name": "15ml olive oil",
+          "amount": 15.0,
+          "unit": "ml",
+          "displayAmount": "15ml olive oil"
+        },
+        {
+          "id": null,
+          "name": "Salt, pepper, and everything bagel seasoning",
+          "amount": 1,
+          "unit": "unit",
+          "displayAmount": "Salt, pepper, and everything bagel seasoning"
+        }
       ]
     },
     {
@@ -1379,9 +3237,19 @@
       "category": "High-Fiber",
       "subcategory": "Oatmeal & Porridge",
       "breakfastType": "hot",
-      "tags": ["High-Fiber", "Satiety", "Filling", "Oatmeal"],
-      "methods": ["whey"],
-      "cookingMethod": ["stovetop", "microwave"],
+      "tags": [
+        "High-Fiber",
+        "Satiety",
+        "Filling",
+        "Oatmeal"
+      ],
+      "methods": [
+        "whey"
+      ],
+      "cookingMethod": [
+        "stovetop",
+        "microwave"
+      ],
       "dietary": {
         "glutenFree": false,
         "dairyFree": false,
@@ -1409,10 +3277,87 @@
         "Pinch of salt"
       ],
       "instructions": [
-        { "step": "Cook Oats", "text": "Combine oats, water/milk, cinnamon, and salt in a pot. Cook over medium heat for 5-7 minutes, stirring occasionally." },
-        { "step": "Add Seeds", "text": "Stir in flaxseed and chia seeds during the last minute of cooking." },
-        { "step": "Add Protein", "text": "Remove from heat. Stir in protein powder until fully incorporated. Add a splash more liquid if too thick." },
-        { "step": "Top", "text": "Transfer to bowl. Top with almond butter and fresh raspberries." }
+        {
+          "step": "Cook Oats",
+          "text": "Combine oats, water/milk, cinnamon, and salt in a pot. Cook over medium heat for 5-7 minutes, stirring occasionally."
+        },
+        {
+          "step": "Add Seeds",
+          "text": "Stir in flaxseed and chia seeds during the last minute of cooking."
+        },
+        {
+          "step": "Add Protein",
+          "text": "Remove from heat. Stir in protein powder until fully incorporated. Add a splash more liquid if too thick."
+        },
+        {
+          "step": "Top",
+          "text": "Transfer to bowl. Top with almond butter and fresh raspberries."
+        }
+      ],
+      "ingredientsStructured": [
+        {
+          "id": "rolled-oats",
+          "name": "80g rolled oats",
+          "amount": 80.0,
+          "unit": "g",
+          "displayAmount": "80g rolled oats"
+        },
+        {
+          "id": "whey-vanilla",
+          "name": "30g (1 scoop) vanilla whey protein powder",
+          "amount": 30.0,
+          "unit": "g",
+          "displayAmount": "30g (1 scoop) vanilla whey protein powder"
+        },
+        {
+          "id": "dairy-milk",
+          "name": "240ml water or milk",
+          "amount": 240.0,
+          "unit": "ml",
+          "displayAmount": "240ml water or milk"
+        },
+        {
+          "id": "flax-seeds",
+          "name": "15g ground flaxseed",
+          "amount": 15.0,
+          "unit": "g",
+          "displayAmount": "15g ground flaxseed"
+        },
+        {
+          "id": "chia-seeds",
+          "name": "15g chia seeds",
+          "amount": 15.0,
+          "unit": "g",
+          "displayAmount": "15g chia seeds"
+        },
+        {
+          "id": "almond-butter",
+          "name": "30g almond butter",
+          "amount": 30.0,
+          "unit": "g",
+          "displayAmount": "30g almond butter"
+        },
+        {
+          "id": null,
+          "name": "100g fresh raspberries",
+          "amount": 100.0,
+          "unit": "g",
+          "displayAmount": "100g fresh raspberries"
+        },
+        {
+          "id": "cinnamon",
+          "name": "5g cinnamon",
+          "amount": 5.0,
+          "unit": "g",
+          "displayAmount": "5g cinnamon"
+        },
+        {
+          "id": null,
+          "name": "Pinch of salt",
+          "amount": 1,
+          "unit": "unit",
+          "displayAmount": "Pinch of salt"
+        }
       ]
     },
     {
@@ -1438,9 +3383,20 @@
       "category": "High-Fiber",
       "subcategory": "Burritos & Wraps",
       "breakfastType": "hot",
-      "tags": ["High-Fiber", "Black Beans", "Savory", "Meal Prep"],
-      "methods": ["eggWhite", "legume", "noPowder"],
-      "cookingMethod": ["stovetop"],
+      "tags": [
+        "High-Fiber",
+        "Black Beans",
+        "Savory",
+        "Meal Prep"
+      ],
+      "methods": [
+        "eggWhite",
+        "legume",
+        "noPowder"
+      ],
+      "cookingMethod": [
+        "stovetop"
+      ],
       "dietary": {
         "glutenFree": false,
         "dairyFree": false,
@@ -1460,11 +3416,18 @@
         "batchSize": 4,
         "freezerFriendly": true,
         "storage": {
-          "refrigerator": { "duration": "5 days" },
-          "freezer": { "duration": "2 months" }
+          "refrigerator": {
+            "duration": "5 days"
+          },
+          "freezer": {
+            "duration": "2 months"
+          }
         },
         "reheat": [
-          { "method": "microwave", "duration": "2-3 minutes" }
+          {
+            "method": "microwave",
+            "duration": "2-3 minutes"
+          }
         ]
       },
       "image": "bean-egg-white-burrito.png",
@@ -1480,11 +3443,91 @@
         "Hot sauce for serving"
       ],
       "instructions": [
-        { "step": "Season Beans", "text": "In a small pot, heat black beans with cumin, chili powder, salt, and pepper. Mash slightly for texture." },
-        { "step": "Scramble Egg Whites", "text": "Heat a non-stick pan over medium heat. Pour in egg whites, scramble until just set." },
-        { "step": "Warm Tortillas", "text": "Warm tortillas in a dry skillet or microwave for 20 seconds each." },
-        { "step": "Assemble", "text": "Layer on each tortilla: 1/4 of the beans, 1/4 of the egg whites, cheese, and pico de gallo. Roll tightly." },
-        { "step": "Serve or Store", "text": "Serve immediately with hot sauce, or wrap in foil for meal prep." }
+        {
+          "step": "Season Beans",
+          "text": "In a small pot, heat black beans with cumin, chili powder, salt, and pepper. Mash slightly for texture."
+        },
+        {
+          "step": "Scramble Egg Whites",
+          "text": "Heat a non-stick pan over medium heat. Pour in egg whites, scramble until just set."
+        },
+        {
+          "step": "Warm Tortillas",
+          "text": "Warm tortillas in a dry skillet or microwave for 20 seconds each."
+        },
+        {
+          "step": "Assemble",
+          "text": "Layer on each tortilla: 1/4 of the beans, 1/4 of the egg whites, cheese, and pico de gallo. Roll tightly."
+        },
+        {
+          "step": "Serve or Store",
+          "text": "Serve immediately with hot sauce, or wrap in foil for meal prep."
+        }
+      ],
+      "ingredientsStructured": [
+        {
+          "id": "egg-whites-liquid",
+          "name": "480ml (2 cups) liquid egg whites",
+          "amount": 480.0,
+          "unit": "ml",
+          "displayAmount": "480ml (2 cups) liquid egg whites"
+        },
+        {
+          "id": "black-beans",
+          "name": "400g (1 can) black beans, drained and rinsed",
+          "amount": 400.0,
+          "unit": "g",
+          "displayAmount": "400g (1 can) black beans, drained and rinsed"
+        },
+        {
+          "id": "flour-tortilla",
+          "name": "4 large flour tortillas",
+          "amount": 4.0,
+          "unit": "unit",
+          "displayAmount": "4 large flour tortillas"
+        },
+        {
+          "id": null,
+          "name": "115g (1 cup) shredded pepper jack cheese",
+          "amount": 115.0,
+          "unit": "g",
+          "displayAmount": "115g (1 cup) shredded pepper jack cheese"
+        },
+        {
+          "id": null,
+          "name": "120g fresh pico de gallo",
+          "amount": 120.0,
+          "unit": "g",
+          "displayAmount": "120g fresh pico de gallo"
+        },
+        {
+          "id": null,
+          "name": "1 tsp cumin",
+          "amount": 1.0,
+          "unit": "tsp",
+          "displayAmount": "1 tsp cumin"
+        },
+        {
+          "id": null,
+          "name": "1 tsp chili powder",
+          "amount": 1.0,
+          "unit": "tsp",
+          "displayAmount": "1 tsp chili powder"
+        },
+        {
+          "id": null,
+          "name": "Salt and pepper",
+          "amount": 1,
+          "unit": "unit",
+          "displayAmount": "Salt and pepper"
+        },
+        {
+          "id": null,
+          "name": "Hot sauce for serving",
+          "amount": 1,
+          "unit": "unit",
+          "displayAmount": "Hot sauce for serving"
+        }
       ]
     },
     {
@@ -1510,9 +3553,19 @@
       "category": "High-Fiber",
       "subcategory": "Bowls",
       "breakfastType": "cold",
-      "tags": ["Berries", "Antioxidants", "Colorful", "Refreshing"],
-      "methods": ["whey", "noBake"],
-      "cookingMethod": ["noHeat"],
+      "tags": [
+        "Berries",
+        "Antioxidants",
+        "Colorful",
+        "Refreshing"
+      ],
+      "methods": [
+        "whey",
+        "noBake"
+      ],
+      "cookingMethod": [
+        "noHeat"
+      ],
       "dietary": {
         "glutenFree": true,
         "dairyFree": false,
@@ -1539,10 +3592,80 @@
         "10ml honey (optional)"
       ],
       "instructions": [
-        { "step": "Mix Base", "text": "In a bowl, stir protein powder into Greek yogurt until smooth." },
-        { "step": "Add Chia", "text": "Stir in chia seeds. Let sit 5 minutes to thicken slightly." },
-        { "step": "Arrange Berries", "text": "Top with strawberries, blueberries, and raspberries in colorful rows." },
-        { "step": "Garnish", "text": "Sprinkle with sliced almonds and drizzle with honey if desired." }
+        {
+          "step": "Mix Base",
+          "text": "In a bowl, stir protein powder into Greek yogurt until smooth."
+        },
+        {
+          "step": "Add Chia",
+          "text": "Stir in chia seeds. Let sit 5 minutes to thicken slightly."
+        },
+        {
+          "step": "Arrange Berries",
+          "text": "Top with strawberries, blueberries, and raspberries in colorful rows."
+        },
+        {
+          "step": "Garnish",
+          "text": "Sprinkle with sliced almonds and drizzle with honey if desired."
+        }
+      ],
+      "ingredientsStructured": [
+        {
+          "id": "greek-yogurt-nonfat",
+          "name": "200g Greek yogurt (0% fat)",
+          "amount": 200.0,
+          "unit": "g",
+          "displayAmount": "200g Greek yogurt (0% fat)"
+        },
+        {
+          "id": "whey-vanilla",
+          "name": "30g (1 scoop) vanilla whey protein powder",
+          "amount": 30.0,
+          "unit": "g",
+          "displayAmount": "30g (1 scoop) vanilla whey protein powder"
+        },
+        {
+          "id": null,
+          "name": "100g fresh strawberries, sliced",
+          "amount": 100.0,
+          "unit": "g",
+          "displayAmount": "100g fresh strawberries, sliced"
+        },
+        {
+          "id": "blueberries-fresh",
+          "name": "75g fresh blueberries",
+          "amount": 75.0,
+          "unit": "g",
+          "displayAmount": "75g fresh blueberries"
+        },
+        {
+          "id": null,
+          "name": "50g fresh raspberries",
+          "amount": 50.0,
+          "unit": "g",
+          "displayAmount": "50g fresh raspberries"
+        },
+        {
+          "id": "chia-seeds",
+          "name": "20g chia seeds",
+          "amount": 20.0,
+          "unit": "g",
+          "displayAmount": "20g chia seeds"
+        },
+        {
+          "id": null,
+          "name": "15g sliced almonds",
+          "amount": 15.0,
+          "unit": "g",
+          "displayAmount": "15g sliced almonds"
+        },
+        {
+          "id": "honey",
+          "name": "10ml honey (optional)",
+          "amount": 10.0,
+          "unit": "ml",
+          "displayAmount": "10ml honey (optional)"
+        }
       ]
     },
     {
@@ -1568,9 +3691,18 @@
       "category": "High-Fiber",
       "subcategory": "Oatmeal & Porridge",
       "breakfastType": "hot",
-      "tags": ["Savory", "Oatmeal", "Turkey", "Comfort Food"],
-      "methods": ["noPowder"],
-      "cookingMethod": ["stovetop"],
+      "tags": [
+        "Savory",
+        "Oatmeal",
+        "Turkey",
+        "Comfort Food"
+      ],
+      "methods": [
+        "noPowder"
+      ],
+      "cookingMethod": [
+        "stovetop"
+      ],
       "dietary": {
         "glutenFree": false,
         "dairyFree": true,
@@ -1598,11 +3730,91 @@
         "Green onions for garnish"
       ],
       "instructions": [
-        { "step": "Cook Oats", "text": "Bring chicken broth to a boil. Add oats, reduce heat, and simmer 5-7 minutes until creamy. Season with salt, pepper, and garlic powder." },
-        { "step": "Cook Turkey", "text": "Meanwhile, brown ground turkey in a skillet, breaking into crumbles. Season with salt and pepper." },
-        { "step": "Wilt Spinach", "text": "Add spinach to the turkey and cook until just wilted." },
-        { "step": "Fry Eggs", "text": "In a separate pan, fry eggs sunny-side up or to your preference." },
-        { "step": "Assemble", "text": "Divide savory oats between two bowls. Top with turkey-spinach mixture and a fried egg. Garnish with green onions and hot sauce." }
+        {
+          "step": "Cook Oats",
+          "text": "Bring chicken broth to a boil. Add oats, reduce heat, and simmer 5-7 minutes until creamy. Season with salt, pepper, and garlic powder."
+        },
+        {
+          "step": "Cook Turkey",
+          "text": "Meanwhile, brown ground turkey in a skillet, breaking into crumbles. Season with salt and pepper."
+        },
+        {
+          "step": "Wilt Spinach",
+          "text": "Add spinach to the turkey and cook until just wilted."
+        },
+        {
+          "step": "Fry Eggs",
+          "text": "In a separate pan, fry eggs sunny-side up or to your preference."
+        },
+        {
+          "step": "Assemble",
+          "text": "Divide savory oats between two bowls. Top with turkey-spinach mixture and a fried egg. Garnish with green onions and hot sauce."
+        }
+      ],
+      "ingredientsStructured": [
+        {
+          "id": "rolled-oats",
+          "name": "160g rolled oats",
+          "amount": 160.0,
+          "unit": "g",
+          "displayAmount": "160g rolled oats"
+        },
+        {
+          "id": null,
+          "name": "480ml low-sodium chicken broth",
+          "amount": 480.0,
+          "unit": "ml",
+          "displayAmount": "480ml low-sodium chicken broth"
+        },
+        {
+          "id": "turkey-sausage",
+          "name": "227g (8 oz) lean ground turkey",
+          "amount": 227.0,
+          "unit": "g",
+          "displayAmount": "227g (8 oz) lean ground turkey"
+        },
+        {
+          "id": null,
+          "name": "200g fresh spinach",
+          "amount": 200.0,
+          "unit": "g",
+          "displayAmount": "200g fresh spinach"
+        },
+        {
+          "id": "whole-eggs",
+          "name": "2 large eggs",
+          "amount": 2.0,
+          "unit": "unit",
+          "displayAmount": "2 large eggs"
+        },
+        {
+          "id": null,
+          "name": "2g garlic powder",
+          "amount": 2.0,
+          "unit": "g",
+          "displayAmount": "2g garlic powder"
+        },
+        {
+          "id": null,
+          "name": "Salt and pepper",
+          "amount": 1,
+          "unit": "unit",
+          "displayAmount": "Salt and pepper"
+        },
+        {
+          "id": null,
+          "name": "Hot sauce (optional)",
+          "amount": 1,
+          "unit": "unit",
+          "displayAmount": "Hot sauce (optional)"
+        },
+        {
+          "id": null,
+          "name": "Green onions for garnish",
+          "amount": 1,
+          "unit": "unit",
+          "displayAmount": "Green onions for garnish"
+        }
       ]
     },
     {
@@ -1628,9 +3840,19 @@
       "category": "High-Fiber",
       "subcategory": "Soups",
       "breakfastType": "hot",
-      "tags": ["Soup", "Warming", "Unconventional", "Winter"],
-      "methods": ["legume", "noPowder"],
-      "cookingMethod": ["stovetop"],
+      "tags": [
+        "Soup",
+        "Warming",
+        "Unconventional",
+        "Winter"
+      ],
+      "methods": [
+        "legume",
+        "noPowder"
+      ],
+      "cookingMethod": [
+        "stovetop"
+      ],
       "dietary": {
         "glutenFree": true,
         "dairyFree": false,
@@ -1650,11 +3872,19 @@
         "batchSize": 4,
         "freezerFriendly": true,
         "storage": {
-          "refrigerator": { "duration": "5 days" },
-          "freezer": { "duration": "2 months" }
+          "refrigerator": {
+            "duration": "5 days"
+          },
+          "freezer": {
+            "duration": "2 months"
+          }
         },
         "reheat": [
-          { "method": "stovetop", "duration": "5-7 minutes", "instructions": "Reheat soup base, then poach a fresh egg to serve." }
+          {
+            "method": "stovetop",
+            "duration": "5-7 minutes",
+            "instructions": "Reheat soup base, then poach a fresh egg to serve."
+          }
         ]
       },
       "image": "high-protein-breakfast-soup.png",
@@ -1673,11 +3903,112 @@
         "Crusty bread for serving"
       ],
       "instructions": [
-        { "step": "Sauté Aromatics", "text": "Heat olive oil in a large pot over medium heat. Add garlic and cook 1 minute until fragrant." },
-        { "step": "Add Liquids", "text": "Add broth, tomatoes, and Italian seasoning. Bring to a simmer." },
-        { "step": "Add Beans and Greens", "text": "Stir in beans and kale. Simmer 10 minutes until kale is tender." },
-        { "step": "Poach Eggs", "text": "Create 4 wells in the soup. Crack an egg into each well. Cover and cook 4-5 minutes until whites are set but yolks are still runny." },
-        { "step": "Serve", "text": "Ladle into bowls, ensuring each gets an egg. Top with parmesan, fresh basil, and black pepper. Serve with crusty bread." }
+        {
+          "step": "Saut\u00e9 Aromatics",
+          "text": "Heat olive oil in a large pot over medium heat. Add garlic and cook 1 minute until fragrant."
+        },
+        {
+          "step": "Add Liquids",
+          "text": "Add broth, tomatoes, and Italian seasoning. Bring to a simmer."
+        },
+        {
+          "step": "Add Beans and Greens",
+          "text": "Stir in beans and kale. Simmer 10 minutes until kale is tender."
+        },
+        {
+          "step": "Poach Eggs",
+          "text": "Create 4 wells in the soup. Crack an egg into each well. Cover and cook 4-5 minutes until whites are set but yolks are still runny."
+        },
+        {
+          "step": "Serve",
+          "text": "Ladle into bowls, ensuring each gets an egg. Top with parmesan, fresh basil, and black pepper. Serve with crusty bread."
+        }
+      ],
+      "ingredientsStructured": [
+        {
+          "id": null,
+          "name": "800g (2 cans) white cannellini beans, drained",
+          "amount": 800.0,
+          "unit": "g",
+          "displayAmount": "800g (2 cans) white cannellini beans, drained"
+        },
+        {
+          "id": null,
+          "name": "1L low-sodium chicken or vegetable broth",
+          "amount": 1,
+          "unit": "unit",
+          "displayAmount": "1L low-sodium chicken or vegetable broth"
+        },
+        {
+          "id": null,
+          "name": "400g (1 can) diced tomatoes",
+          "amount": 400.0,
+          "unit": "g",
+          "displayAmount": "400g (1 can) diced tomatoes"
+        },
+        {
+          "id": null,
+          "name": "200g kale, stems removed and chopped",
+          "amount": 200.0,
+          "unit": "g",
+          "displayAmount": "200g kale, stems removed and chopped"
+        },
+        {
+          "id": "whole-eggs",
+          "name": "4 large eggs",
+          "amount": 4.0,
+          "unit": "unit",
+          "displayAmount": "4 large eggs"
+        },
+        {
+          "id": null,
+          "name": "60g parmesan cheese, grated",
+          "amount": 60.0,
+          "unit": "g",
+          "displayAmount": "60g parmesan cheese, grated"
+        },
+        {
+          "id": null,
+          "name": "4 cloves garlic, minced",
+          "amount": 4.0,
+          "unit": "unit",
+          "displayAmount": "4 cloves garlic, minced"
+        },
+        {
+          "id": null,
+          "name": "30ml olive oil",
+          "amount": 30.0,
+          "unit": "ml",
+          "displayAmount": "30ml olive oil"
+        },
+        {
+          "id": null,
+          "name": "5g Italian seasoning",
+          "amount": 5.0,
+          "unit": "g",
+          "displayAmount": "5g Italian seasoning"
+        },
+        {
+          "id": null,
+          "name": "Salt and pepper",
+          "amount": 1,
+          "unit": "unit",
+          "displayAmount": "Salt and pepper"
+        },
+        {
+          "id": null,
+          "name": "Fresh basil for garnish",
+          "amount": 1,
+          "unit": "unit",
+          "displayAmount": "Fresh basil for garnish"
+        },
+        {
+          "id": null,
+          "name": "Crusty bread for serving",
+          "amount": 1,
+          "unit": "unit",
+          "displayAmount": "Crusty bread for serving"
+        }
       ]
     }
   ]
