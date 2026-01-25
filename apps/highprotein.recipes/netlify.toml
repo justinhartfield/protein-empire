@@ -42,9 +42,8 @@
 
 # Netlify Functions
 [functions]
-  node_bundler = "esbuild"
-  external_node_modules = ["@netlify/blobs", "@sendgrid/client", "@sendgrid/mail"]
   directory = "netlify/functions"
+  included_files = ["netlify/functions/node_modules/**"]
 
 # Redirect /api/* to Netlify Functions
 [[redirects]]
