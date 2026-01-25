@@ -1,10 +1,10 @@
 # Netlify Configuration
 # Uses pre-built dist files from the repository
-# Build trigger: 2026-01-25T11:50:00
+# Build trigger: 2026-01-25T12:00:00
 
 [build]
   # Install all dependencies
-  command = "npm ci && npm --prefix functions ci && echo 'All dependencies installed'"
+  command = "npm ci && cd netlify/functions && npm ci && echo 'All dependencies installed'"
 
   # Publish directory
   publish = "dist"
@@ -41,9 +41,10 @@
   [headers.values]
     Cache-Control = "public, max-age=86400"
 
-# Netlify Functions - use standard 'functions' directory
+# Netlify Functions
 [functions]
-  directory = "functions"
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
 
 # Redirect /api/* to Netlify Functions
 [[redirects]]
