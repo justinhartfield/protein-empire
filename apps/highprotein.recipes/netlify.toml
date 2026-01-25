@@ -2,9 +2,9 @@
 # Uses pre-built dist files from the repository
 
 [build]
-  # Install function dependencies
-  command = "cd netlify/functions && npm ci && echo 'Function dependencies installed'"
-  
+  # Install dependencies at root and in functions directory
+  command = "npm install && cd netlify/functions && npm install && echo 'Dependencies installed'"
+
   # Publish directory
   publish = "dist"
 
@@ -42,6 +42,8 @@
 
 # Netlify Functions
 [functions]
+  node_bundler = "esbuild"
+  external_node_modules = ["@sendgrid/client", "@sendgrid/mail"]
   directory = "netlify/functions"
 
 # Redirect /api/* to Netlify Functions

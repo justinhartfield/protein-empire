@@ -5,9 +5,9 @@
  * Supports both single opt-in and double opt-in modes.
  */
 
-const sgClient = require('@sendgrid/client');
-const sgMail = require('@sendgrid/mail');
-const crypto = require('crypto');
+import sgClient from '@sendgrid/client';
+import sgMail from '@sendgrid/mail';
+import crypto from 'crypto';
 
 // Initialize SendGrid
 const apiKey = process.env.SENDGRID_API_KEY || '';
@@ -197,7 +197,7 @@ function formatPackName(slug) {
   return packNames[slug] || slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ') + ' Pack';
 }
 
-exports.handler = async function(event, context) {
+export async function handler(event, context) {
   // Handle CORS preflight
   if (event.httpMethod === 'OPTIONS') {
     return {
@@ -306,8 +306,6 @@ exports.handler = async function(event, context) {
       body: JSON.stringify({ success: false, message: 'Failed to process subscription' })
     };
   }
-};
+}
 
-module.exports.createSignedToken = createSignedToken;
-module.exports.verifySignedToken = verifySignedToken;
-module.exports.formatPackName = formatPackName;
+export { createSignedToken, verifySignedToken, formatPackName };

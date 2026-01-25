@@ -4,9 +4,9 @@
  * Handles email confirmation for double opt-in subscriptions.
  */
 
-const sgClient = require('@sendgrid/client');
-const sgMail = require('@sendgrid/mail');
-const crypto = require('crypto');
+import sgClient from '@sendgrid/client';
+import sgMail from '@sendgrid/mail';
+import crypto from 'crypto';
 
 const apiKey = process.env.SENDGRID_API_KEY || '';
 sgClient.setApiKey(apiKey);
@@ -105,7 +105,7 @@ function errorPage(title, message, siteUrl) {
     </body></html>`;
 }
 
-exports.handler = async function(event, context) {
+export async function handler(event, context) {
   const token = event.queryStringParameters?.token;
   const siteUrl = process.env.URL || 'https://highprotein.recipes';
 
@@ -147,7 +147,6 @@ exports.handler = async function(event, context) {
     headers: { 'Location': successUrl, 'Cache-Control': 'no-cache' },
     body: ''
   };
-};
+}
 
-module.exports.verifySignedToken = verifySignedToken;
-module.exports.createAccessToken = createAccessToken;
+export { verifySignedToken, createAccessToken };
