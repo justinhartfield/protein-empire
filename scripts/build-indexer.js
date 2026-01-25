@@ -238,7 +238,14 @@ async function buildIndexerSite() {
   console.log('   - P:E Ratio Calculator');
   generatePERatioCalculator(site, partials, outputDir);
   console.log('   - Breakfast Macro Builder');
-  generateBreakfastBuilder(site, categories.breakfast, partials, outputDir);
+  // Include breakfast, desserts, and snacks (excluding savory like bread/pizza)
+  const breakfastBuilderRecipes = [
+    ...categories.breakfast,
+    ...categories.desserts,
+    ...categories.snacks
+  ];
+  console.log(`     (${breakfastBuilderRecipes.length} recipes: breakfast + desserts + snacks)`);
+  generateBreakfastBuilder(site, breakfastBuilderRecipes, partials, outputDir);
   console.log('   - Cost-per-Protein Calculator');
   generateCostCalculator(site, partials, outputDir);
   console.log('   - Tools Landing Page');
@@ -1805,7 +1812,7 @@ function generateBreakfastBuilder(site, breakfastRecipes, partials, outputDir) {
 
       <!-- Results Grid -->
       <div class="flex-grow">
-        <div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-6">
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
           <template x-for="recipe in filteredRecipes" :key="recipe.slug">
             <a :href="recipe.sourceSite === 'highprotein.recipes' ? '/breakfast/recipes/' + recipe.slug + '/' : '/' + recipe.slug + '-preview.html'"
                class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm
@@ -2369,6 +2376,15 @@ function generateBreakfastPillarPage(site, breakfastRecipes, partials, outputDir
     return { ...intent, count: matches.length };
   }).filter(i => i.count >= 3);
 
+  // Get top 25 recipes sorted by protein content (highest first)
+  const topBreakfastRecipes = [...breakfastRecipes]
+    .sort((a, b) => {
+      const proteinA = a.protein || a.nutrition?.protein || 0;
+      const proteinB = b.protein || b.nutrition?.protein || 0;
+      return proteinB - proteinA;
+    })
+    .slice(0, 25);
+
   const template = `
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
@@ -2422,10 +2438,10 @@ function generateBreakfastPillarPage(site, breakfastRecipes, partials, outputDir
     <div class="max-w-7xl mx-auto px-4">
       <div class="flex justify-between items-center mb-8">
         <h2 class="font-anton text-3xl uppercase">TOP BREAKFAST RECIPES</h2>
-        <a href="/category-breakfast.html" class="text-brand-500 hover:text-brand-600 font-medium">View All &rarr;</a>
+        <a href="/tools/breakfast-builder.html" class="text-brand-500 hover:text-brand-600 font-medium">Filter Recipes &rarr;</a>
       </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        <% breakfastRecipes.slice(0, 8).forEach(recipe => { %>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+        <% topBreakfastRecipes.forEach(recipe => { %>
           <%- include('recipe-card', { recipe }) %>
         <% }); %>
       </div>
@@ -2477,6 +2493,7 @@ function generateBreakfastPillarPage(site, breakfastRecipes, partials, outputDir
   const html = ejs.render(template, {
     site,
     breakfastRecipes,
+    topBreakfastRecipes,
     intentCounts,
     include: (name, data) => ejs.render(partials[name], data)
   });
