@@ -1,9 +1,9 @@
 /**
  * Netlify Serverless Function: Confirm
- *
+ * 
  * Handles email confirmation for double opt-in subscriptions.
  * Verifies signed token, adds contact to SendGrid, and redirects to success page.
- *
+ * 
  * Uses signed tokens (JWT-like) - no external storage needed.
  */
 
@@ -30,26 +30,26 @@ function verifySignedToken(token) {
   try {
     const [dataStr, signature] = token.split('.');
     if (!dataStr || !signature) return null;
-
+    
     // Verify signature
     const expectedSignature = crypto
       .createHmac('sha256', SIGNING_SECRET)
       .update(dataStr)
       .digest('base64url');
-
+    
     if (signature !== expectedSignature) {
       console.log('[confirm] Invalid token signature');
       return null;
     }
-
+    
     // Decode and check expiry
     const payload = JSON.parse(Buffer.from(dataStr, 'base64url').toString());
-
+    
     if (payload.exp && Date.now() > payload.exp) {
       console.log('[confirm] Token expired');
       return null;
     }
-
+    
     return payload;
   } catch (error) {
     console.error('[confirm] Token verification error:', error);
@@ -66,13 +66,13 @@ function createAccessToken(data) {
     exp: Date.now() + (ACCESS_TOKEN_EXPIRY_HOURS * 60 * 60 * 1000),
     type: 'access'
   };
-
+  
   const dataStr = Buffer.from(JSON.stringify(payload)).toString('base64url');
   const signature = crypto
     .createHmac('sha256', SIGNING_SECRET)
     .update(dataStr)
     .digest('base64url');
-
+  
   return `${dataStr}.${signature}`;
 }
 
@@ -99,8 +99,8 @@ async function subscribeContact(email, listId) {
  * Send PDF delivery email
  */
 async function sendPdfEmail(to, from, packName, downloadUrl, siteName) {
-  const subject = `Your ${packName} is ready!`;
-
+  const subject = `Your ${packName} is ready! 🎉`;
+  
   const html = `
     <!DOCTYPE html>
     <html>
@@ -110,27 +110,27 @@ async function sendPdfEmail(to, from, packName, downloadUrl, siteName) {
     </head>
     <body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #1e293b; max-width: 600px; margin: 0 auto; padding: 20px;">
       <div style="text-align: center; margin-bottom: 30px;">
-        <h1 style="color: #f59e0b; margin: 0;">${siteName}</h1>
+        <h1 style="color: #f59e0b; margin: 0;">🍪 ${siteName}</h1>
       </div>
-
+      
       <h2 style="color: #1e293b;">Your ${packName} is ready!</h2>
-
+      
       <p>Thanks for confirming your email! Click the button below to download your free recipe pack:</p>
-
+      
       <div style="text-align: center; margin: 30px 0;">
-        <a href="${downloadUrl}"
+        <a href="${downloadUrl}" 
            style="display: inline-block; background-color: #f59e0b; color: white; text-decoration: none; padding: 16px 32px; border-radius: 8px; font-weight: bold; font-size: 16px;">
           Download Your PDF
         </a>
       </div>
-
+      
       <p style="color: #64748b; font-size: 14px;">
         If the button doesn't work, copy and paste this link into your browser:<br>
         <a href="${downloadUrl}" style="color: #f59e0b;">${downloadUrl}</a>
       </p>
-
+      
       <hr style="border: none; border-top: 1px solid #e2e8f0; margin: 30px 0;">
-
+      
       <p style="color: #64748b; font-size: 12px; text-align: center;">
         You're receiving this because you confirmed your subscription to ${siteName}.<br>
         Questions? Just reply to this email.
@@ -155,17 +155,16 @@ async function sendPdfEmail(to, from, packName, downloadUrl, siteName) {
  */
 function formatPackName(slug) {
   if (!slug) return 'Recipe Pack';
-
+  
   const packNames = {
     'starter': 'Starter Pack',
-    'breakfast-meal-plan': '7-Day Breakfast Meal Plan',
     'high-protein': 'High Protein Pack',
     'holiday': 'Holiday Pack',
     'kids': 'Kids Pack',
     'no-bake': 'No-Bake Pack',
     'peanut-butter': 'Peanut Butter Pack'
   };
-
+  
   return packNames[slug] || slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ') + ' Pack';
 }
 
@@ -187,7 +186,7 @@ function generateErrorPage(title, message, siteUrl) {
         <div class="text-6xl mb-6">😕</div>
         <h1 class="text-2xl font-bold text-slate-900 mb-4">${title}</h1>
         <p class="text-slate-600 mb-8">${message}</p>
-        <a href="${siteUrl}"
+        <a href="${siteUrl}" 
            class="inline-block bg-amber-500 text-white px-8 py-3 rounded-xl font-bold hover:bg-amber-600 transition-colors">
           Return to Homepage
         </a>
@@ -203,8 +202,8 @@ function generateErrorPage(title, message, siteUrl) {
 export async function handler(event, context) {
   // Get token from query string
   const token = event.queryStringParameters?.token;
-  const siteUrl = process.env.URL || 'https://highprotein.recipes';
-
+  const siteUrl = process.env.URL || 'https://proteincookies.co';
+  
   if (!token) {
     return {
       statusCode: 400,
@@ -219,7 +218,7 @@ export async function handler(event, context) {
 
   // Verify the token
   const data = verifySignedToken(token);
-
+  
   if (!data) {
     return {
       statusCode: 400,
@@ -267,8 +266,8 @@ export async function handler(event, context) {
   });
 
   // Redirect to success page with access token
-  const successUrl = `${finalSiteUrl}/success-starter.html?access=${encodeURIComponent(accessToken)}`;
-
+  const successUrl = `${finalSiteUrl}/success-${packSlug}.html?access=${encodeURIComponent(accessToken)}`;
+  
   console.log(`[confirm] Redirecting ${email} to success page`);
 
   return {
