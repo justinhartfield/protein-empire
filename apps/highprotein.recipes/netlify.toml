@@ -43,7 +43,6 @@
 # Netlify Functions
 [functions]
   node_bundler = "esbuild"
-  external_node_modules = ["@sendgrid/client", "@sendgrid/mail"]
   directory = "netlify/functions"
 
 # Redirect /api/* to Netlify Functions
