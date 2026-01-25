@@ -1,8 +1,7 @@
 {
-  "name": "protein-empire-functions",
+  "name": "highprotein-recipes-functions",
   "version": "1.0.0",
-  "description": "Netlify Functions for Protein Empire sites",
-  "type": "module",
+  "description": "Netlify Functions for High Protein Recipes",
   "dependencies": {
     "@sendgrid/client": "^8.1.1",
     "@sendgrid/mail": "^8.1.1"
