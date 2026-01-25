@@ -118,7 +118,7 @@
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </button>
                     <div class="absolute top-full left-0 mt-2 w-48 bg-white dark:bg-slate-800 rounded-lg shadow-lg border border-slate-100 dark:border-slate-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
-                        <a href="/breakfast" class="block px-4 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white">Breakfast</a>
+                        <a href="/breakfast/" class="block px-4 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white">Breakfast</a>
                         <a href="/category-desserts.html" class="block px-4 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white">Desserts</a>
                         <a href="/category-snacks.html" class="block px-4 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white">Snacks</a>
                         <a href="/category-savory.html" class="block px-4 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white">Savory</a>
@@ -191,7 +191,7 @@
             <a href="/breakfast/" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">Breakfast Hub</a>
             <a href="/tools/" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">Protein Tools</a>
             <div class="border-t border-slate-200 dark:border-slate-700 my-2"></div>
-            <a href="/breakfast" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">All Breakfast</a>
+            <a href="/breakfast/" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">All Breakfast</a>
             <a href="/category-desserts.html" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">Desserts</a>
             <a href="/category-snacks.html" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">Snacks</a>
             <a href="/category-savory.html" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">Savory</a>
@@ -208,38 +208,143 @@
 
 
 <main class="flex-grow py-12">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" x-data="{ activeFilter: 'all' }">
         <!-- Breadcrumb -->
         <nav class="mb-8 text-sm">
-            <ol class="flex items-center gap-2 text-slate-500">
+            <ol class="flex items-center gap-2 text-slate-500 dark:text-slate-400">
                 
                     
-                        <li><a href="/" class="hover:text-slate-900">Home</a></li>
+                        <li><a href="/" class="hover:text-slate-900 dark:hover:text-white">Home</a></li>
                         <li>/</li>
                     
                 
                     
-                        <li class="text-slate-900 font-medium">Ingredients</li>
+                        <li class="text-slate-900 dark:text-white font-medium">Ingredients</li>
                     
                 
                     
-                        <li class="text-slate-900 font-medium">Protein Powder</li>
+                        <li class="text-slate-900 dark:text-white font-medium">Protein Powder</li>
                     
                 
             </ol>
         </nav>
-        
+
         <!-- Header -->
-        <div class="mb-12">
+        <div class="mb-8">
             <h1 class="font-anton text-4xl uppercase tracking-wider mb-4">Protein Powder Recipes</h1>
-            <p class="text-slate-600 text-lg">354 high-protein recipes featuring protein powder</p>
-            <p class="text-slate-500 mt-2">354 recipes found</p>
+            <p class="text-slate-600 dark:text-slate-400 text-lg">354 high-protein recipes featuring protein powder</p>
+            <p class="text-slate-500 dark:text-slate-500 mt-2">354 recipes found</p>
+        </div>
+
+        
+        <!-- Filter Buttons -->
+        <div class="mb-8 flex flex-wrap gap-2">
+            <button
+                @click="activeFilter = 'all'"
+                :class="activeFilter === 'all' ? 'bg-brand-500 text-white' : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700'"
+                class="px-4 py-2 rounded-full text-sm font-medium transition-colors border border-slate-200 dark:border-slate-700">
+                All (354)
+            </button>
+            
+            <button
+                @click="activeFilter = 'bars'"
+                :class="activeFilter === 'bars' ? 'bg-brand-500 text-white' : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700'"
+                class="px-4 py-2 rounded-full text-sm font-medium transition-colors border border-slate-200 dark:border-slate-700">
+                Bars (29)
+            </button>
+            
+            <button
+                @click="activeFilter = 'bites'"
+                :class="activeFilter === 'bites' ? 'bg-brand-500 text-white' : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700'"
+                class="px-4 py-2 rounded-full text-sm font-medium transition-colors border border-slate-200 dark:border-slate-700">
+                Bites (27)
+            </button>
+            
+            <button
+                @click="activeFilter = 'bread'"
+                :class="activeFilter === 'bread' ? 'bg-brand-500 text-white' : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700'"
+                class="px-4 py-2 rounded-full text-sm font-medium transition-colors border border-slate-200 dark:border-slate-700">
+                Bread (27)
+            </button>
+            
+            <button
+                @click="activeFilter = 'breakfast'"
+                :class="activeFilter === 'breakfast' ? 'bg-brand-500 text-white' : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700'"
+                class="px-4 py-2 rounded-full text-sm font-medium transition-colors border border-slate-200 dark:border-slate-700">
+                Breakfast (25)
+            </button>
+            
+            <button
+                @click="activeFilter = 'brownies'"
+                :class="activeFilter === 'brownies' ? 'bg-brand-500 text-white' : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700'"
+                class="px-4 py-2 rounded-full text-sm font-medium transition-colors border border-slate-200 dark:border-slate-700">
+                Brownies (27)
+            </button>
+            
+            <button
+                @click="activeFilter = 'cheesecake'"
+                :class="activeFilter === 'cheesecake' ? 'bg-brand-500 text-white' : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700'"
+                class="px-4 py-2 rounded-full text-sm font-medium transition-colors border border-slate-200 dark:border-slate-700">
+                Cheesecake (27)
+            </button>
+            
+            <button
+                @click="activeFilter = 'cookies'"
+                :class="activeFilter === 'cookies' ? 'bg-brand-500 text-white' : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700'"
+                class="px-4 py-2 rounded-full text-sm font-medium transition-colors border border-slate-200 dark:border-slate-700">
+                Cookies (27)
+            </button>
+            
+            <button
+                @click="activeFilter = 'donuts'"
+                :class="activeFilter === 'donuts' ? 'bg-brand-500 text-white' : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700'"
+                class="px-4 py-2 rounded-full text-sm font-medium transition-colors border border-slate-200 dark:border-slate-700">
+                Donuts (29)
+            </button>
+            
+            <button
+                @click="activeFilter = 'muffins'"
+                :class="activeFilter === 'muffins' ? 'bg-brand-500 text-white' : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700'"
+                class="px-4 py-2 rounded-full text-sm font-medium transition-colors border border-slate-200 dark:border-slate-700">
+                Muffins (24)
+            </button>
+            
+            <button
+                @click="activeFilter = 'oatmeal'"
+                :class="activeFilter === 'oatmeal' ? 'bg-brand-500 text-white' : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700'"
+                class="px-4 py-2 rounded-full text-sm font-medium transition-colors border border-slate-200 dark:border-slate-700">
+                Oatmeal (27)
+            </button>
+            
+            <button
+                @click="activeFilter = 'pancakes'"
+                :class="activeFilter === 'pancakes' ? 'bg-brand-500 text-white' : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700'"
+                class="px-4 py-2 rounded-full text-sm font-medium transition-colors border border-slate-200 dark:border-slate-700">
+                Pancakes (29)
+            </button>
+            
+            <button
+                @click="activeFilter = 'pizza'"
+                :class="activeFilter === 'pizza' ? 'bg-brand-500 text-white' : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700'"
+                class="px-4 py-2 rounded-full text-sm font-medium transition-colors border border-slate-200 dark:border-slate-700">
+                Pizza (27)
+            </button>
+            
+            <button
+                @click="activeFilter = 'pudding'"
+                :class="activeFilter === 'pudding' ? 'bg-brand-500 text-white' : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700'"
+                class="px-4 py-2 rounded-full text-sm font-medium transition-colors border border-slate-200 dark:border-slate-700">
+                Pudding (29)
+            </button>
+            
         </div>
         
+
         
         <!-- Recipe Grid -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'muffins'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -282,7 +387,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'muffins'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -325,7 +432,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'muffins'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -368,7 +477,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'muffins'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -411,7 +522,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'muffins'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -454,7 +567,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'muffins'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -497,7 +612,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'muffins'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -540,7 +657,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'muffins'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -583,7 +702,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'muffins'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -626,7 +747,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'muffins'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -669,7 +792,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'muffins'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -712,7 +837,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'muffins'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -755,7 +882,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'muffins'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -798,7 +927,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'muffins'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -841,7 +972,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'muffins'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -884,7 +1017,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'muffins'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -927,7 +1062,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'muffins'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -970,7 +1107,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'muffins'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -1013,7 +1152,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'muffins'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -1056,7 +1197,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'muffins'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -1099,7 +1242,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'muffins'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -1142,7 +1287,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'muffins'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -1185,7 +1332,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'muffins'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -1228,7 +1377,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'muffins'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -1271,7 +1422,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cookies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -1314,7 +1467,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cookies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -1357,7 +1512,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cookies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -1400,7 +1557,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cookies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -1443,7 +1602,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cookies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -1486,7 +1647,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cookies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -1529,7 +1692,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cookies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -1572,7 +1737,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cookies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -1615,7 +1782,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cookies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -1658,7 +1827,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cookies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -1701,7 +1872,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cookies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -1744,7 +1917,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cookies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -1787,7 +1962,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cookies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -1830,7 +2007,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cookies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -1873,7 +2052,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cookies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -1916,7 +2097,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cookies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -1959,7 +2142,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cookies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -2002,7 +2187,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cookies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -2045,7 +2232,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cookies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -2088,7 +2277,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cookies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -2131,7 +2322,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cookies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -2174,7 +2367,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cookies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -2217,7 +2412,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cookies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -2260,7 +2457,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cookies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -2303,7 +2502,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cookies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -2346,7 +2547,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cookies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -2389,7 +2592,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cookies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -2432,7 +2637,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pancakes'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -2475,7 +2682,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pancakes'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -2518,7 +2727,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pancakes'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -2561,7 +2772,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pancakes'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -2604,7 +2817,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pancakes'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -2647,7 +2862,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pancakes'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -2690,7 +2907,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pancakes'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -2733,7 +2952,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pancakes'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -2776,7 +2997,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pancakes'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -2819,7 +3042,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pancakes'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -2862,7 +3087,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pancakes'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -2905,7 +3132,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pancakes'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -2948,7 +3177,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pancakes'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -2991,7 +3222,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pancakes'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -3034,7 +3267,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pancakes'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -3077,7 +3312,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pancakes'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -3120,7 +3357,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pancakes'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -3163,7 +3402,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pancakes'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -3206,7 +3447,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pancakes'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -3249,7 +3492,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pancakes'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -3292,7 +3537,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pancakes'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -3335,7 +3582,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pancakes'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -3378,7 +3627,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pancakes'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -3421,7 +3672,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pancakes'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -3464,7 +3717,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pancakes'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -3507,7 +3762,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pancakes'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -3550,7 +3807,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pancakes'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -3593,7 +3852,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pancakes'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -3636,7 +3897,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pancakes'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -3679,7 +3942,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'brownies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -3722,7 +3987,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'brownies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -3765,7 +4032,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'brownies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -3808,7 +4077,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'brownies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -3851,7 +4122,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'brownies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -3894,7 +4167,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'brownies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -3937,7 +4212,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'brownies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -3980,7 +4257,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'brownies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -4023,7 +4302,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'brownies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -4066,7 +4347,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'brownies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -4109,7 +4392,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'brownies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -4152,7 +4437,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'brownies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -4195,7 +4482,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'brownies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -4238,7 +4527,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'brownies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -4281,7 +4572,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'brownies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -4324,7 +4617,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'brownies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -4367,7 +4662,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'brownies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -4410,7 +4707,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'brownies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -4453,7 +4752,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'brownies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -4496,7 +4797,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'brownies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -4539,7 +4842,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'brownies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -4582,7 +4887,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'brownies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -4625,7 +4932,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'brownies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -4668,7 +4977,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'brownies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -4711,7 +5022,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'brownies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -4754,7 +5067,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'brownies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -4797,7 +5112,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'brownies'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -4840,7 +5157,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bread'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -4883,7 +5202,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bread'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -4926,7 +5247,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bread'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -4969,7 +5292,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bread'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -5012,7 +5337,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bread'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -5055,7 +5382,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bread'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -5098,7 +5427,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bread'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -5141,7 +5472,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bread'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -5184,7 +5517,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bread'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -5227,7 +5562,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bread'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -5270,7 +5607,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bread'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -5313,7 +5652,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bread'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -5356,7 +5697,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bread'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -5399,7 +5742,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bread'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -5442,7 +5787,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bread'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -5485,7 +5832,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bread'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -5528,7 +5877,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bread'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -5571,7 +5922,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bread'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -5614,7 +5967,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bread'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -5657,7 +6012,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bread'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -5700,7 +6057,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bread'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -5743,7 +6102,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bread'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -5786,7 +6147,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bread'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -5829,7 +6192,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bread'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -5872,7 +6237,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bread'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -5915,7 +6282,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bread'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -5958,7 +6327,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bread'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -6001,7 +6372,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bars'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -6044,7 +6417,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bars'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -6087,7 +6462,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bars'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -6130,7 +6507,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bars'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -6173,7 +6552,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bars'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -6216,7 +6597,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bars'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -6259,7 +6642,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bars'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -6302,7 +6687,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bars'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -6345,7 +6732,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bars'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -6388,7 +6777,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bars'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -6431,7 +6822,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bars'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -6474,7 +6867,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bars'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -6517,7 +6912,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bars'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -6560,7 +6957,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bars'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -6603,7 +7002,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bars'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -6646,7 +7047,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bars'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -6689,7 +7092,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bars'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -6732,7 +7137,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bars'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -6775,7 +7182,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bars'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -6818,7 +7227,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bars'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -6861,7 +7272,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bars'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -6904,7 +7317,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bars'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -6947,7 +7362,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bars'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -6990,7 +7407,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bars'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -7033,7 +7452,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bars'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -7076,7 +7497,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bars'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -7119,7 +7542,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bars'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -7162,7 +7587,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bars'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -7205,7 +7632,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bars'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -7248,7 +7677,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bites'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -7291,7 +7722,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bites'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -7334,7 +7767,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bites'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -7377,7 +7812,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bites'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -7420,7 +7857,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bites'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -7463,7 +7902,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bites'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -7506,7 +7947,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bites'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -7549,7 +7992,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bites'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -7592,7 +8037,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bites'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -7635,7 +8082,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bites'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -7678,7 +8127,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bites'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -7721,7 +8172,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bites'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -7764,7 +8217,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bites'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -7807,7 +8262,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bites'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -7850,7 +8307,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bites'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -7893,7 +8352,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bites'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -7936,7 +8397,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bites'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -7979,7 +8442,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bites'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -8022,7 +8487,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bites'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -8065,7 +8532,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bites'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -8108,7 +8577,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bites'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -8151,7 +8622,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bites'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -8194,7 +8667,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bites'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -8237,7 +8712,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bites'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -8280,7 +8757,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bites'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -8323,7 +8802,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bites'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -8366,7 +8847,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'bites'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -8409,7 +8892,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'donuts'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -8452,7 +8937,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'donuts'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -8495,7 +8982,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'donuts'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -8538,7 +9027,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'donuts'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -8581,7 +9072,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'donuts'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -8624,7 +9117,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'donuts'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -8667,7 +9162,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'donuts'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -8710,7 +9207,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'donuts'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -8753,7 +9252,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'donuts'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -8796,7 +9297,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'donuts'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -8839,7 +9342,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'donuts'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -8882,7 +9387,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'donuts'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -8925,7 +9432,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'donuts'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -8968,7 +9477,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'donuts'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -9011,7 +9522,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'donuts'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -9054,7 +9567,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'donuts'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -9097,7 +9612,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'donuts'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -9140,7 +9657,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'donuts'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -9183,7 +9702,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'donuts'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -9226,7 +9747,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'donuts'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -9269,7 +9792,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'donuts'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -9312,7 +9837,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'donuts'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -9355,7 +9882,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'donuts'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -9398,7 +9927,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'donuts'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -9441,7 +9972,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'donuts'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -9484,7 +10017,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'donuts'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -9527,7 +10062,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'donuts'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -9570,7 +10107,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'donuts'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -9613,7 +10152,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'donuts'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -9656,7 +10197,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'oatmeal'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -9699,7 +10242,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'oatmeal'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -9742,7 +10287,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'oatmeal'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -9785,7 +10332,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'oatmeal'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -9828,7 +10377,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'oatmeal'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -9871,7 +10422,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'oatmeal'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -9914,7 +10467,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'oatmeal'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -9957,7 +10512,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'oatmeal'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -10000,7 +10557,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'oatmeal'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -10043,7 +10602,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'oatmeal'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -10086,7 +10647,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'oatmeal'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -10129,7 +10692,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'oatmeal'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -10172,7 +10737,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'oatmeal'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -10215,7 +10782,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'oatmeal'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -10258,7 +10827,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'oatmeal'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -10301,7 +10872,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'oatmeal'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -10344,7 +10917,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'oatmeal'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -10387,7 +10962,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'oatmeal'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -10430,7 +11007,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'oatmeal'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -10473,7 +11052,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'oatmeal'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -10516,7 +11097,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'oatmeal'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -10559,7 +11142,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'oatmeal'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -10602,7 +11187,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'oatmeal'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -10645,7 +11232,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'oatmeal'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -10688,7 +11277,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'oatmeal'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -10731,7 +11322,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'oatmeal'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -10774,7 +11367,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'oatmeal'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -10817,7 +11412,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cheesecake'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -10860,7 +11457,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cheesecake'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -10903,7 +11502,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cheesecake'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -10946,7 +11547,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cheesecake'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -10989,7 +11592,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cheesecake'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -11032,7 +11637,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cheesecake'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -11075,7 +11682,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cheesecake'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -11118,7 +11727,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cheesecake'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -11161,7 +11772,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cheesecake'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -11204,7 +11817,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cheesecake'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -11247,7 +11862,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cheesecake'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -11290,7 +11907,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cheesecake'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -11333,7 +11952,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cheesecake'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -11376,7 +11997,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cheesecake'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -11419,7 +12042,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cheesecake'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -11462,7 +12087,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cheesecake'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -11505,7 +12132,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cheesecake'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -11548,7 +12177,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cheesecake'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -11591,7 +12222,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cheesecake'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -11634,7 +12267,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cheesecake'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -11677,7 +12312,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cheesecake'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -11720,7 +12357,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cheesecake'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -11763,7 +12402,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cheesecake'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -11806,7 +12447,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cheesecake'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -11849,7 +12492,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cheesecake'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -11892,7 +12537,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cheesecake'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -11935,7 +12582,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'cheesecake'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -11978,7 +12627,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pizza'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -12021,7 +12672,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pizza'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -12064,7 +12717,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pizza'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -12107,7 +12762,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pizza'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -12150,7 +12807,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pizza'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -12193,7 +12852,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pizza'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -12236,7 +12897,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pizza'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -12279,7 +12942,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pizza'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -12322,7 +12987,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pizza'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -12365,7 +13032,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pizza'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -12408,7 +13077,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pizza'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -12451,7 +13122,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pizza'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -12494,7 +13167,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pizza'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -12537,7 +13212,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pizza'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -12580,7 +13257,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pizza'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -12623,7 +13302,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pizza'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -12666,7 +13347,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pizza'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -12709,7 +13392,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pizza'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -12752,7 +13437,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pizza'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -12795,7 +13482,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pizza'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -12838,7 +13527,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pizza'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -12881,7 +13572,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pizza'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -12924,7 +13617,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pizza'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -12967,7 +13662,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pizza'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -13010,7 +13707,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pizza'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -13053,7 +13752,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pizza'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -13096,7 +13797,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pizza'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -13139,7 +13842,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pudding'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -13182,7 +13887,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pudding'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -13225,7 +13932,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pudding'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -13268,7 +13977,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pudding'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -13311,7 +14022,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pudding'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -13354,7 +14067,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pudding'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -13397,7 +14112,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pudding'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -13440,7 +14157,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pudding'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -13483,7 +14202,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pudding'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -13526,7 +14247,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pudding'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -13569,7 +14292,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pudding'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -13612,7 +14337,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pudding'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -13655,7 +14382,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pudding'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -13698,7 +14427,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pudding'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -13741,7 +14472,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pudding'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -13784,7 +14517,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pudding'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -13827,7 +14562,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pudding'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -13870,7 +14607,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pudding'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -13913,7 +14652,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pudding'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -13956,7 +14697,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pudding'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -13999,7 +14742,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pudding'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -14042,7 +14787,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pudding'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -14085,7 +14832,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pudding'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -14128,7 +14877,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pudding'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -14171,7 +14922,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pudding'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -14214,7 +14967,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pudding'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -14257,7 +15012,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pudding'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -14300,7 +15057,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pudding'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -14343,7 +15102,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'pudding'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -14386,7 +15147,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'breakfast'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -14429,7 +15192,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'breakfast'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -14472,7 +15237,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'breakfast'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -14515,7 +15282,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'breakfast'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -14558,7 +15327,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'breakfast'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -14601,7 +15372,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'breakfast'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -14644,7 +15417,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'breakfast'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -14687,7 +15462,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'breakfast'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -14730,7 +15507,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'breakfast'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -14773,7 +15552,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'breakfast'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -14816,7 +15597,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'breakfast'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -14859,7 +15642,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'breakfast'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -14902,7 +15687,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'breakfast'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -14945,7 +15732,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'breakfast'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -14988,7 +15777,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'breakfast'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -15031,7 +15822,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'breakfast'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -15074,7 +15867,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'breakfast'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -15117,7 +15912,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'breakfast'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -15160,7 +15957,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'breakfast'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -15203,7 +16002,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'breakfast'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -15246,7 +16047,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'breakfast'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -15289,7 +16092,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'breakfast'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -15332,7 +16137,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'breakfast'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -15375,7 +16182,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'breakfast'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -15418,7 +16227,9 @@
     </div>
 </div>
 
+            </div>
             
+            <div x-show="activeFilter === 'all' || activeFilter === 'breakfast'" x-transition>
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
@@ -15461,6 +16272,7 @@
     </div>
 </div>
 
+            </div>
             
         </div>
         
@@ -15486,7 +16298,7 @@
             <div>
                 <h4 class="font-semibold mb-4">Categories</h4>
                 <ul class="space-y-2 text-slate-400 text-sm">
-                    <li><a href="/breakfast" class="hover:text-white transition-colors">Breakfast</a></li>
+                    <li><a href="/breakfast/" class="hover:text-white transition-colors">Breakfast</a></li>
                     <li><a href="/category-desserts.html" class="hover:text-white transition-colors">Desserts</a></li>
                     <li><a href="/category-snacks.html" class="hover:text-white transition-colors">Snacks</a></li>
                     <li><a href="/category-savory.html" class="hover:text-white transition-colors">Savory</a></li>

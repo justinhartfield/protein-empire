@@ -693,26 +693,32 @@ function generateHomepage(site, allRecipes, categories, partials, outputDir) {
             <p class="text-slate-600 dark:text-slate-400 text-lg">Free tools to optimize your high-protein diet</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <a href="/tools/pe-ratio-calculator.html" class="group bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-100 dark:border-slate-700 hover:border-brand-500 hover:shadow-lg transition-all">
-                <div class="w-12 h-12 bg-gradient-to-br from-emerald-500 to-green-600 rounded-xl flex items-center justify-center mb-4">
-                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+            <a href="/tools/pe-ratio-calculator.html" class="group bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-700 hover:border-brand-500 hover:shadow-lg transition-all">
+                <div class="h-40 overflow-hidden">
+                    <img src="/images/breakfast/tool-pe-ratio.png" alt="P:E Ratio Calculator" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                 </div>
-                <h3 class="font-semibold text-lg mb-2 group-hover:text-brand-600 dark:group-hover:text-brand-400">P:E Ratio Calculator</h3>
-                <p class="text-slate-600 dark:text-slate-400 text-sm">Calculate protein-to-energy ratio for any food</p>
+                <div class="p-6">
+                    <h3 class="font-semibold text-lg mb-2 group-hover:text-brand-600 dark:group-hover:text-brand-400">P:E Ratio Calculator</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm">Calculate protein-to-energy ratio for any food</p>
+                </div>
             </a>
-            <a href="/tools/breakfast-builder.html" class="group bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-100 dark:border-slate-700 hover:border-brand-500 hover:shadow-lg transition-all">
-                <div class="w-12 h-12 bg-gradient-to-br from-amber-500 to-orange-600 rounded-xl flex items-center justify-center mb-4">
-                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+            <a href="/tools/breakfast-builder.html" class="group bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-700 hover:border-brand-500 hover:shadow-lg transition-all">
+                <div class="h-40 overflow-hidden">
+                    <img src="/images/breakfast/tool-macro-builder.png" alt="Breakfast Macro Builder" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                 </div>
-                <h3 class="font-semibold text-lg mb-2 group-hover:text-brand-600 dark:group-hover:text-brand-400">Breakfast Macro Builder</h3>
-                <p class="text-slate-600 dark:text-slate-400 text-sm">Filter breakfast recipes by your macro targets</p>
+                <div class="p-6">
+                    <h3 class="font-semibold text-lg mb-2 group-hover:text-brand-600 dark:group-hover:text-brand-400">Breakfast Macro Builder</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm">Filter breakfast recipes by your macro targets</p>
+                </div>
             </a>
-            <a href="/tools/protein-cost-calculator.html" class="group bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-100 dark:border-slate-700 hover:border-brand-500 hover:shadow-lg transition-all">
-                <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center mb-4">
-                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <a href="/tools/protein-cost-calculator.html" class="group bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-700 hover:border-brand-500 hover:shadow-lg transition-all">
+                <div class="h-40 overflow-hidden">
+                    <img src="/images/breakfast/tool-cost-calc.png" alt="Protein Cost Calculator" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                 </div>
-                <h3 class="font-semibold text-lg mb-2 group-hover:text-brand-600 dark:group-hover:text-brand-400">Protein Cost Calculator</h3>
-                <p class="text-slate-600 dark:text-slate-400 text-sm">Compare protein sources by price efficiency</p>
+                <div class="p-6">
+                    <h3 class="font-semibold text-lg mb-2 group-hover:text-brand-600 dark:group-hover:text-brand-400">Protein Cost Calculator</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm">Compare protein sources by price efficiency</p>
+                </div>
             </a>
         </div>
         <div class="text-center mt-8">
