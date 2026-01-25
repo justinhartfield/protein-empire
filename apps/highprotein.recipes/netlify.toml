@@ -2,8 +2,8 @@
 # Uses pre-built dist files from the repository
 
 [build]
-  # No build needed - dist files are pre-built and committed
-  command = "npm install && cd netlify/functions && npm install && echo 'Dependencies installed'"
+  # Install function dependencies
+  command = "cd netlify/functions && npm ci && echo 'Function dependencies installed'"
   
   # Publish directory
   publish = "dist"
