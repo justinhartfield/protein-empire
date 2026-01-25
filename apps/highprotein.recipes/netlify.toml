@@ -44,7 +44,6 @@
 # Netlify Functions
 [functions]
   directory = "netlify/functions"
-  node_bundler = "esbuild"
 
 # Redirect /api/* to Netlify Functions
 [[redirects]]
