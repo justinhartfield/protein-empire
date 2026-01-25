@@ -59,6 +59,15 @@
 <link rel="preload" as="image" href="/recipe_images/classic-vanilla-bean-cheesecake-medium.webp">
 
 
+<!-- Dark Mode: Apply before page renders to prevent flash -->
+<script>
+(function(){
+  var s = localStorage.getItem('theme');
+  var d = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  if (s === 'dark' || (!s && d)) document.documentElement.classList.add('dark');
+})();
+</script>
+
 <!-- Scripts -->
 <script src="https://cdn.tailwindcss.com"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -68,6 +77,7 @@
 <!-- Tailwind Config -->
 <script>
     tailwind.config = {
+        darkMode: 'class',
         theme: {
             extend: {
                 fontFamily: {
@@ -97,6 +107,9 @@
         background: rgba(255, 255, 255, 0.8);
         backdrop-filter: blur(12px);
         -webkit-backdrop-filter: blur(12px);
+    }
+    .dark .glass-nav {
+        background: rgba(15, 23, 42, 0.8);
     }
     .anton-text {
         font-family: 'Anton', sans-serif;
@@ -134,37 +147,70 @@
 }
 </script>
 </head>
-<body class="min-h-screen flex flex-col bg-slate-50 text-slate-900 font-sans">
+<body class="min-h-screen flex flex-col bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100 font-sans">
 
 
 <!-- Top Navigation (matching ProteinMuffins.com) -->
-<header class="sticky top-0 z-50 glass-nav border-b border-slate-200">
+<header class="sticky top-0 z-50 glass-nav dark:bg-slate-900/80 border-b border-slate-200 dark:border-slate-700">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-20">
             <div class="flex items-center">
                 <a href="/" class="flex items-center">
                     <img src="/images/logo.png" alt="ProteinCheesecake" class="h-12 md:h-16 w-auto">
-                    
+
                 </a>
             </div>
             <nav class="hidden md:flex space-x-8 items-center">
-                <a href="/#recipes" class="text-slate-600 hover:text-brand-600 font-semibold text-sm uppercase tracking-wider">Recipes</a>
-                <a href="/#categories" class="text-slate-600 hover:text-brand-600 font-semibold text-sm uppercase tracking-wider">Categories</a>
-                <a href="/#packs" class="text-slate-600 hover:text-brand-600 font-semibold text-sm uppercase tracking-wider">Recipe Packs</a>
-                <a href="/pack-starter.html" class="bg-brand-600 text-white px-5 py-2.5 rounded-full font-bold text-sm hover:bg-brand-900 transition shadow-lg shadow-brand-500/30">STARTER PACK (FREE)</a>
-            </nav>
-            <div class="md:hidden" x-data="{ open: false }">
-                <button @click="open = !open" class="text-slate-900 focus:outline-none">
-                    <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                <a href="/#recipes" class="text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 font-semibold text-sm uppercase tracking-wider">Recipes</a>
+                <a href="/#categories" class="text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 font-semibold text-sm uppercase tracking-wider">Categories</a>
+                <a href="/#packs" class="text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 font-semibold text-sm uppercase tracking-wider">Recipe Packs</a>
+
+                <!-- Dark Mode Toggle -->
+                <button
+                    x-data="{ dark: document.documentElement.classList.contains('dark') }"
+                    @click="dark = !dark; document.documentElement.classList.toggle('dark'); localStorage.setItem('theme', dark ? 'dark' : 'light')"
+                    class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                    aria-label="Toggle dark mode"
+                >
+                    <svg x-show="!dark" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+                    </svg>
+                    <svg x-show="dark" x-cloak class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/>
                     </svg>
                 </button>
-                <!-- Mobile Menu -->
-                <div x-show="open" x-cloak class="absolute top-20 left-0 right-0 bg-white border-b border-slate-100 p-6 space-y-4 shadow-xl">
-                    <a href="/#recipes" class="block text-xl anton-text text-slate-900">RECIPES</a>
-                    <a href="/#categories" class="block text-xl anton-text text-slate-900">CATEGORIES</a>
-                    <a href="/#packs" class="block text-xl anton-text text-slate-900">RECIPE PACKS</a>
-                    <a href="/pack-starter.html" class="block text-center w-full bg-brand-600 text-white py-4 rounded-xl font-bold anton-text text-lg">GET STARTER PACK</a>
+
+                <a href="/pack-starter.html" class="bg-brand-600 text-white px-5 py-2.5 rounded-full font-bold text-sm hover:bg-brand-900 transition shadow-lg shadow-brand-500/30">STARTER PACK (FREE)</a>
+            </nav>
+            <div class="flex items-center gap-2 md:hidden">
+                <!-- Mobile Dark Mode Toggle -->
+                <button
+                    x-data="{ dark: document.documentElement.classList.contains('dark') }"
+                    @click="dark = !dark; document.documentElement.classList.toggle('dark'); localStorage.setItem('theme', dark ? 'dark' : 'light')"
+                    class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                    aria-label="Toggle dark mode"
+                >
+                    <svg x-show="!dark" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+                    </svg>
+                    <svg x-show="dark" x-cloak class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/>
+                    </svg>
+                </button>
+
+                <div x-data="{ open: false }">
+                    <button @click="open = !open" class="text-slate-900 dark:text-white focus:outline-none">
+                        <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                    <!-- Mobile Menu -->
+                    <div x-show="open" x-cloak class="absolute top-20 left-0 right-0 bg-white dark:bg-slate-900 border-b border-slate-100 dark:border-slate-700 p-6 space-y-4 shadow-xl">
+                        <a href="/#recipes" class="block text-xl anton-text text-slate-900 dark:text-white">RECIPES</a>
+                        <a href="/#categories" class="block text-xl anton-text text-slate-900 dark:text-white">CATEGORIES</a>
+                        <a href="/#packs" class="block text-xl anton-text text-slate-900 dark:text-white">RECIPE PACKS</a>
+                        <a href="/pack-starter.html" class="block text-center w-full bg-brand-600 text-white py-4 rounded-xl font-bold anton-text text-lg">GET STARTER PACK</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -201,13 +247,13 @@
     <!-- What Are Section -->
     <section class="py-16 bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 mb-6 uppercase tracking-wide">What Is Protein Cheesecake?</h2>
+            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 dark:text-white mb-6 uppercase tracking-wide">What Is Protein Cheesecake?</h2>
             
-            <p class="text-slate-600 text-lg leading-relaxed mb-4">Protein cheesecake is a macro-friendly version of the classic creamy dessert, designed to deliver the rich, indulgent taste of traditional cheesecake while packing significantly more protein per slice. By using Greek yogurt, cottage cheese, and protein powder alongside reduced-fat cream cheese, these cheesecakes can contain 20-35 grams of protein per serving.</p>
+            <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed mb-4">Protein cheesecake is a macro-friendly version of the classic creamy dessert, designed to deliver the rich, indulgent taste of traditional cheesecake while packing significantly more protein per slice. By using Greek yogurt, cottage cheese, and protein powder alongside reduced-fat cream cheese, these cheesecakes can contain 20-35 grams of protein per serving.</p>
             
-            <p class="text-slate-600 text-lg leading-relaxed mb-4">Unlike regular cheesecake that can easily contain 400-600 calories per slice with minimal protein, protein cheesecake offers a smarter way to satisfy your dessert cravings. The secret lies in swapping some cream cheese for protein-rich dairy alternatives that create the same creamy texture with improved nutrition.</p>
+            <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed mb-4">Unlike regular cheesecake that can easily contain 400-600 calories per slice with minimal protein, protein cheesecake offers a smarter way to satisfy your dessert cravings. The secret lies in swapping some cream cheese for protein-rich dairy alternatives that create the same creamy texture with improved nutrition.</p>
             
-            <p class="text-slate-600 text-lg leading-relaxed mb-4">From classic New York style to no-bake versions, fruit-topped to chocolate swirl, protein cheesecake offers all the indulgence you crave with macros that support your fitness goals. Perfect for special occasions, weekly meal prep, or whenever you need a high-protein dessert that does not compromise on taste.</p>
+            <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed mb-4">From classic New York style to no-bake versions, fruit-topped to chocolate swirl, protein cheesecake offers all the indulgence you crave with macros that support your fitness goals. Perfect for special occasions, weekly meal prep, or whenever you need a high-protein dessert that does not compromise on taste.</p>
             
         </div>
     </section>
@@ -215,37 +261,37 @@
     <!-- Benefits Section -->
     <section class="py-16 bg-slate-50">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 mb-10 text-center uppercase tracking-wide">Benefits of Protein Cheesecakes</h2>
+            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 dark:text-white mb-10 text-center uppercase tracking-wide">Benefits of Protein Cheesecakes</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 
-                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
-                    <h3 class="font-bold text-lg text-slate-900 mb-2">Guilt-Free Indulgence</h3>
-                    <p class="text-slate-600">Enjoy creamy, rich cheesecake while staying on track with your nutrition goals.</p>
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700 shadow-sm">
+                    <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-2">Guilt-Free Indulgence</h3>
+                    <p class="text-slate-600 dark:text-slate-400">Enjoy creamy, rich cheesecake while staying on track with your nutrition goals.</p>
                 </div>
                 
-                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
-                    <h3 class="font-bold text-lg text-slate-900 mb-2">High Protein Dessert</h3>
-                    <p class="text-slate-600">Pack 20-35g of protein per slice to support muscle and satiety.</p>
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700 shadow-sm">
+                    <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-2">High Protein Dessert</h3>
+                    <p class="text-slate-600 dark:text-slate-400">Pack 20-35g of protein per slice to support muscle and satiety.</p>
                 </div>
                 
-                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
-                    <h3 class="font-bold text-lg text-slate-900 mb-2">Lower Calorie Options</h3>
-                    <p class="text-slate-600">Significantly fewer calories than traditional cheesecake recipes.</p>
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700 shadow-sm">
+                    <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-2">Lower Calorie Options</h3>
+                    <p class="text-slate-600 dark:text-slate-400">Significantly fewer calories than traditional cheesecake recipes.</p>
                 </div>
                 
-                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
-                    <h3 class="font-bold text-lg text-slate-900 mb-2">Perfect for Occasions</h3>
-                    <p class="text-slate-600">Impress guests with a dessert that is both delicious and nutritious.</p>
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700 shadow-sm">
+                    <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-2">Perfect for Occasions</h3>
+                    <p class="text-slate-600 dark:text-slate-400">Impress guests with a dessert that is both delicious and nutritious.</p>
                 </div>
                 
-                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
-                    <h3 class="font-bold text-lg text-slate-900 mb-2">Naturally Creamy</h3>
-                    <p class="text-slate-600">Greek yogurt and cottage cheese create incredible texture.</p>
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700 shadow-sm">
+                    <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-2">Naturally Creamy</h3>
+                    <p class="text-slate-600 dark:text-slate-400">Greek yogurt and cottage cheese create incredible texture.</p>
                 </div>
                 
-                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
-                    <h3 class="font-bold text-lg text-slate-900 mb-2">No-Bake Options</h3>
-                    <p class="text-slate-600">Quick, easy versions that require no oven and minimal prep.</p>
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700 shadow-sm">
+                    <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-2">No-Bake Options</h3>
+                    <p class="text-slate-600 dark:text-slate-400">Quick, easy versions that require no oven and minimal prep.</p>
                 </div>
                 
             </div>
@@ -255,26 +301,26 @@
     <!-- Types Section -->
     <section class="py-16 bg-white">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 mb-10 text-center uppercase tracking-wide">Types of Protein Cheesecakes</h2>
+            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 dark:text-white mb-10 text-center uppercase tracking-wide">Types of Protein Cheesecakes</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 
                 <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200">
-                    <h3 class="font-bold text-xl text-slate-900 mb-2">Classic Baked Protein Cheesecake</h3>
+                    <h3 class="font-bold text-xl text-slate-900 dark:text-white mb-2">Classic Baked Protein Cheesecake</h3>
                     <p class="text-slate-600">Traditional baked cheesecake with protein powder and Greek yogurt. Rich and creamy perfection.</p>
                 </div>
                 
                 <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200">
-                    <h3 class="font-bold text-xl text-slate-900 mb-2">No-Bake Protein Cheesecake</h3>
+                    <h3 class="font-bold text-xl text-slate-900 dark:text-white mb-2">No-Bake Protein Cheesecake</h3>
                     <p class="text-slate-600">Chilled cheesecake that sets in the refrigerator. Quick to make and no oven required.</p>
                 </div>
                 
                 <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200">
-                    <h3 class="font-bold text-xl text-slate-900 mb-2">Japanese-Style Fluffy Cheesecake</h3>
+                    <h3 class="font-bold text-xl text-slate-900 dark:text-white mb-2">Japanese-Style Fluffy Cheesecake</h3>
                     <p class="text-slate-600">Light, airy souffle-style cheesecake with added protein. Melt-in-your-mouth texture.</p>
                 </div>
                 
                 <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200">
-                    <h3 class="font-bold text-xl text-slate-900 mb-2">Protein Cheesecake Bars</h3>
+                    <h3 class="font-bold text-xl text-slate-900 dark:text-white mb-2">Protein Cheesecake Bars</h3>
                     <p class="text-slate-600">Sliceable cheesecake bars perfect for portion control and meal prep.</p>
                 </div>
                 
@@ -285,9 +331,9 @@
     <!-- Best Ingredients Section -->
     <section class="py-16 bg-slate-50">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 mb-10 text-center uppercase tracking-wide">Best Ingredients for Protein Cheesecakes</h2>
+            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 dark:text-white mb-10 text-center uppercase tracking-wide">Best Ingredients for Protein Cheesecakes</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-2xl p-6 border border-slate-200">
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700">
                     <h3 class="font-bold text-lg text-brand-600 mb-4 uppercase tracking-wide">Protein Sources</h3>
                     <ul class="space-y-2">
                         
@@ -303,7 +349,7 @@
                         
                     </ul>
                 </div>
-                <div class="bg-white rounded-2xl p-6 border border-slate-200">
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700">
                     <h3 class="font-bold text-lg text-brand-600 mb-4 uppercase tracking-wide">crusts</h3>
                     <ul class="space-y-2">
                         
@@ -317,7 +363,7 @@
                         
                     </ul>
                 </div>
-                <div class="bg-white rounded-2xl p-6 border border-slate-200">
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700">
                     <h3 class="font-bold text-lg text-brand-600 mb-4 uppercase tracking-wide">sweeteners</h3>
                     <ul class="space-y-2">
                         
@@ -340,13 +386,13 @@
     <!-- How To Make Section -->
     <section class="py-16 bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 mb-10 text-center uppercase tracking-wide">How to Make Perfect Protein Cheesecakes</h2>
+            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 dark:text-white mb-10 text-center uppercase tracking-wide">How to Make Perfect Protein Cheesecakes</h2>
             <div class="space-y-6">
                 
                 <div class="flex gap-4">
                     <div class="flex-shrink-0 w-10 h-10 bg-brand-500 text-white rounded-full flex items-center justify-center font-bold text-lg">1</div>
                     <div>
-                        <h3 class="font-bold text-lg text-slate-900 mb-1">Make the Crust</h3>
+                        <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-1">Make the Crust</h3>
                         <p class="text-slate-600">Mix almond flour, protein powder, and melted butter. Press into springform pan and par-bake if desired.</p>
                     </div>
                 </div>
@@ -354,7 +400,7 @@
                 <div class="flex gap-4">
                     <div class="flex-shrink-0 w-10 h-10 bg-brand-500 text-white rounded-full flex items-center justify-center font-bold text-lg">2</div>
                     <div>
-                        <h3 class="font-bold text-lg text-slate-900 mb-1">Blend the Filling</h3>
+                        <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-1">Blend the Filling</h3>
                         <p class="text-slate-600">Process cream cheese, Greek yogurt, cottage cheese, and protein powder until silky smooth.</p>
                     </div>
                 </div>
@@ -362,7 +408,7 @@
                 <div class="flex gap-4">
                     <div class="flex-shrink-0 w-10 h-10 bg-brand-500 text-white rounded-full flex items-center justify-center font-bold text-lg">3</div>
                     <div>
-                        <h3 class="font-bold text-lg text-slate-900 mb-1">Add Eggs &amp; Flavorings</h3>
+                        <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-1">Add Eggs &amp; Flavorings</h3>
                         <p class="text-slate-600">Beat in eggs one at a time, then vanilla and sweetener. Mix until just combined.</p>
                     </div>
                 </div>
@@ -370,7 +416,7 @@
                 <div class="flex gap-4">
                     <div class="flex-shrink-0 w-10 h-10 bg-brand-500 text-white rounded-full flex items-center justify-center font-bold text-lg">4</div>
                     <div>
-                        <h3 class="font-bold text-lg text-slate-900 mb-1">Bake Low &amp; Slow</h3>
+                        <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-1">Bake Low &amp; Slow</h3>
                         <p class="text-slate-600">Pour over crust and bake at 325°F for 45-55 minutes until edges are set but center jiggles slightly.</p>
                     </div>
                 </div>
@@ -378,7 +424,7 @@
                 <div class="flex gap-4">
                     <div class="flex-shrink-0 w-10 h-10 bg-brand-500 text-white rounded-full flex items-center justify-center font-bold text-lg">5</div>
                     <div>
-                        <h3 class="font-bold text-lg text-slate-900 mb-1">Cool Gradually</h3>
+                        <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-1">Cool Gradually</h3>
                         <p class="text-slate-600">Turn off oven, crack door, and let cool for 1 hour. Then refrigerate for at least 4 hours before serving.</p>
                     </div>
                 </div>
@@ -390,67 +436,67 @@
     <!-- FAQ Section -->
     <section class="py-16 bg-slate-50">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 mb-10 text-center uppercase tracking-wide">Frequently Asked Questions</h2>
+            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 dark:text-white mb-10 text-center uppercase tracking-wide">Frequently Asked Questions</h2>
             <div class="space-y-4">
                 
-                <details class="bg-white rounded-2xl border border-slate-200 overflow-hidden group">
-                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 hover:text-brand-600 transition-colors flex justify-between items-center">
+                <details class="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden group">
+                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 dark:text-white hover:text-brand-600 dark:hover:text-brand-400 transition-colors flex justify-between items-center">
                         How much protein is in protein cheesecake?
                         <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
                     <div class="px-6 pb-4 text-slate-600">Our protein cheesecake recipes typically contain 20-35 grams of protein per slice, depending on the recipe and serving size.</div>
                 </details>
                 
-                <details class="bg-white rounded-2xl border border-slate-200 overflow-hidden group">
-                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 hover:text-brand-600 transition-colors flex justify-between items-center">
+                <details class="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden group">
+                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 dark:text-white hover:text-brand-600 dark:hover:text-brand-400 transition-colors flex justify-between items-center">
                         Does protein cheesecake taste like real cheesecake?
                         <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
                     <div class="px-6 pb-4 text-slate-600">Yes! When made correctly, protein cheesecake is rich, creamy, and indistinguishable from traditional versions to most people.</div>
                 </details>
                 
-                <details class="bg-white rounded-2xl border border-slate-200 overflow-hidden group">
-                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 hover:text-brand-600 transition-colors flex justify-between items-center">
+                <details class="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden group">
+                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 dark:text-white hover:text-brand-600 dark:hover:text-brand-400 transition-colors flex justify-between items-center">
                         Can I make protein cheesecake without protein powder?
                         <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
                     <div class="px-6 pb-4 text-slate-600">Absolutely! The protein primarily comes from Greek yogurt, cottage cheese, and cream cheese. Protein powder is optional.</div>
                 </details>
                 
-                <details class="bg-white rounded-2xl border border-slate-200 overflow-hidden group">
-                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 hover:text-brand-600 transition-colors flex justify-between items-center">
+                <details class="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden group">
+                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 dark:text-white hover:text-brand-600 dark:hover:text-brand-400 transition-colors flex justify-between items-center">
                         What equipment do I need?
                         <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
                     <div class="px-6 pb-4 text-slate-600">A springform pan is essential for classic cheesecake. A food processor or blender helps achieve the smoothest texture.</div>
                 </details>
                 
-                <details class="bg-white rounded-2xl border border-slate-200 overflow-hidden group">
-                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 hover:text-brand-600 transition-colors flex justify-between items-center">
+                <details class="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden group">
+                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 dark:text-white hover:text-brand-600 dark:hover:text-brand-400 transition-colors flex justify-between items-center">
                         How long does protein cheesecake last?
                         <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
                     <div class="px-6 pb-4 text-slate-600">Store covered in the refrigerator for up to 5 days or freeze for up to 2 months. Thaw overnight in the fridge.</div>
                 </details>
                 
-                <details class="bg-white rounded-2xl border border-slate-200 overflow-hidden group">
-                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 hover:text-brand-600 transition-colors flex justify-between items-center">
+                <details class="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden group">
+                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 dark:text-white hover:text-brand-600 dark:hover:text-brand-400 transition-colors flex justify-between items-center">
                         Is protein cheesecake good for weight loss?
                         <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
                     <div class="px-6 pb-4 text-slate-600">It can fit into a weight loss plan as a satisfying treat. Much better choice than traditional cheesecake for calorie-conscious eating.</div>
                 </details>
                 
-                <details class="bg-white rounded-2xl border border-slate-200 overflow-hidden group">
-                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 hover:text-brand-600 transition-colors flex justify-between items-center">
+                <details class="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden group">
+                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 dark:text-white hover:text-brand-600 dark:hover:text-brand-400 transition-colors flex justify-between items-center">
                         Can protein cheesecake be vegan?
                         <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
                     <div class="px-6 pb-4 text-slate-600">Yes! Use coconut cream, cashew cream, or vegan cream cheese with plant-based protein for dairy-free versions.</div>
                 </details>
                 
-                <details class="bg-white rounded-2xl border border-slate-200 overflow-hidden group">
-                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 hover:text-brand-600 transition-colors flex justify-between items-center">
+                <details class="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden group">
+                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 dark:text-white hover:text-brand-600 dark:hover:text-brand-400 transition-colors flex justify-between items-center">
                         Why did my cheesecake crack?
                         <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
@@ -589,7 +635,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/classic-vanilla-bean-cheesecake.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/classic-vanilla-bean-cheesecake.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/classic-vanilla-bean-cheesecake-small.webp 280w, /recipe_images/classic-vanilla-bean-cheesecake-medium.webp 600w, /recipe_images/classic-vanilla-bean-cheesecake.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -609,7 +655,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/no-bake-chocolate-cheesecake.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/no-bake-chocolate-cheesecake.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/no-bake-chocolate-cheesecake-small.webp 280w, /recipe_images/no-bake-chocolate-cheesecake-medium.webp 600w, /recipe_images/no-bake-chocolate-cheesecake.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -629,7 +675,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/strawberry-swirl-cheesecake.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/strawberry-swirl-cheesecake.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/strawberry-swirl-cheesecake-small.webp 280w, /recipe_images/strawberry-swirl-cheesecake-medium.webp 600w, /recipe_images/strawberry-swirl-cheesecake.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -649,7 +695,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/lemon-blueberry-cheesecake-minis.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/lemon-blueberry-cheesecake-minis.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/lemon-blueberry-cheesecake-minis-small.webp 280w, /recipe_images/lemon-blueberry-cheesecake-minis-medium.webp 600w, /recipe_images/lemon-blueberry-cheesecake-minis.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -669,7 +715,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/single-serving-peanut-butter-cheesecake.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/single-serving-peanut-butter-cheesecake.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/single-serving-peanut-butter-cheesecake-small.webp 280w, /recipe_images/single-serving-peanut-butter-cheesecake-medium.webp 600w, /recipe_images/single-serving-peanut-butter-cheesecake.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -689,7 +735,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/funfetti-cheesecake-dip.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/funfetti-cheesecake-dip.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/funfetti-cheesecake-dip-small.webp 280w, /recipe_images/funfetti-cheesecake-dip-medium.webp 600w, /recipe_images/funfetti-cheesecake-dip.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -709,7 +755,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/pumpkin-spice-cheesecake.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/pumpkin-spice-cheesecake.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/pumpkin-spice-cheesecake-small.webp 280w, /recipe_images/pumpkin-spice-cheesecake-medium.webp 600w, /recipe_images/pumpkin-spice-cheesecake.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -729,7 +775,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/key-lime-cheesecake.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/key-lime-cheesecake.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/key-lime-cheesecake-small.webp 280w, /recipe_images/key-lime-cheesecake-medium.webp 600w, /recipe_images/key-lime-cheesecake.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -749,7 +795,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/caramel-pecan-cheesecake.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/caramel-pecan-cheesecake.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/caramel-pecan-cheesecake-small.webp 280w, /recipe_images/caramel-pecan-cheesecake-medium.webp 600w, /recipe_images/caramel-pecan-cheesecake.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -769,7 +815,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/mint-chocolate-chip-cheesecake.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/mint-chocolate-chip-cheesecake.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/mint-chocolate-chip-cheesecake-small.webp 280w, /recipe_images/mint-chocolate-chip-cheesecake-medium.webp 600w, /recipe_images/mint-chocolate-chip-cheesecake.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -789,7 +835,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/raspberry-white-chocolate-cheesecake.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/raspberry-white-chocolate-cheesecake.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/raspberry-white-chocolate-cheesecake-small.webp 280w, /recipe_images/raspberry-white-chocolate-cheesecake-medium.webp 600w, /recipe_images/raspberry-white-chocolate-cheesecake.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -809,7 +855,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/cookies-and-cream-cheesecake.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/cookies-and-cream-cheesecake.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/cookies-and-cream-cheesecake-small.webp 280w, /recipe_images/cookies-and-cream-cheesecake-medium.webp 600w, /recipe_images/cookies-and-cream-cheesecake.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -829,7 +875,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/s-mores-cheesecake-dip.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/s-mores-cheesecake-dip.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/s-mores-cheesecake-dip-small.webp 280w, /recipe_images/s-mores-cheesecake-dip-medium.webp 600w, /recipe_images/s-mores-cheesecake-dip.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -849,7 +895,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/red-velvet-cheesecake.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/red-velvet-cheesecake.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/red-velvet-cheesecake-small.webp 280w, /recipe_images/red-velvet-cheesecake-medium.webp 600w, /recipe_images/red-velvet-cheesecake.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -869,7 +915,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/matcha-green-tea-cheesecake.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/matcha-green-tea-cheesecake.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/matcha-green-tea-cheesecake-small.webp 280w, /recipe_images/matcha-green-tea-cheesecake-medium.webp 600w, /recipe_images/matcha-green-tea-cheesecake.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -889,7 +935,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/no-bake-oreo-cheesecake-bites.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/no-bake-oreo-cheesecake-bites.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/no-bake-oreo-cheesecake-bites-small.webp 280w, /recipe_images/no-bake-oreo-cheesecake-bites-medium.webp 600w, /recipe_images/no-bake-oreo-cheesecake-bites.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -909,7 +955,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/single-serving-chocolate-cheesecake.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/single-serving-chocolate-cheesecake.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/single-serving-chocolate-cheesecake-small.webp 280w, /recipe_images/single-serving-chocolate-cheesecake-medium.webp 600w, /recipe_images/single-serving-chocolate-cheesecake.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -929,7 +975,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/brownie-batter-dip.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/brownie-batter-dip.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/brownie-batter-dip-small.webp 280w, /recipe_images/brownie-batter-dip-medium.webp 600w, /recipe_images/brownie-batter-dip.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -949,7 +995,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/gingerbread-cheesecake.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/gingerbread-cheesecake.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/gingerbread-cheesecake-small.webp 280w, /recipe_images/gingerbread-cheesecake-medium.webp 600w, /recipe_images/gingerbread-cheesecake.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -969,7 +1015,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/no-bake-lemon-cheesecake.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/no-bake-lemon-cheesecake.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/no-bake-lemon-cheesecake-small.webp 280w, /recipe_images/no-bake-lemon-cheesecake-medium.webp 600w, /recipe_images/no-bake-lemon-cheesecake.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -989,7 +1035,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/chocolate-hazelnut-cheesecake.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/chocolate-hazelnut-cheesecake.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/chocolate-hazelnut-cheesecake-small.webp 280w, /recipe_images/chocolate-hazelnut-cheesecake-medium.webp 600w, /recipe_images/chocolate-hazelnut-cheesecake.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -1009,7 +1055,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/single-serving-strawberry-cheesecake.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/single-serving-strawberry-cheesecake.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/single-serving-strawberry-cheesecake-small.webp 280w, /recipe_images/single-serving-strawberry-cheesecake-medium.webp 600w, /recipe_images/single-serving-strawberry-cheesecake.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -1029,7 +1075,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/cookie-dough-cheesecake-dip.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/cookie-dough-cheesecake-dip.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/cookie-dough-cheesecake-dip-small.webp 280w, /recipe_images/cookie-dough-cheesecake-dip-medium.webp 600w, /recipe_images/cookie-dough-cheesecake-dip.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -1049,7 +1095,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/eggnog-cheesecake.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/eggnog-cheesecake.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/eggnog-cheesecake-small.webp 280w, /recipe_images/eggnog-cheesecake-medium.webp 600w, /recipe_images/eggnog-cheesecake.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -1069,7 +1115,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/tiramisu-cheesecake.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/tiramisu-cheesecake.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/tiramisu-cheesecake-small.webp 280w, /recipe_images/tiramisu-cheesecake-medium.webp 600w, /recipe_images/tiramisu-cheesecake.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -1089,7 +1135,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/gluten-free-almond-crust-protein-cheesecake.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/gluten-free-almond-crust-protein-cheesecake.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/gluten-free-almond-crust-protein-cheesecake-small.webp 280w, /recipe_images/gluten-free-almond-crust-protein-cheesecake-medium.webp 600w, /recipe_images/gluten-free-almond-crust-protein-cheesecake.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -1109,7 +1155,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/dairy-free-cashew-protein-cheesecake.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/dairy-free-cashew-protein-cheesecake.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/dairy-free-cashew-protein-cheesecake-small.webp 280w, /recipe_images/dairy-free-cashew-protein-cheesecake-medium.webp 600w, /recipe_images/dairy-free-cashew-protein-cheesecake.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -1159,43 +1205,43 @@
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 
-                    <a href="/pack-classics-pack.html" class="block bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all group">
+                    <a href="/pack-classics-pack.html" class="block bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all group">
                         <span class="text-4xl mb-4 block">🍰</span>
                         <h3 class="font-semibold text-xl mb-2 group-hover:text-brand-600 transition-colors">Classics Pack</h3>
                         <p class="text-slate-600">A collection of timeless cheesecake classics.</p>
                     </a>
                 
-                    <a href="/pack-no-bake-collection.html" class="block bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all group">
+                    <a href="/pack-no-bake-collection.html" class="block bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all group">
                         <span class="text-4xl mb-4 block">🧊</span>
                         <h3 class="font-semibold text-xl mb-2 group-hover:text-brand-600 transition-colors">No-Bake Collection</h3>
                         <p class="text-slate-600">Deliciously simple no-bake cheesecakes for any occasion.</p>
                     </a>
                 
-                    <a href="/pack-dessert-dip-party.html" class="block bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all group">
+                    <a href="/pack-dessert-dip-party.html" class="block bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all group">
                         <span class="text-4xl mb-4 block">🎉</span>
                         <h3 class="font-semibold text-xl mb-2 group-hover:text-brand-600 transition-colors">Dessert Dip Party</h3>
                         <p class="text-slate-600">A variety of sweet and creamy cheesecake dips, perfect for parties.</p>
                     </a>
                 
-                    <a href="/pack-mini-cheesecakes.html" class="block bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all group">
+                    <a href="/pack-mini-cheesecakes.html" class="block bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all group">
                         <span class="text-4xl mb-4 block">🧁</span>
                         <h3 class="font-semibold text-xl mb-2 group-hover:text-brand-600 transition-colors">Mini Cheesecakes</h3>
                         <p class="text-slate-600">Perfectly portioned mini cheesecakes for a guilt-free treat.</p>
                     </a>
                 
-                    <a href="/pack-seasonal-flavors.html" class="block bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all group">
+                    <a href="/pack-seasonal-flavors.html" class="block bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all group">
                         <span class="text-4xl mb-4 block">🍂</span>
                         <h3 class="font-semibold text-xl mb-2 group-hover:text-brand-600 transition-colors">Seasonal Flavors</h3>
                         <p class="text-slate-600">Enjoy the taste of the season with these festive cheesecakes.</p>
                     </a>
                 
-                    <a href="/pack-single-serving.html" class="block bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all group">
+                    <a href="/pack-single-serving.html" class="block bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all group">
                         <span class="text-4xl mb-4 block">🧑</span>
                         <h3 class="font-semibold text-xl mb-2 group-hover:text-brand-600 transition-colors">Single Serving</h3>
                         <p class="text-slate-600">Quick and easy single-serving cheesecakes for one.</p>
                     </a>
                 
-                    <a href="/pack-gluten-free-dairy-free.html" class="block bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all group">
+                    <a href="/pack-gluten-free-dairy-free.html" class="block bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all group">
                         <span class="text-4xl mb-4 block">🥬</span>
                         <h3 class="font-semibold text-xl mb-2 group-hover:text-brand-600 transition-colors">Gluten-Free &amp; Dairy-Free</h3>
                         <p class="text-slate-600">A collection of our best gluten-free and dairy-free recipes, perfect for those with dietary restrictions.</p>
@@ -1209,7 +1255,7 @@
 
 
 <!-- Footer (matching ProteinMuffins.com) -->
-<footer class="bg-slate-900 text-white py-16">
+<footer class="bg-slate-900 dark:bg-slate-950 text-white py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
             <!-- Brand -->
@@ -1253,7 +1299,7 @@
         </div>
         
         <!-- Empire Links -->
-        <div class="mt-12 pt-8 border-t border-slate-800">
+        <div class="mt-12 pt-8 border-t border-slate-800 dark:border-slate-700">
             <p class="text-slate-500 text-xs text-center mb-4">Part of the Protein Recipe Empire</p>
             <div class="flex flex-wrap justify-center gap-4 text-xs text-slate-500">
                 <a href="https://proteinmuffins.com" class="hover:text-white transition">Muffins</a>

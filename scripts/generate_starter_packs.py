@@ -340,7 +340,7 @@ def generate_pack_starter_html(site_config, recipes):
 </style>
 
 </head>
-<body class="min-h-screen flex flex-col bg-slate-50 text-slate-900 font-sans">
+<body class="min-h-screen flex flex-col bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100 font-sans">
 
 
 <!-- Top Navigation -->
@@ -613,7 +613,7 @@ def generate_success_starter_html(site_config):
 </style>
 
 </head>
-<body class="min-h-screen flex flex-col bg-slate-50 text-slate-900 font-sans">
+<body class="min-h-screen flex flex-col bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100 font-sans">
 
 
 <!-- Top Navigation -->

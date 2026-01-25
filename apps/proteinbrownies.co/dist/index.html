@@ -59,6 +59,15 @@
 <link rel="preload" as="image" href="/recipe_images/classic-protein-brownies-recipe-medium.webp">
 
 
+<!-- Dark Mode: Apply before page renders to prevent flash -->
+<script>
+(function(){
+  var s = localStorage.getItem('theme');
+  var d = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  if (s === 'dark' || (!s && d)) document.documentElement.classList.add('dark');
+})();
+</script>
+
 <!-- Scripts -->
 <script src="https://cdn.tailwindcss.com"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -68,6 +77,7 @@
 <!-- Tailwind Config -->
 <script>
     tailwind.config = {
+        darkMode: 'class',
         theme: {
             extend: {
                 fontFamily: {
@@ -97,6 +107,9 @@
         background: rgba(255, 255, 255, 0.8);
         backdrop-filter: blur(12px);
         -webkit-backdrop-filter: blur(12px);
+    }
+    .dark .glass-nav {
+        background: rgba(15, 23, 42, 0.8);
     }
     .anton-text {
         font-family: 'Anton', sans-serif;
@@ -134,37 +147,70 @@
 }
 </script>
 </head>
-<body class="min-h-screen flex flex-col bg-slate-50 text-slate-900 font-sans">
+<body class="min-h-screen flex flex-col bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100 font-sans">
 
 
 <!-- Top Navigation (matching ProteinMuffins.com) -->
-<header class="sticky top-0 z-50 glass-nav border-b border-slate-200">
+<header class="sticky top-0 z-50 glass-nav dark:bg-slate-900/80 border-b border-slate-200 dark:border-slate-700">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-20">
             <div class="flex items-center">
                 <a href="/" class="flex items-center">
                     <img src="/images/logo.png" alt="ProteinBrownies" class="h-12 md:h-16 w-auto">
-                    
+
                 </a>
             </div>
             <nav class="hidden md:flex space-x-8 items-center">
-                <a href="/#recipes" class="text-slate-600 hover:text-brand-600 font-semibold text-sm uppercase tracking-wider">Recipes</a>
-                <a href="/#categories" class="text-slate-600 hover:text-brand-600 font-semibold text-sm uppercase tracking-wider">Categories</a>
-                <a href="/#packs" class="text-slate-600 hover:text-brand-600 font-semibold text-sm uppercase tracking-wider">Recipe Packs</a>
-                <a href="/pack-starter.html" class="bg-brand-600 text-white px-5 py-2.5 rounded-full font-bold text-sm hover:bg-brand-900 transition shadow-lg shadow-brand-500/30">STARTER PACK (FREE)</a>
-            </nav>
-            <div class="md:hidden" x-data="{ open: false }">
-                <button @click="open = !open" class="text-slate-900 focus:outline-none">
-                    <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                <a href="/#recipes" class="text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 font-semibold text-sm uppercase tracking-wider">Recipes</a>
+                <a href="/#categories" class="text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 font-semibold text-sm uppercase tracking-wider">Categories</a>
+                <a href="/#packs" class="text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 font-semibold text-sm uppercase tracking-wider">Recipe Packs</a>
+
+                <!-- Dark Mode Toggle -->
+                <button
+                    x-data="{ dark: document.documentElement.classList.contains('dark') }"
+                    @click="dark = !dark; document.documentElement.classList.toggle('dark'); localStorage.setItem('theme', dark ? 'dark' : 'light')"
+                    class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                    aria-label="Toggle dark mode"
+                >
+                    <svg x-show="!dark" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+                    </svg>
+                    <svg x-show="dark" x-cloak class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/>
                     </svg>
                 </button>
-                <!-- Mobile Menu -->
-                <div x-show="open" x-cloak class="absolute top-20 left-0 right-0 bg-white border-b border-slate-100 p-6 space-y-4 shadow-xl">
-                    <a href="/#recipes" class="block text-xl anton-text text-slate-900">RECIPES</a>
-                    <a href="/#categories" class="block text-xl anton-text text-slate-900">CATEGORIES</a>
-                    <a href="/#packs" class="block text-xl anton-text text-slate-900">RECIPE PACKS</a>
-                    <a href="/pack-starter.html" class="block text-center w-full bg-brand-600 text-white py-4 rounded-xl font-bold anton-text text-lg">GET STARTER PACK</a>
+
+                <a href="/pack-starter.html" class="bg-brand-600 text-white px-5 py-2.5 rounded-full font-bold text-sm hover:bg-brand-900 transition shadow-lg shadow-brand-500/30">STARTER PACK (FREE)</a>
+            </nav>
+            <div class="flex items-center gap-2 md:hidden">
+                <!-- Mobile Dark Mode Toggle -->
+                <button
+                    x-data="{ dark: document.documentElement.classList.contains('dark') }"
+                    @click="dark = !dark; document.documentElement.classList.toggle('dark'); localStorage.setItem('theme', dark ? 'dark' : 'light')"
+                    class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                    aria-label="Toggle dark mode"
+                >
+                    <svg x-show="!dark" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+                    </svg>
+                    <svg x-show="dark" x-cloak class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/>
+                    </svg>
+                </button>
+
+                <div x-data="{ open: false }">
+                    <button @click="open = !open" class="text-slate-900 dark:text-white focus:outline-none">
+                        <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                    <!-- Mobile Menu -->
+                    <div x-show="open" x-cloak class="absolute top-20 left-0 right-0 bg-white dark:bg-slate-900 border-b border-slate-100 dark:border-slate-700 p-6 space-y-4 shadow-xl">
+                        <a href="/#recipes" class="block text-xl anton-text text-slate-900 dark:text-white">RECIPES</a>
+                        <a href="/#categories" class="block text-xl anton-text text-slate-900 dark:text-white">CATEGORIES</a>
+                        <a href="/#packs" class="block text-xl anton-text text-slate-900 dark:text-white">RECIPE PACKS</a>
+                        <a href="/pack-starter.html" class="block text-center w-full bg-brand-600 text-white py-4 rounded-xl font-bold anton-text text-lg">GET STARTER PACK</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -201,13 +247,13 @@
     <!-- What Are Section -->
     <section class="py-16 bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 mb-6 uppercase tracking-wide">What Are Protein Brownies?</h2>
+            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 dark:text-white mb-6 uppercase tracking-wide">What Are Protein Brownies?</h2>
             
-            <p class="text-slate-600 text-lg leading-relaxed mb-4">Protein brownies are a guilt-free twist on the classic fudgy dessert, engineered to deliver a substantial protein boost while still being rich, chocolatey, and indulgent. By incorporating protein powder, black beans, Greek yogurt, or other protein-rich ingredients, these brownies typically pack 15-25 grams of protein per serving.</p>
+            <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed mb-4">Protein brownies are a guilt-free twist on the classic fudgy dessert, engineered to deliver a substantial protein boost while still being rich, chocolatey, and indulgent. By incorporating protein powder, black beans, Greek yogurt, or other protein-rich ingredients, these brownies typically pack 15-25 grams of protein per serving.</p>
             
-            <p class="text-slate-600 text-lg leading-relaxed mb-4">The magic of protein brownies lies in achieving that perfect fudgy texture while dramatically improving the nutritional profile. Unlike traditional brownies loaded with butter, sugar, and refined flour, protein brownies use healthier alternatives that reduce calories and increase protein content without sacrificing taste.</p>
+            <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed mb-4">The magic of protein brownies lies in achieving that perfect fudgy texture while dramatically improving the nutritional profile. Unlike traditional brownies loaded with butter, sugar, and refined flour, protein brownies use healthier alternatives that reduce calories and increase protein content without sacrificing taste.</p>
             
-            <p class="text-slate-600 text-lg leading-relaxed mb-4">Whether you are craving something sweet after a workout, need a satisfying afternoon snack, or want a dessert that fits your macros, protein brownies deliver chocolate satisfaction with nutritional benefits. From classic fudgy to blondie variations, there is a protein brownie for every chocolate lover.</p>
+            <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed mb-4">Whether you are craving something sweet after a workout, need a satisfying afternoon snack, or want a dessert that fits your macros, protein brownies deliver chocolate satisfaction with nutritional benefits. From classic fudgy to blondie variations, there is a protein brownie for every chocolate lover.</p>
             
         </div>
     </section>
@@ -215,37 +261,37 @@
     <!-- Benefits Section -->
     <section class="py-16 bg-slate-50">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 mb-10 text-center uppercase tracking-wide">Benefits of Protein Brownies</h2>
+            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 dark:text-white mb-10 text-center uppercase tracking-wide">Benefits of Protein Brownies</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 
-                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
-                    <h3 class="font-bold text-lg text-slate-900 mb-2">Fudgy &amp; Satisfying</h3>
-                    <p class="text-slate-600">Rich, chocolatey taste that satisfies dessert cravings without the guilt.</p>
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700 shadow-sm">
+                    <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-2">Fudgy &amp; Satisfying</h3>
+                    <p class="text-slate-600 dark:text-slate-400">Rich, chocolatey taste that satisfies dessert cravings without the guilt.</p>
                 </div>
                 
-                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
-                    <h3 class="font-bold text-lg text-slate-900 mb-2">High Protein Dessert</h3>
-                    <p class="text-slate-600">Pack 15-25g of protein per brownie to support your fitness goals.</p>
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700 shadow-sm">
+                    <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-2">High Protein Dessert</h3>
+                    <p class="text-slate-600 dark:text-slate-400">Pack 15-25g of protein per brownie to support your fitness goals.</p>
                 </div>
                 
-                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
-                    <h3 class="font-bold text-lg text-slate-900 mb-2">Lower Sugar Options</h3>
-                    <p class="text-slate-600">Made with natural sweeteners and significantly less sugar than traditional recipes.</p>
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700 shadow-sm">
+                    <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-2">Lower Sugar Options</h3>
+                    <p class="text-slate-600 dark:text-slate-400">Made with natural sweeteners and significantly less sugar than traditional recipes.</p>
                 </div>
                 
-                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
-                    <h3 class="font-bold text-lg text-slate-900 mb-2">Perfect Post-Workout</h3>
-                    <p class="text-slate-600">Chocolate + protein = ideal recovery snack after training.</p>
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700 shadow-sm">
+                    <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-2">Perfect Post-Workout</h3>
+                    <p class="text-slate-600 dark:text-slate-400">Chocolate + protein = ideal recovery snack after training.</p>
                 </div>
                 
-                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
-                    <h3 class="font-bold text-lg text-slate-900 mb-2">Batch-Friendly</h3>
-                    <p class="text-slate-600">Make a pan on Sunday for grab-and-go treats all week long.</p>
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700 shadow-sm">
+                    <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-2">Batch-Friendly</h3>
+                    <p class="text-slate-600 dark:text-slate-400">Make a pan on Sunday for grab-and-go treats all week long.</p>
                 </div>
                 
-                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
-                    <h3 class="font-bold text-lg text-slate-900 mb-2">Secretly Nutritious</h3>
-                    <p class="text-slate-600">Some recipes use beans or veggies for added fiber and nutrients.</p>
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700 shadow-sm">
+                    <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-2">Secretly Nutritious</h3>
+                    <p class="text-slate-600 dark:text-slate-400">Some recipes use beans or veggies for added fiber and nutrients.</p>
                 </div>
                 
             </div>
@@ -255,26 +301,26 @@
     <!-- Types Section -->
     <section class="py-16 bg-white">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 mb-10 text-center uppercase tracking-wide">Types of Protein Brownies</h2>
+            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 dark:text-white mb-10 text-center uppercase tracking-wide">Types of Protein Brownies</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 
                 <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200">
-                    <h3 class="font-bold text-xl text-slate-900 mb-2">Classic Fudgy Protein Brownies</h3>
+                    <h3 class="font-bold text-xl text-slate-900 dark:text-white mb-2">Classic Fudgy Protein Brownies</h3>
                     <p class="text-slate-600">Dense, fudgy brownies made with chocolate protein powder and cocoa. The most popular style.</p>
                 </div>
                 
                 <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200">
-                    <h3 class="font-bold text-xl text-slate-900 mb-2">Black Bean Protein Brownies</h3>
+                    <h3 class="font-bold text-xl text-slate-900 dark:text-white mb-2">Black Bean Protein Brownies</h3>
                     <p class="text-slate-600">Secretly packed with fiber-rich black beans that create incredible fudgy texture. You cannot taste the beans!</p>
                 </div>
                 
                 <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200">
-                    <h3 class="font-bold text-xl text-slate-900 mb-2">Protein Blondies</h3>
+                    <h3 class="font-bold text-xl text-slate-900 dark:text-white mb-2">Protein Blondies</h3>
                     <p class="text-slate-600">Vanilla-based bars for when you want protein brownie nutrition without the chocolate.</p>
                 </div>
                 
                 <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200">
-                    <h3 class="font-bold text-xl text-slate-900 mb-2">No-Bake Protein Brownies</h3>
+                    <h3 class="font-bold text-xl text-slate-900 dark:text-white mb-2">No-Bake Protein Brownies</h3>
                     <p class="text-slate-600">Quick and easy brownies that require no oven. Perfect for hot weather or quick prep.</p>
                 </div>
                 
@@ -285,9 +331,9 @@
     <!-- Best Ingredients Section -->
     <section class="py-16 bg-slate-50">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 mb-10 text-center uppercase tracking-wide">Best Ingredients for Protein Brownies</h2>
+            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 dark:text-white mb-10 text-center uppercase tracking-wide">Best Ingredients for Protein Brownies</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-2xl p-6 border border-slate-200">
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700">
                     <h3 class="font-bold text-lg text-brand-600 mb-4 uppercase tracking-wide">Protein Sources</h3>
                     <ul class="space-y-2">
                         
@@ -305,7 +351,7 @@
                         
                     </ul>
                 </div>
-                <div class="bg-white rounded-2xl p-6 border border-slate-200">
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700">
                     <h3 class="font-bold text-lg text-brand-600 mb-4 uppercase tracking-wide">chocolates</h3>
                     <ul class="space-y-2">
                         
@@ -319,7 +365,7 @@
                         
                     </ul>
                 </div>
-                <div class="bg-white rounded-2xl p-6 border border-slate-200">
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700">
                     <h3 class="font-bold text-lg text-brand-600 mb-4 uppercase tracking-wide">sweeteners</h3>
                     <ul class="space-y-2">
                         
@@ -344,13 +390,13 @@
     <!-- How To Make Section -->
     <section class="py-16 bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 mb-10 text-center uppercase tracking-wide">How to Make Perfect Protein Brownies</h2>
+            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 dark:text-white mb-10 text-center uppercase tracking-wide">How to Make Perfect Protein Brownies</h2>
             <div class="space-y-6">
                 
                 <div class="flex gap-4">
                     <div class="flex-shrink-0 w-10 h-10 bg-brand-500 text-white rounded-full flex items-center justify-center font-bold text-lg">1</div>
                     <div>
-                        <h3 class="font-bold text-lg text-slate-900 mb-1">Prepare the Base</h3>
+                        <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-1">Prepare the Base</h3>
                         <p class="text-slate-600">If using beans, blend them smooth first. Mix protein powder, cocoa, and dry ingredients in a bowl.</p>
                     </div>
                 </div>
@@ -358,7 +404,7 @@
                 <div class="flex gap-4">
                     <div class="flex-shrink-0 w-10 h-10 bg-brand-500 text-white rounded-full flex items-center justify-center font-bold text-lg">2</div>
                     <div>
-                        <h3 class="font-bold text-lg text-slate-900 mb-1">Combine Wet Ingredients</h3>
+                        <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-1">Combine Wet Ingredients</h3>
                         <p class="text-slate-600">Mix eggs, Greek yogurt or applesauce, sweetener, and vanilla until smooth.</p>
                     </div>
                 </div>
@@ -366,7 +412,7 @@
                 <div class="flex gap-4">
                     <div class="flex-shrink-0 w-10 h-10 bg-brand-500 text-white rounded-full flex items-center justify-center font-bold text-lg">3</div>
                     <div>
-                        <h3 class="font-bold text-lg text-slate-900 mb-1">Create the Batter</h3>
+                        <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-1">Create the Batter</h3>
                         <p class="text-slate-600">Fold wet into dry ingredients. Batter should be thick and fudgy. Add milk if too dry.</p>
                     </div>
                 </div>
@@ -374,7 +420,7 @@
                 <div class="flex gap-4">
                     <div class="flex-shrink-0 w-10 h-10 bg-brand-500 text-white rounded-full flex items-center justify-center font-bold text-lg">4</div>
                     <div>
-                        <h3 class="font-bold text-lg text-slate-900 mb-1">Bake Low &amp; Slow</h3>
+                        <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-1">Bake Low &amp; Slow</h3>
                         <p class="text-slate-600">Pour into greased 8x8 pan. Bake at 325°F for 20-25 minutes. Do not overbake - center should be slightly soft.</p>
                     </div>
                 </div>
@@ -382,7 +428,7 @@
                 <div class="flex gap-4">
                     <div class="flex-shrink-0 w-10 h-10 bg-brand-500 text-white rounded-full flex items-center justify-center font-bold text-lg">5</div>
                     <div>
-                        <h3 class="font-bold text-lg text-slate-900 mb-1">Cool Completely</h3>
+                        <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-1">Cool Completely</h3>
                         <p class="text-slate-600">Let brownies cool in pan for at least 30 minutes. They firm up significantly as they cool.</p>
                     </div>
                 </div>
@@ -394,67 +440,67 @@
     <!-- FAQ Section -->
     <section class="py-16 bg-slate-50">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 mb-10 text-center uppercase tracking-wide">Frequently Asked Questions</h2>
+            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 dark:text-white mb-10 text-center uppercase tracking-wide">Frequently Asked Questions</h2>
             <div class="space-y-4">
                 
-                <details class="bg-white rounded-2xl border border-slate-200 overflow-hidden group">
-                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 hover:text-brand-600 transition-colors flex justify-between items-center">
+                <details class="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden group">
+                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 dark:text-white hover:text-brand-600 dark:hover:text-brand-400 transition-colors flex justify-between items-center">
                         How much protein is in a protein brownie?
                         <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
                     <div class="px-6 pb-4 text-slate-600">Our protein brownie recipes contain 15-25 grams of protein per brownie, depending on the recipe and serving size.</div>
                 </details>
                 
-                <details class="bg-white rounded-2xl border border-slate-200 overflow-hidden group">
-                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 hover:text-brand-600 transition-colors flex justify-between items-center">
+                <details class="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden group">
+                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 dark:text-white hover:text-brand-600 dark:hover:text-brand-400 transition-colors flex justify-between items-center">
                         Do protein brownies taste like regular brownies?
                         <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
                     <div class="px-6 pb-4 text-slate-600">Yes! Well-made protein brownies are rich, fudgy, and chocolatey. The key is using quality cocoa and not over-baking.</div>
                 </details>
                 
-                <details class="bg-white rounded-2xl border border-slate-200 overflow-hidden group">
-                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 hover:text-brand-600 transition-colors flex justify-between items-center">
+                <details class="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden group">
+                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 dark:text-white hover:text-brand-600 dark:hover:text-brand-400 transition-colors flex justify-between items-center">
                         Can you taste black beans in bean brownies?
                         <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
                     <div class="px-6 pb-4 text-slate-600">No! When properly blended and combined with cocoa and chocolate, the beans are completely undetectable. They add moisture and fudginess.</div>
                 </details>
                 
-                <details class="bg-white rounded-2xl border border-slate-200 overflow-hidden group">
-                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 hover:text-brand-600 transition-colors flex justify-between items-center">
+                <details class="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden group">
+                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 dark:text-white hover:text-brand-600 dark:hover:text-brand-400 transition-colors flex justify-between items-center">
                         Why are my protein brownies dry?
                         <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
                     <div class="px-6 pb-4 text-slate-600">Over-baking is the most common cause. Remove from oven when a toothpick comes out with moist crumbs. They continue cooking as they cool.</div>
                 </details>
                 
-                <details class="bg-white rounded-2xl border border-slate-200 overflow-hidden group">
-                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 hover:text-brand-600 transition-colors flex justify-between items-center">
+                <details class="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden group">
+                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 dark:text-white hover:text-brand-600 dark:hover:text-brand-400 transition-colors flex justify-between items-center">
                         How do I store protein brownies?
                         <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
                     <div class="px-6 pb-4 text-slate-600">Store in an airtight container at room temperature for 3-4 days, refrigerate for up to a week, or freeze for up to 3 months.</div>
                 </details>
                 
-                <details class="bg-white rounded-2xl border border-slate-200 overflow-hidden group">
-                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 hover:text-brand-600 transition-colors flex justify-between items-center">
+                <details class="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden group">
+                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 dark:text-white hover:text-brand-600 dark:hover:text-brand-400 transition-colors flex justify-between items-center">
                         Are protein brownies good for weight loss?
                         <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
                     <div class="px-6 pb-4 text-slate-600">Yes! They satisfy chocolate cravings while providing protein for satiety. Much better choice than traditional brownies for managing weight.</div>
                 </details>
                 
-                <details class="bg-white rounded-2xl border border-slate-200 overflow-hidden group">
-                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 hover:text-brand-600 transition-colors flex justify-between items-center">
+                <details class="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden group">
+                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 dark:text-white hover:text-brand-600 dark:hover:text-brand-400 transition-colors flex justify-between items-center">
                         Can protein brownies be vegan?
                         <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
                     <div class="px-6 pb-4 text-slate-600">Absolutely! Use plant-based protein, flax eggs, and dairy-free yogurt to create delicious vegan protein brownies.</div>
                 </details>
                 
-                <details class="bg-white rounded-2xl border border-slate-200 overflow-hidden group">
-                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 hover:text-brand-600 transition-colors flex justify-between items-center">
+                <details class="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden group">
+                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 dark:text-white hover:text-brand-600 dark:hover:text-brand-400 transition-colors flex justify-between items-center">
                         What makes brownies fudgy vs cakey?
                         <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
@@ -593,7 +639,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/classic-protein-brownies-recipe.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/classic-protein-brownies-recipe.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/classic-protein-brownies-recipe-small.webp 280w, /recipe_images/classic-protein-brownies-recipe-medium.webp 600w, /recipe_images/classic-protein-brownies-recipe.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -613,7 +659,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/high-protein-brownies.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/high-protein-brownies.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/high-protein-brownies-small.webp 280w, /recipe_images/high-protein-brownies-medium.webp 600w, /recipe_images/high-protein-brownies.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -633,7 +679,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/protein-powder-brownies.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/protein-powder-brownies.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/protein-powder-brownies-small.webp 280w, /recipe_images/protein-powder-brownies-medium.webp 600w, /recipe_images/protein-powder-brownies.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -653,7 +699,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/cottage-cheese-protein-brownies.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/cottage-cheese-protein-brownies.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/cottage-cheese-protein-brownies-small.webp 280w, /recipe_images/cottage-cheese-protein-brownies-medium.webp 600w, /recipe_images/cottage-cheese-protein-brownies.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -673,7 +719,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/healthy-protein-brownies.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/healthy-protein-brownies.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/healthy-protein-brownies-small.webp 280w, /recipe_images/healthy-protein-brownies-medium.webp 600w, /recipe_images/healthy-protein-brownies.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -693,7 +739,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/whey-protein-brownies-recipe.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/whey-protein-brownies-recipe.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/whey-protein-brownies-recipe-small.webp 280w, /recipe_images/whey-protein-brownies-recipe-medium.webp 600w, /recipe_images/whey-protein-brownies-recipe.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -713,7 +759,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/sweet-potato-protein-brownies.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/sweet-potato-protein-brownies.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/sweet-potato-protein-brownies-small.webp 280w, /recipe_images/sweet-potato-protein-brownies-medium.webp 600w, /recipe_images/sweet-potato-protein-brownies.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -733,7 +779,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/chocolate-protein-brownies.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/chocolate-protein-brownies.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/chocolate-protein-brownies-small.webp 280w, /recipe_images/chocolate-protein-brownies-medium.webp 600w, /recipe_images/chocolate-protein-brownies.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -753,7 +799,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/black-bean-protein-brownies.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/black-bean-protein-brownies.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/black-bean-protein-brownies-small.webp 280w, /recipe_images/black-bean-protein-brownies-medium.webp 600w, /recipe_images/black-bean-protein-brownies.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -773,7 +819,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/banana-protein-brownies.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/banana-protein-brownies.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/banana-protein-brownies-small.webp 280w, /recipe_images/banana-protein-brownies-medium.webp 600w, /recipe_images/banana-protein-brownies.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -793,7 +839,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/vegan-protein-brownies.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/vegan-protein-brownies.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/vegan-protein-brownies-small.webp 280w, /recipe_images/vegan-protein-brownies-medium.webp 600w, /recipe_images/vegan-protein-brownies.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -813,7 +859,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/fudgy-protein-brownies.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/fudgy-protein-brownies.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/fudgy-protein-brownies-small.webp 280w, /recipe_images/fudgy-protein-brownies-medium.webp 600w, /recipe_images/fudgy-protein-brownies.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -833,7 +879,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/pumpkin-protein-brownies.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/pumpkin-protein-brownies.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/pumpkin-protein-brownies-small.webp 280w, /recipe_images/pumpkin-protein-brownies-medium.webp 600w, /recipe_images/pumpkin-protein-brownies.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -853,7 +899,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/low-calorie-protein-brownies.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/low-calorie-protein-brownies.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/low-calorie-protein-brownies-small.webp 280w, /recipe_images/low-calorie-protein-brownies-medium.webp 600w, /recipe_images/low-calorie-protein-brownies.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -873,7 +919,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/protein-blondies.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/protein-blondies.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/protein-blondies-small.webp 280w, /recipe_images/protein-blondies-medium.webp 600w, /recipe_images/protein-blondies.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -893,7 +939,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/no-bake-protein-brownie-bars.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/no-bake-protein-brownie-bars.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/no-bake-protein-brownie-bars-small.webp 280w, /recipe_images/no-bake-protein-brownie-bars-medium.webp 600w, /recipe_images/no-bake-protein-brownie-bars.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -913,7 +959,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/single-serving-protein-brownie.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/single-serving-protein-brownie.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/single-serving-protein-brownie-small.webp 280w, /recipe_images/single-serving-protein-brownie-medium.webp 600w, /recipe_images/single-serving-protein-brownie.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -933,7 +979,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/keto-protein-brownies.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/keto-protein-brownies.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/keto-protein-brownies-small.webp 280w, /recipe_images/keto-protein-brownies-medium.webp 600w, /recipe_images/keto-protein-brownies.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -953,7 +999,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/greek-yogurt-protein-brownies.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/greek-yogurt-protein-brownies.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/greek-yogurt-protein-brownies-small.webp 280w, /recipe_images/greek-yogurt-protein-brownies-medium.webp 600w, /recipe_images/greek-yogurt-protein-brownies.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -973,7 +1019,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/avocado-protein-brownies.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/avocado-protein-brownies.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/avocado-protein-brownies-small.webp 280w, /recipe_images/avocado-protein-brownies-medium.webp 600w, /recipe_images/avocado-protein-brownies.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -993,7 +1039,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/zucchini-protein-brownies.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/zucchini-protein-brownies.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/zucchini-protein-brownies-small.webp 280w, /recipe_images/zucchini-protein-brownies-medium.webp 600w, /recipe_images/zucchini-protein-brownies.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -1013,7 +1059,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/peanut-butter-protein-brownies.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/peanut-butter-protein-brownies.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/peanut-butter-protein-brownies-small.webp 280w, /recipe_images/peanut-butter-protein-brownies-medium.webp 600w, /recipe_images/peanut-butter-protein-brownies.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -1033,7 +1079,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/mint-chocolate-protein-brownies.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/mint-chocolate-protein-brownies.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/mint-chocolate-protein-brownies-small.webp 280w, /recipe_images/mint-chocolate-protein-brownies-medium.webp 600w, /recipe_images/mint-chocolate-protein-brownies.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -1053,7 +1099,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/raspberry-swirl-protein-brownies.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/raspberry-swirl-protein-brownies.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/raspberry-swirl-protein-brownies-small.webp 280w, /recipe_images/raspberry-swirl-protein-brownies-medium.webp 600w, /recipe_images/raspberry-swirl-protein-brownies.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -1073,7 +1119,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/espresso-protein-brownies.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/espresso-protein-brownies.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/espresso-protein-brownies-small.webp 280w, /recipe_images/espresso-protein-brownies-medium.webp 600w, /recipe_images/espresso-protein-brownies.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -1093,7 +1139,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/gluten-free-black-bean-protein-brownies.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/gluten-free-black-bean-protein-brownies.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/gluten-free-black-bean-protein-brownies-small.webp 280w, /recipe_images/gluten-free-black-bean-protein-brownies-medium.webp 600w, /recipe_images/gluten-free-black-bean-protein-brownies.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -1113,7 +1159,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/dairy-free-avocado-protein-brownies.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/dairy-free-avocado-protein-brownies.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/dairy-free-avocado-protein-brownies-small.webp 280w, /recipe_images/dairy-free-avocado-protein-brownies-medium.webp 600w, /recipe_images/dairy-free-avocado-protein-brownies.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -1163,49 +1209,49 @@
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 
-                    <a href="/pack-fudgy-favorites-pack.html" class="block bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all group">
+                    <a href="/pack-fudgy-favorites-pack.html" class="block bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all group">
                         <span class="text-4xl mb-4 block">🍫</span>
                         <h3 class="font-semibold text-xl mb-2 group-hover:text-brand-600 transition-colors">Fudgy Favorites Pack</h3>
                         <p class="text-slate-600">A collection of our five most fudgy and decadent protein brownie recipes.</p>
                     </a>
                 
-                    <a href="/pack-blondie-collection.html" class="block bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all group">
+                    <a href="/pack-blondie-collection.html" class="block bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all group">
                         <span class="text-4xl mb-4 block">👱‍♀️</span>
                         <h3 class="font-semibold text-xl mb-2 group-hover:text-brand-600 transition-colors">Blondie Collection</h3>
                         <p class="text-slate-600">A delightful assortment of five protein-packed blondie recipes.</p>
                     </a>
                 
-                    <a href="/pack-secretly-healthy-pack.html" class="block bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all group">
+                    <a href="/pack-secretly-healthy-pack.html" class="block bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all group">
                         <span class="text-4xl mb-4 block">🤫</span>
                         <h3 class="font-semibold text-xl mb-2 group-hover:text-brand-600 transition-colors">Secretly Healthy Pack</h3>
                         <p class="text-slate-600">Five delicious protein brownie recipes made with hidden veggies like black beans, sweet potato, avocado, zucchini, and pumpkin.</p>
                     </a>
                 
-                    <a href="/pack-chocolate-lovers-pack.html" class="block bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all group">
+                    <a href="/pack-chocolate-lovers-pack.html" class="block bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all group">
                         <span class="text-4xl mb-4 block">❤️</span>
                         <h3 class="font-semibold text-xl mb-2 group-hover:text-brand-600 transition-colors">Chocolate Lovers Pack</h3>
                         <p class="text-slate-600">An intense chocolate experience with five of our most chocolatey protein brownie recipes.</p>
                     </a>
                 
-                    <a href="/pack-no-bake-bars-pack.html" class="block bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all group">
+                    <a href="/pack-no-bake-bars-pack.html" class="block bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all group">
                         <span class="text-4xl mb-4 block">🏃‍♀️</span>
                         <h3 class="font-semibold text-xl mb-2 group-hover:text-brand-600 transition-colors">No-Bake Bars Pack</h3>
                         <p class="text-slate-600">Five quick and easy no-bake protein bar recipes for when you need a healthy treat in a hurry.</p>
                     </a>
                 
-                    <a href="/pack-single-serving-pack.html" class="block bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all group">
+                    <a href="/pack-single-serving-pack.html" class="block bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all group">
                         <span class="text-4xl mb-4 block">☕️</span>
                         <h3 class="font-semibold text-xl mb-2 group-hover:text-brand-600 transition-colors">Single Serving Pack</h3>
                         <p class="text-slate-600">Five single-serving protein brownie recipes that you can make in the microwave in minutes.</p>
                     </a>
                 
-                    <a href="/pack-gluten-free-dairy-free.html" class="block bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all group">
+                    <a href="/pack-gluten-free-dairy-free.html" class="block bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all group">
                         <span class="text-4xl mb-4 block">🥬</span>
                         <h3 class="font-semibold text-xl mb-2 group-hover:text-brand-600 transition-colors">Gluten-Free &amp; Dairy-Free</h3>
                         <p class="text-slate-600">A collection of our best gluten-free and dairy-free recipes, perfect for those with dietary restrictions.</p>
                     </a>
                 
-                    <a href="/pack-gluten-free-dairy-free.html" class="block bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all group">
+                    <a href="/pack-gluten-free-dairy-free.html" class="block bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all group">
                         <span class="text-4xl mb-4 block">🥬</span>
                         <h3 class="font-semibold text-xl mb-2 group-hover:text-brand-600 transition-colors">Gluten-Free &amp; Dairy-Free</h3>
                         <p class="text-slate-600">A collection of our best gluten-free and dairy-free recipes, perfect for those with dietary restrictions.</p>
@@ -1219,7 +1265,7 @@
 
 
 <!-- Footer (matching ProteinMuffins.com) -->
-<footer class="bg-slate-900 text-white py-16">
+<footer class="bg-slate-900 dark:bg-slate-950 text-white py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
             <!-- Brand -->
@@ -1263,7 +1309,7 @@
         </div>
         
         <!-- Empire Links -->
-        <div class="mt-12 pt-8 border-t border-slate-800">
+        <div class="mt-12 pt-8 border-t border-slate-800 dark:border-slate-700">
             <p class="text-slate-500 text-xs text-center mb-4">Part of the Protein Recipe Empire</p>
             <div class="flex flex-wrap justify-center gap-4 text-xs text-slate-500">
                 <a href="https://proteinmuffins.com" class="hover:text-white transition">Muffins</a>

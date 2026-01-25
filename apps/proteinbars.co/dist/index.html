@@ -59,6 +59,15 @@
 <link rel="preload" as="image" href="/recipe_images/no-bake-chocolate-peanut-butter-bars-medium.webp">
 
 
+<!-- Dark Mode: Apply before page renders to prevent flash -->
+<script>
+(function(){
+  var s = localStorage.getItem('theme');
+  var d = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  if (s === 'dark' || (!s && d)) document.documentElement.classList.add('dark');
+})();
+</script>
+
 <!-- Scripts -->
 <script src="https://cdn.tailwindcss.com"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -68,6 +77,7 @@
 <!-- Tailwind Config -->
 <script>
     tailwind.config = {
+        darkMode: 'class',
         theme: {
             extend: {
                 fontFamily: {
@@ -97,6 +107,9 @@
         background: rgba(255, 255, 255, 0.8);
         backdrop-filter: blur(12px);
         -webkit-backdrop-filter: blur(12px);
+    }
+    .dark .glass-nav {
+        background: rgba(15, 23, 42, 0.8);
     }
     .anton-text {
         font-family: 'Anton', sans-serif;
@@ -134,37 +147,70 @@
 }
 </script>
 </head>
-<body class="min-h-screen flex flex-col bg-slate-50 text-slate-900 font-sans">
+<body class="min-h-screen flex flex-col bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100 font-sans">
 
 
 <!-- Top Navigation (matching ProteinMuffins.com) -->
-<header class="sticky top-0 z-50 glass-nav border-b border-slate-200">
+<header class="sticky top-0 z-50 glass-nav dark:bg-slate-900/80 border-b border-slate-200 dark:border-slate-700">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-20">
             <div class="flex items-center">
                 <a href="/" class="flex items-center">
                     <img src="/images/logo.png" alt="ProteinBars" class="h-12 md:h-16 w-auto">
-                    
+
                 </a>
             </div>
             <nav class="hidden md:flex space-x-8 items-center">
-                <a href="/#recipes" class="text-slate-600 hover:text-brand-600 font-semibold text-sm uppercase tracking-wider">Recipes</a>
-                <a href="/#categories" class="text-slate-600 hover:text-brand-600 font-semibold text-sm uppercase tracking-wider">Categories</a>
-                <a href="/#packs" class="text-slate-600 hover:text-brand-600 font-semibold text-sm uppercase tracking-wider">Recipe Packs</a>
-                <a href="/pack-starter.html" class="bg-brand-600 text-white px-5 py-2.5 rounded-full font-bold text-sm hover:bg-brand-900 transition shadow-lg shadow-brand-500/30">STARTER PACK (FREE)</a>
-            </nav>
-            <div class="md:hidden" x-data="{ open: false }">
-                <button @click="open = !open" class="text-slate-900 focus:outline-none">
-                    <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                <a href="/#recipes" class="text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 font-semibold text-sm uppercase tracking-wider">Recipes</a>
+                <a href="/#categories" class="text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 font-semibold text-sm uppercase tracking-wider">Categories</a>
+                <a href="/#packs" class="text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 font-semibold text-sm uppercase tracking-wider">Recipe Packs</a>
+
+                <!-- Dark Mode Toggle -->
+                <button
+                    x-data="{ dark: document.documentElement.classList.contains('dark') }"
+                    @click="dark = !dark; document.documentElement.classList.toggle('dark'); localStorage.setItem('theme', dark ? 'dark' : 'light')"
+                    class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                    aria-label="Toggle dark mode"
+                >
+                    <svg x-show="!dark" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+                    </svg>
+                    <svg x-show="dark" x-cloak class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/>
                     </svg>
                 </button>
-                <!-- Mobile Menu -->
-                <div x-show="open" x-cloak class="absolute top-20 left-0 right-0 bg-white border-b border-slate-100 p-6 space-y-4 shadow-xl">
-                    <a href="/#recipes" class="block text-xl anton-text text-slate-900">RECIPES</a>
-                    <a href="/#categories" class="block text-xl anton-text text-slate-900">CATEGORIES</a>
-                    <a href="/#packs" class="block text-xl anton-text text-slate-900">RECIPE PACKS</a>
-                    <a href="/pack-starter.html" class="block text-center w-full bg-brand-600 text-white py-4 rounded-xl font-bold anton-text text-lg">GET STARTER PACK</a>
+
+                <a href="/pack-starter.html" class="bg-brand-600 text-white px-5 py-2.5 rounded-full font-bold text-sm hover:bg-brand-900 transition shadow-lg shadow-brand-500/30">STARTER PACK (FREE)</a>
+            </nav>
+            <div class="flex items-center gap-2 md:hidden">
+                <!-- Mobile Dark Mode Toggle -->
+                <button
+                    x-data="{ dark: document.documentElement.classList.contains('dark') }"
+                    @click="dark = !dark; document.documentElement.classList.toggle('dark'); localStorage.setItem('theme', dark ? 'dark' : 'light')"
+                    class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                    aria-label="Toggle dark mode"
+                >
+                    <svg x-show="!dark" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+                    </svg>
+                    <svg x-show="dark" x-cloak class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/>
+                    </svg>
+                </button>
+
+                <div x-data="{ open: false }">
+                    <button @click="open = !open" class="text-slate-900 dark:text-white focus:outline-none">
+                        <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                    <!-- Mobile Menu -->
+                    <div x-show="open" x-cloak class="absolute top-20 left-0 right-0 bg-white dark:bg-slate-900 border-b border-slate-100 dark:border-slate-700 p-6 space-y-4 shadow-xl">
+                        <a href="/#recipes" class="block text-xl anton-text text-slate-900 dark:text-white">RECIPES</a>
+                        <a href="/#categories" class="block text-xl anton-text text-slate-900 dark:text-white">CATEGORIES</a>
+                        <a href="/#packs" class="block text-xl anton-text text-slate-900 dark:text-white">RECIPE PACKS</a>
+                        <a href="/pack-starter.html" class="block text-center w-full bg-brand-600 text-white py-4 rounded-xl font-bold anton-text text-lg">GET STARTER PACK</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -201,13 +247,13 @@
     <!-- What Are Section -->
     <section class="py-16 bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 mb-6 uppercase tracking-wide">What Are Homemade Protein Bars?</h2>
+            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 dark:text-white mb-6 uppercase tracking-wide">What Are Homemade Protein Bars?</h2>
             
-            <p class="text-slate-600 text-lg leading-relaxed mb-4">Homemade protein bars are DIY nutrition bars that you make in your own kitchen, giving you complete control over ingredients, macros, and flavors. Unlike expensive store-bought options filled with preservatives and mystery ingredients, homemade protein bars use simple, whole-food ingredients that you can pronounce and trust.</p>
+            <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed mb-4">Homemade protein bars are DIY nutrition bars that you make in your own kitchen, giving you complete control over ingredients, macros, and flavors. Unlike expensive store-bought options filled with preservatives and mystery ingredients, homemade protein bars use simple, whole-food ingredients that you can pronounce and trust.</p>
             
-            <p class="text-slate-600 text-lg leading-relaxed mb-4">These bars typically contain 20-35 grams of protein per serving and can be customized to fit any dietary requirement from keto to vegan to allergen-free. The best part? Making protein bars at home costs a fraction of buying premium bars at the store, and they often taste even better.</p>
+            <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed mb-4">These bars typically contain 20-35 grams of protein per serving and can be customized to fit any dietary requirement from keto to vegan to allergen-free. The best part? Making protein bars at home costs a fraction of buying premium bars at the store, and they often taste even better.</p>
             
-            <p class="text-slate-600 text-lg leading-relaxed mb-4">From no-bake energy bars to baked protein bar slices, the world of homemade protein bars offers endless variety. You can meal prep a weeks worth in under an hour, ensuring you always have a healthy, high-protein snack ready when hunger strikes.</p>
+            <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed mb-4">From no-bake energy bars to baked protein bar slices, the world of homemade protein bars offers endless variety. You can meal prep a weeks worth in under an hour, ensuring you always have a healthy, high-protein snack ready when hunger strikes.</p>
             
         </div>
     </section>
@@ -215,37 +261,37 @@
     <!-- Benefits Section -->
     <section class="py-16 bg-slate-50">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 mb-10 text-center uppercase tracking-wide">Benefits of Protein Bars</h2>
+            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 dark:text-white mb-10 text-center uppercase tracking-wide">Benefits of Protein Bars</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 
-                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
-                    <h3 class="font-bold text-lg text-slate-900 mb-2">Control Your Ingredients</h3>
-                    <p class="text-slate-600">Know exactly what goes into your bars - no fillers, preservatives, or mystery ingredients.</p>
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700 shadow-sm">
+                    <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-2">Control Your Ingredients</h3>
+                    <p class="text-slate-600 dark:text-slate-400">Know exactly what goes into your bars - no fillers, preservatives, or mystery ingredients.</p>
                 </div>
                 
-                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
-                    <h3 class="font-bold text-lg text-slate-900 mb-2">Save Serious Money</h3>
-                    <p class="text-slate-600">Homemade bars cost 50-75% less than premium store-bought options.</p>
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700 shadow-sm">
+                    <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-2">Save Serious Money</h3>
+                    <p class="text-slate-600 dark:text-slate-400">Homemade bars cost 50-75% less than premium store-bought options.</p>
                 </div>
                 
-                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
-                    <h3 class="font-bold text-lg text-slate-900 mb-2">Customize Your Macros</h3>
-                    <p class="text-slate-600">Adjust protein, carbs, and fats to perfectly match your nutritional goals.</p>
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700 shadow-sm">
+                    <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-2">Customize Your Macros</h3>
+                    <p class="text-slate-600 dark:text-slate-400">Adjust protein, carbs, and fats to perfectly match your nutritional goals.</p>
                 </div>
                 
-                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
-                    <h3 class="font-bold text-lg text-slate-900 mb-2">Allergen-Friendly Options</h3>
-                    <p class="text-slate-600">Easily make nut-free, dairy-free, gluten-free, or vegan bars at home.</p>
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700 shadow-sm">
+                    <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-2">Allergen-Friendly Options</h3>
+                    <p class="text-slate-600 dark:text-slate-400">Easily make nut-free, dairy-free, gluten-free, or vegan bars at home.</p>
                 </div>
                 
-                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
-                    <h3 class="font-bold text-lg text-slate-900 mb-2">Endless Flavor Variety</h3>
-                    <p class="text-slate-600">Create any flavor you can imagine from cookie dough to PB&amp;J to birthday cake.</p>
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700 shadow-sm">
+                    <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-2">Endless Flavor Variety</h3>
+                    <p class="text-slate-600 dark:text-slate-400">Create any flavor you can imagine from cookie dough to PB&amp;J to birthday cake.</p>
                 </div>
                 
-                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
-                    <h3 class="font-bold text-lg text-slate-900 mb-2">Meal Prep Champion</h3>
-                    <p class="text-slate-600">Make a batch in 30 minutes and have snacks ready for the entire week.</p>
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700 shadow-sm">
+                    <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-2">Meal Prep Champion</h3>
+                    <p class="text-slate-600 dark:text-slate-400">Make a batch in 30 minutes and have snacks ready for the entire week.</p>
                 </div>
                 
             </div>
@@ -255,26 +301,26 @@
     <!-- Types Section -->
     <section class="py-16 bg-white">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 mb-10 text-center uppercase tracking-wide">Types of Protein Bars</h2>
+            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 dark:text-white mb-10 text-center uppercase tracking-wide">Types of Protein Bars</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 
                 <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200">
-                    <h3 class="font-bold text-xl text-slate-900 mb-2">No-Bake Protein Bars</h3>
+                    <h3 class="font-bold text-xl text-slate-900 dark:text-white mb-2">No-Bake Protein Bars</h3>
                     <p class="text-slate-600">Quick and easy bars made by pressing ingredients together. No oven required, ready in minutes.</p>
                 </div>
                 
                 <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200">
-                    <h3 class="font-bold text-xl text-slate-900 mb-2">Baked Protein Bars</h3>
+                    <h3 class="font-bold text-xl text-slate-900 dark:text-white mb-2">Baked Protein Bars</h3>
                     <p class="text-slate-600">Oven-baked for a firmer texture and toasted flavor. Great for those who prefer Quest-style bars.</p>
                 </div>
                 
                 <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200">
-                    <h3 class="font-bold text-xl text-slate-900 mb-2">RX-Bar Style</h3>
+                    <h3 class="font-bold text-xl text-slate-900 dark:text-white mb-2">RX-Bar Style</h3>
                     <p class="text-slate-600">Whole food bars based on dates, nuts, and egg whites. Minimal ingredients, maximum nutrition.</p>
                 </div>
                 
                 <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200">
-                    <h3 class="font-bold text-xl text-slate-900 mb-2">Chewy Granola Protein Bars</h3>
+                    <h3 class="font-bold text-xl text-slate-900 dark:text-white mb-2">Chewy Granola Protein Bars</h3>
                     <p class="text-slate-600">Oat-based bars with added protein. Perfect for on-the-go breakfast or pre-workout fuel.</p>
                 </div>
                 
@@ -285,9 +331,9 @@
     <!-- Best Ingredients Section -->
     <section class="py-16 bg-slate-50">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 mb-10 text-center uppercase tracking-wide">Best Ingredients for Protein Bars</h2>
+            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 dark:text-white mb-10 text-center uppercase tracking-wide">Best Ingredients for Protein Bars</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-2xl p-6 border border-slate-200">
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700">
                     <h3 class="font-bold text-lg text-brand-600 mb-4 uppercase tracking-wide">Protein Sources</h3>
                     <ul class="space-y-2">
                         
@@ -305,7 +351,7 @@
                         
                     </ul>
                 </div>
-                <div class="bg-white rounded-2xl p-6 border border-slate-200">
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700">
                     <h3 class="font-bold text-lg text-brand-600 mb-4 uppercase tracking-wide">binders</h3>
                     <ul class="space-y-2">
                         
@@ -323,7 +369,7 @@
                         
                     </ul>
                 </div>
-                <div class="bg-white rounded-2xl p-6 border border-slate-200">
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700">
                     <h3 class="font-bold text-lg text-brand-600 mb-4 uppercase tracking-wide">additions</h3>
                     <ul class="space-y-2">
                         
@@ -348,13 +394,13 @@
     <!-- How To Make Section -->
     <section class="py-16 bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 mb-10 text-center uppercase tracking-wide">How to Make Perfect Protein Bars</h2>
+            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 dark:text-white mb-10 text-center uppercase tracking-wide">How to Make Perfect Protein Bars</h2>
             <div class="space-y-6">
                 
                 <div class="flex gap-4">
                     <div class="flex-shrink-0 w-10 h-10 bg-brand-500 text-white rounded-full flex items-center justify-center font-bold text-lg">1</div>
                     <div>
-                        <h3 class="font-bold text-lg text-slate-900 mb-1">Choose Your Base</h3>
+                        <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-1">Choose Your Base</h3>
                         <p class="text-slate-600">Decide on dates, oats, or nut butter as your binding base. This determines texture and sweetness.</p>
                     </div>
                 </div>
@@ -362,7 +408,7 @@
                 <div class="flex gap-4">
                     <div class="flex-shrink-0 w-10 h-10 bg-brand-500 text-white rounded-full flex items-center justify-center font-bold text-lg">2</div>
                     <div>
-                        <h3 class="font-bold text-lg text-slate-900 mb-1">Add Protein</h3>
+                        <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-1">Add Protein</h3>
                         <p class="text-slate-600">Mix in protein powder and any dry ingredients. Start with 1-2 scoops per batch of 8-10 bars.</p>
                     </div>
                 </div>
@@ -370,7 +416,7 @@
                 <div class="flex gap-4">
                     <div class="flex-shrink-0 w-10 h-10 bg-brand-500 text-white rounded-full flex items-center justify-center font-bold text-lg">3</div>
                     <div>
-                        <h3 class="font-bold text-lg text-slate-900 mb-1">Combine &amp; Bind</h3>
+                        <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-1">Combine &amp; Bind</h3>
                         <p class="text-slate-600">Add wet ingredients until mixture holds together when pressed. Add liquid if too dry.</p>
                     </div>
                 </div>
@@ -378,7 +424,7 @@
                 <div class="flex gap-4">
                     <div class="flex-shrink-0 w-10 h-10 bg-brand-500 text-white rounded-full flex items-center justify-center font-bold text-lg">4</div>
                     <div>
-                        <h3 class="font-bold text-lg text-slate-900 mb-1">Press &amp; Shape</h3>
+                        <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-1">Press &amp; Shape</h3>
                         <p class="text-slate-600">Line an 8x8 pan with parchment. Press mixture firmly and evenly into pan.</p>
                     </div>
                 </div>
@@ -386,7 +432,7 @@
                 <div class="flex gap-4">
                     <div class="flex-shrink-0 w-10 h-10 bg-brand-500 text-white rounded-full flex items-center justify-center font-bold text-lg">5</div>
                     <div>
-                        <h3 class="font-bold text-lg text-slate-900 mb-1">Chill &amp; Slice</h3>
+                        <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-1">Chill &amp; Slice</h3>
                         <p class="text-slate-600">Refrigerate for at least 2 hours until firm. Slice into bars and store in refrigerator.</p>
                     </div>
                 </div>
@@ -398,67 +444,67 @@
     <!-- FAQ Section -->
     <section class="py-16 bg-slate-50">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 mb-10 text-center uppercase tracking-wide">Frequently Asked Questions</h2>
+            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 dark:text-white mb-10 text-center uppercase tracking-wide">Frequently Asked Questions</h2>
             <div class="space-y-4">
                 
-                <details class="bg-white rounded-2xl border border-slate-200 overflow-hidden group">
-                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 hover:text-brand-600 transition-colors flex justify-between items-center">
+                <details class="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden group">
+                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 dark:text-white hover:text-brand-600 dark:hover:text-brand-400 transition-colors flex justify-between items-center">
                         How much protein is in homemade protein bars?
                         <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
                     <div class="px-6 pb-4 text-slate-600">Our recipes typically provide 20-35 grams of protein per bar, which rivals or exceeds most commercial options.</div>
                 </details>
                 
-                <details class="bg-white rounded-2xl border border-slate-200 overflow-hidden group">
-                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 hover:text-brand-600 transition-colors flex justify-between items-center">
+                <details class="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden group">
+                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 dark:text-white hover:text-brand-600 dark:hover:text-brand-400 transition-colors flex justify-between items-center">
                         Are homemade protein bars cheaper than store-bought?
                         <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
                     <div class="px-6 pb-4 text-slate-600">Yes! Homemade bars typically cost $0.75-$1.50 each versus $2.50-$4.00 for premium store-bought bars.</div>
                 </details>
                 
-                <details class="bg-white rounded-2xl border border-slate-200 overflow-hidden group">
-                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 hover:text-brand-600 transition-colors flex justify-between items-center">
+                <details class="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden group">
+                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 dark:text-white hover:text-brand-600 dark:hover:text-brand-400 transition-colors flex justify-between items-center">
                         How long do homemade protein bars last?
                         <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
                     <div class="px-6 pb-4 text-slate-600">Store in the refrigerator for up to 2 weeks or freeze for up to 3 months. No-bake bars require refrigeration.</div>
                 </details>
                 
-                <details class="bg-white rounded-2xl border border-slate-200 overflow-hidden group">
-                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 hover:text-brand-600 transition-colors flex justify-between items-center">
+                <details class="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden group">
+                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 dark:text-white hover:text-brand-600 dark:hover:text-brand-400 transition-colors flex justify-between items-center">
                         Why are my protein bars crumbly?
                         <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
                     <div class="px-6 pb-4 text-slate-600">Not enough binding agent (dates, nut butter, honey) or too much protein powder. The mixture should hold together when pressed.</div>
                 </details>
                 
-                <details class="bg-white rounded-2xl border border-slate-200 overflow-hidden group">
-                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 hover:text-brand-600 transition-colors flex justify-between items-center">
+                <details class="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden group">
+                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 dark:text-white hover:text-brand-600 dark:hover:text-brand-400 transition-colors flex justify-between items-center">
                         Can I make protein bars without protein powder?
                         <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
                     <div class="px-6 pb-4 text-slate-600">Yes! Use nut butters, seeds, collagen, or egg white protein for naturally high-protein bars without supplements.</div>
                 </details>
                 
-                <details class="bg-white rounded-2xl border border-slate-200 overflow-hidden group">
-                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 hover:text-brand-600 transition-colors flex justify-between items-center">
+                <details class="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden group">
+                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 dark:text-white hover:text-brand-600 dark:hover:text-brand-400 transition-colors flex justify-between items-center">
                         What is the best protein powder for bars?
                         <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
                     <div class="px-6 pb-4 text-slate-600">Casein works best as it creates a chewier texture. Whey works too but bars may be softer. Avoid super-fine isolates.</div>
                 </details>
                 
-                <details class="bg-white rounded-2xl border border-slate-200 overflow-hidden group">
-                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 hover:text-brand-600 transition-colors flex justify-between items-center">
+                <details class="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden group">
+                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 dark:text-white hover:text-brand-600 dark:hover:text-brand-400 transition-colors flex justify-between items-center">
                         Can protein bars be keto-friendly?
                         <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
                     <div class="px-6 pb-4 text-slate-600">Absolutely! Use nut flours, sugar-free sweeteners, and low-carb binders like coconut oil for keto protein bars.</div>
                 </details>
                 
-                <details class="bg-white rounded-2xl border border-slate-200 overflow-hidden group">
-                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 hover:text-brand-600 transition-colors flex justify-between items-center">
+                <details class="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden group">
+                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 dark:text-white hover:text-brand-600 dark:hover:text-brand-400 transition-colors flex justify-between items-center">
                         How do I add chocolate coating to bars?
                         <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
@@ -597,7 +643,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/no-bake-chocolate-peanut-butter-bars.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/no-bake-chocolate-peanut-butter-bars.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/no-bake-chocolate-peanut-butter-bars-small.webp 280w, /recipe_images/no-bake-chocolate-peanut-butter-bars-medium.webp 600w, /recipe_images/no-bake-chocolate-peanut-butter-bars.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -617,7 +663,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/candy-bar-copycat-snickers.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/candy-bar-copycat-snickers.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/candy-bar-copycat-snickers-small.webp 280w, /recipe_images/candy-bar-copycat-snickers-medium.webp 600w, /recipe_images/candy-bar-copycat-snickers.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -637,7 +683,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/vegan-almond-joy-bars.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/vegan-almond-joy-bars.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/vegan-almond-joy-bars-small.webp 280w, /recipe_images/vegan-almond-joy-bars-medium.webp 600w, /recipe_images/vegan-almond-joy-bars.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -657,7 +703,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/nut-free-sunbutter-bars.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/nut-free-sunbutter-bars.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/nut-free-sunbutter-bars-small.webp 280w, /recipe_images/nut-free-sunbutter-bars-medium.webp 600w, /recipe_images/nut-free-sunbutter-bars.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -677,7 +723,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/high-protein-chocolate-brownie-bars.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/high-protein-chocolate-brownie-bars.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/high-protein-chocolate-brownie-bars-small.webp 280w, /recipe_images/high-protein-chocolate-brownie-bars-medium.webp 600w, /recipe_images/high-protein-chocolate-brownie-bars.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -697,7 +743,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/meal-prep-oat-and-honey-bars.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/meal-prep-oat-and-honey-bars.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/meal-prep-oat-and-honey-bars-small.webp 280w, /recipe_images/meal-prep-oat-and-honey-bars-medium.webp 600w, /recipe_images/meal-prep-oat-and-honey-bars.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -717,7 +763,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/no-bake-cashew-coconut-bars.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/no-bake-cashew-coconut-bars.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/no-bake-cashew-coconut-bars-small.webp 280w, /recipe_images/no-bake-cashew-coconut-bars-medium.webp 600w, /recipe_images/no-bake-cashew-coconut-bars.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -737,7 +783,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/candy-bar-copycat-twix.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/candy-bar-copycat-twix.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/candy-bar-copycat-twix-small.webp 280w, /recipe_images/candy-bar-copycat-twix-medium.webp 600w, /recipe_images/candy-bar-copycat-twix.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -757,7 +803,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/vegan-chocolate-chip-cookie-dough-bars.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/vegan-chocolate-chip-cookie-dough-bars.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/vegan-chocolate-chip-cookie-dough-bars-small.webp 280w, /recipe_images/vegan-chocolate-chip-cookie-dough-bars-medium.webp 600w, /recipe_images/vegan-chocolate-chip-cookie-dough-bars.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -777,7 +823,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/nut-free-chocolate-seed-bars.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/nut-free-chocolate-seed-bars.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/nut-free-chocolate-seed-bars-small.webp 280w, /recipe_images/nut-free-chocolate-seed-bars-medium.webp 600w, /recipe_images/nut-free-chocolate-seed-bars.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -797,7 +843,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/high-protein-lemon-bars.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/high-protein-lemon-bars.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/high-protein-lemon-bars-small.webp 280w, /recipe_images/high-protein-lemon-bars-medium.webp 600w, /recipe_images/high-protein-lemon-bars.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -817,7 +863,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/meal-prep-berry-breakfast-bars.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/meal-prep-berry-breakfast-bars.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/meal-prep-berry-breakfast-bars-small.webp 280w, /recipe_images/meal-prep-berry-breakfast-bars-medium.webp 600w, /recipe_images/meal-prep-berry-breakfast-bars.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -837,7 +883,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/no-bake-key-lime-pie-bars.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/no-bake-key-lime-pie-bars.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/no-bake-key-lime-pie-bars-small.webp 280w, /recipe_images/no-bake-key-lime-pie-bars-medium.webp 600w, /recipe_images/no-bake-key-lime-pie-bars.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -857,7 +903,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/candy-bar-copycat-almond-mound.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/candy-bar-copycat-almond-mound.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/candy-bar-copycat-almond-mound-small.webp 280w, /recipe_images/candy-bar-copycat-almond-mound-medium.webp 600w, /recipe_images/candy-bar-copycat-almond-mound.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -877,7 +923,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/vegan-peanut-butter-jelly-bars.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/vegan-peanut-butter-jelly-bars.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/vegan-peanut-butter-jelly-bars-small.webp 280w, /recipe_images/vegan-peanut-butter-jelly-bars-medium.webp 600w, /recipe_images/vegan-peanut-butter-jelly-bars.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -897,7 +943,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/nut-free-apple-cinnamon-bars.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/nut-free-apple-cinnamon-bars.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/nut-free-apple-cinnamon-bars-small.webp 280w, /recipe_images/nut-free-apple-cinnamon-bars-medium.webp 600w, /recipe_images/nut-free-apple-cinnamon-bars.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -917,7 +963,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/high-protein-samoa-bars.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/high-protein-samoa-bars.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/high-protein-samoa-bars-small.webp 280w, /recipe_images/high-protein-samoa-bars-medium.webp 600w, /recipe_images/high-protein-samoa-bars.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -937,7 +983,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/meal-prep-banana-bread-bars.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/meal-prep-banana-bread-bars.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/meal-prep-banana-bread-bars-small.webp 280w, /recipe_images/meal-prep-banana-bread-bars-medium.webp 600w, /recipe_images/meal-prep-banana-bread-bars.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -957,7 +1003,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/no-bake-birthday-cake-bars.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/no-bake-birthday-cake-bars.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/no-bake-birthday-cake-bars-small.webp 280w, /recipe_images/no-bake-birthday-cake-bars-medium.webp 600w, /recipe_images/no-bake-birthday-cake-bars.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -977,7 +1023,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/candy-bar-copycat-butterfinger.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/candy-bar-copycat-butterfinger.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/candy-bar-copycat-butterfinger-small.webp 280w, /recipe_images/candy-bar-copycat-butterfinger-medium.webp 600w, /recipe_images/candy-bar-copycat-butterfinger.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -997,7 +1043,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/vegan-double-chocolate-bars.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/vegan-double-chocolate-bars.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/vegan-double-chocolate-bars-small.webp 280w, /recipe_images/vegan-double-chocolate-bars-medium.webp 600w, /recipe_images/vegan-double-chocolate-bars.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -1017,7 +1063,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/nut-free-vanilla-funfetti-bars.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/nut-free-vanilla-funfetti-bars.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/nut-free-vanilla-funfetti-bars-small.webp 280w, /recipe_images/nut-free-vanilla-funfetti-bars-medium.webp 600w, /recipe_images/nut-free-vanilla-funfetti-bars.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -1037,7 +1083,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/high-protein-red-velvet-bars.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/high-protein-red-velvet-bars.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/high-protein-red-velvet-bars-small.webp 280w, /recipe_images/high-protein-red-velvet-bars-medium.webp 600w, /recipe_images/high-protein-red-velvet-bars.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -1057,7 +1103,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/meal-prep-pumpkin-spice-bars.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/meal-prep-pumpkin-spice-bars.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/meal-prep-pumpkin-spice-bars-small.webp 280w, /recipe_images/meal-prep-pumpkin-spice-bars-medium.webp 600w, /recipe_images/meal-prep-pumpkin-spice-bars.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -1077,7 +1123,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/no-bake-matcha-coconut-bars.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/no-bake-matcha-coconut-bars.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/no-bake-matcha-coconut-bars-small.webp 280w, /recipe_images/no-bake-matcha-coconut-bars-medium.webp 600w, /recipe_images/no-bake-matcha-coconut-bars.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -1097,7 +1143,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/gluten-free-chocolate-peanut-butter-protein-bars.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/gluten-free-chocolate-peanut-butter-protein-bars.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/gluten-free-chocolate-peanut-butter-protein-bars-small.webp 280w, /recipe_images/gluten-free-chocolate-peanut-butter-protein-bars-medium.webp 600w, /recipe_images/gluten-free-chocolate-peanut-butter-protein-bars.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -1117,7 +1163,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/dairy-free-coconut-almond-protein-bars.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/dairy-free-coconut-almond-protein-bars.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/dairy-free-coconut-almond-protein-bars-small.webp 280w, /recipe_images/dairy-free-coconut-almond-protein-bars-medium.webp 600w, /recipe_images/dairy-free-coconut-almond-protein-bars.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -1137,7 +1183,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/gluten-free-chocolate-peanut-butter-protein-bars.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/gluten-free-chocolate-peanut-butter-protein-bars.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/gluten-free-chocolate-peanut-butter-protein-bars-small.webp 280w, /recipe_images/gluten-free-chocolate-peanut-butter-protein-bars-medium.webp 600w, /recipe_images/gluten-free-chocolate-peanut-butter-protein-bars.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -1157,7 +1203,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/dairy-free-coconut-almond-protein-bars.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/dairy-free-coconut-almond-protein-bars.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/dairy-free-coconut-almond-protein-bars-small.webp 280w, /recipe_images/dairy-free-coconut-almond-protein-bars-medium.webp 600w, /recipe_images/dairy-free-coconut-almond-protein-bars.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -1207,49 +1253,49 @@
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 
-                    <a href="/pack-no-bake-starter.html" class="block bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all group">
+                    <a href="/pack-no-bake-starter.html" class="block bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all group">
                         <span class="text-4xl mb-4 block">🥣</span>
                         <h3 class="font-semibold text-xl mb-2 group-hover:text-brand-600 transition-colors">No-Bake Starter</h3>
                         <p class="text-slate-600">A collection of easy, no-bake protein bars that are perfect for beginners.</p>
                     </a>
                 
-                    <a href="/pack-candy-bar-copycats.html" class="block bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all group">
+                    <a href="/pack-candy-bar-copycats.html" class="block bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all group">
                         <span class="text-4xl mb-4 block">🍫</span>
                         <h3 class="font-semibold text-xl mb-2 group-hover:text-brand-600 transition-colors">Candy Bar Copycats</h3>
                         <p class="text-slate-600">All the flavor of your favorite candy bars, but packed with protein.</p>
                     </a>
                 
-                    <a href="/pack-vegan-collection.html" class="block bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all group">
+                    <a href="/pack-vegan-collection.html" class="block bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all group">
                         <span class="text-4xl mb-4 block">🌱</span>
                         <h3 class="font-semibold text-xl mb-2 group-hover:text-brand-600 transition-colors">Vegan Collection</h3>
                         <p class="text-slate-600">A selection of delicious and satisfying plant-based protein bars.</p>
                     </a>
                 
-                    <a href="/pack-nut-free-pack.html" class="block bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all group">
+                    <a href="/pack-nut-free-pack.html" class="block bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all group">
                         <span class="text-4xl mb-4 block">🥜</span>
                         <h3 class="font-semibold text-xl mb-2 group-hover:text-brand-600 transition-colors">Nut-Free Pack</h3>
                         <p class="text-slate-600">Enjoy these delicious and safe protein bars, completely free of nuts.</p>
                     </a>
                 
-                    <a href="/pack-high-protein-pack.html" class="block bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all group">
+                    <a href="/pack-high-protein-pack.html" class="block bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all group">
                         <span class="text-4xl mb-4 block">💪</span>
                         <h3 class="font-semibold text-xl mb-2 group-hover:text-brand-600 transition-colors">High-Protein Pack</h3>
                         <p class="text-slate-600">Maximize your protein intake with these bars, each packed with over 20g of protein.</p>
                     </a>
                 
-                    <a href="/pack-meal-prep-bars.html" class="block bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all group">
+                    <a href="/pack-meal-prep-bars.html" class="block bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all group">
                         <span class="text-4xl mb-4 block">🗓️</span>
                         <h3 class="font-semibold text-xl mb-2 group-hover:text-brand-600 transition-colors">Meal Prep Bars</h3>
                         <p class="text-slate-600">Save time and stay on track with these easy-to-make meal prep protein bars.</p>
                     </a>
                 
-                    <a href="/pack-gluten-free-dairy-free.html" class="block bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all group">
+                    <a href="/pack-gluten-free-dairy-free.html" class="block bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all group">
                         <span class="text-4xl mb-4 block">🥬</span>
                         <h3 class="font-semibold text-xl mb-2 group-hover:text-brand-600 transition-colors">Gluten-Free &amp; Dairy-Free</h3>
                         <p class="text-slate-600">A collection of our best gluten-free and dairy-free recipes, perfect for those with dietary restrictions.</p>
                     </a>
                 
-                    <a href="/pack-gluten-free-dairy-free.html" class="block bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all group">
+                    <a href="/pack-gluten-free-dairy-free.html" class="block bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all group">
                         <span class="text-4xl mb-4 block">🥬</span>
                         <h3 class="font-semibold text-xl mb-2 group-hover:text-brand-600 transition-colors">Gluten-Free &amp; Dairy-Free</h3>
                         <p class="text-slate-600">A collection of our best gluten-free and dairy-free recipes, perfect for those with dietary restrictions.</p>
@@ -1263,7 +1309,7 @@
 
 
 <!-- Footer (matching ProteinMuffins.com) -->
-<footer class="bg-slate-900 text-white py-16">
+<footer class="bg-slate-900 dark:bg-slate-950 text-white py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
             <!-- Brand -->
@@ -1307,7 +1353,7 @@
         </div>
         
         <!-- Empire Links -->
-        <div class="mt-12 pt-8 border-t border-slate-800">
+        <div class="mt-12 pt-8 border-t border-slate-800 dark:border-slate-700">
             <p class="text-slate-500 text-xs text-center mb-4">Part of the Protein Recipe Empire</p>
             <div class="flex flex-wrap justify-center gap-4 text-xs text-slate-500">
                 <a href="https://proteinmuffins.com" class="hover:text-white transition">Muffins</a>

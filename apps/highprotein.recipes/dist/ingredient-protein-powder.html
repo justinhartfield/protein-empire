@@ -41,6 +41,15 @@
 
 
 
+<!-- Dark Mode: Apply before page renders to prevent flash -->
+<script>
+(function(){
+  var s = localStorage.getItem('theme');
+  var d = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  if (s === 'dark' || (!s && d)) document.documentElement.classList.add('dark');
+})();
+</script>
+
 <!-- Scripts -->
 <script src="https://cdn.tailwindcss.com"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -50,6 +59,7 @@
 <!-- Tailwind Config -->
 <script>
     tailwind.config = {
+        darkMode: 'class',
         theme: {
             extend: {
                 fontFamily: {
@@ -89,67 +99,100 @@
 
 
 </head>
-<body class="min-h-screen flex flex-col bg-slate-50 text-slate-900 font-sans">
+<body class="min-h-screen flex flex-col bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100 font-sans">
 
-<nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/80 border-b border-slate-200">
+<nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/80 dark:bg-slate-900/80 border-b border-slate-200 dark:border-slate-700">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-16">
             <!-- Logo -->
             <a href="/" class="flex items-center gap-2">
                 <img src="/images/logo.png" alt="HighProtein.Recipes" class="h-10 w-10 rounded-full">
-                <span class="font-anton text-xl text-slate-900 tracking-tight uppercase">HighProtein<span class="text-brand-500">.Recipes</span></span>
+                <span class="font-anton text-xl text-slate-900 dark:text-white tracking-tight uppercase">HighProtein<span class="text-brand-500">.Recipes</span></span>
             </a>
 
             <!-- Desktop Navigation -->
             <div class="hidden md:flex items-center gap-6">
                 <div class="relative group">
-                    <button class="text-slate-600 hover:text-slate-900 font-medium transition-colors flex items-center gap-1">
+                    <button class="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium transition-colors flex items-center gap-1">
                         Categories
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </button>
-                    <div class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-slate-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
-                        <a href="/breakfast/" class="block px-4 py-2 text-slate-600 hover:bg-slate-50 hover:text-slate-900">Breakfast</a>
-                        <a href="/category-desserts.html" class="block px-4 py-2 text-slate-600 hover:bg-slate-50 hover:text-slate-900">Desserts</a>
-                        <a href="/category-snacks.html" class="block px-4 py-2 text-slate-600 hover:bg-slate-50 hover:text-slate-900">Snacks</a>
-                        <a href="/category-savory.html" class="block px-4 py-2 text-slate-600 hover:bg-slate-50 hover:text-slate-900">Savory</a>
+                    <div class="absolute top-full left-0 mt-2 w-48 bg-white dark:bg-slate-800 rounded-lg shadow-lg border border-slate-100 dark:border-slate-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+                        <a href="/category-breakfast.html" class="block px-4 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white">Breakfast</a>
+                        <a href="/category-desserts.html" class="block px-4 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white">Desserts</a>
+                        <a href="/category-snacks.html" class="block px-4 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white">Snacks</a>
+                        <a href="/category-savory.html" class="block px-4 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white">Savory</a>
                     </div>
                 </div>
-                <a href="/no-bake.html" class="text-slate-600 hover:text-slate-900 font-medium transition-colors">No-Bake</a>
-                <a href="/high-protein.html" class="text-slate-600 hover:text-slate-900 font-medium transition-colors">30g+ Protein</a>
+                <a href="/no-bake.html" class="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium transition-colors">No-Bake</a>
+                <a href="/high-protein.html" class="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium transition-colors">30g+ Protein</a>
+
+                <!-- Dark Mode Toggle -->
+                <button
+                    x-data="{ dark: document.documentElement.classList.contains('dark') }"
+                    @click="dark = !dark; document.documentElement.classList.toggle('dark'); localStorage.setItem('theme', dark ? 'dark' : 'light')"
+                    class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                    aria-label="Toggle dark mode"
+                >
+                    <svg x-show="!dark" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+                    </svg>
+                    <svg x-show="dark" x-cloak class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/>
+                    </svg>
+                </button>
+
                 <a href="/#sites" class="bg-brand-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-brand-600 transition-colors">
                     Browse All Sites
                 </a>
             </div>
 
             <!-- Mobile Menu Button -->
-            <button 
-                x-data="{ open: false }"
-                @click="open = !open; $dispatch('toggle-mobile-menu', { open })"
-                class="md:hidden p-2 text-slate-600 hover:text-slate-900"
-                aria-label="Toggle menu"
-            >
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-            </button>
+            <div class="flex items-center gap-2 md:hidden">
+                <!-- Mobile Dark Mode Toggle -->
+                <button
+                    x-data="{ dark: document.documentElement.classList.contains('dark') }"
+                    @click="dark = !dark; document.documentElement.classList.toggle('dark'); localStorage.setItem('theme', dark ? 'dark' : 'light')"
+                    class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                    aria-label="Toggle dark mode"
+                >
+                    <svg x-show="!dark" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+                    </svg>
+                    <svg x-show="dark" x-cloak class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/>
+                    </svg>
+                </button>
+
+                <button
+                    x-data="{ open: false }"
+                    @click="open = !open; $dispatch('toggle-mobile-menu', { open })"
+                    class="p-2 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white"
+                    aria-label="Toggle menu"
+                >
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
         </div>
     </div>
 
     <!-- Mobile Menu -->
-    <div 
+    <div
         x-data="{ open: false }"
         @toggle-mobile-menu.window="open = $event.detail.open"
         x-show="open"
         x-cloak
-        class="md:hidden bg-white border-b border-slate-200"
+        class="md:hidden bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-700"
     >
         <div class="px-4 py-4 space-y-3">
-            <a href="/breakfast/" class="block text-slate-600 hover:text-slate-900 font-medium">Breakfast</a>
-            <a href="/category-desserts.html" class="block text-slate-600 hover:text-slate-900 font-medium">Desserts</a>
-            <a href="/category-snacks.html" class="block text-slate-600 hover:text-slate-900 font-medium">Snacks</a>
-            <a href="/category-savory.html" class="block text-slate-600 hover:text-slate-900 font-medium">Savory</a>
-            <a href="/no-bake.html" class="block text-slate-600 hover:text-slate-900 font-medium">No-Bake</a>
-            <a href="/high-protein.html" class="block text-slate-600 hover:text-slate-900 font-medium">30g+ Protein</a>
+            <a href="/category-breakfast.html" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">Breakfast</a>
+            <a href="/category-desserts.html" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">Desserts</a>
+            <a href="/category-snacks.html" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">Snacks</a>
+            <a href="/category-savory.html" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">Savory</a>
+            <a href="/no-bake.html" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">No-Bake</a>
+            <a href="/high-protein.html" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">30g+ Protein</a>
             <a href="/#sites" class="block bg-brand-500 text-white px-4 py-2 rounded-lg font-semibold text-center">
                 Browse All Sites
             </a>
@@ -195,7 +238,7 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/apple-protein-muffins-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -238,7 +281,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/banana-chocolate-chip-protein-muffins-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -281,7 +324,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/banana-nut-protein-muffins-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -324,7 +367,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/chocolate-chip-protein-muffins-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -367,7 +410,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/chocolate-protein-muffins-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -410,7 +453,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/cottage-cheese-protein-muffins-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -453,7 +496,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/double-chocolate-protein-muffins-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -496,7 +539,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/high-fiber-protein-muffins-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -539,7 +582,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/high-protein-muffins-with-greek-yogurt-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -582,7 +625,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/high-protein-muffins-without-protein-powder-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -625,7 +668,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/high-protein-muffins-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -668,7 +711,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/lemon-blueberry-protein-muffins-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -711,7 +754,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/protein-banana-muffins-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -754,7 +797,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/protein-breakfast-muffins-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -797,7 +840,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/protein-carrot-cake-muffins-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -840,7 +883,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/protein-mini-muffins-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -883,7 +926,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/protein-muffins-for-kids-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -926,7 +969,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/protein-muffins-recipe-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -969,7 +1012,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/protein-pancake-muffins-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -1012,7 +1055,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/protein-powder-muffins-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -1055,7 +1098,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/protein-pumpkin-muffins-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -1098,7 +1141,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/standard_recipe__banana_protein_muffin-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -1141,7 +1184,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/vegan-protein-muffins-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -1184,7 +1227,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/zucchini-protein-muffins-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -1227,7 +1270,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/chocolate-chip-protein-cookies-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -1270,7 +1313,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/peanut-butter-protein-cookies-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -1313,7 +1356,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/no-bake-protein-cookies-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -1356,7 +1399,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/oatmeal-raisin-protein-cookies-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -1399,7 +1442,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/double-chocolate-protein-cookies-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -1442,7 +1485,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/snickerdoodle-protein-cookies-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -1485,7 +1528,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/birthday-cake-protein-cookies-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -1528,7 +1571,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/vegan-protein-cookies-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -1571,7 +1614,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/gluten-free-protein-cookies-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -1614,7 +1657,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/protein-cookie-dough-bites-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -1657,7 +1700,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/white-chocolate-macadamia-protein-cookies-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -1700,7 +1743,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/protein-cookies-for-kids-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -1743,7 +1786,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/cottage-cheese-protein-cookies-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -1786,7 +1829,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/greek-yogurt-protein-cookies-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -1829,7 +1872,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/almond-flour-protein-cookies-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -1872,7 +1915,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/pumpkin-spice-protein-cookies-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -1915,7 +1958,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/lemon-protein-cookies-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -1958,7 +2001,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/monster-protein-cookies-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -2001,7 +2044,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/high-protein-cookies-30g-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -2044,7 +2087,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/chocolate-peanut-butter-protein-cookies-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -2087,7 +2130,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/banana-protein-cookies-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -2130,7 +2173,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/sugar-free-protein-cookies-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -2173,7 +2216,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/thin-crispy-protein-cookies-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -2216,7 +2259,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/red-velvet-protein-cookies-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -2259,7 +2302,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/gingerbread-protein-cookies-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -2302,7 +2345,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/gluten-free-oat-flour-protein-cookies-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -2345,7 +2388,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/dairy-free-peanut-butter-protein-cookies-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -2388,7 +2431,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/classic-whey-protein-pancakes-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -2431,7 +2474,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/chocolate-casein-pancakes-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -2474,7 +2517,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/blueberry-vegan-protein-pancakes-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -2517,7 +2560,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/savory-herb-and-cheese-pancakes-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -2560,7 +2603,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/banana-bread-protein-pancakes-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -2603,7 +2646,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/lemon-ricotta-protein-crepes-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -2646,7 +2689,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/cinnamon-roll-protein-waffles-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -2689,7 +2732,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/red-velvet-protein-pancakes-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -2732,7 +2775,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/pumpkin-spice-protein-waffles-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -2775,7 +2818,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/chocolate-chip-protein-pancakes-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -2818,7 +2861,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/strawberry-shortcake-protein-pancakes-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -2861,7 +2904,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/double-chocolate-protein-waffles-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -2904,7 +2947,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/matcha-green-tea-protein-crepes-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -2947,7 +2990,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/apple-cinnamon-protein-pancakes-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -2990,7 +3033,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/belgian-protein-waffles-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -3033,7 +3076,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/peanut-butter-cup-protein-pancakes-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -3076,7 +3119,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/carrot-cake-protein-waffles-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -3119,7 +3162,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/savory-spinach-and-feta-protein-crepes-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -3162,7 +3205,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/lemon-poppy-seed-protein-pancakes-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -3205,7 +3248,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/coffee-infused-protein-waffles-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -3248,7 +3291,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/german-chocolate-protein-pancakes-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -3291,7 +3334,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/churro-protein-waffles-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -3334,7 +3377,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/berries-and-cream-protein-crepes-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -3377,7 +3420,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/samoa-inspired-protein-pancakes-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -3420,7 +3463,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/birthday-cake-protein-waffles-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -3463,7 +3506,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/gluten-free-buckwheat-protein-pancakes-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -3506,7 +3549,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/dairy-free-banana-oat-protein-pancakes-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -3549,7 +3592,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/gluten-free-buckwheat-protein-pancakes-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -3592,7 +3635,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/dairy-free-banana-oat-protein-pancakes-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -3635,7 +3678,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/classic-protein-brownies-recipe-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -3678,7 +3721,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/high-protein-brownies-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -3721,7 +3764,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/protein-powder-brownies-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -3764,7 +3807,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/cottage-cheese-protein-brownies-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -3807,7 +3850,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/healthy-protein-brownies-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -3850,7 +3893,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/whey-protein-brownies-recipe-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -3893,7 +3936,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/sweet-potato-protein-brownies-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -3936,7 +3979,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/chocolate-protein-brownies-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -3979,7 +4022,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/black-bean-protein-brownies-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -4022,7 +4065,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/banana-protein-brownies-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -4065,7 +4108,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/vegan-protein-brownies-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -4108,7 +4151,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/fudgy-protein-brownies-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -4151,7 +4194,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/pumpkin-protein-brownies-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -4194,7 +4237,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/low-calorie-protein-brownies-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -4237,7 +4280,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/protein-blondies-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -4280,7 +4323,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/no-bake-protein-brownie-bars-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -4323,7 +4366,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/single-serving-protein-brownie-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -4366,7 +4409,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/keto-protein-brownies-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -4409,7 +4452,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/greek-yogurt-protein-brownies-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -4452,7 +4495,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/avocado-protein-brownies-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -4495,7 +4538,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/zucchini-protein-brownies-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -4538,7 +4581,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/peanut-butter-protein-brownies-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -4581,7 +4624,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/mint-chocolate-protein-brownies-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -4624,7 +4667,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/raspberry-swirl-protein-brownies-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -4667,7 +4710,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/espresso-protein-brownies-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -4710,7 +4753,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/gluten-free-black-bean-protein-brownies-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -4753,7 +4796,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/dairy-free-avocado-protein-brownies-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -4796,7 +4839,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/protein-banana-bread-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -4839,7 +4882,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/high-protein-banana-bread-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -4882,7 +4925,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/protein-banana-bread-recipe-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -4925,7 +4968,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/protein-powder-banana-bread-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -4968,7 +5011,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/high-protein-banana-bread-recipe-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -5011,7 +5054,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/protein-pumpkin-bread-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -5054,7 +5097,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/protein-zucchini-bread-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -5097,7 +5140,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/protein-cloud-bread-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -5140,7 +5183,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/protein-bread-recipe-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -5183,7 +5226,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/high-protein-bread-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -5226,7 +5269,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/high-protein-pumpkin-bread-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -5269,7 +5312,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/protein-bagels-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -5312,7 +5355,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/savory-herb-protein-bread-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -5355,7 +5398,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/cinnamon-swirl-protein-bread-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -5398,7 +5441,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/whole-wheat-protein-sandwich-bread-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -5441,7 +5484,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/healthy-protein-banana-bread-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -5484,7 +5527,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/banana-bread-with-protein-powder-recipe-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -5527,7 +5570,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/chocolate-chip-protein-zucchini-bread-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -5570,7 +5613,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/cinnamon-raisin-protein-bagels-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -5613,7 +5656,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/cheese-and-chive-protein-bread-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -5656,7 +5699,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/lemon-blueberry-protein-bread-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -5699,7 +5742,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/multigrain-protein-sandwich-bread-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -5742,7 +5785,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/chocolate-chip-protein-banana-bread-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -5785,7 +5828,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/apple-cinnamon-protein-bread-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -5828,7 +5871,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/everything-protein-bagels-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -5871,7 +5914,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/gluten-free-almond-flour-protein-bread-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -5914,7 +5957,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/dairy-free-oat-protein-sandwich-loaf-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -5957,7 +6000,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/no-bake-chocolate-peanut-butter-bars-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -6000,7 +6043,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/candy-bar-copycat-snickers-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -6043,7 +6086,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/vegan-almond-joy-bars-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -6086,7 +6129,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/nut-free-sunbutter-bars-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -6129,7 +6172,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/high-protein-chocolate-brownie-bars-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -6172,7 +6215,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/meal-prep-oat-and-honey-bars-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -6215,7 +6258,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/no-bake-cashew-coconut-bars-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -6258,7 +6301,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/candy-bar-copycat-twix-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -6301,7 +6344,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/vegan-chocolate-chip-cookie-dough-bars-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -6344,7 +6387,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/nut-free-chocolate-seed-bars-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -6387,7 +6430,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/high-protein-lemon-bars-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -6430,7 +6473,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/meal-prep-berry-breakfast-bars-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -6473,7 +6516,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/no-bake-key-lime-pie-bars-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -6516,7 +6559,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/candy-bar-copycat-almond-mound-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -6559,7 +6602,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/vegan-peanut-butter-jelly-bars-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -6602,7 +6645,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/nut-free-apple-cinnamon-bars-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -6645,7 +6688,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/high-protein-samoa-bars-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -6688,7 +6731,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/meal-prep-banana-bread-bars-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -6731,7 +6774,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/no-bake-birthday-cake-bars-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -6774,7 +6817,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/candy-bar-copycat-butterfinger-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -6817,7 +6860,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/vegan-double-chocolate-bars-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -6860,7 +6903,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/nut-free-vanilla-funfetti-bars-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -6903,7 +6946,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/high-protein-red-velvet-bars-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -6946,7 +6989,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/meal-prep-pumpkin-spice-bars-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -6989,7 +7032,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/no-bake-matcha-coconut-bars-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -7032,7 +7075,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/gluten-free-chocolate-peanut-butter-protein-bars-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -7075,7 +7118,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/dairy-free-coconut-almond-protein-bars-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -7118,7 +7161,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/gluten-free-chocolate-peanut-butter-protein-bars-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -7161,7 +7204,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/dairy-free-coconut-almond-protein-bars-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -7204,7 +7247,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/peanut-butter-protein-balls-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -7247,7 +7290,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/no-bake-protein-balls-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -7290,7 +7333,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/oatmeal-protein-balls-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -7333,7 +7376,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/protein-energy-balls-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -7376,7 +7419,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/chocolate-protein-balls-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -7419,7 +7462,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/chocolate-chip-protein-balls-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -7462,7 +7505,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/pumpkin-protein-balls-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -7505,7 +7548,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/monster-cookie-protein-balls-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -7548,7 +7591,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/chocolate-peanut-butter-protein-balls-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -7591,7 +7634,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/keto-protein-balls-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -7634,7 +7677,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/protein-power-balls-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -7677,7 +7720,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/easy-protein-balls-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -7720,7 +7763,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/healthy-protein-balls-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -7763,7 +7806,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/homemade-protein-balls-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -7806,7 +7849,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/oat-protein-balls-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -7849,7 +7892,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/coconut-protein-balls-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -7892,7 +7935,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/almond-butter-protein-balls-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -7935,7 +7978,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/birthday-cake-protein-balls-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -7978,7 +8021,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/apple-cinnamon-protein-balls-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -8021,7 +8064,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/coffee-protein-balls-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -8064,7 +8107,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/vegan-protein-balls-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -8107,7 +8150,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/nut-free-protein-balls-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -8150,7 +8193,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/lemon-protein-balls-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -8193,7 +8236,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/trail-mix-protein-balls-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -8236,7 +8279,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/brownie-batter-protein-balls-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -8279,7 +8322,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/gluten-free-sunflower-seed-protein-bites-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -8322,7 +8365,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/dairy-free-tahini-date-protein-bites-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -8365,7 +8408,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/classic-glazed-protein-donuts-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -8408,7 +8451,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/chocolate-frosted-protein-donuts-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -8451,7 +8494,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/cinnamon-sugar-protein-donuts-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -8494,7 +8537,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/blueberry-protein-donuts-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -8537,7 +8580,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/red-velvet-protein-donuts-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -8580,7 +8623,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/lemon-poppy-seed-protein-donuts-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -8623,7 +8666,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/maple-bacon-protein-donuts-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -8666,7 +8709,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/boston-cream-protein-donuts-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -8709,7 +8752,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/jelly-filled-protein-donuts-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -8752,7 +8795,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/air-fryer-protein-donuts-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -8795,7 +8838,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/pumpkin-spice-protein-donuts-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -8838,7 +8881,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/gingerbread-protein-donuts-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -8881,7 +8924,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/apple-cider-protein-donuts-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -8924,7 +8967,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/double-chocolate-protein-donuts-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -8967,7 +9010,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/strawberry-frosted-protein-donuts-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -9010,7 +9053,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/vanilla-bean-protein-donuts-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -9053,7 +9096,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/cookies-and-cream-protein-donuts-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -9096,7 +9139,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/pistachio-protein-donuts-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -9139,7 +9182,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/matcha-protein-donuts-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -9182,7 +9225,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/coffee-protein-donuts-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -9225,7 +9268,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/carrot-cake-protein-donuts-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -9268,7 +9311,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/banana-bread-protein-donuts-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -9311,7 +9354,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/chocolate-chip-protein-donuts-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -9354,7 +9397,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/peanut-butter-protein-donuts-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -9397,7 +9440,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/coconut-protein-donuts-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -9440,7 +9483,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/gluten-free-baked-protein-donuts-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -9483,7 +9526,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/dairy-free-chocolate-glazed-protein-donuts-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -9526,7 +9569,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/gluten-free-baked-protein-donuts-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -9569,7 +9612,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/dairy-free-chocolate-glazed-protein-donuts-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -9612,7 +9655,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/high-protein-oatmeal-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -9655,7 +9698,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/protein-oatmeal-recipe-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -9698,7 +9741,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/protein-powder-in-oatmeal-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -9741,7 +9784,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/oatmeal-with-protein-powder-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -9784,7 +9827,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/high-protein-oatmeal-recipe-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -9827,7 +9870,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/high-protein-baked-oatmeal-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -9870,7 +9913,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/protein-baked-oatmeal-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -9913,7 +9956,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/protein-oatmeal-cookies-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -9956,7 +9999,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/oatmeal-protein-bars-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -9999,7 +10042,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/overnight-protein-oats-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -10042,7 +10085,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/chocolate-protein-oatmeal-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -10085,7 +10128,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/peanut-butter-protein-oatmeal-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -10128,7 +10171,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/banana-protein-oatmeal-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -10171,7 +10214,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/apple-cinnamon-protein-oatmeal-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -10214,7 +10257,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/blueberry-protein-oatmeal-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -10257,7 +10300,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/pumpkin-protein-oatmeal-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -10300,7 +10343,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/vanilla-protein-oatmeal-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -10343,7 +10386,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/strawberry-protein-oatmeal-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -10386,7 +10429,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/savory-protein-oatmeal-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -10429,7 +10472,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/maple-pecan-protein-oatmeal-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -10472,7 +10515,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/coconut-protein-oatmeal-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -10515,7 +10558,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/coffee-protein-oatmeal-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -10558,7 +10601,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/carrot-cake-protein-oatmeal-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -10601,7 +10644,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/almond-butter-protein-oatmeal-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -10644,7 +10687,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/mixed-berry-protein-oatmeal-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -10687,7 +10730,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/gluten-free-certified-oats-protein-oatmeal-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -10730,7 +10773,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/dairy-free-coconut-milk-protein-oatmeal-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -10773,7 +10816,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/classic-vanilla-bean-cheesecake-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -10816,7 +10859,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/no-bake-chocolate-cheesecake-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -10859,7 +10902,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/strawberry-swirl-cheesecake-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -10902,7 +10945,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/lemon-blueberry-cheesecake-minis-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -10945,7 +10988,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/single-serving-peanut-butter-cheesecake-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -10988,7 +11031,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/funfetti-cheesecake-dip-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -11031,7 +11074,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/pumpkin-spice-cheesecake-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -11074,7 +11117,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/key-lime-cheesecake-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -11117,7 +11160,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/caramel-pecan-cheesecake-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -11160,7 +11203,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/mint-chocolate-chip-cheesecake-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -11203,7 +11246,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/raspberry-white-chocolate-cheesecake-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -11246,7 +11289,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/cookies-and-cream-cheesecake-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -11289,7 +11332,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/s-mores-cheesecake-dip-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -11332,7 +11375,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/red-velvet-cheesecake-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -11375,7 +11418,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/matcha-green-tea-cheesecake-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -11418,7 +11461,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/no-bake-oreo-cheesecake-bites-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -11461,7 +11504,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/single-serving-chocolate-cheesecake-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -11504,7 +11547,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/brownie-batter-dip-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -11547,7 +11590,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/gingerbread-cheesecake-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -11590,7 +11633,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/no-bake-lemon-cheesecake-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -11633,7 +11676,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/chocolate-hazelnut-cheesecake-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -11676,7 +11719,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/single-serving-strawberry-cheesecake-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -11719,7 +11762,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/cookie-dough-cheesecake-dip-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -11762,7 +11805,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/eggnog-cheesecake-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -11805,7 +11848,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/tiramisu-cheesecake-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -11848,7 +11891,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/gluten-free-almond-crust-protein-cheesecake-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -11891,7 +11934,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/dairy-free-cashew-protein-cheesecake-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -11934,7 +11977,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/classic-protein-pizza-crust-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -11977,7 +12020,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/high-protein-pizza-crust-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -12020,7 +12063,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/protein-pizza-dough-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -12063,7 +12106,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/protein-pizza-recipe-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -12106,7 +12149,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/chicken-protein-pizza-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -12149,7 +12192,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/pepperoni-protein-pizza-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -12192,7 +12235,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/cauliflower-protein-pizza-crust-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -12235,7 +12278,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/greek-yogurt-protein-pizza-crust-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -12278,7 +12321,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/cottage-cheese-protein-pizza-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -12321,7 +12364,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/margherita-protein-pizza-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -12364,7 +12407,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/bbq-chicken-protein-pizza-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -12407,7 +12450,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/meat-lovers-protein-pizza-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -12450,7 +12493,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/veggie-protein-pizza-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -12493,7 +12536,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/buffalo-chicken-protein-pizza-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -12536,7 +12579,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/breakfast-protein-pizza-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -12579,7 +12622,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/white-protein-pizza-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -12622,7 +12665,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/hawaiian-protein-pizza-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -12665,7 +12708,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/protein-pizza-bowl-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -12708,7 +12751,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/keto-protein-pizza-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -12751,7 +12794,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/taco-protein-pizza-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -12794,7 +12837,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/pesto-chicken-protein-pizza-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -12837,7 +12880,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/mushroom-protein-pizza-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -12880,7 +12923,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/spinach-feta-protein-pizza-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -12923,7 +12966,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/supreme-protein-pizza-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -12966,7 +13009,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/dessert-protein-pizza-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -13009,7 +13052,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/gluten-free-cauliflower-protein-pizza-crust-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -13052,7 +13095,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/dairy-free-chickpea-flour-protein-pizza-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -13095,7 +13138,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/classic-chocolate-protein-pudding-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -13138,7 +13181,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/vanilla-bean-protein-mousse-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -13181,7 +13224,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/chocolate-chia-protein-pudding-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -13224,7 +13267,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/strawberry-parfait-protein-pudding-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -13267,7 +13310,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/lemon-raspberry-protein-mousse-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -13310,7 +13353,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/peanut-butter-cup-protein-pudding-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -13353,7 +13396,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/matcha-chia-protein-pudding-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -13396,7 +13439,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/cookies-and-cream-protein-pudding-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -13439,7 +13482,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/blueberry-parfait-protein-pudding-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -13482,7 +13525,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/chocolate-avocado-protein-mousse-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -13525,7 +13568,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/quick-vanilla-protein-pudding-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -13568,7 +13611,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/mango-chia-protein-pudding-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -13611,7 +13654,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/caramel-protein-pudding-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -13654,7 +13697,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/raspberry-chia-protein-pudding-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -13697,7 +13740,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/banana-cream-protein-pudding-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -13740,7 +13783,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/coffee-protein-mousse-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -13783,7 +13826,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/peach-parfait-protein-pudding-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -13826,7 +13869,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/mint-chocolate-protein-pudding-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -13869,7 +13912,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/coconut-cream-protein-pudding-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -13912,7 +13955,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/pumpkin-spice-protein-pudding-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -13955,7 +13998,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/double-chocolate-protein-mousse-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -13998,7 +14041,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/mixed-berry-chia-protein-pudding-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -14041,7 +14084,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/key-lime-protein-pudding-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -14084,7 +14127,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/chocolate-hazelnut-protein-pudding-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -14127,7 +14170,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/black-forest-parfait-protein-pudding-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -14170,7 +14213,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/gluten-free-chocolate-chia-protein-pudding-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -14213,7 +14256,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/dairy-free-vanilla-coconut-protein-pudding-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -14256,7 +14299,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/gluten-free-chocolate-chia-protein-pudding-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -14299,7 +14342,7 @@
 
             
                 
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/dairy-free-vanilla-coconut-protein-pudding-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -14347,7 +14390,7 @@
 </main>
 
 
-<footer class="bg-slate-900 text-white py-12 mt-16">
+<footer class="bg-slate-900 dark:bg-slate-950 text-white py-12 mt-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
             <!-- Brand -->
@@ -14365,7 +14408,7 @@
             <div>
                 <h4 class="font-semibold mb-4">Categories</h4>
                 <ul class="space-y-2 text-slate-400 text-sm">
-                    <li><a href="/breakfast/" class="hover:text-white transition-colors">Breakfast</a></li>
+                    <li><a href="/category-breakfast.html" class="hover:text-white transition-colors">Breakfast</a></li>
                     <li><a href="/category-desserts.html" class="hover:text-white transition-colors">Desserts</a></li>
                     <li><a href="/category-snacks.html" class="hover:text-white transition-colors">Snacks</a></li>
                     <li><a href="/category-savory.html" class="hover:text-white transition-colors">Savory</a></li>

@@ -1,8 +1,8 @@
-<a href="/<%= recipe.slug %>.html" class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<a href="/<%= recipe.slug %>.html" class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
     <div class="relative aspect-square overflow-hidden">
-        <img 
-            src="/recipe_images/<%= recipe.slug %>.png" 
+        <img
+            src="/recipe_images/<%= recipe.slug %>.png"
             alt="<%= recipe.title %>"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
             loading="lazy"
@@ -12,13 +12,13 @@
             <%= recipe.nutrition.protein %>g
         </div>
     </div>
-    
+
     <!-- Content -->
     <div class="p-4">
-        <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+        <h3 class="font-semibold text-slate-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors line-clamp-2">
             <%= recipe.title %>
         </h3>
-        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500 dark:text-slate-400">
             <span><%= recipe.nutrition.calories %> cal</span>
             <span>•</span>
             <span><%= recipe.totalTime %>m</span>

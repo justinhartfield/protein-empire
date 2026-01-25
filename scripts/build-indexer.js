@@ -219,65 +219,98 @@ async function buildIndexerSite() {
  */
 function generateIndexerNav() {
   return `
-<nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/80 border-b border-slate-200">
+<nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/80 dark:bg-slate-900/80 border-b border-slate-200 dark:border-slate-700">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-16">
             <!-- Logo -->
             <a href="/" class="flex items-center gap-2">
                 <img src="<%= site.logo %>" alt="<%= site.name %>" class="h-10 w-10 rounded-full">
-                <span class="font-anton text-xl text-slate-900 tracking-tight uppercase">HighProtein<span class="text-brand-500">.Recipes</span></span>
+                <span class="font-anton text-xl text-slate-900 dark:text-white tracking-tight uppercase">HighProtein<span class="text-brand-500">.Recipes</span></span>
             </a>
 
             <!-- Desktop Navigation -->
             <div class="hidden md:flex items-center gap-6">
                 <div class="relative group">
-                    <button class="text-slate-600 hover:text-slate-900 font-medium transition-colors flex items-center gap-1">
+                    <button class="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium transition-colors flex items-center gap-1">
                         Categories
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </button>
-                    <div class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-slate-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
-                        <a href="/category-breakfast.html" class="block px-4 py-2 text-slate-600 hover:bg-slate-50 hover:text-slate-900">Breakfast</a>
-                        <a href="/category-desserts.html" class="block px-4 py-2 text-slate-600 hover:bg-slate-50 hover:text-slate-900">Desserts</a>
-                        <a href="/category-snacks.html" class="block px-4 py-2 text-slate-600 hover:bg-slate-50 hover:text-slate-900">Snacks</a>
-                        <a href="/category-savory.html" class="block px-4 py-2 text-slate-600 hover:bg-slate-50 hover:text-slate-900">Savory</a>
+                    <div class="absolute top-full left-0 mt-2 w-48 bg-white dark:bg-slate-800 rounded-lg shadow-lg border border-slate-100 dark:border-slate-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+                        <a href="/category-breakfast.html" class="block px-4 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white">Breakfast</a>
+                        <a href="/category-desserts.html" class="block px-4 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white">Desserts</a>
+                        <a href="/category-snacks.html" class="block px-4 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white">Snacks</a>
+                        <a href="/category-savory.html" class="block px-4 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white">Savory</a>
                     </div>
                 </div>
-                <a href="/no-bake.html" class="text-slate-600 hover:text-slate-900 font-medium transition-colors">No-Bake</a>
-                <a href="/high-protein.html" class="text-slate-600 hover:text-slate-900 font-medium transition-colors">30g+ Protein</a>
+                <a href="/no-bake.html" class="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium transition-colors">No-Bake</a>
+                <a href="/high-protein.html" class="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium transition-colors">30g+ Protein</a>
+
+                <!-- Dark Mode Toggle -->
+                <button
+                    x-data="{ dark: document.documentElement.classList.contains('dark') }"
+                    @click="dark = !dark; document.documentElement.classList.toggle('dark'); localStorage.setItem('theme', dark ? 'dark' : 'light')"
+                    class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                    aria-label="Toggle dark mode"
+                >
+                    <svg x-show="!dark" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+                    </svg>
+                    <svg x-show="dark" x-cloak class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/>
+                    </svg>
+                </button>
+
                 <a href="/#sites" class="bg-brand-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-brand-600 transition-colors">
                     Browse All Sites
                 </a>
             </div>
 
             <!-- Mobile Menu Button -->
-            <button 
-                x-data="{ open: false }"
-                @click="open = !open; $dispatch('toggle-mobile-menu', { open })"
-                class="md:hidden p-2 text-slate-600 hover:text-slate-900"
-                aria-label="Toggle menu"
-            >
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-            </button>
+            <div class="flex items-center gap-2 md:hidden">
+                <!-- Mobile Dark Mode Toggle -->
+                <button
+                    x-data="{ dark: document.documentElement.classList.contains('dark') }"
+                    @click="dark = !dark; document.documentElement.classList.toggle('dark'); localStorage.setItem('theme', dark ? 'dark' : 'light')"
+                    class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                    aria-label="Toggle dark mode"
+                >
+                    <svg x-show="!dark" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+                    </svg>
+                    <svg x-show="dark" x-cloak class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/>
+                    </svg>
+                </button>
+
+                <button
+                    x-data="{ open: false }"
+                    @click="open = !open; $dispatch('toggle-mobile-menu', { open })"
+                    class="p-2 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white"
+                    aria-label="Toggle menu"
+                >
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
         </div>
     </div>
 
     <!-- Mobile Menu -->
-    <div 
+    <div
         x-data="{ open: false }"
         @toggle-mobile-menu.window="open = $event.detail.open"
         x-show="open"
         x-cloak
-        class="md:hidden bg-white border-b border-slate-200"
+        class="md:hidden bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-700"
     >
         <div class="px-4 py-4 space-y-3">
-            <a href="/category-breakfast.html" class="block text-slate-600 hover:text-slate-900 font-medium">Breakfast</a>
-            <a href="/category-desserts.html" class="block text-slate-600 hover:text-slate-900 font-medium">Desserts</a>
-            <a href="/category-snacks.html" class="block text-slate-600 hover:text-slate-900 font-medium">Snacks</a>
-            <a href="/category-savory.html" class="block text-slate-600 hover:text-slate-900 font-medium">Savory</a>
-            <a href="/no-bake.html" class="block text-slate-600 hover:text-slate-900 font-medium">No-Bake</a>
-            <a href="/high-protein.html" class="block text-slate-600 hover:text-slate-900 font-medium">30g+ Protein</a>
+            <a href="/category-breakfast.html" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">Breakfast</a>
+            <a href="/category-desserts.html" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">Desserts</a>
+            <a href="/category-snacks.html" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">Snacks</a>
+            <a href="/category-savory.html" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">Savory</a>
+            <a href="/no-bake.html" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">No-Bake</a>
+            <a href="/high-protein.html" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">30g+ Protein</a>
             <a href="/#sites" class="block bg-brand-500 text-white px-4 py-2 rounded-lg font-semibold text-center">
                 Browse All Sites
             </a>
@@ -295,7 +328,7 @@ function generateIndexerNav() {
  */
 function generateIndexerFooter() {
   return `
-<footer class="bg-slate-900 text-white py-12 mt-16">
+<footer class="bg-slate-900 dark:bg-slate-950 text-white py-12 mt-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
             <!-- Brand -->
@@ -374,7 +407,7 @@ function generateIndexerFooter() {
  */
 function generateIndexerRecipeCard() {
   return `
-<div class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
     <!-- Image Container -->
     <a href="/<%= recipe.slug %>-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -438,7 +471,7 @@ function generateHomepage(site, allRecipes, categories, partials, outputDir) {
   includeIngredients: false
 }) %>
 </head>
-<body class="min-h-screen flex flex-col bg-slate-50 text-slate-900 font-sans">
+<body class="min-h-screen flex flex-col bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100 font-sans">
 <%- include('nav', { site }) %>
 
 <!-- Hero Section -->
@@ -465,7 +498,7 @@ function generateHomepage(site, allRecipes, categories, partials, outputDir) {
 </section>
 
 <!-- Quick Stats -->
-<section class="py-8 bg-white border-b border-slate-100">
+<section class="py-8 bg-white dark:bg-slate-800 border-b border-slate-100 dark:border-slate-700">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
@@ -512,7 +545,7 @@ function generateHomepage(site, allRecipes, categories, partials, outputDir) {
 </section>
 
 <!-- Browse by Category -->
-<section class="py-16 bg-white">
+<section class="py-16 bg-white dark:bg-slate-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
             <h2 class="font-anton text-4xl uppercase tracking-wider mb-4">Browse by Category</h2>
@@ -562,7 +595,7 @@ function generateHomepage(site, allRecipes, categories, partials, outputDir) {
         
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             <% empireSites.forEach(es => { %>
-            <a href="https://<%= es.domain %>" target="_blank" rel="noopener" class="group bg-white rounded-xl p-6 border border-slate-100 hover:border-brand-500 hover:shadow-lg transition-all text-center">
+            <a href="https://<%= es.domain %>" target="_blank" rel="noopener" class="group bg-white dark:bg-slate-800 rounded-xl p-6 border border-slate-100 dark:border-slate-700 hover:border-brand-500 hover:shadow-lg transition-all text-center">
                 <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-brand-500 to-accent-500 flex items-center justify-center text-white font-anton text-xl uppercase">
                     <%= es.name.charAt(0) %>
                 </div>
@@ -575,7 +608,7 @@ function generateHomepage(site, allRecipes, categories, partials, outputDir) {
 </section>
 
 <!-- Hero Ingredients -->
-<section class="py-16 bg-white">
+<section class="py-16 bg-white dark:bg-slate-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
             <h2 class="font-anton text-4xl uppercase tracking-wider mb-4">Popular Ingredients</h2>
@@ -772,7 +805,7 @@ function generateListingPage(site, recipes, config, partials, outputDir) {
   includeIngredients: false
 }) %>
 </head>
-<body class="min-h-screen flex flex-col bg-slate-50 text-slate-900 font-sans">
+<body class="min-h-screen flex flex-col bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100 font-sans">
 <%- include('nav', { site }) %>
 
 <main class="flex-grow py-12">
@@ -875,7 +908,7 @@ function generateRecipePreviewPages(site, allRecipes, partials, outputDir) {
 }
 </script>
 </head>
-<body class="min-h-screen flex flex-col bg-slate-50 text-slate-900 font-sans">
+<body class="min-h-screen flex flex-col bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100 font-sans">
 <%- include('nav', { site }) %>
 
 <main class="flex-grow py-12">
@@ -892,7 +925,7 @@ function generateRecipePreviewPages(site, allRecipes, partials, outputDir) {
         </nav>
         
         <!-- Recipe Header -->
-        <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 mb-8">
+        <div class="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm border border-slate-100 mb-8">
             <div class="aspect-video relative">
                 <img 
                     src="<%= recipe.image_url || ('https://' + recipe.sourceSite + '/recipe_images/' + recipe.slug + '.jpg') %>" 
@@ -1022,7 +1055,7 @@ function generateStaticPages(site, partials, outputDir) {
   includeIngredients: false
 }) %>
 </head>
-<body class="min-h-screen flex flex-col bg-slate-50 text-slate-900 font-sans">
+<body class="min-h-screen flex flex-col bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100 font-sans">
 <%- include('nav', { site }) %>
 <main class="flex-grow py-16">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1073,7 +1106,7 @@ function generateStaticPages(site, partials, outputDir) {
   includeIngredients: false
 }) %>
 </head>
-<body class="min-h-screen flex flex-col bg-slate-50 text-slate-900 font-sans">
+<body class="min-h-screen flex flex-col bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100 font-sans">
 <%- include('nav', { site }) %>
 <main class="flex-grow py-16">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">

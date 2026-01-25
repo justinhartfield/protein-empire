@@ -59,6 +59,15 @@
 <link rel="preload" as="image" href="/recipe_images/chocolate-chip-protein-cookies-medium.webp">
 
 
+<!-- Dark Mode: Apply before page renders to prevent flash -->
+<script>
+(function(){
+  var s = localStorage.getItem('theme');
+  var d = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  if (s === 'dark' || (!s && d)) document.documentElement.classList.add('dark');
+})();
+</script>
+
 <!-- Scripts -->
 <script src="https://cdn.tailwindcss.com"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -68,6 +77,7 @@
 <!-- Tailwind Config -->
 <script>
     tailwind.config = {
+        darkMode: 'class',
         theme: {
             extend: {
                 fontFamily: {
@@ -97,6 +107,9 @@
         background: rgba(255, 255, 255, 0.8);
         backdrop-filter: blur(12px);
         -webkit-backdrop-filter: blur(12px);
+    }
+    .dark .glass-nav {
+        background: rgba(15, 23, 42, 0.8);
     }
     .anton-text {
         font-family: 'Anton', sans-serif;
@@ -134,37 +147,70 @@
 }
 </script>
 </head>
-<body class="min-h-screen flex flex-col bg-slate-50 text-slate-900 font-sans">
+<body class="min-h-screen flex flex-col bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100 font-sans">
 
 
 <!-- Top Navigation (matching ProteinMuffins.com) -->
-<header class="sticky top-0 z-50 glass-nav border-b border-slate-200">
+<header class="sticky top-0 z-50 glass-nav dark:bg-slate-900/80 border-b border-slate-200 dark:border-slate-700">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-20">
             <div class="flex items-center">
                 <a href="/" class="flex items-center">
                     <img src="/images/logo.png" alt="ProteinCookies" class="h-12 md:h-16 w-auto">
-                    
+
                 </a>
             </div>
             <nav class="hidden md:flex space-x-8 items-center">
-                <a href="/#recipes" class="text-slate-600 hover:text-brand-600 font-semibold text-sm uppercase tracking-wider">Recipes</a>
-                <a href="/#categories" class="text-slate-600 hover:text-brand-600 font-semibold text-sm uppercase tracking-wider">Categories</a>
-                <a href="/#packs" class="text-slate-600 hover:text-brand-600 font-semibold text-sm uppercase tracking-wider">Recipe Packs</a>
-                <a href="/pack-starter.html" class="bg-brand-600 text-white px-5 py-2.5 rounded-full font-bold text-sm hover:bg-brand-900 transition shadow-lg shadow-brand-500/30">STARTER PACK (FREE)</a>
-            </nav>
-            <div class="md:hidden" x-data="{ open: false }">
-                <button @click="open = !open" class="text-slate-900 focus:outline-none">
-                    <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                <a href="/#recipes" class="text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 font-semibold text-sm uppercase tracking-wider">Recipes</a>
+                <a href="/#categories" class="text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 font-semibold text-sm uppercase tracking-wider">Categories</a>
+                <a href="/#packs" class="text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 font-semibold text-sm uppercase tracking-wider">Recipe Packs</a>
+
+                <!-- Dark Mode Toggle -->
+                <button
+                    x-data="{ dark: document.documentElement.classList.contains('dark') }"
+                    @click="dark = !dark; document.documentElement.classList.toggle('dark'); localStorage.setItem('theme', dark ? 'dark' : 'light')"
+                    class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                    aria-label="Toggle dark mode"
+                >
+                    <svg x-show="!dark" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+                    </svg>
+                    <svg x-show="dark" x-cloak class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/>
                     </svg>
                 </button>
-                <!-- Mobile Menu -->
-                <div x-show="open" x-cloak class="absolute top-20 left-0 right-0 bg-white border-b border-slate-100 p-6 space-y-4 shadow-xl">
-                    <a href="/#recipes" class="block text-xl anton-text text-slate-900">RECIPES</a>
-                    <a href="/#categories" class="block text-xl anton-text text-slate-900">CATEGORIES</a>
-                    <a href="/#packs" class="block text-xl anton-text text-slate-900">RECIPE PACKS</a>
-                    <a href="/pack-starter.html" class="block text-center w-full bg-brand-600 text-white py-4 rounded-xl font-bold anton-text text-lg">GET STARTER PACK</a>
+
+                <a href="/pack-starter.html" class="bg-brand-600 text-white px-5 py-2.5 rounded-full font-bold text-sm hover:bg-brand-900 transition shadow-lg shadow-brand-500/30">STARTER PACK (FREE)</a>
+            </nav>
+            <div class="flex items-center gap-2 md:hidden">
+                <!-- Mobile Dark Mode Toggle -->
+                <button
+                    x-data="{ dark: document.documentElement.classList.contains('dark') }"
+                    @click="dark = !dark; document.documentElement.classList.toggle('dark'); localStorage.setItem('theme', dark ? 'dark' : 'light')"
+                    class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                    aria-label="Toggle dark mode"
+                >
+                    <svg x-show="!dark" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+                    </svg>
+                    <svg x-show="dark" x-cloak class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/>
+                    </svg>
+                </button>
+
+                <div x-data="{ open: false }">
+                    <button @click="open = !open" class="text-slate-900 dark:text-white focus:outline-none">
+                        <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                    <!-- Mobile Menu -->
+                    <div x-show="open" x-cloak class="absolute top-20 left-0 right-0 bg-white dark:bg-slate-900 border-b border-slate-100 dark:border-slate-700 p-6 space-y-4 shadow-xl">
+                        <a href="/#recipes" class="block text-xl anton-text text-slate-900 dark:text-white">RECIPES</a>
+                        <a href="/#categories" class="block text-xl anton-text text-slate-900 dark:text-white">CATEGORIES</a>
+                        <a href="/#packs" class="block text-xl anton-text text-slate-900 dark:text-white">RECIPE PACKS</a>
+                        <a href="/pack-starter.html" class="block text-center w-full bg-brand-600 text-white py-4 rounded-xl font-bold anton-text text-lg">GET STARTER PACK</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -201,13 +247,13 @@
     <!-- What Are Section -->
     <section class="py-16 bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 mb-6 uppercase tracking-wide">What Are Protein Cookies?</h2>
+            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 dark:text-white mb-6 uppercase tracking-wide">What Are Protein Cookies?</h2>
             
-            <p class="text-slate-600 text-lg leading-relaxed mb-4">Protein cookies are a healthier alternative to traditional cookies, specifically designed to deliver a significant amount of protein per serving while still satisfying your sweet tooth. Unlike regular cookies loaded with empty calories and refined sugars, protein cookies incorporate protein-rich ingredients like whey protein powder, Greek yogurt, nut butters, and eggs to boost the nutritional profile.</p>
+            <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed mb-4">Protein cookies are a healthier alternative to traditional cookies, specifically designed to deliver a significant amount of protein per serving while still satisfying your sweet tooth. Unlike regular cookies loaded with empty calories and refined sugars, protein cookies incorporate protein-rich ingredients like whey protein powder, Greek yogurt, nut butters, and eggs to boost the nutritional profile.</p>
             
-            <p class="text-slate-600 text-lg leading-relaxed mb-4">These macro-friendly treats typically contain 15-30 grams of protein per serving, making them an excellent post-workout snack or guilt-free dessert option. The best protein cookies maintain the soft, chewy texture you love while dramatically reducing sugar content and increasing satiety through high-quality protein sources.</p>
+            <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed mb-4">These macro-friendly treats typically contain 15-30 grams of protein per serving, making them an excellent post-workout snack or guilt-free dessert option. The best protein cookies maintain the soft, chewy texture you love while dramatically reducing sugar content and increasing satiety through high-quality protein sources.</p>
             
-            <p class="text-slate-600 text-lg leading-relaxed mb-4">Whether you are following a high-protein diet, building muscle, or simply looking for healthier snack alternatives, protein cookies offer the perfect balance of taste and nutrition. With endless flavor combinations from classic chocolate chip to peanut butter, there is a protein cookie recipe for every preference.</p>
+            <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed mb-4">Whether you are following a high-protein diet, building muscle, or simply looking for healthier snack alternatives, protein cookies offer the perfect balance of taste and nutrition. With endless flavor combinations from classic chocolate chip to peanut butter, there is a protein cookie recipe for every preference.</p>
             
         </div>
     </section>
@@ -215,37 +261,37 @@
     <!-- Benefits Section -->
     <section class="py-16 bg-slate-50">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 mb-10 text-center uppercase tracking-wide">Benefits of Protein Cookies</h2>
+            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 dark:text-white mb-10 text-center uppercase tracking-wide">Benefits of Protein Cookies</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 
-                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
-                    <h3 class="font-bold text-lg text-slate-900 mb-2">High Protein Content</h3>
-                    <p class="text-slate-600">Each cookie packs 15-30g of protein to support muscle growth and recovery.</p>
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700 shadow-sm">
+                    <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-2">High Protein Content</h3>
+                    <p class="text-slate-600 dark:text-slate-400">Each cookie packs 15-30g of protein to support muscle growth and recovery.</p>
                 </div>
                 
-                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
-                    <h3 class="font-bold text-lg text-slate-900 mb-2">Lower Sugar</h3>
-                    <p class="text-slate-600">Significantly less sugar than traditional cookies while maintaining sweetness.</p>
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700 shadow-sm">
+                    <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-2">Lower Sugar</h3>
+                    <p class="text-slate-600 dark:text-slate-400">Significantly less sugar than traditional cookies while maintaining sweetness.</p>
                 </div>
                 
-                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
-                    <h3 class="font-bold text-lg text-slate-900 mb-2">Satisfying &amp; Filling</h3>
-                    <p class="text-slate-600">Protein keeps you fuller longer, reducing snack cravings throughout the day.</p>
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700 shadow-sm">
+                    <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-2">Satisfying &amp; Filling</h3>
+                    <p class="text-slate-600 dark:text-slate-400">Protein keeps you fuller longer, reducing snack cravings throughout the day.</p>
                 </div>
                 
-                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
-                    <h3 class="font-bold text-lg text-slate-900 mb-2">Customizable Macros</h3>
-                    <p class="text-slate-600">Easily adjust ingredients to fit your specific macro targets and goals.</p>
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700 shadow-sm">
+                    <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-2">Customizable Macros</h3>
+                    <p class="text-slate-600 dark:text-slate-400">Easily adjust ingredients to fit your specific macro targets and goals.</p>
                 </div>
                 
-                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
-                    <h3 class="font-bold text-lg text-slate-900 mb-2">Perfect Post-Workout</h3>
-                    <p class="text-slate-600">Ideal for refueling after exercise with both protein and carbohydrates.</p>
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700 shadow-sm">
+                    <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-2">Perfect Post-Workout</h3>
+                    <p class="text-slate-600 dark:text-slate-400">Ideal for refueling after exercise with both protein and carbohydrates.</p>
                 </div>
                 
-                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
-                    <h3 class="font-bold text-lg text-slate-900 mb-2">Kid-Approved Taste</h3>
-                    <p class="text-slate-600">Tastes like a treat while secretly being nutritious and macro-friendly.</p>
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700 shadow-sm">
+                    <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-2">Kid-Approved Taste</h3>
+                    <p class="text-slate-600 dark:text-slate-400">Tastes like a treat while secretly being nutritious and macro-friendly.</p>
                 </div>
                 
             </div>
@@ -255,26 +301,26 @@
     <!-- Types Section -->
     <section class="py-16 bg-white">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 mb-10 text-center uppercase tracking-wide">Types of Protein Cookies</h2>
+            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 dark:text-white mb-10 text-center uppercase tracking-wide">Types of Protein Cookies</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 
                 <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200">
-                    <h3 class="font-bold text-xl text-slate-900 mb-2">Classic Soft-Baked</h3>
+                    <h3 class="font-bold text-xl text-slate-900 dark:text-white mb-2">Classic Soft-Baked</h3>
                     <p class="text-slate-600">Chewy, soft-centered cookies with protein powder blended into the dough. Perfect texture similar to bakery-style cookies.</p>
                 </div>
                 
                 <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200">
-                    <h3 class="font-bold text-xl text-slate-900 mb-2">No-Bake Protein Cookies</h3>
+                    <h3 class="font-bold text-xl text-slate-900 dark:text-white mb-2">No-Bake Protein Cookies</h3>
                     <p class="text-slate-600">Quick and easy cookies made without an oven. Ideal for hot weather or when you need a fast protein fix.</p>
                 </div>
                 
                 <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200">
-                    <h3 class="font-bold text-xl text-slate-900 mb-2">Flourless Protein Cookies</h3>
+                    <h3 class="font-bold text-xl text-slate-900 dark:text-white mb-2">Flourless Protein Cookies</h3>
                     <p class="text-slate-600">Made with nut butters, eggs, and protein powder instead of flour. Naturally gluten-free and extra high in protein.</p>
                 </div>
                 
                 <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200">
-                    <h3 class="font-bold text-xl text-slate-900 mb-2">Protein Cookie Dough Bites</h3>
+                    <h3 class="font-bold text-xl text-slate-900 dark:text-white mb-2">Protein Cookie Dough Bites</h3>
                     <p class="text-slate-600">Edible cookie dough balls packed with protein. No baking required and perfect for meal prep.</p>
                 </div>
                 
@@ -285,9 +331,9 @@
     <!-- Best Ingredients Section -->
     <section class="py-16 bg-slate-50">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 mb-10 text-center uppercase tracking-wide">Best Ingredients for Protein Cookies</h2>
+            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 dark:text-white mb-10 text-center uppercase tracking-wide">Best Ingredients for Protein Cookies</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-2xl p-6 border border-slate-200">
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700">
                     <h3 class="font-bold text-lg text-brand-600 mb-4 uppercase tracking-wide">Protein Sources</h3>
                     <ul class="space-y-2">
                         
@@ -305,7 +351,7 @@
                         
                     </ul>
                 </div>
-                <div class="bg-white rounded-2xl p-6 border border-slate-200">
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700">
                     <h3 class="font-bold text-lg text-brand-600 mb-4 uppercase tracking-wide">flours</h3>
                     <ul class="space-y-2">
                         
@@ -321,7 +367,7 @@
                         
                     </ul>
                 </div>
-                <div class="bg-white rounded-2xl p-6 border border-slate-200">
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700">
                     <h3 class="font-bold text-lg text-brand-600 mb-4 uppercase tracking-wide">sweeteners</h3>
                     <ul class="space-y-2">
                         
@@ -346,13 +392,13 @@
     <!-- How To Make Section -->
     <section class="py-16 bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 mb-10 text-center uppercase tracking-wide">How to Make Perfect Protein Cookies</h2>
+            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 dark:text-white mb-10 text-center uppercase tracking-wide">How to Make Perfect Protein Cookies</h2>
             <div class="space-y-6">
                 
                 <div class="flex gap-4">
                     <div class="flex-shrink-0 w-10 h-10 bg-brand-500 text-white rounded-full flex items-center justify-center font-bold text-lg">1</div>
                     <div>
-                        <h3 class="font-bold text-lg text-slate-900 mb-1">Mix Dry Ingredients</h3>
+                        <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-1">Mix Dry Ingredients</h3>
                         <p class="text-slate-600">Combine protein powder, flour, baking powder, and salt in a large bowl. Whisk until no clumps remain.</p>
                     </div>
                 </div>
@@ -360,7 +406,7 @@
                 <div class="flex gap-4">
                     <div class="flex-shrink-0 w-10 h-10 bg-brand-500 text-white rounded-full flex items-center justify-center font-bold text-lg">2</div>
                     <div>
-                        <h3 class="font-bold text-lg text-slate-900 mb-1">Cream Wet Ingredients</h3>
+                        <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-1">Cream Wet Ingredients</h3>
                         <p class="text-slate-600">In a separate bowl, mix nut butter, sweetener, egg, and vanilla extract until smooth and creamy.</p>
                     </div>
                 </div>
@@ -368,7 +414,7 @@
                 <div class="flex gap-4">
                     <div class="flex-shrink-0 w-10 h-10 bg-brand-500 text-white rounded-full flex items-center justify-center font-bold text-lg">3</div>
                     <div>
-                        <h3 class="font-bold text-lg text-slate-900 mb-1">Combine &amp; Form Dough</h3>
+                        <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-1">Combine &amp; Form Dough</h3>
                         <p class="text-slate-600">Fold wet ingredients into dry mixture. Add milk if too dry. Dough should be slightly sticky but scoopable.</p>
                     </div>
                 </div>
@@ -376,7 +422,7 @@
                 <div class="flex gap-4">
                     <div class="flex-shrink-0 w-10 h-10 bg-brand-500 text-white rounded-full flex items-center justify-center font-bold text-lg">4</div>
                     <div>
-                        <h3 class="font-bold text-lg text-slate-900 mb-1">Shape &amp; Bake</h3>
+                        <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-1">Shape &amp; Bake</h3>
                         <p class="text-slate-600">Roll into balls and flatten slightly on parchment-lined baking sheet. Bake at 350°F for 10-12 minutes.</p>
                     </div>
                 </div>
@@ -384,7 +430,7 @@
                 <div class="flex gap-4">
                     <div class="flex-shrink-0 w-10 h-10 bg-brand-500 text-white rounded-full flex items-center justify-center font-bold text-lg">5</div>
                     <div>
-                        <h3 class="font-bold text-lg text-slate-900 mb-1">Cool &amp; Enjoy</h3>
+                        <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-1">Cool &amp; Enjoy</h3>
                         <p class="text-slate-600">Let cookies cool on the pan for 5 minutes before transferring. They will firm up as they cool.</p>
                     </div>
                 </div>
@@ -396,67 +442,67 @@
     <!-- FAQ Section -->
     <section class="py-16 bg-slate-50">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 mb-10 text-center uppercase tracking-wide">Frequently Asked Questions</h2>
+            <h2 class="anton-text text-3xl md:text-4xl text-slate-900 dark:text-white mb-10 text-center uppercase tracking-wide">Frequently Asked Questions</h2>
             <div class="space-y-4">
                 
-                <details class="bg-white rounded-2xl border border-slate-200 overflow-hidden group">
-                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 hover:text-brand-600 transition-colors flex justify-between items-center">
+                <details class="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden group">
+                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 dark:text-white hover:text-brand-600 dark:hover:text-brand-400 transition-colors flex justify-between items-center">
                         How much protein is in a protein cookie?
                         <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
                     <div class="px-6 pb-4 text-slate-600">Most homemade protein cookies contain 15-30 grams of protein per cookie, depending on the recipe and size. Our macro-verified recipes clearly display the exact protein content.</div>
                 </details>
                 
-                <details class="bg-white rounded-2xl border border-slate-200 overflow-hidden group">
-                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 hover:text-brand-600 transition-colors flex justify-between items-center">
+                <details class="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden group">
+                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 dark:text-white hover:text-brand-600 dark:hover:text-brand-400 transition-colors flex justify-between items-center">
                         Do protein cookies taste like regular cookies?
                         <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
                     <div class="px-6 pb-4 text-slate-600">Yes! When made correctly, protein cookies can taste just as delicious as traditional cookies. The key is using quality protein powder and proper ratios of wet to dry ingredients.</div>
                 </details>
                 
-                <details class="bg-white rounded-2xl border border-slate-200 overflow-hidden group">
-                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 hover:text-brand-600 transition-colors flex justify-between items-center">
+                <details class="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden group">
+                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 dark:text-white hover:text-brand-600 dark:hover:text-brand-400 transition-colors flex justify-between items-center">
                         Can I make protein cookies without protein powder?
                         <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
                     <div class="px-6 pb-4 text-slate-600">Absolutely! You can boost protein using Greek yogurt, cottage cheese, nut butters, and eggs. Our &#34;without powder&#34; recipes show you exactly how.</div>
                 </details>
                 
-                <details class="bg-white rounded-2xl border border-slate-200 overflow-hidden group">
-                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 hover:text-brand-600 transition-colors flex justify-between items-center">
+                <details class="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden group">
+                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 dark:text-white hover:text-brand-600 dark:hover:text-brand-400 transition-colors flex justify-between items-center">
                         Are protein cookies good for weight loss?
                         <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
                     <div class="px-6 pb-4 text-slate-600">Protein cookies can support weight loss by providing satiety and helping you meet protein goals while satisfying sweet cravings. They are typically lower in sugar and more filling than regular cookies.</div>
                 </details>
                 
-                <details class="bg-white rounded-2xl border border-slate-200 overflow-hidden group">
-                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 hover:text-brand-600 transition-colors flex justify-between items-center">
+                <details class="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden group">
+                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 dark:text-white hover:text-brand-600 dark:hover:text-brand-400 transition-colors flex justify-between items-center">
                         How do I store homemade protein cookies?
                         <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
                     <div class="px-6 pb-4 text-slate-600">Store in an airtight container at room temperature for up to 5 days, refrigerate for up to 2 weeks, or freeze for up to 3 months.</div>
                 </details>
                 
-                <details class="bg-white rounded-2xl border border-slate-200 overflow-hidden group">
-                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 hover:text-brand-600 transition-colors flex justify-between items-center">
+                <details class="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden group">
+                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 dark:text-white hover:text-brand-600 dark:hover:text-brand-400 transition-colors flex justify-between items-center">
                         Why are my protein cookies dry or crumbly?
                         <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
                     <div class="px-6 pb-4 text-slate-600">This usually happens when there is too much protein powder or not enough moisture. Try adding more nut butter, applesauce, or mashed banana to improve texture.</div>
                 </details>
                 
-                <details class="bg-white rounded-2xl border border-slate-200 overflow-hidden group">
-                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 hover:text-brand-600 transition-colors flex justify-between items-center">
+                <details class="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden group">
+                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 dark:text-white hover:text-brand-600 dark:hover:text-brand-400 transition-colors flex justify-between items-center">
                         Can protein cookies be vegan?
                         <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
                     <div class="px-6 pb-4 text-slate-600">Yes! Use plant-based protein powder, flax eggs, vegan butter or coconut oil, and dairy-free milk to create delicious vegan protein cookies.</div>
                 </details>
                 
-                <details class="bg-white rounded-2xl border border-slate-200 overflow-hidden group">
-                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 hover:text-brand-600 transition-colors flex justify-between items-center">
+                <details class="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden group">
+                    <summary class="px-6 py-4 cursor-pointer font-semibold text-slate-900 dark:text-white hover:text-brand-600 dark:hover:text-brand-400 transition-colors flex justify-between items-center">
                         Are protein cookies safe for kids?
                         <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
@@ -595,7 +641,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/chocolate-chip-protein-cookies.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/chocolate-chip-protein-cookies.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/chocolate-chip-protein-cookies-small.webp 280w, /recipe_images/chocolate-chip-protein-cookies-medium.webp 600w, /recipe_images/chocolate-chip-protein-cookies.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -615,7 +661,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/peanut-butter-protein-cookies.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/peanut-butter-protein-cookies.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/peanut-butter-protein-cookies-small.webp 280w, /recipe_images/peanut-butter-protein-cookies-medium.webp 600w, /recipe_images/peanut-butter-protein-cookies.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -635,7 +681,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/no-bake-protein-cookies.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/no-bake-protein-cookies.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/no-bake-protein-cookies-small.webp 280w, /recipe_images/no-bake-protein-cookies-medium.webp 600w, /recipe_images/no-bake-protein-cookies.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -655,7 +701,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/oatmeal-raisin-protein-cookies.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/oatmeal-raisin-protein-cookies.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/oatmeal-raisin-protein-cookies-small.webp 280w, /recipe_images/oatmeal-raisin-protein-cookies-medium.webp 600w, /recipe_images/oatmeal-raisin-protein-cookies.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -675,7 +721,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/double-chocolate-protein-cookies.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/double-chocolate-protein-cookies.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/double-chocolate-protein-cookies-small.webp 280w, /recipe_images/double-chocolate-protein-cookies-medium.webp 600w, /recipe_images/double-chocolate-protein-cookies.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -695,7 +741,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/snickerdoodle-protein-cookies.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/snickerdoodle-protein-cookies.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/snickerdoodle-protein-cookies-small.webp 280w, /recipe_images/snickerdoodle-protein-cookies-medium.webp 600w, /recipe_images/snickerdoodle-protein-cookies.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -715,7 +761,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/birthday-cake-protein-cookies.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/birthday-cake-protein-cookies.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/birthday-cake-protein-cookies-small.webp 280w, /recipe_images/birthday-cake-protein-cookies-medium.webp 600w, /recipe_images/birthday-cake-protein-cookies.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -735,7 +781,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/vegan-protein-cookies.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/vegan-protein-cookies.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/vegan-protein-cookies-small.webp 280w, /recipe_images/vegan-protein-cookies-medium.webp 600w, /recipe_images/vegan-protein-cookies.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -755,7 +801,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/gluten-free-protein-cookies.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/gluten-free-protein-cookies.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/gluten-free-protein-cookies-small.webp 280w, /recipe_images/gluten-free-protein-cookies-medium.webp 600w, /recipe_images/gluten-free-protein-cookies.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -775,7 +821,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/protein-cookie-dough-bites.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/protein-cookie-dough-bites.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/protein-cookie-dough-bites-small.webp 280w, /recipe_images/protein-cookie-dough-bites-medium.webp 600w, /recipe_images/protein-cookie-dough-bites.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -795,7 +841,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/white-chocolate-macadamia-protein-cookies.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/white-chocolate-macadamia-protein-cookies.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/white-chocolate-macadamia-protein-cookies-small.webp 280w, /recipe_images/white-chocolate-macadamia-protein-cookies-medium.webp 600w, /recipe_images/white-chocolate-macadamia-protein-cookies.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -815,7 +861,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/protein-cookies-for-kids.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/protein-cookies-for-kids.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/protein-cookies-for-kids-small.webp 280w, /recipe_images/protein-cookies-for-kids-medium.webp 600w, /recipe_images/protein-cookies-for-kids.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -835,7 +881,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/cottage-cheese-protein-cookies.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/cottage-cheese-protein-cookies.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/cottage-cheese-protein-cookies-small.webp 280w, /recipe_images/cottage-cheese-protein-cookies-medium.webp 600w, /recipe_images/cottage-cheese-protein-cookies.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -855,7 +901,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/greek-yogurt-protein-cookies.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/greek-yogurt-protein-cookies.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/greek-yogurt-protein-cookies-small.webp 280w, /recipe_images/greek-yogurt-protein-cookies-medium.webp 600w, /recipe_images/greek-yogurt-protein-cookies.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -875,7 +921,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/almond-flour-protein-cookies.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/almond-flour-protein-cookies.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/almond-flour-protein-cookies-small.webp 280w, /recipe_images/almond-flour-protein-cookies-medium.webp 600w, /recipe_images/almond-flour-protein-cookies.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -895,7 +941,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/pumpkin-spice-protein-cookies.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/pumpkin-spice-protein-cookies.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/pumpkin-spice-protein-cookies-small.webp 280w, /recipe_images/pumpkin-spice-protein-cookies-medium.webp 600w, /recipe_images/pumpkin-spice-protein-cookies.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -915,7 +961,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/lemon-protein-cookies.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/lemon-protein-cookies.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/lemon-protein-cookies-small.webp 280w, /recipe_images/lemon-protein-cookies-medium.webp 600w, /recipe_images/lemon-protein-cookies.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -935,7 +981,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/monster-protein-cookies.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/monster-protein-cookies.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/monster-protein-cookies-small.webp 280w, /recipe_images/monster-protein-cookies-medium.webp 600w, /recipe_images/monster-protein-cookies.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -955,7 +1001,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/high-protein-cookies-30g.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/high-protein-cookies-30g.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/high-protein-cookies-30g-small.webp 280w, /recipe_images/high-protein-cookies-30g-medium.webp 600w, /recipe_images/high-protein-cookies-30g.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -975,7 +1021,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/chocolate-peanut-butter-protein-cookies.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/chocolate-peanut-butter-protein-cookies.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/chocolate-peanut-butter-protein-cookies-small.webp 280w, /recipe_images/chocolate-peanut-butter-protein-cookies-medium.webp 600w, /recipe_images/chocolate-peanut-butter-protein-cookies.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -995,7 +1041,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/banana-protein-cookies.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/banana-protein-cookies.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/banana-protein-cookies-small.webp 280w, /recipe_images/banana-protein-cookies-medium.webp 600w, /recipe_images/banana-protein-cookies.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -1015,7 +1061,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/sugar-free-protein-cookies.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/sugar-free-protein-cookies.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/sugar-free-protein-cookies-small.webp 280w, /recipe_images/sugar-free-protein-cookies-medium.webp 600w, /recipe_images/sugar-free-protein-cookies.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -1035,7 +1081,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/thin-crispy-protein-cookies.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/thin-crispy-protein-cookies.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/thin-crispy-protein-cookies-small.webp 280w, /recipe_images/thin-crispy-protein-cookies-medium.webp 600w, /recipe_images/thin-crispy-protein-cookies.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -1055,7 +1101,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/red-velvet-protein-cookies.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/red-velvet-protein-cookies.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/red-velvet-protein-cookies-small.webp 280w, /recipe_images/red-velvet-protein-cookies-medium.webp 600w, /recipe_images/red-velvet-protein-cookies.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -1075,7 +1121,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/gingerbread-protein-cookies.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/gingerbread-protein-cookies.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/gingerbread-protein-cookies-small.webp 280w, /recipe_images/gingerbread-protein-cookies-medium.webp 600w, /recipe_images/gingerbread-protein-cookies.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -1095,7 +1141,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/gluten-free-oat-flour-protein-cookies.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/gluten-free-oat-flour-protein-cookies.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/gluten-free-oat-flour-protein-cookies-small.webp 280w, /recipe_images/gluten-free-oat-flour-protein-cookies-medium.webp 600w, /recipe_images/gluten-free-oat-flour-protein-cookies.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -1115,7 +1161,7 @@
                 
                     
 <!-- Recipe Card (matching ProteinMuffins.com) -->
-<a href="/dairy-free-peanut-butter-protein-cookies.html" class="recipe-card group block bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
+<a href="/dairy-free-peanut-butter-protein-cookies.html" class="recipe-card group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all duration-300">
     <div class="relative aspect-square overflow-hidden">
         <picture>
             <source type="image/webp" srcset="/recipe_images/dairy-free-peanut-butter-protein-cookies-small.webp 280w, /recipe_images/dairy-free-peanut-butter-protein-cookies-medium.webp 600w, /recipe_images/dairy-free-peanut-butter-protein-cookies.webp 800w" sizes="(max-width: 640px) 280px, 280px">
@@ -1165,43 +1211,43 @@
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 
-                    <a href="/pack-no-bake.html" class="block bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all group">
+                    <a href="/pack-no-bake.html" class="block bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all group">
                         <span class="text-4xl mb-4 block">❄️</span>
                         <h3 class="font-semibold text-xl mb-2 group-hover:text-brand-600 transition-colors">No-Bake Pack</h3>
                         <p class="text-slate-600">Quick protein cookies that require no oven. Ready in minutes!</p>
                     </a>
                 
-                    <a href="/pack-peanut-butter.html" class="block bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all group">
+                    <a href="/pack-peanut-butter.html" class="block bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all group">
                         <span class="text-4xl mb-4 block">🥜</span>
                         <h3 class="font-semibold text-xl mb-2 group-hover:text-brand-600 transition-colors">Peanut Butter Lovers Pack</h3>
                         <p class="text-slate-600">For those who can&#39;t get enough peanut butter in their protein cookies.</p>
                     </a>
                 
-                    <a href="/pack-holiday.html" class="block bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all group">
+                    <a href="/pack-holiday.html" class="block bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all group">
                         <span class="text-4xl mb-4 block">🎄</span>
                         <h3 class="font-semibold text-xl mb-2 group-hover:text-brand-600 transition-colors">Holiday Cookie Pack</h3>
                         <p class="text-slate-600">Festive protein cookies for the holiday season.</p>
                     </a>
                 
-                    <a href="/pack-kids.html" class="block bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all group">
+                    <a href="/pack-kids.html" class="block bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all group">
                         <span class="text-4xl mb-4 block">🎒</span>
                         <h3 class="font-semibold text-xl mb-2 group-hover:text-brand-600 transition-colors">Kids&#39; Lunchbox Pack</h3>
                         <p class="text-slate-600">Kid-approved protein cookies that are perfect for school lunches.</p>
                     </a>
                 
-                    <a href="/pack-high-protein.html" class="block bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all group">
+                    <a href="/pack-high-protein.html" class="block bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all group">
                         <span class="text-4xl mb-4 block">💪</span>
                         <h3 class="font-semibold text-xl mb-2 group-hover:text-brand-600 transition-colors">25g+ Muscle Pack</h3>
                         <p class="text-slate-600">Maximum protein cookies for serious gains. 25g+ protein per serving.</p>
                     </a>
                 
-                    <a href="/pack-gluten-free-dairy-free.html" class="block bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all group">
+                    <a href="/pack-gluten-free-dairy-free.html" class="block bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all group">
                         <span class="text-4xl mb-4 block">🥬</span>
                         <h3 class="font-semibold text-xl mb-2 group-hover:text-brand-600 transition-colors">Gluten-Free &amp; Dairy-Free</h3>
                         <p class="text-slate-600">A collection of our best gluten-free and dairy-free recipes, perfect for those with dietary restrictions.</p>
                     </a>
                 
-                    <a href="/pack-gluten-free-dairy-free.html" class="block bg-white rounded-2xl p-8 border border-slate-200 hover:border-brand-500 hover:shadow-xl transition-all group">
+                    <a href="/pack-gluten-free-dairy-free.html" class="block bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all group">
                         <span class="text-4xl mb-4 block">🥬</span>
                         <h3 class="font-semibold text-xl mb-2 group-hover:text-brand-600 transition-colors">Gluten-Free &amp; Dairy-Free</h3>
                         <p class="text-slate-600">A collection of our best gluten-free and dairy-free recipes, perfect for those with dietary restrictions.</p>
@@ -1215,7 +1261,7 @@
 
 
 <!-- Footer (matching ProteinMuffins.com) -->
-<footer class="bg-slate-900 text-white py-16">
+<footer class="bg-slate-900 dark:bg-slate-950 text-white py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
             <!-- Brand -->
@@ -1259,7 +1305,7 @@
         </div>
         
         <!-- Empire Links -->
-        <div class="mt-12 pt-8 border-t border-slate-800">
+        <div class="mt-12 pt-8 border-t border-slate-800 dark:border-slate-700">
             <p class="text-slate-500 text-xs text-center mb-4">Part of the Protein Recipe Empire</p>
             <div class="flex flex-wrap justify-center gap-4 text-xs text-slate-500">
                 <a href="https://proteinmuffins.com" class="hover:text-white transition">Muffins</a>
