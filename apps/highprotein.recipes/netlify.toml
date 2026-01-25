@@ -51,3 +51,14 @@
   from = "/api/*"
   to = "/.netlify/functions/:splat"
   status = 200
+
+# Redirect category-breakfast to breakfast hub
+[[redirects]]
+  from = "/category-breakfast.html"
+  to = "/breakfast/"
+  status = 301
+
+[[redirects]]
+  from = "/category-breakfast"
+  to = "/breakfast/"
+  status = 301

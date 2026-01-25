@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Savory Oats with Turkey & Spinach | High Protein Recipes</title>
 
+    <!-- Dark Mode: Apply before page renders to prevent flash -->
+    <script>
+    (function(){
+      var s = localStorage.getItem('theme');
+      var d = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (s === 'dark' || (!s && d)) document.documentElement.classList.add('dark');
+    })();
+    </script>
+
     <meta name="description" content="Forget sweet oatmeal - this savory version is topped with ground turkey, spinach, and a runny egg for 38g protein. Comfort food meets gains.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://highprotein.recipes/breakfast/recipes/savory-oats-turkey-spinach/">
@@ -57,6 +66,7 @@
 
     <script>
         tailwind.config = {
+            darkMode: 'class',
             theme: {
                 extend: {
                     fontFamily: {
@@ -82,58 +92,134 @@
     <style>
         .anton-text { font-family: 'Anton', sans-serif; letter-spacing: 0.05em; }
         .glass-nav { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); }
+        .dark .glass-nav { background: rgba(15, 23, 42, 0.9); }
         [x-cloak] { display: none !important; }
     </style>
 </head>
 
-<body class="min-h-screen bg-slate-50 text-slate-900 font-sans">
+<body class="min-h-screen bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100 font-sans">
     <!-- Navigation -->
-    <nav class="glass-nav fixed top-0 left-0 right-0 z-50 border-b border-slate-200">
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/80 dark:bg-slate-900/80 border-b border-slate-200 dark:border-slate-700">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
-                <a href="/" class="flex items-center space-x-3">
-                    <span class="anton-text text-2xl text-brand-600">HIGH PROTEIN RECIPES</span>
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <a href="/" class="flex items-center gap-2">
+                    <img src="/images/logo.png" alt="HighProtein.Recipes" class="h-10 w-10 rounded-full">
+                    <span class="font-anton text-xl text-slate-900 dark:text-white tracking-tight uppercase">HighProtein<span class="text-brand-500">.Recipes</span></span>
                 </a>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="/breakfast/" class="text-slate-600 hover:text-brand-600 font-semibold text-sm uppercase tracking-wider">Breakfast</a>
-                    <a href="/breakfast/ideas/" class="text-slate-600 hover:text-brand-600 font-semibold text-sm uppercase tracking-wider">Ideas</a>
-                    <a href="/breakfast/meal-prep/" class="text-slate-600 hover:text-brand-600 font-semibold text-sm uppercase tracking-wider">Meal Prep</a>
-                    <a href="/pack-starter.html" class="bg-brand-600 text-white px-5 py-2.5 rounded-full font-bold text-sm hover:bg-brand-900 transition">7-DAY PLAN</a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center gap-6">
+                    <div class="relative group">
+                        <button class="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium transition-colors flex items-center gap-1">
+                            Categories
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-48 bg-white dark:bg-slate-800 rounded-lg shadow-lg border border-slate-100 dark:border-slate-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+                            <a href="/category-breakfast.html" class="block px-4 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white">Breakfast</a>
+                            <a href="/category-desserts.html" class="block px-4 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white">Desserts</a>
+                            <a href="/category-snacks.html" class="block px-4 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white">Snacks</a>
+                            <a href="/category-savory.html" class="block px-4 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white">Savory</a>
+                        </div>
+                    </div>
+                    <a href="/breakfast/" class="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium transition-colors">Breakfast</a>
+                    <a href="/tools/" class="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium transition-colors">Tools</a>
+                    <a href="/high-protein.html" class="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium transition-colors">30g+ Protein</a>
+
+                    <!-- Dark Mode Toggle -->
+                    <button
+                        x-data="{ dark: document.documentElement.classList.contains('dark') }"
+                        @click="dark = !dark; document.documentElement.classList.toggle('dark'); localStorage.setItem('theme', dark ? 'dark' : 'light')"
+                        class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                        aria-label="Toggle dark mode"
+                    >
+                        <svg x-show="!dark" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+                        </svg>
+                        <svg x-show="dark" x-cloak class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/>
+                        </svg>
+                    </button>
+
+                    <a href="/pack-starter.html" class="bg-brand-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-brand-600 transition-colors">
+                        7-DAY PLAN
+                    </a>
                 </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex items-center gap-2 md:hidden">
+                    <!-- Mobile Dark Mode Toggle -->
+                    <button
+                        x-data="{ dark: document.documentElement.classList.contains('dark') }"
+                        @click="dark = !dark; document.documentElement.classList.toggle('dark'); localStorage.setItem('theme', dark ? 'dark' : 'light')"
+                        class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                        aria-label="Toggle dark mode"
+                    >
+                        <svg x-show="!dark" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+                        </svg>
+                        <svg x-show="dark" x-cloak class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/>
+                        </svg>
+                    </button>
+
+                    <button
+                        x-data="{ open: false }"
+                        @click="open = !open; $dispatch('toggle-mobile-menu', { open })"
+                        class="p-2 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white"
+                        aria-label="Toggle menu"
+                    >
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div
+            x-data="{ open: false }"
+            @toggle-mobile-menu.window="open = $event.detail.open"
+            x-show="open"
+            x-cloak
+            class="md:hidden bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-700"
+        >
+            <div class="px-4 py-4 space-y-3">
+                <a href="/breakfast/" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">Breakfast Hub</a>
+                <a href="/tools/" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">Protein Tools</a>
+                <div class="border-t border-slate-200 dark:border-slate-700 my-2"></div>
+                <a href="/category-breakfast.html" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">All Breakfast</a>
+                <a href="/category-desserts.html" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">Desserts</a>
+                <a href="/category-snacks.html" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">Snacks</a>
+                <a href="/category-savory.html" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">Savory</a>
+                <a href="/high-protein.html" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">30g+ Protein</a>
+                <a href="/pack-starter.html" class="block bg-brand-500 text-white px-4 py-2 rounded-lg font-semibold text-center">
+                    7-DAY PLAN
+                </a>
             </div>
         </div>
     </nav>
 
-    <!-- Pillar Sub-Nav -->
-    <div class="bg-white border-b border-slate-200 fixed top-20 left-0 right-0 z-40">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center h-12 overflow-x-auto scrollbar-hide space-x-6 text-sm">
-                <a href="/breakfast/" class="text-slate-600 hover:text-brand-600 whitespace-nowrap">All Breakfast</a>
-                <a href="/breakfast/meal-prep/" class="text-slate-600 hover:text-brand-600 whitespace-nowrap">Meal Prep</a>
-                <a href="/breakfast/vegan/" class="text-slate-600 hover:text-brand-600 whitespace-nowrap">Vegan</a>
-                <a href="/breakfast/no-eggs/" class="text-slate-600 hover:text-brand-600 whitespace-nowrap">No Eggs</a>
-                <a href="/breakfast/low-calorie/" class="text-slate-600 hover:text-brand-600 whitespace-nowrap">Low-Cal</a>
-                <a href="/breakfast/fast-food/" class="text-slate-600 hover:text-brand-600 whitespace-nowrap">Fast Food</a>
-            </div>
-        </div>
-    </div>
+    <!-- Spacer for fixed nav -->
+    <div class="h-16"></div>
 
-    <main class="pt-32">
+    <main class="flex-grow">
         <!-- Breadcrumb -->
-        <div class="bg-white border-b border-slate-200">
+        <div class="bg-white dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
                 <nav class="flex text-sm text-slate-500">
                     <a href="/" class="hover:text-brand-600">Home</a>
                     <span class="mx-2">/</span>
                     <a href="/breakfast/" class="hover:text-brand-600">Breakfast</a>
                     <span class="mx-2">/</span>
-                    <span class="text-slate-900">Savory Oats with Turkey & Spinach</span>
+                    <span class="text-slate-900 dark:text-white">Savory Oats with Turkey & Spinach</span>
                 </nav>
             </div>
         </div>
 
         <!-- Recipe Header -->
-        <section class="bg-white py-8 lg:py-12">
+        <section class="bg-white dark:bg-slate-800 py-8 lg:py-12">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid lg:grid-cols-2 gap-8 lg:gap-12">
                     <!-- Image -->
@@ -153,32 +239,32 @@
                             <span class="px-2 py-1 bg-purple-100 text-purple-600 text-xs font-bold uppercase tracking-wider rounded-full" title="Dairy-Free">DF</span>
                             <span class="px-2 py-1 bg-amber-100 text-amber-600 text-xs font-bold uppercase tracking-wider rounded-full" title="High-Fiber">HF</span>
                         </div>
-                        <h1 class="anton-text text-4xl lg:text-5xl text-slate-900 mb-4">SAVORY OATS WITH TURKEY & SPINACH</h1>
-                        <p class="text-slate-600 text-lg mb-8">Forget sweet oatmeal - this savory version is topped with ground turkey, spinach, and a runny egg for 38g protein. Comfort food meets gains.</p>
+                        <h1 class="anton-text text-4xl lg:text-5xl text-slate-900 dark:text-white mb-4">SAVORY OATS WITH TURKEY & SPINACH</h1>
+                        <p class="text-slate-600 dark:text-slate-300 text-lg mb-8">Forget sweet oatmeal - this savory version is topped with ground turkey, spinach, and a runny egg for 38g protein. Comfort food meets gains.</p>
 
                         <!-- Quick Stats -->
                         <div class="grid grid-cols-4 gap-4 mb-8">
-                            <div class="text-center p-4 bg-slate-100 rounded-xl">
+                            <div class="text-center p-4 bg-slate-100 dark:bg-slate-700 rounded-xl">
                                 <div class="text-2xl font-bold text-brand-600">38g</div>
                                 <div class="text-xs text-slate-500 uppercase">Protein</div>
                             </div>
-                            <div class="text-center p-4 bg-slate-100 rounded-xl">
-                                <div class="text-2xl font-bold text-slate-900">450</div>
+                            <div class="text-center p-4 bg-slate-100 dark:bg-slate-700 rounded-xl">
+                                <div class="text-2xl font-bold text-slate-900 dark:text-white">450</div>
                                 <div class="text-xs text-slate-500 uppercase">Calories</div>
                             </div>
-                            <div class="text-center p-4 bg-slate-100 rounded-xl">
-                                <div class="text-2xl font-bold text-slate-900">30m</div>
+                            <div class="text-center p-4 bg-slate-100 dark:bg-slate-700 rounded-xl">
+                                <div class="text-2xl font-bold text-slate-900 dark:text-white">30m</div>
                                 <div class="text-xs text-slate-500 uppercase">Total Time</div>
                             </div>
-                            <div class="text-center p-4 bg-slate-100 rounded-xl">
-                                <div class="text-2xl font-bold text-slate-900">2</div>
+                            <div class="text-center p-4 bg-slate-100 dark:bg-slate-700 rounded-xl">
+                                <div class="text-2xl font-bold text-slate-900 dark:text-white">2</div>
                                 <div class="text-xs text-slate-500 uppercase">Yield</div>
                             </div>
                         </div>
 
                         <!-- Full Nutrition -->
-                        <div class="bg-slate-100 rounded-xl p-6">
-                            <h3 class="font-bold text-slate-900 mb-4">Nutrition per 1 bowl</h3>
+                        <div class="bg-slate-100 dark:bg-slate-700 rounded-xl p-6">
+                            <h3 class="font-bold text-slate-900 dark:text-white mb-4">Nutrition per 1 bowl</h3>
                             <div class="grid grid-cols-3 gap-4 text-sm">
                                 <div class="flex justify-between"><span class="text-slate-500">Carbs</span><span class="font-semibold">38g</span></div>
                                 <div class="flex justify-between"><span class="text-slate-500">Fat</span><span class="font-semibold">18g</span></div>
@@ -198,15 +284,15 @@
         
 
         <!-- Recipe Content with Interactive Ingredients -->
-        <section class="py-12 bg-slate-50">
+        <section class="py-12 bg-slate-50 dark:bg-slate-900">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid lg:grid-cols-3 gap-8" x-data='recipeSubstitution({"recipeId": "savory-oats-turkey-spinach", "yield": 2, "servingSize": "1 bowl", "ingredients": [{"id": "rolled-oats", "originalId": "rolled-oats", "name": "160g rolled oats", "amount": 160.0, "unit": "g", "displayAmount": "160g rolled oats"}, {"id": null, "originalId": null, "name": "480ml low-sodium chicken broth", "amount": 480.0, "unit": "ml", "displayAmount": "480ml low-sodium chicken broth"}, {"id": "turkey-sausage", "originalId": "turkey-sausage", "name": "227g (8 oz) lean ground turkey", "amount": 227.0, "unit": "g", "displayAmount": "227g (8 oz) lean ground turkey"}, {"id": null, "originalId": null, "name": "200g fresh spinach", "amount": 200.0, "unit": "g", "displayAmount": "200g fresh spinach"}, {"id": "whole-eggs", "originalId": "whole-eggs", "name": "2 large eggs", "amount": 2.0, "unit": "unit", "displayAmount": "2 large eggs"}, {"id": null, "originalId": null, "name": "2g garlic powder", "amount": 2.0, "unit": "g", "displayAmount": "2g garlic powder"}, {"id": null, "originalId": null, "name": "Salt and pepper", "amount": 1, "unit": "unit", "displayAmount": "Salt and pepper"}, {"id": null, "originalId": null, "name": "Hot sauce (optional)", "amount": 1, "unit": "unit", "displayAmount": "Hot sauce (optional)"}, {"id": null, "originalId": null, "name": "Green onions for garnish", "amount": 1, "unit": "unit", "displayAmount": "Green onions for garnish"}], "baseNutrition": {"calories": 450, "protein": 38, "fat": 18, "carbs": 38, "fiber": 6, "sugar": 2}})'>
                     <!-- Ingredients & Nutrition Sidebar -->
                     <div class="lg:col-span-1 space-y-6">
                         <!-- Interactive Ingredients -->
-                        <div class="bg-white rounded-2xl p-6 shadow-md sticky top-40">
+                        <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-md sticky top-40">
                             <div class="flex justify-between items-center mb-6">
-                                <h2 class="anton-text text-2xl text-slate-900">INGREDIENTS</h2>
+                                <h2 class="anton-text text-2xl text-slate-900 dark:text-white">INGREDIENTS</h2>
                                 <button x-show="checkHasSubstitutions()" x-cloak @click="resetAll()" class="text-xs text-brand-600 hover:text-brand-700 font-semibold uppercase tracking-wider flex items-center gap-1">
                                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
                                     Reset
@@ -278,7 +364,7 @@
                         </div>
 
                         <!-- USDA Nutrition Facts Label -->
-                        <div id="nutrition" class="bg-white rounded-2xl border-4 border-slate-900 p-4 transition-all duration-300" :class="{'border-brand-500 shadow-lg shadow-brand-100': checkHasSubstitutions()}">
+                        <div id="nutrition" class="bg-white dark:bg-slate-800 rounded-2xl border-4 border-slate-900 dark:border-slate-600 p-4 transition-all duration-300" :class="{'border-brand-500 shadow-lg shadow-brand-100': checkHasSubstitutions()}">
                             <div class="border-b-8 border-slate-900 pb-1 mb-2">
                                 <h3 class="text-3xl font-black tracking-tight">Nutrition Facts</h3>
                                 <p x-show="checkHasSubstitutions()" x-cloak class="text-xs text-brand-600 font-semibold mt-1 flex items-center gap-1">
@@ -330,9 +416,9 @@
                         </div>
 
                         <!-- P:E Ratio Gauge -->
-                        <div class="bg-white rounded-2xl p-6 shadow-md">
+                        <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-md">
                             <div class="flex items-center justify-between mb-4">
-                                <h3 class="font-bold text-slate-900 flex items-center gap-2">
+                                <h3 class="font-bold text-slate-900 dark:text-white flex items-center gap-2">
                                     <span class="text-xl font-black bg-gradient-to-r from-red-500 via-yellow-500 to-emerald-500 bg-clip-text text-transparent">P:E</span>
                                     <span class="text-sm text-slate-500 font-normal">Ratio</span>
                                 </h3>
@@ -428,42 +514,42 @@
 
                     <!-- Instructions -->
                     <div class="lg:col-span-2">
-                        <div class="bg-white rounded-2xl p-6 lg:p-8 shadow-md">
-                            <h2 class="anton-text text-2xl text-slate-900 mb-6">INSTRUCTIONS</h2>
+                        <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 lg:p-8 shadow-md">
+                            <h2 class="anton-text text-2xl text-slate-900 dark:text-white mb-6">INSTRUCTIONS</h2>
                             <div class="space-y-6">
                                 <div class="flex gap-4">
                                     <div class="w-10 h-10 bg-brand-600 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">1</div>
                                     <div>
-                                        <h3 class="font-bold text-slate-900 mb-1">Cook Oats</h3>
-                                        <p class="text-slate-600">Bring chicken broth to a boil. Add oats, reduce heat, and simmer 5-7 minutes until creamy. Season with salt, pepper, and garlic powder.</p>
+                                        <h3 class="font-bold text-slate-900 dark:text-white mb-1">Cook Oats</h3>
+                                        <p class="text-slate-600 dark:text-slate-300">Bring chicken broth to a boil. Add oats, reduce heat, and simmer 5-7 minutes until creamy. Season with salt, pepper, and garlic powder.</p>
                                     </div>
                                 </div>
                                 <div class="flex gap-4">
                                     <div class="w-10 h-10 bg-brand-600 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">2</div>
                                     <div>
-                                        <h3 class="font-bold text-slate-900 mb-1">Cook Turkey</h3>
-                                        <p class="text-slate-600">Meanwhile, brown ground turkey in a skillet, breaking into crumbles. Season with salt and pepper.</p>
+                                        <h3 class="font-bold text-slate-900 dark:text-white mb-1">Cook Turkey</h3>
+                                        <p class="text-slate-600 dark:text-slate-300">Meanwhile, brown ground turkey in a skillet, breaking into crumbles. Season with salt and pepper.</p>
                                     </div>
                                 </div>
                                 <div class="flex gap-4">
                                     <div class="w-10 h-10 bg-brand-600 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">3</div>
                                     <div>
-                                        <h3 class="font-bold text-slate-900 mb-1">Wilt Spinach</h3>
-                                        <p class="text-slate-600">Add spinach to the turkey and cook until just wilted.</p>
+                                        <h3 class="font-bold text-slate-900 dark:text-white mb-1">Wilt Spinach</h3>
+                                        <p class="text-slate-600 dark:text-slate-300">Add spinach to the turkey and cook until just wilted.</p>
                                     </div>
                                 </div>
                                 <div class="flex gap-4">
                                     <div class="w-10 h-10 bg-brand-600 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">4</div>
                                     <div>
-                                        <h3 class="font-bold text-slate-900 mb-1">Fry Eggs</h3>
-                                        <p class="text-slate-600">In a separate pan, fry eggs sunny-side up or to your preference.</p>
+                                        <h3 class="font-bold text-slate-900 dark:text-white mb-1">Fry Eggs</h3>
+                                        <p class="text-slate-600 dark:text-slate-300">In a separate pan, fry eggs sunny-side up or to your preference.</p>
                                     </div>
                                 </div>
                                 <div class="flex gap-4">
                                     <div class="w-10 h-10 bg-brand-600 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">5</div>
                                     <div>
-                                        <h3 class="font-bold text-slate-900 mb-1">Assemble</h3>
-                                        <p class="text-slate-600">Divide savory oats between two bowls. Top with turkey-spinach mixture and a fried egg. Garnish with green onions and hot sauce.</p>
+                                        <h3 class="font-bold text-slate-900 dark:text-white mb-1">Assemble</h3>
+                                        <p class="text-slate-600 dark:text-slate-300">Divide savory oats between two bowls. Top with turkey-spinach mixture and a fried egg. Garnish with green onions and hot sauce.</p>
                                     </div>
                                 </div>
 
@@ -486,7 +572,7 @@
         </section>
     </main>
 
-    <footer class="bg-slate-900 text-white py-8">
+    <footer class="bg-slate-900 dark:bg-slate-950 text-white py-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <p class="text-slate-400 text-sm">&copy; 2026 High Protein Recipes. All rights reserved.</p>
             <p class="text-slate-500 text-xs mt-2">Nutrition data verified using USDA FoodData Central.</p>
