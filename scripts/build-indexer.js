@@ -914,12 +914,16 @@ function generateSpecialFilterPages(site, categories, partials, outputDir) {
  * Generate a listing page
  */
 function generateListingPage(site, recipes, config, partials, outputDir) {
+  // Extract unique food types for filtering
+  const foodTypes = [...new Set(recipes.map(r => r.foodType).filter(Boolean))].sort();
+  const hasFilters = foodTypes.length > 1;
+
   const template = `
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-<%- include('head', { 
-  site, 
+<%- include('head', {
+  site,
   pageTitle: config.title + ' | ' + site.name,
   pageDescription: config.description,
   canonicalPath: '/' + config.slug + '.html',
@@ -933,38 +937,63 @@ function generateListingPage(site, recipes, config, partials, outputDir) {
 <%- include('nav', { site }) %>
 
 <main class="flex-grow py-12">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" x-data="{ activeFilter: 'all' }">
         <!-- Breadcrumb -->
         <nav class="mb-8 text-sm">
-            <ol class="flex items-center gap-2 text-slate-500">
+            <ol class="flex items-center gap-2 text-slate-500 dark:text-slate-400">
                 <% config.breadcrumb.forEach((crumb, i) => { %>
                     <% if (crumb.url) { %>
-                        <li><a href="<%= crumb.url %>" class="hover:text-slate-900"><%= crumb.name %></a></li>
+                        <li><a href="<%= crumb.url %>" class="hover:text-slate-900 dark:hover:text-white"><%= crumb.name %></a></li>
                         <li>/</li>
                     <% } else { %>
-                        <li class="text-slate-900 font-medium"><%= crumb.name %></li>
+                        <li class="text-slate-900 dark:text-white font-medium"><%= crumb.name %></li>
                     <% } %>
                 <% }); %>
             </ol>
         </nav>
-        
+
         <!-- Header -->
-        <div class="mb-12">
+        <div class="mb-8">
             <h1 class="font-anton text-4xl uppercase tracking-wider mb-4"><%= config.title %></h1>
-            <p class="text-slate-600 text-lg"><%= config.description %></p>
-            <p class="text-slate-500 mt-2"><%= recipes.length %> recipes found</p>
+            <p class="text-slate-600 dark:text-slate-400 text-lg"><%= config.description %></p>
+            <p class="text-slate-500 dark:text-slate-500 mt-2"><%= recipes.length %> recipes found</p>
         </div>
-        
+
+        <% if (hasFilters && recipes.length > 0) { %>
+        <!-- Filter Buttons -->
+        <div class="mb-8 flex flex-wrap gap-2">
+            <button
+                @click="activeFilter = 'all'"
+                :class="activeFilter === 'all' ? 'bg-brand-500 text-white' : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700'"
+                class="px-4 py-2 rounded-full text-sm font-medium transition-colors border border-slate-200 dark:border-slate-700">
+                All (<%= recipes.length %>)
+            </button>
+            <% foodTypes.forEach(type => {
+                const count = recipes.filter(r => r.foodType === type).length;
+                const displayName = type.charAt(0).toUpperCase() + type.slice(1);
+            %>
+            <button
+                @click="activeFilter = '<%= type %>'"
+                :class="activeFilter === '<%= type %>' ? 'bg-brand-500 text-white' : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700'"
+                class="px-4 py-2 rounded-full text-sm font-medium transition-colors border border-slate-200 dark:border-slate-700">
+                <%= displayName %> (<%= count %>)
+            </button>
+            <% }); %>
+        </div>
+        <% } %>
+
         <% if (recipes.length > 0) { %>
         <!-- Recipe Grid -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <% recipes.forEach(recipe => { %>
+            <div x-show="activeFilter === 'all' || activeFilter === '<%= recipe.foodType %>'" x-transition>
                 <%- include('recipe-card', { recipe }) %>
+            </div>
             <% }); %>
         </div>
         <% } else { %>
         <div class="text-center py-16">
-            <p class="text-slate-500 text-lg">No recipes found in this category yet.</p>
+            <p class="text-slate-500 dark:text-slate-400 text-lg">No recipes found in this category yet.</p>
             <a href="/" class="inline-block mt-4 text-brand-500 hover:text-brand-600 font-medium">← Back to Home</a>
         </div>
         <% } %>
@@ -980,9 +1009,11 @@ function generateListingPage(site, recipes, config, partials, outputDir) {
     site,
     recipes,
     config,
+    foodTypes,
+    hasFilters,
     include: (name, data) => ejs.render(partials[name], data)
   });
-  
+
   fs.writeFileSync(path.join(outputDir, `${config.slug}.html`), html);
 }
 
