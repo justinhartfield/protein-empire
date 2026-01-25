@@ -875,6 +875,7 @@ function generateHomepage(site, allRecipes, categories, partials, outputDir) {
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <a href="/breakfast/" class="group relative overflow-hidden rounded-2xl aspect-[4/3] bg-gradient-to-br from-amber-500 to-orange-600">
+                <img src="/images/icons/pancakes.png" alt="" class="absolute top-4 right-4 w-16 h-16 opacity-80 group-hover:scale-110 transition-transform" />
                 <div class="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors"></div>
                 <div class="absolute inset-0 flex flex-col justify-end p-6 text-white">
                     <h3 class="font-anton text-2xl uppercase tracking-wider">Breakfast</h3>
@@ -882,6 +883,7 @@ function generateHomepage(site, allRecipes, categories, partials, outputDir) {
                 </div>
             </a>
             <a href="/category-desserts.html" class="group relative overflow-hidden rounded-2xl aspect-[4/3] bg-gradient-to-br from-pink-500 to-rose-600">
+                <img src="/images/icons/brownies.png" alt="" class="absolute top-4 right-4 w-16 h-16 opacity-80 group-hover:scale-110 transition-transform" />
                 <div class="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors"></div>
                 <div class="absolute inset-0 flex flex-col justify-end p-6 text-white">
                     <h3 class="font-anton text-2xl uppercase tracking-wider">Desserts</h3>
@@ -889,6 +891,7 @@ function generateHomepage(site, allRecipes, categories, partials, outputDir) {
                 </div>
             </a>
             <a href="/category-snacks.html" class="group relative overflow-hidden rounded-2xl aspect-[4/3] bg-gradient-to-br from-emerald-500 to-teal-600">
+                <img src="/images/icons/protein-bites.png" alt="" class="absolute top-4 right-4 w-16 h-16 opacity-80 group-hover:scale-110 transition-transform" />
                 <div class="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors"></div>
                 <div class="absolute inset-0 flex flex-col justify-end p-6 text-white">
                     <h3 class="font-anton text-2xl uppercase tracking-wider">Snacks</h3>
@@ -896,6 +899,7 @@ function generateHomepage(site, allRecipes, categories, partials, outputDir) {
                 </div>
             </a>
             <a href="/category-savory.html" class="group relative overflow-hidden rounded-2xl aspect-[4/3] bg-gradient-to-br from-slate-600 to-slate-800">
+                <img src="/images/icons/pizza.png" alt="" class="absolute top-4 right-4 w-16 h-16 opacity-80 group-hover:scale-110 transition-transform" />
                 <div class="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors"></div>
                 <div class="absolute inset-0 flex flex-col justify-end p-6 text-white">
                     <h3 class="font-anton text-2xl uppercase tracking-wider">Savory</h3>
@@ -938,9 +942,10 @@ function generateHomepage(site, allRecipes, categories, partials, outputDir) {
         
         <div class="flex flex-wrap justify-center gap-4">
             <% site.heroIngredients.forEach(ing => { %>
-            <a href="/ingredient-<%= ing.slug %>.html" class="bg-slate-100 dark:bg-slate-700 text-slate-900 dark:text-white hover:bg-brand-500 hover:text-white px-6 py-3 rounded-full font-medium transition-colors">
+            <a href="/ingredient-<%= ing.slug %>.html" class="inline-flex items-center gap-2 bg-slate-100 dark:bg-slate-700 text-slate-900 dark:text-white hover:bg-brand-500 hover:text-white px-5 py-3 rounded-full font-medium transition-colors">
+                <img src="/images/icons/<%= ing.icon %>" alt="" class="w-6 h-6" />
                 <%= ing.name %>
-                <span class="ml-2 text-sm opacity-70">(<%= categories.byIngredient[ing.slug]?.length || 0 %>)</span>
+                <span class="text-sm opacity-70">(<%= categories.byIngredient[ing.slug]?.length || 0 %>)</span>
             </a>
             <% }); %>
         </div>
@@ -991,11 +996,15 @@ function generateHomepage(site, allRecipes, categories, partials, outputDir) {
 
 <!-- Breakfast Hub CTA -->
 <section class="py-12 mx-4 lg:mx-8">
-    <div class="max-w-5xl mx-auto bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl p-8 lg:p-12 text-white">
-        <div class="lg:flex lg:items-center lg:justify-between">
-            <div class="mb-6 lg:mb-0">
-                <h2 class="font-anton text-3xl lg:text-4xl uppercase mb-2">High Protein Breakfast Hub</h2>
-                <p class="text-white/80 text-lg"><%= categories.breakfast.length %> macro-verified breakfast recipes with interactive filters</p>
+    <div class="max-w-5xl mx-auto bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl p-8 lg:p-12 text-white relative overflow-hidden">
+        <img src="/images/breakfast/hero-bg.png" alt="" class="absolute right-0 top-0 h-full w-auto opacity-20 object-cover object-left" />
+        <div class="lg:flex lg:items-center lg:justify-between relative z-10">
+            <div class="mb-6 lg:mb-0 flex items-center gap-6">
+                <img src="/images/icons/pancakes.png" alt="" class="w-20 h-20 hidden lg:block" />
+                <div>
+                    <h2 class="font-anton text-3xl lg:text-4xl uppercase mb-2">High Protein Breakfast Hub</h2>
+                    <p class="text-white/80 text-lg"><%= categories.breakfast.length %> macro-verified breakfast recipes with interactive filters</p>
+                </div>
             </div>
             <a href="/breakfast/" class="inline-flex items-center gap-2 bg-white text-slate-900 px-8 py-4 rounded-xl font-semibold hover:bg-slate-100 transition-colors">
                 Explore Breakfast
@@ -1010,7 +1019,7 @@ function generateHomepage(site, allRecipes, categories, partials, outputDir) {
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <a href="/no-bake.html" class="group bg-gradient-to-br from-purple-500 to-indigo-600 rounded-2xl p-8 text-white">
-                <div class="text-5xl mb-4">&#127850;</div>
+                <img src="/images/icons/mixing-bowl.png" alt="" class="w-14 h-14 mb-4" />
                 <h3 class="font-anton text-2xl uppercase tracking-wider mb-2">No-Bake Recipes</h3>
                 <p class="text-white/80 mb-4"><%= categories.noBake.length %> recipes ready in minutes with zero oven time</p>
                 <span class="inline-flex items-center gap-2 font-semibold group-hover:gap-3 transition-all">
@@ -1019,7 +1028,7 @@ function generateHomepage(site, allRecipes, categories, partials, outputDir) {
                 </span>
             </a>
             <a href="/quick.html" class="group bg-gradient-to-br from-cyan-500 to-blue-600 rounded-2xl p-8 text-white">
-                <div class="text-5xl mb-4">&#9889;</div>
+                <img src="/images/icons/lightning.png" alt="" class="w-14 h-14 mb-4" />
                 <h3 class="font-anton text-2xl uppercase tracking-wider mb-2">Quick & Easy</h3>
                 <p class="text-white/80 mb-4"><%= categories.quick.length %> recipes ready in 20 minutes or less</p>
                 <span class="inline-flex items-center gap-2 font-semibold group-hover:gap-3 transition-all">
@@ -1028,7 +1037,7 @@ function generateHomepage(site, allRecipes, categories, partials, outputDir) {
                 </span>
             </a>
             <a href="/high-protein.html" class="group bg-gradient-to-br from-emerald-500 to-green-600 rounded-2xl p-8 text-white">
-                <div class="text-5xl mb-4">&#128170;</div>
+                <img src="/images/icons/flexed-arm.png" alt="" class="w-14 h-14 mb-4" />
                 <h3 class="font-anton text-2xl uppercase tracking-wider mb-2">30g+ Protein</h3>
                 <p class="text-white/80 mb-4"><%= categories.highProtein.length %> recipes with serious protein content</p>
                 <span class="inline-flex items-center gap-2 font-semibold group-hover:gap-3 transition-all">

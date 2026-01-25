@@ -24,13 +24,13 @@ export const sites = {
     isIndexer: true,
     // Hero ingredients for ingredient tag collections
     heroIngredients: [
-      { name: 'Protein Powder', slug: 'protein-powder' },
-      { name: 'Banana', slug: 'banana' },
-      { name: 'Peanut Butter', slug: 'peanut-butter' },
-      { name: 'Chia Seeds', slug: 'chia' },
-      { name: 'Cottage Cheese', slug: 'cottage-cheese' },
-      { name: 'Greek Yogurt', slug: 'greek-yogurt' },
-      { name: 'Oats', slug: 'oats' }
+      { name: 'Protein Powder', slug: 'protein-powder', icon: 'protein-bars.png' },
+      { name: 'Banana', slug: 'banana', icon: 'banana.png' },
+      { name: 'Peanut Butter', slug: 'peanut-butter', icon: 'cookies.png' },
+      { name: 'Chia Seeds', slug: 'chia', icon: 'plant-seedling.png' },
+      { name: 'Cottage Cheese', slug: 'cottage-cheese', icon: 'cheesecake.png' },
+      { name: 'Greek Yogurt', slug: 'greek-yogurt', icon: 'ice-cream.png' },
+      { name: 'Oats', slug: 'oats', icon: 'oatmeal.png' }
     ],
     // Flavor tags for cross-linking
     flavorTags: [
