@@ -226,15 +226,26 @@
         </nav>
         
         <!-- Header -->
-        <div class="mb-12">
+        <div class="mb-8">
             <h1 class="font-anton text-4xl uppercase tracking-wider mb-4">Savory Recipes</h1>
             <p class="text-slate-600 text-lg">High-protein pizza crusts, bread, and savory treats</p>
-            <p class="text-slate-500 mt-2">54 recipes found</p>
+            <p class="text-slate-500 mt-2" id="recipe-count">54 recipes found</p>
         </div>
-        
-        
+
+        <!-- Filter Section -->
+        <div class="mb-8" x-data="recipeFilter()">
+            <div class="flex flex-wrap items-center gap-3">
+                <span class="text-sm font-medium text-slate-600 dark:text-slate-400">Filter by:</span>
+                <div class="flex flex-wrap gap-2">
+                    <button @click="setFilter('all')" :class="activeFilter === 'all' ? 'bg-brand-500 text-white' : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'" class="px-4 py-2 rounded-full text-sm font-medium transition-colors">All</button>
+                    <button @click="setFilter('Bread')" :class="activeFilter === 'Bread' ? 'bg-brand-500 text-white' : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'" class="px-4 py-2 rounded-full text-sm font-medium transition-colors">Bread</button>
+                    <button @click="setFilter('Pizza')" :class="activeFilter === 'Pizza' ? 'bg-brand-500 text-white' : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'" class="px-4 py-2 rounded-full text-sm font-medium transition-colors">Pizza</button>
+                </div>
+            </div>
+        </div>
+
         <!-- Recipe Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" id="recipe-grid">
             
                 
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
@@ -2635,6 +2646,58 @@
         </div>
     </div>
 </footer>
+
+<script>
+    function recipeFilter() {
+        return {
+            activeFilter: 'all',
+            currentFilter: 'all',
+            init() {
+                const grid = document.getElementById('recipe-grid');
+                const cards = grid.querySelectorAll('.group.block');
+                cards.forEach(card => {
+                    card.style.transition = 'opacity 0.2s ease-in-out, transform 0.2s ease-in-out';
+                });
+            },
+            setFilter(category) {
+                this.activeFilter = category;
+                this.currentFilter = category;
+                this.filterRecipes();
+            },
+            filterRecipes() {
+                const grid = document.getElementById('recipe-grid');
+                const cards = grid.querySelectorAll('.group.block');
+                let visibleCount = 0;
+                const filter = this.currentFilter;
+                cards.forEach(card => {
+                    const badge = card.querySelector('.absolute.top-3.right-3');
+                    const cardCategory = badge ? badge.textContent.trim() : '';
+                    const shouldShow = filter === 'all' || cardCategory === filter;
+                    if (shouldShow) {
+                        card.style.display = '';
+                        requestAnimationFrame(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'scale(1)';
+                        });
+                        visibleCount++;
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'scale(0.95)';
+                        const cardRef = card;
+                        const currentFilter = filter;
+                        setTimeout(() => {
+                            if (this.currentFilter === currentFilter) {
+                                cardRef.style.display = 'none';
+                            }
+                        }, 200);
+                    }
+                });
+                const countEl = document.getElementById('recipe-count');
+                if (countEl) countEl.textContent = visibleCount + ' recipes found';
+            }
+        }
+    }
+</script>
 
 </body>
 </html>
