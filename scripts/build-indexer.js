@@ -2840,6 +2840,23 @@ function generateBreakfastPillarPage(site, breakfastRecipes, partials, outputDir
       </div>
     </div>
   </section>
+
+  <!-- SEO Content Section -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="font-anton text-3xl uppercase tracking-wider mb-8"><%= seoContent.title %></h2>
+      <div class="prose prose-slate dark:prose-invert max-w-none">
+        <% seoContent.sections.forEach(section => { %>
+        <div class="mb-8">
+          <h3 class="text-xl font-semibold mb-4 text-slate-800 dark:text-slate-200"><%= section.heading %></h3>
+          <% section.content.split('\\n\\n').forEach(paragraph => { %>
+          <p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed"><%= paragraph %></p>
+          <% }); %>
+        </div>
+        <% }); %>
+      </div>
+    </div>
+  </section>
 </main>
 
 <%- include('footer', { site }) %>
@@ -2848,11 +2865,15 @@ function generateBreakfastPillarPage(site, breakfastRecipes, partials, outputDir
 </html>
 `;
 
+  // Use the breakfast category SEO content
+  const seoContent = SEO_CONTENT['category-breakfast'];
+
   const html = ejs.render(template, {
     site,
     breakfastRecipes,
     topBreakfastRecipes,
     intentCounts,
+    seoContent,
     include: (name, data) => ejs.render(partials[name], data)
   });
 
