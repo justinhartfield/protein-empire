@@ -271,11 +271,14 @@
 
             <!-- Success State -->
             <div x-show="success" x-cloak class="py-8">
-                <div class="text-6xl mb-6">&#9993;</div>
-                <h2 class="anton-text text-3xl mb-4 uppercase tracking-wider text-accent-500">CHECK YOUR EMAIL!</h2>
-                <p class="text-slate-600 mb-4">We sent a confirmation link to <strong x-text="email"></strong></p>
-                <p class="text-slate-500 text-sm">Click the link in your email to confirm and get your free download.</p>
-                <p class="text-slate-400 text-xs mt-6">Didn't receive it? Check your spam folder or <button @click="success = false; error = ''" class="text-brand-600 hover:underline">try again</button>.</p>
+                <div class="text-6xl mb-6">&#127881;</div>
+                <h2 class="anton-text text-3xl mb-4 uppercase tracking-wider text-accent-500">DOWNLOAD STARTED!</h2>
+                <p class="text-slate-600 mb-4">Your 7-day meal plan is downloading now.</p>
+                <p class="text-slate-500 text-sm mb-6">If the download didn't start automatically, click the button below.</p>
+                <a href="/downloads/breakfast-meal-plan.pdf" download="7-Day-High-Protein-Breakfast-Plan.pdf"
+                   class="inline-block bg-accent-500 text-white px-8 py-3 rounded-xl font-bold hover:bg-accent-600 transition-colors">
+                    Download PDF
+                </a>
             </div>
         </div>
     </section>
@@ -391,27 +394,25 @@ function subscribeForm() {
             this.loading = true;
             this.error = '';
 
-            try {
-                const res = await fetch('/api/subscribe', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({
-                        email: this.email,
-                        packSlug: 'breakfast-meal-plan'
-                    })
-                });
-
-                const data = await res.json();
-
-                if (data.success) {
-                    this.success = true;
-                } else {
-                    this.error = data.message || 'Something went wrong. Please try again.';
-                }
-            } catch (e) {
-                this.error = 'Network error. Please check your connection and try again.';
+            // Basic email validation
+            if (!this.email || !this.email.includes('@')) {
+                this.error = 'Please enter a valid email address.';
+                this.loading = false;
+                return;
             }
 
+            // Simulate brief loading then trigger download
+            await new Promise(resolve => setTimeout(resolve, 500));
+
+            // Trigger PDF download
+            const link = document.createElement('a');
+            link.href = '/downloads/breakfast-meal-plan.pdf';
+            link.download = '7-Day-High-Protein-Breakfast-Plan.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+
+            this.success = true;
             this.loading = false;
         }
     }
