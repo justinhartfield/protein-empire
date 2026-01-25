@@ -286,10 +286,15 @@ export async function handler(event, context) {
     await subscribeContact(email, listId);
     console.log(`[subscribe] Added ${email} to list ${listId}`);
 
+    // Try to send PDF email, but don't fail if it doesn't work
     if (pdfUrl && fromEmail) {
-      const packName = formatPackName(packSlug);
-      await sendPdfEmail(email, fromEmail, packName, pdfUrl, siteName);
-      console.log(`[subscribe] PDF email sent to ${email}`);
+      try {
+        const packName = formatPackName(packSlug);
+        await sendPdfEmail(email, fromEmail, packName, pdfUrl, siteName);
+        console.log(`[subscribe] PDF email sent to ${email}`);
+      } catch (emailError) {
+        console.error('[subscribe] PDF email failed (subscription still succeeded):', emailError.message);
+      }
     }
 
     return {
