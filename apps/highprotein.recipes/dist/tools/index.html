@@ -1,0 +1,375 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Protein Calculator Tools | HighProtein.Recipes | HighProtein.Recipes</title>
+
+<!-- SEO Meta Tags -->
+<meta name="description" content="Free protein calculator tools: P:E ratio calculator, breakfast macro builder, and cost-per-gram protein calculator. Optimize your high-protein diet.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://highprotein.recipes/tools/">
+
+<!-- Open Graph / Social Sharing -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="HighProtein.Recipes">
+<meta property="og:title" content="Protein Calculator Tools | HighProtein.Recipes">
+<meta property="og:description" content="Free protein calculator tools: P:E ratio calculator, breakfast macro builder, and cost-per-gram protein calculator. Optimize your high-protein diet.">
+<meta property="og:image" content="https://highprotein.recipes/images/social-share.png">
+<meta property="og:url" content="https://highprotein.recipes/tools/">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Protein Calculator Tools | HighProtein.Recipes">
+<meta name="twitter:description" content="Free protein calculator tools: P:E ratio calculator, breakfast macro builder, and cost-per-gram protein calculator. Optimize your high-protein diet.">
+<meta name="twitter:image" content="https://highprotein.recipes/images/social-share.png">
+
+<!-- Theme & Favicon -->
+<meta name="theme-color" content="#f59e0b">
+<link rel="icon" type="image/png" href="/images/favicon.png">
+<link rel="apple-touch-icon" href="/images/favicon.png">
+
+<!-- Performance: DNS Prefetch & Preconnect -->
+<link rel="dns-prefetch" href="//cdn.tailwindcss.com">
+<link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+
+
+<!-- Dark Mode: Apply before page renders to prevent flash -->
+<script>
+(function(){
+  var s = localStorage.getItem('theme');
+  var d = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  if (s === 'dark' || (!s && d)) document.documentElement.classList.add('dark');
+})();
+</script>
+
+<!-- Scripts -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+
+
+<!-- Tailwind Config -->
+<script>
+    tailwind.config = {
+        darkMode: 'class',
+        theme: {
+            extend: {
+                fontFamily: {
+                    'anton': ['Anton', 'sans-serif'],
+                    'sans': ['Inter', 'sans-serif'],
+                },
+                colors: {
+                    brand: {
+                        50: '#fffbeb',
+                        100: '#fef3c7',
+                        500: '#f59e0b',
+                        600: '#d97706',
+                        900: '#451a03',
+                    },
+                    accent: {
+                        500: '#10b981',
+                    }
+                }
+            }
+        }
+    }
+</script>
+
+<style>
+    [x-cloak] { display: none !important; }
+</style>
+
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-86MYLJ5WDT"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-86MYLJ5WDT');
+</script>
+
+
+</head>
+<body class="min-h-screen flex flex-col bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100 font-sans">
+
+<nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/80 dark:bg-slate-900/80 border-b border-slate-200 dark:border-slate-700">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <!-- Logo -->
+            <a href="/" class="flex items-center gap-2">
+                <img src="/images/logo.png" alt="HighProtein.Recipes" class="h-10 w-10 rounded-full">
+                <span class="font-anton text-xl text-slate-900 dark:text-white tracking-tight uppercase">HighProtein<span class="text-brand-500">.Recipes</span></span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center gap-6">
+                <div class="relative group">
+                    <button class="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium transition-colors flex items-center gap-1">
+                        Categories
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="absolute top-full left-0 mt-2 w-48 bg-white dark:bg-slate-800 rounded-lg shadow-lg border border-slate-100 dark:border-slate-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+                        <a href="/category-breakfast.html" class="block px-4 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white">Breakfast</a>
+                        <a href="/category-desserts.html" class="block px-4 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white">Desserts</a>
+                        <a href="/category-snacks.html" class="block px-4 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white">Snacks</a>
+                        <a href="/category-savory.html" class="block px-4 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white">Savory</a>
+                    </div>
+                </div>
+                <a href="/breakfast/" class="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium transition-colors">Breakfast</a>
+                <a href="/tools/" class="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium transition-colors">Tools</a>
+                <a href="/high-protein.html" class="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium transition-colors">30g+ Protein</a>
+
+                <!-- Dark Mode Toggle -->
+                <button
+                    x-data="{ dark: document.documentElement.classList.contains('dark') }"
+                    @click="dark = !dark; document.documentElement.classList.toggle('dark'); localStorage.setItem('theme', dark ? 'dark' : 'light')"
+                    class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                    aria-label="Toggle dark mode"
+                >
+                    <svg x-show="!dark" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+                    </svg>
+                    <svg x-show="dark" x-cloak class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/>
+                    </svg>
+                </button>
+
+                <a href="/#sites" class="bg-brand-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-brand-600 transition-colors">
+                    Browse All Sites
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="flex items-center gap-2 md:hidden">
+                <!-- Mobile Dark Mode Toggle -->
+                <button
+                    x-data="{ dark: document.documentElement.classList.contains('dark') }"
+                    @click="dark = !dark; document.documentElement.classList.toggle('dark'); localStorage.setItem('theme', dark ? 'dark' : 'light')"
+                    class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                    aria-label="Toggle dark mode"
+                >
+                    <svg x-show="!dark" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+                    </svg>
+                    <svg x-show="dark" x-cloak class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/>
+                    </svg>
+                </button>
+
+                <button
+                    x-data="{ open: false }"
+                    @click="open = !open; $dispatch('toggle-mobile-menu', { open })"
+                    class="p-2 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white"
+                    aria-label="Toggle menu"
+                >
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div
+        x-data="{ open: false }"
+        @toggle-mobile-menu.window="open = $event.detail.open"
+        x-show="open"
+        x-cloak
+        class="md:hidden bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-700"
+    >
+        <div class="px-4 py-4 space-y-3">
+            <a href="/breakfast/" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">Breakfast Hub</a>
+            <a href="/tools/" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">Protein Tools</a>
+            <div class="border-t border-slate-200 dark:border-slate-700 my-2"></div>
+            <a href="/category-breakfast.html" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">All Breakfast</a>
+            <a href="/category-desserts.html" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">Desserts</a>
+            <a href="/category-snacks.html" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">Snacks</a>
+            <a href="/category-savory.html" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">Savory</a>
+            <a href="/high-protein.html" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">30g+ Protein</a>
+            <a href="/#sites" class="block bg-brand-500 text-white px-4 py-2 rounded-lg font-semibold text-center">
+                Browse All Sites
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!-- Spacer for fixed nav -->
+<div class="h-16"></div>
+
+
+<main class="flex-grow py-12">
+  <div class="max-w-7xl mx-auto px-4">
+
+    <!-- Breadcrumb -->
+    <nav class="mb-8 text-sm">
+      <ol class="flex items-center gap-2 text-slate-500 dark:text-slate-400">
+        <li><a href="/" class="hover:text-slate-900 dark:hover:text-white">Home</a></li>
+        <li>/</li>
+        <li class="text-slate-900 dark:text-white font-medium">Tools</li>
+      </ol>
+    </nav>
+
+    <!-- Header -->
+    <div class="text-center mb-12">
+      <h1 class="font-anton text-4xl lg:text-5xl uppercase mb-4">PROTEIN CALCULATOR TOOLS</h1>
+      <p class="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+        Free tools to help you optimize your high-protein diet. Calculate ratios, find recipes, and compare costs.
+      </p>
+    </div>
+
+    <!-- Tools Grid -->
+    <div class="grid md:grid-cols-3 gap-8 mb-16">
+      <!-- P:E Calculator -->
+      <a href="/tools/pe-ratio-calculator.html" class="group bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all border border-slate-100 dark:border-slate-700 hover:border-brand-500">
+        <div class="w-16 h-16 bg-gradient-to-br from-emerald-500 to-green-600 rounded-xl flex items-center justify-center mb-6">
+          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+          </svg>
+        </div>
+        <h3 class="font-anton text-2xl uppercase mb-3 group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">P:E Ratio Calculator</h3>
+        <p class="text-slate-600 dark:text-slate-400 mb-4">Calculate protein-to-energy ratio for any food. Find out if your meals are ELITE, EXCELLENT, or GOOD for protein density.</p>
+        <span class="inline-flex items-center gap-2 text-brand-500 font-semibold group-hover:gap-3 transition-all">
+          Calculate Now
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+        </span>
+      </a>
+
+      <!-- Breakfast Builder -->
+      <a href="/tools/breakfast-builder.html" class="group bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all border border-slate-100 dark:border-slate-700 hover:border-brand-500">
+        <div class="w-16 h-16 bg-gradient-to-br from-amber-500 to-orange-600 rounded-xl flex items-center justify-center mb-6">
+          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+          </svg>
+        </div>
+        <h3 class="font-anton text-2xl uppercase mb-3 group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">Breakfast Macro Builder</h3>
+        <p class="text-slate-600 dark:text-slate-400 mb-4">Set your protein target, calorie limit, and dietary restrictions. Find matching high-protein breakfast recipes instantly.</p>
+        <span class="inline-flex items-center gap-2 text-brand-500 font-semibold group-hover:gap-3 transition-all">
+          Build Breakfast
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+        </span>
+      </a>
+
+      <!-- Cost Calculator -->
+      <a href="/tools/protein-cost-calculator.html" class="group bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all border border-slate-100 dark:border-slate-700 hover:border-brand-500">
+        <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center mb-6">
+          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+        </div>
+        <h3 class="font-anton text-2xl uppercase mb-3 group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">Cost-per-Protein Calculator</h3>
+        <p class="text-slate-600 dark:text-slate-400 mb-4">Compare protein sources by price efficiency. Find the cheapest ways to hit your protein goals on any budget.</p>
+        <span class="inline-flex items-center gap-2 text-brand-500 font-semibold group-hover:gap-3 transition-all">
+          Compare Costs
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+        </span>
+      </a>
+    </div>
+
+    <!-- Browse Recipes CTA -->
+    <div class="bg-gradient-to-br from-brand-500 to-accent-500 rounded-2xl p-8 lg:p-12 text-white text-center">
+      <h2 class="font-anton text-3xl lg:text-4xl uppercase mb-4">EXPLORE HIGH-PROTEIN RECIPES</h2>
+      <p class="text-white/80 text-lg mb-8 max-w-2xl mx-auto">
+        Browse 300+ macro-verified recipes from our network of specialized protein recipe sites.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="/category-breakfast.html" class="bg-white text-slate-900 px-6 py-3 rounded-xl font-semibold hover:bg-slate-100 transition-colors">
+          Breakfast Recipes
+        </a>
+        <a href="/high-protein.html" class="bg-white/10 text-white px-6 py-3 rounded-xl font-semibold hover:bg-white/20 transition-colors border border-white/20">
+          30g+ Protein
+        </a>
+        <a href="/" class="bg-white/10 text-white px-6 py-3 rounded-xl font-semibold hover:bg-white/20 transition-colors border border-white/20">
+          All Recipes
+        </a>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+
+<footer class="bg-slate-900 dark:bg-slate-950 text-white py-12 mt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- Brand -->
+            <div class="col-span-1">
+                <div class="flex items-center gap-2 mb-4">
+                    <img src="/images/logo.png" alt="HighProtein.Recipes" class="h-10 w-10 rounded-full">
+                    <span class="font-anton text-xl tracking-tight uppercase">HighProtein<span class="text-brand-500">.Recipes</span></span>
+                </div>
+                <p class="text-slate-400 text-sm">
+                    Your gateway to 300+ macro-verified high-protein recipes across 12 specialized sites.
+                </p>
+            </div>
+
+            <!-- Categories -->
+            <div>
+                <h4 class="font-semibold mb-4">Categories</h4>
+                <ul class="space-y-2 text-slate-400 text-sm">
+                    <li><a href="/category-breakfast.html" class="hover:text-white transition-colors">Breakfast</a></li>
+                    <li><a href="/category-desserts.html" class="hover:text-white transition-colors">Desserts</a></li>
+                    <li><a href="/category-snacks.html" class="hover:text-white transition-colors">Snacks</a></li>
+                    <li><a href="/category-savory.html" class="hover:text-white transition-colors">Savory</a></li>
+                </ul>
+            </div>
+
+            <!-- Popular Ingredients -->
+            <div>
+                <h4 class="font-semibold mb-4">By Ingredient</h4>
+                <ul class="space-y-2 text-slate-400 text-sm">
+                    <li><a href="/ingredient-protein-powder.html" class="hover:text-white transition-colors">Protein Powder</a></li>
+                    <li><a href="/ingredient-greek-yogurt.html" class="hover:text-white transition-colors">Greek Yogurt</a></li>
+                    <li><a href="/ingredient-cottage-cheese.html" class="hover:text-white transition-colors">Cottage Cheese</a></li>
+                    <li><a href="/ingredient-oats.html" class="hover:text-white transition-colors">Oats</a></li>
+                </ul>
+            </div>
+
+            <!-- Legal -->
+            <div>
+                <h4 class="font-semibold mb-4">Legal</h4>
+                <ul class="space-y-2 text-slate-400 text-sm">
+                    <li><a href="/privacy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                    <li><a href="/terms.html" class="hover:text-white transition-colors">Terms of Use</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Empire Links -->
+        <div class="mt-12 pt-8 border-t border-slate-800">
+            <p class="text-slate-500 text-sm text-center mb-4">The Protein Empire</p>
+            <div class="flex flex-wrap justify-center gap-4 text-slate-400 text-sm">
+                <a href="https://proteinmuffins.com" class="hover:text-white transition-colors">Muffins</a>
+                <a href="https://proteincookies.co" class="hover:text-white transition-colors">Cookies</a>
+                <a href="https://proteinpancakes.co" class="hover:text-white transition-colors">Pancakes</a>
+                <a href="https://proteinbrownies.co" class="hover:text-white transition-colors">Brownies</a>
+                <a href="https://protein-bread.com" class="hover:text-white transition-colors">Bread</a>
+                <a href="https://proteinbars.co" class="hover:text-white transition-colors">Bars</a>
+                <a href="https://proteinbites.co" class="hover:text-white transition-colors">Bites</a>
+                <a href="https://proteindonuts.co" class="hover:text-white transition-colors">Donuts</a>
+                <a href="https://proteinoatmeal.co" class="hover:text-white transition-colors">Oatmeal</a>
+                <a href="https://proteincheesecake.co" class="hover:text-white transition-colors">Cheesecake</a>
+                <a href="https://proteinpizzas.co" class="hover:text-white transition-colors">Pizza</a>
+                <a href="https://proteinpudding.co" class="hover:text-white transition-colors">Pudding</a>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="mt-8 text-center text-slate-500 text-sm">
+            <p>&copy; 2026 <a href="https://HighProtein.Recipes" class="hover:text-amber-400 transition-colors">High Protein Recipes</a>. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

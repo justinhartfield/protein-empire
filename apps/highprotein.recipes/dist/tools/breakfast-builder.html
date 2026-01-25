@@ -1,0 +1,486 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Breakfast Macro Builder - Find High Protein Breakfast by Macros | HighProtein.Recipes | HighProtein.Recipes</title>
+
+<!-- SEO Meta Tags -->
+<meta name="description" content="Build your perfect high-protein breakfast. Set protein target, calorie limit, and dietary restrictions. Find matching breakfast recipes instantly.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://highprotein.recipes/tools/breakfast-builder.html">
+
+<!-- Open Graph / Social Sharing -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="HighProtein.Recipes">
+<meta property="og:title" content="Breakfast Macro Builder - Find High Protein Breakfast by Macros | HighProtein.Recipes">
+<meta property="og:description" content="Build your perfect high-protein breakfast. Set protein target, calorie limit, and dietary restrictions. Find matching breakfast recipes instantly.">
+<meta property="og:image" content="https://highprotein.recipes/images/social-share.png">
+<meta property="og:url" content="https://highprotein.recipes/tools/breakfast-builder.html">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Breakfast Macro Builder - Find High Protein Breakfast by Macros | HighProtein.Recipes">
+<meta name="twitter:description" content="Build your perfect high-protein breakfast. Set protein target, calorie limit, and dietary restrictions. Find matching breakfast recipes instantly.">
+<meta name="twitter:image" content="https://highprotein.recipes/images/social-share.png">
+
+<!-- Theme & Favicon -->
+<meta name="theme-color" content="#f59e0b">
+<link rel="icon" type="image/png" href="/images/favicon.png">
+<link rel="apple-touch-icon" href="/images/favicon.png">
+
+<!-- Performance: DNS Prefetch & Preconnect -->
+<link rel="dns-prefetch" href="//cdn.tailwindcss.com">
+<link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+
+
+<!-- Dark Mode: Apply before page renders to prevent flash -->
+<script>
+(function(){
+  var s = localStorage.getItem('theme');
+  var d = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  if (s === 'dark' || (!s && d)) document.documentElement.classList.add('dark');
+})();
+</script>
+
+<!-- Scripts -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+
+
+<!-- Tailwind Config -->
+<script>
+    tailwind.config = {
+        darkMode: 'class',
+        theme: {
+            extend: {
+                fontFamily: {
+                    'anton': ['Anton', 'sans-serif'],
+                    'sans': ['Inter', 'sans-serif'],
+                },
+                colors: {
+                    brand: {
+                        50: '#fffbeb',
+                        100: '#fef3c7',
+                        500: '#f59e0b',
+                        600: '#d97706',
+                        900: '#451a03',
+                    },
+                    accent: {
+                        500: '#10b981',
+                    }
+                }
+            }
+        }
+    }
+</script>
+
+<style>
+    [x-cloak] { display: none !important; }
+</style>
+
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-86MYLJ5WDT"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-86MYLJ5WDT');
+</script>
+
+
+</head>
+<body class="min-h-screen flex flex-col bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100 font-sans">
+
+<nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/80 dark:bg-slate-900/80 border-b border-slate-200 dark:border-slate-700">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <!-- Logo -->
+            <a href="/" class="flex items-center gap-2">
+                <img src="/images/logo.png" alt="HighProtein.Recipes" class="h-10 w-10 rounded-full">
+                <span class="font-anton text-xl text-slate-900 dark:text-white tracking-tight uppercase">HighProtein<span class="text-brand-500">.Recipes</span></span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center gap-6">
+                <div class="relative group">
+                    <button class="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium transition-colors flex items-center gap-1">
+                        Categories
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="absolute top-full left-0 mt-2 w-48 bg-white dark:bg-slate-800 rounded-lg shadow-lg border border-slate-100 dark:border-slate-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+                        <a href="/category-breakfast.html" class="block px-4 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white">Breakfast</a>
+                        <a href="/category-desserts.html" class="block px-4 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white">Desserts</a>
+                        <a href="/category-snacks.html" class="block px-4 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white">Snacks</a>
+                        <a href="/category-savory.html" class="block px-4 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white">Savory</a>
+                    </div>
+                </div>
+                <a href="/breakfast/" class="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium transition-colors">Breakfast</a>
+                <a href="/tools/" class="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium transition-colors">Tools</a>
+                <a href="/high-protein.html" class="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium transition-colors">30g+ Protein</a>
+
+                <!-- Dark Mode Toggle -->
+                <button
+                    x-data="{ dark: document.documentElement.classList.contains('dark') }"
+                    @click="dark = !dark; document.documentElement.classList.toggle('dark'); localStorage.setItem('theme', dark ? 'dark' : 'light')"
+                    class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                    aria-label="Toggle dark mode"
+                >
+                    <svg x-show="!dark" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+                    </svg>
+                    <svg x-show="dark" x-cloak class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/>
+                    </svg>
+                </button>
+
+                <a href="/#sites" class="bg-brand-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-brand-600 transition-colors">
+                    Browse All Sites
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="flex items-center gap-2 md:hidden">
+                <!-- Mobile Dark Mode Toggle -->
+                <button
+                    x-data="{ dark: document.documentElement.classList.contains('dark') }"
+                    @click="dark = !dark; document.documentElement.classList.toggle('dark'); localStorage.setItem('theme', dark ? 'dark' : 'light')"
+                    class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                    aria-label="Toggle dark mode"
+                >
+                    <svg x-show="!dark" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+                    </svg>
+                    <svg x-show="dark" x-cloak class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/>
+                    </svg>
+                </button>
+
+                <button
+                    x-data="{ open: false }"
+                    @click="open = !open; $dispatch('toggle-mobile-menu', { open })"
+                    class="p-2 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white"
+                    aria-label="Toggle menu"
+                >
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div
+        x-data="{ open: false }"
+        @toggle-mobile-menu.window="open = $event.detail.open"
+        x-show="open"
+        x-cloak
+        class="md:hidden bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-700"
+    >
+        <div class="px-4 py-4 space-y-3">
+            <a href="/breakfast/" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">Breakfast Hub</a>
+            <a href="/tools/" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">Protein Tools</a>
+            <div class="border-t border-slate-200 dark:border-slate-700 my-2"></div>
+            <a href="/category-breakfast.html" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">All Breakfast</a>
+            <a href="/category-desserts.html" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">Desserts</a>
+            <a href="/category-snacks.html" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">Snacks</a>
+            <a href="/category-savory.html" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">Savory</a>
+            <a href="/high-protein.html" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">30g+ Protein</a>
+            <a href="/#sites" class="block bg-brand-500 text-white px-4 py-2 rounded-lg font-semibold text-center">
+                Browse All Sites
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!-- Spacer for fixed nav -->
+<div class="h-16"></div>
+
+
+<main class="flex-grow py-8">
+  <div class="max-w-7xl mx-auto px-4" x-data="breakfastBuilder()">
+
+    <!-- Breadcrumb -->
+    <nav class="mb-8 text-sm">
+      <ol class="flex items-center gap-2 text-slate-500 dark:text-slate-400">
+        <li><a href="/" class="hover:text-slate-900 dark:hover:text-white">Home</a></li>
+        <li>/</li>
+        <li><a href="/tools/" class="hover:text-slate-900 dark:hover:text-white">Tools</a></li>
+        <li>/</li>
+        <li class="text-slate-900 dark:text-white font-medium">Breakfast Builder</li>
+      </ol>
+    </nav>
+
+    <!-- Header -->
+    <div class="text-center mb-8">
+      <h1 class="font-anton text-4xl lg:text-5xl uppercase mb-4">BREAKFAST MACRO BUILDER</h1>
+      <p class="text-xl text-slate-600 dark:text-slate-400">Find your perfect high-protein breakfast</p>
+    </div>
+
+    <div class="lg:flex lg:gap-8">
+
+      <!-- Filter Panel (Sticky on desktop) -->
+      <div class="lg:w-80 lg:flex-shrink-0 mb-8 lg:mb-0">
+        <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-lg lg:sticky lg:top-24">
+          <h2 class="font-bold text-lg mb-6">Set Your Targets</h2>
+
+          <!-- Protein Target -->
+          <div class="mb-6">
+            <label class="flex justify-between mb-2">
+              <span class="font-semibold">Min Protein</span>
+              <span class="text-brand-600 dark:text-brand-400 font-bold" x-text="minProtein + 'g'"></span>
+            </label>
+            <input type="range" min="10" max="60" step="5" x-model.number="minProtein"
+                   class="w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-lg appearance-none cursor-pointer accent-brand-500">
+            <div class="flex justify-between text-xs text-slate-500 mt-1">
+              <span>10g</span><span>60g</span>
+            </div>
+          </div>
+
+          <!-- Calorie Cap -->
+          <div class="mb-6">
+            <label class="flex justify-between mb-2">
+              <span class="font-semibold">Max Calories</span>
+              <span class="text-brand-600 dark:text-brand-400 font-bold" x-text="maxCalories"></span>
+            </label>
+            <input type="range" min="200" max="800" step="50" x-model.number="maxCalories"
+                   class="w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-lg appearance-none cursor-pointer accent-brand-500">
+            <div class="flex justify-between text-xs text-slate-500 mt-1">
+              <span>200</span><span>800</span>
+            </div>
+          </div>
+
+          <!-- Max Prep Time -->
+          <div class="mb-6">
+            <label class="flex justify-between mb-2">
+              <span class="font-semibold">Max Time</span>
+              <span class="text-brand-600 dark:text-brand-400 font-bold" x-text="maxTime + ' min'"></span>
+            </label>
+            <input type="range" min="5" max="60" step="5" x-model.number="maxTime"
+                   class="w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-lg appearance-none cursor-pointer accent-brand-500">
+            <div class="flex justify-between text-xs text-slate-500 mt-1">
+              <span>5 min</span><span>60 min</span>
+            </div>
+          </div>
+
+          <!-- Dietary Filters -->
+          <div class="mb-6">
+            <div class="font-semibold mb-3">Dietary Preferences</div>
+            <div class="space-y-2">
+              <label class="flex items-center gap-2 cursor-pointer">
+                <input type="checkbox" x-model="filters.vegan" class="rounded text-brand-500 focus:ring-brand-500">
+                <span>Vegan</span>
+              </label>
+              <label class="flex items-center gap-2 cursor-pointer">
+                <input type="checkbox" x-model="filters.vegetarian" class="rounded text-brand-500 focus:ring-brand-500">
+                <span>Vegetarian</span>
+              </label>
+              <label class="flex items-center gap-2 cursor-pointer">
+                <input type="checkbox" x-model="filters.glutenFree" class="rounded text-brand-500 focus:ring-brand-500">
+                <span>Gluten-Free</span>
+              </label>
+              <label class="flex items-center gap-2 cursor-pointer">
+                <input type="checkbox" x-model="filters.dairyFree" class="rounded text-brand-500 focus:ring-brand-500">
+                <span>Dairy-Free</span>
+              </label>
+              <label class="flex items-center gap-2 cursor-pointer">
+                <input type="checkbox" x-model="filters.keto" class="rounded text-brand-500 focus:ring-brand-500">
+                <span>Keto</span>
+              </label>
+              <label class="flex items-center gap-2 cursor-pointer">
+                <input type="checkbox" x-model="filters.noEggs" class="rounded text-brand-500 focus:ring-brand-500">
+                <span>No Eggs</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Reset -->
+          <button @click="resetFilters()"
+                  class="w-full py-2 text-sm text-slate-600 dark:text-slate-400 hover:text-brand-600 dark:hover:text-brand-400 transition-colors">
+            Reset Filters
+          </button>
+
+          <!-- Results Count -->
+          <div class="mt-6 pt-6 border-t border-slate-200 dark:border-slate-700 text-center">
+            <div class="text-3xl font-bold text-brand-600 dark:text-brand-400" x-text="filteredRecipes.length"></div>
+            <div class="text-sm text-slate-500 dark:text-slate-400">matching recipes</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Results Grid -->
+      <div class="flex-grow">
+        <div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-6">
+          <template x-for="recipe in filteredRecipes" :key="recipe.slug">
+            <a :href="'/' + recipe.slug + '-preview.html'"
+               class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm
+                      hover:shadow-lg transition-all border border-slate-100 dark:border-slate-700">
+              <div class="aspect-square bg-slate-100 dark:bg-slate-700 relative overflow-hidden">
+                <img :src="recipe.image" :alt="recipe.title"
+                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                     loading="lazy"
+                     onerror="this.src='/images/placeholder.png'">
+                <div class="absolute top-3 left-3 bg-accent-500 text-white text-sm font-bold px-2 py-1 rounded-lg"
+                     x-text="recipe.protein + 'g'"></div>
+                <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-medium px-2 py-1 rounded-lg"
+                     x-text="recipe.sourceName"></div>
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold text-slate-900 dark:text-white group-hover:text-brand-600
+                           dark:group-hover:text-brand-400 line-clamp-2 transition-colors" x-text="recipe.title"></h3>
+                <div class="mt-2 flex items-center gap-3 text-sm text-slate-500 dark:text-slate-400">
+                  <span x-text="recipe.calories + ' cal'"></span>
+                  <span>&bull;</span>
+                  <span x-text="recipe.totalTime + ' min'"></span>
+                </div>
+              </div>
+            </a>
+          </template>
+        </div>
+
+        <!-- No Results -->
+        <div x-show="filteredRecipes.length === 0" class="text-center py-16">
+          <div class="text-6xl mb-4">&#128533;</div>
+          <h3 class="text-xl font-bold mb-2">No recipes match your criteria</h3>
+          <p class="text-slate-600 dark:text-slate-400">Try adjusting your filters to see more options</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+
+<footer class="bg-slate-900 dark:bg-slate-950 text-white py-12 mt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- Brand -->
+            <div class="col-span-1">
+                <div class="flex items-center gap-2 mb-4">
+                    <img src="/images/logo.png" alt="HighProtein.Recipes" class="h-10 w-10 rounded-full">
+                    <span class="font-anton text-xl tracking-tight uppercase">HighProtein<span class="text-brand-500">.Recipes</span></span>
+                </div>
+                <p class="text-slate-400 text-sm">
+                    Your gateway to 300+ macro-verified high-protein recipes across 12 specialized sites.
+                </p>
+            </div>
+
+            <!-- Categories -->
+            <div>
+                <h4 class="font-semibold mb-4">Categories</h4>
+                <ul class="space-y-2 text-slate-400 text-sm">
+                    <li><a href="/category-breakfast.html" class="hover:text-white transition-colors">Breakfast</a></li>
+                    <li><a href="/category-desserts.html" class="hover:text-white transition-colors">Desserts</a></li>
+                    <li><a href="/category-snacks.html" class="hover:text-white transition-colors">Snacks</a></li>
+                    <li><a href="/category-savory.html" class="hover:text-white transition-colors">Savory</a></li>
+                </ul>
+            </div>
+
+            <!-- Popular Ingredients -->
+            <div>
+                <h4 class="font-semibold mb-4">By Ingredient</h4>
+                <ul class="space-y-2 text-slate-400 text-sm">
+                    <li><a href="/ingredient-protein-powder.html" class="hover:text-white transition-colors">Protein Powder</a></li>
+                    <li><a href="/ingredient-greek-yogurt.html" class="hover:text-white transition-colors">Greek Yogurt</a></li>
+                    <li><a href="/ingredient-cottage-cheese.html" class="hover:text-white transition-colors">Cottage Cheese</a></li>
+                    <li><a href="/ingredient-oats.html" class="hover:text-white transition-colors">Oats</a></li>
+                </ul>
+            </div>
+
+            <!-- Legal -->
+            <div>
+                <h4 class="font-semibold mb-4">Legal</h4>
+                <ul class="space-y-2 text-slate-400 text-sm">
+                    <li><a href="/privacy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                    <li><a href="/terms.html" class="hover:text-white transition-colors">Terms of Use</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Empire Links -->
+        <div class="mt-12 pt-8 border-t border-slate-800">
+            <p class="text-slate-500 text-sm text-center mb-4">The Protein Empire</p>
+            <div class="flex flex-wrap justify-center gap-4 text-slate-400 text-sm">
+                <a href="https://proteinmuffins.com" class="hover:text-white transition-colors">Muffins</a>
+                <a href="https://proteincookies.co" class="hover:text-white transition-colors">Cookies</a>
+                <a href="https://proteinpancakes.co" class="hover:text-white transition-colors">Pancakes</a>
+                <a href="https://proteinbrownies.co" class="hover:text-white transition-colors">Brownies</a>
+                <a href="https://protein-bread.com" class="hover:text-white transition-colors">Bread</a>
+                <a href="https://proteinbars.co" class="hover:text-white transition-colors">Bars</a>
+                <a href="https://proteinbites.co" class="hover:text-white transition-colors">Bites</a>
+                <a href="https://proteindonuts.co" class="hover:text-white transition-colors">Donuts</a>
+                <a href="https://proteinoatmeal.co" class="hover:text-white transition-colors">Oatmeal</a>
+                <a href="https://proteincheesecake.co" class="hover:text-white transition-colors">Cheesecake</a>
+                <a href="https://proteinpizzas.co" class="hover:text-white transition-colors">Pizza</a>
+                <a href="https://proteinpudding.co" class="hover:text-white transition-colors">Pudding</a>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="mt-8 text-center text-slate-500 text-sm">
+            <p>&copy; 2026 <a href="https://HighProtein.Recipes" class="hover:text-amber-400 transition-colors">High Protein Recipes</a>. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+<script>
+const BREAKFAST_RECIPES = [{"slug":"apple-protein-muffins","title":"Apple Protein Muffins","protein":19,"calories":125,"carbs":0,"fat":0,"prepTime":0,"totalTime":37,"tags":[],"image":"https://proteinmuffins.com/recipe_images/apple-cinnamon-protein-muffins.png","sourceSite":"proteinmuffins.com","sourceName":"Muffins","fullRecipeUrl":"https://proteinmuffins.com/apple-protein-muffins.html"},{"slug":"banana-chocolate-chip-protein-muffins","title":"Banana Chocolate Chip Protein Muffins","protein":19,"calories":134,"carbs":0,"fat":0,"prepTime":0,"totalTime":28,"tags":[],"image":"https://proteinmuffins.com/recipe_images/banana-choc-protein-muffins.png","sourceSite":"proteinmuffins.com","sourceName":"Muffins","fullRecipeUrl":"https://proteinmuffins.com/banana-chocolate-chip-protein-muffins.html"},{"slug":"banana-nut-protein-muffins","title":"Banana Nut Protein Muffins","protein":19,"calories":133,"carbs":0,"fat":0,"prepTime":0,"totalTime":32,"tags":[],"image":"https://proteinmuffins.com/recipe_images/banana-nut-protein-muffins.png","sourceSite":"proteinmuffins.com","sourceName":"Muffins","fullRecipeUrl":"https://proteinmuffins.com/banana-nut-protein-muffins.html"},{"slug":"chocolate-chip-protein-muffins","title":"Chocolate Chip Protein Muffins","protein":19,"calories":133,"carbs":0,"fat":0,"prepTime":0,"totalTime":28,"tags":[],"image":"https://proteinmuffins.com/recipe_images/choc-chip-protein-muffins.png","sourceSite":"proteinmuffins.com","sourceName":"Muffins","fullRecipeUrl":"https://proteinmuffins.com/chocolate-chip-protein-muffins.html"},{"slug":"chocolate-protein-muffins","title":"Chocolate Protein Muffins","protein":19,"calories":137,"carbs":0,"fat":0,"prepTime":0,"totalTime":28,"tags":[],"image":"https://proteinmuffins.com/recipe_images/chocolate-protein-muffins.png","sourceSite":"proteinmuffins.com","sourceName":"Muffins","fullRecipeUrl":"https://proteinmuffins.com/chocolate-protein-muffins.html"},{"slug":"cottage-cheese-protein-muffins","title":"Cottage Cheese Protein Muffins","protein":19,"calories":143,"carbs":0,"fat":0,"prepTime":0,"totalTime":30,"tags":[],"image":"https://proteinmuffins.com/recipe_images/cottage-cheese-protein-muffins.png","sourceSite":"proteinmuffins.com","sourceName":"Muffins","fullRecipeUrl":"https://proteinmuffins.com/cottage-cheese-protein-muffins.html"},{"slug":"double-chocolate-protein-muffins","title":"Double Chocolate Protein Muffins","protein":19,"calories":138,"carbs":0,"fat":0,"prepTime":0,"totalTime":32,"tags":[],"image":"https://proteinmuffins.com/recipe_images/double-choc-protein-muffins.png","sourceSite":"proteinmuffins.com","sourceName":"Muffins","fullRecipeUrl":"https://proteinmuffins.com/double-chocolate-protein-muffins.html"},{"slug":"high-fiber-protein-muffins","title":"High Fiber Protein Muffins","protein":18,"calories":165,"carbs":0,"fat":0,"prepTime":0,"totalTime":30,"tags":[],"image":"https://proteinmuffins.com/recipe_images/high-fiber-protein-muffins.png","sourceSite":"proteinmuffins.com","sourceName":"Muffins","fullRecipeUrl":"https://proteinmuffins.com/high-fiber-protein-muffins.html"},{"slug":"high-protein-muffins-with-greek-yogurt","title":"High Protein Muffins With Greek Yogurt","protein":19,"calories":130,"carbs":0,"fat":0,"prepTime":0,"totalTime":28,"tags":[],"image":"https://proteinmuffins.com/recipe_images/greek-yogurt-protein-muffins.png","sourceSite":"proteinmuffins.com","sourceName":"Muffins","fullRecipeUrl":"https://proteinmuffins.com/high-protein-muffins-with-greek-yogurt.html"},{"slug":"high-protein-muffins-without-protein-powder","title":"High Protein Muffins Without Protein Powder","protein":6,"calories":96,"carbs":0,"fat":0,"prepTime":0,"totalTime":32,"tags":[],"image":"https://proteinmuffins.com/recipe_images/without-powder-protein-muffins.png","sourceSite":"proteinmuffins.com","sourceName":"Muffins","fullRecipeUrl":"https://proteinmuffins.com/high-protein-muffins-without-protein-powder.html"},{"slug":"high-protein-muffins","title":"High Protein Muffins","protein":12,"calories":96,"carbs":0,"fat":0,"prepTime":0,"totalTime":32,"tags":[],"image":"https://proteinmuffins.com/recipe_images/high-protein-protein-muffins.png","sourceSite":"proteinmuffins.com","sourceName":"Muffins","fullRecipeUrl":"https://proteinmuffins.com/high-protein-muffins.html"},{"slug":"lemon-blueberry-protein-muffins","title":"Lemon Blueberry Protein Muffins","protein":19,"calories":125,"carbs":0,"fat":0,"prepTime":0,"totalTime":32,"tags":[],"image":"https://proteinmuffins.com/recipe_images/lemon-blueberry-protein-muffins.png","sourceSite":"proteinmuffins.com","sourceName":"Muffins","fullRecipeUrl":"https://proteinmuffins.com/lemon-blueberry-protein-muffins.html"},{"slug":"protein-banana-muffins","title":"Protein Banana Muffins","protein":19,"calories":136,"carbs":0,"fat":0,"prepTime":0,"totalTime":28,"tags":[],"image":"https://proteinmuffins.com/recipe_images/protein-banana-bread-protein-muffins.png","sourceSite":"proteinmuffins.com","sourceName":"Muffins","fullRecipeUrl":"https://proteinmuffins.com/protein-banana-muffins.html"},{"slug":"protein-breakfast-muffins","title":"Protein Breakfast Muffins","protein":19,"calories":133,"carbs":0,"fat":0,"prepTime":0,"totalTime":32,"tags":[],"image":"https://proteinmuffins.com/recipe_images/breakfast-protein-muffins.png","sourceSite":"proteinmuffins.com","sourceName":"Muffins","fullRecipeUrl":"https://proteinmuffins.com/protein-breakfast-muffins.html"},{"slug":"protein-carrot-cake-muffins","title":"Protein Carrot Cake Muffins","protein":19,"calories":130,"carbs":0,"fat":0,"prepTime":0,"totalTime":37,"tags":[],"image":"https://proteinmuffins.com/recipe_images/carrot-cake-protein-muffins.png","sourceSite":"proteinmuffins.com","sourceName":"Muffins","fullRecipeUrl":"https://proteinmuffins.com/protein-carrot-cake-muffins.html"},{"slug":"protein-mini-muffins","title":"Protein Mini Muffins","protein":19,"calories":133,"carbs":0,"fat":0,"prepTime":0,"totalTime":22,"tags":[],"image":"https://proteinmuffins.com/recipe_images/mini-muffins-protein-muffins.png","sourceSite":"proteinmuffins.com","sourceName":"Muffins","fullRecipeUrl":"https://proteinmuffins.com/protein-mini-muffins.html"},{"slug":"protein-muffins-for-kids","title":"Protein Muffins For Kids","protein":8,"calories":80,"carbs":0,"fat":0,"prepTime":0,"totalTime":28,"tags":[],"image":"https://proteinmuffins.com/recipe_images/kids-protein-muffins.png","sourceSite":"proteinmuffins.com","sourceName":"Muffins","fullRecipeUrl":"https://proteinmuffins.com/protein-muffins-for-kids.html"},{"slug":"protein-muffins-recipe","title":"Protein Muffins Recipe","protein":19,"calories":133,"carbs":0,"fat":0,"prepTime":0,"totalTime":28,"tags":[],"image":"https://proteinmuffins.com/recipe_images/protein-protein-muffins.png","sourceSite":"proteinmuffins.com","sourceName":"Muffins","fullRecipeUrl":"https://proteinmuffins.com/protein-muffins-recipe.html"},{"slug":"protein-pancake-muffins","title":"Protein Pancake Muffins","protein":19,"calories":133,"carbs":0,"fat":0,"prepTime":0,"totalTime":23,"tags":[],"image":"https://proteinmuffins.com/recipe_images/protein-pancake-protein-muffins.png","sourceSite":"proteinmuffins.com","sourceName":"Muffins","fullRecipeUrl":"https://proteinmuffins.com/protein-pancake-muffins.html"},{"slug":"protein-powder-muffins","title":"Protein Powder Muffins","protein":19,"calories":133,"carbs":0,"fat":0,"prepTime":0,"totalTime":28,"tags":[],"image":"https://proteinmuffins.com/recipe_images/with-protein-powder-protein-muffins.png","sourceSite":"proteinmuffins.com","sourceName":"Muffins","fullRecipeUrl":"https://proteinmuffins.com/protein-powder-muffins.html"},{"slug":"protein-pumpkin-muffins","title":"Protein Pumpkin Muffins","protein":19,"calories":119,"carbs":0,"fat":0,"prepTime":0,"totalTime":34,"tags":[],"image":"https://proteinmuffins.com/recipe_images/protein-pumpkin-muffins.png","sourceSite":"proteinmuffins.com","sourceName":"Muffins","fullRecipeUrl":"https://proteinmuffins.com/protein-pumpkin-muffins.html"},{"slug":"standard_recipe__banana_protein_muffin","title":"Banana Protein Muffins","protein":19,"calories":133,"carbs":0,"fat":0,"prepTime":0,"totalTime":28,"tags":[],"image":"https://proteinmuffins.com/recipe_images/standard_recipe__banana_protein_muffin.png","sourceSite":"proteinmuffins.com","sourceName":"Muffins","fullRecipeUrl":"https://proteinmuffins.com/standard_recipe__banana_protein_muffin.html"},{"slug":"vegan-protein-muffins","title":"Vegan Protein Muffins","protein":15,"calories":119,"carbs":0,"fat":0,"prepTime":0,"totalTime":34,"tags":[],"image":"https://proteinmuffins.com/recipe_images/vegan-protein-muffins.png","sourceSite":"proteinmuffins.com","sourceName":"Muffins","fullRecipeUrl":"https://proteinmuffins.com/vegan-protein-muffins.html"},{"slug":"zucchini-protein-muffins","title":"Zucchini Protein Muffins","protein":19,"calories":128,"carbs":0,"fat":0,"prepTime":0,"totalTime":37,"tags":[],"image":"https://proteinmuffins.com/recipe_images/zucchini-protein-muffins.png","sourceSite":"proteinmuffins.com","sourceName":"Muffins","fullRecipeUrl":"https://proteinmuffins.com/zucchini-protein-muffins.html"},{"slug":"classic-whey-protein-pancakes","title":"Classic Whey Protein Pancakes","protein":25,"calories":180,"carbs":15,"fat":5,"prepTime":"5","totalTime":"15","tags":["classic","whey","high-protein"],"image":"https://proteinpancakes.co/recipe_images/classic-whey-protein-pancakes.jpg","sourceSite":"proteinpancakes.co","sourceName":"Pancakes","fullRecipeUrl":"https://proteinpancakes.co/classic-whey-protein-pancakes.html"},{"slug":"chocolate-casein-pancakes","title":"Chocolate Casein Pancakes","protein":22,"calories":200,"carbs":18,"fat":7,"prepTime":"5","totalTime":"15","tags":["chocolate","casein","dessert"],"image":"https://proteinpancakes.co/recipe_images/chocolate-casein-pancakes.jpg","sourceSite":"proteinpancakes.co","sourceName":"Pancakes","fullRecipeUrl":"https://proteinpancakes.co/chocolate-casein-pancakes.html"},{"slug":"blueberry-vegan-protein-pancakes","title":"Blueberry Vegan Protein Pancakes","protein":18,"calories":190,"carbs":22,"fat":5,"prepTime":"5","totalTime":"17","tags":["vegan","blueberry","plant-based"],"image":"https://proteinpancakes.co/recipe_images/blueberry-vegan-protein-pancakes.jpg","sourceSite":"proteinpancakes.co","sourceName":"Pancakes","fullRecipeUrl":"https://proteinpancakes.co/blueberry-vegan-protein-pancakes.html"},{"slug":"savory-herb-and-cheese-pancakes","title":"Savory Herb and Cheese Pancakes","protein":28,"calories":220,"carbs":10,"fat":12,"prepTime":"10","totalTime":"20","tags":["savory","cheese","high-protein"],"image":"https://proteinpancakes.co/recipe_images/savory-herb-and-cheese-pancakes.jpg","sourceSite":"proteinpancakes.co","sourceName":"Pancakes","fullRecipeUrl":"https://proteinpancakes.co/savory-herb-and-cheese-pancakes.html"},{"slug":"banana-bread-protein-pancakes","title":"Banana Bread Protein Pancakes","protein":20,"calories":210,"carbs":25,"fat":5,"prepTime":"5","totalTime":"15","tags":["banana","breakfast","comfort-food"],"image":"https://proteinpancakes.co/recipe_images/banana-bread-protein-pancakes.jpg","sourceSite":"proteinpancakes.co","sourceName":"Pancakes","fullRecipeUrl":"https://proteinpancakes.co/banana-bread-protein-pancakes.html"},{"slug":"lemon-ricotta-protein-crepes","title":"Lemon Ricotta Protein Crepes","protein":20,"calories":230,"carbs":15,"fat":12,"prepTime":"10","totalTime":"25","tags":["lemon","ricotta","crepes","dessert"],"image":"https://proteinpancakes.co/recipe_images/lemon-ricotta-protein-crepes.jpg","sourceSite":"proteinpancakes.co","sourceName":"Pancakes","fullRecipeUrl":"https://proteinpancakes.co/lemon-ricotta-protein-crepes.html"},{"slug":"cinnamon-roll-protein-waffles","title":"Cinnamon Roll Protein Waffles","protein":26,"calories":280,"carbs":25,"fat":12,"prepTime":"10","totalTime":"25","tags":["cinnamon-roll","waffles","dessert-for-breakfast"],"image":"https://proteinpancakes.co/recipe_images/cinnamon-roll-protein-waffles.jpg","sourceSite":"proteinpancakes.co","sourceName":"Pancakes","fullRecipeUrl":"https://proteinpancakes.co/cinnamon-roll-protein-waffles.html"},{"slug":"red-velvet-protein-pancakes","title":"Red Velvet Protein Pancakes","protein":24,"calories":250,"carbs":20,"fat":10,"prepTime":"10","totalTime":"20","tags":["red-velvet","chocolate","dessert"],"image":"https://proteinpancakes.co/recipe_images/red-velvet-protein-pancakes.jpg","sourceSite":"proteinpancakes.co","sourceName":"Pancakes","fullRecipeUrl":"https://proteinpancakes.co/red-velvet-protein-pancakes.html"},{"slug":"pumpkin-spice-protein-waffles","title":"Pumpkin Spice Protein Waffles","protein":22,"calories":240,"carbs":22,"fat":9,"prepTime":"10","totalTime":"25","tags":["pumpkin","spice","waffles","fall"],"image":"https://proteinpancakes.co/recipe_images/pumpkin-spice-protein-waffles.jpg","sourceSite":"proteinpancakes.co","sourceName":"Pancakes","fullRecipeUrl":"https://proteinpancakes.co/pumpkin-spice-protein-waffles.html"},{"slug":"chocolate-chip-protein-pancakes","title":"Chocolate Chip Protein Pancakes","protein":25,"calories":260,"carbs":22,"fat":10,"prepTime":"5","totalTime":"15","tags":["chocolate-chip","classic","high-protein"],"image":"https://proteinpancakes.co/recipe_images/chocolate-chip-protein-pancakes.jpg","sourceSite":"proteinpancakes.co","sourceName":"Pancakes","fullRecipeUrl":"https://proteinpancakes.co/chocolate-chip-protein-pancakes.html"},{"slug":"strawberry-shortcake-protein-pancakes","title":"Strawberry Shortcake Protein Pancakes","protein":22,"calories":240,"carbs":25,"fat":7,"prepTime":"10","totalTime":"20","tags":["strawberry","dessert","summer"],"image":"https://proteinpancakes.co/recipe_images/strawberry-shortcake-protein-pancakes.jpg","sourceSite":"proteinpancakes.co","sourceName":"Pancakes","fullRecipeUrl":"https://proteinpancakes.co/strawberry-shortcake-protein-pancakes.html"},{"slug":"double-chocolate-protein-waffles","title":"Double Chocolate Protein Waffles","protein":28,"calories":300,"carbs":25,"fat":14,"prepTime":"10","totalTime":"25","tags":["chocolate","waffles","indulgent"],"image":"https://proteinpancakes.co/recipe_images/double-chocolate-protein-waffles.jpg","sourceSite":"proteinpancakes.co","sourceName":"Pancakes","fullRecipeUrl":"https://proteinpancakes.co/double-chocolate-protein-waffles.html"},{"slug":"matcha-green-tea-protein-crepes","title":"Matcha Green Tea Protein Crepes","protein":20,"calories":220,"carbs":18,"fat":10,"prepTime":"10","totalTime":"25","tags":["matcha","green-tea","crepes","unique"],"image":"https://proteinpancakes.co/recipe_images/matcha-green-tea-protein-crepes.jpg","sourceSite":"proteinpancakes.co","sourceName":"Pancakes","fullRecipeUrl":"https://proteinpancakes.co/matcha-green-tea-protein-crepes.html"},{"slug":"apple-cinnamon-protein-pancakes","title":"Apple Cinnamon Protein Pancakes","protein":23,"calories":250,"carbs":28,"fat":7,"prepTime":"10","totalTime":"22","tags":["apple","cinnamon","fall","comfort-food"],"image":"https://proteinpancakes.co/recipe_images/apple-cinnamon-protein-pancakes.jpg","sourceSite":"proteinpancakes.co","sourceName":"Pancakes","fullRecipeUrl":"https://proteinpancakes.co/apple-cinnamon-protein-pancakes.html"},{"slug":"belgian-protein-waffles","title":"Belgian Protein Waffles","protein":25,"calories":270,"carbs":20,"fat":12,"prepTime":"10","totalTime":"25","tags":["belgian-waffle","classic","crispy"],"image":"https://proteinpancakes.co/recipe_images/belgian-protein-waffles.jpg","sourceSite":"proteinpancakes.co","sourceName":"Pancakes","fullRecipeUrl":"https://proteinpancakes.co/belgian-protein-waffles.html"},{"slug":"peanut-butter-cup-protein-pancakes","title":"Peanut Butter Cup Protein Pancakes","protein":28,"calories":320,"carbs":25,"fat":16,"prepTime":"10","totalTime":"20","tags":["peanut-butter","chocolate","dessert"],"image":"https://proteinpancakes.co/recipe_images/peanut-butter-cup-protein-pancakes.jpg","sourceSite":"proteinpancakes.co","sourceName":"Pancakes","fullRecipeUrl":"https://proteinpancakes.co/peanut-butter-cup-protein-pancakes.html"},{"slug":"carrot-cake-protein-waffles","title":"Carrot Cake Protein Waffles","protein":25,"calories":280,"carbs":28,"fat":12,"prepTime":"10","totalTime":"25","tags":["carrot-cake","waffles","dessert-for-breakfast"],"image":"https://proteinpancakes.co/recipe_images/carrot-cake-protein-waffles.jpg","sourceSite":"proteinpancakes.co","sourceName":"Pancakes","fullRecipeUrl":"https://proteinpancakes.co/carrot-cake-protein-waffles.html"},{"slug":"savory-spinach-and-feta-protein-crepes","title":"Savory Spinach and Feta Protein Crepes","protein":25,"calories":260,"carbs":15,"fat":14,"prepTime":"10","totalTime":"25","tags":["savory","spinach","feta","crepes"],"image":"https://proteinpancakes.co/recipe_images/savory-spinach-and-feta-protein-crepes.jpg","sourceSite":"proteinpancakes.co","sourceName":"Pancakes","fullRecipeUrl":"https://proteinpancakes.co/savory-spinach-and-feta-protein-crepes.html"},{"slug":"lemon-poppy-seed-protein-pancakes","title":"Lemon Poppy Seed Protein Pancakes","protein":24,"calories":250,"carbs":22,"fat":10,"prepTime":"10","totalTime":"20","tags":["lemon","poppy-seed","refreshing"],"image":"https://proteinpancakes.co/recipe_images/lemon-poppy-seed-protein-pancakes.jpg","sourceSite":"proteinpancakes.co","sourceName":"Pancakes","fullRecipeUrl":"https://proteinpancakes.co/lemon-poppy-seed-protein-pancakes.html"},{"slug":"coffee-infused-protein-waffles","title":"Coffee-Infused Protein Waffles","protein":26,"calories":280,"carbs":22,"fat":12,"prepTime":"10","totalTime":"25","tags":["coffee","waffles","caffeine"],"image":"https://proteinpancakes.co/recipe_images/coffee-infused-protein-waffles.jpg","sourceSite":"proteinpancakes.co","sourceName":"Pancakes","fullRecipeUrl":"https://proteinpancakes.co/coffee-infused-protein-waffles.html"},{"slug":"german-chocolate-protein-pancakes","title":"German Chocolate Protein Pancakes","protein":28,"calories":350,"carbs":28,"fat":18,"prepTime":"10","totalTime":"25","tags":["german-chocolate","coconut","pecan","dessert"],"image":"https://proteinpancakes.co/recipe_images/german-chocolate-protein-pancakes.jpg","sourceSite":"proteinpancakes.co","sourceName":"Pancakes","fullRecipeUrl":"https://proteinpancakes.co/german-chocolate-protein-pancakes.html"},{"slug":"churro-protein-waffles","title":"Churro Protein Waffles","protein":25,"calories":300,"carbs":30,"fat":12,"prepTime":"10","totalTime":"25","tags":["churro","cinnamon","dessert"],"image":"https://proteinpancakes.co/recipe_images/churro-protein-waffles.jpg","sourceSite":"proteinpancakes.co","sourceName":"Pancakes","fullRecipeUrl":"https://proteinpancakes.co/churro-protein-waffles.html"},{"slug":"berries-and-cream-protein-crepes","title":"Berries and Cream Protein Crepes","protein":22,"calories":250,"carbs":20,"fat":12,"prepTime":"10","totalTime":"25","tags":["berries","cream","crepes","summer"],"image":"https://proteinpancakes.co/recipe_images/berries-and-cream-protein-crepes.jpg","sourceSite":"proteinpancakes.co","sourceName":"Pancakes","fullRecipeUrl":"https://proteinpancakes.co/berries-and-cream-protein-crepes.html"},{"slug":"samoa-inspired-protein-pancakes","title":"Samoa-Inspired Protein Pancakes","protein":27,"calories":340,"carbs":30,"fat":16,"prepTime":"10","totalTime":"20","tags":["samoa-cookie","chocolate","coconut","caramel"],"image":"https://proteinpancakes.co/recipe_images/samoa-inspired-protein-pancakes.jpg","sourceSite":"proteinpancakes.co","sourceName":"Pancakes","fullRecipeUrl":"https://proteinpancakes.co/samoa-inspired-protein-pancakes.html"},{"slug":"birthday-cake-protein-waffles","title":"Birthday Cake Protein Waffles","protein":26,"calories":290,"carbs":28,"fat":12,"prepTime":"10","totalTime":"25","tags":["birthday-cake","sprinkles","celebration"],"image":"https://proteinpancakes.co/recipe_images/birthday-cake-protein-waffles.jpg","sourceSite":"proteinpancakes.co","sourceName":"Pancakes","fullRecipeUrl":"https://proteinpancakes.co/birthday-cake-protein-waffles.html"},{"slug":"gluten-free-buckwheat-protein-pancakes","title":"Gluten-Free Buckwheat Protein Pancakes","protein":22,"calories":195,"carbs":20,"fat":6,"prepTime":"5","totalTime":"15","tags":["gluten-free","buckwheat","hearty","nutty"],"image":"https://proteinpancakes.co/recipe_images/gluten-free-buckwheat-protein-pancakes.jpg","sourceSite":"proteinpancakes.co","sourceName":"Pancakes","fullRecipeUrl":"https://proteinpancakes.co/gluten-free-buckwheat-protein-pancakes.html"},{"slug":"dairy-free-banana-oat-protein-pancakes","title":"Dairy-Free Banana Oat Protein Pancakes","protein":18,"calories":185,"carbs":24,"fat":5,"prepTime":"5","totalTime":"15","tags":["dairy-free","banana","oat","vegan"],"image":"https://proteinpancakes.co/recipe_images/dairy-free-banana-oat-protein-pancakes.jpg","sourceSite":"proteinpancakes.co","sourceName":"Pancakes","fullRecipeUrl":"https://proteinpancakes.co/dairy-free-banana-oat-protein-pancakes.html"},{"slug":"gluten-free-buckwheat-protein-pancakes","title":"Gluten-Free Buckwheat Protein Pancakes","protein":22,"calories":195,"carbs":20,"fat":6,"prepTime":"5","totalTime":"15","tags":["gluten-free","buckwheat","hearty","nutty"],"image":"https://proteinpancakes.co/recipe_images/gluten-free-buckwheat-protein-pancakes.jpg","sourceSite":"proteinpancakes.co","sourceName":"Pancakes","fullRecipeUrl":"https://proteinpancakes.co/gluten-free-buckwheat-protein-pancakes.html"},{"slug":"dairy-free-banana-oat-protein-pancakes","title":"Dairy-Free Banana Oat Protein Pancakes","protein":18,"calories":185,"carbs":24,"fat":5,"prepTime":"5","totalTime":"15","tags":["dairy-free","banana","oat","vegan"],"image":"https://proteinpancakes.co/recipe_images/dairy-free-banana-oat-protein-pancakes.jpg","sourceSite":"proteinpancakes.co","sourceName":"Pancakes","fullRecipeUrl":"https://proteinpancakes.co/dairy-free-banana-oat-protein-pancakes.html"},{"slug":"high-protein-oatmeal","title":"High Protein Oatmeal","protein":28,"calories":380,"carbs":45,"fat":10,"prepTime":"5","totalTime":"10","tags":["high protein","classic","breakfast"],"image":"https://proteinoatmeal.co/recipe_images/high-protein-oatmeal.jpg","sourceSite":"proteinoatmeal.co","sourceName":"Oatmeal","fullRecipeUrl":"https://proteinoatmeal.co/high-protein-oatmeal.html"},{"slug":"protein-oatmeal-recipe","title":"Protein Oatmeal Recipe","protein":25,"calories":350,"carbs":42,"fat":9,"prepTime":"5","totalTime":"10","tags":["recipe","easy","creamy"],"image":"https://proteinoatmeal.co/recipe_images/protein-oatmeal-recipe.jpg","sourceSite":"proteinoatmeal.co","sourceName":"Oatmeal","fullRecipeUrl":"https://proteinoatmeal.co/protein-oatmeal-recipe.html"},{"slug":"protein-powder-in-oatmeal","title":"Protein Powder in Oatmeal","protein":26,"calories":340,"carbs":40,"fat":8,"prepTime":"3","totalTime":"8","tags":["protein powder","tips","technique"],"image":"https://proteinoatmeal.co/recipe_images/protein-powder-in-oatmeal.jpg","sourceSite":"proteinoatmeal.co","sourceName":"Oatmeal","fullRecipeUrl":"https://proteinoatmeal.co/protein-powder-in-oatmeal.html"},{"slug":"oatmeal-with-protein-powder","title":"Oatmeal with Protein Powder","protein":24,"calories":360,"carbs":44,"fat":9,"prepTime":"5","totalTime":"10","tags":["fluffy","protein powder","energy"],"image":"https://proteinoatmeal.co/recipe_images/oatmeal-with-protein-powder.jpg","sourceSite":"proteinoatmeal.co","sourceName":"Oatmeal","fullRecipeUrl":"https://proteinoatmeal.co/oatmeal-with-protein-powder.html"},{"slug":"high-protein-oatmeal-recipe","title":"High Protein Oatmeal Recipe","protein":30,"calories":420,"carbs":48,"fat":12,"prepTime":"5","totalTime":"10","tags":["high protein","athlete","muscle building"],"image":"https://proteinoatmeal.co/recipe_images/high-protein-oatmeal-recipe.jpg","sourceSite":"proteinoatmeal.co","sourceName":"Oatmeal","fullRecipeUrl":"https://proteinoatmeal.co/high-protein-oatmeal-recipe.html"},{"slug":"high-protein-baked-oatmeal","title":"High Protein Baked Oatmeal","protein":22,"calories":320,"carbs":38,"fat":10,"prepTime":"10","totalTime":"45","tags":["baked","meal prep","make ahead"],"image":"https://proteinoatmeal.co/recipe_images/high-protein-baked-oatmeal.jpg","sourceSite":"proteinoatmeal.co","sourceName":"Oatmeal","fullRecipeUrl":"https://proteinoatmeal.co/high-protein-baked-oatmeal.html"},{"slug":"protein-baked-oatmeal","title":"Protein Baked Oatmeal","protein":20,"calories":290,"carbs":35,"fat":8,"prepTime":"10","totalTime":"40","tags":["baked","soft","cake-like"],"image":"https://proteinoatmeal.co/recipe_images/protein-baked-oatmeal.jpg","sourceSite":"proteinoatmeal.co","sourceName":"Oatmeal","fullRecipeUrl":"https://proteinoatmeal.co/protein-baked-oatmeal.html"},{"slug":"protein-oatmeal-cookies","title":"Protein Oatmeal Cookies","protein":12,"calories":180,"carbs":22,"fat":6,"prepTime":"10","totalTime":"22","tags":["cookies","breakfast","portable"],"image":"https://proteinoatmeal.co/recipe_images/protein-oatmeal-cookies.jpg","sourceSite":"proteinoatmeal.co","sourceName":"Oatmeal","fullRecipeUrl":"https://proteinoatmeal.co/protein-oatmeal-cookies.html"},{"slug":"oatmeal-protein-bars","title":"Oatmeal Protein Bars","protein":15,"calories":220,"carbs":26,"fat":9,"prepTime":"15","totalTime":"75","tags":["bars","no-bake","portable"],"image":"https://proteinoatmeal.co/recipe_images/oatmeal-protein-bars.jpg","sourceSite":"proteinoatmeal.co","sourceName":"Oatmeal","fullRecipeUrl":"https://proteinoatmeal.co/oatmeal-protein-bars.html"},{"slug":"overnight-protein-oats","title":"Overnight Protein Oats","protein":23,"calories":340,"carbs":40,"fat":10,"prepTime":"5","totalTime":"485","tags":["overnight","meal prep","cold"],"image":"https://proteinoatmeal.co/recipe_images/overnight-protein-oats.jpg","sourceSite":"proteinoatmeal.co","sourceName":"Oatmeal","fullRecipeUrl":"https://proteinoatmeal.co/overnight-protein-oats.html"},{"slug":"chocolate-protein-oatmeal","title":"Chocolate Protein Oatmeal","protein":25,"calories":380,"carbs":46,"fat":11,"prepTime":"5","totalTime":"10","tags":["chocolate","dessert","indulgent"],"image":"https://proteinoatmeal.co/recipe_images/chocolate-protein-oatmeal.jpg","sourceSite":"proteinoatmeal.co","sourceName":"Oatmeal","fullRecipeUrl":"https://proteinoatmeal.co/chocolate-protein-oatmeal.html"},{"slug":"peanut-butter-protein-oatmeal","title":"Peanut Butter Protein Oatmeal","protein":27,"calories":420,"carbs":44,"fat":15,"prepTime":"5","totalTime":"10","tags":["peanut butter","creamy","filling"],"image":"https://proteinoatmeal.co/recipe_images/peanut-butter-protein-oatmeal.jpg","sourceSite":"proteinoatmeal.co","sourceName":"Oatmeal","fullRecipeUrl":"https://proteinoatmeal.co/peanut-butter-protein-oatmeal.html"},{"slug":"banana-protein-oatmeal","title":"Banana Protein Oatmeal","protein":24,"calories":350,"carbs":48,"fat":8,"prepTime":"5","totalTime":"10","tags":["banana","natural","no sugar added"],"image":"https://proteinoatmeal.co/recipe_images/banana-protein-oatmeal.jpg","sourceSite":"proteinoatmeal.co","sourceName":"Oatmeal","fullRecipeUrl":"https://proteinoatmeal.co/banana-protein-oatmeal.html"},{"slug":"apple-cinnamon-protein-oatmeal","title":"Apple Cinnamon Protein Oatmeal","protein":23,"calories":360,"carbs":50,"fat":8,"prepTime":"5","totalTime":"13","tags":["apple","cinnamon","fall"],"image":"https://proteinoatmeal.co/recipe_images/apple-cinnamon-protein-oatmeal.jpg","sourceSite":"proteinoatmeal.co","sourceName":"Oatmeal","fullRecipeUrl":"https://proteinoatmeal.co/apple-cinnamon-protein-oatmeal.html"},{"slug":"blueberry-protein-oatmeal","title":"Blueberry Protein Oatmeal","protein":24,"calories":340,"carbs":44,"fat":8,"prepTime":"5","totalTime":"10","tags":["blueberry","antioxidant","berry"],"image":"https://proteinoatmeal.co/recipe_images/blueberry-protein-oatmeal.jpg","sourceSite":"proteinoatmeal.co","sourceName":"Oatmeal","fullRecipeUrl":"https://proteinoatmeal.co/blueberry-protein-oatmeal.html"},{"slug":"pumpkin-protein-oatmeal","title":"Pumpkin Protein Oatmeal","protein":25,"calories":370,"carbs":48,"fat":9,"prepTime":"5","totalTime":"10","tags":["pumpkin","fall","seasonal"],"image":"https://proteinoatmeal.co/recipe_images/pumpkin-protein-oatmeal.jpg","sourceSite":"proteinoatmeal.co","sourceName":"Oatmeal","fullRecipeUrl":"https://proteinoatmeal.co/pumpkin-protein-oatmeal.html"},{"slug":"vanilla-protein-oatmeal","title":"Vanilla Protein Oatmeal","protein":24,"calories":320,"carbs":40,"fat":8,"prepTime":"5","totalTime":"10","tags":["vanilla","base recipe","customizable"],"image":"https://proteinoatmeal.co/recipe_images/vanilla-protein-oatmeal.jpg","sourceSite":"proteinoatmeal.co","sourceName":"Oatmeal","fullRecipeUrl":"https://proteinoatmeal.co/vanilla-protein-oatmeal.html"},{"slug":"strawberry-protein-oatmeal","title":"Strawberry Protein Oatmeal","protein":23,"calories":330,"carbs":42,"fat":8,"prepTime":"5","totalTime":"10","tags":["strawberry","fresh","berry"],"image":"https://proteinoatmeal.co/recipe_images/strawberry-protein-oatmeal.jpg","sourceSite":"proteinoatmeal.co","sourceName":"Oatmeal","fullRecipeUrl":"https://proteinoatmeal.co/strawberry-protein-oatmeal.html"},{"slug":"savory-protein-oatmeal","title":"Savory Protein Oatmeal","protein":28,"calories":380,"carbs":38,"fat":14,"prepTime":"5","totalTime":"15","tags":["savory","eggs","cheese"],"image":"https://proteinoatmeal.co/recipe_images/savory-protein-oatmeal.jpg","sourceSite":"proteinoatmeal.co","sourceName":"Oatmeal","fullRecipeUrl":"https://proteinoatmeal.co/savory-protein-oatmeal.html"},{"slug":"maple-pecan-protein-oatmeal","title":"Maple Pecan Protein Oatmeal","protein":24,"calories":400,"carbs":46,"fat":14,"prepTime":"5","totalTime":"10","tags":["maple","pecan","indulgent"],"image":"https://proteinoatmeal.co/recipe_images/maple-pecan-protein-oatmeal.jpg","sourceSite":"proteinoatmeal.co","sourceName":"Oatmeal","fullRecipeUrl":"https://proteinoatmeal.co/maple-pecan-protein-oatmeal.html"},{"slug":"coconut-protein-oatmeal","title":"Coconut Protein Oatmeal","protein":22,"calories":360,"carbs":42,"fat":12,"prepTime":"5","totalTime":"10","tags":["coconut","tropical","island"],"image":"https://proteinoatmeal.co/recipe_images/coconut-protein-oatmeal.jpg","sourceSite":"proteinoatmeal.co","sourceName":"Oatmeal","fullRecipeUrl":"https://proteinoatmeal.co/coconut-protein-oatmeal.html"},{"slug":"coffee-protein-oatmeal","title":"Coffee Protein Oatmeal","protein":24,"calories":340,"carbs":40,"fat":10,"prepTime":"5","totalTime":"10","tags":["coffee","caffeine","morning"],"image":"https://proteinoatmeal.co/recipe_images/coffee-protein-oatmeal.jpg","sourceSite":"proteinoatmeal.co","sourceName":"Oatmeal","fullRecipeUrl":"https://proteinoatmeal.co/coffee-protein-oatmeal.html"},{"slug":"carrot-cake-protein-oatmeal","title":"Carrot Cake Protein Oatmeal","protein":23,"calories":370,"carbs":48,"fat":10,"prepTime":"5","totalTime":"10","tags":["carrot cake","dessert","spiced"],"image":"https://proteinoatmeal.co/recipe_images/carrot-cake-protein-oatmeal.jpg","sourceSite":"proteinoatmeal.co","sourceName":"Oatmeal","fullRecipeUrl":"https://proteinoatmeal.co/carrot-cake-protein-oatmeal.html"},{"slug":"almond-butter-protein-oatmeal","title":"Almond Butter Protein Oatmeal","protein":26,"calories":400,"carbs":42,"fat":14,"prepTime":"5","totalTime":"10","tags":["almond butter","healthy fats","filling"],"image":"https://proteinoatmeal.co/recipe_images/almond-butter-protein-oatmeal.jpg","sourceSite":"proteinoatmeal.co","sourceName":"Oatmeal","fullRecipeUrl":"https://proteinoatmeal.co/almond-butter-protein-oatmeal.html"},{"slug":"mixed-berry-protein-oatmeal","title":"Mixed Berry Protein Oatmeal","protein":24,"calories":350,"carbs":46,"fat":8,"prepTime":"5","totalTime":"10","tags":["mixed berry","antioxidant","colorful"],"image":"https://proteinoatmeal.co/recipe_images/mixed-berry-protein-oatmeal.jpg","sourceSite":"proteinoatmeal.co","sourceName":"Oatmeal","fullRecipeUrl":"https://proteinoatmeal.co/mixed-berry-protein-oatmeal.html"},{"slug":"gluten-free-certified-oats-protein-oatmeal","title":"Gluten-Free Certified Oats Protein Oatmeal","protein":25,"calories":320,"carbs":35,"fat":8,"prepTime":"2","totalTime":"7","tags":["gluten-free","certified-oats","quick","high-protein"],"image":"https://proteinoatmeal.co/recipe_images/gluten-free-certified-oats-protein-oatmeal.jpg","sourceSite":"proteinoatmeal.co","sourceName":"Oatmeal","fullRecipeUrl":"https://proteinoatmeal.co/gluten-free-certified-oats-protein-oatmeal.html"},{"slug":"dairy-free-coconut-milk-protein-oatmeal","title":"Dairy-Free Coconut Milk Protein Oatmeal","protein":22,"calories":340,"carbs":38,"fat":12,"prepTime":"2","totalTime":"7","tags":["dairy-free","coconut","tropical","vegan"],"image":"https://proteinoatmeal.co/recipe_images/dairy-free-coconut-milk-protein-oatmeal.jpg","sourceSite":"proteinoatmeal.co","sourceName":"Oatmeal","fullRecipeUrl":"https://proteinoatmeal.co/dairy-free-coconut-milk-protein-oatmeal.html"}];
+
+document.addEventListener('alpine:init', () => {
+  Alpine.data('breakfastBuilder', () => ({
+    recipes: BREAKFAST_RECIPES,
+    minProtein: 25,
+    maxCalories: 500,
+    maxTime: 30,
+    filters: {
+      vegan: false,
+      vegetarian: false,
+      glutenFree: false,
+      dairyFree: false,
+      keto: false,
+      noEggs: false
+    },
+
+    get filteredRecipes() {
+      return this.recipes.filter(r => {
+        // Macro filters
+        if (r.protein < this.minProtein) return false;
+        if (r.calories > this.maxCalories) return false;
+        if (r.totalTime > this.maxTime) return false;
+
+        // Dietary filters
+        const tags = r.tags.map(t => t.toLowerCase());
+        if (this.filters.vegan && !tags.includes('vegan')) return false;
+        if (this.filters.vegetarian && !tags.includes('vegetarian') && !tags.includes('vegan')) return false;
+        if (this.filters.glutenFree && !tags.some(t => t.includes('gluten-free') || t.includes('gluten free'))) return false;
+        if (this.filters.dairyFree && !tags.some(t => t.includes('dairy-free') || t.includes('dairy free'))) return false;
+        if (this.filters.keto && !tags.some(t => t.includes('keto') || t.includes('low-carb') || t.includes('low carb'))) return false;
+        if (this.filters.noEggs && !tags.some(t => t.includes('no-eggs') || t.includes('egg-free') || t.includes('no eggs'))) return false;
+
+        return true;
+      }).sort((a, b) => b.protein - a.protein);
+    },
+
+    resetFilters() {
+      this.minProtein = 25;
+      this.maxCalories = 500;
+      this.maxTime = 30;
+      this.filters = { vegan: false, vegetarian: false, glutenFree: false, dairyFree: false, keto: false, noEggs: false };
+    }
+  }));
+});
+</script>
+
+</body>
+</html>

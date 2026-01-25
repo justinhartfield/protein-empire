@@ -1,0 +1,457 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>P:E Ratio Calculator - Protein to Energy Ratio Tool | HighProtein.Recipes | HighProtein.Recipes</title>
+
+<!-- SEO Meta Tags -->
+<meta name="description" content="Calculate protein-to-energy ratio for any food. Find out if your meals are ELITE, EXCELLENT, or GOOD for protein density. Free P:E ratio calculator.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://highprotein.recipes/tools/pe-ratio-calculator.html">
+
+<!-- Open Graph / Social Sharing -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="HighProtein.Recipes">
+<meta property="og:title" content="P:E Ratio Calculator - Protein to Energy Ratio Tool | HighProtein.Recipes">
+<meta property="og:description" content="Calculate protein-to-energy ratio for any food. Find out if your meals are ELITE, EXCELLENT, or GOOD for protein density. Free P:E ratio calculator.">
+<meta property="og:image" content="https://highprotein.recipes/images/social-share.png">
+<meta property="og:url" content="https://highprotein.recipes/tools/pe-ratio-calculator.html">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="P:E Ratio Calculator - Protein to Energy Ratio Tool | HighProtein.Recipes">
+<meta name="twitter:description" content="Calculate protein-to-energy ratio for any food. Find out if your meals are ELITE, EXCELLENT, or GOOD for protein density. Free P:E ratio calculator.">
+<meta name="twitter:image" content="https://highprotein.recipes/images/social-share.png">
+
+<!-- Theme & Favicon -->
+<meta name="theme-color" content="#f59e0b">
+<link rel="icon" type="image/png" href="/images/favicon.png">
+<link rel="apple-touch-icon" href="/images/favicon.png">
+
+<!-- Performance: DNS Prefetch & Preconnect -->
+<link rel="dns-prefetch" href="//cdn.tailwindcss.com">
+<link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+
+
+<!-- Dark Mode: Apply before page renders to prevent flash -->
+<script>
+(function(){
+  var s = localStorage.getItem('theme');
+  var d = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  if (s === 'dark' || (!s && d)) document.documentElement.classList.add('dark');
+})();
+</script>
+
+<!-- Scripts -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+
+
+<!-- Tailwind Config -->
+<script>
+    tailwind.config = {
+        darkMode: 'class',
+        theme: {
+            extend: {
+                fontFamily: {
+                    'anton': ['Anton', 'sans-serif'],
+                    'sans': ['Inter', 'sans-serif'],
+                },
+                colors: {
+                    brand: {
+                        50: '#fffbeb',
+                        100: '#fef3c7',
+                        500: '#f59e0b',
+                        600: '#d97706',
+                        900: '#451a03',
+                    },
+                    accent: {
+                        500: '#10b981',
+                    }
+                }
+            }
+        }
+    }
+</script>
+
+<style>
+    [x-cloak] { display: none !important; }
+</style>
+
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-86MYLJ5WDT"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-86MYLJ5WDT');
+</script>
+
+
+</head>
+<body class="min-h-screen flex flex-col bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100 font-sans">
+
+<nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/80 dark:bg-slate-900/80 border-b border-slate-200 dark:border-slate-700">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <!-- Logo -->
+            <a href="/" class="flex items-center gap-2">
+                <img src="/images/logo.png" alt="HighProtein.Recipes" class="h-10 w-10 rounded-full">
+                <span class="font-anton text-xl text-slate-900 dark:text-white tracking-tight uppercase">HighProtein<span class="text-brand-500">.Recipes</span></span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center gap-6">
+                <div class="relative group">
+                    <button class="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium transition-colors flex items-center gap-1">
+                        Categories
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="absolute top-full left-0 mt-2 w-48 bg-white dark:bg-slate-800 rounded-lg shadow-lg border border-slate-100 dark:border-slate-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+                        <a href="/category-breakfast.html" class="block px-4 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white">Breakfast</a>
+                        <a href="/category-desserts.html" class="block px-4 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white">Desserts</a>
+                        <a href="/category-snacks.html" class="block px-4 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white">Snacks</a>
+                        <a href="/category-savory.html" class="block px-4 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white">Savory</a>
+                    </div>
+                </div>
+                <a href="/breakfast/" class="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium transition-colors">Breakfast</a>
+                <a href="/tools/" class="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium transition-colors">Tools</a>
+                <a href="/high-protein.html" class="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium transition-colors">30g+ Protein</a>
+
+                <!-- Dark Mode Toggle -->
+                <button
+                    x-data="{ dark: document.documentElement.classList.contains('dark') }"
+                    @click="dark = !dark; document.documentElement.classList.toggle('dark'); localStorage.setItem('theme', dark ? 'dark' : 'light')"
+                    class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                    aria-label="Toggle dark mode"
+                >
+                    <svg x-show="!dark" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+                    </svg>
+                    <svg x-show="dark" x-cloak class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/>
+                    </svg>
+                </button>
+
+                <a href="/#sites" class="bg-brand-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-brand-600 transition-colors">
+                    Browse All Sites
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="flex items-center gap-2 md:hidden">
+                <!-- Mobile Dark Mode Toggle -->
+                <button
+                    x-data="{ dark: document.documentElement.classList.contains('dark') }"
+                    @click="dark = !dark; document.documentElement.classList.toggle('dark'); localStorage.setItem('theme', dark ? 'dark' : 'light')"
+                    class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                    aria-label="Toggle dark mode"
+                >
+                    <svg x-show="!dark" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+                    </svg>
+                    <svg x-show="dark" x-cloak class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/>
+                    </svg>
+                </button>
+
+                <button
+                    x-data="{ open: false }"
+                    @click="open = !open; $dispatch('toggle-mobile-menu', { open })"
+                    class="p-2 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white"
+                    aria-label="Toggle menu"
+                >
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div
+        x-data="{ open: false }"
+        @toggle-mobile-menu.window="open = $event.detail.open"
+        x-show="open"
+        x-cloak
+        class="md:hidden bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-700"
+    >
+        <div class="px-4 py-4 space-y-3">
+            <a href="/breakfast/" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">Breakfast Hub</a>
+            <a href="/tools/" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">Protein Tools</a>
+            <div class="border-t border-slate-200 dark:border-slate-700 my-2"></div>
+            <a href="/category-breakfast.html" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">All Breakfast</a>
+            <a href="/category-desserts.html" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">Desserts</a>
+            <a href="/category-snacks.html" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">Snacks</a>
+            <a href="/category-savory.html" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">Savory</a>
+            <a href="/high-protein.html" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">30g+ Protein</a>
+            <a href="/#sites" class="block bg-brand-500 text-white px-4 py-2 rounded-lg font-semibold text-center">
+                Browse All Sites
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!-- Spacer for fixed nav -->
+<div class="h-16"></div>
+
+
+<main class="flex-grow py-12">
+  <div class="max-w-4xl mx-auto px-4">
+
+    <!-- Breadcrumb -->
+    <nav class="mb-8 text-sm">
+      <ol class="flex items-center gap-2 text-slate-500 dark:text-slate-400">
+        <li><a href="/" class="hover:text-slate-900 dark:hover:text-white">Home</a></li>
+        <li>/</li>
+        <li><a href="/tools/" class="hover:text-slate-900 dark:hover:text-white">Tools</a></li>
+        <li>/</li>
+        <li class="text-slate-900 dark:text-white font-medium">P:E Ratio Calculator</li>
+      </ol>
+    </nav>
+
+    <!-- Hero -->
+    <div class="text-center mb-12">
+      <h1 class="font-anton text-4xl lg:text-5xl uppercase mb-4">P:E RATIO CALCULATOR</h1>
+      <p class="text-xl text-slate-600 dark:text-slate-400">Calculate protein-to-energy ratio for any food</p>
+    </div>
+
+    <!-- Calculator -->
+    <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg mb-12"
+         x-data="peCalculator()">
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Inputs -->
+        <div class="space-y-6">
+          <div>
+            <label class="block text-sm font-semibold mb-2">Protein (grams)</label>
+            <input type="number" x-model.number="protein" min="0" step="0.1"
+                   class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-600
+                          bg-white dark:bg-slate-700 text-2xl font-bold text-center
+                          focus:ring-2 focus:ring-brand-500 focus:border-transparent">
+          </div>
+          <div>
+            <label class="block text-sm font-semibold mb-2">Calories</label>
+            <input type="number" x-model.number="calories" min="1" step="1"
+                   class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-600
+                          bg-white dark:bg-slate-700 text-2xl font-bold text-center
+                          focus:ring-2 focus:ring-brand-500 focus:border-transparent">
+          </div>
+        </div>
+
+        <!-- Result -->
+        <div class="flex flex-col items-center justify-center bg-slate-50 dark:bg-slate-900 rounded-xl p-6">
+          <div class="text-sm font-semibold text-slate-500 dark:text-slate-400 mb-2">P:E RATIO</div>
+          <div class="text-5xl font-bold mb-2" :class="tierColor" x-text="peRatio.toFixed(2)"></div>
+          <div class="text-lg font-bold px-4 py-1 rounded-full" :class="tierBadgeClass" x-text="tierLabel"></div>
+          <div class="text-sm text-slate-500 dark:text-slate-400 mt-4 text-center" x-text="tierDescription"></div>
+        </div>
+      </div>
+
+      <!-- Explanation -->
+      <div class="mt-8 pt-8 border-t border-slate-200 dark:border-slate-700">
+        <h3 class="font-bold mb-2">What is P:E Ratio?</h3>
+        <p class="text-slate-600 dark:text-slate-400">
+          P:E ratio measures grams of protein per 100 calories. A food with 30g protein and 200 calories
+          has a P:E of 15 (extremely high). Higher P:E means more protein per calorie - ideal for
+          muscle building while managing calories.
+        </p>
+      </div>
+    </div>
+
+    <!-- P:E Tier Guide -->
+    <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg mb-12">
+      <h2 class="font-anton text-2xl uppercase mb-6">P:E RATIO TIERS</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="p-4 rounded-xl bg-emerald-50 dark:bg-emerald-900/20 border-2 border-emerald-500">
+          <div class="text-emerald-600 dark:text-emerald-400 font-bold text-lg">ELITE</div>
+          <div class="text-2xl font-bold">&ge;2.5</div>
+          <div class="text-sm text-slate-600 dark:text-slate-400">Chicken breast, egg whites, Greek yogurt</div>
+        </div>
+        <div class="p-4 rounded-xl bg-green-50 dark:bg-green-900/20 border-2 border-green-500">
+          <div class="text-green-600 dark:text-green-400 font-bold text-lg">EXCELLENT</div>
+          <div class="text-2xl font-bold">2.0-2.49</div>
+          <div class="text-sm text-slate-600 dark:text-slate-400">Cottage cheese, tuna, protein bars</div>
+        </div>
+        <div class="p-4 rounded-xl bg-yellow-50 dark:bg-yellow-900/20 border-2 border-yellow-500">
+          <div class="text-yellow-600 dark:text-yellow-400 font-bold text-lg">GOOD</div>
+          <div class="text-2xl font-bold">1.5-1.99</div>
+          <div class="text-sm text-slate-600 dark:text-slate-400">Whole eggs, salmon, lean beef</div>
+        </div>
+        <div class="p-4 rounded-xl bg-orange-50 dark:bg-orange-900/20 border-2 border-orange-500">
+          <div class="text-orange-600 dark:text-orange-400 font-bold text-lg">MODERATE</div>
+          <div class="text-2xl font-bold">&lt;1.5</div>
+          <div class="text-sm text-slate-600 dark:text-slate-400">Nuts, cheese, regular bread</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Common Foods Reference -->
+    <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg">
+      <h2 class="font-anton text-2xl uppercase mb-6">COMMON FOODS P:E REFERENCE</h2>
+      <div class="overflow-x-auto">
+        <table class="w-full text-left">
+          <thead>
+            <tr class="border-b border-slate-200 dark:border-slate-700">
+              <th class="py-3 font-semibold">Food</th>
+              <th class="py-3 font-semibold text-right">Protein</th>
+              <th class="py-3 font-semibold text-right">Calories</th>
+              <th class="py-3 font-semibold text-right">P:E Ratio</th>
+              <th class="py-3 font-semibold text-center">Tier</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100 dark:divide-slate-700">
+            <tr><td class="py-3">Chicken Breast (100g)</td><td class="text-right">31g</td><td class="text-right">165</td><td class="text-right font-bold">18.8</td><td class="text-center"><span class="px-2 py-0.5 rounded bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300 text-sm font-bold">ELITE</span></td></tr>
+            <tr><td class="py-3">Egg Whites (100g)</td><td class="text-right">11g</td><td class="text-right">52</td><td class="text-right font-bold">21.2</td><td class="text-center"><span class="px-2 py-0.5 rounded bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300 text-sm font-bold">ELITE</span></td></tr>
+            <tr><td class="py-3">Greek Yogurt 0% (100g)</td><td class="text-right">10g</td><td class="text-right">59</td><td class="text-right font-bold">16.9</td><td class="text-center"><span class="px-2 py-0.5 rounded bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300 text-sm font-bold">ELITE</span></td></tr>
+            <tr><td class="py-3">Cottage Cheese 1% (100g)</td><td class="text-right">11g</td><td class="text-right">72</td><td class="text-right font-bold">15.3</td><td class="text-center"><span class="px-2 py-0.5 rounded bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300 text-sm font-bold">ELITE</span></td></tr>
+            <tr><td class="py-3">Whole Egg (50g)</td><td class="text-right">6g</td><td class="text-right">72</td><td class="text-right font-bold">8.3</td><td class="text-center"><span class="px-2 py-0.5 rounded bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300 text-sm font-bold">ELITE</span></td></tr>
+            <tr><td class="py-3">Salmon (100g)</td><td class="text-right">20g</td><td class="text-right">208</td><td class="text-right font-bold">9.6</td><td class="text-center"><span class="px-2 py-0.5 rounded bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300 text-sm font-bold">ELITE</span></td></tr>
+            <tr><td class="py-3">Almonds (28g)</td><td class="text-right">6g</td><td class="text-right">164</td><td class="text-right font-bold">3.7</td><td class="text-center"><span class="px-2 py-0.5 rounded bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 text-sm font-bold">EXCELLENT</span></td></tr>
+            <tr><td class="py-3">Cheddar Cheese (28g)</td><td class="text-right">7g</td><td class="text-right">113</td><td class="text-right font-bold">6.2</td><td class="text-center"><span class="px-2 py-0.5 rounded bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300 text-sm font-bold">ELITE</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- CTA to Breakfast Builder -->
+    <div class="mt-12 text-center">
+      <p class="text-slate-600 dark:text-slate-400 mb-4">Looking for high P:E breakfast recipes?</p>
+      <a href="/tools/breakfast-builder.html" class="inline-flex items-center gap-2 bg-brand-500 text-white px-8 py-4 rounded-xl font-semibold hover:bg-brand-600 transition-colors">
+        Try Breakfast Macro Builder
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+      </a>
+    </div>
+
+  </div>
+</main>
+
+
+<footer class="bg-slate-900 dark:bg-slate-950 text-white py-12 mt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- Brand -->
+            <div class="col-span-1">
+                <div class="flex items-center gap-2 mb-4">
+                    <img src="/images/logo.png" alt="HighProtein.Recipes" class="h-10 w-10 rounded-full">
+                    <span class="font-anton text-xl tracking-tight uppercase">HighProtein<span class="text-brand-500">.Recipes</span></span>
+                </div>
+                <p class="text-slate-400 text-sm">
+                    Your gateway to 300+ macro-verified high-protein recipes across 12 specialized sites.
+                </p>
+            </div>
+
+            <!-- Categories -->
+            <div>
+                <h4 class="font-semibold mb-4">Categories</h4>
+                <ul class="space-y-2 text-slate-400 text-sm">
+                    <li><a href="/category-breakfast.html" class="hover:text-white transition-colors">Breakfast</a></li>
+                    <li><a href="/category-desserts.html" class="hover:text-white transition-colors">Desserts</a></li>
+                    <li><a href="/category-snacks.html" class="hover:text-white transition-colors">Snacks</a></li>
+                    <li><a href="/category-savory.html" class="hover:text-white transition-colors">Savory</a></li>
+                </ul>
+            </div>
+
+            <!-- Popular Ingredients -->
+            <div>
+                <h4 class="font-semibold mb-4">By Ingredient</h4>
+                <ul class="space-y-2 text-slate-400 text-sm">
+                    <li><a href="/ingredient-protein-powder.html" class="hover:text-white transition-colors">Protein Powder</a></li>
+                    <li><a href="/ingredient-greek-yogurt.html" class="hover:text-white transition-colors">Greek Yogurt</a></li>
+                    <li><a href="/ingredient-cottage-cheese.html" class="hover:text-white transition-colors">Cottage Cheese</a></li>
+                    <li><a href="/ingredient-oats.html" class="hover:text-white transition-colors">Oats</a></li>
+                </ul>
+            </div>
+
+            <!-- Legal -->
+            <div>
+                <h4 class="font-semibold mb-4">Legal</h4>
+                <ul class="space-y-2 text-slate-400 text-sm">
+                    <li><a href="/privacy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                    <li><a href="/terms.html" class="hover:text-white transition-colors">Terms of Use</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Empire Links -->
+        <div class="mt-12 pt-8 border-t border-slate-800">
+            <p class="text-slate-500 text-sm text-center mb-4">The Protein Empire</p>
+            <div class="flex flex-wrap justify-center gap-4 text-slate-400 text-sm">
+                <a href="https://proteinmuffins.com" class="hover:text-white transition-colors">Muffins</a>
+                <a href="https://proteincookies.co" class="hover:text-white transition-colors">Cookies</a>
+                <a href="https://proteinpancakes.co" class="hover:text-white transition-colors">Pancakes</a>
+                <a href="https://proteinbrownies.co" class="hover:text-white transition-colors">Brownies</a>
+                <a href="https://protein-bread.com" class="hover:text-white transition-colors">Bread</a>
+                <a href="https://proteinbars.co" class="hover:text-white transition-colors">Bars</a>
+                <a href="https://proteinbites.co" class="hover:text-white transition-colors">Bites</a>
+                <a href="https://proteindonuts.co" class="hover:text-white transition-colors">Donuts</a>
+                <a href="https://proteinoatmeal.co" class="hover:text-white transition-colors">Oatmeal</a>
+                <a href="https://proteincheesecake.co" class="hover:text-white transition-colors">Cheesecake</a>
+                <a href="https://proteinpizzas.co" class="hover:text-white transition-colors">Pizza</a>
+                <a href="https://proteinpudding.co" class="hover:text-white transition-colors">Pudding</a>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="mt-8 text-center text-slate-500 text-sm">
+            <p>&copy; 2026 <a href="https://HighProtein.Recipes" class="hover:text-amber-400 transition-colors">High Protein Recipes</a>. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+<script>
+document.addEventListener('alpine:init', () => {
+  Alpine.data('peCalculator', () => ({
+    protein: 30,
+    calories: 200,
+
+    get peRatio() {
+      if (this.calories <= 0) return 0;
+      return (this.protein / this.calories) * 100;
+    },
+
+    get tierLabel() {
+      if (this.peRatio >= 2.5) return 'ELITE';
+      if (this.peRatio >= 2.0) return 'EXCELLENT';
+      if (this.peRatio >= 1.5) return 'GOOD';
+      return 'MODERATE';
+    },
+
+    get tierColor() {
+      if (this.peRatio >= 2.5) return 'text-emerald-600 dark:text-emerald-400';
+      if (this.peRatio >= 2.0) return 'text-green-600 dark:text-green-400';
+      if (this.peRatio >= 1.5) return 'text-yellow-600 dark:text-yellow-400';
+      return 'text-orange-600 dark:text-orange-400';
+    },
+
+    get tierBadgeClass() {
+      if (this.peRatio >= 2.5) return 'bg-emerald-100 text-emerald-700 dark:bg-emerald-900 dark:text-emerald-300';
+      if (this.peRatio >= 2.0) return 'bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300';
+      if (this.peRatio >= 1.5) return 'bg-yellow-100 text-yellow-700 dark:bg-yellow-900 dark:text-yellow-300';
+      return 'bg-orange-100 text-orange-700 dark:bg-orange-900 dark:text-orange-300';
+    },
+
+    get tierDescription() {
+      if (this.peRatio >= 2.5) return 'Extremely protein-dense. Ideal for high-protein diets.';
+      if (this.peRatio >= 2.0) return 'Very protein-dense. Great for muscle building.';
+      if (this.peRatio >= 1.5) return 'Good protein density. Solid choice for balanced meals.';
+      return 'Lower protein density. Consider pairing with higher P:E foods.';
+    }
+  }));
+});
+</script>
+
+</body>
+</html>
