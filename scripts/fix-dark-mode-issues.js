@@ -28,11 +28,17 @@ function fixDarkModeIssues(filePath) {
     '<circle cx="100" cy="100" r="8" fill="#f8fafc" stroke="#334155" stroke-width="1"/>'
   );
 
-  // 2. Fix ingredients text - add dark mode variant
-  // The ingredient name text uses text-slate-700 without dark variant
+  // 2. Fix ingredients text - add dark mode variant with lighter color
+  // The ingredient name text in Alpine.js ternary: 'text-slate-700'"
   html = html.replace(
-    /: 'text-slate-700'\}/g,
-    `: 'text-slate-700 dark:text-slate-300'}`
+    /: 'text-slate-700'"/g,
+    `: 'text-slate-700 dark:text-slate-200'"`
+  );
+
+  // Also fix dropdown text that used slate-300 (not light enough)
+  html = html.replace(
+    /class="text-slate-700 dark:text-slate-300 group-hover/g,
+    `class="text-slate-700 dark:text-slate-200 group-hover`
   );
 
   // Also fix the hover state for ingredient rows
