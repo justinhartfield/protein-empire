@@ -4,7 +4,7 @@
 
 [build]
   # Install all dependencies
-  command = "npm ci && npm --prefix netlify/functions ci && echo 'All dependencies installed'"
+  command = "npm ci && npm --prefix functions ci && echo 'All dependencies installed'"
 
   # Publish directory
   publish = "dist"
@@ -41,9 +41,9 @@
   [headers.values]
     Cache-Control = "public, max-age=86400"
 
-# Netlify Functions - simplified config
+# Netlify Functions - use standard 'functions' directory
 [functions]
-  directory = "netlify/functions"
+  directory = "functions"
 
 # Redirect /api/* to Netlify Functions
 [[redirects]]

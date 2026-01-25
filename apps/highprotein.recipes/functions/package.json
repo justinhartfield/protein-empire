@@ -1,0 +1,10 @@
+{
+  "name": "highprotein-recipes-functions",
+  "version": "1.0.0",
+  "description": "Netlify Functions for High Protein Recipes",
+  "type": "module",
+  "dependencies": {
+    "@sendgrid/client": "^8.1.1",
+    "@sendgrid/mail": "^8.1.1"
+  }
+}
