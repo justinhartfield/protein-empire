@@ -2,14 +2,14 @@
 # This configuration is used for the highprotein.recipes indexer site
 
 [build]
-  # Build command for the indexer site
-  command = "node scripts/build-indexer.js"
-  
+  # Build command for the indexer site - also install function dependencies
+  command = "node scripts/build-indexer.js && cd apps/highprotein.recipes/netlify/functions && npm install"
+
   # Directory to deploy (full path from repo root)
   publish = "apps/highprotein.recipes/dist"
-  
-  # Functions directory
-  functions = "netlify/functions"
+
+  # Functions directory (full path from repo root)
+  functions = "apps/highprotein.recipes/netlify/functions"
 
 [build.environment]
   # Node version for functions
