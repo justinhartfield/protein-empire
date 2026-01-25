@@ -1,6 +1,6 @@
 # Netlify Configuration
 # Uses pre-built dist files from the repository
-# Build trigger: 2026-01-25T11:35:00
+# Build trigger: 2026-01-25T11:50:00
 
 [build]
   # Install all dependencies
@@ -41,19 +41,9 @@
   [headers.values]
     Cache-Control = "public, max-age=86400"
 
-# Netlify Functions
+# Netlify Functions - simplified config
 [functions]
-  node_bundler = "esbuild"
   directory = "netlify/functions"
-  external_node_modules = ["@sendgrid/client", "@sendgrid/mail"]
-  included_files = ["netlify/functions/**"]
-
-# Function-specific settings
-[functions.subscribe]
-  external_node_modules = ["@sendgrid/client", "@sendgrid/mail"]
-
-[functions.confirm]
-  external_node_modules = ["@sendgrid/client", "@sendgrid/mail"]
 
 # Redirect /api/* to Netlify Functions
 [[redirects]]
