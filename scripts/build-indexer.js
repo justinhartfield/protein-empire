@@ -2405,13 +2405,17 @@ function generateBreakfastPillarPage(site, breakfastRecipes, partials, outputDir
 
 <main class="flex-grow">
   <!-- Hero -->
-  <section class="bg-gradient-to-br from-amber-500 to-orange-600 text-white py-16 lg:py-24">
-    <div class="max-w-7xl mx-auto px-4 text-center">
-      <h1 class="font-anton text-5xl lg:text-6xl uppercase tracking-wider mb-6">HIGH PROTEIN BREAKFAST</h1>
+  <section class="relative text-white py-16 lg:py-24 overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="/images/breakfast/hero-bg.png" alt="" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-br from-amber-500/90 to-orange-600/90"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto px-4 text-center">
+      <h1 class="font-anton text-5xl lg:text-6xl uppercase tracking-wider mb-6 drop-shadow-lg">HIGH PROTEIN BREAKFAST</h1>
       <p class="text-xl lg:text-2xl text-white/90 max-w-3xl mx-auto mb-8">
         <%= breakfastRecipes.length %> macro-verified breakfast recipes. Pancakes, oatmeal, muffins, and more - all optimized for protein.
       </p>
-      <a href="/tools/breakfast-builder.html" class="inline-flex items-center gap-2 bg-white text-slate-900 px-8 py-4 rounded-xl font-semibold text-lg hover:bg-slate-100 transition-colors">
+      <a href="/tools/breakfast-builder.html" class="inline-flex items-center gap-2 bg-white text-slate-900 px-8 py-4 rounded-xl font-semibold text-lg hover:bg-slate-100 transition-colors shadow-lg">
         Build Your Perfect Breakfast
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
       </a>
@@ -2423,10 +2427,23 @@ function generateBreakfastPillarPage(site, breakfastRecipes, partials, outputDir
     <div class="max-w-7xl mx-auto px-4">
       <h2 class="font-anton text-3xl uppercase mb-8 text-center">BROWSE BY GOAL</h2>
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        <% intentCounts.forEach(intent => { %>
-        <a href="/breakfast/<%= intent.slug %>.html" class="group bg-slate-50 dark:bg-slate-900 rounded-xl p-6 hover:bg-brand-50 dark:hover:bg-brand-900/20 transition-colors border border-slate-100 dark:border-slate-700 hover:border-brand-500">
-          <h3 class="font-semibold text-lg mb-1 group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors"><%= intent.title %></h3>
-          <p class="text-sm text-slate-500 dark:text-slate-400"><%= intent.count %> recipes</p>
+        <%
+        const goalImages = {
+          '30g-protein-under-300-calories': 'goal-30g-protein.png',
+          'quick-high-protein-breakfast': 'goal-quick-15min.png',
+          'low-calorie-high-protein-breakfast': 'goal-low-cal.png'
+        };
+        intentCounts.forEach(intent => {
+          const goalImage = goalImages[intent.slug] || 'goal-30g-protein.png';
+        %>
+        <a href="/breakfast/<%= intent.slug %>.html" class="group bg-slate-50 dark:bg-slate-900 rounded-xl overflow-hidden hover:shadow-lg transition-all border border-slate-100 dark:border-slate-700 hover:border-brand-500">
+          <div class="h-32 overflow-hidden">
+            <img src="/images/breakfast/<%= goalImage %>" alt="<%= intent.title %>" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <div class="p-4">
+            <h3 class="font-semibold text-lg mb-1 group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors"><%= intent.title %></h3>
+            <p class="text-sm text-slate-500 dark:text-slate-400"><%= intent.count %> recipes</p>
+          </div>
         </a>
         <% }); %>
       </div>
@@ -2450,15 +2467,21 @@ function generateBreakfastPillarPage(site, breakfastRecipes, partials, outputDir
 
   <!-- Builder CTA -->
   <section class="py-12 mx-4 lg:mx-8">
-    <div class="max-w-5xl mx-auto bg-gradient-to-r from-brand-500 to-accent-500 rounded-2xl p-8 lg:p-12 text-white text-center">
-      <h2 class="font-anton text-3xl lg:text-4xl uppercase mb-4">BUILD YOUR PERFECT BREAKFAST</h2>
-      <p class="text-white/80 text-lg mb-8 max-w-2xl mx-auto">
-        Set your protein target, calorie limit, and dietary preferences. Find matching recipes instantly.
-      </p>
-      <a href="/tools/breakfast-builder.html" class="inline-flex items-center gap-2 bg-white text-slate-900 px-8 py-4 rounded-xl font-semibold hover:bg-slate-100 transition-colors">
-        Open Breakfast Builder
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-      </a>
+    <div class="relative max-w-5xl mx-auto rounded-2xl overflow-hidden">
+      <div class="absolute inset-0">
+        <img src="/images/breakfast/builder-bg.png" alt="" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-r from-brand-500/90 to-accent-500/90"></div>
+      </div>
+      <div class="relative p-8 lg:p-12 text-white text-center">
+        <h2 class="font-anton text-3xl lg:text-4xl uppercase mb-4 drop-shadow-lg">BUILD YOUR PERFECT BREAKFAST</h2>
+        <p class="text-white/90 text-lg mb-8 max-w-2xl mx-auto">
+          Set your protein target, calorie limit, and dietary preferences. Find matching recipes instantly.
+        </p>
+        <a href="/tools/breakfast-builder.html" class="inline-flex items-center gap-2 bg-white text-slate-900 px-8 py-4 rounded-xl font-semibold hover:bg-slate-100 transition-colors shadow-lg">
+          Open Breakfast Builder
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -2467,17 +2490,32 @@ function generateBreakfastPillarPage(site, breakfastRecipes, partials, outputDir
     <div class="max-w-7xl mx-auto px-4">
       <h2 class="font-anton text-3xl uppercase mb-8 text-center">PROTEIN TOOLS</h2>
       <div class="grid md:grid-cols-3 gap-6">
-        <a href="/tools/pe-ratio-calculator.html" class="group bg-slate-50 dark:bg-slate-900 rounded-xl p-6 hover:shadow-lg transition-all border border-slate-100 dark:border-slate-700">
-          <h3 class="font-semibold text-lg mb-2 group-hover:text-brand-600 dark:group-hover:text-brand-400">P:E Ratio Calculator</h3>
-          <p class="text-sm text-slate-500 dark:text-slate-400">Calculate protein-to-energy ratio for any food</p>
+        <a href="/tools/pe-ratio-calculator.html" class="group bg-slate-50 dark:bg-slate-900 rounded-xl overflow-hidden hover:shadow-lg transition-all border border-slate-100 dark:border-slate-700">
+          <div class="h-40 overflow-hidden">
+            <img src="/images/breakfast/tool-pe-ratio.png" alt="P:E Ratio Calculator" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <div class="p-6">
+            <h3 class="font-semibold text-lg mb-2 group-hover:text-brand-600 dark:group-hover:text-brand-400">P:E Ratio Calculator</h3>
+            <p class="text-sm text-slate-500 dark:text-slate-400">Calculate protein-to-energy ratio for any food</p>
+          </div>
         </a>
-        <a href="/tools/breakfast-builder.html" class="group bg-slate-50 dark:bg-slate-900 rounded-xl p-6 hover:shadow-lg transition-all border border-slate-100 dark:border-slate-700">
-          <h3 class="font-semibold text-lg mb-2 group-hover:text-brand-600 dark:group-hover:text-brand-400">Breakfast Macro Builder</h3>
-          <p class="text-sm text-slate-500 dark:text-slate-400">Filter recipes by your exact macro targets</p>
+        <a href="/tools/breakfast-builder.html" class="group bg-slate-50 dark:bg-slate-900 rounded-xl overflow-hidden hover:shadow-lg transition-all border border-slate-100 dark:border-slate-700">
+          <div class="h-40 overflow-hidden">
+            <img src="/images/breakfast/tool-macro-builder.png" alt="Breakfast Macro Builder" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <div class="p-6">
+            <h3 class="font-semibold text-lg mb-2 group-hover:text-brand-600 dark:group-hover:text-brand-400">Breakfast Macro Builder</h3>
+            <p class="text-sm text-slate-500 dark:text-slate-400">Filter recipes by your exact macro targets</p>
+          </div>
         </a>
-        <a href="/tools/protein-cost-calculator.html" class="group bg-slate-50 dark:bg-slate-900 rounded-xl p-6 hover:shadow-lg transition-all border border-slate-100 dark:border-slate-700">
-          <h3 class="font-semibold text-lg mb-2 group-hover:text-brand-600 dark:group-hover:text-brand-400">Protein Cost Calculator</h3>
-          <p class="text-sm text-slate-500 dark:text-slate-400">Compare cost per gram of protein</p>
+        <a href="/tools/protein-cost-calculator.html" class="group bg-slate-50 dark:bg-slate-900 rounded-xl overflow-hidden hover:shadow-lg transition-all border border-slate-100 dark:border-slate-700">
+          <div class="h-40 overflow-hidden">
+            <img src="/images/breakfast/tool-cost-calc.png" alt="Protein Cost Calculator" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <div class="p-6">
+            <h3 class="font-semibold text-lg mb-2 group-hover:text-brand-600 dark:group-hover:text-brand-400">Protein Cost Calculator</h3>
+            <p class="text-sm text-slate-500 dark:text-slate-400">Compare cost per gram of protein</p>
+          </div>
         </a>
       </div>
     </div>
