@@ -2168,48 +2168,48 @@ function generateToolsLandingPage(site, partials, outputDir) {
     <!-- Tools Grid -->
     <div class="grid md:grid-cols-3 gap-8 mb-16">
       <!-- P:E Calculator -->
-      <a href="/tools/pe-ratio-calculator.html" class="group bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all border border-slate-100 dark:border-slate-700 hover:border-brand-500">
-        <div class="w-16 h-16 bg-gradient-to-br from-emerald-500 to-green-600 rounded-xl flex items-center justify-center mb-6">
-          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
-          </svg>
+      <a href="/tools/pe-ratio-calculator.html" class="group bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all border border-slate-100 dark:border-slate-700 hover:border-brand-500">
+        <div class="h-40 overflow-hidden">
+          <img src="/images/breakfast/tool-pe-ratio.png" alt="P:E Ratio Calculator" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
         </div>
-        <h3 class="font-anton text-2xl uppercase mb-3 group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">P:E Ratio Calculator</h3>
-        <p class="text-slate-600 dark:text-slate-400 mb-4">Calculate protein-to-energy ratio for any food. Find out if your meals are ELITE, EXCELLENT, or GOOD for protein density.</p>
-        <span class="inline-flex items-center gap-2 text-brand-500 font-semibold group-hover:gap-3 transition-all">
-          Calculate Now
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-        </span>
+        <div class="p-8">
+          <h3 class="font-anton text-2xl uppercase mb-3 group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">P:E Ratio Calculator</h3>
+          <p class="text-slate-600 dark:text-slate-400 mb-4">Calculate protein-to-energy ratio for any food. Find out if your meals are ELITE, EXCELLENT, or GOOD for protein density.</p>
+          <span class="inline-flex items-center gap-2 text-brand-500 font-semibold group-hover:gap-3 transition-all">
+            Calculate Now
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </span>
+        </div>
       </a>
 
       <!-- Breakfast Builder -->
-      <a href="/tools/breakfast-builder.html" class="group bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all border border-slate-100 dark:border-slate-700 hover:border-brand-500">
-        <div class="w-16 h-16 bg-gradient-to-br from-amber-500 to-orange-600 rounded-xl flex items-center justify-center mb-6">
-          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
-          </svg>
+      <a href="/tools/breakfast-builder.html" class="group bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all border border-slate-100 dark:border-slate-700 hover:border-brand-500">
+        <div class="h-40 overflow-hidden">
+          <img src="/images/breakfast/tool-macro-builder.png" alt="Breakfast Macro Builder" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
         </div>
-        <h3 class="font-anton text-2xl uppercase mb-3 group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">Breakfast Macro Builder</h3>
-        <p class="text-slate-600 dark:text-slate-400 mb-4">Set your protein target, calorie limit, and dietary restrictions. Find matching high-protein breakfast recipes instantly.</p>
-        <span class="inline-flex items-center gap-2 text-brand-500 font-semibold group-hover:gap-3 transition-all">
-          Build Breakfast
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-        </span>
+        <div class="p-8">
+          <h3 class="font-anton text-2xl uppercase mb-3 group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">Breakfast Macro Builder</h3>
+          <p class="text-slate-600 dark:text-slate-400 mb-4">Set your protein target, calorie limit, and dietary restrictions. Find matching high-protein breakfast recipes instantly.</p>
+          <span class="inline-flex items-center gap-2 text-brand-500 font-semibold group-hover:gap-3 transition-all">
+            Build Breakfast
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </span>
+        </div>
       </a>
 
       <!-- Cost Calculator -->
-      <a href="/tools/protein-cost-calculator.html" class="group bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all border border-slate-100 dark:border-slate-700 hover:border-brand-500">
-        <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center mb-6">
-          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-          </svg>
+      <a href="/tools/protein-cost-calculator.html" class="group bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all border border-slate-100 dark:border-slate-700 hover:border-brand-500">
+        <div class="h-40 overflow-hidden">
+          <img src="/images/breakfast/tool-cost-calc.png" alt="Protein Cost Calculator" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
         </div>
-        <h3 class="font-anton text-2xl uppercase mb-3 group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">Cost-per-Protein Calculator</h3>
-        <p class="text-slate-600 dark:text-slate-400 mb-4">Compare protein sources by price efficiency. Find the cheapest ways to hit your protein goals on any budget.</p>
-        <span class="inline-flex items-center gap-2 text-brand-500 font-semibold group-hover:gap-3 transition-all">
-          Compare Costs
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-        </span>
+        <div class="p-8">
+          <h3 class="font-anton text-2xl uppercase mb-3 group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">Cost-per-Protein Calculator</h3>
+          <p class="text-slate-600 dark:text-slate-400 mb-4">Compare protein sources by price efficiency. Find the cheapest ways to hit your protein goals on any budget.</p>
+          <span class="inline-flex items-center gap-2 text-brand-500 font-semibold group-hover:gap-3 transition-all">
+            Compare Costs
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </span>
+        </div>
       </a>
     </div>
 
