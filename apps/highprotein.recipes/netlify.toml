@@ -40,9 +40,8 @@
   [headers.values]
     Cache-Control = "public, max-age=86400"
 
-# Netlify Functions - bundle all dependencies with esbuild
+# Netlify Functions
 [functions]
-  node_bundler = "esbuild"
   directory = "netlify/functions"
 
 # Redirect /api/* to Netlify Functions
