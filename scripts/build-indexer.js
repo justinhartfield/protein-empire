@@ -180,7 +180,10 @@ async function buildIndexerSite() {
   
   // 2. Category pages (Breakfast, Desserts, Snacks, Savory)
   generateCategoryPages(site, categories, partials, outputDir);
-  
+
+  // 2b. All recipes page
+  generateAllRecipesPage(site, allRecipes, partials, outputDir);
+
   // 3. Food type pages (cookies, brownies, etc.)
   generateFoodTypePages(site, categories, partials, outputDir);
   
@@ -428,7 +431,7 @@ function generateIndexerFooter() {
  */
 function generateIndexerRecipeCard() {
   return `
-<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100">
+<div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
     <a href="/<%= recipe.slug %>-preview.html" class="block relative aspect-square overflow-hidden">
         <img 
@@ -451,11 +454,11 @@ function generateIndexerRecipeCard() {
     <!-- Content -->
     <div class="p-4">
         <a href="/<%= recipe.slug %>-preview.html">
-            <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-2">
+            <h3 class="font-semibold text-slate-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors line-clamp-2">
                 <%= recipe.title %>
             </h3>
         </a>
-        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500">
+        <div class="mt-2 flex items-center gap-3 text-sm text-slate-500 dark:text-slate-400">
             <span><%= recipe.calories %> cal</span>
             <span>•</span>
             <span><%= recipe.totalTime %>m</span>
@@ -524,19 +527,19 @@ function generateHomepage(site, allRecipes, categories, partials, outputDir) {
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
                 <div class="font-anton text-4xl text-brand-500"><%= allRecipes.length %>+</div>
-                <div class="text-slate-600">Recipes</div>
+                <div class="text-slate-600 dark:text-slate-400">Recipes</div>
             </div>
             <div>
                 <div class="font-anton text-4xl text-brand-500">12</div>
-                <div class="text-slate-600">Specialized Sites</div>
+                <div class="text-slate-600 dark:text-slate-400">Specialized Sites</div>
             </div>
             <div>
                 <div class="font-anton text-4xl text-brand-500"><%= categories.highProtein.length %></div>
-                <div class="text-slate-600">30g+ Protein</div>
+                <div class="text-slate-600 dark:text-slate-400">30g+ Protein</div>
             </div>
             <div>
                 <div class="font-anton text-4xl text-brand-500"><%= categories.noBake.length %></div>
-                <div class="text-slate-600">No-Bake Options</div>
+                <div class="text-slate-600 dark:text-slate-400">No-Bake Options</div>
             </div>
         </div>
     </div>
@@ -547,7 +550,7 @@ function generateHomepage(site, allRecipes, categories, partials, outputDir) {
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
             <h2 class="font-anton text-4xl uppercase tracking-wider mb-4">Featured Recipes</h2>
-            <p class="text-slate-600 text-lg">Hand-picked favorites from across the Protein Empire</p>
+            <p class="text-slate-600 dark:text-slate-400 text-lg">Hand-picked favorites from across the Protein Empire</p>
         </div>
         
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -570,7 +573,7 @@ function generateHomepage(site, allRecipes, categories, partials, outputDir) {
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
             <h2 class="font-anton text-4xl uppercase tracking-wider mb-4">Browse by Category</h2>
-            <p class="text-slate-600 text-lg">Find recipes organized the way you think about food</p>
+            <p class="text-slate-600 dark:text-slate-400 text-lg">Find recipes organized the way you think about food</p>
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -611,7 +614,7 @@ function generateHomepage(site, allRecipes, categories, partials, outputDir) {
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
             <h2 class="font-anton text-4xl uppercase tracking-wider mb-4">The Protein Empire</h2>
-            <p class="text-slate-600 text-lg">12 specialized sites, each dedicated to perfecting one type of high-protein treat</p>
+            <p class="text-slate-600 dark:text-slate-400 text-lg">12 specialized sites, each dedicated to perfecting one type of high-protein treat</p>
         </div>
         
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -620,8 +623,8 @@ function generateHomepage(site, allRecipes, categories, partials, outputDir) {
                 <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-brand-500 to-accent-500 flex items-center justify-center text-white font-anton text-xl uppercase">
                     <%= es.name.charAt(0) %>
                 </div>
-                <h3 class="font-semibold text-slate-900 group-hover:text-brand-600 transition-colors"><%= es.name %></h3>
-                <p class="text-sm text-slate-500 mt-1"><%= es.domain %></p>
+                <h3 class="font-semibold text-slate-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors"><%= es.name %></h3>
+                <p class="text-sm text-slate-500 dark:text-slate-400 mt-1"><%= es.domain %></p>
             </a>
             <% }); %>
         </div>
@@ -633,12 +636,12 @@ function generateHomepage(site, allRecipes, categories, partials, outputDir) {
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
             <h2 class="font-anton text-4xl uppercase tracking-wider mb-4">Popular Ingredients</h2>
-            <p class="text-slate-600 text-lg">Browse recipes by your favorite protein sources</p>
+            <p class="text-slate-600 dark:text-slate-400 text-lg">Browse recipes by your favorite protein sources</p>
         </div>
         
         <div class="flex flex-wrap justify-center gap-4">
             <% site.heroIngredients.forEach(ing => { %>
-            <a href="/ingredient-<%= ing.slug %>.html" class="bg-slate-100 hover:bg-brand-500 hover:text-white px-6 py-3 rounded-full font-medium transition-colors">
+            <a href="/ingredient-<%= ing.slug %>.html" class="bg-slate-100 dark:bg-slate-700 text-slate-900 dark:text-white hover:bg-brand-500 hover:text-white px-6 py-3 rounded-full font-medium transition-colors">
                 <%= ing.name %>
                 <span class="ml-2 text-sm opacity-70">(<%= categories.byIngredient[ing.slug]?.length || 0 %>)</span>
             </a>
@@ -770,6 +773,19 @@ function generateCategoryPages(site, categories, partials, outputDir) {
       breadcrumb: [{ name: 'Home', url: '/' }, { name: cat.name, url: null }]
     }, partials, outputDir);
   });
+}
+
+/**
+ * Generate all recipes page
+ */
+function generateAllRecipesPage(site, allRecipes, partials, outputDir) {
+  console.log(`   - All Recipes (${allRecipes.length} recipes)`);
+  generateListingPage(site, allRecipes, {
+    title: `All ${allRecipes.length} High-Protein Recipes`,
+    description: `Browse all ${allRecipes.length} macro-verified high-protein recipes from across the Protein Empire`,
+    slug: 'all-recipes',
+    breadcrumb: [{ name: 'Home', url: '/' }, { name: 'All Recipes', url: null }]
+  }, partials, outputDir);
 }
 
 /**
