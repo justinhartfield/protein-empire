@@ -74,7 +74,7 @@ function loadAllRecipes() {
           sourceName: 'HighProtein.Recipes',
           sourceCategory: 'breakfast',
           foodType: 'breakfast',
-          fullRecipeUrl: `/breakfast/${recipe.slug}.html`
+          fullRecipeUrl: `/breakfast/recipes/${recipe.slug}/`
         });
       });
 
@@ -461,7 +461,7 @@ function generateIndexerRecipeCard() {
   return `
 <div class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-700">
     <!-- Image Container -->
-    <a href="<%= recipe.sourceSite === 'highprotein.recipes' ? '/breakfast/' + recipe.slug + '.html' : '/' + recipe.slug + '-preview.html' %>" class="block relative aspect-square overflow-hidden">
+    <a href="<%= recipe.sourceSite === 'highprotein.recipes' ? '/breakfast/recipes/' + recipe.slug + '/' : '/' + recipe.slug + '-preview.html' %>" class="block relative aspect-square overflow-hidden">
         <img
             src="<%= recipe.image_url || (recipe.sourceSite === 'highprotein.recipes' ? '/images/breakfast/' + recipe.slug + '.png' : 'https://' + recipe.sourceSite + '/recipe_images/' + recipe.slug + '.jpg') %>" 
             alt="<%= recipe.title %>"
@@ -481,7 +481,7 @@ function generateIndexerRecipeCard() {
     
     <!-- Content -->
     <div class="p-4">
-        <a href="<%= recipe.sourceSite === 'highprotein.recipes' ? '/breakfast/' + recipe.slug + '.html' : '/' + recipe.slug + '-preview.html' %>">
+        <a href="<%= recipe.sourceSite === 'highprotein.recipes' ? '/breakfast/recipes/' + recipe.slug + '/' : '/' + recipe.slug + '-preview.html' %>">
             <h3 class="font-semibold text-slate-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors line-clamp-2">
                 <%= recipe.title %>
             </h3>
@@ -994,7 +994,7 @@ function generateRecipePreviewPages(site, allRecipes, partials, outputDir) {
   site,
   pageTitle: recipe.title + ' | ' + site.name,
   pageDescription: recipe.description,
-  canonicalPath: recipe.sourceSite === 'highprotein.recipes' ? '/breakfast/' + recipe.slug + '.html' : '/' + recipe.slug + '-preview.html',
+  canonicalPath: recipe.sourceSite === 'highprotein.recipes' ? '/breakfast/recipes/' + recipe.slug + '/' : '/' + recipe.slug + '-preview.html',
   ogType: 'article',
   ogImage: recipe.image_url || (recipe.sourceSite === 'highprotein.recipes' ? '/images/breakfast/' + recipe.slug + '.png' : 'https://' + recipe.sourceSite + '/recipe_images/' + recipe.slug + '.jpg'),
   preloadImage: recipe.image_url || (recipe.sourceSite === 'highprotein.recipes' ? '/images/breakfast/' + recipe.slug + '.png' : 'https://' + recipe.sourceSite + '/recipe_images/' + recipe.slug + '.jpg'),
@@ -1146,11 +1146,9 @@ function generateRecipePreviewPages(site, allRecipes, partials, outputDir) {
       include: (name, data) => ejs.render(partials[name], data)
     });
 
-    // Breakfast recipes from highprotein.recipes go to /breakfast/{slug}.html
-    if (recipe.sourceSite === 'highprotein.recipes') {
-      fs.mkdirSync(path.join(outputDir, 'breakfast'), { recursive: true });
-      fs.writeFileSync(path.join(outputDir, 'breakfast', `${recipe.slug}.html`), html);
-    } else {
+    // Breakfast recipes from highprotein.recipes already have full pages at /breakfast/recipes/{slug}/
+    // Only generate preview pages for other sites
+    if (recipe.sourceSite !== 'highprotein.recipes') {
       fs.writeFileSync(path.join(outputDir, `${recipe.slug}-preview.html`), html);
     }
   });
@@ -1321,10 +1319,10 @@ function generateSitemap(site, allRecipes, categories, outputDir) {
     urls.push({ loc: `/type-${foodType}.html`, priority: '0.7', changefreq: 'weekly' });
   });
   
-  // Add recipe preview pages
+  // Add recipe pages
   allRecipes.forEach(recipe => {
     if (recipe.sourceSite === 'highprotein.recipes') {
-      urls.push({ loc: `/breakfast/${recipe.slug}.html`, priority: '0.6', changefreq: 'weekly' });
+      urls.push({ loc: `/breakfast/recipes/${recipe.slug}/`, priority: '0.6', changefreq: 'weekly' });
     } else {
       urls.push({ loc: `/${recipe.slug}-preview.html`, priority: '0.5', changefreq: 'monthly' });
     }
@@ -1809,7 +1807,7 @@ function generateBreakfastBuilder(site, breakfastRecipes, partials, outputDir) {
       <div class="flex-grow">
         <div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-6">
           <template x-for="recipe in filteredRecipes" :key="recipe.slug">
-            <a :href="recipe.sourceSite === 'highprotein.recipes' ? '/breakfast/' + recipe.slug + '.html' : '/' + recipe.slug + '-preview.html'"
+            <a :href="recipe.sourceSite === 'highprotein.recipes' ? '/breakfast/recipes/' + recipe.slug + '/' : '/' + recipe.slug + '-preview.html'"
                class="group block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm
                       hover:shadow-lg transition-all border border-slate-100 dark:border-slate-700">
               <div class="aspect-square bg-slate-100 dark:bg-slate-700 relative overflow-hidden">
