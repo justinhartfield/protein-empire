@@ -292,7 +292,7 @@ function generateIndexerNav() {
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </button>
                     <div class="absolute top-full left-0 mt-2 w-48 bg-white dark:bg-slate-800 rounded-lg shadow-lg border border-slate-100 dark:border-slate-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
-                        <a href="/category-breakfast.html" class="block px-4 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white">Breakfast</a>
+                        <a href="/breakfast/" class="block px-4 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white">Breakfast</a>
                         <a href="/category-desserts.html" class="block px-4 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white">Desserts</a>
                         <a href="/category-snacks.html" class="block px-4 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white">Snacks</a>
                         <a href="/category-savory.html" class="block px-4 py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-white">Savory</a>
@@ -365,7 +365,7 @@ function generateIndexerNav() {
             <a href="/breakfast/" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">Breakfast Hub</a>
             <a href="/tools/" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">Protein Tools</a>
             <div class="border-t border-slate-200 dark:border-slate-700 my-2"></div>
-            <a href="/category-breakfast.html" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">All Breakfast</a>
+            <a href="/breakfast/" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">All Breakfast</a>
             <a href="/category-desserts.html" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">Desserts</a>
             <a href="/category-snacks.html" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">Snacks</a>
             <a href="/category-savory.html" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">Savory</a>
@@ -405,7 +405,7 @@ function generateIndexerFooter() {
             <div>
                 <h4 class="font-semibold mb-4">Categories</h4>
                 <ul class="space-y-2 text-slate-400 text-sm">
-                    <li><a href="/category-breakfast.html" class="hover:text-white transition-colors">Breakfast</a></li>
+                    <li><a href="/breakfast/" class="hover:text-white transition-colors">Breakfast</a></li>
                     <li><a href="/category-desserts.html" class="hover:text-white transition-colors">Desserts</a></li>
                     <li><a href="/category-snacks.html" class="hover:text-white transition-colors">Snacks</a></li>
                     <li><a href="/category-savory.html" class="hover:text-white transition-colors">Savory</a></li>
@@ -612,7 +612,7 @@ function generateHomepage(site, allRecipes, categories, partials, outputDir) {
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <a href="/category-breakfast.html" class="group relative overflow-hidden rounded-2xl aspect-[4/3] bg-gradient-to-br from-amber-500 to-orange-600">
+            <a href="/breakfast/" class="group relative overflow-hidden rounded-2xl aspect-[4/3] bg-gradient-to-br from-amber-500 to-orange-600">
                 <div class="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors"></div>
                 <div class="absolute inset-0 flex flex-col justify-end p-6 text-white">
                     <h3 class="font-anton text-2xl uppercase tracking-wider">Breakfast</h3>
@@ -1316,7 +1316,7 @@ function generateSitemap(site, allRecipes, categories, outputDir) {
     { loc: '/', priority: '1.0', changefreq: 'daily' },
     { loc: '/privacy.html', priority: '0.3', changefreq: 'yearly' },
     { loc: '/terms.html', priority: '0.3', changefreq: 'yearly' },
-    { loc: '/category-breakfast.html', priority: '0.8', changefreq: 'weekly' },
+    { loc: '/breakfast/', priority: '0.8', changefreq: 'weekly' },
     { loc: '/category-desserts.html', priority: '0.8', changefreq: 'weekly' },
     { loc: '/category-snacks.html', priority: '0.8', changefreq: 'weekly' },
     { loc: '/category-savory.html', priority: '0.8', changefreq: 'weekly' },
@@ -2251,7 +2251,7 @@ function generateToolsLandingPage(site, partials, outputDir) {
         Browse 300+ macro-verified recipes from our network of specialized protein recipe sites.
       </p>
       <div class="flex flex-wrap justify-center gap-4">
-        <a href="/category-breakfast.html" class="bg-white text-slate-900 px-6 py-3 rounded-xl font-semibold hover:bg-slate-100 transition-colors">
+        <a href="/breakfast/" class="bg-white text-slate-900 px-6 py-3 rounded-xl font-semibold hover:bg-slate-100 transition-colors">
           Breakfast Recipes
         </a>
         <a href="/high-protein.html" class="bg-white/10 text-white px-6 py-3 rounded-xl font-semibold hover:bg-white/20 transition-colors border border-white/20">
@@ -2329,7 +2329,7 @@ function generateProgrammaticPages(site, breakfastRecipes, partials, outputDir) 
       <ol class="flex items-center gap-2 text-slate-500 dark:text-slate-400">
         <li><a href="/" class="hover:text-slate-900 dark:hover:text-white">Home</a></li>
         <li>/</li>
-        <li><a href="/category-breakfast.html" class="hover:text-slate-900 dark:hover:text-white">Breakfast</a></li>
+        <li><a href="/breakfast/" class="hover:text-slate-900 dark:hover:text-white">Breakfast</a></li>
         <li>/</li>
         <li class="text-slate-900 dark:text-white font-medium"><%= intent.title %></li>
       </ol>
