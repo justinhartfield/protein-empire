@@ -21,6 +21,268 @@ import { getSite, empireSites } from '../packages/config/sites.js';
 const DOMAIN = 'highprotein.recipes';
 
 /**
+ * SEO Content for category and ingredient pages
+ * Approximately 800 words each for search engine optimization
+ */
+const SEO_CONTENT = {
+  // Category pages
+  'category-breakfast': {
+    title: 'The Ultimate Guide to High-Protein Breakfast',
+    sections: [
+      {
+        heading: 'Why Protein at Breakfast Matters',
+        content: `Starting your day with adequate protein is one of the most impactful nutritional decisions you can make. Research consistently shows that a high-protein breakfast helps regulate appetite hormones like ghrelin and peptide YY, keeping you fuller for longer and reducing the urge to snack mid-morning. For those focused on body composition, morning protein consumption supports muscle protein synthesis during the critical post-sleep window when your body is primed for nutrient uptake.
+
+The typical American breakfast—cereal, toast, or pastries—delivers mostly carbohydrates with minimal protein, often leaving you hungry within hours. By contrast, a breakfast containing 25-40 grams of protein stabilizes blood sugar levels, prevents energy crashes, and provides sustained mental clarity throughout your morning. Whether you're an athlete looking to optimize recovery, someone managing their weight, or simply wanting more energy, prioritizing protein at breakfast creates a foundation for better choices all day long.`
+      },
+      {
+        heading: 'High-Protein Breakfast Options Beyond Eggs',
+        content: `While eggs are a breakfast staple, the world of high-protein morning meals extends far beyond the traditional scramble. Protein pancakes and waffles have revolutionized breakfast, delivering 20-40 grams of protein per serving while satisfying your craving for something sweet and indulgent. Made with protein powder, cottage cheese, or Greek yogurt, these breakfast favorites prove that hitting your macros doesn't mean sacrificing taste.
+
+Overnight oats and proats (protein oats) offer a convenient make-ahead option perfect for busy mornings. By combining oats with protein powder, Greek yogurt, or egg whites, you create a balanced meal that's ready when you wake up. Protein muffins provide grab-and-go convenience without the sugar crash of traditional bakery items. For those who prefer savory mornings, high-protein breakfast burritos, egg white wraps, and cottage cheese bowls deliver substantial protein while keeping calories in check.`
+      },
+      {
+        heading: 'Building Your Perfect Protein Breakfast',
+        content: `Creating an optimal high-protein breakfast comes down to combining quality protein sources with complementary ingredients. Start with a protein base: eggs, egg whites, Greek yogurt, cottage cheese, or protein powder. Add complex carbohydrates like oats, whole grain bread, or fruit for sustained energy. Include healthy fats from sources like nuts, seeds, or avocado to enhance satiety and nutrient absorption.
+
+Meal prep is your secret weapon for consistent high-protein breakfasts. Batch-cook protein muffins or egg bites on Sunday, prepare overnight oats in mason jars, or freeze breakfast burritos for quick reheating. When time is truly limited, a protein shake blended with fruit and nut butter takes under two minutes and delivers 30+ grams of protein. The key is having options ready so that a protein-rich breakfast becomes your default, not an afterthought.`
+      }
+    ]
+  },
+  'category-desserts': {
+    title: 'Macro-Friendly Desserts That Satisfy',
+    sections: [
+      {
+        heading: 'Rethinking Dessert for Your Fitness Goals',
+        content: `The belief that desserts and fitness goals can't coexist is outdated. Modern macro-conscious baking has created an entirely new category of treats that deliver genuine satisfaction while supporting your nutritional objectives. High-protein desserts aren't about deprivation or settling for cardboard-tasting alternatives—they're about using smarter ingredients to create genuinely delicious treats that happen to fit your macros.
+
+Traditional desserts rely heavily on sugar, refined flour, and butter, delivering empty calories with minimal nutritional benefit. By substituting protein powder, Greek yogurt, cottage cheese, and alternative flours, you can create cookies, brownies, cheesecakes, and puddings that provide 15-30 grams of protein per serving. These swaps don't just add protein—they often reduce sugar and increase fiber, making your desserts more satiating and less likely to trigger overconsumption.`
+      },
+      {
+        heading: 'Popular High-Protein Dessert Categories',
+        content: `Protein cookies have become a staple for macro-conscious eaters, offering the nostalgic comfort of fresh-baked cookies with a fraction of the sugar and a significant protein boost. From classic chocolate chip to peanut butter and snickerdoodle, virtually every cookie variety can be reimagined with protein-forward ingredients. Protein brownies deliver fudgy, chocolatey satisfaction—often with black beans, avocado, or Greek yogurt creating that dense, moist texture traditionally achieved with excessive butter.
+
+Protein cheesecakes and mousse-style desserts showcase how cottage cheese and Greek yogurt can transform into creamy, indulgent treats. No-bake options are particularly popular, requiring minimal effort while delivering maximum flavor. Protein puddings and chia puddings offer portion-controlled sweetness perfect for satisfying late-night cravings without derailing your progress. Donuts, often considered off-limits, get a healthy makeover through baking instead of frying and incorporating protein-rich batters.`
+      },
+      {
+        heading: 'Tips for Successful Protein Baking',
+        content: `Baking with protein powder requires understanding how it behaves differently from traditional flour. Protein powder absorbs more liquid, so recipes typically need additional moisture from ingredients like Greek yogurt, applesauce, or mashed banana. Overbaking is the enemy of protein desserts—they continue cooking after removal from the oven, so pull them slightly earlier than you think necessary for optimal texture.
+
+Flavor variety keeps protein desserts exciting. Experiment with different protein powder flavors—vanilla works as a neutral base, while chocolate, peanut butter, and specialty flavors like birthday cake or cinnamon roll add instant variety. Don't forget mix-ins: sugar-free chocolate chips, chopped nuts, dried fruit, and flavor extracts can transform a basic recipe into something special. Most importantly, measure accurately. Protein baking is more sensitive to ratios than traditional baking, so invest in a kitchen scale for consistent results.`
+      }
+    ]
+  },
+  'category-snacks': {
+    title: 'High-Protein Snacks for Sustained Energy',
+    sections: [
+      {
+        heading: 'The Role of Protein Snacks in Your Diet',
+        content: `Strategic snacking is an underrated tool for meeting your protein goals and maintaining stable energy throughout the day. Rather than reaching for chips, crackers, or candy that spike blood sugar and leave you hungrier than before, high-protein snacks provide sustained fuel that keeps you satisfied between meals. For those eating in a caloric deficit, protein-rich snacks help preserve muscle mass while supporting fat loss. For athletes and active individuals, they provide convenient opportunities to hit elevated protein targets.
+
+The ideal protein snack delivers 10-20 grams of protein without excessive calories or added sugars. This combination ensures you're getting meaningful nutritional value without consuming a meal's worth of calories. Portable options are particularly valuable—life doesn't always allow for sit-down meals, and having protein-rich snacks available prevents poor choices when hunger strikes unexpectedly.`
+      },
+      {
+        heading: 'Homemade vs. Store-Bought Protein Snacks',
+        content: `While the market for protein snacks has exploded, store-bought options often come with drawbacks: high prices, artificial ingredients, and sugar alcohols that cause digestive issues for many people. Making your own protein snacks at home offers complete control over ingredients, significant cost savings, and the ability to customize flavors to your preferences. A batch of homemade protein balls costs a fraction of packaged alternatives and can be made in under 15 minutes.
+
+Protein bars represent perhaps the best case for homemade preparation. Commercial bars often contain 20+ ingredients, including preservatives, fillers, and sweeteners you'd rather avoid. Homemade versions typically require just 5-8 whole-food ingredients and taste fresher and more satisfying. Protein bites and energy balls are even simpler—most recipes are no-bake, requiring only mixing and refrigeration. These snacks keep well in the fridge for a week or can be frozen for longer storage.`
+      },
+      {
+        heading: 'Smart Snacking Strategies',
+        content: `Timing your protein snacks strategically maximizes their benefit. Pre-workout snacks consumed 30-60 minutes before training provide amino acids for muscle protection during exercise. Post-workout snacks help initiate recovery, especially if a full meal isn't immediately possible. Mid-afternoon snacks combat the energy slump that leads many people to sugary pick-me-ups or excessive caffeine.
+
+Portion control matters even with healthy snacks—they're meant to bridge meals, not replace them. Pre-portioning snacks into individual servings prevents mindless overeating and ensures you know exactly what you're consuming. Keep protein snacks visible and accessible: a container on your desk, stashed in your gym bag, or ready in the car. When the healthy option is the convenient option, good choices become automatic.`
+      }
+    ]
+  },
+  'category-savory': {
+    title: 'Savory High-Protein Recipes',
+    sections: [
+      {
+        heading: 'Beyond Sweet: The Savory Protein Revolution',
+        content: `While protein powder often conjures images of sweet shakes and desserts, the savory application of high-protein cooking has expanded dramatically. For those who don't have a sweet tooth or simply want more variety, savory protein recipes offer equally satisfying options for meeting your macros. From protein-enriched pizza crusts to high-protein bread and savory baked goods, this category proves that prioritizing protein doesn't mean living on sweet flavors alone.
+
+Savory high-protein recipes often rely on different protein sources than their sweet counterparts. Instead of whey or casein powder, savory dishes frequently feature cottage cheese, Greek yogurt, eggs, and cheese as their protein foundation. Chickpea flour, almond flour, and other alternative flours add protein while creating textures similar to traditional baked goods. The result is comfort food reimagined—satisfying your cravings while supporting your fitness goals.`
+      },
+      {
+        heading: 'High-Protein Pizza and Flatbreads',
+        content: `Pizza doesn't have to be a cheat meal when you build it on a high-protein crust. Protein pizza crusts made with cottage cheese, eggs, and cheese deliver 20-30 grams of protein before you even add toppings. Greek yogurt dough creates surprisingly authentic flatbreads with a fraction of the carbs and significantly more protein than traditional versions. These crusts crisp up beautifully and hold toppings just like conventional pizza.
+
+The beauty of protein pizza is its versatility. Load it with vegetables and lean proteins for an even more macro-friendly meal, or keep it simple with classic toppings—the crust itself has already done the heavy lifting nutritionally. Many recipes freeze well, allowing you to prep crusts in advance for quick weeknight dinners that feel indulgent but align with your goals.`
+      },
+      {
+        heading: 'Protein Bread and Beyond',
+        content: `High-protein bread solves one of the biggest challenges for macro-conscious eaters: enjoying sandwiches, toast, and bread-based meals without the blood sugar spike and minimal nutrition of standard bread. Protein bread recipes incorporate eggs, protein powder, Greek yogurt, or cottage cheese to deliver 8-15 grams of protein per slice—compared to just 3-4 grams in typical bread.
+
+Bagels, rolls, and wraps get the same treatment, making it possible to enjoy your favorite bread formats with dramatically improved nutrition. Many protein bread recipes require no yeast and minimal rising time, making them faster to prepare than traditional bread baking. The texture may differ slightly from wheat bread, but many people come to prefer the denser, more satisfying quality of protein-enriched versions. Toast with nut butter becomes a legitimate high-protein meal when the bread itself contributes meaningful protein.`
+      }
+    ]
+  },
+  // Ingredient pages
+  'ingredient-protein-powder': {
+    title: 'Cooking and Baking with Protein Powder',
+    sections: [
+      {
+        heading: 'Choosing the Right Protein Powder for Recipes',
+        content: `Not all protein powders perform equally in cooking and baking. Whey protein concentrate is the most versatile option, providing good texture and flavor in most applications. Whey isolate works well but can dry out baked goods more quickly due to its lower fat content. Casein protein creates denser, chewier textures ideal for protein bars and no-bake treats. Plant-based options like pea, rice, or blends require recipe adjustments due to their different absorption properties and flavors.
+
+Flavor selection significantly impacts your results. Vanilla protein serves as a neutral base that works in virtually any recipe, from pancakes to cookies to savory applications. Chocolate protein adds instant cocoa flavor without extra ingredients. Unflavored protein offers the most versatility but requires you to build flavor through other ingredients. Specialty flavors like peanut butter, cinnamon roll, or fruity varieties can create unique recipes but may limit flexibility.`
+      },
+      {
+        heading: 'Protein Powder Baking Science',
+        content: `Understanding how protein powder behaves in recipes prevents common failures. Protein powder absorbs significantly more liquid than flour—typically 2-3 times more—so recipes need additional moisture. This is why successful protein recipes often include Greek yogurt, mashed banana, applesauce, or extra eggs. Without adequate moisture, your baked goods will be dry, crumbly, and unpleasant.
+
+Heat affects protein powder differently than flour. Overheating causes protein to become tough and rubbery—this is why protein baked goods should be removed from the oven slightly underdone. They'll continue cooking from residual heat and firm up as they cool. Using lower oven temperatures (325-350°F instead of 375°F) and shorter baking times yields better results. Letting baked goods rest before cutting or eating allows proteins to set properly.`
+      },
+      {
+        heading: 'Beyond Baking: Creative Protein Powder Uses',
+        content: `Protein powder's utility extends far beyond traditional shakes and baked goods. Protein oatmeal (proats) transforms breakfast by stirring protein powder into cooked oats—add it after removing from heat to prevent clumping. Protein coffee, made by blending protein powder into your morning brew, combines caffeine and protein in one efficient drink. Greek yogurt bowls get an extra boost from a scoop of matching-flavored protein.
+
+Savory applications are often overlooked. Unflavored protein powder can be added to soups, sauces, and even mashed vegetables to increase protein content without affecting taste. Protein powder works in homemade pasta dough, adding nutrition to a traditionally carb-heavy food. The key to savory use is choosing unflavored varieties and adding powder to recipes where it can be fully incorporated rather than detected as a distinct ingredient.`
+      }
+    ]
+  },
+  'ingredient-greek-yogurt': {
+    title: 'Greek Yogurt: The Ultimate Protein Ingredient',
+    sections: [
+      {
+        heading: 'Why Greek Yogurt Dominates Protein Cooking',
+        content: `Greek yogurt has earned its status as a kitchen staple for health-conscious cooks. With 15-20 grams of protein per cup (compared to 8-9 grams in regular yogurt), it delivers substantial protein in a versatile, affordable format. The straining process that creates Greek yogurt's thick texture also concentrates its protein while reducing lactose, making it easier to digest for many people. Its tangy flavor and creamy consistency make it invaluable in both sweet and savory applications.
+
+Beyond protein content, Greek yogurt brings functional benefits to recipes. It adds moisture to baked goods, creates tender crumbs in muffins and cakes, and can replace some or all of the oil or butter in many recipes—reducing calories while maintaining texture. The acidity activates baking soda, contributing to lift in baked goods. In no-bake applications, it provides creaminess comparable to much higher-calorie ingredients like cream cheese or heavy cream.`
+      },
+      {
+        heading: 'Greek Yogurt in Sweet Recipes',
+        content: `Protein pancakes and waffles achieve their signature fluffy-yet-substantial texture largely thanks to Greek yogurt. It adds body without heaviness, keeps the inside moist while the outside crisps, and contributes protein alongside eggs and protein powder. The slight tanginess balances sweetness, preventing that cloying quality some protein baked goods can have.
+
+Smoothie bowls and parfaits showcase Greek yogurt as the star ingredient rather than a supporting player. Frozen and blended, it creates ice cream-like consistency without the sugar and fat of actual ice cream. Layered with granola and fruit, it becomes a satisfying meal or snack. Protein cheesecakes and mousse desserts rely on Greek yogurt for their creamy texture, often combined with cottage cheese for even higher protein content. Even simple preparations—yogurt with honey and nuts, or mixed with protein powder and frozen into bark—make satisfying treats.`
+      },
+      {
+        heading: 'Savory Greek Yogurt Applications',
+        content: `Greek yogurt's savory potential often goes unexplored. As a sour cream substitute, it brings more protein and fewer calories to tacos, baked potatoes, and dips. Mixed with herbs and spices, it becomes high-protein sauces, dressings, and marinades. The acidity helps tenderize meat, making Greek yogurt an excellent base for marinades that do double duty.
+
+Two-ingredient dough—Greek yogurt combined with self-rising flour—has revolutionized easy bread-making. This simple combination produces bagels, flatbreads, pizza dough, and rolls with significantly more protein than standard versions. The dough comes together in minutes, requires no yeast or rising time, and produces surprisingly authentic results. For those avoiding traditional flour, Greek yogurt combines equally well with almond flour or protein powder for low-carb alternatives.`
+      }
+    ]
+  },
+  'ingredient-cottage-cheese': {
+    title: 'Cottage Cheese: The Underrated Protein Powerhouse',
+    sections: [
+      {
+        heading: 'Cottage Cheese Renaissance in Modern Cooking',
+        content: `Cottage cheese is experiencing a well-deserved revival among fitness-focused cooks. With 24-28 grams of protein per cup and a mild flavor that blends seamlessly into recipes, it's one of the most efficient protein sources available. Once relegated to diet plates of the 1980s, cottage cheese has been rediscovered as a versatile ingredient that can be transformed into everything from ice cream to alfredo sauce. Its high casein content provides slow-digesting protein, making it particularly valuable for overnight recipes and evening snacks.
+
+The key to loving cottage cheese in recipes is understanding how to use it. Blended smooth, it becomes virtually undetectable while adding creaminess and protein to smoothies, dips, and baked goods. The curds can be embraced for texture in dishes like scrambled eggs, grain bowls, and toast toppings. Small curd varieties blend more smoothly; large curd works better when you want distinct texture. Low-fat versions work well in most recipes, though full-fat provides richer flavor in certain applications.`
+      },
+      {
+        heading: 'Cottage Cheese in Breakfast and Desserts',
+        content: `Cottage cheese pancakes represent perhaps the most popular application, producing fluffy, protein-rich cakes with minimal ingredients. Blended with eggs and oats (or just eggs for lower carb), cottage cheese creates a batter that yields surprisingly normal-tasting pancakes with 25+ grams of protein per serving. The same base works for waffles, crepes, and even protein muffins.
+
+Blended cottage cheese transforms into "nice cream"—frozen desserts with ice cream's texture and fraction of the calories. Combined with frozen fruit and sweetener, it churns into soft-serve consistency straight from the food processor. Cottage cheese cheesecake, whether baked or no-bake, delivers the classic creamy tang with dramatically improved nutrition. For simple snacking, cottage cheese bowls topped with fruit, nuts, honey, or even savory additions like everything bagel seasoning provide satisfying, protein-packed options.`
+      },
+      {
+        heading: 'Savory Cottage Cheese Creations',
+        content: `Cottage cheese alfredo sauce has converted countless skeptics. Blended until smooth with garlic, parmesan, and pasta water, it creates a creamy sauce with 15+ grams of protein per serving instead of the butter-and-cream original's minimal protein content. The technique works for any creamy sauce—blend cottage cheese as your base, then season appropriately for the dish.
+
+Scrambled eggs gain extra protein and creamier texture from cottage cheese stirred in during cooking. Dips and spreads benefit from cottage cheese's protein boost while maintaining crowd-pleasing creaminess. Lasagna and stuffed shells traditionally use ricotta, but cottage cheese—blended or with curds intact—provides more protein with similar flavor and texture. Even pizza gets the cottage cheese treatment, with blended cottage cheese creating high-protein "cheese" sauces for topping.`
+      }
+    ]
+  },
+  'ingredient-oats': {
+    title: 'Oats in High-Protein Cooking',
+    sections: [
+      {
+        heading: 'Oats as a Protein-Boosting Foundation',
+        content: `Oats might not be the first ingredient that comes to mind for high-protein cooking, but they serve as an ideal foundation for protein-rich recipes. With 5-6 grams of protein per half-cup serving, oats provide more protein than most grains. More importantly, they combine beautifully with high-protein additions like protein powder, Greek yogurt, and eggs, creating satisfying meals and baked goods that deliver substantial protein without tasting like "health food."
+
+Beyond their protein contribution, oats bring fiber, complex carbohydrates, and beta-glucans that support heart health and stable energy levels. They add body and texture to smoothies, create chewy structure in baked goods, and serve as the base for countless make-ahead breakfast options. Ground into flour, oats replace some or all wheat flour in recipes, adding nutrition and creating tender crumbs in protein muffins, pancakes, and cookies.`
+      },
+      {
+        heading: 'Protein Oatmeal Variations',
+        content: `Proats—protein-enhanced oatmeal—has become a staple breakfast for fitness enthusiasts. The basic formula is simple: cook oats as usual, then stir in protein powder after removing from heat (adding protein powder to boiling liquid creates clumps and affects texture). The result is a creamy, satisfying bowl with 30+ grams of protein that keeps you full for hours.
+
+Overnight protein oats eliminate morning cooking entirely. Combine oats with protein powder, Greek yogurt or milk, and desired mix-ins in a jar, refrigerate overnight, and wake up to ready-to-eat breakfast. The oats soften without cooking, creating a pudding-like texture. Baked oatmeal takes a different approach, combining oats with eggs, protein powder, and milk, then baking into sliceable squares that can be prepped on Sunday and reheated throughout the week.`
+      },
+      {
+        heading: 'Oats in Protein Baking and Snacks',
+        content: `Oat flour—simply oats blended in a food processor—creates a whole-grain flour that works beautifully in protein baking. It produces tender pancakes, soft cookies, and moist muffins while adding fiber and nutrition. Combined with protein powder, oat flour creates baked goods that are satisfying rather than dense or dry. The mild, slightly sweet flavor complements virtually any recipe.
+
+No-bake protein balls rely heavily on oats for their satisfying chew. Combined with protein powder, nut butter, and honey or maple syrup, oats create portable snacks that hold together without baking. Protein granola made with oats provides crunchy topping for yogurt bowls or satisfying snacking straight from the container. Homemade protein bars use oats as their base, bound together with protein powder and sticky ingredients into portable, customizable snacks far superior to most commercial options.`
+      }
+    ]
+  },
+  'ingredient-banana': {
+    title: 'Bananas in High-Protein Recipes',
+    sections: [
+      {
+        heading: 'The Perfect Protein Baking Companion',
+        content: `Bananas have earned their place as an essential ingredient in protein cooking, not for their protein content (which is minimal), but for what they bring to protein-rich recipes. Their natural sweetness reduces the need for added sugars. Their moisture keeps protein baked goods from becoming dry. Their binding properties help hold ingredients together without excessive eggs or oil. And their familiar, crowd-pleasing flavor makes protein recipes taste more like comfort food than health food.
+
+Ripeness matters significantly in protein baking. Spotted, very ripe bananas mash easily, provide maximum sweetness, and deliver the most intense banana flavor. They're ideal for banana bread, muffins, and pancakes where you want banana to be a prominent flavor. Less ripe bananas work better when you want banana's functional benefits without strong flavor—they add moisture and binding without overwhelming other ingredients.`
+      },
+      {
+        heading: 'Classic Banana Protein Recipes',
+        content: `Two-ingredient protein pancakes—just banana and eggs—started a revolution in easy high-protein breakfasts. While the basic version is quite eggy, adding protein powder, oats, or Greek yogurt creates more pancake-like results while boosting nutrition further. These pancakes freeze well, making them ideal for meal prep. Banana protein bread takes the beloved classic and adds protein powder and Greek yogurt, transforming it from an occasional treat to a macro-friendly breakfast option.
+
+Banana nice cream demonstrates the fruit's ability to mimic ice cream's texture. Frozen banana slices blended until smooth create a creamy, soft-serve consistency. Add protein powder, Greek yogurt, or cottage cheese for a protein boost. The possibilities are endless: chocolate peanut butter, strawberry, cookies and cream, or any combination you crave. It's one of the few desserts that's actually improved by adding protein.`
+      },
+      {
+        heading: 'Beyond Breakfast: Banana Versatility',
+        content: `Protein smoothies reach their potential with frozen banana as a base. It creates thickness, natural sweetness, and a mild flavor that complements virtually any combination. Banana pairs especially well with chocolate protein powder and peanut butter, creating a shake that tastes indulgent while delivering 40+ grams of protein. For those watching carbs, half a banana provides enough sweetness and texture without excessive sugar.
+
+Banana's binding power makes it valuable in no-bake protein balls and bars. Mashed banana combined with protein powder, oats, and nut butter creates snacks that hold together without cooking. In baked goods, banana can replace some of the egg, oil, or sugar while adding moisture and tenderness. Even frozen banana "coins" dipped in chocolate or yogurt and stored in the freezer make simple, satisfying protein-adjacent treats that satisfy sweet cravings.`
+      }
+    ]
+  },
+  'ingredient-peanut-butter': {
+    title: 'Peanut Butter in High-Protein Cooking',
+    sections: [
+      {
+        heading: 'Peanut Butter: Protein and Flavor Combined',
+        content: `Peanut butter brings a rare combination to protein cooking: substantial protein content (7-8 grams per two tablespoons) plus a flavor that people genuinely love. Unlike many high-protein ingredients that require creativity to make palatable, peanut butter is already a favorite that enhances recipes simply by being included. Its richness, saltiness, and familiar taste make protein recipes feel indulgent rather than restrictive.
+
+Choosing the right peanut butter matters. Natural peanut butter (just peanuts and salt) provides cleaner nutrition without added sugars or hydrogenated oils. It behaves differently in recipes—natural peanut butter is drippy and needs stirring, while conventional varieties are thick and uniform. Both work in most applications, but natural peanut butter's fluid consistency actually blends more smoothly into batters and sauces. Powdered peanut butter offers an alternative with significantly fewer calories and fat while maintaining peanut flavor, though it lacks the richness of whole peanut butter.`
+      },
+      {
+        heading: 'Peanut Butter in Protein Desserts',
+        content: `Peanut butter protein cookies rank among the most popular macro-friendly treats, combining the beloved flavor with substantial protein from powder and eggs. The result tastes remarkably like conventional peanut butter cookies while delivering 15-20 grams of protein per cookie. No-bake versions require even less effort—peanut butter, protein powder, and oats or coconut combine into balls that satisfy cravings without heating up the kitchen.
+
+Peanut butter and chocolate create one of the most crave-worthy flavor combinations in existence, and protein versions are no exception. Protein Reese's cups, peanut butter chocolate protein bark, and chocolate peanut butter protein bars tap into this beloved pairing while providing meaningful nutrition. Peanut butter protein fudge, made with protein powder and coconut oil, creates rich, satisfying treats that melt in your mouth while fitting your macros.`
+      },
+      {
+        heading: 'Peanut Butter Beyond Desserts',
+        content: `Peanut butter transforms protein smoothies from functional to delicious. Combined with chocolate protein powder, banana, and milk, it creates a shake that tastes like a milkshake while delivering complete nutrition. The healthy fats in peanut butter also improve satiety, keeping you satisfied longer than a fat-free protein shake would.
+
+Savory applications showcase peanut butter's versatility. Peanut sauces for noodles and stir-fries provide protein alongside bright, complex flavor. Thai-inspired peanut dressings make salads more satisfying. Peanut butter added to overnight oats creates a rich, filling breakfast. Even simple combinations—peanut butter on protein bread, or apple slices with peanut butter and protein powder—demonstrate how this ingredient elevates simple snacks into substantial protein servings.`
+      }
+    ]
+  },
+  'ingredient-chia': {
+    title: 'Chia Seeds in High-Protein Recipes',
+    sections: [
+      {
+        heading: 'Tiny Seeds, Big Protein Impact',
+        content: `Chia seeds pack impressive nutrition into their tiny size: 5 grams of protein per two tablespoons, plus 10 grams of fiber and a significant dose of omega-3 fatty acids. But their real superpower in protein cooking is their unique gelling ability. When combined with liquid, chia seeds absorb up to 12 times their weight, creating a gel-like consistency that serves as the base for puddings, egg replacements, and thickeners in countless recipes.
+
+This gelling property makes chia seeds invaluable for no-cook protein preparations. Unlike protein powders that need blending or oats that need soaking, chia seeds simply need time in contact with liquid to transform. The result is a thick, pudding-like consistency that serves as a vehicle for additional protein from sources like protein powder, Greek yogurt, and nut butters.`
+      },
+      {
+        heading: 'Chia Pudding: The Ultimate Protein Prep',
+        content: `Chia pudding exemplifies meal prep efficiency. Combine chia seeds with milk (dairy or plant-based), protein powder, and sweetener in a jar; refrigerate overnight; wake up to ready-to-eat breakfast or snack. The basic formula—three tablespoons chia seeds to one cup liquid plus one scoop protein powder—can be customized infinitely. Add cocoa powder for chocolate, frozen berries for fruit flavor, or peanut butter for richness.
+
+The texture of chia pudding divides opinions—some love the tapioca-like bite of the seeds, while others find it off-putting. Blending the pudding after it sets creates a smoother consistency closer to traditional pudding. Adding toppings like granola, fresh fruit, or coconut flakes provides textural contrast. For maximum protein, top chia pudding with Greek yogurt, creating a parfait that delivers 35+ grams of protein with minimal effort.`
+      },
+      {
+        heading: 'Creative Chia Applications',
+        content: `Beyond pudding, chia seeds enhance protein recipes in multiple ways. Added to smoothies, they create thickness without the iciness of frozen fruit, plus their gel absorbs and holds protein powder more effectively than liquid alone. In overnight oats, chia seeds contribute protein while creating a creamier consistency. Stirred into Greek yogurt, they add protein and omega-3s while providing satisfying texture.
+
+Chia eggs—one tablespoon chia seeds mixed with three tablespoons water, allowed to gel for five minutes—replace eggs in many vegan protein baking applications. While they won't create the same lift as eggs, they provide binding and moisture. Chia jam, made by cooking fruit with chia seeds until thickened, creates a high-fiber topping for protein pancakes, yogurt bowls, and toast without the excessive sugar of conventional jam.`
+      }
+    ]
+  }
+};
+
+/**
  * Load recipes from all empire sites
  */
 function loadAllRecipes() {
@@ -317,8 +579,8 @@ function generateIndexerNav() {
                     </svg>
                 </button>
 
-                <a href="/#sites" class="bg-brand-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-brand-600 transition-colors">
-                    Browse All Sites
+                <a href="https://highprotein.recipes/pack-starter" class="bg-brand-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-brand-600 transition-colors">
+                    FREE MEAL PLAN
                 </a>
             </div>
 
@@ -370,8 +632,8 @@ function generateIndexerNav() {
             <a href="/category-snacks.html" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">Snacks</a>
             <a href="/category-savory.html" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">Savory</a>
             <a href="/high-protein.html" class="block text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium">30g+ Protein</a>
-            <a href="/#sites" class="block bg-brand-500 text-white px-4 py-2 rounded-lg font-semibold text-center">
-                Browse All Sites
+            <a href="https://highprotein.recipes/pack-starter" class="block bg-brand-500 text-white px-4 py-2 rounded-lg font-semibold text-center">
+                FREE MEAL PLAN
             </a>
         </div>
     </div>
@@ -1003,6 +1265,23 @@ function generateListingPage(site, recipes, config, partials, outputDir) {
             <a href="/" class="inline-block mt-4 text-brand-500 hover:text-brand-600 font-medium">← Back to Home</a>
         </div>
         <% } %>
+
+        <% if (seoContent) { %>
+        <!-- SEO Content Section -->
+        <section class="mt-16 pt-12 border-t border-slate-200 dark:border-slate-700">
+            <h2 class="font-anton text-3xl uppercase tracking-wider mb-8"><%= seoContent.title %></h2>
+            <div class="prose prose-slate dark:prose-invert max-w-none">
+                <% seoContent.sections.forEach(section => { %>
+                <div class="mb-8">
+                    <h3 class="text-xl font-semibold mb-4 text-slate-800 dark:text-slate-200"><%= section.heading %></h3>
+                    <% section.content.split('\\n\\n').forEach(paragraph => { %>
+                    <p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed"><%= paragraph %></p>
+                    <% }); %>
+                </div>
+                <% }); %>
+            </div>
+        </section>
+        <% } %>
     </div>
 </main>
 
@@ -1011,12 +1290,16 @@ function generateListingPage(site, recipes, config, partials, outputDir) {
 </html>
 `;
 
+  // Look up SEO content for this page
+  const seoContent = SEO_CONTENT[config.slug] || null;
+
   const html = ejs.render(template, {
     site,
     recipes,
     config,
     foodTypes,
     hasFilters,
+    seoContent,
     include: (name, data) => ejs.render(partials[name], data)
   });
 
