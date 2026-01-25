@@ -655,8 +655,8 @@ function generateHomepage(site, allRecipes, categories, partials, outputDir) {
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             <% empireSites.forEach(es => { %>
             <a href="https://<%= es.domain %>" target="_blank" rel="noopener" class="group bg-white dark:bg-slate-800 rounded-xl p-6 border border-slate-100 dark:border-slate-700 hover:border-brand-500 hover:shadow-lg transition-all text-center">
-                <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-brand-500 to-accent-500 flex items-center justify-center text-white font-anton text-xl uppercase">
-                    <%= es.name.charAt(0) %>
+                <div class="w-16 h-16 mx-auto mb-4 rounded-full overflow-hidden">
+                    <img src="/images/empire/<%= es.name.toLowerCase() %>.png" alt="<%= es.name %>" class="w-full h-full object-cover">
                 </div>
                 <h3 class="font-semibold text-slate-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors"><%= es.name %></h3>
                 <p class="text-sm text-slate-500 dark:text-slate-400 mt-1"><%= es.domain %></p>
