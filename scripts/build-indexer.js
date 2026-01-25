@@ -56,6 +56,34 @@ function loadAllRecipes() {
     }
   }
   
+  // Also load highprotein.recipes exclusive breakfast recipes
+  const hprRecipesFile = path.join(ROOT_DIR, 'apps', 'highprotein.recipes', 'data', 'recipes.json');
+  if (fs.existsSync(hprRecipesFile)) {
+    try {
+      const data = JSON.parse(fs.readFileSync(hprRecipesFile, 'utf-8'));
+      const recipes = Array.isArray(data) ? data : (data.recipes || []);
+
+      recipes.forEach(recipe => {
+        allRecipes.push({
+          ...recipe,
+          protein: recipe.protein || recipe.nutrition?.protein || 0,
+          calories: recipe.calories || recipe.nutrition?.calories || 0,
+          carbs: recipe.carbs || recipe.nutrition?.carbs || 0,
+          fat: recipe.fat || recipe.nutrition?.fat || 0,
+          sourceSite: 'highprotein.recipes',
+          sourceName: 'HighProtein.Recipes',
+          sourceCategory: 'breakfast',
+          foodType: 'breakfast',
+          fullRecipeUrl: `/breakfast/${recipe.slug}.html`
+        });
+      });
+
+      console.log(`   Loaded ${recipes.length} exclusive breakfast recipes from highprotein.recipes`);
+    } catch (error) {
+      console.log(`   Warning: Could not load highprotein.recipes exclusive recipes: ${error.message}`);
+    }
+  }
+
   return allRecipes;
 }
 
