@@ -1,220 +1,966 @@
 {
   "recipes": [
     {
-      "title": "Apple Protein Muffins",
+      "id": 1,
       "slug": "apple-protein-muffins",
+      "title": "Apple Protein Muffins",
+      "description": "Cinnamon-spiced apple protein muffins with fresh apple chunks. 19g protein, 125 calories per muffin. Tastes like apple pie but supports your fitness goals.",
       "protein": 19,
       "calories": 125,
-      "totalTime": 37,
-      "description": "Cinnamon-spiced apple protein muffins with fresh apple chunks. 19g protein, 125 calories per muffin. Tastes like apple pie but supports your fitness goals.",
-      "image_url": "https://proteinmuffins.com/recipe_images/apple-cinnamon-protein-muffins.png"
+      "carbs": 9,
+      "fat": 2,
+      "fiber": 1,
+      "sugar": 5,
+      "servingSize": "1 muffin",
+      "yield": "12 muffins",
+      "prepTime": "15",
+      "cookTime": "22",
+      "totalTime": "37",
+      "difficulty": "Medium",
+      "category": "classic",
+      "categories": [
+        "classic"
+      ],
+      "tags": [
+        "protein banana muffins",
+        "high protein breakfast",
+        "healthy baking"
+      ],
+      "ingredients": [
+        "50g oat flour",
+        "210g vanilla whey protein powder",
+        "6g baking powder",
+        "3g ground cinnamon",
+        "200g mashed bananas",
+        "300g nonfat Greek yogurt",
+        "200g liquid egg whites",
+        "150g diced fresh apples"
+      ],
+      "instructions": [
+        "Preheat your oven to 375\u00b0F (190\u00b0C). Spray a 12-slot muffin tin with non-stick cooking spray or use silicone muffin cups.",
+        "In a large bowl, whisk together the flour, protein powder, and baking powder until well combined to prevent protein clumps.",
+        "In a separate bowl, mash the bananas until smooth. Add the yogurt and egg whites, stirring until uniform.",
+        "Gently fold the wet mixture into the dry ingredients\u2014do not overmix. Fill muffin cups 3/4 full. Bake at 375\u00b0F for 5 minutes, then reduce to 350\u00b0F for 13-15 more minutes until a toothpick comes out clean."
+      ]
     },
     {
-      "title": "Banana Chocolate Chip Protein Muffins",
+      "id": 2,
       "slug": "banana-chocolate-chip-protein-muffins",
+      "title": "Banana Chocolate Chip Protein Muffins",
+      "description": "Banana chocolate chip protein muffins combining two classics with 19g protein per serving. Melty chocolate chips and ripe bananas in every bite.",
       "protein": 19,
       "calories": 134,
-      "totalTime": 28,
-      "description": "Banana chocolate chip protein muffins combining two classics with 19g protein per serving. Melty chocolate chips and ripe bananas in every bite.",
-      "image_url": "https://proteinmuffins.com/recipe_images/banana-choc-protein-muffins.png"
+      "carbs": 11,
+      "fat": 2,
+      "fiber": 1,
+      "sugar": 5,
+      "servingSize": "1 muffin",
+      "yield": "12 muffins",
+      "prepTime": "10",
+      "cookTime": "18",
+      "totalTime": "28",
+      "difficulty": "Medium",
+      "category": "classic",
+      "categories": [
+        "classic"
+      ],
+      "tags": [
+        "protein banana muffins",
+        "high protein breakfast",
+        "healthy baking"
+      ],
+      "ingredients": [
+        "50g oat flour",
+        "210g chocolate whey protein powder",
+        "6g baking powder",
+        "60g dark chocolate chips",
+        "300g mashed bananas",
+        "300g nonfat Greek yogurt",
+        "200g liquid egg whites"
+      ],
+      "instructions": [
+        "Preheat your oven to 375\u00b0F (190\u00b0C). Spray a 12-slot muffin tin with non-stick cooking spray or use silicone muffin cups.",
+        "In a large bowl, whisk together the flour, protein powder, and baking powder until well combined to prevent protein clumps.",
+        "In a separate bowl, mash the bananas until smooth. Add the yogurt and egg whites, stirring until uniform.",
+        "Gently fold the wet mixture into the dry ingredients\u2014do not overmix. Fill muffin cups 3/4 full. Bake at 375\u00b0F for 5 minutes, then reduce to 350\u00b0F for 13-15 more minutes until a toothpick comes out clean."
+      ]
     },
     {
-      "title": "Banana Nut Protein Muffins",
+      "id": 3,
       "slug": "banana-nut-protein-muffins",
-      "protein": 19,
-      "calories": 133,
-      "totalTime": 32,
+      "title": "Banana Nut Protein Muffins",
       "description": "Banana nut protein muffins with toasted walnuts and 19g protein. Heart-healthy omega-3s meet satisfying crunch in every bite.",
-      "image_url": "https://proteinmuffins.com/recipe_images/banana-nut-protein-muffins.png"
-    },
-    {
-      "title": "Chocolate Chip Protein Muffins",
-      "slug": "chocolate-chip-protein-muffins",
       "protein": 19,
       "calories": 133,
-      "totalTime": 28,
-      "description": "Classic chocolate chip protein muffins with 19g protein per serving. Vanilla base studded with melty chocolate chips for the perfect balance.",
-      "image_url": "https://proteinmuffins.com/recipe_images/choc-chip-protein-muffins.png"
+      "carbs": 11,
+      "fat": 2,
+      "fiber": 1,
+      "sugar": 5,
+      "servingSize": "1 muffin",
+      "yield": "12 muffins",
+      "prepTime": "12",
+      "cookTime": "20",
+      "totalTime": "32",
+      "difficulty": "Medium",
+      "category": "classic",
+      "categories": [
+        "classic"
+      ],
+      "tags": [
+        "protein banana muffins",
+        "high protein breakfast",
+        "healthy baking"
+      ],
+      "ingredients": [
+        "50g oat flour",
+        "210g vanilla whey protein powder",
+        "6g baking powder",
+        "60g chopped walnuts",
+        "300g mashed bananas",
+        "300g nonfat Greek yogurt",
+        "200g liquid egg whites"
+      ],
+      "instructions": [
+        "Preheat your oven to 375\u00b0F (190\u00b0C). Spray a 12-slot muffin tin with non-stick cooking spray or use silicone muffin cups.",
+        "In a large bowl, whisk together the flour, protein powder, and baking powder until well combined to prevent protein clumps.",
+        "In a separate bowl, mash the bananas until smooth. Add the yogurt and egg whites, stirring until uniform.",
+        "Gently fold the wet mixture into the dry ingredients\u2014do not overmix. Fill muffin cups 3/4 full. Bake at 375\u00b0F for 5 minutes, then reduce to 350\u00b0F for 13-15 more minutes until a toothpick comes out clean."
+      ]
     },
     {
-      "title": "Chocolate Protein Muffins",
+      "id": 4,
+      "slug": "chocolate-chip-protein-muffins",
+      "title": "Chocolate Chip Protein Muffins",
+      "description": "Classic chocolate chip protein muffins with 19g protein per serving. Vanilla base studded with melty chocolate chips for the perfect balance.",
+      "protein": 19,
+      "calories": 133,
+      "carbs": 11,
+      "fat": 2,
+      "fiber": 1,
+      "sugar": 5,
+      "servingSize": "1 muffin",
+      "yield": "12 muffins",
+      "prepTime": "10",
+      "cookTime": "18",
+      "totalTime": "28",
+      "difficulty": "Medium",
+      "category": "classic",
+      "categories": [
+        "classic"
+      ],
+      "tags": [
+        "protein banana muffins",
+        "high protein breakfast",
+        "healthy baking"
+      ],
+      "ingredients": [
+        "50g oat flour",
+        "210g vanilla whey protein powder",
+        "6g baking powder",
+        "85g dark chocolate chips",
+        "300g mashed bananas",
+        "300g nonfat Greek yogurt",
+        "200g liquid egg whites"
+      ],
+      "instructions": [
+        "Preheat your oven to 375\u00b0F (190\u00b0C). Spray a 12-slot muffin tin with non-stick cooking spray or use silicone muffin cups.",
+        "In a large bowl, whisk together the flour, protein powder, and baking powder until well combined to prevent protein clumps.",
+        "In a separate bowl, mash the bananas until smooth. Add the yogurt and egg whites, stirring until uniform.",
+        "Gently fold the wet mixture into the dry ingredients\u2014do not overmix. Fill muffin cups 3/4 full. Bake at 375\u00b0F for 5 minutes, then reduce to 350\u00b0F for 13-15 more minutes until a toothpick comes out clean."
+      ]
+    },
+    {
+      "id": 5,
       "slug": "chocolate-protein-muffins",
+      "title": "Chocolate Protein Muffins",
+      "description": "Deep, rich chocolate protein muffins with 19g protein per serving. Chocolate whey and cocoa powder for intense flavor without the guilt.",
       "protein": 19,
       "calories": 137,
-      "totalTime": 28,
-      "description": "Deep, rich chocolate protein muffins with 19g protein per serving. Chocolate whey and cocoa powder for intense flavor without the guilt.",
-      "image_url": "https://proteinmuffins.com/recipe_images/chocolate-protein-muffins.png"
+      "carbs": 12,
+      "fat": 2,
+      "fiber": 1,
+      "sugar": 5,
+      "servingSize": "1 muffin",
+      "yield": "12 muffins",
+      "prepTime": "10",
+      "cookTime": "18",
+      "totalTime": "28",
+      "difficulty": "Medium",
+      "category": "classic",
+      "categories": [
+        "classic"
+      ],
+      "tags": [
+        "protein banana muffins",
+        "high protein breakfast",
+        "healthy baking"
+      ],
+      "ingredients": [
+        "60g oat flour",
+        "180g chocolate whey protein powder",
+        "30g unsweetened cocoa powder",
+        "6g baking powder",
+        "300g mashed bananas",
+        "250g nonfat Greek yogurt",
+        "150g liquid egg whites"
+      ],
+      "instructions": [
+        "Preheat your oven to 375\u00b0F (190\u00b0C). Spray a 12-slot muffin tin with non-stick cooking spray or use silicone muffin cups.",
+        "In a large bowl, whisk together the flour, protein powder, and baking powder until well combined to prevent protein clumps.",
+        "In a separate bowl, mash the bananas until smooth. Add the yogurt and egg whites, stirring until uniform.",
+        "Gently fold the wet mixture into the dry ingredients\u2014do not overmix. Fill muffin cups 3/4 full. Bake at 375\u00b0F for 5 minutes, then reduce to 350\u00b0F for 13-15 more minutes until a toothpick comes out clean."
+      ]
     },
     {
-      "title": "Cottage Cheese Protein Muffins",
+      "id": 6,
       "slug": "cottage-cheese-protein-muffins",
+      "title": "Cottage Cheese Protein Muffins",
+      "description": "Cottage cheese protein muffins with extra protein and incredible moisture. The secret weapon for tender, high-protein baking.",
       "protein": 19,
       "calories": 143,
-      "totalTime": 30,
-      "description": "Cottage cheese protein muffins with extra protein and incredible moisture. The secret weapon for tender, high-protein baking.",
-      "image_url": "https://proteinmuffins.com/recipe_images/cottage-cheese-protein-muffins.png"
+      "carbs": 11,
+      "fat": 2,
+      "fiber": 1,
+      "sugar": 5,
+      "servingSize": "1 muffin",
+      "yield": "12 muffins",
+      "prepTime": "10",
+      "cookTime": "20",
+      "totalTime": "30",
+      "difficulty": "Medium",
+      "category": "classic",
+      "categories": [
+        "classic"
+      ],
+      "tags": [
+        "protein banana muffins",
+        "high protein breakfast",
+        "healthy baking"
+      ],
+      "ingredients": [
+        "80g oat flour",
+        "120g vanilla whey protein powder",
+        "6g baking powder",
+        "300g mashed bananas",
+        "400g low-fat cottage cheese",
+        "100g liquid egg whites"
+      ],
+      "instructions": [
+        "Preheat your oven to 375\u00b0F (190\u00b0C). Spray a 12-slot muffin tin with non-stick cooking spray or use silicone muffin cups.",
+        "In a large bowl, whisk together the flour, protein powder, and baking powder until well combined to prevent protein clumps.",
+        "In a separate bowl, mash the bananas until smooth. Add the yogurt and egg whites, stirring until uniform.",
+        "Gently fold the wet mixture into the dry ingredients\u2014do not overmix. Fill muffin cups 3/4 full. Bake at 375\u00b0F for 5 minutes, then reduce to 350\u00b0F for 13-15 more minutes until a toothpick comes out clean."
+      ]
     },
     {
-      "title": "Double Chocolate Protein Muffins",
+      "id": 7,
       "slug": "double-chocolate-protein-muffins",
+      "title": "Double Chocolate Protein Muffins",
+      "description": "Double chocolate protein muffins for serious chocoholics. Chocolate whey, dark cocoa, and chips deliver 19g protein with maximum indulgence.",
       "protein": 19,
       "calories": 138,
-      "totalTime": 32,
-      "description": "Double chocolate protein muffins for serious chocoholics. Chocolate whey, dark cocoa, and chips deliver 19g protein with maximum indulgence.",
-      "image_url": "https://proteinmuffins.com/recipe_images/double-choc-protein-muffins.png"
+      "carbs": 13,
+      "fat": 2,
+      "fiber": 1,
+      "sugar": 5,
+      "servingSize": "1 muffin",
+      "yield": "12 muffins",
+      "prepTime": "12",
+      "cookTime": "20",
+      "totalTime": "32",
+      "difficulty": "Medium",
+      "category": "classic",
+      "categories": [
+        "classic"
+      ],
+      "tags": [
+        "protein banana muffins",
+        "high protein breakfast",
+        "healthy baking"
+      ],
+      "ingredients": [
+        "60g oat flour",
+        "180g vanilla whey protein powder",
+        "6g baking powder",
+        "300g mashed bananas",
+        "250g nonfat Greek yogurt",
+        "150g liquid egg whites"
+      ],
+      "instructions": [
+        "Preheat your oven to 375\u00b0F (190\u00b0C). Spray a 12-slot muffin tin with non-stick cooking spray or use silicone muffin cups.",
+        "In a large bowl, whisk together the flour, protein powder, and baking powder until well combined to prevent protein clumps.",
+        "In a separate bowl, mash the bananas until smooth. Add the yogurt and egg whites, stirring until uniform.",
+        "Gently fold the wet mixture into the dry ingredients\u2014do not overmix. Fill muffin cups 3/4 full. Bake at 375\u00b0F for 5 minutes, then reduce to 350\u00b0F for 13-15 more minutes until a toothpick comes out clean."
+      ]
     },
     {
-      "title": "High Fiber Protein Muffins",
+      "id": 8,
       "slug": "high-fiber-protein-muffins",
+      "title": "High Fiber Protein Muffins",
+      "description": "High fiber protein muffins packed with 8g fiber and 18g protein per serving. Supports digestive health, satiety, and sustained energy throughout the day.",
       "protein": 18,
       "calories": 165,
-      "totalTime": 30,
-      "description": "High fiber protein muffins packed with 8g fiber and 18g protein per serving. Supports digestive health, satiety, and sustained energy throughout the day.",
-      "image_url": "https://proteinmuffins.com/recipe_images/high-fiber-protein-muffins.png"
+      "carbs": 20,
+      "fat": 4,
+      "fiber": 8,
+      "sugar": 6,
+      "servingSize": "1 muffin",
+      "yield": "12 muffins",
+      "prepTime": "10",
+      "cookTime": "20",
+      "totalTime": "30",
+      "difficulty": "Medium",
+      "category": "classic",
+      "categories": [
+        "classic"
+      ],
+      "tags": [
+        "high fiber protein muffins",
+        "digestive health",
+        "gut health muffins",
+        "fiber breakfast"
+      ],
+      "ingredients": [
+        "80g oat flour",
+        "150g vanilla whey protein powder",
+        "15g ground flaxseed",
+        "10g psyllium husk powder",
+        "10g chia seeds",
+        "6g baking powder",
+        "250g mashed bananas",
+        "200g nonfat Greek yogurt",
+        "150g liquid egg whites",
+        "100g grated zucchini (excess moisture squeezed out)",
+        "50g grated carrot"
+      ],
+      "instructions": [
+        "Preheat your oven to 375\u00b0F (190\u00b0C). Spray a 12-slot muffin tin with non-stick cooking spray or use silicone muffin cups.",
+        "In a large bowl, whisk together the oat flour, protein powder, flaxseed, psyllium husk, chia seeds, and baking powder until well combined.",
+        "In a separate bowl, mash the bananas until smooth. Add the Greek yogurt, egg whites, grated zucchini, and grated carrot. Mix until well combined.",
+        "Gently fold the wet mixture into the dry ingredients\u2014do not overmix. Let batter rest for 5 minutes to allow fiber to absorb moisture. Fill muffin cups 3/4 full. Bake at 375\u00b0F for 5 minutes, then reduce to 350\u00b0F for 15-18 more minutes until a toothpick comes out clean."
+      ]
     },
     {
-      "title": "High Protein Muffins With Greek Yogurt",
+      "id": 9,
       "slug": "high-protein-muffins-with-greek-yogurt",
+      "title": "High Protein Muffins With Greek Yogurt",
+      "description": "High protein muffins featuring Greek yogurt as the star ingredient. Triple duty moisture, protein, and texture enhancement.",
       "protein": 19,
       "calories": 130,
-      "totalTime": 28,
-      "description": "High protein muffins featuring Greek yogurt as the star ingredient. Triple duty moisture, protein, and texture enhancement.",
-      "image_url": "https://proteinmuffins.com/recipe_images/greek-yogurt-protein-muffins.png"
+      "carbs": 11,
+      "fat": 2,
+      "fiber": 1,
+      "sugar": 5,
+      "servingSize": "1 muffin",
+      "yield": "12 muffins",
+      "prepTime": "10",
+      "cookTime": "18",
+      "totalTime": "28",
+      "difficulty": "Medium",
+      "category": "classic",
+      "categories": [
+        "classic"
+      ],
+      "tags": [
+        "protein banana muffins",
+        "high protein breakfast",
+        "healthy baking"
+      ],
+      "ingredients": [
+        "60g oat flour",
+        "180g vanilla whey protein powder",
+        "6g baking powder",
+        "300g mashed bananas",
+        "250g nonfat Greek yogurt",
+        "150g liquid egg whites"
+      ],
+      "instructions": [
+        "Preheat your oven to 375\u00b0F (190\u00b0C). Spray a 12-slot muffin tin with non-stick cooking spray or use silicone muffin cups.",
+        "In a large bowl, whisk together the flour, protein powder, and baking powder until well combined to prevent protein clumps.",
+        "In a separate bowl, mash the bananas until smooth. Add the yogurt and egg whites, stirring until uniform.",
+        "Gently fold the wet mixture into the dry ingredients\u2014do not overmix. Fill muffin cups 3/4 full. Bake at 375\u00b0F for 5 minutes, then reduce to 350\u00b0F for 13-15 more minutes until a toothpick comes out clean."
+      ]
     },
     {
-      "title": "High Protein Muffins Without Protein Powder",
+      "id": 10,
       "slug": "high-protein-muffins-without-protein-powder",
+      "title": "High Protein Muffins Without Protein Powder",
+      "description": "High protein muffins without protein powder. Whole food ingredients like cottage cheese, egg whites, and oat flour only. 6g protein per muffin.",
       "protein": 6,
       "calories": 96,
-      "totalTime": 32,
-      "description": "High protein muffins without protein powder. Whole food ingredients like cottage cheese, egg whites, and oat flour only. 6g protein per muffin.",
-      "image_url": "https://proteinmuffins.com/recipe_images/without-powder-protein-muffins.png"
+      "carbs": 15,
+      "fat": 1,
+      "fiber": 1,
+      "sugar": 4,
+      "servingSize": "1 muffin",
+      "yield": "12 muffins",
+      "prepTime": "12",
+      "cookTime": "20",
+      "totalTime": "32",
+      "difficulty": "Medium",
+      "category": "classic",
+      "categories": [
+        "classic"
+      ],
+      "tags": [
+        "protein banana muffins",
+        "high protein breakfast",
+        "healthy baking"
+      ],
+      "ingredients": [
+        "150g oat flour",
+        "6g baking powder",
+        "300g mashed bananas",
+        "250g low-fat cottage cheese (blended smooth)",
+        "180g liquid egg whites"
+      ],
+      "instructions": [
+        "Preheat your oven to 375\u00b0F (190\u00b0C). Spray a 12-slot muffin tin with non-stick cooking spray or use silicone muffin cups.",
+        "In a large bowl, whisk together the oat flour and baking powder until well combined.",
+        "In a separate bowl, mash the bananas until smooth. Blend the cottage cheese until smooth, then add it along with the egg whites, stirring until uniform.",
+        "Gently fold the wet mixture into the dry ingredients\u2014do not overmix. Fill muffin cups 3/4 full. Bake at 375\u00b0F for 5 minutes, then reduce to 350\u00b0F for 13-15 more minutes until a toothpick comes out clean."
+      ]
     },
     {
-      "title": "High Protein Muffins",
+      "id": 11,
       "slug": "high-protein-muffins",
+      "title": "High Protein Muffins",
+      "description": "High protein muffins with 12g protein per serving. Maximum protein-to-calorie ratio for serious athletes and bodybuilders.",
       "protein": 12,
       "calories": 96,
-      "totalTime": 32,
-      "description": "High protein muffins with 12g protein per serving. Maximum protein-to-calorie ratio for serious athletes and bodybuilders.",
-      "image_url": "https://proteinmuffins.com/recipe_images/high-protein-protein-muffins.png"
+      "carbs": 10,
+      "fat": 1,
+      "fiber": 1,
+      "sugar": 5,
+      "servingSize": "1 muffin",
+      "yield": "12 muffins",
+      "prepTime": "12",
+      "cookTime": "20",
+      "totalTime": "32",
+      "difficulty": "Medium",
+      "category": "classic",
+      "categories": [
+        "classic"
+      ],
+      "tags": [
+        "protein banana muffins",
+        "high protein breakfast",
+        "healthy baking"
+      ],
+      "ingredients": [
+        "50g oat flour",
+        "120g vanilla whey protein powder",
+        "6g baking powder",
+        "300g mashed bananas",
+        "200g nonfat Greek yogurt",
+        "150g liquid egg whites"
+      ],
+      "instructions": [
+        "Preheat your oven to 375\u00b0F (190\u00b0C). Spray a 12-slot muffin tin with non-stick cooking spray or use silicone muffin cups.",
+        "In a large bowl, whisk together the flour, protein powder, and baking powder until well combined to prevent protein clumps.",
+        "In a separate bowl, mash the bananas until smooth. Add the yogurt and egg whites, stirring until uniform.",
+        "Gently fold the wet mixture into the dry ingredients\u2014do not overmix. Fill muffin cups 3/4 full. Bake at 375\u00b0F for 5 minutes, then reduce to 350\u00b0F for 13-15 more minutes until a toothpick comes out clean."
+      ]
     },
     {
-      "title": "Lemon Blueberry Protein Muffins",
+      "id": 12,
       "slug": "lemon-blueberry-protein-muffins",
+      "title": "Lemon Blueberry Protein Muffins",
+      "description": "Lemon blueberry protein muffins with fresh zest and berries. 19g protein, 125 calories with a bright, refreshing flavor profile.",
       "protein": 19,
       "calories": 125,
-      "totalTime": 32,
-      "description": "Lemon blueberry protein muffins with fresh zest and berries. 19g protein, 125 calories with a bright, refreshing flavor profile.",
-      "image_url": "https://proteinmuffins.com/recipe_images/lemon-blueberry-protein-muffins.png"
+      "carbs": 9,
+      "fat": 2,
+      "fiber": 1,
+      "sugar": 5,
+      "servingSize": "1 muffin",
+      "yield": "12 muffins",
+      "prepTime": "12",
+      "cookTime": "20",
+      "totalTime": "32",
+      "difficulty": "Medium",
+      "category": "classic",
+      "categories": [
+        "classic"
+      ],
+      "tags": [
+        "protein banana muffins",
+        "high protein breakfast",
+        "healthy baking"
+      ],
+      "ingredients": [
+        "50g oat flour",
+        "210g vanilla whey protein powder",
+        "6g baking powder",
+        "10g lemon zest",
+        "200g mashed bananas",
+        "300g nonfat Greek yogurt",
+        "200g liquid egg whites",
+        "150g fresh blueberries"
+      ],
+      "instructions": [
+        "Preheat your oven to 375\u00b0F (190\u00b0C). Spray a 12-slot muffin tin with non-stick cooking spray or use silicone muffin cups.",
+        "In a large bowl, whisk together the flour, protein powder, and baking powder until well combined to prevent protein clumps.",
+        "In a separate bowl, mash the bananas until smooth. Add the yogurt and egg whites, stirring until uniform.",
+        "Gently fold the wet mixture into the dry ingredients\u2014do not overmix. Fill muffin cups 3/4 full. Bake at 375\u00b0F for 5 minutes, then reduce to 350\u00b0F for 13-15 more minutes until a toothpick comes out clean."
+      ]
     },
     {
-      "title": "Protein Banana Muffins",
+      "id": 13,
       "slug": "protein-banana-muffins",
+      "title": "Protein Banana Muffins",
+      "description": "The original macro-verified banana protein muffins with 19g protein per serving. Ripe bananas and Greek yogurt create bakery-quality moisture and flavor.",
       "protein": 19,
       "calories": 136,
-      "totalTime": 28,
-      "description": "The original macro-verified banana protein muffins with 19g protein per serving. Ripe bananas and Greek yogurt create bakery-quality moisture and flavor.",
-      "image_url": "https://proteinmuffins.com/recipe_images/protein-banana-bread-protein-muffins.png"
+      "carbs": 12,
+      "fat": 2,
+      "fiber": 1,
+      "sugar": 5,
+      "servingSize": "1 muffin",
+      "yield": "12 muffins",
+      "prepTime": "10",
+      "cookTime": "18",
+      "totalTime": "28",
+      "difficulty": "Medium",
+      "category": "classic",
+      "categories": [
+        "classic"
+      ],
+      "tags": [
+        "protein banana muffins",
+        "high protein breakfast",
+        "healthy baking"
+      ],
+      "ingredients": [
+        "50g oat flour",
+        "210g vanilla whey protein powder",
+        "6g baking powder",
+        "350g mashed ripe bananas (about 4 medium)",
+        "300g nonfat Greek yogurt",
+        "200g liquid egg whites"
+      ],
+      "instructions": [
+        "Preheat your oven to 375\u00b0F (190\u00b0C). Spray a 12-slot muffin tin with non-stick cooking spray or use silicone muffin cups.",
+        "In a large bowl, whisk together the flour, protein powder, and baking powder until well combined to prevent protein clumps.",
+        "In a separate bowl, mash the bananas until smooth. Add the yogurt and egg whites, stirring until uniform.",
+        "Gently fold the wet mixture into the dry ingredients\u2014do not overmix. Fill muffin cups 3/4 full. Bake at 375\u00b0F for 5 minutes, then reduce to 350\u00b0F for 13-15 more minutes until a toothpick comes out clean."
+      ]
     },
     {
-      "title": "Protein Breakfast Muffins",
+      "id": 14,
       "slug": "protein-breakfast-muffins",
+      "title": "Protein Breakfast Muffins",
+      "description": "Protein breakfast muffins designed for meal prep. 19g protein, grab-and-go convenience for busy mornings.",
       "protein": 19,
       "calories": 133,
-      "totalTime": 32,
-      "description": "Protein breakfast muffins designed for meal prep. 19g protein, grab-and-go convenience for busy mornings.",
-      "image_url": "https://proteinmuffins.com/recipe_images/breakfast-protein-muffins.png"
+      "carbs": 11,
+      "fat": 2,
+      "fiber": 1,
+      "sugar": 5,
+      "servingSize": "1 muffin",
+      "yield": "12 muffins",
+      "prepTime": "12",
+      "cookTime": "20",
+      "totalTime": "32",
+      "difficulty": "Medium",
+      "category": "classic",
+      "categories": [
+        "classic"
+      ],
+      "tags": [
+        "protein banana muffins",
+        "high protein breakfast",
+        "healthy baking"
+      ],
+      "ingredients": [
+        "60g oat flour",
+        "180g vanilla whey protein powder",
+        "6g baking powder",
+        "300g mashed bananas",
+        "250g nonfat Greek yogurt",
+        "150g liquid egg whites"
+      ],
+      "instructions": [
+        "Preheat your oven to 375\u00b0F (190\u00b0C). Spray a 12-slot muffin tin with non-stick cooking spray or use silicone muffin cups.",
+        "In a large bowl, whisk together the flour, protein powder, and baking powder until well combined to prevent protein clumps.",
+        "In a separate bowl, mash the bananas until smooth. Add the yogurt and egg whites, stirring until uniform.",
+        "Gently fold the wet mixture into the dry ingredients\u2014do not overmix. Fill muffin cups 3/4 full. Bake at 375\u00b0F for 5 minutes, then reduce to 350\u00b0F for 13-15 more minutes until a toothpick comes out clean."
+      ]
     },
     {
-      "title": "Protein Carrot Cake Muffins",
+      "id": 15,
       "slug": "protein-carrot-cake-muffins",
+      "title": "Protein Carrot Cake Muffins",
+      "description": "Protein carrot cake muffins with real carrots and warm spices. All the cozy carrot cake flavor with high protein content.",
       "protein": 19,
       "calories": 130,
-      "totalTime": 37,
-      "description": "Protein carrot cake muffins with real carrots and warm spices. All the cozy carrot cake flavor with high protein content.",
-      "image_url": "https://proteinmuffins.com/recipe_images/carrot-cake-protein-muffins.png"
+      "carbs": 10,
+      "fat": 2,
+      "fiber": 1,
+      "sugar": 5,
+      "servingSize": "1 muffin",
+      "yield": "12 muffins",
+      "prepTime": "15",
+      "cookTime": "22",
+      "totalTime": "37",
+      "difficulty": "Medium",
+      "category": "classic",
+      "categories": [
+        "classic"
+      ],
+      "tags": [
+        "protein banana muffins",
+        "high protein breakfast",
+        "healthy baking"
+      ],
+      "ingredients": [
+        "50g oat flour",
+        "210g vanilla whey protein powder",
+        "6g baking powder",
+        "4g ground cinnamon",
+        "150g grated carrots",
+        "200g mashed bananas",
+        "300g nonfat Greek yogurt",
+        "200g liquid egg whites",
+        "40g chopped walnuts"
+      ],
+      "instructions": [
+        "Preheat your oven to 375\u00b0F (190\u00b0C). Spray a 12-slot muffin tin with non-stick cooking spray or use silicone muffin cups.",
+        "In a large bowl, whisk together the flour, protein powder, and baking powder until well combined to prevent protein clumps.",
+        "In a separate bowl, mash the bananas until smooth. Add the yogurt and egg whites, stirring until uniform.",
+        "Gently fold the wet mixture into the dry ingredients\u2014do not overmix. Fill muffin cups 3/4 full. Bake at 375\u00b0F for 5 minutes, then reduce to 350\u00b0F for 13-15 more minutes until a toothpick comes out clean."
+      ]
     },
     {
-      "title": "Protein Mini Muffins",
+      "id": 16,
       "slug": "protein-mini-muffins",
+      "title": "Protein Mini Muffins",
+      "description": "Protein mini muffins in bite-size format. Perfect for portion control, snacking, and easy macro tracking on the go.",
       "protein": 19,
       "calories": 133,
-      "totalTime": 22,
-      "description": "Protein mini muffins in bite-size format. Perfect for portion control, snacking, and easy macro tracking on the go.",
-      "image_url": "https://proteinmuffins.com/recipe_images/mini-muffins-protein-muffins.png"
+      "carbs": 11,
+      "fat": 2,
+      "fiber": 1,
+      "sugar": 5,
+      "servingSize": "1 muffin",
+      "yield": "24 muffins",
+      "prepTime": "10",
+      "cookTime": "12",
+      "totalTime": "22",
+      "difficulty": "Medium",
+      "category": "classic",
+      "categories": [
+        "classic"
+      ],
+      "tags": [
+        "protein banana muffins",
+        "high protein breakfast",
+        "healthy baking"
+      ],
+      "ingredients": [
+        "60g oat flour",
+        "180g vanilla whey protein powder",
+        "6g baking powder",
+        "300g mashed bananas",
+        "250g nonfat Greek yogurt",
+        "150g liquid egg whites"
+      ],
+      "instructions": [
+        "Preheat your oven to 375\u00b0F (190\u00b0C). Spray a 12-slot muffin tin with non-stick cooking spray or use silicone muffin cups.",
+        "In a large bowl, whisk together the flour, protein powder, and baking powder until well combined to prevent protein clumps.",
+        "In a separate bowl, mash the bananas until smooth. Add the yogurt and egg whites, stirring until uniform.",
+        "Gently fold the wet mixture into the dry ingredients\u2014do not overmix. Fill muffin cups 3/4 full. Bake at 375\u00b0F for 5 minutes, then reduce to 350\u00b0F for 13-15 more minutes until a toothpick comes out clean."
+      ]
     },
     {
-      "title": "Protein Muffins For Kids",
+      "id": 17,
       "slug": "protein-muffins-for-kids",
+      "title": "Protein Muffins For Kids",
+      "description": "Protein muffins for kids with 8g protein per lunchbox-friendly serving. Mild flavor that picky eaters approve of.",
       "protein": 8,
       "calories": 80,
-      "totalTime": 28,
-      "description": "Protein muffins for kids with 8g protein per lunchbox-friendly serving. Mild flavor that picky eaters approve of.",
-      "image_url": "https://proteinmuffins.com/recipe_images/kids-protein-muffins.png"
+      "carbs": 11,
+      "fat": 1,
+      "fiber": 1,
+      "sugar": 5,
+      "servingSize": "1 muffin",
+      "yield": "12 muffins",
+      "prepTime": "10",
+      "cookTime": "18",
+      "totalTime": "28",
+      "difficulty": "Medium",
+      "category": "classic",
+      "categories": [
+        "classic"
+      ],
+      "tags": [
+        "protein banana muffins",
+        "high protein breakfast",
+        "healthy baking"
+      ],
+      "ingredients": [
+        "50g oat flour",
+        "60g vanilla whey protein powder",
+        "6g baking powder",
+        "350g mashed bananas",
+        "300g nonfat Greek yogurt",
+        "60g liquid egg whites"
+      ],
+      "instructions": [
+        "Preheat your oven to 375\u00b0F (190\u00b0C). Spray a 12-slot muffin tin with non-stick cooking spray or use silicone muffin cups.",
+        "In a large bowl, whisk together the flour, protein powder, and baking powder until well combined to prevent protein clumps.",
+        "In a separate bowl, mash the bananas until smooth. Add the yogurt and egg whites, stirring until uniform.",
+        "Gently fold the wet mixture into the dry ingredients\u2014do not overmix. Fill muffin cups 3/4 full. Bake at 375\u00b0F for 5 minutes, then reduce to 350\u00b0F for 13-15 more minutes until a toothpick comes out clean."
+      ]
     },
     {
-      "title": "Protein Muffins Recipe",
+      "id": 18,
       "slug": "protein-muffins-recipe",
-      "protein": 19,
-      "calories": 133,
-      "totalTime": 28,
+      "title": "Protein Muffins Recipe",
       "description": "The complete USDA-verified protein muffins recipe. Every ingredient measured in grams for perfect, repeatable results.",
-      "image_url": "https://proteinmuffins.com/recipe_images/protein-protein-muffins.png"
+      "protein": 19,
+      "calories": 133,
+      "carbs": 11,
+      "fat": 2,
+      "fiber": 1,
+      "sugar": 5,
+      "servingSize": "1 muffin",
+      "yield": "12 muffins",
+      "prepTime": "10",
+      "cookTime": "18",
+      "totalTime": "28",
+      "difficulty": "Medium",
+      "category": "classic",
+      "categories": [
+        "classic"
+      ],
+      "tags": [
+        "protein muffins",
+        "high protein breakfast",
+        "healthy baking",
+        "macro-friendly"
+      ],
+      "ingredients": [
+        "50g oat flour",
+        "210g vanilla whey protein powder",
+        "6g baking powder",
+        "300g mashed ripe bananas (about 3 medium)",
+        "300g nonfat Greek yogurt",
+        "200g liquid egg whites"
+      ],
+      "instructions": [
+        "Preheat your oven to 375\u00b0F (190\u00b0C). Spray a 12-slot muffin tin with non-stick cooking spray. We recommend using a silicone tray for the best no-stick release without adding fats.",
+        "Whisk the oat flour, vanilla whey protein, baking powder, and cinnamon in a large bowl. Ensuring these are well-distributed prevents protein clumps later.",
+        "In a separate bowl, mash the bananas until smooth (use a scale for 300g precision). Stir in the Greek yogurt and egg whites until uniform. Fold the wet mix into the dry mix gently\u2014do NOT overmix or the muffins will become gummy.",
+        "Fill muffin cups 3/4 full. Bake at 375\u00b0F for 5 minutes, then (without opening the door) lower the heat to 350\u00b0F (175\u00b0C) and bake for 13-15 more minutes. This creates the bakery-style domed top."
+      ]
     },
     {
-      "title": "Protein Pancake Muffins",
+      "id": 19,
       "slug": "protein-pancake-muffins",
-      "protein": 19,
-      "calories": 133,
-      "totalTime": 23,
+      "title": "Protein Pancake Muffins",
       "description": "Protein pancake muffins using Kodiak mix. All the maple-y breakfast flavor in a portable, high-protein format.",
-      "image_url": "https://proteinmuffins.com/recipe_images/protein-pancake-protein-muffins.png"
-    },
-    {
-      "title": "Protein Powder Muffins",
-      "slug": "protein-powder-muffins",
       "protein": 19,
       "calories": 133,
-      "totalTime": 28,
-      "description": "Comprehensive guide to protein powder muffins. Learn how to bake with whey, casein, and plant proteins for perfect results.",
-      "image_url": "https://proteinmuffins.com/recipe_images/with-protein-powder-protein-muffins.png"
+      "carbs": 11,
+      "fat": 2,
+      "fiber": 1,
+      "sugar": 5,
+      "servingSize": "1 muffin",
+      "yield": "12 muffins",
+      "prepTime": "8",
+      "cookTime": "15",
+      "totalTime": "23",
+      "difficulty": "Medium",
+      "category": "classic",
+      "categories": [
+        "classic"
+      ],
+      "tags": [
+        "protein banana muffins",
+        "high protein breakfast",
+        "healthy baking"
+      ],
+      "ingredients": [
+        "60g oat flour",
+        "180g vanilla whey protein powder",
+        "6g baking powder",
+        "300g mashed bananas",
+        "250g nonfat Greek yogurt",
+        "150g liquid egg whites"
+      ],
+      "instructions": [
+        "Preheat your oven to 375\u00b0F (190\u00b0C). Spray a 12-slot muffin tin with non-stick cooking spray or use silicone muffin cups.",
+        "In a large bowl, whisk together the flour, protein powder, and baking powder until well combined to prevent protein clumps.",
+        "In a separate bowl, mash the bananas until smooth. Add the yogurt and egg whites, stirring until uniform.",
+        "Gently fold the wet mixture into the dry ingredients\u2014do not overmix. Fill muffin cups 3/4 full. Bake at 375\u00b0F for 5 minutes, then reduce to 350\u00b0F for 13-15 more minutes until a toothpick comes out clean."
+      ]
     },
     {
-      "title": "Protein Pumpkin Muffins",
+      "id": 20,
+      "slug": "protein-powder-muffins",
+      "title": "Protein Powder Muffins",
+      "description": "Comprehensive guide to protein powder muffins. Learn how to bake with whey, casein, and plant proteins for perfect results.",
+      "protein": 19,
+      "calories": 133,
+      "carbs": 11,
+      "fat": 2,
+      "fiber": 1,
+      "sugar": 5,
+      "servingSize": "1 muffin",
+      "yield": "12 muffins",
+      "prepTime": "10",
+      "cookTime": "18",
+      "totalTime": "28",
+      "difficulty": "Medium",
+      "category": "classic",
+      "categories": [
+        "classic"
+      ],
+      "tags": [
+        "protein banana muffins",
+        "high protein breakfast",
+        "healthy baking"
+      ],
+      "ingredients": [
+        "60g oat flour",
+        "180g vanilla whey protein powder",
+        "6g baking powder",
+        "300g mashed bananas",
+        "250g nonfat Greek yogurt",
+        "150g liquid egg whites"
+      ],
+      "instructions": [
+        "Preheat your oven to 375\u00b0F (190\u00b0C). Spray a 12-slot muffin tin with non-stick cooking spray or use silicone muffin cups.",
+        "In a large bowl, whisk together the flour, protein powder, and baking powder until well combined to prevent protein clumps.",
+        "In a separate bowl, mash the bananas until smooth. Add the yogurt and egg whites, stirring until uniform.",
+        "Gently fold the wet mixture into the dry ingredients\u2014do not overmix. Fill muffin cups 3/4 full. Bake at 375\u00b0F for 5 minutes, then reduce to 350\u00b0F for 13-15 more minutes until a toothpick comes out clean."
+      ]
+    },
+    {
+      "id": 21,
       "slug": "protein-pumpkin-muffins",
+      "title": "Protein Pumpkin Muffins",
+      "description": "Protein pumpkin muffins with fall spices and 19g protein. Pumpkin puree creates incredible moisture and seasonal flavor.",
       "protein": 19,
       "calories": 119,
-      "totalTime": 34,
-      "description": "Protein pumpkin muffins with fall spices and 19g protein. Pumpkin puree creates incredible moisture and seasonal flavor.",
-      "image_url": "https://proteinmuffins.com/recipe_images/protein-pumpkin-muffins.png"
+      "carbs": 7,
+      "fat": 1,
+      "fiber": 1,
+      "sugar": 5,
+      "servingSize": "1 muffin",
+      "yield": "12 muffins",
+      "prepTime": "12",
+      "cookTime": "22",
+      "totalTime": "34",
+      "difficulty": "Medium",
+      "category": "classic",
+      "categories": [
+        "classic"
+      ],
+      "tags": [
+        "protein banana muffins",
+        "high protein breakfast",
+        "healthy baking"
+      ],
+      "ingredients": [
+        "50g oat flour",
+        "210g vanilla whey protein powder",
+        "6g baking powder",
+        "5g pumpkin pie spice",
+        "300g pumpkin puree",
+        "300g nonfat Greek yogurt",
+        "200g liquid egg whites"
+      ],
+      "instructions": [
+        "Preheat your oven to 375\u00b0F (190\u00b0C). Spray a 12-slot muffin tin with non-stick cooking spray or use silicone muffin cups.",
+        "In a large bowl, whisk together the flour, protein powder, and baking powder until well combined to prevent protein clumps.",
+        "In a separate bowl, mash the bananas until smooth. Add the yogurt and egg whites, stirring until uniform.",
+        "Gently fold the wet mixture into the dry ingredients\u2014do not overmix. Fill muffin cups 3/4 full. Bake at 375\u00b0F for 5 minutes, then reduce to 350\u00b0F for 13-15 more minutes until a toothpick comes out clean."
+      ]
     },
     {
-      "title": "Banana Protein Muffins",
-      "slug": "standard_recipe__banana_protein_muffin",
-      "protein": 19,
-      "calories": 133,
-      "totalTime": 28,
-      "description": "The standard banana protein muffin recipe with 19g protein per serving. USDA-verified macros, gram measurements, and consistent results every time.",
-      "image_url": "https://proteinmuffins.com/recipe_images/standard_recipe__banana_protein_muffin.png"
-    },
-    {
-      "title": "Vegan Protein Muffins",
+      "id": 22,
       "slug": "vegan-protein-muffins",
+      "title": "Vegan Protein Muffins",
+      "description": "Vegan protein muffins using pea protein and flax eggs. 15g plant-based protein per serving, completely dairy-free and delicious.",
       "protein": 15,
       "calories": 119,
-      "totalTime": 34,
-      "description": "Vegan protein muffins using pea protein and flax eggs. 15g plant-based protein per serving, completely dairy-free and delicious.",
-      "image_url": "https://proteinmuffins.com/recipe_images/vegan-protein-muffins.png"
+      "carbs": 12,
+      "fat": 1,
+      "fiber": 1,
+      "sugar": 5,
+      "servingSize": "1 muffin",
+      "yield": "12 muffins",
+      "prepTime": "12",
+      "cookTime": "22",
+      "totalTime": "34",
+      "difficulty": "Medium",
+      "category": "classic",
+      "categories": [
+        "classic"
+      ],
+      "tags": [
+        "protein banana muffins",
+        "high protein breakfast",
+        "healthy baking"
+      ],
+      "ingredients": [
+        "100g oat flour",
+        "120g pea protein powder",
+        "6g baking powder",
+        "300g mashed bananas",
+        "250g coconut yogurt",
+        "90g flax eggs (3 tbsp ground flax + 9 tbsp water)"
+      ],
+      "instructions": [
+        "Preheat your oven to 375\u00b0F (190\u00b0C). Spray a 12-slot muffin tin with non-stick cooking spray or use silicone muffin cups.",
+        "In a large bowl, whisk together the flour, protein powder, and baking powder until well combined to prevent protein clumps.",
+        "In a separate bowl, mash the bananas until smooth. Add the yogurt and egg whites, stirring until uniform.",
+        "Gently fold the wet mixture into the dry ingredients\u2014do not overmix. Fill muffin cups 3/4 full. Bake at 375\u00b0F for 5 minutes, then reduce to 350\u00b0F for 13-15 more minutes until a toothpick comes out clean."
+      ]
     },
     {
-      "title": "Zucchini Protein Muffins",
+      "id": 23,
       "slug": "zucchini-protein-muffins",
+      "title": "Zucchini Protein Muffins",
+      "description": "Zucchini protein muffins that sneak veggies into your breakfast. Incredible moisture and hidden nutrition in every bite.",
       "protein": 19,
       "calories": 128,
-      "totalTime": 37,
-      "description": "Zucchini protein muffins that sneak veggies into your breakfast. Incredible moisture and hidden nutrition in every bite.",
-      "image_url": "https://proteinmuffins.com/recipe_images/zucchini-protein-muffins.png"
+      "carbs": 10,
+      "fat": 2,
+      "fiber": 1,
+      "sugar": 5,
+      "servingSize": "1 muffin",
+      "yield": "12 muffins",
+      "prepTime": "15",
+      "cookTime": "22",
+      "totalTime": "37",
+      "difficulty": "Medium",
+      "category": "classic",
+      "categories": [
+        "classic"
+      ],
+      "tags": [
+        "protein banana muffins",
+        "high protein breakfast",
+        "healthy baking"
+      ],
+      "ingredients": [
+        "50g oat flour",
+        "210g vanilla whey protein powder",
+        "6g baking powder",
+        "200g grated zucchini (excess moisture squeezed out)",
+        "200g mashed bananas",
+        "300g nonfat Greek yogurt",
+        "200g liquid egg whites"
+      ],
+      "instructions": [
+        "Preheat your oven to 375\u00b0F (190\u00b0C). Spray a 12-slot muffin tin with non-stick cooking spray or use silicone muffin cups.",
+        "In a large bowl, whisk together the flour, protein powder, and baking powder until well combined to prevent protein clumps.",
+        "In a separate bowl, mash the bananas until smooth. Add the yogurt and egg whites, stirring until uniform.",
+        "Gently fold the wet mixture into the dry ingredients\u2014do not overmix. Fill muffin cups 3/4 full. Bake at 375\u00b0F for 5 minutes, then reduce to 350\u00b0F for 13-15 more minutes until a toothpick comes out clean."
+      ]
     }
   ]
 }
