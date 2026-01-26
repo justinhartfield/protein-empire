@@ -291,20 +291,69 @@
     </section>
 
     <!-- Download Form -->
-    <section class="py-16 bg-brand-50">
+    <section class="py-16 bg-brand-50" x-data="{ 
+        email: '', 
+        submitting: false, 
+        submitted: false, 
+        error: '',
+        async submit() {
+            this.error = '';
+            this.submitting = true;
+            try {
+                const res = await fetch('/api/subscribe', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ 
+                        email: this.email, 
+                        packSlug: 'starter',
+                        pdfUrl: window.location.origin + '/guides/protein-bread.com-starter.pdf'
+                    })
+                });
+                const data = await res.json();
+                if (data.success) {
+                    this.submitted = true;
+                } else {
+                    this.error = data.message || 'Something went wrong. Please try again.';
+                }
+            } catch (e) {
+                this.error = 'Something went wrong. Please try again.';
+            } finally {
+                this.submitting = false;
+            }
+        }
+    }">
         <div class="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="anton-text text-3xl mb-4 uppercase tracking-wider">GET YOUR FREE COPY</h2>
-            <p class="text-slate-600 mb-8">Enter your email to download the PDF instantly.</p>
+            <!-- Form State -->
+            <template x-if="!submitted">
+                <div>
+                    <h2 class="anton-text text-3xl mb-4 uppercase tracking-wider">GET YOUR FREE COPY</h2>
+                    <p class="text-slate-600 mb-8">Enter your email and we'll send you the PDF.</p>
+                    
+                    <form @submit.prevent="submit()" class="space-y-4">
+                        <input type="email" x-model="email" placeholder="Enter your email" required
+                            class="w-full px-6 py-4 rounded-xl border border-slate-300 focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20 outline-none transition text-lg">
+                        <button type="submit" :disabled="submitting"
+                            class="w-full bg-brand-500 text-white px-8 py-4 rounded-xl font-bold anton-text text-lg hover:bg-brand-600 transition-colors shadow-xl shadow-brand-500/30 tracking-wider disabled:opacity-50">
+                            <span x-show="!submitting">DOWNLOAD FREE PDF</span>
+                            <span x-show="submitting" x-cloak>SENDING...</span>
+                        </button>
+                    </form>
+                    
+                    <p x-show="error" x-text="error" class="text-red-600 text-sm mt-4 font-semibold"></p>
+                    <p class="text-xs text-slate-500 mt-4">No spam. Unsubscribe anytime.</p>
+                </div>
+            </template>
             
-            <form action="/success-starter.html" method="GET" class="space-y-4">
-                <input type="email" name="email" placeholder="Enter your email" required
-                    class="w-full px-6 py-4 rounded-xl border border-slate-300 focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20 outline-none transition text-lg">
-                <button type="submit" class="w-full bg-brand-500 text-white px-8 py-4 rounded-xl font-bold anton-text text-lg hover:bg-brand-600 transition-colors shadow-xl shadow-brand-500/30 tracking-wider">
-                    DOWNLOAD FREE PDF
-                </button>
-            </form>
-            
-            <p class="text-xs text-slate-500 mt-4">No spam. Unsubscribe anytime.</p>
+            <!-- Success State -->
+            <template x-if="submitted">
+                <div>
+                    <span class="text-5xl mb-4 block">📬</span>
+                    <h2 class="anton-text text-3xl mb-4 uppercase tracking-wider">CHECK YOUR EMAIL!</h2>
+                    <p class="text-slate-600 text-lg mb-2">We've sent your <strong>Starter Pack</strong> to:</p>
+                    <p class="text-brand-600 font-bold text-lg mb-6" x-text="email"></p>
+                    <p class="text-slate-500 text-sm">Don't see it? Check your spam folder or <button @click="submitted = false" class="text-brand-600 hover:underline font-semibold">try again</button>.</p>
+                </div>
+            </template>
         </div>
     </section>
 
@@ -395,6 +444,7 @@
                 <a href="https://proteincheesecake.co" class="hover:text-white transition">Cheesecake</a>
                 <a href="https://proteinpizzas.co" class="hover:text-white transition">Pizza</a>
                 <a href="https://proteinpudding.co" class="hover:text-white transition">Pudding</a>
+                <a href="https://cottagecheeserecipes.co" class="hover:text-white transition">Cottage Cheese</a>
             </div>
         </div>
         

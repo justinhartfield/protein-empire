@@ -659,7 +659,7 @@ function generateIndexerFooter() {
                     <span class="font-anton text-xl tracking-tight uppercase">HighProtein<span class="text-brand-500">.Recipes</span></span>
                 </div>
                 <p class="text-slate-400 text-sm">
-                    Your gateway to 300+ macro-verified high-protein recipes across 12 specialized sites.
+                    Your gateway to 300+ macro-verified high-protein recipes across 13 specialized sites.
                 </p>
             </div>
 
@@ -711,6 +711,7 @@ function generateIndexerFooter() {
                 <a href="https://proteincheesecake.co" class="hover:text-white transition-colors">Cheesecake</a>
                 <a href="https://proteinpizzas.co" class="hover:text-white transition-colors">Pizza</a>
                 <a href="https://proteinpudding.co" class="hover:text-white transition-colors">Pudding</a>
+                <a href="https://cottagecheeserecipes.co" class="hover:text-white transition-colors">Cottage Cheese</a>
             </div>
         </div>
 
@@ -915,7 +916,7 @@ function generateHomepage(site, allRecipes, categories, partials, outputDir) {
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
             <h2 class="font-anton text-4xl uppercase tracking-wider mb-4">The Protein Empire</h2>
-            <p class="text-slate-600 dark:text-slate-400 text-lg">12 specialized sites, each dedicated to perfecting one type of high-protein treat</p>
+            <p class="text-slate-600 dark:text-slate-400 text-lg">13 specialized sites, each dedicated to perfecting one type of high-protein treat</p>
         </div>
         
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
