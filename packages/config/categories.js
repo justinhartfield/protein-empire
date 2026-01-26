@@ -127,6 +127,15 @@ export const siteCategories = {
     'veggie-crust': { id: 'veggie-crust', name: 'Veggie Crusts', slug: 'veggie-crust', icon: '🥦' },
     'keto': { id: 'keto', name: 'Keto/GF Crusts', slug: 'keto', icon: '🥑' }
   },
+  'cottagecheeserecipes.co': {
+    'pancakes': { id: 'pancakes', name: 'Pancakes & Waffles', slug: 'pancakes', icon: '🥞' },
+    'breakfast': { id: 'breakfast', name: 'Breakfast', slug: 'breakfast', icon: '🍳' },
+    'bread': { id: 'bread', name: 'Bread & Flatbread', slug: 'bread', icon: '🍞' },
+    'desserts': { id: 'desserts', name: 'Desserts', slug: 'desserts', icon: '🍫' },
+    'cheesecake': { id: 'cheesecake', name: 'Cheesecake & Pudding', slug: 'cheesecake', icon: '🍰' },
+    'pizza': { id: 'pizza', name: 'Pizza & Savory', slug: 'pizza', icon: '🍕' },
+    'snacks': { id: 'snacks', name: 'Snacks', slug: 'snacks', icon: '🧁' }
+  },
   'proteinpudding.co': {
     'classic': { id: 'classic', name: 'Classic Pudding', slug: 'classic', icon: '🍮' },
     'mousse': { id: 'mousse', name: 'Mousse', slug: 'mousse', icon: '☁️' },

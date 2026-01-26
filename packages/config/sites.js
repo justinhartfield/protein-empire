@@ -49,7 +49,7 @@ export const sites = {
     ],
     // Main navigation categories
     navCategories: [
-      { name: 'Breakfast', slug: 'breakfast', items: ['pancakes', 'oatmeal', 'muffins'] },
+      { name: 'Breakfast', slug: 'breakfast', items: ['pancakes', 'oatmeal', 'muffins', 'cottage-cheese'] },
       { name: 'Desserts', slug: 'desserts', items: ['cookies', 'brownies', 'cheesecake', 'pudding', 'donuts'] },
       { name: 'Snacks', slug: 'snacks', items: ['bites', 'bars'] },
       { name: 'Savory', slug: 'savory', items: ['pizza', 'bread'] }
@@ -249,6 +249,23 @@ export const sites = {
     status: 'planned'
   },
   
+  'cottagecheeserecipes.co': {
+    name: 'CottageCheeseRecipes',
+    domain: 'cottagecheeserecipes.co',
+    title: 'CottageCheeseRecipes.co | Delicious High-Protein Cottage Cheese Recipes',
+    tagline: 'The ultimate collection of cottage cheese recipes — from viral pancakes to protein-packed desserts',
+    description: 'Discover 30+ delicious cottage cheese recipes including viral pancakes, high-protein brownies, flatbread, pizza, and more. Every recipe features cottage cheese as the star ingredient with full macro breakdowns.',
+    foodType: 'cottage cheese recipes',
+    foodTypePlural: 'cottage cheese recipes',
+    brandColor: '#3b82f6',
+    accentColor: '#10b981',
+    logo: '/images/logo.png',
+    favicon: '/images/favicon.png',
+    socialImage: '/images/social-share.png',
+    ga4Id: '',
+    status: 'ready'
+  },
+
   'proteinpudding.co': {
     name: 'ProteinPudding',
     domain: 'proteinpudding.co',
@@ -280,7 +297,8 @@ export const empireSites = [
   { domain: 'proteinoatmeal.co', name: 'Oatmeal', foodType: 'oatmeal', category: 'breakfast' },
   { domain: 'proteincheesecake.co', name: 'Cheesecake', foodType: 'cheesecake', category: 'desserts' },
   { domain: 'proteinpizzas.co', name: 'Pizza', foodType: 'pizza', category: 'savory' },
-  { domain: 'proteinpudding.co', name: 'Pudding', foodType: 'pudding', category: 'desserts' }
+  { domain: 'proteinpudding.co', name: 'Pudding', foodType: 'pudding', category: 'desserts' },
+  { domain: 'cottagecheeserecipes.co', name: 'Cottage Cheese', foodType: 'cottage cheese recipes', category: 'breakfast' }
 ];
 
 /**

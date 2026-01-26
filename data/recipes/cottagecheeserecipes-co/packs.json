@@ -1,0 +1,75 @@
+[
+  {
+    "slug": "starter",
+    "title": "Starter Pack",
+    "description": "5 essential cottage cheese recipes to get you started. From fluffy pancakes to creamy protein pudding, these are the best beginner-friendly recipes!",
+    "icon": "🧀",
+    "recipes": [
+      "classic-cottage-cheese-pancakes",
+      "cottage-cheese-flatbread",
+      "cottage-cheese-protein-brownies",
+      "cottage-cheese-protein-pudding",
+      "cottage-cheese-breakfast-bowl"
+    ]
+  },
+  {
+    "slug": "pancake-lovers",
+    "title": "Pancake Lovers Pack",
+    "description": "Every cottage cheese pancake and waffle recipe in one pack. 8 delicious variations for the ultimate breakfast rotation!",
+    "icon": "🥞",
+    "recipes": [
+      "classic-cottage-cheese-pancakes",
+      "banana-cottage-cheese-pancakes",
+      "flourless-cottage-cheese-pancakes",
+      "keto-cottage-cheese-pancakes",
+      "cottage-cheese-waffles",
+      "pumpkin-cottage-cheese-pancakes",
+      "oatmeal-cottage-cheese-pancakes",
+      "blueberry-cottage-cheese-protein-pancakes"
+    ]
+  },
+  {
+    "slug": "breakfast",
+    "title": "Breakfast Pack",
+    "description": "Start every morning with high-protein cottage cheese breakfasts. Eggs, bowls, French toast, and more!",
+    "icon": "🍳",
+    "recipes": [
+      "cottage-cheese-scrambled-eggs",
+      "cottage-cheese-egg-muffins",
+      "cottage-cheese-breakfast-bowl",
+      "cottage-cheese-french-toast",
+      "cottage-cheese-smoothie-bowl"
+    ]
+  },
+  {
+    "slug": "dessert",
+    "title": "Dessert Pack",
+    "description": "Satisfy your sweet tooth with high-protein cottage cheese desserts. Brownies, cookies, cheesecake, and pudding!",
+    "icon": "🍫",
+    "recipes": [
+      "cottage-cheese-protein-brownies",
+      "cottage-cheese-chocolate-chip-cookies",
+      "cottage-cheese-blondies",
+      "no-bake-cottage-cheese-cookies",
+      "cottage-cheese-protein-cheesecake",
+      "no-bake-cottage-cheese-cheesecake",
+      "cottage-cheese-protein-pudding",
+      "cottage-cheese-banana-pudding"
+    ]
+  },
+  {
+    "slug": "savory",
+    "title": "Savory Pack",
+    "description": "Cottage cheese goes beyond breakfast with flatbreads, pizza, garlic knots, and more savory creations!",
+    "icon": "🍕",
+    "recipes": [
+      "cottage-cheese-flatbread",
+      "cottage-cheese-bread",
+      "cottage-cheese-cinnamon-roll-bread",
+      "cottage-cheese-garlic-knots",
+      "cottage-cheese-pizza-crust",
+      "cottage-cheese-pizza-bowl",
+      "cottage-cheese-protein-pizza"
+    ]
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "name": "@protein-empire/cottagecheeserecipes-co",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Protein Empire site: cottagecheeserecipes.co",
+  "scripts": {
+    "build": "cd ../.. && node scripts/build-site.js cottagecheeserecipes.co"
+  },
+  "dependencies": {
+    "@sendgrid/client": "^8.1.1",
+    "@sendgrid/mail": "^8.1.1"
+  }
+}
