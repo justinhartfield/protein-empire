@@ -5,10 +5,10 @@
     "description": "5 essential protein donut recipes to get you started. Perfect for beginners!",
     "icon": "🍩",
     "recipes": [
-      "chocolate-protein-donuts",
-      "vanilla-protein-donuts",
-      "baked-protein-donuts",
-      "glazed-protein-donuts",
+      "chocolate-frosted-protein-donuts",
+      "vanilla-bean-protein-donuts",
+      "air-fryer-protein-donuts",
+      "classic-glazed-protein-donuts",
       "cinnamon-sugar-protein-donuts"
     ]
   },
@@ -78,16 +78,6 @@
     "icon": "💨",
     "recipes": [
       "air-fryer-protein-donuts"
-    ]
-  },
-  {
-    "slug": "gluten-free-dairy-free",
-    "title": "Gluten-Free & Dairy-Free",
-    "description": "A collection of our best gluten-free and dairy-free recipes, perfect for those with dietary restrictions.",
-    "icon": "🥬",
-    "recipes": [
-      "gluten-free-baked-protein-donuts",
-      "dairy-free-chocolate-glazed-protein-donuts"
     ]
   },
   {

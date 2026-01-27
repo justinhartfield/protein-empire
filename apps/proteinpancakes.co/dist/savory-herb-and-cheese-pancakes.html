@@ -153,8 +153,8 @@
   },
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingValue": "4.8",
-    "ratingCount": "222",
+    "ratingValue": "4.7",
+    "ratingCount": "270",
     "bestRating": "5",
     "worstRating": "1"
   },
@@ -298,7 +298,7 @@
 
 <main class="flex-grow">
     <!-- Recipe Header / Hero (matching ProteinMuffins.com) -->
-    <section class="bg-white pt-10 pb-16">
+    <section class="bg-white dark:bg-slate-900 pt-10 pb-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Breadcrumbs -->
             <nav class="flex items-center space-x-2 text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-6">
@@ -306,7 +306,7 @@
                 <span>/</span>
                 <a href="/category-pancakes.html" class="hover:text-brand-600 transition">Pancakes</a>
                 <span>/</span>
-                <span class="text-slate-900">Savory Herb and</span>
+                <span class="text-slate-900 dark:text-white">Savory Herb and</span>
             </nav>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
@@ -327,32 +327,32 @@
 
                 <!-- Recipe Summary Area -->
                 <div>
-                    <h1 class="anton-text text-4xl lg:text-6xl text-slate-900 leading-[0.9] mb-6 uppercase">
+                    <h1 class="anton-text text-4xl lg:text-6xl text-slate-900 dark:text-white leading-[0.9] mb-6 uppercase">
                         SAVORY HERB AND CHEESE PANCAKES<br>
                         <span class="text-brand-500">(MACRO-VERIFIED)</span>
                     </h1>
 
                     <!-- Stats Bar (matching ProteinMuffins.com) -->
-                    <div class="grid grid-cols-3 md:grid-cols-5 gap-4 py-8 border-y border-slate-100 my-8">
-                        <div class="text-center md:border-r border-slate-100">
+                    <div class="grid grid-cols-3 md:grid-cols-5 gap-4 py-8 border-y border-slate-100 dark:border-slate-700 my-8">
+                        <div class="text-center md:border-r border-slate-100 dark:border-slate-700">
                             <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Protein</p>
                             <p class="anton-text text-3xl text-brand-600 leading-none">28G</p>
                         </div>
-                        <div class="text-center md:border-r border-slate-100">
+                        <div class="text-center md:border-r border-slate-100 dark:border-slate-700">
                             <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Calories</p>
-                            <p class="anton-text text-3xl text-slate-900 leading-none">220</p>
+                            <p class="anton-text text-3xl text-slate-900 dark:text-white leading-none">220</p>
                         </div>
-                        <div class="text-center md:border-r border-slate-100">
+                        <div class="text-center md:border-r border-slate-100 dark:border-slate-700">
                             <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Prep Time</p>
-                            <p class="anton-text text-3xl text-slate-900 leading-none">10M</p>
+                            <p class="anton-text text-3xl text-slate-900 dark:text-white leading-none">10M</p>
                         </div>
-                        <div class="text-center md:border-r border-slate-100">
+                        <div class="text-center md:border-r border-slate-100 dark:border-slate-700">
                             <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Bake Time</p>
-                            <p class="anton-text text-3xl text-slate-900 leading-none">10M</p>
+                            <p class="anton-text text-3xl text-slate-900 dark:text-white leading-none">10M</p>
                         </div>
                         <div class="text-center hidden md:block">
                             <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Yield</p>
-                            <p class="anton-text text-3xl text-slate-900 leading-none">3</p>
+                            <p class="anton-text text-3xl text-slate-900 dark:text-white leading-none">3</p>
                         </div>
                     </div>
 
@@ -362,16 +362,16 @@
 
                     <!-- CTA Links -->
                     <div class="flex flex-wrap gap-4 items-center">
-                        <a href="#recipe" class="bg-slate-900 text-white px-8 py-4 rounded-2xl font-bold anton-text text-lg hover:bg-slate-800 transition shadow-xl tracking-widest">
+                        <a href="#recipe" class="bg-slate-900 dark:bg-white text-white dark:text-slate-900 px-8 py-4 rounded-2xl font-bold anton-text text-lg hover:bg-slate-800 dark:hover:bg-slate-200 transition shadow-xl tracking-widest">
                             JUMP TO RECIPE
                         </a>
                         <div class="flex items-center space-x-4">
-                            <button class="w-12 h-12 rounded-2xl border border-slate-200 flex items-center justify-center hover:bg-slate-50 transition text-slate-500" title="Share">
+                            <button class="w-12 h-12 rounded-2xl border border-slate-200 dark:border-slate-600 flex items-center justify-center hover:bg-slate-50 dark:hover:bg-slate-800 transition text-slate-500 dark:text-slate-400" title="Share">
                                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"></path>
                                 </svg>
                             </button>
-                            <button onclick="window.print()" class="w-12 h-12 rounded-2xl border border-slate-200 flex items-center justify-center hover:bg-slate-50 transition text-slate-500" title="Print">
+                            <button onclick="window.print()" class="w-12 h-12 rounded-2xl border border-slate-200 dark:border-slate-600 flex items-center justify-center hover:bg-slate-50 dark:hover:bg-slate-800 transition text-slate-500 dark:text-slate-400" title="Print">
                                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path>
                                 </svg>
@@ -384,21 +384,21 @@
     </section>
 
     <!-- Anchor Navigation Bar -->
-    <div class="sticky top-[72px] z-40 bg-white/95 backdrop-blur border-y border-slate-200 shadow-sm">
+    <div class="sticky top-[72px] z-40 bg-white/95 dark:bg-slate-900/95 backdrop-blur border-y border-slate-200 dark:border-slate-700 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between overflow-x-auto py-3 gap-2">
                 <div class="flex items-center space-x-1 md:space-x-4 text-xs md:text-sm font-bold uppercase tracking-wider whitespace-nowrap">
-                    <a href="#recipe" class="px-2 md:px-3 py-2 text-slate-600 hover:text-brand-600 transition">Recipe</a>
-                    <span class="text-slate-300">|</span>
-                    <a href="#ingredients" class="px-2 md:px-3 py-2 text-slate-600 hover:text-brand-600 transition">Ingredients</a>
-                    <span class="text-slate-300">|</span>
-                    <a href="#instructions" class="px-2 md:px-3 py-2 text-slate-600 hover:text-brand-600 transition">Instructions</a>
-                    <span class="text-slate-300">|</span>
-                    <a href="#troubleshooting" class="px-2 md:px-3 py-2 text-slate-600 hover:text-brand-600 transition">Troubleshooting</a>
-                    <span class="text-slate-300">|</span>
-                    <a href="#substitutions" class="px-2 md:px-3 py-2 text-slate-600 hover:text-brand-600 transition">Substitutions</a>
-                    <span class="text-slate-300">|</span>
-                    <a href="#nutrition" class="px-2 md:px-3 py-2 text-slate-600 hover:text-brand-600 transition">Nutrition Panel</a>
+                    <a href="#recipe" class="px-2 md:px-3 py-2 text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 transition">Recipe</a>
+                    <span class="text-slate-300 dark:text-slate-600">|</span>
+                    <a href="#ingredients" class="px-2 md:px-3 py-2 text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 transition">Ingredients</a>
+                    <span class="text-slate-300 dark:text-slate-600">|</span>
+                    <a href="#instructions" class="px-2 md:px-3 py-2 text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 transition">Instructions</a>
+                    <span class="text-slate-300 dark:text-slate-600">|</span>
+                    <a href="#troubleshooting" class="px-2 md:px-3 py-2 text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 transition">Troubleshooting</a>
+                    <span class="text-slate-300 dark:text-slate-600">|</span>
+                    <a href="#substitutions" class="px-2 md:px-3 py-2 text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 transition">Substitutions</a>
+                    <span class="text-slate-300 dark:text-slate-600">|</span>
+                    <a href="#nutrition" class="px-2 md:px-3 py-2 text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 transition">Nutrition Panel</a>
                 </div>
             </div>
         </div>
@@ -408,11 +408,11 @@
     <section id="recipe" class="py-16 scroll-mt-32">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- FREE RESOURCE CTA -->
-            <div class="bg-amber-50 border border-amber-200 rounded-2xl p-6 mb-10 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div class="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700/50 rounded-2xl p-6 mb-10 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                 <div>
                     <span class="inline-block px-3 py-1 bg-orange-500 text-white text-xs font-bold uppercase tracking-wider rounded-full mb-3">Free Resource</span>
-                    <h3 class="anton-text text-2xl text-slate-900 mb-2">GET THE PRINTABLE PACK</h3>
-                    <p class="text-slate-600 text-sm">Includes shopping list (grams), freezer guide, and the substitution matrix PDF.</p>
+                    <h3 class="anton-text text-2xl text-slate-900 dark:text-white mb-2">GET THE PRINTABLE PACK</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm">Includes shopping list (grams), freezer guide, and the substitution matrix PDF.</p>
                 </div>
                 <a href="/pack-starter.html" class="inline-flex items-center justify-center gap-2 bg-brand-500 text-white px-6 py-3 rounded-xl font-bold text-sm hover:bg-brand-600 transition whitespace-nowrap">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
@@ -802,7 +802,7 @@
         <div class="recipe-overlay absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition-opacity duration-300"></div>
     </div>
     <div class="p-4">
-        <h3 class="font-semibold text-slate-900 mb-1 group-hover:text-brand-600 transition-colors">Classic Whey Protein Pancakes</h3>
+        <h3 class="font-semibold text-slate-900 dark:text-white mb-1 group-hover:text-brand-600 transition-colors">Classic Whey Protein Pancakes</h3>
         <p class="text-sm text-slate-500">180 cal • 15m • Easy</p>
     </div>
 </a>
@@ -822,7 +822,7 @@
         <div class="recipe-overlay absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition-opacity duration-300"></div>
     </div>
     <div class="p-4">
-        <h3 class="font-semibold text-slate-900 mb-1 group-hover:text-brand-600 transition-colors">Chocolate Chip Protein Pancakes</h3>
+        <h3 class="font-semibold text-slate-900 dark:text-white mb-1 group-hover:text-brand-600 transition-colors">Chocolate Chip Protein Pancakes</h3>
         <p class="text-sm text-slate-500">260 cal • 15m • Easy</p>
     </div>
 </a>
@@ -842,7 +842,7 @@
         <div class="recipe-overlay absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition-opacity duration-300"></div>
     </div>
     <div class="p-4">
-        <h3 class="font-semibold text-slate-900 mb-1 group-hover:text-brand-600 transition-colors">Savory Spinach and Feta Protein Crepes</h3>
+        <h3 class="font-semibold text-slate-900 dark:text-white mb-1 group-hover:text-brand-600 transition-colors">Savory Spinach and Feta Protein Crepes</h3>
         <p class="text-sm text-slate-500">260 cal • 25m • Medium</p>
     </div>
 </a>

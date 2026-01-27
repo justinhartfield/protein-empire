@@ -5,7 +5,7 @@
     "description": "5 essential protein brownie recipes to get you started. Perfect for beginners!",
     "icon": "🍫",
     "recipes": [
-      "classic-protein-brownies",
+      "classic-protein-brownies-recipe",
       "fudgy-protein-brownies",
       "chocolate-protein-brownies",
       "healthy-protein-brownies",
@@ -61,7 +61,7 @@
       "mint-chocolate-protein-brownies",
       "raspberry-swirl-protein-brownies",
       "espresso-protein-brownies",
-      "double-chocolate-protein-brownies"
+      "chocolate-protein-brownies"
     ]
   },
   {
@@ -88,16 +88,6 @@
       "greek-yogurt-protein-brownies",
       "protein-powder-brownies",
       "whey-protein-brownies-recipe"
-    ]
-  },
-  {
-    "slug": "gluten-free-dairy-free",
-    "title": "Gluten-Free & Dairy-Free",
-    "description": "A collection of our best gluten-free and dairy-free recipes, perfect for those with dietary restrictions.",
-    "icon": "🥬",
-    "recipes": [
-      "gluten-free-black-bean-protein-brownies",
-      "dairy-free-avocado-protein-brownies"
     ]
   },
   {

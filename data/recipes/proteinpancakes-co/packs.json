@@ -5,11 +5,11 @@
     "description": "5 essential protein pancake recipes to get you started. Perfect for beginners!",
     "icon": "🥞",
     "recipes": [
-      "classic-protein-pancakes",
-      "banana-protein-pancakes",
+      "classic-whey-protein-pancakes",
+      "banana-bread-protein-pancakes",
       "chocolate-chip-protein-pancakes",
-      "blueberry-protein-pancakes",
-      "fluffy-protein-pancakes"
+      "blueberry-vegan-protein-pancakes",
+      "strawberry-shortcake-protein-pancakes"
     ]
   },
   {
@@ -83,16 +83,6 @@
       "peanut-butter-cup-protein-pancakes",
       "german-chocolate-protein-pancakes",
       "churro-protein-waffles"
-    ]
-  },
-  {
-    "slug": "gluten-free-dairy-free",
-    "title": "Gluten-Free & Dairy-Free",
-    "description": "A collection of our best gluten-free and dairy-free recipes, perfect for those with dietary restrictions.",
-    "icon": "🥬",
-    "recipes": [
-      "gluten-free-buckwheat-protein-pancakes",
-      "dairy-free-banana-oat-protein-pancakes"
     ]
   },
   {

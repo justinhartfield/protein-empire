@@ -677,7 +677,7 @@ function getRecipeCardPartial() {
         <div class="recipe-overlay absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition-opacity duration-300"></div>
     </div>
     <div class="p-4">
-        <h3 class="font-semibold text-slate-900 mb-1 group-hover:text-brand-600 transition-colors"><%= recipe.title %></h3>
+        <h3 class="font-semibold text-slate-900 dark:text-white mb-1 group-hover:text-brand-600 transition-colors"><%= recipe.title %></h3>
         <p class="text-sm text-slate-500"><%= recipe.nutrition.calories %> cal • <%= recipe.totalTime %>m • <%= recipe.difficulty %></p>
     </div>
 </a>
@@ -813,7 +813,7 @@ async function generateHomepage(site, recipes, packs, categories, partials, outp
                     <h3 class="font-bold text-lg text-brand-600 mb-4 uppercase tracking-wide">Protein Sources</h3>
                     <ul class="space-y-2">
                         <% (seoData.ingredients.proteins || []).forEach(ing => { %>
-                        <li class="text-slate-600 flex items-center"><span class="w-2 h-2 bg-brand-500 rounded-full mr-3"></span><%= ing %></li>
+                        <li class="text-slate-600 dark:text-slate-400 flex items-center"><span class="w-2 h-2 bg-brand-500 rounded-full mr-3"></span><%= ing %></li>
                         <% }) %>
                     </ul>
                 </div>
@@ -821,7 +821,7 @@ async function generateHomepage(site, recipes, packs, categories, partials, outp
                     <h3 class="font-bold text-lg text-brand-600 mb-4 uppercase tracking-wide"><%= Object.keys(seoData.ingredients)[1] ? Object.keys(seoData.ingredients)[1].replace(/([A-Z])/g, ' $1').trim() : 'Flour Options' %></h3>
                     <ul class="space-y-2">
                         <% (seoData.ingredients[Object.keys(seoData.ingredients)[1]] || []).forEach(ing => { %>
-                        <li class="text-slate-600 flex items-center"><span class="w-2 h-2 bg-brand-500 rounded-full mr-3"></span><%= ing %></li>
+                        <li class="text-slate-600 dark:text-slate-400 flex items-center"><span class="w-2 h-2 bg-brand-500 rounded-full mr-3"></span><%= ing %></li>
                         <% }) %>
                     </ul>
                 </div>
@@ -829,7 +829,7 @@ async function generateHomepage(site, recipes, packs, categories, partials, outp
                     <h3 class="font-bold text-lg text-brand-600 mb-4 uppercase tracking-wide"><%= Object.keys(seoData.ingredients)[2] ? Object.keys(seoData.ingredients)[2].replace(/([A-Z])/g, ' $1').trim() : 'Sweeteners & Flavors' %></h3>
                     <ul class="space-y-2">
                         <% (seoData.ingredients[Object.keys(seoData.ingredients)[2]] || []).forEach(ing => { %>
-                        <li class="text-slate-600 flex items-center"><span class="w-2 h-2 bg-brand-500 rounded-full mr-3"></span><%= ing %></li>
+                        <li class="text-slate-600 dark:text-slate-400 flex items-center"><span class="w-2 h-2 bg-brand-500 rounded-full mr-3"></span><%= ing %></li>
                         <% }) %>
                     </ul>
                 </div>
@@ -838,7 +838,7 @@ async function generateHomepage(site, recipes, packs, categories, partials, outp
     </section>
 
     <!-- How To Make Section -->
-    <section class="py-16 bg-white">
+    <section class="py-16 bg-white dark:bg-slate-900">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="anton-text text-3xl md:text-4xl text-slate-900 dark:text-white mb-10 text-center uppercase tracking-wide">How to Make Perfect Protein <%= site.foodTypePlural.charAt(0).toUpperCase() + site.foodTypePlural.slice(1) %></h2>
             <div class="space-y-6">
@@ -847,7 +847,7 @@ async function generateHomepage(site, recipes, packs, categories, partials, outp
                     <div class="flex-shrink-0 w-10 h-10 bg-brand-500 text-white rounded-full flex items-center justify-center font-bold text-lg"><%= index + 1 %></div>
                     <div>
                         <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-1"><%= step.step %></h3>
-                        <p class="text-slate-600"><%= step.description %></p>
+                        <p class="text-slate-600 dark:text-slate-400"><%= step.description %></p>
                     </div>
                 </div>
                 <% }) %>
@@ -856,7 +856,7 @@ async function generateHomepage(site, recipes, packs, categories, partials, outp
     </section>
 
     <!-- FAQ Section -->
-    <section class="py-16 bg-slate-50">
+    <section class="py-16 bg-slate-50 dark:bg-slate-800">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="anton-text text-3xl md:text-4xl text-slate-900 dark:text-white mb-10 text-center uppercase tracking-wide">Frequently Asked Questions</h2>
             <div class="space-y-4">
@@ -866,7 +866,7 @@ async function generateHomepage(site, recipes, packs, categories, partials, outp
                         <%= faq.question %>
                         <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
-                    <div class="px-6 pb-4 text-slate-600"><%= faq.answer %></div>
+                    <div class="px-6 pb-4 text-slate-600 dark:text-slate-400"><%= faq.answer %></div>
                 </details>
                 <% }) %>
             </div>
@@ -903,7 +903,7 @@ async function generateHomepage(site, recipes, packs, categories, partials, outp
             <!-- Category Filter -->
             <div id="categories" class="flex flex-wrap justify-center gap-3 mb-12">
                 <% Object.values(categories).forEach(cat => { %>
-                    <a href="/category-<%= cat.slug %>.html" class="px-5 py-2.5 rounded-full text-sm font-semibold bg-white border border-slate-200 hover:border-brand-500 hover:text-brand-600 transition-all shadow-sm">
+                    <a href="/category-<%= cat.slug %>.html" class="px-5 py-2.5 rounded-full text-sm font-semibold bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:text-brand-600 dark:hover:text-brand-400 transition-all shadow-sm">
                         <%= cat.name %>
                     </a>
                 <% }) %>
@@ -919,13 +919,13 @@ async function generateHomepage(site, recipes, packs, categories, partials, outp
     </section>
 
     <!-- Starter Pack CTA -->
-    <section class="py-20 bg-brand-50">
+    <section class="py-20 bg-brand-50 dark:bg-brand-900/20">
         <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <span class="inline-block bg-brand-500 text-white text-sm font-bold px-4 py-1.5 rounded-full mb-6 anton-text tracking-wider">
                 FREE DOWNLOAD
             </span>
             <h2 class="anton-text text-4xl uppercase mb-4 tracking-wider">Get the Starter Pack</h2>
-            <p class="text-slate-600 text-lg mb-8">
+            <p class="text-slate-600 dark:text-slate-400 text-lg mb-8">
                 5 essential protein <%= site.foodType %> recipes in a printable PDF. Includes shopping list, nutrition facts, and pro tips.
             </p>
             <a href="/pack-starter.html" class="inline-flex items-center gap-3 bg-brand-500 text-white px-8 py-4 rounded-2xl font-bold anton-text text-lg hover:bg-brand-600 transition-colors shadow-xl shadow-brand-500/30 tracking-wider">
@@ -1116,7 +1116,7 @@ async function generateRecipePage(site, recipe, allRecipes, categories, partials
 
 <main class="flex-grow">
     <!-- Recipe Header / Hero (matching ProteinMuffins.com) -->
-    <section class="bg-white pt-10 pb-16">
+    <section class="bg-white dark:bg-slate-900 pt-10 pb-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Breadcrumbs -->
             <nav class="flex items-center space-x-2 text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-6">
@@ -1124,7 +1124,7 @@ async function generateRecipePage(site, recipe, allRecipes, categories, partials
                 <span>/</span>
                 <a href="/category-<%= primaryCategory.slug %>.html" class="hover:text-brand-600 transition"><%= primaryCategory.name %></a>
                 <span>/</span>
-                <span class="text-slate-900"><%= recipe.title.split(' ').slice(0, 3).join(' ') %></span>
+                <span class="text-slate-900 dark:text-white"><%= recipe.title.split(' ').slice(0, 3).join(' ') %></span>
             </nav>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
@@ -1145,32 +1145,32 @@ async function generateRecipePage(site, recipe, allRecipes, categories, partials
 
                 <!-- Recipe Summary Area -->
                 <div>
-                    <h1 class="anton-text text-4xl lg:text-6xl text-slate-900 leading-[0.9] mb-6 uppercase">
+                    <h1 class="anton-text text-4xl lg:text-6xl text-slate-900 dark:text-white leading-[0.9] mb-6 uppercase">
                         <%= recipe.title.toUpperCase() %><br>
                         <span class="text-brand-500">(MACRO-VERIFIED)</span>
                     </h1>
 
                     <!-- Stats Bar (matching ProteinMuffins.com) -->
-                    <div class="grid grid-cols-3 md:grid-cols-5 gap-4 py-8 border-y border-slate-100 my-8">
-                        <div class="text-center md:border-r border-slate-100">
+                    <div class="grid grid-cols-3 md:grid-cols-5 gap-4 py-8 border-y border-slate-100 dark:border-slate-700 my-8">
+                        <div class="text-center md:border-r border-slate-100 dark:border-slate-700">
                             <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Protein</p>
                             <p class="anton-text text-3xl text-brand-600 leading-none"><%= recipe.nutrition.protein %>G</p>
                         </div>
-                        <div class="text-center md:border-r border-slate-100">
+                        <div class="text-center md:border-r border-slate-100 dark:border-slate-700">
                             <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Calories</p>
-                            <p class="anton-text text-3xl text-slate-900 leading-none"><%= recipe.nutrition.calories %></p>
+                            <p class="anton-text text-3xl text-slate-900 dark:text-white leading-none"><%= recipe.nutrition.calories %></p>
                         </div>
-                        <div class="text-center md:border-r border-slate-100">
+                        <div class="text-center md:border-r border-slate-100 dark:border-slate-700">
                             <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Prep Time</p>
-                            <p class="anton-text text-3xl text-slate-900 leading-none"><%= recipe.prepTime %>M</p>
+                            <p class="anton-text text-3xl text-slate-900 dark:text-white leading-none"><%= recipe.prepTime %>M</p>
                         </div>
-                        <div class="text-center md:border-r border-slate-100">
+                        <div class="text-center md:border-r border-slate-100 dark:border-slate-700">
                             <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Bake Time</p>
-                            <p class="anton-text text-3xl text-slate-900 leading-none"><%= recipe.cookTime %>M</p>
+                            <p class="anton-text text-3xl text-slate-900 dark:text-white leading-none"><%= recipe.cookTime %>M</p>
                         </div>
                         <div class="text-center hidden md:block">
                             <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Yield</p>
-                            <p class="anton-text text-3xl text-slate-900 leading-none"><%= recipe.yield %></p>
+                            <p class="anton-text text-3xl text-slate-900 dark:text-white leading-none"><%= recipe.yield %></p>
                         </div>
                     </div>
 
@@ -1180,16 +1180,16 @@ async function generateRecipePage(site, recipe, allRecipes, categories, partials
 
                     <!-- CTA Links -->
                     <div class="flex flex-wrap gap-4 items-center">
-                        <a href="#recipe" class="bg-slate-900 text-white px-8 py-4 rounded-2xl font-bold anton-text text-lg hover:bg-slate-800 transition shadow-xl tracking-widest">
+                        <a href="#recipe" class="bg-slate-900 dark:bg-white text-white dark:text-slate-900 px-8 py-4 rounded-2xl font-bold anton-text text-lg hover:bg-slate-800 dark:hover:bg-slate-200 transition shadow-xl tracking-widest">
                             JUMP TO RECIPE
                         </a>
                         <div class="flex items-center space-x-4">
-                            <button class="w-12 h-12 rounded-2xl border border-slate-200 flex items-center justify-center hover:bg-slate-50 transition text-slate-500" title="Share">
+                            <button class="w-12 h-12 rounded-2xl border border-slate-200 dark:border-slate-600 flex items-center justify-center hover:bg-slate-50 dark:hover:bg-slate-800 transition text-slate-500 dark:text-slate-400" title="Share">
                                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"></path>
                                 </svg>
                             </button>
-                            <button onclick="window.print()" class="w-12 h-12 rounded-2xl border border-slate-200 flex items-center justify-center hover:bg-slate-50 transition text-slate-500" title="Print">
+                            <button onclick="window.print()" class="w-12 h-12 rounded-2xl border border-slate-200 dark:border-slate-600 flex items-center justify-center hover:bg-slate-50 dark:hover:bg-slate-800 transition text-slate-500 dark:text-slate-400" title="Print">
                                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path>
                                 </svg>
@@ -1202,21 +1202,21 @@ async function generateRecipePage(site, recipe, allRecipes, categories, partials
     </section>
 
     <!-- Anchor Navigation Bar -->
-    <div class="sticky top-[72px] z-40 bg-white/95 backdrop-blur border-y border-slate-200 shadow-sm">
+    <div class="sticky top-[72px] z-40 bg-white/95 dark:bg-slate-900/95 backdrop-blur border-y border-slate-200 dark:border-slate-700 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between overflow-x-auto py-3 gap-2">
                 <div class="flex items-center space-x-1 md:space-x-4 text-xs md:text-sm font-bold uppercase tracking-wider whitespace-nowrap">
-                    <a href="#recipe" class="px-2 md:px-3 py-2 text-slate-600 hover:text-brand-600 transition">Recipe</a>
-                    <span class="text-slate-300">|</span>
-                    <a href="#ingredients" class="px-2 md:px-3 py-2 text-slate-600 hover:text-brand-600 transition">Ingredients</a>
-                    <span class="text-slate-300">|</span>
-                    <a href="#instructions" class="px-2 md:px-3 py-2 text-slate-600 hover:text-brand-600 transition">Instructions</a>
-                    <span class="text-slate-300">|</span>
-                    <a href="#troubleshooting" class="px-2 md:px-3 py-2 text-slate-600 hover:text-brand-600 transition">Troubleshooting</a>
-                    <span class="text-slate-300">|</span>
-                    <a href="#substitutions" class="px-2 md:px-3 py-2 text-slate-600 hover:text-brand-600 transition">Substitutions</a>
-                    <span class="text-slate-300">|</span>
-                    <a href="#nutrition" class="px-2 md:px-3 py-2 text-slate-600 hover:text-brand-600 transition">Nutrition Panel</a>
+                    <a href="#recipe" class="px-2 md:px-3 py-2 text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 transition">Recipe</a>
+                    <span class="text-slate-300 dark:text-slate-600">|</span>
+                    <a href="#ingredients" class="px-2 md:px-3 py-2 text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 transition">Ingredients</a>
+                    <span class="text-slate-300 dark:text-slate-600">|</span>
+                    <a href="#instructions" class="px-2 md:px-3 py-2 text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 transition">Instructions</a>
+                    <span class="text-slate-300 dark:text-slate-600">|</span>
+                    <a href="#troubleshooting" class="px-2 md:px-3 py-2 text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 transition">Troubleshooting</a>
+                    <span class="text-slate-300 dark:text-slate-600">|</span>
+                    <a href="#substitutions" class="px-2 md:px-3 py-2 text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 transition">Substitutions</a>
+                    <span class="text-slate-300 dark:text-slate-600">|</span>
+                    <a href="#nutrition" class="px-2 md:px-3 py-2 text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 transition">Nutrition Panel</a>
                 </div>
             </div>
         </div>
@@ -1226,11 +1226,11 @@ async function generateRecipePage(site, recipe, allRecipes, categories, partials
     <section id="recipe" class="py-16 scroll-mt-32">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- FREE RESOURCE CTA -->
-            <div class="bg-amber-50 border border-amber-200 rounded-2xl p-6 mb-10 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div class="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700/50 rounded-2xl p-6 mb-10 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                 <div>
                     <span class="inline-block px-3 py-1 bg-orange-500 text-white text-xs font-bold uppercase tracking-wider rounded-full mb-3">Free Resource</span>
-                    <h3 class="anton-text text-2xl text-slate-900 mb-2">GET THE PRINTABLE PACK</h3>
-                    <p class="text-slate-600 text-sm">Includes shopping list (grams), freezer guide, and the substitution matrix PDF.</p>
+                    <h3 class="anton-text text-2xl text-slate-900 dark:text-white mb-2">GET THE PRINTABLE PACK</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm">Includes shopping list (grams), freezer guide, and the substitution matrix PDF.</p>
                 </div>
                 <a href="/pack-starter.html" class="inline-flex items-center justify-center gap-2 bg-brand-500 text-white px-6 py-3 rounded-xl font-bold text-sm hover:bg-brand-600 transition whitespace-nowrap">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
@@ -1265,15 +1265,15 @@ async function generateRecipePage(site, recipe, allRecipes, categories, partials
                     </div>
                     <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700 recipe-shadow">
                         <!-- Substitution Info Banner -->
-                        <div x-show="checkHasSubstitutions()" x-cloak class="mb-4 p-3 bg-amber-50 border border-amber-200 rounded-xl text-sm">
+                        <div x-show="checkHasSubstitutions()" x-cloak class="mb-4 p-3 bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700/50 rounded-xl text-sm">
                             <div class="flex items-start gap-2">
                                 <svg class="w-5 h-5 text-amber-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                 </svg>
                                 <div>
-                                    <p class="font-semibold text-amber-800"><span x-text="getSubstitutionCount()"></span> ingredient(s) swapped</p>
+                                    <p class="font-semibold text-amber-800 dark:text-amber-300"><span x-text="getSubstitutionCount()"></span> ingredient(s) swapped</p>
                                     <template x-if="checkHasHydrationAdjustment()">
-                                        <p class="text-amber-700 mt-1">Hydration adjustment: <span x-text="getTotalHydrationAdjustment() > 0 ? '+' + getTotalHydrationAdjustment() : getTotalHydrationAdjustment()"></span>ml liquid</p>
+                                        <p class="text-amber-700 dark:text-amber-400 mt-1">Hydration adjustment: <span x-text="getTotalHydrationAdjustment() > 0 ? '+' + getTotalHydrationAdjustment() : getTotalHydrationAdjustment()"></span>ml liquid</p>
                                     </template>
                                 </div>
                             </div>
@@ -1289,7 +1289,7 @@ async function generateRecipePage(site, recipe, allRecipes, categories, partials
                                     >
                                         <div class="flex justify-between items-center">
                                             <div class="flex items-center gap-2">
-                                                <span x-text="getDisplayName(ing.id)" :class="ing.isSwapped ? 'text-brand-700 font-semibold' : 'text-slate-700'"></span>
+                                                <span x-text="getDisplayName(ing.id)" :class="ing.isSwapped ? 'text-brand-700 dark:text-brand-400 font-semibold' : 'text-slate-700 dark:text-slate-200'"></span>
                                                 <template x-if="ing.isSwapped">
                                                     <button 
                                                         @click.stop="revertIngredient(ing.originalId)"
@@ -1307,7 +1307,7 @@ async function generateRecipePage(site, recipe, allRecipes, categories, partials
                                                     </svg>
                                                 </template>
                                             </div>
-                                            <span class="font-mono text-slate-500 bg-slate-50 px-3 py-1 rounded-lg text-sm" x-text="getFormattedAmount(ing)"></span>
+                                            <span class="font-mono text-slate-500 dark:text-slate-300 bg-slate-50 dark:bg-slate-700 px-3 py-1 rounded-lg text-sm" x-text="getFormattedAmount(ing)"></span>
                                         </div>
                                         <template x-if="ing.isSwapped">
                                             <p class="text-xs text-slate-500 mt-1">Originally: <span x-text="getDisplayName(ing.originalId)"></span></p>
@@ -1321,17 +1321,17 @@ async function generateRecipePage(site, recipe, allRecipes, categories, partials
                                         x-transition:enter="transition ease-out duration-200"
                                         x-transition:enter-start="opacity-0 -translate-y-2"
                                         x-transition:enter-end="opacity-100 translate-y-0"
-                                        class="mt-2 bg-slate-50 rounded-xl p-3 border border-slate-200"
+                                        class="mt-2 bg-slate-50 dark:bg-slate-700 rounded-xl p-3 border border-slate-200 dark:border-slate-600"
                                     >
                                         <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2">Swap with:</p>
                                         <div class="space-y-1">
                                             <template x-for="sub in getSubstitutes(ing.originalId)" :key="sub.id">
                                                 <button 
                                                     @click.stop="selectSubstitute(ing.originalId, sub.id)"
-                                                    class="w-full text-left px-3 py-2 rounded-lg hover:bg-white transition-colors flex justify-between items-center group"
+                                                    class="w-full text-left px-3 py-2 rounded-lg hover:bg-white dark:hover:bg-slate-600 transition-colors flex justify-between items-center group"
                                                     :class="sub.isSpecialSwap ? 'border border-amber-200 bg-amber-50' : ''"
                                                 >
-                                                    <span x-text="sub.name" class="text-slate-700 group-hover:text-brand-600"></span>
+                                                    <span x-text="sub.name" class="text-slate-700 dark:text-slate-200 group-hover:text-brand-600"></span>
                                                     <span x-show="sub.swapNote" x-text="sub.swapNote" class="text-xs text-slate-500 bg-slate-100 px-2 py-0.5 rounded"></span>
                                                 </button>
                                             </template>
@@ -1343,7 +1343,7 @@ async function generateRecipePage(site, recipe, allRecipes, categories, partials
                         
                         <!-- Nutrition Delta Display -->
                         <template x-if="nutritionDeltas.length > 0">
-                            <div class="mt-4 pt-4 border-t border-slate-200">
+                            <div class="mt-4 pt-4 border-t border-slate-200 dark:border-slate-700">
                                 <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2">Nutrition Change (per serving):</p>
                                 <div class="flex flex-wrap gap-2">
                                     <template x-for="delta in nutritionDeltas" :key="delta.name">
@@ -1359,50 +1359,50 @@ async function generateRecipePage(site, recipe, allRecipes, categories, partials
                     </div>
                     
                     <!-- USDA Nutrition Facts Label (Real-time updating) -->
-                    <div id="nutrition" class="mt-6 bg-white rounded-2xl border-4 border-slate-900 p-4 transition-all duration-300 scroll-mt-36" :class="{ 'border-brand-500 shadow-lg shadow-brand-100': checkHasSubstitutions() }">
-                        <div class="border-b-8 border-slate-900 pb-1 mb-2">
-                            <h3 class="text-3xl font-black tracking-tight">Nutrition Facts</h3>
+                    <div id="nutrition" class="mt-6 bg-white dark:bg-slate-800 rounded-2xl border-4 border-slate-900 dark:border-white p-4 transition-all duration-300 scroll-mt-36" :class="{ 'border-brand-500 shadow-lg shadow-brand-100': checkHasSubstitutions() }">
+                        <div class="border-b-8 border-slate-900 dark:border-white pb-1 mb-2">
+                            <h3 class="text-3xl font-black tracking-tight dark:text-white">Nutrition Facts</h3>
                             <p x-show="checkHasSubstitutions()" x-cloak class="text-xs text-brand-600 font-semibold mt-1 flex items-center gap-1">
                                 <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clip-rule="evenodd"></path></svg>
                                 Updated with substitutions
                             </p>
                         </div>
-                        <div class="border-b border-slate-900 pb-1 mb-1">
-                            <p class="text-sm"><span class="font-bold"><%= recipe.yield || 12 %></span> servings per recipe</p>
+                        <div class="border-b border-slate-900 dark:border-white pb-1 mb-1">
+                            <p class="text-sm dark:text-slate-200"><span class="font-bold dark:text-white"><%= recipe.yield || 12 %></span> servings per recipe</p>
                             <div class="flex justify-between items-baseline">
-                                <p class="text-sm font-bold">Serving size</p>
-                                <p class="text-sm font-bold">1 <%= site.foodType %></p>
+                                <p class="text-sm font-bold dark:text-white">Serving size</p>
+                                <p class="text-sm font-bold dark:text-white">1 <%= site.foodType %></p>
                             </div>
                         </div>
-                        <div class="border-b-8 border-slate-900 py-2">
-                            <p class="text-sm font-bold">Amount per serving</p>
+                        <div class="border-b-8 border-slate-900 dark:border-white py-2">
+                            <p class="text-sm font-bold dark:text-white">Amount per serving</p>
                             <div class="flex justify-between items-baseline">
-                                <p class="text-4xl font-black">Calories</p>
-                                <p class="text-4xl font-black transition-colors duration-300" :class="{ 'text-brand-600': getNutritionCalories() !== baseNutrition.calories }" x-text="getNutritionCalories()"><%= recipe.nutrition.calories %></p>
+                                <p class="text-4xl font-black dark:text-white">Calories</p>
+                                <p class="text-4xl font-black dark:text-white transition-colors duration-300" :class="{ 'text-brand-600': getNutritionCalories() !== baseNutrition.calories }" x-text="getNutritionCalories()"><%= recipe.nutrition.calories %></p>
                             </div>
                         </div>
-                        <div class="text-right text-xs font-bold border-b border-slate-300 py-1">% Daily Value*</div>
-                        <div class="border-b border-slate-300 py-1 flex justify-between">
-                            <p><span class="font-bold">Total Fat</span> <span x-text="getNutritionFat()" :class="{ 'text-brand-600 font-semibold': getNutritionFat() !== baseNutrition.fat }"><%= recipe.nutrition.fat %></span>g</p>
-                            <p class="font-bold" :class="{ 'text-brand-600': getNutritionFat() !== baseNutrition.fat }" x-text="getDVFat() + '%'"><%= Math.round((recipe.nutrition.fat / 78) * 100) %>%</p>
+                        <div class="text-right text-xs font-bold border-b border-slate-300 dark:border-slate-600 py-1 dark:text-slate-300">% Daily Value*</div>
+                        <div class="border-b border-slate-300 dark:border-slate-600 py-1 flex justify-between dark:text-slate-200">
+                            <p><span class="font-bold dark:text-white">Total Fat</span> <span x-text="getNutritionFat()" :class="{ 'text-brand-600 font-semibold': getNutritionFat() !== baseNutrition.fat }"><%= recipe.nutrition.fat %></span>g</p>
+                            <p class="font-bold dark:text-white" :class="{ 'text-brand-600': getNutritionFat() !== baseNutrition.fat }" x-text="getDVFat() + '%'"><%= Math.round((recipe.nutrition.fat / 78) * 100) %>%</p>
                         </div>
-                        <div class="border-b border-slate-300 py-1 flex justify-between">
-                            <p><span class="font-bold">Total Carbohydrate</span> <span x-text="getNutritionCarbs()" :class="{ 'text-brand-600 font-semibold': getNutritionCarbs() !== baseNutrition.carbs }"><%= recipe.nutrition.carbs %></span>g</p>
-                            <p class="font-bold" :class="{ 'text-brand-600': getNutritionCarbs() !== baseNutrition.carbs }" x-text="getDVCarbs() + '%'"><%= Math.round((recipe.nutrition.carbs / 275) * 100) %>%</p>
+                        <div class="border-b border-slate-300 dark:border-slate-600 py-1 flex justify-between dark:text-slate-200">
+                            <p><span class="font-bold dark:text-white">Total Carbohydrate</span> <span x-text="getNutritionCarbs()" :class="{ 'text-brand-600 font-semibold': getNutritionCarbs() !== baseNutrition.carbs }"><%= recipe.nutrition.carbs %></span>g</p>
+                            <p class="font-bold dark:text-white" :class="{ 'text-brand-600': getNutritionCarbs() !== baseNutrition.carbs }" x-text="getDVCarbs() + '%'"><%= Math.round((recipe.nutrition.carbs / 275) * 100) %>%</p>
                         </div>
-                        <div class="border-b border-slate-300 py-1 pl-4 flex justify-between">
+                        <div class="border-b border-slate-300 dark:border-slate-600 py-1 pl-4 flex justify-between dark:text-slate-200">
                             <p>Dietary Fiber <span x-text="getNutritionFiber()" :class="{ 'text-brand-600 font-semibold': getNutritionFiber() !== baseNutrition.fiber }"><%= recipe.nutrition.fiber || 0 %></span>g</p>
-                            <p class="font-bold" :class="{ 'text-brand-600': getNutritionFiber() !== baseNutrition.fiber }" x-text="getDVFiber() + '%'"><%= Math.round(((recipe.nutrition.fiber || 0) / 28) * 100) %>%</p>
+                            <p class="font-bold dark:text-white" :class="{ 'text-brand-600': getNutritionFiber() !== baseNutrition.fiber }" x-text="getDVFiber() + '%'"><%= Math.round(((recipe.nutrition.fiber || 0) / 28) * 100) %>%</p>
                         </div>
-                        <div class="border-b border-slate-300 py-1 pl-4">
+                        <div class="border-b border-slate-300 dark:border-slate-600 py-1 pl-4 dark:text-slate-200">
                             <p>Total Sugars <span x-text="getNutritionSugar()"><%= recipe.nutrition.sugar || 0 %></span>g</p>
                         </div>
-                        <div class="border-b-8 border-slate-900 py-1 flex justify-between">
-                            <p><span class="font-bold">Protein</span> <span x-text="getNutritionProtein()" :class="{ 'text-brand-600 font-semibold': getNutritionProtein() !== baseNutrition.protein }"><%= recipe.nutrition.protein %></span>g</p>
-                            <p class="font-bold" :class="{ 'text-brand-600': getNutritionProtein() !== baseNutrition.protein }" x-text="getDVProtein() + '%'"><%= Math.round((recipe.nutrition.protein / 50) * 100) %>%</p>
+                        <div class="border-b-8 border-slate-900 dark:border-white py-1 flex justify-between dark:text-slate-200">
+                            <p><span class="font-bold dark:text-white">Protein</span> <span x-text="getNutritionProtein()" :class="{ 'text-brand-600 font-semibold': getNutritionProtein() !== baseNutrition.protein }"><%= recipe.nutrition.protein %></span>g</p>
+                            <p class="font-bold dark:text-white" :class="{ 'text-brand-600': getNutritionProtein() !== baseNutrition.protein }" x-text="getDVProtein() + '%'"><%= Math.round((recipe.nutrition.protein / 50) * 100) %>%</p>
                         </div>
                         <p class="text-xs mt-2 text-slate-500">*The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.</p>
-                        <div class="mt-3 pt-3 border-t border-slate-200">
+                        <div class="mt-3 pt-3 border-t border-slate-200 dark:border-slate-600">
                             <p class="text-xs text-slate-500 flex items-center gap-1">
                                 <svg class="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
@@ -1423,7 +1423,7 @@ async function generateRecipePage(site, recipe, allRecipes, categories, partials
                                     <%= i + 1 %>
                                 </div>
                                 <div class="pt-2">
-                                    <p class="text-slate-700 leading-relaxed"><%= step %></p>
+                                    <p class="text-slate-700 dark:text-slate-300 leading-relaxed"><%= step %></p>
                                 </div>
                             </div>
                         <% }) %>
@@ -1433,17 +1433,17 @@ async function generateRecipePage(site, recipe, allRecipes, categories, partials
                     <div id="troubleshooting" class="mt-12 scroll-mt-36">
                         <h2 class="anton-text text-2xl uppercase mb-6 tracking-wider">TROUBLESHOOTING</h2>
                         <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700 space-y-4">
-                            <div class="border-b border-slate-100 pb-4">
-                                <h4 class="font-semibold text-slate-900 mb-2">My <%= site.foodTypePlural %> are too dry</h4>
-                                <p class="text-slate-600 text-sm">Try adding 1-2 tablespoons more liquid (milk, yogurt, or egg whites). Also ensure you're not over-measuring the protein powder - use the scoop and level method.</p>
+                            <div class="border-b border-slate-100 dark:border-slate-700 pb-4">
+                                <h4 class="font-semibold text-slate-900 dark:text-white mb-2">My <%= site.foodTypePlural %> are too dry</h4>
+                                <p class="text-slate-600 dark:text-slate-400 text-sm">Try adding 1-2 tablespoons more liquid (milk, yogurt, or egg whites). Also ensure you're not over-measuring the protein powder - use the scoop and level method.</p>
                             </div>
-                            <div class="border-b border-slate-100 pb-4">
-                                <h4 class="font-semibold text-slate-900 mb-2">They didn't rise properly</h4>
-                                <p class="text-slate-600 text-sm">Check your baking powder is fresh (test by adding to hot water - it should bubble vigorously). Also, don't overmix the batter as this can deflate the air bubbles.</p>
+                            <div class="border-b border-slate-100 dark:border-slate-700 pb-4">
+                                <h4 class="font-semibold text-slate-900 dark:text-white mb-2">They didn't rise properly</h4>
+                                <p class="text-slate-600 dark:text-slate-400 text-sm">Check your baking powder is fresh (test by adding to hot water - it should bubble vigorously). Also, don't overmix the batter as this can deflate the air bubbles.</p>
                             </div>
                             <div>
-                                <h4 class="font-semibold text-slate-900 mb-2">The texture is rubbery</h4>
-                                <p class="text-slate-600 text-sm">This usually means too much protein powder or overbaking. Reduce baking time by 2-3 minutes and check doneness with a toothpick.</p>
+                                <h4 class="font-semibold text-slate-900 dark:text-white mb-2">The texture is rubbery</h4>
+                                <p class="text-slate-600 dark:text-slate-400 text-sm">This usually means too much protein powder or overbaking. Reduce baking time by 2-3 minutes and check doneness with a toothpick.</p>
                             </div>
                         </div>
                     </div>
@@ -1453,32 +1453,32 @@ async function generateRecipePage(site, recipe, allRecipes, categories, partials
                         <h2 class="anton-text text-2xl uppercase mb-6 tracking-wider">SUBSTITUTIONS</h2>
                         <div class="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden">
                             <table class="w-full text-sm">
-                                <thead class="bg-slate-50">
+                                <thead class="bg-slate-50 dark:bg-slate-700">
                                     <tr>
-                                        <th class="text-left px-4 py-3 font-semibold text-slate-900">Original</th>
-                                        <th class="text-left px-4 py-3 font-semibold text-slate-900">Substitute</th>
-                                        <th class="text-left px-4 py-3 font-semibold text-slate-900">Notes</th>
+                                        <th class="text-left px-4 py-3 font-semibold text-slate-900 dark:text-white">Original</th>
+                                        <th class="text-left px-4 py-3 font-semibold text-slate-900 dark:text-white">Substitute</th>
+                                        <th class="text-left px-4 py-3 font-semibold text-slate-900 dark:text-white">Notes</th>
                                     </tr>
                                 </thead>
-                                <tbody class="divide-y divide-slate-100">
+                                <tbody class="divide-y divide-slate-100 dark:divide-slate-700">
                                     <tr>
-                                        <td class="px-4 py-3 text-slate-700">Whey Protein</td>
-                                        <td class="px-4 py-3 text-slate-700">Casein, Plant Blend</td>
+                                        <td class="px-4 py-3 text-slate-700 dark:text-slate-300">Whey Protein</td>
+                                        <td class="px-4 py-3 text-slate-700 dark:text-slate-300">Casein, Plant Blend</td>
                                         <td class="px-4 py-3 text-slate-500">May need +10ml liquid</td>
                                     </tr>
                                     <tr>
-                                        <td class="px-4 py-3 text-slate-700">Greek Yogurt</td>
-                                        <td class="px-4 py-3 text-slate-700">Cottage Cheese, Skyr</td>
+                                        <td class="px-4 py-3 text-slate-700 dark:text-slate-300">Greek Yogurt</td>
+                                        <td class="px-4 py-3 text-slate-700 dark:text-slate-300">Cottage Cheese, Skyr</td>
                                         <td class="px-4 py-3 text-slate-500">Blend smooth first</td>
                                     </tr>
                                     <tr>
-                                        <td class="px-4 py-3 text-slate-700">Egg Whites</td>
-                                        <td class="px-4 py-3 text-slate-700">Flax Egg, Aquafaba</td>
+                                        <td class="px-4 py-3 text-slate-700 dark:text-slate-300">Egg Whites</td>
+                                        <td class="px-4 py-3 text-slate-700 dark:text-slate-300">Flax Egg, Aquafaba</td>
                                         <td class="px-4 py-3 text-slate-500">For vegan option</td>
                                     </tr>
                                     <tr>
-                                        <td class="px-4 py-3 text-slate-700">Oat Flour</td>
-                                        <td class="px-4 py-3 text-slate-700">Almond Flour, Coconut Flour</td>
+                                        <td class="px-4 py-3 text-slate-700 dark:text-slate-300">Oat Flour</td>
+                                        <td class="px-4 py-3 text-slate-700 dark:text-slate-300">Almond Flour, Coconut Flour</td>
                                         <td class="px-4 py-3 text-slate-500">Coconut: use 1/3 amount</td>
                                     </tr>
                                 </tbody>
@@ -1494,7 +1494,7 @@ async function generateRecipePage(site, recipe, allRecipes, categories, partials
                 <div class="sticky top-36 space-y-6">
                     <!-- Try These Next -->
                     <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700 shadow-sm">
-                        <h3 class="anton-text text-xl text-slate-900 mb-4 border-b-2 border-slate-900 pb-2 inline-block">TRY THESE NEXT</h3>
+                        <h3 class="anton-text text-xl text-slate-900 dark:text-white mb-4 border-b-2 border-slate-900 dark:border-white pb-2 inline-block">TRY THESE NEXT</h3>
                         <div class="space-y-4">
                             <% relatedRecipes.slice(0, 5).forEach(r => { %>
                                 <a href="/<%= r.slug %>.html" class="flex items-center gap-3 group">
@@ -1505,7 +1505,7 @@ async function generateRecipePage(site, recipe, allRecipes, categories, partials
                                         </picture>
                                     </div>
                                     <div>
-                                        <h4 class="font-semibold text-slate-900 group-hover:text-brand-600 transition text-sm line-clamp-2"><%= r.title %></h4>
+                                        <h4 class="font-semibold text-slate-900 dark:text-white group-hover:text-brand-600 transition text-sm line-clamp-2"><%= r.title %></h4>
                                         <p class="text-xs text-slate-500"><%= r.nutrition?.protein || r.protein || 20 %>G PROTEIN • <%= r.nutrition?.calories || r.calories || 150 %> CAL</p>
                                     </div>
                                 </a>
@@ -1539,9 +1539,9 @@ async function generateRecipePage(site, recipe, allRecipes, categories, partials
 
     <!-- Related Recipes (Intra-Site) -->
     <% if (relatedRecipes.length > 0) { %>
-    <section class="py-16 bg-slate-100">
+    <section class="py-16 bg-slate-100 dark:bg-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="anton-text text-3xl text-center mb-10 uppercase tracking-wider">MORE <%= site.foodTypePlural.toUpperCase() %> RECIPES</h2>
+            <h2 class="anton-text text-3xl text-center mb-10 uppercase tracking-wider dark:text-white">MORE <%= site.foodTypePlural.toUpperCase() %> RECIPES</h2>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
                 <% relatedRecipes.forEach(r => { %>
                     <%- include('recipeCard', { recipe: r }) %>
@@ -1695,20 +1695,20 @@ async function generateCategoryPage(site, category, allRecipes, categories, part
         <nav class="flex items-center space-x-2 text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-8">
             <a href="/" class="hover:text-brand-600 transition">Home</a>
             <span>/</span>
-            <span class="text-slate-900"><%= category.name %></span>
+            <span class="text-slate-900 dark:text-white"><%= category.name %></span>
         </nav>
         
         <div class="text-center mb-12">
             <span class="text-5xl mb-4 block"><%= category.icon || '📚' %></span>
-            <h1 class="anton-text text-5xl uppercase mb-4 tracking-wider"><%= category.name.toUpperCase() %></h1>
-            <p class="text-slate-600 text-lg max-w-2xl mx-auto"><%= category.description || 'Browse our ' + category.name.toLowerCase() + ' protein ' + site.foodType + ' recipes.' %></p>
+            <h1 class="anton-text text-5xl uppercase mb-4 tracking-wider dark:text-white"><%= category.name.toUpperCase() %></h1>
+            <p class="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto"><%= category.description || 'Browse our ' + category.name.toLowerCase() + ' protein ' + site.foodType + ' recipes.' %></p>
             <p class="text-sm text-slate-500 mt-4 anton-text tracking-wider"><%= filteredRecipes.length %> RECIPES</p>
         </div>
         
         <!-- Category Filter -->
         <div class="flex flex-wrap justify-center gap-3 mb-12">
             <% Object.values(categories).forEach(cat => { %>
-                <a href="/category-<%= cat.slug %>.html" class="px-5 py-2.5 rounded-full text-sm font-semibold <%= cat.slug === category.slug ? 'bg-brand-500 text-white' : 'bg-white border border-slate-200 hover:border-brand-500 hover:text-brand-600' %> transition-all shadow-sm">
+                <a href="/category-<%= cat.slug %>.html" class="px-5 py-2.5 rounded-full text-sm font-semibold <%= cat.slug === category.slug ? 'bg-brand-500 text-white' : 'bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:text-brand-600 dark:hover:text-brand-400' %> transition-all shadow-sm">
                     <%= cat.name %>
                 </a>
             <% }) %>
@@ -1794,13 +1794,13 @@ async function generatePackPage(site, pack, allRecipes, partials, outputDir) {
             
             <div class="grid gap-4">
                 <% packRecipes.forEach(recipe => { %>
-                    <div class="flex items-center gap-4 bg-white rounded-xl p-4 border border-slate-200">
+                    <div class="flex items-center gap-4 bg-white dark:bg-slate-800 rounded-xl p-4 border border-slate-200 dark:border-slate-700">
                         <picture>
                             <source type="image/webp" srcset="/recipe_images/<%= recipe.slug %>-thumb.webp">
                             <img src="/recipe_images/<%= recipe.slug %>-thumb.jpg" alt="<%= recipe.title %>" class="w-20 h-20 rounded-lg object-cover" loading="lazy" width="80" height="80">
                         </picture>
                         <div class="flex-grow">
-                            <h3 class="font-semibold text-slate-900"><%= recipe.title %></h3>
+                            <h3 class="font-semibold text-slate-900 dark:text-white"><%= recipe.title %></h3>
                             <p class="text-sm text-slate-500"><%= recipe.nutrition.calories %> cal • <%= recipe.totalTime %>m</p>
                         </div>
                         <div class="text-right">
@@ -1814,7 +1814,7 @@ async function generatePackPage(site, pack, allRecipes, partials, outputDir) {
     </section>
 
     <!-- Download Form -->
-    <section class="py-16 bg-brand-50" x-data="{ 
+    <section class="py-16 bg-brand-50 dark:bg-brand-900/20" x-data="{ 
         email: '', 
         submitting: false, 
         submitted: false, 
@@ -1886,20 +1886,20 @@ async function generatePackPage(site, pack, allRecipes, partials, outputDir) {
             <h2 class="anton-text text-3xl text-center mb-10 uppercase tracking-wider">ALSO INCLUDES</h2>
             
             <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-white rounded-xl p-6 border border-slate-200 text-center">
+                <div class="bg-white dark:bg-slate-800 rounded-xl p-6 border border-slate-200 dark:border-slate-700 text-center">
                     <span class="text-3xl mb-4 block">🛒</span>
-                    <h3 class="font-semibold mb-2">Shopping List</h3>
-                    <p class="text-sm text-slate-600">Combined ingredient list organized by category</p>
+                    <h3 class="font-semibold mb-2 dark:text-white">Shopping List</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Combined ingredient list organized by category</p>
                 </div>
-                <div class="bg-white rounded-xl p-6 border border-slate-200 text-center">
+                <div class="bg-white dark:bg-slate-800 rounded-xl p-6 border border-slate-200 dark:border-slate-700 text-center">
                     <span class="text-3xl mb-4 block">📊</span>
-                    <h3 class="font-semibold mb-2">Nutrition Facts</h3>
-                    <p class="text-sm text-slate-600">Complete macros for every recipe</p>
+                    <h3 class="font-semibold mb-2 dark:text-white">Nutrition Facts</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Complete macros for every recipe</p>
                 </div>
-                <div class="bg-white rounded-xl p-6 border border-slate-200 text-center">
+                <div class="bg-white dark:bg-slate-800 rounded-xl p-6 border border-slate-200 dark:border-slate-700 text-center">
                     <span class="text-3xl mb-4 block">💡</span>
-                    <h3 class="font-semibold mb-2">Pro Tips</h3>
-                    <p class="text-sm text-slate-600">Storage, meal prep, and substitution advice</p>
+                    <h3 class="font-semibold mb-2 dark:text-white">Pro Tips</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Storage, meal prep, and substitution advice</p>
                 </div>
             </div>
         </div>
