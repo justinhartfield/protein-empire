@@ -25,7 +25,7 @@ import { getSite, sites } from '../packages/config/sites.js';
 import { getCategoriesForSite } from '../packages/config/categories.js';
 import { mapIngredientNameToId } from '../packages/ingredients/ingredient-mapper.js';
 import { linkifyDescription } from './linkify-description.js';
-import { seoContent } from '../packages/config/seo-content.js';
+import { seoContent, categorySeoContent } from '../packages/config/seo-content.js';
 
 /**
  * Main build function
@@ -1726,6 +1726,18 @@ async function generateCategoryPage(site, category, allRecipes, categories, part
                 <a href="/" class="text-brand-600 hover:underline mt-4 inline-block font-semibold">Browse all recipes</a>
             </div>
         <% } %>
+
+        <% if (catSeoData) { %>
+        <!-- Category SEO Content -->
+        <section class="mt-16 pt-12 border-t border-slate-200 dark:border-slate-700">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="anton-text text-3xl md:text-4xl text-slate-900 dark:text-white mb-6 uppercase tracking-wide"><%= catSeoData.title %></h2>
+                <% catSeoData.paragraphs.forEach(paragraph => { %>
+                <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed mb-4"><%= paragraph %></p>
+                <% }) %>
+            </div>
+        </section>
+        <% } %>
     </div>
 </main>
 
@@ -1735,11 +1747,16 @@ async function generateCategoryPage(site, category, allRecipes, categories, part
 </html>
 `;
 
+  // Look up category SEO content for this site and category
+  const siteCatSeo = categorySeoContent?.[site.domain] || {};
+  const catSeoData = siteCatSeo[category.name] || null;
+
   const html = ejs.render(template, {
     site,
     category,
     categories,
     filteredRecipes,
+    catSeoData,
     include: (name, data) => ejs.render(partials[name], data)
   });
   

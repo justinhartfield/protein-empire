@@ -528,6 +528,54 @@ export const seoContent = {
     ]
   },
 
+  'cottagecheeserecipes.co': {
+    whatAre: {
+      title: 'What Are Cottage Cheese Recipes?',
+      paragraphs: [
+        'Cottage cheese recipes are a collection of sweet and savory dishes that use cottage cheese as a key high-protein ingredient. From fluffy pancakes and decadent cheesecakes to crispy pizza crusts and protein-packed snack balls, cottage cheese has become one of the most versatile and trending ingredients in macro-friendly cooking. With 24-28 grams of protein per cup and a mild, creamy flavor, cottage cheese transforms everyday recipes into high-protein meals without the need for supplements.',
+        'The cottage cheese renaissance is driven by its incredible adaptability. When blended smooth, cottage cheese becomes virtually undetectable in batters, doughs, and desserts while adding creaminess and a massive protein boost. Its naturally high casein content provides slow-digesting protein, making cottage cheese recipes ideal for sustained energy and overnight muscle recovery.',
+        'Whether you are looking for high-protein breakfast ideas, guilt-free desserts, or savory dinner options, cottage cheese recipes offer something for every meal and every palate. Our collection features macro-verified recipes with precise nutrition data, so you always know exactly what you are eating.'
+      ]
+    },
+    benefits: [
+      { title: 'High Protein, Low Effort', description: 'Cottage cheese delivers 24-28g of protein per cup with zero prep needed as an ingredient.' },
+      { title: 'Sweet & Savory Versatility', description: 'Works in pancakes, pizza, cheesecake, bread, smoothies, and everything in between.' },
+      { title: 'Macro-Friendly Creamy Texture', description: 'Adds rich creaminess to recipes without the calories of cream cheese or heavy cream.' },
+      { title: 'Budget-Friendly Protein', description: 'One of the most affordable high-protein ingredients at the grocery store.' },
+      { title: 'Naturally High in Casein', description: 'Slow-digesting casein protein supports overnight muscle recovery and lasting satiety.' },
+      { title: 'No Protein Powder Required', description: 'Achieve high-protein recipes using whole food ingredients your body recognizes.' }
+    ],
+    types: [
+      { name: 'Cottage Cheese Pancakes & Waffles', description: 'Blend cottage cheese into batter for fluffy, protein-rich breakfast favorites with 25+ grams of protein per serving.' },
+      { name: 'Cottage Cheese Bread & Flatbread', description: 'Create soft, pillowy bread and flatbread using cottage cheese for added protein and moisture without yeast or long rising times.' },
+      { name: 'Cottage Cheese Desserts & Cheesecake', description: 'From no-bake cheesecake to brownies and cookie dough, cottage cheese creates indulgent desserts with dramatically improved macros.' },
+      { name: 'Cottage Cheese Pizza & Savory', description: 'Build high-protein pizza crusts, savory muffins, and egg bakes using cottage cheese as the protein-packed base.' },
+      { name: 'Cottage Cheese Snacks & Protein Balls', description: 'Roll up quick no-bake energy balls and snacks with cottage cheese for on-the-go protein that keeps you full.' }
+    ],
+    ingredients: {
+      proteins: ['Full-Fat Cottage Cheese', 'Low-Fat Cottage Cheese', 'Blended Cottage Cheese', 'Eggs & Egg Whites', 'Protein Powder', 'Greek Yogurt'],
+      dairyBases: ['Oat Flour', 'Almond Flour', 'Coconut Flour', 'All-Purpose Flour', 'Mozzarella Cheese'],
+      sweeteners: ['Honey', 'Maple Syrup', 'Monk Fruit Sweetener', 'Vanilla Extract', 'Cocoa Powder', 'Fresh Berries']
+    },
+    howTo: [
+      { step: 'Blend It Smooth', description: 'For baking and batters, blend cottage cheese in a food processor or blender until completely smooth. This eliminates curds and creates a silky base.' },
+      { step: 'Choose the Right Type', description: 'Use full-fat cottage cheese for richer flavor in desserts and low-fat for lighter recipes like pancakes and bread.' },
+      { step: 'Bring to Room Temperature', description: 'Cold cottage cheese can seize up batters. Let it sit out for 15-20 minutes before mixing into recipes for best results.' },
+      { step: 'Do Not Overbake', description: 'Cottage cheese recipes tend to dry out faster than traditional ones. Pull from the oven when the center is just set—it firms up as it cools.' },
+      { step: 'Experiment with Flavors', description: 'Cottage cheese has a mild flavor that pairs with almost anything. Add cinnamon and berries for sweet, or garlic and herbs for savory.' }
+    ],
+    faqs: [
+      { question: 'Can you taste cottage cheese in baked recipes?', answer: 'No! When blended smooth and mixed into batters or doughs, cottage cheese is completely undetectable. It adds creaminess and protein without any distinct cottage cheese flavor.' },
+      { question: 'What is the best cottage cheese for baking?', answer: 'Small curd cottage cheese blends most smoothly. Full-fat produces richer results in desserts, while low-fat works well for pancakes, bread, and lighter recipes.' },
+      { question: 'How much protein does cottage cheese add to recipes?', answer: 'One cup of cottage cheese adds approximately 24-28 grams of protein to any recipe. Most of our recipes contain 20-35 grams of protein per serving.' },
+      { question: 'Can I substitute cottage cheese for cream cheese?', answer: 'Yes! Blended cottage cheese is an excellent lower-calorie, higher-protein substitute for cream cheese in cheesecakes, frostings, and dips.' },
+      { question: 'Do I need to drain cottage cheese before baking?', answer: 'For most recipes, no draining is needed—the moisture helps keep baked goods tender. For pizza crusts and bread, lightly draining excess liquid can improve texture.' },
+      { question: 'Are cottage cheese recipes good for weight loss?', answer: 'Absolutely. Cottage cheese is high in protein and relatively low in calories, making it ideal for staying full while in a calorie deficit. The casein protein also promotes satiety.' },
+      { question: 'Can I use cottage cheese instead of protein powder?', answer: 'Yes! Cottage cheese is one of the best whole-food alternatives to protein powder. One cup provides as much protein as a typical scoop of protein powder.' },
+      { question: 'How do I make cottage cheese pancakes fluffy?', answer: 'Blend the cottage cheese completely smooth, use room-temperature eggs, and do not overmix the batter. A small amount of baking powder also helps create lift and fluffiness.' }
+    ]
+  },
+
   'highprotein.recipes': {
     whatAre: {
       title: 'What Are High-Protein Recipes?',
@@ -573,6 +621,71 @@ export const seoContent = {
       { question: 'Do I need protein if I do not work out?', answer: 'Yes! Protein is essential for everyone for tissue repair, immune function, and healthy aging.' },
       { question: 'How do I get more protein as a vegetarian?', answer: 'Combine legumes, tofu, tempeh, eggs, dairy, and plant protein powders to meet your needs.' }
     ]
+  }
+};
+
+/**
+ * Category-level SEO content for category pages.
+ * Keyed by domain, then by category name.
+ */
+export const categorySeoContent = {
+  'cottagecheeserecipes.co': {
+    'Pancakes & Waffles': {
+      title: 'Cottage Cheese Pancakes & Waffles: The High-Protein Breakfast You Need',
+      paragraphs: [
+        'Cottage cheese pancakes have taken the internet by storm, and for good reason. By blending cottage cheese into pancake batter, you get incredibly fluffy, protein-packed pancakes that taste like a treat while delivering 25-35 grams of protein per serving. The secret is blending the cottage cheese completely smooth so it integrates seamlessly into the batter, creating a texture that rivals any traditional buttermilk pancake.',
+        'The beauty of cottage cheese pancakes lies in their simplicity. Most recipes require just three to five ingredients—cottage cheese, eggs, oat flour, and a touch of baking powder. You do not need protein powder, specialty ingredients, or complicated techniques. The cottage cheese itself provides all the protein, moisture, and richness you need for a satisfying stack.',
+        'Cottage cheese waffles follow the same principle but deliver an irresistible crispy exterior with a soft, creamy interior. Use a standard waffle iron and the same blended cottage cheese batter for a weekend brunch that feels indulgent while supporting your fitness goals. Top with fresh berries, a drizzle of maple syrup, or nut butter for a complete meal that keeps you full until lunch.'
+      ]
+    },
+    'Breakfast': {
+      title: 'High-Protein Cottage Cheese Breakfast Recipes',
+      paragraphs: [
+        'Starting your morning with cottage cheese is one of the simplest ways to hit your protein goals before the day even begins. Beyond pancakes, cottage cheese shines in breakfast bowls, smoothies, egg bakes, and overnight oat combinations. A single cup added to your breakfast delivers nearly 28 grams of protein—more than most protein bars—while keeping you full for hours thanks to its slow-digesting casein content.',
+        'Cottage cheese breakfast bowls are endlessly customizable. Top with granola, fresh fruit, honey, and a sprinkle of cinnamon for a sweet option, or go savory with everything bagel seasoning, avocado, and cherry tomatoes. Blended into smoothies, cottage cheese adds creaminess and protein without the chalky taste of protein powder. Folded into scrambled eggs or mixed into baked egg muffins, it creates a creamier texture with significantly more protein per bite.',
+        'For meal preppers, cottage cheese breakfast recipes are a game-changer. Baked oatmeal cups with cottage cheese can be made on Sunday and reheated all week. Egg muffins with cottage cheese freeze beautifully and reheat in under two minutes. The convenience and protein density of cottage cheese make it the ultimate breakfast ingredient for busy mornings.'
+      ]
+    },
+    'Bread & Flatbread': {
+      title: 'Cottage Cheese Bread & Flatbread Recipes',
+      paragraphs: [
+        'Cottage cheese bread has become a staple for anyone looking to enjoy sandwiches, toast, and wraps without sacrificing their protein goals. By incorporating blended cottage cheese into bread dough, you can create soft, tender loaves that deliver 10-15 grams of protein per slice—three to four times more than standard bread. Many cottage cheese bread recipes require no yeast and no rising time, making them far simpler and faster than traditional bread baking.',
+        'Cottage cheese flatbread is perhaps the easiest high-protein bread you can make. Combining cottage cheese with eggs, a small amount of flour, and seasonings creates a pliable flatbread that works as a pizza base, wrap, or dipping bread. These flatbreads cook in minutes on a skillet or in the oven and pair beautifully with hummus, grilled vegetables, or lean meats for a complete high-protein meal.',
+        'The magic of cottage cheese in bread lies in its moisture content. Traditional protein bread can be dense and dry, but cottage cheese keeps the crumb soft and tender while boosting nutritional value. Whether you are making sandwich bread, naan-style flatbread, or focaccia, cottage cheese ensures every slice contributes meaningful protein to your daily intake.'
+      ]
+    },
+    'Cheesecake & Pudding': {
+      title: 'Cottage Cheese Cheesecake & Pudding Recipes',
+      paragraphs: [
+        'Cottage cheese cheesecake is proof that healthy desserts can taste absolutely incredible. When blended until silky smooth and combined with a touch of sweetener, cottage cheese produces a cheesecake filling that is virtually indistinguishable from traditional cream cheese versions—but with dramatically more protein and fewer calories. A single slice can pack 20-30 grams of protein while satisfying even the most intense dessert cravings.',
+        'No-bake cottage cheese cheesecake is the easiest entry point. Blend cottage cheese with Greek yogurt, sweetener, vanilla, and a squeeze of lemon juice, then pour over a simple crust and refrigerate. In a few hours, you have a creamy, tangy cheesecake that serves eight and keeps in the fridge all week. Baked versions develop a richer, denser texture with beautifully caramelized edges that rival any New York-style cheesecake.',
+        'Cottage cheese pudding and mousse offer quick, single-serving alternatives when you want dessert without the commitment of a full cheesecake. Blend cottage cheese with cocoa powder and sweetener for instant chocolate pudding, or combine with frozen berries for a fruity mousse. These take under five minutes to prepare and deliver satisfying creaminess with 20+ grams of protein per serving.'
+      ]
+    },
+    'Desserts': {
+      title: 'Cottage Cheese Dessert Recipes: Brownies, Cookies & More',
+      paragraphs: [
+        'Cottage cheese is a secret weapon in macro-friendly dessert baking. Blended into brownie batter, it creates an incredibly fudgy texture while adding protein and reducing the need for butter or oil. Cottage cheese brownies typically deliver 15-20 grams of protein per serving with that rich, chocolatey satisfaction you crave. The key is using enough cocoa powder and sweetener to mask any dairy tang—which is easy because blended cottage cheese has an almost neutral flavor.',
+        'Cottage cheese cookies and cookie dough bites are another crowd favorite. Mixed with oat flour, protein powder, and chocolate chips, cottage cheese creates a soft, chewy cookie that stays moist for days. Edible cookie dough made with cottage cheese, nut butter, and sweetener is a no-bake treat that tastes indulgent while packing serious protein. These desserts prove that you do not need to choose between hitting your macros and enjoying something sweet.',
+        'For ice cream lovers, blending frozen cottage cheese with fruit creates a soft-serve consistency that rivals any frozen yogurt shop. Add cocoa powder for chocolate, peanut butter for richness, or mango for a tropical twist. This cottage cheese nice cream contains a fraction of the sugar and multiple times the protein of commercial frozen desserts.'
+      ]
+    },
+    'Pizza & Savory': {
+      title: 'Cottage Cheese Pizza & Savory Recipes',
+      paragraphs: [
+        'Cottage cheese pizza crust has earned its spot as one of the most popular high-protein savory recipes online. By blending cottage cheese with eggs, cheese, and a small amount of flour, you create a sturdy, flavorful crust that holds up to any toppings while delivering 25-35 grams of protein per serving before you even add toppings. The crust crisps beautifully in the oven, creating a pizza night experience that fits perfectly into a high-protein lifestyle.',
+        'Beyond pizza, cottage cheese transforms savory cooking in dozens of ways. Blended into pasta sauce, it creates a creamy alfredo-style coating with 15+ grams of protein per serving. Stirred into scrambled eggs, it adds extra creaminess and protein. Used as a base for dips and spreads, cottage cheese delivers the rich texture of sour cream or cream cheese with significantly better macros. Savory cottage cheese muffins packed with cheese, herbs, and vegetables make excellent grab-and-go lunches.',
+        'Cottage cheese also excels in stuffed dishes—use it in place of ricotta in lasagna, stuffed shells, or manicotti for a protein upgrade. Mixed with spinach and garlic, it becomes a high-protein filling for stuffed chicken breasts or peppers. The savory applications of cottage cheese are limited only by your imagination.'
+      ]
+    },
+    'Snacks': {
+      title: 'Cottage Cheese Snack Recipes: Protein Balls, Dips & More',
+      paragraphs: [
+        'Cottage cheese snacks solve the eternal dilemma of finding portable, protein-rich options that actually taste good. Cottage cheese protein balls—made by combining blended cottage cheese with oats, nut butter, and mix-ins like chocolate chips or dried fruit—deliver 8-12 grams of protein per ball and keep in the fridge for up to a week. They take 15 minutes to make, require no baking, and are endlessly customizable.',
+        'Cottage cheese dips and spreads are another category worth exploring. Blended with roasted garlic and herbs, cottage cheese becomes a high-protein party dip that nobody will guess is made from cottage cheese. Combined with ranch seasoning, it rivals any store-bought dip with a fraction of the fat and triple the protein. Serve with vegetables, crackers, or use as a sandwich spread for easy protein at every snack.',
+        'For quick cottage cheese snacks that require zero preparation, simply top a bowl of cottage cheese with your favorite combinations: honey and walnuts, everything bagel seasoning, hot honey and crushed red pepper, or peanut butter and banana slices. These simple bowls deliver 24-28 grams of protein and take under a minute to assemble, making them the fastest high-protein snack in your repertoire.'
+      ]
+    }
   }
 };
 
