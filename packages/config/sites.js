@@ -262,7 +262,7 @@ export const sites = {
     logo: '/images/logo.png',
     favicon: '/images/favicon.png',
     socialImage: '/images/social-share.png',
-    ga4Id: '',
+    ga4Id: 'G-2G3D8EYYBB',
     status: 'ready'
   },
 
