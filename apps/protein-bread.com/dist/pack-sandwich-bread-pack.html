@@ -211,13 +211,13 @@
             
             <div class="grid gap-4">
                 
-                    <div class="flex items-center gap-4 bg-white rounded-xl p-4 border border-slate-200">
+                    <div class="flex items-center gap-4 bg-white dark:bg-slate-800 rounded-xl p-4 border border-slate-200 dark:border-slate-700">
                         <picture>
                             <source type="image/webp" srcset="/recipe_images/high-protein-bread-thumb.webp">
                             <img src="/recipe_images/high-protein-bread-thumb.jpg" alt="Everyday High Protein Bread" class="w-20 h-20 rounded-lg object-cover" loading="lazy" width="80" height="80">
                         </picture>
                         <div class="flex-grow">
-                            <h3 class="font-semibold text-slate-900">Everyday High Protein Bread</h3>
+                            <h3 class="font-semibold text-slate-900 dark:text-white">Everyday High Protein Bread</h3>
                             <p class="text-sm text-slate-500">200 cal • 50m</p>
                         </div>
                         <div class="text-right">
@@ -226,13 +226,13 @@
                         </div>
                     </div>
                 
-                    <div class="flex items-center gap-4 bg-white rounded-xl p-4 border border-slate-200">
+                    <div class="flex items-center gap-4 bg-white dark:bg-slate-800 rounded-xl p-4 border border-slate-200 dark:border-slate-700">
                         <picture>
                             <source type="image/webp" srcset="/recipe_images/whole-wheat-protein-sandwich-bread-thumb.webp">
                             <img src="/recipe_images/whole-wheat-protein-sandwich-bread-thumb.jpg" alt="Whole Wheat Protein Sandwich Bread" class="w-20 h-20 rounded-lg object-cover" loading="lazy" width="80" height="80">
                         </picture>
                         <div class="flex-grow">
-                            <h3 class="font-semibold text-slate-900">Whole Wheat Protein Sandwich Bread</h3>
+                            <h3 class="font-semibold text-slate-900 dark:text-white">Whole Wheat Protein Sandwich Bread</h3>
                             <p class="text-sm text-slate-500">170 cal • 55m</p>
                         </div>
                         <div class="text-right">
@@ -241,13 +241,13 @@
                         </div>
                     </div>
                 
-                    <div class="flex items-center gap-4 bg-white rounded-xl p-4 border border-slate-200">
+                    <div class="flex items-center gap-4 bg-white dark:bg-slate-800 rounded-xl p-4 border border-slate-200 dark:border-slate-700">
                         <picture>
                             <source type="image/webp" srcset="/recipe_images/multigrain-protein-sandwich-bread-thumb.webp">
                             <img src="/recipe_images/multigrain-protein-sandwich-bread-thumb.jpg" alt="Multigrain Protein Sandwich Bread" class="w-20 h-20 rounded-lg object-cover" loading="lazy" width="80" height="80">
                         </picture>
                         <div class="flex-grow">
-                            <h3 class="font-semibold text-slate-900">Multigrain Protein Sandwich Bread</h3>
+                            <h3 class="font-semibold text-slate-900 dark:text-white">Multigrain Protein Sandwich Bread</h3>
                             <p class="text-sm text-slate-500">180 cal • 55m</p>
                         </div>
                         <div class="text-right">
@@ -261,7 +261,7 @@
     </section>
 
     <!-- Download Form -->
-    <section class="py-16 bg-brand-50" x-data="{ 
+    <section class="py-16 bg-brand-50 dark:bg-brand-900/20" x-data="{ 
         email: '', 
         submitting: false, 
         submitted: false, 
@@ -297,7 +297,7 @@
             <template x-if="!submitted">
                 <div>
                     <h2 class="anton-text text-3xl mb-4 uppercase tracking-wider">GET YOUR FREE COPY</h2>
-                    <p class="text-slate-600 mb-8">Enter your email and we'll send you the PDF.</p>
+                    <p class="text-slate-600 dark:text-slate-400 mb-8">Enter your email and we'll send you the PDF.</p>
                     
                     <form @submit.prevent="submit()" class="space-y-4">
                         <input type="email" x-model="email" placeholder="Enter your email" required
@@ -319,7 +319,7 @@
                 <div>
                     <span class="text-5xl mb-4 block">📬</span>
                     <h2 class="anton-text text-3xl mb-4 uppercase tracking-wider">CHECK YOUR EMAIL!</h2>
-                    <p class="text-slate-600 text-lg mb-2">We've sent your <strong>Sandwich Bread Pack</strong> to:</p>
+                    <p class="text-slate-600 dark:text-slate-400 text-lg mb-2">We've sent your <strong>Sandwich Bread Pack</strong> to:</p>
                     <p class="text-brand-600 font-bold text-lg mb-6" x-text="email"></p>
                     <p class="text-slate-500 text-sm">Don't see it? Check your spam folder or <button @click="submitted = false" class="text-brand-600 hover:underline font-semibold">try again</button>.</p>
                 </div>
@@ -333,20 +333,20 @@
             <h2 class="anton-text text-3xl text-center mb-10 uppercase tracking-wider">ALSO INCLUDES</h2>
             
             <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-white rounded-xl p-6 border border-slate-200 text-center">
+                <div class="bg-white dark:bg-slate-800 rounded-xl p-6 border border-slate-200 dark:border-slate-700 text-center">
                     <span class="text-3xl mb-4 block">🛒</span>
-                    <h3 class="font-semibold mb-2">Shopping List</h3>
-                    <p class="text-sm text-slate-600">Combined ingredient list organized by category</p>
+                    <h3 class="font-semibold mb-2 dark:text-white">Shopping List</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Combined ingredient list organized by category</p>
                 </div>
-                <div class="bg-white rounded-xl p-6 border border-slate-200 text-center">
+                <div class="bg-white dark:bg-slate-800 rounded-xl p-6 border border-slate-200 dark:border-slate-700 text-center">
                     <span class="text-3xl mb-4 block">📊</span>
-                    <h3 class="font-semibold mb-2">Nutrition Facts</h3>
-                    <p class="text-sm text-slate-600">Complete macros for every recipe</p>
+                    <h3 class="font-semibold mb-2 dark:text-white">Nutrition Facts</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Complete macros for every recipe</p>
                 </div>
-                <div class="bg-white rounded-xl p-6 border border-slate-200 text-center">
+                <div class="bg-white dark:bg-slate-800 rounded-xl p-6 border border-slate-200 dark:border-slate-700 text-center">
                     <span class="text-3xl mb-4 block">💡</span>
-                    <h3 class="font-semibold mb-2">Pro Tips</h3>
-                    <p class="text-sm text-slate-600">Storage, meal prep, and substitution advice</p>
+                    <h3 class="font-semibold mb-2 dark:text-white">Pro Tips</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Storage, meal prep, and substitution advice</p>
                 </div>
             </div>
         </div>

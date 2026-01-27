@@ -949,7 +949,7 @@ async function generateHomepage(site, recipes, packs, categories, partials, outp
                     <a href="/pack-<%= pack.slug %>.html" class="block bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:shadow-xl transition-all group">
                         <span class="text-4xl mb-4 block"><%= pack.icon %></span>
                         <h3 class="font-semibold text-xl mb-2 group-hover:text-brand-600 transition-colors"><%= pack.title %></h3>
-                        <p class="text-slate-600"><%= pack.description %></p>
+                        <p class="text-slate-600 dark:text-slate-400"><%= pack.description %></p>
                     </a>
                 <% }) %>
             </div>
@@ -1332,7 +1332,7 @@ async function generateRecipePage(site, recipe, allRecipes, categories, partials
                                                     :class="sub.isSpecialSwap ? 'border border-amber-200 bg-amber-50' : ''"
                                                 >
                                                     <span x-text="sub.name" class="text-slate-700 dark:text-slate-200 group-hover:text-brand-600"></span>
-                                                    <span x-show="sub.swapNote" x-text="sub.swapNote" class="text-xs text-slate-500 bg-slate-100 px-2 py-0.5 rounded"></span>
+                                                    <span x-show="sub.swapNote" x-text="sub.swapNote" class="text-xs text-slate-500 bg-slate-100 dark:bg-slate-600 dark:text-slate-300 px-2 py-0.5 rounded"></span>
                                                 </button>
                                             </template>
                                         </div>
@@ -1850,7 +1850,7 @@ async function generatePackPage(site, pack, allRecipes, partials, outputDir) {
             <template x-if="!submitted">
                 <div>
                     <h2 class="anton-text text-3xl mb-4 uppercase tracking-wider">GET YOUR FREE COPY</h2>
-                    <p class="text-slate-600 mb-8">Enter your email and we'll send you the PDF.</p>
+                    <p class="text-slate-600 dark:text-slate-400 mb-8">Enter your email and we'll send you the PDF.</p>
                     
                     <form @submit.prevent="submit()" class="space-y-4">
                         <input type="email" x-model="email" placeholder="Enter your email" required
@@ -1872,7 +1872,7 @@ async function generatePackPage(site, pack, allRecipes, partials, outputDir) {
                 <div>
                     <span class="text-5xl mb-4 block">📬</span>
                     <h2 class="anton-text text-3xl mb-4 uppercase tracking-wider">CHECK YOUR EMAIL!</h2>
-                    <p class="text-slate-600 text-lg mb-2">We've sent your <strong><%= pack.title %></strong> to:</p>
+                    <p class="text-slate-600 dark:text-slate-400 text-lg mb-2">We've sent your <strong><%= pack.title %></strong> to:</p>
                     <p class="text-brand-600 font-bold text-lg mb-6" x-text="email"></p>
                     <p class="text-slate-500 text-sm">Don't see it? Check your spam folder or <button @click="submitted = false" class="text-brand-600 hover:underline font-semibold">try again</button>.</p>
                 </div>
@@ -1952,7 +1952,7 @@ async function generateSuccessPage(site, pack, allRecipes, partials, outputDir) 
     <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <span class="text-6xl mb-6 block">✅</span>
         <h1 class="anton-text text-4xl uppercase mb-4 tracking-wider">YOU'RE ALL SET!</h1>
-        <p class="text-xl text-slate-600 mb-8">Your <%= pack.title %> is ready to download.</p>
+        <p class="text-xl text-slate-600 dark:text-slate-400 mb-8">Your <%= pack.title %> is ready to download.</p>
         
         <a href="/guides/<%= site.domain.replace(/\\./g, '-') %>-<%= pack.slug %>.pdf" download
             class="inline-flex items-center gap-3 bg-brand-500 text-white px-8 py-4 rounded-2xl font-bold anton-text text-lg hover:bg-brand-600 transition-colors shadow-xl shadow-brand-500/30 tracking-wider mb-8">
@@ -1964,13 +1964,13 @@ async function generateSuccessPage(site, pack, allRecipes, partials, outputDir) 
         
         <p class="text-slate-500 mb-12">Having trouble? Check your downloads folder or <a href="/pack-<%= pack.slug %>.html" class="text-brand-600 hover:underline">try again</a>.</p>
         
-        <div class="border-t border-slate-200 pt-12">
+        <div class="border-t border-slate-200 dark:border-slate-700 pt-12">
             <h2 class="anton-text text-2xl uppercase mb-6 tracking-wider">EXPLORE MORE RECIPES</h2>
             <div class="flex flex-wrap justify-center gap-4">
-                <a href="/" class="px-6 py-3 rounded-xl bg-white border border-slate-200 hover:border-brand-500 hover:text-brand-600 transition-all font-semibold">
+                <a href="/" class="px-6 py-3 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:text-brand-600 dark:hover:text-brand-400 transition-all font-semibold">
                     All Recipes
                 </a>
-                <a href="/#packs" class="px-6 py-3 rounded-xl bg-white border border-slate-200 hover:border-brand-500 hover:text-brand-600 transition-all font-semibold">
+                <a href="/#packs" class="px-6 py-3 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-brand-500 hover:text-brand-600 dark:hover:text-brand-400 transition-all font-semibold">
                     More Recipe Packs
                 </a>
             </div>
@@ -2022,7 +2022,7 @@ async function generateSupportingPages(site, recipes, partials, outputDir) {
     <div class="text-center px-4">
         <span class="text-8xl mb-6 block">🍪</span>
         <h1 class="anton-text text-6xl uppercase mb-4 tracking-wider">404</h1>
-        <p class="text-xl text-slate-600 mb-8">Oops! This recipe doesn't exist.</p>
+        <p class="text-xl text-slate-600 dark:text-slate-400 mb-8">Oops! This recipe doesn't exist.</p>
         <a href="/" class="inline-flex items-center gap-2 bg-brand-500 text-white px-8 py-4 rounded-2xl font-bold anton-text text-lg hover:bg-brand-600 transition-colors shadow-xl shadow-brand-500/30 tracking-wider">
             BACK TO RECIPES
         </a>
