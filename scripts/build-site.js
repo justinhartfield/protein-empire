@@ -769,7 +769,7 @@ async function generateHomepage(site, recipes, packs, categories, partials, outp
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="anton-text text-3xl md:text-4xl text-slate-900 dark:text-white mb-6 uppercase tracking-wide"><%= seoData.whatAre.title %></h2>
             <% seoData.whatAre.paragraphs.forEach(paragraph => { %>
-            <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed mb-4"><%= paragraph %></p>
+            <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed mb-4"><%- paragraph %></p>
             <% }) %>
         </div>
     </section>
@@ -782,7 +782,7 @@ async function generateHomepage(site, recipes, packs, categories, partials, outp
                 <% seoData.benefits.forEach(benefit => { %>
                 <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700 shadow-sm">
                     <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-2"><%= benefit.title %></h3>
-                    <p class="text-slate-600 dark:text-slate-400"><%= benefit.description %></p>
+                    <p class="text-slate-600 dark:text-slate-400"><%- benefit.description %></p>
                 </div>
                 <% }) %>
             </div>
@@ -797,7 +797,7 @@ async function generateHomepage(site, recipes, packs, categories, partials, outp
                 <% seoData.types.forEach(type => { %>
                 <div class="bg-slate-50 dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700">
                     <h3 class="font-bold text-xl text-slate-900 dark:text-white mb-2"><%= type.name %></h3>
-                    <p class="text-slate-600 dark:text-slate-400"><%= type.description %></p>
+                    <p class="text-slate-600 dark:text-slate-400"><%- type.description %></p>
                 </div>
                 <% }) %>
             </div>
@@ -847,7 +847,7 @@ async function generateHomepage(site, recipes, packs, categories, partials, outp
                     <div class="flex-shrink-0 w-10 h-10 bg-brand-500 text-white rounded-full flex items-center justify-center font-bold text-lg"><%= index + 1 %></div>
                     <div>
                         <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-1"><%= step.step %></h3>
-                        <p class="text-slate-600 dark:text-slate-400"><%= step.description %></p>
+                        <p class="text-slate-600 dark:text-slate-400"><%- step.description %></p>
                     </div>
                 </div>
                 <% }) %>
@@ -866,7 +866,7 @@ async function generateHomepage(site, recipes, packs, categories, partials, outp
                         <%= faq.question %>
                         <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
-                    <div class="px-6 pb-4 text-slate-600 dark:text-slate-400"><%= faq.answer %></div>
+                    <div class="px-6 pb-4 text-slate-600 dark:text-slate-400"><%- faq.answer %></div>
                 </details>
                 <% }) %>
             </div>
@@ -885,9 +885,30 @@ async function generateHomepage(site, recipes, packs, categories, partials, outp
           "name": "<%= faq.question.replace(/"/g, '\\"') %>",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "<%= faq.answer.replace(/"/g, '\\"') %>"
+            "text": "<%= faq.answer.replace(/<[^>]*>/g, '').replace(/"/g, '\\"') %>"
           }
         }<%= index < seoData.faqs.length - 1 ? ',' : '' %>
+        <% }) %>
+      ]
+    }
+    </script>
+
+    <!-- ItemList Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "<%= site.name %> Recipes",
+      "description": "<%= site.description.replace(/"/g, '\\"') %>",
+      "numberOfItems": <%= recipes.length %>,
+      "itemListElement": [
+        <% recipes.slice(0, 20).forEach((recipe, index) => { %>
+        {
+          "@type": "ListItem",
+          "position": <%= index + 1 %>,
+          "url": "https://<%= site.domain %>/<%= recipe.slug %>.html",
+          "name": "<%= recipe.title.replace(/"/g, '\\"') %>"
+        }<%= index < Math.min(recipes.length, 20) - 1 ? ',' : '' %>
         <% }) %>
       ]
     }
@@ -1684,6 +1705,31 @@ async function generateCategoryPage(site, category, allRecipes, categories, part
   ]
 }
 </script>
+
+<!-- CollectionPage Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "<%= category.name %> Protein <%= site.foodTypePlural.charAt(0).toUpperCase() + site.foodTypePlural.slice(1) %> Recipes",
+  "description": "<%= (category.description || 'Browse our ' + category.name.toLowerCase() + ' protein ' + site.foodType + ' recipes.').replace(/"/g, '\\"') %>",
+  "url": "https://<%= site.domain %>/category-<%= category.slug %>.html",
+  "mainEntity": {
+    "@type": "ItemList",
+    "numberOfItems": <%= filteredRecipes.length %>,
+    "itemListElement": [
+      <% filteredRecipes.slice(0, 20).forEach((recipe, index) => { %>
+      {
+        "@type": "ListItem",
+        "position": <%= index + 1 %>,
+        "url": "https://<%= site.domain %>/<%= recipe.slug %>.html",
+        "name": "<%= recipe.title.replace(/"/g, '\\"') %>"
+      }<%= index < Math.min(filteredRecipes.length, 20) - 1 ? ',' : '' %>
+      <% }) %>
+    ]
+  }
+}
+</script>
 </head>
 <body class="min-h-screen flex flex-col bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100 font-sans">
 
@@ -1733,7 +1779,7 @@ async function generateCategoryPage(site, category, allRecipes, categories, part
             <div class="max-w-4xl mx-auto">
                 <h2 class="anton-text text-3xl md:text-4xl text-slate-900 dark:text-white mb-6 uppercase tracking-wide"><%= catSeoData.title %></h2>
                 <% catSeoData.paragraphs.forEach(paragraph => { %>
-                <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed mb-4"><%= paragraph %></p>
+                <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed mb-4"><%- paragraph %></p>
                 <% }) %>
             </div>
         </section>

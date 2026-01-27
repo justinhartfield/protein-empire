@@ -33,13 +33,13 @@ const SEO_CONTENT = {
         heading: 'Why Protein at Breakfast Matters',
         content: `Starting your day with adequate protein is one of the most impactful nutritional decisions you can make. Research consistently shows that a high-protein breakfast helps regulate appetite hormones like ghrelin and peptide YY, keeping you fuller for longer and reducing the urge to snack mid-morning. For those focused on body composition, morning protein consumption supports muscle protein synthesis during the critical post-sleep window when your body is primed for nutrient uptake.
 
-The typical American breakfast—cereal, toast, or pastries—delivers mostly carbohydrates with minimal protein, often leaving you hungry within hours. By contrast, a breakfast containing 25-40 grams of protein stabilizes blood sugar levels, prevents energy crashes, and provides sustained mental clarity throughout your morning. Whether you're an athlete looking to optimize recovery, someone managing their weight, or simply wanting more energy, prioritizing protein at breakfast creates a foundation for better choices all day long.`
+The typical American breakfast—cereal, toast, or pastries—delivers mostly carbohydrates with minimal protein, often leaving you hungry within hours. By contrast, a breakfast containing 25-40 grams of protein stabilizes blood sugar levels, prevents energy crashes, and provides sustained mental clarity throughout your morning. Whether you're an athlete looking to optimize recovery, someone managing their weight, or simply wanting more energy, prioritizing protein at breakfast creates a foundation for better choices all day long. Browse our full <a href="/category-breakfast.html">breakfast recipe collection</a> for inspiration.`
       },
       {
         heading: 'High-Protein Breakfast Options Beyond Eggs',
         content: `While eggs are a breakfast staple, the world of high-protein morning meals extends far beyond the traditional scramble. Protein pancakes and waffles have revolutionized breakfast, delivering 20-40 grams of protein per serving while satisfying your craving for something sweet and indulgent. Made with protein powder, cottage cheese, or Greek yogurt, these breakfast favorites prove that hitting your macros doesn't mean sacrificing taste.
 
-Overnight oats and proats (protein oats) offer a convenient make-ahead option perfect for busy mornings. By combining oats with protein powder, Greek yogurt, or egg whites, you create a balanced meal that's ready when you wake up. Protein muffins provide grab-and-go convenience without the sugar crash of traditional bakery items. For those who prefer savory mornings, high-protein breakfast burritos, egg white wraps, and cottage cheese bowls deliver substantial protein while keeping calories in check.`
+Overnight oats and proats (protein oats) offer a convenient make-ahead option perfect for busy mornings. By combining <a href="/ingredient-oats.html">oats</a> with <a href="/ingredient-protein-powder.html">protein powder</a>, <a href="/ingredient-greek-yogurt.html">Greek yogurt</a>, or egg whites, you create a balanced meal that's ready when you wake up. Protein muffins provide grab-and-go convenience without the sugar crash of traditional bakery items. For those who prefer savory mornings, high-protein breakfast burritos, egg white wraps, and <a href="/ingredient-cottage-cheese.html">cottage cheese</a> bowls deliver substantial protein while keeping calories in check.`
       },
       {
         heading: 'Building Your Perfect Protein Breakfast',
@@ -56,7 +56,7 @@ Meal prep is your secret weapon for consistent high-protein breakfasts. Batch-co
         heading: 'Rethinking Dessert for Your Fitness Goals',
         content: `The belief that desserts and fitness goals can't coexist is outdated. Modern macro-conscious baking has created an entirely new category of treats that deliver genuine satisfaction while supporting your nutritional objectives. High-protein desserts aren't about deprivation or settling for cardboard-tasting alternatives—they're about using smarter ingredients to create genuinely delicious treats that happen to fit your macros.
 
-Traditional desserts rely heavily on sugar, refined flour, and butter, delivering empty calories with minimal nutritional benefit. By substituting protein powder, Greek yogurt, cottage cheese, and alternative flours, you can create cookies, brownies, cheesecakes, and puddings that provide 15-30 grams of protein per serving. These swaps don't just add protein—they often reduce sugar and increase fiber, making your desserts more satiating and less likely to trigger overconsumption.`
+Traditional desserts rely heavily on sugar, refined flour, and butter, delivering empty calories with minimal nutritional benefit. By substituting <a href="/ingredient-protein-powder.html">protein powder</a>, <a href="/ingredient-greek-yogurt.html">Greek yogurt</a>, <a href="/ingredient-cottage-cheese.html">cottage cheese</a>, and alternative flours, you can create cookies, brownies, cheesecakes, and puddings that provide 15-30 grams of protein per serving. These swaps don't just add protein—they often reduce sugar and increase fiber, making your desserts more satiating and less likely to trigger overconsumption. Explore our full <a href="/category-desserts.html">desserts collection</a> to find your favorites.`
       },
       {
         heading: 'Popular High-Protein Dessert Categories',
@@ -79,7 +79,7 @@ Flavor variety keeps protein desserts exciting. Experiment with different protei
         heading: 'The Role of Protein Snacks in Your Diet',
         content: `Strategic snacking is an underrated tool for meeting your protein goals and maintaining stable energy throughout the day. Rather than reaching for chips, crackers, or candy that spike blood sugar and leave you hungrier than before, high-protein snacks provide sustained fuel that keeps you satisfied between meals. For those eating in a caloric deficit, protein-rich snacks help preserve muscle mass while supporting fat loss. For athletes and active individuals, they provide convenient opportunities to hit elevated protein targets.
 
-The ideal protein snack delivers 10-20 grams of protein without excessive calories or added sugars. This combination ensures you're getting meaningful nutritional value without consuming a meal's worth of calories. Portable options are particularly valuable—life doesn't always allow for sit-down meals, and having protein-rich snacks available prevents poor choices when hunger strikes unexpectedly.`
+The ideal protein snack delivers 10-20 grams of protein without excessive calories or added sugars. This combination ensures you're getting meaningful nutritional value without consuming a meal's worth of calories. Portable options are particularly valuable—life doesn't always allow for sit-down meals, and having protein-rich snacks available prevents poor choices when hunger strikes unexpectedly. Browse our <a href="/category-snacks.html">snack recipes</a> for portable, protein-rich ideas.`
       },
       {
         heading: 'Homemade vs. Store-Bought Protein Snacks',
@@ -102,7 +102,7 @@ Portion control matters even with healthy snacks—they're meant to bridge meals
         heading: 'Beyond Sweet: The Savory Protein Revolution',
         content: `While protein powder often conjures images of sweet shakes and desserts, the savory application of high-protein cooking has expanded dramatically. For those who don't have a sweet tooth or simply want more variety, savory protein recipes offer equally satisfying options for meeting your macros. From protein-enriched pizza crusts to high-protein bread and savory baked goods, this category proves that prioritizing protein doesn't mean living on sweet flavors alone.
 
-Savory high-protein recipes often rely on different protein sources than their sweet counterparts. Instead of whey or casein powder, savory dishes frequently feature cottage cheese, Greek yogurt, eggs, and cheese as their protein foundation. Chickpea flour, almond flour, and other alternative flours add protein while creating textures similar to traditional baked goods. The result is comfort food reimagined—satisfying your cravings while supporting your fitness goals.`
+Savory high-protein recipes often rely on different protein sources than their sweet counterparts. Instead of whey or casein powder, savory dishes frequently feature <a href="/ingredient-cottage-cheese.html">cottage cheese</a>, <a href="/ingredient-greek-yogurt.html">Greek yogurt</a>, eggs, and cheese as their protein foundation. Chickpea flour, almond flour, and other alternative flours add protein while creating textures similar to traditional baked goods. The result is comfort food reimagined—satisfying your cravings while supporting your fitness goals. Explore all our <a href="/category-savory.html">savory recipes</a>.`
       },
       {
         heading: 'High-Protein Pizza and Flatbreads',
@@ -1056,7 +1056,7 @@ function generateHomepage(site, allRecipes, categories, partials, outputDir) {
         <h2 class="font-anton text-3xl uppercase tracking-wider mb-6">Your Hub for Macro-Verified High-Protein Recipes</h2>
         <div class="prose prose-slate dark:prose-invert max-w-none">
             <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed mb-4">
-                HighProtein.Recipes is the central hub for discovering over 300 macro-verified high-protein recipes spanning 13 specialized sites within the Protein Empire. Whether you are searching for protein pancakes, macro-friendly brownies, high-protein pizza crusts, or cottage cheese desserts, every recipe in our collection has been verified with precise nutritional data so you can trust the macros before you start cooking.
+                HighProtein.Recipes is the central hub for discovering over 300 macro-verified high-protein recipes spanning 13 specialized sites within the Protein Empire. Whether you are searching for protein pancakes, macro-friendly brownies, high-protein pizza crusts, or cottage cheese desserts, every recipe in our collection has been verified with precise nutritional data so you can trust the macros before you start cooking. <a href="/all-recipes.html">Browse all recipes</a> to explore the full collection.
             </p>
             <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed mb-4">
                 Unlike generic recipe sites that estimate nutrition or skip it entirely, every recipe indexed on HighProtein.Recipes includes verified calories, protein, carbohydrates, and fat per serving. This macro verification process ensures that when a recipe claims 30 grams of protein, you can count on it for your meal plan. For athletes tracking macros, fitness enthusiasts hitting daily protein targets, or anyone who wants to make smarter food choices, verified nutrition data eliminates guesswork and builds confidence in your cooking.
@@ -1064,7 +1064,7 @@ function generateHomepage(site, allRecipes, categories, partials, outputDir) {
 
             <h3 class="text-xl font-semibold text-slate-800 dark:text-slate-200 mt-8 mb-4">How to Use HighProtein.Recipes</h3>
             <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed mb-4">
-                Finding the perfect recipe is simple. Browse by category—breakfast, desserts, snacks, or savory—to find recipes organized the way you think about meals. Filter by food type to discover protein cookies, bars, muffins, cheesecakes, pizza, and more from dedicated specialty sites that have perfected each format. Search by ingredient to find recipes featuring your favorites: protein powder, Greek yogurt, cottage cheese, oats, banana, or peanut butter. Use special filters like "no-bake," "quick and easy," or "30g+ protein" to match your time and macro needs.
+                Finding the perfect recipe is simple. Browse by category—<a href="/category-breakfast.html">breakfast</a>, <a href="/category-desserts.html">desserts</a>, <a href="/category-snacks.html">snacks</a>, or <a href="/category-savory.html">savory</a>—to find recipes organized the way you think about meals. Filter by food type to discover protein cookies, bars, muffins, cheesecakes, pizza, and more from dedicated specialty sites that have perfected each format. Search by ingredient to find recipes featuring your favorites: <a href="/ingredient-protein-powder.html">protein powder</a>, <a href="/ingredient-greek-yogurt.html">Greek yogurt</a>, <a href="/ingredient-cottage-cheese.html">cottage cheese</a>, <a href="/ingredient-oats.html">oats</a>, <a href="/ingredient-banana.html">banana</a>, or <a href="/ingredient-peanut-butter.html">peanut butter</a>. Use special filters like "no-bake," "quick and easy," or "30g+ protein" to match your time and macro needs.
             </p>
             <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed mb-4">
                 Each recipe card shows protein content, calories, prep time, and difficulty at a glance, so you can quickly scan dozens of options without clicking through to each page. When you find something you like, view the full recipe on its dedicated site for complete ingredient lists, step-by-step instructions, and expert tips.
@@ -1072,7 +1072,7 @@ function generateHomepage(site, allRecipes, categories, partials, outputDir) {
 
             <h3 class="text-xl font-semibold text-slate-800 dark:text-slate-200 mt-8 mb-4">Recipes for Every Meal and Goal</h3>
             <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed mb-4">
-                Our breakfast collection features protein pancakes, waffles, overnight oats, muffins, and egg-based dishes that deliver 20-40 grams of protein to start your day strong. The desserts category proves that sweet treats and fitness goals coexist beautifully with protein cookies, brownies, cheesecake, donuts, and pudding that satisfy cravings while supporting muscle recovery. High-protein snacks—including bars, bites, and energy balls—provide convenient between-meal fuel, while savory recipes like protein pizza, bread, and flatbreads round out your options for complete macro-friendly meals.
+                Our <a href="/category-breakfast.html">breakfast collection</a> features protein pancakes, waffles, overnight oats, muffins, and egg-based dishes that deliver 20-40 grams of protein to start your day strong. The <a href="/category-desserts.html">desserts category</a> proves that sweet treats and fitness goals coexist beautifully with protein cookies, brownies, cheesecake, donuts, and pudding that satisfy cravings while supporting muscle recovery. High-protein <a href="/category-snacks.html">snacks</a>—including bars, bites, and energy balls—provide convenient between-meal fuel, while <a href="/category-savory.html">savory recipes</a> like protein pizza, bread, and flatbreads round out your options for complete macro-friendly meals.
             </p>
             <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed mb-4">
                 The Protein Empire spans 13 specialized recipe sites, each dedicated to perfecting one type of high-protein food. From ProteinPancakes.co and ProteinCookies.co to CottageCheeseRecipes.co and ProteinPizza.co, every site focuses exclusively on its specialty. This depth of focus means better recipes, more variety within each category, and expert-level tips you will not find on generalist cooking sites.
@@ -1080,14 +1080,35 @@ function generateHomepage(site, allRecipes, categories, partials, outputDir) {
 
             <h3 class="text-xl font-semibold text-slate-800 dark:text-slate-200 mt-8 mb-4">Free Tools to Optimize Your Protein Diet</h3>
             <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed mb-4">
-                Beyond recipes, HighProtein.Recipes offers free interactive tools to support your high-protein lifestyle. The P:E Ratio Calculator helps you evaluate any food's protein-to-energy ratio—a key metric for choosing the most protein-efficient foods. The Breakfast Macro Builder lets you filter and sort breakfast recipes by exact macro targets, so you can find options that fit your specific calorie and protein needs. The Protein Cost Calculator compares common protein sources by price per gram, helping you build a high-protein diet that fits your budget.
+                Beyond recipes, HighProtein.Recipes offers free interactive tools to support your high-protein lifestyle. The <a href="/tools/pe-ratio-calculator.html">P:E Ratio Calculator</a> helps you evaluate any food's protein-to-energy ratio—a key metric for choosing the most protein-efficient foods. The Breakfast Macro Builder lets you filter and sort <a href="/category-breakfast.html">breakfast recipes</a> by exact macro targets, so you can find options that fit your specific calorie and protein needs. The Protein Cost Calculator compares common protein sources by price per gram, helping you build a high-protein diet that fits your budget.
             </p>
             <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed mb-4">
-                Whether you are a seasoned macro tracker or just starting to prioritize protein, HighProtein.Recipes is designed to make high-protein eating easier, tastier, and more accessible. Explore our full collection, bookmark your favorites, and discover why hundreds of thousands of protein-focused home cooks trust our recipes every month.
+                Whether you are a seasoned macro tracker or just starting to prioritize protein, HighProtein.Recipes is designed to make high-protein eating easier, tastier, and more accessible. <a href="/all-recipes.html">Explore our full collection</a>, bookmark your favorites, and discover why hundreds of thousands of protein-focused home cooks trust our recipes every month.
             </p>
         </div>
     </div>
 </section>
+
+<!-- ItemList Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "High-Protein Recipes",
+  "description": "<%= site.description.replace(/"/g, '\\\\"') %>",
+  "numberOfItems": <%= allRecipes.length %>,
+  "itemListElement": [
+    <% allRecipes.slice(0, 20).forEach((recipe, index) => { %>
+    {
+      "@type": "ListItem",
+      "position": <%= index + 1 %>,
+      "url": "https://highprotein.recipes/<%= recipe.slug %>-preview.html",
+      "name": "<%= recipe.title.replace(/"/g, '\\\\"') %>"
+    }<%= index < Math.min(allRecipes.length, 20) - 1 ? ',' : '' %>
+    <% }) %>
+  ]
+}
+</script>
 
 <%- include('footer', { site }) %>
 </body>
@@ -1249,6 +1270,33 @@ function generateListingPage(site, recipes, config, partials, outputDir) {
   preloadImage: null,
   includeIngredients: false
 }) %>
+
+<% if (config.slug.startsWith('category-')) { %>
+<!-- CollectionPage Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "<%= config.title %>",
+  "description": "<%= config.description.replace(/"/g, '\\\\"') %>",
+  "url": "https://highprotein.recipes/<%= config.slug %>.html",
+  "mainEntity": {
+    "@type": "ItemList",
+    "numberOfItems": <%= recipes.length %>,
+    "itemListElement": [
+      <% recipes.slice(0, 20).forEach((recipe, index) => { %>
+      {
+        "@type": "ListItem",
+        "position": <%= index + 1 %>,
+        "url": "https://highprotein.recipes/<%= recipe.slug %>-preview.html",
+        "name": "<%= recipe.title.replace(/"/g, '\\\\"') %>"
+      }<%= index < Math.min(recipes.length, 20) - 1 ? ',' : '' %>
+      <% }) %>
+    ]
+  }
+}
+</script>
+<% } %>
 </head>
 <body class="min-h-screen flex flex-col bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100 font-sans">
 <%- include('nav', { site }) %>
@@ -1324,7 +1372,7 @@ function generateListingPage(site, recipes, config, partials, outputDir) {
                 <div class="mb-8">
                     <h3 class="text-xl font-semibold mb-4 text-slate-800 dark:text-slate-200"><%= section.heading %></h3>
                     <% section.content.split('\\n\\n').forEach(paragraph => { %>
-                    <p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed"><%= paragraph %></p>
+                    <p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed"><%-  paragraph %></p>
                     <% }); %>
                 </div>
                 <% }); %>
@@ -2899,7 +2947,7 @@ function generateBreakfastPillarPage(site, breakfastRecipes, partials, outputDir
         <div class="mb-8">
           <h3 class="text-xl font-semibold mb-4 text-slate-800 dark:text-slate-200"><%= section.heading %></h3>
           <% section.content.split('\\n\\n').forEach(paragraph => { %>
-          <p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed"><%= paragraph %></p>
+          <p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed"><%-  paragraph %></p>
           <% }); %>
         </div>
         <% }); %>
