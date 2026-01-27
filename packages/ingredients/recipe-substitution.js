@@ -68,15 +68,16 @@ export function createRecipeSubstitution(config) {
     },
 
     getDisplayName(id) {
-      // First check currentIngredients for the name (handles ingredients not in database)
+      // If the ID exists in the ingredient database, always use the database name
+      // This ensures swapped ingredients show their correct name (e.g., "Part-Skim Ricotta" not "Cottage Cheese")
+      const dbIng = this.getIngredient(id);
+      if (dbIng) {
+        return dbIng.name;
+      }
+      // For ingredients not in the database, check currentIngredients for the stored name
       const currentIng = this.currentIngredients.find(i => i.id === id || i.originalId === id);
       if (currentIng) {
         return currentIng.name;
-      }
-      // Fall back to database lookup
-      const ing = this.getIngredient(id);
-      if (ing) {
-        return ing.name;
       }
       // Last resort: format the ID as a readable name
       return id.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
