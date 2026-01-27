@@ -281,6 +281,40 @@ export const sites = {
     socialImage: '/images/social-share.png',
     ga4Id: 'G-KJYVNQJW7F',
     status: 'planned'
+  },
+
+  'mealprepideas.co': {
+    name: 'MealPrepIdeas',
+    domain: 'mealprepideas.co',
+    title: 'MealPrepIdeas.co | Meal Prep Authority',
+    tagline: 'Batching, logistics, storage, and 5-day protocols for high-performance living',
+    description: '1,100+ programmatic pages covering meal prep methods, diets, goals, personas, store guides, and chain restaurants. 185+ recipes, 8 meal plans, 10 interactive tools, and full internal linking.',
+    foodType: 'meal prep',
+    foodTypePlural: 'meal prep recipes',
+    brandColor: '#D9FF00',
+    accentColor: '#10b981',
+    logo: '/images/logo.png',
+    favicon: '/images/favicon.png',
+    socialImage: '/images/social-share.png',
+    ga4Id: '',
+    status: 'live'
+  },
+
+  'proteinmeals.co': {
+    name: 'ProteinMeals',
+    domain: 'proteinmeals.co',
+    title: 'ProteinMeals.co | High Protein Authority',
+    tagline: 'Macro-optimized meal prep and high-protein recipes for every goal',
+    description: '1,100+ programmatic pages for high-protein meal prep. Covers macros, diet constraints, fast food chains, frozen meals, store guides, and ingredient-based navigation. 186+ recipes with full nutrition data.',
+    foodType: 'high-protein meals',
+    foodTypePlural: 'high-protein meals',
+    brandColor: '#D9FF00',
+    accentColor: '#10b981',
+    logo: '/images/logo.png',
+    favicon: '/images/favicon.png',
+    socialImage: '/images/social-share.png',
+    ga4Id: '',
+    status: 'live'
   }
 };
 
@@ -298,7 +332,9 @@ export const empireSites = [
   { domain: 'proteincheesecake.co', name: 'Cheesecake', foodType: 'cheesecake', category: 'desserts' },
   { domain: 'proteinpizzas.co', name: 'Pizza', foodType: 'pizza', category: 'savory' },
   { domain: 'proteinpudding.co', name: 'Pudding', foodType: 'pudding', category: 'desserts' },
-  { domain: 'cottagecheeserecipes.co', name: 'Cottage Cheese', foodType: 'cottage cheese recipes', category: 'breakfast' }
+  { domain: 'cottagecheeserecipes.co', name: 'Cottage Cheese', foodType: 'cottage cheese recipes', category: 'breakfast' },
+  { domain: 'mealprepideas.co', name: 'Meal Prep', foodType: 'meal prep', category: 'savory' },
+  { domain: 'proteinmeals.co', name: 'High-Protein Meals', foodType: 'high-protein meals', category: 'savory' }
 ];
 
 /**
