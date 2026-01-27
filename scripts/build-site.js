@@ -300,7 +300,7 @@ async function buildSite(domain) {
   console.log(`📦 Loaded ${packs.length} recipe packs`);
   
   // Get categories for this site type
-  const categories = getCategoriesForSite(site.foodType);
+  const categories = getCategoriesForSite(domain);
   
   // Copy assets
   console.log(`📁 Copying assets...`);
@@ -765,7 +765,7 @@ async function generateHomepage(site, recipes, packs, categories, partials, outp
 
     <% if (seoData) { %>
     <!-- What Are Section -->
-    <section class="py-16 bg-white">
+    <section class="py-16 bg-white dark:bg-slate-900">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="anton-text text-3xl md:text-4xl text-slate-900 dark:text-white mb-6 uppercase tracking-wide"><%= seoData.whatAre.title %></h2>
             <% seoData.whatAre.paragraphs.forEach(paragraph => { %>
@@ -775,7 +775,7 @@ async function generateHomepage(site, recipes, packs, categories, partials, outp
     </section>
 
     <!-- Benefits Section -->
-    <section class="py-16 bg-slate-50">
+    <section class="py-16 bg-slate-50 dark:bg-slate-800">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="anton-text text-3xl md:text-4xl text-slate-900 dark:text-white mb-10 text-center uppercase tracking-wide">Benefits of Protein <%= site.foodTypePlural.charAt(0).toUpperCase() + site.foodTypePlural.slice(1) %></h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -790,14 +790,14 @@ async function generateHomepage(site, recipes, packs, categories, partials, outp
     </section>
 
     <!-- Types Section -->
-    <section class="py-16 bg-white">
+    <section class="py-16 bg-white dark:bg-slate-900">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="anton-text text-3xl md:text-4xl text-slate-900 dark:text-white mb-10 text-center uppercase tracking-wide">Types of Protein <%= site.foodTypePlural.charAt(0).toUpperCase() + site.foodTypePlural.slice(1) %></h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <% seoData.types.forEach(type => { %>
-                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200">
+                <div class="bg-slate-50 dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700">
                     <h3 class="font-bold text-xl text-slate-900 dark:text-white mb-2"><%= type.name %></h3>
-                    <p class="text-slate-600"><%= type.description %></p>
+                    <p class="text-slate-600 dark:text-slate-400"><%= type.description %></p>
                 </div>
                 <% }) %>
             </div>
@@ -805,7 +805,7 @@ async function generateHomepage(site, recipes, packs, categories, partials, outp
     </section>
 
     <!-- Best Ingredients Section -->
-    <section class="py-16 bg-slate-50">
+    <section class="py-16 bg-slate-50 dark:bg-slate-800">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="anton-text text-3xl md:text-4xl text-slate-900 dark:text-white mb-10 text-center uppercase tracking-wide">Best Ingredients for Protein <%= site.foodTypePlural.charAt(0).toUpperCase() + site.foodTypePlural.slice(1) %></h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">

@@ -36,7 +36,7 @@ export const universalCategories = {
     slug: 'gluten-free',
     description: 'Recipes without gluten',
     icon: '🌾',
-    filter: recipe => recipe.tags?.includes('gluten-free')
+    filter: recipe => recipe.tags?.some(t => t.toLowerCase() === 'gluten-free')
   },
   'vegan': {
     id: 'vegan',
@@ -44,7 +44,7 @@ export const universalCategories = {
     slug: 'vegan',
     description: 'Plant-based recipes',
     icon: '🌱',
-    filter: recipe => recipe.tags?.includes('vegan')
+    filter: recipe => recipe.tags?.some(t => t.toLowerCase() === 'vegan')
   },
   'kids': {
     id: 'kids',
@@ -52,7 +52,7 @@ export const universalCategories = {
     slug: 'kids',
     description: 'Kid-friendly recipes',
     icon: '👶',
-    filter: recipe => recipe.tags?.includes('kids')
+    filter: recipe => recipe.tags?.some(t => t.toLowerCase() === 'kids')
   },
   'seasonal': {
     id: 'seasonal',
@@ -60,7 +60,7 @@ export const universalCategories = {
     slug: 'seasonal',
     description: 'Holiday and seasonal favorites',
     icon: '🎄',
-    filter: recipe => recipe.tags?.includes('seasonal')
+    filter: recipe => recipe.tags?.some(t => t.toLowerCase() === 'seasonal')
   }
 };
 
