@@ -129,6 +129,7 @@ RECIPE_TEMPLATE = '''<!DOCTYPE html>
                     <a href="/breakfast/" class="text-slate-600 hover:text-brand-600 font-semibold text-sm uppercase tracking-wider">Breakfast</a>
                     <a href="/breakfast/ideas/" class="text-slate-600 hover:text-brand-600 font-semibold text-sm uppercase tracking-wider">Ideas</a>
                     <a href="/breakfast/meal-prep/" class="text-slate-600 hover:text-brand-600 font-semibold text-sm uppercase tracking-wider">Meal Prep</a>
+                    <a href="/blog/" class="text-slate-600 hover:text-brand-600 font-semibold text-sm uppercase tracking-wider">Blog</a>
                     <a href="/breakfast/meal-plans/7-day/" class="bg-brand-600 text-white px-5 py-2.5 rounded-full font-bold text-sm hover:bg-brand-900 transition">7-DAY PLAN</a>
                 </div>
             </div>
