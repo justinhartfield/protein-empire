@@ -895,6 +895,8 @@ def generate_pillar_page(page_config):
                 <div>
                     <h4 class="font-bold mb-3">Protein Empire</h4>
                     <ul class="space-y-2 text-sm text-slate-400">
+                        <li><a href="https://proteinmeals.co" class="hover:text-white">Protein Meals</a></li>
+                        <li><a href="https://mealprepideas.co" class="hover:text-white">Meal Prep Ideas</a></li>
                         <li><a href="https://proteincookies.com" class="hover:text-white">Protein Cookies</a></li>
                         <li><a href="https://proteinpancakes.co" class="hover:text-white">Protein Pancakes</a></li>
                         <li><a href="https://proteinmuffins.com" class="hover:text-white">Protein Muffins</a></li>
